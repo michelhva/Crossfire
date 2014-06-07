@@ -1,0 +1,90 @@
+LAND(6)
+=======
+:doctype: manpage
+
+NAME
+----
+land - world map generator
+
+
+SYNOPSIS
+--------
+*land* ['OPTIONS']
+
+
+DESCRIPTION
+-----------
+
+*-l* 'land'::
+    There is a minimum value (11) which is enforced at run time. Not sure if
+    there is an actual max value that makes sense. Basically, based on the
+    size of the map (overall spaces), this randomly makes land number of
+    spaces randomly lower or higher. The default is 300000. Note that this is
+    run also based on passes (-n). Note that each additional pass of land
+    (-l), the the altitude amount will likely be less. So if you do something
+    like -l 20 and -n 4000, it will make make steep cliffs and the like.
+    Conversely, something like -l 200000000 -n 10 will still have a lot of
+    variation, but in general should be smoother (more rolling hills than
+    cliffs).
+
+*-n* 'passes'::
+    Make lakes and ocean trenches. General note - it works better to have more
+    passes, but each pass doing less work - this results in more consistent
+    lakes and ocean trenching. Note that passes and land (-l) play with each
+    other.  The default (npasses = 40, land=300000) means 12 million spaces
+    will be modified. However, 1500x1500 is 2.25 million, so it means that on
+    average, each spaces will have its altitude modified 6 times - sometimes
+    positive, sometimes negative. But the thing to keep in mind here is that
+    the total number of spaces modified is -l * -n. Note that the comment
+    above is directly from the source, but applies to wpasses (-p)
+
+*-p* 'wpasses'::
+    Works the same way as *-n* and *-l*, but instead of increasing altitude,
+    it decreases it.
+
+*-s* 'seed'::
+    Seed for the random number generator. It does not directly affect the
+    output of the maps in any predictable way. The main purpose of the seed is
+    that if you use the same seed, you will get the same map (assuming size
+    and other parameters remain the same).
+
+*-w* 'water'::
+    Works the same way as *-n* and *-l*, but instead of increasing altitude,
+    it decreases it. On a simple bases, if land total (-l * -n) is a lot
+    bigger than water total (-p * -w), you should get more land, and a lot
+    more mountain peaks and so forth. If the opposite is true, the land should
+    be flatter and you will have more water.
+
+*-x* 'width'::
+    Number of 50 tile wide maps on x axis (1500 would be 30 maps that are 50
+    pixels wide; 150 would be 3 maps 50 pixels wide).
+
+*-y* 'height'::
+    Number of 50 tile tall maps on y axis (1500 would be 30 maps that are 50
+    pixels tall; 150 would be 3 maps 50 pixels tall).
+
+
+EXIT STATUS
+-----------
+Always returns zero, unless invalid command-line arguments are given.
+
+
+EXAMPLES
+--------
+`lander -m . -m -x 1500 -y 1500 -s 1007623715 -p 300 -n 170 -w 10000 -l 50000`
+
+
+HISTORY
+-------
+Kevin Zheng cobbled together this `man` page, which is based off an email sent
+by Mark Wedel answering a question from Rick Tanner. Please do not yell at
+the author for copying large portions of the said email in verbatim.
+
+
+BUGS
+----
+Note that the land program is very simple and not realistic. For example, if
+the finished altitude of a space is <0, then it is water, otherwise land. And
+the type of land is based on the altitude of the space. Which means you won't
+get high mountain lakes (quite common on earth), high prairies (low altitude
+in land.c is grassland), etc.
