@@ -8,7 +8,7 @@ enter_x 12
 enter_y 18
 msg
 Created:  1993-10-15
-Modified: 2013-03-17 Kevin Zheng
+Modified: 2014-06-05 Kevin Zheng
 endmsg
 outdoor 1
 end
@@ -1352,9 +1352,9 @@ x 10
 y 20
 end
 arch invis_exit
-slaying ../../world/world_105_116
+slaying /world/world_105_116
 hp 7
-sp 1
+sp 2
 x 10
 y 20
 end
@@ -1523,9 +1523,9 @@ x 11
 y 20
 end
 arch invis_exit
-slaying ../../world/world_105_116
+slaying /world/world_105_116
 hp 7
-sp 1
+sp 2
 x 11
 y 20
 end
@@ -1676,9 +1676,9 @@ x 12
 y 20
 end
 arch invis_exit
-slaying ../../world/world_105_116
-hp 8
-sp 1
+slaying /world/world_105_116
+hp 7
+sp 2
 x 12
 y 20
 end
@@ -1822,9 +1822,9 @@ x 13
 y 20
 end
 arch invis_exit
-slaying ../../world/world_105_116
-hp 8
-sp 1
+slaying /world/world_105_116
+hp 7
+sp 2
 x 13
 y 20
 end

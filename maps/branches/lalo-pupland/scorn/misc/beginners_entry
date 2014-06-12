@@ -8,7 +8,7 @@ enter_x 6
 enter_y 6
 msg
 Created:  2011-09-07 Rick Tanner
-Modified: 2011-12-13 Rick Tanner
+Modified: 2014-06-05 Kevin Zheng
 endmsg
 outdoor 1
 end
@@ -460,9 +460,8 @@ x 6
 y 9
 end
 arch invis_exit
-slaying ../../world/world_105_116
-hp 2
-sp 4
+slaying /world/world_105_116
+hp 1
 x 6
 y 9
 end
@@ -553,9 +552,8 @@ x 7
 y 9
 end
 arch invis_exit
-slaying ../../world/world_105_116
-hp 2
-sp 4
+slaying /world/world_105_116
+hp 1
 x 7
 y 9
 end
@@ -656,9 +654,8 @@ x 8
 y 9
 end
 arch invis_exit
-slaying ../../world/world_105_116
-hp 2
-sp 4
+slaying /world/world_105_116
+hp 1
 x 8
 y 9
 end
