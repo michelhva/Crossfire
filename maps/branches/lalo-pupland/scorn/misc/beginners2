@@ -8,7 +8,7 @@ enter_x 10
 enter_y 15
 msg
 Created:  1997-06-19
-Modified: 2013-05-30 Rick Tanner
+Modified: 2014-06-05 Kevin Zheng
 endmsg
 end
 arch cobblestones2
@@ -1211,8 +1211,6 @@ y 17
 end
 arch invis_exit
 slaying /world/world_105_116
-hp 1
-sp 4
 x 9
 y 18
 end
@@ -1321,8 +1319,6 @@ connected 10
 end
 arch invis_exit
 slaying /world/world_105_116
-hp 1
-sp 4
 x 10
 y 18
 end
@@ -1437,8 +1433,6 @@ y 17
 end
 arch invis_exit
 slaying /world/world_105_116
-hp 1
-sp 4
 x 11
 y 18
 end
