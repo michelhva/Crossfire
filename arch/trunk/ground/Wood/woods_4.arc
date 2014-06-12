@@ -1,6 +1,7 @@
 Object woods4
 name woods4
 face woods_4.111
+type 67
 race /terrain/forest
 move_on walk
 no_pick 1
