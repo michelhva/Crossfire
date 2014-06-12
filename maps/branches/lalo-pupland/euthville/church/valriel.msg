@@ -36,7 +36,7 @@
   "match" : ["why"],
   "pre" : [["npctoken", "state", "why"]],
   "post" : [["setnpctoken", "state", "recover"]],
-  "msg" : ["An evil creature stole Valriel's Holy Chalice.\n\nMt friend Maxus went down the catacombs to follow it, but he's not back, and I'm afraid for him..."],
+  "msg" : ["An evil creature stole Valriel's Holy Chalice.\n\nMy friend Maxus went down the catacombs to follow it, but he's not back, and I'm afraid for him..."],
   "replies" : [["recover", "Should I try to recover it?", "2"]]
   }, {
   "match" : ["*"],
