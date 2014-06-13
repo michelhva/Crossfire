@@ -9,8 +9,8 @@ weight 16000
 value 65
 attacktype 1
 weapontype 1
-name nine ring sword
-name_pl nine ring swords
+name nine-ring sword
+name_pl nine-ring swords
 client_type 101
 body_arm -1
 skill one handed weapons

@@ -1,7 +1,7 @@
 Object sword_3
 nrof 1
-name two handed sword
-name_pl two handed swords
+name two-handed sword
+name_pl two-handed swords
 anim_suffix double_sword
 last_sp 8
 type 15
