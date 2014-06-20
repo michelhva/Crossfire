@@ -13,7 +13,7 @@ enter_x 6
 enter_y 24
 msg
 Created:  2005-11-05 Gene Alexander
-Modified: 2012-03-13 Rick Tanner
+Modified: 2014-06-19 tecslicer
 endmsg
 end
 arch flagstone
@@ -919,6 +919,16 @@ arch brush
 x 5
 y 26
 end
+arch invis_exit
+slaying /world/world_107_123
+msg
+Thank you for your visit!
+endmsg
+hp 21
+sp 32
+x 5
+y 26
+end
 arch brush
 x 5
 y 27
@@ -1051,16 +1061,20 @@ x 6
 y 25
 end
 arch oakdoor_2
+x 6
+y 25
+end
+arch brush
+x 6
+y 26
+end
+arch invis_exit
 slaying /world/world_107_123
 msg
 Thank you for your visit!
 endmsg
 hp 21
 sp 32
-x 6
-y 25
-end
-arch brush
 x 6
 y 26
 end
@@ -1192,6 +1206,16 @@ x 7
 y 25
 end
 arch brush
+x 7
+y 26
+end
+arch invis_exit
+slaying /world/world_107_123
+msg
+Thank you for your visit!
+endmsg
+hp 21
+sp 32
 x 7
 y 26
 end
