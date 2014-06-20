@@ -8,7 +8,7 @@ enter_x 11
 enter_y 12
 msg
 Created:  2012-03-20 Rick Tanner
-Modified: 2012-07-11 Rick Tanner
+Modified: 2014-06-17 jwright
 endmsg
 end
 arch cobblestones2
@@ -937,7 +937,13 @@ end
 arch grass_only
 x 10
 y 14
-move_block all
+end
+arch invis_exit
+slaying /world/world_122_116
+hp 14
+sp 41
+x 10
+y 14
 end
 arch grass_only
 x 10
@@ -1015,9 +1021,6 @@ x 11
 y 13
 end
 arch oakdoor_2
-slaying /world/world_122_116
-hp 14
-sp 41
 x 11
 y 13
 end
@@ -1028,7 +1031,13 @@ end
 arch grass_only
 x 11
 y 14
-move_block all
+end
+arch invis_exit
+slaying /world/world_122_116
+hp 14
+sp 41
+x 11
+y 14
 end
 arch grass_only
 x 11
@@ -1116,7 +1125,13 @@ end
 arch grass_only
 x 12
 y 14
-move_block all
+end
+arch invis_exit
+slaying /world/world_122_116
+hp 14
+sp 41
+x 12
+y 14
 end
 arch grass_only
 x 12
