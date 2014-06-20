@@ -16,7 +16,7 @@
   "post" : [],
   "msg" : ["Please, help find my daughters..."]
   }, {
-  "match" : ["yes"],
+  "match" : ["ok"],
   "pre" : [["npctoken", "status", "wait"]],
   "post" : [["quest", "navar/rescue-daughters", "10"]],
   "msg" : ["Thank you very much! I'll reward you for your courage."]
