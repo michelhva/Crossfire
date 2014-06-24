@@ -2,322 +2,431 @@ arch map
 name Warehouse #2
 difficulty 7
 region navar
-width 16
-height 26
+width 18
+height 28
 enter_x 12
 enter_y 23
 msg
 Created:  1993-11-10
-Modified: 2008-12-02 Rick Tanner
+Modified: 2014-06-15 tecslicer
 endmsg
+outdoor 1
+end
+arch dungeon_magic
+end
+arch cobblestones2
+end
+arch westcwall_2_1_2
+end
+arch dungeon_magic
+y 1
+end
+arch cobblestones2
+y 1
+end
+arch dungeon_magic
+y 2
+end
+arch cobblestones2
+y 2
+end
+arch dungeon_magic
+y 3
+end
+arch cobblestones2
+y 3
+end
+arch dungeon_magic
+y 4
+end
+arch cobblestones2
+y 4
+end
+arch dungeon_magic
+y 5
+end
+arch cobblestones2
+y 5
+end
+arch dungeon_magic
+y 6
+end
+arch cobblestones2
+y 6
+end
+arch dungeon_magic
+y 7
+end
+arch cobblestones2
+y 7
+end
+arch dungeon_magic
+y 8
+end
+arch cobblestones2
+y 8
+end
+arch dungeon_magic
+y 9
+end
+arch cobblestones2
+y 9
+end
+arch dungeon_magic
+y 10
+end
+arch cobblestones2
+y 10
+end
+arch dungeon_magic
+y 11
+end
+arch cobblestones2
+y 11
+end
+arch dungeon_magic
+y 12
+end
+arch cobblestones2
+y 12
+end
+arch dungeon_magic
+y 13
+end
+arch cobblestones2
+y 13
+end
+arch dungeon_magic
+y 14
+end
+arch cobblestones2
+y 14
+end
+arch dungeon_magic
+y 15
+end
+arch cobblestones2
+y 15
+end
+arch dungeon_magic
+y 16
+end
+arch cobblestones2
+y 16
+end
+arch dungeon_magic
+y 17
+end
+arch cobblestones2
+y 17
+end
+arch dungeon_magic
+y 18
+end
+arch cobblestones2
+y 18
+end
+arch dungeon_magic
+y 19
+end
+arch cobblestones2
+y 19
+end
+arch dungeon_magic
+y 20
+end
+arch cobblestones2
+y 20
+end
+arch dungeon_magic
+y 21
+end
+arch cobblestones2
+y 21
+end
+arch dungeon_magic
+y 22
+end
+arch cobblestones2
+y 22
+end
+arch dungeon_magic
+y 23
+end
+arch cobblestones2
+y 23
+end
+arch dungeon_magic
+y 24
+end
+arch cobblestones2
+y 24
+end
+arch dungeon_magic
+y 25
+end
+arch cobblestones2
+y 25
+end
+arch dungeon_magic
+y 26
+end
+arch cobblestones2
+y 26
+end
+arch dungeon_magic
+y 27
+end
+arch cobblestones2
+y 27
+end
+arch dungeon_magic
+x 1
+end
+arch cobblestones2
+x 1
+end
+arch westcwall_2_1_2
+x 1
 end
 arch woodfloor
+x 1
+y 1
 end
 arch wwall_2_2_2
-end
-arch woodfloor
-y 1
-end
-arch wwall_2_1_1
+x 1
 y 1
 end
 arch woodfloor
+x 1
 y 2
 end
 arch wwall_2_1_1
+x 1
 y 2
 end
 arch woodfloor
+x 1
 y 3
 end
 arch wwall_2_1_1
+x 1
 y 3
 end
 arch woodfloor
+x 1
 y 4
 end
 arch wwall_2_1_1
+x 1
 y 4
 end
 arch woodfloor
+x 1
 y 5
 end
 arch wwall_2_1_1
+x 1
 y 5
 end
 arch woodfloor
+x 1
 y 6
 end
 arch wwall_2_1_1
+x 1
 y 6
 end
 arch woodfloor
+x 1
 y 7
 end
 arch wwall_2_1_1
+x 1
 y 7
 end
 arch woodfloor
+x 1
 y 8
 end
 arch wwall_2_1_1
+x 1
 y 8
 end
 arch woodfloor
+x 1
 y 9
 end
 arch wwall_2_1_1
+x 1
 y 9
 end
 arch woodfloor
+x 1
 y 10
 end
 arch wwall_2_1_1
+x 1
 y 10
 end
 arch woodfloor
+x 1
 y 11
 end
 arch wwall_2_1_1
+x 1
 y 11
 end
 arch woodfloor
+x 1
 y 12
 end
 arch wwall_2_1_1
+x 1
 y 12
 end
 arch woodfloor
+x 1
 y 13
 end
 arch wwall_2_1_1
+x 1
 y 13
 end
 arch woodfloor
+x 1
 y 14
 end
 arch wwall_2_1_1
+x 1
 y 14
 end
 arch woodfloor
+x 1
 y 15
 end
 arch wwall_2_1_1
+x 1
 y 15
 end
 arch woodfloor
+x 1
 y 16
 end
 arch wwall_2_1_1
+x 1
 y 16
 end
 arch woodfloor
+x 1
 y 17
 end
 arch wwall_2_1_1
+x 1
 y 17
 end
 arch woodfloor
+x 1
 y 18
 end
 arch wwall_2_1_1
+x 1
 y 18
 end
 arch woodfloor
+x 1
 y 19
 end
 arch wwall_2_1_1
+x 1
 y 19
 end
 arch woodfloor
+x 1
 y 20
 end
 arch wwall_2_1_1
+x 1
 y 20
 end
 arch woodfloor
+x 1
 y 21
 end
 arch wwall_2_1_1
+x 1
 y 21
 end
 arch woodfloor
+x 1
 y 22
 end
 arch wwall_2_1_1
+x 1
 y 22
 end
 arch woodfloor
+x 1
 y 23
 end
 arch wwall_2_1_1
+x 1
 y 23
 end
 arch woodfloor
+x 1
 y 24
 end
 arch wwall_2_1_1
+x 1
 y 24
 end
 arch woodfloor
+x 1
 y 25
+end
+arch wwall_2_1_1
+x 1
+y 25
+end
+arch woodfloor
+x 1
+y 26
 end
 arch wwall_2_2_1
-y 25
+x 1
+y 26
+end
+arch dungeon_magic
+x 1
+y 27
+end
+arch cobblestones2
+x 1
+y 27
+end
+arch dungeon_magic
+x 2
+end
+arch cobblestones2
+x 2
+end
+arch westcwall_2_1_2
+x 2
 end
 arch woodfloor
-x 1
+x 2
+y 1
 end
 arch wwall_2_1_2
-x 1
+x 2
+y 1
 end
 arch woodfloor
-x 1
-y 1
+x 2
+y 2
 end
 arch random_treasure
-x 1
-y 1
-end
-arch woodfloor
-x 1
-y 2
-end
-arch woodfloor
-x 1
-y 3
-end
-arch woodfloor
-x 1
-y 4
-end
-arch woodfloor
-x 1
-y 5
-end
-arch woodfloor
-x 1
-y 6
-end
-arch woodfloor
-x 1
-y 7
-end
-arch woodfloor
-x 1
-y 8
-end
-arch woodfloor
-x 1
-y 9
-end
-arch woodfloor
-x 1
-y 10
-end
-arch madman
-x 1
-y 10
-end
-arch woodfloor
-x 1
-y 11
-end
-arch woodfloor
-x 1
-y 12
-end
-arch woodfloor
-x 1
-y 13
-end
-arch woodfloor
-x 1
-y 14
-end
-arch woodfloor
-x 1
-y 15
-end
-arch woodfloor
-x 1
-y 16
-end
-arch woodfloor
-x 1
-y 17
-end
-arch woodfloor
-x 1
-y 18
-end
-arch woodfloor
-x 1
-y 19
-end
-arch woodfloor
-x 1
-y 20
-end
-arch kobold
-x 1
-y 20
-end
-arch woodfloor
-x 1
-y 21
-end
-arch kobold
-x 1
-y 21
-end
-arch woodfloor
-x 1
-y 22
-end
-arch kobold
-x 1
-y 22
-end
-arch woodfloor
-x 1
-y 23
-end
-arch generate_kobold
-x 1
-y 23
-end
-arch woodfloor
-x 1
-y 24
-end
-arch chest
-x 1
-y 24
-end
-arch woodfloor
-x 1
-y 25
-end
-arch wwall_2_1_2
-x 1
-y 25
-end
-arch woodfloor
-x 2
-end
-arch wwall_2_1_2
-x 2
-end
-arch woodfloor
-x 2
-y 1
-end
-arch woodfloor
-x 2
-y 2
-end
-arch madman
 x 2
 y 2
 end
@@ -326,10 +435,6 @@ x 2
 y 3
 end
 arch woodfloor
-x 2
-y 4
-end
-arch madman
 x 2
 y 4
 end
@@ -342,10 +447,6 @@ x 2
 y 6
 end
 arch woodfloor
-x 2
-y 7
-end
-arch madman
 x 2
 y 7
 end
@@ -365,6 +466,10 @@ arch woodfloor
 x 2
 y 11
 end
+arch madman
+x 2
+y 11
+end
 arch woodfloor
 x 2
 y 12
@@ -373,15 +478,7 @@ arch woodfloor
 x 2
 y 13
 end
-arch ogre
-x 2
-y 13
-end
 arch woodfloor
-x 2
-y 14
-end
-arch kobold
 x 2
 y 14
 end
@@ -401,10 +498,6 @@ arch woodfloor
 x 2
 y 18
 end
-arch ogre
-x 2
-y 18
-end
 arch woodfloor
 x 2
 y 19
@@ -413,10 +506,6 @@ arch woodfloor
 x 2
 y 20
 end
-arch kobold
-x 2
-y 20
-end
 arch woodfloor
 x 2
 y 21
@@ -436,34 +525,57 @@ end
 arch woodfloor
 x 2
 y 23
+end
+arch kobold
+x 2
+y 23
+end
+arch woodfloor
+x 2
+y 24
 end
 arch generate_kobold
 x 2
-y 23
+y 24
 end
 arch woodfloor
 x 2
-y 24
+y 25
 end
 arch chest
 x 2
-y 24
-end
-arch woodfloor
-x 2
-y 25
-end
-arch wwall_2_1_2
-x 2
 y 25
 end
 arch woodfloor
-x 3
+x 2
+y 26
 end
 arch wwall_2_1_2
+x 2
+y 26
+end
+arch dungeon_magic
+x 2
+y 27
+end
+arch cobblestones2
+x 2
+y 27
+end
+arch dungeon_magic
+x 3
+end
+arch cobblestones2
+x 3
+end
+arch westcwall_2_1_2
 x 3
 end
 arch woodfloor
+x 3
+y 1
+end
+arch wwall_2_1_2
 x 3
 y 1
 end
@@ -475,11 +587,19 @@ arch woodfloor
 x 3
 y 3
 end
+arch madman
+x 3
+y 3
+end
 arch woodfloor
 x 3
 y 4
 end
 arch woodfloor
+x 3
+y 5
+end
+arch madman
 x 3
 y 5
 end
@@ -495,303 +615,325 @@ arch woodfloor
 x 3
 y 8
 end
+arch madman
+x 3
+y 8
+end
 arch woodfloor
 x 3
 y 9
+end
+arch woodfloor
+x 3
+y 10
+end
+arch woodfloor
+x 3
+y 11
+end
+arch woodfloor
+x 3
+y 12
+end
+arch woodfloor
+x 3
+y 13
+end
+arch woodfloor
+x 3
+y 14
+end
+arch ogre
+x 3
+y 14
+end
+arch woodfloor
+x 3
+y 15
+end
+arch kobold
+x 3
+y 15
+end
+arch woodfloor
+x 3
+y 16
+end
+arch woodfloor
+x 3
+y 17
+end
+arch woodfloor
+x 3
+y 18
+end
+arch woodfloor
+x 3
+y 19
+end
+arch ogre
+x 3
+y 19
+end
+arch woodfloor
+x 3
+y 20
+end
+arch woodfloor
+x 3
+y 21
+end
+arch kobold
+x 3
+y 21
+end
+arch woodfloor
+x 3
+y 22
+end
+arch kobold
+x 3
+y 22
+end
+arch woodfloor
+x 3
+y 23
+end
+arch kobold
+x 3
+y 23
+end
+arch woodfloor
+x 3
+y 24
+end
+arch generate_kobold
+x 3
+y 24
+end
+arch woodfloor
+x 3
+y 25
+end
+arch chest
+x 3
+y 25
+end
+arch woodfloor
+x 3
+y 26
+end
+arch wwall_2_1_2
+x 3
+y 26
+end
+arch dungeon_magic
+x 3
+y 27
+end
+arch cobblestones2
+x 3
+y 27
+end
+arch dungeon_magic
+x 4
+end
+arch cobblestones2
+x 4
+end
+arch westcwall_2_1_2
+x 4
+end
+arch woodfloor
+x 4
+y 1
+end
+arch wwall_2_1_2
+x 4
+y 1
+end
+arch woodfloor
+x 4
+y 2
+end
+arch woodfloor
+x 4
+y 3
+end
+arch woodfloor
+x 4
+y 4
+end
+arch woodfloor
+x 4
+y 5
+end
+arch woodfloor
+x 4
+y 6
+end
+arch woodfloor
+x 4
+y 7
+end
+arch woodfloor
+x 4
+y 8
+end
+arch woodfloor
+x 4
+y 9
+end
+arch woodfloor
+x 4
+y 10
 end
 arch wwall_1_1
-x 3
-y 9
+x 4
+y 10
 end
 arch woodfloor
-x 3
-y 10
+x 4
+y 11
 end
 arch wwall_2_2_1
-x 3
-y 10
+x 4
+y 11
 end
 arch woodfloor
-x 3
-y 11
+x 4
+y 12
 end
 arch chest
-x 3
-y 11
-end
-arch woodfloor
-x 3
+x 4
 y 12
 end
 arch woodfloor
-x 3
+x 4
 y 13
 end
 arch woodfloor
-x 3
-y 14
-end
-arch kobold
-x 3
+x 4
 y 14
 end
 arch woodfloor
-x 3
+x 4
+y 15
+end
+arch kobold
+x 4
 y 15
 end
 arch woodfloor
-x 3
+x 4
 y 16
 end
 arch woodfloor
-x 3
-y 17
-end
-arch wwall_1_4
-x 3
+x 4
 y 17
 end
 arch woodfloor
-x 3
+x 4
+y 18
+end
+arch wwall_1_4
+x 4
 y 18
 end
 arch woodfloor
-x 3
+x 4
 y 19
 end
 arch woodfloor
-x 3
-y 20
-end
-arch kobold
-x 3
+x 4
 y 20
 end
 arch woodfloor
-x 3
+x 4
 y 21
 end
 arch kobold
-x 3
+x 4
 y 21
 end
 arch woodfloor
-x 3
+x 4
 y 22
+end
+arch kobold
+x 4
+y 22
+end
+arch woodfloor
+x 4
+y 23
 end
 arch wwall_1_1
-x 3
-y 22
-end
-arch woodfloor
-x 3
-y 23
-end
-arch wwall_2_1_1
-x 3
+x 4
 y 23
 end
 arch woodfloor
-x 3
+x 4
 y 24
 end
 arch wwall_2_1_1
-x 3
+x 4
 y 24
 end
 arch woodfloor
-x 3
+x 4
 y 25
+end
+arch wwall_2_1_1
+x 4
+y 25
+end
+arch woodfloor
+x 4
+y 26
 end
 arch wwall_3_1
-x 3
-y 25
+x 4
+y 26
+end
+arch dungeon_magic
+x 4
+y 27
+end
+arch cobblestones2
+x 4
+y 27
+end
+arch dungeon_magic
+x 5
+end
+arch cobblestones2
+x 5
+end
+arch westcwall_2_1_2
+x 5
 end
 arch woodfloor
-x 4
+x 5
+y 1
 end
 arch wwall_2_1_2
-x 4
-end
-arch woodfloor
-x 4
+x 5
 y 1
 end
 arch woodfloor
-x 4
+x 5
 y 2
 end
 arch woodfloor
-x 4
+x 5
 y 3
+end
+arch woodfloor
+x 5
+y 4
 end
 arch wwall_1_4
-x 4
-y 3
-end
-arch woodfloor
-x 4
-y 4
-end
-arch woodfloor
-x 4
-y 5
-end
-arch woodfloor
-x 4
-y 6
-end
-arch woodfloor
-x 4
-y 7
-end
-arch woodfloor
-x 4
-y 8
-end
-arch woodfloor
-x 4
-y 9
-end
-arch woodfloor
-x 4
-y 10
-end
-arch wwall_2_2_3
-x 4
-y 10
-end
-arch woodfloor
-x 4
-y 11
-end
-arch wwall_2_2_1
-x 4
-y 11
-end
-arch woodfloor
-x 4
-y 12
-end
-arch woodfloor
-x 4
-y 13
-end
-arch woodfloor
-x 4
-y 14
-end
-arch kobold
-x 4
-y 14
-end
-arch woodfloor
-x 4
-y 15
-end
-arch woodfloor
-x 4
-y 16
-end
-arch wwall_2_2_2
-x 4
-y 16
-end
-arch woodfloor
-x 4
-y 17
-end
-arch wwall_2_2_4
-x 4
-y 17
-end
-arch woodfloor
-x 4
-y 18
-end
-arch woodfloor
-x 4
-y 19
-end
-arch woodfloor
-x 4
-y 20
-end
-arch kobold
-x 4
-y 20
-end
-arch woodfloor
-x 4
-y 21
-end
-arch kobold
-x 4
-y 21
-end
-arch woodfloor
-x 4
-y 22
-end
-arch kobold
-x 4
-y 22
-end
-arch woodfloor
-x 4
-y 23
-end
-arch kobold
-x 4
-y 23
-end
-arch woodfloor
-x 4
-y 24
-end
-arch kobold
-x 4
-y 24
-end
-arch woodfloor
-x 4
-y 25
-end
-arch wwall_2_1_2
-x 4
-y 25
-end
-arch woodfloor
-x 5
-end
-arch wwall_2_1_2
-x 5
-end
-arch woodfloor
-x 5
-y 1
-end
-arch madman
-x 5
-y 1
-end
-arch woodfloor
-x 5
-y 2
-end
-arch woodfloor
-x 5
-y 3
-end
-arch wwall_2_2_3
-x 5
-y 3
-end
-arch woodfloor
-x 5
-y 4
-end
-arch wwall_2_2_1
 x 5
 y 4
 end
@@ -807,15 +949,7 @@ arch woodfloor
 x 5
 y 7
 end
-arch kobold
-x 5
-y 7
-end
 arch woodfloor
-x 5
-y 8
-end
-arch kobold
 x 5
 y 8
 end
@@ -851,23 +985,15 @@ arch woodfloor
 x 5
 y 14
 end
+arch woodfloor
+x 5
+y 15
+end
 arch kobold
 x 5
-y 14
-end
-arch woodfloor
-x 5
-y 15
-end
-arch wwall_2_2_2
-x 5
 y 15
 end
 arch woodfloor
-x 5
-y 16
-end
-arch wwall_2_2_4
 x 5
 y 16
 end
@@ -875,19 +1001,19 @@ arch woodfloor
 x 5
 y 17
 end
+arch wwall_2_2_2
+x 5
+y 17
+end
 arch woodfloor
 x 5
 y 18
 end
-arch kobold
+arch wwall_2_2_4
 x 5
 y 18
 end
 arch woodfloor
-x 5
-y 19
-end
-arch kobold
 x 5
 y 19
 end
@@ -899,7 +1025,15 @@ arch woodfloor
 x 5
 y 21
 end
+arch kobold
+x 5
+y 21
+end
 arch woodfloor
+x 5
+y 22
+end
+arch kobold
 x 5
 y 22
 end
@@ -907,7 +1041,15 @@ arch woodfloor
 x 5
 y 23
 end
+arch kobold
+x 5
+y 23
+end
 arch woodfloor
+x 5
+y 24
+end
+arch kobold
 x 5
 y 24
 end
@@ -915,21 +1057,48 @@ arch woodfloor
 x 5
 y 25
 end
-arch wwall_2_1_2
+arch kobold
 x 5
 y 25
 end
 arch woodfloor
-x 6
+x 5
+y 26
 end
 arch wwall_2_1_2
+x 5
+y 26
+end
+arch dungeon_magic
+x 5
+y 27
+end
+arch cobblestones2
+x 5
+y 27
+end
+arch dungeon_magic
+x 6
+end
+arch cobblestones2
+x 6
+end
+arch westcwall_2_1_2
 x 6
 end
 arch woodfloor
 x 6
 y 1
 end
+arch wwall_2_1_2
+x 6
+y 1
+end
 arch woodfloor
+x 6
+y 2
+end
+arch madman
 x 6
 y 2
 end
@@ -954,10 +1123,6 @@ x 6
 y 5
 end
 arch woodfloor
-x 6
-y 6
-end
-arch madman
 x 6
 y 6
 end
@@ -988,1046 +1153,1341 @@ end
 arch woodfloor
 x 6
 y 11
+end
+arch woodfloor
+x 6
+y 12
+end
+arch wwall_2_2_3
+x 6
+y 12
+end
+arch woodfloor
+x 6
+y 13
+end
+arch wwall_2_2_1
+x 6
+y 13
+end
+arch woodfloor
+x 6
+y 14
+end
+arch woodfloor
+x 6
+y 15
+end
+arch kobold
+x 6
+y 15
+end
+arch woodfloor
+x 6
+y 16
+end
+arch wwall_2_2_2
+x 6
+y 16
+end
+arch woodfloor
+x 6
+y 17
+end
+arch wwall_2_2_4
+x 6
+y 17
+end
+arch woodfloor
+x 6
+y 18
+end
+arch woodfloor
+x 6
+y 19
+end
+arch kobold
+x 6
+y 19
+end
+arch woodfloor
+x 6
+y 20
+end
+arch kobold
+x 6
+y 20
+end
+arch woodfloor
+x 6
+y 21
+end
+arch woodfloor
+x 6
+y 22
+end
+arch woodfloor
+x 6
+y 23
+end
+arch woodfloor
+x 6
+y 24
+end
+arch woodfloor
+x 6
+y 25
+end
+arch woodfloor
+x 6
+y 26
+end
+arch wwall_2_1_2
+x 6
+y 26
+end
+arch dungeon_magic
+x 6
+y 27
+end
+arch cobblestones2
+x 6
+y 27
+end
+arch dungeon_magic
+x 7
+end
+arch cobblestones2
+x 7
+end
+arch westcwall_2_1_2
+x 7
+end
+arch woodfloor
+x 7
+y 1
+end
+arch wwall_2_1_2
+x 7
+y 1
+end
+arch woodfloor
+x 7
+y 2
+end
+arch woodfloor
+x 7
+y 3
+end
+arch woodfloor
+x 7
+y 4
+end
+arch woodfloor
+x 7
+y 5
+end
+arch wwall_2_2_3
+x 7
+y 5
+end
+arch woodfloor
+x 7
+y 6
+end
+arch wwall_2_2_1
+x 7
+y 6
+end
+arch woodfloor
+x 7
+y 7
+end
+arch madman
+x 7
+y 7
+end
+arch woodfloor
+x 7
+y 8
+end
+arch woodfloor
+x 7
+y 9
+end
+arch kobold
+x 7
+y 9
+end
+arch woodfloor
+x 7
+y 10
+end
+arch kobold
+x 7
+y 10
+end
+arch woodfloor
+x 7
+y 11
+end
+arch woodfloor
+x 7
+y 12
 end
 arch chest
-x 6
-y 11
+x 7
+y 12
 end
 arch woodfloor
-x 6
-y 12
+x 7
+y 13
 end
 arch wwall_2_1_2
-x 6
-y 12
-end
-arch woodfloor
-x 6
+x 7
 y 13
 end
 arch woodfloor
-x 6
+x 7
 y 14
+end
+arch woodfloor
+x 7
+y 15
 end
 arch kobold
-x 6
-y 14
+x 7
+y 15
 end
 arch woodfloor
-x 6
-y 15
+x 7
+y 16
 end
 arch wwall_1_3
-x 6
-y 15
-end
-arch woodfloor
-x 6
+x 7
 y 16
 end
 arch woodfloor
-x 6
-y 17
-end
-arch kobold
-x 6
+x 7
 y 17
 end
 arch woodfloor
-x 6
+x 7
 y 18
 end
 arch kobold
-x 6
+x 7
 y 18
 end
 arch woodfloor
-x 6
+x 7
+y 19
+end
+arch kobold
+x 7
 y 19
 end
 arch woodfloor
-x 6
-y 20
-end
-arch wwall_2_2_2
-x 6
+x 7
 y 20
 end
 arch woodfloor
-x 6
+x 7
 y 21
+end
+arch wwall_2_2_2
+x 7
+y 21
+end
+arch woodfloor
+x 7
+y 22
 end
 arch wwall_1_2
-x 6
-y 21
-end
-arch woodfloor
-x 6
+x 7
 y 22
 end
 arch woodfloor
-x 6
+x 7
 y 23
 end
 arch woodfloor
-x 6
+x 7
 y 24
 end
 arch woodfloor
-x 6
-y 25
-end
-arch wwall_2_1_2
-x 6
+x 7
 y 25
 end
 arch woodfloor
 x 7
+y 26
 end
 arch wwall_2_1_2
 x 7
+y 26
+end
+arch dungeon_magic
+x 7
+y 27
+end
+arch cobblestones2
+x 7
+y 27
+end
+arch dungeon_magic
+x 8
+end
+arch cobblestones2
+x 8
+end
+arch westcwall_2_1_2
+x 8
 end
 arch woodfloor
-x 7
+x 8
+y 1
+end
+arch wwall_2_1_2
+x 8
 y 1
 end
 arch woodfloor
-x 7
-y 2
-end
-arch orc
-x 7
+x 8
 y 2
 end
 arch woodfloor
-x 7
+x 8
+y 3
+end
+arch orc
+x 8
 y 3
 end
 arch woodfloor
-x 7
+x 8
 y 4
+end
+arch woodfloor
+x 8
+y 5
 end
 arch chest
-x 7
-y 4
+x 8
+y 5
 end
 arch woodfloor
-x 7
-y 5
+x 8
+y 6
 end
 arch wwall_2_2_3
-x 7
-y 5
+x 8
+y 6
 end
 arch woodfloor
-x 7
-y 6
+x 8
+y 7
 end
 arch wwall_2_2_1
-x 7
-y 6
-end
-arch woodfloor
-x 7
+x 8
 y 7
 end
 arch woodfloor
-x 7
+x 8
 y 8
 end
 arch woodfloor
-x 7
-y 9
-end
-arch kobold
-x 7
+x 8
 y 9
 end
 arch woodfloor
-x 7
+x 8
 y 10
 end
 arch kobold
-x 7
+x 8
 y 10
 end
 arch woodfloor
-x 7
+x 8
+y 11
+end
+arch kobold
+x 8
 y 11
 end
 arch woodfloor
-x 7
+x 8
 y 12
+end
+arch woodfloor
+x 8
+y 13
 end
 arch wwall_1_3
-x 7
-y 12
+x 8
+y 13
 end
 arch woodfloor
-x 7
-y 13
+x 8
+y 14
 end
 arch random_food
-x 7
-y 13
+x 8
+y 14
 end
 arch woodfloor
-x 7
-y 14
+x 8
+y 15
 end
 arch kobold
-x 7
-y 14
-end
-arch woodfloor
-x 7
+x 8
 y 15
 end
 arch woodfloor
-x 7
-y 16
-end
-arch kobold
-x 7
+x 8
 y 16
 end
 arch woodfloor
-x 7
+x 8
 y 17
 end
 arch kobold
-x 7
+x 8
 y 17
 end
 arch woodfloor
-x 7
+x 8
+y 18
+end
+arch kobold
+x 8
 y 18
 end
 arch woodfloor
-x 7
+x 8
 y 19
+end
+arch woodfloor
+x 8
+y 20
 end
 arch wwall_2_2_2
-x 7
-y 19
+x 8
+y 20
 end
 arch woodfloor
-x 7
-y 20
+x 8
+y 21
 end
 arch wwall_2_2_4
-x 7
-y 20
-end
-arch woodfloor
-x 7
+x 8
 y 21
 end
 arch woodfloor
-x 7
+x 8
 y 22
 end
 arch woodfloor
-x 7
+x 8
 y 23
+end
+arch woodfloor
+x 8
+y 24
 end
 arch chest
-x 7
-y 23
-end
-arch woodfloor
-x 7
+x 8
 y 24
 end
 arch woodfloor
-x 7
-y 25
-end
-arch wwall_2_1_2
-x 7
+x 8
 y 25
 end
 arch woodfloor
 x 8
+y 26
 end
 arch wwall_2_1_2
 x 8
+y 26
+end
+arch dungeon_magic
+x 8
+y 27
+end
+arch cobblestones2
+x 8
+y 27
+end
+arch dungeon_magic
+x 9
+end
+arch cobblestones2
+x 9
+end
+arch westcwall_2_1_2
+x 9
 end
 arch woodfloor
-x 8
+x 9
+y 1
+end
+arch wwall_2_1_2
+x 9
 y 1
 end
 arch woodfloor
-x 8
-y 2
-end
-arch orc
-x 8
+x 9
 y 2
 end
 arch woodfloor
-x 8
+x 9
 y 3
 end
 arch orc
-x 8
+x 9
 y 3
 end
 arch woodfloor
-x 8
+x 9
+y 4
+end
+arch orc
+x 9
 y 4
 end
 arch woodfloor
-x 8
+x 9
 y 5
+end
+arch woodfloor
+x 9
+y 6
 end
 arch generate_orc
-x 8
-y 5
+x 9
+y 6
 end
 arch woodfloor
-x 8
-y 6
+x 9
+y 7
 end
 arch wwall_2_2_3
-x 8
-y 6
+x 9
+y 7
 end
 arch woodfloor
-x 8
-y 7
+x 9
+y 8
 end
 arch wwall_2_2_1
-x 8
-y 7
-end
-arch woodfloor
-x 8
+x 9
 y 8
 end
 arch woodfloor
-x 8
+x 9
 y 9
 end
 arch woodfloor
-x 8
-y 10
-end
-arch kobold
-x 8
+x 9
 y 10
 end
 arch woodfloor
-x 8
+x 9
+y 11
+end
+arch kobold
+x 9
 y 11
 end
 arch woodfloor
-x 8
+x 9
 y 12
 end
 arch woodfloor
-x 8
+x 9
 y 13
 end
 arch woodfloor
-x 8
-y 14
-end
-arch kobold
-x 8
+x 9
 y 14
 end
 arch woodfloor
-x 8
+x 9
 y 15
 end
 arch kobold
-x 8
+x 9
 y 15
 end
 arch woodfloor
-x 8
+x 9
 y 16
 end
 arch kobold
-x 8
+x 9
 y 16
 end
 arch woodfloor
-x 8
+x 9
+y 17
+end
+arch kobold
+x 9
 y 17
 end
 arch woodfloor
-x 8
+x 9
 y 18
+end
+arch woodfloor
+x 9
+y 19
 end
 arch wwall_2_2_2
-x 8
-y 18
+x 9
+y 19
 end
 arch woodfloor
-x 8
-y 19
+x 9
+y 20
 end
 arch wwall_2_2_4
-x 8
-y 19
-end
-arch woodfloor
-x 8
+x 9
 y 20
 end
 arch woodfloor
-x 8
-y 21
-end
-arch kobold
-x 8
+x 9
 y 21
 end
 arch woodfloor
-x 8
+x 9
+y 22
+end
+arch kobold
+x 9
 y 22
 end
 arch woodfloor
-x 8
+x 9
 y 23
 end
 arch woodfloor
-x 8
+x 9
 y 24
 end
 arch woodfloor
-x 8
-y 25
-end
-arch wwall_2_1_2
-x 8
+x 9
 y 25
 end
 arch woodfloor
 x 9
+y 26
 end
 arch wwall_2_1_2
 x 9
+y 26
+end
+arch dungeon_magic
+x 9
+y 27
+end
+arch cobblestones2
+x 9
+y 27
+end
+arch dungeon_magic
+x 10
+end
+arch cobblestones2
+x 10
+end
+arch westcwall_2_1_2
+x 10
 end
 arch woodfloor
-x 9
+x 10
+y 1
+end
+arch wwall_2_1_2
+x 10
 y 1
 end
 arch woodfloor
-x 9
+x 10
 y 2
 end
 arch woodfloor
-x 9
-y 3
-end
-arch orc
-x 9
+x 10
 y 3
 end
 arch woodfloor
-x 9
+x 10
 y 4
 end
 arch orc
-x 9
+x 10
 y 4
 end
 arch woodfloor
-x 9
+x 10
+y 5
+end
+arch orc
+x 10
 y 5
 end
 arch woodfloor
-x 9
+x 10
 y 6
+end
+arch woodfloor
+x 10
+y 7
 end
 arch generate_orc
-x 9
-y 6
+x 10
+y 7
 end
 arch woodfloor
-x 9
-y 7
+x 10
+y 8
 end
 arch wwall_2_2_3
-x 9
-y 7
+x 10
+y 8
 end
 arch woodfloor
-x 9
-y 8
+x 10
+y 9
 end
 arch wwall_2_2_1
-x 9
-y 8
-end
-arch woodfloor
-x 9
+x 10
 y 9
 end
 arch woodfloor
-x 9
-y 10
-end
-arch kobold
-x 9
+x 10
 y 10
 end
 arch woodfloor
-x 9
+x 10
 y 11
 end
 arch kobold
-x 9
+x 10
 y 11
 end
 arch woodfloor
-x 9
+x 10
+y 12
+end
+arch kobold
+x 10
 y 12
 end
 arch woodfloor
-x 9
-y 13
-end
-arch kobold
-x 9
+x 10
 y 13
 end
 arch woodfloor
-x 9
+x 10
 y 14
 end
 arch kobold
-x 9
+x 10
 y 14
 end
 arch woodfloor
-x 9
+x 10
+y 15
+end
+arch kobold
+x 10
 y 15
 end
 arch woodfloor
-x 9
-y 16
-end
-arch wwall_2_2_2
-x 9
+x 10
 y 16
 end
 arch woodfloor
-x 9
+x 10
 y 17
+end
+arch wwall_2_2_2
+x 10
+y 17
+end
+arch woodfloor
+x 10
+y 18
 end
 arch wwall_2_1_1
-x 9
-y 17
+x 10
+y 18
 end
 arch woodfloor
-x 9
-y 18
+x 10
+y 19
 end
 arch wwall_2_2_4
-x 9
-y 18
-end
-arch woodfloor
-x 9
+x 10
 y 19
 end
 arch woodfloor
-x 9
-y 20
-end
-arch kobold
-x 9
+x 10
 y 20
 end
 arch woodfloor
-x 9
+x 10
 y 21
 end
 arch kobold
-x 9
+x 10
 y 21
 end
 arch woodfloor
-x 9
+x 10
+y 22
+end
+arch kobold
+x 10
 y 22
 end
 arch woodfloor
-x 9
+x 10
 y 23
 end
 arch woodfloor
-x 9
+x 10
 y 24
 end
 arch woodfloor
-x 9
-y 25
-end
-arch wwall_2_1_2
-x 9
+x 10
 y 25
 end
 arch woodfloor
 x 10
+y 26
 end
 arch wwall_2_1_2
 x 10
+y 26
+end
+arch dungeon_magic
+x 10
+y 27
+end
+arch cobblestones2
+x 10
+y 27
+end
+arch dungeon_magic
+x 11
+end
+arch cobblestones2
+x 11
+end
+arch westcwall_2_1_2
+x 11
 end
 arch woodfloor
-x 10
+x 11
 y 1
+end
+arch wwall_2_1_2
+x 11
+y 1
+end
+arch woodfloor
+x 11
+y 2
 end
 arch ogre
-x 10
-y 1
-end
-arch woodfloor
-x 10
+x 11
 y 2
 end
 arch woodfloor
-x 10
+x 11
 y 3
 end
 arch woodfloor
-x 10
-y 4
-end
-arch orc
-x 10
+x 11
 y 4
 end
 arch woodfloor
-x 10
+x 11
 y 5
 end
 arch orc
-x 10
+x 11
 y 5
 end
 arch woodfloor
-x 10
+x 11
+y 6
+end
+arch orc
+x 11
 y 6
 end
 arch woodfloor
-x 10
+x 11
 y 7
 end
 arch woodfloor
-x 10
+x 11
 y 8
+end
+arch woodfloor
+x 11
+y 9
 end
 arch wwall_2_2_3
-x 10
-y 8
+x 11
+y 9
 end
 arch woodfloor
-x 10
-y 9
+x 11
+y 10
 end
 arch wwall_2_2_1
-x 10
-y 9
-end
-arch woodfloor
-x 10
+x 11
 y 10
 end
 arch woodfloor
-x 10
-y 11
-end
-arch kobold
-x 10
+x 11
 y 11
 end
 arch woodfloor
-x 10
+x 11
 y 12
 end
 arch kobold
-x 10
+x 11
 y 12
 end
 arch woodfloor
-x 10
+x 11
 y 13
 end
 arch kobold
-x 10
+x 11
 y 13
 end
 arch woodfloor
-x 10
+x 11
+y 14
+end
+arch kobold
+x 11
 y 14
 end
 arch woodfloor
-x 10
+x 11
 y 15
+end
+arch woodfloor
+x 11
+y 16
 end
 arch wwall_2_2_2
-x 10
-y 15
+x 11
+y 16
 end
 arch woodfloor
-x 10
-y 16
+x 11
+y 17
 end
 arch wwall_2_2_4
-x 10
-y 16
-end
-arch woodfloor
-x 10
+x 11
 y 17
 end
 arch woodfloor
-x 10
+x 11
 y 18
 end
 arch woodfloor
-x 10
-y 19
-end
-arch kobold
-x 10
+x 11
 y 19
 end
 arch woodfloor
-x 10
+x 11
 y 20
 end
 arch kobold
-x 10
+x 11
 y 20
 end
 arch woodfloor
-x 10
+x 11
+y 21
+end
+arch kobold
+x 11
 y 21
 end
 arch woodfloor
-x 10
+x 11
 y 22
 end
 arch woodfloor
-x 10
+x 11
 y 23
 end
 arch woodfloor
-x 10
+x 11
 y 24
 end
 arch woodfloor
-x 10
-y 25
-end
-arch wwall_2_1_2
-x 10
+x 11
 y 25
 end
 arch woodfloor
 x 11
+y 26
 end
 arch wwall_2_1_2
 x 11
+y 26
+end
+arch dungeon_magic
+x 11
+y 27
+end
+arch cobblestones2
+x 11
+y 27
+end
+arch dungeon_magic
+x 12
+end
+arch cobblestones2
+x 12
+end
+arch westcwall_2_1_2
+x 12
 end
 arch woodfloor
-x 11
+x 12
+y 1
+end
+arch wwall_2_1_2
+x 12
 y 1
 end
 arch woodfloor
-x 11
+x 12
 y 2
 end
 arch woodfloor
-x 11
+x 12
 y 3
 end
 arch woodfloor
-x 11
+x 12
 y 4
 end
 arch woodfloor
-x 11
-y 5
-end
-arch orc
-x 11
+x 12
 y 5
 end
 arch woodfloor
-x 11
+x 12
+y 6
+end
+arch orc
+x 12
 y 6
 end
 arch woodfloor
-x 11
+x 12
 y 7
 end
 arch woodfloor
-x 11
+x 12
 y 8
+end
+arch woodfloor
+x 12
+y 9
 end
 arch madman
-x 11
-y 8
+x 12
+y 9
 end
 arch woodfloor
-x 11
-y 9
+x 12
+y 10
 end
 arch wwall_2_1_2
-x 11
-y 9
-end
-arch woodfloor
-x 11
+x 12
 y 10
 end
 arch woodfloor
-x 11
+x 12
 y 11
 end
 arch woodfloor
-x 11
-y 12
-end
-arch kobold
-x 11
+x 12
 y 12
 end
 arch woodfloor
-x 11
+x 12
 y 13
 end
 arch kobold
-x 11
+x 12
 y 13
 end
 arch woodfloor
-x 11
+x 12
+y 14
+end
+arch kobold
+x 12
 y 14
 end
 arch woodfloor
-x 11
+x 12
 y 15
+end
+arch woodfloor
+x 12
+y 16
 end
 arch wwall_2_1_2
-x 11
-y 15
+x 12
+y 16
 end
 arch woodfloor
-x 11
-y 16
+x 12
+y 17
 end
 arch random_food
-x 11
-y 16
-end
-arch woodfloor
-x 11
+x 12
 y 17
 end
 arch woodfloor
-x 11
-y 18
-end
-arch kobold
-x 11
+x 12
 y 18
 end
 arch woodfloor
-x 11
+x 12
 y 19
 end
 arch kobold
-x 11
+x 12
 y 19
 end
 arch woodfloor
-x 11
+x 12
+y 20
+end
+arch kobold
+x 12
 y 20
 end
 arch woodfloor
-x 11
+x 12
 y 21
 end
 arch woodfloor
-x 11
+x 12
 y 22
+end
+arch woodfloor
+x 12
+y 23
 end
 arch wwall_2_2_2
-x 11
-y 22
-end
-arch woodfloor
-x 11
-y 23
-end
-arch wwall_2_1_1
-x 11
+x 12
 y 23
 end
 arch woodfloor
-x 11
+x 12
 y 24
 end
 arch wwall_2_1_1
-x 11
+x 12
 y 24
 end
 arch woodfloor
-x 11
+x 12
 y 25
 end
-arch wwall_3_1
-x 11
+arch wwall_2_1_1
+x 12
 y 25
 end
 arch woodfloor
 x 12
+y 26
+end
+arch wwall_3_1
+x 12
+y 26
+end
+arch dungeon_magic
+x 12
+y 27
+end
+arch cobblestones2
+x 12
+y 27
+end
+arch dungeon_magic
+x 13
+end
+arch cobblestones2
+x 13
+end
+arch westcwall_2_1_2
+x 13
+end
+arch woodfloor
+x 13
+y 1
 end
 arch wwall_3_3
-x 12
-end
-arch woodfloor
-x 12
-y 1
-end
-arch wwall_2_1_1
-x 12
+x 13
 y 1
 end
 arch woodfloor
-x 12
+x 13
 y 2
 end
 arch wwall_2_1_1
-x 12
+x 13
 y 2
 end
 arch woodfloor
-x 12
+x 13
 y 3
+end
+arch wwall_2_1_1
+x 13
+y 3
+end
+arch woodfloor
+x 13
+y 4
 end
 arch wwall_1_2
-x 12
-y 3
-end
-arch woodfloor
-x 12
+x 13
 y 4
 end
 arch woodfloor
-x 12
-y 5
-end
-arch orc
-x 12
+x 13
 y 5
 end
 arch woodfloor
-x 12
+x 13
 y 6
 end
 arch orc
-x 12
+x 13
 y 6
 end
 arch woodfloor
-x 12
+x 13
+y 7
+end
+arch orc
+x 13
 y 7
 end
 arch woodfloor
-x 12
+x 13
 y 8
 end
 arch woodfloor
-x 12
+x 13
 y 9
+end
+arch woodfloor
+x 13
+y 10
 end
 arch wwall_2_2_3
-x 12
-y 9
+x 13
+y 10
 end
 arch woodfloor
-x 12
-y 10
+x 13
+y 11
 end
 arch wwall_1_2
-x 12
-y 10
-end
-arch woodfloor
-x 12
+x 13
 y 11
 end
 arch woodfloor
-x 12
+x 13
 y 12
 end
 arch woodfloor
-x 12
-y 13
-end
-arch kobold
-x 12
+x 13
 y 13
 end
 arch woodfloor
-x 12
+x 13
+y 14
+end
+arch kobold
+x 13
 y 14
 end
 arch woodfloor
-x 12
-y 15
-end
-arch wwall_2_1_2
-x 12
+x 13
 y 15
 end
 arch woodfloor
-x 12
+x 13
+y 16
+end
+arch wwall_2_1_2
+x 13
 y 16
 end
 arch woodfloor
-x 12
+x 13
 y 17
 end
 arch woodfloor
-x 12
-y 18
-end
-arch kobold
-x 12
+x 13
 y 18
 end
 arch woodfloor
-x 12
+x 13
+y 19
+end
+arch kobold
+x 13
 y 19
 end
 arch woodfloor
-x 12
+x 13
 y 20
 end
 arch woodfloor
-x 12
+x 13
 y 21
 end
 arch woodfloor
-x 12
-y 22
-end
-arch wwall_1_3
-x 12
+x 13
 y 22
 end
 arch woodfloor
-x 12
+x 13
 y 23
+end
+arch wwall_1_3
+x 13
+y 23
+end
+arch woodfloor
+x 13
+y 24
 end
 arch sign
 msg
@@ -2035,208 +2495,72 @@ For shipment to Scorn Zoo
 DO NOT DISTURB!
 NO SCUMMING ALLOWED
 endmsg
-x 12
-y 23
+x 13
+y 24
 end
 arch woodfloor
-x 12
-y 24
+x 13
+y 25
 end
 arch button_handle
-x 12
-y 24
-connected 1
-end
-arch woodfloor
-x 12
+x 13
 y 25
-end
-arch wwall_1_3
-x 12
-y 25
-end
-arch woodfloor
-x 13
-end
-arch wwall_2_1_2
-x 13
-end
-arch woodfloor
-x 13
-y 1
-end
-arch chest
-x 13
-y 1
-end
-arch woodfloor
-x 13
-y 2
-end
-arch generate_goblin
-x 13
-y 2
-end
-arch woodfloor
-x 13
-y 3
-end
-arch goblin
-x 13
-y 3
-end
-arch woodfloor
-x 13
-y 4
-end
-arch goblin
-x 13
-y 4
-end
-arch woodfloor
-x 13
-y 5
-end
-arch goblin
-x 13
-y 5
-end
-arch woodfloor
-x 13
-y 6
-end
-arch goblin
-x 13
-y 6
-end
-arch woodfloor
-x 13
-y 7
-end
-arch woodfloor
-x 13
-y 8
-end
-arch woodfloor
-x 13
-y 9
-end
-arch woodfloor
-x 13
-y 10
-end
-arch woodfloor
-x 13
-y 11
-end
-arch woodfloor
-x 13
-y 12
-end
-arch woodfloor
-x 13
-y 13
-end
-arch woodfloor
-x 13
-y 14
-end
-arch woodfloor
-x 13
-y 15
-end
-arch wwall_1_3
-x 13
-y 15
-end
-arch woodfloor
-x 13
-y 16
-end
-arch woodfloor
-x 13
-y 17
-end
-arch woodfloor
-x 13
-y 18
-end
-arch kobold
-x 13
-y 18
-end
-arch woodfloor
-x 13
-y 19
-end
-arch madman
-x 13
-y 19
-end
-arch woodfloor
-x 13
-y 20
-end
-arch woodfloor
-x 13
-y 21
-end
-arch woodfloor
-x 13
-y 22
-end
-arch grate_closed_1
-x 13
-y 22
 connected 1
 end
 arch woodfloor
 x 13
-y 23
+y 26
 end
-arch woodfloor
+arch wwall_1_3
 x 13
-y 24
+y 26
 end
-arch woodfloor
+arch dungeon_magic
 x 13
-y 25
+y 27
 end
-arch oakdoor_2
+arch cobblestones2
+x 13
+y 27
+end
+arch invis_exit
 slaying /world/world_122_116
 hp 14
 sp 39
 x 13
-y 25
+y 27
+end
+arch dungeon_magic
+x 14
+end
+arch cobblestones2
+x 14
+end
+arch westcwall_2_1_2
+x 14
 end
 arch woodfloor
 x 14
+y 1
 end
 arch wwall_2_1_2
 x 14
+y 1
 end
 arch woodfloor
 x 14
-y 1
+y 2
 end
 arch chest
 x 14
-y 1
+y 2
 end
 arch woodfloor
 x 14
-y 2
+y 3
 end
 arch generate_goblin
 x 14
-y 2
-end
-arch woodfloor
-x 14
-y 3
-end
-arch goblin
-x 14
 y 3
 end
 arch woodfloor
@@ -2264,6 +2588,10 @@ x 14
 y 6
 end
 arch woodfloor
+x 14
+y 7
+end
+arch goblin
 x 14
 y 7
 end
@@ -2303,6 +2631,10 @@ arch woodfloor
 x 14
 y 16
 end
+arch wwall_1_3
+x 14
+y 16
+end
 arch woodfloor
 x 14
 y 17
@@ -2315,7 +2647,15 @@ arch woodfloor
 x 14
 y 19
 end
+arch kobold
+x 14
+y 19
+end
 arch woodfloor
+x 14
+y 20
+end
+arch madman
 x 14
 y 20
 end
@@ -2327,13 +2667,14 @@ arch woodfloor
 x 14
 y 22
 end
-arch wwall_1_4
-x 14
-y 22
-end
 arch woodfloor
 x 14
 y 23
+end
+arch grate_closed_1
+x 14
+y 23
+connected 1
 end
 arch woodfloor
 x 14
@@ -2343,213 +2684,640 @@ arch woodfloor
 x 14
 y 25
 end
-arch wwall_1_4
+arch woodfloor
 x 14
+y 26
+end
+arch oakdoor_2
+x 14
+y 26
+end
+arch dungeon_magic
+x 14
+y 27
+end
+arch cobblestones2
+x 14
+y 27
+end
+arch invis_exit
+slaying /world/world_122_116
+hp 14
+sp 39
+x 14
+y 27
+end
+arch dungeon_magic
+x 15
+end
+arch cobblestones2
+x 15
+end
+arch westcwall_2_1_2
+x 15
+end
+arch woodfloor
+x 15
+y 1
+end
+arch wwall_2_1_2
+x 15
+y 1
+end
+arch woodfloor
+x 15
+y 2
+end
+arch chest
+x 15
+y 2
+end
+arch woodfloor
+x 15
+y 3
+end
+arch generate_goblin
+x 15
+y 3
+end
+arch woodfloor
+x 15
+y 4
+end
+arch goblin
+x 15
+y 4
+end
+arch woodfloor
+x 15
+y 5
+end
+arch goblin
+x 15
+y 5
+end
+arch woodfloor
+x 15
+y 6
+end
+arch goblin
+x 15
+y 6
+end
+arch woodfloor
+x 15
+y 7
+end
+arch goblin
+x 15
+y 7
+end
+arch woodfloor
+x 15
+y 8
+end
+arch woodfloor
+x 15
+y 9
+end
+arch woodfloor
+x 15
+y 10
+end
+arch woodfloor
+x 15
+y 11
+end
+arch woodfloor
+x 15
+y 12
+end
+arch woodfloor
+x 15
+y 13
+end
+arch woodfloor
+x 15
+y 14
+end
+arch woodfloor
+x 15
+y 15
+end
+arch woodfloor
+x 15
+y 16
+end
+arch woodfloor
+x 15
+y 17
+end
+arch woodfloor
+x 15
+y 18
+end
+arch woodfloor
+x 15
+y 19
+end
+arch woodfloor
+x 15
+y 20
+end
+arch woodfloor
+x 15
+y 21
+end
+arch woodfloor
+x 15
+y 22
+end
+arch woodfloor
+x 15
+y 23
+end
+arch wwall_1_4
+x 15
+y 23
+end
+arch woodfloor
+x 15
+y 24
+end
+arch woodfloor
+x 15
 y 25
 end
 arch woodfloor
 x 15
+y 26
+end
+arch wwall_1_4
+x 15
+y 26
+end
+arch dungeon_magic
+x 15
+y 27
+end
+arch cobblestones2
+x 15
+y 27
+end
+arch invis_exit
+slaying /world/world_122_116
+hp 14
+sp 39
+x 15
+y 27
+end
+arch dungeon_magic
+x 16
+end
+arch cobblestones2
+x 16
+end
+arch westcwall_2_1_2
+x 16
+end
+arch woodfloor
+x 16
+y 1
 end
 arch wwall_2_2_3
-x 15
-end
-arch woodfloor
-x 15
-y 1
-end
-arch wwall_2_1_1
-x 15
+x 16
 y 1
 end
 arch woodfloor
-x 15
+x 16
 y 2
 end
 arch wwall_2_1_1
-x 15
+x 16
 y 2
 end
 arch woodfloor
-x 15
+x 16
 y 3
 end
 arch wwall_2_1_1
-x 15
+x 16
 y 3
 end
 arch woodfloor
-x 15
+x 16
 y 4
 end
 arch wwall_2_1_1
-x 15
+x 16
 y 4
 end
 arch woodfloor
-x 15
+x 16
 y 5
 end
 arch wwall_2_1_1
-x 15
+x 16
 y 5
 end
 arch woodfloor
-x 15
+x 16
 y 6
 end
 arch wwall_2_1_1
-x 15
+x 16
 y 6
 end
 arch woodfloor
-x 15
+x 16
 y 7
 end
 arch wwall_2_1_1
-x 15
+x 16
 y 7
 end
 arch woodfloor
-x 15
+x 16
 y 8
 end
 arch wwall_2_1_1
-x 15
+x 16
 y 8
 end
 arch woodfloor
-x 15
+x 16
 y 9
 end
 arch wwall_2_1_1
-x 15
+x 16
 y 9
 end
 arch woodfloor
-x 15
+x 16
 y 10
 end
 arch wwall_2_1_1
-x 15
+x 16
 y 10
 end
 arch woodfloor
-x 15
+x 16
 y 11
 end
 arch wwall_2_1_1
-x 15
+x 16
 y 11
 end
 arch woodfloor
-x 15
+x 16
 y 12
 end
 arch wwall_2_1_1
-x 15
+x 16
 y 12
 end
 arch woodfloor
-x 15
+x 16
 y 13
 end
 arch wwall_2_1_1
-x 15
+x 16
 y 13
 end
 arch woodfloor
-x 15
+x 16
 y 14
 end
 arch wwall_2_1_1
-x 15
+x 16
 y 14
 end
 arch woodfloor
-x 15
+x 16
 y 15
 end
 arch wwall_2_1_1
-x 15
+x 16
 y 15
 end
 arch woodfloor
-x 15
+x 16
 y 16
 end
 arch wwall_2_1_1
-x 15
+x 16
 y 16
 end
 arch woodfloor
-x 15
+x 16
 y 17
 end
 arch wwall_2_1_1
-x 15
+x 16
 y 17
 end
 arch woodfloor
-x 15
+x 16
 y 18
 end
 arch wwall_2_1_1
-x 15
+x 16
 y 18
 end
 arch woodfloor
-x 15
+x 16
 y 19
 end
 arch wwall_2_1_1
-x 15
+x 16
 y 19
 end
 arch woodfloor
-x 15
+x 16
 y 20
 end
 arch wwall_2_1_1
-x 15
+x 16
 y 20
 end
 arch woodfloor
-x 15
+x 16
 y 21
 end
 arch wwall_2_1_1
-x 15
+x 16
 y 21
 end
 arch woodfloor
-x 15
+x 16
 y 22
+end
+arch wwall_2_1_1
+x 16
+y 22
+end
+arch woodfloor
+x 16
+y 23
 end
 arch wwall_3_4
-x 15
-y 22
-end
-arch woodfloor
-x 15
-y 23
-end
-arch wwall_2_1_1
-x 15
+x 16
 y 23
 end
 arch woodfloor
-x 15
+x 16
 y 24
 end
 arch wwall_2_1_1
-x 15
+x 16
 y 24
 end
 arch woodfloor
-x 15
+x 16
 y 25
+end
+arch wwall_2_1_1
+x 16
+y 25
+end
+arch woodfloor
+x 16
+y 26
 end
 arch wwall_2_2_4
-x 15
+x 16
+y 26
+end
+arch dungeon_magic
+x 16
+y 27
+end
+arch cobblestones2
+x 16
+y 27
+end
+arch dungeon_magic
+x 17
+end
+arch cobblestones2
+x 17
+end
+arch westcwall_2_1_2
+x 17
+end
+arch dungeon_magic
+x 17
+y 1
+end
+arch cobblestones2
+x 17
+y 1
+end
+arch dungeon_magic
+x 17
+y 2
+end
+arch cobblestones2
+x 17
+y 2
+end
+arch dungeon_magic
+x 17
+y 3
+end
+arch cobblestones2
+x 17
+y 3
+end
+arch dungeon_magic
+x 17
+y 4
+end
+arch cobblestones2
+x 17
+y 4
+end
+arch dungeon_magic
+x 17
+y 5
+end
+arch cobblestones2
+x 17
+y 5
+end
+arch dungeon_magic
+x 17
+y 6
+end
+arch cobblestones2
+x 17
+y 6
+end
+arch dungeon_magic
+x 17
+y 7
+end
+arch cobblestones2
+x 17
+y 7
+end
+arch dungeon_magic
+x 17
+y 8
+end
+arch cobblestones2
+x 17
+y 8
+end
+arch dungeon_magic
+x 17
+y 9
+end
+arch cobblestones2
+x 17
+y 9
+end
+arch dungeon_magic
+x 17
+y 10
+end
+arch cobblestones2
+x 17
+y 10
+end
+arch dungeon_magic
+x 17
+y 11
+end
+arch cobblestones2
+x 17
+y 11
+end
+arch dungeon_magic
+x 17
+y 12
+end
+arch cobblestones2
+x 17
+y 12
+end
+arch dungeon_magic
+x 17
+y 13
+end
+arch cobblestones2
+x 17
+y 13
+end
+arch dungeon_magic
+x 17
+y 14
+end
+arch cobblestones2
+x 17
+y 14
+end
+arch dungeon_magic
+x 17
+y 15
+end
+arch cobblestones2
+x 17
+y 15
+end
+arch dungeon_magic
+x 17
+y 16
+end
+arch cobblestones2
+x 17
+y 16
+end
+arch dungeon_magic
+x 17
+y 17
+end
+arch cobblestones2
+x 17
+y 17
+end
+arch dungeon_magic
+x 17
+y 18
+end
+arch cobblestones2
+x 17
+y 18
+end
+arch dungeon_magic
+x 17
+y 19
+end
+arch cobblestones2
+x 17
+y 19
+end
+arch dungeon_magic
+x 17
+y 20
+end
+arch cobblestones2
+x 17
+y 20
+end
+arch dungeon_magic
+x 17
+y 21
+end
+arch cobblestones2
+x 17
+y 21
+end
+arch dungeon_magic
+x 17
+y 22
+end
+arch cobblestones2
+x 17
+y 22
+end
+arch dungeon_magic
+x 17
+y 23
+end
+arch cobblestones2
+x 17
+y 23
+end
+arch dungeon_magic
+x 17
+y 24
+end
+arch cobblestones2
+x 17
+y 24
+end
+arch dungeon_magic
+x 17
 y 25
+end
+arch cobblestones2
+x 17
+y 25
+end
+arch dungeon_magic
+x 17
+y 26
+end
+arch cobblestones2
+x 17
+y 26
+end
+arch dungeon_magic
+x 17
+y 27
+end
+arch cobblestones2
+x 17
+y 27
 end
