@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-06-02
-Modified: 2013-08-18 Kevin Zheng
+Modified: 2014-06-16 jwright
 endmsg
 outdoor 1
 tile_path_1 world_122_115
@@ -3677,7 +3677,7 @@ arch barn_west
 name Warehouse #1
 slaying /navar_city/warehouse1
 hp 8
-sp 24
+sp 25
 x 10
 y 38
 end
@@ -4782,8 +4782,8 @@ end
 arch barn_west
 name Warehouse #2
 slaying /navar_city/warehouse2
-hp 13
-sp 25
+hp 14
+sp 26
 x 13
 y 38
 end
@@ -5852,8 +5852,8 @@ end
 arch barn_west
 name Warehouse #3
 slaying /navar_city/warehouse3
-hp 2
-sp 34
+hp 3
+sp 35
 x 16
 y 38
 end
