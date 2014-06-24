@@ -8,7 +8,7 @@ enter_x 5
 enter_y 7
 msg
 Created:  2012-03-20 Rick Tanner
-Modified: 2012-07-21 Rick Tanner
+Modified: 2014-06-17 jwright
 endmsg
 end
 arch grass_only
@@ -289,7 +289,13 @@ end
 arch grass_only
 x 4
 y 9
-move_block all
+end
+arch invis_exit
+slaying /world/world_122_116
+hp 10
+sp 44
+x 4
+y 9
 end
 arch grass_only
 x 4
@@ -335,9 +341,6 @@ x 5
 y 8
 end
 arch oakdoor_2
-slaying /world/world_122_116
-hp 10
-sp 44
 x 5
 y 8
 end
@@ -348,7 +351,13 @@ end
 arch grass_only
 x 5
 y 9
-move_block all
+end
+arch invis_exit
+slaying /world/world_122_116
+hp 10
+sp 44
+x 5
+y 9
 end
 arch grass_only
 x 5
@@ -412,7 +421,13 @@ end
 arch grass_only
 x 6
 y 9
-move_block all
+end
+arch invis_exit
+slaying /world/world_122_116
+hp 10
+sp 44
+x 6
+y 9
 end
 arch grass_only
 x 6
