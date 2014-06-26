@@ -1,5 +1,16 @@
 In this directory is utilities, gif images of the maps, and other notes.
 
+map_info: (From Tero Haatanen <Tero.Haatanen@lut.fi>).  It goes through
+the map files in the specified directory, printing out problems and
+also generating a list of used objects.
+
+map_check:  Another program that goes through and checks maps.  This one
+starts at the starting map, and then visits all the maps connected to it,
+and so on.  Thus, its output and the output of do a 'find . -type f -print'
+in the maps directory, can be compared after some modification, to find maps
+in the map directory that are not connected to anything.  I think that
+map_info does a better job about other map errors, however.
+
 ------------------------------------------------------------------------------
 Developer guidelines:
 
