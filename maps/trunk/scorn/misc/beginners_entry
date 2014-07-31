@@ -2,13 +2,13 @@ arch map
 name Beginners Entry
 difficulty 1
 region scorn
-width 13
-height 12
-enter_x 6
-enter_y 6
+width 15
+height 14
+enter_x 9
+enter_y 8
 msg
 Created:  2011-09-07 Rick Tanner
-Modified: 2014-06-05 Kevin Zheng
+Modified: 2014-07-31 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -47,6 +47,12 @@ end
 arch grass_only
 y 11
 end
+arch grass_only
+y 12
+end
+arch grass_only
+y 13
+end
 arch cobblestones2
 x 1
 end
@@ -94,6 +100,14 @@ arch grass_only
 x 1
 y 11
 end
+arch grass_only
+x 1
+y 12
+end
+arch grass_only
+x 1
+y 13
+end
 arch cobblestones2
 x 2
 end
@@ -133,13 +147,21 @@ arch flagstone
 x 2
 y 9
 end
-arch grass_only
+arch flagstone
 x 2
 y 10
 end
-arch grass_only
+arch flagstone
 x 2
 y 11
+end
+arch grass_only
+x 2
+y 12
+end
+arch grass_only
+x 2
+y 13
 end
 arch cobblestones2
 x 3
@@ -160,6 +182,10 @@ arch wwall_2_2_2
 x 3
 y 3
 end
+arch light2
+x 3
+y 4
+end
 arch woodfloor
 x 3
 y 4
@@ -184,11 +210,15 @@ arch wwall_2_1_1
 x 3
 y 6
 end
+arch light2
+x 3
+y 7
+end
 arch woodfloor
 x 3
 y 7
 end
-arch wwall_win1
+arch wwall_2_1_1
 x 3
 y 7
 end
@@ -196,21 +226,41 @@ arch woodfloor
 x 3
 y 8
 end
-arch wwall_2_2_1
+arch wwall_2_1_1
 x 3
 y 8
 end
-arch flagstone
+arch light2
 x 3
 y 9
 end
-arch grass_only
+arch woodfloor
+x 3
+y 9
+end
+arch wwall_win1
+x 3
+y 9
+end
+arch woodfloor
 x 3
 y 10
 end
-arch grass_only
+arch wwall_2_2_1
+x 3
+y 10
+end
+arch flagstone
 x 3
 y 11
+end
+arch grass_only
+x 3
+y 12
+end
+arch grass_only
+x 3
+y 13
 end
 arch cobblestones2
 x 4
@@ -222,6 +272,10 @@ end
 arch flagstone
 x 4
 y 2
+end
+arch light2
+x 4
+y 3
 end
 arch woodfloor
 x 4
@@ -269,13 +323,21 @@ endmsg
 x 4
 y 6
 end
-arch light4
+arch woodfloor
 x 4
 y 7
 end
 arch woodfloor
 x 4
-y 7
+y 8
+end
+arch light3
+x 4
+y 9
+end
+arch woodfloor
+x 4
+y 9
 end
 arch sage
 name Sage of Training
@@ -297,29 +359,29 @@ A devious Ogre holds the key. But don't expect to find him to easily.  Explore, 
 Good day, traveler!
 endmsg
 x 4
-y 7
+y 9
 stand_still 1
 no_mood_change 1
 end
 arch woodfloor
 x 4
-y 8
+y 10
 end
 arch wwall_win2
 x 4
-y 8
+y 10
 end
 arch flagstone
 x 4
-y 9
-end
-arch grass_only
-x 4
-y 10
-end
-arch grass_only
-x 4
 y 11
+end
+arch grass_only
+x 4
+y 12
+end
+arch grass_only
+x 4
+y 13
 end
 arch cobblestones2
 x 5
@@ -348,15 +410,11 @@ arch wwall_2_1_1
 x 5
 y 4
 end
-arch wwall_0
-x 5
-y 4
-end
 arch woodfloor
 x 5
 y 5
 end
-arch wwall_1_2
+arch wwall_2_2_1
 x 5
 y 5
 end
@@ -372,25 +430,37 @@ arch woodfloor
 x 5
 y 7
 end
+arch light4
+x 5
+y 8
+end
 arch woodfloor
 x 5
 y 8
 end
-arch wwall_win2
-x 5
-y 8
-end
-arch flagstone
+arch woodfloor
 x 5
 y 9
 end
-arch grass_only
+arch woodfloor
 x 5
 y 10
 end
-arch grass_only
+arch wwall_2_1_2
+x 5
+y 10
+end
+arch flagstone
 x 5
 y 11
+end
+arch grass_only
+x 5
+y 12
+end
+arch grass_only
+x 5
+y 13
 end
 arch cobblestones2
 x 6
@@ -407,202 +477,384 @@ arch woodfloor
 x 6
 y 3
 end
-arch wwall_2_1_2
+arch wwall_3_3
 x 6
 y 3
 end
 arch woodfloor
 x 6
+y 4
+end
+arch wwall_2_1_1
+x 6
+y 4
+end
+arch woodfloor
+x 6
+y 5
+end
+arch wwall_2_2_4
+x 6
+y 5
+end
+arch wwall_0
+x 6
+y 5
+end
+arch woodfloor
+x 6
+y 6
+end
+arch woodfloor
+x 6
+y 7
+end
+arch woodfloor
+x 6
+y 8
+end
+arch woodfloor
+x 6
+y 9
+end
+arch woodfloor
+x 6
+y 10
+end
+arch wwall_2_1_2
+x 6
+y 10
+end
+arch flagstone
+x 6
+y 11
+end
+arch grass_only
+x 6
+y 12
+end
+arch grass_only
+x 6
+y 13
+end
+arch cobblestones2
+x 7
+end
+arch grass_only
+x 7
+y 1
+end
+arch flagstone
+x 7
+y 2
+end
+arch woodfloor
+x 7
+y 3
+end
+arch wwall_2_1_2
+x 7
+y 3
+end
+arch light4
+x 7
+y 4
+end
+arch woodfloor
+x 7
 y 4
 end
 arch exit
 slaying beginners
 hp 14
 sp 28
-x 6
+x 7
 y 4
 end
 arch woodfloor
-x 6
+x 7
 y 5
 end
 arch archway
-x 6
+x 7
 y 5
 end
 arch woodfloor
-x 6
+x 7
 y 6
 end
-arch button_small
-x 6
-y 7
-connected 1
-end
 arch woodfloor
-x 6
+x 7
 y 7
 end
 arch woodfloor
-x 6
+x 7
 y 8
 end
-arch wwall_1_3
-x 6
-y 8
-end
-arch wwall_0
-x 6
-y 8
-end
-arch dungeon_magic
-x 6
+arch woodfloor
+x 7
 y 9
 end
-arch invis_exit
-slaying /world/world_105_116
-hp 1
-x 6
-y 9
-end
-arch flagstone
-x 6
-y 9
-end
-arch grass_only
-x 6
+arch light2
+x 7
 y 10
 end
-arch grass_only
-x 6
+arch woodfloor
+x 7
+y 10
+end
+arch wwall_win2
+x 7
+y 10
+end
+arch flagstone
+x 7
 y 11
 end
-arch cobblestones2
+arch grass_only
 x 7
+y 12
 end
 arch grass_only
 x 7
+y 13
+end
+arch cobblestones2
+x 8
+end
+arch grass_only
+x 8
 y 1
 end
 arch flagstone
-x 7
+x 8
 y 2
 end
 arch woodfloor
-x 7
+x 8
 y 3
 end
 arch wwall_3_3
-x 7
+x 8
 y 3
 end
 arch woodfloor
-x 7
+x 8
 y 4
 end
 arch wwall_2_1_1
-x 7
-y 4
-end
-arch wwall_0
-x 7
+x 8
 y 4
 end
 arch woodfloor
-x 7
+x 8
 y 5
 end
-arch wwall_1_2
-x 7
+arch wwall_2_2_1
+x 8
 y 5
 end
 arch wwall_0
-x 7
+x 8
 y 5
 end
 arch woodfloor
-x 7
+x 8
 y 6
 end
-arch button_small
-x 7
+arch woodfloor
+x 8
 y 7
+end
+arch woodfloor
+x 8
+y 8
+end
+arch button_small
+x 8
+y 9
 connected 1
 end
 arch woodfloor
-x 7
-y 7
-end
-arch button_small
-x 7
-y 8
-connected 1
+x 8
+y 9
 end
 arch woodfloor
-x 7
-y 8
+x 8
+y 10
 end
-arch odoorn2_closed_1
-x 7
-y 8
-connected 1
+arch wwall_1_3
+x 8
+y 10
+end
+arch wwall_0
+x 8
+y 10
 end
 arch dungeon_magic
-x 7
-y 9
+x 8
+y 11
 end
 arch invis_exit
 slaying /world/world_105_116
 hp 1
-x 7
-y 9
-end
-arch flagstone
-x 7
-y 9
-end
-arch grass_only
-x 7
-y 10
-end
-arch grass_only
-x 7
+x 8
 y 11
 end
-arch cobblestones2
+arch flagstone
 x 8
+y 11
 end
 arch grass_only
 x 8
+y 12
+end
+arch grass_only
+x 8
+y 13
+end
+arch cobblestones2
+x 9
+end
+arch grass_only
+x 9
 y 1
 end
 arch flagstone
-x 8
+x 9
 y 2
 end
 arch woodfloor
-x 8
+x 9
 y 3
 end
-arch wwall_win2
-x 8
+arch wwall_3_3
+x 9
 y 3
 end
-arch light4
-x 8
+arch woodfloor
+x 9
+y 4
+end
+arch wwall_2_1_1
+x 9
 y 4
 end
 arch woodfloor
-x 8
+x 9
+y 5
+end
+arch wwall_2_2_4
+x 9
+y 5
+end
+arch wwall_0
+x 9
+y 5
+end
+arch woodfloor
+x 9
+y 6
+end
+arch woodfloor
+x 9
+y 7
+end
+arch light4
+x 9
+y 8
+end
+arch woodfloor
+x 9
+y 8
+end
+arch button_small
+x 9
+y 9
+connected 1
+end
+arch woodfloor
+x 9
+y 9
+end
+arch light4
+x 9
+y 10
+end
+arch button_small
+x 9
+y 10
+connected 1
+end
+arch woodfloor
+x 9
+y 10
+end
+arch odoorn2_closed_1
+x 9
+y 10
+connected 1
+end
+arch dungeon_magic
+x 9
+y 11
+end
+arch invis_exit
+slaying /world/world_105_116
+hp 1
+x 9
+y 11
+end
+arch flagstone
+x 9
+y 11
+end
+arch grass_only
+x 9
+y 12
+end
+arch grass_only
+x 9
+y 13
+end
+arch cobblestones2
+x 10
+end
+arch grass_only
+x 10
+y 1
+end
+arch flagstone
+x 10
+y 2
+end
+arch light2
+x 10
+y 3
+end
+arch woodfloor
+x 10
+y 3
+end
+arch wwall_win2
+x 10
+y 3
+end
+arch light4
+x 10
+y 4
+end
+arch woodfloor
+x 10
 y 4
 end
 arch minor_potion_restoration
-x 8
+x 10
 y 4
 identified 1
 end
 arch woodfloor
-x 8
+x 10
 y 5
 end
 arch locked_door1
@@ -610,276 +862,332 @@ slaying ogre_blue_key
 msg
 You need the Blue Key to open this door to the Potion of Minor Life.
 endmsg
-x 8
+x 10
 y 5
 end
 arch woodfloor
-x 8
+x 10
 y 6
 end
 arch sign
 msg
 One Potion of Minor Life
 endmsg
-x 8
+x 10
 y 6
 end
-arch light4
-x 8
+arch woodfloor
+x 10
 y 7
 end
+arch woodfloor
+x 10
+y 8
+end
 arch button_small
-x 8
-y 7
+x 10
+y 9
 connected 1
 end
 arch woodfloor
-x 8
-y 7
+x 10
+y 9
 end
 arch woodfloor
-x 8
-y 8
+x 10
+y 10
 end
 arch wwall_1_4
-x 8
-y 8
+x 10
+y 10
 end
 arch wwall_0
-x 8
-y 8
+x 10
+y 10
 end
 arch dungeon_magic
-x 8
-y 9
+x 10
+y 11
 end
 arch invis_exit
 slaying /world/world_105_116
 hp 1
-x 8
-y 9
-end
-arch flagstone
-x 8
-y 9
-end
-arch grass_only
-x 8
-y 10
-end
-arch grass_only
-x 8
+x 10
 y 11
 end
-arch cobblestones2
-x 9
+arch flagstone
+x 10
+y 11
 end
 arch grass_only
-x 9
+x 10
+y 12
+end
+arch grass_only
+x 10
+y 13
+end
+arch cobblestones2
+x 11
+end
+arch grass_only
+x 11
 y 1
 end
 arch flagstone
-x 9
+x 11
 y 2
 end
 arch woodfloor
-x 9
+x 11
 y 3
 end
 arch wwall_2_2_3
-x 9
+x 11
 y 3
 end
-arch woodfloor
-x 9
-y 4
-end
-arch wwall_win1
-x 9
+arch light2
+x 11
 y 4
 end
 arch woodfloor
-x 9
-y 5
-end
-arch wwall_2_1_1
-x 9
-y 5
-end
-arch woodfloor
-x 9
-y 6
-end
-arch wwall_2_1_1
-x 9
-y 6
-end
-arch woodfloor
-x 9
-y 7
+x 11
+y 4
 end
 arch wwall_win1
-x 9
+x 11
+y 4
+end
+arch woodfloor
+x 11
+y 5
+end
+arch wwall_2_1_1
+x 11
+y 5
+end
+arch woodfloor
+x 11
+y 6
+end
+arch wwall_2_1_1
+x 11
+y 6
+end
+arch light2
+x 11
 y 7
 end
 arch woodfloor
-x 9
+x 11
+y 7
+end
+arch wwall_2_1_1
+x 11
+y 7
+end
+arch woodfloor
+x 11
 y 8
+end
+arch wwall_2_1_1
+x 11
+y 8
+end
+arch light2
+x 11
+y 9
+end
+arch woodfloor
+x 11
+y 9
+end
+arch wwall_win1
+x 11
+y 9
+end
+arch woodfloor
+x 11
+y 10
 end
 arch wwall_2_2_4
-x 9
-y 8
-end
-arch flagstone
-x 9
-y 9
-end
-arch grass_only
-x 9
+x 11
 y 10
 end
-arch grass_only
-x 9
+arch flagstone
+x 11
 y 11
 end
-arch cobblestones2
-x 10
+arch grass_only
+x 11
+y 12
 end
 arch grass_only
-x 10
+x 11
+y 13
+end
+arch cobblestones2
+x 12
+end
+arch grass_only
+x 12
 y 1
 end
 arch flagstone
-x 10
+x 12
 y 2
 end
 arch flagstone
-x 10
+x 12
 y 3
 end
 arch flagstone
-x 10
+x 12
 y 4
 end
 arch flagstone
-x 10
+x 12
 y 5
 end
 arch flagstone
-x 10
+x 12
 y 6
 end
 arch flagstone
-x 10
+x 12
 y 7
 end
 arch flagstone
-x 10
+x 12
 y 8
 end
 arch flagstone
-x 10
+x 12
 y 9
 end
-arch grass_only
-x 10
+arch flagstone
+x 12
 y 10
 end
-arch grass_only
-x 10
+arch flagstone
+x 12
 y 11
 end
-arch cobblestones2
-x 11
+arch grass_only
+x 12
+y 12
 end
 arch grass_only
-x 11
+x 12
+y 13
+end
+arch cobblestones2
+x 13
+end
+arch grass_only
+x 13
 y 1
 end
 arch grass_only
-x 11
+x 13
 y 2
 end
 arch grass_only
-x 11
+x 13
 y 3
 end
 arch grass_only
-x 11
+x 13
 y 4
 end
 arch grass_only
-x 11
+x 13
 y 5
 end
 arch grass_only
-x 11
+x 13
 y 6
 end
 arch grass_only
-x 11
+x 13
 y 7
 end
 arch grass_only
-x 11
+x 13
 y 8
 end
 arch grass_only
-x 11
+x 13
 y 9
 end
 arch grass_only
-x 11
+x 13
 y 10
 end
 arch grass_only
-x 11
+x 13
 y 11
 end
-arch cobblestones2
-x 12
+arch grass_only
+x 13
+y 12
+end
+arch grass_only
+x 13
+y 13
 end
 arch cobblestones2
-x 12
+x 14
+end
+arch cobblestones2
+x 14
 y 1
 end
 arch cobblestones2
-x 12
+x 14
 y 2
 end
 arch cobblestones2
-x 12
+x 14
 y 3
 end
 arch cobblestones2
-x 12
+x 14
 y 4
 end
 arch cobblestones2
-x 12
+x 14
 y 5
 end
 arch cobblestones2
-x 12
+x 14
 y 6
 end
 arch cobblestones2
-x 12
+x 14
 y 7
 end
 arch cobblestones2
-x 12
+x 14
 y 8
 end
 arch cobblestones2
-x 12
+x 14
 y 9
 end
 arch cobblestones2
-x 12
+x 14
 y 10
 end
 arch cobblestones2
-x 12
+x 14
 y 11
+end
+arch cobblestones2
+x 14
+y 12
+end
+arch cobblestones2
+x 14
+y 13
 end
