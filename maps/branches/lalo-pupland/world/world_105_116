@@ -8,7 +8,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Modified: 2014-06-05 Kevin Zheng
+Modified: 2014-07-31 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_105_115
@@ -240,8 +240,8 @@ end
 arch tavern
 name Beginners 1
 slaying ../scorn/misc/beginners_entry
-hp 6
-sp 6
+hp 9
+sp 8
 x 1
 end
 arch dungeon_magic
@@ -1855,7 +1855,7 @@ x 6
 y 15
 elevation 5255
 end
-arch mountain
+arch mountain4
 x 6
 y 16
 elevation 6991
@@ -2169,7 +2169,7 @@ x 7
 y 15
 elevation 5290
 end
-arch mountain
+arch mountain4
 x 7
 y 16
 elevation 6245
@@ -2460,12 +2460,12 @@ x 8
 y 15
 elevation 6715
 end
-arch mountain
+arch mountain4
 x 8
 y 16
 elevation 5816
 end
-arch mountain
+arch mountain4
 x 8
 y 17
 elevation 7824
@@ -2747,7 +2747,7 @@ x 9
 y 16
 elevation 6946
 end
-arch hills
+arch mountain4
 x 9
 y 17
 elevation 3250
@@ -3019,12 +3019,12 @@ x 10
 y 15
 elevation 6003
 end
-arch mountain
+arch mountain4
 x 10
 y 16
 elevation 7909
 end
-arch mountain
+arch mountain4
 x 10
 y 17
 elevation 6432
@@ -3293,33 +3293,25 @@ x 11
 y 13
 elevation 6874
 end
-arch hills
+arch mountain
 x 11
 y 14
 elevation 4730
 end
-arch woods5
-x 11
-y 14
-end
-arch mountain
+arch mountain4
 x 11
 y 15
 elevation 7906
 end
-arch mountain
+arch mountain4
 x 11
 y 16
 elevation 6660
 end
-arch hills
+arch mountain
 x 11
 y 17
 elevation 3601
-end
-arch woods5
-x 11
-y 17
 end
 arch mountain
 x 11
@@ -3577,12 +3569,12 @@ x 12
 y 13
 elevation 5192
 end
-arch mountain
+arch mountain4
 x 12
 y 14
 elevation 5376
 end
-arch mountain
+arch mountain4
 x 12
 y 15
 elevation 8187
@@ -3848,22 +3840,22 @@ x 13
 y 12
 elevation 8871
 end
-arch jungle_1
+arch mountain4
 x 13
 y 13
 elevation 101
 end
-arch hills
+arch mountain4
 x 13
 y 14
 elevation 3368
 end
-arch jungle_1
+arch mountain
 x 13
 y 15
 elevation 205
 end
-arch jungle_1
+arch mountain
 x 13
 y 16
 elevation 1640
@@ -4109,7 +4101,7 @@ x 14
 y 12
 elevation 7487
 end
-arch jungle_1
+arch mountain4
 x 14
 y 13
 elevation 1394
@@ -4119,14 +4111,10 @@ x 14
 y 14
 elevation 7483
 end
-arch grass_only
+arch mountain
 x 14
 y 15
 elevation 1370
-end
-arch tree3
-x 14
-y 15
 end
 arch desert
 x 14
@@ -4373,12 +4361,12 @@ x 15
 y 11
 elevation 6511
 end
-arch mountain
+arch mountain4
 x 15
 y 12
 elevation 8892
 end
-arch mountain
+arch mountain4
 x 15
 y 13
 elevation 8112
@@ -4595,7 +4583,7 @@ x 16
 y 4
 elevation 8971
 end
-arch mountain2
+arch mountain
 x 16
 y 5
 elevation 10959
@@ -4620,22 +4608,22 @@ x 16
 y 9
 elevation 6783
 end
-arch mountain
+arch mountain4
 x 16
 y 10
 elevation 6896
 end
-arch mountain
+arch mountain4
 x 16
 y 11
 elevation 5416
 end
-arch mountain
+arch mountain4
 x 16
 y 12
 elevation 7694
 end
-arch hills
+arch mountain
 x 16
 y 13
 elevation 3401
@@ -4829,22 +4817,22 @@ x 17
 y 1
 elevation 6712
 end
-arch mountain2
+arch mountain
 x 17
 y 2
 elevation 11908
 end
-arch mountain2
+arch mountain
 x 17
 y 3
 elevation 11133
 end
-arch mountain2
+arch mountain
 x 17
 y 4
 elevation 11452
 end
-arch mountain4
+arch mountain
 x 17
 y 5
 elevation 5465
@@ -4864,17 +4852,17 @@ x 17
 y 8
 elevation 8872
 end
-arch mountain
+arch mountain4
 x 17
 y 9
 elevation 7395
 end
-arch mountain
+arch mountain4
 x 17
 y 10
 elevation 7435
 end
-arch mountain
+arch mountain4
 x 17
 y 11
 elevation 6920
@@ -5088,32 +5076,32 @@ x 18
 y 3
 elevation 5238
 end
-arch mountain
+arch mountain4
 x 18
 y 4
 elevation 5131
 end
-arch mountain
+arch mountain4
 x 18
 y 5
 elevation 5290
 end
-arch mountain
+arch mountain4
 x 18
 y 6
 elevation 7482
 end
-arch mountain
+arch mountain4
 x 18
 y 7
 elevation 7023
 end
-arch mountain
+arch mountain4
 x 18
 y 8
 elevation 7215
 end
-arch mountain
+arch mountain4
 x 18
 y 9
 elevation 8354
@@ -5330,31 +5318,31 @@ x 18
 y 49
 elevation 4082
 end
-arch mountain
+arch mountain4
 x 19
 elevation 6045
 end
-arch mountain
+arch mountain4
 x 19
 y 1
 elevation 8291
 end
-arch mountain
+arch mountain4
 x 19
 y 2
 elevation 5454
 end
-arch mountain
+arch mountain4
 x 19
 y 3
 elevation 7080
 end
-arch mountain
+arch mountain4
 x 19
 y 4
 elevation 8793
 end
-arch steppe
+arch mountain
 x 19
 y 5
 elevation 4984
