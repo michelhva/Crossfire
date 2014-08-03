@@ -6,7 +6,7 @@ nrof 1
 type 54
 material 32
 value 5
-weight 1500
+weight 10000
 name_pl waters
 client_type 611
 on_use_with_vial_poison remove $1 remove $2 add water_poison

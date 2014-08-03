@@ -6,7 +6,7 @@ nrof 1
 type 54
 material 32
 value 155
-weight 11500
+weight 25000
 name uranium hexafluoride gas
 name_pl uranium hexafluoride gas
 client_type 611

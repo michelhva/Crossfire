@@ -5,8 +5,8 @@ nrof 1
 type 6
 material 32
 value 6
-food 55
-weight 100
+food 35
+weight 1000
 name_pl mushrooms
 client_type 601
 end

@@ -1,11 +1,11 @@
 Object leg_mutton
 face leg_mutton.111
-food 150
+food 350
 nrof 1
 type 6
 material 32
-value 50
-weight 1500
+value 35
+weight 8000
 identified 1
 name leg of mutton
 name_pl legs of mutton

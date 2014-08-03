@@ -5,8 +5,8 @@ food 400
 nrof 1
 type 72
 material 32
-value 10
-weight 5
+value 35
+weight 10000
 identified 1
 name_pl steaks
 client_type 624
