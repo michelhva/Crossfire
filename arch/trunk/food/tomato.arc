@@ -6,22 +6,22 @@ nrof 1
 type 6
 material 32
 value 7
-weight 1000
+weight 2000
 identified 1
 name_pl tomatoes
 client_type 601
 end
 
 Object tomato_big
-name very large tomato
+name big tomato
 face tomato_big.111
-food 200
+food 100
 nrof 1
 type 6
 material 32
-value 14
-weight 1000
+value 12
+weight 3000
 identified 1
-name_pl very large tomatoes
+name_pl big tomatoes
 client_type 601
 end

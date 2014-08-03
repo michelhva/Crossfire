@@ -1,14 +1,14 @@
 Object fishfood
-name fish
+name cooked fish
 face fishfood.111
-food 100
+food 200
 nrof 1
 type 6
 material 32
-value 4
+value 12
 weight 3500
 identified 1
-name_pl fishes
+name_pl cooked fish
 client_type 601
 harvest_race fish
 harvest_exp 100
