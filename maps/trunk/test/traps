@@ -10,7 +10,7 @@ enter_x 9
 enter_y 4
 msg
 Created:  2003-07-31 Tchize
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2014-08-07 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -2257,7 +2257,7 @@ msg
 Tutorial: fighting
 Get your first experience points!
 Ants are the most easy to kill
-creatures in the world of crossfire.
+creatures in the world of Crossfire.
 To fight, nothing is more easy.
 Just run into the ants.
 -------------------
@@ -2299,7 +2299,7 @@ msg
 -------------------
 Tutorial: traps
 Searching for traps can save
-your life in crossfire. Some traps
+your life in Crossfire. Some traps
 are difficult to find, others are
 easy. Some traps are dangerous,
 others are harmless. To find a
@@ -2369,7 +2369,7 @@ name doorman
 msg
 @match *
 So you are ready for the world
-of crossfire? You will need to use
+of Crossfire? You will need to use
 the knowledge you learned
 in the tutorials to go outside.
 There is no way back. You
@@ -2759,7 +2759,7 @@ y 5
 end
 arch sign
 msg
-Welcome to crossfire, newbie!
+Welcome to Crossfire, newbie!
 You are new to this game?
 If this is the case, this map is
 made for you. You will find lots
@@ -3347,7 +3347,7 @@ name Sigmund
 msg
 @match yes|Yes|YES|bed to reality|Bed to reality|beds to reality|Beds to reality
 A bed to reality is the way you quit
-the crossfire world to get back to
+the Crossfire world to get back to
 your real life. While you are in
 real life, your character is asleep.
 Nothing can happens to it. But
@@ -3367,12 +3367,12 @@ You can find beds to reality
 just southwest of here.
 You may also want to get
 extra information on how to
-apply an object in crossfire.
+apply an object in Crossfire.
 @match *
 Hello, dear newbie. I am a NPC.
 This mean you can interact with
 me. To do this, just speak with me.
-Like all NPCs in crossfire, i react
+Like all NPCs in Crossfire, i react
 to some words you could say when
 you are near me (using the
 'say <message>' command).
@@ -3385,7 +3385,7 @@ beds to reality and experience.
 Would you like me to tell you
 about beds to reality? That's one
 of the most important things in
-crossfire.
+Crossfire.
 endmsg
 x 11
 y 7
@@ -3459,7 +3459,7 @@ arch sign
 msg
 -------------------
 Tutorial: using items
-To use items in crossfire,
+To use items in Crossfire,
 there are 2 ways. The first is
 to use mouse buttons in your
 inventory. The second is to
@@ -3554,7 +3554,7 @@ msg
 -------------------
 Tutorial: books
 You will find a lot of books
-in the crossfire world. Their
+in the Crossfire world. Their
 content is not always
 interesting. Some are so
 difficult your character may
@@ -3601,7 +3601,7 @@ arch sign
 msg
 -------------------
 Tutorial: food
-You need to eat in crossfire, or
+You need to eat in Crossfire, or
 you'll starve. Never forget to
 carry food with you. When you cast
 spells or are healing, you are
