@@ -7,20 +7,26 @@ shop/Floors/shop_random.base.111.png
 shop/Floors/shop_random.face
 RJT 2014-08-22
 
-2014-08-03	Kevin Zheng
-	* food/: Tweak and balance food items.
+Tweak and balance food items.
+food/*
+Kevin Zheng 2014-08-03
 
-2014-06-13	SilverNexus
-	* weapon/sword/sword_3.arc,
-	* weapon/sword/nineringsword.arc,
-	* weapon/sword/vlongsword.arc: Hyphenate names for better clarity.
-	Before, two two-handed swords in your inventory would read "two two handed swords".
+Hyphenate names for better clarity. Before, two two-handed
+swords in your inventory would read "two two handed swords".
+arch/trunk/weapon/sword/nineringsword.arc
+arch/trunk/weapon/sword/sword_3.arc
+arch/trunk/weapon/sword/vlongsword.arc
+SilverNexus 2014-06-13
 
-2014-05-27	SilverNexus
-	* jewel/bars/brassbar.*: Create brass bar, which can be smelted from copper and zinc.
+Added brass bar for use with future smithery recipes.
+arch/trunk/jewel/bars/brassbar.arc
+arch/trunk/jewel/bars/brassbar.base.111.png
+arch/trunk/jewel/bars/brassbar.face
+SilverNexus 2014-05-27
 
-2014-05-23	Kevin Zheng
-	* jewel/: Rename ores and remove those that are redundant.
+Rename ores and remove those that are redundant.
+jewel/*
+Kevin Zheng 2014-05-23
 
 More naming fixes.
 ground/falls.arc
