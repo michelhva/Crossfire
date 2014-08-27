@@ -5,7 +5,8 @@ no_pick 1
 type 122
 material 16
 weight 35000
-container 350000
+# Bumped up to 360 kg to hold behemoth's hide
+container 360000
 is_cauldron 1
 Str 0
 value 18000
