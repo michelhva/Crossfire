@@ -1,5 +1,5 @@
 Object troll
-randomitems giant
+randomitems troll_big
 race troll
 face troll.x11
 animation troll
