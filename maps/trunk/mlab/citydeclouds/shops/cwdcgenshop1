@@ -9,7 +9,7 @@ enter_x 14
 enter_y 18
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2011-11-07 Rick Tanner
+Modified: 2014-08-28 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -3590,13 +3590,7 @@ arch dungeon_magic
 x 13
 y 8
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 13
-y 8
-end
-arch shop_floor
+arch shop_random
 x 13
 y 8
 end
@@ -3604,13 +3598,7 @@ arch dungeon_magic
 x 13
 y 9
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 13
-y 9
-end
-arch shop_floor
+arch shop_random
 x 13
 y 9
 end
@@ -3628,13 +3616,7 @@ arch dungeon_magic
 x 13
 y 11
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 13
-y 11
-end
-arch shop_floor
+arch shop_random
 x 13
 y 11
 end
@@ -3642,13 +3624,7 @@ arch dungeon_magic
 x 13
 y 12
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 13
-y 12
-end
-arch shop_floor
+arch shop_random
 x 13
 y 12
 end
@@ -3656,13 +3632,7 @@ arch dungeon_magic
 x 13
 y 13
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 13
-y 13
-end
-arch shop_floor
+arch shop_random
 x 13
 y 13
 end
@@ -3670,13 +3640,7 @@ arch dungeon_magic
 x 13
 y 14
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 13
-y 14
-end
-arch shop_floor
+arch shop_random
 x 13
 y 14
 end
@@ -3869,13 +3833,7 @@ arch dungeon_magic
 x 14
 y 8
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 14
-y 8
-end
-arch shop_floor
+arch shop_random
 x 14
 y 8
 end
@@ -4537,13 +4495,7 @@ arch dungeon_magic
 x 16
 y 18
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 16
-y 18
-end
-arch shop_floor
+arch shop_random
 x 16
 y 18
 end
@@ -4682,13 +4634,7 @@ arch dungeon_magic
 x 17
 y 8
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 17
-y 8
-end
-arch shop_floor
+arch shop_random
 x 17
 y 8
 end
@@ -4814,13 +4760,7 @@ arch dungeon_magic
 x 17
 y 18
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 17
-y 18
-end
-arch shop_floor
+arch shop_random
 x 17
 y 18
 end
@@ -4959,13 +4899,7 @@ arch dungeon_magic
 x 18
 y 8
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 18
-y 8
-end
-arch shop_floor
+arch shop_random
 x 18
 y 8
 end
@@ -5091,13 +5025,7 @@ arch dungeon_magic
 x 18
 y 18
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 18
-y 18
-end
-arch shop_floor
+arch shop_random
 x 18
 y 18
 end
@@ -5228,13 +5156,7 @@ arch dungeon_magic
 x 19
 y 8
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 19
-y 8
-end
-arch shop_floor
+arch shop_random
 x 19
 y 8
 end
@@ -5332,13 +5254,7 @@ arch dungeon_magic
 x 19
 y 18
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 19
-y 18
-end
-arch shop_floor
+arch shop_random
 x 19
 y 18
 end
@@ -5485,13 +5401,7 @@ arch dungeon_magic
 x 20
 y 8
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 20
-y 8
-end
-arch shop_floor
+arch shop_random
 x 20
 y 8
 end
@@ -5499,13 +5409,7 @@ arch dungeon_magic
 x 20
 y 9
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 20
-y 9
-end
-arch shop_floor
+arch shop_random
 x 20
 y 9
 end
@@ -5513,13 +5417,7 @@ arch dungeon_magic
 x 20
 y 10
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 20
-y 10
-end
-arch shop_floor
+arch shop_random
 x 20
 y 10
 end
@@ -5527,13 +5425,7 @@ arch dungeon_magic
 x 20
 y 11
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 20
-y 11
-end
-arch shop_floor
+arch shop_random
 x 20
 y 11
 end
@@ -5541,13 +5433,7 @@ arch dungeon_magic
 x 20
 y 12
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 20
-y 12
-end
-arch shop_floor
+arch shop_random
 x 20
 y 12
 end
@@ -5555,13 +5441,7 @@ arch dungeon_magic
 x 20
 y 13
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 20
-y 13
-end
-arch shop_floor
+arch shop_random
 x 20
 y 13
 end
@@ -5569,13 +5449,7 @@ arch dungeon_magic
 x 20
 y 14
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 20
-y 14
-end
-arch shop_floor
+arch shop_random
 x 20
 y 14
 end
@@ -5583,13 +5457,7 @@ arch dungeon_magic
 x 20
 y 15
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 20
-y 15
-end
-arch shop_floor
+arch shop_random
 x 20
 y 15
 end
@@ -5597,13 +5465,7 @@ arch dungeon_magic
 x 20
 y 16
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 20
-y 16
-end
-arch shop_floor
+arch shop_random
 x 20
 y 16
 end
@@ -5611,13 +5473,7 @@ arch dungeon_magic
 x 20
 y 17
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 20
-y 17
-end
-arch shop_floor
+arch shop_random
 x 20
 y 17
 end
@@ -5625,13 +5481,7 @@ arch dungeon_magic
 x 20
 y 18
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 20
-y 18
-end
-arch shop_floor
+arch shop_random
 x 20
 y 18
 end
