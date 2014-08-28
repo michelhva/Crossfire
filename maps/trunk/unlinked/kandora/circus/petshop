@@ -4,7 +4,7 @@ width 16
 height 16
 msg
 Created:  1999-02-18 King Zoobus
-Modified: 2008-06-06 Arvid Norlander
+Modified: 2014-08-28 Rick Tanner
 endmsg
 end
 arch woodfloor2
@@ -818,7 +818,7 @@ arch shop_weapon
 x 6
 y 7
 end
-arch shop_floor
+arch shop_random
 x 6
 y 8
 end
@@ -838,7 +838,7 @@ arch shop_empty
 x 6
 y 10
 end
-arch shop_floor
+arch shop_random
 x 6
 y 11
 end
@@ -916,7 +916,7 @@ arch shop_empty
 x 7
 y 10
 end
-arch shop_floor
+arch shop_random
 x 7
 y 11
 end
@@ -950,7 +950,7 @@ end
 arch wall_2_1_2
 x 8
 end
-arch shop_floor
+arch shop_random
 x 8
 y 1
 end
@@ -974,7 +974,7 @@ arch shop_empty
 x 8
 y 4
 end
-arch shop_floor
+arch shop_random
 x 8
 y 5
 end
@@ -986,7 +986,7 @@ arch shop_empty
 x 8
 y 6
 end
-arch shop_floor
+arch shop_random
 x 8
 y 7
 end
@@ -1006,7 +1006,7 @@ arch shop_empty
 x 8
 y 9
 end
-arch shop_floor
+arch shop_random
 x 8
 y 10
 end
@@ -1014,7 +1014,7 @@ arch chicken
 x 8
 y 10
 end
-arch shop_floor
+arch shop_random
 x 8
 y 11
 end
@@ -1044,7 +1044,7 @@ end
 arch wall_2_1_2
 x 9
 end
-arch shop_floor
+arch shop_random
 x 9
 y 1
 end
@@ -1126,7 +1126,7 @@ end
 arch wall_2_1_2
 x 10
 end
-arch shop_floor
+arch shop_random
 x 10
 y 1
 end
@@ -1200,7 +1200,7 @@ end
 arch wall_2_1_2
 x 11
 end
-arch shop_floor
+arch shop_random
 x 11
 y 1
 end
@@ -1278,7 +1278,7 @@ end
 arch wall_2_1_2
 x 12
 end
-arch shop_floor
+arch shop_random
 x 12
 y 1
 end
