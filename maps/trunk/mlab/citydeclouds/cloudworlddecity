@@ -9,7 +9,7 @@ enter_x 29
 enter_y 112
 msg
 Created:  2003-11-09 mikeeusa
-Modified: 2012-08-27 Rick Tanner
+Modified: 2014-08-28 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -128470,8 +128470,8 @@ end
 arch store_general
 name City de Clouds General Shop
 slaying shops/cwdcgenshop1
-hp 14
-sp 18
+hp 16
+sp 20
 x 88
 y 95
 end
@@ -130080,16 +130080,7 @@ face fog.111
 x 89
 y 95
 end
-arch blocked
-name nothing
-x 89
-y 96
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch flagstone
 x 89
 y 96
 end
