@@ -10,7 +10,7 @@ enter_x 17
 enter_y 32
 msg
 Created:  1997-07-10 Viola Krings
-Modified: 2012-07-06 Rick Tanner
+Modified: 2014-08-29 Rick Tanner
 endmsg
 end
 arch grass_only
@@ -1939,7 +1939,7 @@ arch menu
 x 9
 y 16
 end
-arch shop_floor
+arch shop_random
 x 9
 y 17
 end
