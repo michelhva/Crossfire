@@ -9,7 +9,7 @@ enter_x 14
 enter_y 18
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2014-08-28 Rick Tanner
+Modified: 2014-08-29 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -499,12 +499,6 @@ arch dungeon_magic
 x 3
 y 3
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 3
-y 3
-end
 arch shop_ring
 x 3
 y 3
@@ -513,12 +507,6 @@ arch dungeon_magic
 x 3
 y 4
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 3
-y 4
-end
 arch shop_ring
 x 3
 y 4
@@ -527,23 +515,11 @@ arch dungeon_magic
 x 3
 y 5
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 3
-y 5
-end
 arch shop_ring
 x 3
 y 5
 end
 arch dungeon_magic
-x 3
-y 6
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 3
 y 6
 end
@@ -555,23 +531,11 @@ arch dungeon_magic
 x 3
 y 7
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 3
-y 7
-end
 arch shop_throw
 x 3
 y 7
 end
 arch dungeon_magic
-x 3
-y 8
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 3
 y 8
 end
@@ -597,12 +561,6 @@ arch dungeon_magic
 x 3
 y 10
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 3
-y 10
-end
 arch shop_scrolls
 x 3
 y 10
@@ -611,12 +569,6 @@ arch dungeon_magic
 x 3
 y 11
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 3
-y 11
-end
 arch shop_scrolls
 x 3
 y 11
@@ -625,23 +577,11 @@ arch dungeon_magic
 x 3
 y 12
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 3
-y 12
-end
 arch shop_scrolls
 x 3
 y 12
 end
 arch dungeon_magic
-x 3
-y 13
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 3
 y 13
 end
@@ -667,12 +607,6 @@ arch dungeon_magic
 x 3
 y 15
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 3
-y 15
-end
 arch shop_general
 x 3
 y 15
@@ -681,12 +615,6 @@ arch dungeon_magic
 x 3
 y 16
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 3
-y 16
-end
 arch shop_general
 x 3
 y 16
@@ -695,12 +623,6 @@ arch dungeon_magic
 x 3
 y 17
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 3
-y 17
-end
 arch shop_general
 x 3
 y 17
@@ -709,12 +631,6 @@ arch dungeon_magic
 x 3
 y 18
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 3
-y 18
-end
 arch shop_general
 x 3
 y 18
@@ -723,23 +639,11 @@ arch dungeon_magic
 x 3
 y 19
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 3
-y 19
-end
 arch shop_general
 x 3
 y 19
 end
 arch dungeon_magic
-x 3
-y 20
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 3
 y 20
 end
@@ -794,12 +698,6 @@ arch dungeon_magic
 x 4
 y 3
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 4
-y 3
-end
 arch shop_ring
 x 4
 y 3
@@ -845,12 +743,6 @@ x 4
 y 7
 end
 arch dungeon_magic
-x 4
-y 8
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 4
 y 8
 end
@@ -876,12 +768,6 @@ arch dungeon_magic
 x 4
 y 10
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 4
-y 10
-end
 arch shop_scrolls
 x 4
 y 10
@@ -907,12 +793,6 @@ x 4
 y 12
 end
 arch dungeon_magic
-x 4
-y 13
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 4
 y 13
 end
@@ -935,12 +815,6 @@ x 4
 y 14
 end
 arch dungeon_magic
-x 4
-y 15
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 4
 y 15
 end
@@ -989,12 +863,6 @@ x 4
 y 19
 end
 arch dungeon_magic
-x 4
-y 20
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 4
 y 20
 end
@@ -1049,12 +917,6 @@ arch dungeon_magic
 x 5
 y 3
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 5
-y 3
-end
 arch shop_ring
 x 5
 y 3
@@ -1073,23 +935,11 @@ arch dungeon_magic
 x 5
 y 5
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 5
-y 5
-end
 arch shop_food
 x 5
 y 5
 end
 arch dungeon_magic
-x 5
-y 6
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 5
 y 6
 end
@@ -1166,12 +1016,6 @@ arch dungeon_magic
 x 5
 y 13
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 5
-y 13
-end
 arch shop_weapon
 x 5
 y 13
@@ -1191,12 +1035,6 @@ x 5
 y 14
 end
 arch dungeon_magic
-x 5
-y 15
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 5
 y 15
 end
@@ -1253,12 +1091,6 @@ x 5
 y 19
 end
 arch dungeon_magic
-x 5
-y 20
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 5
 y 20
 end
@@ -1313,12 +1145,6 @@ arch dungeon_magic
 x 6
 y 3
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 6
-y 3
-end
 arch shop_potions
 x 6
 y 3
@@ -1337,23 +1163,11 @@ arch dungeon_magic
 x 6
 y 5
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 6
-y 5
-end
 arch shop_food
 x 6
 y 5
 end
 arch dungeon_magic
-x 6
-y 6
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 6
 y 6
 end
@@ -1372,12 +1186,6 @@ x 6
 y 7
 end
 arch dungeon_magic
-x 6
-y 8
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 6
 y 8
 end
@@ -1403,12 +1211,6 @@ arch dungeon_magic
 x 6
 y 10
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 6
-y 10
-end
 arch shop_special
 x 6
 y 10
@@ -1437,12 +1239,6 @@ arch dungeon_magic
 x 6
 y 13
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 6
-y 13
-end
 arch shop_weapon
 x 6
 y 13
@@ -1462,12 +1258,6 @@ x 6
 y 14
 end
 arch dungeon_magic
-x 6
-y 15
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 6
 y 15
 end
@@ -1524,12 +1314,6 @@ x 6
 y 19
 end
 arch dungeon_magic
-x 6
-y 20
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 6
 y 20
 end
@@ -1584,12 +1368,6 @@ arch dungeon_magic
 x 7
 y 3
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 7
-y 3
-end
 arch shop_potions
 x 7
 y 3
@@ -1638,12 +1416,6 @@ arch dungeon_magic
 x 7
 y 8
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 7
-y 8
-end
 arch shop_wands
 x 7
 y 8
@@ -1663,12 +1435,6 @@ x 7
 y 9
 end
 arch dungeon_magic
-x 7
-y 10
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 7
 y 10
 end
@@ -1697,12 +1463,6 @@ x 7
 y 12
 end
 arch dungeon_magic
-x 7
-y 13
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 7
 y 13
 end
@@ -1728,12 +1488,6 @@ arch dungeon_magic
 x 7
 y 15
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 7
-y 15
-end
 arch shop_general
 x 7
 y 15
@@ -1787,12 +1541,6 @@ x 7
 y 19
 end
 arch dungeon_magic
-x 7
-y 20
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 7
 y 20
 end
@@ -1847,23 +1595,11 @@ arch dungeon_magic
 x 8
 y 3
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 8
-y 3
-end
 arch shop_potions
 x 8
 y 3
 end
 arch dungeon_magic
-x 8
-y 4
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 8
 y 4
 end
@@ -1885,12 +1621,6 @@ arch dungeon_magic
 x 8
 y 6
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 8
-y 6
-end
 arch shop_wands
 x 8
 y 6
@@ -1899,23 +1629,11 @@ arch dungeon_magic
 x 8
 y 7
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 8
-y 7
-end
 arch shop_wands
 x 8
 y 7
 end
 arch dungeon_magic
-x 8
-y 8
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 8
 y 8
 end
@@ -1938,12 +1656,6 @@ x 8
 y 9
 end
 arch dungeon_magic
-x 8
-y 10
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 8
 y 10
 end
@@ -2055,12 +1767,6 @@ x 8
 y 19
 end
 arch dungeon_magic
-x 8
-y 20
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 8
 y 20
 end
@@ -2214,12 +1920,6 @@ arch dungeon_magic
 x 9
 y 10
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 9
-y 10
-end
 arch shop_special
 x 9
 y 10
@@ -2245,12 +1945,6 @@ x 9
 y 12
 end
 arch dungeon_magic
-x 9
-y 13
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 9
 y 13
 end
@@ -2276,12 +1970,6 @@ arch dungeon_magic
 x 9
 y 15
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 9
-y 15
-end
 arch shop_general
 x 9
 y 15
@@ -2335,12 +2023,6 @@ x 9
 y 19
 end
 arch dungeon_magic
-x 9
-y 20
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 9
 y 20
 end
@@ -2395,12 +2077,6 @@ arch dungeon_magic
 x 10
 y 3
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 10
-y 3
-end
 arch shop_armour
 x 10
 y 3
@@ -2433,12 +2109,6 @@ arch dungeon_magic
 x 10
 y 6
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 10
-y 6
-end
 arch shop_alchemy
 x 10
 y 6
@@ -2447,23 +2117,11 @@ arch dungeon_magic
 x 10
 y 7
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 10
-y 7
-end
 arch shop_alchemy
 x 10
 y 7
 end
 arch dungeon_magic
-x 10
-y 8
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 10
 y 8
 end
@@ -2486,12 +2144,6 @@ x 10
 y 9
 end
 arch dungeon_magic
-x 10
-y 10
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 10
 y 10
 end
@@ -2523,12 +2175,6 @@ arch dungeon_magic
 x 10
 y 13
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 10
-y 13
-end
 arch shop_gems
 x 10
 y 13
@@ -2548,12 +2194,6 @@ x 10
 y 14
 end
 arch dungeon_magic
-x 10
-y 15
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 10
 y 15
 end
@@ -2610,12 +2250,6 @@ x 10
 y 19
 end
 arch dungeon_magic
-x 10
-y 20
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 10
 y 20
 end
@@ -2670,12 +2304,6 @@ arch dungeon_magic
 x 11
 y 3
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 11
-y 3
-end
 arch shop_armour
 x 11
 y 3
@@ -2724,12 +2352,6 @@ arch dungeon_magic
 x 11
 y 8
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 11
-y 8
-end
 arch shop_alchemy
 x 11
 y 8
@@ -2749,12 +2371,6 @@ x 11
 y 9
 end
 arch dungeon_magic
-x 11
-y 10
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 11
 y 10
 end
@@ -2786,12 +2402,6 @@ arch dungeon_magic
 x 11
 y 13
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 11
-y 13
-end
 arch shop_gems
 x 11
 y 13
@@ -2811,12 +2421,6 @@ x 11
 y 14
 end
 arch dungeon_magic
-x 11
-y 15
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 11
 y 15
 end
@@ -2873,12 +2477,6 @@ x 11
 y 19
 end
 arch dungeon_magic
-x 11
-y 20
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 11
 y 20
 end
@@ -2933,12 +2531,6 @@ arch dungeon_magic
 x 12
 y 3
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 12
-y 3
-end
 arch shop_armour
 x 12
 y 3
@@ -2957,23 +2549,11 @@ arch dungeon_magic
 x 12
 y 5
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 12
-y 5
-end
 arch shop_food
 x 12
 y 5
 end
 arch dungeon_magic
-x 12
-y 6
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 12
 y 6
 end
@@ -2992,12 +2572,6 @@ x 12
 y 7
 end
 arch dungeon_magic
-x 12
-y 8
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 12
 y 8
 end
@@ -3020,12 +2594,6 @@ x 12
 y 9
 end
 arch dungeon_magic
-x 12
-y 10
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 12
 y 10
 end
@@ -3057,12 +2625,6 @@ arch dungeon_magic
 x 12
 y 13
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 12
-y 13
-end
 arch shop_gems
 x 12
 y 13
@@ -3082,12 +2644,6 @@ x 12
 y 14
 end
 arch dungeon_magic
-x 12
-y 15
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 12
 y 15
 end
@@ -3192,12 +2748,6 @@ arch dungeon_magic
 x 13
 y 3
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 13
-y 3
-end
 arch shop_armour
 x 13
 y 3
@@ -3216,23 +2766,11 @@ arch dungeon_magic
 x 13
 y 5
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 13
-y 5
-end
 arch shop_food
 x 13
 y 5
 end
 arch dungeon_magic
-x 13
-y 6
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 13
 y 6
 end
@@ -3251,12 +2789,6 @@ x 13
 y 7
 end
 arch dungeon_magic
-x 13
-y 8
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 13
 y 8
 end
@@ -3282,23 +2814,11 @@ arch dungeon_magic
 x 13
 y 10
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 13
-y 10
-end
 arch shop_special
 x 13
 y 10
 end
 arch dungeon_magic
-x 13
-y 11
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 13
 y 11
 end
@@ -3317,12 +2837,6 @@ x 13
 y 12
 end
 arch dungeon_magic
-x 13
-y 13
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 13
 y 13
 end
@@ -3348,23 +2862,11 @@ arch dungeon_magic
 x 13
 y 15
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 13
-y 15
-end
 arch shop_general
 x 13
 y 15
 end
 arch dungeon_magic
-x 13
-y 16
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 13
 y 16
 end
@@ -3467,12 +2969,6 @@ arch dungeon_magic
 x 14
 y 3
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 14
-y 3
-end
 arch shop_armour
 x 14
 y 3
@@ -3491,23 +2987,11 @@ arch dungeon_magic
 x 14
 y 5
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 14
-y 5
-end
 arch shop_food
 x 14
 y 5
 end
 arch dungeon_magic
-x 14
-y 6
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 14
 y 6
 end
@@ -3526,12 +3010,6 @@ x 14
 y 7
 end
 arch dungeon_magic
-x 14
-y 8
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 14
 y 8
 end
@@ -3766,12 +3244,6 @@ arch dungeon_magic
 x 15
 y 3
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 15
-y 3
-end
 arch shop_armour
 x 15
 y 3
@@ -3790,23 +3262,11 @@ arch dungeon_magic
 x 15
 y 5
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 15
-y 5
-end
 arch shop_food
 x 15
 y 5
 end
 arch dungeon_magic
-x 15
-y 6
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 15
 y 6
 end
@@ -3825,12 +3285,6 @@ x 15
 y 7
 end
 arch dungeon_magic
-x 15
-y 8
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 15
 y 8
 end
@@ -4016,12 +3470,6 @@ arch dungeon_magic
 x 16
 y 3
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 16
-y 3
-end
 arch shop_armour
 x 16
 y 3
@@ -4040,23 +3488,11 @@ arch dungeon_magic
 x 16
 y 5
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 16
-y 5
-end
 arch shop_food
 x 16
 y 5
 end
 arch dungeon_magic
-x 16
-y 6
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 16
 y 6
 end
@@ -4075,12 +3511,6 @@ x 16
 y 7
 end
 arch dungeon_magic
-x 16
-y 8
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 16
 y 8
 end
@@ -4284,12 +3714,6 @@ arch dungeon_magic
 x 17
 y 3
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 17
-y 3
-end
 arch shop_armour
 x 17
 y 3
@@ -4308,23 +3732,11 @@ arch dungeon_magic
 x 17
 y 5
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 17
-y 5
-end
 arch shop_food
 x 17
 y 5
 end
 arch dungeon_magic
-x 17
-y 6
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 17
 y 6
 end
@@ -4343,12 +3755,6 @@ x 17
 y 7
 end
 arch dungeon_magic
-x 17
-y 8
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 17
 y 8
 end
@@ -4380,10 +3786,6 @@ face shop_empty.111
 x 17
 y 10
 end
-arch shop_floor
-x 17
-y 10
-end
 arch dungeon_magic
 x 17
 y 11
@@ -4398,12 +3800,6 @@ arch dungeon_magic
 x 17
 y 12
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 17
-y 12
-end
 arch shop_food
 x 17
 y 12
@@ -4412,12 +3808,6 @@ arch dungeon_magic
 x 17
 y 13
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 17
-y 13
-end
 arch shop_food
 x 17
 y 13
@@ -4426,23 +3816,11 @@ arch dungeon_magic
 x 17
 y 14
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 17
-y 14
-end
 arch shop_food
 x 17
 y 14
 end
 arch dungeon_magic
-x 17
-y 15
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 17
 y 15
 end
@@ -4579,12 +3957,6 @@ arch dungeon_magic
 x 18
 y 3
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 18
-y 3
-end
 arch shop_books
 x 18
 y 3
@@ -4603,23 +3975,11 @@ arch dungeon_magic
 x 18
 y 5
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 18
-y 5
-end
 arch shop_food
 x 18
 y 5
 end
 arch dungeon_magic
-x 18
-y 6
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 18
 y 6
 end
@@ -4686,12 +4046,6 @@ arch dungeon_magic
 x 18
 y 12
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 18
-y 12
-end
 arch shop_food
 x 18
 y 12
@@ -4700,12 +4054,6 @@ arch dungeon_magic
 x 18
 y 13
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 18
-y 13
-end
 arch shop_food
 x 18
 y 13
@@ -4714,23 +4062,11 @@ arch dungeon_magic
 x 18
 y 14
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 18
-y 14
-end
 arch shop_food
 x 18
 y 14
 end
 arch dungeon_magic
-x 18
-y 15
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 18
 y 15
 end
@@ -4833,12 +4169,6 @@ arch dungeon_magic
 x 19
 y 3
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 19
-y 3
-end
 arch shop_books
 x 19
 y 3
@@ -4857,23 +4187,11 @@ arch dungeon_magic
 x 19
 y 5
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 19
-y 5
-end
 arch shop_food
 x 19
 y 5
 end
 arch dungeon_magic
-x 19
-y 6
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 19
 y 6
 end
@@ -4892,12 +4210,6 @@ x 19
 y 7
 end
 arch dungeon_magic
-x 19
-y 8
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 19
 y 8
 end
@@ -4941,12 +4253,6 @@ arch dungeon_magic
 x 19
 y 12
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 19
-y 12
-end
 arch shop_food
 x 19
 y 12
@@ -4955,12 +4261,6 @@ arch dungeon_magic
 x 19
 y 13
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 19
-y 13
-end
 arch shop_food
 x 19
 y 13
@@ -4969,12 +4269,6 @@ arch dungeon_magic
 x 19
 y 14
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 19
-y 14
-end
 arch shop_food
 x 19
 y 14
@@ -4983,12 +4277,6 @@ arch dungeon_magic
 x 19
 y 15
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 19
-y 15
-end
 arch shop_food
 x 19
 y 15
@@ -4997,12 +4285,6 @@ arch dungeon_magic
 x 19
 y 16
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 19
-y 16
-end
 arch shop_food
 x 19
 y 16
@@ -5011,23 +4293,11 @@ arch dungeon_magic
 x 19
 y 17
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 19
-y 17
-end
 arch shop_food
 x 19
 y 17
 end
 arch dungeon_magic
-x 19
-y 18
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 19
 y 18
 end
@@ -5100,12 +4370,6 @@ arch dungeon_magic
 x 20
 y 3
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 20
-y 3
-end
 arch shop_books
 x 20
 y 3
@@ -5124,23 +4388,11 @@ arch dungeon_magic
 x 20
 y 5
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 20
-y 5
-end
 arch shop_food
 x 20
 y 5
 end
 arch dungeon_magic
-x 20
-y 6
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 20
 y 6
 end
@@ -5159,12 +4411,6 @@ x 20
 y 7
 end
 arch dungeon_magic
-x 20
-y 8
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 20
 y 8
 end
@@ -5208,12 +4454,6 @@ arch dungeon_magic
 x 20
 y 12
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 20
-y 12
-end
 arch shop_food
 x 20
 y 12
@@ -5222,12 +4462,6 @@ arch dungeon_magic
 x 20
 y 13
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 20
-y 13
-end
 arch shop_food
 x 20
 y 13
@@ -5236,12 +4470,6 @@ arch dungeon_magic
 x 20
 y 14
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 20
-y 14
-end
 arch shop_food
 x 20
 y 14
@@ -5250,12 +4478,6 @@ arch dungeon_magic
 x 20
 y 15
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 20
-y 15
-end
 arch shop_food
 x 20
 y 15
@@ -5264,12 +4486,6 @@ arch dungeon_magic
 x 20
 y 16
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 20
-y 16
-end
 arch shop_food
 x 20
 y 16
@@ -5278,23 +4494,11 @@ arch dungeon_magic
 x 20
 y 17
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 20
-y 17
-end
 arch shop_food
 x 20
 y 17
 end
 arch dungeon_magic
-x 20
-y 18
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 20
 y 18
 end
@@ -5367,12 +4571,6 @@ arch dungeon_magic
 x 21
 y 3
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 21
-y 3
-end
 arch shop_books
 x 21
 y 3
@@ -5418,12 +4616,6 @@ x 21
 y 7
 end
 arch dungeon_magic
-x 21
-y 8
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 21
 y 8
 end
@@ -5598,12 +4790,6 @@ arch dungeon_magic
 x 22
 y 3
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 22
-y 3
-end
 arch shop_amulets
 x 22
 y 3
@@ -5612,12 +4798,6 @@ arch dungeon_magic
 x 22
 y 4
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 22
-y 4
-end
 arch shop_amulets
 x 22
 y 4
@@ -5626,12 +4806,6 @@ arch dungeon_magic
 x 22
 y 5
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 22
-y 5
-end
 arch shop_amulets
 x 22
 y 5
@@ -5640,12 +4814,6 @@ arch dungeon_magic
 x 22
 y 6
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 22
-y 6
-end
 arch shop_amulets
 x 22
 y 6
@@ -5654,23 +4822,11 @@ arch dungeon_magic
 x 22
 y 7
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 22
-y 7
-end
 arch shop_amulets
 x 22
 y 7
 end
 arch dungeon_magic
-x 22
-y 8
-end
-arch flagstone
-name floor
-face shop_empty.111
 x 22
 y 8
 end
