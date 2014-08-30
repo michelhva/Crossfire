@@ -175,7 +175,7 @@ public class JXCWindowRenderer {
 
         @Override
         public void mouseClicked(final MouseEvent e) {
-            // ignore
+            mouseTracker.mouseClicked(findElement(e.getComponent(), e), e);
         }
 
         @Override

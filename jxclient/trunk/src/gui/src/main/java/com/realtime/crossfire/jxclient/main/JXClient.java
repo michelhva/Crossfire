@@ -157,144 +157,151 @@ public class JXClient {
             try {
                 final Writer debugKeyboardOutputStreamWriter = openDebugStream(options.getDebugKeyboardFilename());
                 try {
-                    final Writer debugScreenOutputStreamWriter = openDebugStream(options.getDebugScreenFilename());
+                    final Writer debugMouseOutputStreamWriter = openDebugStream(options.getDebugMouseFilename());
                     try {
-                        final Writer debugSoundOutputStreamWriter = openDebugStream(options.getDebugSoundFilename());
+                        final Writer debugScreenOutputStreamWriter = openDebugStream(options.getDebugScreenFilename());
                         try {
-                            final Settings settings = new Settings(Filenames.getSettingsFile());
-                            settings.remove("resolution"); // delete obsolete entry
-                            settings.remove("width"); // delete obsolete entry
-                            settings.remove("height"); // delete obsolete entry
-                            settings.remove("skin"); // delete obsolete entry
-                            final OptionManager optionManager = new OptionManager(settings);
-                            final MetaserverModel metaserverModel = new MetaserverModel();
-                            final CharacterModel characterModel = new CharacterModel();
-                            final Model model = new Model();
-                            final CrossfireServerConnection server = new DefaultCrossfireServerConnection(model, debugProtocolOutputStreamWriter == null ? null : new DebugWriter(debugProtocolOutputStreamWriter), "JXClient "+buildNumber);
-                            server.start();
+                            final Writer debugSoundOutputStreamWriter = openDebugStream(options.getDebugSoundFilename());
                             try {
-                                final AskfaceFaceQueue askfaceFaceQueue = new AskfaceFaceQueue(server);
-                                model.setAskfaceFaceQueue(askfaceFaceQueue);
-                                final FacesQueue facesQueue = new FacesQueue(askfaceFaceQueue, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()));
-                                final FacesManager facesManager = new DefaultFacesManager(model.getFaceCache(), facesQueue);
-                                model.setItemsManager(facesManager);
-                                final InventoryView inventoryView = new InventoryView(model.getItemSet(), new InventoryComparator());
-                                final FloorView floorView = new FloorView(model.getItemSet());
-                                final Metaserver metaserver = new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel);
-                                new MetaserverProcessor(metaserver, model.getGuiStateManager());
-                                final SoundManager soundManager = new SoundManager(model.getGuiStateManager(), debugSoundOutputStreamWriter == null ? null : new DebugWriter(debugSoundOutputStreamWriter));
+                                final Settings settings = new Settings(Filenames.getSettingsFile());
+                                settings.remove("resolution"); // delete obsolete entry
+                                settings.remove("width"); // delete obsolete entry
+                                settings.remove("height"); // delete obsolete entry
+                                settings.remove("skin"); // delete obsolete entry
+                                final OptionManager optionManager = new OptionManager(settings);
+                                final MetaserverModel metaserverModel = new MetaserverModel();
+                                final CharacterModel characterModel = new CharacterModel();
+                                final Model model = new Model();
+                                final CrossfireServerConnection server = new DefaultCrossfireServerConnection(model, debugProtocolOutputStreamWriter == null ? null : new DebugWriter(debugProtocolOutputStreamWriter), "JXClient "+buildNumber);
+                                server.start();
                                 try {
-                                    optionManager.addOption("sound_enabled", "Whether sound is enabled.", new SoundCheckBoxOption(soundManager));
-                                } catch (final OptionException ex) {
-                                    throw new AssertionError(ex);
+                                    final AskfaceFaceQueue askfaceFaceQueue = new AskfaceFaceQueue(server);
+                                    model.setAskfaceFaceQueue(askfaceFaceQueue);
+                                    final FacesQueue facesQueue = new FacesQueue(askfaceFaceQueue, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()));
+                                    final FacesManager facesManager = new DefaultFacesManager(model.getFaceCache(), facesQueue);
+                                    model.setItemsManager(facesManager);
+                                    final InventoryView inventoryView = new InventoryView(model.getItemSet(), new InventoryComparator());
+                                    final FloorView floorView = new FloorView(model.getItemSet());
+                                    final Metaserver metaserver = new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel);
+                                    new MetaserverProcessor(metaserver, model.getGuiStateManager());
+                                    final SoundManager soundManager = new SoundManager(model.getGuiStateManager(), debugSoundOutputStreamWriter == null ? null : new DebugWriter(debugSoundOutputStreamWriter));
+                                    try {
+                                        optionManager.addOption("sound_enabled", "Whether sound is enabled.", new SoundCheckBoxOption(soundManager));
+                                    } catch (final OptionException ex) {
+                                        throw new AssertionError(ex);
+                                    }
+
+                                    final MouseTracker mouseTracker = new MouseTracker(options.isDebugGui(), debugMouseOutputStreamWriter);
+                                    new MusicWatcher(server, soundManager);
+                                    new SoundWatcher(server, soundManager);
+                                    new PoisonWatcher(model.getStats(), server);
+                                    new ActiveSkillWatcher(model.getStats(), server);
+                                    final Macros macros = new Macros(server);
+                                    final MapUpdaterState mapUpdaterState = new MapUpdaterState(facesManager, model.getGuiStateManager());
+                                    new CfMapUpdater(mapUpdaterState, server, facesManager, model.getGuiStateManager());
+                                    final SpellsView spellsView = new SpellsView(model.getSpellsManager(), facesManager);
+                                    final SpellSkillView spellSkillsView = new SpellSkillView(model.getSpellsManager(), facesManager);
+                                    final QuestsView questsView = new QuestsView(model.getQuestsManager(), facesManager);
+                                    final KnowledgeView knowledgeView = new KnowledgeView(facesManager, model.getKnowledgeManager());
+                                    final KnowledgeTypeView knowledgeTypesView = new KnowledgeTypeView(facesManager, model.getKnowledgeManager());
+                                    final CommandQueue commandQueue = new CommandQueue(server, model.getGuiStateManager());
+                                    final ScriptManager scriptManager = new ScriptManager(commandQueue, server, model.getStats(), floorView, model.getItemSet(), model.getSpellsManager(), mapUpdaterState, model.getSkillSet());
+                                    final Shortcuts shortcuts = new Shortcuts(commandQueue, model.getSpellsManager());
+                                    final Logger logger = new Logger(server, null, settings.getBoolean("messagelog", false));
+
+                                    final Exiter exiter = new Exiter();
+                                    final JXCWindow[] window = new JXCWindow[1];
+                                    SwingUtilities.invokeAndWait(new Runnable() {
+
+                                        @Override
+                                        public void run() {
+                                            final JXCWindowRenderer windowRenderer = new JXCWindowRenderer(mouseTracker, server, debugScreenOutputStreamWriter);
+                                            new StatsWatcher(model.getStats(), windowRenderer, server, soundManager);
+                                            final TooltipManagerImpl tooltipManager = new TooltipManagerImpl();
+                                            final Pickup characterPickup;
+                                            try {
+                                                characterPickup = new Pickup(commandQueue, optionManager);
+                                            } catch (final OptionException ex) {
+                                                throw new AssertionError(ex);
+                                            }
+                                            final GuiManagerCommandCallback commandCallback = new GuiManagerCommandCallback(exiter, server);
+                                            final ScreenshotFiles screenshotFiles = new ScreenshotFiles();
+                                            final Commands commands = new Commands();
+                                            final CommandExecutor commandExecutor = new CommandExecutorImpl(commandQueue, commands);
+                                            final CommandHistoryFactory commandHistoryFactory = new CommandHistoryFactory();
+                                            final GUICommandFactory guiCommandFactory = new GUICommandFactoryImpl(commandCallback, commandExecutor, macros);
+                                            commands.addCommand(new BindCommand(server, commandCallback, guiCommandFactory));
+                                            commands.addCommand(new UnbindCommand(commandCallback, server));
+                                            commands.addCommand(new ScreenshotCommand(windowRenderer, server, screenshotFiles));
+                                            commands.addCommand(new ScriptCommand(scriptManager, server));
+                                            commands.addCommand(new ScriptkillCommand(scriptManager, server));
+                                            commands.addCommand(new ScriptkillallCommand(scriptManager, server));
+                                            commands.addCommand(new ScriptsCommand(scriptManager, server));
+                                            commands.addCommand(new ScripttellCommand(scriptManager, server));
+                                            commands.addCommand(new ExecCommand(commandCallback, server));
+                                            commands.addCommand(new SetCommand(server, optionManager));
+                                            commands.addCommand(new ClearCommand(windowRenderer, server));
+                                            commands.addCommand(new DebugMessagesCommand(server));
+                                            commands.addCommand(new AgainCommand(server, commandExecutor, commandHistoryFactory.getCommandHistory("command")));
+                                            final File keybindingsFile;
+                                            try {
+                                                keybindingsFile = Filenames.getKeybindingsFile(null, null);
+                                            } catch (final IOException ex) {
+                                                System.err.println("Cannot read keybindings file: "+ex.getMessage());
+                                                exiter.terminate();
+                                                return;
+                                            }
+                                            final KeybindingsManager keybindingsManager = new KeybindingsManager(keybindingsFile, guiCommandFactory);
+                                            final JXCConnection connection = new JXCConnection(keybindingsManager, shortcuts, settings, characterPickup, server, model.getGuiStateManager(), logger);
+                                            final GuiFactory guiFactory = new GuiFactory(guiCommandFactory);
+                                            final GuiManager guiManager = new GuiManager(model.getGuiStateManager(), tooltipManager, settings, server, windowRenderer, guiFactory, keybindingsManager, connection);
+                                            commandCallback.init(guiManager);
+                                            final KeyBindings defaultKeyBindings = new KeyBindings(null, guiCommandFactory);
+                                            final JXCSkinLoader jxcSkinLoader = new JXCSkinLoader(model, inventoryView, floorView, spellsView, spellSkillsView, facesManager, mapUpdaterState, defaultKeyBindings, optionManager, options.getTileSize(), keybindingsManager, questsView, commandHistoryFactory, knowledgeView, knowledgeTypesView, options.isAvoidCopyArea());
+                                            final SkinLoader skinLoader = new SkinLoader(commandCallback, metaserverModel, options.getResolution(), macros, windowRenderer, server, model.getGuiStateManager(), tooltipManager, commandQueue, jxcSkinLoader, commandExecutor, shortcuts, characterModel, model.getSmoothFaces(), guiCommandFactory);
+                                            new FacesTracker(model.getGuiStateManager(), facesManager);
+                                            new PlayerNameTracker(model.getGuiStateManager(), connection, model.getItemSet());
+                                            new OutputCountTracker(model.getGuiStateManager(), server, commandQueue);
+                                            final DefaultKeyHandler defaultKeyHandler = new DefaultKeyHandler(exiter, guiManager, server, model.getGuiStateManager());
+                                            final KeyHandler keyHandler = new KeyHandler(debugKeyboardOutputStreamWriter, keybindingsManager, commandQueue, windowRenderer, defaultKeyHandler);
+                                            window[0] = new JXCWindow(exiter, server, optionManager, model.getGuiStateManager(), windowRenderer, commandQueue, guiManager, keyHandler, characterModel, connection);
+                                            window[0].init(options.getResolution(), options.getSkin(), options.isFullScreen(), skinLoader);
+                                            keybindingsManager.loadKeybindings();
+                                            final String serverInfo = options.getServer();
+                                            if (serverInfo != null) {
+                                                model.getGuiStateManager().connect(serverInfo);
+                                            } else {
+                                                model.getGuiStateManager().changeGUI(JXCWindow.DISABLE_START_GUI ? GuiState.METASERVER : GuiState.START);
+                                            }
+                                        }
+
+                                    });
+                                    exiter.waitForTermination();
+                                    SwingUtilities.invokeAndWait(new Runnable() {
+
+                                        @Override
+                                        public void run() {
+                                            window[0].term();
+                                            soundManager.shutdown();
+                                        }
+
+                                    });
+                                } finally {
+                                    server.stop();
                                 }
-
-                                final MouseTracker mouseTracker = new MouseTracker(options.isDebugGui());
-                                new MusicWatcher(server, soundManager);
-                                new SoundWatcher(server, soundManager);
-                                new PoisonWatcher(model.getStats(), server);
-                                new ActiveSkillWatcher(model.getStats(), server);
-                                final Macros macros = new Macros(server);
-                                final MapUpdaterState mapUpdaterState = new MapUpdaterState(facesManager, model.getGuiStateManager());
-                                new CfMapUpdater(mapUpdaterState, server, facesManager, model.getGuiStateManager());
-                                final SpellsView spellsView = new SpellsView(model.getSpellsManager(), facesManager);
-                                final SpellSkillView spellSkillsView = new SpellSkillView(model.getSpellsManager(), facesManager);
-                                final QuestsView questsView = new QuestsView(model.getQuestsManager(), facesManager);
-                                final KnowledgeView knowledgeView = new KnowledgeView(facesManager, model.getKnowledgeManager());
-                                final KnowledgeTypeView knowledgeTypesView = new KnowledgeTypeView(facesManager, model.getKnowledgeManager());
-                                final CommandQueue commandQueue = new CommandQueue(server, model.getGuiStateManager());
-                                final ScriptManager scriptManager = new ScriptManager(commandQueue, server, model.getStats(), floorView, model.getItemSet(), model.getSpellsManager(), mapUpdaterState, model.getSkillSet());
-                                final Shortcuts shortcuts = new Shortcuts(commandQueue, model.getSpellsManager());
-                                final Logger logger = new Logger(server, null, settings.getBoolean("messagelog", false));
-
-                                final Exiter exiter = new Exiter();
-                                final JXCWindow[] window = new JXCWindow[1];
-                                SwingUtilities.invokeAndWait(new Runnable() {
-
-                                    @Override
-                                    public void run() {
-                                        final JXCWindowRenderer windowRenderer = new JXCWindowRenderer(mouseTracker, server, debugScreenOutputStreamWriter);
-                                        new StatsWatcher(model.getStats(), windowRenderer, server, soundManager);
-                                        final TooltipManagerImpl tooltipManager = new TooltipManagerImpl();
-                                        final Pickup characterPickup;
-                                        try {
-                                            characterPickup = new Pickup(commandQueue, optionManager);
-                                        } catch (final OptionException ex) {
-                                            throw new AssertionError(ex);
-                                        }
-                                        final GuiManagerCommandCallback commandCallback = new GuiManagerCommandCallback(exiter, server);
-                                        final ScreenshotFiles screenshotFiles = new ScreenshotFiles();
-                                        final Commands commands = new Commands();
-                                        final CommandExecutor commandExecutor = new CommandExecutorImpl(commandQueue, commands);
-                                        final CommandHistoryFactory commandHistoryFactory = new CommandHistoryFactory();
-                                        final GUICommandFactory guiCommandFactory = new GUICommandFactoryImpl(commandCallback, commandExecutor, macros);
-                                        commands.addCommand(new BindCommand(server, commandCallback, guiCommandFactory));
-                                        commands.addCommand(new UnbindCommand(commandCallback, server));
-                                        commands.addCommand(new ScreenshotCommand(windowRenderer, server, screenshotFiles));
-                                        commands.addCommand(new ScriptCommand(scriptManager, server));
-                                        commands.addCommand(new ScriptkillCommand(scriptManager, server));
-                                        commands.addCommand(new ScriptkillallCommand(scriptManager, server));
-                                        commands.addCommand(new ScriptsCommand(scriptManager, server));
-                                        commands.addCommand(new ScripttellCommand(scriptManager, server));
-                                        commands.addCommand(new ExecCommand(commandCallback, server));
-                                        commands.addCommand(new SetCommand(server, optionManager));
-                                        commands.addCommand(new ClearCommand(windowRenderer, server));
-                                        commands.addCommand(new DebugMessagesCommand(server));
-                                        commands.addCommand(new AgainCommand(server, commandExecutor, commandHistoryFactory.getCommandHistory("command")));
-                                        final File keybindingsFile;
-                                        try {
-                                            keybindingsFile = Filenames.getKeybindingsFile(null, null);
-                                        } catch (final IOException ex) {
-                                            System.err.println("Cannot read keybindings file: "+ex.getMessage());
-                                            exiter.terminate();
-                                            return;
-                                        }
-                                        final KeybindingsManager keybindingsManager = new KeybindingsManager(keybindingsFile, guiCommandFactory);
-                                        final JXCConnection connection = new JXCConnection(keybindingsManager, shortcuts, settings, characterPickup, server, model.getGuiStateManager(), logger);
-                                        final GuiFactory guiFactory = new GuiFactory(guiCommandFactory);
-                                        final GuiManager guiManager = new GuiManager(model.getGuiStateManager(), tooltipManager, settings, server, windowRenderer, guiFactory, keybindingsManager, connection);
-                                        commandCallback.init(guiManager);
-                                        final KeyBindings defaultKeyBindings = new KeyBindings(null, guiCommandFactory);
-                                        final JXCSkinLoader jxcSkinLoader = new JXCSkinLoader(model, inventoryView, floorView, spellsView, spellSkillsView, facesManager, mapUpdaterState, defaultKeyBindings, optionManager, options.getTileSize(), keybindingsManager, questsView, commandHistoryFactory, knowledgeView, knowledgeTypesView, options.isAvoidCopyArea());
-                                        final SkinLoader skinLoader = new SkinLoader(commandCallback, metaserverModel, options.getResolution(), macros, windowRenderer, server, model.getGuiStateManager(), tooltipManager, commandQueue, jxcSkinLoader, commandExecutor, shortcuts, characterModel, model.getSmoothFaces(), guiCommandFactory);
-                                        new FacesTracker(model.getGuiStateManager(), facesManager);
-                                        new PlayerNameTracker(model.getGuiStateManager(), connection, model.getItemSet());
-                                        new OutputCountTracker(model.getGuiStateManager(), server, commandQueue);
-                                        final DefaultKeyHandler defaultKeyHandler = new DefaultKeyHandler(exiter, guiManager, server, model.getGuiStateManager());
-                                        final KeyHandler keyHandler = new KeyHandler(debugKeyboardOutputStreamWriter, keybindingsManager, commandQueue, windowRenderer, defaultKeyHandler);
-                                        window[0] = new JXCWindow(exiter, server, optionManager, model.getGuiStateManager(), windowRenderer, commandQueue, guiManager, keyHandler, characterModel, connection);
-                                        window[0].init(options.getResolution(), options.getSkin(), options.isFullScreen(), skinLoader);
-                                        keybindingsManager.loadKeybindings();
-                                        final String serverInfo = options.getServer();
-                                        if (serverInfo != null) {
-                                            model.getGuiStateManager().connect(serverInfo);
-                                        } else {
-                                            model.getGuiStateManager().changeGUI(JXCWindow.DISABLE_START_GUI ? GuiState.METASERVER : GuiState.START);
-                                        }
-                                    }
-
-                                });
-                                exiter.waitForTermination();
-                                SwingUtilities.invokeAndWait(new Runnable() {
-
-                                    @Override
-                                    public void run() {
-                                        window[0].term();
-                                        soundManager.shutdown();
-                                    }
-
-                                });
                             } finally {
-                                server.stop();
+                                if (debugSoundOutputStreamWriter != null) {
+                                    debugSoundOutputStreamWriter.close();
+                                }
                             }
                         } finally {
-                            if (debugSoundOutputStreamWriter != null) {
-                                debugSoundOutputStreamWriter.close();
+                            if (debugScreenOutputStreamWriter != null) {
+                                debugScreenOutputStreamWriter.close();
                             }
                         }
                     } finally {
-                        if (debugScreenOutputStreamWriter != null) {
-                            debugScreenOutputStreamWriter.close();
+                        if (debugMouseOutputStreamWriter != null) {
+                            debugMouseOutputStreamWriter.close();
                         }
                     }
                 } finally {
