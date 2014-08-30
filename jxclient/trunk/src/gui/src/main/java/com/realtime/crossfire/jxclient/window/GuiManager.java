@@ -43,6 +43,7 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireFailureListener
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.settings.Settings;
+import com.realtime.crossfire.jxclient.settings.SettingsEntries;
 import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
@@ -544,12 +545,15 @@ public class GuiManager {
         setHideInput((queryType&CrossfireQueryListener.HIDE_INPUT) != 0);
         currentQueryDialogIsNamePrompt = prompt.startsWith("What is your name?");
         if (currentQueryDialogIsNamePrompt) {
-            final String playerName = settings.getString("player_"+connection.getHostname(), "");
-            if (playerName.length() > 0) {
-                assert queryDialog != null;
-                final GUIText textArea = queryDialog.getFirstElement(GUIText.class);
-                if (textArea != null) {
-                    textArea.setText(playerName);
+            final String hostname = connection.getHostname();
+            if (hostname != null) {
+                final String playerName = settings.getString(SettingsEntries.getPlayerSettingsEntry(hostname));
+                if (playerName.length() > 0) {
+                    assert queryDialog != null;
+                    final GUIText textArea = queryDialog.getFirstElement(GUIText.class);
+                    if (textArea != null) {
+                        textArea.setText(playerName);
+                    }
                 }
             }
         } else if (prompt.startsWith("[y] to roll new stats") || prompt.startsWith("Welcome, Brave New Warrior!")) {
@@ -596,22 +600,25 @@ public class GuiManager {
                         if (name.equals("account_login")) {
                             final GUIText loginField = dialog.getFirstElement(GUIText.class, "account_login");
                             if (loginField != null) {
-                                final String accountName = settings.getString("login_account_"+connection.getHostname(), "");
-                                if (accountName.length() > 0) {
-                                    loginField.setText(accountName);
+                                final String hostname = connection.getHostname();
+                                if (hostname != null) {
+                                    final String accountName = settings.getString(SettingsEntries.getLoginAccountSettingsEntry(hostname));
+                                    if (accountName.length() > 0) {
+                                        loginField.setText(accountName);
 
-                                    final GUIText passwordField = dialog.getFirstElement(GUIText.class, "account_password");
-                                    if (passwordField != null) {
-                                        passwordField.setText("");
-                                        passwordField.setActive(true);
-                                    }
-                                } else {
-                                    loginField.setText("");
-                                    loginField.setActive(true);
+                                        final GUIText passwordField = dialog.getFirstElement(GUIText.class, "account_password");
+                                        if (passwordField != null) {
+                                            passwordField.setText("");
+                                            passwordField.setActive(true);
+                                        }
+                                    } else {
+                                        loginField.setText("");
+                                        loginField.setActive(true);
 
-                                    final GUIText passwordField = dialog.getFirstElement(GUIText.class, "account_password");
-                                    if (passwordField != null) {
-                                        passwordField.setText("");
+                                        final GUIText passwordField = dialog.getFirstElement(GUIText.class, "account_password");
+                                        if (passwordField != null) {
+                                            passwordField.setText("");
+                                        }
                                     }
                                 }
                             } else {
@@ -625,9 +632,12 @@ public class GuiManager {
                             if (characterList != null) {
                                 final String accountName = server.getAccountName();
                                 if (accountName != null) {
-                                    final String characterName = settings.getString("login_account_"+connection.getHostname()+"_"+accountName, "");
-                                    if (characterName.length() > 0) {
-                                        characterList.setCharacter(characterName);
+                                    final String hostname = connection.getHostname();
+                                    if (hostname != null) {
+                                        final String characterName = settings.getString(SettingsEntries.getLoginAccountSettingsEntry(hostname, accountName));
+                                        if (characterName.length() > 0) {
+                                            characterList.setCharacter(characterName);
+                                        }
                                     }
                                 }
                             }
@@ -737,7 +747,7 @@ public class GuiManager {
      * used server entry.
      */
     private void activateMetaserverGui() {
-        final String serverName = settings.getString("server", "crossfire.metalforge.net");
+        final String serverName = settings.getString(SettingsEntries.SERVER);
         if (serverName.length() > 0) {
             windowRenderer.setSelectedHostname(serverName);
         }
@@ -782,7 +792,10 @@ public class GuiManager {
      */
     public void updatePlayerName(@NotNull final String playerName) {
         if (currentQueryDialogIsNamePrompt) {
-            settings.putString("player_"+connection.getHostname(), playerName, "The charactername last played on the server.");
+            final String hostname = connection.getHostname();
+            if (hostname != null) {
+                settings.putString(SettingsEntries.getPlayerSettingsEntry(hostname), playerName);
+            }
         }
     }
 
@@ -1031,7 +1044,10 @@ public class GuiManager {
      * @param accountName the current account name
      */
     public void setAccountName(@NotNull final String accountName) {
-        settings.putString("login_account_"+connection.getHostname(), accountName, "The account last logged in on the server.");
+        final String hostname = connection.getHostname();
+        if (hostname != null) {
+            settings.putString(SettingsEntries.getLoginAccountSettingsEntry(hostname), accountName);
+        }
     }
 
     /**
@@ -1040,7 +1056,10 @@ public class GuiManager {
      * @param characterName the character name
      */
     public void selectCharacter(@NotNull final String accountName, @NotNull final String characterName) {
-        settings.putString("login_account_"+connection.getHostname()+"_"+accountName, characterName, "The character last selected on the account.");
+        final String hostname = connection.getHostname();
+        if (hostname != null) {
+            settings.putString(SettingsEntries.getLoginAccountSettingsEntry(hostname, accountName), characterName);
+        }
     }
 
     /**

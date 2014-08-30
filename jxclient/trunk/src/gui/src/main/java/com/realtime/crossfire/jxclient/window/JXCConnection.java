@@ -28,6 +28,7 @@ import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfirePickupListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.settings.Settings;
+import com.realtime.crossfire.jxclient.settings.SettingsEntries;
 import com.realtime.crossfire.jxclient.settings.options.Pickup;
 import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;
 import com.realtime.crossfire.jxclient.util.NumberParser;
@@ -231,7 +232,7 @@ public class JXCConnection {
             if (pickupMode == Pickup.PU_NOTHING) {
                 settings.remove("pickup_"+hostname+"_"+this.character);
             } else {
-                settings.putLong("pickup_"+hostname+"_"+this.character, pickupMode, "The character's pickup mode.");
+                settings.putLong(SettingsEntries.getPickupSettingsEntry(hostname, this.character), pickupMode);
             }
         }
 
@@ -242,7 +243,7 @@ public class JXCConnection {
             keybindingsManager.loadPerCharacterBindings(hostname, character);
             assert hostname != null;
             ShortcutsLoader.loadShortcuts(shortcuts, hostname, character);
-            characterPickup.updatePickupMode(settings.getLong("pickup_"+hostname+"_"+character, Pickup.PU_NOTHING), true);
+            characterPickup.updatePickupMode(settings.getLong(SettingsEntries.getPickupSettingsEntry(hostname, character)), true);
             server.addCrossfirePickupListener(crossfirePickupListener);
         }
     }
@@ -276,7 +277,7 @@ public class JXCConnection {
             newHostname = null;
             newPort = 0;
         } else {
-            settings.putString("server", serverInfo, "The server last connected to.");
+            settings.putString(SettingsEntries.SERVER, serverInfo);
             final String[] tmp = serverInfo.split(":", 2);
             newHostname = tmp[0];
             newPort = tmp.length < 2 ? DEFAULT_CROSSFIRE_PORT : NumberParser.parseInt(tmp[1], DEFAULT_CROSSFIRE_PORT, 1, 65535);

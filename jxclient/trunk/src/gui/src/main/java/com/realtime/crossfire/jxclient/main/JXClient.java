@@ -74,6 +74,7 @@ import com.realtime.crossfire.jxclient.settings.CommandHistoryFactory;
 import com.realtime.crossfire.jxclient.settings.Filenames;
 import com.realtime.crossfire.jxclient.settings.Macros;
 import com.realtime.crossfire.jxclient.settings.Settings;
+import com.realtime.crossfire.jxclient.settings.SettingsEntries;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.settings.options.Pickup;
@@ -207,7 +208,7 @@ public class JXClient {
                                     final CommandQueue commandQueue = new CommandQueue(server, model.getGuiStateManager());
                                     final ScriptManager scriptManager = new ScriptManager(commandQueue, server, model.getStats(), floorView, model.getItemSet(), model.getSpellsManager(), mapUpdaterState, model.getSkillSet());
                                     final Shortcuts shortcuts = new Shortcuts(commandQueue, model.getSpellsManager());
-                                    final Logger logger = new Logger(server, null, settings.getBoolean("messagelog", false));
+                                    final Logger logger = new Logger(server, null, settings.getBoolean(SettingsEntries.MESSAGE_LOG_SETTINGS_ENTRY));
 
                                     final Exiter exiter = new Exiter();
                                     final JXCWindow[] window = new JXCWindow[1];
