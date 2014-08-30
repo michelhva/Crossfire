@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.settings.options;
 
 import com.realtime.crossfire.jxclient.settings.Settings;
+import com.realtime.crossfire.jxclient.settings.SettingsEntry;
 import java.util.HashMap;
 import java.util.Map;
 import org.jetbrains.annotations.NotNull;
@@ -100,7 +101,7 @@ public class OptionManager {
             final Object option = e.getValue().getOption();
             if (option instanceof CheckBoxOption) {
                 final CheckBoxOption checkBoxOption = (CheckBoxOption)option;
-                final boolean checked = settings.getBoolean(optionName, checkBoxOption.isDefaultChecked());
+                final boolean checked = settings.getBoolean(new SettingsEntry<Boolean>(optionName, checkBoxOption.isDefaultChecked(), null));
                 if (checkBoxOption.isChecked() == checked) {
                     // make sure the appropriate option command is executed
                     checkBoxOption.fireStateChangedEvent();
@@ -124,7 +125,7 @@ public class OptionManager {
             if (!option.inhibitSave()) {
                 if (option instanceof CheckBoxOption) {
                     final CheckBoxOption checkBoxOption = (CheckBoxOption)option;
-                    settings.putBoolean(optionName, checkBoxOption.isChecked(), entry.getDocumentation());
+                    settings.putBoolean(new SettingsEntry<Boolean>(optionName, false, entry.getDocumentation()), checkBoxOption.isChecked());
                 } else {
                     throw new AssertionError();
                 }

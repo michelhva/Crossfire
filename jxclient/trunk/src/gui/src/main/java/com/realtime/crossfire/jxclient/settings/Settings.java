@@ -35,7 +35,6 @@ import java.io.OutputStreamWriter;
 import java.util.Map;
 import java.util.TreeMap;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 /**
  * Maintains a set of key/value pairs. The values are stored in a flat file.
@@ -74,28 +73,26 @@ public class Settings {
      * Returns the string associated with the specified key at a node, or
      * <code>defaultValue</code> if there is no association for this key.
      * @param key the key to get the value for
-     * @param defaultValue the default value
      * @return the value
      */
     @NotNull
-    public String getString(@NotNull final String key, @NotNull final String defaultValue) {
-        final Entry entry = values.get(key);
-        return entry != null ? entry.getValue() : defaultValue;
+    public String getString(@NotNull final SettingsEntry<?> key) {
+        final Entry entry = values.get(key.getKey());
+        return entry != null ? entry.getValue() : key.getDefaultValue().toString();
     }
 
     /**
      * Returns the boolean associated with the specified key at a node or
      * <code>defaultValue</code> if there is no association for this key.
      * @param key the key to get the value for
-     * @param defaultValue the default value
      * @return the value
      */
-    public boolean getBoolean(@NotNull final String key, final boolean defaultValue) {
-        final String value = getString(key, Boolean.toString(defaultValue));
+    public boolean getBoolean(@NotNull final SettingsEntry<Boolean> key) {
+        final String value = getString(key);
         try {
             return Boolean.parseBoolean(value);
         } catch (final NumberFormatException ignored) {
-            return defaultValue;
+            return key.getDefaultValue();
         }
     }
 
@@ -103,41 +100,37 @@ public class Settings {
      * Returns the integer associated with the specified key at a node or
      * <code>defaultValue</code> if there is no association for this key.
      * @param key the key to get the value for
-     * @param defaultValue the default value
      * @return the value
      */
-    public int getInt(@NotNull final String key, final int defaultValue) {
-        return NumberParser.parseInt(getString(key, Integer.toString(defaultValue)), defaultValue);
+    public int getInt(@NotNull final SettingsEntry<Integer> key) {
+        return NumberParser.parseInt(getString(key), key.getDefaultValue());
     }
 
     /**
      * Returns the long associated with the specified key at a node or
      * <code>defaultValue</code> if there is no association for this key.
      * @param key the key to get the value for
-     * @param defaultValue the default value
      * @return the value
      */
-    public long getLong(@NotNull final String key, final long defaultValue) {
-        return NumberParser.parseLong(getString(key, Long.toString(defaultValue)), defaultValue);
+    public long getLong(@NotNull final SettingsEntry<Long> key) {
+        return NumberParser.parseLong(getString(key), key.getDefaultValue());
     }
 
     /**
      * Stores a key/value pair.
      * @param key the key to store
      * @param value the value to store
-     * @param documentation the documentation string of the entry or
-     * <code>null</code> if unknown
      */
-    public void putString(@NotNull final String key, @NotNull final String value, @Nullable final String documentation) {
-        final Entry oldEntry = values.get(key);
+    public void putString(@NotNull final SettingsEntry<?> key, @NotNull final String value) {
+        final Entry oldEntry = values.get(key.getKey());
         if (oldEntry != null) {
-            oldEntry.setDocumentation(documentation);
+            oldEntry.setDocumentation(key.getComment());
             if (!oldEntry.getValue().equals(value)) {
                 oldEntry.setValue(value);
                 setChanged();
             }
         } else {
-            values.put(key, new Entry(value, documentation));
+            values.put(key.getKey(), new Entry(value, key.getComment()));
         }
     }
 
@@ -145,30 +138,27 @@ public class Settings {
      * Stores a key/value pair.
      * @param key the key to store
      * @param value the value to store
-     * @param documentation the documentation string of the entry
      */
-    public void putBoolean(@NotNull final String key, final boolean value, @NotNull final String documentation) {
-        putString(key, Boolean.toString(value), documentation);
+    public void putBoolean(@NotNull final SettingsEntry<Boolean> key, final boolean value) {
+        putString(key, Boolean.toString(value));
     }
 
     /**
      * Stores a key/value pair.
      * @param key the key to store
      * @param value the value to store
-     * @param documentation the documentation string of the entry
      */
-    public void putInt(@NotNull final String key, final int value, @NotNull final String documentation) {
-        putString(key, Integer.toString(value), documentation);
+    public void putInt(@NotNull final SettingsEntry<Integer> key, final int value) {
+        putString(key, Integer.toString(value));
     }
 
     /**
      * Stores a key/value pair.
      * @param key the key to store
      * @param value the value to store
-     * @param documentation the documentation string of the entry
      */
-    public void putLong(@NotNull final String key, final long value, @NotNull final String documentation) {
-        putString(key, Long.toString(value), documentation);
+    public void putLong(@NotNull final SettingsEntry<Long> key, final long value) {
+        putString(key, Long.toString(value));
     }
 
     /**
@@ -251,7 +241,7 @@ public class Settings {
             final String key = tmp[0];
             final String value = tmp[1];
 
-            putString(key, value, null);
+            putString(new SettingsEntry<String>(key, "", null), value);
         }
     }
 
