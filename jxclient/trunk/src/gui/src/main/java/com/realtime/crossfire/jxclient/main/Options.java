@@ -74,6 +74,13 @@ public class Options {
     private String debugKeyboardFilename;
 
     /**
+     * The filename for mouse debug logs or <code>null</code> to not log
+     * mouse input.
+     */
+    @Nullable
+    private String debugMouseFilename;
+
+    /**
      * The filename for screen debug logs or <code>null</code> to not log screen
      * logs.
      */
@@ -155,6 +162,8 @@ public class Options {
                 debugProtocolFilename = args[++i];
             } else if (args[i].equals("--debug-keyboard") && i+1 < args.length) {
                 debugKeyboardFilename = args[++i];
+            } else if (args[i].equals("--debug-mouse") && i+1 < args.length) {
+                debugMouseFilename = args[++i];
             } else if (args[i].equals("--debug-screen") && i+1 < args.length) {
                 debugScreenFilename = args[++i];
             } else if (args[i].equals("--debug-sound") && i+1 < args.length) {
@@ -194,6 +203,8 @@ public class Options {
                 System.out.println(" --debug-gui    : Enable debugging of GUI elements.");
                 System.out.println(" --debug-keyboard <log-file>");
                 System.out.println("                : Log keyboard input.");
+                System.out.println(" --debug-mouse <log-file>");
+                System.out.println("                : Log mouse input.");
                 System.out.println(" --debug-protocol <log-file>");
                 System.out.println("                : Log messages exchanged with the server.");
                 System.out.println(" --debug-screen <log-file>");
@@ -231,6 +242,15 @@ public class Options {
     @Nullable
     public String getDebugKeyboardFilename() {
         return debugKeyboardFilename;
+    }
+
+    /**
+     * Returns the filename for mouse debug logs.
+     * @return the filename or <code>null</code> to not log mouse input
+     */
+    @Nullable
+    public String getDebugMouseFilename() {
+        return debugMouseFilename;
     }
 
     /**

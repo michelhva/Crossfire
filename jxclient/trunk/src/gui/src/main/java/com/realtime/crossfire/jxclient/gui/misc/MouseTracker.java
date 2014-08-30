@@ -28,6 +28,11 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.event.MouseEvent;
+import java.io.IOException;
+import java.io.Writer;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -45,6 +50,18 @@ public class MouseTracker {
      * Whether GUI elements should be highlighted.
      */
     private final boolean debugGui;
+
+    /**
+     * The {@link Writer} to write mouse debug to or <code>null</code>.
+     */
+    @Nullable
+    private final Writer debugMouse;
+
+    /**
+     * A formatter for timestamps.
+     */
+    @NotNull
+    private final DateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss,SSS ");
 
     /**
      * The gui element in which the mouse is.
@@ -71,9 +88,20 @@ public class MouseTracker {
     /**
      * Creates a new instance.
      * @param debugGui whether GUI elements should be highlighted
+     * @param debugMouse the writer to write mouse debug to or <code>null</code>
      */
-    public MouseTracker(final boolean debugGui) {
+    public MouseTracker(final boolean debugGui, @Nullable final Writer debugMouse) {
         this.debugGui = debugGui;
+        this.debugMouse = debugMouse;
+    }
+
+    /**
+     * Handles a mouse clicked event.
+     * @param element the affected GUI element
+     * @param e the mouse event
+     */
+    public void mouseClicked(@Nullable final AbstractGUIElement element, @NotNull final MouseEvent e) {
+        debugMouseWrite("mouseClicked: "+e+" ["+element+"]");
     }
 
     /**
@@ -83,11 +111,14 @@ public class MouseTracker {
      */
     @SuppressWarnings("UnusedParameters")
     public void mouseDragged(@Nullable final GUIElement element, @NotNull final MouseEvent e) {
-        isClicked = false;
+        debugMouseWrite("mouseDragged: "+e+" ["+element+"]");
+        setClicked(false);
         if (mouseElement != null) {
+            debugMouseWrite(mouseElement+".mouseMoved");
             mouseElement.mouseMoved(e);
         }
         if (isDragging && mouseElement != null) {
+            debugMouseWrite(mouseElement+".mouseDragged");
             mouseElement.mouseDragged(e);
         }
     }
@@ -98,8 +129,10 @@ public class MouseTracker {
      * @param e the mouse event
      */
     public void mouseMoved(@Nullable final AbstractGUIElement element, @NotNull final MouseEvent e) {
+        debugMouseWrite("mouseMoved: "+e+" ["+element+"]");
         enterElement(element, e);
         if (mouseElement != null) {
+            debugMouseWrite(mouseElement+".mouseMoved");
             mouseElement.mouseMoved(e);
         }
     }
@@ -110,12 +143,14 @@ public class MouseTracker {
      * @param e the mouse event
      */
     public void mousePressed(@Nullable final AbstractGUIElement element, @NotNull final MouseEvent e) {
+        debugMouseWrite("mousePressed: "+e+" ["+element+"]");
         enterElement(element, e);
         if (mouseElement != null) {
+            debugMouseWrite(mouseElement+".mousePressed");
             mouseElement.mousePressed(e);
         }
-        isDragging = true;
-        isClicked = true;
+        setDragging(true);
+        setClicked(true);
     }
 
     /**
@@ -124,8 +159,9 @@ public class MouseTracker {
      * @param e the mouse event
      */
     public void mouseReleased(@Nullable final AbstractGUIElement element, @NotNull final MouseEvent e) {
+        debugMouseWrite("mouseReleased: "+e+" ["+element+"]");
         final boolean tmpIsClicked = isClicked;
-        isDragging = false;
+        setDragging(false);
         enterElement(element, e);
         if (tmpIsClicked && element != null) {
             // cannot use mouseElement here: it might be invalid if the
@@ -133,6 +169,7 @@ public class MouseTracker {
             element.mouseClicked(e);
         }
         if (mouseElement != null) {
+            debugMouseWrite(mouseElement+".mouseReleased");
             mouseElement.mouseReleased(e);
         }
     }
@@ -143,7 +180,8 @@ public class MouseTracker {
      * @param e the mouse event
      */
     public void mouseEntered(@Nullable final AbstractGUIElement element, @NotNull final MouseEvent e) {
-        isClicked = false;
+        debugMouseWrite("mouseEntered: "+e+" ["+element+"]");
+        setClicked(false);
         if (!isDragging) {
             enterElement(element, e);
         }
@@ -154,7 +192,8 @@ public class MouseTracker {
      * @param e the mouse event
      */
     public void mouseExited(@NotNull final MouseEvent e) {
-        isClicked = false;
+        debugMouseWrite("mouseExited: "+e);
+        setClicked(false);
         if (!isDragging) {
             enterElement(null, e);
         }
@@ -173,19 +212,16 @@ public class MouseTracker {
         final GUIElement tmp = mouseElement;
         if (tmp != null) {
             tmp.mouseExited(e);
-            if (activeComponent != null) {
-                activeComponent.setChanged();
-                activeComponent = null;
-            }
+            setActiveComponent(null);
         }
 
         mouseElement = element;
+        debugMouseWrite("mouseElement="+mouseElement);
 
         if (element != null) {
             element.mouseEntered(e, debugGui);
-            if (debugGui && activeComponent != element) {
-                activeComponent = element;
-                activeComponent.setChanged();
+            if (debugGui) {
+                setActiveComponent(element);
             }
         }
     }
@@ -205,6 +241,74 @@ public class MouseTracker {
             g.drawString(text, 2, 16);
             g.drawRect(GuiUtils.getElementX(component), GuiUtils.getElementY(component), component.getWidth()-1, component.getHeight()-1);
         }
+    }
+
+    /**
+     * Writes a message to the mouse debug.
+     * @param message the message to write
+     */
+    private void debugMouseWrite(@NotNull final CharSequence message) {
+        if (debugMouse == null) {
+            return;
+        }
+
+        try {
+            debugMouse.append(simpleDateFormat.format(new Date()));
+            debugMouse.append(message);
+            debugMouse.append("\n");
+            debugMouse.flush();
+        } catch (final IOException ex) {
+            System.err.println("Cannot write mouse debug: "+ex.getMessage());
+            System.exit(1);
+            throw new AssertionError();
+        }
+    }
+
+    /**
+     * Updates {@link #activeComponent}. Prints a debug message if the value
+     * changes.
+     * @param activeComponent the new value
+     */
+    private void setActiveComponent(@Nullable final AbstractGUIElement activeComponent) {
+        if (this.activeComponent == activeComponent) {
+            return;
+        }
+
+        if (this.activeComponent != null) {
+            this.activeComponent.setChanged();
+        }
+        this.activeComponent = activeComponent;
+        if (this.activeComponent != null) {
+            this.activeComponent.setChanged();
+        }
+        debugMouseWrite("activeComponent="+activeComponent);
+    }
+
+    /**
+     * Updates {@link #isDragging}. Prints a debug message if the value
+     * changes.
+     * @param isDragging the new value
+     */
+    private void setDragging(final boolean isDragging) {
+        if (this.isDragging == isDragging) {
+            return;
+        }
+
+        this.isDragging = isDragging;
+        debugMouseWrite("isDragging="+isDragging);
+    }
+
+    /**
+     * Updates {@link #isClicked}. Prints a debug message if the value changes.
+     * @param isClicked the new value
+     */
+    private void setClicked(final boolean isClicked) {
+        if (this.isClicked == isClicked) {
+            return;
+        }
+
+        this.isClicked = isClicked;
+        debugMouseWrite("isClicked="+isClicked);
     }
 
 }
