@@ -186,6 +186,7 @@ public class MouseTracker {
         if (tmpIsClicked && element != null) {
             // cannot use mouseElement here: it might be invalid if the
             // previous call to mouseReleased() did close the owner dialog
+            debugMouseWrite(element+".mouseClicked");
             element.mouseClicked(e);
         }
         if (mouseElement != null) {
