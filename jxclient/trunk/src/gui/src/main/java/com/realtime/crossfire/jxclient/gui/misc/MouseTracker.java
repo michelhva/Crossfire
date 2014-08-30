@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
+import java.awt.Point;
 import java.awt.event.MouseEvent;
 import java.io.IOException;
 import java.io.Writer;
@@ -45,6 +46,12 @@ import org.jetbrains.annotations.Nullable;
  * @author Andreas Kirschbaum
  */
 public class MouseTracker {
+
+    /**
+     * The maximum distance the mouse may have moved between the mouse pressed
+     * and the mouse released even to generate a mouse clicked event.
+     */
+    private static final int CLICK_DISTANCE = 20;
 
     /**
      * Whether GUI elements should be highlighted.
@@ -86,6 +93,12 @@ public class MouseTracker {
     private boolean isClicked;
 
     /**
+     * The position that was clicked if {@link #isClicked} is set.
+     */
+    @NotNull
+    private final Point clickPosition = new Point();
+
+    /**
      * Creates a new instance.
      * @param debugGui whether GUI elements should be highlighted
      * @param debugMouse the writer to write mouse debug to or <code>null</code>
@@ -112,7 +125,13 @@ public class MouseTracker {
     @SuppressWarnings("UnusedParameters")
     public void mouseDragged(@Nullable final GUIElement element, @NotNull final MouseEvent e) {
         debugMouseWrite("mouseDragged: "+e+" ["+element+"]");
-        setClicked(false);
+        if (isClicked) {
+            final double distance = clickPosition.distanceSq(e.getLocationOnScreen());
+            if (distance > CLICK_DISTANCE) {
+                debugMouseWrite("mouseDragged: distance "+distance+" is too far for a click event; click point="+clickPosition+", current point="+e.getLocationOnScreen());
+                setClicked(false);
+            }
+        }
         if (mouseElement != null) {
             debugMouseWrite(mouseElement+".mouseMoved");
             mouseElement.mouseMoved(e);
@@ -150,6 +169,7 @@ public class MouseTracker {
             mouseElement.mousePressed(e);
         }
         setDragging(true);
+        clickPosition.setLocation(e.getLocationOnScreen());
         setClicked(true);
     }
 
