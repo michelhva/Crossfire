@@ -22,9 +22,9 @@ treasure troll_big
     chance 10
   end
 treasureone troll_parts
-  arch hide_troll
-    chance 20
-  more
+#  arch hide_troll
+#    chance 20
+#  more
   arch head
     chance 80
   more
