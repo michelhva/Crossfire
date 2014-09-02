@@ -1,5 +1,5 @@
 Object shop_throw
-name tiles
+name missile weapon tile
 is_floor 1
 face shop_throw.111
 no_pick 1

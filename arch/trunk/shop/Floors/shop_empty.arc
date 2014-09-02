@@ -1,5 +1,5 @@
 Object shop_empty
-name tiles
+name empty shop tile
 is_floor 1
 face shop_empty.111
 no_pick 1

@@ -1,5 +1,5 @@
 Object shop_books
-name tiles
+name book tile
 is_floor 1
 face shop_books.111
 no_pick 1

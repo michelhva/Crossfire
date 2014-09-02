@@ -1,5 +1,5 @@
 Object shop_ring
-name tiles
+name ring tile
 is_floor 1
 face shop_ring.111
 no_pick 1
