@@ -1,5 +1,5 @@
 Object shop_gems
-name tiles
+name gem tile
 is_floor 1
 face shop_gems.111
 no_pick 1

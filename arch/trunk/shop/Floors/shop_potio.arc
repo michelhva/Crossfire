@@ -1,5 +1,5 @@
 Object shop_potions
-name tiles
+name potion tile
 is_floor 1
 face shop_potio.111
 no_pick 1

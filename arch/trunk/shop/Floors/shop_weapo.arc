@@ -1,5 +1,5 @@
 Object shop_weapon
-name tiles
+name weapon tile
 is_floor 1
 face shop_weapo.111
 no_pick 1
@@ -11,7 +11,7 @@ damned 1
 end
 
 Object shop_weapon_east
-name tiles
+name eastern weapon tiles
 is_floor 1
 face shop_weapo.111
 no_pick 1

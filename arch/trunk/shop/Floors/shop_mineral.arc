@@ -1,5 +1,5 @@
 Object shop_minerals
-name tiles
+name minerals tile
 is_floor 1
 face shop_mineral.111
 no_pick 1

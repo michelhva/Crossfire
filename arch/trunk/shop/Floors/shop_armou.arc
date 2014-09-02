@@ -1,5 +1,5 @@
 Object shop_armour
-name tiles
+name armour tile
 is_floor 1
 face shop_armou.111
 no_pick 1

@@ -1,5 +1,5 @@
 Object shop_amulets
-name tiles
+name amulet tile
 is_floor 1
 face shop_amule.111
 no_pick 1

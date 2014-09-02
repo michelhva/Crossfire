@@ -1,5 +1,5 @@
 Object shop_scrolls
-name tiles
+name scroll tile
 is_floor 1
 face shop_scrol.111
 no_pick 1

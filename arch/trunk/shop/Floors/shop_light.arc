@@ -1,5 +1,5 @@
 Object shop_light
-name tiles
+name light sources tile
 is_floor 1
 face shop_gener.111
 no_pick 1

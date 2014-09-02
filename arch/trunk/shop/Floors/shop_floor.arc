@@ -1,5 +1,5 @@
 Object shop_floor
-name tiles
+name random item shop tile
 is_floor 1
 face shop_empty.111
 no_pick 1
