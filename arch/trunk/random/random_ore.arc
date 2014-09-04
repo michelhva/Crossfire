@@ -1,5 +1,5 @@
 Object random_ore
-face randomMin.111
+face randomOre.111
 type 4
 hp 1
 randomitems random_ore
