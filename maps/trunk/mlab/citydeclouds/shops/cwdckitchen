@@ -5,7 +5,7 @@ difficulty 3
 region citydeclouds
 width 17
 height 16
-enter_x 8
+enter_x 12
 enter_y 11
 msg
 Created:  2004-08-03 Mikeeusa
@@ -427,7 +427,7 @@ arch woodfloor
 x 2
 y 7
 end
-arch wwall_2_1_1
+arch wwall_win1
 x 2
 y 7
 end
@@ -724,7 +724,7 @@ arch woodfloor2
 x 4
 y 13
 end
-arch wwall_2_1_2
+arch wwall_win2
 x 4
 y 13
 end
@@ -1122,18 +1122,13 @@ arch woodfloor2
 x 7
 y 13
 end
-arch wwall_1_3
+arch wwall_2_1_2
 x 7
 y 13
-end
-arch dungeon_magic
-x 7
-y 14
 end
 arch flagstone
 x 7
 y 14
-move_block all
 end
 arch flagstone
 x 7
@@ -1243,32 +1238,18 @@ name woodfloor
 x 8
 y 12
 end
-arch invis_exit
-slaying ../cloudworlddecity
-hp 89
-sp 88
-x 8
-y 13
-end
 arch woodfloor2
+name woodfloor
 x 8
 y 13
-no_magic 1
-damned 1
 end
-arch door_2
+arch wwall_win2
 x 8
 y 13
-move_block 0
-end
-arch dungeon_magic
-x 8
-y 14
 end
 arch flagstone
 x 8
 y 14
-move_block all
 end
 arch flagstone
 x 8
@@ -1432,18 +1413,13 @@ arch woodfloor2
 x 9
 y 13
 end
-arch wwall_1_4
+arch wwall_2_1_2
 x 9
 y 13
-end
-arch dungeon_magic
-x 9
-y 14
 end
 arch flagstone
 x 9
 y 14
-move_block all
 end
 arch flagstone
 x 9
@@ -1567,10 +1543,12 @@ end
 arch flagstone
 x 10
 y 14
+move_block all
 end
 arch flagstone
 x 10
 y 15
+move_block all
 end
 arch blocked
 name nothing
@@ -1666,9 +1644,10 @@ name woodfloor
 x 11
 y 11
 end
-arch chair_1.4
+arch button_trigger
 x 11
-y 11
+y 12
+connected 11
 end
 arch woodfloor2
 name woodfloor
@@ -1679,9 +1658,20 @@ arch woodfloor2
 x 11
 y 13
 end
-arch wwall_2_1_2
+arch wwall_1_3
 x 11
 y 13
+end
+arch dungeon_magic
+x 11
+y 14
+end
+arch invis_exit
+slaying ../cloudworlddecity
+hp 89
+sp 88
+x 11
+y 14
 end
 arch flagstone
 x 11
@@ -1690,6 +1680,7 @@ end
 arch flagstone
 x 11
 y 15
+move_block all
 end
 arch blocked
 name nothing
@@ -1795,25 +1786,40 @@ arch woodfloor2
 x 12
 y 11
 end
-arch table_4
+arch button_trigger
 x 12
-y 11
+y 12
+connected 11
 end
 arch woodfloor2
+name woodfloor
 x 12
 y 12
 end
-arch chair_1.3
+arch button_small
 x 12
-y 12
+y 13
+connected 11
 end
 arch woodfloor2
 x 12
 y 13
 end
-arch wwall_2_1_2
+arch odoorn2_closed_1
 x 12
 y 13
+connected 11
+end
+arch dungeon_magic
+x 12
+y 14
+end
+arch invis_exit
+slaying ../cloudworlddecity
+hp 89
+sp 88
+x 12
+y 14
 end
 arch flagstone
 x 12
@@ -1822,6 +1828,7 @@ end
 arch flagstone
 x 12
 y 15
+move_block all
 end
 arch blocked
 name nothing
@@ -1907,9 +1914,10 @@ name woodfloor
 x 13
 y 11
 end
-arch chair_1.2
+arch button_trigger
 x 13
-y 11
+y 12
+connected 11
 end
 arch woodfloor2
 name woodfloor
@@ -1921,9 +1929,20 @@ name woodfloor
 x 13
 y 13
 end
-arch wwall_2_1_2
+arch wwall_1_4
 x 13
 y 13
+end
+arch dungeon_magic
+x 13
+y 14
+end
+arch invis_exit
+slaying ../cloudworlddecity
+hp 89
+sp 88
+x 13
+y 14
 end
 arch flagstone
 x 13
@@ -1932,6 +1951,7 @@ end
 arch flagstone
 x 13
 y 15
+move_block all
 end
 arch blocked
 name nothing
@@ -2001,7 +2021,7 @@ arch woodfloor
 x 14
 y 7
 end
-arch wwall_2_1_1
+arch wwall_win1
 x 14
 y 7
 end
@@ -2066,10 +2086,12 @@ end
 arch flagstone
 x 14
 y 14
+move_block all
 end
 arch flagstone
 x 14
 y 15
+move_block all
 end
 arch blocked
 name nothing
