@@ -1,4 +1,5 @@
 Object random_wealth
+name random wealth
 face randomWeal.111
 type 4
 hp 1

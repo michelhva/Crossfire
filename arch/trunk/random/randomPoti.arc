@@ -1,4 +1,5 @@
 Object random_potion
+name random potion
 face randomPoti.111
 type 4
 hp 1

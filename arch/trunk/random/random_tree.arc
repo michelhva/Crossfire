@@ -1,4 +1,5 @@
 Object random_tree_green
+name random green tree
 face random_tree_green.111
 type 4
 hp 1

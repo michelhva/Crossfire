@@ -1,4 +1,5 @@
 Object random_food
+name random food
 face randomFood.111
 type 4
 hp 1

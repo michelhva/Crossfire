@@ -1,4 +1,5 @@
 Object random_treasure
+name random treasure
 face randomTrea.111
 type 4
 hp 1

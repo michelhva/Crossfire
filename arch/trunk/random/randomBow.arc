@@ -1,4 +1,5 @@
 Object random_bow
+name random bow
 face randomBow.111
 type 4
 hp 1
