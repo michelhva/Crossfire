@@ -1,4 +1,5 @@
 Object random_gem
+name random gem
 face randomGem.111
 type 4
 hp 1

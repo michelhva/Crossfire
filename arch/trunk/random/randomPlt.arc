@@ -1,4 +1,5 @@
 Object random_plant
+name random plant
 face randomPlt.111
 type 4
 hp 1

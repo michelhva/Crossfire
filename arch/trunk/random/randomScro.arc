@@ -1,4 +1,5 @@
 Object random_scroll
+name random scroll
 face randomScro.111
 type 4
 hp 1
