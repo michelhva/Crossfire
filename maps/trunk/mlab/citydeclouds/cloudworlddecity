@@ -9,7 +9,7 @@ enter_x 29
 enter_y 112
 msg
 Created:  2003-11-09 mikeeusa
-Modified: 2014-09-05 Rick Tanner
+Modified: 2014-09-17 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -123942,21 +123942,12 @@ end
 arch store_alchemy
 name City de Clouds Potion Shop
 slaying shops/cwdcpotionshop1
-hp 14
-sp 18
+hp 4
+sp 21
 x 85
 y 91
 end
-arch blocked
-name nothing
-x 85
-y 92
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
+arch flagstone
 x 85
 y 92
 end
