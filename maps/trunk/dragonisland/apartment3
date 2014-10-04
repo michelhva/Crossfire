@@ -8,7 +8,7 @@ enter_x 6
 enter_y 1
 msg
 Created:  1997-09-17
-Modified: 2012-02-01 Rick Tanner
+Modified: 2014-10-04 Kevin Zheng
 endmsg
 end
 arch dungeon_floor
@@ -721,6 +721,7 @@ slaying /world/world_103_127
 hp 1
 sp 23
 x 6
+move_on all
 end
 arch dungeon_floor
 x 6
@@ -837,6 +838,7 @@ slaying /world/world_103_127
 hp 1
 sp 23
 x 7
+move_on all
 end
 arch dungeon_floor
 x 7

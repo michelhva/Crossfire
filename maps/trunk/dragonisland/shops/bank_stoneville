@@ -8,7 +8,7 @@ enter_x 10
 enter_y 11
 msg
 Created:  2012-09-03 Rick Tanner
-Modified: 2012-09-04 Rick Tanner
+Modified: 2014-10-04 Kevin Zheng
 endmsg
 end
 arch grass_only
@@ -1421,6 +1421,7 @@ hp 12
 sp 14
 x 10
 y 12
+move_on all
 end
 arch dungeon_magic
 x 10
