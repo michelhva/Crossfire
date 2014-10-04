@@ -1,7 +1,7 @@
 Object b_plate_mail
 nrof 1
-name plate mail
-name_pl plate mails
+name bronze plate mail
+name_pl bronze plate mails
 client_type 252
 type 16
 face b_plate_mail.111

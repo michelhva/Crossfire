@@ -1,7 +1,7 @@
 Object b_scale_mail
 nrof 1
-name scale mail
-name_pl scale mails
+name bronze scale mail
+name_pl bronze scale mails
 client_type 253
 type 16
 face b_scale_mail.111

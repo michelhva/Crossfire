@@ -1,6 +1,6 @@
 Object dress2
-name dress
-name_pl dresses
+name blue dress
+name_pl blue dresses
 client_type 255
 nrof 1
 type 16
