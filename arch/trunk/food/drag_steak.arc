@@ -6,7 +6,7 @@ nrof 1
 type 72
 material 32
 value 35
-weight 10000
+weight 25
 identified 1
 name_pl steaks
 client_type 624
