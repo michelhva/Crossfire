@@ -608,20 +608,32 @@ arch grass
 x 2
 y 24
 end
-arch brush
+arch earth
 x 2
 y 25
 elevation 855
 end
-arch brush
+arch onion
+x 2
+y 25
+end
+arch earth
 x 2
 y 26
 elevation 441
 end
-arch brush
+arch carrot
+x 2
+y 26
+end
+arch grass_br_gr
 x 2
 y 27
 elevation 328
+end
+arch mushroom_1
+x 2
+y 27
 end
 arch brush
 x 2
@@ -873,17 +885,29 @@ arch grass
 x 3
 y 24
 end
-arch brush
+arch earth
 x 3
 y 25
 elevation 921
 end
-arch brush
+arch tomato
+x 3
+y 25
+end
+arch earth
 x 3
 y 26
 elevation 685
 end
-arch grass
+arch tomato
+x 3
+y 26
+end
+arch grass_br_gr
+x 3
+y 27
+end
+arch mushroom_3
 x 3
 y 27
 end
@@ -1130,15 +1154,23 @@ arch grass
 x 4
 y 24
 end
-arch brush
+arch earth
 x 4
 y 25
 elevation 860
 end
-arch brush
+arch pipeweed
+x 4
+y 25
+end
+arch earth
 x 4
 y 26
 elevation 392
+end
+arch potato
+x 4
+y 26
 end
 arch brush
 x 4
@@ -1401,11 +1433,19 @@ arch grass
 x 5
 y 24
 end
-arch grass
+arch earth
 x 5
 y 25
 end
-arch grass
+arch potato
+x 5
+y 25
+end
+arch earth
+x 5
+y 26
+end
+arch potato
 x 5
 y 26
 end
@@ -1414,10 +1454,10 @@ x 5
 y 27
 elevation 317
 end
-arch shallow_sea
+arch swamp
 x 5
 y 28
-elevation 0
+elevation 20
 end
 arch shallow_sea
 x 5
@@ -1654,10 +1694,14 @@ arch grass
 x 6
 y 25
 end
-arch brush
+arch grass_br_gr
 x 6
 y 26
 elevation 708
+end
+arch mushroom_2
+x 6
+y 26
 end
 arch brush
 x 6
@@ -2673,7 +2717,7 @@ arch beach
 x 10
 y 27
 end
-arch shallow_sea
+arch beach
 x 10
 y 28
 elevation -9
@@ -2900,7 +2944,7 @@ x 11
 y 26
 elevation 0
 end
-arch shallow_sea
+arch beach
 x 11
 y 27
 elevation -10
@@ -2909,7 +2953,7 @@ arch beach
 x 11
 y 28
 end
-arch shallow_sea
+arch beach
 x 11
 y 29
 elevation -10
@@ -3332,7 +3376,15 @@ arch tree3
 x 13
 y 9
 end
-arch cobblestones2
+arch river_sw-ne_u
+x 13
+y 9
+end
+arch grass
+x 13
+y 10
+end
+arch river_ne-s
 x 13
 y 10
 end
@@ -3340,11 +3392,23 @@ arch cobblestones2
 x 13
 y 11
 end
-arch cobblestones2
+arch river_bridge_we
+x 13
+y 11
+end
+arch grass
+x 13
+y 12
+end
+arch river_se-n
 x 13
 y 12
 end
 arch grass
+x 13
+y 13
+end
+arch river_nw-se_l
 x 13
 y 13
 end
@@ -3570,11 +3634,15 @@ x 14
 y 8
 elevation 116
 end
-arch grass
+arch hills
 x 14
 y 9
 end
-arch grass
+arch river_sw-e
+x 14
+y 9
+end
+arch mountain
 x 14
 y 10
 end
@@ -3583,19 +3651,27 @@ name Tall Tower
 x 14
 y 10
 end
-arch grass
+arch river_sw-ne_l
+x 14
+y 10
+end
+arch s_mountain
 x 14
 y 11
 end
-arch grass
+arch mountain
 x 14
 y 12
 end
-arch lamppost
+arch river_nw-se_u
 x 14
 y 12
 end
-arch grass
+arch hills
+x 14
+y 13
+end
+arch river_nw-e
 x 14
 y 13
 end
@@ -3814,23 +3890,39 @@ arch grass
 x 15
 y 8
 end
-arch grass
+arch hills
 x 15
 y 9
 end
-arch grass
+arch river_se-w
+x 15
+y 9
+end
+arch mountain
 x 15
 y 10
 end
-arch brush
+arch river_nw-se_l
+x 15
+y 10
+end
+arch mountain2
 x 15
 y 11
 end
-arch brush
+arch mountain
 x 15
 y 12
 end
-arch brush
+arch river_sw-ne_u
+x 15
+y 12
+end
+arch hills
+x 15
+y 13
+end
+arch river_ne-w
 x 15
 y 13
 end
@@ -4046,11 +4138,19 @@ arch brush
 x 16
 y 8
 end
-arch brush
+arch hills
 x 16
 y 9
 end
-arch brush
+arch river_nw-se_u
+x 16
+y 9
+end
+arch hills
+x 16
+y 10
+end
+arch river_nw-s
 x 16
 y 10
 end
@@ -4059,15 +4159,27 @@ x 16
 y 11
 elevation 1897
 end
+arch river_n-s
+x 16
+y 11
+end
 arch hills
 x 16
 y 12
 elevation 2053
 end
+arch river_sw-n
+x 16
+y 12
+end
 arch hills
 x 16
 y 13
 elevation 1578
+end
+arch river_sw-ne_l
+x 16
+y 13
 end
 arch hills
 x 16
@@ -5131,6 +5243,10 @@ arch brush
 x 21
 y 5
 end
+arch anchor_1
+x 21
+y 5
+end
 arch brush
 x 21
 y 6
@@ -5403,6 +5519,10 @@ x 22
 y 16
 end
 arch beach
+x 22
+y 17
+end
+arch campfire_out
 x 22
 y 17
 end
