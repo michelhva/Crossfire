@@ -10,7 +10,7 @@ enter_x 17
 enter_y 32
 msg
 Created:  1997-07-10 Viola Krings
-Modified: 2014-08-29 Rick Tanner
+Modified: 2014-10-04 Kevin Zheng
 endmsg
 end
 arch grass_only
@@ -3709,6 +3709,7 @@ hp 8
 sp 16
 x 17
 y 33
+move_on all
 end
 arch dungeon_magic
 x 17
@@ -3938,6 +3939,7 @@ hp 8
 sp 16
 x 18
 y 33
+move_on all
 end
 arch dungeon_magic
 x 18

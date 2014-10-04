@@ -8,7 +8,7 @@ enter_x 3
 enter_y 10
 msg
 Created:  1997-06-18 Viola Krings
-Modified: 2012-07-07 Rick Tanner
+Modified: 2014-10-04 Kevin Zheng
 endmsg
 end
 arch grass_only
@@ -245,6 +245,7 @@ hp 7
 sp 13
 x 2
 y 10
+move_on all
 end
 arch dirtfloor
 x 2
