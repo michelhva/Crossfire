@@ -1,7 +1,7 @@
 Object leather_armour
 nrof 1
-name armour
-name_pl armours
+name leather armor
+name_pl leather armors
 client_type 254
 type 16
 face leather_ar.111
