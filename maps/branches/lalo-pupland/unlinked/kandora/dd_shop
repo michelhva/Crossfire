@@ -7,7 +7,7 @@ height 11
 enter_x 5
 msg
 Created:  1999-02-27 King Zoobus
-Modified: 2013-11-23 SilverNexus
+Modified: 2014-08-29 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -257,7 +257,7 @@ arch wall_2_1_2
 x 3
 y 5
 end
-arch shop_floor
+arch shop_random
 x 3
 y 6
 end
@@ -315,7 +315,7 @@ arch wall_2_1_2
 x 4
 y 5
 end
-arch shop_floor
+arch shop_empty
 x 4
 y 6
 end
@@ -323,11 +323,11 @@ arch shop_mat
 x 4
 y 6
 end
-arch shop_floor
+arch shop_random
 x 4
 y 7
 end
-arch shop_floor
+arch shop_random
 x 4
 y 8
 end
@@ -452,7 +452,7 @@ arch wall_1_2
 x 5
 y 7
 end
-arch shop_floor
+arch shop_random
 x 5
 y 8
 end
@@ -522,15 +522,15 @@ arch wall_2_1_2
 x 6
 y 5
 end
-arch shop_floor
+arch shop_random
 x 6
 y 6
 end
-arch shop_floor
+arch shop_random
 x 6
 y 7
 end
-arch shop_floor
+arch shop_random
 x 6
 y 8
 end
@@ -608,7 +608,7 @@ arch wall_2_1_2
 x 7
 y 5
 end
-arch shop_floor
+arch shop_random
 x 7
 y 6
 end

@@ -11,7 +11,7 @@ enter_x 10
 enter_y 33
 msg
 Created:  1999-04-02
-Modified: 2012-03-27 Rick Tanner
+Modified: 2014-09-04 Rick Tanner
 endmsg
 end
 arch grass
@@ -1693,14 +1693,6 @@ arch woodfloor
 x 7
 y 2
 end
-arch woodfloor
-x 7
-y 2
-end
-arch woodfloor
-x 7
-y 2
-end
 arch rune_restoration
 x 7
 y 2
@@ -2273,14 +2265,6 @@ end
 arch white_wall_2_1_2
 x 9
 y 1
-end
-arch woodfloor
-x 9
-y 2
-end
-arch woodfloor
-x 9
-y 2
 end
 arch woodfloor
 x 9
@@ -3707,10 +3691,6 @@ arch woodfloor
 x 13
 y 2
 end
-arch woodfloor
-x 13
-y 2
-end
 arch rune_restoration
 x 13
 y 2
@@ -4349,10 +4329,6 @@ end
 arch woodfloor
 x 14
 y 34
-end
-arch woodfloor
-x 14
-y 35
 end
 arch woodfloor
 x 14
