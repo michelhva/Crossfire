@@ -7,13 +7,387 @@ Created:  1999-06-04
 Map created to test random objects
 inside other objects get created
 properly.
-Modified: 2008-05-30 Andreas Kirschbaum
+Modified: 2014-09-04 Rick Tanner
 endmsg
+end
+arch woodfloor
 end
 arch chest
 end
+arch woodfloor
+y 1
+end
 arch random_talisman
 y 1
+end
+arch woodfloor
+y 2
+end
+arch random_potion
+y 2
+end
+arch woodfloor
+y 3
+end
+arch random_reading
+y 3
+end
+arch woodfloor
+y 4
+end
+arch random_scroll
+y 4
+end
+arch woodfloor
+y 5
+end
+arch random_shield
+y 5
+end
+arch woodfloor
+y 6
+end
+arch random_spells
+y 6
+end
+arch woodfloor
+y 7
+end
+arch random_treasure
+y 7
+end
+arch woodfloor
+x 1
+end
+arch random_tree_green
+x 1
+end
+arch woodfloor
+x 1
+y 1
+end
+arch sign_w
+msg
+Random Talisman
+endmsg
+x 1
+y 1
+end
+arch woodfloor
+x 1
+y 2
+end
+arch sign_w
+msg
+Random Potion
+endmsg
+x 1
+y 2
+end
+arch woodfloor
+x 1
+y 3
+end
+arch sign_w
+msg
+Random Reading
+endmsg
+x 1
+y 3
+end
+arch woodfloor
+x 1
+y 4
+end
+arch sign_w
+msg
+Random Scroll
+endmsg
+x 1
+y 4
+end
+arch woodfloor
+x 1
+y 5
+end
+arch sign_w
+msg
+Random Shield
+endmsg
+x 1
+y 5
+end
+arch woodfloor
+x 1
+y 6
+end
+arch sign_w
+msg
+Random Spells
+endmsg
+x 1
+y 6
+end
+arch woodfloor
+x 1
+y 7
+end
+arch sign_w
+msg
+Random Treasure
+endmsg
+x 1
+y 7
+end
+arch woodfloor
+x 2
+end
+arch sign_w
+x 2
+end
+arch woodfloor
+x 2
+y 1
+end
+arch woodfloor
+x 2
+y 2
+end
+arch woodfloor
+x 2
+y 3
+end
+arch woodfloor
+x 2
+y 4
+end
+arch woodfloor
+x 2
+y 5
+end
+arch woodfloor
+x 2
+y 6
+end
+arch woodfloor
+x 2
+y 7
+end
+arch woodfloor
+x 3
+end
+arch sign_e
+x 3
+end
+arch woodfloor
+x 3
+y 1
+end
+arch woodfloor
+x 3
+y 2
+end
+arch woodfloor
+x 3
+y 3
+end
+arch woodfloor
+x 3
+y 4
+end
+arch woodfloor
+x 3
+y 5
+end
+arch woodfloor
+x 3
+y 6
+end
+arch woodfloor
+x 3
+y 7
+end
+arch woodfloor
+x 4
+end
+arch random_weapon
+x 4
+end
+arch woodfloor
+x 4
+y 1
+end
+arch woodfloor
+x 4
+y 2
+end
+arch woodfloor
+x 4
+y 3
+end
+arch woodfloor
+x 4
+y 4
+end
+arch woodfloor
+x 4
+y 5
+end
+arch woodfloor
+x 4
+y 6
+end
+arch woodfloor
+x 4
+y 7
+end
+arch sign_e
+msg
+Random Wealth
+endmsg
+x 4
+y 7
+end
+arch woodfloor
+x 5
+end
+arch sign_e
+msg
+Random Artifact
+endmsg
+x 5
+end
+arch woodfloor
+x 5
+y 1
+end
+arch sign_e
+msg
+Random Bow
+endmsg
+x 5
+y 1
+end
+arch woodfloor
+x 5
+y 2
+end
+arch sign_e
+msg
+Random Food
+endmsg
+x 5
+y 2
+end
+arch woodfloor
+x 5
+y 3
+end
+arch sign_e
+msg
+Random Gem
+endmsg
+x 5
+y 3
+end
+arch woodfloor
+x 5
+y 4
+end
+arch sign_e
+msg
+Random Mineral
+endmsg
+x 5
+y 4
+end
+arch woodfloor
+x 5
+y 5
+end
+arch sign_e
+msg
+Random Ore
+endmsg
+x 5
+y 5
+end
+arch woodfloor
+x 5
+y 6
+end
+arch sign_e
+msg
+Random Plant
+endmsg
+x 5
+y 6
+end
+arch woodfloor
+x 5
+y 7
+end
+arch random_wealth
+x 5
+y 7
+end
+arch woodfloor
+x 6
+end
+arch random_artifact
+x 6
+end
+arch woodfloor
+x 6
+y 1
+end
+arch random_bow
+x 6
+y 1
+end
+arch woodfloor
+x 6
+y 2
+end
+arch random_food
+x 6
+y 2
+end
+arch woodfloor
+x 6
+y 3
+end
+arch random_gem
+x 6
+y 3
+end
+arch woodfloor
+x 6
+y 4
+end
+arch random_mineral
+x 6
+y 4
+end
+arch woodfloor
+x 6
+y 5
+end
+arch random_ore
+x 6
+y 5
+end
+arch woodfloor
+x 6
+y 6
+end
+arch random_plant
+x 6
+y 6
+end
+arch woodfloor
+x 6
+y 7
 end
 arch chest
 x 6

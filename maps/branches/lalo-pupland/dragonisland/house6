@@ -8,7 +8,7 @@ enter_x 11
 enter_y 19
 msg
 Created:  1997-06-23 Viola Krings
-Modified: 2012-06-04 Rick Tanner
+Modified: 2014-10-04 Kevin Zheng
 endmsg
 end
 arch grass_only
@@ -1676,6 +1676,7 @@ hp 6
 sp 13
 x 11
 y 21
+move_on all
 end
 arch cobblestones2
 x 11
@@ -1846,6 +1847,7 @@ hp 6
 sp 13
 x 12
 y 21
+move_on all
 end
 arch cobblestones2
 x 12

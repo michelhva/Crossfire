@@ -11,7 +11,7 @@ height 16
 enter_x 15
 msg
 Created:  2005-09-18
-Modified: 2012-05-28 Rick Tanner
+Modified: 2014-08-21 Rick Tanner
 endmsg
 tile_path_1 dept_store_armour
 tile_path_2 dept_store_misc
@@ -126,13 +126,13 @@ arch dungeon_floor
 x 1
 y 15
 end
-arch woodfloor
+arch flagstone
 x 2
 end
 arch awall_2_1_1
 x 2
 end
-arch woodfloor
+arch flagstone
 x 2
 y 1
 end
@@ -140,7 +140,7 @@ arch awall_3_2
 x 2
 y 1
 end
-arch shop_empty
+arch flagstone
 x 2
 y 2
 end
@@ -148,7 +148,7 @@ arch awall_2_1_1
 x 2
 y 2
 end
-arch shop_empty
+arch flagstone
 x 2
 y 3
 end
@@ -156,7 +156,7 @@ arch awall_2_1_1
 x 2
 y 3
 end
-arch shop_empty
+arch flagstone
 x 2
 y 4
 end
@@ -164,7 +164,7 @@ arch awall_2_1_1
 x 2
 y 4
 end
-arch shop_empty
+arch flagstone
 x 2
 y 5
 end
@@ -172,7 +172,7 @@ arch awall_2_1_1
 x 2
 y 5
 end
-arch shop_empty
+arch flagstone
 x 2
 y 6
 end
@@ -180,7 +180,7 @@ arch awall_2_1_1
 x 2
 y 6
 end
-arch shop_empty
+arch flagstone
 x 2
 y 7
 end
@@ -188,7 +188,7 @@ arch awall_2_1_1
 x 2
 y 7
 end
-arch shop_empty
+arch flagstone
 x 2
 y 8
 end
@@ -196,7 +196,7 @@ arch awall_2_1_1
 x 2
 y 8
 end
-arch shop_empty
+arch flagstone
 x 2
 y 9
 end
@@ -204,7 +204,7 @@ arch awall_2_1_1
 x 2
 y 9
 end
-arch shop_empty
+arch flagstone
 x 2
 y 10
 end
@@ -212,7 +212,7 @@ arch awall_2_1_1
 x 2
 y 10
 end
-arch shop_empty
+arch flagstone
 x 2
 y 11
 end
@@ -220,7 +220,7 @@ arch awall_2_1_1
 x 2
 y 11
 end
-arch shop_empty
+arch flagstone
 x 2
 y 12
 end
@@ -228,7 +228,7 @@ arch awall_2_1_1
 x 2
 y 12
 end
-arch shop_empty
+arch flagstone
 x 2
 y 13
 end
@@ -314,7 +314,7 @@ arch shop_empty
 x 3
 y 12
 end
-arch shop_empty
+arch flagstone
 x 3
 y 13
 end
@@ -385,7 +385,7 @@ arch shop_potions
 x 4
 y 12
 end
-arch shop_empty
+arch flagstone
 x 4
 y 13
 end
@@ -460,7 +460,7 @@ arch shop_potions
 x 5
 y 12
 end
-arch shop_empty
+arch flagstone
 x 5
 y 13
 end
@@ -535,7 +535,7 @@ arch shop_potions
 x 6
 y 12
 end
-arch shop_empty
+arch flagstone
 x 6
 y 13
 end
@@ -615,7 +615,7 @@ arch shop_potions
 x 7
 y 12
 end
-arch shop_empty
+arch flagstone
 x 7
 y 13
 end
@@ -695,7 +695,7 @@ arch shop_potions
 x 8
 y 12
 end
-arch shop_empty
+arch flagstone
 x 8
 y 13
 end
@@ -770,7 +770,7 @@ arch shop_potions
 x 9
 y 12
 end
-arch shop_empty
+arch flagstone
 x 9
 y 13
 end
@@ -845,7 +845,7 @@ arch shop_potions
 x 10
 y 12
 end
-arch shop_empty
+arch flagstone
 x 10
 y 13
 end
@@ -925,7 +925,7 @@ arch shop_potions
 x 11
 y 12
 end
-arch shop_empty
+arch flagstone
 x 11
 y 13
 end
@@ -1005,7 +1005,7 @@ arch shop_potions
 x 12
 y 12
 end
-arch shop_empty
+arch flagstone
 x 12
 y 13
 end
@@ -1080,7 +1080,7 @@ arch shop_potions
 x 13
 y 12
 end
-arch shop_empty
+arch flagstone
 x 13
 y 13
 end
@@ -1155,7 +1155,7 @@ arch shop_potions
 x 14
 y 12
 end
-arch shop_empty
+arch flagstone
 x 14
 y 13
 end
@@ -1235,7 +1235,7 @@ arch shop_potions
 x 15
 y 12
 end
-arch shop_empty
+arch flagstone
 x 15
 y 13
 end
@@ -1315,7 +1315,7 @@ arch shop_potions
 x 16
 y 12
 end
-arch shop_empty
+arch flagstone
 x 16
 y 13
 end
@@ -1390,7 +1390,7 @@ arch shop_potions
 x 17
 y 12
 end
-arch shop_empty
+arch flagstone
 x 17
 y 13
 end
@@ -1465,7 +1465,7 @@ arch shop_potions
 x 18
 y 12
 end
-arch shop_empty
+arch flagstone
 x 18
 y 13
 end

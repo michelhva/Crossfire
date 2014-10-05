@@ -10,7 +10,7 @@ enter_x 18
 enter_y 15
 msg
 Created:  1994-05-06 langley (langley@fermat.dartmouth.edu)
-Modified: 2012-05-23 Rick Tanner
+Modified: 2014-08-28 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -354,7 +354,7 @@ arch wall_1_3
 x 3
 y 6
 end
-arch shop_floor
+arch shop_random
 x 3
 y 7
 end
@@ -382,15 +382,15 @@ arch swall_2_1_2
 x 3
 y 10
 end
-arch shop_floor
+arch shop_random
 x 3
 y 11
 end
-arch shop_floor
+arch shop_random
 x 3
 y 12
 end
-arch shop_floor
+arch shop_random
 x 3
 y 13
 end
@@ -473,7 +473,7 @@ arch swall_2_1_2
 x 4
 y 6
 end
-arch shop_floor
+arch shop_random
 x 4
 y 7
 end
@@ -501,19 +501,15 @@ arch swall_2_2_4
 x 4
 y 10
 end
-arch shop_floor
+arch shop_random
 x 4
 y 11
 end
-arch light4
+arch shop_random
 x 4
 y 12
 end
-arch shop_floor
-x 4
-y 12
-end
-arch shop_floor
+arch shop_random
 x 4
 y 13
 end
@@ -593,7 +589,7 @@ arch swall_1_3_half
 x 5
 y 6
 end
-arch shop_floor
+arch shop_random
 x 5
 y 7
 end
@@ -740,7 +736,7 @@ arch shop_empty
 x 6
 y 15
 end
-arch shop_floor
+arch shop_random
 x 6
 y 16
 end
@@ -803,7 +799,7 @@ arch shop_empty
 x 7
 y 8
 end
-arch shop_floor
+arch shop_random
 x 7
 y 9
 end
@@ -824,7 +820,7 @@ x 7
 y 10
 blocksview 0
 end
-arch shop_floor
+arch shop_random
 x 7
 y 11
 end
@@ -844,7 +840,7 @@ arch shop_empty
 x 7
 y 15
 end
-arch shop_floor
+arch shop_random
 x 7
 y 16
 end
@@ -912,7 +908,7 @@ x 8
 y 6
 blocksview 0
 end
-arch shop_floor
+arch shop_random
 x 8
 y 7
 end
@@ -920,7 +916,7 @@ arch shop_empty
 x 8
 y 8
 end
-arch shop_floor
+arch shop_random
 x 8
 y 9
 end
@@ -932,7 +928,7 @@ arch swall_2_1_2
 x 8
 y 10
 end
-arch shop_floor
+arch shop_random
 x 8
 y 11
 end
@@ -1007,7 +1003,7 @@ arch swall_2_1_2
 x 9
 y 6
 end
-arch shop_floor
+arch shop_random
 x 9
 y 7
 end
@@ -1015,7 +1011,7 @@ arch shop_empty
 x 9
 y 8
 end
-arch shop_floor
+arch shop_random
 x 9
 y 9
 end
@@ -1027,7 +1023,7 @@ arch swall_2_1_2
 x 9
 y 10
 end
-arch shop_floor
+arch shop_random
 x 9
 y 11
 end
@@ -1118,11 +1114,7 @@ arch swall_2_2_4
 x 10
 y 6
 end
-arch light4
-x 10
-y 7
-end
-arch shop_floor
+arch shop_random
 x 10
 y 7
 end
@@ -1130,7 +1122,7 @@ arch shop_empty
 x 10
 y 8
 end
-arch shop_floor
+arch shop_random
 x 10
 y 9
 end
@@ -1142,7 +1134,7 @@ arch swall_2_1_2
 x 10
 y 10
 end
-arch shop_floor
+arch shop_random
 x 10
 y 11
 end
@@ -1197,27 +1189,23 @@ arch wall_2_1_2
 x 11
 y 2
 end
-arch shop_floor
+arch shop_random
 x 11
 y 3
 end
-arch light4
+arch shop_random
 x 11
 y 4
 end
-arch shop_floor
-x 11
-y 4
-end
-arch shop_floor
+arch shop_random
 x 11
 y 5
 end
-arch shop_floor
+arch shop_random
 x 11
 y 6
 end
-arch shop_floor
+arch shop_random
 x 11
 y 7
 end
@@ -1225,7 +1213,7 @@ arch shop_empty
 x 11
 y 8
 end
-arch shop_floor
+arch shop_random
 x 11
 y 9
 end
@@ -1237,11 +1225,7 @@ arch swall_2_1_2
 x 11
 y 10
 end
-arch light4
-x 11
-y 11
-end
-arch shop_floor
+arch shop_random
 x 11
 y 11
 end
@@ -1300,7 +1284,7 @@ arch window_win2
 x 12
 y 2
 end
-arch shop_floor
+arch shop_random
 x 12
 y 3
 end
@@ -1324,7 +1308,7 @@ arch shop_empty
 x 12
 y 8
 end
-arch shop_floor
+arch shop_random
 x 12
 y 9
 end
@@ -1336,7 +1320,7 @@ arch swall_2_1_2
 x 12
 y 10
 end
-arch shop_floor
+arch shop_random
 x 12
 y 11
 end
@@ -1395,7 +1379,7 @@ arch wall_2_1_2
 x 13
 y 2
 end
-arch shop_floor
+arch shop_random
 x 13
 y 3
 end
@@ -1419,11 +1403,7 @@ arch shop_empty
 x 13
 y 8
 end
-arch light4
-x 13
-y 9
-end
-arch shop_floor
+arch shop_random
 x 13
 y 9
 end
@@ -1435,7 +1415,7 @@ arch swall_2_1_2
 x 13
 y 10
 end
-arch shop_floor
+arch shop_random
 x 13
 y 11
 end
@@ -1494,27 +1474,23 @@ arch wall_2_1_2
 x 14
 y 2
 end
-arch shop_floor
+arch shop_random
 x 14
 y 3
 end
-arch light4
+arch shop_random
 x 14
 y 4
 end
-arch shop_floor
-x 14
-y 4
-end
-arch shop_floor
+arch shop_random
 x 14
 y 5
 end
-arch shop_floor
+arch shop_random
 x 14
 y 6
 end
-arch shop_floor
+arch shop_random
 x 14
 y 7
 end
@@ -1522,7 +1498,7 @@ arch shop_empty
 x 14
 y 8
 end
-arch shop_floor
+arch shop_random
 x 14
 y 9
 end
@@ -1534,7 +1510,7 @@ arch swall_2_1_2
 x 14
 y 10
 end
-arch shop_floor
+arch shop_random
 x 14
 y 11
 end
@@ -1645,7 +1621,7 @@ arch swall_2_2_1
 x 15
 y 6
 end
-arch shop_floor
+arch shop_random
 x 15
 y 7
 end
@@ -1653,7 +1629,7 @@ arch shop_empty
 x 15
 y 8
 end
-arch shop_floor
+arch shop_random
 x 15
 y 9
 end
@@ -1665,7 +1641,7 @@ arch swall_2_1_2
 x 15
 y 10
 end
-arch shop_floor
+arch shop_random
 x 15
 y 11
 end
@@ -1773,11 +1749,7 @@ x 16
 y 6
 blocksview 0
 end
-arch light4
-x 16
-y 7
-end
-arch shop_floor
+arch shop_random
 x 16
 y 7
 end
@@ -1785,7 +1757,7 @@ arch shop_empty
 x 16
 y 8
 end
-arch shop_floor
+arch shop_random
 x 16
 y 9
 end
@@ -1806,7 +1778,7 @@ x 16
 y 10
 blocksview 0
 end
-arch shop_floor
+arch shop_random
 x 16
 y 11
 end
