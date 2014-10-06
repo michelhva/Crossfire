@@ -10,7 +10,7 @@ enter_x 23
 enter_y 61
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2008-10-05 Rick Tanner
+Modified: 2014-10-06 Rick Tanner
 endmsg
 end
 arch blocked
@@ -34,7 +34,7 @@ end
 arch snow
 y 7
 end
-arch cave18
+arch cave24
 y 7
 end
 arch snow
@@ -88,7 +88,7 @@ end
 arch snow
 y 16
 end
-arch cave17
+arch cave23
 y 16
 end
 arch blocked
@@ -109,7 +109,7 @@ arch snow4
 x 1
 y 2
 end
-arch cave18
+arch cave24
 x 1
 y 2
 end
@@ -205,7 +205,7 @@ arch snow
 x 1
 y 17
 end
-arch cave17
+arch cave23
 x 1
 y 17
 end
@@ -581,7 +581,7 @@ arch snow4
 x 5
 y 1
 end
-arch cave18
+arch cave24
 x 5
 y 1
 end
@@ -1221,7 +1221,7 @@ arch snow
 x 9
 y 17
 end
-arch cave20
+arch cave22
 x 9
 y 17
 end
@@ -1240,7 +1240,7 @@ arch snow4
 x 10
 y 1
 end
-arch cave19
+arch cave25
 x 10
 y 1
 end
@@ -1360,7 +1360,7 @@ arch snow
 x 10
 y 16
 end
-arch cave20
+arch cave22
 x 10
 y 16
 end
@@ -1623,7 +1623,7 @@ arch snow4
 x 13
 y 2
 end
-arch cave19
+arch cave25
 x 13
 y 2
 end
@@ -1727,7 +1727,7 @@ arch dirtfloor
 x 13
 y 14
 end
-arch cave17
+arch cave23
 x 13
 y 14
 end
@@ -1959,7 +1959,7 @@ arch dirtfloor
 x 15
 y 15
 end
-arch cave17
+arch cave23
 x 15
 y 15
 end
@@ -2003,7 +2003,7 @@ arch dirtfloor
 x 16
 y 3
 end
-arch cave19
+arch cave25
 x 16
 y 3
 end
@@ -2119,7 +2119,7 @@ arch dirtfloor
 x 16
 y 51
 end
-arch cave18
+arch cave24
 x 16
 y 51
 end
@@ -2151,7 +2151,7 @@ arch dirtfloor
 x 16
 y 55
 end
-arch cave17
+arch cave23
 x 16
 y 55
 end
@@ -2283,7 +2283,7 @@ arch dirtfloor
 x 17
 y 50
 end
-arch cave18
+arch cave24
 x 17
 y 50
 end
@@ -2335,7 +2335,7 @@ arch dirtfloor
 x 17
 y 58
 end
-arch cave17
+arch cave23
 x 17
 y 58
 end
@@ -2355,7 +2355,7 @@ arch dirtfloor
 x 18
 y 4
 end
-arch cave19
+arch cave25
 x 18
 y 4
 end
@@ -2627,7 +2627,7 @@ arch dirtfloor
 x 19
 y 48
 end
-arch cave18
+arch cave24
 x 19
 y 48
 end
@@ -2715,7 +2715,7 @@ arch dirtfloor
 x 20
 y 5
 end
-arch cave19
+arch cave25
 x 20
 y 5
 end
@@ -2787,7 +2787,7 @@ arch dirtfloor
 x 20
 y 47
 end
-arch cave18
+arch cave24
 x 20
 y 47
 end
@@ -3107,7 +3107,7 @@ arch dirtfloor
 x 22
 y 16
 end
-arch cave17
+arch cave23
 x 22
 y 16
 end
@@ -3497,7 +3497,7 @@ arch dirtfloor
 x 24
 y 17
 end
-arch cave17
+arch cave23
 x 24
 y 17
 end
@@ -3696,7 +3696,7 @@ arch dirtfloor
 x 25
 y 46
 end
-arch cave18
+arch cave24
 x 25
 y 46
 end
@@ -3800,7 +3800,7 @@ arch dirtfloor
 x 26
 y 6
 end
-arch cave19
+arch cave25
 x 26
 y 6
 end
@@ -4036,7 +4036,7 @@ arch dirtfloor
 x 27
 y 18
 end
-arch cave17
+arch cave23
 x 27
 y 18
 end
@@ -4380,7 +4380,7 @@ arch dirtfloor
 x 29
 y 19
 end
-arch cave17
+arch cave23
 x 29
 y 19
 end
@@ -4396,7 +4396,7 @@ arch dirtfloor
 x 29
 y 45
 end
-arch cave18
+arch cave24
 x 29
 y 45
 end
@@ -4828,7 +4828,7 @@ arch dirtfloor
 x 31
 y 59
 end
-arch cave20
+arch cave22
 x 31
 y 59
 end
@@ -4900,7 +4900,7 @@ arch dirtfloor
 x 32
 y 20
 end
-arch cave17
+arch cave23
 x 32
 y 20
 end
@@ -5004,7 +5004,7 @@ arch dirtfloor
 x 33
 y 8
 end
-arch cave19
+arch cave25
 x 33
 y 8
 end
@@ -5284,7 +5284,7 @@ arch dirtfloor
 x 34
 y 43
 end
-arch cave18
+arch cave24
 x 34
 y 43
 end
@@ -5596,7 +5596,7 @@ arch dirtfloor
 x 36
 y 21
 end
-arch cave17
+arch cave23
 x 36
 y 21
 end
@@ -5716,7 +5716,7 @@ arch dirtfloor
 x 36
 y 58
 end
-arch cave20
+arch cave22
 x 36
 y 58
 end
@@ -5852,7 +5852,7 @@ arch dirtfloor
 x 37
 y 41
 end
-arch cave18
+arch cave24
 x 37
 y 41
 end
@@ -5936,7 +5936,7 @@ arch dirtfloor
 x 37
 y 55
 end
-arch cave20
+arch cave22
 x 37
 y 55
 end
@@ -6128,7 +6128,7 @@ arch dirtfloor
 x 39
 y 9
 end
-arch cave19
+arch cave25
 x 39
 y 9
 end
@@ -6380,7 +6380,7 @@ arch dirtfloor
 x 40
 y 24
 end
-arch cave17
+arch cave23
 x 40
 y 24
 end
@@ -6480,7 +6480,7 @@ arch dirtfloor
 x 40
 y 53
 end
-arch cave20
+arch cave22
 x 40
 y 53
 end
@@ -6692,7 +6692,7 @@ arch dirtfloor
 x 42
 y 10
 end
-arch cave19
+arch cave25
 x 42
 y 10
 end
@@ -6972,7 +6972,7 @@ arch dirtfloor
 x 43
 y 27
 end
-arch cave17
+arch cave23
 x 43
 y 27
 end
@@ -7080,7 +7080,7 @@ arch dirtfloor
 x 43
 y 50
 end
-arch cave20
+arch cave22
 x 43
 y 50
 end
@@ -7096,7 +7096,7 @@ arch dirtfloor
 x 44
 y 11
 end
-arch cave19
+arch cave25
 x 44
 y 11
 end
@@ -7212,7 +7212,7 @@ arch dirtfloor
 x 44
 y 33
 end
-arch cave18
+arch cave24
 x 44
 y 33
 end
@@ -7764,7 +7764,7 @@ arch dirtfloor
 x 47
 y 13
 end
-arch cave19
+arch cave25
 x 47
 y 13
 end
@@ -8324,7 +8324,7 @@ arch dirtfloor
 x 49
 y 45
 end
-arch cave20
+arch cave22
 x 49
 y 45
 end
@@ -8512,7 +8512,7 @@ arch dirtfloor
 x 51
 y 17
 end
-arch cave19
+arch cave25
 x 51
 y 17
 end
@@ -8680,7 +8680,7 @@ arch dirtfloor
 x 52
 y 19
 end
-arch cave19
+arch cave25
 x 52
 y 19
 end
@@ -8948,7 +8948,7 @@ arch dirtfloor
 x 53
 y 41
 end
-arch cave20
+arch cave22
 x 53
 y 41
 end
@@ -8972,7 +8972,7 @@ arch dirtfloor
 x 54
 y 22
 end
-arch cave19
+arch cave25
 x 54
 y 22
 end
@@ -9072,7 +9072,7 @@ arch dirtfloor
 x 54
 y 39
 end
-arch cave20
+arch cave22
 x 54
 y 39
 end
@@ -9104,7 +9104,7 @@ arch dirtfloor
 x 55
 y 24
 end
-arch cave19
+arch cave25
 x 55
 y 24
 end
@@ -9200,7 +9200,7 @@ arch dirtfloor
 x 55
 y 36
 end
-arch cave20
+arch cave22
 x 55
 y 36
 end
@@ -9260,7 +9260,7 @@ arch dirtfloor
 x 56
 y 32
 end
-arch cave19
+arch cave25
 x 56
 y 32
 end
@@ -9276,7 +9276,7 @@ arch dirtfloor
 x 56
 y 34
 end
-arch cave20
+arch cave22
 x 56
 y 34
 end
