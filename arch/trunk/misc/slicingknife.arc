@@ -5,7 +5,7 @@ body_arm -1
 face b_slicingknife.111
 material 2
 materialname bronze
-skill one handed weapon
+skill one handed weapons
 weight 1000
 value 7
 name slicing knife
@@ -24,7 +24,7 @@ type 15
 body_arm -1
 face slicingknife.111
 material 2
-skill one handed weapon
+skill one handed weapons
 weight 1000
 value 14
 name slicing knife
