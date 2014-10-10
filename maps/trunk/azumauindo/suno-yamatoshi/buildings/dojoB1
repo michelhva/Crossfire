@@ -10,7 +10,7 @@ enter_x 23
 enter_y 55
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2011-10-26 Rick Tanner
+Modified: 2014-10-10 Rick Tanner
 endmsg
 end
 arch cave_15
@@ -5586,7 +5586,7 @@ name blood
 x 23
 y 37
 end
-arch cave18
+arch cave24
 x 23
 y 37
 end
@@ -5705,7 +5705,7 @@ name blood
 x 23
 y 44
 end
-arch cave17
+arch cave23
 x 23
 y 44
 end
@@ -5750,7 +5750,7 @@ sp 2
 x 23
 y 47
 end
-arch cave19
+arch cave25
 x 23
 y 47
 end
@@ -5779,6 +5779,10 @@ x 23
 y 49
 end
 arch cave_6
+x 23
+y 49
+end
+arch cave8
 x 23
 y 49
 end
@@ -6058,7 +6062,7 @@ name blood
 x 24
 y 32
 end
-arch cave18
+arch cave24
 x 24
 y 32
 end
@@ -6442,7 +6446,7 @@ sp 2
 x 24
 y 56
 end
-arch cave20
+arch cave22
 x 24
 y 56
 end
@@ -6620,7 +6624,7 @@ name blood
 x 25
 y 31
 end
-arch cave18
+arch cave24
 x 25
 y 31
 end
@@ -6923,7 +6927,7 @@ name blood
 x 25
 y 47
 end
-arch cave17
+arch cave23
 x 25
 y 47
 end
@@ -7003,7 +7007,7 @@ sp 2
 x 25
 y 53
 end
-arch cave20
+arch cave22
 x 25
 y 53
 end
@@ -7706,7 +7710,7 @@ name blood
 x 26
 y 56
 end
-arch cave17
+arch cave23
 x 26
 y 56
 end
@@ -9809,7 +9813,7 @@ name blood
 x 29
 y 57
 end
-arch cave17
+arch cave23
 x 29
 y 57
 end
@@ -11778,7 +11782,7 @@ name blood
 x 32
 y 58
 end
-arch cave17
+arch cave23
 x 32
 y 58
 end
@@ -13511,7 +13515,7 @@ name blood
 x 35
 y 59
 end
-arch cave17
+arch cave23
 x 35
 y 59
 end
@@ -15801,7 +15805,7 @@ name blood
 x 40
 y 33
 end
-arch cave19
+arch cave25
 x 40
 y 33
 end
@@ -18238,7 +18242,7 @@ name blood
 x 44
 y 34
 end
-arch cave19
+arch cave25
 x 44
 y 34
 end
@@ -20390,7 +20394,7 @@ name blood
 x 47
 y 35
 end
-arch cave19
+arch cave25
 x 47
 y 35
 end
@@ -21618,7 +21622,7 @@ name blood
 x 48
 y 59
 end
-arch cave20
+arch cave22
 x 48
 y 59
 end
@@ -21793,7 +21797,7 @@ sp 2
 x 49
 y 26
 end
-arch cave18
+arch cave24
 x 49
 y 26
 end
@@ -21835,7 +21839,7 @@ sp 2
 x 49
 y 29
 end
-arch cave17
+arch cave23
 x 49
 y 29
 end
@@ -22631,7 +22635,7 @@ sp 2
 x 50
 y 31
 end
-arch cave17
+arch cave23
 x 50
 y 31
 end
@@ -23417,7 +23421,7 @@ sp 2
 x 51
 y 32
 end
-arch cave17
+arch cave23
 x 51
 y 32
 end
@@ -24079,7 +24083,7 @@ sp 2
 x 52
 y 24
 end
-arch cave18
+arch cave24
 x 52
 y 24
 end
@@ -24953,7 +24957,7 @@ name blood
 x 53
 y 36
 end
-arch cave19
+arch cave25
 x 53
 y 36
 end
@@ -25153,7 +25157,7 @@ name blood
 x 53
 y 47
 end
-arch cave20
+arch cave22
 x 53
 y 47
 end
@@ -25587,7 +25591,7 @@ sp 2
 x 54
 y 34
 end
-arch cave17
+arch cave23
 x 54
 y 34
 end
@@ -25729,7 +25733,7 @@ sp 2
 x 54
 y 45
 end
-arch cave17
+arch cave23
 x 54
 y 45
 end
@@ -25841,7 +25845,7 @@ sp 2
 x 54
 y 53
 end
-arch cave18
+arch cave24
 x 54
 y 53
 end
@@ -26483,7 +26487,7 @@ sp 2
 x 55
 y 59
 end
-arch cave17
+arch cave23
 x 55
 y 59
 end
@@ -26633,7 +26637,7 @@ sp 2
 x 56
 y 24
 end
-arch cave19
+arch cave25
 x 56
 y 24
 end
@@ -27159,7 +27163,7 @@ sp 2
 x 57
 y 25
 end
-arch cave19
+arch cave25
 x 57
 y 25
 end
@@ -27801,7 +27805,7 @@ sp 2
 x 58
 y 32
 end
-arch cave19
+arch cave25
 x 58
 y 32
 end
@@ -28445,7 +28449,7 @@ sp 2
 x 59
 y 37
 end
-arch cave19
+arch cave25
 x 59
 y 37
 end
@@ -28515,7 +28519,7 @@ sp 2
 x 59
 y 42
 end
-arch cave20
+arch cave22
 x 59
 y 42
 end
@@ -28585,7 +28589,7 @@ sp 2
 x 59
 y 47
 end
-arch cave19
+arch cave25
 x 59
 y 47
 end
@@ -28733,7 +28737,7 @@ sp 2
 x 59
 y 59
 end
-arch cave20
+arch cave22
 x 59
 y 59
 end
@@ -29203,7 +29207,7 @@ sp 2
 x 60
 y 52
 end
-arch cave19
+arch cave25
 x 60
 y 52
 end
@@ -29287,7 +29291,7 @@ sp 2
 x 60
 y 58
 end
-arch cave20
+arch cave22
 x 60
 y 58
 end
