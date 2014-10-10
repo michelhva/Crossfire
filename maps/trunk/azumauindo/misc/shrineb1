@@ -10,7 +10,7 @@ enter_x 7
 enter_y 6
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2008-12-13 Rick Tanner
+Modified: 2014-10-10 Rick Tanner
 endmsg
 end
 arch cave_15
@@ -285,7 +285,7 @@ arch pstone_2
 x 1
 y 49
 end
-arch cave18
+arch cave24
 x 1
 y 49
 end
@@ -309,7 +309,7 @@ arch pstone_2
 x 1
 y 52
 end
-arch cave17
+arch cave23
 x 1
 y 52
 end
@@ -424,7 +424,7 @@ arch pstone_2
 x 2
 y 47
 end
-arch cave18
+arch cave24
 x 2
 y 47
 end
@@ -687,7 +687,7 @@ arch pstone_2
 x 3
 y 59
 end
-arch cave17
+arch cave23
 x 3
 y 59
 end
@@ -1276,7 +1276,7 @@ arch pstone_2
 x 6
 y 45
 end
-arch cave18
+arch cave24
 x 6
 y 45
 end
@@ -1324,7 +1324,7 @@ arch pstone_2
 x 6
 y 53
 end
-arch cave20
+arch cave22
 x 6
 y 53
 end
@@ -1428,7 +1428,7 @@ arch pstone_2
 x 6
 y 67
 end
-arch cave17
+arch cave23
 x 6
 y 67
 end
@@ -1658,7 +1658,7 @@ arch pstone_2
 x 7
 y 52
 end
-arch cave20
+arch cave22
 x 7
 y 52
 end
@@ -1762,7 +1762,7 @@ arch pstone_2
 x 7
 y 68
 end
-arch cave17
+arch cave23
 x 7
 y 68
 end
@@ -1897,7 +1897,7 @@ arch pstone_2
 x 8
 y 43
 end
-arch cave18
+arch cave24
 x 8
 y 43
 end
@@ -1941,7 +1941,7 @@ arch pstone_2
 x 8
 y 49
 end
-arch cave20
+arch cave22
 x 8
 y 49
 end
@@ -1993,7 +1993,7 @@ arch pstone_2
 x 8
 y 58
 end
-arch cave19
+arch cave25
 x 8
 y 58
 end
@@ -2615,7 +2615,7 @@ arch pstone_2
 x 10
 y 71
 end
-arch cave17
+arch cave23
 x 10
 y 71
 end
@@ -2778,7 +2778,7 @@ arch pstone_2
 x 11
 y 40
 end
-arch cave18
+arch cave24
 x 11
 y 40
 end
@@ -2826,7 +2826,7 @@ arch pstone_2
 x 11
 y 46
 end
-arch cave20
+arch cave22
 x 11
 y 46
 end
@@ -2866,7 +2866,7 @@ arch pstone_2
 x 11
 y 66
 end
-arch cave19
+arch cave25
 x 11
 y 66
 end
@@ -3316,7 +3316,7 @@ arch pstone_2
 x 13
 y 37
 end
-arch cave18
+arch cave24
 x 13
 y 37
 end
@@ -3372,7 +3372,7 @@ arch pstone_2
 x 13
 y 44
 end
-arch cave20
+arch cave22
 x 13
 y 44
 end
@@ -3412,7 +3412,7 @@ arch pstone_2
 x 13
 y 68
 end
-arch cave19
+arch cave25
 x 13
 y 68
 end
@@ -3579,7 +3579,7 @@ arch pstone_2
 x 14
 y 19
 end
-arch cave17
+arch cave23
 x 14
 y 19
 end
@@ -3603,7 +3603,7 @@ arch pstone_2
 x 14
 y 35
 end
-arch cave18
+arch cave24
 x 14
 y 35
 end
@@ -4023,7 +4023,7 @@ arch pstone_2
 x 15
 y 77
 end
-arch cave17
+arch cave23
 x 15
 y 77
 end
@@ -4051,7 +4051,7 @@ arch pstone_2
 x 15
 y 91
 end
-arch cave18
+arch cave24
 x 15
 y 91
 end
@@ -4123,7 +4123,7 @@ arch pstone_2
 x 15
 y 100
 end
-arch cave17
+arch cave23
 x 15
 y 100
 end
@@ -4385,7 +4385,7 @@ arch pstone_2
 x 16
 y 79
 end
-arch cave17
+arch cave23
 x 16
 y 79
 end
@@ -4680,7 +4680,7 @@ arch pstone_2
 x 17
 y 22
 end
-arch cave17
+arch cave23
 x 17
 y 22
 end
@@ -5003,7 +5003,7 @@ arch pstone_2
 x 18
 y 13
 end
-arch cave_15
+arch cave25
 x 18
 y 13
 end
@@ -5075,7 +5075,7 @@ arch pstone_2
 x 18
 y 24
 end
-arch cave17
+arch cave23
 x 18
 y 24
 end
@@ -5155,7 +5155,7 @@ arch pstone_2
 x 18
 y 74
 end
-arch cave19
+arch cave25
 x 18
 y 74
 end
@@ -5215,7 +5215,7 @@ arch pstone_2
 x 18
 y 82
 end
-arch cave17
+arch cave23
 x 18
 y 82
 end
@@ -5291,7 +5291,7 @@ arch pstone_2
 x 18
 y 95
 end
-arch cave19
+arch cave25
 x 18
 y 95
 end
@@ -5383,7 +5383,7 @@ arch pstone_2
 x 19
 y 16
 end
-arch cave19
+arch cave25
 x 19
 y 16
 end
@@ -5439,7 +5439,7 @@ arch pstone_2
 x 19
 y 25
 end
-arch cave17
+arch cave23
 x 19
 y 25
 end
@@ -5503,7 +5503,7 @@ arch pstone_2
 x 19
 y 40
 end
-arch cave20
+arch cave22
 x 19
 y 40
 end
@@ -5775,7 +5775,7 @@ arch pstone_2
 x 20
 y 19
 end
-arch cave19
+arch cave25
 x 20
 y 19
 end
@@ -5859,7 +5859,7 @@ arch pstone_2
 x 20
 y 34
 end
-arch cave18
+arch cave24
 x 20
 y 34
 end
@@ -5923,7 +5923,7 @@ arch pstone_2
 x 20
 y 78
 end
-arch cave19
+arch cave25
 x 20
 y 78
 end
@@ -6115,7 +6115,7 @@ arch pstone_2
 x 20
 y 111
 end
-arch cave17
+arch cave23
 x 20
 y 111
 end
@@ -6203,7 +6203,7 @@ arch pstone_2
 x 21
 y 27
 end
-arch cave17
+arch cave23
 x 21
 y 27
 end
@@ -6307,7 +6307,7 @@ arch pstone_2
 x 21
 y 80
 end
-arch cave19
+arch cave25
 x 21
 y 80
 end
@@ -6379,7 +6379,7 @@ arch pstone_2
 x 21
 y 89
 end
-arch cave20
+arch cave22
 x 21
 y 89
 end
@@ -6503,7 +6503,7 @@ arch pstone_2
 x 21
 y 116
 end
-arch cave17
+arch cave23
 x 21
 y 116
 end
@@ -6583,7 +6583,7 @@ arch pstone_2
 x 22
 y 28
 end
-arch cave17
+arch cave23
 x 22
 y 28
 end
@@ -6607,7 +6607,7 @@ arch pstone_2
 x 22
 y 33
 end
-arch cave18
+arch cave24
 x 22
 y 33
 end
@@ -6843,7 +6843,7 @@ arch pstone_2
 x 22
 y 120
 end
-arch cave17
+arch cave23
 x 22
 y 120
 end
@@ -6959,7 +6959,7 @@ arch pstone_2
 x 23
 y 37
 end
-arch cave20
+arch cave22
 x 23
 y 37
 end
@@ -6987,7 +6987,7 @@ arch pstone_2
 x 23
 y 102
 end
-arch cave19
+arch cave25
 x 23
 y 102
 end
@@ -7271,7 +7271,7 @@ arch pstone_2
 x 24
 y 109
 end
-arch cave19
+arch cave25
 x 24
 y 109
 end
@@ -7347,7 +7347,7 @@ arch pstone_2
 x 24
 y 122
 end
-arch cave17
+arch cave23
 x 24
 y 122
 end
@@ -7667,7 +7667,7 @@ arch pstone_2
 x 26
 y 113
 end
-arch cave19
+arch cave25
 x 26
 y 113
 end
@@ -7731,7 +7731,7 @@ arch pstone_2
 x 27
 y 22
 end
-arch cave19
+arch cave25
 x 27
 y 22
 end
@@ -7930,7 +7930,7 @@ arch pstone_2
 x 28
 y 27
 end
-arch cave19
+arch cave25
 x 28
 y 27
 end
@@ -7970,7 +7970,7 @@ arch pstone_2
 x 28
 y 32
 end
-arch cave20
+arch cave22
 x 28
 y 32
 end
@@ -7998,7 +7998,7 @@ arch pstone_2
 x 28
 y 115
 end
-arch cave19
+arch cave25
 x 28
 y 115
 end
@@ -8038,7 +8038,7 @@ arch pstone_2
 x 28
 y 122
 end
-arch cave20
+arch cave22
 x 28
 y 122
 end
@@ -8098,7 +8098,7 @@ arch pstone_2
 x 29
 y 116
 end
-arch cave19
+arch cave25
 x 29
 y 116
 end
@@ -8138,7 +8138,7 @@ arch pstone_2
 x 29
 y 121
 end
-arch cave20
+arch cave22
 x 29
 y 121
 end
