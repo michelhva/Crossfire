@@ -4,7 +4,7 @@ race fire_elemental
 randomitems fireborn_player_items
 face fireborn.111
 msg
-Skills: Levivation, Flame Touch, Praying, Pyromancy
+Skills: Levitation, Flame Touch, Praying, Pyromancy
 Resistances: Cold -30, Ghosthit -50, Immunity to Poison and Fire
 Attunements: Attune Fire
 Special: Can not use weapons & armor, can wear 4 rings, glowing aura, fast SP regeneration
