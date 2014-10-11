@@ -7,7 +7,7 @@ msg
 Skills: None
 Resistances: Fire -30, Cold +30
 Attunements: Repelled fire
-Special: Fast HP regeneration, slow SP regeneration
+Special: Fast HP regeneration, slow SP regeneration, Can see in dark
 
 Description:
 Trolls are usually nasty creatures: scions of Gnarg. They have amazing strength and hardiness, but they're a bit clumsy, very stupid, impious, and bad at handling and obtaining magic. They heal with amazing rapidity and can see in the dark. Because of the above attributes, they're great in any fight. Well, they're great until someone waves torches at them: fire presents great peril to trolls.
