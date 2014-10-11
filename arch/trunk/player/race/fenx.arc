@@ -29,7 +29,7 @@ weight 65000
 food 999
 speed 1
 attacktype 1
-Str -2
+Str 0
 Dex 4
 Con 0
 Wis -2
