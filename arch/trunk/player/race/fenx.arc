@@ -8,7 +8,6 @@ Skills: Woodsman, Missile Weapons, Jumping, Singing
 Resistances: None
 Attunements: None
 Special: Slow HP regeneration, fast SP regeneration, low food consumption, start with bow & arrows, See in dark
-
 Description:
 Fenxes, also called Fendrakhis by other speaking races, are humanoids that have some fox-like attributes. A little smaller than humans, they are agile and clever, but usually share little affinity with magical forces.
 Once an important race of Bigworld, they were forced to hide into the Great Forest after they lost an important war against Humans, a long time ago.
