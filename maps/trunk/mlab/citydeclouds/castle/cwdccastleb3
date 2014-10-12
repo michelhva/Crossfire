@@ -10,7 +10,7 @@ enter_x 30
 enter_y 48
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2011-11-01 Rick Tanner
+Modified: 2014-10-12 Rick Tanner
 endmsg
 end
 arch blocked
@@ -12310,7 +12310,7 @@ face fog.111
 x 9
 y 63
 end
-arch cave20
+arch cave22
 x 9
 y 63
 end
@@ -12371,7 +12371,7 @@ face fog.111
 x 9
 y 75
 end
-arch cave19
+arch cave25
 x 9
 y 75
 end
@@ -13404,7 +13404,7 @@ face fog.111
 x 10
 y 51
 end
-arch cave20
+arch cave22
 x 10
 y 51
 end
@@ -13460,7 +13460,7 @@ arch small_stones
 x 10
 y 64
 end
-arch cave18
+arch cave24
 x 10
 y 64
 end
@@ -13524,7 +13524,7 @@ arch steppe
 x 10
 y 72
 end
-arch cave17
+arch cave23
 x 10
 y 72
 end
@@ -14408,7 +14408,7 @@ face fog.111
 x 11
 y 40
 end
-arch cave20
+arch cave22
 x 11
 y 40
 end
@@ -14488,7 +14488,7 @@ arch large_stones
 x 11
 y 59
 end
-arch cave18
+arch cave24
 x 11
 y 59
 end
@@ -14580,7 +14580,7 @@ arch steppe
 x 11
 y 74
 end
-arch cave17
+arch cave23
 x 11
 y 74
 end
@@ -14609,7 +14609,7 @@ face fog.111
 x 11
 y 78
 end
-arch cave19
+arch cave25
 x 11
 y 78
 end
@@ -15247,7 +15247,7 @@ face fog.111
 x 12
 y 27
 end
-arch cave20
+arch cave22
 x 12
 y 27
 end
@@ -15323,7 +15323,7 @@ arch dirtfloor
 x 12
 y 45
 end
-arch cave18
+arch cave24
 x 12
 y 45
 end
@@ -15548,7 +15548,7 @@ face fog.111
 x 12
 y 79
 end
-arch cave19
+arch cave25
 x 12
 y 79
 end
@@ -16199,7 +16199,7 @@ arch pstone_2
 x 13
 y 35
 end
-arch cave18
+arch cave24
 x 13
 y 35
 end
@@ -16472,7 +16472,7 @@ face fog.111
 x 13
 y 83
 end
-arch cave19
+arch cave25
 x 13
 y 83
 end
@@ -17030,7 +17030,7 @@ face fog.111
 x 14
 y 24
 end
-arch cave20
+arch cave22
 x 14
 y 24
 end
@@ -17058,7 +17058,7 @@ arch pstone_2
 x 14
 y 30
 end
-arch cave18
+arch cave24
 x 14
 y 30
 end
@@ -17306,7 +17306,7 @@ arch small_stones
 x 14
 y 78
 end
-arch cave17
+arch cave23
 x 14
 y 78
 end
@@ -17355,7 +17355,7 @@ face fog.111
 x 14
 y 87
 end
-arch cave19
+arch cave25
 x 14
 y 87
 end
@@ -17812,7 +17812,7 @@ arch pstone_2
 x 15
 y 28
 end
-arch cave18
+arch cave24
 x 15
 y 28
 end
@@ -18092,7 +18092,7 @@ arch pstone_2
 x 15
 y 82
 end
-arch cave17
+arch cave23
 x 15
 y 82
 end
@@ -18523,7 +18523,7 @@ arch pstone_2
 x 16
 y 22
 end
-arch cave18
+arch cave24
 x 16
 y 22
 end
@@ -18843,7 +18843,7 @@ arch pstone_2
 x 16
 y 84
 end
-arch cave17
+arch cave23
 x 16
 y 84
 end
@@ -18876,7 +18876,7 @@ face fog.111
 x 16
 y 89
 end
-arch cave19
+arch cave25
 x 16
 y 89
 end
@@ -19946,7 +19946,7 @@ arch dirtfloor
 x 18
 y 20
 end
-arch cave18
+arch cave24
 x 18
 y 20
 end
@@ -20242,7 +20242,7 @@ arch pstone_2
 x 18
 y 86
 end
-arch cave17
+arch cave23
 x 18
 y 86
 end
@@ -20615,7 +20615,7 @@ face fog.111
 x 19
 y 17
 end
-arch cave20
+arch cave22
 x 19
 y 17
 end
@@ -21335,7 +21335,7 @@ arch dirtfloor
 x 20
 y 19
 end
-arch cave18
+arch cave24
 x 20
 y 19
 end
@@ -21671,7 +21671,7 @@ arch cave16
 x 20
 y 86
 end
-arch cave17
+arch cave23
 x 20
 y 87
 end
@@ -21696,7 +21696,7 @@ face fog.111
 x 20
 y 90
 end
-arch cave19
+arch cave25
 x 20
 y 90
 end
@@ -22703,7 +22703,7 @@ arch steppe
 x 22
 y 18
 end
-arch cave18
+arch cave24
 x 22
 y 18
 end
@@ -23019,7 +23019,7 @@ arch steppe
 x 22
 y 88
 end
-arch cave17
+arch cave23
 x 22
 y 88
 end
@@ -23737,7 +23737,7 @@ face fog.111
 x 23
 y 91
 end
-arch cave19
+arch cave25
 x 23
 y 91
 end
@@ -24045,7 +24045,7 @@ arch dirtfloor
 x 24
 y 17
 end
-arch cave18
+arch cave24
 x 24
 y 17
 end
@@ -24105,7 +24105,7 @@ arch pstone_2
 x 24
 y 28
 end
-arch cave20
+arch cave22
 x 24
 y 28
 end
@@ -24125,7 +24125,7 @@ arch pstone_3
 x 24
 y 32
 end
-arch cave19
+arch cave25
 x 24
 y 32
 end
@@ -24817,7 +24817,7 @@ arch pstone_1
 x 25
 y 35
 end
-arch cave19
+arch cave25
 x 25
 y 35
 end
@@ -25101,7 +25101,7 @@ arch pstone_1
 x 25
 y 89
 end
-arch cave17
+arch cave23
 x 25
 y 89
 end
@@ -25456,7 +25456,7 @@ arch steppe
 x 26
 y 26
 end
-arch cave20
+arch cave22
 x 26
 y 26
 end
@@ -26096,7 +26096,7 @@ arch dirtfloor
 x 27
 y 17
 end
-arch cave19
+arch cave25
 x 27
 y 17
 end
@@ -26569,7 +26569,7 @@ arch pstone_1
 x 27
 y 90
 end
-arch cave17
+arch cave23
 x 27
 y 90
 end
@@ -26594,7 +26594,7 @@ face fog.111
 x 27
 y 93
 end
-arch cave19
+arch cave25
 x 27
 y 93
 end
@@ -26920,7 +26920,7 @@ arch steppe
 x 28
 y 25
 end
-arch cave20
+arch cave22
 x 28
 y 25
 end
@@ -27696,7 +27696,7 @@ arch dirtfloor
 x 29
 y 18
 end
-arch cave19
+arch cave25
 x 29
 y 18
 end
@@ -27773,7 +27773,7 @@ name stonefloor
 x 29
 y 32
 end
-arch cave18
+arch cave24
 x 29
 y 32
 end
@@ -28473,7 +28473,7 @@ arch dirtfloor
 x 30
 y 19
 end
-arch cave19
+arch cave25
 x 30
 y 19
 end
@@ -28509,7 +28509,7 @@ arch steppe
 x 30
 y 24
 end
-arch cave20
+arch cave22
 x 30
 y 24
 end
@@ -28542,7 +28542,7 @@ name stonefloor
 x 30
 y 30
 end
-arch cave18
+arch cave24
 x 30
 y 30
 end
@@ -29280,7 +29280,7 @@ arch steppe
 x 31
 y 21
 end
-arch cave19
+arch cave25
 x 31
 y 21
 end
@@ -29296,7 +29296,7 @@ arch steppe
 x 31
 y 23
 end
-arch cave20
+arch cave22
 x 31
 y 23
 end
@@ -30031,7 +30031,7 @@ face fog.111
 x 32
 y 15
 end
-arch cave17
+arch cave23
 x 32
 y 15
 end
@@ -30096,7 +30096,7 @@ arch mine17
 x 32
 y 28
 end
-arch cave18
+arch cave24
 x 32
 y 28
 end
@@ -30541,7 +30541,7 @@ arch dirtfloor
 x 32
 y 91
 end
-arch cave17
+arch cave23
 x 32
 y 91
 end
@@ -31216,7 +31216,7 @@ name stonefloor
 x 33
 y 72
 end
-arch cave17
+arch cave23
 x 33
 y 72
 end
@@ -32733,7 +32733,7 @@ arch pstone_3
 x 35
 y 75
 end
-arch cave19
+arch cave25
 x 35
 y 75
 end
@@ -33841,7 +33841,7 @@ face fog.111
 x 37
 y 16
 end
-arch cave17
+arch cave23
 x 37
 y 16
 end
@@ -33981,7 +33981,7 @@ arch pstone_2
 x 37
 y 38
 end
-arch cave20
+arch cave22
 x 37
 y 38
 end
@@ -34707,7 +34707,7 @@ name stonefloor
 x 38
 y 38
 end
-arch cave18
+arch cave24
 x 38
 y 38
 end
@@ -34940,7 +34940,7 @@ arch pstone_3
 x 38
 y 76
 end
-arch cave19
+arch cave25
 x 38
 y 76
 end
@@ -36812,7 +36812,7 @@ face fog.111
 x 41
 y 19
 end
-arch cave17
+arch cave23
 x 41
 y 19
 end
@@ -37662,7 +37662,7 @@ face fog.111
 x 42
 y 25
 end
-arch cave17
+arch cave23
 x 42
 y 25
 end
@@ -38040,7 +38040,7 @@ arch dirtfloor
 x 42
 y 91
 end
-arch cave20
+arch cave22
 x 42
 y 91
 end
@@ -38525,7 +38525,7 @@ face fog.111
 x 43
 y 29
 end
-arch cave17
+arch cave23
 x 43
 y 29
 end
@@ -39616,7 +39616,7 @@ arch pstone_2
 x 44
 y 72
 end
-arch cave18
+arch cave24
 x 44
 y 72
 end
@@ -40207,7 +40207,7 @@ face fog.111
 x 45
 y 31
 end
-arch cave17
+arch cave23
 x 45
 y 31
 end
@@ -41371,7 +41371,7 @@ arch steppe
 x 46
 y 90
 end
-arch cave20
+arch cave22
 x 46
 y 90
 end
@@ -42223,7 +42223,7 @@ arch steppe
 x 47
 y 89
 end
-arch cave20
+arch cave22
 x 47
 y 89
 end
@@ -44724,7 +44724,7 @@ arch pstone_1
 x 50
 y 87
 end
-arch cave20
+arch cave22
 x 50
 y 87
 end
@@ -44761,7 +44761,7 @@ face fog.111
 x 50
 y 93
 end
-arch cave18
+arch cave24
 x 50
 y 93
 end
@@ -46441,7 +46441,7 @@ arch pstone_3
 x 52
 y 86
 end
-arch cave20
+arch cave22
 x 52
 y 86
 end
@@ -47322,7 +47322,7 @@ arch pstone_3
 x 53
 y 85
 end
-arch cave20
+arch cave22
 x 53
 y 85
 end
@@ -47854,7 +47854,7 @@ face fog.111
 x 54
 y 31
 end
-arch cave20
+arch cave22
 x 54
 y 31
 end
@@ -48926,7 +48926,7 @@ arch dirtfloor
 x 55
 y 69
 end
-arch cave19
+arch cave25
 x 55
 y 69
 end
@@ -49006,7 +49006,7 @@ arch pstone_3
 x 55
 y 83
 end
-arch cave20
+arch cave22
 x 55
 y 83
 end
@@ -49550,7 +49550,7 @@ face fog.111
 x 56
 y 29
 end
-arch cave20
+arch cave22
 x 56
 y 29
 end
@@ -49764,7 +49764,7 @@ arch pstone_2
 x 56
 y 65
 end
-arch cave20
+arch cave22
 x 56
 y 65
 end
@@ -49792,7 +49792,7 @@ arch dirtfloor
 x 56
 y 71
 end
-arch cave19
+arch cave25
 x 56
 y 71
 end
@@ -49885,7 +49885,7 @@ face fog.111
 x 56
 y 87
 end
-arch cave18
+arch cave24
 x 56
 y 87
 end
@@ -51524,7 +51524,7 @@ arch mine16
 x 58
 y 66
 end
-arch cave17
+arch cave23
 x 58
 y 66
 end
@@ -51599,7 +51599,7 @@ arch pstone_2
 x 58
 y 73
 end
-arch cave19
+arch cave25
 x 58
 y 73
 end
@@ -51676,7 +51676,7 @@ face fog.111
 x 58
 y 85
 end
-arch cave18
+arch cave24
 x 58
 y 85
 end
@@ -52278,7 +52278,7 @@ arch pstone_1
 x 59
 y 31
 end
-arch cave17
+arch cave23
 x 59
 y 31
 end
@@ -53228,7 +53228,7 @@ name stonefloor
 x 60
 y 32
 end
-arch cave17
+arch cave23
 x 60
 y 32
 end
@@ -54509,7 +54509,7 @@ arch steppe
 x 61
 y 82
 end
-arch cave20
+arch cave22
 x 61
 y 82
 end
@@ -55403,7 +55403,7 @@ arch dirtfloor
 x 62
 y 77
 end
-arch cave19
+arch cave25
 x 62
 y 77
 end
@@ -55435,7 +55435,7 @@ arch dirtfloor
 x 62
 y 81
 end
-arch cave20
+arch cave22
 x 62
 y 81
 end
@@ -56015,7 +56015,7 @@ arch pstone_1
 x 63
 y 27
 end
-arch cave20
+arch cave22
 x 63
 y 27
 end
@@ -56027,7 +56027,7 @@ arch mine17
 x 63
 y 28
 end
-arch cave18
+arch cave24
 x 63
 y 28
 end
@@ -58945,7 +58945,7 @@ arch mine17
 x 66
 y 55
 end
-arch cave19
+arch cave25
 x 66
 y 55
 end
@@ -59167,7 +59167,7 @@ face fog.111
 x 66
 y 83
 end
-arch cave18
+arch cave24
 x 66
 y 83
 end
@@ -60082,7 +60082,7 @@ face fog.111
 x 67
 y 81
 end
-arch cave18
+arch cave24
 x 67
 y 81
 end
@@ -60791,7 +60791,7 @@ face fog.111
 x 68
 y 44
 end
-arch cave18
+arch cave24
 x 68
 y 44
 end
@@ -60825,7 +60825,7 @@ face fog.111
 x 68
 y 46
 end
-arch cave17
+arch cave23
 x 68
 y 46
 end
@@ -61064,7 +61064,7 @@ face fog.111
 x 68
 y 80
 end
-arch cave18
+arch cave24
 x 68
 y 80
 end
@@ -62790,7 +62790,7 @@ face fog.111
 x 70
 y 42
 end
-arch cave18
+arch cave24
 x 70
 y 42
 end
@@ -62880,7 +62880,7 @@ face fog.111
 x 70
 y 48
 end
-arch cave17
+arch cave23
 x 70
 y 48
 end
@@ -63716,7 +63716,7 @@ face fog.111
 x 71
 y 26
 end
-arch cave17
+arch cave23
 x 71
 y 26
 end
@@ -64820,7 +64820,7 @@ arch mine11
 x 72
 y 33
 end
-arch cave19
+arch cave25
 x 72
 y 33
 end
@@ -65026,7 +65026,7 @@ face fog.111
 x 72
 y 50
 end
-arch cave17
+arch cave23
 x 72
 y 50
 end
@@ -65905,7 +65905,7 @@ face fog.111
 x 73
 y 28
 end
-arch cave17
+arch cave23
 x 73
 y 28
 end
@@ -65934,7 +65934,7 @@ face fog.111
 x 73
 y 32
 end
-arch cave18
+arch cave24
 x 73
 y 32
 end
@@ -66259,7 +66259,7 @@ face fog.111
 x 73
 y 53
 end
-arch cave17
+arch cave23
 x 73
 y 53
 end
@@ -67451,7 +67451,7 @@ face fog.111
 x 74
 y 56
 end
-arch cave17
+arch cave23
 x 74
 y 56
 end
@@ -67605,7 +67605,7 @@ face fog.111
 x 74
 y 79
 end
-arch cave18
+arch cave24
 x 74
 y 79
 end
@@ -68637,7 +68637,7 @@ face fog.111
 x 75
 y 58
 end
-arch cave17
+arch cave23
 x 75
 y 58
 end
@@ -69805,7 +69805,7 @@ face fog.111
 x 76
 y 61
 end
-arch cave17
+arch cave23
 x 76
 y 61
 end
@@ -69878,7 +69878,7 @@ face fog.111
 x 76
 y 76
 end
-arch cave18
+arch cave24
 x 76
 y 76
 end
@@ -71050,7 +71050,7 @@ face fog.111
 x 77
 y 69
 end
-arch cave18
+arch cave24
 x 77
 y 69
 end
