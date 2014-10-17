@@ -10,7 +10,7 @@ enter_x 59
 enter_y 81
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2011-11-02 Rick Tanner
+Modified: 2014-10-17 Rick Tanner
 endmsg
 end
 arch light3
@@ -19476,7 +19476,7 @@ arch steppe
 x 11
 y 71
 end
-arch cave20
+arch cave22
 x 11
 y 71
 end
@@ -19525,7 +19525,7 @@ face fog.111
 x 11
 y 80
 end
-arch cave19
+arch cave25
 x 11
 y 80
 end
@@ -21200,7 +21200,7 @@ face fog.111
 x 12
 y 84
 end
-arch cave19
+arch cave25
 x 12
 y 84
 end
@@ -22354,7 +22354,7 @@ face fog.111
 x 13
 y 48
 end
-arch cave20
+arch cave22
 x 13
 y 48
 end
@@ -22387,7 +22387,7 @@ face fog.111
 x 13
 y 53
 end
-arch cave19
+arch cave25
 x 13
 y 53
 end
@@ -22777,7 +22777,7 @@ face fog.111
 x 13
 y 86
 end
-arch cave19
+arch cave25
 x 13
 y 86
 end
@@ -23791,7 +23791,7 @@ face fog.111
 x 14
 y 55
 end
-arch cave19
+arch cave25
 x 14
 y 55
 end
@@ -28447,7 +28447,7 @@ face fog.111
 x 18
 y 35
 end
-arch cave19
+arch cave25
 x 18
 y 35
 end
@@ -34703,11 +34703,9 @@ face fog.111
 x 23
 y 49
 end
-arch cave19
-name mountain top
+arch cave25
 x 23
 y 49
-blocksview 0
 end
 arch blocked
 name nothing
@@ -36029,11 +36027,9 @@ face fog.111
 x 24
 y 46
 end
-arch cave20
-name mountain top
+arch cave22
 x 24
 y 46
-blocksview 0
 end
 arch pstone_1
 x 24
@@ -37197,11 +37193,9 @@ face fog.111
 x 25
 y 33
 end
-arch cave18
-name mountain top
+arch cave24
 x 25
 y 33
-blocksview 0
 end
 arch blocked
 name nothing
@@ -39269,7 +39263,7 @@ arch pstone_1
 x 26
 y 90
 end
-arch cave20
+arch cave22
 x 26
 y 90
 end
@@ -39813,11 +39807,9 @@ face fog.111
 x 27
 y 32
 end
-arch cave18
-name mountain top
+arch cave24
 x 27
 y 32
-blocksview 0
 end
 arch blocked
 name nothing
@@ -40032,11 +40024,9 @@ face fog.111
 x 27
 y 46
 end
-arch cave17
-name mountain top
+arch cave23
 x 27
 y 46
-blocksview 0
 end
 arch large_stones
 x 27
@@ -40083,11 +40073,9 @@ face fog.111
 x 27
 y 53
 end
-arch cave19
-name mountain top
+arch cave25
 x 27
 y 53
-blocksview 0
 end
 arch blocked
 name nothing
@@ -40650,7 +40638,7 @@ face fog.111
 x 27
 y 93
 end
-arch cave19
+arch cave25
 x 27
 y 93
 end
@@ -42438,11 +42426,9 @@ face fog.111
 x 29
 y 30
 end
-arch cave18
-name mountain top
+arch cave24
 x 29
 y 30
-blocksview 0
 end
 arch blocked
 name nothing
@@ -48208,11 +48194,9 @@ face fog.111
 x 33
 y 53
 end
-arch cave18
-name mountain top
+arch cave24
 x 33
 y 53
-blocksview 0
 end
 arch blocked
 name nothing
@@ -50687,11 +50671,9 @@ face fog.111
 x 35
 y 40
 end
-arch cave19
-name mountain top
+arch cave25
 x 35
 y 40
-blocksview 0
 end
 arch blocked
 name nothing
@@ -50725,11 +50707,9 @@ face fog.111
 x 35
 y 42
 end
-arch cave20
-name mountain top
+arch cave22
 x 35
 y 42
-blocksview 0
 end
 arch blocked
 name nothing
@@ -51843,11 +51823,9 @@ face fog.111
 x 36
 y 29
 end
-arch cave20
-name mountain top
+arch cave22
 x 36
 y 29
-blocksview 0
 end
 arch pstone_1
 x 36
@@ -51874,11 +51852,9 @@ face fog.111
 x 36
 y 33
 end
-arch cave19
-name mountain top
+arch cave25
 x 36
 y 33
-blocksview 0
 end
 arch blocked
 name nothing
@@ -52976,11 +52952,9 @@ face fog.111
 x 37
 y 25
 end
-arch cave20
-name mountain top
+arch cave22
 x 37
 y 25
-blocksview 0
 end
 arch small_stones
 x 37
@@ -53027,11 +53001,9 @@ face fog.111
 x 37
 y 34
 end
-arch cave19
-name mountain top
+arch cave25
 x 37
 y 34
-blocksview 0
 end
 arch blocked
 name nothing
@@ -53065,11 +53037,9 @@ face fog.111
 x 37
 y 36
 end
-arch cave20
-name mountain top
+arch cave22
 x 37
 y 36
-blocksview 0
 end
 arch pstone_1
 x 37
@@ -54033,11 +54003,9 @@ face fog.111
 x 38
 y 22
 end
-arch cave20
-name mountain top
+arch cave22
 x 38
 y 22
-blocksview 0
 end
 arch pstone_2
 x 38
@@ -55488,11 +55456,9 @@ face fog.111
 x 39
 y 70
 end
-arch cave19
-name mountain top
+arch cave25
 x 39
 y 70
-blocksview 0
 end
 arch blocked
 name nothing
@@ -56216,11 +56182,9 @@ face fog.111
 x 40
 y 34
 end
-arch cave18
-name mountain top
+arch cave24
 x 40
 y 34
-blocksview 0
 end
 arch blocked
 name nothing
@@ -56235,11 +56199,9 @@ face fog.111
 x 40
 y 35
 end
-arch cave17
-name mountain top
+arch cave23
 x 40
 y 35
-blocksview 0
 end
 arch pstone_1
 x 40
@@ -56512,13 +56474,7 @@ face fog.111
 x 40
 y 58
 end
-arch cave20
-name mountain top
-x 40
-y 58
-blocksview 0
-end
-arch cave_6
+arch cave22
 x 40
 y 58
 end
@@ -57281,7 +57237,7 @@ arch pstone_2
 x 41
 y 22
 end
-arch cave17
+arch cave23
 x 41
 y 22
 end
@@ -57289,7 +57245,7 @@ arch pstone_2
 x 41
 y 23
 end
-arch cave19
+arch cave25
 x 41
 y 23
 end
@@ -57338,11 +57294,9 @@ face fog.111
 x 41
 y 28
 end
-arch cave18
-name mountain top
+arch cave24
 x 41
 y 28
-blocksview 0
 end
 arch dungeon_magic
 x 41
@@ -57384,11 +57338,9 @@ face fog.111
 x 41
 y 30
 end
-arch cave17
-name mountain top
+arch cave23
 x 41
 y 30
-blocksview 0
 end
 arch pstone_1
 x 41
@@ -57411,11 +57363,9 @@ face fog.111
 x 41
 y 33
 end
-arch cave18
-name mountain top
+arch cave24
 x 41
 y 33
-blocksview 0
 end
 arch blocked
 name nothing
@@ -57504,11 +57454,9 @@ face fog.111
 x 41
 y 43
 end
-arch cave18
-name mountain top
+arch cave24
 x 41
 y 43
-blocksview 0
 end
 arch blocked
 name nothing
@@ -57794,11 +57742,9 @@ face fog.111
 x 41
 y 70
 end
-arch cave18
-name mountain top
+arch cave24
 x 41
 y 70
-blocksview 0
 end
 arch blocked
 name nothing
@@ -58961,7 +58907,7 @@ face fog.111
 x 42
 y 56
 end
-arch cave_6
+arch cave4
 x 42
 y 56
 end
@@ -59005,7 +58951,7 @@ arch pstone_2
 x 42
 y 65
 end
-arch cave19
+arch cave25
 x 42
 y 65
 end
@@ -60098,11 +60044,9 @@ face fog.111
 x 43
 y 38
 end
-arch cave17
-name mountain top
+arch cave23
 x 43
 y 38
-blocksview 0
 end
 arch pstone_1
 x 43
@@ -60133,11 +60077,9 @@ face fog.111
 x 43
 y 43
 end
-arch cave19
-name mountain top
+arch cave25
 x 43
 y 43
-blocksview 0
 end
 arch blocked
 name nothing
@@ -60419,11 +60361,9 @@ face fog.111
 x 43
 y 69
 end
-arch cave18
-name mountain top
+arch cave24
 x 43
 y 69
-blocksview 0
 end
 arch blocked
 name nothing
@@ -61789,7 +61729,7 @@ arch pstone_2
 x 44
 y 63
 end
-arch cave18
+arch cave24
 x 44
 y 63
 end
@@ -64549,11 +64489,9 @@ face fog.111
 x 46
 y 59
 end
-arch cave17
-name mountain top
+arch cave23
 x 46
 y 59
-blocksview 0
 end
 arch pstone_2
 x 46
@@ -66461,7 +66399,7 @@ arch steppe
 x 47
 y 90
 end
-arch cave17
+arch cave23
 x 47
 y 90
 end
@@ -68860,11 +68798,9 @@ face fog.111
 x 49
 y 55
 end
-arch cave19
-name mountain top
+arch cave25
 x 49
 y 55
-blocksview 0
 end
 arch blocked
 name nothing
@@ -69136,11 +69072,9 @@ face fog.111
 x 49
 y 73
 end
-arch cave20
-name mountain top
+arch cave22
 x 49
 y 73
-blocksview 0
 end
 arch large_stones
 x 49
@@ -70274,11 +70208,9 @@ face fog.111
 x 50
 y 59
 end
-arch cave19
-name mountain top
+arch cave25
 x 50
 y 59
-blocksview 0
 end
 arch blocked
 name nothing
@@ -71835,11 +71767,9 @@ face fog.111
 x 51
 y 71
 end
-arch cave20
-name mountain top
+arch cave22
 x 51
 y 71
-blocksview 0
 end
 arch large_stones
 x 51
@@ -73081,11 +73011,9 @@ face fog.111
 x 52
 y 61
 end
-arch cave19
-name mountain top
+arch cave25
 x 52
 y 61
-blocksview 0
 end
 arch blocked
 name nothing
@@ -74424,7 +74352,7 @@ arch pstone_1
 x 53
 y 56
 end
-arch cave20
+arch cave22
 x 53
 y 56
 end
@@ -74465,11 +74393,9 @@ face fog.111
 x 53
 y 62
 end
-arch cave19
-name mountain top
+arch cave25
 x 53
 y 62
-blocksview 0
 end
 arch blocked
 name nothing
@@ -74599,11 +74525,9 @@ face fog.111
 x 53
 y 70
 end
-arch cave20
-name mountain top
+arch cave22
 x 53
 y 70
-blocksview 0
 end
 arch large_stones
 x 53
@@ -74621,7 +74545,7 @@ arch large_stones
 x 53
 y 73
 end
-arch cave17
+arch cave23
 x 53
 y 73
 end
@@ -75729,7 +75653,7 @@ arch pstone_1
 x 54
 y 57
 end
-arch cave18
+arch cave24
 x 54
 y 57
 end
@@ -75778,11 +75702,9 @@ face fog.111
 x 54
 y 64
 end
-arch cave19
-name mountain top
+arch cave25
 x 54
 y 64
-blocksview 0
 end
 arch blocked
 name nothing
@@ -75854,11 +75776,9 @@ face fog.111
 x 54
 y 68
 end
-arch cave20
-name mountain top
+arch cave22
 x 54
 y 68
-blocksview 0
 end
 arch large_stones
 x 54
@@ -75904,7 +75824,7 @@ arch pstone_1
 x 54
 y 77
 end
-arch cave18
+arch cave24
 x 54
 y 77
 end
@@ -77952,7 +77872,7 @@ face fog.111
 x 56
 y 31
 end
-arch cave20
+arch cave22
 x 56
 y 31
 end
@@ -78255,7 +78175,7 @@ arch pstone_1
 x 56
 y 76
 end
-arch cave18
+arch cave24
 x 56
 y 76
 end
@@ -80193,11 +80113,9 @@ face fog.111
 x 58
 y 43
 end
-arch cave19
-name mountain top
+arch cave25
 x 58
 y 43
-blocksview 0
 end
 arch blocked
 name nothing
@@ -80491,7 +80409,7 @@ face fog.111
 x 58
 y 85
 end
-arch cave18
+arch cave24
 x 58
 y 85
 end
@@ -83760,7 +83678,7 @@ arch steppe
 x 61
 y 82
 end
-arch cave20
+arch cave22
 x 61
 y 82
 end
@@ -84685,11 +84603,9 @@ face fog.111
 x 62
 y 52
 end
-arch cave17
-name mountain top
+arch cave23
 x 62
 y 52
-blocksview 0
 end
 arch pstone_1
 x 62
@@ -84807,7 +84723,7 @@ arch pstone_1
 x 62
 y 73
 end
-arch cave20
+arch cave22
 x 62
 y 73
 end
@@ -84827,7 +84743,7 @@ arch dirtfloor
 x 62
 y 77
 end
-arch cave19
+arch cave25
 x 62
 y 77
 end
@@ -84859,7 +84775,7 @@ arch dirtfloor
 x 62
 y 81
 end
-arch cave20
+arch cave22
 x 62
 y 81
 end
@@ -87946,11 +87862,9 @@ face fog.111
 x 65
 y 53
 end
-arch cave17
-name mountain top
+arch cave23
 x 65
 y 53
-blocksview 0
 end
 arch pstone_1
 x 65
@@ -88779,10 +88693,6 @@ arch cave2
 x 66
 y 27
 end
-arch dungeon_magic
-x 66
-y 27
-end
 arch cave_15
 x 66
 y 28
@@ -89160,7 +89070,7 @@ face fog.111
 x 66
 y 83
 end
-arch cave18
+arch cave24
 x 66
 y 83
 end
@@ -90235,7 +90145,7 @@ face fog.111
 x 67
 y 81
 end
-arch cave18
+arch cave24
 x 67
 y 81
 end
@@ -91321,7 +91231,7 @@ arch pstone_1
 x 68
 y 72
 end
-arch cave20
+arch cave22
 x 68
 y 72
 end
@@ -91366,7 +91276,7 @@ face fog.111
 x 68
 y 80
 end
-arch cave18
+arch cave24
 x 68
 y 80
 end
@@ -92423,7 +92333,7 @@ arch pstone_1
 x 69
 y 59
 end
-arch cave19
+arch cave25
 x 69
 y 59
 end
@@ -93720,7 +93630,7 @@ arch pstone_1
 x 70
 y 71
 end
-arch cave20
+arch cave22
 x 70
 y 71
 end
@@ -94539,7 +94449,7 @@ face fog.111
 x 71
 y 30
 end
-arch cave17
+arch cave23
 x 71
 y 30
 end
@@ -94953,7 +94863,7 @@ arch pstone_1
 x 71
 y 61
 end
-arch cave19
+arch cave25
 x 71
 y 61
 end
@@ -95017,7 +94927,7 @@ arch pstone_1
 x 71
 y 70
 end
-arch cave20
+arch cave22
 x 71
 y 70
 end
@@ -96344,7 +96254,7 @@ arch pstone_1
 x 72
 y 63
 end
-arch cave19
+arch cave25
 x 72
 y 63
 end
@@ -96368,7 +96278,7 @@ arch pstone_1
 x 72
 y 66
 end
-arch cave20
+arch cave22
 x 72
 y 66
 end
@@ -98936,7 +98846,7 @@ face fog.111
 x 74
 y 56
 end
-arch cave17
+arch cave23
 x 74
 y 56
 end
@@ -99041,7 +98951,7 @@ face fog.111
 x 74
 y 79
 end
-arch cave18
+arch cave24
 x 74
 y 79
 end
@@ -100292,7 +100202,7 @@ face fog.111
 x 75
 y 58
 end
-arch cave17
+arch cave23
 x 75
 y 58
 end
@@ -101683,7 +101593,7 @@ face fog.111
 x 76
 y 61
 end
-arch cave17
+arch cave23
 x 76
 y 61
 end
@@ -101756,7 +101666,7 @@ face fog.111
 x 76
 y 76
 end
-arch cave18
+arch cave24
 x 76
 y 76
 end
@@ -103139,7 +103049,7 @@ face fog.111
 x 77
 y 69
 end
-arch cave18
+arch cave24
 x 77
 y 69
 end
