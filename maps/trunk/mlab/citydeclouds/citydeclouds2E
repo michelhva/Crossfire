@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-08-28 mikeeusa
-Modified: 2011-11-05 Rick Tanner
+Modified: 2014-10-25 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 citydeclouds2D
@@ -16449,11 +16449,15 @@ arch grass
 x 44
 y 14
 end
-arch swall_1_2
+arch swall_2_1_1
 x 44
 y 14
 end
 arch woodfloor
+x 44
+y 15
+end
+arch swall_1_2_half
 x 44
 y 15
 end
