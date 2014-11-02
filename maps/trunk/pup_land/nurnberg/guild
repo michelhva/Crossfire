@@ -8,7 +8,7 @@ enter_x 10
 enter_y 20
 msg
 Created:  1996-02-15
-Modified: 2012-04-07 Rick Tanner
+Modified: 2014-09-28 Jason Zheng
 endmsg
 end
 arch grass
@@ -314,10 +314,10 @@ y 6
 carrying 4000
 no_pick 1
 arch book_clasp
-name the Siegfried-Saga
+name Siegfried-Saga
 msg
 ...
-The Evil Masters glared at Siegfried, hate and bloodlust flaming in their eyes.  Soon their inhuman voices unleashed infernal forces, horrible and deadly.  But alas, they had underestimated their opponent! Siegfried's pure soul and faith surrounded him like a protective cloak.  The gods themselves led his right arm to accomplish the seemingly impossible: The final defeat of the Evil Masters!
+The Evil Masters glared at Siegfried, hate and bloodlust flaming in their eyes. Soon their inhuman voices unleashed infernal forces, horrible and deadly. But alas, they had underestimated their opponent! Siegfried's pure soul and faith surrounded him like a protective cloak. The gods themselves led his right arm to accomplish the seemingly impossible: the final defeat of the Evil Masters!
 ...
 endmsg
 end
@@ -477,14 +477,14 @@ x 3
 y 13
 end
 arch elf
-name Regular Army
+name Regular Army soldier
 msg
 @match bobbie
 Bobbie, that is the guy over there.
 @match agito
-I don't know where it is.  But we must find and destroy it!
+I don't know where it is. But we must find and destroy it!
 @match *
-I've heard there is an agitating point (Agito) of Resistance in this city.  What a shame!
+I've heard there is an agitating point (Agito) of Resistance in this city. What a shame!
 endmsg
 face elf.131
 hp 100
@@ -780,7 +780,7 @@ x 5
 y 13
 end
 arch elf
-name Regular Army
+name Regular Army soldier
 msg
 @match bobbie
 Bobbie, that is the guy over there.
@@ -1176,7 +1176,7 @@ y 19
 end
 arch sign
 msg
-Information Center of Regular Army
+Information Center of the Regular Army
 endmsg
 x 8
 y 19
@@ -1361,14 +1361,15 @@ activate_on_push 1
 activate_on_release 1
 end
 arch guildmaster
-name Hartwig, the guildmaster
+name Hartwig
+title the Guildmaster
 msg
 @match siegfried
-Siegfried is our hero! He defeated the Evil Masters and saved the ancient world.  He is long dead but the legends keep his spirit alive...
+Siegfried is our hero! He defeated the Evil Masters and saved the ancient world. He is long dead but the legends keep his spirit alive...
 @match stair|down|gate
-Nope, sorry.  Nobody is allowed to enter my pet room.
+Nope, sorry. Nobody is allowed to enter my pet room.
 @match *
-We are fighting to defend the law.  Our enemies, the Resistance, they are all rascals.
+We are fighting to defend the law. Our enemies, the Resistance, they are all rascals.
 endmsg
 hp 5000
 maxhp 5000
@@ -1468,14 +1469,14 @@ x 10
 y 10
 end
 arch elf
-name Regular Army
+name Regular Army recruiter
 msg
 @match reception|office
 Did you notice the four towers in the westside of this city? That's the Reception Office.
 @match yes
-Great! Go to the Reception Office and enter one of the four towers.  Bring me what you find in the top-level.
+Great! Go to the Reception Office and enter one of the four towers. Bring me what you find on the top level.
 @match no
-You are too weak anyways.
+You are too weak anyway.
 @match *
 We are fighting for peace and order.  Do you want to join us?
 endmsg
@@ -2385,16 +2386,16 @@ x 16
 y 16
 end
 arch elf
-name Regular Army
+name Regular Army soldier
 msg
 @match head
-The HQ of Resistance is located north-west of Eureca's castle.
+The HQ of the Resistance is located northwest of Eureca's castle.
 @match yes
-You should talk to him.  He might know some interesting information.
+You should talk to him. He might know some interesting information.
 @match bobbie
-Look, that's the guy up there.  The one who is standing next to the wall.
+Look, that's the guy up there. The one who is standing next to the wall.
 @match no
-Calvin is our spy.  He has entered the Headquarter of Resistance secretly, pretending to be a soldier.
+Calvin is our spy. He has entered the Headquarter of Resistance secretly, pretending to be a soldier.
 @match *
 Do you know Calvin?
 endmsg
@@ -2503,21 +2504,22 @@ x 17
 y 11
 end
 arch elf
-name Regular Army
+name Regular Army soldier
 msg
 @match bobbie
 That's the guy right behind me.
 @match resistance
-We fight against those rascals.  And we will make them pay for their dirty tricks!
+We fight against those rascals. And we will make them pay for their dirty tricks!
 @match family
-Eureca's family, that is Bernhard and Laurel... I think.  No, I'm not sure... but the names sounded like that.
+Eureca's family, that is Bernhard and Laurel... I think. No, I'm not sure... but the names sounded like that.
 @match eureca
-Resistance has kidnapped lord Eureca.  But soon we will rescue him!
+The Resistance has kidnapped Lord Eureca, but soon we will rescue him!
 @match castle
-We have entered the castle to search for Eureca's family.  The leaders of Regular Army are very concerned about saving innocent lives.
+We have entered the castle to search for Eureca's family. The leaders of Regular Army are very concerned about saving innocent lives.
 @match *
 Our army has entered the western wing of Eureca's castle.
 endmsg
+face elf.151
 hp 100
 x 17
 y 11
@@ -2618,7 +2620,7 @@ y 3
 end
 arch sign
 msg
-Pet Room of Guild Master.  Don't enter!
+Pet Room of the Guild Master. Don't enter!
 endmsg
 x 18
 y 3
@@ -2786,16 +2788,15 @@ x 19
 y 7
 end
 arch elf
-name Regular Army
+name Regular Army soldier
 msg
 @match yes
-But I don't know how to open the door to that room.  If I was stronger, I would break the outer wall...
+But I don't know how to open the door to that room. If I was stronger, I would break the outer wall...
 @match bobbie
-How comes that you know my name? Oh! I see.  You are a spy of Liberation Army just like me? Great! I want to descend that stairway.  Can you see it?
+How come you know my name? Oh! I see. You are a spy of the Liberation Army just like me? Great! I want to descend that stairway. Can you see it?
 @match *
 Go away!
 endmsg
-face elf.151
 hp 100
 x 19
 y 7
@@ -3254,7 +3255,6 @@ end
 arch magic_mouth
 name 3 - elec
 msg
-The Regular Army says:
 Well done, you made it through the Tower of Electricity! Speak to the guildmaster now.
 endmsg
 x 23
@@ -3264,7 +3264,6 @@ end
 arch magic_mouth
 name 2 - water
 msg
-The Regular Army says:
 Well done, you made it through the Tower of Water! Speak to the guildmaster now.
 endmsg
 x 23
@@ -3274,7 +3273,6 @@ end
 arch magic_mouth
 name 1 - fire
 msg
-The Regular Army says:
 Well done, you made it through the Tower of Fire! Speak to the guildmaster now.
 endmsg
 x 23
@@ -3295,12 +3293,13 @@ speed 0.000000
 connected 5
 end
 arch guildmaster
-name Hartwig, the guildmaster
+name Hartwig
+title the Guildmaster
 msg
 @match stair|down|gate
 Nope, sorry.  Nobody is allowed to enter my pet room.
 @match *
-Congratulations! Now you are a member of Regular Army.  Don't loose your passport, it enables you to pass the Barrier Station.
+Congratulations! Now you are a member of Regular Army. Don't loose your passport, it enables you to pass the Barrier Station.
 endmsg
 sp 0
 maxsp 0
@@ -3361,7 +3360,7 @@ arch card
 name Passport
 slaying regular_army
 msg
-This passport identifies you as member of the Regular Army.
+This passport identifies you as a member of the Regular Army.
 endmsg
 x 23
 y 8
