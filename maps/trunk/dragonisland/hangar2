@@ -8,7 +8,7 @@ enter_x 15
 enter_y 30
 msg
 Created:  2001-03-06 Philipp Currlin (philipp.currlin@epost.de)
-Modified: 2013-07-14 kevinz
+Modified: 2014-12-28 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -2835,7 +2835,7 @@ end
 arch stair_up_2
 slaying hangar
 hp 15
-sp 30
+sp 33
 x 15
 y 30
 end
@@ -3046,7 +3046,7 @@ end
 arch stair_up_4
 slaying hangar
 hp 16
-sp 30
+sp 33
 x 16
 y 30
 end
