@@ -2,1228 +2,7771 @@ arch map
 name Tower of the Stars, Top
 difficulty 1
 region wilderness
-width 16
-height 16
-enter_x 8
-enter_y 7
+width 40
+height 40
+enter_x 17
+enter_y 15
 msg
 Created:  1994-02-11 peter mardahl (peterm@soda.berkeley.edu)
 Modified: 2015-01-02 Rick Tanner
 endmsg
 end
-arch small_stones
+arch mountain
+elevation 6324
 end
-arch small_stones
+arch mountain
 y 1
+elevation 6225
 end
-arch small_stones
+arch hills_rocky
 y 2
+elevation 4773
+end
+arch mountain
+y 3
+elevation 5128
+end
+arch mountain
+y 4
+elevation 6504
+end
+arch mountain
+y 5
+elevation 7440
+end
+arch mountain
+y 6
+elevation 8433
+end
+arch mountain
+y 7
+elevation 8933
+end
+arch mountain2
+y 8
+elevation 9138
+end
+arch mountain
+y 9
+elevation 8833
+end
+arch mountain
+y 10
+elevation 7550
+end
+arch hills_rocky
+y 11
+elevation 4516
+end
+arch hills_rocky
+y 12
+elevation 4698
+end
+arch mountain
+y 13
+elevation 8110
+end
+arch mountain
+y 14
+elevation 8205
+end
+arch mountain
+y 15
+elevation 7422
+end
+arch mountain
+y 16
+elevation 6219
+end
+arch steppe
+y 17
+elevation 3612
+end
+arch hills_rocky
+y 18
+elevation 2934
+end
+arch steppe
+y 19
+elevation 4792
+end
+arch mountain
+y 20
+elevation 6755
+end
+arch mountain
+y 21
+elevation 6924
+end
+arch mountain
+y 22
+elevation 6130
+end
+arch mountain
+y 23
+elevation 7370
+end
+arch mountain
+y 24
+elevation 7299
+end
+arch mountain
+y 25
+elevation 6115
+end
+arch mountain
+y 26
+elevation 5495
+end
+arch mountain
+y 27
+elevation 5294
+end
+arch hills
+y 28
+elevation 4763
+end
+arch mountain
+y 29
+elevation 7315
+end
+arch mountain
+y 30
+elevation 8960
+end
+arch mountain2
+y 31
+elevation 9927
+end
+arch mountain2
+y 32
+elevation 10533
+end
+arch mountain2
+y 33
+elevation 10338
+end
+arch mountain2
+y 34
+elevation 9888
+end
+arch mountain2
+y 35
+elevation 9351
+end
+arch mountain
+y 36
+elevation 8432
+end
+arch mountain
+y 37
+elevation 6592
+end
+arch steppe
+y 38
+elevation 4343
+end
+arch brush
+y 39
+elevation 562
+end
+arch hills_rocky
+x 1
+elevation 3655
+end
+arch mountain
+x 1
+y 1
+elevation 5875
+end
+arch mountain
+x 1
+y 2
+elevation 5807
+end
+arch hills_rocky
+x 1
+y 3
+elevation 4523
+end
+arch hills_rocky
+x 1
+y 4
+elevation 3293
+end
+arch mountain
+x 1
+y 5
+elevation 5754
+end
+arch mountain
+x 1
+y 6
+elevation 6000
+end
+arch mountain
+x 1
+y 7
+elevation 7773
+end
+arch mountain
+x 1
+y 8
+elevation 8458
+end
+arch mountain
+x 1
+y 9
+elevation 8382
+end
+arch mountain
+x 1
+y 10
+elevation 7340
+end
+arch hills_rocky
+x 1
+y 11
+elevation 4790
+end
+arch mountain
+x 1
+y 12
+elevation 7034
+end
+arch mountain
+x 1
+y 13
+elevation 7741
+end
+arch mountain
+x 1
+y 14
+elevation 6842
+end
+arch mountain
+x 1
+y 15
+elevation 7326
+end
+arch mountain
+x 1
+y 16
+elevation 7155
+end
+arch mountain
+x 1
+y 17
+elevation 6803
+end
+arch mountain
+x 1
+y 18
+elevation 6628
+end
+arch mountain
+x 1
+y 19
+elevation 6994
+end
+arch mountain
+x 1
+y 20
+elevation 7360
+end
+arch mountain
+x 1
+y 21
+elevation 7189
+end
+arch mountain
+x 1
+y 22
+elevation 7040
+end
+arch mountain
+x 1
+y 23
+elevation 6857
+end
+arch mountain
+x 1
+y 24
+elevation 6652
+end
+arch mountain
+x 1
+y 25
+elevation 5839
+end
+arch mountain
+x 1
+y 26
+elevation 5802
+end
+arch mountain
+x 1
+y 27
+elevation 7832
+end
+arch mountain
+x 1
+y 28
+elevation 8906
+end
+arch mountain2
+x 1
+y 29
+elevation 9943
+end
+arch mountain2
+x 1
+y 30
+elevation 10477
+end
+arch mountain2
+x 1
+y 31
+elevation 10465
+end
+arch mountain2
+x 1
+y 32
+elevation 9780
+end
+arch mountain2
+x 1
+y 33
+elevation 10070
+end
+arch mountain2
+x 1
+y 34
+elevation 9637
+end
+arch mountain
+x 1
+y 35
+elevation 8962
+end
+arch mountain
+x 1
+y 36
+elevation 7702
+end
+arch mountain
+x 1
+y 37
+elevation 5575
+end
+arch steppe
+x 1
+y 38
+elevation 3147
+end
+arch hills_rocky
+x 1
+y 39
+elevation 1763
+end
+arch mountain
+x 2
+elevation 6075
+end
+arch mountain
+x 2
+y 1
+elevation 6759
+end
+arch mountain
+x 2
+y 2
+elevation 6659
+end
+arch mountain
+x 2
+y 3
+elevation 5269
+end
+arch hills_rocky
+x 2
+y 4
+elevation 2630
+end
+arch mountain
+x 2
+y 5
+elevation 5110
+end
+arch hills_rocky
+x 2
+y 6
+elevation 4702
+end
+arch mountain
+x 2
+y 7
+elevation 6643
+end
+arch mountain
+x 2
+y 8
+elevation 7397
+end
+arch mountain
+x 2
+y 9
+elevation 7399
+end
+arch mountain
+x 2
+y 10
+elevation 7096
+end
+arch mountain
+x 2
+y 11
+elevation 7355
+end
+arch mountain
+x 2
+y 12
+elevation 8366
+end
+arch mountain
+x 2
+y 13
+elevation 8801
+end
+arch mountain
+x 2
+y 14
+elevation 5448
+end
+arch mountain
+x 2
+y 15
+elevation 5059
+end
+arch mountain
+x 2
+y 16
+elevation 7813
+end
+arch mountain
+x 2
+y 17
+elevation 8449
+end
+arch mountain
+x 2
+y 18
+elevation 8442
+end
+arch mountain
+x 2
+y 19
+elevation 8165
+end
+arch mountain
+x 2
+y 20
+elevation 7346
+end
+arch mountain
+x 2
+y 21
+elevation 6691
+end
+arch mountain
+x 2
+y 22
+elevation 6179
+end
+arch mountain
+x 2
+y 23
+elevation 5729
+end
+arch hills
+x 2
+y 24
+elevation 3868
+end
+arch mountain
+x 2
+y 25
+elevation 5568
+end
+arch mountain
+x 2
+y 26
+elevation 7146
+end
+arch mountain2
+x 2
+y 27
+elevation 9821
+end
+arch mountain2
+x 2
+y 28
+elevation 11750
+end
+arch mountain4
+x 2
+y 29
+elevation 12048
+end
+arch mountain2
+x 2
+y 30
+elevation 10728
+end
+arch mountain2
+x 2
+y 31
+elevation 10757
+end
+arch mountain2
+x 2
+y 32
+elevation 10140
+end
+arch mountain2
+x 2
+y 33
+elevation 9078
+end
+arch mountain
+x 2
+y 34
+elevation 7394
+end
+arch mountain
+x 2
+y 35
+elevation 6970
+end
+arch mountain
+x 2
+y 36
+elevation 5829
+end
+arch steppe
+x 2
+y 37
+elevation 3451
+end
+arch brush
+x 2
+y 38
+elevation 744
+end
+arch desert
+x 2
+y 39
+elevation 652
+end
+arch mountain
+x 3
+elevation 7514
+end
+arch mountain
+x 3
+y 1
+elevation 7923
+end
+arch mountain
+x 3
+y 2
+elevation 7883
+end
+arch mountain
+x 3
+y 3
+elevation 7101
+end
+arch mountain
+x 3
+y 4
+elevation 6049
+end
+arch mountain
+x 3
+y 5
+elevation 5482
+end
+arch mountain
+x 3
+y 6
+elevation 5779
+end
+arch mountain
+x 3
+y 7
+elevation 6011
+end
+arch mountain
+x 3
+y 8
+elevation 5651
+end
+arch mountain
+x 3
+y 9
+elevation 6216
+end
+arch mountain
+x 3
+y 10
+elevation 5650
+end
+arch mountain
+x 3
+y 11
+elevation 7184
+end
+arch mountain2
+x 3
+y 12
+elevation 9593
+end
+arch mountain2
+x 3
+y 13
+elevation 10437
+end
+arch mountain2
+x 3
+y 14
+elevation 9696
+end
+arch mountain
+x 3
+y 15
+elevation 7162
+end
+arch mountain
+x 3
+y 16
+elevation 8855
+end
+arch mountain2
+x 3
+y 17
+elevation 9340
+end
+arch mountain
+x 3
+y 18
+elevation 8856
+end
+arch mountain
+x 3
+y 19
+elevation 7923
+end
+arch mountain
+x 3
+y 20
+elevation 6392
+end
+arch steppe
+x 3
+y 21
+elevation 3792
+end
+arch mountain
+x 3
+y 22
+elevation 5344
+end
+arch steppe
+x 3
+y 23
+elevation 4872
+end
+arch hills_rocky
+x 3
+y 24
+elevation 2446
+end
+arch mountain
+x 3
+y 25
+elevation 5568
+end
+arch mountain
+x 3
+y 26
+elevation 7848
+end
+arch mountain2
+x 3
+y 27
+elevation 10693
+end
+arch mountain4
+x 3
+y 28
+elevation 13082
+end
+arch mountain4
+x 3
+y 29
+elevation 13286
+end
+arch mountain2
+x 3
+y 30
+elevation 11852
+end
+arch mountain2
+x 3
+y 31
+elevation 10895
+end
+arch mountain2
+x 3
+y 32
+elevation 9265
+end
+arch mountain
+x 3
+y 33
+elevation 7323
+end
+arch mountain
+x 3
+y 34
+elevation 5287
+end
+arch steppe
+x 3
+y 35
+elevation 3183
+end
+arch steppe
+x 3
+y 36
+elevation 4008
+end
+arch hills_rocky
+x 3
+y 37
+elevation 1824
+end
+arch desert
+x 3
+y 38
+elevation 550
+end
+arch brush
+x 3
+y 39
+elevation 483
+end
+arch mountain
+x 4
+elevation 7765
+end
+arch mountain
+x 4
+y 1
+elevation 8563
+end
+arch mountain2
+x 4
+y 2
+elevation 9150
+end
+arch mountain
+x 4
+y 3
+elevation 8627
+end
+arch mountain
+x 4
+y 4
+elevation 7119
+end
+arch hills_rocky
+x 4
+y 5
+elevation 4293
+end
+arch mountain
+x 4
+y 6
+elevation 5921
+end
+arch mountain
+x 4
+y 7
+elevation 6077
+end
+arch hills_rocky
+x 4
+y 8
+elevation 4584
+end
+arch mountain
+x 4
+y 9
+elevation 5472
+end
+arch mountain
+x 4
+y 10
+elevation 6829
+end
+arch mountain
+x 4
+y 11
+elevation 7280
+end
+arch mountain2
+x 4
+y 12
+elevation 10487
+end
+arch mountain4
+x 4
+y 13
+elevation 12142
+end
+arch mountain2
+x 4
+y 14
+elevation 11879
+end
+arch mountain2
+x 4
+y 15
+elevation 10790
+end
+arch mountain2
+x 4
+y 16
+elevation 10009
+end
+arch mountain2
+x 4
+y 17
+elevation 9827
+end
+arch mountain2
+x 4
+y 18
+elevation 9023
+end
+arch steppe
+x 4
+y 19
+elevation 4827
+end
+arch mountain
+x 4
+y 20
+elevation 5890
+end
+arch steppe
+x 4
+y 21
+elevation 3685
+end
+arch mountain
+x 4
+y 22
+elevation 5331
+end
+arch mountain
+x 4
+y 23
+elevation 5309
+end
+arch mountain
+x 4
+y 24
+elevation 5505
+end
+arch mountain
+x 4
+y 25
+elevation 5340
+end
+arch mountain
+x 4
+y 26
+elevation 6538
+end
+arch mountain2
+x 4
+y 27
+elevation 10548
+end
+arch mountain4
+x 4
+y 28
+elevation 13075
+end
+arch mountain4
+x 4
+y 29
+elevation 13305
+end
+arch mountain4
+x 4
+y 30
+elevation 12044
+end
+arch mountain2
+x 4
+y 31
+elevation 10219
+end
+arch mountain
+x 4
+y 32
+elevation 7925
+end
+arch steppe
+x 4
+y 33
+elevation 3038
+end
+arch steppe
+x 4
+y 34
+elevation 3411
+end
+arch steppe
+x 4
+y 35
+elevation 3378
+end
+arch hills_rocky
+x 4
+y 36
+elevation 2668
+end
+arch hills_rocky
+x 4
+y 37
+elevation 1962
+end
+arch hills_rocky
+x 4
+y 38
+elevation 1245
+end
+arch desert
+x 4
+y 39
+elevation 666
+end
+arch mountain
+x 5
+elevation 6039
+end
+arch mountain2
+x 5
+y 1
+elevation 9308
+end
+arch mountain2
+x 5
+y 2
+elevation 10159
+end
+arch mountain2
+x 5
+y 3
+elevation 9575
+end
+arch mountain
+x 5
+y 4
+elevation 7821
+end
+arch mountain
+x 5
+y 5
+elevation 5128
+end
+arch mountain
+x 5
+y 6
+elevation 6146
+end
+arch mountain
+x 5
+y 7
+elevation 6411
+end
+arch hills_rocky
+x 5
+y 8
+end
+arch mountain
+x 5
+y 9
+elevation 6090
+end
+arch mountain
+x 5
+y 10
+elevation 7657
+end
+arch mountain2
+x 5
+y 11
+elevation 9086
+end
+arch mountain2
+x 5
+y 12
+elevation 11161
+end
+arch mountain4
+x 5
+y 13
+elevation 12481
+end
+arch mountain4
+x 5
+y 14
+elevation 12458
+end
+arch mountain2
+x 5
+y 15
+elevation 11449
+end
+arch mountain2
+x 5
+y 16
+elevation 9548
+end
+arch mountain2
+x 5
+y 17
+elevation 9620
+end
+arch mountain2
+x 5
+y 18
+elevation 9218
+end
+arch mountain
+x 5
+y 19
+elevation 8056
+end
+arch mountain
+x 5
+y 20
+elevation 6509
+end
+arch mountain
+x 5
+y 21
+elevation 5550
+end
+arch mountain
+x 5
+y 22
+elevation 6408
+end
+arch mountain
+x 5
+y 23
+elevation 6964
+end
+arch mountain
+x 5
+y 24
+elevation 6532
+end
+arch mountain
+x 5
+y 25
+elevation 7218
+end
+arch mountain
+x 5
+y 26
+elevation 5569
+end
+arch mountain2
+x 5
+y 27
+elevation 10100
+end
+arch mountain2
+x 5
+y 28
+elevation 11953
+end
+arch mountain2
+x 5
+y 29
+elevation 11818
+end
+arch mountain2
+x 5
+y 30
+elevation 9987
+end
+arch mountain
+x 5
+y 31
+elevation 7568
+end
+arch mountain
+x 5
+y 32
+elevation 5520
+end
+arch steppe
+x 5
+y 33
+elevation 4335
+end
+arch steppe
+x 5
+y 34
+elevation 3628
+end
+arch woods
+x 5
+y 35
+elevation 2726
+end
+arch desert
+x 5
+y 36
+elevation 613
+end
+arch woods
+x 5
+y 37
+elevation 1370
+end
+arch woods
+x 5
+y 38
+elevation 1046
+end
+arch desert
+x 5
+y 39
+elevation 595
+end
+arch mountain
+x 6
+elevation 8838
+end
+arch mountain2
+x 6
+y 1
+elevation 10109
+end
+arch mountain2
+x 6
+y 2
+elevation 10866
+end
+arch mountain2
+x 6
+y 3
+elevation 10085
+end
+arch mountain
+x 6
+y 4
+elevation 8537
+end
+arch mountain
+x 6
+y 5
+elevation 7039
+end
+arch mountain
+x 6
+y 6
+elevation 6368
+end
+arch hills_rocky
+x 6
+y 7
+end
+arch hills_rocky
+x 6
+y 8
+end
+arch hills_rocky
+x 6
+y 9
+end
+arch hills_rocky
+x 6
+y 10
+end
+arch mountain2
+x 6
+y 11
+elevation 9870
+end
+arch mountain2
+x 6
+y 12
+elevation 10934
+end
+arch mountain2
+x 6
+y 13
+elevation 11497
+end
+arch mountain2
+x 6
+y 14
+elevation 11004
+end
+arch mountain2
+x 6
+y 15
+elevation 10487
+end
+arch mountain2
+x 6
+y 16
+elevation 9870
+end
+arch hills_rocky
+x 6
+y 17
+end
+arch hills_rocky
+x 6
+y 18
+end
+arch mountain
+x 6
+y 19
+elevation 8389
+end
+arch mountain
+x 6
+y 20
+elevation 7439
+end
+arch mountain
+x 6
+y 21
+elevation 7063
+end
+arch mountain
+x 6
+y 22
+elevation 7440
+end
+arch mountain
+x 6
+y 23
+elevation 8238
+end
+arch mountain2
+x 6
+y 24
+elevation 9097
+end
+arch mountain2
+x 6
+y 25
+elevation 9379
+end
+arch mountain2
+x 6
+y 26
+elevation 9706
+end
+arch mountain2
+x 6
+y 27
+elevation 9254
+end
+arch mountain2
+x 6
+y 28
+elevation 10598
+end
+arch mountain2
+x 6
+y 29
+elevation 9780
+end
+arch mountain
+x 6
+y 30
+elevation 5996
+end
+arch woods
+x 6
+y 31
+elevation 2172
+end
+arch hills_rocky
+x 6
+y 32
+elevation 1065
+end
+arch steppe
+x 6
+y 33
+elevation 3675
+end
+arch steppe
+x 6
+y 34
+elevation 3489
+end
+arch woods
+x 6
+y 35
+elevation 2337
+end
+arch brush
+x 6
+y 36
+elevation 554
+end
+arch desert
+x 6
+y 37
+elevation 790
+end
+arch desert
+x 6
+y 38
+elevation 145
+end
+arch brush
+x 6
+y 39
+elevation 304
+end
+arch mountain2
+x 7
+elevation 9747
+end
+arch mountain2
+x 7
+y 1
+elevation 10335
+end
+arch mountain2
+x 7
+y 2
+elevation 11009
+end
+arch mountain2
+x 7
+y 3
+elevation 10357
+end
+arch mountain
+x 7
+y 4
+elevation 7589
+end
+arch mountain
+x 7
+y 5
+elevation 7928
+end
+arch hills_rocky
+x 7
+y 6
+end
+arch hills_rocky
+x 7
+y 7
+end
+arch hills_rocky
+x 7
+y 8
+end
+arch hills_rocky
+x 7
+y 9
+end
+arch hills_rocky
+x 7
+y 10
+end
+arch hills_rocky
+x 7
+y 11
+end
+arch hills_rocky
+x 7
+y 12
+end
+arch hills_rocky
+x 7
+y 13
+end
+arch hills_rocky
+x 7
+y 14
+end
+arch hills_rocky
+x 7
+y 15
+end
+arch hills_rocky
+x 7
+y 16
+end
+arch hills_rocky
+x 7
+y 17
+end
+arch hills_rocky
+x 7
+y 18
+end
+arch hills_rocky
+x 7
+y 19
+end
+arch hills_rocky
+x 7
+y 20
+end
+arch hills_rocky
+x 7
+y 21
+end
+arch hills_rocky
+x 7
+y 22
+end
+arch mountain
+x 7
+y 23
+elevation 8648
+end
+arch mountain2
+x 7
+y 24
+elevation 10122
+end
+arch mountain2
+x 7
+y 25
+elevation 11067
+end
+arch mountain2
+x 7
+y 26
+elevation 11005
+end
+arch mountain2
+x 7
+y 27
+elevation 10542
+end
+arch mountain2
+x 7
+y 28
+elevation 9773
+end
+arch mountain
+x 7
+y 29
+elevation 8166
+end
+arch steppe
+x 7
+y 30
+elevation 4848
+end
+arch steppe
+x 7
+y 31
+elevation 4096
+end
+arch hills_rocky
+x 7
+y 32
+elevation 2905
+end
+arch steppe
+x 7
+y 33
+elevation 3403
+end
+arch woods
+x 7
+y 34
+elevation 2523
+end
+arch woods
+x 7
+y 35
+elevation 2170
+end
+arch hills_rocky
+x 7
+y 36
+elevation 1260
+end
+arch desert
+x 7
+y 37
+elevation 463
+end
+arch desert
+x 7
+y 38
+elevation 108
+end
+arch brush
+x 7
+y 39
+elevation 48
+end
+arch mountain
+x 8
+elevation 7538
+end
+arch mountain2
+x 8
+y 1
+elevation 10017
+end
+arch mountain2
+x 8
+y 2
+elevation 10501
+end
+arch mountain2
+x 8
+y 3
+elevation 10455
+end
+arch mountain2
+x 8
+y 4
+elevation 9124
+end
+arch mountain2
+x 8
+y 5
+elevation 9380
+end
+arch hills_rocky
+x 8
+y 6
+end
+arch hills_rocky
+x 8
+y 7
+end
+arch hills_rocky
+x 8
+y 8
+end
+arch hills_rocky
+x 8
+y 9
+end
+arch hills_rocky
+x 8
+y 10
+end
+arch hills_rocky
+x 8
+y 11
+end
+arch hills_rocky
+x 8
+y 12
+end
+arch hills_rocky
+x 8
+y 13
+end
+arch hills_rocky
+x 8
+y 14
 end
 arch small_stones
+x 8
+y 15
+end
+arch hills_rocky
+x 8
+y 16
+end
+arch small_stones
+x 8
+y 17
+end
+arch small_stones
+x 8
+y 18
+end
+arch hills_rocky
+x 8
+y 19
+end
+arch hills_rocky
+x 8
+y 20
+end
+arch steppe
+x 8
+y 21
+elevation 4513
+end
+arch hills_rocky
+x 8
+y 22
+end
+arch hills_rocky
+x 8
+y 23
+end
+arch hills_rocky
+x 8
+y 24
+end
+arch mountain2
+x 8
+y 25
+elevation 11266
+end
+arch mountain2
+x 8
+y 26
+elevation 11270
+end
+arch mountain2
+x 8
+y 27
+elevation 10178
+end
+arch mountain
+x 8
+y 28
+elevation 8725
+end
+arch mountain
+x 8
+y 29
+elevation 7321
+end
+arch mountain
+x 8
+y 30
+elevation 5098
+end
+arch mountain
+x 8
+y 31
+elevation 5327
+end
+arch steppe
+x 8
+y 32
+elevation 4828
+end
+arch steppe
+x 8
+y 33
+elevation 4123
+end
+arch steppe
+x 8
+y 34
+elevation 3103
+end
+arch hills_rocky
+x 8
+y 35
+elevation 2330
+end
+arch desert
+x 8
+y 36
+elevation 374
+end
+arch desert
+x 8
+y 37
+elevation 88
+end
+arch desert
+x 8
+y 38
+elevation 38
+end
+arch shallow_sea
+x 8
+y 39
+elevation -2
+end
+arch mountain
+x 9
+elevation 8780
+end
+arch mountain2
+x 9
+y 1
+elevation 9438
+end
+arch mountain2
+x 9
+y 2
+elevation 10327
+end
+arch mountain2
+x 9
 y 3
+elevation 10605
+end
+arch mountain2
+x 9
+y 4
+elevation 11311
+end
+arch mountain2
+x 9
+y 5
+elevation 11495
+end
+arch mountain2
+x 9
+y 6
+elevation 11016
+end
+arch hills_rocky
+x 9
+y 7
+end
+arch hills_rocky
+x 9
+y 8
+end
+arch small_stones
+x 9
+y 9
+end
+arch small_stones
+x 9
+y 10
+end
+arch small_stones
+x 9
+y 11
+end
+arch small_stones
+x 9
+y 12
+end
+arch small_stones
+x 9
+y 13
+end
+arch small_stones
+x 9
+y 14
+end
+arch small_stones
+x 9
+y 15
+end
+arch small_stones
+x 9
+y 16
+end
+arch small_stones
+x 9
+y 17
+end
+arch small_stones
+x 9
+y 18
+end
+arch small_stones
+x 9
+y 19
+end
+arch small_stones
+x 9
+y 20
+end
+arch small_stones
+x 9
+y 21
+end
+arch small_stones
+x 9
+y 22
+end
+arch small_stones
+x 9
+y 23
+end
+arch hills_rocky
+x 9
+y 24
+end
+arch mountain2
+x 9
+y 25
+elevation 10092
+end
+arch mountain2
+x 9
+y 26
+elevation 10358
+end
+arch mountain2
+x 9
+y 27
+elevation 9464
+end
+arch mountain
+x 9
+y 28
+elevation 6940
+end
+arch mountain
+x 9
+y 29
+elevation 6041
+end
+arch mountain
+x 9
+y 30
+elevation 6978
+end
+arch mountain
+x 9
+y 31
+elevation 6520
+end
+arch mountain
+x 9
+y 32
+elevation 5963
+end
+arch steppe
+x 9
+y 33
+elevation 4813
+end
+arch steppe
+x 9
+y 34
+elevation 4005
+end
+arch hills_rocky
+x 9
+y 35
+elevation 2651
+end
+arch woods
+x 9
+y 36
+elevation 1243
+end
+arch brush
+x 9
+y 37
+elevation 103
+end
+arch brush
+x 9
+y 38
+elevation 50
+end
+arch brush
+x 9
+y 39
+elevation 111
+end
+arch mountain
+x 10
+elevation 8073
+end
+arch mountain
+x 10
+y 1
+elevation 8869
+end
+arch mountain2
+x 10
+y 2
+elevation 9658
+end
+arch mountain2
+x 10
+y 3
+elevation 11225
+end
+arch mountain4
+x 10
+y 4
+elevation 12504
+end
+arch mountain4
+x 10
+y 5
+elevation 12994
+end
+arch hills_rocky
+x 10
+y 6
+end
+arch hills_rocky
+x 10
+y 7
+end
+arch small_stones
+x 10
+y 8
+end
+arch small_stones
+x 10
+y 9
+end
+arch small_stones
+x 10
+y 10
+end
+arch small_stones
+x 10
+y 11
 end
 arch ytree
-y 3
-end
-arch small_stones
-y 4
-end
-arch small_stones
-y 5
-end
-arch small_stones
-y 6
-end
-arch small_stones
-y 7
-end
-arch small_stones
-y 8
-end
-arch crater
-y 9
-end
-arch small_stones
-y 10
-end
-arch small_stones
+x 10
 y 11
 end
-arch hills_rocky
+arch small_stones
+x 10
 y 12
 end
-arch hills_rocky
+arch small_stones
+x 10
 y 13
 end
 arch small_stones
+x 10
 y 14
 end
 arch small_stones
+x 10
 y 15
 end
 arch small_stones
-x 1
-end
-arch small_stones
-x 1
-y 1
-end
-arch small_stones
-x 1
-y 2
+x 10
+y 16
 end
 arch crater
-x 1
+x 10
+y 17
+end
+arch small_stones
+x 10
+y 18
+end
+arch small_stones
+x 10
+y 19
+end
+arch hills_rocky
+x 10
+y 20
+end
+arch hills_rocky
+x 10
+y 21
+end
+arch small_stones
+x 10
+y 22
+end
+arch small_stones
+x 10
+y 23
+end
+arch hills_rocky
+x 10
+y 24
+end
+arch hills_rocky
+x 10
+y 25
+end
+arch mountain
+x 10
+y 26
+elevation 8954
+end
+arch mountain2
+x 10
+y 27
+elevation 9161
+end
+arch mountain
+x 10
+y 28
+elevation 8367
+end
+arch mountain
+x 10
+y 29
+elevation 7854
+end
+arch mountain
+x 10
+y 30
+elevation 7695
+end
+arch mountain
+x 10
+y 31
+elevation 7657
+end
+arch mountain
+x 10
+y 32
+elevation 6826
+end
+arch mountain
+x 10
+y 33
+elevation 5726
+end
+arch steppe
+x 10
+y 34
+elevation 4506
+end
+arch woods
+x 10
+y 35
+elevation 2965
+end
+arch desert
+x 10
+y 36
+elevation 792
+end
+arch brush
+x 10
+y 37
+elevation 68
+end
+arch brush
+x 10
+y 38
+elevation 62
+end
+arch brush
+x 10
+y 39
+elevation 41
+end
+arch mountain
+x 11
+elevation 6100
+end
+arch mountain
+x 11
+y 1
+elevation 7801
+end
+arch mountain2
+x 11
 y 2
+elevation 9101
 end
-arch small_stones
-x 1
+arch mountain2
+x 11
 y 3
+elevation 10939
 end
-arch small_stones
-x 1
+arch mountain4
+x 11
 y 4
+elevation 12487
 end
-arch small_stones
-x 1
+arch mountain4
+x 11
 y 5
+elevation 13158
 end
-arch small_stones
-x 1
+arch hills_rocky
+x 11
 y 6
 end
-arch small_stones
-x 1
+arch hills_rocky
+x 11
 y 7
 end
 arch small_stones
-x 1
+x 11
 y 8
 end
 arch small_stones
-x 1
+x 11
 y 9
 end
 arch small_stones
-x 1
+x 11
+y 10
+end
+arch crater
+x 11
 y 10
 end
 arch small_stones
-x 1
+x 11
 y 11
 end
 arch small_stones
-x 1
+x 11
 y 12
 end
-arch hills_rocky
-x 1
+arch small_stones
+x 11
 y 13
 end
 arch small_stones
-x 1
+x 11
 y 14
 end
 arch small_stones
-x 1
+x 11
 y 15
 end
+arch small_stones
+x 11
+y 16
+end
+arch small_stones
+x 11
+y 17
+end
+arch small_stones
+x 11
+y 18
+end
+arch small_stones
+x 11
+y 19
+end
+arch small_stones
+x 11
+y 20
+end
 arch hills_rocky
-x 2
+x 11
+y 21
 end
 arch small_stones
-x 2
+x 11
+y 22
+end
+arch small_stones
+x 11
+y 23
+end
+arch hills_rocky
+x 11
+y 24
+end
+arch hills_rocky
+x 11
+y 25
+end
+arch mountain
+x 11
+y 26
+elevation 8191
+end
+arch mountain
+x 11
+y 27
+elevation 8945
+end
+arch mountain2
+x 11
+y 28
+elevation 9152
+end
+arch mountain
+x 11
+y 29
+elevation 6526
+end
+arch mountain
+x 11
+y 30
+elevation 8547
+end
+arch mountain
+x 11
+y 31
+elevation 8905
+end
+arch mountain
+x 11
+y 32
+elevation 7537
+end
+arch mountain
+x 11
+y 33
+elevation 5593
+end
+arch mountain
+x 11
+y 34
+elevation 5044
+end
+arch steppe
+x 11
+y 35
+elevation 3092
+end
+arch brush
+x 11
+y 36
+elevation 556
+end
+arch desert
+x 11
+y 37
+elevation 209
+end
+arch brush
+x 11
+y 38
+elevation 78
+end
+arch hills_rocky
+x 11
+y 39
+elevation 1077
+end
+arch hills_rocky
+x 12
+elevation 4756
+end
+arch mountain
+x 12
 y 1
+elevation 6494
 end
-arch small_stones
-x 2
+arch mountain
+x 12
 y 2
+elevation 7988
 end
-arch small_stones
-x 2
+arch mountain2
+x 12
 y 3
+elevation 9764
 end
-arch small_stones
-x 2
+arch mountain2
+x 12
 y 4
+elevation 11186
 end
-arch crater
-x 2
-y 4
-end
-arch small_stones
-x 2
+arch mountain4
+x 12
 y 5
+elevation 12027
 end
-arch small_stones
-x 2
+arch hills_rocky
+x 12
 y 6
 end
-arch small_stones
-x 2
+arch hills_rocky
+x 12
+y 6
+end
+arch hills_rocky
+x 12
 y 7
 end
-arch small_stones
-x 2
+arch hills_rocky
+x 12
 y 8
 end
 arch small_stones
-x 2
+x 12
 y 9
 end
 arch small_stones
-x 2
-y 10
-end
-arch crater
-x 2
+x 12
 y 10
 end
 arch small_stones
-x 2
+x 12
 y 11
 end
 arch small_stones
-x 2
+x 12
+y 12
+end
+arch crater
+x 12
 y 12
 end
 arch small_stones
-x 2
+x 12
 y 13
 end
 arch small_stones
-x 2
+x 12
 y 14
+end
+arch small_stones
+x 12
+y 15
+end
+arch small_stones
+x 12
+y 16
+end
+arch small_stones
+x 12
+y 17
+end
+arch small_stones
+x 12
+y 18
+end
+arch crater
+x 12
+y 18
+end
+arch small_stones
+x 12
+y 19
+end
+arch small_stones
+x 12
+y 20
+end
+arch small_stones
+x 12
+y 21
+end
+arch small_stones
+x 12
+y 22
 end
 arch ytree
-x 2
-y 14
+x 12
+y 22
 end
 arch small_stones
-x 2
-y 15
+x 12
+y 23
 end
 arch hills_rocky
-x 3
+x 12
+y 24
 end
 arch hills_rocky
-x 3
+x 12
+y 25
+end
+arch hills_rocky
+x 12
+y 26
+end
+arch mountain
+x 12
+y 27
+elevation 8924
+end
+arch mountain2
+x 12
+y 28
+elevation 9662
+end
+arch mountain2
+x 12
+y 29
+elevation 10196
+end
+arch mountain2
+x 12
+y 30
+elevation 10589
+end
+arch mountain2
+x 12
+y 31
+elevation 10450
+end
+arch mountain2
+x 12
+y 32
+elevation 9279
+end
+arch mountain
+x 12
+y 33
+elevation 7429
+end
+arch mountain
+x 12
+y 34
+elevation 5249
+end
+arch steppe
+x 12
+y 35
+elevation 3030
+end
+arch desert
+x 12
+y 36
+elevation 576
+end
+arch brush
+x 12
+y 37
+elevation 745
+end
+arch hills_rocky
+x 12
+y 38
+elevation 1082
+end
+arch brush
+x 12
+y 39
+elevation 550
+end
+arch hills_rocky
+x 13
+elevation 4436
+end
+arch hills_rocky
+x 13
 y 1
+elevation 3942
 end
-arch small_stones
-x 3
+arch mountain
+x 13
 y 2
+elevation 7226
 end
-arch small_stones
-x 3
+arch mountain
+x 13
 y 3
+elevation 7357
 end
-arch small_stones
-x 3
+arch mountain2
+x 13
 y 4
+elevation 9705
 end
-arch small_stones
-x 3
+arch mountain2
+x 13
 y 5
+elevation 10153
 end
-arch small_stones
-x 3
+arch hills_rocky
+x 13
 y 6
 end
-arch crater
-x 3
+arch hills_rocky
+x 13
 y 7
 end
-arch small_stones
-x 3
+arch hills_rocky
+x 13
 y 8
 end
-arch small_stones
-x 3
+arch hills_rocky
+x 13
 y 9
 end
 arch small_stones
-x 3
+x 13
 y 10
 end
 arch small_stones
-x 3
+x 13
 y 11
 end
 arch small_stones
-x 3
+x 13
 y 12
 end
 arch small_stones
-x 3
+x 13
 y 13
 end
 arch small_stones
-x 3
+x 13
 y 14
 end
-arch small_stones
-x 3
-y 15
-end
-arch hills_rocky
-x 4
-end
-arch hills_rocky
-x 4
-y 1
-end
-arch hills_rocky
-x 4
-y 2
-end
-arch small_stones
-x 4
-y 3
-end
-arch small_stones
-x 4
-y 4
-end
 arch crater
-x 4
-y 4
-end
-arch small_stones
-x 4
-y 5
-end
-arch small_stones
-x 4
-y 6
-end
-arch small_stones
-x 4
-y 7
-end
-arch small_stones
-x 4
-y 8
-end
-arch small_stones
-x 4
-y 9
-end
-arch crater
-x 4
-y 9
-end
-arch small_stones
-x 4
-y 10
-end
-arch hills_rocky
-x 4
-y 11
-end
-arch small_stones
-x 4
-y 12
-end
-arch small_stones
-x 4
-y 13
-end
-arch small_stones
-x 4
-y 14
-end
-arch small_stones
-x 4
-y 15
-end
-arch hills_rocky
-x 5
-end
-arch hills_rocky
-x 5
-y 1
-end
-arch hills_rocky
-x 5
-y 2
-end
-arch small_stones
-x 5
-y 3
-end
-arch small_stones
-x 5
-y 4
-end
-arch small_stones
-x 5
-y 5
-end
-arch small_stones
-x 5
-y 6
-end
-arch small_stones
-x 5
-y 7
-end
-arch small_stones
-x 5
-y 8
-end
-arch small_stones
-x 5
-y 9
-end
-arch small_stones
-x 5
-y 10
-end
-arch small_stones
-x 5
-y 11
-end
-arch small_stones
-x 5
-y 12
-end
-arch small_stones
-x 5
-y 13
-end
-arch crater
-x 5
-y 13
-end
-arch small_stones
-x 5
-y 14
-end
-arch hills_rocky
-x 5
+x 13
 y 15
 end
 arch small_stones
-x 6
+x 13
+y 16
 end
 arch small_stones
-x 6
+x 13
+y 17
+end
+arch small_stones
+x 13
+y 18
+end
+arch small_stones
+x 13
+y 19
+end
+arch small_stones
+x 13
+y 20
+end
+arch small_stones
+x 13
+y 21
+end
+arch small_stones
+x 13
+y 22
+end
+arch small_stones
+x 13
+y 23
+end
+arch hills_rocky
+x 13
+y 24
+end
+arch hills_rocky
+x 13
+y 25
+end
+arch hills_rocky
+x 13
+y 26
+end
+arch mountain
+x 13
+y 27
+elevation 8858
+end
+arch mountain2
+x 13
+y 28
+elevation 9425
+end
+arch mountain2
+x 13
+y 29
+elevation 11824
+end
+arch mountain4
+x 13
+y 30
+elevation 12366
+end
+arch mountain2
+x 13
+y 31
+elevation 11784
+end
+arch mountain2
+x 13
+y 32
+elevation 9972
+end
+arch mountain
+x 13
+y 33
+elevation 7117
+end
+arch steppe
+x 13
+y 34
+elevation 4529
+end
+arch woods
+x 13
+y 35
+elevation 2297
+end
+arch desert
+x 13
+y 36
+elevation 389
+end
+arch woods
+x 13
+y 37
+elevation 1083
+end
+arch woods
+x 13
+y 38
+elevation 1764
+end
+arch woods
+x 13
+y 39
+elevation 2448
+end
+arch hills_rocky
+x 14
+elevation 3877
+end
+arch mountain
+x 14
 y 1
+elevation 5958
 end
-arch hills_rocky
-x 6
+arch mountain
+x 14
 y 2
+elevation 7262
 end
-arch hills_rocky
-x 6
+arch mountain
+x 14
 y 3
+elevation 8111
+end
+arch mountain
+x 14
+y 4
+elevation 8383
+end
+arch mountain
+x 14
+y 5
+elevation 8587
 end
 arch hills_rocky
-x 6
-y 4
-end
-arch small_stones
-x 6
-y 5
-end
-arch small_stones
-x 6
+x 14
 y 6
 end
-arch small_stones
-x 6
+arch hills_rocky
+x 14
 y 7
 end
-arch small_stones
-x 6
+arch hills_rocky
+x 14
 y 8
 end
-arch small_stones
-x 6
+arch hills_rocky
+x 14
 y 9
 end
-arch ytree
-x 6
-y 9
-end
-arch small_stones
-x 6
+arch hills_rocky
+x 14
 y 10
 end
 arch small_stones
-x 6
+x 14
 y 11
 end
 arch small_stones
-x 6
+x 14
+y 12
+end
+arch crater
+x 14
 y 12
 end
 arch small_stones
-x 6
+x 14
 y 13
 end
 arch small_stones
-x 6
+x 14
 y 14
 end
 arch small_stones
-x 6
+x 14
 y 15
 end
 arch small_stones
-x 7
+x 14
+y 16
 end
 arch small_stones
-x 7
+x 14
+y 17
+end
+arch crater
+x 14
+y 17
+end
+arch small_stones
+x 14
+y 18
+end
+arch hills_rocky
+x 14
+y 19
+end
+arch small_stones
+x 14
+y 20
+end
+arch small_stones
+x 14
+y 21
+end
+arch small_stones
+x 14
+y 22
+end
+arch small_stones
+x 14
+y 23
+end
+arch hills_rocky
+x 14
+y 24
+end
+arch hills_rocky
+x 14
+y 25
+end
+arch mountain
+x 14
+y 26
+elevation 7448
+end
+arch mountain
+x 14
+y 27
+elevation 7328
+end
+arch mountain2
+x 14
+y 28
+elevation 10404
+end
+arch mountain4
+x 14
+y 29
+elevation 12496
+end
+arch mountain4
+x 14
+y 30
+elevation 13441
+end
+arch mountain4
+x 14
+y 31
+elevation 12446
+end
+arch mountain2
+x 14
+y 32
+elevation 9229
+end
+arch mountain
+x 14
+y 33
+elevation 5759
+end
+arch desert
+x 14
+y 34
+elevation 982
+end
+arch woods
+x 14
+y 35
+elevation 1137
+end
+arch desert
+x 14
+y 36
+elevation 398
+end
+arch desert
+x 14
+y 37
+elevation 897
+end
+arch hills_rocky
+x 14
+y 38
+elevation 2784
+end
+arch steppe
+x 14
+y 39
+elevation 3475
+end
+arch mountain
+x 15
+elevation 5915
+end
+arch mountain
+x 15
 y 1
+elevation 7163
 end
-arch hills_rocky
-x 7
+arch mountain
+x 15
 y 2
+elevation 8146
 end
-arch hills_rocky
-x 7
+arch mountain
+x 15
 y 3
+elevation 8539
+end
+arch mountain
+x 15
+y 4
+elevation 8370
+end
+arch mountain
+x 15
+y 5
+elevation 7268
 end
 arch hills_rocky
-x 7
+x 15
+y 6
+end
+arch hills_rocky
+x 15
+y 7
+end
+arch hills_rocky
+x 15
+y 8
+end
+arch hills_rocky
+x 15
+y 9
+end
+arch hills_rocky
+x 15
+y 10
+end
+arch small_stones
+x 15
+y 11
+end
+arch small_stones
+x 15
+y 12
+end
+arch small_stones
+x 15
+y 13
+end
+arch small_stones
+x 15
+y 14
+end
+arch small_stones
+x 15
+y 15
+end
+arch small_stones
+x 15
+y 16
+end
+arch small_stones
+x 15
+y 17
+end
+arch small_stones
+x 15
+y 18
+end
+arch small_stones
+x 15
+y 19
+end
+arch small_stones
+x 15
+y 20
+end
+arch small_stones
+x 15
+y 21
+end
+arch crater
+x 15
+y 21
+end
+arch small_stones
+x 15
+y 22
+end
+arch hills_rocky
+x 15
+y 23
+end
+arch hills_rocky
+x 15
+y 24
+end
+arch hills_rocky
+x 15
+y 25
+end
+arch mountain
+x 15
+y 26
+elevation 8866
+end
+arch mountain
+x 15
+y 27
+elevation 7204
+end
+arch mountain2
+x 15
+y 28
+elevation 9526
+end
+arch mountain4
+x 15
+y 29
+elevation 12487
+end
+arch mountain4
+x 15
+y 30
+elevation 13269
+end
+arch mountain4
+x 15
+y 31
+elevation 12418
+end
+arch mountain2
+x 15
+y 32
+elevation 10276
+end
+arch mountain
+x 15
+y 33
+elevation 7485
+end
+arch mountain
+x 15
+y 34
+elevation 5135
+end
+arch steppe
+x 15
+y 35
+elevation 3346
+end
+arch woods
+x 15
+y 36
+elevation 2596
+end
+arch woods
+x 15
+y 37
+elevation 2722
+end
+arch steppe
+x 15
+y 38
+elevation 3659
+end
+arch steppe
+x 15
+y 39
+elevation 4459
+end
+arch mountain
+x 16
+elevation 6768
+end
+arch mountain
+x 16
+y 1
+elevation 8171
+end
+arch mountain
+x 16
+y 2
+elevation 8964
+end
+arch mountain
+x 16
+y 3
+elevation 8896
+end
+arch mountain
+x 16
 y 4
+elevation 8403
+end
+arch mountain
+x 16
+y 5
+elevation 7733
+end
+arch hills_rocky
+x 16
+y 6
+end
+arch hills_rocky
+x 16
+y 7
+end
+arch small_stones
+x 16
+y 8
+end
+arch small_stones
+x 16
+y 9
+end
+arch hills_rocky
+x 16
+y 10
+end
+arch hills_rocky
+x 16
+y 11
+end
+arch hills_rocky
+x 16
+y 12
 end
 arch magic_banned
-x 7
-y 5
+x 16
+y 13
 end
 arch cobblestones2
-x 7
-y 5
+x 16
+y 13
 end
 arch swall_1_1_half
-x 7
-y 5
+x 16
+y 13
 end
 arch swall_1_4_half
-x 7
-y 5
+x 16
+y 13
 end
 arch dwall_0
-x 7
-y 5
+x 16
+y 13
 end
 arch magic_banned
-x 7
-y 6
+x 16
+y 14
 end
 arch cobblestones2
-x 7
-y 6
+x 16
+y 14
 end
 arch swall_2_1_1
-x 7
-y 6
+x 16
+y 14
 end
 arch magic_banned
-x 7
-y 7
+x 16
+y 15
 end
 arch cobblestones2
-x 7
-y 7
+x 16
+y 15
 end
 arch swall_2_1_1
-x 7
-y 7
+x 16
+y 15
 end
 arch magic_banned
-x 7
-y 8
+x 16
+y 16
 end
 arch cobblestones2
-x 7
-y 8
+x 16
+y 16
 end
 arch swall_1_2_half
-x 7
-y 8
+x 16
+y 16
 end
 arch swall_1_4_half
-x 7
-y 8
+x 16
+y 16
 end
 arch dwall_0
-x 7
+x 16
+y 16
+end
+arch small_stones
+x 16
+y 17
+end
+arch small_stones
+x 16
+y 18
+end
+arch small_stones
+x 16
+y 19
+end
+arch small_stones
+x 16
+y 20
+end
+arch small_stones
+x 16
+y 21
+end
+arch small_stones
+x 16
+y 22
+end
+arch small_stones
+x 16
+y 23
+end
+arch hills_rocky
+x 16
+y 24
+end
+arch mountain2
+x 16
+y 25
+elevation 10064
+end
+arch mountain2
+x 16
+y 26
+elevation 9582
+end
+arch mountain2
+x 16
+y 27
+elevation 9096
+end
+arch mountain2
+x 16
+y 28
+elevation 9354
+end
+arch mountain2
+x 16
+y 29
+elevation 11780
+end
+arch mountain4
+x 16
+y 30
+elevation 12745
+end
+arch mountain2
+x 16
+y 31
+elevation 11748
+end
+arch mountain2
+x 16
+y 32
+elevation 9987
+end
+arch mountain
+x 16
+y 33
+elevation 7921
+end
+arch mountain
+x 16
+y 34
+elevation 6037
+end
+arch steppe
+x 16
+y 35
+elevation 4512
+end
+arch steppe
+x 16
+y 36
+elevation 3438
+end
+arch steppe
+x 16
+y 37
+elevation 3616
+end
+arch steppe
+x 16
+y 38
+elevation 3477
+end
+arch mountain
+x 16
+y 39
+elevation 5517
+end
+arch mountain
+x 17
+elevation 7017
+end
+arch mountain
+x 17
+y 1
+elevation 8731
+end
+arch mountain2
+x 17
+y 2
+elevation 9618
+end
+arch mountain2
+x 17
+y 3
+elevation 9522
+end
+arch mountain
+x 17
+y 4
+elevation 7592
+end
+arch mountain
+x 17
+y 5
+elevation 7843
+end
+arch mountain
+x 17
+y 6
+elevation 7638
+end
+arch hills_rocky
+x 17
+y 7
+end
+arch small_stones
+x 17
 y 8
 end
 arch small_stones
-x 7
-y 9
-end
-arch ytree
-x 7
+x 17
 y 9
 end
 arch small_stones
-x 7
+x 17
 y 10
 end
 arch small_stones
-x 7
+x 17
 y 11
 end
-arch small_stones
-x 7
+arch hills_rocky
+x 17
 y 12
 end
-arch small_stones
-x 7
+arch magic_banned
+x 17
 y 13
 end
-arch small_stones
-x 7
-y 14
-end
-arch small_stones
-x 7
-y 15
-end
-arch small_stones
-x 8
-end
-arch small_stones
-x 8
-y 1
-end
-arch small_stones
-x 8
-y 2
-end
-arch small_stones
-x 8
-y 3
-end
-arch hills_rocky
-x 8
-y 4
-end
-arch magic_banned
-x 8
-y 5
-end
 arch cobblestones2
-x 8
-y 5
+x 17
+y 13
 end
 arch swall_2_1_2
-x 8
-y 5
+x 17
+y 13
 end
 arch magic_banned
-x 8
-y 6
+x 17
+y 14
 end
 arch magic_mouth
 msg
 You look down from a great height, and realize that the devastation in this area is the result of Yqreth's toying with the spell you found below.  You resolve not to let power go to your head, and not to sell your soul for power, as Yqreth had.  Or at least, you resolve to sell your soul for a higher price.  Yqreth wasn't much of a lich -- strong liches are reputed to be much more powerful than the creature you destroyed.
 endmsg
-x 8
-y 6
+x 17
+y 14
 end
 arch cobblestones2
-x 8
-y 6
+x 17
+y 14
 end
 arch magic_banned
-x 8
-y 7
+x 17
+y 15
 end
 arch cobblestones2
-x 8
-y 7
+x 17
+y 15
 end
 arch stair_3_down
 name to the Study
 slaying Study
 hp 8
 sp 8
-x 8
-y 7
+x 17
+y 15
 end
 arch magic_banned
-x 8
-y 8
+x 17
+y 16
 end
 arch cobblestones2
-x 8
-y 8
+x 17
+y 16
 end
 arch swall_2_1_2
-x 8
+x 17
+y 16
+end
+arch small_stones
+x 17
+y 17
+end
+arch small_stones
+x 17
+y 18
+end
+arch small_stones
+x 17
+y 19
+end
+arch crater
+x 17
+y 19
+end
+arch small_stones
+x 17
+y 20
+end
+arch small_stones
+x 17
+y 21
+end
+arch small_stones
+x 17
+y 22
+end
+arch small_stones
+x 17
+y 23
+end
+arch hills_rocky
+x 17
+y 24
+end
+arch hills_rocky
+x 17
+y 25
+end
+arch mountain2
+x 17
+y 26
+elevation 9459
+end
+arch mountain
+x 17
+y 27
+elevation 8576
+end
+arch mountain
+x 17
+y 28
+elevation 7693
+end
+arch mountain2
+x 17
+y 29
+elevation 11075
+end
+arch wasteland
+x 17
+y 30
+elevation 12000
+end
+arch mountain2
+x 17
+y 31
+elevation 10163
+end
+arch mountain2
+x 17
+y 32
+elevation 9167
+end
+arch mountain
+x 17
+y 33
+elevation 6551
+end
+arch steppe
+x 17
+y 34
+elevation 4247
+end
+arch steppe
+x 17
+y 35
+elevation 4502
+end
+arch steppe
+x 17
+y 36
+elevation 3684
+end
+arch steppe
+x 17
+y 37
+elevation 3421
+end
+arch steppe
+x 17
+y 38
+elevation 4533
+end
+arch mountain
+x 17
+y 39
+elevation 6112
+end
+arch mountain
+x 18
+elevation 7232
+end
+arch mountain2
+x 18
+y 1
+elevation 9165
+end
+arch mountain2
+x 18
+y 2
+elevation 10250
+end
+arch mountain2
+x 18
+y 3
+elevation 10283
+end
+arch mountain2
+x 18
+y 4
+elevation 9403
+end
+arch mountain
+x 18
+y 5
+elevation 7820
+end
+arch hills_rocky
+x 18
+y 6
+end
+arch hills_rocky
+x 18
+y 7
+end
+arch small_stones
+x 18
 y 8
 end
 arch small_stones
-x 8
+x 18
 y 9
 end
 arch small_stones
-x 8
+x 18
+y 10
+end
+arch crater
+x 18
 y 10
 end
 arch small_stones
-x 8
-y 11
-end
-arch crater
-x 8
+x 18
 y 11
 end
 arch small_stones
-x 8
+x 18
 y 12
 end
-arch small_stones
-x 8
+arch magic_banned
+x 18
 y 13
 end
-arch small_stones
-x 8
-y 14
-end
-arch hills_rocky
-x 8
-y 15
-end
-arch small_stones
-x 9
-end
-arch small_stones
-x 9
-y 1
-end
-arch small_stones
-x 9
-y 2
-end
-arch crater
-x 9
-y 2
-end
-arch small_stones
-x 9
-y 3
-end
-arch small_stones
-x 9
-y 4
-end
-arch magic_banned
-x 9
-y 5
-end
 arch cobblestones2
-x 9
-y 5
+x 18
+y 13
 end
 arch swall_1_1_half
-x 9
-y 5
+x 18
+y 13
 end
 arch swall_1_3_half
-x 9
-y 5
+x 18
+y 13
 end
 arch dwall_0
-x 9
-y 5
+x 18
+y 13
 end
 arch magic_banned
-x 9
-y 6
+x 18
+y 14
 end
 arch cobblestones2
-x 9
-y 6
+x 18
+y 14
 end
 arch swall_2_1_1
-x 9
-y 6
+x 18
+y 14
 end
 arch magic_banned
-x 9
-y 7
+x 18
+y 15
 end
 arch cobblestones2
-x 9
-y 7
+x 18
+y 15
 end
 arch swall_2_1_1
-x 9
-y 7
+x 18
+y 15
 end
 arch magic_banned
-x 9
-y 8
+x 18
+y 16
 end
 arch cobblestones2
-x 9
-y 8
+x 18
+y 16
 end
 arch swall_1_2_half
-x 9
-y 8
+x 18
+y 16
 end
 arch swall_1_3_half
-x 9
-y 8
+x 18
+y 16
 end
 arch dwall_0
-x 9
+x 18
+y 16
+end
+arch small_stones
+x 18
+y 17
+end
+arch small_stones
+x 18
+y 18
+end
+arch small_stones
+x 18
+y 19
+end
+arch small_stones
+x 18
+y 20
+end
+arch small_stones
+x 18
+y 21
+end
+arch small_stones
+x 18
+y 22
+end
+arch small_stones
+x 18
+y 23
+end
+arch hills_rocky
+x 18
+y 24
+end
+arch hills_rocky
+x 18
+y 25
+end
+arch mountain
+x 18
+y 26
+elevation 8592
+end
+arch mountain
+x 18
+y 27
+elevation 5554
+end
+arch mountain
+x 18
+y 28
+elevation 6951
+end
+arch mountain2
+x 18
+y 29
+elevation 10462
+end
+arch mountain2
+x 18
+y 30
+elevation 11048
+end
+arch mountain2
+x 18
+y 31
+elevation 9846
+end
+arch mountain
+x 18
+y 32
+elevation 8064
+end
+arch mountain
+x 18
+y 33
+elevation 7005
+end
+arch steppe
+x 18
+y 34
+elevation 4948
+end
+arch steppe
+x 18
+y 35
+elevation 4611
+end
+arch hills_rocky
+x 18
+y 36
+elevation 2648
+end
+arch woods
+x 18
+y 37
+elevation 1674
+end
+arch steppe
+x 18
+y 38
+elevation 3489
+end
+arch mountain
+x 18
+y 39
+elevation 6187
+end
+arch mountain
+x 19
+elevation 7497
+end
+arch mountain2
+x 19
+y 1
+elevation 9362
+end
+arch mountain2
+x 19
+y 2
+elevation 10414
+end
+arch mountain2
+x 19
+y 3
+elevation 10551
+end
+arch mountain2
+x 19
+y 4
+elevation 9546
+end
+arch mountain
+x 19
+y 5
+elevation 8125
+end
+arch hills_rocky
+x 19
+y 6
+end
+arch hills_rocky
+x 19
+y 7
+end
+arch small_stones
+x 19
 y 8
 end
 arch small_stones
-x 9
+x 19
 y 9
 end
 arch small_stones
-x 9
+x 19
 y 10
 end
 arch small_stones
-x 9
+x 19
 y 11
 end
 arch small_stones
-x 9
+x 19
 y 12
 end
 arch small_stones
-x 9
+x 19
 y 13
 end
 arch small_stones
-x 9
+x 19
 y 14
 end
 arch small_stones
-x 9
+x 19
 y 15
-end
-arch small_stones
-x 10
-end
-arch small_stones
-x 10
-y 1
-end
-arch small_stones
-x 10
-y 2
-end
-arch small_stones
-x 10
-y 3
-end
-arch small_stones
-x 10
-y 4
-end
-arch small_stones
-x 10
-y 5
-end
-arch small_stones
-x 10
-y 6
-end
-arch small_stones
-x 10
-y 7
 end
 arch crater
-x 10
-y 7
-end
-arch small_stones
-x 10
-y 8
-end
-arch small_stones
-x 10
-y 9
-end
-arch small_stones
-x 10
-y 10
-end
-arch hills_rocky
-x 10
-y 11
-end
-arch hills_rocky
-x 10
-y 12
-end
-arch small_stones
-x 10
-y 13
-end
-arch small_stones
-x 10
-y 14
-end
-arch ytree
-x 10
-y 14
-end
-arch small_stones
-x 10
+x 19
 y 15
 end
 arch small_stones
-x 11
+x 19
+y 16
 end
 arch small_stones
-x 11
+x 19
+y 17
+end
+arch small_stones
+x 19
+y 18
+end
+arch hills_rocky
+x 19
+y 19
+end
+arch hills_rocky
+x 19
+y 20
+end
+arch small_stones
+x 19
+y 21
+end
+arch small_stones
+x 19
+y 22
+end
+arch ytree
+x 19
+y 22
+end
+arch small_stones
+x 19
+y 23
+end
+arch hills_rocky
+x 19
+y 24
+end
+arch hills_rocky
+x 19
+y 25
+end
+arch mountain
+x 19
+y 26
+elevation 7801
+end
+arch steppe
+x 19
+y 27
+elevation 3833
+end
+arch mountain
+x 19
+y 28
+elevation 7846
+end
+arch mountain2
+x 19
+y 29
+elevation 9976
+end
+arch mountain2
+x 19
+y 30
+elevation 10323
+end
+arch mountain
+x 19
+y 31
+elevation 7854
+end
+arch mountain
+x 19
+y 32
+elevation 8068
+end
+arch mountain
+x 19
+y 33
+elevation 7203
+end
+arch mountain
+x 19
+y 34
+elevation 6347
+end
+arch mountain
+x 19
+y 35
+elevation 5274
+end
+arch steppe
+x 19
+y 36
+elevation 4162
+end
+arch woods
+x 19
+y 37
+elevation 2393
+end
+arch steppe
+x 19
+y 38
+elevation 4454
+end
+arch mountain
+x 19
+y 39
+elevation 5827
+end
+arch mountain
+x 20
+elevation 7535
+end
+arch mountain
+x 20
 y 1
+elevation 8955
 end
-arch small_stones
-x 11
+arch mountain2
+x 20
 y 2
+elevation 9796
 end
-arch small_stones
-x 11
+arch mountain2
+x 20
 y 3
+elevation 9730
 end
-arch small_stones
-x 11
+arch mountain
+x 20
 y 4
+elevation 8992
 end
-arch small_stones
-x 11
+arch mountain
+x 20
 y 5
+elevation 6835
 end
-arch small_stones
-x 11
+arch hills_rocky
+x 20
 y 6
 end
-arch small_stones
-x 11
+arch hills_rocky
+x 20
 y 7
 end
 arch small_stones
-x 11
+x 20
 y 8
 end
-arch hills_rocky
-x 11
+arch small_stones
+x 20
 y 9
 end
-arch hills_rocky
-x 11
+arch small_stones
+x 20
 y 10
 end
-arch hills_rocky
-x 11
+arch small_stones
+x 20
 y 11
 end
 arch small_stones
-x 11
+x 20
 y 12
 end
 arch small_stones
-x 11
+x 20
 y 13
 end
 arch small_stones
-x 11
+x 20
 y 14
 end
 arch small_stones
-x 11
+x 20
 y 15
 end
 arch small_stones
-x 12
+x 20
+y 16
 end
-arch ytree
-x 12
+arch hills_rocky
+x 20
+y 17
+end
+arch hills_rocky
+x 20
+y 18
+end
+arch hills_rocky
+x 20
+y 19
 end
 arch small_stones
-x 12
-y 1
-end
-arch ytree
-x 12
-y 1
+x 20
+y 20
 end
 arch small_stones
-x 12
+x 20
+y 21
+end
+arch small_stones
+x 20
+y 22
+end
+arch small_stones
+x 20
+y 23
+end
+arch hills_rocky
+x 20
+y 24
+end
+arch mountain
+x 20
+y 25
+elevation 8333
+end
+arch mountain
+x 20
+y 26
+elevation 6815
+end
+arch mountain
+x 20
+y 27
+elevation 5720
+end
+arch mountain
+x 20
+y 28
+elevation 7602
+end
+arch mountain2
+x 20
+y 29
+elevation 9290
+end
+arch mountain2
+x 20
+y 30
+elevation 9579
+end
+arch mountain
+x 20
+y 31
+elevation 8644
+end
+arch mountain
+x 20
+y 32
+elevation 7390
+end
+arch mountain
+x 20
+y 33
+elevation 7153
+end
+arch mountain
+x 20
+y 34
+elevation 6785
+end
+arch mountain
+x 20
+y 35
+elevation 6084
+end
+arch mountain
+x 20
+y 36
+elevation 5383
+end
+arch steppe
+x 20
+y 37
+elevation 4545
+end
+arch steppe
+x 20
+y 38
+elevation 4716
+end
+arch mountain
+x 20
+y 39
+elevation 5623
+end
+arch mountain
+x 21
+elevation 6782
+end
+arch mountain
+x 21
+y 1
+elevation 8020
+end
+arch mountain
+x 21
 y 2
+elevation 8520
+end
+arch mountain
+x 21
+y 3
+elevation 8625
+end
+arch mountain
+x 21
+y 4
+elevation 8249
+end
+arch mountain
+x 21
+y 5
+elevation 7639
+end
+arch hills_rocky
+x 21
+y 6
+end
+arch hills_rocky
+x 21
+y 7
+end
+arch small_stones
+x 21
+y 8
+end
+arch ytree
+x 21
+y 8
+end
+arch small_stones
+x 21
+y 9
+end
+arch ytree
+x 21
+y 9
+end
+arch small_stones
+x 21
+y 10
 end
 arch crater
-x 12
-y 2
-end
-arch small_stones
-x 12
-y 3
-end
-arch hills_rocky
-x 12
-y 4
-end
-arch small_stones
-x 12
-y 5
-end
-arch small_stones
-x 12
-y 6
-end
-arch small_stones
-x 12
-y 7
-end
-arch small_stones
-x 12
-y 8
-end
-arch hills_rocky
-x 12
-y 9
-end
-arch hills_rocky
-x 12
+x 21
 y 10
 end
-arch hills_rocky
-x 12
+arch small_stones
+x 21
 y 11
 end
-arch small_stones
-x 12
+arch hills_rocky
+x 21
 y 12
+end
+arch small_stones
+x 21
+y 13
+end
+arch small_stones
+x 21
+y 14
+end
+arch small_stones
+x 21
+y 15
+end
+arch small_stones
+x 21
+y 16
+end
+arch hills_rocky
+x 21
+y 17
+end
+arch hills_rocky
+x 21
+y 18
+end
+arch hills_rocky
+x 21
+y 19
+end
+arch small_stones
+x 21
+y 20
 end
 arch crater
-x 12
+x 21
+y 20
+end
+arch small_stones
+x 21
+y 21
+end
+arch small_stones
+x 21
+y 22
+end
+arch small_stones
+x 21
+y 23
+end
+arch hills_rocky
+x 21
+y 24
+end
+arch mountain
+x 21
+y 25
+elevation 6455
+end
+arch mountain
+x 21
+y 26
+elevation 5644
+end
+arch steppe
+x 21
+y 27
+elevation 4205
+end
+arch mountain
+x 21
+y 28
+elevation 7532
+end
+arch mountain
+x 21
+y 29
+elevation 8855
+end
+arch mountain
+x 21
+y 30
+elevation 8919
+end
+arch mountain
+x 21
+y 31
+elevation 7822
+end
+arch mountain
+x 21
+y 32
+elevation 6520
+end
+arch mountain
+x 21
+y 33
+elevation 6541
+end
+arch mountain
+x 21
+y 34
+elevation 6653
+end
+arch mountain
+x 21
+y 35
+elevation 6493
+end
+arch mountain
+x 21
+y 36
+elevation 6256
+end
+arch mountain
+x 21
+y 37
+elevation 6269
+end
+arch mountain
+x 21
+y 38
+elevation 6447
+end
+arch mountain
+x 21
+y 39
+elevation 6756
+end
+arch mountain
+x 22
+elevation 5709
+end
+arch mountain
+x 22
+y 1
+elevation 6785
+end
+arch mountain
+x 22
+y 2
+elevation 7218
+end
+arch mountain
+x 22
+y 3
+elevation 6550
+end
+arch mountain
+x 22
+y 4
+elevation 7766
+end
+arch mountain
+x 22
+y 5
+elevation 8324
+end
+arch mountain2
+x 22
+y 6
+elevation 9174
+end
+arch hills_rocky
+x 22
+y 7
+end
+arch small_stones
+x 22
+y 8
+end
+arch ytree
+x 22
+y 8
+end
+arch small_stones
+x 22
+y 9
+end
+arch small_stones
+x 22
+y 10
+end
+arch hills_rocky
+x 22
+y 11
+end
+arch hills_rocky
+x 22
 y 12
 end
 arch small_stones
-x 12
+x 22
 y 13
 end
 arch small_stones
-x 12
+x 22
 y 14
-end
-arch small_stones
-x 12
-y 15
-end
-arch small_stones
-x 13
-end
-arch ytree
-x 13
-end
-arch small_stones
-x 13
-y 1
-end
-arch small_stones
-x 13
-y 2
-end
-arch hills_rocky
-x 13
-y 3
-end
-arch hills_rocky
-x 13
-y 4
-end
-arch small_stones
-x 13
-y 5
-end
-arch small_stones
-x 13
-y 6
 end
 arch crater
-x 13
-y 6
-end
-arch small_stones
-x 13
-y 7
-end
-arch small_stones
-x 13
-y 8
-end
-arch hills_rocky
-x 13
-y 9
-end
-arch small_stones
-x 13
-y 10
-end
-arch small_stones
-x 13
-y 11
-end
-arch small_stones
-x 13
-y 12
-end
-arch small_stones
-x 13
-y 13
-end
-arch small_stones
-x 13
+x 22
 y 14
 end
 arch small_stones
-x 13
+x 22
 y 15
 end
 arch small_stones
-x 14
-end
-arch small_stones
-x 14
-y 1
-end
-arch ytree
-x 14
-y 1
-end
-arch small_stones
-x 14
-y 2
-end
-arch ytree
-x 14
-y 2
-end
-arch small_stones
-x 14
-y 3
+x 22
+y 16
 end
 arch hills_rocky
-x 14
+x 22
+y 17
+end
+arch small_stones
+x 22
+y 18
+end
+arch small_stones
+x 22
+y 19
+end
+arch small_stones
+x 22
+y 20
+end
+arch small_stones
+x 22
+y 21
+end
+arch small_stones
+x 22
+y 22
+end
+arch small_stones
+x 22
+y 23
+end
+arch hills_rocky
+x 22
+y 24
+end
+arch mountain
+x 22
+y 25
+elevation 5360
+end
+arch mountain
+x 22
+y 26
+elevation 5672
+end
+arch mountain
+x 22
+y 27
+elevation 6124
+end
+arch mountain
+x 22
+y 28
+elevation 7744
+end
+arch mountain
+x 22
+y 29
+elevation 8360
+end
+arch mountain
+x 22
+y 30
+elevation 7921
+end
+arch mountain
+x 22
+y 31
+elevation 6753
+end
+arch steppe
+x 22
+y 32
+elevation 4830
+end
+arch mountain
+x 22
+y 33
+elevation 5402
+end
+arch mountain
+x 22
+y 34
+elevation 6365
+end
+arch mountain
+x 22
+y 35
+elevation 6278
+end
+arch mountain
+x 22
+y 36
+elevation 5943
+end
+arch mountain
+x 22
+y 37
+elevation 6694
+end
+arch mountain
+x 22
+y 38
+elevation 7198
+end
+arch mountain
+x 22
+y 39
+elevation 7403
+end
+arch mountain
+x 23
+elevation 5278
+end
+arch hills_rocky
+x 23
+y 1
+elevation 4790
+end
+arch mountain
+x 23
+y 2
+elevation 6100
+end
+arch mountain
+x 23
+y 3
+elevation 6817
+end
+arch mountain
+x 23
 y 4
+elevation 7697
 end
-arch small_stones
-x 14
+arch mountain
+x 23
 y 5
+elevation 7181
 end
-arch small_stones
-x 14
+arch mountain
+x 23
 y 6
+elevation 7694
 end
-arch small_stones
-x 14
+arch hills_rocky
+x 23
 y 7
 end
-arch hills_rocky
-x 14
+arch small_stones
+x 23
 y 8
 end
-arch hills_rocky
-x 14
+arch small_stones
+x 23
+y 9
+end
+arch ytree
+x 23
 y 9
 end
 arch small_stones
-x 14
+x 23
+y 10
+end
+arch ytree
+x 23
 y 10
 end
 arch small_stones
-x 14
+x 23
 y 11
 end
-arch small_stones
-x 14
+arch hills_rocky
+x 23
 y 12
 end
 arch small_stones
-x 14
+x 23
 y 13
 end
 arch small_stones
-x 14
+x 23
 y 14
+end
+arch small_stones
+x 23
+y 15
+end
+arch hills_rocky
+x 23
+y 16
+end
+arch hills_rocky
+x 23
+y 17
+end
+arch small_stones
+x 23
+y 18
+end
+arch small_stones
+x 23
+y 19
+end
+arch small_stones
+x 23
+y 20
+end
+arch small_stones
+x 23
+y 21
 end
 arch crater
-x 14
-y 14
+x 23
+y 22
 end
 arch small_stones
-x 14
-y 15
+x 23
+y 23
 end
 arch hills_rocky
-x 15
+x 23
+y 24
 end
-arch small_stones
-x 15
+arch mountain
+x 23
+y 25
+elevation 6654
+end
+arch mountain
+x 23
+y 26
+elevation 7726
+end
+arch mountain
+x 23
+y 27
+elevation 8155
+end
+arch mountain
+x 23
+y 28
+elevation 8526
+end
+arch mountain
+x 23
+y 29
+elevation 8158
+end
+arch mountain
+x 23
+y 30
+elevation 6310
+end
+arch mountain
+x 23
+y 31
+elevation 5726
+end
+arch steppe
+x 23
+y 32
+elevation 4822
+end
+arch mountain
+x 23
+y 33
+elevation 5900
+end
+arch mountain
+x 23
+y 34
+elevation 6675
+end
+arch steppe
+x 23
+y 35
+elevation 4991
+end
+arch steppe
+x 23
+y 36
+elevation 4966
+end
+arch mountain
+x 23
+y 37
+elevation 6476
+end
+arch mountain
+x 23
+y 38
+elevation 7014
+end
+arch mountain
+x 23
+y 39
+elevation 7562
+end
+arch mountain
+x 24
+elevation 5690
+end
+arch mountain
+x 24
 y 1
+elevation 5180
 end
-arch small_stones
-x 15
+arch mountain
+x 24
 y 2
+elevation 7044
 end
-arch small_stones
-x 15
+arch mountain
+x 24
 y 3
+elevation 7756
 end
-arch small_stones
-x 15
+arch mountain
+x 24
 y 4
+elevation 7862
 end
-arch small_stones
-x 15
+arch mountain
+x 24
 y 5
+elevation 7488
 end
-arch small_stones
-x 15
+arch mountain
+x 24
 y 6
+elevation 7224
 end
 arch hills_rocky
-x 15
+x 24
 y 7
 end
 arch hills_rocky
-x 15
+x 24
 y 8
 end
 arch small_stones
-x 15
+x 24
 y 9
 end
-arch hills_rocky
-x 15
+arch small_stones
+x 24
 y 10
 end
 arch small_stones
-x 15
+x 24
 y 11
 end
 arch small_stones
-x 15
+x 24
 y 12
 end
 arch small_stones
-x 15
+x 24
 y 13
 end
 arch small_stones
-x 15
+x 24
 y 14
 end
-arch small_stones
-x 15
+arch hills_rocky
+x 24
 y 15
+end
+arch hills_rocky
+x 24
+y 16
+end
+arch small_stones
+x 24
+y 17
+end
+arch hills_rocky
+x 24
+y 18
+end
+arch small_stones
+x 24
+y 19
+end
+arch small_stones
+x 24
+y 20
+end
+arch small_stones
+x 24
+y 21
+end
+arch small_stones
+x 24
+y 22
+end
+arch small_stones
+x 24
+y 23
+end
+arch hills_rocky
+x 24
+y 24
+end
+arch mountain2
+x 24
+y 25
+elevation 9886
+end
+arch mountain2
+x 24
+y 26
+elevation 9536
+end
+arch mountain2
+x 24
+y 27
+elevation 9263
+end
+arch mountain
+x 24
+y 28
+elevation 8910
+end
+arch mountain
+x 24
+y 29
+elevation 8257
+end
+arch mountain
+x 24
+y 30
+elevation 7107
+end
+arch steppe
+x 24
+y 31
+elevation 4343
+end
+arch steppe
+x 24
+y 32
+elevation 3291
+end
+arch mountain
+x 24
+y 33
+elevation 6725
+end
+arch mountain
+x 24
+y 34
+elevation 7687
+end
+arch mountain
+x 24
+y 35
+elevation 7748
+end
+arch mountain
+x 24
+y 36
+elevation 7122
+end
+arch steppe
+x 24
+y 37
+elevation 4738
+end
+arch mountain
+x 24
+y 38
+elevation 6986
+end
+arch mountain
+x 24
+y 39
+elevation 6742
+end
+arch mountain
+x 25
+elevation 6846
+end
+arch mountain
+x 25
+y 1
+elevation 7705
+end
+arch mountain
+x 25
+y 2
+elevation 7954
+end
+arch mountain
+x 25
+y 3
+elevation 7894
+end
+arch mountain
+x 25
+y 4
+elevation 7502
+end
+arch mountain
+x 25
+y 5
+elevation 6719
+end
+arch hills_rocky
+x 25
+y 6
+end
+arch hills_rocky
+x 25
+y 7
+end
+arch hills_rocky
+x 25
+y 8
+end
+arch hills_rocky
+x 25
+y 9
+end
+arch hills_rocky
+x 25
+y 10
+end
+arch hills_rocky
+x 25
+y 11
+end
+arch hills_rocky
+x 25
+y 12
+end
+arch hills_rocky
+x 25
+y 13
+end
+arch hills_rocky
+x 25
+y 14
+end
+arch hills_rocky
+x 25
+y 15
+end
+arch hills_rocky
+x 25
+y 16
+end
+arch hills_rocky
+x 25
+y 17
+end
+arch hills_rocky
+x 25
+y 18
+end
+arch hills_rocky
+x 25
+y 19
+end
+arch hills_rocky
+x 25
+y 20
+end
+arch hills_rocky
+x 25
+y 21
+end
+arch hills_rocky
+x 25
+y 22
+end
+arch hills_rocky
+x 25
+y 23
+end
+arch hills_rocky
+x 25
+y 24
+end
+arch mountain2
+x 25
+y 25
+elevation 11586
+end
+arch mountain2
+x 25
+y 26
+elevation 10498
+end
+arch mountain
+x 25
+y 27
+elevation 8941
+end
+arch mountain
+x 25
+y 28
+elevation 8113
+end
+arch mountain
+x 25
+y 29
+elevation 7680
+end
+arch mountain
+x 25
+y 30
+elevation 7222
+end
+arch mountain
+x 25
+y 31
+elevation 6477
+end
+arch mountain
+x 25
+y 32
+elevation 6671
+end
+arch mountain
+x 25
+y 33
+elevation 7696
+end
+arch mountain2
+x 25
+y 34
+elevation 9010
+end
+arch mountain2
+x 25
+y 35
+elevation 9333
+end
+arch mountain
+x 25
+y 36
+elevation 8648
+end
+arch mountain
+x 25
+y 37
+elevation 7769
+end
+arch mountain
+x 25
+y 38
+elevation 7121
+end
+arch mountain
+x 25
+y 39
+elevation 7095
+end
+arch mountain
+x 26
+elevation 8655
+end
+arch mountain
+x 26
+y 1
+elevation 8750
+end
+arch mountain
+x 26
+y 2
+elevation 8250
+end
+arch mountain
+x 26
+y 3
+elevation 7453
+end
+arch mountain
+x 26
+y 4
+elevation 5854
+end
+arch mountain
+x 26
+y 5
+elevation 5452
+end
+arch hills_rocky
+x 26
+y 6
+elevation 4534
+end
+arch mountain
+x 26
+y 7
+elevation 5610
+end
+arch mountain
+x 26
+y 8
+elevation 6113
+end
+arch hills_rocky
+x 26
+y 9
+end
+arch hills_rocky
+x 26
+y 10
+end
+arch mountain
+x 26
+y 11
+elevation 7171
+end
+arch hills_rocky
+x 26
+y 12
+end
+arch hills_rocky
+x 26
+y 13
+end
+arch hills_rocky
+x 26
+y 14
+end
+arch hills_rocky
+x 26
+y 15
+end
+arch hills_rocky
+x 26
+y 16
+end
+arch hills_rocky
+x 26
+y 17
+end
+arch hills_rocky
+x 26
+y 18
+end
+arch hills_rocky
+x 26
+y 19
+end
+arch hills_rocky
+x 26
+y 20
+end
+arch hills_rocky
+x 26
+y 21
+end
+arch mountain2
+x 26
+y 22
+elevation 11589
+end
+arch mountain2
+x 26
+y 23
+elevation 11948
+end
+arch mountain4
+x 26
+y 24
+elevation 12771
+end
+arch mountain2
+x 26
+y 25
+elevation 11987
+end
+arch mountain2
+x 26
+y 26
+elevation 10171
+end
+arch mountain
+x 26
+y 27
+elevation 8023
+end
+arch steppe
+x 26
+y 28
+elevation 4095
+end
+arch mountain
+x 26
+y 29
+elevation 6725
+end
+arch mountain
+x 26
+y 30
+elevation 6694
+end
+arch mountain
+x 26
+y 31
+elevation 6500
+end
+arch mountain
+x 26
+y 32
+elevation 7144
+end
+arch mountain
+x 26
+y 33
+elevation 8585
+end
+arch mountain2
+x 26
+y 34
+elevation 9776
+end
+arch mountain2
+x 26
+y 35
+elevation 10062
+end
+arch mountain2
+x 26
+y 36
+elevation 9516
+end
+arch mountain
+x 26
+y 37
+elevation 8617
+end
+arch mountain
+x 26
+y 38
+elevation 7613
+end
+arch mountain
+x 26
+y 39
+elevation 6127
+end
+arch mountain2
+x 27
+elevation 9994
+end
+arch mountain
+x 27
+y 1
+elevation 8402
+end
+arch mountain
+x 27
+y 2
+elevation 8070
+end
+arch mountain
+x 27
+y 3
+elevation 6737
+end
+arch mountain
+x 27
+y 4
+elevation 5039
+end
+arch steppe
+x 27
+y 5
+elevation 3811
+end
+arch hills_rocky
+x 27
+y 6
+elevation 3608
+end
+arch mountain
+x 27
+y 7
+elevation 5197
+end
+arch mountain
+x 27
+y 8
+elevation 6290
+end
+arch mountain
+x 27
+y 9
+elevation 6510
+end
+arch mountain
+x 27
+y 10
+elevation 5296
+end
+arch mountain
+x 27
+y 11
+elevation 7496
+end
+arch mountain
+x 27
+y 12
+elevation 7545
+end
+arch mountain
+x 27
+y 13
+elevation 6225
+end
+arch hills_rocky
+x 27
+y 14
+end
+arch hills_rocky
+x 27
+y 15
+end
+arch hills_rocky
+x 27
+y 16
+end
+arch hills_rocky
+x 27
+y 17
+end
+arch hills_rocky
+x 27
+y 18
+end
+arch mountain2
+x 27
+y 19
+elevation 9847
+end
+arch mountain2
+x 27
+y 20
+elevation 10466
+end
+arch mountain2
+x 27
+y 21
+elevation 9461
+end
+arch mountain2
+x 27
+y 22
+elevation 11489
+end
+arch mountain4
+x 27
+y 23
+elevation 12654
+end
+arch mountain4
+x 27
+y 24
+elevation 12527
+end
+arch mountain2
+x 27
+y 25
+elevation 11073
+end
+arch mountain
+x 27
+y 26
+elevation 8124
+end
+arch mountain
+x 27
+y 27
+elevation 7265
+end
+arch mountain
+x 27
+y 28
+elevation 6061
+end
+arch mountain
+x 27
+y 29
+elevation 5887
+end
+arch mountain
+x 27
+y 30
+elevation 5617
+end
+arch steppe
+x 27
+y 31
+elevation 4262
+end
+arch mountain
+x 27
+y 32
+elevation 5437
+end
+arch mountain
+x 27
+y 33
+elevation 8422
+end
+arch mountain2
+x 27
+y 34
+elevation 9562
+end
+arch mountain2
+x 27
+y 35
+elevation 9443
+end
+arch mountain
+x 27
+y 36
+elevation 8779
+end
+arch mountain
+x 27
+y 37
+elevation 8477
+end
+arch mountain
+x 27
+y 38
+elevation 8449
+end
+arch mountain
+x 27
+y 39
+elevation 8367
+end
+arch mountain2
+x 28
+elevation 10317
+end
+arch mountain2
+x 28
+y 1
+elevation 9847
+end
+arch mountain
+x 28
+y 2
+elevation 8308
+end
+arch mountain
+x 28
+y 3
+elevation 6212
+end
+arch jungle_1
+x 28
+y 4
+elevation 2676
+end
+arch desert
+x 28
+y 5
+elevation 974
+end
+arch hills_rocky
+x 28
+y 6
+elevation 2482
+end
+arch mountain
+x 28
+y 7
+elevation 5320
+end
+arch mountain
+x 28
+y 8
+elevation 6319
+end
+arch mountain
+x 28
+y 9
+elevation 6726
+end
+arch mountain
+x 28
+y 10
+elevation 6647
+end
+arch mountain
+x 28
+y 11
+elevation 7309
+end
+arch mountain
+x 28
+y 12
+elevation 7235
+end
+arch mountain
+x 28
+y 13
+elevation 6527
+end
+arch mountain
+x 28
+y 14
+elevation 5727
+end
+arch mountain
+x 28
+y 15
+elevation 6203
+end
+arch mountain
+x 28
+y 16
+elevation 5882
+end
+arch steppe
+x 28
+y 17
+elevation 3836
+end
+arch mountain
+x 28
+y 18
+elevation 5179
+end
+arch mountain
+x 28
+y 19
+elevation 8390
+end
+arch mountain2
+x 28
+y 20
+elevation 9630
+end
+arch mountain2
+x 28
+y 21
+elevation 10117
+end
+arch mountain2
+x 28
+y 22
+elevation 10902
+end
+arch mountain2
+x 28
+y 23
+elevation 11627
+end
+arch mountain2
+x 28
+y 24
+elevation 11181
+end
+arch mountain
+x 28
+y 25
+elevation 8084
+end
+arch mountain
+x 28
+y 26
+elevation 7385
+end
+arch mountain
+x 28
+y 27
+elevation 6933
+end
+arch mountain
+x 28
+y 28
+elevation 6501
+end
+arch mountain
+x 28
+y 29
+elevation 5889
+end
+arch steppe
+x 28
+y 30
+elevation 4064
+end
+arch steppe
+x 28
+y 31
+elevation 4079
+end
+arch mountain
+x 28
+y 32
+elevation 6108
+end
+arch mountain
+x 28
+y 33
+elevation 7569
+end
+arch mountain
+x 28
+y 34
+elevation 8085
+end
+arch mountain
+x 28
+y 35
+elevation 7294
+end
+arch mountain
+x 28
+y 36
+elevation 5888
+end
+arch mountain
+x 28
+y 37
+elevation 7597
+end
+arch mountain
+x 28
+y 38
+elevation 8607
+end
+arch mountain
+x 28
+y 39
+elevation 8840
+end
+arch mountain2
+x 29
+elevation 10816
+end
+arch mountain2
+x 29
+y 1
+elevation 10303
+end
+arch mountain
+x 29
+y 2
+elevation 7561
+end
+arch mountain
+x 29
+y 3
+elevation 6125
+end
+arch steppe
+x 29
+y 4
+elevation 3634
+end
+arch woods_2
+x 29
+y 5
+elevation 2826
+end
+arch steppe
+x 29
+y 6
+elevation 4709
+end
+arch mountain
+x 29
+y 7
+elevation 6070
+end
+arch mountain
+x 29
+y 8
+elevation 7040
+end
+arch mountain
+x 29
+y 9
+elevation 7145
+end
+arch mountain
+x 29
+y 10
+elevation 7225
+end
+arch mountain
+x 29
+y 11
+elevation 7210
+end
+arch mountain
+x 29
+y 12
+elevation 6862
+end
+arch mountain
+x 29
+y 13
+elevation 6436
+end
+arch mountain
+x 29
+y 14
+elevation 6365
+end
+arch mountain
+x 29
+y 15
+elevation 6407
+end
+arch mountain
+x 29
+y 16
+elevation 6112
+end
+arch steppe
+x 29
+y 17
+elevation 4931
+end
+arch steppe
+x 29
+y 18
+elevation 4743
+end
+arch mountain
+x 29
+y 19
+elevation 7502
+end
+arch mountain2
+x 29
+y 20
+elevation 9121
+end
+arch mountain2
+x 29
+y 21
+elevation 9733
+end
+arch mountain
+x 29
+y 22
+elevation 7685
+end
+arch mountain2
+x 29
+y 23
+elevation 10275
+end
+arch mountain2
+x 29
+y 24
+elevation 9330
+end
+arch mountain
+x 29
+y 25
+elevation 6642
+end
+arch mountain
+x 29
+y 26
+elevation 6477
+end
+arch mountain
+x 29
+y 27
+elevation 6418
+end
+arch mountain
+x 29
+y 28
+elevation 6421
+end
+arch mountain
+x 29
+y 29
+elevation 6007
+end
+arch mountain
+x 29
+y 30
+elevation 5627
+end
+arch hills_rocky
+x 29
+y 31
+elevation 4923
+end
+arch mountain
+x 29
+y 32
+elevation 6037
+end
+arch mountain
+x 29
+y 33
+elevation 6535
+end
+arch mountain
+x 29
+y 34
+elevation 6073
+end
+arch steppe
+x 29
+y 35
+elevation 4429
+end
+arch hills_rocky
+x 29
+y 36
+elevation 2983
+end
+arch mountain
+x 29
+y 37
+elevation 6862
+end
+arch mountain
+x 29
+y 38
+elevation 8130
+end
+arch mountain
+x 29
+y 39
+elevation 8365
+end
+arch mountain2
+x 30
+elevation 11907
+end
+arch mountain2
+x 30
+y 1
+elevation 11367
+end
+arch mountain
+x 30
+y 2
+elevation 6489
+end
+arch mountain
+x 30
+y 3
+elevation 7077
+end
+arch mountain
+x 30
+y 4
+elevation 6322
+end
+arch mountain
+x 30
+y 5
+elevation 5936
+end
+arch mountain
+x 30
+y 6
+elevation 6298
+end
+arch mountain
+x 30
+y 7
+elevation 7403
+end
+arch mountain
+x 30
+y 8
+elevation 7998
+end
+arch mountain
+x 30
+y 9
+elevation 8168
+end
+arch mountain
+x 30
+y 10
+elevation 7906
+end
+arch mountain
+x 30
+y 11
+elevation 7225
+end
+arch mountain
+x 30
+y 12
+elevation 5491
+end
+arch mountain
+x 30
+y 13
+elevation 5839
+end
+arch mountain
+x 30
+y 14
+elevation 6118
+end
+arch mountain
+x 30
+y 15
+elevation 6296
+end
+arch mountain
+x 30
+y 16
+elevation 6530
+end
+arch mountain
+x 30
+y 17
+elevation 6267
+end
+arch mountain
+x 30
+y 18
+elevation 5480
+end
+arch mountain
+x 30
+y 19
+elevation 6843
+end
+arch mountain
+x 30
+y 20
+elevation 8632
+end
+arch mountain2
+x 30
+y 21
+elevation 9245
+end
+arch mountain2
+x 30
+y 22
+elevation 9487
+end
+arch mountain2
+x 30
+y 23
+elevation 9216
+end
+arch mountain
+x 30
+y 24
+elevation 8300
+end
+arch mountain
+x 30
+y 25
+elevation 5538
+end
+arch steppe
+x 30
+y 26
+elevation 4868
+end
+arch mountain
+x 30
+y 27
+elevation 5671
+end
+arch mountain
+x 30
+y 28
+elevation 6370
+end
+arch mountain
+x 30
+y 29
+elevation 6414
+end
+arch mountain
+x 30
+y 30
+elevation 6227
+end
+arch mountain
+x 30
+y 31
+elevation 6094
+end
+arch mountain
+x 30
+y 32
+elevation 5928
+end
+arch mountain
+x 30
+y 33
+elevation 5571
+end
+arch steppe
+x 30
+y 34
+elevation 4039
+end
+arch grass_only
+x 30
+y 35
+elevation 2408
+end
+arch evergreens2
+x 30
+y 35
+end
+arch mountain
+x 30
+y 36
+elevation 5027
+end
+arch mountain
+x 30
+y 37
+elevation 6575
+end
+arch mountain
+x 30
+y 38
+elevation 7721
+end
+arch mountain
+x 30
+y 39
+elevation 7845
+end
+arch mountain4
+x 31
+elevation 13658
+end
+arch mountain4
+x 31
+y 1
+elevation 12704
+end
+arch mountain2
+x 31
+y 2
+elevation 10922
+end
+arch mountain2
+x 31
+y 3
+elevation 9194
+end
+arch mountain
+x 31
+y 4
+elevation 8519
+end
+arch mountain
+x 31
+y 5
+elevation 8294
+end
+arch mountain
+x 31
+y 6
+elevation 8316
+end
+arch mountain
+x 31
+y 7
+elevation 8261
+end
+arch mountain
+x 31
+y 8
+elevation 8870
+end
+arch mountain
+x 31
+y 9
+elevation 8461
+end
+arch mountain
+x 31
+y 10
+elevation 8112
+end
+arch mountain
+x 31
+y 11
+elevation 7335
+end
+arch mountain
+x 31
+y 12
+elevation 6243
+end
+arch mountain
+x 31
+y 13
+elevation 5497
+end
+arch steppe
+x 31
+y 14
+elevation 4532
+end
+arch mountain
+x 31
+y 15
+elevation 5993
+end
+arch mountain
+x 31
+y 16
+elevation 6711
+end
+arch mountain
+x 31
+y 17
+elevation 6737
+end
+arch mountain
+x 31
+y 18
+elevation 6479
+end
+arch mountain
+x 31
+y 19
+elevation 6769
+end
+arch mountain
+x 31
+y 20
+elevation 7821
+end
+arch mountain
+x 31
+y 21
+elevation 8801
+end
+arch mountain
+x 31
+y 22
+elevation 8740
+end
+arch mountain
+x 31
+y 23
+elevation 8942
+end
+arch mountain
+x 31
+y 24
+elevation 8168
+end
+arch mountain
+x 31
+y 25
+elevation 6634
+end
+arch mountain
+x 31
+y 26
+elevation 6587
+end
+arch mountain
+x 31
+y 27
+elevation 5843
+end
+arch mountain
+x 31
+y 28
+elevation 6974
+end
+arch mountain
+x 31
+y 29
+elevation 6403
+end
+arch mountain
+x 31
+y 30
+elevation 6302
+end
+arch mountain
+x 31
+y 31
+elevation 5918
+end
+arch mountain
+x 31
+y 32
+elevation 5501
+end
+arch mountain
+x 31
+y 33
+elevation 5084
+end
+arch hills_rocky
+x 31
+y 34
+elevation 4330
+end
+arch hills_rocky
+x 31
+y 35
+elevation 3360
+end
+arch mountain
+x 31
+y 36
+elevation 5395
+end
+arch mountain
+x 31
+y 37
+elevation 6707
+end
+arch mountain
+x 31
+y 38
+elevation 7229
+end
+arch mountain
+x 31
+y 39
+elevation 7642
+end
+arch mountain4
+x 32
+elevation 14598
+end
+arch mountain4
+x 32
+y 1
+elevation 13339
+end
+arch mountain2
+x 32
+y 2
+elevation 11742
+end
+arch mountain2
+x 32
+y 3
+elevation 9964
+end
+arch mountain2
+x 32
+y 4
+elevation 9206
+end
+arch mountain
+x 32
+y 5
+elevation 8919
+end
+arch mountain2
+x 32
+y 6
+elevation 9119
+end
+arch mountain2
+x 32
+y 7
+elevation 9375
+end
+arch mountain2
+x 32
+y 8
+elevation 9238
+end
+arch mountain
+x 32
+y 9
+elevation 8285
+end
+arch mountain
+x 32
+y 10
+elevation 8036
+end
+arch mountain
+x 32
+y 11
+elevation 6886
+end
+arch mountain
+x 32
+y 12
+elevation 6252
+end
+arch hills_rocky
+x 32
+y 13
+elevation 4123
+end
+arch steppe
+x 32
+y 14
+elevation 4281
+end
+arch mountain
+x 32
+y 15
+elevation 6020
+end
+arch mountain
+x 32
+y 16
+elevation 6085
+end
+arch mountain
+x 32
+y 17
+elevation 7408
+end
+arch mountain
+x 32
+y 18
+elevation 6683
+end
+arch steppe
+x 32
+y 19
+elevation 4348
+end
+arch mountain
+x 32
+y 20
+elevation 6479
+end
+arch mountain
+x 32
+y 21
+elevation 7970
+end
+arch mountain
+x 32
+y 22
+elevation 8279
+end
+arch mountain
+x 32
+y 23
+elevation 8237
+end
+arch mountain
+x 32
+y 24
+elevation 8066
+end
+arch mountain
+x 32
+y 25
+elevation 7806
+end
+arch mountain
+x 32
+y 26
+elevation 7600
+end
+arch mountain
+x 32
+y 27
+elevation 7901
+end
+arch mountain
+x 32
+y 28
+elevation 7917
+end
+arch mountain
+x 32
+y 29
+elevation 7505
+end
+arch mountain
+x 32
+y 30
+elevation 6318
+end
+arch steppe
+x 32
+y 31
+elevation 3588
+end
+arch mountain
+x 32
+y 32
+elevation 5112
+end
+arch steppe
+x 32
+y 33
+elevation 4826
+end
+arch steppe
+x 32
+y 34
+elevation 4788
+end
+arch steppe
+x 32
+y 35
+elevation 4883
+end
+arch mountain
+x 32
+y 36
+elevation 5684
+end
+arch mountain
+x 32
+y 37
+elevation 6198
+end
+arch mountain
+x 32
+y 38
+elevation 6779
+end
+arch mountain
+x 32
+y 39
+elevation 7149
+end
+arch mountain4
+x 33
+elevation 14014
+end
+arch mountain4
+x 33
+y 1
+elevation 12661
+end
+arch mountain2
+x 33
+y 2
+elevation 10152
+end
+arch mountain2
+x 33
+y 3
+elevation 9945
+end
+arch mountain
+x 33
+y 4
+elevation 7204
+end
+arch mountain
+x 33
+y 5
+elevation 8172
+end
+arch mountain
+x 33
+y 6
+elevation 8433
+end
+arch mountain
+x 33
+y 7
+elevation 8792
+end
+arch mountain
+x 33
+y 8
+elevation 8827
+end
+arch mountain
+x 33
+y 9
+elevation 8305
+end
+arch mountain
+x 33
+y 10
+elevation 7497
+end
+arch mountain
+x 33
+y 11
+elevation 6931
+end
+arch mountain
+x 33
+y 12
+elevation 6006
+end
+arch hills_rocky
+x 33
+y 13
+elevation 4532
+end
+arch steppe
+x 33
+y 14
+elevation 4390
+end
+arch mountain
+x 33
+y 15
+elevation 6769
+end
+arch mountain
+x 33
+y 16
+elevation 8058
+end
+arch mountain
+x 33
+y 17
+elevation 8457
+end
+arch mountain
+x 33
+y 18
+elevation 7894
+end
+arch mountain
+x 33
+y 19
+elevation 7224
+end
+arch mountain
+x 33
+y 20
+elevation 7007
+end
+arch mountain
+x 33
+y 21
+elevation 7383
+end
+arch mountain
+x 33
+y 22
+elevation 6727
+end
+arch mountain
+x 33
+y 23
+elevation 7095
+end
+arch mountain
+x 33
+y 24
+elevation 7688
+end
+arch mountain
+x 33
+y 25
+elevation 7271
+end
+arch mountain
+x 33
+y 26
+elevation 8269
+end
+arch mountain
+x 33
+y 27
+elevation 8776
+end
+arch mountain
+x 33
+y 28
+elevation 8708
+end
+arch mountain
+x 33
+y 29
+elevation 7865
+end
+arch mountain
+x 33
+y 30
+elevation 6532
+end
+arch mountain
+x 33
+y 31
+elevation 5507
+end
+arch hills_rocky
+x 33
+y 32
+elevation 4274
+end
+arch mountain
+x 33
+y 33
+elevation 5204
+end
+arch mountain
+x 33
+y 34
+elevation 5056
+end
+arch mountain
+x 33
+y 35
+elevation 5152
+end
+arch mountain
+x 33
+y 36
+elevation 5439
+end
+arch mountain
+x 33
+y 37
+elevation 5674
+end
+arch hills_rocky
+x 33
+y 38
+elevation 3957
+end
+arch mountain
+x 33
+y 39
+elevation 6775
+end
+arch mountain2
+x 34
+elevation 11711
+end
+arch mountain2
+x 34
+y 1
+elevation 11185
+end
+arch mountain2
+x 34
+y 2
+elevation 10723
+end
+arch mountain2
+x 34
+y 3
+elevation 9325
+end
+arch mountain
+x 34
+y 4
+elevation 7660
+end
+arch mountain
+x 34
+y 5
+elevation 6216
+end
+arch mountain
+x 34
+y 6
+elevation 5791
+end
+arch mountain
+x 34
+y 7
+elevation 7014
+end
+arch mountain
+x 34
+y 8
+elevation 7509
+end
+arch mountain
+x 34
+y 9
+elevation 6984
+end
+arch mountain
+x 34
+y 10
+elevation 6412
+end
+arch mountain
+x 34
+y 11
+elevation 5833
+end
+arch mountain
+x 34
+y 12
+elevation 5691
+end
+arch mountain
+x 34
+y 13
+elevation 5402
+end
+arch mountain
+x 34
+y 14
+elevation 6241
+end
+arch mountain
+x 34
+y 15
+elevation 7773
+end
+arch mountain2
+x 34
+y 16
+elevation 9302
+end
+arch mountain2
+x 34
+y 17
+elevation 9954
+end
+arch mountain2
+x 34
+y 18
+elevation 9574
+end
+arch mountain
+x 34
+y 19
+elevation 7617
+end
+arch mountain
+x 34
+y 20
+elevation 7838
+end
+arch mountain
+x 34
+y 21
+elevation 6252
+end
+arch mountain
+x 34
+y 22
+elevation 7232
+end
+arch mountain
+x 34
+y 23
+elevation 6811
+end
+arch mountain
+x 34
+y 24
+elevation 7518
+end
+arch mountain
+x 34
+y 25
+elevation 7332
+end
+arch mountain
+x 34
+y 26
+elevation 8533
+end
+arch mountain2
+x 34
+y 27
+elevation 9024
+end
+arch mountain
+x 34
+y 28
+elevation 8940
+end
+arch mountain
+x 34
+y 29
+elevation 8059
+end
+arch mountain
+x 34
+y 30
+elevation 6897
+end
+arch mountain
+x 34
+y 31
+elevation 5052
+end
+arch mountain
+x 34
+y 32
+elevation 5238
+end
+arch mountain
+x 34
+y 33
+elevation 5649
+end
+arch mountain
+x 34
+y 34
+elevation 5696
+end
+arch mountain
+x 34
+y 35
+elevation 5006
+end
+arch hills_rocky
+x 34
+y 36
+elevation 3593
+end
+arch mountain
+x 34
+y 37
+elevation 5601
+end
+arch mountain
+x 34
+y 38
+elevation 6327
+end
+arch mountain
+x 34
+y 39
+elevation 6712
+end
+arch mountain2
+x 35
+elevation 11577
+end
+arch mountain2
+x 35
+y 1
+elevation 10890
+end
+arch mountain2
+x 35
+y 2
+elevation 9879
+end
+arch mountain
+x 35
+y 3
+elevation 8460
+end
+arch mountain
+x 35
+y 4
+elevation 6289
+end
+arch hills
+x 35
+y 5
+elevation 2853
+end
+arch hills
+x 35
+y 6
+elevation 2270
+end
+arch mountain
+x 35
+y 7
+elevation 5152
+end
+arch mountain
+x 35
+y 8
+elevation 5828
+end
+arch mountain
+x 35
+y 9
+elevation 5638
+end
+arch hills_rocky
+x 35
+y 10
+elevation 3847
+end
+arch steppe
+x 35
+y 11
+elevation 4695
+end
+arch mountain
+x 35
+y 12
+elevation 5275
+end
+arch mountain
+x 35
+y 13
+elevation 5434
+end
+arch mountain
+x 35
+y 14
+elevation 6194
+end
+arch mountain
+x 35
+y 15
+elevation 8080
+end
+arch mountain2
+x 35
+y 16
+elevation 10169
+end
+arch mountain2
+x 35
+y 17
+elevation 11320
+end
+arch mountain2
+x 35
+y 18
+elevation 11072
+end
+arch mountain2
+x 35
+y 19
+elevation 10284
+end
+arch mountain
+x 35
+y 20
+elevation 8932
+end
+arch mountain
+x 35
+y 21
+elevation 6685
+end
+arch mountain
+x 35
+y 22
+elevation 7809
+end
+arch mountain
+x 35
+y 23
+elevation 8044
+end
+arch mountain
+x 35
+y 24
+elevation 8215
+end
+arch mountain
+x 35
+y 25
+elevation 8731
+end
+arch mountain
+x 35
+y 26
+elevation 8971
+end
+arch mountain
+x 35
+y 27
+elevation 8270
+end
+arch mountain2
+x 35
+y 28
+elevation 9472
+end
+arch mountain2
+x 35
+y 29
+elevation 9022
+end
+arch mountain
+x 35
+y 30
+elevation 7365
+end
+arch hills_rocky
+x 35
+y 31
+elevation 4142
+end
+arch mountain
+x 35
+y 32
+elevation 5071
+end
+arch mountain
+x 35
+y 33
+elevation 6040
+end
+arch mountain
+x 35
+y 34
+elevation 6392
+end
+arch hills_rocky
+x 35
+y 35
+elevation 4957
+end
+arch mountain
+x 35
+y 36
+elevation 5836
+end
+arch mountain
+x 35
+y 37
+elevation 6091
+end
+arch mountain
+x 35
+y 38
+elevation 6526
+end
+arch mountain
+x 35
+y 39
+elevation 7098
+end
+arch mountain2
+x 36
+elevation 11101
+end
+arch mountain2
+x 36
+y 1
+elevation 10314
+end
+arch mountain
+x 36
+y 2
+elevation 8750
+end
+arch mountain
+x 36
+y 3
+elevation 6843
+end
+arch hills_rocky
+x 36
+y 4
+elevation 4981
+end
+arch woods_2
+x 36
+y 5
+elevation 2153
+end
+arch grass_only
+x 36
+y 6
+elevation 2752
+end
+arch tree3
+x 36
+y 6
+end
+arch hills
+x 36
+y 7
+elevation 4053
+end
+arch hills_rocky
+x 36
+y 8
+elevation 4740
+end
+arch mountain
+x 36
+y 9
+elevation 5516
+end
+arch hills_rocky
+x 36
+y 10
+elevation 3267
+end
+arch mountain
+x 36
+y 11
+elevation 5453
+end
+arch mountain
+x 36
+y 12
+elevation 5533
+end
+arch hills_rocky
+x 36
+y 13
+elevation 3715
+end
+arch hills_rocky
+x 36
+y 14
+elevation 4511
+end
+arch mountain
+x 36
+y 15
+elevation 7014
+end
+arch mountain2
+x 36
+y 16
+elevation 10895
+end
+arch mountain4
+x 36
+y 17
+elevation 12254
+end
+arch mountain4
+x 36
+y 18
+elevation 12217
+end
+arch mountain2
+x 36
+y 19
+elevation 11386
+end
+arch mountain2
+x 36
+y 20
+elevation 9968
+end
+arch mountain
+x 36
+y 21
+elevation 8690
+end
+arch mountain
+x 36
+y 22
+elevation 8041
+end
+arch mountain
+x 36
+y 23
+elevation 8238
+end
+arch mountain
+x 36
+y 24
+elevation 8502
+end
+arch mountain2
+x 36
+y 25
+elevation 9617
+end
+arch mountain2
+x 36
+y 26
+elevation 9872
+end
+arch mountain2
+x 36
+y 27
+elevation 9876
+end
+arch mountain2
+x 36
+y 28
+elevation 9970
+end
+arch mountain2
+x 36
+y 29
+elevation 9633
+end
+arch mountain
+x 36
+y 30
+elevation 8094
+end
+arch mountain
+x 36
+y 31
+elevation 6324
+end
+arch hills_rocky
+x 36
+y 32
+elevation 3835
+end
+arch mountain
+x 36
+y 33
+elevation 6322
+end
+arch mountain
+x 36
+y 34
+elevation 7011
+end
+arch mountain
+x 36
+y 35
+elevation 7456
+end
+arch mountain
+x 36
+y 36
+elevation 7370
+end
+arch mountain
+x 36
+y 37
+elevation 6008
+end
+arch mountain
+x 36
+y 38
+elevation 6599
+end
+arch mountain
+x 36
+y 39
+elevation 6040
+end
+arch mountain2
+x 37
+elevation 10961
+end
+arch mountain2
+x 37
+y 1
+elevation 9290
+end
+arch mountain
+x 37
+y 2
+elevation 7059
+end
+arch hills_rocky
+x 37
+y 3
+elevation 4815
+end
+arch steppe
+x 37
+y 4
+elevation 3751
+end
+arch hills_rocky
+x 37
+y 5
+elevation 3620
+end
+arch steppe
+x 37
+y 6
+elevation 4054
+end
+arch hills
+x 37
+y 7
+elevation 3997
+end
+arch mountain
+x 37
+y 8
+elevation 6407
+end
+arch mountain
+x 37
+y 9
+elevation 6676
+end
+arch mountain
+x 37
+y 10
+elevation 6611
+end
+arch mountain
+x 37
+y 11
+elevation 6806
+end
+arch mountain
+x 37
+y 12
+elevation 6568
+end
+arch mountain
+x 37
+y 13
+elevation 5025
+end
+arch mountain
+x 37
+y 14
+elevation 6680
+end
+arch mountain
+x 37
+y 15
+elevation 8962
+end
+arch mountain2
+x 37
+y 16
+elevation 11164
+end
+arch mountain4
+x 37
+y 17
+elevation 12208
+end
+arch mountain4
+x 37
+y 18
+elevation 12257
+end
+arch mountain2
+x 37
+y 19
+elevation 11533
+end
+arch mountain2
+x 37
+y 20
+elevation 9971
+end
+arch mountain
+x 37
+y 21
+elevation 8403
+end
+arch mountain
+x 37
+y 22
+elevation 7124
+end
+arch mountain
+x 37
+y 23
+elevation 7275
+end
+arch mountain2
+x 37
+y 24
+elevation 9257
+end
+arch mountain2
+x 37
+y 25
+elevation 10167
+end
+arch mountain2
+x 37
+y 26
+elevation 10387
+end
+arch mountain2
+x 37
+y 27
+elevation 10098
+end
+arch mountain2
+x 37
+y 28
+elevation 9853
+end
+arch mountain2
+x 37
+y 29
+elevation 9482
+end
+arch mountain
+x 37
+y 30
+elevation 8503
+end
+arch mountain
+x 37
+y 31
+elevation 6755
+end
+arch mountain
+x 37
+y 32
+elevation 5015
+end
+arch mountain
+x 37
+y 33
+elevation 6738
+end
+arch mountain
+x 37
+y 34
+elevation 8054
+end
+arch mountain
+x 37
+y 35
+elevation 8667
+end
+arch mountain
+x 37
+y 36
+elevation 8816
+end
+arch mountain
+x 37
+y 37
+elevation 8880
+end
+arch mountain
+x 37
+y 38
+elevation 8677
+end
+arch mountain
+x 37
+y 39
+elevation 8548
+end
+arch mountain2
+x 38
+elevation 10757
+end
+arch mountain
+x 38
+y 1
+elevation 8754
+end
+arch steppe
+x 38
+y 2
+elevation 3596
+end
+arch woods_2
+x 38
+y 3
+elevation 2386
+end
+arch brush
+x 38
+y 4
+elevation 357
+end
+arch hills_rocky
+x 38
+y 5
+elevation 4829
+end
+arch mountain
+x 38
+y 6
+elevation 5342
+end
+arch mountain
+x 38
+y 7
+elevation 7013
+end
+arch mountain
+x 38
+y 8
+elevation 8304
+end
+arch mountain
+x 38
+y 9
+elevation 8423
+end
+arch mountain
+x 38
+y 10
+elevation 7266
+end
+arch mountain
+x 38
+y 11
+elevation 8533
+end
+arch mountain
+x 38
+y 12
+elevation 8545
+end
+arch mountain
+x 38
+y 13
+elevation 6015
+end
+arch mountain
+x 38
+y 14
+elevation 7840
+end
+arch mountain2
+x 38
+y 15
+elevation 9826
+end
+arch mountain2
+x 38
+y 16
+elevation 11064
+end
+arch mountain2
+x 38
+y 17
+elevation 11591
+end
+arch mountain2
+x 38
+y 18
+elevation 11431
+end
+arch mountain2
+x 38
+y 19
+elevation 11160
+end
+arch mountain2
+x 38
+y 20
+elevation 9612
+end
+arch mountain
+x 38
+y 21
+elevation 5216
+end
+arch mountain
+x 38
+y 22
+elevation 6466
+end
+arch mountain
+x 38
+y 23
+elevation 7969
+end
+arch mountain2
+x 38
+y 24
+elevation 9409
+end
+arch mountain2
+x 38
+y 25
+elevation 10510
+end
+arch mountain2
+x 38
+y 26
+elevation 10221
+end
+arch mountain2
+x 38
+y 27
+elevation 9085
+end
+arch mountain2
+x 38
+y 28
+elevation 9020
+end
+arch mountain
+x 38
+y 29
+elevation 8612
+end
+arch mountain
+x 38
+y 30
+elevation 7712
+end
+arch mountain
+x 38
+y 31
+elevation 6828
+end
+arch mountain
+x 38
+y 32
+elevation 5298
+end
+arch mountain
+x 38
+y 33
+elevation 7269
+end
+arch mountain
+x 38
+y 34
+elevation 8360
+end
+arch mountain
+x 38
+y 35
+elevation 8884
+end
+arch mountain2
+x 38
+y 36
+elevation 9405
+end
+arch mountain2
+x 38
+y 37
+elevation 9566
+end
+arch mountain2
+x 38
+y 38
+elevation 9406
+end
+arch mountain
+x 38
+y 39
+elevation 8658
+end
+arch mountain2
+x 39
+elevation 10840
+end
+arch mountain
+x 39
+y 1
+elevation 8999
+end
+arch mountain
+x 39
+y 2
+elevation 7734
+end
+arch mountain
+x 39
+y 3
+elevation 7037
+end
+arch mountain
+x 39
+y 4
+elevation 7038
+end
+arch mountain
+x 39
+y 5
+elevation 7154
+end
+arch mountain
+x 39
+y 6
+elevation 6360
+end
+arch mountain2
+x 39
+y 7
+elevation 9121
+end
+arch mountain2
+x 39
+y 8
+elevation 10110
+end
+arch mountain2
+x 39
+y 9
+elevation 9850
+end
+arch mountain
+x 39
+y 10
+elevation 7885
+end
+arch mountain2
+x 39
+y 11
+elevation 10109
+end
+arch mountain2
+x 39
+y 12
+elevation 10617
+end
+arch mountain2
+x 39
+y 13
+elevation 10065
+end
+arch mountain2
+x 39
+y 14
+elevation 9802
+end
+arch mountain2
+x 39
+y 15
+elevation 10162
+end
+arch mountain2
+x 39
+y 16
+elevation 10373
+end
+arch mountain2
+x 39
+y 17
+elevation 10237
+end
+arch mountain2
+x 39
+y 18
+elevation 10846
+end
+arch mountain2
+x 39
+y 19
+elevation 10732
+end
+arch mountain2
+x 39
+y 20
+elevation 9450
+end
+arch mountain
+x 39
+y 21
+elevation 7280
+end
+arch mountain
+x 39
+y 22
+elevation 6507
+end
+arch mountain
+x 39
+y 23
+elevation 6881
+end
+arch mountain2
+x 39
+y 24
+elevation 9889
+end
+arch mountain2
+x 39
+y 25
+elevation 10709
+end
+arch mountain2
+x 39
+y 26
+elevation 10186
+end
+arch mountain
+x 39
+y 27
+elevation 8142
+end
+arch mountain
+x 39
+y 28
+elevation 7984
+end
+arch mountain
+x 39
+y 29
+elevation 8204
+end
+arch mountain
+x 39
+y 30
+elevation 5294
+end
+arch mountain
+x 39
+y 31
+elevation 7281
+end
+arch mountain
+x 39
+y 32
+elevation 7152
+end
+arch mountain
+x 39
+y 33
+elevation 7768
+end
+arch mountain
+x 39
+y 34
+elevation 6777
+end
+arch mountain
+x 39
+y 35
+elevation 8338
+end
+arch mountain
+x 39
+y 36
+elevation 8362
+end
+arch mountain
+x 39
+y 37
+elevation 8398
+end
+arch mountain
+x 39
+y 38
+elevation 8245
+end
+arch mountain
+x 39
+y 39
+elevation 7488
 end
