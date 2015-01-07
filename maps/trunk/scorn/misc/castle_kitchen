@@ -8,7 +8,7 @@ enter_x 6
 enter_y 3
 msg
 Created:  2007-05-26 Nicolas Weeger
-Modified: 2014-03-23 Karla Stenger
+Modified: 2015-01-06 Rick Tanner
 endmsg
 maplore
 @quest Lursendis
@@ -171,6 +171,10 @@ arch stwall_2_1_1
 x 2
 y 6
 end
+arch dungeon_magic
+x 2
+y 7
+end
 arch cobblestones2
 x 2
 y 7
@@ -225,6 +229,10 @@ end
 arch grass_only
 x 3
 y 1
+end
+arch dungeon_magic
+x 3
+y 2
 end
 arch cobblestones2
 x 3
@@ -402,6 +410,10 @@ x 4
 y 10
 no_pick 1
 end
+arch dungeon_magic
+x 4
+y 11
+end
 arch cobblestones2
 x 4
 y 11
@@ -420,6 +432,10 @@ y 13
 end
 arch cobblestones2
 x 5
+end
+arch dungeon_magic
+x 5
+y 1
 end
 arch grass_only
 x 5
@@ -514,6 +530,10 @@ y 13
 end
 arch cobblestones2
 x 6
+end
+arch dungeon_magic
+x 6
+y 1
 end
 arch grass_only
 x 6
@@ -644,6 +664,10 @@ end
 arch cobblestones2
 x 7
 end
+arch dungeon_magic
+x 7
+y 1
+end
 arch grass_only
 x 7
 y 1
@@ -732,6 +756,10 @@ y 13
 end
 arch cobblestones2
 x 8
+end
+arch dungeon_magic
+x 8
+y 1
 end
 arch grass_only
 x 8
@@ -875,6 +903,10 @@ x 9
 y 10
 no_pick 1
 end
+arch dungeon_magic
+x 9
+y 11
+end
 arch cobblestones2
 x 9
 y 11
@@ -897,6 +929,10 @@ end
 arch grass_only
 x 10
 y 1
+end
+arch dungeon_magic
+x 10
+y 2
 end
 arch cobblestones2
 x 10
@@ -1056,6 +1092,10 @@ end
 arch stwall_2_1_1
 x 11
 y 6
+end
+arch dungeon_magic
+x 11
+y 7
 end
 arch cobblestones2
 x 11
