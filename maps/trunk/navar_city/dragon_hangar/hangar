@@ -7,7 +7,7 @@ height 36
 enter_x 15
 msg
 Created:  2005-10-18 Gene Alexander
-Modified: 2014-12-29 Rick Tanner
+Modified: 2015-01-15 Rick Tanner
 endmsg
 end
 arch magic_banned
@@ -5158,11 +5158,6 @@ arch magic_banned
 x 14
 y 3
 end
-arch button_trigger
-x 14
-y 3
-connected 99
-end
 arch cobblestones2
 x 14
 y 3
@@ -5171,11 +5166,6 @@ arch magic_banned
 x 14
 y 4
 end
-arch button_trigger
-x 14
-y 4
-connected 99
-end
 arch cobblestones2
 x 14
 y 4
@@ -5183,11 +5173,6 @@ end
 arch magic_banned
 x 14
 y 5
-end
-arch button_trigger
-x 14
-y 5
-connected 99
 end
 arch cobblestones2
 x 14
@@ -5522,11 +5507,6 @@ arch magic_banned
 x 15
 y 3
 end
-arch button_trigger
-x 15
-y 3
-connected 99
-end
 arch cobblestones2
 x 15
 y 3
@@ -5535,11 +5515,6 @@ arch magic_banned
 x 15
 y 4
 end
-arch button_trigger
-x 15
-y 4
-connected 99
-end
 arch cobblestones2
 x 15
 y 4
@@ -5547,11 +5522,6 @@ end
 arch magic_banned
 x 15
 y 5
-end
-arch button_trigger
-x 15
-y 5
-connected 99
 end
 arch cobblestones2
 x 15
@@ -5911,11 +5881,6 @@ arch magic_banned
 x 16
 y 3
 end
-arch button_trigger
-x 16
-y 3
-connected 99
-end
 arch cobblestones2
 x 16
 y 3
@@ -5924,11 +5889,6 @@ arch magic_banned
 x 16
 y 4
 end
-arch button_trigger
-x 16
-y 4
-connected 99
-end
 arch cobblestones2
 x 16
 y 4
@@ -5936,11 +5896,6 @@ end
 arch magic_banned
 x 16
 y 5
-end
-arch button_trigger
-x 16
-y 5
-connected 99
 end
 arch cobblestones2
 x 16
@@ -6300,11 +6255,6 @@ arch magic_banned
 x 17
 y 3
 end
-arch button_trigger
-x 17
-y 3
-connected 99
-end
 arch cobblestones2
 x 17
 y 3
@@ -6313,11 +6263,6 @@ arch magic_banned
 x 17
 y 4
 end
-arch button_trigger
-x 17
-y 4
-connected 99
-end
 arch cobblestones2
 x 17
 y 4
@@ -6325,11 +6270,6 @@ end
 arch magic_banned
 x 17
 y 5
-end
-arch button_trigger
-x 17
-y 5
-connected 99
 end
 arch cobblestones2
 x 17
