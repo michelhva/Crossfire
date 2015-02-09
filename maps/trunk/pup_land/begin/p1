@@ -8,7 +8,7 @@ enter_x 5
 enter_y 16
 msg
 Created:  1996-02-13
-Modified: 2012-02-27 Rick Tanner
+Modified: 2015-02-08 Rick Tanner
 endmsg
 end
 arch grass
@@ -634,6 +634,10 @@ A key found in the Red Town practice maps.
 endmsg
 x 5
 y 1
+end
+arch magic_banned
+x 5
+y 2
 end
 arch woodfloor
 x 5
