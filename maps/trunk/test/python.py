@@ -531,6 +531,7 @@ def handle_time():
 
 event = Crossfire.WhatIsEvent()
 if event.Subtype == Crossfire.EventType.SAY:
+  topic = Crossfire.WhatIsMessage().split()
   handle_say()
 elif event.Subtype == Crossfire.EventType.TIME:
   handle_time()
