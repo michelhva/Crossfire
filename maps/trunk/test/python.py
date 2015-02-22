@@ -43,6 +43,7 @@ def do_help():
 	help += ' - checkinventory\n'
 	help += ' - nosave\n'
 	help += ' - move_to\n'
+	help += ' - attr: object-attribute tests'
 
 	whoami.Say(help)
 
@@ -432,6 +433,23 @@ def do_move_to():
     whoami.WriteKey('dest_x', '2', 1)
     whoami.WriteKey('dest_y', '2', 1)
 
+def do_attr():
+  if len(topic) < 2:
+    whoami.Say('Usage: attr name [value], if value is omitted display the value')
+    return
+  
+  if len(topic) == 2:
+    whoami.Say('my %s is %d'%(topic[1], getattr(whoami, topic[1])))
+    return
+  
+  try:
+    setattr(whoami, topic[1], topic[2])
+  except:
+    try:
+      setattr(whoami, topic[1], int(topic[2]))
+    except:
+      whoami.Say("sorry, I don't know how to set this attribute...")
+
 def handle_say():
   if whoami.ReadKey('dest_x') != '' or whoami.ReadKey('dest_y') != '':
     return
@@ -511,6 +529,8 @@ def handle_say():
     do_no_save()
   elif topic[0] == 'move_to':
     do_move_to()
+  elif topic[0] == 'attr':
+    do_attr()
   else:
     do_help()
 
