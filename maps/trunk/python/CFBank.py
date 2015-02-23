@@ -1,14 +1,13 @@
-# CFBank.py -- CFBank class
-# Created by: Joris Bontje <jbontje@suespammers.org>
+"""
+Created by: Joris Bontje <jbontje@suespammers.org>
 
-# CFBank uses the 'shelve' Python library to store persistent data. The
-# shelved dictionary cannot be read and written to concurrently (so no '+=' or
-# 'append' operations).
-#
-# The original implementation opened the database with 'writeback' set and
-# called 'sync()' after each write operation. The current implementation does
-# not set 'writeback' and instead requires 'close()' to be called before data
-# is saved. This is the method recommended by the Python reference manual.
+This module stores bank account information. Player accounts are stored in
+the player file using the 'balance' key. Other accounts (for guilds) are
+stored in the original bank file using the 'shelve' library.
+
+Since the original implementation stored player accounts using the 'shelve'
+library as well, this module also converts old bank accounts to new ones.
+"""
 
 import os.path
 import shelve
@@ -53,3 +52,44 @@ class CFBank:
 
     def close(self):
         self.bankdb.close()
+
+
+def convert_bank(player):
+    """Move a player's balance from the bank file to the player file."""
+    bank = CFBank('ImperialBank_DB')
+    old_balance = bank.getbalance(player.Name)
+    if old_balance > 0:
+        Crossfire.Log(Crossfire.LogInfo,
+                "Converting bank account for %s with %d silver" \
+                        % (player.Name, old_balance))
+        player.WriteKey("balance", str(old_balance), 1)
+        bank.remove_account(player.Name)
+    bank.close()
+    return old_balance
+
+def balance(player):
+    """Return the balance of the given player's bank account."""
+    try:
+        balance_str = player.ReadKey("balance")
+        return int(balance_str)
+    except ValueError:
+        # If 'balance' key does not exist, try to convert from bank file.
+        return convert_bank(player)
+
+def deposit(player, amount):
+    """Deposit the given amount to the player's bank account."""
+    if amount < 0:
+        raise ValueError("Deposits must be positive")
+    new_balance = balance(player) + int(amount)
+    player.WriteKey("balance", str(new_balance), 1)
+
+def withdraw(player, amount):
+    """Withdraw the given amount from the player's bank account."""
+    if amount < 0:
+        raise ValueError("Withdrawals must be positive")
+    new_balance = balance(player) - int(amount)
+    if new_balance < 0:
+        return False
+    else:
+        player.WriteKey("balance", str(new_balance), 1)
+        return True
