@@ -1,8 +1,9 @@
-# banksay.py -- implements 'say' event for bank tellers
-# Created by: Joris Bontje <jbontje@suespammers.org>
-#
-# Updated to use new path functions in CFPython and broken and
-# modified a bit by -Todd Mitchell
+"""
+Created by: Joris Bontje <jbontje@suespammers.org>
+
+This module implements banking in Crossfire. It provides the 'say' event for
+bank tellers, as well as a deposit box for quickly depositing money.
+"""
 
 import random
 
@@ -34,7 +35,7 @@ CoinTypes = {
     'IMPERIAL NOTE': 10000,
     '10 IMPERIAL NOTE': 100000,
     '100 IMPERIAL NOTE': 1000000,
-    }
+}
 
 # Associate coin names with their corresponding archetypes.
 ArchType = {
@@ -46,7 +47,7 @@ ArchType = {
     'IMPERIAL NOTE': 'imperial',
     '10 IMPERIAL NOTE': 'imperial10',
     '100 IMPERIAL NOTE': 'imperial100',
-    }
+}
 
 # Define several 'thank-you' messages which are chosen at random.
 thanks_message = [
@@ -61,38 +62,22 @@ thanks_message = [
     'Thank you. "Service" is our middle name.',
     'Thank you. "Service" is our middle name.',
     'Thank you. Hows about a big slobbery kiss?',
-    ]
+]
 
-# ----------------------------------------------------------------------------
-# Piece together several arguments to form a coin name.
 def getCoinNameFromArgs(argv):
-    coinName = ""
-
-    # Take the arguments and piece together the full coin name.
-    for argument in argv:
-        coinName += argument + ' '
-
-    # Remove the trailing space and 's' from the coin name.
-    coinName = coinName[:len(coinName) - 1]
-
-    if coinName[len(coinName) - 1] == 's':
-        coinName = coinName[:len(coinName) - 1]
-
+    """Piece together several arguments to form a coin name."""
+    coinName = str.join(" ", argv)
+    # Remove the trailing 's' from the coin name.
+    if coinName[-1] == 's':
+        coinName = coinName[:-1]
     return coinName
 
-# ----------------------------------------------------------------------------
-# Return the exchange rate for the given type of coin.
 def getExchangeRate(coinName):
-    # Try to find exchange rate, set to None if we can't.
+    """Return the exchange rate for the given type of coin."""
     if coinName.upper() in CoinTypes:
-        return int(CoinTypes.get(coinName.upper()))
+        return CoinTypes[coinName.upper()]
     else:
         return None
-
-# ----------------------------------------------------------------------------
-# Return a string representing the given amount in silver.
-def strAmount(amount):
-    return Crossfire.CostStringFromValue(amount)
 
 def get_inventory(obj):
     """An iterator for a given object's inventory."""
@@ -102,6 +87,14 @@ def get_inventory(obj):
         yield current_item
         current_item = next_item
 
+def deposit_with_fee(player, amount):
+    """Deposit the given amount for the player, with fees subtracted."""
+    deposit_value = int(amount / fees)
+    CFBank.deposit(player, deposit_value)
+    bank.deposit(Skuds, amount - deposit_value)
+    whoami.Say("A fee of %s has been charged on this transaction." \
+            % Crossfire.CostStringFromValue(amount - deposit_value))
+
 def deposit_box_close():
     """Find the total value of items in the deposit box and deposit."""
     total_value = 0
@@ -109,39 +102,29 @@ def deposit_box_close():
         if obj.Name != 'Apply' and obj.Name != 'Close':
             total_value += obj.Value * obj.Quantity
             obj.Teleport(activator.Map, 15, 3)
+    deposit_with_fee(activator, total_value)
 
-    # Calculate the amount of money actually deposited (due to fees).
-    deposit_value = int(total_value / fees)
-    CFBank.deposit(activator, deposit_value)
-    whoami.Say("A fee of %d silver has been charged on this transaction." \
-            % (total_value - deposit_value))
-
-# ----------------------------------------------------------------------------
-# Print a help message for the player.
 def cmd_help():
-    message = "The Bank of Skud can help you keep your money safe. In addition, you will be able to access your money from any bank in the world! A small service charge of %d percent will be placed on all deposits, though. What would you like to do?" % service_charge
-
-    if activator.DungeonMaster:
-        message += "\n\nAs the DM, you can also clear the bank's profits by using 'reset-profits'."
+    """Print a help message for the player."""
+    whoami.Say("The Bank of Skud can help you keep your money safe. In addition, you will be able to access your money from any bank in the world! A small service charge of %d percent will be placed on all deposits, though. What would you like to do?" % service_charge)
 
     Crossfire.AddReply("balance", "I want to check my balance.")
     Crossfire.AddReply("deposit", "I'd like to deposit some money.")
     Crossfire.AddReply("withdraw", "I'd like to withdraw some money.")
     Crossfire.AddReply("profits", "How much money has the Bank of Skud made?")
-
-    whoami.Say(message)
+    if activator.DungeonMaster:
+        Crossfire.AddReply("reset-profits", "Reset bank profits!")
 
 def cmd_show_profits():
     """Say the total bank profits."""
-    message = "To date, the Imperial Bank of Skud has made %s in profit." \
-            % strAmount(bank.getbalance(Skuds))
-    whoami.Say(message)
+    whoami.Say("To date, the Imperial Bank of Skud has made %s in profit." \
+            % Crossfire.CostStringFromValue(bank.getbalance(Skuds)))
 
 def cmd_reset_profit():
     """Reset the total bank profits."""
     if activator.DungeonMaster:
         bank.withdraw(Skuds, bank.getbalance(Skuds))
-        whoami.Say("Profits reset!")
+        cmd_show_profits()
     else:
         whoami.Say("Only the dungeon master can reset our profits!")
 
@@ -156,65 +139,48 @@ def cmd_balance(argv):
             whoami.Say("Hmm... I've never seen that kind of money.")
             return
         if balance != 0:
-            balance /= exchange_rate * 1.0;
+            balance /= exchange_rate * 1.0
             whoami.Say("You have %.3f %s in the bank." % (balance, coinName))
         else:
             whoami.Say("Sorry, you have no balance.")
     else:
-        whoami.Say("You have " + strAmount(balance) + " in the bank.")
+        whoami.Say("You have %s in the bank." % \
+                Crossfire.CostStringFromValue(balance))
 
-# TODO: Look over checking code to make sure everything's okay.
 def cmd_deposit(text):
     """Deposit a certain amount of money."""
     if len(text) >= 3:
         coinName = getCoinNameFromArgs(text[2:])
         exchange_rate = getExchangeRate(coinName)
         amount = int(text[1])
-
         if exchange_rate is None:
             whoami.Say("Hmm... I've never seen that kind of money.")
             return
-
-        # Don't let the player deposit negative money.
-        if amount <= 0:
+        if amount < 0:
             whoami.Say("Regulations prohibit negative deposits.")
             return
 
         # Make sure the player has enough cash on hand.
         actualAmount = amount * exchange_rate
         if activator.PayAmount(actualAmount):
-            CFBank.deposit(activator, int(actualAmount / fees))
-            bank.deposit(Skuds, actualAmount - int(actualAmount / fees))
-
-            message = "%d %s received, %s deposited to your account. %s" \
-                    % (amount, coinName, strAmount(int(actualAmount / fees)),
-                            random.choice(thanks_message))
+            deposit_with_fee(activator, actualAmount)
         else:
-            message = "But you don't have that much in your inventory!"
+            whoami.Say("But you don't have that much in your inventory!")
     else:
-        message = "What would you like to deposit?"
+        whoami.Say("What would you like to deposit?")
         Crossfire.AddReply("deposit <amount> <coin type>", "Some money.")
 
-    whoami.Say(message)
-
-# ----------------------------------------------------------------------------
-# Withdraw money from the player's account.
 def cmd_withdraw(argv):
-    argc = len(argv)
-
-    # Withdraw a certain number of a certain coin.
-    if argc >= 3:
+    """Withdraw money from the player's account."""
+    if len(argv) >= 3:
         coinName = getCoinNameFromArgs(argv[2:])
         exchange_rate = getExchangeRate(coinName)
         amount = int(argv[1])
-
         if exchange_rate is None:
             whoami.Say("Hmm... I've never seen that kind of money.")
             return
-
-        # Don't let the player withdraw negative money.
         if amount <= 0:
-            whoami.Say("Hey, you can't withdraw a negative amount!")
+            whoami.Say("Sorry, you can't withdraw that amount.")
             return
 
         # Make sure the player has sufficient funds.
@@ -223,71 +189,20 @@ def cmd_withdraw(argv):
                     % (amount, coinName, random.choice(thanks_message))
 
             # Drop the money and have the player pick it up.
-            withdrawal = activator.Map.CreateObject(ArchType.get( \
-                coinName.upper()), x, y)
+            withdrawal = activator.Map.CreateObject(
+                    ArchType.get(coinName.upper()), x, y)
             CFItemBroker.Item(withdrawal).add(amount)
             activator.Take(withdrawal)
         else:
             message = "I'm sorry, you don't have enough money."
     else:
         message = "How much money would you like to withdraw?"
-        Crossfire.AddReply("withdraw <amount> <coin name>", "")
+        Crossfire.AddReply("withdraw <amount> <coin name>", "This much!")
 
     whoami.Say(message)
 
-# ----------------------------------------------------------------------------
-# Exchange money.
-# TODO: Clean up code here.
-def cmd_exchange(text):
-    if len(text) == 2:
-        amount = int(text[1])
-        if amount <= 0:
-            message = \
-                'Usage "exchange <amount>" (imperials to platinum coins)'
-        elif amount > 10000:
-            message = \
-                'Sorry, we do not exchange more than 10000 imperials all at once.'
-        else:
-            inv = activator.CheckInventory('imperial')
-            if inv:
-                pay = CFItemBroker.Item(inv).subtract(amount)
-                if pay:
-                    exchange_rate = 10000
-
-                    # Drop the coins on the floor, then try
-                    # to pick them up. This effectively
-                    # prevents the player from carrying too
-                    # many coins.
-
-                    id = activator.Map.CreateObject('platinum coin'
-                            , x, y)
-                    CFItemBroker.Item(id).add(int(amount
-                            * (exchange_rate / 50)))
-                    activator.Take(id)
-
-                    message = random.choice(thanks_message)
-                else:
-                    message = 'Sorry, you do not have %d imperials' \
-                        % amount
-            else:
-                message = 'Sorry, you do not have any imperials'
-    else:
-        message = \
-            'Usage "exchange <amount>" (imperials to platinum coins)'
-
-    whoami.Say(message)
-
-# ----------------------------------------------------------------------------
-# Script execution begins here.
-
-# Find out if the script is being run by a deposit box or an employee.
-if whoami.Name.find('Deposit Box') > -1:
-    ScriptParm = Crossfire.ScriptParameters()
-    if ScriptParm == 'Close':
-        deposit_box_close()
-else:
+def main_employee():
     text = Crossfire.WhatIsMessage().split()
-
     if text[0] == "learn":
         cmd_help()
     elif text[0] == "profits":
@@ -304,6 +219,17 @@ else:
         whoami.Say("Hello, what can I help you with today?")
         Crossfire.AddReply("learn", "I want to learn how to use the bank.")
 
-    # Close bank database (required) and return.
-    bank.close()
+# Find out if the script is being run by a deposit box or an employee.
+if whoami.Name.find('Deposit Box') > -1:
+    ScriptParm = Crossfire.ScriptParameters()
+    if ScriptParm == 'Close':
+        deposit_box_close()
+else:
     Crossfire.SetReturnValue(1)
+    try:
+        main_employee()
+    except ValueError:
+        whoami.Say("I don't know how much money that is.")
+
+# Close bank database (required) and return.
+bank.close()
