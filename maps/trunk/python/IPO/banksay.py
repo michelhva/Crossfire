@@ -161,152 +161,27 @@ def processCheck():
         whoami.Say("It seems that %s doesn't have enough money." % payer)
         return 0
 
-# ----------------------------------------------------------------------------
-# Called when the deposit box (ATM) is opened.
-# TODO: Fix the ATM.
-def depositBoxOpen():
-    balance = bank.getbalance(activatorname)
-    Total = balance
+def get_inventory(obj):
+    """An iterator for a given object's inventory."""
+    current_item = obj.Inventory
+    while current_item != None:
+        next_item = current_item.Below
+        yield current_item
+        current_item = next_item
 
-    if balance >= 1000000:
+def deposit_box_close():
+    """Find the total value of items in the deposit box and deposit."""
+    total_value = 0
+    for obj in get_inventory(whoami):
+        if obj.Name != 'Apply' and obj.Name != 'Close':
+            total_value += obj.Value * obj.Quantity
+            obj.Teleport(activator.Map, 15, 3)
 
-        t = whoami.CreateObject('imperial100')
-
-        bank.withdraw(activatorname, 1000000)
-        balance = bank.getbalance(activatorname)
-    if balance >= 1000000 / 2:
-        t = whoami.CreateObject('ambercoin')
-        bank.withdraw(activatorname, 1000000 / 2)
-        balance = bank.getbalance(activatorname)
-    if balance >= 1000000 / 2:
-        t = whoami.CreateObject('ambercoin')
-        bank.withdraw(activatorname, 1000000 / 2)
-        balance = bank.getbalance(activatorname)
-
-    if balance >= 100000:
-        t = whoami.CreateObject('imperial10')
-        bank.withdraw(activatorname, 100000)
-        balance = bank.getbalance(activatorname)
-    if balance >= 100000:
-        t = whoami.CreateObject('imperial10')
-        bank.withdraw(activatorname, 100000)
-        balance = bank.getbalance(activatorname)
-    if balance >= 100000:
-        t = whoami.CreateObject('imperial10')
-        bank.withdraw(activatorname, 100000)
-        balance = bank.getbalance(activatorname)
-    if balance >= 100000:
-        t = whoami.CreateObject('imperial10')
-        bank.withdraw(activatorname, 100000)
-        balance = bank.getbalance(activatorname)
-    if balance >= 100000:
-        t = whoami.CreateObject('imperial10')
-        bank.withdraw(activatorname, 100000)
-        balance = bank.getbalance(activatorname)
-
-    if balance >= 10000:
-        t = whoami.CreateObject('imperial')
-        bank.withdraw(activatorname, 10000)
-        balance = bank.getbalance(activatorname)
-    if balance >= 10000:
-        t = whoami.CreateObject('imperial')
-        bank.withdraw(activatorname, 10000)
-        balance = bank.getbalance(activatorname)
-    if balance >= 10000:
-        t = whoami.CreateObject('imperial')
-        bank.withdraw(activatorname, 10000)
-        balance = bank.getbalance(activatorname)
-    if balance >= 10000:
-        t = whoami.CreateObject('imperial')
-        bank.withdraw(activatorname, 10000)
-        balance = bank.getbalance(activatorname)
-    if balance >= 10000:
-        t = whoami.CreateObject('imperial')
-        bank.withdraw(activatorname, 10000)
-        balance = bank.getbalance(activatorname)
-    if balance >= 10000:
-        t = whoami.CreateObject('imperial')
-        bank.withdraw(activatorname, 10000)
-        balance = bank.getbalance(activatorname)
-    if balance >= 10000:
-        t = whoami.CreateObject('imperial')
-        bank.withdraw(activatorname, 10000)
-        balance = bank.getbalance(activatorname)
-    if balance >= 10000:
-        t = whoami.CreateObject('imperial')
-        bank.withdraw(activatorname, 10000)
-        balance = bank.getbalance(activatorname)
-    if balance >= 10000:
-        t = whoami.CreateObject('imperial')
-        bank.withdraw(activatorname, 10000)
-        balance = bank.getbalance(activatorname)
-    if balance >= 10000:
-        t = whoami.CreateObject('imperial')
-        bank.withdraw(activatorname, 10000)
-        balance = bank.getbalance(activatorname)
-    if balance >= 10000 / 2:
-        t = whoami.CreateObject('jadecoin')
-        bank.withdraw(activatorname, 10000 / 2)
-        balance = bank.getbalance(activatorname)
-    if balance >= 10000 / 2:
-        t = whoami.CreateObject('jadecoin')
-        bank.withdraw(activatorname, 10000 / 2)
-        balance = bank.getbalance(activatorname)
-    if balance >= 5000:
-        t = whoami.CreateObject('platinacoin')
-        bank.withdraw(activatorname, 5000)
-        t.Quantity = 100
-        balance = bank.getbalance(activatorname)
-    if balance >= 1000:
-        t = whoami.CreateObject('goldcoin')
-        bank.withdraw(activatorname, 1000)
-        t.Quantity = 100
-        balance = bank.getbalance(activatorname)
-    if balance >= 1000:
-        t = whoami.CreateObject('silvercoin')
-        bank.withdraw(activatorname, 1000)
-        t.Quantity = 1000
-        balance = bank.getbalance(activatorname)
-    balance = bank.getbalance(activatorname)
-    Total = Total - balance
-    t = activator.CreateObject('force')
-    t.Name = 'SkudCtrl'
-    t.Title = str(Total)
-
-    # tnew=t.InserInto(whoami)
-
-# ----------------------------------------------------------------------------
-# Called when the deposit box (ATM) is closed.
-# TODO: Fix the ATM.
-def depositBoxClose():
-    t = activator.CheckInventory('SkudCtrl')
-
-    Total = float(t.Title)
-    Total = long(Total)
-
-    t.Quantity = 0
-
-    MyInv = whoami.Inventory
-    Value = 0
-    while MyInv != None:
-        if MyInv.Name != 'Apply' and MyInv.Name != 'Close':
-
-            Value += MyInv.Value * MyInv.Quantity
-            MyInv1 = MyInv.Below
-            MyInv.Teleport(activator.Map, 15, 3)
-            MyInv = MyInv1
-        else:
-            MyInv = MyInv.Below
-
-    bank.deposit(activatorname, Value)
-    Difference = abs(Value - Total)
-
-    Fee = Difference - Difference / fees
-    bank.withdraw(activatorname, int(Fee))
-
-    whoami.Say('A Service charge of ' + str(int(Fee))
-               + ' silver coins has been charged on this transaction.'
-               )
+    # Calculate the amount of money actually deposited (due to fees).
+    deposit_value = int(total_value / fees)
+    CFBank.deposit(activator, deposit_value)
+    whoami.Say("A fee of %d silver has been charged on this transaction." \
+            % (total_value - deposit_value))
 
 # ----------------------------------------------------------------------------
 # Print a help message for the player.
@@ -534,16 +409,8 @@ def cmd_cash(text):
 # Find out if the script is being run by a deposit box or an employee.
 if whoami.Name.find('Deposit Box') > -1:
     ScriptParm = Crossfire.ScriptParameters()
-
-    # At the moment, the ATMs seem buggy and steal the players' money.
-    # Temporarily disable ATMs until we fix the issue.
-
     if ScriptParm == 'Close':
-        #depositBoxClose()
-        pass
-    else:
-        whoami.Say("We're sorry, ATMs are out of order.")
-        #depositBoxOpen()
+        deposit_box_close()
 else:
     text = Crossfire.WhatIsMessage().split()
 
