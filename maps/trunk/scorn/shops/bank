@@ -9,8 +9,9 @@ enter_y 16
 msg
 Created:  1993-10-10 skud the great (tvangod@ecst.csuchico.edu)
 Idea credited to Eric Mehlhaff.
-Modified: 2012-05-09 Rick Tanner
+Modified: 2015-02-22 Kevin Zheng
 endmsg
+outdoor 1
 end
 arch grass_only
 end
@@ -157,131 +158,67 @@ arch grass_only
 x 2
 y 1
 end
-arch cobblestones2
+arch grass
 x 2
 y 2
 end
-arch cwall_2_2_2
-x 2
-y 2
-end
-arch cobblestones2
+arch grass
 x 2
 y 3
 end
-arch cwall_3_2
-x 2
-y 3
-end
-arch cobblestones2
+arch grass
 x 2
 y 4
 end
-arch cwall_3_2
-x 2
-y 4
-end
-arch cobblestones2
+arch grass
 x 2
 y 5
 end
-arch cwall_3_2
-x 2
-y 5
-end
-arch cobblestones2
+arch grass
 x 2
 y 6
 end
-arch cwall_3_2
-x 2
-y 6
-end
-arch cobblestones2
+arch grass
 x 2
 y 7
 end
-arch cwall_3_2
-x 2
-y 7
-end
-arch cobblestones2
+arch grass
 x 2
 y 8
 end
-arch cwall_3_2
-x 2
-y 8
-end
-arch cobblestones2
+arch grass
 x 2
 y 9
 end
-arch cwall_3_2
-x 2
-y 9
-end
-arch cobblestones2
+arch grass
 x 2
 y 10
 end
-arch cwall_3_2
-x 2
-y 10
-end
-arch cobblestones2
+arch grass
 x 2
 y 11
 end
-arch cwall_3_2
-x 2
-y 11
-end
-arch cobblestones2
+arch grass
 x 2
 y 12
 end
-arch cwall_3_2
-x 2
-y 12
-end
-arch cobblestones2
+arch grass
 x 2
 y 13
 end
-arch cwall_3_2
-x 2
-y 13
-end
-arch cobblestones2
+arch grass
 x 2
 y 14
 end
-arch cwall_3_2
-x 2
-y 14
-end
-arch cobblestones2
+arch grass
 x 2
 y 15
 end
-arch cwall_3_2
-x 2
-y 15
-end
-arch cobblestones2
+arch grass
 x 2
 y 16
 end
-arch cwall_3_2
-x 2
-y 16
-end
-arch cobblestones2
-x 2
-y 17
-end
-arch cwall_2_2_1
+arch grass
 x 2
 y 17
 end
@@ -300,131 +237,67 @@ arch grass_only
 x 3
 y 1
 end
-arch cobblestones2
+arch grass
 x 3
 y 2
 end
-arch cwall_3_3
-x 3
-y 2
-end
-arch cobblestones2
+arch grass
 x 3
 y 3
 end
-arch cwall_4
-x 3
-y 3
-end
-arch cobblestones2
+arch grass
 x 3
 y 4
 end
-arch cwall_4
-x 3
-y 4
-end
-arch cobblestones2
+arch grass
 x 3
 y 5
 end
-arch cwall_4
-x 3
-y 5
-end
-arch cobblestones2
+arch grass
 x 3
 y 6
 end
-arch cwall_4
-x 3
-y 6
-end
-arch cobblestones2
+arch grass
 x 3
 y 7
 end
-arch cwall_4
-x 3
-y 7
-end
-arch cobblestones2
+arch grass
 x 3
 y 8
 end
-arch cwall_4
-x 3
-y 8
-end
-arch cobblestones2
+arch grass
 x 3
 y 9
 end
-arch cwall_4
-x 3
-y 9
-end
-arch cobblestones2
+arch grass
 x 3
 y 10
 end
-arch cwall_4
-x 3
-y 10
-end
-arch cobblestones2
+arch grass
 x 3
 y 11
 end
-arch cwall_4
-x 3
-y 11
-end
-arch cobblestones2
+arch grass
 x 3
 y 12
 end
-arch cwall_4
-x 3
-y 12
-end
-arch cobblestones2
+arch grass
 x 3
 y 13
 end
-arch cwall_4
-x 3
-y 13
-end
-arch cobblestones2
+arch grass
 x 3
 y 14
 end
-arch cwall_4
-x 3
-y 14
-end
-arch cobblestones2
+arch grass
 x 3
 y 15
 end
-arch cwall_4
-x 3
-y 15
-end
-arch cobblestones2
+arch grass
 x 3
 y 16
 end
-arch cwall_4
-x 3
-y 16
-end
-arch cobblestones2
-x 3
-y 17
-end
-arch cwall_3_1
+arch grass
 x 3
 y 17
 end
@@ -443,19 +316,11 @@ arch grass_only
 x 4
 y 1
 end
-arch cobblestones2
+arch grass
 x 4
 y 2
 end
-arch cwall_3_3
-x 4
-y 2
-end
-arch cobblestones2
-x 4
-y 3
-end
-arch cwall_4
+arch grass
 x 4
 y 3
 end
@@ -463,7 +328,7 @@ arch cobblestones2
 x 4
 y 4
 end
-arch cwall_4
+arch dwall_2_2_2
 x 4
 y 4
 end
@@ -471,7 +336,7 @@ arch cobblestones2
 x 4
 y 5
 end
-arch cwall_3_4
+arch dwall_2_1_1
 x 4
 y 5
 end
@@ -479,7 +344,7 @@ arch cobblestones2
 x 4
 y 6
 end
-arch cwall_3_4
+arch dwall_2_1_1
 x 4
 y 6
 end
@@ -487,7 +352,7 @@ arch cobblestones2
 x 4
 y 7
 end
-arch cwall_3_4
+arch dwall_2_1_1
 x 4
 y 7
 end
@@ -495,7 +360,7 @@ arch cobblestones2
 x 4
 y 8
 end
-arch cwall_3_4
+arch dwall_2_1_1
 x 4
 y 8
 end
@@ -507,7 +372,7 @@ arch swall_1_4_half
 x 4
 y 9
 end
-arch cwall_3_4
+arch dwall_2_1_1
 x 4
 y 9
 end
@@ -515,7 +380,7 @@ arch cobblestones2
 x 4
 y 10
 end
-arch cwall_3_4
+arch dwall_2_1_1
 x 4
 y 10
 end
@@ -523,7 +388,7 @@ arch cobblestones2
 x 4
 y 11
 end
-arch cwall_3_4
+arch dwall_win1
 x 4
 y 11
 end
@@ -531,7 +396,7 @@ arch cobblestones2
 x 4
 y 12
 end
-arch cwall_3_4
+arch dwall_2_1_1
 x 4
 y 12
 end
@@ -539,7 +404,7 @@ arch cobblestones2
 x 4
 y 13
 end
-arch cwall_3_4
+arch dwall_2_1_1
 x 4
 y 13
 end
@@ -547,7 +412,7 @@ arch cobblestones2
 x 4
 y 14
 end
-arch cwall_3_4
+arch dwall_2_1_1
 x 4
 y 14
 end
@@ -555,23 +420,15 @@ arch cobblestones2
 x 4
 y 15
 end
-arch cwall_4
+arch dwall_2_2_1
 x 4
 y 15
 end
-arch cobblestones2
+arch grass
 x 4
 y 16
 end
-arch cwall_4
-x 4
-y 16
-end
-arch cobblestones2
-x 4
-y 17
-end
-arch cwall_3_1
+arch grass
 x 4
 y 17
 end
@@ -590,19 +447,11 @@ arch grass_only
 x 5
 y 1
 end
-arch cobblestones2
+arch grass
 x 5
 y 2
 end
-arch cwall_3_3
-x 5
-y 2
-end
-arch cobblestones2
-x 5
-y 3
-end
-arch cwall_4
+arch grass
 x 5
 y 3
 end
@@ -610,7 +459,7 @@ arch cobblestones2
 x 5
 y 4
 end
-arch cwall_3_1
+arch dwall_2_1_2
 x 5
 y 4
 end
@@ -746,23 +595,15 @@ arch cobblestones2
 x 5
 y 15
 end
-arch cwall_3_3
+arch dwall_2_1_2
 x 5
 y 15
 end
-arch cobblestones2
+arch grass
 x 5
 y 16
 end
-arch cwall_4
-x 5
-y 16
-end
-arch cobblestones2
-x 5
-y 17
-end
-arch cwall_3_1
+arch grass
 x 5
 y 17
 end
@@ -781,19 +622,11 @@ arch grass_only
 x 6
 y 1
 end
-arch cobblestones2
+arch grass
 x 6
 y 2
 end
-arch cwall_3_3
-x 6
-y 2
-end
-arch cobblestones2
-x 6
-y 3
-end
-arch cwall_4
+arch grass
 x 6
 y 3
 end
@@ -801,7 +634,7 @@ arch cobblestones2
 x 6
 y 4
 end
-arch cwall_3_1
+arch dwall_2_1_2
 x 6
 y 4
 end
@@ -882,7 +715,7 @@ x 6
 y 12
 end
 arch sign_w
-name accounts
+name Accounts
 x 6
 y 12
 end
@@ -910,23 +743,15 @@ arch cobblestones2
 x 6
 y 15
 end
-arch cwall_3_3
+arch dwall_2_1_2
 x 6
 y 15
 end
-arch cobblestones2
+arch grass
 x 6
 y 16
 end
-arch cwall_4
-x 6
-y 16
-end
-arch cobblestones2
-x 6
-y 17
-end
-arch cwall_3_1
+arch grass
 x 6
 y 17
 end
@@ -945,19 +770,11 @@ arch grass_only
 x 7
 y 1
 end
-arch cobblestones2
+arch grass
 x 7
 y 2
 end
-arch cwall_3_3
-x 7
-y 2
-end
-arch cobblestones2
-x 7
-y 3
-end
-arch cwall_4
+arch grass
 x 7
 y 3
 end
@@ -965,7 +782,7 @@ arch cobblestones2
 x 7
 y 4
 end
-arch cwall_3_1
+arch dwall_2_1_2
 x 7
 y 4
 end
@@ -1049,6 +866,11 @@ arch cobblestones2
 x 7
 y 10
 end
+arch chandelier_2
+x 7
+y 10
+glow_radius 6
+end
 arch dungeon_magic
 x 7
 y 11
@@ -1097,23 +919,15 @@ arch cobblestones2
 x 7
 y 15
 end
-arch cwall_3_3
+arch dwall_win2
 x 7
 y 15
 end
-arch cobblestones2
+arch grass
 x 7
 y 16
 end
-arch cwall_4
-x 7
-y 16
-end
-arch cobblestones2
-x 7
-y 17
-end
-arch cwall_3_1
+arch grass
 x 7
 y 17
 end
@@ -1132,19 +946,11 @@ arch grass_only
 x 8
 y 1
 end
-arch cobblestones2
+arch grass
 x 8
 y 2
 end
-arch cwall_3_3
-x 8
-y 2
-end
-arch cobblestones2
-x 8
-y 3
-end
-arch cwall_4
+arch grass
 x 8
 y 3
 end
@@ -1152,7 +958,7 @@ arch cobblestones2
 x 8
 y 4
 end
-arch cwall_3_1
+arch dwall_2_1_2
 x 8
 y 4
 end
@@ -1257,23 +1063,15 @@ arch cobblestones2
 x 8
 y 15
 end
-arch cwall_3_3
+arch dwall_2_1_2
 x 8
 y 15
 end
-arch cobblestones2
+arch grass
 x 8
 y 16
 end
-arch cwall_4
-x 8
-y 16
-end
-arch cobblestones2
-x 8
-y 17
-end
-arch cwall_3_1
+arch grass
 x 8
 y 17
 end
@@ -1292,19 +1090,11 @@ arch grass_only
 x 9
 y 1
 end
-arch cobblestones2
+arch grass
 x 9
 y 2
 end
-arch cwall_3_3
-x 9
-y 2
-end
-arch cobblestones2
-x 9
-y 3
-end
-arch cwall_4
+arch grass
 x 9
 y 3
 end
@@ -1312,7 +1102,7 @@ arch cobblestones2
 x 9
 y 4
 end
-arch cwall_3_1
+arch dwall_2_1_2
 x 9
 y 4
 end
@@ -1444,23 +1234,15 @@ arch cobblestones2
 x 9
 y 15
 end
-arch cwall_3_3
+arch dwall_2_1_2
 x 9
 y 15
 end
-arch cobblestones2
+arch grass
 x 9
 y 16
 end
-arch cwall_4
-x 9
-y 16
-end
-arch cobblestones2
-x 9
-y 17
-end
-arch cwall_3_1
+arch grass
 x 9
 y 17
 end
@@ -1479,19 +1261,11 @@ arch grass_only
 x 10
 y 1
 end
-arch cobblestones2
+arch grass
 x 10
 y 2
 end
-arch cwall_3_3
-x 10
-y 2
-end
-arch cobblestones2
-x 10
-y 3
-end
-arch cwall_4
+arch grass
 x 10
 y 3
 end
@@ -1499,7 +1273,7 @@ arch cobblestones2
 x 10
 y 4
 end
-arch cwall_3_1
+arch dwall_2_1_2
 x 10
 y 4
 end
@@ -1608,7 +1382,7 @@ arch cobblestones2
 x 10
 y 15
 end
-arch cwall_2_2_3
+arch dwall_2_2_3
 x 10
 y 15
 end
@@ -1616,7 +1390,7 @@ arch cobblestones2
 x 10
 y 16
 end
-arch cwall_3_4
+arch dwall_2_1_1
 x 10
 y 16
 end
@@ -1624,7 +1398,7 @@ arch cobblestones2
 x 10
 y 17
 end
-arch cwall_2_2_4
+arch dwall_2_2_1
 x 10
 y 17
 end
@@ -1647,19 +1421,11 @@ arch grass_only
 x 11
 y 1
 end
-arch cobblestones2
+arch grass
 x 11
 y 2
 end
-arch cwall_3_3
-x 11
-y 2
-end
-arch cobblestones2
-x 11
-y 3
-end
-arch cwall_4
+arch grass
 x 11
 y 3
 end
@@ -1667,7 +1433,7 @@ arch cobblestones2
 x 11
 y 4
 end
-arch cwall_3_1
+arch dwall_2_1_2
 x 11
 y 4
 end
@@ -1825,14 +1591,11 @@ arch cobblestones2
 x 11
 y 16
 end
-arch exit
-slaying /world/world_105_115
-hp 9
-sp 32
+arch cobblestones2
 x 11
 y 17
 end
-arch cobblestones2
+arch dwall_1_3
 x 11
 y 17
 end
@@ -1855,19 +1618,11 @@ arch grass_only
 x 12
 y 1
 end
-arch cobblestones2
+arch grass
 x 12
 y 2
 end
-arch cwall_3_3
-x 12
-y 2
-end
-arch cobblestones2
-x 12
-y 3
-end
-arch cwall_4
+arch grass
 x 12
 y 3
 end
@@ -1875,7 +1630,7 @@ arch cobblestones2
 x 12
 y 4
 end
-arch cwall_3_1
+arch dwall_2_1_2
 x 12
 y 4
 end
@@ -1932,6 +1687,11 @@ arch cobblestones2
 x 12
 y 10
 end
+arch chandelier_2
+x 12
+y 10
+glow_radius 6
+end
 arch dungeon_magic
 x 12
 y 11
@@ -1960,11 +1720,6 @@ arch depositbox
 name Deposit Box
 x 12
 y 12
-arch event_apply
-name Apply
-title Python
-slaying /python/IPO/banksay.py
-end
 arch event_close
 name Close
 title Python
@@ -2021,6 +1776,10 @@ arch cobblestones2
 x 12
 y 17
 end
+arch look_door_exit_1
+x 12
+y 17
+end
 arch dungeon_magic
 x 12
 y 18
@@ -2040,19 +1799,11 @@ arch grass_only
 x 13
 y 1
 end
-arch cobblestones2
+arch grass
 x 13
 y 2
 end
-arch cwall_3_3
-x 13
-y 2
-end
-arch cobblestones2
-x 13
-y 3
-end
-arch cwall_4
+arch grass
 x 13
 y 3
 end
@@ -2060,7 +1811,7 @@ arch cobblestones2
 x 13
 y 4
 end
-arch cwall_3_1
+arch dwall_2_1_2
 x 13
 y 4
 end
@@ -2159,9 +1910,9 @@ x 13
 y 12
 end
 arch sign_w
-name ATM
+name Deposit Box
 msg
-Note.  There is a service charge of 1% placed on deposits and withdrawls.
+Note: There is a 1% service charge on all deposits.
 endmsg
 x 13
 y 12
@@ -2205,14 +1956,11 @@ arch cobblestones2
 x 13
 y 16
 end
-arch exit
-slaying /world/world_105_115
-hp 10
-sp 32
+arch cobblestones2
 x 13
 y 17
 end
-arch cobblestones2
+arch dwall_1_4
 x 13
 y 17
 end
@@ -2235,19 +1983,11 @@ arch grass_only
 x 14
 y 1
 end
-arch cobblestones2
+arch grass
 x 14
 y 2
 end
-arch cwall_3_3
-x 14
-y 2
-end
-arch cobblestones2
-x 14
-y 3
-end
-arch cwall_4
+arch grass
 x 14
 y 3
 end
@@ -2255,7 +1995,7 @@ arch cobblestones2
 x 14
 y 4
 end
-arch cwall_3_3
+arch dwall_3_3
 x 14
 y 4
 end
@@ -2263,7 +2003,7 @@ arch cobblestones2
 x 14
 y 5
 end
-arch cwall_2_1_1
+arch dwall_2_1_1
 x 14
 y 5
 end
@@ -2271,7 +2011,7 @@ arch cobblestones2
 x 14
 y 6
 end
-arch cwall_2_1_1
+arch dwall_2_1_1
 x 14
 y 6
 end
@@ -2279,7 +2019,7 @@ arch cobblestones2
 x 14
 y 7
 end
-arch cwall_2_1_1
+arch dwall_2_1_1
 x 14
 y 7
 end
@@ -2287,7 +2027,7 @@ arch cobblestones2
 x 14
 y 8
 end
-arch cwall_2_2_1
+arch dwall_2_2_1
 x 14
 y 8
 end
@@ -2378,7 +2118,7 @@ arch cobblestones2
 x 14
 y 15
 end
-arch cwall_2_2_2
+arch dwall_2_2_2
 x 14
 y 15
 end
@@ -2386,7 +2126,7 @@ arch cobblestones2
 x 14
 y 16
 end
-arch cwall_3_2
+arch dwall_2_1_1
 x 14
 y 16
 end
@@ -2394,7 +2134,7 @@ arch cobblestones2
 x 14
 y 17
 end
-arch cwall_2_2_1
+arch dwall_2_2_4
 x 14
 y 17
 end
@@ -2417,19 +2157,11 @@ arch grass_only
 x 15
 y 1
 end
-arch cobblestones2
+arch grass
 x 15
 y 2
 end
-arch cwall_3_3
-x 15
-y 2
-end
-arch cobblestones2
-x 15
-y 3
-end
-arch cwall_4
+arch grass
 x 15
 y 3
 end
@@ -2437,7 +2169,7 @@ arch cobblestones2
 x 15
 y 4
 end
-arch cwall_3_1
+arch dwall_2_1_2
 x 15
 y 4
 end
@@ -2449,11 +2181,8 @@ arch cobblestones2
 x 15
 y 5
 end
-arch crown
-x 15
-y 5
-end
-arch goldcoin
+arch random_wealth
+hp 2
 x 15
 y 5
 end
@@ -2465,19 +2194,8 @@ arch cobblestones2
 x 15
 y 6
 end
-arch pearl
-x 15
-y 6
-end
-arch ruby
-x 15
-y 6
-end
-arch platinacoin
-x 15
-y 6
-end
-arch goldcoin
+arch random_wealth
+hp 2
 x 15
 y 6
 end
@@ -2489,15 +2207,8 @@ arch cobblestones2
 x 15
 y 7
 end
-arch pearl
-x 15
-y 7
-end
-arch platinacoin
-x 15
-y 7
-end
-arch goldcoin
+arch random_wealth
+hp 2
 x 15
 y 7
 end
@@ -2505,7 +2216,7 @@ arch cobblestones2
 x 15
 y 8
 end
-arch cwall_1_3
+arch dwall_1_3
 x 15
 y 8
 end
@@ -2577,23 +2288,15 @@ arch cobblestones2
 x 15
 y 15
 end
-arch cwall_3_3
+arch dwall_2_1_2
 x 15
 y 15
 end
-arch cobblestones2
+arch grass
 x 15
 y 16
 end
-arch cwall_4
-x 15
-y 16
-end
-arch cobblestones2
-x 15
-y 17
-end
-arch cwall_3_1
+arch grass
 x 15
 y 17
 end
@@ -2612,19 +2315,11 @@ arch grass_only
 x 16
 y 1
 end
-arch cobblestones2
+arch grass
 x 16
 y 2
 end
-arch cwall_3_3
-x 16
-y 2
-end
-arch cobblestones2
-x 16
-y 3
-end
-arch cwall_4
+arch grass
 x 16
 y 3
 end
@@ -2632,7 +2327,7 @@ arch cobblestones2
 x 16
 y 4
 end
-arch cwall_3_1
+arch dwall_2_1_2
 x 16
 y 4
 end
@@ -2644,11 +2339,8 @@ arch cobblestones2
 x 16
 y 5
 end
-arch pearl
-x 16
-y 5
-end
-arch platinacoin
+arch random_wealth
+hp 2
 x 16
 y 5
 end
@@ -2660,19 +2352,8 @@ arch cobblestones2
 x 16
 y 6
 end
-arch pearl
-x 16
-y 6
-end
-arch ruby
-x 16
-y 6
-end
-arch platinacoin
-x 16
-y 6
-end
-arch goldcoin
+arch random_wealth
+hp 2
 x 16
 y 6
 end
@@ -2684,15 +2365,8 @@ arch cobblestones2
 x 16
 y 7
 end
-arch pearl
-x 16
-y 7
-end
-arch ruby
-x 16
-y 7
-end
-arch platinacoin
+arch random_wealth
+hp 2
 x 16
 y 7
 end
@@ -2777,23 +2451,15 @@ arch cobblestones2
 x 16
 y 15
 end
-arch cwall_3_3
+arch dwall_2_1_2
 x 16
 y 15
 end
-arch cobblestones2
+arch grass
 x 16
 y 16
 end
-arch cwall_4
-x 16
-y 16
-end
-arch cobblestones2
-x 16
-y 17
-end
-arch cwall_3_1
+arch grass
 x 16
 y 17
 end
@@ -2812,19 +2478,11 @@ arch grass_only
 x 17
 y 1
 end
-arch cobblestones2
+arch grass
 x 17
 y 2
 end
-arch cwall_3_3
-x 17
-y 2
-end
-arch cobblestones2
-x 17
-y 3
-end
-arch cwall_4
+arch grass
 x 17
 y 3
 end
@@ -2832,7 +2490,7 @@ arch cobblestones2
 x 17
 y 4
 end
-arch cwall_3_1
+arch dwall_2_1_2
 x 17
 y 4
 end
@@ -2844,15 +2502,8 @@ arch cobblestones2
 x 17
 y 5
 end
-arch pearl
-x 17
-y 5
-end
-arch ruby
-x 17
-y 5
-end
-arch platinacoin
+arch random_wealth
+hp 2
 x 17
 y 5
 end
@@ -2864,19 +2515,8 @@ arch cobblestones2
 x 17
 y 6
 end
-arch crown
-x 17
-y 6
-end
-arch ruby
-x 17
-y 6
-end
-arch platinacoin
-x 17
-y 6
-end
-arch goldcoin
+arch random_wealth
+hp 2
 x 17
 y 6
 end
@@ -2888,15 +2528,8 @@ arch cobblestones2
 x 17
 y 7
 end
-arch ruby
-x 17
-y 7
-end
-arch platinacoin
-x 17
-y 7
-end
-arch goldcoin
+arch random_wealth
+hp 2
 x 17
 y 7
 end
@@ -2928,6 +2561,11 @@ end
 arch cobblestones2
 x 17
 y 10
+end
+arch chandelier_2
+x 17
+y 10
+glow_radius 6
 end
 arch dungeon_magic
 x 17
@@ -2986,23 +2624,15 @@ arch cobblestones2
 x 17
 y 15
 end
-arch cwall_3_3
+arch dwall_win2
 x 17
 y 15
 end
-arch cobblestones2
+arch grass
 x 17
 y 16
 end
-arch cwall_4
-x 17
-y 16
-end
-arch cobblestones2
-x 17
-y 17
-end
-arch cwall_3_1
+arch grass
 x 17
 y 17
 end
@@ -3021,19 +2651,11 @@ arch grass_only
 x 18
 y 1
 end
-arch cobblestones2
+arch grass
 x 18
 y 2
 end
-arch cwall_3_3
-x 18
-y 2
-end
-arch cobblestones2
-x 18
-y 3
-end
-arch cwall_4
+arch grass
 x 18
 y 3
 end
@@ -3041,7 +2663,7 @@ arch cobblestones2
 x 18
 y 4
 end
-arch cwall_3_1
+arch dwall_2_1_2
 x 18
 y 4
 end
@@ -3053,10 +2675,10 @@ arch cobblestones2
 x 18
 y 5
 end
-arch ambercoin
+arch random_wealth
+hp 2
 x 18
 y 5
-nrof 1000000
 end
 arch dungeon_magic
 x 18
@@ -3066,10 +2688,10 @@ arch cobblestones2
 x 18
 y 6
 end
-arch jadecoin
+arch random_wealth
+hp 2
 x 18
 y 6
-nrof 1000000
 end
 arch dungeon_magic
 x 18
@@ -3079,11 +2701,8 @@ arch cobblestones2
 x 18
 y 7
 end
-arch ruby
-x 18
-y 7
-end
-arch platinacoin
+arch random_wealth
+hp 2
 x 18
 y 7
 end
@@ -3177,23 +2796,15 @@ arch cobblestones2
 x 18
 y 15
 end
-arch cwall_3_3
+arch dwall_2_1_2
 x 18
 y 15
 end
-arch cobblestones2
+arch grass
 x 18
 y 16
 end
-arch cwall_4
-x 18
-y 16
-end
-arch cobblestones2
-x 18
-y 17
-end
-arch cwall_3_1
+arch grass
 x 18
 y 17
 end
@@ -3212,19 +2823,11 @@ arch grass_only
 x 19
 y 1
 end
-arch cobblestones2
+arch grass
 x 19
 y 2
 end
-arch cwall_3_3
-x 19
-y 2
-end
-arch cobblestones2
-x 19
-y 3
-end
-arch cwall_4
+arch grass
 x 19
 y 3
 end
@@ -3232,7 +2835,7 @@ arch cobblestones2
 x 19
 y 4
 end
-arch cwall_3_1
+arch dwall_2_1_2
 x 19
 y 4
 end
@@ -3244,11 +2847,8 @@ arch cobblestones2
 x 19
 y 5
 end
-arch sapphire
-x 19
-y 5
-end
-arch gem
+arch random_wealth
+hp 2
 x 19
 y 5
 end
@@ -3260,11 +2860,8 @@ arch cobblestones2
 x 19
 y 6
 end
-arch amethyst
-x 19
-y 6
-end
-arch gem
+arch random_wealth
+hp 2
 x 19
 y 6
 end
@@ -3276,7 +2873,8 @@ arch cobblestones2
 x 19
 y 7
 end
-arch gem
+arch random_wealth
+hp 2
 x 19
 y 7
 end
@@ -3284,7 +2882,7 @@ arch cobblestones2
 x 19
 y 8
 end
-arch cwall_1_4
+arch dwall_1_4
 x 19
 y 8
 end
@@ -3367,23 +2965,15 @@ arch cobblestones2
 x 19
 y 15
 end
-arch cwall_3_3
+arch dwall_2_1_2
 x 19
 y 15
 end
-arch cobblestones2
+arch grass
 x 19
 y 16
 end
-arch cwall_4
-x 19
-y 16
-end
-arch cobblestones2
-x 19
-y 17
-end
-arch cwall_3_1
+arch grass
 x 19
 y 17
 end
@@ -3402,19 +2992,11 @@ arch grass_only
 x 20
 y 1
 end
-arch cobblestones2
+arch grass
 x 20
 y 2
 end
-arch cwall_3_3
-x 20
-y 2
-end
-arch cobblestones2
-x 20
-y 3
-end
-arch cwall_4
+arch grass
 x 20
 y 3
 end
@@ -3422,7 +3004,7 @@ arch cobblestones2
 x 20
 y 4
 end
-arch cwall_2_2_3
+arch dwall_2_2_3
 x 20
 y 4
 end
@@ -3430,7 +3012,7 @@ arch cobblestones2
 x 20
 y 5
 end
-arch cwall_3_2
+arch dwall_2_1_1
 x 20
 y 5
 end
@@ -3438,7 +3020,7 @@ arch cobblestones2
 x 20
 y 6
 end
-arch cwall_3_2
+arch dwall_2_1_1
 x 20
 y 6
 end
@@ -3446,7 +3028,7 @@ arch cobblestones2
 x 20
 y 7
 end
-arch cwall_3_2
+arch dwall_2_1_1
 x 20
 y 7
 end
@@ -3454,7 +3036,7 @@ arch cobblestones2
 x 20
 y 8
 end
-arch cwall_4
+arch dwall_3_4
 x 20
 y 8
 end
@@ -3462,7 +3044,7 @@ arch cobblestones2
 x 20
 y 9
 end
-arch cwall_3_2
+arch dwall_2_1_1
 x 20
 y 9
 end
@@ -3470,7 +3052,7 @@ arch cobblestones2
 x 20
 y 10
 end
-arch cwall_3_2
+arch dwall_2_1_1
 x 20
 y 10
 end
@@ -3478,7 +3060,7 @@ arch cobblestones2
 x 20
 y 11
 end
-arch cwall_3_2
+arch dwall_win1
 x 20
 y 11
 end
@@ -3486,7 +3068,7 @@ arch cobblestones2
 x 20
 y 12
 end
-arch cwall_3_2
+arch dwall_2_1_1
 x 20
 y 12
 end
@@ -3494,7 +3076,7 @@ arch cobblestones2
 x 20
 y 13
 end
-arch cwall_3_2
+arch dwall_2_1_1
 x 20
 y 13
 end
@@ -3502,7 +3084,7 @@ arch cobblestones2
 x 20
 y 14
 end
-arch cwall_3_2
+arch dwall_2_1_1
 x 20
 y 14
 end
@@ -3510,23 +3092,15 @@ arch cobblestones2
 x 20
 y 15
 end
-arch cwall_4
+arch dwall_2_2_4
 x 20
 y 15
 end
-arch cobblestones2
+arch grass
 x 20
 y 16
 end
-arch cwall_4
-x 20
-y 16
-end
-arch cobblestones2
-x 20
-y 17
-end
-arch cwall_3_1
+arch grass
 x 20
 y 17
 end
@@ -3545,131 +3119,67 @@ arch grass_only
 x 21
 y 1
 end
-arch cobblestones2
+arch grass
 x 21
 y 2
 end
-arch cwall_3_3
-x 21
-y 2
-end
-arch cobblestones2
+arch grass
 x 21
 y 3
 end
-arch cwall_4
-x 21
-y 3
-end
-arch cobblestones2
+arch grass
 x 21
 y 4
 end
-arch cwall_4
-x 21
-y 4
-end
-arch cobblestones2
+arch grass
 x 21
 y 5
 end
-arch cwall_4
-x 21
-y 5
-end
-arch cobblestones2
+arch grass
 x 21
 y 6
 end
-arch cwall_4
-x 21
-y 6
-end
-arch cobblestones2
+arch grass
 x 21
 y 7
 end
-arch cwall_4
-x 21
-y 7
-end
-arch cobblestones2
+arch grass
 x 21
 y 8
 end
-arch cwall_4
-x 21
-y 8
-end
-arch cobblestones2
+arch grass
 x 21
 y 9
 end
-arch cwall_4
-x 21
-y 9
-end
-arch cobblestones2
+arch grass
 x 21
 y 10
 end
-arch cwall_4
-x 21
-y 10
-end
-arch cobblestones2
+arch grass
 x 21
 y 11
 end
-arch cwall_4
-x 21
-y 11
-end
-arch cobblestones2
+arch grass
 x 21
 y 12
 end
-arch cwall_4
-x 21
-y 12
-end
-arch cobblestones2
+arch grass
 x 21
 y 13
 end
-arch cwall_4
-x 21
-y 13
-end
-arch cobblestones2
+arch grass
 x 21
 y 14
 end
-arch cwall_4
-x 21
-y 14
-end
-arch cobblestones2
+arch grass
 x 21
 y 15
 end
-arch cwall_4
-x 21
-y 15
-end
-arch cobblestones2
+arch grass
 x 21
 y 16
 end
-arch cwall_4
-x 21
-y 16
-end
-arch cobblestones2
-x 21
-y 17
-end
-arch cwall_3_1
+arch grass
 x 21
 y 17
 end
@@ -3688,131 +3198,67 @@ arch grass_only
 x 22
 y 1
 end
-arch cobblestones2
+arch grass
 x 22
 y 2
 end
-arch cwall_2_2_3
-x 22
-y 2
-end
-arch cobblestones2
+arch grass
 x 22
 y 3
 end
-arch cwall_3_4
-x 22
-y 3
-end
-arch cobblestones2
+arch grass
 x 22
 y 4
 end
-arch cwall_3_4
-x 22
-y 4
-end
-arch cobblestones2
+arch grass
 x 22
 y 5
 end
-arch cwall_3_4
-x 22
-y 5
-end
-arch cobblestones2
+arch grass
 x 22
 y 6
 end
-arch cwall_3_4
-x 22
-y 6
-end
-arch cobblestones2
+arch grass
 x 22
 y 7
 end
-arch cwall_3_4
-x 22
-y 7
-end
-arch cobblestones2
+arch grass
 x 22
 y 8
 end
-arch cwall_3_4
-x 22
-y 8
-end
-arch cobblestones2
+arch grass
 x 22
 y 9
 end
-arch cwall_3_4
-x 22
-y 9
-end
-arch cobblestones2
+arch grass
 x 22
 y 10
 end
-arch cwall_3_4
-x 22
-y 10
-end
-arch cobblestones2
+arch grass
 x 22
 y 11
 end
-arch cwall_3_4
-x 22
-y 11
-end
-arch cobblestones2
+arch grass
 x 22
 y 12
 end
-arch cwall_3_4
-x 22
-y 12
-end
-arch cobblestones2
+arch grass
 x 22
 y 13
 end
-arch cwall_3_4
-x 22
-y 13
-end
-arch cobblestones2
+arch grass
 x 22
 y 14
 end
-arch cwall_3_4
-x 22
-y 14
-end
-arch cobblestones2
+arch grass
 x 22
 y 15
 end
-arch cwall_3_4
-x 22
-y 15
-end
-arch cobblestones2
+arch grass
 x 22
 y 16
 end
-arch cwall_3_4
-x 22
-y 16
-end
-arch cobblestones2
-x 22
-y 17
-end
-arch cwall_2_2_4
+arch grass
 x 22
 y 17
 end
@@ -3831,11 +3277,11 @@ arch grass_only
 x 23
 y 1
 end
-arch grass_only
+arch grass
 x 23
 y 2
 end
-arch grass_only
+arch grass
 x 23
 y 3
 end
