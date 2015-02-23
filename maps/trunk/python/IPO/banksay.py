@@ -9,7 +9,6 @@ import random
 import Crossfire
 import CFBank
 import CFItemBroker
-import CFMail
 
 # Set up a few easily-settable configuration variables.
 bank = CFBank.CFBank('ImperialBank_DB')
@@ -17,9 +16,7 @@ service_charge = 1  # Service charge for transactions (as a percentage)
 fees = service_charge / 100.0 + 1
 
 # Set up variables for a few commonly-accessed objects.
-mail = CFMail.CFMail()
 activator = Crossfire.WhoIsActivator()
-activatorname = activator.Name
 whoami = Crossfire.WhoAmI()
 x = activator.X
 y = activator.Y
@@ -97,70 +94,6 @@ def getExchangeRate(coinName):
 def strAmount(amount):
     return Crossfire.CostStringFromValue(amount)
 
-def processCheck():
-    """Process a check in the player's inventory and return its value."""
-    # Try to find the first check in the player's inventory.
-    check = activator.CheckInventory("check")
-    if check is None:
-        whoami.Say("Come back when you have a check to deposit.")
-        return 0
-
-    payer = check.Name.split("'")[0]
-    contents = check.Message.split("\n")
-
-    # Don't let the player reuse a used check.
-    if contents[0] == "CANCELED":
-        whoami.Say("This check has already been used.")
-        return 0
-
-    # Make sure the check is written correctly (beware trailing newline).
-    if (len(contents) < 4 + 1):
-        whoami.Say("This check wasn't written correctly.")
-        return 0
-    else:
-        payee = contents[1]
-        amountString = contents[2].split(" ")
-        signer = contents[3]
-        try:
-            amount = int(amountString[0]) * getExchangeRate(amountString[1])
-            if amount <= 0:
-                whoami.Say("No negative checks are allowed!")
-                return 0
-        except:
-            whoami.Say("How much money is that?")
-            return 0
-
-    # Verify signature on check.
-    if payer != signer:
-        whoami.Say("The signature on this check is invalid.")
-        mail.send(1, payer, "The-Imperial-Bank-Of-Skud",
-                "Dear Sir or Madam:\nIt has come to our attention that an attempt to cash an improperly signed check from you was made by %s. We apologize for any trouble this may cause you.\n\nSincerely,\nThe Imperial Bank of Skud" \
-                        % activator.Name)
-        return 0
-
-    # Only the payee can process the check (unless made out to anyone).
-    if payee != activator.Name:
-        if payee.upper() == "BEARER":
-            payee = activator.Name
-        else:
-            whoami.Say("This check wasn't made out to you!")
-            mail.send(1, payee, "The-Imperial-Bank-of-Skud",
-                    "Dear Sir or Madam:\nIt has come to our attention that someone has attempted to cash a check made out to you. The check was made out by %s, but %s attempted to cash it. We apologise for any trouble this may cause, and would like to remind you that we're always at your service.\n\nSincerely,\nThe Imperial Bank of Skud" % (payer, activator.Name))
-            return 0
-
-    payerObj = Crossfire.FindPlayer(payer)
-    if payerObj == None:
-        whoami.Say("We don't know anyone named %s!" % payer)
-        return 0
-    if CFBank.withdraw(payerObj, amount):
-        # Void the check to prevent further use.
-        check.Name += " (used)"
-        check.Message = "CANCELED\n" + check.Message
-        return amount
-    else:
-        whoami.Say("It seems that %s doesn't have enough money." % payer)
-        return 0
-
 def get_inventory(obj):
     """An iterator for a given object's inventory."""
     current_item = obj.Inventory
@@ -198,13 +131,6 @@ def cmd_help():
 
     whoami.Say(message)
 
-# ----------------------------------------------------------------------------
-# Teach the player how to use checks.
-def cmd_help_checks():
-    message = "You'll need to order a checkbook if you haven't already. On the first line, write who you want to pay. On the next line, write the amount you want to pay. Finally, sign the check with your name on the last line."
-    Crossfire.AddReply("order", "I want to order 100 checks (2 platinum).")
-    whoami.Say(message)
-
 def cmd_show_profits():
     """Say the total bank profits."""
     message = "To date, the Imperial Bank of Skud has made %s in profit." \
@@ -237,10 +163,9 @@ def cmd_balance(argv):
     else:
         whoami.Say("You have " + strAmount(balance) + " in the bank.")
 
-# ----------------------------------------------------------------------------
-# Deposit a certain amount of money or the value of a check.
 # TODO: Look over checking code to make sure everything's okay.
 def cmd_deposit(text):
+    """Deposit a certain amount of money."""
     if len(text) >= 3:
         coinName = getCoinNameFromArgs(text[2:])
         exchange_rate = getExchangeRate(coinName)
@@ -266,22 +191,9 @@ def cmd_deposit(text):
                             random.choice(thanks_message))
         else:
             message = "But you don't have that much in your inventory!"
-    elif len(text) == 2:
-        if text[1] == 'check':
-            transaction = processCheck()
-
-            if transaction != 0:
-                CFBank.deposit(activator, transaction)
-                message = "%s deposited to your account." % \
-                        strAmount(transaction)
-            else:
-                message = "Here's your check back."
-        else:
-            message = "What kind of money would you like to deposit?"
     else:
         message = "What would you like to deposit?"
         Crossfire.AddReply("deposit <amount> <coin type>", "Some money.")
-        Crossfire.AddReply("deposit check", "A check, please.")
 
     whoami.Say(message)
 
@@ -366,44 +278,6 @@ def cmd_exchange(text):
     whoami.Say(message)
 
 # ----------------------------------------------------------------------------
-# Sell the player a personalized check book with checks.
-def cmd_order_checks():
-    if CFBank.withdraw(activator, 100):
-        # Create a new checkbook and perform sanity checking.
-        checkbook = Crossfire.CreateObjectByName("checkbook")
-        checks = Crossfire.CreateObjectByName("check")
-
-        if checkbook is None or checks is None:
-            whoami.Say("Hmm... I seem to have run out of checks today. Please come back some other time.")
-            Crossfire.Log(Crossfire.LogError, "Failed to create checks.")
-            CFBank.deposit(activator, 100)
-            return
-
-        # Set various properties on the newly created checks.
-        checkbook.Name = activator.Name + "'s Checkbook"
-        checkbook.NamePl = activator.Name + "'s Checkbooks"
-        checks.Name = activator.Name + "'s Check"
-        checks.NamePl = activator.Name + "'s Checks"
-        checks.Message = "Pay to the Order Of:"
-        checks.Quantity = 100
-        checks.InsertInto(checkbook)
-
-        # Give the new check book to the player.
-        checkbook.Teleport(activator.Map, x, y)
-        message = "Here you go, 2 platinum withdrawn, enjoy!"
-    else:
-        message = "Each check book (100 checks) costs two platinum." \
-                "You do not have enough money in your bank account."
-
-    whoami.Say(message)
-
-# ----------------------------------------------------------------------------
-# Cash checks.
-# TODO: Make sure this works as expected.
-def cmd_cash(text):
-    whoami.Say("Sorry, I can't do that yet.")
-
-# ----------------------------------------------------------------------------
 # Script execution begins here.
 
 # Find out if the script is being run by a deposit box or an employee.
@@ -416,8 +290,6 @@ else:
 
     if text[0] == "learn":
         cmd_help()
-    elif text[0] == "checks":
-        cmd_help_checks()
     elif text[0] == "profits":
         cmd_show_profits()
     elif text[0] == "reset-profits":
@@ -428,12 +300,9 @@ else:
         cmd_deposit(text)
     elif text[0] == "withdraw":
         cmd_withdraw(text)
-    elif text[0] == "order":
-        cmd_order_checks()
     else:
         whoami.Say("Hello, what can I help you with today?")
         Crossfire.AddReply("learn", "I want to learn how to use the bank.")
-        Crossfire.AddReply("checks", "Can you teach me about checks?")
 
     # Close bank database (required) and return.
     bank.close()
