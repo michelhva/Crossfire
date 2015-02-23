@@ -4,7 +4,6 @@
 # Updated to use new path functions in CFPython and broken and
 # modified a bit by -Todd Mitchell
 
-import string
 import random
 
 import Crossfire
@@ -98,17 +97,16 @@ def getExchangeRate(coinName):
 def strAmount(amount):
     return Crossfire.CostStringFromValue(amount)
 
-# ----------------------------------------------------------------------------
-# Process a check in the player's inventory, returning the check's value.
 def processCheck():
+    """Process a check in the player's inventory and return its value."""
     # Try to find the first check in the player's inventory.
     check = activator.CheckInventory("check")
     if check is None:
         whoami.Say("Come back when you have a check to deposit.")
         return 0
 
-    payer = string.split(check.Name, "'")[0]
-    contents = string.split(check.Message, "\n")
+    payer = check.Name.split("'")[0]
+    contents = check.Message.split("\n")
 
     # Don't let the player reuse a used check.
     if contents[0] == "CANCELED":
@@ -121,12 +119,10 @@ def processCheck():
         return 0
     else:
         payee = contents[1]
-        amountString = string.split(contents[2], " ")
+        amountString = contents[2].split(" ")
         signer = contents[3]
-
         try:
             amount = int(amountString[0]) * getExchangeRate(amountString[1])
-
             if amount <= 0:
                 whoami.Say("No negative checks are allowed!")
                 return 0
@@ -152,19 +148,18 @@ def processCheck():
                     "Dear Sir or Madam:\nIt has come to our attention that someone has attempted to cash a check made out to you. The check was made out by %s, but %s attempted to cash it. We apologise for any trouble this may cause, and would like to remind you that we're always at your service.\n\nSincerely,\nThe Imperial Bank of Skud" % (payer, activator.Name))
             return 0
 
-    # Find out if the payer has enough money in the bank.
-    payerBalance = bank.getbalance(payer)
-    if amount > payerBalance:
+    payerObj = Crossfire.FindPlayer(payer)
+    if payerObj == None:
+        whoami.Say("We don't know anyone named %s!" % payer)
+        return 0
+    if CFBank.withdraw(payerObj, amount):
+        # Void the check to prevent further use.
+        check.Name += " (used)"
+        check.Message = "CANCELED\n" + check.Message
+        return amount
+    else:
         whoami.Say("It seems that %s doesn't have enough money." % payer)
         return 0
-    
-    # Void the check to prevent further use.
-    check.Name += " (used)"
-    check.Message = "CANCELED\n" + check.Message
-
-    # Finally, withdraw the amount from the payer.
-    bank.withdraw(payer, amount)
-    return amount
 
 # ----------------------------------------------------------------------------
 # Called when the deposit box (ATM) is opened.
@@ -335,44 +330,35 @@ def cmd_help_checks():
     Crossfire.AddReply("order", "I want to order 100 checks (2 platinum).")
     whoami.Say(message)
 
-# ----------------------------------------------------------------------------
-# Show the profits made by the bank.
 def cmd_show_profits():
+    """Say the total bank profits."""
     message = "To date, the Imperial Bank of Skud has made %s in profit." \
             % strAmount(bank.getbalance(Skuds))
     whoami.Say(message)
 
-# ----------------------------------------------------------------------------
-# Erase the profits made by the bank.
 def cmd_reset_profit():
+    """Reset the total bank profits."""
     if activator.DungeonMaster:
         bank.withdraw(Skuds, bank.getbalance(Skuds))
-        message = "Profits erased!"
+        whoami.Say("Profits reset!")
     else:
-        message = "Only the dungeon master can wipe our profits!"
+        whoami.Say("Only the dungeon master can reset our profits!")
 
-    whoami.Say(message)
-
-# ----------------------------------------------------------------------------
-# Find out how much money the player has in his/her account.
 def cmd_balance(argv):
-    balance = bank.getbalance(activatorname)
-
+    """Find out how much money the player has in his/her account."""
+    balance = CFBank.balance(activator)
     if len(argv) >= 2:
+        # Give balance using the desired coin type.
         coinName = getCoinNameFromArgs(argv[1:])
         exchange_rate = getExchangeRate(coinName)
-
         if exchange_rate is None:
             whoami.Say("Hmm... I've never seen that kind of money.")
             return
-
         if balance != 0:
             balance /= exchange_rate * 1.0;
-            message = "You have %.3f %s in the bank." % (balance, coinName)
+            whoami.Say("You have %.3f %s in the bank." % (balance, coinName))
         else:
-            message = "Sorry, you have no balance."
-
-        whoami.Say(message);
+            whoami.Say("Sorry, you have no balance.")
     else:
         whoami.Say("You have " + strAmount(balance) + " in the bank.")
 
@@ -397,7 +383,7 @@ def cmd_deposit(text):
         # Make sure the player has enough cash on hand.
         actualAmount = amount * exchange_rate
         if activator.PayAmount(actualAmount):
-            bank.deposit(activatorname, int(actualAmount / fees))
+            CFBank.deposit(activator, int(actualAmount / fees))
             bank.deposit(Skuds, actualAmount - int(actualAmount / fees))
 
             message = "%d %s received, %s deposited to your account. %s" \
@@ -410,7 +396,7 @@ def cmd_deposit(text):
             transaction = processCheck()
 
             if transaction != 0:
-                bank.deposit(activator.Name, transaction)
+                CFBank.deposit(activator, transaction)
                 message = "%s deposited to your account." % \
                         strAmount(transaction)
             else:
@@ -445,7 +431,7 @@ def cmd_withdraw(argv):
             return
 
         # Make sure the player has sufficient funds.
-        if bank.withdraw(activatorname, amount * exchange_rate):
+        if CFBank.withdraw(activator, amount * exchange_rate):
             message = "%d %s withdrawn from your account. %s" \
                     % (amount, coinName, random.choice(thanks_message))
 
@@ -507,7 +493,7 @@ def cmd_exchange(text):
 # ----------------------------------------------------------------------------
 # Sell the player a personalized check book with checks.
 def cmd_order_checks():
-    if bank.withdraw(activatorname, 100):
+    if CFBank.withdraw(activator, 100):
         # Create a new checkbook and perform sanity checking.
         checkbook = Crossfire.CreateObjectByName("checkbook")
         checks = Crossfire.CreateObjectByName("check")
@@ -515,7 +501,7 @@ def cmd_order_checks():
         if checkbook is None or checks is None:
             whoami.Say("Hmm... I seem to have run out of checks today. Please come back some other time.")
             Crossfire.Log(Crossfire.LogError, "Failed to create checks.")
-            bank.deposit(activatorname, 100)
+            CFBank.deposit(activator, 100)
             return
 
         # Set various properties on the newly created checks.
