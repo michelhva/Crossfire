@@ -3,11 +3,11 @@ name Navar Dragon Hangar
 difficulty 5
 region navar
 width 35
-height 32
+height 36
 enter_x 15
 msg
 Created:  2005-10-18 Gene Alexander
-Modified: 2012-05-11 Rick Tanner
+Modified: 2015-02-24 Rick Tanner
 endmsg
 end
 arch magic_banned
@@ -58,7 +58,7 @@ end
 arch cobblestones2
 y 5
 end
-arch awall_3_2
+arch awall_2_1_1
 y 5
 end
 arch magic_banned
@@ -85,7 +85,7 @@ end
 arch cobblestones2
 y 8
 end
-arch awall_2_1_1
+arch awall_3_2
 y 8
 end
 arch magic_banned
@@ -130,9 +130,6 @@ end
 arch cobblestones2
 y 13
 end
-arch cobblestones2
-y 13
-end
 arch awall_2_1_1
 y 13
 end
@@ -142,9 +139,6 @@ end
 arch cobblestones2
 y 14
 end
-arch cobblestones2
-y 14
-end
 arch awall_2_1_1
 y 14
 end
@@ -154,9 +148,6 @@ end
 arch cobblestones2
 y 15
 end
-arch cobblestones2
-y 15
-end
 arch awall_2_1_1
 y 15
 end
@@ -205,9 +196,6 @@ end
 arch cobblestones2
 y 19
 end
-arch cobblestones2
-y 19
-end
 arch awall_2_1_1
 y 19
 end
@@ -244,6 +232,9 @@ end
 arch cobblestones2
 y 22
 end
+arch cobblestones2
+y 22
+end
 arch awall_2_1_1
 y 22
 end
@@ -351,9 +342,48 @@ y 31
 end
 arch cobblestones2
 y 31
+end
+arch awall_2_1_1
+y 31
+end
+arch magic_banned
+y 32
+end
+arch cobblestones2
+y 32
+end
+arch cobblestones2
+y 32
+end
+arch awall_2_1_1
+y 32
+end
+arch magic_banned
+y 33
+end
+arch cobblestones2
+y 33
+end
+arch cobblestones2
+y 33
+end
+arch awall_2_1_1
+y 33
+end
+arch magic_banned
+y 34
+end
+arch cobblestones2
+y 34
+end
+arch cobblestones2
+y 34
 end
 arch awall_2_2_1
-y 31
+y 34
+end
+arch blocked
+y 35
 end
 arch magic_banned
 x 1
@@ -369,11 +399,11 @@ x 1
 y 1
 end
 arch creator
-slaying Ticket To Port Joseph
+slaying Ticket To Brest
 other_arch card
 x 1
 y 1
-connected 20
+connected 25
 lifesave 1
 end
 arch cobblestones2
@@ -386,7 +416,7 @@ y 2
 end
 arch magic_mouth
 msg
-Drop 100 gold coins to buy a ticket to Port Joseph.
+Drop 1000 gold coins to buy a ticket to Brest.
 endmsg
 x 1
 y 2
@@ -398,11 +428,16 @@ end
 arch altar_trigger
 name Ticket Booth
 slaying money
-food 1000
+food 10000
 x 1
 y 2
 last_sp 1
-connected 20
+connected 25
+end
+arch pedestal
+x 1
+y 3
+connected 70
 end
 arch magic_banned
 x 1
@@ -412,48 +447,77 @@ arch cobblestones2
 x 1
 y 3
 end
+arch igateTrg1
+x 1
+y 3
+connected 70
+end
 arch magic_banned
 x 1
 y 4
 end
+arch magic_mouth
+msg
+Say the command words from the sign to purchase a flight ticket to Brest.
+endmsg
+x 1
+y 4
+end
+arch magic_ear
+msg
+@match dangerous return
+Click.
+endmsg
+x 1
+y 4
+connected 70
+end
 arch cobblestones2
 x 1
 y 4
+end
+arch magic_banned
+x 1
+y 5
+end
+arch cobblestones2
+x 1
+y 5
+end
+arch sign
+msg
+Greetings Adventurer!
+The landscape around Brest makes a return dragon flight not possible. So when travelling to the great Kingdom of Brittany, you will have to find your own way home. Either through magical means or brave the dangerous and deadly ice swept path through the mountains.
+
+You have been warned!
+
+Say, "Dangerous return" to open the gate to purchase your flight ticket.
+endmsg
+x 1
+y 5
+end
+arch magic_banned
+x 1
+y 6
+end
+arch cobblestones2
+x 1
+y 6
+end
+arch magic_banned
+x 1
+y 7
+end
+arch cobblestones2
+x 1
+y 7
 end
 arch table_2
 x 1
-y 4
+y 7
 end
 arch random_food
 x 1
-y 4
-end
-arch magic_banned
-x 1
-y 5
-end
-arch cobblestones2
-x 1
-y 5
-end
-arch awall_2_1_2
-x 1
-y 5
-end
-arch magic_banned
-x 1
-y 6
-end
-arch cobblestones2
-x 1
-y 6
-end
-arch magic_banned
-x 1
-y 7
-end
-arch cobblestones2
-x 1
 y 7
 end
 arch magic_banned
@@ -461,6 +525,10 @@ x 1
 y 8
 end
 arch cobblestones2
+x 1
+y 8
+end
+arch awall_2_1_2
 x 1
 y 8
 end
@@ -648,9 +716,37 @@ arch cobblestones2
 x 1
 y 31
 end
+arch magic_banned
+x 1
+y 32
+end
+arch cobblestones2
+x 1
+y 32
+end
+arch magic_banned
+x 1
+y 33
+end
+arch cobblestones2
+x 1
+y 33
+end
+arch magic_banned
+x 1
+y 34
+end
+arch cobblestones2
+x 1
+y 34
+end
 arch awall_2_1_2
 x 1
-y 31
+y 34
+end
+arch blocked
+x 1
+y 35
 end
 arch magic_banned
 x 2
@@ -681,7 +777,7 @@ arch cobblestones2
 x 2
 y 2
 end
-arch awall_1_2
+arch awall_2_1_1
 x 2
 y 2
 end
@@ -693,6 +789,10 @@ arch cobblestones2
 x 2
 y 3
 end
+arch awall_2_1_1
+x 2
+y 3
+end
 arch magic_banned
 x 2
 y 4
@@ -700,76 +800,72 @@ end
 arch cobblestones2
 x 2
 y 4
+end
+arch awall_2_1_1
+x 2
+y 4
+end
+arch magic_banned
+x 2
+y 5
+end
+arch cobblestones2
+x 2
+y 5
+end
+arch awall_1_2
+x 2
+y 5
+end
+arch magic_banned
+x 2
+y 6
+end
+arch cobblestones2
+x 2
+y 6
+end
+arch magic_banned
+x 2
+y 7
+end
+arch cobblestones2
+x 2
+y 7
 end
 arch chair_1.3
 x 2
-y 4
+y 7
 end
 arch magic_banned
 x 2
-y 5
+y 8
 end
 arch cobblestones2
 x 2
-y 5
+y 8
 end
 arch awall_2_1_2
 x 2
-y 5
+y 8
 end
 arch magic_banned
 x 2
-y 6
+y 9
 end
 arch cobblestones2
 x 2
-y 6
+y 9
 end
 arch magic_banned
 x 2
-y 7
+y 10
 end
 arch cobblestones2
 x 2
-y 7
+y 10
 end
 arch swall_2_2_2
-x 2
-y 7
-end
-arch magic_banned
-x 2
-y 8
-end
-arch cobblestones2
-x 2
-y 8
-end
-arch swall_2_1_1
-x 2
-y 8
-end
-arch magic_banned
-x 2
-y 9
-end
-arch cobblestones2
-x 2
-y 9
-end
-arch swall_2_1_1
-x 2
-y 9
-end
-arch magic_banned
-x 2
-y 10
-end
-arch cobblestones2
-x 2
-y 10
-end
-arch swall_2_2_1
 x 2
 y 10
 end
@@ -781,6 +877,10 @@ arch cobblestones2
 x 2
 y 11
 end
+arch swall_2_1_1
+x 2
+y 11
+end
 arch magic_banned
 x 2
 y 12
@@ -789,51 +889,47 @@ arch cobblestones2
 x 2
 y 12
 end
-arch magic_banned
-x 2
-y 13
-end
-arch cobblestones2
-x 2
-y 13
-end
-arch swall_2_2_2
-x 2
-y 13
-end
-arch magic_banned
-x 2
-y 14
-end
-arch cobblestones2
-x 2
-y 14
-end
 arch swall_2_1_1
 x 2
-y 14
+y 12
 end
 arch magic_banned
 x 2
-y 15
+y 13
 end
 arch cobblestones2
 x 2
-y 15
-end
-arch swall_2_1_1
-x 2
-y 15
-end
-arch magic_banned
-x 2
-y 16
-end
-arch cobblestones2
-x 2
-y 16
+y 13
 end
 arch swall_2_2_1
+x 2
+y 13
+end
+arch magic_banned
+x 2
+y 14
+end
+arch cobblestones2
+x 2
+y 14
+end
+arch magic_banned
+x 2
+y 15
+end
+arch cobblestones2
+x 2
+y 15
+end
+arch magic_banned
+x 2
+y 16
+end
+arch cobblestones2
+x 2
+y 16
+end
+arch swall_2_2_2
 x 2
 y 16
 end
@@ -845,6 +941,10 @@ arch cobblestones2
 x 2
 y 17
 end
+arch swall_2_1_1
+x 2
+y 17
+end
 arch magic_banned
 x 2
 y 18
@@ -853,51 +953,47 @@ arch cobblestones2
 x 2
 y 18
 end
-arch magic_banned
-x 2
-y 19
-end
-arch cobblestones2
-x 2
-y 19
-end
-arch swall_2_2_2
-x 2
-y 19
-end
-arch magic_banned
-x 2
-y 20
-end
-arch cobblestones2
-x 2
-y 20
-end
 arch swall_2_1_1
 x 2
-y 20
+y 18
 end
 arch magic_banned
 x 2
-y 21
+y 19
 end
 arch cobblestones2
 x 2
-y 21
-end
-arch swall_2_1_1
-x 2
-y 21
-end
-arch magic_banned
-x 2
-y 22
-end
-arch cobblestones2
-x 2
-y 22
+y 19
 end
 arch swall_2_2_1
+x 2
+y 19
+end
+arch magic_banned
+x 2
+y 20
+end
+arch cobblestones2
+x 2
+y 20
+end
+arch magic_banned
+x 2
+y 21
+end
+arch cobblestones2
+x 2
+y 21
+end
+arch magic_banned
+x 2
+y 22
+end
+arch cobblestones2
+x 2
+y 22
+end
+arch swall_2_2_2
 x 2
 y 22
 end
@@ -909,6 +1005,10 @@ arch cobblestones2
 x 2
 y 23
 end
+arch swall_2_1_1
+x 2
+y 23
+end
 arch magic_banned
 x 2
 y 24
@@ -917,52 +1017,48 @@ arch cobblestones2
 x 2
 y 24
 end
-arch magic_banned
-x 2
-y 25
-end
-arch cobblestones2
-x 2
-y 25
-end
-arch swall_2_2_2
-x 2
-y 25
-end
-arch magic_banned
-x 2
-y 26
-end
-arch cobblestones2
-x 2
-y 26
-end
 arch swall_2_1_1
 x 2
-y 26
+y 24
 end
 arch magic_banned
 x 2
-y 27
+y 25
 end
 arch cobblestones2
 x 2
-y 27
-end
-arch swall_2_1_1
-x 2
-y 27
-end
-arch magic_banned
-x 2
-y 28
-end
-arch cobblestones2
-x 2
-y 28
+y 25
 end
 arch swall_2_2_1
 x 2
+y 25
+end
+arch magic_banned
+x 2
+y 26
+end
+arch cobblestones2
+x 2
+y 26
+end
+arch magic_banned
+x 2
+y 27
+end
+arch cobblestones2
+x 2
+y 27
+end
+arch magic_banned
+x 2
+y 28
+end
+arch cobblestones2
+x 2
+y 28
+end
+arch swall_2_2_2
+x 2
 y 28
 end
 arch magic_banned
@@ -973,11 +1069,19 @@ arch cobblestones2
 x 2
 y 29
 end
+arch swall_2_1_1
+x 2
+y 29
+end
 arch magic_banned
 x 2
 y 30
 end
 arch cobblestones2
+x 2
+y 30
+end
+arch swall_2_1_1
 x 2
 y 30
 end
@@ -988,10 +1092,42 @@ end
 arch cobblestones2
 x 2
 y 31
+end
+arch swall_2_2_1
+x 2
+y 31
+end
+arch magic_banned
+x 2
+y 32
+end
+arch cobblestones2
+x 2
+y 32
+end
+arch magic_banned
+x 2
+y 33
+end
+arch cobblestones2
+x 2
+y 33
+end
+arch magic_banned
+x 2
+y 34
+end
+arch cobblestones2
+x 2
+y 34
 end
 arch awall_2_1_2
 x 2
-y 31
+y 34
+end
+arch blocked
+x 2
+y 35
 end
 arch magic_banned
 x 3
@@ -1058,53 +1194,77 @@ arch cobblestones2
 x 3
 y 4
 end
+arch magic_banned
+x 3
+y 5
+end
+arch cobblestones2
+x 3
+y 5
+end
+arch magic_banned
+x 3
+y 6
+end
+arch cobblestones2
+x 3
+y 6
+end
+arch magic_banned
+x 3
+y 7
+end
+arch cobblestones2
+x 3
+y 7
+end
 arch table_2
 x 3
-y 4
+y 7
 end
 arch random_food
 x 3
-y 4
+y 7
 end
 arch magic_banned
 x 3
-y 5
+y 8
 end
 arch cobblestones2
 x 3
-y 5
+y 8
 end
 arch awall_2_1_2
 x 3
-y 5
+y 8
 end
 arch magic_banned
 x 3
-y 6
+y 9
 end
 arch cobblestones2
 x 3
-y 6
+y 9
 end
 arch magic_banned
 x 3
-y 7
+y 10
 end
 arch cobblestones2
 x 3
-y 7
+y 10
 end
 arch swall_2_1_2
 x 3
-y 7
+y 10
 end
 arch magic_banned
 x 3
-y 8
+y 11
 end
 arch cobblestones2
 x 3
-y 8
+y 11
 end
 arch dragon_exit
 name dragon express
@@ -1115,34 +1275,6 @@ endmsg
 hp 16
 sp 39
 x 3
-y 8
-end
-arch magic_banned
-x 3
-y 9
-end
-arch cobblestones2
-x 3
-y 9
-end
-arch magic_banned
-x 3
-y 10
-end
-arch cobblestones2
-x 3
-y 10
-end
-arch swall_2_1_2
-x 3
-y 10
-end
-arch magic_banned
-x 3
-y 11
-end
-arch cobblestones2
-x 3
 y 11
 end
 arch magic_banned
@@ -1172,6 +1304,34 @@ end
 arch cobblestones2
 x 3
 y 14
+end
+arch magic_banned
+x 3
+y 15
+end
+arch cobblestones2
+x 3
+y 15
+end
+arch magic_banned
+x 3
+y 16
+end
+arch cobblestones2
+x 3
+y 16
+end
+arch swall_2_1_2
+x 3
+y 16
+end
+arch magic_banned
+x 3
+y 17
+end
+arch cobblestones2
+x 3
+y 17
 end
 arch dragon_exit
 name dragon express
@@ -1182,34 +1342,6 @@ endmsg
 hp 7
 sp 3
 x 3
-y 14
-end
-arch magic_banned
-x 3
-y 15
-end
-arch cobblestones2
-x 3
-y 15
-end
-arch magic_banned
-x 3
-y 16
-end
-arch cobblestones2
-x 3
-y 16
-end
-arch swall_2_1_2
-x 3
-y 16
-end
-arch magic_banned
-x 3
-y 17
-end
-arch cobblestones2
-x 3
 y 17
 end
 arch magic_banned
@@ -1239,6 +1371,34 @@ end
 arch cobblestones2
 x 3
 y 20
+end
+arch magic_banned
+x 3
+y 21
+end
+arch cobblestones2
+x 3
+y 21
+end
+arch magic_banned
+x 3
+y 22
+end
+arch cobblestones2
+x 3
+y 22
+end
+arch swall_2_1_2
+x 3
+y 22
+end
+arch magic_banned
+x 3
+y 23
+end
+arch cobblestones2
+x 3
+y 23
 end
 arch dragon_exit
 name dragon express
@@ -1249,34 +1409,6 @@ endmsg
 hp 35
 sp 13
 x 3
-y 20
-end
-arch magic_banned
-x 3
-y 21
-end
-arch cobblestones2
-x 3
-y 21
-end
-arch magic_banned
-x 3
-y 22
-end
-arch cobblestones2
-x 3
-y 22
-end
-arch swall_2_1_2
-x 3
-y 22
-end
-arch magic_banned
-x 3
-y 23
-end
-arch cobblestones2
-x 3
 y 23
 end
 arch magic_banned
@@ -1306,6 +1438,34 @@ end
 arch cobblestones2
 x 3
 y 26
+end
+arch magic_banned
+x 3
+y 27
+end
+arch cobblestones2
+x 3
+y 27
+end
+arch magic_banned
+x 3
+y 28
+end
+arch cobblestones2
+x 3
+y 28
+end
+arch swall_2_1_2
+x 3
+y 28
+end
+arch magic_banned
+x 3
+y 29
+end
+arch cobblestones2
+x 3
+y 29
 end
 arch dragon_exit
 name dragon express
@@ -1316,55 +1476,59 @@ endmsg
 hp 32
 sp 30
 x 3
-y 26
+y 29
 end
 arch magic_banned
 x 3
-y 27
+y 30
 end
 arch cobblestones2
 x 3
-y 27
+y 30
 end
 arch magic_banned
 x 3
-y 28
+y 31
 end
 arch cobblestones2
 x 3
-y 28
+y 31
 end
 arch swall_2_1_2
 x 3
-y 28
-end
-arch magic_banned
-x 3
-y 29
-end
-arch cobblestones2
-x 3
-y 29
-end
-arch magic_banned
-x 3
-y 30
-end
-arch cobblestones2
-x 3
-y 30
-end
-arch magic_banned
-x 3
 y 31
 end
+arch magic_banned
+x 3
+y 32
+end
 arch cobblestones2
 x 3
-y 31
+y 32
+end
+arch magic_banned
+x 3
+y 33
+end
+arch cobblestones2
+x 3
+y 33
+end
+arch magic_banned
+x 3
+y 34
+end
+arch cobblestones2
+x 3
+y 34
 end
 arch awall_2_1_2
 x 3
-y 31
+y 34
+end
+arch blocked
+x 3
+y 35
 end
 arch magic_banned
 x 4
@@ -1395,7 +1559,7 @@ arch cobblestones2
 x 4
 y 2
 end
-arch awall_1_2
+arch awall_2_1_1
 x 4
 y 2
 end
@@ -1407,6 +1571,10 @@ arch cobblestones2
 x 4
 y 3
 end
+arch awall_1_2
+x 4
+y 3
+end
 arch magic_banned
 x 4
 y 4
@@ -1414,41 +1582,33 @@ end
 arch cobblestones2
 x 4
 y 4
+end
+arch magic_banned
+x 4
+y 5
+end
+arch cobblestones2
+x 4
+y 5
+end
+arch magic_banned
+x 4
+y 6
+end
+arch cobblestones2
+x 4
+y 6
+end
+arch magic_banned
+x 4
+y 7
+end
+arch cobblestones2
+x 4
+y 7
 end
 arch chair_1.3
 x 4
-y 4
-end
-arch magic_banned
-x 4
-y 5
-end
-arch cobblestones2
-x 4
-y 5
-end
-arch awall_2_1_2
-x 4
-y 5
-end
-arch magic_banned
-x 4
-y 6
-end
-arch cobblestones2
-x 4
-y 6
-end
-arch magic_banned
-x 4
-y 7
-end
-arch cobblestones2
-x 4
-y 7
-end
-arch swall_2_1_2
-x 4
 y 7
 end
 arch magic_banned
@@ -1456,6 +1616,10 @@ x 4
 y 8
 end
 arch cobblestones2
+x 4
+y 8
+end
+arch awall_2_1_2
 x 4
 y 8
 end
@@ -1671,9 +1835,41 @@ arch cobblestones2
 x 4
 y 31
 end
-arch awall_2_1_2
+arch swall_2_1_2
 x 4
 y 31
+end
+arch magic_banned
+x 4
+y 32
+end
+arch cobblestones2
+x 4
+y 32
+end
+arch magic_banned
+x 4
+y 33
+end
+arch cobblestones2
+x 4
+y 33
+end
+arch magic_banned
+x 4
+y 34
+end
+arch cobblestones2
+x 4
+y 34
+end
+arch awall_2_1_2
+x 4
+y 34
+end
+arch blocked
+x 4
+y 35
 end
 arch magic_banned
 x 5
@@ -1740,44 +1936,36 @@ arch cobblestones2
 x 5
 y 4
 end
+arch magic_banned
+x 5
+y 5
+end
+arch cobblestones2
+x 5
+y 5
+end
+arch magic_banned
+x 5
+y 6
+end
+arch cobblestones2
+x 5
+y 6
+end
+arch magic_banned
+x 5
+y 7
+end
+arch cobblestones2
+x 5
+y 7
+end
 arch table_2
 x 5
-y 4
+y 7
 end
 arch booze
 x 5
-y 4
-end
-arch magic_banned
-x 5
-y 5
-end
-arch cobblestones2
-x 5
-y 5
-end
-arch awall_2_1_2
-x 5
-y 5
-end
-arch magic_banned
-x 5
-y 6
-end
-arch cobblestones2
-x 5
-y 6
-end
-arch magic_banned
-x 5
-y 7
-end
-arch cobblestones2
-x 5
-y 7
-end
-arch swall_2_1_2
-x 5
 y 7
 end
 arch magic_banned
@@ -1785,6 +1973,10 @@ x 5
 y 8
 end
 arch cobblestones2
+x 5
+y 8
+end
+arch awall_2_1_2
 x 5
 y 8
 end
@@ -2000,9 +2192,41 @@ arch cobblestones2
 x 5
 y 31
 end
-arch awall_2_1_2
+arch swall_2_1_2
 x 5
 y 31
+end
+arch magic_banned
+x 5
+y 32
+end
+arch cobblestones2
+x 5
+y 32
+end
+arch magic_banned
+x 5
+y 33
+end
+arch cobblestones2
+x 5
+y 33
+end
+arch magic_banned
+x 5
+y 34
+end
+arch cobblestones2
+x 5
+y 34
+end
+arch awall_2_1_2
+x 5
+y 34
+end
+arch blocked
+x 5
+y 35
 end
 arch magic_banned
 x 6
@@ -2033,7 +2257,7 @@ arch cobblestones2
 x 6
 y 2
 end
-arch awall_1_2
+arch awall_2_1_1
 x 6
 y 2
 end
@@ -2045,6 +2269,10 @@ arch cobblestones2
 x 6
 y 3
 end
+arch awall_1_2
+x 6
+y 3
+end
 arch magic_banned
 x 6
 y 4
@@ -2052,302 +2280,330 @@ end
 arch cobblestones2
 x 6
 y 4
+end
+arch magic_banned
+x 6
+y 5
+end
+arch cobblestones2
+x 6
+y 5
+end
+arch magic_banned
+x 6
+y 6
+end
+arch cobblestones2
+x 6
+y 6
+end
+arch magic_banned
+x 6
+y 7
+end
+arch cobblestones2
+x 6
+y 7
 end
 arch chair_1.3
 x 6
-y 4
+y 7
 end
 arch magic_banned
 x 6
-y 5
+y 8
 end
 arch cobblestones2
 x 6
-y 5
+y 8
 end
 arch awall_2_1_2
 x 6
-y 5
+y 8
 end
 arch magic_banned
 x 6
-y 6
+y 9
 end
 arch cobblestones2
 x 6
-y 6
+y 9
 end
 arch magic_banned
 x 6
-y 7
+y 10
 end
 arch cobblestones2
 x 6
-y 7
+y 10
 end
 arch swall_2_2_3
 x 6
-y 7
+y 10
 end
 arch magic_banned
 x 6
-y 8
+y 11
 end
 arch cobblestones2
 x 6
-y 8
+y 11
 end
 arch swall_1_2
 x 6
-y 8
+y 11
 end
 arch magic_banned
 x 6
-y 9
+y 12
 end
 arch cobblestones2
 x 6
-y 9
+y 12
 end
 arch grate_closed_2
 x 6
-y 9
+y 12
 connected 40
 end
 arch magic_banned
 x 6
-y 10
+y 13
 end
 arch cobblestones2
 x 6
-y 10
+y 13
 end
 arch swall_1_3
 x 6
-y 10
-end
-arch magic_banned
-x 6
-y 11
-end
-arch cobblestones2
-x 6
-y 11
-end
-arch magic_banned
-x 6
-y 12
-end
-arch cobblestones2
-x 6
-y 12
-end
-arch magic_banned
-x 6
 y 13
 end
+arch magic_banned
+x 6
+y 14
+end
 arch cobblestones2
 x 6
-y 13
+y 14
+end
+arch magic_banned
+x 6
+y 15
+end
+arch cobblestones2
+x 6
+y 15
+end
+arch magic_banned
+x 6
+y 16
+end
+arch cobblestones2
+x 6
+y 16
 end
 arch swall_2_2_3
 x 6
-y 13
+y 16
 end
 arch magic_banned
 x 6
-y 14
+y 17
 end
 arch cobblestones2
 x 6
-y 14
+y 17
 end
 arch swall_1_2
 x 6
-y 14
+y 17
 end
 arch magic_banned
 x 6
-y 15
+y 18
 end
 arch cobblestones2
 x 6
-y 15
+y 18
 end
 arch grate_closed_2
 x 6
-y 15
+y 18
 connected 3
 end
 arch magic_banned
 x 6
-y 16
+y 19
 end
 arch cobblestones2
 x 6
-y 16
+y 19
 end
 arch swall_1_3
 x 6
-y 16
-end
-arch magic_banned
-x 6
-y 17
-end
-arch cobblestones2
-x 6
-y 17
-end
-arch magic_banned
-x 6
-y 18
-end
-arch cobblestones2
-x 6
-y 18
-end
-arch magic_banned
-x 6
 y 19
 end
+arch magic_banned
+x 6
+y 20
+end
 arch cobblestones2
 x 6
-y 19
+y 20
+end
+arch magic_banned
+x 6
+y 21
+end
+arch cobblestones2
+x 6
+y 21
+end
+arch magic_banned
+x 6
+y 22
+end
+arch cobblestones2
+x 6
+y 22
 end
 arch swall_2_2_3
 x 6
-y 19
+y 22
 end
 arch magic_banned
 x 6
-y 20
+y 23
 end
 arch cobblestones2
 x 6
-y 20
+y 23
 end
 arch swall_1_2
 x 6
-y 20
+y 23
 end
 arch magic_banned
 x 6
-y 21
+y 24
 end
 arch cobblestones2
 x 6
-y 21
+y 24
 end
 arch grate_closed_2
 x 6
-y 21
+y 24
 connected 5
 end
 arch magic_banned
 x 6
-y 22
+y 25
 end
 arch cobblestones2
 x 6
-y 22
+y 25
 end
 arch swall_1_3
 x 6
-y 22
-end
-arch magic_banned
-x 6
-y 23
-end
-arch cobblestones2
-x 6
-y 23
-end
-arch magic_banned
-x 6
-y 24
-end
-arch cobblestones2
-x 6
-y 24
-end
-arch magic_banned
-x 6
 y 25
 end
+arch magic_banned
+x 6
+y 26
+end
 arch cobblestones2
 x 6
-y 25
+y 26
+end
+arch magic_banned
+x 6
+y 27
+end
+arch cobblestones2
+x 6
+y 27
+end
+arch magic_banned
+x 6
+y 28
+end
+arch cobblestones2
+x 6
+y 28
 end
 arch swall_2_2_3
 x 6
-y 25
+y 28
 end
 arch magic_banned
 x 6
-y 26
+y 29
 end
 arch cobblestones2
 x 6
-y 26
+y 29
 end
 arch swall_1_2
 x 6
-y 26
+y 29
 end
 arch magic_banned
 x 6
-y 27
+y 30
 end
 arch cobblestones2
 x 6
-y 27
+y 30
 end
 arch grate_closed_2
 x 6
-y 27
+y 30
 connected 7
 end
 arch magic_banned
 x 6
-y 28
+y 31
 end
 arch cobblestones2
 x 6
-y 28
+y 31
 end
 arch swall_1_3
 x 6
-y 28
-end
-arch magic_banned
-x 6
-y 29
-end
-arch cobblestones2
-x 6
-y 29
-end
-arch magic_banned
-x 6
-y 30
-end
-arch cobblestones2
-x 6
-y 30
-end
-arch magic_banned
-x 6
 y 31
 end
+arch magic_banned
+x 6
+y 32
+end
 arch cobblestones2
 x 6
-y 31
+y 32
+end
+arch magic_banned
+x 6
+y 33
+end
+arch cobblestones2
+x 6
+y 33
+end
+arch magic_banned
+x 6
+y 34
+end
+arch cobblestones2
+x 6
+y 34
 end
 arch awall_2_1_2
 x 6
-y 31
+y 34
+end
+arch blocked
+x 6
+y 35
 end
 arch magic_banned
 x 7
@@ -2414,91 +2670,91 @@ arch cobblestones2
 x 7
 y 4
 end
+arch magic_banned
+x 7
+y 5
+end
+arch cobblestones2
+x 7
+y 5
+end
+arch magic_banned
+x 7
+y 6
+end
+arch cobblestones2
+x 7
+y 6
+end
+arch magic_banned
+x 7
+y 7
+end
+arch cobblestones2
+x 7
+y 7
+end
 arch table_2
 x 7
-y 4
+y 7
 end
 arch random_food
 x 7
-y 4
+y 7
 end
 arch magic_banned
 x 7
-y 5
+y 8
 end
 arch cobblestones2
 x 7
-y 5
+y 8
 end
 arch awall_2_1_2
 x 7
-y 5
-end
-arch magic_banned
-x 7
-y 6
-end
-arch cobblestones2
-x 7
-y 6
-end
-arch magic_banned
-x 7
-y 7
-end
-arch cobblestones2
-x 7
-y 7
-end
-arch magic_banned
-x 7
 y 8
 end
+arch magic_banned
+x 7
+y 9
+end
 arch cobblestones2
 x 7
-y 8
+y 9
+end
+arch magic_banned
+x 7
+y 10
+end
+arch cobblestones2
+x 7
+y 10
+end
+arch magic_banned
+x 7
+y 11
+end
+arch cobblestones2
+x 7
+y 11
 end
 arch altar_trigger
 name To Port Joseph
 slaying Ticket To Port Joseph
 food 1
 x 7
-y 8
+y 11
 connected 40
 end
 arch magic_banned
 x 7
-y 9
+y 12
 end
 arch magic_mouth
 msg
 Port Joseph
 endmsg
 x 7
-y 9
-end
-arch cobblestones2
-x 7
-y 9
-end
-arch magic_banned
-x 7
-y 10
-end
-arch cobblestones2
-x 7
-y 10
-end
-arch magic_banned
-x 7
-y 11
-end
-arch cobblestones2
-x 7
-y 11
-end
-arch magic_banned
-x 7
 y 12
 end
 arch cobblestones2
@@ -2520,48 +2776,48 @@ end
 arch cobblestones2
 x 7
 y 14
+end
+arch magic_banned
+x 7
+y 15
+end
+arch cobblestones2
+x 7
+y 15
+end
+arch magic_banned
+x 7
+y 16
+end
+arch cobblestones2
+x 7
+y 16
+end
+arch magic_banned
+x 7
+y 17
+end
+arch cobblestones2
+x 7
+y 17
 end
 arch altar_trigger
 name To Red Town
 slaying Ticket To Red Town
 food 1
 x 7
-y 14
+y 17
 connected 3
 end
 arch magic_banned
 x 7
-y 15
+y 18
 end
 arch magic_mouth
 msg
 Red Town
 endmsg
 x 7
-y 15
-end
-arch cobblestones2
-x 7
-y 15
-end
-arch magic_banned
-x 7
-y 16
-end
-arch cobblestones2
-x 7
-y 16
-end
-arch magic_banned
-x 7
-y 17
-end
-arch cobblestones2
-x 7
-y 17
-end
-arch magic_banned
-x 7
 y 18
 end
 arch cobblestones2
@@ -2583,48 +2839,48 @@ end
 arch cobblestones2
 x 7
 y 20
+end
+arch magic_banned
+x 7
+y 21
+end
+arch cobblestones2
+x 7
+y 21
+end
+arch magic_banned
+x 7
+y 22
+end
+arch cobblestones2
+x 7
+y 22
+end
+arch magic_banned
+x 7
+y 23
+end
+arch cobblestones2
+x 7
+y 23
 end
 arch altar_trigger
 name To Wolfsburg
 slaying Ticket To Wolfsburg
 food 1
 x 7
-y 20
+y 23
 connected 5
 end
 arch magic_banned
 x 7
-y 21
+y 24
 end
 arch magic_mouth
 msg
 Wolfsburg
 endmsg
 x 7
-y 21
-end
-arch cobblestones2
-x 7
-y 21
-end
-arch magic_banned
-x 7
-y 22
-end
-arch cobblestones2
-x 7
-y 22
-end
-arch magic_banned
-x 7
-y 23
-end
-arch cobblestones2
-x 7
-y 23
-end
-arch magic_banned
-x 7
 y 24
 end
 arch cobblestones2
@@ -2646,48 +2902,48 @@ end
 arch cobblestones2
 x 7
 y 26
+end
+arch magic_banned
+x 7
+y 27
+end
+arch cobblestones2
+x 7
+y 27
+end
+arch magic_banned
+x 7
+y 28
+end
+arch cobblestones2
+x 7
+y 28
+end
+arch magic_banned
+x 7
+y 29
+end
+arch cobblestones2
+x 7
+y 29
 end
 arch altar_trigger
 name To Brest
 slaying Ticket To Brest
 food 1
 x 7
-y 26
+y 29
 connected 7
 end
 arch magic_banned
 x 7
-y 27
+y 30
 end
 arch magic_mouth
 msg
 Brest
 endmsg
 x 7
-y 27
-end
-arch cobblestones2
-x 7
-y 27
-end
-arch magic_banned
-x 7
-y 28
-end
-arch cobblestones2
-x 7
-y 28
-end
-arch magic_banned
-x 7
-y 29
-end
-arch cobblestones2
-x 7
-y 29
-end
-arch magic_banned
-x 7
 y 30
 end
 arch cobblestones2
@@ -2701,10 +2957,38 @@ end
 arch cobblestones2
 x 7
 y 31
+end
+arch magic_banned
+x 7
+y 32
+end
+arch cobblestones2
+x 7
+y 32
+end
+arch magic_banned
+x 7
+y 33
+end
+arch cobblestones2
+x 7
+y 33
+end
+arch magic_banned
+x 7
+y 34
+end
+arch cobblestones2
+x 7
+y 34
 end
 arch awall_2_1_2
 x 7
-y 31
+y 34
+end
+arch blocked
+x 7
+y 35
 end
 arch magic_banned
 x 8
@@ -2735,7 +3019,7 @@ arch cobblestones2
 x 8
 y 2
 end
-arch awall_1_2
+arch awall_2_1_1
 x 8
 y 2
 end
@@ -2747,6 +3031,10 @@ arch cobblestones2
 x 8
 y 3
 end
+arch awall_1_2
+x 8
+y 3
+end
 arch magic_banned
 x 8
 y 4
@@ -2754,37 +3042,33 @@ end
 arch cobblestones2
 x 8
 y 4
+end
+arch magic_banned
+x 8
+y 5
+end
+arch cobblestones2
+x 8
+y 5
+end
+arch magic_banned
+x 8
+y 6
+end
+arch cobblestones2
+x 8
+y 6
+end
+arch magic_banned
+x 8
+y 7
+end
+arch cobblestones2
+x 8
+y 7
 end
 arch chair_1.3
 x 8
-y 4
-end
-arch magic_banned
-x 8
-y 5
-end
-arch cobblestones2
-x 8
-y 5
-end
-arch awall_2_1_2
-x 8
-y 5
-end
-arch magic_banned
-x 8
-y 6
-end
-arch cobblestones2
-x 8
-y 6
-end
-arch magic_banned
-x 8
-y 7
-end
-arch cobblestones2
-x 8
 y 7
 end
 arch magic_banned
@@ -2792,6 +3076,10 @@ x 8
 y 8
 end
 arch cobblestones2
+x 8
+y 8
+end
+arch awall_2_1_2
 x 8
 y 8
 end
@@ -2979,9 +3267,37 @@ arch cobblestones2
 x 8
 y 31
 end
+arch magic_banned
+x 8
+y 32
+end
+arch cobblestones2
+x 8
+y 32
+end
+arch magic_banned
+x 8
+y 33
+end
+arch cobblestones2
+x 8
+y 33
+end
+arch magic_banned
+x 8
+y 34
+end
+arch cobblestones2
+x 8
+y 34
+end
 arch awall_2_1_2
 x 8
-y 31
+y 34
+end
+arch blocked
+x 8
+y 35
 end
 arch magic_banned
 x 9
@@ -3048,40 +3364,36 @@ arch cobblestones2
 x 9
 y 4
 end
+arch magic_banned
+x 9
+y 5
+end
+arch cobblestones2
+x 9
+y 5
+end
+arch magic_banned
+x 9
+y 6
+end
+arch cobblestones2
+x 9
+y 6
+end
+arch magic_banned
+x 9
+y 7
+end
+arch cobblestones2
+x 9
+y 7
+end
 arch table_2
 x 9
-y 4
+y 7
 end
 arch random_food
 x 9
-y 4
-end
-arch magic_banned
-x 9
-y 5
-end
-arch cobblestones2
-x 9
-y 5
-end
-arch awall_2_1_2
-x 9
-y 5
-end
-arch magic_banned
-x 9
-y 6
-end
-arch cobblestones2
-x 9
-y 6
-end
-arch magic_banned
-x 9
-y 7
-end
-arch cobblestones2
-x 9
 y 7
 end
 arch magic_banned
@@ -3089,6 +3401,10 @@ x 9
 y 8
 end
 arch cobblestones2
+x 9
+y 8
+end
+arch awall_2_1_2
 x 9
 y 8
 end
@@ -3276,9 +3592,37 @@ arch cobblestones2
 x 9
 y 31
 end
+arch magic_banned
+x 9
+y 32
+end
+arch cobblestones2
+x 9
+y 32
+end
+arch magic_banned
+x 9
+y 33
+end
+arch cobblestones2
+x 9
+y 33
+end
+arch magic_banned
+x 9
+y 34
+end
+arch cobblestones2
+x 9
+y 34
+end
 arch awall_2_1_2
 x 9
-y 31
+y 34
+end
+arch blocked
+x 9
+y 35
 end
 arch magic_banned
 x 10
@@ -3309,7 +3653,7 @@ arch cobblestones2
 x 10
 y 2
 end
-arch awall_1_2
+arch awall_2_1_1
 x 10
 y 2
 end
@@ -3321,6 +3665,10 @@ arch cobblestones2
 x 10
 y 3
 end
+arch awall_1_2
+x 10
+y 3
+end
 arch magic_banned
 x 10
 y 4
@@ -3328,88 +3676,88 @@ end
 arch cobblestones2
 x 10
 y 4
+end
+arch magic_banned
+x 10
+y 5
+end
+arch cobblestones2
+x 10
+y 5
+end
+arch magic_banned
+x 10
+y 6
+end
+arch cobblestones2
+x 10
+y 6
+end
+arch magic_banned
+x 10
+y 7
+end
+arch cobblestones2
+x 10
+y 7
 end
 arch chair_1.3
 x 10
-y 4
+y 7
 end
 arch magic_banned
 x 10
-y 5
+y 8
 end
 arch cobblestones2
 x 10
-y 5
+y 8
 end
 arch awall_2_1_2
 x 10
-y 5
-end
-arch magic_banned
-x 10
-y 6
-end
-arch cobblestones2
-x 10
-y 6
-end
-arch magic_banned
-x 10
-y 7
-end
-arch cobblestones2
-x 10
-y 7
-end
-arch magic_banned
-x 10
 y 8
 end
+arch magic_banned
+x 10
+y 9
+end
 arch cobblestones2
 x 10
-y 8
+y 9
+end
+arch magic_banned
+x 10
+y 10
+end
+arch cobblestones2
+x 10
+y 10
+end
+arch magic_banned
+x 10
+y 11
+end
+arch cobblestones2
+x 10
+y 11
 end
 arch altar_trigger
 name Closed
 slaying Closed
 food 1
 x 10
-y 8
+y 11
 connected 2
 end
 arch magic_banned
 x 10
-y 9
+y 12
 end
 arch magic_mouth
 msg
 Navar
 endmsg
 x 10
-y 9
-end
-arch cobblestones2
-x 10
-y 9
-end
-arch magic_banned
-x 10
-y 10
-end
-arch cobblestones2
-x 10
-y 10
-end
-arch magic_banned
-x 10
-y 11
-end
-arch cobblestones2
-x 10
-y 11
-end
-arch magic_banned
-x 10
 y 12
 end
 arch cobblestones2
@@ -3431,48 +3779,48 @@ end
 arch cobblestones2
 x 10
 y 14
+end
+arch magic_banned
+x 10
+y 15
+end
+arch cobblestones2
+x 10
+y 15
+end
+arch magic_banned
+x 10
+y 16
+end
+arch cobblestones2
+x 10
+y 16
+end
+arch magic_banned
+x 10
+y 17
+end
+arch cobblestones2
+x 10
+y 17
 end
 arch altar_trigger
 name To Dtabb
 slaying Ticket To Dtabb
 food 1
 x 10
-y 14
+y 17
 connected 4
 end
 arch magic_banned
 x 10
-y 15
+y 18
 end
 arch magic_mouth
 msg
 Dtabb
 endmsg
 x 10
-y 15
-end
-arch cobblestones2
-x 10
-y 15
-end
-arch magic_banned
-x 10
-y 16
-end
-arch cobblestones2
-x 10
-y 16
-end
-arch magic_banned
-x 10
-y 17
-end
-arch cobblestones2
-x 10
-y 17
-end
-arch magic_banned
-x 10
 y 18
 end
 arch cobblestones2
@@ -3494,48 +3842,48 @@ end
 arch cobblestones2
 x 10
 y 20
+end
+arch magic_banned
+x 10
+y 21
+end
+arch cobblestones2
+x 10
+y 21
+end
+arch magic_banned
+x 10
+y 22
+end
+arch cobblestones2
+x 10
+y 22
+end
+arch magic_banned
+x 10
+y 23
+end
+arch cobblestones2
+x 10
+y 23
 end
 arch altar_trigger
 name To Stoneville
 slaying Ticket To Stoneville
 food 1
 x 10
-y 20
+y 23
 connected 6
 end
 arch magic_banned
 x 10
-y 21
+y 24
 end
 arch magic_mouth
 msg
 Out Of Order
 endmsg
 x 10
-y 21
-end
-arch cobblestones2
-x 10
-y 21
-end
-arch magic_banned
-x 10
-y 22
-end
-arch cobblestones2
-x 10
-y 22
-end
-arch magic_banned
-x 10
-y 23
-end
-arch cobblestones2
-x 10
-y 23
-end
-arch magic_banned
-x 10
 y 24
 end
 arch cobblestones2
@@ -3557,48 +3905,48 @@ end
 arch cobblestones2
 x 10
 y 26
+end
+arch magic_banned
+x 10
+y 27
+end
+arch cobblestones2
+x 10
+y 27
+end
+arch magic_banned
+x 10
+y 28
+end
+arch cobblestones2
+x 10
+y 28
+end
+arch magic_banned
+x 10
+y 29
+end
+arch cobblestones2
+x 10
+y 29
 end
 arch altar_trigger
 name Out Of Order
 slaying Out Of Order
 food 1
 x 10
-y 26
+y 29
 connected 8
 end
 arch magic_banned
 x 10
-y 27
+y 30
 end
 arch magic_mouth
 msg
 Out Of Order
 endmsg
 x 10
-y 27
-end
-arch cobblestones2
-x 10
-y 27
-end
-arch magic_banned
-x 10
-y 28
-end
-arch cobblestones2
-x 10
-y 28
-end
-arch magic_banned
-x 10
-y 29
-end
-arch cobblestones2
-x 10
-y 29
-end
-arch magic_banned
-x 10
 y 30
 end
 arch cobblestones2
@@ -3612,10 +3960,38 @@ end
 arch cobblestones2
 x 10
 y 31
+end
+arch magic_banned
+x 10
+y 32
+end
+arch cobblestones2
+x 10
+y 32
+end
+arch magic_banned
+x 10
+y 33
+end
+arch cobblestones2
+x 10
+y 33
+end
+arch magic_banned
+x 10
+y 34
+end
+arch cobblestones2
+x 10
+y 34
 end
 arch awall_2_1_2
 x 10
-y 31
+y 34
+end
+arch blocked
+x 10
+y 35
 end
 arch magic_banned
 x 11
@@ -3631,11 +4007,11 @@ x 11
 y 1
 end
 arch creator
-slaying Ticket To Brest
+slaying Ticket To Port Joseph
 other_arch card
 x 11
 y 1
-connected 25
+connected 20
 lifesave 1
 end
 arch cobblestones2
@@ -3648,7 +4024,7 @@ y 2
 end
 arch magic_mouth
 msg
-Drop 1000 gold coins to buy a ticket to Brest.
+Drop 100 gold coins to buy a ticket to Port Joseph.
 endmsg
 x 11
 y 2
@@ -3660,11 +4036,11 @@ end
 arch altar_trigger
 name Ticket Booth
 slaying money
-food 10000
+food 1000
 x 11
 y 2
 last_sp 1
-connected 25
+connected 20
 end
 arch magic_banned
 x 11
@@ -3681,306 +4057,334 @@ end
 arch cobblestones2
 x 11
 y 4
+end
+arch magic_banned
+x 11
+y 5
+end
+arch cobblestones2
+x 11
+y 5
+end
+arch magic_banned
+x 11
+y 6
+end
+arch cobblestones2
+x 11
+y 6
+end
+arch magic_banned
+x 11
+y 7
+end
+arch cobblestones2
+x 11
+y 7
 end
 arch table_2
 x 11
-y 4
+y 7
 end
 arch random_food
 x 11
-y 4
+y 7
 end
 arch magic_banned
 x 11
-y 5
+y 8
 end
 arch cobblestones2
 x 11
-y 5
+y 8
 end
 arch awall_2_1_2
 x 11
-y 5
+y 8
 end
 arch magic_banned
 x 11
-y 6
+y 9
 end
 arch cobblestones2
 x 11
-y 6
+y 9
 end
 arch magic_banned
 x 11
-y 7
+y 10
 end
 arch cobblestones2
 x 11
-y 7
+y 10
 end
 arch swall_2_2_2
 x 11
-y 7
+y 10
 end
 arch magic_banned
 x 11
-y 8
+y 11
 end
 arch cobblestones2
 x 11
-y 8
+y 11
 end
 arch swall_1_2
 x 11
-y 8
+y 11
 end
 arch magic_banned
 x 11
-y 9
+y 12
 end
 arch cobblestones2
 x 11
-y 9
+y 12
 end
 arch grate_closed_2
 x 11
-y 9
+y 12
 connected 2
 end
 arch magic_banned
 x 11
-y 10
+y 13
 end
 arch cobblestones2
 x 11
-y 10
+y 13
 end
 arch swall_1_4
 x 11
-y 10
-end
-arch magic_banned
-x 11
-y 11
-end
-arch cobblestones2
-x 11
-y 11
-end
-arch magic_banned
-x 11
-y 12
-end
-arch cobblestones2
-x 11
-y 12
-end
-arch magic_banned
-x 11
 y 13
 end
+arch magic_banned
+x 11
+y 14
+end
 arch cobblestones2
 x 11
-y 13
+y 14
+end
+arch magic_banned
+x 11
+y 15
+end
+arch cobblestones2
+x 11
+y 15
+end
+arch magic_banned
+x 11
+y 16
+end
+arch cobblestones2
+x 11
+y 16
 end
 arch swall_2_2_2
 x 11
-y 13
+y 16
 end
 arch magic_banned
 x 11
-y 14
+y 17
 end
 arch cobblestones2
 x 11
-y 14
+y 17
 end
 arch swall_1_2
 x 11
-y 14
+y 17
 end
 arch magic_banned
 x 11
-y 15
+y 18
 end
 arch cobblestones2
 x 11
-y 15
+y 18
 end
 arch grate_closed_2
 x 11
-y 15
+y 18
 connected 4
 end
 arch magic_banned
 x 11
-y 16
+y 19
 end
 arch cobblestones2
 x 11
-y 16
+y 19
 end
 arch swall_1_4
 x 11
-y 16
-end
-arch magic_banned
-x 11
-y 17
-end
-arch cobblestones2
-x 11
-y 17
-end
-arch magic_banned
-x 11
-y 18
-end
-arch cobblestones2
-x 11
-y 18
-end
-arch magic_banned
-x 11
 y 19
 end
+arch magic_banned
+x 11
+y 20
+end
 arch cobblestones2
 x 11
-y 19
+y 20
+end
+arch magic_banned
+x 11
+y 21
+end
+arch cobblestones2
+x 11
+y 21
+end
+arch magic_banned
+x 11
+y 22
+end
+arch cobblestones2
+x 11
+y 22
 end
 arch swall_2_2_2
 x 11
-y 19
+y 22
 end
 arch magic_banned
 x 11
-y 20
+y 23
 end
 arch cobblestones2
 x 11
-y 20
+y 23
 end
 arch swall_1_2
 x 11
-y 20
+y 23
 end
 arch magic_banned
 x 11
-y 21
+y 24
 end
 arch cobblestones2
 x 11
-y 21
+y 24
 end
 arch grate_closed_2
 x 11
-y 21
+y 24
 connected 6
 end
 arch magic_banned
 x 11
-y 22
+y 25
 end
 arch cobblestones2
 x 11
-y 22
+y 25
 end
 arch swall_1_4
 x 11
-y 22
-end
-arch magic_banned
-x 11
-y 23
-end
-arch cobblestones2
-x 11
-y 23
-end
-arch magic_banned
-x 11
-y 24
-end
-arch cobblestones2
-x 11
-y 24
-end
-arch magic_banned
-x 11
 y 25
 end
+arch magic_banned
+x 11
+y 26
+end
 arch cobblestones2
 x 11
-y 25
+y 26
+end
+arch magic_banned
+x 11
+y 27
+end
+arch cobblestones2
+x 11
+y 27
+end
+arch magic_banned
+x 11
+y 28
+end
+arch cobblestones2
+x 11
+y 28
 end
 arch swall_2_2_2
 x 11
-y 25
+y 28
 end
 arch magic_banned
 x 11
-y 26
+y 29
 end
 arch cobblestones2
 x 11
-y 26
+y 29
 end
 arch swall_1_2
 x 11
-y 26
+y 29
 end
 arch magic_banned
 x 11
-y 27
+y 30
 end
 arch cobblestones2
 x 11
-y 27
+y 30
 end
 arch grate_closed_2
 x 11
-y 27
+y 30
 connected 8
 end
 arch magic_banned
 x 11
-y 28
+y 31
 end
 arch cobblestones2
 x 11
-y 28
+y 31
 end
 arch swall_1_4
 x 11
-y 28
-end
-arch magic_banned
-x 11
-y 29
-end
-arch cobblestones2
-x 11
-y 29
-end
-arch magic_banned
-x 11
-y 30
-end
-arch cobblestones2
-x 11
-y 30
-end
-arch magic_banned
-x 11
 y 31
 end
+arch magic_banned
+x 11
+y 32
+end
 arch cobblestones2
 x 11
-y 31
+y 32
+end
+arch magic_banned
+x 11
+y 33
+end
+arch cobblestones2
+x 11
+y 33
+end
+arch magic_banned
+x 11
+y 34
+end
+arch cobblestones2
+x 11
+y 34
 end
 arch awall_2_1_2
 x 11
-y 31
+y 34
+end
+arch blocked
+x 11
+y 35
 end
 arch magic_banned
 x 12
@@ -4031,6 +4435,30 @@ arch cobblestones2
 x 12
 y 4
 end
+arch magic_banned
+x 12
+y 5
+end
+arch cobblestones2
+x 12
+y 5
+end
+arch magic_banned
+x 12
+y 6
+end
+arch cobblestones2
+x 12
+y 6
+end
+arch magic_banned
+x 12
+y 7
+end
+arch cobblestones2
+x 12
+y 7
+end
 arch guildmaster
 name old man
 msg
@@ -4038,50 +4466,50 @@ msg
 You can pay your ticket either with platinum, gold or silver.
 endmsg
 x 12
-y 4
+y 7
 randomitems standard
 friendly 1
 unaggressive 0
 end
 arch magic_banned
 x 12
-y 5
+y 8
 end
 arch cobblestones2
 x 12
-y 5
+y 8
 end
 arch awall_2_1_2
 x 12
-y 5
+y 8
 end
 arch magic_banned
 x 12
-y 6
+y 9
 end
 arch cobblestones2
 x 12
-y 6
+y 9
 end
 arch magic_banned
 x 12
-y 7
+y 10
 end
 arch cobblestones2
 x 12
-y 7
+y 10
 end
 arch swall_2_1_2
 x 12
-y 7
+y 10
 end
 arch magic_banned
 x 12
-y 8
+y 11
 end
 arch cobblestones2
 x 12
-y 8
+y 11
 end
 arch dragon_exit
 name sleeping dragon
@@ -4092,34 +4520,6 @@ endmsg
 hp 37
 sp 46
 x 12
-y 8
-end
-arch magic_banned
-x 12
-y 9
-end
-arch cobblestones2
-x 12
-y 9
-end
-arch magic_banned
-x 12
-y 10
-end
-arch cobblestones2
-x 12
-y 10
-end
-arch swall_2_1_2
-x 12
-y 10
-end
-arch magic_banned
-x 12
-y 11
-end
-arch cobblestones2
-x 12
 y 11
 end
 arch magic_banned
@@ -4149,6 +4549,34 @@ end
 arch cobblestones2
 x 12
 y 14
+end
+arch magic_banned
+x 12
+y 15
+end
+arch cobblestones2
+x 12
+y 15
+end
+arch magic_banned
+x 12
+y 16
+end
+arch cobblestones2
+x 12
+y 16
+end
+arch swall_2_1_2
+x 12
+y 16
+end
+arch magic_banned
+x 12
+y 17
+end
+arch cobblestones2
+x 12
+y 17
 end
 arch dragon_exit
 name dragon express
@@ -4159,34 +4587,6 @@ endmsg
 hp 29
 sp 37
 x 12
-y 14
-end
-arch magic_banned
-x 12
-y 15
-end
-arch cobblestones2
-x 12
-y 15
-end
-arch magic_banned
-x 12
-y 16
-end
-arch cobblestones2
-x 12
-y 16
-end
-arch swall_2_1_2
-x 12
-y 16
-end
-arch magic_banned
-x 12
-y 17
-end
-arch cobblestones2
-x 12
 y 17
 end
 arch magic_banned
@@ -4216,6 +4616,34 @@ end
 arch cobblestones2
 x 12
 y 20
+end
+arch magic_banned
+x 12
+y 21
+end
+arch cobblestones2
+x 12
+y 21
+end
+arch magic_banned
+x 12
+y 22
+end
+arch cobblestones2
+x 12
+y 22
+end
+arch swall_2_1_2
+x 12
+y 22
+end
+arch magic_banned
+x 12
+y 23
+end
+arch cobblestones2
+x 12
+y 23
 end
 arch dragon_exit
 name dragon express
@@ -4226,34 +4654,6 @@ endmsg
 hp 5
 sp 15
 x 12
-y 20
-end
-arch magic_banned
-x 12
-y 21
-end
-arch cobblestones2
-x 12
-y 21
-end
-arch magic_banned
-x 12
-y 22
-end
-arch cobblestones2
-x 12
-y 22
-end
-arch swall_2_1_2
-x 12
-y 22
-end
-arch magic_banned
-x 12
-y 23
-end
-arch cobblestones2
-x 12
 y 23
 end
 arch magic_banned
@@ -4283,6 +4683,34 @@ end
 arch cobblestones2
 x 12
 y 26
+end
+arch magic_banned
+x 12
+y 27
+end
+arch cobblestones2
+x 12
+y 27
+end
+arch magic_banned
+x 12
+y 28
+end
+arch cobblestones2
+x 12
+y 28
+end
+arch swall_2_1_2
+x 12
+y 28
+end
+arch magic_banned
+x 12
+y 29
+end
+arch cobblestones2
+x 12
+y 29
 end
 arch dragon_exit
 name dragon express
@@ -4290,55 +4718,59 @@ msg
 Please hurry up or we will be moving without you.
 endmsg
 x 12
-y 26
+y 29
 end
 arch magic_banned
 x 12
-y 27
+y 30
 end
 arch cobblestones2
 x 12
-y 27
+y 30
 end
 arch magic_banned
 x 12
-y 28
+y 31
 end
 arch cobblestones2
 x 12
-y 28
+y 31
 end
 arch swall_2_1_2
 x 12
-y 28
-end
-arch magic_banned
-x 12
-y 29
-end
-arch cobblestones2
-x 12
-y 29
-end
-arch magic_banned
-x 12
-y 30
-end
-arch cobblestones2
-x 12
-y 30
-end
-arch magic_banned
-x 12
 y 31
 end
+arch magic_banned
+x 12
+y 32
+end
 arch cobblestones2
 x 12
-y 31
+y 32
+end
+arch magic_banned
+x 12
+y 33
+end
+arch cobblestones2
+x 12
+y 33
+end
+arch magic_banned
+x 12
+y 34
+end
+arch cobblestones2
+x 12
+y 34
 end
 arch awall_2_1_2
 x 12
-y 31
+y 34
+end
+arch blocked
+x 12
+y 35
 end
 arch magic_banned
 x 13
@@ -4357,7 +4789,7 @@ arch cobblestones2
 x 13
 y 1
 end
-arch awall_1_2
+arch awall_2_1_1
 x 13
 y 1
 end
@@ -4369,73 +4801,81 @@ arch cobblestones2
 x 13
 y 2
 end
-arch door_look_2
+arch awall_2_1_1
 x 13
 y 2
+end
+arch magic_banned
+x 13
+y 3
+end
+arch cobblestones2
+x 13
+y 3
+end
+arch awall_2_1_1
+x 13
+y 3
+end
+arch magic_banned
+x 13
+y 4
+end
+arch cobblestones2
+x 13
+y 4
+end
+arch awall_1_2
+x 13
+y 4
+end
+arch magic_banned
+x 13
+y 5
+end
+arch cobblestones2
+x 13
+y 5
+end
+arch door_look_2
+x 13
+y 5
 move_block 0
 end
 arch magic_banned
 x 13
-y 3
+y 6
 end
 arch cobblestones2
 x 13
-y 3
+y 6
 end
 arch awall_1_1
 x 13
-y 3
+y 6
 end
 arch magic_banned
 x 13
-y 4
+y 7
 end
 arch cobblestones2
 x 13
-y 4
+y 7
 end
 arch awall_2_1_1
 x 13
-y 4
+y 7
 end
 arch magic_banned
 x 13
-y 5
+y 8
 end
 arch cobblestones2
 x 13
-y 5
+y 8
 end
 arch awall_2_2_4
 x 13
-y 5
-end
-arch magic_banned
-x 13
-y 6
-end
-arch cobblestones2
-x 13
-y 6
-end
-arch magic_banned
-x 13
-y 7
-end
-arch cobblestones2
-x 13
-y 7
-end
-arch swall_2_1_2
-x 13
-y 7
-end
-arch magic_banned
-x 13
-y 8
-end
-arch cobblestones2
-x 13
 y 8
 end
 arch magic_banned
@@ -4649,10 +5089,42 @@ end
 arch cobblestones2
 x 13
 y 31
+end
+arch swall_2_1_2
+x 13
+y 31
+end
+arch magic_banned
+x 13
+y 32
+end
+arch cobblestones2
+x 13
+y 32
+end
+arch magic_banned
+x 13
+y 33
+end
+arch cobblestones2
+x 13
+y 33
+end
+arch magic_banned
+x 13
+y 34
+end
+arch cobblestones2
+x 13
+y 34
 end
 arch awall_2_1_2
 x 13
-y 31
+y 34
+end
+arch blocked
+x 13
+y 35
 end
 arch magic_banned
 x 14
@@ -4690,81 +5162,77 @@ arch cobblestones2
 x 14
 y 3
 end
+arch magic_banned
+x 14
+y 4
+end
+arch cobblestones2
+x 14
+y 4
+end
+arch magic_banned
+x 14
+y 5
+end
+arch cobblestones2
+x 14
+y 5
+end
+arch magic_banned
+x 14
+y 6
+end
+arch cobblestones2
+x 14
+y 6
+end
 arch guard
 name guard
 x 14
-y 3
+y 6
 friendly 1
 unaggressive 0
 end
 arch magic_banned
 x 14
-y 4
+y 7
 end
 arch check_inv
 race booze
 slaying 0
 x 14
-y 4
+y 7
 last_sp 0
 connected 99
 end
 arch cobblestones2
 x 14
-y 4
+y 7
 end
 arch magic_banned
 x 14
-y 5
+y 8
 end
 arch cobblestones2
 x 14
-y 5
+y 8
 end
 arch igateTrg1
 x 14
-y 5
+y 8
 connected 99
 end
 arch magic_banned
 x 14
-y 6
+y 9
 end
 arch button_trigger
 x 14
-y 6
+y 9
 connected 99
 end
 arch cobblestones2
 x 14
-y 6
-end
-arch magic_banned
-x 14
-y 7
-end
-arch cobblestones2
-x 14
-y 7
-end
-arch swall_2_1_2
-x 14
-y 7
-end
-arch magic_banned
-x 14
-y 8
-end
-arch cobblestones2
-x 14
-y 8
-end
-arch magic_banned
-x 14
-y 9
-end
-arch cobblestones2
-x 14
 y 9
 end
 arch magic_banned
@@ -4970,10 +5438,42 @@ end
 arch cobblestones2
 x 14
 y 31
+end
+arch swall_2_1_2
+x 14
+y 31
+end
+arch magic_banned
+x 14
+y 32
+end
+arch cobblestones2
+x 14
+y 32
+end
+arch magic_banned
+x 14
+y 33
+end
+arch cobblestones2
+x 14
+y 33
+end
+arch magic_banned
+x 14
+y 34
+end
+arch cobblestones2
+x 14
+y 34
 end
 arch awall_2_1_2
 x 14
-y 31
+y 34
+end
+arch blocked
+x 14
+y 35
 end
 arch magic_banned
 x 15
@@ -5015,89 +5515,77 @@ arch magic_banned
 x 15
 y 4
 end
+arch cobblestones2
+x 15
+y 4
+end
+arch magic_banned
+x 15
+y 5
+end
+arch cobblestones2
+x 15
+y 5
+end
+arch magic_banned
+x 15
+y 6
+end
+arch cobblestones2
+x 15
+y 6
+end
+arch magic_banned
+x 15
+y 7
+end
 arch check_inv
 race booze
 slaying 0
 x 15
-y 4
+y 7
 last_sp 0
 connected 99
 end
 arch cobblestones2
 x 15
-y 4
+y 7
 end
 arch magic_banned
 x 15
-y 5
+y 8
 end
 arch cobblestones2
 x 15
-y 5
+y 8
 end
 arch igateTrg1
 x 15
-y 5
+y 8
 connected 99
 end
 arch magic_banned
 x 15
-y 6
+y 9
 end
 arch button_trigger
 x 15
-y 6
+y 9
 connected 99
 end
 arch cobblestones2
 x 15
-y 6
+y 9
 end
 arch magic_banned
 x 15
-y 7
+y 10
 end
 arch cobblestones2
 x 15
-y 7
+y 10
 end
 arch swall_2_2_3
-x 15
-y 7
-end
-arch magic_banned
-x 15
-y 8
-end
-arch cobblestones2
-x 15
-y 8
-end
-arch swall_2_1_1
-x 15
-y 8
-end
-arch magic_banned
-x 15
-y 9
-end
-arch cobblestones2
-x 15
-y 9
-end
-arch swall_2_1_1
-x 15
-y 9
-end
-arch magic_banned
-x 15
-y 10
-end
-arch cobblestones2
-x 15
-y 10
-end
-arch swall_2_2_4
 x 15
 y 10
 end
@@ -5109,6 +5597,10 @@ arch cobblestones2
 x 15
 y 11
 end
+arch swall_2_1_1
+x 15
+y 11
+end
 arch magic_banned
 x 15
 y 12
@@ -5117,51 +5609,47 @@ arch cobblestones2
 x 15
 y 12
 end
-arch magic_banned
-x 15
-y 13
-end
-arch cobblestones2
-x 15
-y 13
-end
-arch swall_2_2_3
-x 15
-y 13
-end
-arch magic_banned
-x 15
-y 14
-end
-arch cobblestones2
-x 15
-y 14
-end
 arch swall_2_1_1
 x 15
-y 14
+y 12
 end
 arch magic_banned
 x 15
-y 15
+y 13
 end
 arch cobblestones2
 x 15
-y 15
-end
-arch swall_2_1_1
-x 15
-y 15
-end
-arch magic_banned
-x 15
-y 16
-end
-arch cobblestones2
-x 15
-y 16
+y 13
 end
 arch swall_2_2_4
+x 15
+y 13
+end
+arch magic_banned
+x 15
+y 14
+end
+arch cobblestones2
+x 15
+y 14
+end
+arch magic_banned
+x 15
+y 15
+end
+arch cobblestones2
+x 15
+y 15
+end
+arch magic_banned
+x 15
+y 16
+end
+arch cobblestones2
+x 15
+y 16
+end
+arch swall_2_2_3
 x 15
 y 16
 end
@@ -5173,6 +5661,10 @@ arch cobblestones2
 x 15
 y 17
 end
+arch swall_2_1_1
+x 15
+y 17
+end
 arch magic_banned
 x 15
 y 18
@@ -5181,51 +5673,47 @@ arch cobblestones2
 x 15
 y 18
 end
-arch magic_banned
-x 15
-y 19
-end
-arch cobblestones2
-x 15
-y 19
-end
-arch swall_2_2_3
-x 15
-y 19
-end
-arch magic_banned
-x 15
-y 20
-end
-arch cobblestones2
-x 15
-y 20
-end
 arch swall_2_1_1
 x 15
-y 20
+y 18
 end
 arch magic_banned
 x 15
-y 21
+y 19
 end
 arch cobblestones2
 x 15
-y 21
-end
-arch swall_2_1_1
-x 15
-y 21
-end
-arch magic_banned
-x 15
-y 22
-end
-arch cobblestones2
-x 15
-y 22
+y 19
 end
 arch swall_2_2_4
+x 15
+y 19
+end
+arch magic_banned
+x 15
+y 20
+end
+arch cobblestones2
+x 15
+y 20
+end
+arch magic_banned
+x 15
+y 21
+end
+arch cobblestones2
+x 15
+y 21
+end
+arch magic_banned
+x 15
+y 22
+end
+arch cobblestones2
+x 15
+y 22
+end
+arch swall_2_2_3
 x 15
 y 22
 end
@@ -5237,6 +5725,10 @@ arch cobblestones2
 x 15
 y 23
 end
+arch swall_2_1_1
+x 15
+y 23
+end
 arch magic_banned
 x 15
 y 24
@@ -5245,52 +5737,48 @@ arch cobblestones2
 x 15
 y 24
 end
-arch magic_banned
-x 15
-y 25
-end
-arch cobblestones2
-x 15
-y 25
-end
-arch swall_2_2_3
-x 15
-y 25
-end
-arch magic_banned
-x 15
-y 26
-end
-arch cobblestones2
-x 15
-y 26
-end
 arch swall_2_1_1
 x 15
-y 26
+y 24
 end
 arch magic_banned
 x 15
-y 27
+y 25
 end
 arch cobblestones2
 x 15
-y 27
-end
-arch swall_2_1_1
-x 15
-y 27
-end
-arch magic_banned
-x 15
-y 28
-end
-arch cobblestones2
-x 15
-y 28
+y 25
 end
 arch swall_2_2_4
 x 15
+y 25
+end
+arch magic_banned
+x 15
+y 26
+end
+arch cobblestones2
+x 15
+y 26
+end
+arch magic_banned
+x 15
+y 27
+end
+arch cobblestones2
+x 15
+y 27
+end
+arch magic_banned
+x 15
+y 28
+end
+arch cobblestones2
+x 15
+y 28
+end
+arch swall_2_2_3
+x 15
 y 28
 end
 arch magic_banned
@@ -5301,11 +5789,19 @@ arch cobblestones2
 x 15
 y 29
 end
+arch swall_2_1_1
+x 15
+y 29
+end
 arch magic_banned
 x 15
 y 30
 end
 arch cobblestones2
+x 15
+y 30
+end
+arch swall_2_1_1
 x 15
 y 30
 end
@@ -5316,10 +5812,42 @@ end
 arch cobblestones2
 x 15
 y 31
+end
+arch swall_2_2_4
+x 15
+y 31
+end
+arch magic_banned
+x 15
+y 32
+end
+arch cobblestones2
+x 15
+y 32
+end
+arch magic_banned
+x 15
+y 33
+end
+arch cobblestones2
+x 15
+y 33
+end
+arch magic_banned
+x 15
+y 34
+end
+arch cobblestones2
+x 15
+y 34
 end
 arch awall_2_1_2
 x 15
-y 31
+y 34
+end
+arch blocked
+x 15
+y 35
 end
 arch magic_banned
 x 16
@@ -5361,89 +5889,77 @@ arch magic_banned
 x 16
 y 4
 end
+arch cobblestones2
+x 16
+y 4
+end
+arch magic_banned
+x 16
+y 5
+end
+arch cobblestones2
+x 16
+y 5
+end
+arch magic_banned
+x 16
+y 6
+end
+arch cobblestones2
+x 16
+y 6
+end
+arch magic_banned
+x 16
+y 7
+end
 arch check_inv
 race booze
 slaying 0
 x 16
-y 4
+y 7
 last_sp 0
 connected 99
 end
 arch cobblestones2
 x 16
-y 4
+y 7
 end
 arch magic_banned
 x 16
-y 5
+y 8
 end
 arch cobblestones2
 x 16
-y 5
+y 8
 end
 arch igateTrg1
 x 16
-y 5
+y 8
 connected 99
 end
 arch magic_banned
 x 16
-y 6
+y 9
 end
 arch button_trigger
 x 16
-y 6
+y 9
 connected 99
 end
 arch cobblestones2
 x 16
-y 6
+y 9
 end
 arch magic_banned
 x 16
-y 7
+y 10
 end
 arch cobblestones2
 x 16
-y 7
+y 10
 end
 arch swall_2_2_2
-x 16
-y 7
-end
-arch magic_banned
-x 16
-y 8
-end
-arch cobblestones2
-x 16
-y 8
-end
-arch swall_2_1_1
-x 16
-y 8
-end
-arch magic_banned
-x 16
-y 9
-end
-arch cobblestones2
-x 16
-y 9
-end
-arch swall_2_1_1
-x 16
-y 9
-end
-arch magic_banned
-x 16
-y 10
-end
-arch cobblestones2
-x 16
-y 10
-end
-arch swall_2_2_1
 x 16
 y 10
 end
@@ -5455,6 +5971,10 @@ arch cobblestones2
 x 16
 y 11
 end
+arch swall_2_1_1
+x 16
+y 11
+end
 arch magic_banned
 x 16
 y 12
@@ -5463,51 +5983,47 @@ arch cobblestones2
 x 16
 y 12
 end
-arch magic_banned
-x 16
-y 13
-end
-arch cobblestones2
-x 16
-y 13
-end
-arch swall_2_2_2
-x 16
-y 13
-end
-arch magic_banned
-x 16
-y 14
-end
-arch cobblestones2
-x 16
-y 14
-end
 arch swall_2_1_1
 x 16
-y 14
+y 12
 end
 arch magic_banned
 x 16
-y 15
+y 13
 end
 arch cobblestones2
 x 16
-y 15
-end
-arch swall_2_1_1
-x 16
-y 15
-end
-arch magic_banned
-x 16
-y 16
-end
-arch cobblestones2
-x 16
-y 16
+y 13
 end
 arch swall_2_2_1
+x 16
+y 13
+end
+arch magic_banned
+x 16
+y 14
+end
+arch cobblestones2
+x 16
+y 14
+end
+arch magic_banned
+x 16
+y 15
+end
+arch cobblestones2
+x 16
+y 15
+end
+arch magic_banned
+x 16
+y 16
+end
+arch cobblestones2
+x 16
+y 16
+end
+arch swall_2_2_2
 x 16
 y 16
 end
@@ -5519,6 +6035,10 @@ arch cobblestones2
 x 16
 y 17
 end
+arch swall_2_1_1
+x 16
+y 17
+end
 arch magic_banned
 x 16
 y 18
@@ -5527,51 +6047,47 @@ arch cobblestones2
 x 16
 y 18
 end
-arch magic_banned
-x 16
-y 19
-end
-arch cobblestones2
-x 16
-y 19
-end
-arch swall_2_2_2
-x 16
-y 19
-end
-arch magic_banned
-x 16
-y 20
-end
-arch cobblestones2
-x 16
-y 20
-end
 arch swall_2_1_1
 x 16
-y 20
+y 18
 end
 arch magic_banned
 x 16
-y 21
+y 19
 end
 arch cobblestones2
 x 16
-y 21
-end
-arch swall_2_1_1
-x 16
-y 21
-end
-arch magic_banned
-x 16
-y 22
-end
-arch cobblestones2
-x 16
-y 22
+y 19
 end
 arch swall_2_2_1
+x 16
+y 19
+end
+arch magic_banned
+x 16
+y 20
+end
+arch cobblestones2
+x 16
+y 20
+end
+arch magic_banned
+x 16
+y 21
+end
+arch cobblestones2
+x 16
+y 21
+end
+arch magic_banned
+x 16
+y 22
+end
+arch cobblestones2
+x 16
+y 22
+end
+arch swall_2_2_2
 x 16
 y 22
 end
@@ -5583,6 +6099,10 @@ arch cobblestones2
 x 16
 y 23
 end
+arch swall_2_1_1
+x 16
+y 23
+end
 arch magic_banned
 x 16
 y 24
@@ -5591,52 +6111,48 @@ arch cobblestones2
 x 16
 y 24
 end
-arch magic_banned
-x 16
-y 25
-end
-arch cobblestones2
-x 16
-y 25
-end
-arch swall_2_2_2
-x 16
-y 25
-end
-arch magic_banned
-x 16
-y 26
-end
-arch cobblestones2
-x 16
-y 26
-end
 arch swall_2_1_1
 x 16
-y 26
+y 24
 end
 arch magic_banned
 x 16
-y 27
+y 25
 end
 arch cobblestones2
 x 16
-y 27
-end
-arch swall_2_1_1
-x 16
-y 27
-end
-arch magic_banned
-x 16
-y 28
-end
-arch cobblestones2
-x 16
-y 28
+y 25
 end
 arch swall_2_2_1
 x 16
+y 25
+end
+arch magic_banned
+x 16
+y 26
+end
+arch cobblestones2
+x 16
+y 26
+end
+arch magic_banned
+x 16
+y 27
+end
+arch cobblestones2
+x 16
+y 27
+end
+arch magic_banned
+x 16
+y 28
+end
+arch cobblestones2
+x 16
+y 28
+end
+arch swall_2_2_2
+x 16
 y 28
 end
 arch magic_banned
@@ -5647,11 +6163,19 @@ arch cobblestones2
 x 16
 y 29
 end
+arch swall_2_1_1
+x 16
+y 29
+end
 arch magic_banned
 x 16
 y 30
 end
 arch cobblestones2
+x 16
+y 30
+end
+arch swall_2_1_1
 x 16
 y 30
 end
@@ -5662,10 +6186,42 @@ end
 arch cobblestones2
 x 16
 y 31
+end
+arch swall_2_2_1
+x 16
+y 31
+end
+arch magic_banned
+x 16
+y 32
+end
+arch cobblestones2
+x 16
+y 32
+end
+arch magic_banned
+x 16
+y 33
+end
+arch cobblestones2
+x 16
+y 33
+end
+arch magic_banned
+x 16
+y 34
+end
+arch cobblestones2
+x 16
+y 34
 end
 arch awall_2_1_2
 x 16
-y 31
+y 34
+end
+arch blocked
+x 16
+y 35
 end
 arch magic_banned
 x 17
@@ -5702,75 +6258,99 @@ end
 arch cobblestones2
 x 17
 y 3
+end
+arch magic_banned
+x 17
+y 4
+end
+arch cobblestones2
+x 17
+y 4
+end
+arch magic_banned
+x 17
+y 5
+end
+arch cobblestones2
+x 17
+y 5
+end
+arch magic_banned
+x 17
+y 6
+end
+arch cobblestones2
+x 17
+y 6
 end
 arch guard
 name guard
 x 17
-y 3
+y 6
 friendly 1
 unaggressive 0
 end
 arch magic_banned
 x 17
-y 4
+y 7
 end
 arch check_inv
 race booze
 slaying 0
 x 17
-y 4
+y 7
 last_sp 0
 connected 99
 end
 arch cobblestones2
 x 17
-y 4
+y 7
 end
 arch magic_banned
 x 17
-y 5
+y 8
 end
 arch cobblestones2
 x 17
-y 5
+y 8
 end
 arch igateTrg1
 x 17
-y 5
+y 8
 connected 99
 end
 arch magic_banned
 x 17
-y 6
+y 9
 end
 arch button_trigger
 x 17
-y 6
+y 9
 connected 99
 end
 arch cobblestones2
 x 17
-y 6
+y 9
 end
 arch magic_banned
 x 17
-y 7
+y 10
 end
 arch cobblestones2
 x 17
-y 7
+y 10
 end
 arch swall_2_1_2
 x 17
-y 7
+y 10
 end
 arch magic_banned
 x 17
-y 8
+y 11
 end
 arch cobblestones2
 x 17
-y 8
+y 11
 end
 arch dragon_exit
 name dragon express
@@ -5781,34 +6361,6 @@ endmsg
 hp 22
 sp 11
 x 17
-y 8
-end
-arch magic_banned
-x 17
-y 9
-end
-arch cobblestones2
-x 17
-y 9
-end
-arch magic_banned
-x 17
-y 10
-end
-arch cobblestones2
-x 17
-y 10
-end
-arch swall_2_1_2
-x 17
-y 10
-end
-arch magic_banned
-x 17
-y 11
-end
-arch cobblestones2
-x 17
 y 11
 end
 arch magic_banned
@@ -5838,6 +6390,34 @@ end
 arch cobblestones2
 x 17
 y 14
+end
+arch magic_banned
+x 17
+y 15
+end
+arch cobblestones2
+x 17
+y 15
+end
+arch magic_banned
+x 17
+y 16
+end
+arch cobblestones2
+x 17
+y 16
+end
+arch swall_2_1_2
+x 17
+y 16
+end
+arch magic_banned
+x 17
+y 17
+end
+arch cobblestones2
+x 17
+y 17
 end
 arch dragon_exit
 name dragon express
@@ -5848,34 +6428,6 @@ endmsg
 hp 5
 sp 37
 x 17
-y 14
-end
-arch magic_banned
-x 17
-y 15
-end
-arch cobblestones2
-x 17
-y 15
-end
-arch magic_banned
-x 17
-y 16
-end
-arch cobblestones2
-x 17
-y 16
-end
-arch swall_2_1_2
-x 17
-y 16
-end
-arch magic_banned
-x 17
-y 17
-end
-arch cobblestones2
-x 17
 y 17
 end
 arch magic_banned
@@ -5905,6 +6457,34 @@ end
 arch cobblestones2
 x 17
 y 20
+end
+arch magic_banned
+x 17
+y 21
+end
+arch cobblestones2
+x 17
+y 21
+end
+arch magic_banned
+x 17
+y 22
+end
+arch cobblestones2
+x 17
+y 22
+end
+arch swall_2_1_2
+x 17
+y 22
+end
+arch magic_banned
+x 17
+y 23
+end
+arch cobblestones2
+x 17
+y 23
 end
 arch dragon_exit
 name dragon express
@@ -5915,34 +6495,6 @@ endmsg
 hp 16
 sp 20
 x 17
-y 20
-end
-arch magic_banned
-x 17
-y 21
-end
-arch cobblestones2
-x 17
-y 21
-end
-arch magic_banned
-x 17
-y 22
-end
-arch cobblestones2
-x 17
-y 22
-end
-arch swall_2_1_2
-x 17
-y 22
-end
-arch magic_banned
-x 17
-y 23
-end
-arch cobblestones2
-x 17
 y 23
 end
 arch magic_banned
@@ -5972,6 +6524,34 @@ end
 arch cobblestones2
 x 17
 y 26
+end
+arch magic_banned
+x 17
+y 27
+end
+arch cobblestones2
+x 17
+y 27
+end
+arch magic_banned
+x 17
+y 28
+end
+arch cobblestones2
+x 17
+y 28
+end
+arch swall_2_1_2
+x 17
+y 28
+end
+arch magic_banned
+x 17
+y 29
+end
+arch cobblestones2
+x 17
+y 29
 end
 arch dragon_exit
 name dragon express
@@ -5982,55 +6562,59 @@ endmsg
 hp 34
 sp 8
 x 17
-y 26
+y 29
 end
 arch magic_banned
 x 17
-y 27
+y 30
 end
 arch cobblestones2
 x 17
-y 27
+y 30
 end
 arch magic_banned
 x 17
-y 28
+y 31
 end
 arch cobblestones2
 x 17
-y 28
+y 31
 end
 arch swall_2_1_2
 x 17
-y 28
-end
-arch magic_banned
-x 17
-y 29
-end
-arch cobblestones2
-x 17
-y 29
-end
-arch magic_banned
-x 17
-y 30
-end
-arch cobblestones2
-x 17
-y 30
-end
-arch magic_banned
-x 17
 y 31
 end
+arch magic_banned
+x 17
+y 32
+end
 arch cobblestones2
 x 17
-y 31
+y 32
+end
+arch magic_banned
+x 17
+y 33
+end
+arch cobblestones2
+x 17
+y 33
+end
+arch magic_banned
+x 17
+y 34
+end
+arch cobblestones2
+x 17
+y 34
 end
 arch awall_2_1_2
 x 17
-y 31
+y 34
+end
+arch blocked
+x 17
+y 35
 end
 arch magic_banned
 x 18
@@ -6049,7 +6633,7 @@ arch cobblestones2
 x 18
 y 1
 end
-arch awall_1_2
+arch awall_2_1_1
 x 18
 y 1
 end
@@ -6061,73 +6645,81 @@ arch cobblestones2
 x 18
 y 2
 end
-arch door_look_2
+arch awall_2_1_1
 x 18
 y 2
+end
+arch magic_banned
+x 18
+y 3
+end
+arch cobblestones2
+x 18
+y 3
+end
+arch awall_2_1_1
+x 18
+y 3
+end
+arch magic_banned
+x 18
+y 4
+end
+arch cobblestones2
+x 18
+y 4
+end
+arch awall_1_2
+x 18
+y 4
+end
+arch magic_banned
+x 18
+y 5
+end
+arch cobblestones2
+x 18
+y 5
+end
+arch door_look_2
+x 18
+y 5
 move_block 0
 end
 arch magic_banned
 x 18
-y 3
+y 6
 end
 arch cobblestones2
 x 18
-y 3
+y 6
 end
 arch awall_1_1
 x 18
-y 3
+y 6
 end
 arch magic_banned
 x 18
-y 4
+y 7
 end
 arch cobblestones2
 x 18
-y 4
+y 7
 end
 arch awall_2_1_1
 x 18
-y 4
+y 7
 end
 arch magic_banned
 x 18
-y 5
+y 8
 end
 arch cobblestones2
 x 18
-y 5
+y 8
 end
 arch awall_2_2_1
 x 18
-y 5
-end
-arch magic_banned
-x 18
-y 6
-end
-arch cobblestones2
-x 18
-y 6
-end
-arch magic_banned
-x 18
-y 7
-end
-arch cobblestones2
-x 18
-y 7
-end
-arch swall_2_1_2
-x 18
-y 7
-end
-arch magic_banned
-x 18
-y 8
-end
-arch cobblestones2
-x 18
 y 8
 end
 arch magic_banned
@@ -6341,10 +6933,42 @@ end
 arch cobblestones2
 x 18
 y 31
+end
+arch swall_2_1_2
+x 18
+y 31
+end
+arch magic_banned
+x 18
+y 32
+end
+arch cobblestones2
+x 18
+y 32
+end
+arch magic_banned
+x 18
+y 33
+end
+arch cobblestones2
+x 18
+y 33
+end
+arch magic_banned
+x 18
+y 34
+end
+arch cobblestones2
+x 18
+y 34
 end
 arch awall_2_1_2
 x 18
-y 31
+y 34
+end
+arch blocked
+x 18
+y 35
 end
 arch magic_banned
 x 19
@@ -6395,40 +7019,32 @@ arch cobblestones2
 x 19
 y 4
 end
+arch magic_banned
+x 19
+y 5
+end
+arch cobblestones2
+x 19
+y 5
+end
+arch magic_banned
+x 19
+y 6
+end
+arch cobblestones2
+x 19
+y 6
+end
+arch magic_banned
+x 19
+y 7
+end
+arch cobblestones2
+x 19
+y 7
+end
 arch chair_1.3
 x 19
-y 4
-end
-arch magic_banned
-x 19
-y 5
-end
-arch cobblestones2
-x 19
-y 5
-end
-arch awall_2_1_2
-x 19
-y 5
-end
-arch magic_banned
-x 19
-y 6
-end
-arch cobblestones2
-x 19
-y 6
-end
-arch magic_banned
-x 19
-y 7
-end
-arch cobblestones2
-x 19
-y 7
-end
-arch swall_2_1_2
-x 19
 y 7
 end
 arch magic_banned
@@ -6436,6 +7052,10 @@ x 19
 y 8
 end
 arch cobblestones2
+x 19
+y 8
+end
+arch awall_2_1_2
 x 19
 y 8
 end
@@ -6651,9 +7271,41 @@ arch cobblestones2
 x 19
 y 31
 end
-arch awall_2_1_2
+arch swall_2_1_2
 x 19
 y 31
+end
+arch magic_banned
+x 19
+y 32
+end
+arch cobblestones2
+x 19
+y 32
+end
+arch magic_banned
+x 19
+y 33
+end
+arch cobblestones2
+x 19
+y 33
+end
+arch magic_banned
+x 19
+y 34
+end
+arch cobblestones2
+x 19
+y 34
+end
+arch awall_2_1_2
+x 19
+y 34
+end
+arch blocked
+x 19
+y 35
 end
 arch magic_banned
 x 20
@@ -6720,305 +7372,333 @@ arch cobblestones2
 x 20
 y 4
 end
+arch magic_banned
+x 20
+y 5
+end
+arch cobblestones2
+x 20
+y 5
+end
+arch magic_banned
+x 20
+y 6
+end
+arch cobblestones2
+x 20
+y 6
+end
+arch magic_banned
+x 20
+y 7
+end
+arch cobblestones2
+x 20
+y 7
+end
 arch table_2
 x 20
-y 4
+y 7
 end
 arch booze
 x 20
-y 4
+y 7
 end
 arch magic_banned
 x 20
-y 5
+y 8
 end
 arch cobblestones2
 x 20
-y 5
+y 8
 end
 arch awall_2_1_2
 x 20
-y 5
+y 8
 end
 arch magic_banned
 x 20
-y 6
+y 9
 end
 arch cobblestones2
 x 20
-y 6
+y 9
 end
 arch magic_banned
 x 20
-y 7
+y 10
 end
 arch cobblestones2
 x 20
-y 7
+y 10
 end
 arch swall_2_2_3
 x 20
-y 7
+y 10
 end
 arch magic_banned
 x 20
-y 8
+y 11
 end
 arch cobblestones2
 x 20
-y 8
+y 11
 end
 arch swall_1_2
 x 20
-y 8
+y 11
 end
 arch magic_banned
 x 20
-y 9
+y 12
 end
 arch cobblestones2
 x 20
-y 9
+y 12
 end
 arch grate_closed_2
 x 20
-y 9
+y 12
 connected 9
 end
 arch magic_banned
 x 20
-y 10
+y 13
 end
 arch cobblestones2
 x 20
-y 10
+y 13
 end
 arch swall_1_3
 x 20
-y 10
-end
-arch magic_banned
-x 20
-y 11
-end
-arch cobblestones2
-x 20
-y 11
-end
-arch magic_banned
-x 20
-y 12
-end
-arch cobblestones2
-x 20
-y 12
-end
-arch magic_banned
-x 20
 y 13
 end
+arch magic_banned
+x 20
+y 14
+end
 arch cobblestones2
 x 20
-y 13
+y 14
+end
+arch magic_banned
+x 20
+y 15
+end
+arch cobblestones2
+x 20
+y 15
+end
+arch magic_banned
+x 20
+y 16
+end
+arch cobblestones2
+x 20
+y 16
 end
 arch swall_2_2_3
 x 20
-y 13
+y 16
 end
 arch magic_banned
 x 20
-y 14
+y 17
 end
 arch cobblestones2
 x 20
-y 14
+y 17
 end
 arch swall_1_2
 x 20
-y 14
+y 17
 end
 arch magic_banned
 x 20
-y 15
+y 18
 end
 arch cobblestones2
 x 20
-y 15
+y 18
 end
 arch grate_closed_2
 x 20
-y 15
+y 18
 connected 11
 end
 arch magic_banned
 x 20
-y 16
+y 19
 end
 arch cobblestones2
 x 20
-y 16
+y 19
 end
 arch swall_1_3
 x 20
-y 16
-end
-arch magic_banned
-x 20
-y 17
-end
-arch cobblestones2
-x 20
-y 17
-end
-arch magic_banned
-x 20
-y 18
-end
-arch cobblestones2
-x 20
-y 18
-end
-arch magic_banned
-x 20
 y 19
 end
+arch magic_banned
+x 20
+y 20
+end
 arch cobblestones2
 x 20
-y 19
+y 20
+end
+arch magic_banned
+x 20
+y 21
+end
+arch cobblestones2
+x 20
+y 21
+end
+arch magic_banned
+x 20
+y 22
+end
+arch cobblestones2
+x 20
+y 22
 end
 arch swall_2_2_3
 x 20
-y 19
+y 22
 end
 arch magic_banned
 x 20
-y 20
+y 23
 end
 arch cobblestones2
 x 20
-y 20
+y 23
 end
 arch swall_1_2
 x 20
-y 20
+y 23
 end
 arch magic_banned
 x 20
-y 21
+y 24
 end
 arch cobblestones2
 x 20
-y 21
+y 24
 end
 arch grate_closed_2
 x 20
-y 21
+y 24
 connected 13
 end
 arch magic_banned
 x 20
-y 22
+y 25
 end
 arch cobblestones2
 x 20
-y 22
+y 25
 end
 arch swall_1_3
 x 20
-y 22
-end
-arch magic_banned
-x 20
-y 23
-end
-arch cobblestones2
-x 20
-y 23
-end
-arch magic_banned
-x 20
-y 24
-end
-arch cobblestones2
-x 20
-y 24
-end
-arch magic_banned
-x 20
 y 25
 end
+arch magic_banned
+x 20
+y 26
+end
 arch cobblestones2
 x 20
-y 25
+y 26
+end
+arch magic_banned
+x 20
+y 27
+end
+arch cobblestones2
+x 20
+y 27
+end
+arch magic_banned
+x 20
+y 28
+end
+arch cobblestones2
+x 20
+y 28
 end
 arch swall_2_2_3
 x 20
-y 25
+y 28
 end
 arch magic_banned
 x 20
-y 26
+y 29
 end
 arch cobblestones2
 x 20
-y 26
+y 29
 end
 arch swall_1_2
 x 20
-y 26
+y 29
 end
 arch magic_banned
 x 20
-y 27
+y 30
 end
 arch cobblestones2
 x 20
-y 27
+y 30
 end
 arch grate_closed_2
 x 20
-y 27
+y 30
 connected 15
 end
 arch magic_banned
 x 20
-y 28
+y 31
 end
 arch cobblestones2
 x 20
-y 28
+y 31
 end
 arch swall_1_3
 x 20
-y 28
-end
-arch magic_banned
-x 20
-y 29
-end
-arch cobblestones2
-x 20
-y 29
-end
-arch magic_banned
-x 20
-y 30
-end
-arch cobblestones2
-x 20
-y 30
-end
-arch magic_banned
-x 20
 y 31
 end
+arch magic_banned
+x 20
+y 32
+end
 arch cobblestones2
 x 20
-y 31
+y 32
+end
+arch magic_banned
+x 20
+y 33
+end
+arch cobblestones2
+x 20
+y 33
+end
+arch magic_banned
+x 20
+y 34
+end
+arch cobblestones2
+x 20
+y 34
 end
 arch awall_2_1_2
 x 20
-y 31
+y 34
+end
+arch blocked
+x 20
+y 35
 end
 arch magic_banned
 x 21
@@ -7049,7 +7729,7 @@ arch cobblestones2
 x 21
 y 2
 end
-arch awall_1_2
+arch awall_2_1_1
 x 21
 y 2
 end
@@ -7061,6 +7741,10 @@ arch cobblestones2
 x 21
 y 3
 end
+arch awall_1_2
+x 21
+y 3
+end
 arch magic_banned
 x 21
 y 4
@@ -7068,88 +7752,88 @@ end
 arch cobblestones2
 x 21
 y 4
+end
+arch magic_banned
+x 21
+y 5
+end
+arch cobblestones2
+x 21
+y 5
+end
+arch magic_banned
+x 21
+y 6
+end
+arch cobblestones2
+x 21
+y 6
+end
+arch magic_banned
+x 21
+y 7
+end
+arch cobblestones2
+x 21
+y 7
 end
 arch chair_1.3
 x 21
-y 4
+y 7
 end
 arch magic_banned
 x 21
-y 5
+y 8
 end
 arch cobblestones2
 x 21
-y 5
+y 8
 end
 arch awall_2_1_2
 x 21
-y 5
-end
-arch magic_banned
-x 21
-y 6
-end
-arch cobblestones2
-x 21
-y 6
-end
-arch magic_banned
-x 21
-y 7
-end
-arch cobblestones2
-x 21
-y 7
-end
-arch magic_banned
-x 21
 y 8
 end
+arch magic_banned
+x 21
+y 9
+end
 arch cobblestones2
 x 21
-y 8
+y 9
+end
+arch magic_banned
+x 21
+y 10
+end
+arch cobblestones2
+x 21
+y 10
+end
+arch magic_banned
+x 21
+y 11
+end
+arch cobblestones2
+x 21
+y 11
 end
 arch altar_trigger
 name To Lone Town
 slaying Ticket To Lone Town
 food 1
 x 21
-y 8
+y 11
 connected 9
 end
 arch magic_banned
 x 21
-y 9
+y 12
 end
 arch magic_mouth
 msg
 Lone Town
 endmsg
 x 21
-y 9
-end
-arch cobblestones2
-x 21
-y 9
-end
-arch magic_banned
-x 21
-y 10
-end
-arch cobblestones2
-x 21
-y 10
-end
-arch magic_banned
-x 21
-y 11
-end
-arch cobblestones2
-x 21
-y 11
-end
-arch magic_banned
-x 21
 y 12
 end
 arch cobblestones2
@@ -7171,48 +7855,48 @@ end
 arch cobblestones2
 x 21
 y 14
+end
+arch magic_banned
+x 21
+y 15
+end
+arch cobblestones2
+x 21
+y 15
+end
+arch magic_banned
+x 21
+y 16
+end
+arch cobblestones2
+x 21
+y 16
+end
+arch magic_banned
+x 21
+y 17
+end
+arch cobblestones2
+x 21
+y 17
 end
 arch altar_trigger
 name To Scorn
 slaying Ticket To Scorn
 food 1
 x 21
-y 14
+y 17
 connected 11
 end
 arch magic_banned
 x 21
-y 15
+y 18
 end
 arch magic_mouth
 msg
 Scorn
 endmsg
 x 21
-y 15
-end
-arch cobblestones2
-x 21
-y 15
-end
-arch magic_banned
-x 21
-y 16
-end
-arch cobblestones2
-x 21
-y 16
-end
-arch magic_banned
-x 21
-y 17
-end
-arch cobblestones2
-x 21
-y 17
-end
-arch magic_banned
-x 21
 y 18
 end
 arch cobblestones2
@@ -7234,48 +7918,48 @@ end
 arch cobblestones2
 x 21
 y 20
+end
+arch magic_banned
+x 21
+y 21
+end
+arch cobblestones2
+x 21
+y 21
+end
+arch magic_banned
+x 21
+y 22
+end
+arch cobblestones2
+x 21
+y 22
+end
+arch magic_banned
+x 21
+y 23
+end
+arch cobblestones2
+x 21
+y 23
 end
 arch altar_trigger
 name To Lake Country
 slaying Ticket To Lake Country
 food 1
 x 21
-y 20
+y 23
 connected 13
 end
 arch magic_banned
 x 21
-y 21
+y 24
 end
 arch magic_mouth
 msg
 Lake Country
 endmsg
 x 21
-y 21
-end
-arch cobblestones2
-x 21
-y 21
-end
-arch magic_banned
-x 21
-y 22
-end
-arch cobblestones2
-x 21
-y 22
-end
-arch magic_banned
-x 21
-y 23
-end
-arch cobblestones2
-x 21
-y 23
-end
-arch magic_banned
-x 21
 y 24
 end
 arch cobblestones2
@@ -7297,48 +7981,48 @@ end
 arch cobblestones2
 x 21
 y 26
+end
+arch magic_banned
+x 21
+y 27
+end
+arch cobblestones2
+x 21
+y 27
+end
+arch magic_banned
+x 21
+y 28
+end
+arch cobblestones2
+x 21
+y 28
+end
+arch magic_banned
+x 21
+y 29
+end
+arch cobblestones2
+x 21
+y 29
 end
 arch altar_trigger
 name Random
 slaying Random Ticket
 food 1
 x 21
-y 26
+y 29
 connected 15
 end
 arch magic_banned
 x 21
-y 27
+y 30
 end
 arch magic_mouth
 msg
 Random place
 endmsg
 x 21
-y 27
-end
-arch cobblestones2
-x 21
-y 27
-end
-arch magic_banned
-x 21
-y 28
-end
-arch cobblestones2
-x 21
-y 28
-end
-arch magic_banned
-x 21
-y 29
-end
-arch cobblestones2
-x 21
-y 29
-end
-arch magic_banned
-x 21
 y 30
 end
 arch cobblestones2
@@ -7352,10 +8036,38 @@ end
 arch cobblestones2
 x 21
 y 31
+end
+arch magic_banned
+x 21
+y 32
+end
+arch cobblestones2
+x 21
+y 32
+end
+arch magic_banned
+x 21
+y 33
+end
+arch cobblestones2
+x 21
+y 33
+end
+arch magic_banned
+x 21
+y 34
+end
+arch cobblestones2
+x 21
+y 34
 end
 arch awall_2_1_2
 x 21
-y 31
+y 34
+end
+arch blocked
+x 21
+y 35
 end
 arch magic_banned
 x 22
@@ -7422,40 +8134,36 @@ arch cobblestones2
 x 22
 y 4
 end
+arch magic_banned
+x 22
+y 5
+end
+arch cobblestones2
+x 22
+y 5
+end
+arch magic_banned
+x 22
+y 6
+end
+arch cobblestones2
+x 22
+y 6
+end
+arch magic_banned
+x 22
+y 7
+end
+arch cobblestones2
+x 22
+y 7
+end
 arch table_2
 x 22
-y 4
+y 7
 end
 arch random_food
 x 22
-y 4
-end
-arch magic_banned
-x 22
-y 5
-end
-arch cobblestones2
-x 22
-y 5
-end
-arch awall_2_1_2
-x 22
-y 5
-end
-arch magic_banned
-x 22
-y 6
-end
-arch cobblestones2
-x 22
-y 6
-end
-arch magic_banned
-x 22
-y 7
-end
-arch cobblestones2
-x 22
 y 7
 end
 arch magic_banned
@@ -7463,6 +8171,10 @@ x 22
 y 8
 end
 arch cobblestones2
+x 22
+y 8
+end
+arch awall_2_1_2
 x 22
 y 8
 end
@@ -7650,9 +8362,37 @@ arch cobblestones2
 x 22
 y 31
 end
+arch magic_banned
+x 22
+y 32
+end
+arch cobblestones2
+x 22
+y 32
+end
+arch magic_banned
+x 22
+y 33
+end
+arch cobblestones2
+x 22
+y 33
+end
+arch magic_banned
+x 22
+y 34
+end
+arch cobblestones2
+x 22
+y 34
+end
 arch awall_2_1_2
 x 22
-y 31
+y 34
+end
+arch blocked
+x 22
+y 35
 end
 arch magic_banned
 x 23
@@ -7683,7 +8423,7 @@ arch cobblestones2
 x 23
 y 2
 end
-arch awall_1_2
+arch awall_2_1_1
 x 23
 y 2
 end
@@ -7695,6 +8435,10 @@ arch cobblestones2
 x 23
 y 3
 end
+arch awall_1_2
+x 23
+y 3
+end
 arch magic_banned
 x 23
 y 4
@@ -7702,37 +8446,33 @@ end
 arch cobblestones2
 x 23
 y 4
+end
+arch magic_banned
+x 23
+y 5
+end
+arch cobblestones2
+x 23
+y 5
+end
+arch magic_banned
+x 23
+y 6
+end
+arch cobblestones2
+x 23
+y 6
+end
+arch magic_banned
+x 23
+y 7
+end
+arch cobblestones2
+x 23
+y 7
 end
 arch chair_1.3
 x 23
-y 4
-end
-arch magic_banned
-x 23
-y 5
-end
-arch cobblestones2
-x 23
-y 5
-end
-arch awall_2_1_2
-x 23
-y 5
-end
-arch magic_banned
-x 23
-y 6
-end
-arch cobblestones2
-x 23
-y 6
-end
-arch magic_banned
-x 23
-y 7
-end
-arch cobblestones2
-x 23
 y 7
 end
 arch magic_banned
@@ -7740,6 +8480,10 @@ x 23
 y 8
 end
 arch cobblestones2
+x 23
+y 8
+end
+arch awall_2_1_2
 x 23
 y 8
 end
@@ -7927,9 +8671,37 @@ arch cobblestones2
 x 23
 y 31
 end
+arch magic_banned
+x 23
+y 32
+end
+arch cobblestones2
+x 23
+y 32
+end
+arch magic_banned
+x 23
+y 33
+end
+arch cobblestones2
+x 23
+y 33
+end
+arch magic_banned
+x 23
+y 34
+end
+arch cobblestones2
+x 23
+y 34
+end
 arch awall_2_1_2
 x 23
-y 31
+y 34
+end
+arch blocked
+x 23
+y 35
 end
 arch magic_banned
 x 24
@@ -7996,91 +8768,91 @@ arch cobblestones2
 x 24
 y 4
 end
+arch magic_banned
+x 24
+y 5
+end
+arch cobblestones2
+x 24
+y 5
+end
+arch magic_banned
+x 24
+y 6
+end
+arch cobblestones2
+x 24
+y 6
+end
+arch magic_banned
+x 24
+y 7
+end
+arch cobblestones2
+x 24
+y 7
+end
 arch table_2
 x 24
-y 4
+y 7
 end
 arch random_food
 x 24
-y 4
+y 7
 end
 arch magic_banned
 x 24
-y 5
+y 8
 end
 arch cobblestones2
 x 24
-y 5
+y 8
 end
 arch awall_2_1_2
 x 24
-y 5
-end
-arch magic_banned
-x 24
-y 6
-end
-arch cobblestones2
-x 24
-y 6
-end
-arch magic_banned
-x 24
-y 7
-end
-arch cobblestones2
-x 24
-y 7
-end
-arch magic_banned
-x 24
 y 8
 end
+arch magic_banned
+x 24
+y 9
+end
 arch cobblestones2
 x 24
-y 8
+y 9
+end
+arch magic_banned
+x 24
+y 10
+end
+arch cobblestones2
+x 24
+y 10
+end
+arch magic_banned
+x 24
+y 11
+end
+arch cobblestones2
+x 24
+y 11
 end
 arch altar_trigger
 name To Santo Dominion
 slaying Ticket To Santo Dominion
 food 1
 x 24
-y 8
+y 11
 connected 10
 end
 arch magic_banned
 x 24
-y 9
+y 12
 end
 arch magic_mouth
 msg
 Santo Dominion
 endmsg
 x 24
-y 9
-end
-arch cobblestones2
-x 24
-y 9
-end
-arch magic_banned
-x 24
-y 10
-end
-arch cobblestones2
-x 24
-y 10
-end
-arch magic_banned
-x 24
-y 11
-end
-arch cobblestones2
-x 24
-y 11
-end
-arch magic_banned
-x 24
 y 12
 end
 arch cobblestones2
@@ -8102,48 +8874,48 @@ end
 arch cobblestones2
 x 24
 y 14
+end
+arch magic_banned
+x 24
+y 15
+end
+arch cobblestones2
+x 24
+y 15
+end
+arch magic_banned
+x 24
+y 16
+end
+arch cobblestones2
+x 24
+y 16
+end
+arch magic_banned
+x 24
+y 17
+end
+arch cobblestones2
+x 24
+y 17
 end
 arch altar_trigger
 name Random
 slaying Random Ticket
 food 1
 x 24
-y 14
+y 17
 connected 12
 end
 arch magic_banned
 x 24
-y 15
+y 18
 end
 arch magic_mouth
 msg
 Random place
 endmsg
 x 24
-y 15
-end
-arch cobblestones2
-x 24
-y 15
-end
-arch magic_banned
-x 24
-y 16
-end
-arch cobblestones2
-x 24
-y 16
-end
-arch magic_banned
-x 24
-y 17
-end
-arch cobblestones2
-x 24
-y 17
-end
-arch magic_banned
-x 24
 y 18
 end
 arch cobblestones2
@@ -8165,48 +8937,48 @@ end
 arch cobblestones2
 x 24
 y 20
+end
+arch magic_banned
+x 24
+y 21
+end
+arch cobblestones2
+x 24
+y 21
+end
+arch magic_banned
+x 24
+y 22
+end
+arch cobblestones2
+x 24
+y 22
+end
+arch magic_banned
+x 24
+y 23
+end
+arch cobblestones2
+x 24
+y 23
 end
 arch altar_trigger
 name To Nurnberg
 slaying Ticket To Nurnberg
 food 1
 x 24
-y 20
+y 23
 connected 14
 end
 arch magic_banned
 x 24
-y 21
+y 24
 end
 arch cobblestones2
 msg
 Nurnberg
 endmsg
 x 24
-y 21
-end
-arch magic_banned
-x 24
-y 22
-end
-arch cobblestones2
-x 24
-y 22
-end
-arch magic_banned
-x 24
-y 23
-end
-arch cobblestones2
-x 24
-y 23
-end
-arch magic_banned
-x 24
-y 24
-end
-arch cobblestones2
-x 24
 y 24
 end
 arch magic_banned
@@ -8224,55 +8996,55 @@ end
 arch cobblestones2
 x 24
 y 26
+end
+arch magic_banned
+x 24
+y 27
+end
+arch cobblestones2
+x 24
+y 27
+end
+arch magic_banned
+x 24
+y 28
+end
+arch cobblestones2
+x 24
+y 28
+end
+arch magic_banned
+x 24
+y 29
+end
+arch cobblestones2
+x 24
+y 29
 end
 arch altar_trigger
 name Random
 slaying Random Ticket
 food 1
 x 24
-y 26
+y 29
 connected 16
 end
 arch magic_banned
 x 24
-y 27
+y 30
 end
 arch magic_mouth
 msg
 Random Place
 endmsg
 x 24
-y 27
+y 30
 end
 arch cobblestones2
 msg
 Random Place
 endmsg
 x 24
-y 27
-end
-arch magic_banned
-x 24
-y 28
-end
-arch cobblestones2
-x 24
-y 28
-end
-arch magic_banned
-x 24
-y 29
-end
-arch cobblestones2
-x 24
-y 29
-end
-arch magic_banned
-x 24
-y 30
-end
-arch cobblestones2
-x 24
 y 30
 end
 arch magic_banned
@@ -8282,10 +9054,38 @@ end
 arch cobblestones2
 x 24
 y 31
+end
+arch magic_banned
+x 24
+y 32
+end
+arch cobblestones2
+x 24
+y 32
+end
+arch magic_banned
+x 24
+y 33
+end
+arch cobblestones2
+x 24
+y 33
+end
+arch magic_banned
+x 24
+y 34
+end
+arch cobblestones2
+x 24
+y 34
 end
 arch awall_2_1_2
 x 24
-y 31
+y 34
+end
+arch blocked
+x 24
+y 35
 end
 arch magic_banned
 x 25
@@ -8316,7 +9116,7 @@ arch cobblestones2
 x 25
 y 2
 end
-arch awall_1_2
+arch awall_2_1_1
 x 25
 y 2
 end
@@ -8328,6 +9128,10 @@ arch cobblestones2
 x 25
 y 3
 end
+arch awall_1_2
+x 25
+y 3
+end
 arch magic_banned
 x 25
 y 4
@@ -8335,302 +9139,330 @@ end
 arch cobblestones2
 x 25
 y 4
+end
+arch magic_banned
+x 25
+y 5
+end
+arch cobblestones2
+x 25
+y 5
+end
+arch magic_banned
+x 25
+y 6
+end
+arch cobblestones2
+x 25
+y 6
+end
+arch magic_banned
+x 25
+y 7
+end
+arch cobblestones2
+x 25
+y 7
 end
 arch chair_1.3
 x 25
-y 4
+y 7
 end
 arch magic_banned
 x 25
-y 5
+y 8
 end
 arch cobblestones2
 x 25
-y 5
+y 8
 end
 arch awall_2_1_2
 x 25
-y 5
+y 8
 end
 arch magic_banned
 x 25
-y 6
+y 9
 end
 arch cobblestones2
 x 25
-y 6
+y 9
 end
 arch magic_banned
 x 25
-y 7
+y 10
 end
 arch cobblestones2
 x 25
-y 7
+y 10
 end
 arch swall_2_2_2
 x 25
-y 7
+y 10
 end
 arch magic_banned
 x 25
-y 8
+y 11
 end
 arch cobblestones2
 x 25
-y 8
+y 11
 end
 arch swall_1_2
 x 25
-y 8
+y 11
 end
 arch magic_banned
 x 25
-y 9
+y 12
 end
 arch cobblestones2
 x 25
-y 9
+y 12
 end
 arch grate_closed_2
 x 25
-y 9
+y 12
 connected 10
 end
 arch magic_banned
 x 25
-y 10
+y 13
 end
 arch cobblestones2
 x 25
-y 10
+y 13
 end
 arch swall_1_4
 x 25
-y 10
-end
-arch magic_banned
-x 25
-y 11
-end
-arch cobblestones2
-x 25
-y 11
-end
-arch magic_banned
-x 25
-y 12
-end
-arch cobblestones2
-x 25
-y 12
-end
-arch magic_banned
-x 25
 y 13
 end
+arch magic_banned
+x 25
+y 14
+end
 arch cobblestones2
 x 25
-y 13
+y 14
+end
+arch magic_banned
+x 25
+y 15
+end
+arch cobblestones2
+x 25
+y 15
+end
+arch magic_banned
+x 25
+y 16
+end
+arch cobblestones2
+x 25
+y 16
 end
 arch swall_2_2_2
 x 25
-y 13
+y 16
 end
 arch magic_banned
 x 25
-y 14
+y 17
 end
 arch cobblestones2
 x 25
-y 14
+y 17
 end
 arch swall_1_2
 x 25
-y 14
+y 17
 end
 arch magic_banned
 x 25
-y 15
+y 18
 end
 arch cobblestones2
 x 25
-y 15
+y 18
 end
 arch grate_closed_2
 x 25
-y 15
+y 18
 connected 12
 end
 arch magic_banned
 x 25
-y 16
+y 19
 end
 arch cobblestones2
 x 25
-y 16
+y 19
 end
 arch swall_1_4
 x 25
-y 16
-end
-arch magic_banned
-x 25
-y 17
-end
-arch cobblestones2
-x 25
-y 17
-end
-arch magic_banned
-x 25
-y 18
-end
-arch cobblestones2
-x 25
-y 18
-end
-arch magic_banned
-x 25
 y 19
 end
+arch magic_banned
+x 25
+y 20
+end
 arch cobblestones2
 x 25
-y 19
+y 20
+end
+arch magic_banned
+x 25
+y 21
+end
+arch cobblestones2
+x 25
+y 21
+end
+arch magic_banned
+x 25
+y 22
+end
+arch cobblestones2
+x 25
+y 22
 end
 arch swall_2_2_2
 x 25
-y 19
+y 22
 end
 arch magic_banned
 x 25
-y 20
+y 23
 end
 arch cobblestones2
 x 25
-y 20
+y 23
 end
 arch swall_1_2
 x 25
-y 20
+y 23
 end
 arch magic_banned
 x 25
-y 21
+y 24
 end
 arch cobblestones2
 x 25
-y 21
+y 24
 end
 arch grate_closed_2
 x 25
-y 21
+y 24
 connected 14
 end
 arch magic_banned
 x 25
-y 22
+y 25
 end
 arch cobblestones2
 x 25
-y 22
+y 25
 end
 arch swall_1_4
 x 25
-y 22
-end
-arch magic_banned
-x 25
-y 23
-end
-arch cobblestones2
-x 25
-y 23
-end
-arch magic_banned
-x 25
-y 24
-end
-arch cobblestones2
-x 25
-y 24
-end
-arch magic_banned
-x 25
 y 25
 end
+arch magic_banned
+x 25
+y 26
+end
 arch cobblestones2
 x 25
-y 25
+y 26
+end
+arch magic_banned
+x 25
+y 27
+end
+arch cobblestones2
+x 25
+y 27
+end
+arch magic_banned
+x 25
+y 28
+end
+arch cobblestones2
+x 25
+y 28
 end
 arch swall_2_2_2
 x 25
-y 25
+y 28
 end
 arch magic_banned
 x 25
-y 26
+y 29
 end
 arch cobblestones2
 x 25
-y 26
+y 29
 end
 arch swall_1_2
 x 25
-y 26
+y 29
 end
 arch magic_banned
 x 25
-y 27
+y 30
 end
 arch cobblestones2
 x 25
-y 27
+y 30
 end
 arch grate_closed_2
 x 25
-y 27
+y 30
 connected 16
 end
 arch magic_banned
 x 25
-y 28
+y 31
 end
 arch cobblestones2
 x 25
-y 28
+y 31
 end
 arch swall_1_4
 x 25
-y 28
-end
-arch magic_banned
-x 25
-y 29
-end
-arch cobblestones2
-x 25
-y 29
-end
-arch magic_banned
-x 25
-y 30
-end
-arch cobblestones2
-x 25
-y 30
-end
-arch magic_banned
-x 25
 y 31
 end
+arch magic_banned
+x 25
+y 32
+end
 arch cobblestones2
 x 25
-y 31
+y 32
+end
+arch magic_banned
+x 25
+y 33
+end
+arch cobblestones2
+x 25
+y 33
+end
+arch magic_banned
+x 25
+y 34
+end
+arch cobblestones2
+x 25
+y 34
 end
 arch awall_2_1_2
 x 25
-y 31
+y 34
+end
+arch blocked
+x 25
+y 35
 end
 arch magic_banned
 x 26
@@ -8697,53 +9529,77 @@ arch cobblestones2
 x 26
 y 4
 end
+arch magic_banned
+x 26
+y 5
+end
+arch cobblestones2
+x 26
+y 5
+end
+arch magic_banned
+x 26
+y 6
+end
+arch cobblestones2
+x 26
+y 6
+end
+arch magic_banned
+x 26
+y 7
+end
+arch cobblestones2
+x 26
+y 7
+end
 arch table_2
 x 26
-y 4
+y 7
 end
 arch random_food
 x 26
-y 4
+y 7
 end
 arch magic_banned
 x 26
-y 5
+y 8
 end
 arch cobblestones2
 x 26
-y 5
+y 8
 end
 arch awall_2_1_2
 x 26
-y 5
+y 8
 end
 arch magic_banned
 x 26
-y 6
+y 9
 end
 arch cobblestones2
 x 26
-y 6
+y 9
 end
 arch magic_banned
 x 26
-y 7
+y 10
 end
 arch cobblestones2
 x 26
-y 7
+y 10
 end
 arch swall_2_1_2
 x 26
-y 7
+y 10
 end
 arch magic_banned
 x 26
-y 8
+y 11
 end
 arch cobblestones2
 x 26
-y 8
+y 11
 end
 arch dragon_exit
 name dragon express
@@ -8754,34 +9610,6 @@ endmsg
 hp 17
 sp 12
 x 26
-y 8
-end
-arch magic_banned
-x 26
-y 9
-end
-arch cobblestones2
-x 26
-y 9
-end
-arch magic_banned
-x 26
-y 10
-end
-arch cobblestones2
-x 26
-y 10
-end
-arch swall_2_1_2
-x 26
-y 10
-end
-arch magic_banned
-x 26
-y 11
-end
-arch cobblestones2
-x 26
 y 11
 end
 arch magic_banned
@@ -8811,6 +9639,34 @@ end
 arch cobblestones2
 x 26
 y 14
+end
+arch magic_banned
+x 26
+y 15
+end
+arch cobblestones2
+x 26
+y 15
+end
+arch magic_banned
+x 26
+y 16
+end
+arch cobblestones2
+x 26
+y 16
+end
+arch swall_2_1_2
+x 26
+y 16
+end
+arch magic_banned
+x 26
+y 17
+end
+arch cobblestones2
+x 26
+y 17
 end
 arch dragon_exit
 name dragon express
@@ -8821,34 +9677,6 @@ endmsg
 hp 34
 sp 8
 x 26
-y 14
-end
-arch magic_banned
-x 26
-y 15
-end
-arch cobblestones2
-x 26
-y 15
-end
-arch magic_banned
-x 26
-y 16
-end
-arch cobblestones2
-x 26
-y 16
-end
-arch swall_2_1_2
-x 26
-y 16
-end
-arch magic_banned
-x 26
-y 17
-end
-arch cobblestones2
-x 26
 y 17
 end
 arch magic_banned
@@ -8878,6 +9706,34 @@ end
 arch cobblestones2
 x 26
 y 20
+end
+arch magic_banned
+x 26
+y 21
+end
+arch cobblestones2
+x 26
+y 21
+end
+arch magic_banned
+x 26
+y 22
+end
+arch cobblestones2
+x 26
+y 22
+end
+arch swall_2_1_2
+x 26
+y 22
+end
+arch magic_banned
+x 26
+y 23
+end
+arch cobblestones2
+x 26
+y 23
 end
 arch dragon_exit
 name dragon express
@@ -8888,34 +9744,6 @@ endmsg
 hp 25
 sp 15
 x 26
-y 20
-end
-arch magic_banned
-x 26
-y 21
-end
-arch cobblestones2
-x 26
-y 21
-end
-arch magic_banned
-x 26
-y 22
-end
-arch cobblestones2
-x 26
-y 22
-end
-arch swall_2_1_2
-x 26
-y 22
-end
-arch magic_banned
-x 26
-y 23
-end
-arch cobblestones2
-x 26
 y 23
 end
 arch magic_banned
@@ -8945,6 +9773,34 @@ end
 arch cobblestones2
 x 26
 y 26
+end
+arch magic_banned
+x 26
+y 27
+end
+arch cobblestones2
+x 26
+y 27
+end
+arch magic_banned
+x 26
+y 28
+end
+arch cobblestones2
+x 26
+y 28
+end
+arch swall_2_1_2
+x 26
+y 28
+end
+arch magic_banned
+x 26
+y 29
+end
+arch cobblestones2
+x 26
+y 29
 end
 arch dragon_exit
 name dragon express
@@ -8955,55 +9811,59 @@ endmsg
 hp 34
 sp 8
 x 26
-y 26
+y 29
 end
 arch magic_banned
 x 26
-y 27
+y 30
 end
 arch cobblestones2
 x 26
-y 27
+y 30
 end
 arch magic_banned
 x 26
-y 28
+y 31
 end
 arch cobblestones2
 x 26
-y 28
+y 31
 end
 arch swall_2_1_2
 x 26
-y 28
-end
-arch magic_banned
-x 26
-y 29
-end
-arch cobblestones2
-x 26
-y 29
-end
-arch magic_banned
-x 26
-y 30
-end
-arch cobblestones2
-x 26
-y 30
-end
-arch magic_banned
-x 26
 y 31
 end
+arch magic_banned
+x 26
+y 32
+end
 arch cobblestones2
 x 26
-y 31
+y 32
+end
+arch magic_banned
+x 26
+y 33
+end
+arch cobblestones2
+x 26
+y 33
+end
+arch magic_banned
+x 26
+y 34
+end
+arch cobblestones2
+x 26
+y 34
 end
 arch awall_2_1_2
 x 26
-y 31
+y 34
+end
+arch blocked
+x 26
+y 35
 end
 arch magic_banned
 x 27
@@ -9034,7 +9894,7 @@ arch cobblestones2
 x 27
 y 2
 end
-arch awall_1_2
+arch awall_2_1_1
 x 27
 y 2
 end
@@ -9046,6 +9906,10 @@ arch cobblestones2
 x 27
 y 3
 end
+arch awall_1_2
+x 27
+y 3
+end
 arch magic_banned
 x 27
 y 4
@@ -9053,41 +9917,33 @@ end
 arch cobblestones2
 x 27
 y 4
+end
+arch magic_banned
+x 27
+y 5
+end
+arch cobblestones2
+x 27
+y 5
+end
+arch magic_banned
+x 27
+y 6
+end
+arch cobblestones2
+x 27
+y 6
+end
+arch magic_banned
+x 27
+y 7
+end
+arch cobblestones2
+x 27
+y 7
 end
 arch chair_1.3
 x 27
-y 4
-end
-arch magic_banned
-x 27
-y 5
-end
-arch cobblestones2
-x 27
-y 5
-end
-arch awall_2_1_2
-x 27
-y 5
-end
-arch magic_banned
-x 27
-y 6
-end
-arch cobblestones2
-x 27
-y 6
-end
-arch magic_banned
-x 27
-y 7
-end
-arch cobblestones2
-x 27
-y 7
-end
-arch swall_2_1_2
-x 27
 y 7
 end
 arch magic_banned
@@ -9095,6 +9951,10 @@ x 27
 y 8
 end
 arch cobblestones2
+x 27
+y 8
+end
+arch awall_2_1_2
 x 27
 y 8
 end
@@ -9310,9 +10170,41 @@ arch cobblestones2
 x 27
 y 31
 end
-arch awall_2_1_2
+arch swall_2_1_2
 x 27
 y 31
+end
+arch magic_banned
+x 27
+y 32
+end
+arch cobblestones2
+x 27
+y 32
+end
+arch magic_banned
+x 27
+y 33
+end
+arch cobblestones2
+x 27
+y 33
+end
+arch magic_banned
+x 27
+y 34
+end
+arch cobblestones2
+x 27
+y 34
+end
+arch awall_2_1_2
+x 27
+y 34
+end
+arch blocked
+x 27
+y 35
 end
 arch magic_banned
 x 28
@@ -9379,44 +10271,36 @@ arch cobblestones2
 x 28
 y 4
 end
+arch magic_banned
+x 28
+y 5
+end
+arch cobblestones2
+x 28
+y 5
+end
+arch magic_banned
+x 28
+y 6
+end
+arch cobblestones2
+x 28
+y 6
+end
+arch magic_banned
+x 28
+y 7
+end
+arch cobblestones2
+x 28
+y 7
+end
 arch table_2
 x 28
-y 4
+y 7
 end
 arch random_food
 x 28
-y 4
-end
-arch magic_banned
-x 28
-y 5
-end
-arch cobblestones2
-x 28
-y 5
-end
-arch awall_2_1_2
-x 28
-y 5
-end
-arch magic_banned
-x 28
-y 6
-end
-arch cobblestones2
-x 28
-y 6
-end
-arch magic_banned
-x 28
-y 7
-end
-arch cobblestones2
-x 28
-y 7
-end
-arch swall_2_1_2
-x 28
 y 7
 end
 arch magic_banned
@@ -9424,6 +10308,10 @@ x 28
 y 8
 end
 arch cobblestones2
+x 28
+y 8
+end
+arch awall_2_1_2
 x 28
 y 8
 end
@@ -9639,9 +10527,41 @@ arch cobblestones2
 x 28
 y 31
 end
-arch awall_2_1_2
+arch swall_2_1_2
 x 28
 y 31
+end
+arch magic_banned
+x 28
+y 32
+end
+arch cobblestones2
+x 28
+y 32
+end
+arch magic_banned
+x 28
+y 33
+end
+arch cobblestones2
+x 28
+y 33
+end
+arch magic_banned
+x 28
+y 34
+end
+arch cobblestones2
+x 28
+y 34
+end
+arch awall_2_1_2
+x 28
+y 34
+end
+arch blocked
+x 28
+y 35
 end
 arch magic_banned
 x 29
@@ -9684,7 +10604,7 @@ arch cobblestones2
 x 29
 y 3
 end
-arch awall_1_2
+arch awall_2_1_1
 x 29
 y 3
 end
@@ -9696,6 +10616,10 @@ arch cobblestones2
 x 29
 y 4
 end
+arch awall_2_1_1
+x 29
+y 4
+end
 arch magic_banned
 x 29
 y 5
@@ -9704,7 +10628,7 @@ arch cobblestones2
 x 29
 y 5
 end
-arch awall_2_1_2
+arch awall_2_1_1
 x 29
 y 5
 end
@@ -9716,15 +10640,15 @@ arch cobblestones2
 x 29
 y 6
 end
+arch awall_1_2
+x 29
+y 6
+end
 arch magic_banned
 x 29
 y 7
 end
 arch cobblestones2
-x 29
-y 7
-end
-arch swall_2_2_3
 x 29
 y 7
 end
@@ -9735,254 +10659,290 @@ end
 arch cobblestones2
 x 29
 y 8
-end
-arch swall_2_1_1
-x 29
-y 8
-end
-arch magic_banned
-x 29
-y 9
-end
-arch cobblestones2
-x 29
-y 9
-end
-arch swall_2_1_1
-x 29
-y 9
-end
-arch magic_banned
-x 29
-y 10
-end
-arch cobblestones2
-x 29
-y 10
-end
-arch swall_2_2_4
-x 29
-y 10
-end
-arch magic_banned
-x 29
-y 11
-end
-arch cobblestones2
-x 29
-y 11
-end
-arch magic_banned
-x 29
-y 12
-end
-arch cobblestones2
-x 29
-y 12
-end
-arch magic_banned
-x 29
-y 13
-end
-arch cobblestones2
-x 29
-y 13
-end
-arch swall_2_2_3
-x 29
-y 13
-end
-arch magic_banned
-x 29
-y 14
-end
-arch cobblestones2
-x 29
-y 14
-end
-arch swall_2_1_1
-x 29
-y 14
-end
-arch magic_banned
-x 29
-y 15
-end
-arch cobblestones2
-x 29
-y 15
-end
-arch swall_2_1_1
-x 29
-y 15
-end
-arch magic_banned
-x 29
-y 16
-end
-arch cobblestones2
-x 29
-y 16
-end
-arch swall_2_2_4
-x 29
-y 16
-end
-arch magic_banned
-x 29
-y 17
-end
-arch cobblestones2
-x 29
-y 17
-end
-arch magic_banned
-x 29
-y 18
-end
-arch cobblestones2
-x 29
-y 18
-end
-arch magic_banned
-x 29
-y 19
-end
-arch cobblestones2
-x 29
-y 19
-end
-arch swall_2_2_3
-x 29
-y 19
-end
-arch magic_banned
-x 29
-y 20
-end
-arch cobblestones2
-x 29
-y 20
-end
-arch swall_2_1_1
-x 29
-y 20
-end
-arch magic_banned
-x 29
-y 21
-end
-arch cobblestones2
-x 29
-y 21
-end
-arch swall_2_1_1
-x 29
-y 21
-end
-arch magic_banned
-x 29
-y 22
-end
-arch cobblestones2
-x 29
-y 22
-end
-arch swall_2_2_4
-x 29
-y 22
-end
-arch magic_banned
-x 29
-y 23
-end
-arch cobblestones2
-x 29
-y 23
-end
-arch magic_banned
-x 29
-y 24
-end
-arch cobblestones2
-x 29
-y 24
-end
-arch magic_banned
-x 29
-y 25
-end
-arch cobblestones2
-x 29
-y 25
-end
-arch swall_2_2_3
-x 29
-y 25
-end
-arch magic_banned
-x 29
-y 26
-end
-arch cobblestones2
-x 29
-y 26
-end
-arch swall_2_1_1
-x 29
-y 26
-end
-arch magic_banned
-x 29
-y 27
-end
-arch cobblestones2
-x 29
-y 27
-end
-arch swall_2_1_1
-x 29
-y 27
-end
-arch magic_banned
-x 29
-y 28
-end
-arch cobblestones2
-x 29
-y 28
-end
-arch swall_2_2_4
-x 29
-y 28
-end
-arch magic_banned
-x 29
-y 29
-end
-arch cobblestones2
-x 29
-y 29
-end
-arch magic_banned
-x 29
-y 30
-end
-arch cobblestones2
-x 29
-y 30
-end
-arch magic_banned
-x 29
-y 31
-end
-arch cobblestones2
-x 29
-y 31
 end
 arch awall_2_1_2
 x 29
+y 8
+end
+arch magic_banned
+x 29
+y 9
+end
+arch cobblestones2
+x 29
+y 9
+end
+arch magic_banned
+x 29
+y 10
+end
+arch cobblestones2
+x 29
+y 10
+end
+arch swall_2_2_3
+x 29
+y 10
+end
+arch magic_banned
+x 29
+y 11
+end
+arch cobblestones2
+x 29
+y 11
+end
+arch swall_2_1_1
+x 29
+y 11
+end
+arch magic_banned
+x 29
+y 12
+end
+arch cobblestones2
+x 29
+y 12
+end
+arch swall_2_1_1
+x 29
+y 12
+end
+arch magic_banned
+x 29
+y 13
+end
+arch cobblestones2
+x 29
+y 13
+end
+arch swall_2_2_4
+x 29
+y 13
+end
+arch magic_banned
+x 29
+y 14
+end
+arch cobblestones2
+x 29
+y 14
+end
+arch magic_banned
+x 29
+y 15
+end
+arch cobblestones2
+x 29
+y 15
+end
+arch magic_banned
+x 29
+y 16
+end
+arch cobblestones2
+x 29
+y 16
+end
+arch swall_2_2_3
+x 29
+y 16
+end
+arch magic_banned
+x 29
+y 17
+end
+arch cobblestones2
+x 29
+y 17
+end
+arch swall_2_1_1
+x 29
+y 17
+end
+arch magic_banned
+x 29
+y 18
+end
+arch cobblestones2
+x 29
+y 18
+end
+arch swall_2_1_1
+x 29
+y 18
+end
+arch magic_banned
+x 29
+y 19
+end
+arch cobblestones2
+x 29
+y 19
+end
+arch swall_2_2_4
+x 29
+y 19
+end
+arch magic_banned
+x 29
+y 20
+end
+arch cobblestones2
+x 29
+y 20
+end
+arch magic_banned
+x 29
+y 21
+end
+arch cobblestones2
+x 29
+y 21
+end
+arch magic_banned
+x 29
+y 22
+end
+arch cobblestones2
+x 29
+y 22
+end
+arch swall_2_2_3
+x 29
+y 22
+end
+arch magic_banned
+x 29
+y 23
+end
+arch cobblestones2
+x 29
+y 23
+end
+arch swall_2_1_1
+x 29
+y 23
+end
+arch magic_banned
+x 29
+y 24
+end
+arch cobblestones2
+x 29
+y 24
+end
+arch swall_2_1_1
+x 29
+y 24
+end
+arch magic_banned
+x 29
+y 25
+end
+arch cobblestones2
+x 29
+y 25
+end
+arch swall_2_2_4
+x 29
+y 25
+end
+arch magic_banned
+x 29
+y 26
+end
+arch cobblestones2
+x 29
+y 26
+end
+arch magic_banned
+x 29
+y 27
+end
+arch cobblestones2
+x 29
+y 27
+end
+arch magic_banned
+x 29
+y 28
+end
+arch cobblestones2
+x 29
+y 28
+end
+arch swall_2_2_3
+x 29
+y 28
+end
+arch magic_banned
+x 29
+y 29
+end
+arch cobblestones2
+x 29
+y 29
+end
+arch swall_2_1_1
+x 29
+y 29
+end
+arch magic_banned
+x 29
+y 30
+end
+arch cobblestones2
+x 29
+y 30
+end
+arch swall_2_1_1
+x 29
+y 30
+end
+arch magic_banned
+x 29
 y 31
+end
+arch cobblestones2
+x 29
+y 31
+end
+arch swall_2_2_4
+x 29
+y 31
+end
+arch magic_banned
+x 29
+y 32
+end
+arch cobblestones2
+x 29
+y 32
+end
+arch magic_banned
+x 29
+y 33
+end
+arch cobblestones2
+x 29
+y 33
+end
+arch magic_banned
+x 29
+y 34
+end
+arch cobblestones2
+x 29
+y 34
+end
+arch awall_2_1_2
+x 29
+y 34
+end
+arch blocked
+x 29
+y 35
 end
 arch magic_banned
 x 30
@@ -10043,11 +11003,6 @@ y 2
 last_sp 1
 connected 32
 end
-arch pedestal
-x 30
-y 3
-connected 80
-end
 arch magic_banned
 x 30
 y 3
@@ -10056,21 +11011,42 @@ arch cobblestones2
 x 30
 y 3
 end
-arch igateTrg1
+arch magic_banned
 x 30
-y 3
+y 4
+end
+arch cobblestones2
+x 30
+y 4
+end
+arch pedestal
+x 30
+y 5
 connected 80
 end
 arch magic_banned
 x 30
-y 4
+y 5
+end
+arch cobblestones2
+x 30
+y 5
+end
+arch igateTrg1
+x 30
+y 5
+connected 80
+end
+arch magic_banned
+x 30
+y 6
 end
 arch magic_mouth
 msg
 Say the password of Pup Land to enter.
 endmsg
 x 30
-y 4
+y 6
 end
 arch magic_ear
 msg
@@ -10078,47 +11054,31 @@ msg
 Click.
 endmsg
 x 30
-y 4
+y 6
 connected 80
 end
 arch cobblestones2
 x 30
-y 4
+y 6
 end
 arch magic_banned
 x 30
-y 5
+y 7
 end
 arch cobblestones2
 x 30
-y 5
+y 7
+end
+arch magic_banned
+x 30
+y 8
+end
+arch cobblestones2
+x 30
+y 8
 end
 arch awall_2_1_2
 x 30
-y 5
-end
-arch magic_banned
-x 30
-y 6
-end
-arch cobblestones2
-x 30
-y 6
-end
-arch magic_banned
-x 30
-y 7
-end
-arch cobblestones2
-x 30
-y 7
-end
-arch magic_banned
-x 30
-y 8
-end
-arch cobblestones2
-x 30
 y 8
 end
 arch magic_banned
@@ -10128,26 +11088,6 @@ end
 arch cobblestones2
 x 30
 y 9
-end
-arch cobblestones2
-x 30
-y 9
-end
-arch magic_banned
-x 30
-y 9
-end
-arch cobblestones2
-x 30
-y 9
-end
-arch magic_banned
-x 30
-y 10
-end
-arch cobblestones2
-x 30
-y 10
 end
 arch magic_banned
 x 30
@@ -10172,6 +11112,26 @@ end
 arch cobblestones2
 x 30
 y 12
+end
+arch cobblestones2
+x 30
+y 12
+end
+arch magic_banned
+x 30
+y 12
+end
+arch cobblestones2
+x 30
+y 12
+end
+arch magic_banned
+x 30
+y 13
+end
+arch cobblestones2
+x 30
+y 13
 end
 arch magic_banned
 x 30
@@ -10325,9 +11285,37 @@ arch cobblestones2
 x 30
 y 31
 end
+arch magic_banned
+x 30
+y 32
+end
+arch cobblestones2
+x 30
+y 32
+end
+arch magic_banned
+x 30
+y 33
+end
+arch cobblestones2
+x 30
+y 33
+end
+arch magic_banned
+x 30
+y 34
+end
+arch cobblestones2
+x 30
+y 34
+end
 arch awall_2_1_2
 x 30
-y 31
+y 34
+end
+arch blocked
+x 30
+y 35
 end
 arch magic_banned
 x 31
@@ -10394,7 +11382,7 @@ arch cobblestones2
 x 31
 y 5
 end
-arch awall_3_4
+arch awall_2_1_1
 x 31
 y 5
 end
@@ -10430,7 +11418,7 @@ arch cobblestones2
 x 31
 y 8
 end
-arch awall_2_1_1
+arch awall_3_4
 x 31
 y 8
 end
@@ -10706,9 +11694,49 @@ arch cobblestones2
 x 31
 y 31
 end
-arch awall_2_2_4
+arch awall_2_1_1
 x 31
 y 31
+end
+arch magic_banned
+x 31
+y 32
+end
+arch cobblestones2
+x 31
+y 32
+end
+arch awall_2_1_1
+x 31
+y 32
+end
+arch magic_banned
+x 31
+y 33
+end
+arch cobblestones2
+x 31
+y 33
+end
+arch awall_2_1_1
+x 31
+y 33
+end
+arch magic_banned
+x 31
+y 34
+end
+arch cobblestones2
+x 31
+y 34
+end
+arch awall_2_2_4
+x 31
+y 34
+end
+arch blocked
+x 31
+y 35
 end
 arch blocked
 x 32
@@ -10838,6 +11866,22 @@ x 32
 y 31
 end
 arch blocked
+x 32
+y 32
+end
+arch blocked
+x 32
+y 33
+end
+arch blocked
+x 32
+y 34
+end
+arch blocked
+x 32
+y 35
+end
+arch blocked
 x 33
 end
 arch pit_closed
@@ -10887,13 +11931,13 @@ y 3
 connected 92
 end
 arch invis_exit
-name brest
-slaying /world/world_107_123
+name santo dominion
+slaying /world/world_102_108
 msg
 The random ride is heading for Brest today.
 endmsg
-hp 32
-sp 30
+hp 17
+sp 12
 x 33
 y 3
 end
