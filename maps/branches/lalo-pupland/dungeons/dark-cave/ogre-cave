@@ -9,7 +9,7 @@ msg
 Creator: jesse
 Date:    2008-01-25
 An ogre stronghold.
-Modified: 2013-07-19 Andreas Kirschbaum
+Modified: 2014-10-18 Rick Tanner
 endmsg
 end
 arch blocked
@@ -2740,8 +2740,8 @@ y 43
 end
 arch chole_2
 slaying hidden-cave
-hp 4
-sp 24
+hp 3
+sp 10
 x 11
 y 43
 end
@@ -5112,8 +5112,8 @@ y 41
 end
 arch stair_down_4
 slaying hidden-cave
-hp 13
-sp 22
+hp 12
+sp 8
 x 20
 y 41
 end
