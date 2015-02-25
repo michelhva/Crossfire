@@ -9,7 +9,7 @@ enter_x 38
 enter_y 57
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2012-01-24 Rick Tanner
+Modified: 2014-10-10 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -5311,11 +5311,9 @@ sp 2
 x 6
 y 29
 end
-arch cave18
-name mountain top
+arch cave24
 x 6
 y 29
-blocksview 0
 end
 arch check_inv
 slaying dojo
@@ -6884,11 +6882,9 @@ sp 2
 x 8
 y 26
 end
-arch cave18
-name mountain top
+arch cave24
 x 8
 y 26
-blocksview 0
 end
 arch check_inv
 slaying dojo
