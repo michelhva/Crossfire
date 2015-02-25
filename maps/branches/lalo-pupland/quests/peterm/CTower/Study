@@ -8,7 +8,7 @@ enter_x 6
 enter_y 7
 msg
 Created:  1994-02-11 peter mardahl (peterm@soda.berkeley.edu)
-Modified: 2008-12-22 Rick Tanner
+Modified: 2015-01-02 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -230,8 +230,8 @@ end
 arch stair_3_up
 name to the Top
 slaying TowerTop
-hp 8
-sp 7
+hp 17
+sp 15
 x 8
 y 8
 end
