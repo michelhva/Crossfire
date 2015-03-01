@@ -1,7 +1,7 @@
 Object lich_dust
 nrof 1
 name lich dust
-face pix_dust.111
+face lich_dust.111
 material 4
 weight 100
 value 800
