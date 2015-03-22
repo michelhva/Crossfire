@@ -4,6 +4,7 @@ width 6
 height 6
 msg
 Created:  1998-02-19
+Modified: 2015-03-22 Nicolas
 endmsg
 end
 arch awall_0
@@ -16,4 +17,15 @@ x 3
 end
 arch stwall_0
 x 4
+end
+arch stwallblue_0
+x 5
+end
+arch stwallmossy_0
+x 5
+y 1
+end
+arch stwallred_0
+x 5
+y 2
 end
