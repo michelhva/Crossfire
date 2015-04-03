@@ -9,7 +9,7 @@ enter_x 7
 enter_y 16
 msg
 Created:  1995-04-26 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2012-03-22 Rick Tanner
+Modified: 2015-04-02 Rick Tanner
 endmsg
 end
 arch cave_15
@@ -17,16 +17,16 @@ end
 arch cave_15
 y 1
 end
-arch cave18
+arch cave24
 y 2
 end
-arch cave17
+arch cave23
 y 3
 end
 arch cave24
 y 4
 end
-arch cave17
+arch cave23
 y 5
 end
 arch cave_15
@@ -47,7 +47,7 @@ end
 arch cave_15
 y 11
 end
-arch cave18
+arch cave24
 y 12
 end
 arch small_stones
@@ -68,7 +68,7 @@ end
 arch cave3
 y 15
 end
-arch cave17
+arch cave23
 y 16
 end
 arch cave24
@@ -98,7 +98,7 @@ end
 arch cave_15
 y 23
 end
-arch cave18
+arch cave24
 y 24
 end
 arch small_stones
@@ -113,16 +113,16 @@ end
 arch cave3
 y 26
 end
-arch cave17
+arch cave23
 y 27
 end
-arch cave18
+arch cave24
 y 28
 end
-arch cave17
+arch cave23
 y 29
 end
-arch cave18
+arch cave24
 y 30
 end
 arch cave23
@@ -187,11 +187,11 @@ arch cave3
 x 1
 y 6
 end
-arch cave17
+arch cave23
 x 1
 y 7
 end
-arch cave18
+arch cave24
 x 1
 y 8
 end
@@ -203,7 +203,7 @@ arch cave3
 x 1
 y 9
 end
-arch cave17
+arch cave23
 x 1
 y 10
 end
@@ -211,7 +211,7 @@ arch cave_15
 x 1
 y 11
 end
-arch cave19
+arch cave25
 x 1
 y 12
 end
@@ -271,7 +271,7 @@ arch cave7
 x 1
 y 20
 end
-arch cave17
+arch cave23
 x 1
 y 21
 end
@@ -370,7 +370,7 @@ end
 arch cave_15
 x 2
 end
-arch cave18
+arch cave24
 x 2
 y 1
 end
@@ -430,7 +430,7 @@ arch cave12
 x 2
 y 10
 end
-arch cave17
+arch cave23
 x 2
 y 11
 end
@@ -568,14 +568,14 @@ arch cave7
 x 2
 y 34
 end
-arch cave17
+arch cave23
 x 2
 y 35
 end
 arch cave_15
 x 3
 end
-arch cave19
+arch cave25
 x 3
 y 1
 end
@@ -650,11 +650,11 @@ arch cave12
 x 3
 y 11
 end
-arch cave17
+arch cave23
 x 3
 y 12
 end
-arch cave19
+arch cave25
 x 3
 y 13
 end
@@ -777,11 +777,11 @@ arch cave_15
 x 4
 y 1
 end
-arch cave18
+arch cave24
 x 4
 y 2
 end
-arch cave17
+arch cave23
 x 4
 y 3
 end
@@ -920,11 +920,11 @@ arch cave15
 x 4
 y 26
 end
-arch cave20
+arch cave22
 x 4
 y 27
 end
-arch cave19
+arch cave25
 x 4
 y 28
 end
@@ -1063,7 +1063,7 @@ arch cave25
 x 5
 y 15
 end
-arch cave20
+arch cave22
 x 5
 y 16
 end
@@ -1123,7 +1123,7 @@ arch cave_15
 x 5
 y 28
 end
-arch cave19
+arch cave25
 x 5
 y 29
 end
@@ -1178,7 +1178,7 @@ arch cave_15
 x 6
 y 1
 end
-arch cave19
+arch cave25
 x 6
 y 2
 end
@@ -1214,7 +1214,7 @@ arch cave2
 x 6
 y 8
 end
-arch cave18
+arch cave24
 x 6
 y 9
 end
@@ -1266,7 +1266,7 @@ arch cave23
 x 6
 y 17
 end
-arch cave19
+arch cave25
 x 6
 y 18
 end
@@ -1354,7 +1354,7 @@ arch cave7
 x 6
 y 34
 end
-arch cave17
+arch cave23
 x 6
 y 35
 end
@@ -1365,7 +1365,7 @@ arch cave_15
 x 7
 y 1
 end
-arch cave18
+arch cave24
 x 7
 y 2
 end
@@ -1527,7 +1527,7 @@ arch cave_15
 x 7
 y 29
 end
-arch cave19
+arch cave25
 x 7
 y 30
 end
@@ -1669,7 +1669,7 @@ arch cave7
 x 8
 y 18
 end
-arch cave17
+arch cave23
 x 8
 y 19
 end
@@ -1701,7 +1701,7 @@ arch cave7
 x 8
 y 24
 end
-arch cave17
+arch cave23
 x 8
 y 25
 end
@@ -1729,7 +1729,7 @@ arch cave23
 x 8
 y 29
 end
-arch cave18
+arch cave24
 x 8
 y 30
 end
@@ -1765,7 +1765,7 @@ arch cave22
 x 8
 y 35
 end
-arch cave18
+arch cave24
 x 9
 end
 arch medium_stones
@@ -1891,7 +1891,7 @@ arch cave2
 x 9
 y 19
 end
-arch cave18
+arch cave24
 x 9
 y 20
 end
@@ -1923,6 +1923,10 @@ arch cave12
 x 9
 y 25
 end
+arch swall_1_4_half
+x 9
+y 25
+end
 arch small_stones
 x 9
 y 26
@@ -1947,7 +1951,7 @@ arch cave22
 x 9
 y 29
 end
-arch cave19
+arch cave25
 x 9
 y 30
 end
@@ -1979,7 +1983,7 @@ arch cave23
 x 9
 y 35
 end
-arch cave19
+arch cave25
 x 10
 end
 arch large_stones
@@ -2081,11 +2085,11 @@ arch cave22
 x 10
 y 17
 end
-arch cave19
+arch cave25
 x 10
 y 18
 end
-arch cave20
+arch cave22
 x 10
 y 19
 end
@@ -2300,7 +2304,7 @@ arch cave_15
 x 11
 y 20
 end
-arch cave19
+arch cave25
 x 11
 y 21
 end
@@ -2509,7 +2513,7 @@ arch cave_15
 x 12
 y 17
 end
-arch cave18
+arch cave24
 x 12
 y 18
 end
@@ -2542,6 +2546,10 @@ x 12
 y 22
 end
 arch cave9
+x 12
+y 22
+end
+arch swall_1_1_half
 x 12
 y 22
 end
@@ -2613,7 +2621,7 @@ arch cave1
 x 12
 y 33
 end
-arch cave20
+arch cave22
 x 12
 y 34
 end
@@ -2624,11 +2632,11 @@ end
 arch cave_15
 x 13
 end
-arch cave19
+arch cave25
 x 13
 y 1
 end
-arch cave20
+arch cave22
 x 13
 y 2
 end
@@ -2756,7 +2764,7 @@ arch cave6
 x 13
 y 26
 end
-arch cave20
+arch cave22
 x 13
 y 27
 end
@@ -2764,7 +2772,7 @@ arch cave_15
 x 13
 y 28
 end
-arch cave18
+arch cave24
 x 13
 y 29
 end
@@ -2792,7 +2800,7 @@ arch cave7
 x 13
 y 32
 end
-arch cave17
+arch cave23
 x 13
 y 33
 end
@@ -2987,7 +2995,7 @@ arch cave12
 x 14
 y 33
 end
-arch cave17
+arch cave23
 x 14
 y 34
 end
@@ -3086,7 +3094,7 @@ arch cave11
 x 15
 y 18
 end
-arch cave20
+arch cave22
 x 15
 y 19
 end
@@ -3110,7 +3118,7 @@ arch cave2
 x 15
 y 22
 end
-arch cave19
+arch cave25
 x 15
 y 23
 end
@@ -3186,7 +3194,7 @@ arch cave12
 x 15
 y 34
 end
-arch cave17
+arch cave23
 x 15
 y 35
 end
@@ -3318,7 +3326,7 @@ arch cave_15
 x 16
 y 23
 end
-arch cave19
+arch cave25
 x 16
 y 24
 end
@@ -3354,11 +3362,11 @@ arch cave16
 x 16
 y 30
 end
-arch cave17
+arch cave23
 x 16
 y 31
 end
-arch cave19
+arch cave25
 x 16
 y 32
 end
@@ -3485,11 +3493,11 @@ arch cave_15
 x 17
 y 22
 end
-arch cave18
+arch cave24
 x 17
 y 23
 end
-arch cave17
+arch cave23
 x 17
 y 24
 end
@@ -3683,7 +3691,7 @@ arch cave_15
 x 18
 y 21
 end
-arch cave18
+arch cave24
 x 18
 y 22
 end
@@ -3965,7 +3973,7 @@ arch cave25
 x 19
 y 34
 end
-arch cave20
+arch cave22
 x 19
 y 35
 end
@@ -4048,7 +4056,7 @@ arch cave6
 x 20
 y 17
 end
-arch cave20
+arch cave22
 x 20
 y 18
 end
@@ -4096,7 +4104,7 @@ arch cave25
 x 20
 y 27
 end
-arch cave20
+arch cave22
 x 20
 y 28
 end
@@ -4128,7 +4136,7 @@ arch cave12
 x 20
 y 33
 end
-arch cave17
+arch cave23
 x 20
 y 34
 end
@@ -4230,7 +4238,7 @@ arch cave12
 x 21
 y 17
 end
-arch cave17
+arch cave23
 x 21
 y 18
 end
@@ -4262,7 +4270,7 @@ arch cave7
 x 21
 y 23
 end
-arch cave17
+arch cave23
 x 21
 y 24
 end
@@ -4310,7 +4318,7 @@ arch cave2
 x 21
 y 30
 end
-arch cave19
+arch cave25
 x 21
 y 31
 end
@@ -4334,7 +4342,7 @@ arch cave7
 x 21
 y 34
 end
-arch cave17
+arch cave23
 x 21
 y 35
 end
@@ -4669,7 +4677,7 @@ arch cave12
 x 23
 y 24
 end
-arch cave17
+arch cave23
 x 23
 y 25
 end
@@ -4899,7 +4907,7 @@ arch cave11
 x 24
 y 24
 end
-arch cave20
+arch cave22
 x 24
 y 25
 end
@@ -5500,7 +5508,7 @@ arch cave12
 x 27
 y 26
 end
-arch cave17
+arch cave23
 x 27
 y 27
 end
@@ -5658,7 +5666,7 @@ arch cave7
 x 28
 y 17
 end
-arch cave17
+arch cave23
 x 28
 y 18
 end
@@ -5769,7 +5777,7 @@ arch cave7
 x 28
 y 34
 end
-arch cave17
+arch cave23
 x 28
 y 35
 end
@@ -5904,11 +5912,11 @@ arch cave6
 x 29
 y 26
 end
-arch cave20
+arch cave22
 x 29
 y 27
 end
-arch cave19
+arch cave25
 x 29
 y 28
 end
@@ -6121,7 +6129,7 @@ arch cave_15
 x 30
 y 28
 end
-arch cave19
+arch cave25
 x 30
 y 29
 end
@@ -6255,7 +6263,7 @@ arch cave22
 x 31
 y 18
 end
-arch cave18
+arch cave24
 x 31
 y 19
 end
@@ -6303,7 +6311,7 @@ arch cave1
 x 31
 y 25
 end
-arch cave20
+arch cave22
 x 31
 y 26
 end
@@ -6476,7 +6484,7 @@ arch cave22
 x 32
 y 17
 end
-arch cave18
+arch cave24
 x 32
 y 18
 end
@@ -6508,6 +6516,10 @@ arch cave12
 x 32
 y 22
 end
+arch swall_1_4_half
+x 32
+y 22
+end
 arch small_stones
 x 32
 y 23
@@ -6520,7 +6532,7 @@ arch cave23
 x 32
 y 24
 end
-arch cave18
+arch cave24
 x 32
 y 25
 end
@@ -7016,6 +7028,10 @@ endmsg
 x 34
 y 22
 end
+arch swall_1_3_half
+x 34
+y 22
+end
 arch small_stones
 x 34
 y 23
@@ -7283,7 +7299,7 @@ arch cave_15
 x 35
 y 33
 end
-arch cave19
+arch cave25
 x 35
 y 34
 end
