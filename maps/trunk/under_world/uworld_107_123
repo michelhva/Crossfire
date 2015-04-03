@@ -87,6 +87,9 @@ end
 arch flagstone
 y 16
 end
+arch firepot_bright
+y 16
+end
 arch flagstone
 y 17
 end
@@ -103,6 +106,9 @@ arch flagstone
 y 21
 end
 arch flagstone
+y 22
+end
+arch firepot_bright
 y 22
 end
 arch cobblestones2
@@ -1086,6 +1092,10 @@ arch dlevel_3_2
 x 7
 y 16
 end
+arch firepot_bright
+x 7
+y 16
+end
 arch flagstone
 x 7
 y 17
@@ -1131,6 +1141,10 @@ x 7
 y 22
 end
 arch dlevel_3_2
+x 7
+y 22
+end
+arch firepot_bright
 x 7
 y 22
 end
@@ -1789,6 +1803,10 @@ arch dlevel_3_2
 x 11
 y 17
 end
+arch firepot_bright
+x 11
+y 17
+end
 arch flagstone
 x 11
 y 18
@@ -1818,6 +1836,10 @@ x 11
 y 21
 end
 arch dlevel_3_2
+x 11
+y 21
+end
+arch firepot_bright
 x 11
 y 21
 end
