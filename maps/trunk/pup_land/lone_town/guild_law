@@ -8,7 +8,7 @@ enter_x 16
 enter_y 7
 msg
 Created:  1996-12-18
-Modified: 2012-04-06 Rick Tanner
+Modified: 2015-04-12 Jason Zheng
 endmsg
 end
 arch grass
@@ -478,7 +478,7 @@ x 4
 y 4
 end
 arch elf
-name Reception of Regular Army
+name Regular Army recruiter
 msg
 @match yes
 Sorry, but I have to test your combat abilities first: Enter the Cave of Ordeal and search for a scroll.  I have opened the gate for you...
@@ -911,7 +911,7 @@ x 8
 y 14
 end
 arch elf
-name Regular Army
+name Regular Army soldier
 msg
 @match siegfried|saga
 Siegfried is a great hero in the history of Pup Land.  You *must* read it.
@@ -978,7 +978,7 @@ x 9
 y 8
 end
 arch elf
-name Regular Army
+name Regular Army soldier
 msg
 @match resistance
 Lone Town is the origin and center of the "Resistance" movement.
@@ -1443,7 +1443,7 @@ x 14
 y 2
 end
 arch elf
-name Regular Army
+name Regular Army soldier
 msg
 @match resistance
 We fight against them.
