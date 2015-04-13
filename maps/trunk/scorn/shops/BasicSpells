@@ -898,6 +898,20 @@ arch woodfloor
 x 6
 y 10
 end
+arch blue_dragon1
+name Mosely Ylesom
+msg
+@match hello|hi|greetings
+Hello, and welcome to my shop!
+@match book|spell
+We have books for summoning, sorcery, evocation, pyromancy, and even on causing harm! Feel free to browse through them.
+@match *
+We offer the most affordable spellbooks in Scorn! Much cheaper than that magic shop...
+endmsg
+x 6
+y 10
+level 10
+end
 arch button_small
 x 6
 y 11
