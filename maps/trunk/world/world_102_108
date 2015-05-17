@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-02-19
-Modified: 2013-04-23 Rick Tanner
+Modified: 2015-05-17 Daniel Hawkins
 endmsg
 outdoor 1
 tile_path_1 world_102_107
@@ -3079,7 +3079,7 @@ arch woods_2
 x 13
 y 20
 end
-arch guild
+arch bank_scorn
 name Bank of Skud, Santo Dominion Branch
 slaying ../santo_dominion/shops/bank_santodominion
 hp 12
