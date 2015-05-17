@@ -2,9 +2,10 @@ arch map
 name wall special
 difficulty 1
 width 7
-height 18
+height 21
 msg
 Created:  2002-08-29
+Modified: 2015-05-17 Nicolas
 endmsg
 end
 arch wall_1_3_ruin
@@ -29,29 +30,38 @@ end
 arch stwall_open_1
 y 6
 end
-arch hedge
+arch stwallblue_open_1
 y 7
 end
-arch cave11
-y 10
+arch stwallmossy_open_1
+y 8
 end
-arch cave10
-y 11
+arch stwallred_open_1
+y 9
 end
-arch cave_7
-y 12
-end
-arch cave_9
+arch hedge
 y 13
 end
-arch cave_3
+arch cave11
 y 14
 end
-arch cave_5
+arch cave10
 y 15
 end
-arch cave_1
+arch cave_7
 y 16
+end
+arch cave_9
+y 17
+end
+arch cave_3
+y 18
+end
+arch cave_5
+y 19
+end
+arch cave_1
+y 20
 end
 arch wall_1_4_ruin
 x 1
@@ -82,33 +92,45 @@ arch stwall_closed_1
 x 1
 y 6
 end
+arch stwallblue_2_1_2
+x 1
+y 7
+end
+arch stwallmossy_2_1_2
+x 1
+y 8
+end
+arch stwallred_2_1_2
+x 1
+y 9
+end
 arch cave12
-x 1
-y 10
-end
-arch cave9
-x 1
-y 11
-end
-arch cave_8
-x 1
-y 12
-end
-arch cave_10
-x 1
-y 13
-end
-arch cave_4
 x 1
 y 14
 end
-arch cave_6
+arch cave9
 x 1
 y 15
 end
-arch cave_2
+arch cave_8
 x 1
 y 16
+end
+arch cave_10
+x 1
+y 17
+end
+arch cave_4
+x 1
+y 18
+end
+arch cave_6
+x 1
+y 19
+end
+arch cave_2
+x 1
+y 20
 end
 arch dwall_1_2
 face dwall_1_short.111
@@ -138,15 +160,15 @@ y 6
 end
 arch cave6
 x 2
-y 10
+y 14
 end
 arch cave5
 x 2
-y 11
+y 15
 end
 arch cave21
 x 2
-y 12
+y 16
 end
 arch dwall_1_3
 face dwall_8_short.111
@@ -186,29 +208,41 @@ arch stwindow_win1
 x 3
 y 8
 end
-arch cave7
+arch stwindowblue_win1
+x 3
+y 9
+end
+arch stwindowmossy_win1
 x 3
 y 10
 end
-arch cave8
+arch stwindowred_win1
 x 3
 y 11
 end
-arch cave15
-x 3
-y 13
-end
-arch cave14
+arch cave7
 x 3
 y 14
 end
-arch cave_0
+arch cave8
 x 3
 y 15
 end
+arch cave15
+x 3
+y 17
+end
+arch cave14
+x 3
+y 18
+end
+arch cave_0
+x 3
+y 19
+end
 arch cave_12
 x 3
-y 16
+y 20
 end
 arch dwall_1_4
 face dwall_2_short.111
@@ -248,29 +282,41 @@ arch stwindow_win2
 x 4
 y 8
 end
-arch cave24
+arch stwindowblue_win2
+x 4
+y 9
+end
+arch stwindowmossy_win2
 x 4
 y 10
 end
-arch cave3
+arch stwindowred_win2
 x 4
 y 11
 end
-arch cave23
-x 4
-y 12
-end
-arch cave20
-x 4
-y 13
-end
-arch cave19
+arch cave24
 x 4
 y 14
 end
-arch cave_13
+arch cave3
+x 4
+y 15
+end
+arch cave23
 x 4
 y 16
+end
+arch cave20
+x 4
+y 17
+end
+arch cave19
+x 4
+y 18
+end
+arch cave_13
+x 4
+y 20
 end
 arch dwall_1_1
 face dwall_4_short.111
@@ -292,49 +338,49 @@ y 3
 end
 arch cave4
 x 5
-y 10
+y 14
 end
 arch blocked
 x 5
-y 11
+y 15
 end
 arch cave2
 x 5
-y 12
+y 16
 end
 arch cave17
 x 5
-y 13
+y 17
 end
 arch cave18
 x 5
-y 14
+y 18
 end
 arch cave_14
 x 5
-y 15
+y 19
 end
 arch cave_11
 x 5
-y 16
+y 20
 end
 arch cave25
 x 6
-y 10
+y 14
 end
 arch cave1
 x 6
-y 11
+y 15
 end
 arch cave22
 x 6
-y 12
+y 16
 end
 arch cave16
 x 6
-y 13
+y 17
 end
 arch cave13
 x 6
-y 14
+y 18
 end
