@@ -14,13 +14,13 @@ current = TimeOfDay()
 inverse = "inverse" in parameters and parameters["inverse"] == True
 match = False
 if not "match" in parameters:
-    Crossfire.Log(Crossfire.LogError,"Script replace_in_map_period.py didn't get a 'match' parameter. Only got %s" %parameters)
+    Crossfire.Log(Crossfire.LogError,"Script replace_in_map.py didn't get a 'match' parameter. Only got %s" %parameters)
 elif parameters["match"].lower() == "one":
     match=TimeOfDay().matchAny(parameters["when"]) != inverse
 elif parameters["match"].lower() == "all":
     match=TimeOfDay().matchAll(parameters["when"]) != inverse
 else:
-    Crossfire.Log(Crossfire.LogError,"Script replace_in_map_period.py didn't get a 'match' parameter. Only got %s" %parameters)
+    Crossfire.Log(Crossfire.LogError,"Script replace_in_map.py didn't get a 'match' parameter. Only got %s" %parameters)
 
 #print "match is %s and alreadymatched is %s" %(match,alreadymatched)
 
