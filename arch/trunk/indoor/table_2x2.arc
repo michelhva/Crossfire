@@ -5,7 +5,7 @@ no_pick 1
 weight 300000
 value 100
 material 16
-name_pl tables
+name_pl big tables
 client_type 8002
 end
 More
@@ -16,7 +16,7 @@ no_pick 1
 weight 300000
 value 100
 material 16
-name_pl tables
+name_pl big tables
 client_type 8002
 x 1
 end
@@ -28,7 +28,7 @@ no_pick 1
 weight 300000
 value 100
 material 16
-name_pl tables
+name_pl big tables
 client_type 8002
 y 1
 end
@@ -40,7 +40,7 @@ no_pick 1
 weight 300000
 value 100
 material 16
-name_pl tables
+name_pl big tables
 client_type 8002
 x 1
 y 1
