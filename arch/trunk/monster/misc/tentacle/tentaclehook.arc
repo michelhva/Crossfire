@@ -1,6 +1,6 @@
 Object tentacle_hook
 name tentacle's hook
-name_pl tentacle's hooks
+name_pl tentacles' hooks
 face tentaclehook.111
 type 79
 material 32
