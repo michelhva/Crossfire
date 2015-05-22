@@ -5,7 +5,7 @@ no_pick 1
 weight 150000
 value 55
 material 16
-name_pl tables
+name_pl long tables
 client_type 8002
 end
 More
@@ -16,7 +16,7 @@ no_pick 1
 weight 150000
 value 55
 material 16
-name_pl tables
+name_pl long tables
 client_type 8002
 x 1
 end
