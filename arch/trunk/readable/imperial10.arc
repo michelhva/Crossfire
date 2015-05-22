@@ -1,5 +1,5 @@
 Object imperial10
-name Ten Imperial Bank Note
+name Ten-Imperial Bank Note
 face imperial.111
 race gold and jewels
 nrof 1
@@ -8,7 +8,7 @@ skill literacy
 material 1
 value 100000
 weight 5
-name_pl 10 Imperial Bank Notes
+name_pl Ten-Imperial Bank Notes
 msg
 One Imperial note
 	"Nunc Est Dispendum"
