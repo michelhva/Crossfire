@@ -8,7 +8,7 @@ skill literacy
 material 1
 value 10000
 weight 5
-name_pl imperials
+name_pl Imperial Bank Notes
 msg
 One Imperial note
 	"Nunc Est Dispendum"
