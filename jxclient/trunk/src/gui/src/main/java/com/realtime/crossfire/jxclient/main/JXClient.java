@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.main;
 import com.realtime.crossfire.jxclient.account.CharacterModel;
 import com.realtime.crossfire.jxclient.commands.AgainCommand;
 import com.realtime.crossfire.jxclient.commands.BindCommand;
+import com.realtime.crossfire.jxclient.commands.BindingsCommand;
 import com.realtime.crossfire.jxclient.commands.ClearCommand;
 import com.realtime.crossfire.jxclient.commands.CommandExecutorImpl;
 import com.realtime.crossfire.jxclient.commands.Commands;
@@ -253,6 +254,7 @@ public class JXClient {
                                                 return;
                                             }
                                             final KeybindingsManager keybindingsManager = new KeybindingsManager(keybindingsFile, guiCommandFactory);
+                                            commands.addCommand(new BindingsCommand(server, keybindingsManager));
                                             final JXCConnection connection = new JXCConnection(keybindingsManager, shortcuts, settings, characterPickup, server, model.getGuiStateManager(), logger);
                                             final GuiFactory guiFactory = new GuiFactory(guiCommandFactory);
                                             final GuiManager guiManager = new GuiManager(model.getGuiStateManager(), tooltipManager, settings, server, windowRenderer, guiFactory, keybindingsManager, connection);
