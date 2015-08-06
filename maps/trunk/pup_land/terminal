@@ -8,7 +8,7 @@ enter_x 10
 enter_y 2
 msg
 Created:  1996-04-05
-Modified: 2015-04-18 Jason Zheng
+Modified: 2015-08-06 Kevin Zheng
 endmsg
 end
 arch sky
@@ -1965,39 +1965,18 @@ arch grass
 x 14
 y 8
 end
-arch check_inv
-slaying regular_army
-x 14
-y 9
-last_sp 0
-connected 1002
-end
-arch magic_mouth
-name No passport message
+arch sign_e
 msg
-You must have a Regular Army Passport to enter this gate. Please present your passport.
+Present your Regular Army Passport to enter this gate.
 endmsg
-food 1
 x 14
-y 9
-connected 1002
-move_on 0
+y 8
 end
 arch check_inv
 slaying regular_army
 x 14
 y 9
 connected 1001
-end
-arch magic_mouth
-msg
-Ah! Army personnel. Please enter.
-endmsg
-food 1
-x 14
-y 9
-connected 1001
-move_on 0
 end
 arch cobblestones2
 x 14
@@ -2163,11 +2142,6 @@ arch dungeon_magic
 x 15
 y 9
 end
-arch button_small
-x 15
-y 9
-connected 1001
-end
 arch cobblestones2
 x 15
 y 9
@@ -2324,11 +2298,6 @@ end
 arch cloudfloor
 x 16
 y 7
-end
-arch button_small
-x 16
-y 8
-connected 1001
 end
 arch cobblestones2
 x 16
