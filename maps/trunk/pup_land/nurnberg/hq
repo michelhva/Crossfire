@@ -8,7 +8,7 @@ enter_x 9
 enter_y 17
 msg
 Created:  1996-04-03
-Modified: 2015-04-13 Jason Zheng
+Modified: 2015-04-17 Jason Zheng
 endmsg
 end
 arch dungeon_floor
@@ -1176,7 +1176,8 @@ x 9
 y 1
 end
 arch warrior_1
-name Lickmond, the general
+name Lickmond
+title the general
 msg
 @match eureca
 We must save him from the Resistance!
@@ -2645,8 +2646,7 @@ end
 arch magic_mouth
 name 4
 msg
-Lickmond, the general says:
-What?!! You killed my sparring partner! Now YOU must do his job! C'mon... let's fight!
+Lickmond says: What?!! You killed my sparring partner! Now YOU must do his job! C'mon... let's fight!
 endmsg
 x 20
 y 1

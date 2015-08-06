@@ -8,7 +8,7 @@ enter_x 20
 enter_y 7
 msg
 Created:  1996-03-04
-Modified: 2008-10-20 Rick Tanner
+Modified: 2015-04-18 Jason Zheng
 endmsg
 end
 arch blocked
@@ -107,12 +107,12 @@ arch cobblestones2
 x 1
 y 3
 end
-arch chair_1.1
+arch chair_1.4
 x 1
 y 3
 end
 arch elf
-name Regular army
+name Regular Army soldier
 Str 2
 Dex 8
 Con 10
@@ -365,7 +365,7 @@ x 3
 y 3
 end
 arch elf
-name Regular army
+name Regular Army soldier
 Str 2
 Dex 8
 Con 10
@@ -527,12 +527,12 @@ arch cobblestones2
 x 4
 y 1
 end
-arch chair_1.1
+arch chair_1.4
 x 4
 y 1
 end
 arch elf
-name Regular army
+name Regular Army soldier
 Str 2
 Dex 8
 Con 10
@@ -564,12 +564,12 @@ arch cobblestones2
 x 4
 y 3
 end
-arch chair_1.1
+arch chair_1.4
 x 4
 y 3
 end
 arch elf
-name Regular army
+name Regular Army soldier
 Str 2
 Dex 8
 Con 10
@@ -915,7 +915,7 @@ x 6
 y 1
 end
 arch elf
-name Regular army
+name Regular Army soldier
 Str 2
 Dex 8
 Con 10
@@ -952,7 +952,7 @@ x 6
 y 3
 end
 arch elf
-name Regular army
+name Regular Army soldier
 Str 2
 Dex 8
 Con 10
@@ -1114,7 +1114,7 @@ arch cobblestones2
 x 7
 y 10
 end
-arch chair_1.1
+arch chair_1.4
 x 7
 y 10
 end
@@ -1132,7 +1132,7 @@ arch cobblestones2
 x 7
 y 12
 end
-arch chair_1.1
+arch chair_1.4
 x 7
 y 12
 end
@@ -1150,7 +1150,7 @@ arch cobblestones2
 x 7
 y 14
 end
-arch chair_1.1
+arch chair_1.4
 x 7
 y 14
 end
@@ -1406,7 +1406,7 @@ arch cobblestones2
 x 9
 y 10
 end
-arch chair_1.1
+arch chair_1.4
 x 9
 y 10
 end
@@ -1424,7 +1424,7 @@ arch cobblestones2
 x 9
 y 12
 end
-arch chair_1.1
+arch chair_1.4
 x 9
 y 12
 end
@@ -1442,7 +1442,7 @@ arch cobblestones2
 x 9
 y 14
 end
-arch chair_1.1
+arch chair_1.4
 x 9
 y 14
 end
@@ -1682,7 +1682,7 @@ arch cobblestones2
 x 11
 y 10
 end
-arch chair_1.1
+arch chair_1.4
 x 11
 y 10
 end
@@ -1700,7 +1700,7 @@ arch cobblestones2
 x 11
 y 12
 end
-arch chair_1.1
+arch chair_1.4
 x 11
 y 12
 end
@@ -1718,7 +1718,7 @@ arch cobblestones2
 x 11
 y 14
 end
-arch chair_1.1
+arch chair_1.4
 x 11
 y 14
 end
@@ -2046,7 +2046,7 @@ arch cobblestones2
 x 13
 y 10
 end
-arch chair_1.1
+arch chair_1.4
 x 13
 y 10
 end
@@ -2064,7 +2064,7 @@ arch cobblestones2
 x 13
 y 12
 end
-arch chair_1.1
+arch chair_1.4
 x 13
 y 12
 end
@@ -2082,15 +2082,15 @@ arch cobblestones2
 x 13
 y 14
 end
-arch chair_1.1
-x 13
-y 14
-end
 arch man
 name office worker
 x 13
 y 14
 unaggressive 0
+end
+arch chair_1.4
+x 13
+y 14
 end
 arch dungeon_floor
 x 13

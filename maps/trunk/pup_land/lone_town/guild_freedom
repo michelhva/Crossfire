@@ -212,7 +212,8 @@ x 1
 y 14
 end
 arch ninja
-name Slik, the ninja
+name Slik
+title the ninja
 msg
 @match task
 I will assassinate Bauer, the leader of the Regular Army. It's the only way to win the war.
@@ -225,8 +226,7 @@ Dex -19
 hp 100
 x 1
 y 14
-speed 0.001000
-type 0
+speed 0.001
 weight 700000
 randomitems none
 move_type walk
@@ -1570,7 +1570,8 @@ activate_on_push 1
 activate_on_release 1
 end
 arch guildmaster
-name Dean, the guildmaster
+name Dean
+title the guildmaster
 msg
 @match money
 Yes, money is an important issue during war. That's why the Liberation Army cannot be defeated.
@@ -1915,7 +1916,8 @@ resist_fire 30
 connected 4
 end
 arch guildmaster
-name Dean, the guildmaster
+name Dean
+title the guildmaster
 msg
 @match siegfried
 Siegfried is a famous hero from the legends about Pupland's history. It is said that he killed the Evil Masters and saved the world. He is our IDOL!

@@ -8,7 +8,7 @@ enter_x 16
 enter_y 7
 msg
 Created:  1996-12-18
-Modified: 2015-04-16 Jason Zheng
+Modified: 2015-04-17 Jason Zheng
 endmsg
 end
 arch grass
@@ -224,7 +224,8 @@ activate_on_push 1
 activate_on_release 1
 end
 arch guildmaster
-name James, the guildmaster
+name James
+title the guildmaster
 msg
 @match *
 We are fighting to defend the law. Our enemies, the Resistance, are all rascals.
@@ -1941,7 +1942,8 @@ speed 0.000000
 connected 4
 end
 arch guildmaster
-name James, the guildmaster
+name James
+title the guildmaster
 msg
 @match siegfried
 He is our Hero!
