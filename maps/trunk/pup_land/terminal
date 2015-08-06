@@ -8,7 +8,7 @@ enter_x 10
 enter_y 2
 msg
 Created:  1996-04-05
-Modified: 2012-04-04 Rick Tanner
+Modified: 2015-04-18 Jason Zheng
 endmsg
 end
 arch sky
@@ -205,8 +205,11 @@ x 1
 y 8
 end
 arch dragon_exit
-name To Lone Town
+name Dragon to Lone Town
 slaying lone_town/town
+msg
+The dragon flies high up into the sky, heading towards Lone Town...
+endmsg
 hp 21
 sp 11
 x 1
@@ -1308,8 +1311,11 @@ x 9
 y 1
 end
 arch dragon_exit
-name To Scorn
+name Dragon to Scorn
 slaying /world/world_104_115
+msg
+The dragon flies high up into the sky, heading towards Scorn...
+endmsg
 hp 43
 sp 24
 x 9
@@ -1362,17 +1368,14 @@ end
 arch sign
 name Creators
 msg
-To solve quests, information is very important.  Talking to the NPCs is inevitable in Pup Land.
--------------------------
-These maps are created by
-kawamoto
-<kawamoto, Lau, Aquint>
-s-nisita
-<hoge, hiropon, oyoyo>
-k-yosida
-<Fog, Seer>
-h-okuda
-<eXXXtreme, Xtreme>
+In order to solve quests, information is very important. Talking to the NPCs is inevitable in Pupland.
+--oOo--
+These maps were created by:
+
+kawamoto <kawamoto, Lau, Aquint>
+s-nisita <hoge, hiropon, oyoyo>
+k-yosida <Fog, Seer>
+h-okuda <eXXXtreme, Xtreme>
 Andreas Vogl
 endmsg
 x 9
@@ -1407,8 +1410,11 @@ x 9
 y 15
 end
 arch dragon_exit
-name To Red Island
+name Dragon to Red Island
 slaying rainbow/station
+msg
+The dragon flies high up into the sky, heading towards Red Island...
+endmsg
 hp 7
 sp 3
 x 9
@@ -1566,9 +1572,9 @@ x 11
 y 10
 end
 arch sign
-name What's New in Pup Land
+name What's New in Pupland
 msg
-Please read what's new in each town and ask Poppy, the clever dog :)
+Please read what's new in each town and ask Poppy, the clever dog.
 endmsg
 x 11
 y 10
@@ -1969,7 +1975,7 @@ end
 arch magic_mouth
 name No passport message
 msg
-You must have a Regular Army Passport to enter this gate.  Please present your passport.
+You must have a Regular Army Passport to enter this gate. Please present your passport.
 endmsg
 food 1
 x 14
@@ -1985,7 +1991,7 @@ connected 1001
 end
 arch magic_mouth
 msg
-Ah! Army personnel.  Please enter.
+Ah! Army personnel. Please enter.
 endmsg
 food 1
 x 14
@@ -2472,8 +2478,11 @@ x 17
 y 8
 end
 arch dragon_exit
-name To Nurnberg
+name Dragon to Nurnberg
 slaying /pup_land/nurnberg/city
+msg
+The dragon flies high up into the sky, heading towards Nurnberg...
+endmsg
 hp 26
 sp 25
 x 17
