@@ -8,7 +8,7 @@ enter_x 16
 enter_y 19
 msg
 Created:  1996-02-07
-Modified: 2012-03-02 Rick Tanner
+Modified: 2015-04-19 Jason Zheng
 endmsg
 end
 arch woods_2
@@ -3172,7 +3172,7 @@ y 14
 end
 arch magic_mouth
 msg
-Pool :)
+Pool
 endmsg
 x 25
 y 15
@@ -3292,6 +3292,10 @@ name pool
 x 26
 y 14
 move_block 0
+end
+arch swall_1_1_half
+x 26
+y 14
 end
 arch dungeon_floor
 x 26
@@ -3418,12 +3422,14 @@ endmsg
 x 27
 y 14
 end
-arch cobblestones2
+arch biglake_center
+name pool
 x 27
 y 14
+move_block 0
 end
 arch a_bridge2
-name water-chute
+name water chute
 x 27
 y 14
 end
@@ -3437,17 +3443,17 @@ attacktype 1
 end
 arch magic_mouth
 msg
-You slide on the water-chute.
+You slide on the water chute.
 endmsg
 x 27
 y 15
 end
-arch cobblestones2
+arch dungeon_floor
 x 27
 y 15
 end
 arch a_bridge2
-name water-chute
+name water chute
 x 27
 y 15
 end
@@ -3456,7 +3462,7 @@ x 27
 y 16
 end
 arch table
-name water-chute
+name water chute
 face stair3_up.111
 x 27
 y 16
@@ -3582,6 +3588,10 @@ x 28
 y 14
 move_block 0
 end
+arch swall_1_1_half
+x 28
+y 14
+end
 arch dungeon_floor
 x 28
 y 15
@@ -3590,7 +3600,7 @@ arch swall_1_2
 x 28
 y 15
 end
-arch woodfloor
+arch dungeon_floor
 x 28
 y 16
 end
