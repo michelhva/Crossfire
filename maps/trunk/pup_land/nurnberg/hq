@@ -8,7 +8,7 @@ enter_x 9
 enter_y 17
 msg
 Created:  1996-04-03
-Modified: 2011-12-09 Rick Tanner
+Modified: 2015-04-13 Jason Zheng
 endmsg
 end
 arch dungeon_floor
@@ -535,12 +535,6 @@ y 1
 end
 arch knight
 name Imperial Guard
-msg
-@match member|join|regular
-If you want to join Regular Army, enter the Reception Towers.
-@match *
-The elite training center is free for all members of Regular Army.
-endmsg
 hp 2500
 x 4
 y 1
@@ -565,9 +559,9 @@ arch knight
 name Imperial Guard
 msg
 @match member|join|regular
-If you want to join Regular Army, enter the Reception Towers.
+If you want to join the Regular Army, enter the Reception Towers.
 @match *
-The elite training center is free for all members of Regular Army.
+The elite training center is free for all members of the Regular Army.
 endmsg
 hp 2500
 x 4
@@ -1185,9 +1179,9 @@ arch warrior_1
 name Lickmond, the general
 msg
 @match eureca
-We must save him!
+We must save him from the Resistance!
 @match *
-Most of our soldiers stay at the castle of Eureca.
+Most of our soldiers stay at the Castle of Eureca.
 endmsg
 face warrior_red.151
 animation warrior_red
@@ -1878,12 +1872,6 @@ y 1
 end
 arch knight
 name Imperial Guard
-msg
-@match member|join|regular
-If you want to join Regular Army, enter the Reception Towers.
-@match *
-What you see behind the gate, that is free equipment, available for all members of Regular Army.
-endmsg
 hp 2500
 x 14
 y 1
@@ -1908,9 +1896,9 @@ arch knight
 name Imperial Guard
 msg
 @match member|join|regular
-If you want to join Regular Army, enter the Reception Towers.
+If you want to join the Regular Army, enter the Reception Towers.
 @match *
-What you see behind the gate, that is free equipment, available for all members of Regular Army.
+What you see behind the gate is free equipment available for all members of the Regular Army.
 endmsg
 hp 2500
 x 14

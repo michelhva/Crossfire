@@ -8,7 +8,7 @@ enter_x 12
 enter_y 15
 msg
 Created:  1996-03-02
-Modified: 2012-04-03 Rick Tanner
+Modified: 2015-04-18 Jason Zheng
 endmsg
 end
 arch cobblestones2
@@ -736,7 +736,7 @@ arch locked_door2
 name castle guard
 slaying no_way_to_pass_123
 msg
-The castle guards says:  You cannot pass!
+The castle guard says: You shall not pass!
 endmsg
 face guard_hard.111
 x 5
@@ -1134,7 +1134,7 @@ arch cobblestones2
 x 9
 y 5
 end
-arch chair_1.1
+arch chair_1.4
 x 9
 y 5
 end
@@ -1142,11 +1142,11 @@ arch cleric
 name secretary 1
 msg
 @match eureca
-The Resistance has kidnapped him.  We must rescue Eureca!
+The Resistance has kidnapped him. We must rescue Eureca!
 @match army|regular|castle
-We have entered the castle to search for Eureca's family and, of course, for the lord himself.
+We have entered the castle to search for Eureca's family, and of course, for the lord himself.
 @match *
-Our army has entered the western wing of Eureca's Castle.
+Our army has entered the western wing of the Castle of Eureca.
 endmsg
 face cleric.131
 hp 100
@@ -1167,7 +1167,7 @@ arch cobblestones2
 x 9
 y 7
 end
-arch chair_1.1
+arch chair_1.4
 x 9
 y 7
 end
@@ -1177,7 +1177,7 @@ msg
 @match head
 It's here in this city.
 @match lickmond
-He is the general of Regular Army.  Usually he can be found in the Headquarter.
+He is the general of the Regular Army. Usually he can be found in the Headquarter of the Regular Army.
 @match *
 Lickmond will save Eureca from the Resistance.
 endmsg
@@ -1199,7 +1199,7 @@ arch cobblestones2
 x 9
 y 9
 end
-arch chair_1.1
+arch chair_1.4
 x 9
 y 9
 end
@@ -1207,7 +1207,7 @@ arch human
 name secretary 5
 msg
 @match dick
-Dick is the carpenter of Nurnberg.  He was very greedy at first, but then he lowered the price for this castle.
+Dick is the carpenter of Nurnberg. He was very greedy at first, but then he lowered the price for this castle.
 @match *
 Dick built this castle.
 endmsg
@@ -1518,11 +1518,11 @@ arch sage
 name Bauer
 msg
 @match yes
-Are you a member of Regular Army? If not, you should go to the Guild of Law in this city.  Times are rough and we need smart guys like you.
+Are you a member of the Regular Army? If not, you should go to the Guild of Law in this city. Times are rough and we need smart guys like you.
 @match no
 Watch your mouth, punk!
 @match mayor|city
-Yes, I'm the mayor of Nurnberg.  Do you like my city?
+Yes, I'm the mayor of Nurnberg. Do you like my city?
 @match *
 I'm Bauer, the mayor of this city.
 endmsg
@@ -1769,11 +1769,11 @@ msg
 @match spy
 Ask our members in the Guild of Law.
 @match head|resistance
-The headquarter of resistance can be found to the north-west of Eureca's castle.
+The headquarter of the Resistance can be found northwest of the Castle of Eureca.
 @match eureca
 He was the lord of this country.
 @match *
-We will soon rescue lord Eureca from the hands of Resistance.  Already, our spy is sneaking into their Headquarter.
+We will soon rescue Lord Eureca from the hands of the Resistance. Already, our spy is sneaking into their headquarter.
 endmsg
 hp 100
 x 14
@@ -1800,13 +1800,13 @@ arch ninja
 name secretary 4
 msg
 @match yes
-The personal chambers of Bauer are Upstairs.  And downstairs there is the Prison.
+The personal chambers of Bauer are upstairs, and downstairs is the Prison.
 @match prison
-Some bad guys are held in captivity there.  Nobody special.
+Some bad guys are held in captivity there. Nobody special.
 @match no
 ...
 @match *
-In this castle, strangers are not allowed to use the stairways.  Do you wanna know why?
+In this castle, strangers are not allowed to use the stairways. Do you wanna know why?
 endmsg
 hp 100
 x 14
@@ -1832,10 +1832,10 @@ end
 arch thief
 name secretary 6
 msg
-@match liberation|army
+@match resistance
 Maybe someone supports them financially?
 @match *
-Liberation Army is much smaller than us.  But still they can resist our attacks.  Why?
+The Resistance is much smaller than us, but still they can resist our attacks. How?
 endmsg
 hp 1000
 x 14
@@ -2259,7 +2259,7 @@ arch locked_door2
 name castle guard
 slaying no_way_to_pass_123
 msg
-The castle guards says:  You cannot pass!
+The castle guard says: You shall not pass!
 endmsg
 face guard_hard.111
 x 18

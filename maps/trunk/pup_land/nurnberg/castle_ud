@@ -8,7 +8,7 @@ enter_x 1
 enter_y 7
 msg
 Created:  1996-03-04
-Modified: 2012-04-03 Rick Tanner
+Modified: 2015-04-18 Jason Zheng
 endmsg
 end
 arch blocked
@@ -121,9 +121,9 @@ end
 arch cleric
 msg
 @match eureca|war
-Eureca is not here.  Our expectations were wrong! The war with Nurnberg must be stopped!! What the hell is going on in Pup Land?
+Eureca is not here. Our expectations were wrong! The war with Nurnberg must be stopped!! What the hell is going on in Pupland?
 @match *
-I'm a spy of Liberation Army.. We've made a terrible mistake... Eureca... this war... But I'm too weak to escape from here.
+I'm a spy of the Liberation Army... we've made a terrible mistake... Eureca... this war... but I'm too weak to escape from here.
 endmsg
 face cleric.131
 hp 100
@@ -921,7 +921,7 @@ arch dungeon_floor
 x 9
 y 6
 end
-arch chair_1.2
+arch chair_1.1
 x 9
 y 6
 end
@@ -962,7 +962,7 @@ arch dungeon_floor
 x 9
 y 8
 end
-arch chair_1.1
+arch chair_1.3
 x 9
 y 8
 end
@@ -1596,7 +1596,7 @@ msg
 @match eureca
 I don't know where he is...
 @match *
-You are a spy of Liberation Army, aren't you? Help me!!
+You are a spy of the Liberation Army, aren't you? Help me!!
 endmsg
 hp 100
 x 15
