@@ -8,7 +8,7 @@ enter_x 4
 enter_y 6
 msg
 Created:  2000-12-24
-Modified: 2014-11-13 Jason Zheng
+Modified: 2015-04-17 Jason Zheng
 endmsg
 end
 arch pstone_1
@@ -1498,7 +1498,8 @@ x 6
 y 4
 end
 arch ninja
-name Slik, the ninja
+name Slik
+title the ninja
 msg
 @match partner|sparring
 Lickmond's sparring partner can be found in the "hard" training section.
@@ -1513,8 +1514,7 @@ Dex -19
 hp 100
 x 6
 y 4
-speed 0.001000
-type 0
+speed 0.001
 weight 700000
 randomitems none
 move_type walk
