@@ -1,12 +1,14 @@
 arch map
-name Castle Eureca
-difficulty 1
+name Castle of Eureca, 2nd Level
+difficulty 13
 region pupland
 width 21
 height 21
+enter_x 9
+enter_y 1
 msg
-Created:  1996-02-07
-Modified: 2007-11-04 Andreas Kirschbaum
+Created:  1996-03-07
+Modified: 2012-02-27 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -449,11 +451,15 @@ arch dungeon_magic
 x 2
 y 9
 end
-arch swall_1_2
+arch swall_2_1_1
 x 2
 y 9
 end
 arch dungeon_floor
+x 2
+y 10
+end
+arch swall_1_2_half
 x 2
 y 10
 end
@@ -884,14 +890,7 @@ end
 arch plate_mail
 name Plate Mail of Power
 msg
-This extremely unique platemail was made
-for the line of dwarven kings in one of the
-ancient northern kingdoms from which nothing has
-been heard of during the latter centuries.
-Due to magic, it will fit creatures of any size.
-It is highly enchanted, increasing the strength of the
-wearer and protecting against fire.
-Unfortunately it is also very heavy, limiting speed somewhat.
+This extremely unique platemail was made for the line of dwarven kings in one of the ancient northern kingdoms from which nothing has been heard of during the latter centuries.  Due to magic, it will fit creatures of any size.  It is highly enchanted, increasing the strength of the wearer and protecting against fire.  Unfortunately it is also very heavy, limiting speed somewhat.
 endmsg
 Str 1
 ac 1
@@ -1084,7 +1083,7 @@ arch dungeon_magic
 x 6
 y 2
 end
-arch swall_1_3
+arch swall_2_1_2
 x 6
 y 2
 end
@@ -1241,6 +1240,10 @@ x 7
 y 2
 end
 arch cwall_2_1_1
+x 7
+y 2
+end
+arch swall_1_3_half
 x 7
 y 2
 end
@@ -2232,7 +2235,7 @@ arch cwall_2_1_1
 face cwall_w_0.119
 x 14
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_floor
@@ -2803,15 +2806,9 @@ end
 arch book_read
 name Lauretta's Diary
 msg
-We have been attacked by monsters
-suddenly. Eureca led us in this room,
-and then he ran out of the castle to
-ask someone for help.
-We are still waiting for him.
+We have been attacked by monsters suddenly.  Eureca led us in this room, and then he ran out of the castle to ask someone for help.  We are still waiting for him.
 ...
-My son and I are afraid that this
-secret room will be discovered by the
-monsters soon...
+My son and I are afraid that this secret room will be discovered by the monsters soon...
 endmsg
 x 18
 y 1

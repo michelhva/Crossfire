@@ -1,11 +1,12 @@
 arch map
-name Castle Eureca
-difficulty 6
+name Castle of Eureca, Dungeon Level 2
+difficulty 40
 region pupland
 width 27
 height 41
 msg
-Created:  1996-02-29
+Created:  1996-01-29
+Modified: 2012-02-28 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -906,8 +907,7 @@ y 1
 end
 arch sign
 msg
-Don't pick up nugget.
-It's too heavy
+Don't pick up nugget.  It's too heavy
 endmsg
 x 3
 y 1

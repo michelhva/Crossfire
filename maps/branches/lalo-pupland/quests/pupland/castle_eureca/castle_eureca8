@@ -1,12 +1,14 @@
 arch map
-name Castle Eureca
-difficulty 1
+name Castle of Eureca, 8th Level
+difficulty 25
 region pupland
 width 18
 height 16
+enter_x 9
+enter_y 3
 msg
-Created:  1996-02-13
-Modified: 2007-11-04 Andreas Kirschbaum
+Created:  1996-03-13
+Modified: 2012-02-28 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -585,6 +587,9 @@ end
 arch wall_2_1_2
 x 5
 end
+arch swall_1_1_half
+x 5
+end
 arch flagstone
 x 5
 y 1
@@ -593,7 +598,7 @@ arch dungeon_magic
 x 5
 y 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 5
 y 1
 end
@@ -977,11 +982,15 @@ arch flagstone
 x 7
 y 14
 end
-arch swall_1_2
+arch swall_2_1_1
 x 7
 y 14
 end
 arch flagstone
+x 7
+y 15
+end
+arch swall_1_2_half
 x 7
 y 15
 end
@@ -1030,10 +1039,8 @@ end
 arch sign
 name notice
 msg
-Protect the torch from impudent
-adventurers. It's better to have it
-destroyed than having it stolen.
-                     - Ghothwolte
+Protect the torch from impudent adventurers.  It's better to have it destroyed than having it stolen.
+ - Gothwolte
 endmsg
 x 8
 y 5
@@ -1623,11 +1630,15 @@ arch afloor_right
 x 11
 y 14
 end
-arch swall_1_2
+arch swall_2_1_1
 x 11
 y 14
 end
 arch flagstone
+x 11
+y 15
+end
+arch swall_1_2_half
 x 11
 y 15
 end
@@ -1936,6 +1947,9 @@ end
 arch wall_2_1_2
 x 14
 end
+arch swall_1_1_half
+x 14
+end
 arch flagstone
 x 14
 y 1
@@ -1944,7 +1958,7 @@ arch dungeon_magic
 x 14
 y 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 14
 y 1
 end
@@ -2403,7 +2417,7 @@ y 12
 end
 arch magic_mouth
 msg
-An alarm sounds
+An alarm sounds!
 endmsg
 x 17
 y 13
