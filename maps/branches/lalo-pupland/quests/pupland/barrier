@@ -1,11 +1,14 @@
 arch map
 name Barrier Station
-difficulty 1
+difficulty 3
 region pupland
 width 34
 height 16
+enter_x 1
+enter_y 7
 msg
-Created:  1996-02-28
+Created:  1996-01-28
+Modified: 2015-04-18 Jason Zheng
 endmsg
 end
 arch cobblestones2
@@ -359,11 +362,10 @@ y 3
 end
 arch viking
 msg
-@match Liberation|liberation
+@match liberation
 Oops!
 @match *
-I cannot pass. Members of Liberation
-Army are not allowed to.
+I cannot pass. Members of the Liberation Army are not allowed to.
 endmsg
 face viking.131
 hp 100
@@ -429,10 +431,9 @@ end
 arch swashbuckler
 msg
 @match regular|resistance|pass
-I have an official Regular Army -
-passport. So, I can pass. Hehe!
+I have an official Regular Army Passport, so I can pass. Hehe!
 @match *
-I'm a member of Regular Army.
+I'm a member of the Regular Army.
 endmsg
 hp 100
 x 4
@@ -445,8 +446,7 @@ unaggressive 1
 arch card
 name shredded Passport
 msg
-   This passport is *not* usable
-   anymore!
+This passport is *not* usable anymore!
 endmsg
 end
 end
@@ -548,6 +548,10 @@ arch cobblestones2
 x 5
 y 15
 end
+arch swall_1_2_half
+x 5
+y 15
+end
 arch dwall_2_1_2
 x 5
 y 15
@@ -569,9 +573,7 @@ end
 arch priest
 msg
 @match pass
-I said "I am not a member of
-resistance." But they didn't allow me
-to pass...
+I said, "I am not a member of the Resistance.", but they didn't allow me to pass...
 @match *
 Hello.
 endmsg
@@ -602,8 +604,7 @@ y 6
 end
 arch magic_mouth
 msg
-This is the barrier station.
-Please bring up your passports.
+This is the Barrier Station.  Please bring up your passports.
 endmsg
 x 6
 y 7
@@ -649,17 +650,6 @@ x 6
 y 14
 end
 arch guard
-msg
-@match Siegfried
-You may pass :-).
-@match yes|Yes
-Please bring up it.
-@match no|No
-.. Are you a member of resistance,
-aren't you?
-@match *
-Do you have passport?
-endmsg
 x 6
 y 14
 end
@@ -790,7 +780,7 @@ end
 arch ninja
 msg
 @match pass
-But they didn't let me...
+They didn't let me pass...
 @match *
 I want to pass.
 endmsg
@@ -1070,15 +1060,6 @@ x 11
 y 14
 end
 arch guard
-msg
-@match yes|passport
-Please bring it up.
-@match no|No
-.. So you're a member of resistance,
-aren't you?
-@match *
-Do you have a Passport?
-endmsg
 x 11
 y 14
 end
@@ -1094,6 +1075,9 @@ arch cobblestones2
 x 12
 end
 arch dwall_2_1_2
+x 12
+end
+arch swall_1_1_half
 x 12
 end
 arch dungeon_magic
@@ -1255,15 +1239,6 @@ x 13
 y 1
 end
 arch guard
-msg
-@match yes|passport
-Please bring it up.
-@match no|No
-.. So you're a member of resistance,
-aren't you?
-@match *
-Do you have a Passport?
-endmsg
 x 13
 y 1
 end
@@ -1405,11 +1380,10 @@ arch guard
 msg
 @match yes|passport
 Please bring it up.
-@match no|No
-.. So you're a member of resistance,
-aren't you?
+@match no
+...you're a member of the Resistance, aren't you?
 @match *
-Do you have a Passport?
+Do you have a passport?
 endmsg
 x 14
 y 4
@@ -1483,7 +1457,7 @@ end
 arch magic_mouth
 name 3
 msg
-The guards examine your Passport.
+The guards examine your passport.
 endmsg
 x 14
 y 10
@@ -1497,11 +1471,10 @@ arch guard
 msg
 @match yes|passport
 Please bring it up.
-@match no|No
-.. So you're a member of resistance,
-aren't you?
+@match no
+...you're a member of the Resistance, aren't you?
 @match *
-Do you have a Passport?
+Do you have a passport?
 endmsg
 x 14
 y 10
@@ -1523,15 +1496,6 @@ x 14
 y 13
 end
 arch guard
-msg
-@match yes|passport
-Please bring it up.
-@match no|No
-.. So you're a member of resistance,
-aren't you?
-@match *
-Do you have a Passport?
-endmsg
 x 14
 y 13
 end
@@ -1558,15 +1522,6 @@ x 15
 y 1
 end
 arch guard
-msg
-@match yes|passport
-Please bring it up.
-@match no|No
-.. So you're a member of resistance,
-aren't you?
-@match *
-Do you have a Passport?
-endmsg
 x 15
 y 1
 end
@@ -1676,6 +1631,9 @@ arch cobblestones2
 x 16
 end
 arch dwall_2_1_2
+x 16
+end
+arch swall_1_1_half
 x 16
 end
 arch dungeon_magic
@@ -1975,15 +1933,6 @@ x 18
 y 14
 end
 arch guard
-msg
-@match yes|passport
-Please bring it up.
-@match no|No
-.. So you're a member of resistance,
-aren't you?
-@match *
-Do you have a Passport?
-endmsg
 x 18
 y 14
 end
@@ -2347,8 +2296,7 @@ y 6
 end
 arch magic_mouth
 msg
-This is the barrier station.
-Please bring up your passports.
+This is the Barrier Station.  Please bring up your passports.
 endmsg
 x 23
 y 7
@@ -2402,6 +2350,10 @@ x 23
 y 14
 end
 arch cobblestones2
+x 23
+y 15
+end
+arch swall_1_2_half
 x 23
 y 15
 end
@@ -2504,8 +2456,7 @@ end
 arch woman
 msg
 @match *
-Ahh... I like the strong men from
-Regular Army  ^_^
+Ahh... I like the strong men from the Regular Army.
 endmsg
 face woman.171
 hp 180
@@ -2718,8 +2669,7 @@ arch a_townsman
 name merchant
 msg
 @match *
-How did YOU get a member of Regular
-Army? Go away.
+How did YOU get to be a member of the Regular Army? Go away.
 endmsg
 hp 150
 maxhp 150
