@@ -1,11 +1,14 @@
 arch map
-name Castle Eureca
-difficulty 1
+name Castle of Eureca, 7th Level
+difficulty 25
 region pupland
 width 16
 height 18
+enter_x 1
+enter_y 5
 msg
-Created:  1996-02-12
+Created:  1996-03-12
+Modified: 2011-12-02 Rick Tanner
 endmsg
 end
 arch blocked
@@ -268,8 +271,7 @@ end
 arch sign
 msg
 Pet Room2:
-You've better building earthwalls
-before opening the door.
+You'd better build earthwalls before opening the door.
 endmsg
 x 2
 y 4
@@ -1643,7 +1645,6 @@ Be careful!
 endmsg
 x 14
 y 11
-nrof 1
 end
 arch flagstone
 x 14

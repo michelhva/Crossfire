@@ -1,11 +1,14 @@
 arch map
-name Cave Pass
-difficulty 15
+name Cave Passageway, Level 4
+difficulty 25
 region pupland
 width 26
 height 33
+enter_x 1
+enter_y 1
 msg
-Created:  1996-02-28
+Created:  1996-01-28
+Modified: 2012-02-28 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -579,8 +582,7 @@ y 1
 end
 arch sign
 msg
-The Eternal Road.
-Can you reach the end of it?
+The Eternal Road.  Can you reach the end of it?
 endmsg
 x 2
 y 1
@@ -904,8 +906,7 @@ end
 arch invis_exit
 slaying cave_pass4
 msg
-Wohoo! Looks like you found Eureca's
-secret treasure room!
+Wohoo! Looks like you found Eureca's secret treasure room!
 endmsg
 hp 19
 sp 1
@@ -919,7 +920,7 @@ end
 arch cave2
 x 2
 y 32
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 3
@@ -1237,8 +1238,7 @@ y 28
 end
 arch sign
 msg
-You can teleport to the other end of
-this corridor.
+You can teleport to the other end of this corridor.
 endmsg
 x 3
 y 28
@@ -1527,8 +1527,7 @@ y 30
 end
 arch sign
 msg
-You can cast spells here.
-Do you know "show invisible"?
+You can cast spells here.  Do you know "show invisible"?
 endmsg
 x 4
 y 30
@@ -1595,71 +1594,71 @@ arch cave23
 x 5
 y 5
 end
-arch blocked
+arch cave_15
 x 5
 y 6
 end
-arch blocked
+arch cave_15
 x 5
 y 7
 end
-arch blocked
+arch cave_15
 x 5
 y 8
 end
-arch blocked
+arch cave_15
 x 5
 y 9
 end
-arch blocked
+arch cave_15
 x 5
 y 10
 end
-arch blocked
+arch cave_15
 x 5
 y 11
 end
-arch blocked
+arch cave_15
 x 5
 y 12
 end
-arch blocked
+arch cave_15
 x 5
 y 13
 end
-arch blocked
+arch cave_15
 x 5
 y 14
 end
-arch blocked
+arch cave_15
 x 5
 y 15
 end
-arch blocked
+arch cave_15
 x 5
 y 16
 end
-arch blocked
+arch cave_15
 x 5
 y 17
 end
-arch blocked
+arch cave_15
 x 5
 y 18
 end
-arch blocked
+arch cave_15
 x 5
 y 19
 end
-arch blocked
+arch cave_15
 x 5
 y 20
 end
-arch blocked
+arch cave_15
 x 5
 y 21
 end
-arch blocked
+arch cave_15
 x 5
 y 22
 end
@@ -1731,7 +1730,7 @@ arch cave2
 x 5
 y 31
 end
-arch blocked
+arch cave_15
 x 5
 y 32
 end
@@ -1845,35 +1844,31 @@ arch cave3
 x 6
 y 12
 end
-arch cobblestones2
-x 6
-y 13
-end
 arch cave23
 x 6
 y 13
 end
-arch blocked
+arch cave_15
 x 6
 y 14
 end
-arch blocked
+arch cave_15
 x 6
 y 15
 end
-arch blocked
+arch cave_15
 x 6
 y 16
 end
-arch blocked
+arch cave_15
 x 6
 y 17
 end
-arch blocked
+arch cave_15
 x 6
 y 18
 end
-arch blocked
+arch cave_15
 x 6
 y 19
 end
@@ -1892,10 +1887,6 @@ end
 arch cave3
 x 6
 y 21
-end
-arch cobblestones2
-x 6
-y 22
 end
 arch sea
 x 6
@@ -1953,7 +1944,7 @@ arch cave2
 x 6
 y 31
 end
-arch blocked
+arch cave_15
 x 6
 y 32
 end
@@ -2111,10 +2102,6 @@ arch cave3
 x 7
 y 19
 end
-arch cobblestones2
-x 7
-y 20
-end
 arch sea
 x 7
 y 20
@@ -2175,7 +2162,7 @@ arch cave2
 x 7
 y 31
 end
-arch blocked
+arch cave_15
 x 7
 y 32
 end
@@ -2317,19 +2304,19 @@ end
 arch pstone_1
 x 8
 y 26
-no_pass 1
+move_block all
 end
 arch river_sw-ne_l
 name sea
 x 8
 y 26
-no_pass 0
+move_block 0
 end
 arch river_nw-se_u
 name sea
 x 8
 y 26
-no_pass 0
+move_block 0
 end
 arch sea
 x 8
@@ -2364,7 +2351,7 @@ arch cave2
 x 8
 y 31
 end
-arch blocked
+arch cave_15
 x 8
 y 32
 end
@@ -2545,7 +2532,7 @@ arch cave2
 x 9
 y 31
 end
-arch blocked
+arch cave_15
 x 9
 y 32
 end
@@ -2736,7 +2723,7 @@ arch cave2
 x 10
 y 31
 end
-arch blocked
+arch cave_15
 x 10
 y 32
 end
@@ -2892,7 +2879,7 @@ arch cave2
 x 11
 y 31
 end
-arch blocked
+arch cave_15
 x 11
 y 32
 end
@@ -3038,7 +3025,7 @@ arch cave2
 x 12
 y 31
 end
-arch blocked
+arch cave_15
 x 12
 y 32
 end
@@ -3176,7 +3163,7 @@ arch cave2
 x 13
 y 31
 end
-arch blocked
+arch cave_15
 x 13
 y 32
 end
@@ -3314,7 +3301,7 @@ arch cave2
 x 14
 y 31
 end
-arch blocked
+arch cave_15
 x 14
 y 32
 end
@@ -3576,7 +3563,7 @@ arch cave22
 x 15
 y 31
 end
-arch blocked
+arch cave_15
 x 15
 y 32
 end
@@ -3674,87 +3661,87 @@ arch cave22
 x 16
 y 11
 end
-arch blocked
+arch cave_15
 x 16
 y 12
 end
-arch blocked
+arch cave_15
 x 16
 y 13
 end
-arch blocked
+arch cave_15
 x 16
 y 14
 end
-arch blocked
+arch cave_15
 x 16
 y 15
 end
-arch blocked
+arch cave_15
 x 16
 y 16
 end
-arch blocked
+arch cave_15
 x 16
 y 17
 end
-arch blocked
+arch cave_15
 x 16
 y 18
 end
-arch blocked
+arch cave_15
 x 16
 y 19
 end
-arch blocked
+arch cave_15
 x 16
 y 20
 end
-arch blocked
+arch cave_15
 x 16
 y 21
 end
-arch blocked
+arch cave_15
 x 16
 y 22
 end
-arch blocked
+arch cave_15
 x 16
 y 23
 end
-arch blocked
+arch cave_15
 x 16
 y 24
 end
-arch blocked
+arch cave_15
 x 16
 y 25
 end
-arch blocked
+arch cave_15
 x 16
 y 26
 end
-arch blocked
+arch cave_15
 x 16
 y 27
 end
-arch blocked
+arch cave_15
 x 16
 y 28
 end
-arch blocked
+arch cave_15
 x 16
 y 29
 end
-arch blocked
+arch cave_15
 x 16
 y 30
 end
-arch blocked
+arch cave_15
 x 16
 y 31
 end
-arch blocked
+arch cave_15
 x 16
 y 32
 end
@@ -5150,9 +5137,7 @@ arch oakdoor
 name chest
 slaying cave_pass4
 msg
-A magic force draws you inside the
-chest! Uh... does this mean you've been
-shrinked? Anyhow, this is amazing.
+A magic force draws you inside the chest! Uh... does this mean you've been shrinked? Anyhow, this is amazing.
 endmsg
 face chest_1.111
 hp 25
@@ -5888,7 +5873,7 @@ arch blocked
 name darkness
 x 25
 y 27
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 end
@@ -5913,7 +5898,7 @@ arch blocked
 name darkness
 x 25
 y 28
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch blocked
