@@ -1,11 +1,14 @@
 arch map
 name Practice1
-difficulty 1
+difficulty 8
 region pupland
 width 11
 height 18
+enter_x 5
+enter_y 16
 msg
 Created:  1996-02-13
+Modified: 2015-02-08 Rick Tanner
 endmsg
 end
 arch grass
@@ -214,7 +217,6 @@ end
 arch sign
 msg
 goblin and gnoll
-
 endmsg
 x 1
 y 14
@@ -625,10 +627,17 @@ x 5
 y 1
 end
 arch key2
-name key1
+name House of Treasure Key #1
 slaying 9key1
+msg
+A key found in the Red Town practice maps.
+endmsg
 x 5
 y 1
+end
+arch magic_banned
+x 5
+y 2
 end
 arch woodfloor
 x 5
@@ -739,7 +748,7 @@ end
 arch door_look_1
 x 5
 y 15
-no_pass 0
+move_block 0
 end
 arch grass
 x 5
