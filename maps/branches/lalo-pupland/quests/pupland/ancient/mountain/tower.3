@@ -1,11 +1,14 @@
 arch map
-name Tower
+name Tower of the Necromancer, Level 3
+difficulty 50
 region ancientpupland
 width 19
 height 19
+enter_x 7
+enter_y 12
 msg
 Created:  1996-06-01
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2012-04-04 Rick Tanner
 endmsg
 end
 arch generate_zombie
@@ -253,7 +256,7 @@ end
 arch gravestone
 x 2
 y 11
-no_pass 1
+move_block all
 end
 arch unholy_ground
 x 2
@@ -274,7 +277,7 @@ end
 arch gravestone
 x 2
 y 13
-no_pass 1
+move_block all
 end
 arch flagstone
 x 2
@@ -545,7 +548,7 @@ end
 arch gravestone
 x 4
 y 11
-no_pass 1
+move_block all
 end
 arch unholy_ground
 x 4
@@ -570,8 +573,7 @@ arch magic_mouth
 name 11
 msg
 The Necromancer shouts:
-You want to know about the secret Art of
-Necromancy, right? Forget it!
+You want to know about the secret Art of Necromancy, right? Forget it!
 endmsg
 x 4
 y 12
@@ -593,7 +595,7 @@ end
 arch gravestone
 x 4
 y 13
-no_pass 1
+move_block all
 end
 arch flagstone
 x 4
@@ -924,8 +926,7 @@ connected 4
 end
 arch magic_mouth
 msg
-The Necromancer wispers some unholy
-words...
+The Necromancer whispers some unholy words...
 endmsg
 x 6
 y 12
@@ -1116,7 +1117,7 @@ end
 arch gravestone
 x 7
 y 12
-no_pass 1
+move_block all
 end
 arch unholy_ground
 x 7
@@ -1133,7 +1134,7 @@ end
 arch gravestone
 x 7
 y 13
-no_pass 1
+move_block all
 end
 arch flagstone
 x 7
@@ -1268,7 +1269,7 @@ y 12
 end
 arch necromancer
 msg
-@match [Ss]iegfried
+@match siegfried
 I hate Siegfried!!!!!
 He is a swindler, a jerk, a rascal!
 @match *
@@ -1299,9 +1300,7 @@ randomitems none
 arch corpse
 name dead Necromancer (?)
 msg
-  You're not sure if he is really
-  dead... The body looks like...
-  being still alive!
+  You're not sure if he is really dead... The body looks like... it's still alive!
 endmsg
 material 0
 no_pick 1
@@ -1955,9 +1954,7 @@ arch magic_mouth
 name 16
 msg
 The Necromancer say:
-Grr... Looks like I must kill you with
-my bare own hands. Now I'll show you
-my true strenght!
+Grr... Looks like I must kill you with my bare own hands.  Now I'll show you my true strength!
 endmsg
 x 13
 y 3

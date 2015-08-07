@@ -1,11 +1,14 @@
 arch map
 name Cave
-difficulty 5
+difficulty 60
 region ancientpupland
 width 22
-height 32
+height 26
+enter_x 1
+enter_y 5
 msg
-Created:  1996-02-30
+Created:  1996-05-30
+Modified: 2012-02-23 Rick Tanner
 endmsg
 end
 arch medium_stones
@@ -1372,13 +1375,10 @@ end
 arch sage
 name wise old man
 msg
-@match Ladder|ladder
-You entered this cave by using a ladder,
-didn't you?
+@match ladder
+You entered this cave by using a ladder, didn't you?
 @match *
-You should have taken more time to
-investigate this cave.
-Especially near the ladder...
+You should have taken more time to investigate this cave.  Especially near the ladder...
 endmsg
 hp 180
 x 10

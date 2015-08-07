@@ -1,70 +1,71 @@
 arch map
 name Treasure
 reset_timeout 7200
-difficulty 13
+difficulty 80
 region ancientpupland
 width 26
 height 27
-enter_x 1
-enter_y 1
+enter_x 4
+enter_y 24
 msg
 Created:  2004-06-09 Andreas Vogl (red.blaze@gmx.net)
+Modified: 2012-04-02 Rick Tanner
 endmsg
 end
-arch blocked
+arch cave_15
 end
-arch blocked
+arch cave_15
 y 1
 end
-arch blocked
+arch cave_15
 y 2
 end
-arch blocked
+arch cave_15
 y 3
 end
-arch blocked
+arch cave_15
 y 4
 end
-arch blocked
+arch cave_15
 y 5
 end
-arch blocked
+arch cave_15
 y 6
 end
-arch blocked
+arch cave_15
 y 7
 end
-arch blocked
+arch cave_15
 y 8
 end
-arch blocked
+arch cave_15
 y 9
 end
-arch blocked
+arch cave_15
 y 10
 end
-arch blocked
+arch cave_15
 y 11
 end
-arch blocked
+arch cave_15
 y 12
 end
-arch blocked
+arch cave_15
 y 13
 end
-arch blocked
+arch cave_15
 y 14
 end
-arch blocked
+arch cave_15
 y 15
 end
-arch blocked
+arch cave_15
 y 16
 end
-arch blocked
+arch cave_15
 y 17
 end
-arch blocked
+arch cave_15
 y 18
 end
 arch flagstone
@@ -97,23 +98,23 @@ end
 arch cave23
 y 23
 end
-arch blocked
+arch cave_15
 y 24
 end
-arch blocked
+arch cave_15
 y 25
 end
-arch blocked
+arch cave_15
 y 26
 end
-arch blocked
+arch cave_15
 x 1
 end
 arch dungeon_magic
 x 1
 y 1
 end
-arch blocked
+arch cave_15
 x 1
 y 1
 end
@@ -121,7 +122,7 @@ arch dungeon_magic
 x 1
 y 2
 end
-arch blocked
+arch cave_15
 x 1
 y 2
 end
@@ -385,7 +386,7 @@ arch dungeon_magic
 x 1
 y 24
 end
-arch blocked
+arch cave_15
 x 1
 y 24
 end
@@ -393,11 +394,11 @@ arch dungeon_magic
 x 1
 y 25
 end
-arch blocked
+arch cave_15
 x 1
 y 25
 end
-arch blocked
+arch cave_15
 x 1
 y 26
 end
@@ -1116,10 +1117,7 @@ end
 arch monument
 name warning
 msg
-This path leads to Gothwolte's treasure
-hoard. Nobody is allowed to pass!
-Intruders will suffer horribly.
-(In other words: You - will - die!)
+This path leads to Gothwolte's treasure hoard.  Nobody is allowed to pass! Intruders will suffer horribly. (In other words: You - will - die!)
 endmsg
 x 4
 y 22
@@ -1667,14 +1665,14 @@ arch cave22
 x 6
 y 26
 end
-arch blocked
+arch cave_15
 x 7
 end
 arch dungeon_magic
 x 7
 y 1
 end
-arch blocked
+arch cave_15
 x 7
 y 1
 end
@@ -1682,7 +1680,7 @@ arch dungeon_magic
 x 7
 y 2
 end
-arch blocked
+arch cave_15
 x 7
 y 2
 end
@@ -1946,7 +1944,7 @@ arch dungeon_magic
 x 7
 y 24
 end
-arch blocked
+arch cave_15
 x 7
 y 24
 end
@@ -1954,86 +1952,86 @@ arch dungeon_magic
 x 7
 y 25
 end
-arch blocked
+arch cave_15
 x 7
 y 25
 end
-arch blocked
+arch cave_15
 x 7
 y 26
 end
-arch blocked
+arch cave_15
 x 8
 end
-arch blocked
+arch cave_15
 x 8
 y 1
 end
-arch blocked
+arch cave_15
 x 8
 y 2
 end
-arch blocked
+arch cave_15
 x 8
 y 3
 end
-arch blocked
+arch cave_15
 x 8
 y 4
 end
-arch blocked
+arch cave_15
 x 8
 y 5
 end
-arch blocked
+arch cave_15
 x 8
 y 6
 end
-arch blocked
+arch cave_15
 x 8
 y 7
 end
-arch blocked
+arch cave_15
 x 8
 y 8
 end
-arch blocked
+arch cave_15
 x 8
 y 9
 end
-arch blocked
+arch cave_15
 x 8
 y 10
 end
-arch blocked
+arch cave_15
 x 8
 y 11
 end
-arch blocked
+arch cave_15
 x 8
 y 12
 end
-arch blocked
+arch cave_15
 x 8
 y 13
 end
-arch blocked
+arch cave_15
 x 8
 y 14
 end
-arch blocked
+arch cave_15
 x 8
 y 15
 end
-arch blocked
+arch cave_15
 x 8
 y 16
 end
-arch blocked
+arch cave_15
 x 8
 y 17
 end
-arch blocked
+arch cave_15
 x 8
 y 18
 end
@@ -2077,42 +2075,30 @@ arch cave22
 x 8
 y 23
 end
-arch blocked
+arch cave_15
 x 8
 y 24
 end
-arch blocked
+arch cave_15
 x 8
 y 25
 end
-arch blocked
+arch cave_15
 x 8
 y 26
 end
-arch demilich
-name blocked
-face blocked.111
+arch cave_15
 x 9
-randomitems none
-random_movement 0
 end
-arch demilich
-name blocked
-face blocked.111
+arch cave_15
 x 9
 y 1
-randomitems none
-random_movement 0
 end
-arch demilich
-name blocked
-face blocked.111
+arch cave_15
 x 9
 y 2
-randomitems none
-random_movement 0
 end
-arch blocked
+arch cave_15
 x 9
 y 3
 end
@@ -2252,54 +2238,42 @@ arch cave23
 x 9
 y 20
 end
-arch blocked
+arch cave_15
 x 9
 y 21
 end
-arch blocked
+arch cave_15
 x 9
 y 22
 end
-arch blocked
+arch cave_15
 x 9
 y 23
 end
-arch blocked
+arch cave_15
 x 9
 y 24
 end
-arch blocked
+arch cave_15
 x 9
 y 25
 end
-arch blocked
+arch cave_15
 x 9
 y 26
 end
-arch demilich
-name blocked
-face blocked.111
+arch cave_15
 x 10
-randomitems none
-random_movement 0
 end
-arch demilich
-name blocked
-face blocked.111
+arch cave_15
 x 10
 y 1
-randomitems none
-random_movement 0
 end
-arch demilich
-name blocked
-face blocked.111
+arch cave_15
 x 10
 y 2
-randomitems none
-random_movement 0
 end
-arch blocked
+arch cave_15
 x 10
 y 3
 end
@@ -2499,54 +2473,42 @@ arch cave2
 x 10
 y 20
 end
-arch blocked
+arch cave_15
 x 10
 y 21
 end
-arch blocked
+arch cave_15
 x 10
 y 22
 end
-arch blocked
+arch cave_15
 x 10
 y 23
 end
-arch blocked
+arch cave_15
 x 10
 y 24
 end
-arch blocked
+arch cave_15
 x 10
 y 25
 end
-arch blocked
+arch cave_15
 x 10
 y 26
 end
-arch demilich
-name blocked
-face blocked.111
+arch cave_15
 x 11
-randomitems none
-random_movement 0
 end
-arch demilich
-name blocked
-face blocked.111
+arch cave_15
 x 11
 y 1
-randomitems none
-random_movement 0
 end
-arch demilich
-name blocked
-face blocked.111
+arch cave_15
 x 11
 y 2
-randomitems none
-random_movement 0
 end
-arch blocked
+arch cave_15
 x 11
 y 3
 end
@@ -2746,11 +2708,11 @@ arch cave2
 x 11
 y 20
 end
-arch blocked
+arch cave_15
 x 11
 y 21
 end
-arch blocked
+arch cave_15
 x 11
 y 22
 end
@@ -2780,42 +2742,30 @@ material 0
 value 10000
 weight 500
 end
-arch blocked
+arch cave_15
 x 11
 y 24
 end
-arch blocked
+arch cave_15
 x 11
 y 25
 end
-arch blocked
+arch cave_15
 x 11
 y 26
 end
-arch demilich
-name blocked
-face blocked.111
+arch cave_15
 x 12
-randomitems none
-random_movement 0
 end
-arch demilich
-name blocked
-face blocked.111
+arch cave_15
 x 12
 y 1
-randomitems none
-random_movement 0
 end
-arch demilich
-name blocked
-face blocked.111
+arch cave_15
 x 12
 y 2
-randomitems none
-random_movement 0
 end
-arch blocked
+arch cave_15
 x 12
 y 3
 end
@@ -3015,11 +2965,11 @@ arch cave2
 x 12
 y 20
 end
-arch blocked
+arch cave_15
 x 12
 y 21
 end
-arch blocked
+arch cave_15
 x 12
 y 22
 end
@@ -3040,10 +2990,7 @@ connected 11
 end
 arch wdsm
 msg
-This famous armour grants permanent
-immunity to fire. Even the gods
-watch you with envy. Once you give
-it away, they will surely destroy it.
+This famous armour grants permanent immunity to fire.  Even the gods watch you with envy.  Once you give it away, they will surely destroy it.
 endmsg
 x 12
 y 23
@@ -3051,7 +2998,7 @@ resist_cold 60
 last_sp 6
 no_steal 0
 end
-arch blocked
+arch cave_15
 x 12
 y 24
 end
@@ -3062,8 +3009,7 @@ end
 arch magic_mouth
 name 2
 msg
-Finally! You've reached Gothwolte's
-legendary treasure hoard.
+Finally! You've reached Gothwolte's legendary treasure hoard.
 endmsg
 x 12
 y 25
@@ -3086,22 +3032,22 @@ y 25
 resist_physical 30
 connected 1
 end
-arch blocked
+arch cave_15
 x 12
 y 26
 end
-arch blocked
+arch cave_15
 x 13
 end
-arch blocked
+arch cave_15
 x 13
 y 1
 end
-arch blocked
+arch cave_15
 x 13
 y 2
 end
-arch blocked
+arch cave_15
 x 13
 y 3
 end
@@ -3313,38 +3259,38 @@ arch cave2
 x 13
 y 20
 end
-arch blocked
+arch cave_15
 x 13
 y 21
 end
-arch blocked
+arch cave_15
 x 13
 y 22
 end
-arch blocked
+arch cave_15
 x 13
 y 23
 end
-arch blocked
+arch cave_15
 x 13
 y 24
 end
-arch blocked
+arch cave_15
 x 13
 y 25
 end
-arch blocked
+arch cave_15
 x 13
 y 26
 end
-arch blocked
+arch cave_15
 x 14
 end
-arch blocked
+arch cave_15
 x 14
 y 1
 end
-arch blocked
+arch cave_15
 x 14
 y 2
 end
@@ -3560,23 +3506,23 @@ arch cave23
 x 14
 y 21
 end
-arch blocked
+arch cave_15
 x 14
 y 22
 end
-arch blocked
+arch cave_15
 x 14
 y 23
 end
-arch blocked
+arch cave_15
 x 14
 y 24
 end
-arch blocked
+arch cave_15
 x 14
 y 25
 end
-arch blocked
+arch cave_15
 x 14
 y 26
 end
@@ -3697,7 +3643,7 @@ end
 arch slevel_2_2_2
 x 15
 y 10
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 15
@@ -3710,7 +3656,7 @@ end
 arch slevel_3_2
 x 15
 y 11
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 15
@@ -3723,7 +3669,7 @@ end
 arch slevel_3_2
 x 15
 y 12
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 15
@@ -3736,7 +3682,7 @@ end
 arch slevel_3_2
 x 15
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 15
@@ -3749,7 +3695,7 @@ end
 arch slevel_2_2_1
 x 15
 y 14
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 15
@@ -3867,7 +3813,7 @@ arch cave23
 x 15
 y 25
 end
-arch blocked
+arch cave_15
 x 15
 y 26
 end
@@ -3980,7 +3926,7 @@ end
 arch slevel_3_3
 x 16
 y 10
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 16
@@ -3993,7 +3939,7 @@ end
 arch slevel_2_2_2
 x 16
 y 11
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 16
@@ -4006,7 +3952,7 @@ end
 arch slevel_3_2
 x 16
 y 12
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 16
@@ -4019,7 +3965,7 @@ end
 arch slevel_2_2_1
 x 16
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 16
@@ -4032,7 +3978,7 @@ end
 arch slevel_3_1
 x 16
 y 14
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 16
@@ -4149,7 +4095,7 @@ arch cave2
 x 16
 y 25
 end
-arch blocked
+arch cave_15
 x 16
 y 26
 end
@@ -4271,7 +4217,7 @@ end
 arch slevel_3_3
 x 17
 y 10
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 17
@@ -4284,7 +4230,7 @@ end
 arch slevel_3_3
 x 17
 y 11
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 17
@@ -4424,6 +4370,14 @@ x 17
 y 22
 resist_physical 30
 connected 1
+arch event_apply
+name pupland
+title Python
+slaying /python/misc/hall_of_fame.py
+msg
+Your name will from now on be written in Pup Land's Hall of Fame!
+endmsg
+end
 end
 arch dungeon_magic
 x 17
@@ -4456,7 +4410,7 @@ arch cave2
 x 17
 y 25
 end
-arch blocked
+arch cave_15
 x 17
 y 26
 end
@@ -4569,7 +4523,7 @@ end
 arch slevel_3_3
 x 18
 y 10
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 18
@@ -4582,7 +4536,7 @@ end
 arch slevel_2_2_3
 x 18
 y 11
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 18
@@ -4595,7 +4549,7 @@ end
 arch slevel_3_4
 x 18
 y 12
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 18
@@ -4608,7 +4562,7 @@ end
 arch slevel_2_2_4
 x 18
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 18
@@ -4621,7 +4575,7 @@ end
 arch slevel_3_1
 x 18
 y 14
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 18
@@ -4738,7 +4692,7 @@ arch cave2
 x 18
 y 25
 end
-arch blocked
+arch cave_15
 x 18
 y 26
 end
@@ -4859,7 +4813,7 @@ end
 arch slevel_2_2_3
 x 19
 y 10
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 19
@@ -4872,7 +4826,7 @@ end
 arch slevel_3_4
 x 19
 y 11
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 19
@@ -4885,7 +4839,7 @@ end
 arch slevel_3_4
 x 19
 y 12
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 19
@@ -4898,7 +4852,7 @@ end
 arch slevel_3_4
 x 19
 y 13
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 19
@@ -4911,7 +4865,7 @@ end
 arch slevel_2_2_4
 x 19
 y 14
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 19
@@ -5029,18 +4983,18 @@ arch cave22
 x 19
 y 25
 end
-arch blocked
+arch cave_15
 x 19
 y 26
 end
-arch blocked
+arch cave_15
 x 20
 end
-arch blocked
+arch cave_15
 x 20
 y 1
 end
-arch blocked
+arch cave_15
 x 20
 y 2
 end
@@ -5256,38 +5210,38 @@ arch cave22
 x 20
 y 21
 end
-arch blocked
+arch cave_15
 x 20
 y 22
 end
-arch blocked
+arch cave_15
 x 20
 y 23
 end
-arch blocked
+arch cave_15
 x 20
 y 24
 end
-arch blocked
+arch cave_15
 x 20
 y 25
 end
-arch blocked
+arch cave_15
 x 20
 y 26
 end
-arch blocked
+arch cave_15
 x 21
 end
-arch blocked
+arch cave_15
 x 21
 y 1
 end
-arch blocked
+arch cave_15
 x 21
 y 2
 end
-arch blocked
+arch cave_15
 x 21
 y 3
 end
@@ -5499,42 +5453,42 @@ arch cave2
 x 21
 y 20
 end
-arch blocked
+arch cave_15
 x 21
 y 21
 end
-arch blocked
+arch cave_15
 x 21
 y 22
 end
-arch blocked
+arch cave_15
 x 21
 y 23
 end
-arch blocked
+arch cave_15
 x 21
 y 24
 end
-arch blocked
+arch cave_15
 x 21
 y 25
 end
-arch blocked
+arch cave_15
 x 21
 y 26
 end
-arch blocked
+arch cave_15
 x 22
 end
-arch blocked
+arch cave_15
 x 22
 y 1
 end
-arch blocked
+arch cave_15
 x 22
 y 2
 end
-arch blocked
+arch cave_15
 x 22
 y 3
 end
@@ -5734,42 +5688,42 @@ arch cave2
 x 22
 y 20
 end
-arch blocked
+arch cave_15
 x 22
 y 21
 end
-arch blocked
+arch cave_15
 x 22
 y 22
 end
-arch blocked
+arch cave_15
 x 22
 y 23
 end
-arch blocked
+arch cave_15
 x 22
 y 24
 end
-arch blocked
+arch cave_15
 x 22
 y 25
 end
-arch blocked
+arch cave_15
 x 22
 y 26
 end
-arch blocked
+arch cave_15
 x 23
 end
-arch blocked
+arch cave_15
 x 23
 y 1
 end
-arch blocked
+arch cave_15
 x 23
 y 2
 end
-arch blocked
+arch cave_15
 x 23
 y 3
 end
@@ -5969,15 +5923,15 @@ arch cave2
 x 23
 y 20
 end
-arch blocked
+arch cave_15
 x 23
 y 21
 end
-arch blocked
+arch cave_15
 x 23
 y 22
 end
-arch blocked
+arch cave_15
 x 23
 y 23
 end
@@ -6020,18 +5974,18 @@ resist_electricity 30
 weight 1000
 connected 10
 end
-arch blocked
+arch cave_15
 x 24
 end
-arch blocked
+arch cave_15
 x 24
 y 1
 end
-arch blocked
+arch cave_15
 x 24
 y 2
 end
-arch blocked
+arch cave_15
 x 24
 y 3
 end
@@ -6231,15 +6185,15 @@ arch cave2
 x 24
 y 20
 end
-arch blocked
+arch cave_15
 x 24
 y 21
 end
-arch blocked
+arch cave_15
 x 24
 y 22
 end
-arch blocked
+arch cave_15
 x 24
 y 23
 end
@@ -6291,18 +6245,18 @@ resist_electricity 30
 weight 1000
 connected 10
 end
-arch blocked
+arch cave_15
 x 25
 end
-arch blocked
+arch cave_15
 x 25
 y 1
 end
-arch blocked
+arch cave_15
 x 25
 y 2
 end
-arch blocked
+arch cave_15
 x 25
 y 3
 end
@@ -6442,15 +6396,15 @@ arch cave22
 x 25
 y 20
 end
-arch blocked
+arch cave_15
 x 25
 y 21
 end
-arch blocked
+arch cave_15
 x 25
 y 22
 end
-arch blocked
+arch cave_15
 x 25
 y 23
 end

@@ -1,11 +1,14 @@
 arch map
-name Castle
-difficulty 5
+name Gothwolte's Castle, Entrance
+difficulty 80
 region ancientpupland
 width 32
 height 32
+enter_x 15
+enter_y 30
 msg
 Created:  1996-06-08
+Modified: 2012-04-04 Rick Tanner
 endmsg
 end
 arch brush
@@ -861,8 +864,8 @@ name huge clock
 x 4
 y 16
 value 0
+move_block all
 no_pick 1
-no_pass 1
 end
 arch marble
 x 4
@@ -1421,7 +1424,7 @@ wc -100
 ac -120
 x 7
 y 10
-speed 0.500000
+speed 0.5
 speed_left -2.100000
 level 100
 attacktype 4588873
@@ -1467,7 +1470,7 @@ exp 5000000
 dam 110
 wc -80
 ac -127
-speed 0.100000
+speed 0.1
 level 110
 attacktype 257
 resist_physical 0
@@ -1518,7 +1521,7 @@ exp 5000000
 dam 100
 wc -80
 ac -120
-speed 0.100000
+speed 0.1
 level 110
 attacktype 1048705
 resist_physical 99
@@ -1561,7 +1564,7 @@ exp 5000000
 dam 100
 wc -120
 ac -120
-speed 0.100000
+speed 0.1
 level 130
 attacktype 1089
 resist_physical 95
@@ -3257,8 +3260,7 @@ end
 arch locked_door1
 slaying cordish
 msg
-This door was locked by Siegfried.
-It shall never be opened again!
+This door was locked by Siegfried.  It shall never be opened again!
 endmsg
 x 15
 y 22
@@ -3436,8 +3438,7 @@ end
 arch locked_door1
 slaying cordish
 msg
-This door was locked by Siegfried.
-It shall never be opened again!
+This door was locked by Siegfried.  It shall never be opened again!
 endmsg
 x 16
 y 22
@@ -3547,9 +3548,7 @@ y 8
 end
 arch magic_mouth
 msg
-Buah! It smells awful at this place.
-You hear some weird noise from the
-other room...
+Buah! It smells awful at this place.  You hear some weird noise from the other room...
 endmsg
 x 17
 y 9
@@ -3613,9 +3612,7 @@ y 17
 end
 arch magic_mouth
 msg
-You feel that something is wrong about
-this place...  Something must have
-changed since Cordish left...
+You feel that something is wrong about this place...  Something must have changed since Cordish left...
 endmsg
 x 17
 y 18
@@ -3770,8 +3767,7 @@ y 12
 end
 arch magic_mouth
 msg
-You don't know what is going on here,
-but it must be something terrible!
+You don't know what is going on here, but it must be something terrible!
 endmsg
 x 18
 y 13
@@ -4474,12 +4470,7 @@ end
 arch note
 name delivery note
 msg
-The article "Surtur, Slug of Terror"
-(ordering no. 14625) has been
-delivered to Mr. Gothwolte
-successfully. Payment of dark souls
-will be executed, as always, via
-dimension-portal.
+The article "Surtur, Slug of Terror" (ordering no. 14625) has been delivered to Mr. Gothwolte successfully.  Payment of dark souls will be executed, as always, via dimension-portal.
 endmsg
 x 21
 y 26
@@ -4905,8 +4896,7 @@ end
 arch locked_door2
 slaying evil_master_key1
 msg
-You need the evil master's key to open
-this door.
+You need the Evil Master's key to open this door.
 endmsg
 face ldoor_brown2.111
 x 24

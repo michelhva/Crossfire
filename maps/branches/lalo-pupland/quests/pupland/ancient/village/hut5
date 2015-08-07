@@ -4,8 +4,11 @@ difficulty 1
 region ancientpupland
 width 16
 height 16
+enter_x 7
+enter_y 14
 msg
-Created:  1996-02-21
+Created:  1996-05-21
+Modified: 2012-02-26 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -278,7 +281,7 @@ end
 arch door_look_1
 x 3
 y 5
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 3
@@ -375,8 +378,7 @@ arch man
 name Joseph's brother
 msg
 @match *
-Hello, adventurer!
-It's fine today.
+Hello, adventurer! It's fine today.
 endmsg
 face man.131
 hp 180
@@ -542,14 +544,10 @@ end
 arch man
 name Joseph
 msg
-@match yes|Yes
-Thanks.
-When success is ours, I'll give you
-some money.
+@match yes
+Thanks.  When success is ours, I'll give you some money.
 @match *
-I love Miss Margaret.
-But I cann't speak my mind to her.
-Will you ask her if she loves me?
+I love Miss Margaret.  But I can't speak my mind to her.  Will you ask her if she loves me?
 endmsg
 face man.131
 hp 180
@@ -774,7 +772,7 @@ end
 arch door_look_2
 x 8
 y 6
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 8
@@ -981,7 +979,7 @@ end
 arch door_look_1
 x 10
 y 9
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 10
@@ -1045,9 +1043,8 @@ end
 arch woman
 name Margaret
 msg
-@match love|Love|Joseph|joseph
-... It's secret.
-** She blushed fiery red. **
+@match love|joseph
+... It's secret.  ** She blushed fiery red. **
 @match *
 Hello, adventurer?
 endmsg

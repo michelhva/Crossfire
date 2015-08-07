@@ -4,8 +4,11 @@ difficulty 1
 region ancientpupland
 width 16
 height 16
+enter_x 6
+enter_y 13
 msg
-Created:  1996-02-17
+Created:  1996-05-17
+Modified: 2012-02-26 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -186,7 +189,7 @@ end
 arch door_look_1
 x 2
 y 4
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 2
@@ -289,7 +292,7 @@ end
 arch door_look_1
 x 3
 y 10
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 3
@@ -344,7 +347,7 @@ end
 arch door_look_2
 x 4
 y 5
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 4
@@ -680,15 +683,10 @@ end
 arch man
 name timothey
 msg
-@match Kurte|kurte
-Kurte means "elders of our land".
-They live in the forest north-east
-of the country.
-@match [Gg]othwolte
-I helped Kurte researching about
-Gothwolte. I found out that his sword,
-the ancient dancing sword, is called
-"whirlwind".
+@match kurte
+Kurte means "elders of our land."  They live in the forest north-east of the country.
+@match gothwolte
+I helped Kurte researching about Gothwolte.  I found out that his sword, the ancient dancing sword, is called "whirlwind."
 @match *
 I'm a scholar of the Kurte.
 endmsg

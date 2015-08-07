@@ -1,12 +1,14 @@
 arch map
-name Siegfried
+name Siegfried's House, Level 1
 difficulty 5
 region ancientpupland
 width 40
 height 32
+enter_x 15
+enter_y 30
 msg
 Created:  1996-06-03
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2012-02-26 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -354,11 +356,19 @@ arch flagstone
 x 2
 y 16
 end
+arch swall_1_4_half
+x 2
+y 16
+end
 arch stwall_2_1_1
 x 2
 y 16
 end
 arch flagstone
+x 2
+y 17
+end
+arch swall_1_4_half
 x 2
 y 17
 end
@@ -616,7 +626,7 @@ arch flagstone
 x 3
 y 16
 end
-arch swall_2_2_2
+arch swall_3_3
 x 3
 y 16
 end
@@ -628,7 +638,7 @@ arch flagstone
 x 3
 y 17
 end
-arch swall_2_2_1
+arch swall_3_1
 x 3
 y 17
 end
@@ -1942,46 +1952,26 @@ connected 10001
 end
 arch siegfried
 msg
-@match Key|key
-... I cannot give it to you...
-because Eureca is very dangerous now!
-@match Lock|lock
-I locked the castle entrance with my
-Key.
-@match Ran|ran
-I ran away from the castle,
-and I Locked the castle entrance
-in order to prevent Eureca from
-leaving that place.
-@match Sword|sword
-Eureca picked up the sword, because he
-was curious about it. Then he started
-screaming and punching at his own head.
-I was frightened by his behavior, and
-ran away from the castle.
-@match [Gg]othwolte
-Eureca fought against Ghothwolte.
-After a long fight, Eureca killed him!
-As soon as Ghothwolte had died,
-his black Sword flashed mysteriously.
-@match Castle|castle
-There were four evil masters in the
-castle. But we didn't deal with them.
-We went directly to the top of the
-castle, to Ghothwolte's room.
-@match Everything|everything
-Eureca and I came here two months ago.
-We went straight to Ghothwolte's
-Castle.
-@match Unpunished|unpunished
-I say Everything.
-@match Kill|kill
-I never want to be killed!
-Bodyguards! Come and help me!!!
+@match key
+... I cannot give it to you... because Eureca is very dangerous now!
+@match lock
+I locked the castle entrance with my Key.
+@match ran
+I ran away from the castle, and I locked the castle entrance in order to prevent Eureca from leaving that place.
+@match sword
+Eureca picked up the sword, because he was curious about it.  Then he started screaming and punching at his own head.  I was frightened by his behavior, and ran away from the castle.
+@match gothwolte
+Eureca fought against Gothwolte.  After a long fight, Eureca killed him! As soon as Gothwolte had died, his black Sword flashed mysteriously.
+@match castle
+There were four evil masters in the castle.  But we didn't deal with them.  We went directly to the top of the castle, to Gothwolte's room.
+@match everything
+Eureca and I came here two months ago.  We went straight to Gothwolte's Castle.
+@match unpunished|live
+I will tell you everything.
+@match kill
+I don't want to be killed! Bodyguards! Come and help me!!!
 @match *
-Don't Kill me!
-If you leave me unpunished, I'll tell
-you everything.
+Don't kill me! If you let me live, I'll tell you everything.
 endmsg
 hp 50
 maxhp 50
@@ -2031,7 +2021,7 @@ y 18
 end
 arch magic_ear
 msg
-@match kill|Kill
+@match kill
 endmsg
 x 8
 y 18
@@ -2044,7 +2034,7 @@ connected 110
 end
 arch magic_mouth
 msg
-Siegfried shout:
+Siegfried shouts:
  "Don't kill me!"
 endmsg
 x 8
@@ -2053,8 +2043,7 @@ end
 arch magic_ear
 msg
 @match uinAgom gomInu
-Jacob appears to take his revenge on
-Siegfried!
+Jacob appears to take his revenge on Siegfried!
 endmsg
 x 8
 y 18
@@ -3054,7 +3043,7 @@ arch flagstone
 x 12
 y 21
 end
-arch swall_2_2_3
+arch swall_3_3
 x 12
 y 21
 end
@@ -3066,7 +3055,7 @@ arch flagstone
 x 12
 y 22
 end
-arch swall_2_2_4
+arch swall_3_1
 x 12
 y 22
 end
@@ -3300,11 +3289,19 @@ arch stwall_2_2_2
 x 13
 y 21
 end
+arch swall_1_3_half
+x 13
+y 21
+end
 arch flagstone
 x 13
 y 22
 end
 arch stwall_2_1_1
+x 13
+y 22
+end
+arch swall_1_3_half
 x 13
 y 22
 end
@@ -3381,7 +3378,7 @@ y 4
 end
 arch magic_ear
 msg
-@match open|Open|OPEN|boGus
+@match open|boGus
 Error: unexpected message.
 endmsg
 x 14
@@ -3493,7 +3490,7 @@ arch flagstone
 x 14
 y 16
 end
-arch swall_2_2_3
+arch swall_3_3
 x 14
 y 16
 end
@@ -3505,7 +3502,7 @@ arch flagstone
 x 14
 y 17
 end
-arch swall_2_2_4
+arch swall_3_1
 x 14
 y 17
 end
@@ -3728,11 +3725,19 @@ arch stwall_2_1_1
 x 15
 y 16
 end
+arch swall_1_3_half
+x 15
+y 16
+end
 arch flagstone
 x 15
 y 17
 end
 arch stwall_2_1_1
+x 15
+y 17
+end
+arch swall_1_3_half
 x 15
 y 17
 end
@@ -3947,7 +3952,7 @@ y 15
 end
 arch magic_mouth
 msg
-I WILL KILL YOU SURELY!
+I WILL SURELY KILL YOU!
 endmsg
 x 16
 y 15
@@ -3992,7 +3997,7 @@ y 18
 end
 arch magic_mouth
 msg
-You know my top secret, don't you.
+You know my deepest secret, don't you?
 endmsg
 x 16
 y 18
@@ -8505,9 +8510,7 @@ arch zombie
 name Jacob
 msg
 @match *
-uuu..
-I killed by him..
-His real name is ... Cordish!!
+uuu.. I was killed by him.. His real name is ... Cordish!!
 endmsg
 Wis 2
 hp 3500

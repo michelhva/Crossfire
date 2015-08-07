@@ -2,13 +2,13 @@ arch map
 name World
 difficulty 1
 region ancientpupland
-width 38
+width 37
 height 37
-enter_x 1
-enter_y 1
+enter_x 17
+enter_y 26
 msg
-Created:  1996-02-25
-Modified: 2007-11-04 Andreas Kirschbaum
+Created:  1996-01-25
+Modified: 2011-12-01 Rick Tanner
 endmsg
 end
 arch sea
@@ -1515,7 +1515,7 @@ arch pstone_1
 x 9
 y 10
 end
-arch ford_ns
+arch river_ford_ns
 x 9
 y 10
 end
@@ -1718,9 +1718,7 @@ arch dog
 name Ancient of Poppy the pup
 msg
 @match new|changes
-This world has been recreated by the
-gods! Lot's of interesting changes,
-have fun...
+This world has been recreated by the gods! Lot's of interesting changes, have fun...
 @match friend|amigo
 Please get along with Poppy.
 (_o_)
@@ -2055,7 +2053,7 @@ end
 arch mountain2
 x 12
 y 14
-no_pass 1
+move_block all
 blocksview 0
 end
 arch invis_exit
@@ -2231,13 +2229,13 @@ end
 arch mountain2
 x 13
 y 14
-no_pass 1
+move_block all
 blocksview 0
 end
 arch mountain2
 x 13
 y 15
-no_pass 1
+move_block all
 blocksview 0
 end
 arch dungeon_magic
@@ -2398,7 +2396,7 @@ end
 arch mountain2
 x 14
 y 14
-no_pass 1
+move_block all
 blocksview 0
 end
 arch invis_exit
@@ -3728,13 +3726,6 @@ end
 arch pstone_1
 x 22
 y 26
-end
-arch button_plate
-x 22
-y 27
-weight 4000000
-invisible 1
-connected 1
 end
 arch grass
 x 22

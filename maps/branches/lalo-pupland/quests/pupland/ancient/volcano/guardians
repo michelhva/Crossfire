@@ -1,12 +1,14 @@
 arch map
 name Warden
-difficulty 1
+difficulty 80
 region ancientpupland
 width 26
 height 37
+enter_x 6
+enter_y 2
 msg
 Created:  2004-06-09 Andreas Vogl (red.blaze@gmx.net)
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2012-04-04 Rick Tanner
 endmsg
 end
 arch teleporter
@@ -93,19 +95,19 @@ end
 arch dungeon_magic
 y 4
 end
-arch blocked
+arch cave_15
 y 4
 end
 arch dungeon_magic
 y 5
 end
-arch blocked
+arch cave_15
 y 5
 end
 arch dungeon_magic
 y 6
 end
-arch blocked
+arch cave_15
 y 6
 end
 arch dungeon_magic
@@ -138,7 +140,7 @@ end
 arch dungeon_magic
 y 10
 end
-arch blocked
+arch cave_15
 y 10
 end
 arch dungeon_magic
@@ -171,37 +173,37 @@ end
 arch dungeon_magic
 y 14
 end
-arch blocked
+arch cave_15
 y 14
 end
 arch dungeon_magic
 y 15
 end
-arch blocked
+arch cave_15
 y 15
 end
 arch dungeon_magic
 y 16
 end
-arch blocked
+arch cave_15
 y 16
 end
 arch dungeon_magic
 y 17
 end
-arch blocked
+arch cave_15
 y 17
 end
 arch dungeon_magic
 y 18
 end
-arch blocked
+arch cave_15
 y 18
 end
 arch dungeon_magic
 y 19
 end
-arch blocked
+arch cave_15
 y 19
 end
 arch dungeon_magic
@@ -234,10 +236,7 @@ end
 arch dungeon_magic
 y 23
 end
-arch blackmarble
-y 23
-end
-arch blocked
+arch cave_15
 y 23
 end
 arch dungeon_magic
@@ -270,61 +269,61 @@ end
 arch dungeon_magic
 y 27
 end
-arch blocked
+arch cave_15
 y 27
 end
 arch dungeon_magic
 y 28
 end
-arch blocked
+arch cave_15
 y 28
 end
 arch dungeon_magic
 y 29
 end
-arch blocked
+arch cave_15
 y 29
 end
 arch dungeon_magic
 y 30
 end
-arch blocked
+arch cave_15
 y 30
 end
 arch dungeon_magic
 y 31
 end
-arch blocked
+arch cave_15
 y 31
 end
 arch dungeon_magic
 y 32
 end
-arch blocked
+arch cave_15
 y 32
 end
 arch dungeon_magic
 y 33
 end
-arch blocked
+arch cave_15
 y 33
 end
 arch dungeon_magic
 y 34
 end
-arch blocked
+arch cave_15
 y 34
 end
 arch dungeon_magic
 y 35
 end
-arch blocked
+arch cave_15
 y 35
 end
 arch dungeon_magic
 y 36
 end
-arch blocked
+arch cave_15
 y 36
 end
 arch teleporter
@@ -420,7 +419,7 @@ arch dungeon_magic
 x 1
 y 4
 end
-arch blocked
+arch cave_15
 x 1
 y 4
 end
@@ -428,7 +427,7 @@ arch dungeon_magic
 x 1
 y 5
 end
-arch blocked
+arch cave_15
 x 1
 y 5
 end
@@ -484,7 +483,7 @@ name fearsome statue
 face wizard_blue.131
 x 1
 y 8
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 1
@@ -541,7 +540,7 @@ name fearsome statue
 face wizard_blue.131
 x 1
 y 12
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 1
@@ -571,7 +570,7 @@ arch dungeon_magic
 x 1
 y 15
 end
-arch blocked
+arch cave_15
 x 1
 y 15
 end
@@ -579,7 +578,7 @@ arch dungeon_magic
 x 1
 y 16
 end
-arch blocked
+arch cave_15
 x 1
 y 16
 end
@@ -587,7 +586,7 @@ arch dungeon_magic
 x 1
 y 17
 end
-arch blocked
+arch cave_15
 x 1
 y 17
 end
@@ -595,7 +594,7 @@ arch dungeon_magic
 x 1
 y 18
 end
-arch blocked
+arch cave_15
 x 1
 y 18
 end
@@ -703,7 +702,7 @@ arch dungeon_magic
 x 1
 y 28
 end
-arch blocked
+arch cave_15
 x 1
 y 28
 end
@@ -711,7 +710,7 @@ arch dungeon_magic
 x 1
 y 29
 end
-arch blocked
+arch cave_15
 x 1
 y 29
 end
@@ -719,7 +718,7 @@ arch dungeon_magic
 x 1
 y 30
 end
-arch blocked
+arch cave_15
 x 1
 y 30
 end
@@ -727,7 +726,7 @@ arch dungeon_magic
 x 1
 y 31
 end
-arch blocked
+arch cave_15
 x 1
 y 31
 end
@@ -735,7 +734,7 @@ arch dungeon_magic
 x 1
 y 32
 end
-arch blocked
+arch cave_15
 x 1
 y 32
 end
@@ -743,7 +742,7 @@ arch dungeon_magic
 x 1
 y 33
 end
-arch blocked
+arch cave_15
 x 1
 y 33
 end
@@ -751,7 +750,7 @@ arch dungeon_magic
 x 1
 y 34
 end
-arch blocked
+arch cave_15
 x 1
 y 34
 end
@@ -759,7 +758,7 @@ arch dungeon_magic
 x 1
 y 35
 end
-arch blocked
+arch cave_15
 x 1
 y 35
 end
@@ -767,22 +766,22 @@ arch dungeon_magic
 x 1
 y 36
 end
-arch blocked
+arch cave_15
 x 1
 y 36
 end
-arch blocked
+arch cave_15
 x 2
 end
-arch blocked
+arch cave_15
 x 2
 y 1
 end
-arch blocked
+arch cave_15
 x 2
 y 2
 end
-arch blocked
+arch cave_15
 x 2
 y 3
 end
@@ -790,7 +789,7 @@ arch dungeon_magic
 x 2
 y 4
 end
-arch blocked
+arch cave_15
 x 2
 y 4
 end
@@ -912,7 +911,7 @@ arch dungeon_magic
 x 2
 y 16
 end
-arch blocked
+arch cave_15
 x 2
 y 16
 end
@@ -920,7 +919,7 @@ arch dungeon_magic
 x 2
 y 17
 end
-arch blocked
+arch cave_15
 x 2
 y 17
 end
@@ -1032,7 +1031,7 @@ arch dungeon_magic
 x 2
 y 29
 end
-arch blocked
+arch cave_15
 x 2
 y 29
 end
@@ -1040,7 +1039,7 @@ arch dungeon_magic
 x 2
 y 30
 end
-arch blocked
+arch cave_15
 x 2
 y 30
 end
@@ -1048,7 +1047,7 @@ arch dungeon_magic
 x 2
 y 31
 end
-arch blocked
+arch cave_15
 x 2
 y 31
 end
@@ -1056,7 +1055,7 @@ arch dungeon_magic
 x 2
 y 32
 end
-arch blocked
+arch cave_15
 x 2
 y 32
 end
@@ -1064,7 +1063,7 @@ arch dungeon_magic
 x 2
 y 33
 end
-arch blocked
+arch cave_15
 x 2
 y 33
 end
@@ -1072,7 +1071,7 @@ arch dungeon_magic
 x 2
 y 34
 end
-arch blocked
+arch cave_15
 x 2
 y 34
 end
@@ -1080,7 +1079,7 @@ arch dungeon_magic
 x 2
 y 35
 end
-arch blocked
+arch cave_15
 x 2
 y 35
 end
@@ -1088,22 +1087,22 @@ arch dungeon_magic
 x 2
 y 36
 end
-arch blocked
+arch cave_15
 x 2
 y 36
 end
-arch blocked
+arch cave_15
 x 3
 end
-arch blocked
+arch cave_15
 x 3
 y 1
 end
-arch blocked
+arch cave_15
 x 3
 y 2
 end
-arch blocked
+arch cave_15
 x 3
 y 3
 end
@@ -1360,7 +1359,7 @@ arch dungeon_magic
 x 3
 y 30
 end
-arch blocked
+arch cave_15
 x 3
 y 30
 end
@@ -1368,7 +1367,7 @@ arch dungeon_magic
 x 3
 y 31
 end
-arch blocked
+arch cave_15
 x 3
 y 31
 end
@@ -1376,7 +1375,7 @@ arch dungeon_magic
 x 3
 y 32
 end
-arch blocked
+arch cave_15
 x 3
 y 32
 end
@@ -1384,7 +1383,7 @@ arch dungeon_magic
 x 3
 y 33
 end
-arch blocked
+arch cave_15
 x 3
 y 33
 end
@@ -1392,7 +1391,7 @@ arch dungeon_magic
 x 3
 y 34
 end
-arch blocked
+arch cave_15
 x 3
 y 34
 end
@@ -1400,7 +1399,7 @@ arch dungeon_magic
 x 3
 y 35
 end
-arch blocked
+arch cave_15
 x 3
 y 35
 end
@@ -1408,14 +1407,14 @@ arch dungeon_magic
 x 3
 y 36
 end
-arch blocked
+arch cave_15
 x 3
 y 36
 end
 arch dungeon_magic
 x 4
 end
-arch blocked
+arch cave_15
 x 4
 end
 arch dungeon_magic
@@ -1485,7 +1484,7 @@ name fearsome statue
 face wizard_blue.151
 x 4
 y 5
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 4
@@ -1602,7 +1601,7 @@ name fearsome statue
 face wizard_blue.111
 x 4
 y 15
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 4
@@ -1756,7 +1755,7 @@ arch dungeon_magic
 x 4
 y 30
 end
-arch blocked
+arch cave_15
 x 4
 y 30
 end
@@ -1824,7 +1823,7 @@ arch dungeon_magic
 x 4
 y 36
 end
-arch blocked
+arch cave_15
 x 4
 y 36
 end
@@ -2185,7 +2184,7 @@ arch dungeon_magic
 x 5
 y 36
 end
-arch blocked
+arch cave_15
 x 5
 y 36
 end
@@ -2300,10 +2299,7 @@ end
 arch magic_mouth
 name 5
 msg
-Oh my god - the statues are moving!
-Suddenly they rise their mechanical
-arms... to unleash an inferno of snow
-and ice!
+Oh my god - the statues are moving! Suddenly they rise their mechanical arms... to unleash an inferno of snow and ice!
 endmsg
 x 6
 y 10
@@ -2367,7 +2363,7 @@ arch dungeon_magic
 x 6
 y 16
 end
-arch blocked
+arch cave_15
 x 6
 y 16
 end
@@ -2379,7 +2375,7 @@ arch blackmarble
 x 6
 y 17
 end
-arch blocked
+arch cave_15
 x 6
 y 17
 end
@@ -2444,9 +2440,7 @@ end
 arch magic_mouth
 name 35
 msg
-White statues emerge from another
-dimension! They look extremely
-dangerous...
+White statues emerge from another dimension! They look extremely dangerous...
 endmsg
 x 6
 y 23
@@ -2535,7 +2529,7 @@ x 6
 y 30
 speed -0.050000
 level 100
-no_pass 0
+move_block 0
 blocksview 0
 arch spell_counterwall
 end
@@ -2592,7 +2586,7 @@ arch dungeon_magic
 x 6
 y 36
 end
-arch blocked
+arch cave_15
 x 6
 y 36
 end
@@ -2954,14 +2948,14 @@ arch dungeon_magic
 x 7
 y 36
 end
-arch blocked
+arch cave_15
 x 7
 y 36
 end
 arch dungeon_magic
 x 8
 end
-arch blocked
+arch cave_15
 x 8
 end
 arch dungeon_magic
@@ -3031,7 +3025,7 @@ name fearsome statue
 face wizard_blue.151
 x 8
 y 5
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 8
@@ -3152,7 +3146,7 @@ name fearsome statue
 face wizard_blue.111
 x 8
 y 15
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 8
@@ -3306,7 +3300,7 @@ arch dungeon_magic
 x 8
 y 30
 end
-arch blocked
+arch cave_15
 x 8
 y 30
 end
@@ -3370,22 +3364,22 @@ arch dungeon_magic
 x 8
 y 36
 end
-arch blocked
+arch cave_15
 x 8
 y 36
 end
-arch blocked
+arch cave_15
 x 9
 end
-arch blocked
+arch cave_15
 x 9
 y 1
 end
-arch blocked
+arch cave_15
 x 9
 y 2
 end
-arch blocked
+arch cave_15
 x 9
 y 3
 end
@@ -3633,7 +3627,7 @@ arch dungeon_magic
 x 9
 y 30
 end
-arch blocked
+arch cave_15
 x 9
 y 30
 end
@@ -3641,7 +3635,7 @@ arch dungeon_magic
 x 9
 y 31
 end
-arch blocked
+arch cave_15
 x 9
 y 31
 end
@@ -3681,7 +3675,7 @@ arch dungeon_magic
 x 9
 y 35
 end
-arch blocked
+arch cave_15
 x 9
 y 35
 end
@@ -3689,7 +3683,7 @@ arch dungeon_magic
 x 9
 y 36
 end
-arch blocked
+arch cave_15
 x 9
 y 36
 end
@@ -3737,11 +3731,11 @@ arch spell_burning_hands
 attacktype 4
 end
 end
-arch blocked
+arch cave_15
 x 10
 y 2
 end
-arch blocked
+arch cave_15
 x 10
 y 3
 end
@@ -3749,7 +3743,7 @@ arch dungeon_magic
 x 10
 y 4
 end
-arch blocked
+arch cave_15
 x 10
 y 4
 end
@@ -3861,7 +3855,7 @@ arch dungeon_magic
 x 10
 y 16
 end
-arch blocked
+arch cave_15
 x 10
 y 16
 end
@@ -3869,7 +3863,7 @@ arch dungeon_magic
 x 10
 y 17
 end
-arch blocked
+arch cave_15
 x 10
 y 17
 end
@@ -3981,7 +3975,7 @@ arch dungeon_magic
 x 10
 y 29
 end
-arch blocked
+arch cave_15
 x 10
 y 29
 end
@@ -3989,7 +3983,7 @@ arch dungeon_magic
 x 10
 y 30
 end
-arch blocked
+arch cave_15
 x 10
 y 30
 end
@@ -4023,9 +4017,7 @@ y 33
 end
 arch magic_mouth
 msg
-You spot a narrow bridge ahead.
-There is something evil about it...
-you scent a magical aura...
+You spot a narrow bridge ahead.  There is something evil about it... you sense a magical aura...
 endmsg
 x 10
 y 33
@@ -4062,7 +4054,7 @@ arch dungeon_magic
 x 10
 y 36
 end
-arch blocked
+arch cave_15
 x 10
 y 36
 end
@@ -4109,15 +4101,14 @@ arch spell_burning_hands
 attacktype 4
 end
 end
-arch blocked
+arch cave_15
 x 11
 y 2
 end
 arch magic_mouth
 name 51
 msg
-You feel uncomfortable... The statues
-seem to be watching you...
+You feel uncomfortable... The statues seem to be watching you...
 endmsg
 x 11
 y 3
@@ -4141,7 +4132,7 @@ arch dungeon_magic
 x 11
 y 4
 end
-arch blocked
+arch cave_15
 x 11
 y 4
 end
@@ -4149,7 +4140,7 @@ arch dungeon_magic
 x 11
 y 5
 end
-arch blocked
+arch cave_15
 x 11
 y 5
 end
@@ -4196,7 +4187,7 @@ name fearsome statue
 face wizard_blue.171
 x 11
 y 8
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 11
@@ -4257,7 +4248,7 @@ name fearsome statue
 face wizard_blue.171
 x 11
 y 12
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 11
@@ -4287,7 +4278,7 @@ arch dungeon_magic
 x 11
 y 15
 end
-arch blocked
+arch cave_15
 x 11
 y 15
 end
@@ -4295,7 +4286,7 @@ arch dungeon_magic
 x 11
 y 16
 end
-arch blocked
+arch cave_15
 x 11
 y 16
 end
@@ -4303,7 +4294,7 @@ arch dungeon_magic
 x 11
 y 17
 end
-arch blocked
+arch cave_15
 x 11
 y 17
 end
@@ -4311,7 +4302,7 @@ arch dungeon_magic
 x 11
 y 18
 end
-arch blocked
+arch cave_15
 x 11
 y 18
 end
@@ -4427,7 +4418,7 @@ arch dungeon_magic
 x 11
 y 28
 end
-arch blocked
+arch cave_15
 x 11
 y 28
 end
@@ -4435,7 +4426,7 @@ arch dungeon_magic
 x 11
 y 29
 end
-arch blocked
+arch cave_15
 x 11
 y 29
 end
@@ -4443,7 +4434,7 @@ arch dungeon_magic
 x 11
 y 30
 end
-arch blocked
+arch cave_15
 x 11
 y 30
 end
@@ -4515,7 +4506,7 @@ arch dungeon_magic
 x 11
 y 36
 end
-arch blocked
+arch cave_15
 x 11
 y 36
 end
@@ -4562,11 +4553,11 @@ arch spell_burning_hands
 attacktype 4
 end
 end
-arch blocked
+arch cave_15
 x 12
 y 2
 end
-arch blocked
+arch cave_15
 x 12
 y 3
 end
@@ -4574,7 +4565,7 @@ arch dungeon_magic
 x 12
 y 4
 end
-arch blocked
+arch cave_15
 x 12
 y 4
 end
@@ -4582,7 +4573,7 @@ arch dungeon_magic
 x 12
 y 5
 end
-arch blocked
+arch cave_15
 x 12
 y 5
 end
@@ -4590,7 +4581,7 @@ arch dungeon_magic
 x 12
 y 6
 end
-arch blocked
+arch cave_15
 x 12
 y 6
 end
@@ -4640,8 +4631,7 @@ x 12
 y 10
 speed -0.05
 level 110
-no_pick 1
-no_pass 0
+move_block 0
 blocksview 0
 arch spell_counterwall
 end
@@ -4696,7 +4686,7 @@ arch dungeon_magic
 x 12
 y 14
 end
-arch blocked
+arch cave_15
 x 12
 y 14
 end
@@ -4704,7 +4694,7 @@ arch dungeon_magic
 x 12
 y 15
 end
-arch blocked
+arch cave_15
 x 12
 y 15
 end
@@ -4806,7 +4796,7 @@ arch dungeon_magic
 x 12
 y 18
 end
-arch blocked
+arch cave_15
 x 12
 y 18
 end
@@ -4814,7 +4804,7 @@ arch dungeon_magic
 x 12
 y 19
 end
-arch blocked
+arch cave_15
 x 12
 y 19
 end
@@ -4864,8 +4854,7 @@ x 12
 y 23
 speed -0.05
 level 110
-no_pick 1
-no_pass 0
+move_block 0
 blocksview 0
 arch spell_counterwall
 end
@@ -4920,7 +4909,7 @@ arch dungeon_magic
 x 12
 y 27
 end
-arch blocked
+arch cave_15
 x 12
 y 27
 end
@@ -4928,7 +4917,7 @@ arch dungeon_magic
 x 12
 y 28
 end
-arch blocked
+arch cave_15
 x 12
 y 28
 end
@@ -4936,7 +4925,7 @@ arch dungeon_magic
 x 12
 y 29
 end
-arch blocked
+arch cave_15
 x 12
 y 29
 end
@@ -4944,7 +4933,7 @@ arch dungeon_magic
 x 12
 y 30
 end
-arch blocked
+arch cave_15
 x 12
 y 30
 end
@@ -5000,7 +4989,7 @@ arch dungeon_magic
 x 12
 y 36
 end
-arch blocked
+arch cave_15
 x 12
 y 36
 end
@@ -5048,11 +5037,11 @@ arch spell_burning_hands
 attacktype 4
 end
 end
-arch blocked
+arch cave_15
 x 13
 y 2
 end
-arch blocked
+arch cave_15
 x 13
 y 3
 end
@@ -5060,7 +5049,7 @@ arch dungeon_magic
 x 13
 y 4
 end
-arch blocked
+arch cave_15
 x 13
 y 4
 end
@@ -5068,7 +5057,7 @@ arch dungeon_magic
 x 13
 y 5
 end
-arch blocked
+arch cave_15
 x 13
 y 5
 end
@@ -5076,7 +5065,7 @@ arch dungeon_magic
 x 13
 y 6
 end
-arch blocked
+arch cave_15
 x 13
 y 6
 end
@@ -5126,8 +5115,7 @@ x 13
 y 10
 speed -0.05
 level 110
-no_pick 1
-no_pass 0
+move_block 0
 blocksview 0
 arch spell_counterwall
 end
@@ -5182,7 +5170,7 @@ arch dungeon_magic
 x 13
 y 14
 end
-arch blocked
+arch cave_15
 x 13
 y 14
 end
@@ -5190,7 +5178,7 @@ arch dungeon_magic
 x 13
 y 15
 end
-arch blocked
+arch cave_15
 x 13
 y 15
 end
@@ -5292,7 +5280,7 @@ arch dungeon_magic
 x 13
 y 18
 end
-arch blocked
+arch cave_15
 x 13
 y 18
 end
@@ -5300,7 +5288,7 @@ arch dungeon_magic
 x 13
 y 19
 end
-arch blocked
+arch cave_15
 x 13
 y 19
 end
@@ -5350,8 +5338,7 @@ x 13
 y 23
 speed -0.05
 level 110
-no_pick 1
-no_pass 0
+move_block 0
 blocksview 0
 arch spell_counterwall
 end
@@ -5406,7 +5393,7 @@ arch dungeon_magic
 x 13
 y 27
 end
-arch blocked
+arch cave_15
 x 13
 y 27
 end
@@ -5414,7 +5401,7 @@ arch dungeon_magic
 x 13
 y 28
 end
-arch blocked
+arch cave_15
 x 13
 y 28
 end
@@ -5422,7 +5409,7 @@ arch dungeon_magic
 x 13
 y 29
 end
-arch blocked
+arch cave_15
 x 13
 y 29
 end
@@ -5430,7 +5417,7 @@ arch dungeon_magic
 x 13
 y 30
 end
-arch blocked
+arch cave_15
 x 13
 y 30
 end
@@ -5486,22 +5473,22 @@ arch dungeon_magic
 x 13
 y 36
 end
-arch blocked
+arch cave_15
 x 13
 y 36
 end
-arch blocked
+arch cave_15
 x 14
 end
-arch blocked
+arch cave_15
 x 14
 y 1
 end
-arch blocked
+arch cave_15
 x 14
 y 2
 end
-arch blocked
+arch cave_15
 x 14
 y 3
 end
@@ -5509,7 +5496,7 @@ arch dungeon_magic
 x 14
 y 4
 end
-arch blocked
+arch cave_15
 x 14
 y 4
 end
@@ -5517,7 +5504,7 @@ arch dungeon_magic
 x 14
 y 5
 end
-arch blocked
+arch cave_15
 x 14
 y 5
 end
@@ -5564,7 +5551,7 @@ name fearsome statue
 face wizard.131
 x 14
 y 8
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 14
@@ -5625,7 +5612,7 @@ name fearsome statue
 face wizard.131
 x 14
 y 12
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 14
@@ -5655,7 +5642,7 @@ arch dungeon_magic
 x 14
 y 15
 end
-arch blocked
+arch cave_15
 x 14
 y 15
 end
@@ -5663,7 +5650,7 @@ arch dungeon_magic
 x 14
 y 16
 end
-arch blocked
+arch cave_15
 x 14
 y 16
 end
@@ -5671,7 +5658,7 @@ arch dungeon_magic
 x 14
 y 17
 end
-arch blocked
+arch cave_15
 x 14
 y 17
 end
@@ -5679,7 +5666,7 @@ arch dungeon_magic
 x 14
 y 18
 end
-arch blocked
+arch cave_15
 x 14
 y 18
 end
@@ -5726,7 +5713,7 @@ name fearsome statue
 face wizard_yellow.131
 x 14
 y 21
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 14
@@ -5787,7 +5774,7 @@ name fearsome statue
 face wizard_yellow.131
 x 14
 y 25
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 14
@@ -5817,7 +5804,7 @@ arch dungeon_magic
 x 14
 y 28
 end
-arch blocked
+arch cave_15
 x 14
 y 28
 end
@@ -5825,7 +5812,7 @@ arch dungeon_magic
 x 14
 y 29
 end
-arch blocked
+arch cave_15
 x 14
 y 29
 end
@@ -5833,7 +5820,7 @@ arch dungeon_magic
 x 14
 y 30
 end
-arch blocked
+arch cave_15
 x 14
 y 30
 end
@@ -5889,7 +5876,7 @@ arch dungeon_magic
 x 14
 y 36
 end
-arch blocked
+arch cave_15
 x 14
 y 36
 end
@@ -5939,11 +5926,11 @@ duration 30
 duration_modifier 2
 end
 end
-arch blocked
+arch cave_15
 x 15
 y 2
 end
-arch blocked
+arch cave_15
 x 15
 y 3
 end
@@ -5951,7 +5938,7 @@ arch dungeon_magic
 x 15
 y 4
 end
-arch blocked
+arch cave_15
 x 15
 y 4
 end
@@ -6063,7 +6050,7 @@ arch dungeon_magic
 x 15
 y 16
 end
-arch blocked
+arch cave_15
 x 15
 y 16
 end
@@ -6071,7 +6058,7 @@ arch dungeon_magic
 x 15
 y 17
 end
-arch blocked
+arch cave_15
 x 15
 y 17
 end
@@ -6183,7 +6170,7 @@ arch dungeon_magic
 x 15
 y 29
 end
-arch blocked
+arch cave_15
 x 15
 y 29
 end
@@ -6191,7 +6178,7 @@ arch dungeon_magic
 x 15
 y 30
 end
-arch blocked
+arch cave_15
 x 15
 y 30
 end
@@ -6309,11 +6296,11 @@ duration 30
 duration_modifier 2
 end
 end
-arch blocked
+arch cave_15
 x 16
 y 2
 end
-arch blocked
+arch cave_15
 x 16
 y 3
 end
@@ -6561,7 +6548,7 @@ arch dungeon_magic
 x 16
 y 30
 end
-arch blocked
+arch cave_15
 x 16
 y 30
 end
@@ -6584,8 +6571,8 @@ end
 arch permanent_lava
 x 16
 y 32
+move_block all
 move_on 0
-no_pass 1
 end
 arch dungeon_magic
 x 16
@@ -6599,8 +6586,7 @@ end
 arch rune_fire
 name Gothwolte's Seal of Flame
 msg
-You are struck by a devastating
-firestorm!
+You are struck by a devastating firestorm!
 endmsg
 Cha 40
 hp 100
@@ -6618,8 +6604,8 @@ end
 arch permanent_lava
 x 16
 y 34
+move_block all
 move_on 0
-no_pass 1
 end
 arch dungeon_magic
 x 16
@@ -6690,11 +6676,11 @@ duration 30
 duration_modifier 2
 end
 end
-arch blocked
+arch cave_15
 x 17
 y 2
 end
-arch blocked
+arch cave_15
 x 17
 y 3
 end
@@ -6729,7 +6715,7 @@ name fearsome statue
 face wizard.151
 x 17
 y 5
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 17
@@ -6846,7 +6832,7 @@ name fearsome statue
 face wizard.111
 x 17
 y 15
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 17
@@ -6891,7 +6877,7 @@ name fearsome statue
 face wizard_yellow.151
 x 17
 y 18
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 17
@@ -7008,7 +6994,7 @@ name fearsome statue
 face wizard_yellow.111
 x 17
 y 28
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 17
@@ -7053,8 +7039,8 @@ end
 arch permanent_lava
 x 17
 y 32
+move_block all
 move_on 0
-no_pass 1
 end
 arch dungeon_magic
 x 17
@@ -7086,8 +7072,8 @@ end
 arch permanent_lava
 x 17
 y 34
+move_block all
 move_on 0
-no_pass 1
 end
 arch dungeon_magic
 x 17
@@ -7096,8 +7082,8 @@ end
 arch permanent_lava
 x 17
 y 35
+move_block all
 move_on 0
-no_pass 1
 end
 arch cave21
 name rock
@@ -7163,11 +7149,11 @@ duration 30
 duration_modifier 2
 end
 end
-arch blocked
+arch cave_15
 x 18
 y 2
 end
-arch blocked
+arch cave_15
 x 18
 y 3
 end
@@ -7442,8 +7428,8 @@ end
 arch permanent_lava
 x 18
 y 32
+move_block all
 move_on 0
-no_pass 1
 end
 arch dungeon_magic
 x 18
@@ -7457,9 +7443,7 @@ end
 arch generic_rune
 name Gothwolte's Galaxy Trap
 msg
-The channeled force of a galaxy is
-ripping your soul apart! You suffer
-horrible torments!
+The channelled force of a galaxy is ripping your soul apart! You suffer horrible torments!
 endmsg
 Cha 40
 hp 100
@@ -7477,8 +7461,8 @@ end
 arch permanent_lava
 x 18
 y 34
+move_block all
 move_on 0
-no_pass 1
 end
 arch dungeon_magic
 x 18
@@ -7504,18 +7488,18 @@ arch cave22
 x 18
 y 36
 end
-arch blocked
+arch cave_15
 x 19
 end
-arch blocked
+arch cave_15
 x 19
 y 1
 end
-arch blocked
+arch cave_15
 x 19
 y 2
 end
-arch blocked
+arch cave_15
 x 19
 y 3
 end
@@ -7523,7 +7507,7 @@ arch dungeon_magic
 x 19
 y 4
 end
-arch blocked
+arch cave_15
 x 19
 y 4
 end
@@ -7588,9 +7572,7 @@ end
 arch magic_mouth
 name 15
 msg
-Oh my god - the statues are moving!
-Suddenly they rise their mechanical
-arms... to unleash a fiery inferno!
+Oh my god - the statues are moving! Suddenly they raise their mechanical arms... to unleash a fiery inferno!
 endmsg
 x 19
 y 10
@@ -7659,8 +7641,7 @@ x 19
 y 16
 speed -0.05
 level 100
-no_pick 1
-no_pass 0
+move_block 0
 blocksview 0
 arch spell_counterwall
 end
@@ -7686,8 +7667,7 @@ x 19
 y 17
 speed -0.05
 level 100
-no_pick 1
-no_pass 0
+move_block 0
 blocksview 0
 arch spell_counterwall
 end
@@ -7768,9 +7748,7 @@ end
 arch magic_mouth
 name 25
 msg
-Oh my god - the statues are moving!
-Suddenly they rise their mechanical
-arms... to unleash a sparkling inferno!
+Oh my god - the statues are moving! Suddenly they raise their mechanical arms... to unleash a sparkling inferno!
 endmsg
 x 19
 y 23
@@ -7829,7 +7807,7 @@ arch dungeon_magic
 x 19
 y 29
 end
-arch blocked
+arch cave_15
 x 19
 y 29
 end
@@ -7837,7 +7815,7 @@ arch dungeon_magic
 x 19
 y 30
 end
-arch blocked
+arch cave_15
 x 19
 y 30
 end
@@ -7902,7 +7880,7 @@ arch dungeon_magic
 x 19
 y 36
 end
-arch blocked
+arch cave_15
 x 19
 y 36
 end
@@ -7944,11 +7922,11 @@ blocksview 0
 arch spell_cause_critical_wounds
 end
 end
-arch blocked
+arch cave_15
 x 20
 y 2
 end
-arch blocked
+arch cave_15
 x 20
 y 3
 end
@@ -8196,7 +8174,7 @@ arch dungeon_magic
 x 20
 y 30
 end
-arch blocked
+arch cave_15
 x 20
 y 30
 end
@@ -8252,7 +8230,7 @@ arch dungeon_magic
 x 20
 y 36
 end
-arch blocked
+arch cave_15
 x 20
 y 36
 end
@@ -8294,11 +8272,11 @@ blocksview 0
 arch spell_cause_critical_wounds
 end
 end
-arch blocked
+arch cave_15
 x 21
 y 2
 end
-arch blocked
+arch cave_15
 x 21
 y 3
 end
@@ -8333,7 +8311,7 @@ name fearsome statue
 face wizard.151
 x 21
 y 5
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 21
@@ -8450,7 +8428,7 @@ name fearsome statue
 face wizard.111
 x 21
 y 15
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 21
@@ -8495,7 +8473,7 @@ name fearsome statue
 face wizard_yellow.151
 x 21
 y 18
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 21
@@ -8612,7 +8590,7 @@ name fearsome statue
 face wizard_yellow.111
 x 21
 y 28
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 21
@@ -8630,7 +8608,7 @@ arch dungeon_magic
 x 21
 y 30
 end
-arch blocked
+arch cave_15
 x 21
 y 30
 end
@@ -8686,7 +8664,7 @@ arch dungeon_magic
 x 21
 y 36
 end
-arch blocked
+arch cave_15
 x 21
 y 36
 end
@@ -8728,11 +8706,11 @@ blocksview 0
 arch spell_cause_critical_wounds
 end
 end
-arch blocked
+arch cave_15
 x 22
 y 2
 end
-arch blocked
+arch cave_15
 x 22
 y 3
 end
@@ -8980,7 +8958,7 @@ arch dungeon_magic
 x 22
 y 30
 end
-arch blocked
+arch cave_15
 x 22
 y 30
 end
@@ -9036,7 +9014,7 @@ arch dungeon_magic
 x 22
 y 36
 end
-arch blocked
+arch cave_15
 x 22
 y 36
 end
@@ -9078,11 +9056,11 @@ blocksview 0
 arch spell_cause_critical_wounds
 end
 end
-arch blocked
+arch cave_15
 x 23
 y 2
 end
-arch blocked
+arch cave_15
 x 23
 y 3
 end
@@ -9206,7 +9184,7 @@ arch dungeon_magic
 x 23
 y 16
 end
-arch blocked
+arch cave_15
 x 23
 y 16
 end
@@ -9214,7 +9192,7 @@ arch dungeon_magic
 x 23
 y 17
 end
-arch blocked
+arch cave_15
 x 23
 y 17
 end
@@ -9326,7 +9304,7 @@ arch dungeon_magic
 x 23
 y 29
 end
-arch blocked
+arch cave_15
 x 23
 y 29
 end
@@ -9334,7 +9312,7 @@ arch dungeon_magic
 x 23
 y 30
 end
-arch blocked
+arch cave_15
 x 23
 y 30
 end
@@ -9397,22 +9375,22 @@ arch dungeon_magic
 x 23
 y 36
 end
-arch blocked
+arch cave_15
 x 23
 y 36
 end
-arch blocked
+arch cave_15
 x 24
 end
-arch blocked
+arch cave_15
 x 24
 y 1
 end
-arch blocked
+arch cave_15
 x 24
 y 2
 end
-arch blocked
+arch cave_15
 x 24
 y 3
 end
@@ -9483,7 +9461,7 @@ name fearsome statue
 face wizard.171
 x 24
 y 8
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 24
@@ -9540,7 +9518,7 @@ name fearsome statue
 face wizard.171
 x 24
 y 12
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 24
@@ -9570,7 +9548,7 @@ arch dungeon_magic
 x 24
 y 15
 end
-arch blocked
+arch cave_15
 x 24
 y 15
 end
@@ -9578,7 +9556,7 @@ arch dungeon_magic
 x 24
 y 16
 end
-arch blocked
+arch cave_15
 x 24
 y 16
 end
@@ -9586,7 +9564,7 @@ arch dungeon_magic
 x 24
 y 17
 end
-arch blocked
+arch cave_15
 x 24
 y 17
 end
@@ -9594,7 +9572,7 @@ arch dungeon_magic
 x 24
 y 18
 end
-arch blocked
+arch cave_15
 x 24
 y 18
 end
@@ -9641,7 +9619,7 @@ name fearsome statue
 face wizard_yellow.171
 x 24
 y 21
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 24
@@ -9698,7 +9676,7 @@ name fearsome statue
 face wizard_yellow.171
 x 24
 y 25
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 24
@@ -9728,7 +9706,7 @@ arch dungeon_magic
 x 24
 y 28
 end
-arch blocked
+arch cave_15
 x 24
 y 28
 end
@@ -9736,7 +9714,7 @@ arch dungeon_magic
 x 24
 y 29
 end
-arch blocked
+arch cave_15
 x 24
 y 29
 end
@@ -9744,7 +9722,7 @@ arch dungeon_magic
 x 24
 y 30
 end
-arch blocked
+arch cave_15
 x 24
 y 30
 end
@@ -9816,22 +9794,22 @@ arch dungeon_magic
 x 24
 y 36
 end
-arch blocked
+arch cave_15
 x 24
 y 36
 end
-arch blocked
+arch cave_15
 x 25
 end
-arch blocked
+arch cave_15
 x 25
 y 1
 end
-arch blocked
+arch cave_15
 x 25
 y 2
 end
-arch blocked
+arch cave_15
 x 25
 y 3
 end
@@ -9839,7 +9817,11 @@ arch dungeon_magic
 x 25
 y 4
 end
-arch blocked
+arch permanent_lava
+x 25
+y 4
+end
+arch cave9
 x 25
 y 4
 end
@@ -9907,7 +9889,7 @@ arch dungeon_magic
 x 25
 y 10
 end
-arch blocked
+arch cave_15
 x 25
 y 10
 end
@@ -9951,7 +9933,7 @@ arch dungeon_magic
 x 25
 y 14
 end
-arch blocked
+arch cave_15
 x 25
 y 14
 end
@@ -9959,7 +9941,7 @@ arch dungeon_magic
 x 25
 y 15
 end
-arch blocked
+arch cave_15
 x 25
 y 15
 end
@@ -9967,7 +9949,7 @@ arch dungeon_magic
 x 25
 y 16
 end
-arch blocked
+arch cave_15
 x 25
 y 16
 end
@@ -9975,7 +9957,7 @@ arch dungeon_magic
 x 25
 y 17
 end
-arch blocked
+arch cave_15
 x 25
 y 17
 end
@@ -9983,7 +9965,7 @@ arch dungeon_magic
 x 25
 y 18
 end
-arch blocked
+arch cave_15
 x 25
 y 18
 end
@@ -9991,7 +9973,7 @@ arch dungeon_magic
 x 25
 y 19
 end
-arch blocked
+arch cave_15
 x 25
 y 19
 end
@@ -10035,7 +10017,7 @@ arch dungeon_magic
 x 25
 y 23
 end
-arch blocked
+arch cave_15
 x 25
 y 23
 end
@@ -10079,7 +10061,7 @@ arch dungeon_magic
 x 25
 y 27
 end
-arch blocked
+arch cave_15
 x 25
 y 27
 end
@@ -10087,7 +10069,7 @@ arch dungeon_magic
 x 25
 y 28
 end
-arch blocked
+arch cave_15
 x 25
 y 28
 end
@@ -10095,7 +10077,7 @@ arch dungeon_magic
 x 25
 y 29
 end
-arch blocked
+arch cave_15
 x 25
 y 29
 end
@@ -10103,7 +10085,7 @@ arch dungeon_magic
 x 25
 y 30
 end
-arch blocked
+arch cave_15
 x 25
 y 30
 end
@@ -10171,7 +10153,7 @@ arch dungeon_magic
 x 25
 y 36
 end
-arch blocked
+arch cave_15
 x 25
 y 36
 end

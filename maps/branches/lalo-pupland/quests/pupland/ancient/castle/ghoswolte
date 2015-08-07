@@ -1,11 +1,12 @@
 arch map
 name Ghoswolte
-difficulty 6
+difficulty 30
 region ancientpupland
 width 25
 height 25
 msg
 Created:  1996-02-15
+Modified: 2012-02-23 Rick Tanner
 endmsg
 end
 arch brush
@@ -1498,7 +1499,6 @@ end
 arch magic_mouth
 msg
 "Please kill me!!"
-
 endmsg
 x 11
 y 21

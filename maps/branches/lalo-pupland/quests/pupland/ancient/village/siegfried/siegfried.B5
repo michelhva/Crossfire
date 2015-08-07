@@ -4,8 +4,11 @@ difficulty 5
 region ancientpupland
 width 16
 height 16
+enter_x 9
+enter_y 9
 msg
 Created:  1996-06-03
+Modified: 2008-10-08 Rick Tanner
 endmsg
 end
 arch blocked
@@ -16,7 +19,7 @@ end
 arch blocked
 name darkness
 y 1
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch mover_3
@@ -517,7 +520,7 @@ end
 arch blocked
 x 9
 y 2
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch blocked

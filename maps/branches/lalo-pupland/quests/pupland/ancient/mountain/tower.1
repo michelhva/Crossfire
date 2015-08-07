@@ -1,11 +1,14 @@
 arch map
-name Tower
-difficulty 5
+name Tower of the Necromancer, Entrance
+difficulty 50
 region ancientpupland
 width 26
 height 33
+enter_x 10
+enter_y 20
 msg
-Created:  1996-02-31
+Created:  1996-05-31
+Modified: 2008-10-27 Rick Tanner
 endmsg
 end
 arch large_stones
@@ -1166,8 +1169,7 @@ end
 arch magic_mouth
 name warning
 msg
-You feel uncomfortable...
-This room smells like DEATH!
+You feel uncomfortable... This room smells like DEATH!
 endmsg
 x 5
 y 5
@@ -3123,7 +3125,7 @@ activate_on_release 1
 end
 arch necromancer
 msg
-@match [Ss]iegfried
+@match siegfried
 I hate Siegfried!!! He's a dork!
 @match *
 Grr... You're getting on my nerves!
@@ -5159,9 +5161,7 @@ arch magic_mouth
 name 20
 msg
 The Necromancer say:
-Arrgh! Leave me alone - I didn't
-invite you! Continue to annoy me and
-I'll teach you some respect!
+Arrgh! Leave me alone - I didn't invite you! Continue to annoy me and I'll teach you some respect!
 endmsg
 x 21
 y 24
@@ -5628,8 +5628,7 @@ end
 arch magic_mouth
 name 23
 msg
-<The Necromancer opened a magic
-portal and disappeared...>
+<The Necromancer opened a magic portal and disappeared...>
 endmsg
 x 24
 y 20
@@ -5834,7 +5833,6 @@ sp 0
 x 25
 y 24
 type 0
-move_on 0
 end
 arch blocked
 x 25
