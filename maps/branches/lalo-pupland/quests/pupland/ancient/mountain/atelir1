@@ -1,11 +1,14 @@
 arch map
-name Atelir
+name Atelir of Artifact (Prison)
 difficulty 40
 region ancientpupland
 width 30
 height 28
+enter_x 15
+enter_y 7
 msg
-Created:  1997-02-28
+Created:  1997-01-28
+Modified: 2012-02-23 Rick Tanner
 endmsg
 end
 arch flagstone
@@ -1221,10 +1224,7 @@ end
 arch locked_door2
 slaying barbarian_cristalkey
 msg
-You managed to open this door.
-But you couldn't.
-You fould a spherical hollow on the
-door.
+You managed to open this door.  But you couldn't.  You found a spherical hollow on the door.
 endmsg
 x 6
 y 16
@@ -2147,14 +2147,10 @@ name Smith
 msg
 @match necromancer
 He uses the unholy word,
-        The Resurrection of
-        Dead People.
+        The Resurrection of Dead People.
 Be careful!
 @match *
-Thank you for saving me.
-Now I am set free from the Necromancer
-and creating artifacts. This stupid
-katana started annoying me anyways!
+Thank you for saving me.  Now I am set free from the Necromancer and creating artifacts.  This stupid katana started annoying me anyways!
 endmsg
 Con 100
 hp 5000
@@ -3517,8 +3513,8 @@ exp 0
 ac 0
 x 18
 y 8
+move_block 0
 alive 0
-no_pass 0
 blocksview 1
 pass_thru 0
 end
@@ -3543,8 +3539,8 @@ exp 0
 ac 0
 x 18
 y 10
+move_block 0
 alive 0
-no_pass 0
 blocksview 1
 pass_thru 0
 end

@@ -1,12 +1,14 @@
 arch map
 name House
-difficulty 1
+difficulty 25
 region ancientpupland
 width 16
 height 22
+enter_x 7
+enter_y 1
 msg
-Created:  1996-02-07
-Modified: 2007-11-04 Andreas Kirschbaum
+Created:  1996-05-07
+Modified: 2012-03-20 Rick Tanner
 endmsg
 end
 arch invis_exit
@@ -406,7 +408,7 @@ end
 arch scroll
 name trap!
 msg
-This is a demontrap. Run away!
+This is a demon trap.  Run away!
 endmsg
 x 3
 y 4
@@ -878,7 +880,7 @@ end
 arch cobblestones2
 x 7
 end
-arch oakdoor
+arch oakdoor_2
 slaying village
 hp 5
 sp 14
@@ -924,7 +926,7 @@ end
 arch door_look_1
 x 7
 y 8
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 7
@@ -1023,7 +1025,7 @@ end
 arch door_look_2
 x 8
 y 4
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 8

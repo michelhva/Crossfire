@@ -1,12 +1,15 @@
 arch map
 name Path
-difficulty 1
+difficulty 35
 region ancientpupland
 darkness 3
 width 35
 height 30
+enter_x 3
+enter_y 3
 msg
-Created:  1996-02-08
+Created:  1996-12-08
+Modified: 2012-02-24 Rick Tanner
 endmsg
 end
 arch blocked
@@ -837,7 +840,7 @@ arch mountain
 name rocks
 x 5
 y 13
-no_pass 1
+move_block all
 end
 arch mountain
 x 5
@@ -1044,7 +1047,7 @@ arch mountain
 name rocks
 x 6
 y 13
-no_pass 1
+move_block all
 end
 arch mountain_cave
 name hole
@@ -1246,13 +1249,13 @@ arch mountain
 name rocks
 x 7
 y 12
-no_pass 1
+move_block all
 end
 arch mountain
 name rocks
 x 7
 y 13
-no_pass 1
+move_block all
 end
 arch mountain
 x 7
@@ -4712,9 +4715,7 @@ y 12
 end
 arch magic_mouth
 msg
-You can feel the presence of powerful
-earth-spirits. It might be dangerous
-to jump down this hole...
+You can feel the presence of powerful earth-spirits.  It might be dangerous to jump down this hole...
 endmsg
 x 22
 y 13
@@ -4828,13 +4829,11 @@ can_use_ring 1
 can_use_skill 1
 has_ready_skill 1
 can_see_in_dark 1
-can_apply 1
 arch skill_throwing
 end
 arch t_boulder
 nrof 10
 weight 10000
-is_thrown 1
 end
 end
 arch blocked
@@ -4882,11 +4881,9 @@ can_use_ring 1
 can_use_skill 1
 has_ready_skill 1
 can_see_in_dark 1
-can_apply 1
 arch t_boulder
 nrof 10
 weight 10000
-is_thrown 1
 end
 arch skill_throwing
 end
@@ -4901,9 +4898,7 @@ y 29
 end
 arch magic_mouth
 msg
-Dammit! The tunnel must have collapsed
-recently. Huge rocks are blocking the
-way now.
+Dammit! The tunnel must have collapsed recently.  Huge rocks are blocking the way now.
 endmsg
 x 23
 resist_physical 30
@@ -5208,12 +5203,8 @@ y 22
 end
 arch magic_mouth
 msg
-The spirit of the mountain touches
-your mind:
-"I wanted to prevent mortals from
-entering the evil castle again. You
-defeated my minions  but you are still
-a child yet."
+The spirit of the mountain touches your mind:
+"I wanted to prevent mortals from entering the evil castle again.  You defeated my minions but you are still a child yet."
 endmsg
 x 24
 y 23
@@ -5547,11 +5538,9 @@ can_use_ring 1
 can_use_skill 1
 has_ready_skill 1
 can_see_in_dark 1
-can_apply 1
 arch t_boulder
 nrof 10
 weight 10000
-is_thrown 1
 end
 arch skill_throwing
 end
@@ -5601,11 +5590,9 @@ can_use_ring 1
 can_use_skill 1
 has_ready_skill 1
 can_see_in_dark 1
-can_apply 1
 arch t_boulder
 nrof 10
 weight 10000
-is_thrown 1
 end
 arch skill_throwing
 end

@@ -1,12 +1,14 @@
 arch map
-name Tower
-difficulty 5
+name Tower of the Necromancer, Level 2
+difficulty 50
 region ancientpupland
 width 18
 height 23
+enter_x 11
+enter_y 6
 msg
 Created:  1996-06-01
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2012-02-18 Rick Tanner
 endmsg
 end
 arch blocked
@@ -103,14 +105,12 @@ hp 0
 sp 0
 y 17
 type 0
-move_on 0
 end
 arch magic_mouth
 name 10
 msg
 The Necromancer say:
-Hah! This time you'll die. Good bye
-my friend. Have fun with my pets...
+Hah! This time you'll die.  Good bye my friend.  Have fun with my pets...
 endmsg
 y 18
 connected 10
@@ -1365,7 +1365,7 @@ activate_on_release 1
 end
 arch necromancer
 msg
-@match [Ss]iegfried
+@match siegfried
 I hate Siegfried!!! He's a liar!
 @match *
 Arrgh! HIM again!
@@ -1694,6 +1694,10 @@ x 7
 y 13
 end
 arch flagstone
+x 7
+y 13
+end
+arch swall_1_2_half
 x 7
 y 13
 end
@@ -2303,6 +2307,10 @@ x 10
 y 4
 speed 0.500000
 connected 9
+end
+arch swall_1_1_half
+x 10
+y 4
 end
 arch dungeon_magic
 x 10

@@ -1,11 +1,14 @@
 arch map
-name Siegfried
+name Siegfried's House, Basement Level 1
 difficulty 1
 region ancientpupland
-width 16
+width 11
 height 16
+enter_x 2
+enter_y 2
 msg
 Created:  1996-06-05
+Modified: 2011-12-01 Rick Tanner
 endmsg
 end
 arch flagstone
@@ -319,15 +322,14 @@ y 9
 end
 arch magic_mouth
 msg
-If you want to Open the gate,
-say password.
+If you want to Open the gate, say password.
 endmsg
 x 3
 y 10
 end
 arch magic_ear
 msg
-@match open|Open|OPEN
+@match open
 Click.
 endmsg
 x 3

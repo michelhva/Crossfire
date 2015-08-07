@@ -4,8 +4,10 @@ difficulty 1
 region ancientpupland
 width 16
 height 16
+enter_y 9
 msg
 Created:  1997-02-03
+Modified: 2012-02-26 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -459,7 +461,7 @@ end
 arch door_look_1
 x 6
 y 4
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 6
@@ -617,7 +619,7 @@ end
 arch door_look_1
 x 7
 y 12
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 7
@@ -708,7 +710,7 @@ end
 arch door_look_1
 x 8
 y 12
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 8
@@ -767,19 +769,12 @@ y 5
 end
 arch woman
 msg
-@match Artifact|artifact
+@match artifact
 I don't know any details about it.
-@match Necromancer|necromancer
-He lives at the tower in the east
-mountain. Maybe my husband is
-imprisoned near that tower. Please save
-my busband!!
+@match necromancer
+He lives at the tower in the east mountain.  Maybe my husband is imprisoned near that tower.  Please save my husband!!
 @match *
-The Necromancer took my husband away
-in order to make new Artifacts.
-I asked Siegfried to save him,
-but Siegfried is busy at protecting
-this village against the monsters.
+The Necromancer took my husband away in order to make new Artifacts.  I asked Siegfried to save him, but Siegfried is busy at protecting this village against the monsters.
 endmsg
 x 9
 y 5
@@ -798,7 +793,7 @@ end
 arch door_look_1
 x 9
 y 7
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 9

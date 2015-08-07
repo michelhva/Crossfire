@@ -4,8 +4,11 @@ difficulty 1
 region ancientpupland
 width 16
 height 16
+enter_x 8
+enter_y 14
 msg
-Created:  1996-02-17
+Created:  1996-05-17
+Modified: 2012-02-24 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -342,17 +345,12 @@ end
 arch a_townsman2
 name father
 msg
-@match [Ss]iegfried
-This country is in serious need of a
-hero. Siegfried will save us!
-@match [Gg]othwolte
-Shhh! You should only wisper that name.
-It can be dangerous to speak it loud.
+@match siegfried
+This country is in serious need of a hero.  Siegfried will save us!
+@match gothwolte
+Shhh! You should only whisper that name.  It can be dangerous to speak it loud.
 @match *
-Damn, we are into real big trouble these
-days! The Evil Masters, the Necromancer
-and then this mysterious creature
-called `Gothwolte'...
+Damn, we are into real big trouble these days! The Evil Masters, the Necromancer and then this mysterious creature called `Gothwolte'...
 endmsg
 hp 150
 maxhp 150
@@ -384,7 +382,7 @@ end
 arch door_look_1
 x 4
 y 8
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 4
@@ -513,12 +511,10 @@ end
 arch woman
 name mother
 msg
-@match Daughter|daughter
-Two weeks ago, suddenly she lost her
-speech...
+@match daughter
+Two weeks ago, suddenly she lost her speech...
 @match *
-Hello, adventurer..
-Please don't disturb my Daughter.
+Hello, adventurer.. Please don't disturb my Daughter.
 endmsg
 face woman.171
 hp 180
@@ -694,7 +690,7 @@ end
 arch door_look_2
 x 8
 y 4
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 8
@@ -747,7 +743,7 @@ end
 arch door_look_1
 x 8
 y 12
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 8
@@ -875,9 +871,9 @@ end
 arch woman
 name Janet
 msg
-@match Siegfried|siegfried
+@match siegfried
 ....
-@match Jacob|jacob
+@match jacob
 .. he was killed by ...
 @match *
 ...
