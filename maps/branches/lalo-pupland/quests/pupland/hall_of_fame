@@ -4,8 +4,11 @@ difficulty 1
 region pupland
 width 13
 height 28
+enter_x 6
+enter_y 26
 msg
-Created:  1997-02-02
+Created:  1997-07-02
+Modified: 2012-04-05 Rick Tanner
 endmsg
 end
 arch blocked
@@ -830,19 +833,16 @@ y 2
 end
 arch monument
 msg
-The greatest Heroes of Pupland:
+The greatest Heroes of Pup Land:
 ------------------------------
-
-   Allarounder, the Murderer
-   BugMaster, the Dorobou
-   POL, the Ninja Master
-   Seventh, the Fighter
-   simon, the dwarf
-   SlimeIV, the High Priest
-   red_blaze, the Gargoyle
 endmsg
 x 6
 y 2
+arch event_apply
+name pupland
+title Python
+slaying /python/misc/hall_of_fame.py
+end
 end
 arch flagstone
 x 6
@@ -891,14 +891,7 @@ end
 arch sage
 msg
 @match *
-Sorry, the Monunent Service has now
-stopped. If you'd like oyoyo to
-engrave your name, please access to
-the following WWW site:
-http://tokweb.ics.es.osaka-u.ac.jp/
-~k-yosida/mb/cf-mb.cgi
-At this site, you can also get
-some information about pupland.
+Hello.  On this monument is recorded the name of heroes of Pup Land.  Don't forget to check it out, and if you don't have your name yet, then maybe consider trying to have it?
 endmsg
 x 6
 y 13
