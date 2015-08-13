@@ -1,11 +1,14 @@
 arch map
-name Cave Weapon
-difficulty 1
+name Cave Weapon, Genome-Project Testing Room
+difficulty 35
 region pupland
 width 18
 height 27
+enter_x 15
+enter_y 15
 msg
 Created:  1996-02-08
+Modified: 2012-03-14 Rick Tanner
 endmsg
 end
 arch blocked
@@ -332,18 +335,11 @@ arch guildmaster
 name prof. Gill
 msg
 @match genome|project|kobold
-After decades of reasearch I have
-created the invincible "hyper kobold".
-With this weapon in our hands, we can
-win the war against resistance.
-@match yes|Yes
-Do your best, bua ha ha!
-Hehehe!!
-<Prof. Gill seems to be the typical
- sort of nutty scientist>
+After decades of reasearch I have created the invincible "hyper kobold."  With this weapon in our hands, we can win the war against resistance.
+@match yes
+Do your best, bua ha ha! He he he!! <Prof. Gill seems to be the typical sort of nutty scientist>
 @match *
-Welcome to my laboratory, adventurer!
-Do you wanna fight against him?
+Welcome to my laboratory, adventurer! Do you wanna fight against him?
 endmsg
 hp 500
 maxhp 500
@@ -655,6 +651,10 @@ arch blocked
 x 3
 y 17
 end
+arch flagstone
+x 3
+y 18
+end
 arch dun2
 x 3
 y 18
@@ -857,6 +857,10 @@ arch blocked
 x 4
 y 17
 end
+arch flagstone
+x 4
+y 18
+end
 arch dun2
 x 4
 y 18
@@ -1010,6 +1014,10 @@ arch flagstone
 x 5
 y 13
 end
+arch swall_1_4_half
+x 5
+y 13
+end
 arch dun12
 x 5
 y 13
@@ -1045,6 +1053,10 @@ end
 arch blocked
 x 5
 y 17
+end
+arch flagstone
+x 5
+y 18
 end
 arch dun2
 x 5
@@ -1192,7 +1204,7 @@ arch flagstone
 x 6
 y 13
 end
-arch swall_1_4
+arch swall_2_1_2
 x 6
 y 13
 end
@@ -1225,6 +1237,10 @@ end
 arch blocked
 x 6
 y 17
+end
+arch flagstone
+x 6
+y 18
 end
 arch dun2
 x 6
@@ -1395,7 +1411,7 @@ arch flagstone
 x 7
 y 13
 end
-arch swall_1_3
+arch swall_2_1_2
 x 7
 y 13
 end
@@ -1427,6 +1443,10 @@ end
 arch blocked
 x 7
 y 17
+end
+arch flagstone
+x 7
+y 18
 end
 arch dun9
 x 7
@@ -1487,6 +1507,10 @@ arch dun2
 x 8
 y 2
 end
+arch swall_1_1_half
+x 8
+y 2
+end
 arch dungeon_magic
 x 8
 y 3
@@ -1495,7 +1519,7 @@ arch pstone_1
 x 8
 y 3
 end
-arch swall_1_1
+arch swall_2_1_1
 x 8
 y 3
 end
@@ -1587,6 +1611,10 @@ arch dun0
 x 8
 y 13
 end
+arch swall_1_3_half
+x 8
+y 13
+end
 arch dungeon_magic
 x 8
 y 14
@@ -1614,6 +1642,10 @@ end
 arch blocked
 x 8
 y 18
+end
+arch flagstone
+x 8
+y 19
 end
 arch dun9
 x 8
@@ -1807,7 +1839,7 @@ arch flagstone
 x 9
 y 13
 end
-arch swall_1_4
+arch swall_2_1_2
 x 9
 y 13
 end
@@ -1847,6 +1879,10 @@ end
 arch blocked
 x 9
 y 19
+end
+arch flagstone
+x 9
+y 20
 end
 arch dun9
 x 9
@@ -1903,6 +1939,10 @@ arch dun2
 x 10
 y 2
 end
+arch swall_1_1_half
+x 10
+y 2
+end
 arch dungeon_magic
 x 10
 y 3
@@ -1911,7 +1951,7 @@ arch pstone_1
 x 10
 y 3
 end
-arch swall_1_1
+arch swall_2_1_1
 x 10
 y 3
 end
@@ -2018,7 +2058,7 @@ arch flagstone
 x 10
 y 13
 end
-arch swall_1_3
+arch swall_2_1_2
 x 10
 y 13
 end
@@ -2062,6 +2102,10 @@ end
 arch blocked
 x 10
 y 20
+end
+arch flagstone
+x 10
+y 21
 end
 arch dun2
 x 10
@@ -2201,6 +2245,10 @@ arch dun0
 x 11
 y 13
 end
+arch swall_1_3_half
+x 11
+y 13
+end
 arch dungeon_magic
 x 11
 y 14
@@ -2252,9 +2300,17 @@ arch blocked
 x 11
 y 20
 end
+arch flagstone
+x 11
+y 21
+end
 arch dun14
 x 11
 y 21
+end
+arch flagstone
+x 11
+y 22
 end
 arch dun3
 x 11
@@ -2392,7 +2448,7 @@ arch flagstone
 x 12
 y 13
 end
-arch swall_1_4
+arch swall_2_1_2
 x 12
 y 13
 end
@@ -2567,7 +2623,7 @@ arch flagstone
 x 13
 y 13
 end
-arch swall_1_3
+arch swall_2_1_2
 x 13
 y 13
 end
@@ -2739,6 +2795,10 @@ arch dun4
 x 14
 y 13
 end
+arch swall_1_3_half
+x 14
+y 13
+end
 arch dungeon_magic
 x 14
 y 14
@@ -2882,10 +2942,7 @@ end
 arch sign
 name info
 msg
-Lab: Genome-Project Testing Room.
-(You cannot use magic here)
-Demiliches live in the hole behide you.
-Don't disturb them...
+Lab: Genome-Project Testing Room. (You cannot use magic here) Demiliches live in the hole behind you.  Don't disturb them...
 endmsg
 x 15
 y 14

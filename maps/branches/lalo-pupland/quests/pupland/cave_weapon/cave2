@@ -1,12 +1,14 @@
 arch map
-name Cave Weapon
+name Cave Weapon, Antechamber
 difficulty 10
 region pupland
 width 21
 height 32
+enter_x 4
+enter_y 4
 msg
 Created:  1996-02-08
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2011-10-17 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -29,7 +31,7 @@ end
 arch dungeon_floor
 y 6
 end
-arch mine2
+arch cave_21
 y 6
 end
 arch pstone_2
@@ -44,70 +46,70 @@ end
 arch cave2
 y 9
 end
-arch blocked
+arch cave_15
 y 10
 end
-arch blocked
+arch cave_15
 y 11
 end
-arch blocked
+arch cave_15
 y 12
 end
-arch blocked
+arch cave_15
 y 13
 end
-arch blocked
+arch cave_15
 y 14
 end
-arch blocked
+arch cave_15
 y 15
 end
-arch blocked
+arch cave_15
 y 16
 end
-arch blocked
+arch cave_15
 y 17
 end
-arch blocked
+arch cave_15
 y 18
 end
-arch blocked
+arch cave_15
 y 19
 end
-arch blocked
+arch cave_15
 y 20
 end
-arch blocked
+arch cave_15
 y 21
 end
-arch blocked
+arch cave_15
 y 22
 end
-arch blocked
+arch cave_15
 y 23
 end
-arch blocked
+arch cave_15
 y 24
 end
-arch blocked
+arch cave_15
 y 25
 end
-arch blocked
+arch cave_15
 y 26
 end
-arch blocked
+arch cave_15
 y 27
 end
-arch blocked
+arch cave_15
 y 28
 end
-arch blocked
+arch cave_15
 y 29
 end
-arch blocked
+arch cave_15
 y 30
 end
-arch blocked
+arch cave_15
 y 31
 end
 arch dungeon_floor
@@ -159,7 +161,7 @@ arch dungeon_floor
 x 1
 y 6
 end
-arch mine2
+arch cave_21
 x 1
 y 6
 end
@@ -203,93 +205,93 @@ arch cave23
 x 1
 y 12
 end
-arch blocked
+arch cave_15
 x 1
 y 13
 end
-arch blocked
+arch cave_15
 x 1
 y 14
 end
-arch blocked
+arch cave_15
 x 1
 y 15
 end
-arch blocked
+arch cave_15
 x 1
 y 16
 end
-arch blocked
+arch cave_15
 x 1
 y 17
 end
-arch blocked
+arch cave_15
 x 1
 y 18
 end
-arch blocked
+arch cave_15
 x 1
 y 19
 end
-arch blocked
+arch cave_15
 x 1
 y 20
 end
-arch blocked
+arch cave_15
 x 1
 y 21
 end
-arch blocked
+arch cave_15
 x 1
 y 22
 end
-arch blocked
+arch cave_15
 x 1
 y 23
 end
-arch blocked
+arch cave_15
 x 1
 y 24
 end
-arch blocked
+arch cave_15
 x 1
 y 25
 end
-arch blocked
+arch cave_15
 x 1
 y 26
 end
-arch blocked
+arch cave_15
 x 1
 y 27
 end
-arch blocked
+arch cave_15
 x 1
 y 28
 end
-arch blocked
+arch cave_15
 x 1
 y 29
 end
-arch blocked
+arch cave_15
 x 1
 y 30
 end
-arch blocked
+arch cave_15
 x 1
 y 31
 end
 arch dungeon_floor
 x 2
 end
-arch mine11
+arch cave_22
 x 2
 end
 arch dungeon_floor
 x 2
 y 1
 end
-arch mine11
+arch cave_22
 x 2
 y 1
 end
@@ -297,7 +299,7 @@ arch dungeon_floor
 x 2
 y 2
 end
-arch mine11
+arch cave_22
 x 2
 y 2
 end
@@ -305,7 +307,7 @@ arch dungeon_floor
 x 2
 y 3
 end
-arch mine11
+arch cave_22
 x 2
 y 3
 end
@@ -313,7 +315,7 @@ arch dungeon_floor
 x 2
 y 4
 end
-arch mine4
+arch cave_16
 x 2
 y 4
 end
@@ -325,7 +327,7 @@ arch dungeon_floor
 x 2
 y 6
 end
-arch mine2
+arch cave_21
 x 2
 y 6
 end
@@ -369,43 +371,43 @@ arch cave17
 x 2
 y 13
 end
-arch blocked
+arch cave_15
 x 2
 y 14
 end
-arch blocked
+arch cave_15
 x 2
 y 15
 end
-arch blocked
+arch cave_15
 x 2
 y 16
 end
-arch blocked
+arch cave_15
 x 2
 y 17
 end
-arch blocked
+arch cave_15
 x 2
 y 18
 end
-arch blocked
+arch cave_15
 x 2
 y 19
 end
-arch blocked
+arch cave_15
 x 2
 y 20
 end
-arch blocked
+arch cave_15
 x 2
 y 21
 end
-arch blocked
+arch cave_15
 x 2
 y 22
 end
-arch blocked
+arch cave_15
 x 2
 y 23
 end
@@ -425,30 +427,30 @@ arch cave23
 x 2
 y 26
 end
-arch blocked
+arch cave_15
 x 2
 y 27
 end
-arch blocked
+arch cave_15
 x 2
 y 28
 end
-arch blocked
+arch cave_15
 x 2
 y 29
 end
-arch blocked
+arch cave_15
 x 2
 y 30
 end
-arch blocked
+arch cave_15
 x 2
 y 31
 end
-arch blocked
+arch cave_15
 x 3
 end
-arch blocked
+arch cave_15
 x 3
 y 1
 end
@@ -456,7 +458,7 @@ arch dungeon_floor
 x 3
 y 2
 end
-arch mine9
+arch cave_20
 x 3
 y 2
 end
@@ -464,7 +466,7 @@ arch dungeon_floor
 x 3
 y 3
 end
-arch mine14
+arch cave_20
 x 3
 y 3
 end
@@ -472,7 +474,7 @@ arch dungeon_floor
 x 3
 y 4
 end
-arch mine12
+arch cave_23
 x 3
 y 4
 end
@@ -492,14 +494,13 @@ material 0
 randomitems none
 move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch dungeon_floor
 x 3
 y 6
 end
-arch mine9
+arch cave_20
 x 3
 y 6
 end
@@ -507,7 +508,7 @@ arch dungeon_floor
 x 3
 y 7
 end
-arch mine3
+arch cave_22
 x 3
 y 7
 end
@@ -515,7 +516,7 @@ arch pstone_2
 x 3
 y 8
 end
-arch mine3
+arch cave_22
 x 3
 y 8
 end
@@ -555,35 +556,39 @@ arch cave3
 x 3
 y 14
 end
+arch dungeon_floor
+x 3
+y 15
+end
 arch cave23
 x 3
 y 15
 end
-arch blocked
+arch cave_15
 x 3
 y 16
 end
-arch blocked
+arch cave_15
 x 3
 y 17
 end
-arch blocked
+arch cave_15
 x 3
 y 18
 end
-arch blocked
+arch cave_15
 x 3
 y 19
 end
-arch blocked
+arch cave_15
 x 3
 y 20
 end
-arch blocked
+arch cave_15
 x 3
 y 21
 end
-arch blocked
+arch cave_15
 x 3
 y 22
 end
@@ -611,27 +616,27 @@ arch cave2
 x 3
 y 26
 end
-arch blocked
+arch cave_15
 x 3
 y 27
 end
-arch blocked
+arch cave_15
 x 3
 y 28
 end
-arch blocked
+arch cave_15
 x 3
 y 29
 end
-arch blocked
+arch cave_15
 x 3
 y 30
 end
-arch blocked
+arch cave_15
 x 3
 y 31
 end
-arch blocked
+arch cave_15
 x 4
 end
 arch dungeon_floor
@@ -714,10 +719,10 @@ monster 1
 run_away 15
 can_cast_spell 1
 can_use_scroll 1
+can_use_range 1
 can_use_bow 1
 can_use_armour 0
 can_use_weapon 0
-can_use_wand 1
 end
 arch dungeon_floor
 x 4
@@ -731,7 +736,7 @@ arch dungeon_floor
 x 4
 y 9
 end
-arch mine9
+arch cave_20
 x 4
 y 9
 end
@@ -739,7 +744,7 @@ arch dungeon_floor
 x 4
 y 10
 end
-arch mine3
+arch cave_22
 x 4
 y 10
 end
@@ -747,7 +752,7 @@ arch dungeon_floor
 x 4
 y 11
 end
-arch mine3
+arch cave_22
 x 4
 y 11
 end
@@ -767,7 +772,7 @@ arch dungeon_floor
 x 4
 y 14
 end
-arch mine6
+arch cave_17
 x 4
 y 14
 end
@@ -778,6 +783,10 @@ end
 arch cave7
 x 4
 y 15
+end
+arch dungeon_floor
+x 4
+y 16
 end
 arch cave17
 x 4
@@ -799,17 +808,25 @@ arch cave3
 x 4
 y 18
 end
+arch dungeon_floor
+x 4
+y 19
+end
 arch cave23
 x 4
 y 19
 end
-arch blocked
+arch cave_15
 x 4
 y 20
 end
-arch blocked
+arch cave_15
 x 4
 y 21
+end
+arch dungeon_floor
+x 4
+y 22
 end
 arch cave24
 x 4
@@ -827,7 +844,7 @@ arch pstone_2
 x 4
 y 24
 end
-arch mine6
+arch cave_17
 x 4
 y 24
 end
@@ -847,30 +864,30 @@ arch cave17
 x 4
 y 27
 end
-arch blocked
+arch cave_15
 x 4
 y 28
 end
-arch blocked
+arch cave_15
 x 4
 y 29
 end
-arch blocked
+arch cave_15
 x 4
 y 30
 end
-arch blocked
+arch cave_15
 x 4
 y 31
 end
-arch blocked
+arch cave_15
 x 5
 end
 arch dungeon_floor
 x 5
 y 1
 end
-arch mine2
+arch cave_21
 x 5
 y 1
 end
@@ -922,10 +939,10 @@ monster 1
 run_away 15
 can_cast_spell 1
 can_use_scroll 1
+can_use_range 1
 can_use_bow 1
 can_use_armour 0
 can_use_weapon 0
-can_use_wand 1
 end
 arch dungeon_floor
 x 5
@@ -955,7 +972,7 @@ arch dungeon_floor
 x 5
 y 12
 end
-arch mine9
+arch cave_20
 x 5
 y 12
 end
@@ -963,7 +980,7 @@ arch dungeon_floor
 x 5
 y 13
 end
-arch mine3
+arch cave_22
 x 5
 y 13
 end
@@ -971,7 +988,7 @@ arch dungeon_floor
 x 5
 y 14
 end
-arch mine12
+arch cave_23
 x 5
 y 14
 end
@@ -1047,7 +1064,7 @@ arch pstone_2
 x 5
 y 24
 end
-arch mine2
+arch cave_21
 x 5
 y 24
 end
@@ -1071,17 +1088,20 @@ arch cave17
 x 5
 y 28
 end
-arch blocked
+arch cave_15
 x 5
 y 29
 end
-arch blocked
+arch cave_15
 x 5
 y 30
 end
-arch blocked
+arch cave_15
 x 5
 y 31
+end
+arch dungeon_floor
+x 6
 end
 arch cave_6
 x 6
@@ -1138,10 +1158,10 @@ monster 1
 run_away 15
 can_cast_spell 1
 can_use_scroll 1
+can_use_range 1
 can_use_bow 1
 can_use_armour 0
 can_use_weapon 0
-can_use_wand 1
 end
 arch dungeon_floor
 x 6
@@ -1183,10 +1203,10 @@ monster 1
 run_away 15
 can_cast_spell 1
 can_use_scroll 1
+can_use_range 1
 can_use_bow 1
 can_use_armour 0
 can_use_weapon 0
-can_use_wand 1
 end
 arch dungeon_floor
 x 6
@@ -1252,7 +1272,7 @@ arch dungeon_floor
 x 6
 y 24
 end
-arch mine9
+arch cave_20
 x 6
 y 24
 end
@@ -1260,7 +1280,7 @@ arch dungeon_floor
 x 6
 y 25
 end
-arch mine3
+arch cave_22
 x 6
 y 25
 end
@@ -1268,7 +1288,7 @@ arch dungeon_floor
 x 6
 y 26
 end
-arch mine3
+arch cave_22
 x 6
 y 26
 end
@@ -1311,7 +1331,7 @@ end
 arch dungeon_floor
 x 7
 end
-arch mine2
+arch cave_21
 x 7
 end
 arch dungeon_floor
@@ -1354,10 +1374,10 @@ monster 1
 run_away 15
 can_cast_spell 1
 can_use_scroll 1
+can_use_range 1
 can_use_bow 1
 can_use_armour 0
 can_use_weapon 0
-can_use_wand 1
 end
 arch dungeon_floor
 x 7
@@ -1391,10 +1411,10 @@ monster 1
 run_away 15
 can_cast_spell 1
 can_use_scroll 1
+can_use_range 1
 can_use_bow 1
 can_use_armour 0
 can_use_weapon 0
-can_use_wand 1
 end
 arch dungeon_floor
 x 7
@@ -1432,10 +1452,10 @@ monster 1
 run_away 15
 can_cast_spell 1
 can_use_scroll 1
+can_use_range 1
 can_use_bow 1
 can_use_armour 0
 can_use_weapon 0
-can_use_wand 1
 end
 arch dungeon_floor
 x 7
@@ -1469,10 +1489,10 @@ monster 1
 run_away 15
 can_cast_spell 1
 can_use_scroll 1
+can_use_range 1
 can_use_bow 1
 can_use_armour 0
 can_use_weapon 0
-can_use_wand 1
 end
 arch dungeon_floor
 x 7
@@ -1611,6 +1631,10 @@ end
 arch cave_4
 x 7
 y 26
+end
+arch dungeon_floor
+x 7
+y 27
 end
 arch cave_5
 x 7
@@ -1651,7 +1675,7 @@ end
 arch dungeon_floor
 x 8
 end
-arch mine2
+arch cave_21
 x 8
 end
 arch dungeon_floor
@@ -1702,10 +1726,10 @@ monster 1
 run_away 15
 can_cast_spell 1
 can_use_scroll 1
+can_use_range 1
 can_use_bow 1
 can_use_armour 0
 can_use_weapon 0
-can_use_wand 1
 end
 arch dungeon_floor
 x 8
@@ -1747,10 +1771,10 @@ monster 1
 run_away 15
 can_cast_spell 1
 can_use_scroll 1
+can_use_range 1
 can_use_bow 1
 can_use_armour 0
 can_use_weapon 0
-can_use_wand 1
 end
 arch dungeon_floor
 x 8
@@ -1865,7 +1889,7 @@ arch dungeon_floor
 x 8
 y 28
 end
-arch mine2
+arch cave_21
 x 8
 y 28
 end
@@ -1885,6 +1909,9 @@ arch cave11
 x 8
 y 31
 end
+arch dungeon_floor
+x 9
+end
 arch cave_5
 x 9
 end
@@ -1944,10 +1971,10 @@ monster 1
 run_away 15
 can_cast_spell 1
 can_use_scroll 1
+can_use_range 1
 can_use_bow 1
 can_use_armour 0
 can_use_weapon 0
-can_use_wand 1
 end
 arch dungeon_floor
 x 9
@@ -1985,7 +2012,7 @@ arch dungeon_floor
 x 9
 y 14
 end
-arch mine4
+arch cave_16
 x 9
 y 14
 end
@@ -2002,7 +2029,7 @@ arch dungeon_floor
 x 9
 y 16
 end
-arch mine10
+arch cave_24
 x 9
 y 16
 end
@@ -2083,6 +2110,10 @@ arch dungeon_floor
 x 9
 y 27
 end
+arch dungeon_floor
+x 9
+y 28
+end
 arch cave_5
 x 9
 y 28
@@ -2107,8 +2138,12 @@ arch cave16
 x 9
 y 31
 end
-arch blocked
+arch cave_15
 x 10
+end
+arch dungeon_floor
+x 10
+y 1
 end
 arch cave_5
 x 10
@@ -2182,10 +2217,10 @@ monster 1
 run_away 15
 can_cast_spell 1
 can_use_scroll 1
+can_use_range 1
 can_use_bow 1
 can_use_armour 0
 can_use_weapon 0
-can_use_wand 1
 end
 arch dungeon_floor
 x 10
@@ -2199,7 +2234,7 @@ arch dungeon_floor
 x 10
 y 10
 end
-arch mine11
+arch cave_24
 x 10
 y 10
 end
@@ -2207,7 +2242,7 @@ arch dungeon_floor
 x 10
 y 11
 end
-arch mine3
+arch cave_22
 x 10
 y 11
 end
@@ -2215,7 +2250,7 @@ arch dungeon_floor
 x 10
 y 12
 end
-arch mine3
+arch cave_22
 x 10
 y 12
 end
@@ -2223,7 +2258,7 @@ arch dungeon_floor
 x 10
 y 13
 end
-arch mine14
+arch cave_20
 x 10
 y 13
 end
@@ -2231,7 +2266,7 @@ arch dungeon_floor
 x 10
 y 14
 end
-arch mine12
+arch cave_23
 x 10
 y 14
 end
@@ -2247,7 +2282,7 @@ arch dungeon_floor
 x 10
 y 16
 end
-arch mine9
+arch cave_20
 x 10
 y 16
 end
@@ -2369,6 +2404,10 @@ arch cave_4
 x 10
 y 28
 end
+arch dungeon_floor
+x 10
+y 29
+end
 arch cave_5
 x 10
 y 29
@@ -2385,12 +2424,16 @@ arch pstone_2
 x 10
 y 31
 end
-arch blocked
+arch cave_15
 x 11
 end
-arch blocked
+arch cave_15
 x 11
 y 1
+end
+arch dungeon_floor
+x 11
+y 2
 end
 arch cave_5
 x 11
@@ -2434,12 +2477,12 @@ x 11
 y 5
 type 0
 attacktype 0
-move_type walk
+move_type 0
 end
 arch dungeon_floor
 x 11
 y 6
-no_pass 1
+move_block all
 end
 arch ggate_closed
 x 11
@@ -2468,11 +2511,11 @@ arch dungeon_floor
 x 11
 y 10
 end
-arch mine2
+arch cave_15
 x 11
 y 10
 end
-arch blocked
+arch cave_15
 x 11
 y 11
 end
@@ -2480,7 +2523,7 @@ arch dungeon_floor
 x 11
 y 12
 end
-arch mine2
+arch cave_21
 x 11
 y 12
 end
@@ -2642,6 +2685,10 @@ arch cave_4
 x 11
 y 29
 end
+arch dungeon_floor
+x 11
+y 30
+end
 arch cave_5
 x 11
 y 30
@@ -2654,14 +2701,14 @@ arch cave_1
 x 11
 y 31
 end
-arch blocked
+arch cave_15
 x 12
 end
-arch blocked
+arch cave_15
 x 12
 y 1
 end
-arch blocked
+arch cave_15
 x 12
 y 2
 end
@@ -2669,7 +2716,7 @@ arch dungeon_floor
 x 12
 y 3
 end
-arch mine2
+arch cave_21
 x 12
 y 3
 end
@@ -2713,11 +2760,11 @@ arch dungeon_floor
 x 12
 y 10
 end
-arch mine2
+arch cave_15
 x 12
 y 10
 end
-arch blocked
+arch cave_15
 x 12
 y 11
 end
@@ -2725,7 +2772,7 @@ arch dungeon_floor
 x 12
 y 12
 end
-arch mine2
+arch cave_21
 x 12
 y 12
 end
@@ -2771,7 +2818,7 @@ x 12
 y 15
 type 0
 attacktype 0
-move_type walk
+move_type 0
 end
 arch dungeon_floor
 x 12
@@ -2901,18 +2948,18 @@ arch dungeon_floor
 x 12
 y 31
 end
-arch mine2
+arch cave_21
 x 12
 y 31
 end
-arch blocked
+arch cave_15
 x 13
 end
-arch blocked
+arch cave_15
 x 13
 y 1
 end
-arch blocked
+arch cave_15
 x 13
 y 2
 end
@@ -2920,7 +2967,7 @@ arch dungeon_floor
 x 13
 y 3
 end
-arch mine9
+arch cave_20
 x 13
 y 3
 end
@@ -2928,7 +2975,7 @@ arch dungeon_floor
 x 13
 y 4
 end
-arch mine3
+arch cave_22
 x 13
 y 4
 end
@@ -2936,7 +2983,7 @@ arch dungeon_floor
 x 13
 y 5
 end
-arch mine3
+arch cave_22
 x 13
 y 5
 end
@@ -2944,7 +2991,7 @@ arch dungeon_floor
 x 13
 y 6
 end
-arch mine3
+arch cave_22
 x 13
 y 6
 end
@@ -2952,7 +2999,7 @@ arch dungeon_floor
 x 13
 y 7
 end
-arch mine3
+arch cave_22
 x 13
 y 7
 end
@@ -2960,7 +3007,7 @@ arch dungeon_floor
 x 13
 y 8
 end
-arch mine3
+arch cave_22
 x 13
 y 8
 end
@@ -2968,7 +3015,7 @@ arch dungeon_floor
 x 13
 y 9
 end
-arch mine3
+arch cave_22
 x 13
 y 9
 end
@@ -2976,11 +3023,11 @@ arch dungeon_floor
 x 13
 y 10
 end
-arch mine12
+arch cave_15
 x 13
 y 10
 end
-arch blocked
+arch cave_15
 x 13
 y 11
 end
@@ -2988,7 +3035,7 @@ arch dungeon_floor
 x 13
 y 12
 end
-arch mine2
+arch cave_21
 x 13
 y 12
 end
@@ -3048,7 +3095,11 @@ arch cave_4
 x 13
 y 19
 end
-arch mine9
+arch dungeon_floor
+x 13
+y 20
+end
+arch cave_20
 x 13
 y 20
 end
@@ -3056,7 +3107,7 @@ arch dungeon_floor
 x 13
 y 21
 end
-arch mine3
+arch cave_22
 x 13
 y 21
 end
@@ -3064,7 +3115,7 @@ arch dungeon_floor
 x 13
 y 22
 end
-arch mine5
+arch cave_19
 x 13
 y 22
 end
@@ -3145,56 +3196,60 @@ arch dungeon_floor
 x 13
 y 31
 end
-arch mine2
+arch cave_21
 x 13
 y 31
 end
-arch blocked
+arch cave_15
 x 14
 end
-arch blocked
+arch cave_15
 x 14
 y 1
 end
-arch blocked
+arch cave_15
 x 14
 y 2
 end
-arch blocked
+arch cave_15
 x 14
 y 3
 end
-arch blocked
+arch cave_15
 x 14
 y 4
 end
-arch blocked
+arch cave_15
 x 14
 y 5
 end
-arch blocked
+arch cave_15
 x 14
 y 6
 end
-arch blocked
+arch cave_15
 x 14
 y 7
 end
-arch blocked
+arch cave_15
 x 14
 y 8
 end
-arch blocked
+arch cave_15
 x 14
 y 9
 end
-arch blocked
+arch cave_15
 x 14
 y 10
 end
-arch blocked
+arch cave_15
 x 14
 y 11
+end
+arch dungeon_floor
+x 14
+y 12
 end
 arch cave_5
 x 14
@@ -3316,7 +3371,7 @@ end
 arch dungeon_floor
 x 14
 y 27
-no_pass 1
+move_block all
 end
 arch ggate_closed
 x 14
@@ -3346,7 +3401,7 @@ x 14
 y 28
 type 0
 attacktype 0
-move_type walk
+move_type 0
 end
 arch dungeon_floor
 x 14
@@ -3364,22 +3419,22 @@ arch dungeon_floor
 x 14
 y 31
 end
-arch mine2
+arch cave_21
 x 14
 y 31
 end
-arch blocked
+arch cave_15
 x 15
 end
-arch blocked
+arch cave_15
 x 15
 y 1
 end
-arch blocked
+arch cave_15
 x 15
 y 2
 end
-arch blocked
+arch cave_15
 x 15
 y 3
 end
@@ -3435,31 +3490,31 @@ x 15
 y 5
 connected 5
 end
-arch blocked
+arch cave_15
 x 15
 y 6
 end
-arch blocked
+arch cave_15
 x 15
 y 7
 end
-arch blocked
+arch cave_15
 x 15
 y 8
 end
-arch blocked
+arch cave_15
 x 15
 y 9
 end
-arch blocked
+arch cave_15
 x 15
 y 10
 end
-arch blocked
+arch cave_15
 x 15
 y 11
 end
-arch blocked
+arch cave_15
 x 15
 y 12
 end
@@ -3467,7 +3522,7 @@ arch dungeon_floor
 x 15
 y 13
 end
-arch mine2
+arch cave_21
 x 15
 y 13
 end
@@ -3515,9 +3570,9 @@ resist_physical 28
 move_type walk
 monster 1
 can_cast_spell 1
+can_use_range 1
 can_use_armour 0
 can_use_weapon 0
-can_use_wand 1
 end
 arch dungeon_floor
 x 15
@@ -3547,9 +3602,9 @@ resist_physical 28
 move_type walk
 monster 1
 can_cast_spell 1
+can_use_range 1
 can_use_armour 0
 can_use_weapon 0
-can_use_wand 1
 end
 arch dungeon_floor
 x 15
@@ -3563,7 +3618,7 @@ arch dungeon_floor
 x 15
 y 21
 end
-arch mine3
+arch cave_22
 x 15
 y 21
 end
@@ -3571,7 +3626,7 @@ arch dungeon_floor
 x 15
 y 22
 end
-arch mine4
+arch cave_16
 x 15
 y 22
 end
@@ -3623,30 +3678,30 @@ arch dungeon_floor
 x 15
 y 31
 end
-arch mine2
+arch cave_21
 x 15
 y 31
 end
-arch blocked
+arch cave_15
 x 16
 end
-arch blocked
+arch cave_15
 x 16
 y 1
 end
-arch blocked
+arch cave_15
 x 16
 y 2
 end
-arch blocked
+arch cave_15
 x 16
 y 3
 end
-arch blocked
+arch cave_15
 x 16
 y 4
 end
-arch blocked
+arch cave_15
 x 16
 y 5
 end
@@ -3658,27 +3713,27 @@ speed_left -1.500000
 arch spell_sm_lightning
 end
 end
-arch blocked
+arch cave_15
 x 16
 y 7
 end
-arch blocked
+arch cave_15
 x 16
 y 8
 end
-arch blocked
+arch cave_15
 x 16
 y 9
 end
-arch blocked
+arch cave_15
 x 16
 y 10
 end
-arch blocked
+arch cave_15
 x 16
 y 11
 end
-arch blocked
+arch cave_15
 x 16
 y 12
 end
@@ -3686,7 +3741,7 @@ arch dungeon_floor
 x 16
 y 13
 end
-arch mine2
+arch cave_21
 x 16
 y 13
 end
@@ -3730,9 +3785,9 @@ resist_physical 28
 move_type walk
 monster 1
 can_cast_spell 1
+can_use_range 1
 can_use_armour 0
 can_use_weapon 0
-can_use_wand 1
 end
 arch dungeon_floor
 x 16
@@ -3762,9 +3817,9 @@ resist_physical 28
 move_type walk
 monster 1
 can_cast_spell 1
+can_use_range 1
 can_use_armour 0
 can_use_weapon 0
-can_use_wand 1
 end
 arch dungeon_floor
 x 16
@@ -3774,11 +3829,11 @@ arch dungeon_floor
 x 16
 y 20
 end
-arch mine2
+arch cave_15
 x 16
 y 20
 end
-arch blocked
+arch cave_15
 x 16
 y 21
 end
@@ -3786,7 +3841,7 @@ arch dungeon_floor
 x 16
 y 22
 end
-arch mine2
+arch cave_21
 x 16
 y 22
 end
@@ -3835,18 +3890,18 @@ arch dungeon_floor
 x 16
 y 31
 end
-arch mine2
+arch cave_21
 x 16
 y 31
 end
-arch blocked
+arch cave_15
 x 17
 end
-arch blocked
+arch cave_15
 x 17
 y 1
 end
-arch blocked
+arch cave_15
 x 17
 y 2
 end
@@ -3902,19 +3957,15 @@ x 17
 y 4
 connected 1
 end
-arch blocked
+arch cave_15
 x 17
 y 5
 end
-arch blocked
+arch cave_15
 x 17
 y 6
 end
-arch blocked
-x 17
-y 7
-end
-arch blocked
+arch cave_15
 x 17
 y 7
 end
@@ -4020,19 +4071,15 @@ arch scroll
 x 17
 y 9
 end
-arch blocked
+arch cave_15
 x 17
 y 10
 end
-arch blocked
-x 17
-y 10
-end
-arch blocked
+arch cave_15
 x 17
 y 11
 end
-arch blocked
+arch cave_15
 x 17
 y 12
 end
@@ -4040,7 +4087,7 @@ arch dungeon_floor
 x 17
 y 13
 end
-arch mine2
+arch cave_21
 x 17
 y 13
 end
@@ -4088,9 +4135,9 @@ resist_physical 28
 move_type walk
 monster 1
 can_cast_spell 1
+can_use_range 1
 can_use_armour 0
 can_use_weapon 0
-can_use_wand 1
 end
 arch dungeon_floor
 x 17
@@ -4120,19 +4167,19 @@ resist_physical 28
 move_type walk
 monster 1
 can_cast_spell 1
+can_use_range 1
 can_use_armour 0
 can_use_weapon 0
-can_use_wand 1
 end
 arch dungeon_floor
 x 17
 y 20
 end
-arch mine2
+arch cave_15
 x 17
 y 20
 end
-arch blocked
+arch cave_15
 x 17
 y 21
 end
@@ -4140,7 +4187,7 @@ arch dungeon_floor
 x 17
 y 22
 end
-arch mine9
+arch cave_20
 x 17
 y 22
 end
@@ -4148,7 +4195,7 @@ arch dungeon_floor
 x 17
 y 23
 end
-arch mine3
+arch cave_22
 x 17
 y 23
 end
@@ -4208,22 +4255,22 @@ arch cave_2
 x 17
 y 31
 end
-arch blocked
+arch cave_15
 x 18
 end
-arch blocked
+arch cave_15
 x 18
 y 1
 end
-arch blocked
+arch cave_15
 x 18
 y 2
 end
-arch blocked
+arch cave_15
 x 18
 y 3
 end
-arch blocked
+arch cave_15
 x 18
 y 4
 end
@@ -4235,31 +4282,19 @@ speed_left -1.500000
 arch spell_sm_lightning
 end
 end
-arch blocked
+arch cave_15
 x 18
 y 6
 end
-arch blocked
+arch cave_15
 x 18
 y 7
 end
-arch blocked
-x 18
-y 7
-end
-arch blocked
+arch cave_15
 x 18
 y 8
 end
-arch blocked
-x 18
-y 8
-end
-arch blocked
-x 18
-y 9
-end
-arch blocked
+arch cave_15
 x 18
 y 9
 end
@@ -4269,13 +4304,17 @@ y 10
 speed 2.000000
 connected 80
 end
-arch blocked
+arch cave_15
 x 18
 y 11
 end
-arch blocked
+arch cave_15
 x 18
 y 12
+end
+arch dungeon_floor
+x 18
+y 13
 end
 arch cave_5
 x 18
@@ -4321,9 +4360,9 @@ resist_physical 28
 move_type walk
 monster 1
 can_cast_spell 1
+can_use_range 1
 can_use_armour 0
 can_use_weapon 0
-can_use_wand 1
 end
 arch dungeon_floor
 x 18
@@ -4353,9 +4392,9 @@ resist_physical 28
 move_type walk
 monster 1
 can_cast_spell 1
+can_use_range 1
 can_use_armour 0
 can_use_weapon 0
-can_use_wand 1
 end
 arch dungeon_floor
 x 18
@@ -4365,19 +4404,19 @@ arch dungeon_floor
 x 18
 y 20
 end
-arch mine2
+arch cave_15
 x 18
 y 20
 end
-arch blocked
+arch cave_15
 x 18
 y 21
 end
-arch blocked
+arch cave_15
 x 18
 y 22
 end
-arch blocked
+arch cave_15
 x 18
 y 23
 end
@@ -4385,7 +4424,7 @@ arch dungeon_floor
 x 18
 y 24
 end
-arch mine2
+arch cave_21
 x 18
 y 24
 end
@@ -4435,7 +4474,7 @@ arch dungeon_floor
 x 18
 y 30
 end
-arch mine2
+arch cave_21
 x 18
 y 30
 end
@@ -4443,10 +4482,10 @@ arch pstone_3
 x 18
 y 31
 end
-arch blocked
+arch cave_15
 x 19
 end
-arch blocked
+arch cave_15
 x 19
 y 1
 end
@@ -4465,35 +4504,31 @@ x 19
 y 3
 connected 80
 end
-arch blocked
+arch cave_15
 x 19
 y 4
 end
-arch blocked
+arch cave_15
 x 19
 y 5
 end
-arch blocked
+arch cave_15
 x 19
 y 6
 end
-arch blocked
+arch cave_15
 x 19
 y 7
 end
-arch blocked
+arch cave_15
 x 19
 y 8
 end
-arch blocked
-x 19
-y 8
-end
-arch blocked
+arch cave_15
 x 19
 y 9
 end
-arch blocked
+arch cave_15
 x 19
 y 10
 end
@@ -4505,13 +4540,17 @@ speed_left 0.100000
 arch spell_sm_lightning
 end
 end
-arch blocked
+arch cave_15
 x 19
 y 12
 end
-arch blocked
+arch cave_15
 x 19
 y 13
+end
+arch dungeon_floor
+x 19
+y 14
 end
 arch cave_5
 x 19
@@ -4553,9 +4592,9 @@ resist_physical 28
 move_type walk
 monster 1
 can_cast_spell 1
+can_use_range 1
 can_use_armour 0
 can_use_weapon 0
-can_use_wand 1
 end
 arch dungeon_floor
 x 19
@@ -4569,19 +4608,19 @@ arch dungeon_floor
 x 19
 y 20
 end
-arch mine2
+arch cave_15
 x 19
 y 20
 end
-arch blocked
+arch cave_15
 x 19
 y 21
 end
-arch blocked
+arch cave_15
 x 19
 y 22
 end
-arch blocked
+arch cave_15
 x 19
 y 23
 end
@@ -4589,7 +4628,7 @@ arch dungeon_floor
 x 19
 y 24
 end
-arch mine2
+arch cave_21
 x 19
 y 24
 end
@@ -4629,7 +4668,7 @@ arch dungeon_floor
 x 19
 y 30
 end
-arch mine2
+arch cave_21
 x 19
 y 30
 end
@@ -4637,66 +4676,62 @@ arch pstone_2
 x 19
 y 31
 end
-arch blocked
+arch cave_15
 x 20
 end
-arch blocked
+arch cave_15
 x 20
 y 1
 end
-arch blocked
+arch cave_15
 x 20
 y 2
 end
-arch blocked
+arch cave_15
 x 20
 y 3
 end
-arch blocked
+arch cave_15
 x 20
 y 4
 end
-arch blocked
+arch cave_15
 x 20
 y 5
 end
-arch blocked
+arch cave_15
 x 20
 y 6
 end
-arch blocked
-x 20
-y 6
-end
-arch blocked
+arch cave_15
 x 20
 y 7
 end
-arch blocked
+arch cave_15
 x 20
 y 8
 end
-arch blocked
+arch cave_15
 x 20
 y 9
 end
-arch blocked
+arch cave_15
 x 20
 y 10
 end
-arch blocked
+arch cave_15
 x 20
 y 11
 end
-arch blocked
+arch cave_15
 x 20
 y 12
 end
-arch blocked
+arch cave_15
 x 20
 y 13
 end
-arch blocked
+arch cave_15
 x 20
 y 14
 end
@@ -4704,7 +4739,7 @@ arch dungeon_floor
 x 20
 y 15
 end
-arch mine9
+arch cave_20
 x 20
 y 15
 end
@@ -4712,7 +4747,7 @@ arch dungeon_floor
 x 20
 y 16
 end
-arch mine3
+arch cave_22
 x 20
 y 16
 end
@@ -4720,7 +4755,7 @@ arch dungeon_floor
 x 20
 y 17
 end
-arch mine3
+arch cave_22
 x 20
 y 17
 end
@@ -4728,7 +4763,7 @@ arch dungeon_floor
 x 20
 y 18
 end
-arch mine3
+arch cave_22
 x 20
 y 18
 end
@@ -4736,7 +4771,7 @@ arch dungeon_floor
 x 20
 y 19
 end
-arch mine3
+arch cave_22
 x 20
 y 19
 end
@@ -4744,19 +4779,19 @@ arch dungeon_floor
 x 20
 y 20
 end
-arch mine12
+arch cave_15
 x 20
 y 20
 end
-arch blocked
+arch cave_15
 x 20
 y 21
 end
-arch blocked
+arch cave_15
 x 20
 y 22
 end
-arch blocked
+arch cave_15
 x 20
 y 23
 end
@@ -4764,7 +4799,7 @@ arch dungeon_floor
 x 20
 y 24
 end
-arch mine9
+arch cave_20
 x 20
 y 24
 end
@@ -4772,7 +4807,7 @@ arch dungeon_floor
 x 20
 y 25
 end
-arch mine3
+arch cave_22
 x 20
 y 25
 end
@@ -4780,7 +4815,7 @@ arch dungeon_floor
 x 20
 y 26
 end
-arch mine3
+arch cave_22
 x 20
 y 26
 end
@@ -4788,7 +4823,7 @@ arch dungeon_floor
 x 20
 y 27
 end
-arch mine3
+arch cave_22
 x 20
 y 27
 end
@@ -4796,7 +4831,7 @@ arch dungeon_floor
 x 20
 y 28
 end
-arch mine3
+arch cave_22
 x 20
 y 28
 end
@@ -4804,7 +4839,7 @@ arch dungeon_floor
 x 20
 y 29
 end
-arch mine3
+arch cave_22
 x 20
 y 29
 end
@@ -4812,7 +4847,7 @@ arch dungeon_floor
 x 20
 y 30
 end
-arch mine12
+arch cave_21
 x 20
 y 30
 end
