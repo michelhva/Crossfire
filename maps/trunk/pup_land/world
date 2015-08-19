@@ -1,5 +1,5 @@
 arch map
-name Pup Land
+name Pupland
 difficulty 1
 region pupland
 width 45
@@ -8,7 +8,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  1996-02-25
-Modified: 2013-08-05 Kevin Zheng
+Modified: 2015-08-18 Kevin Zheng
 endmsg
 outdoor 1
 end
@@ -5654,10 +5654,6 @@ x 29
 y 31
 end
 arch grass
-x 29
-y 32
-end
-arch sign
 x 29
 y 32
 end

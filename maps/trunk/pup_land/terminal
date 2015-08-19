@@ -1,5 +1,5 @@
 arch map
-name Pup Land Dragon Terminal
+name Pupland Terminal
 difficulty 1
 region pupland
 width 21
@@ -8,7 +8,7 @@ enter_x 10
 enter_y 2
 msg
 Created:  1996-04-05
-Modified: 2015-08-06 Kevin Zheng
+Modified: 2015-08-18 Kevin Zheng
 endmsg
 end
 arch sky
@@ -1568,14 +1568,6 @@ x 11
 y 9
 end
 arch cobblestones2
-x 11
-y 10
-end
-arch sign
-name What's New in Pupland
-msg
-Please read what's new in each town and ask Poppy, the clever dog.
-endmsg
 x 11
 y 10
 end
