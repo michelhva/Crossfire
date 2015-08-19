@@ -6,7 +6,7 @@ width 30
 height 30
 msg
 Created:  1996-02-07
-Modified: 2013-03-18 Kevin Zheng
+Modified: 2015-08-18 Kevin Zheng
 endmsg
 outdoor 1
 end
@@ -4670,8 +4670,7 @@ y 12
 end
 arch sign
 msg
-Down with Resistance!
-Three cheers for the Mayor, Bauer!
+Down with the Resistance! Three cheers for Mayor Bauer!
 endmsg
 x 28
 y 12
@@ -4705,12 +4704,13 @@ x 28
 y 19
 end
 arch sign
-name Information
+name Houses & Dungeons
 msg
-Welcome to the City of Nurnberg!
-Open:
+City of Nurnberg
+
+Places to Visit:
 Hotel
-Bank of berg
+Bank of Berg
 Muramasa! (weapon shop)
 White Dragon Scale (armour shop)
 Orcchop (food shop)
@@ -4718,10 +4718,11 @@ Night Flower Bar (tavern)
 Invulnerable (potion shop)
 Polymorph (wand shop)
 Dick's house
-Castle(North side of the city)
-Headquarter of Regular Army
-Dungeon:
-aqueduct (underground of the city)
+Castle (north side of the city)
+Headquarter of the Regular Army
+
+Dungeons:
+Aqueduct (underground)
 Click de Pon (level 3)
 Showinv de Pon (level 10)
 Bomb de Pon (high level)

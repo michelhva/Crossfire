@@ -8,7 +8,7 @@ enter_x 5
 enter_y 18
 msg
 Created:  1996-02-25
-Modified: 2015-04-18 Jason Zheng
+Modified: 2015-08-18 Kevin Zheng
 endmsg
 end
 arch grass
@@ -574,15 +574,10 @@ x 4
 y 17
 end
 arch sign
-name Bulletin Board
 msg
--------------------------------------
-Live in a simple way.  Don't live a
-life of luxury during the war.
-Defeat the Regular Army & Mr. Bauer!
-- . - . - . - . - . - . - . - . - . -
-Watch out for spies & thieves.
--------------------------------------
+Help defeat Bauer and the Regular Army!
+
+Don't live a life of luxury during the war. Watch out for spies and thieves.
 endmsg
 x 4
 y 17
@@ -821,7 +816,7 @@ end
 arch sign
 name Houses & Dungeons
 msg
------------------------------------
+Places to Visit:
 Inn
 Church
 General Shop
@@ -830,18 +825,17 @@ Bank of Lone
 Tavern
 Guilds
 House
--- . -- . -- . -- . -- . -- . -- .
-Dungeon:(More than (X) levels required)
-Magic Show (Level 1)
-Training Center (Level 3)
-Power Plant (Level 5)
-Tower of Pupuly (Level 7)
-Cave found by Heinrich (Level 9)
-Tower of Ordeal (Level 13)
-Cave of Ordeal (Level 15)
-Dressing Room (Level 15)
-Well (Level 20)
-----------------------------------
+
+Dungeons:
+Magic Show (level 1)
+Training Center (level 3)
+Power Plant (level 5)
+Tower of Pupuly (level 7)
+Heinrich's Cave (level 9)
+Tower of Ordeal (level 13)
+Cave of Ordeal (level 15)
+Dressing Room (level 15)
+Well (level 20)
 endmsg
 x 6
 y 17
@@ -2820,13 +2814,11 @@ x 22
 y 6
 end
 arch sign
-name Information
 msg
-Island  Name : Pup Land
-Country Name : Shining Kingdom
-City    Name : Lone Town
-Comment:
-To solve quests, information is very important.  Go from tavern to tavern.
+Lone Town, Pupland
+Shining Kingdom
+
+Information is important for solving quests. Try going from tavern to tavern.
 endmsg
 x 22
 y 6
