@@ -7,7 +7,7 @@ width 30
 height 30
 msg
 Created:  2015-03-29 Rick Tanner
-Modified: 2015-04-03 Rick Tanner
+Modified: 2015-05-31 Rick Tanner
 endmsg
 tile_path_1 uworld_106_124
 tile_path_2 uworld_107_125
@@ -3255,31 +3255,64 @@ arch cave_15
 x 23
 y 7
 end
-arch cave_15
+arch button_plate
+name large button 102
 x 23
 y 8
+connected 102
 end
-arch cave_15
+arch button_plate
+name large button 103
 x 23
 y 9
+connected 103
 end
-arch cave_15
+arch button_plate
+name large button 104
 x 23
 y 10
+connected 104
 end
 arch cave_15
 x 23
 y 11
 end
-arch cave_15
+arch teleporter
+name teleporter 102
+hp 4
+sp 25
+x 23
+y 12
+speed 0.0
+connected 102
+end
+arch silver frost
 x 23
 y 12
 end
-arch cave_15
+arch teleporter
+name teleporter 102
+hp 2
+sp 12
+x 23
+y 13
+speed 0.0
+connected 103
+end
+arch smallnugget
 x 23
 y 13
 end
-arch cave_15
+arch teleporter
+name teleporter 104
+hp 21
+sp 4
+x 23
+y 14
+speed 0.0
+connected 104
+end
+arch field_stone
 x 23
 y 14
 end
@@ -3382,23 +3415,40 @@ arch cave_15
 x 24
 y 7
 end
-arch cave_15
+arch button_plate
+name large button 101
 x 24
 y 8
+connected 101
 end
-arch cave_15
+arch spikes_moving
 x 24
 y 9
 end
-arch cave_15
+arch boulder
+x 24
+y 9
+end
+arch button_plate
+name large button 105
 x 24
 y 10
+connected 105
 end
 arch cave_15
 x 24
 y 11
 end
-arch cave_15
+arch teleporter
+name teleporter 101
+hp 1
+sp 4
+x 24
+y 12
+speed 0.0
+connected 101
+end
+arch silver frost
 x 24
 y 12
 end
@@ -3406,7 +3456,16 @@ arch cave_15
 x 24
 y 13
 end
-arch cave_15
+arch teleporter
+name teleporter 105
+hp 3
+sp 8
+x 24
+y 14
+speed 0.0
+connected 105
+end
+arch rock2
 x 24
 y 14
 end
