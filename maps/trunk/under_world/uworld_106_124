@@ -7,7 +7,7 @@ width 30
 height 30
 msg
 Created:  2015-03-29 Rick Tanner
-Modified: 2015-04-03 Rick Tanner
+Modified: 2015-05-31 Rick Tanner
 endmsg
 tile_path_1 uworld_106_123
 tile_path_2 uworld_107_124
@@ -66,15 +66,6 @@ arch cave_15
 y 11
 end
 arch cave_15
-y 12
-end
-arch cave_15
-y 13
-end
-arch cave_15
-y 14
-end
-arch cave_15
 y 15
 end
 arch cave_15
@@ -1962,7 +1953,16 @@ arch cave22
 x 13
 y 22
 end
-arch cave_15
+arch teleporter
+name teleporter 111
+hp 13
+sp 12
+x 13
+y 23
+speed 0.0
+connected 111
+end
+arch silver frost
 x 13
 y 23
 end
@@ -2112,7 +2112,16 @@ arch cave_15
 x 14
 y 22
 end
-arch cave_15
+arch teleporter
+name teleporter 112
+hp 1
+sp 29
+x 14
+y 23
+speed 0.0
+connected 112
+end
+arch silver frost
 x 14
 y 23
 end
@@ -2266,7 +2275,16 @@ arch cave23
 x 15
 y 22
 end
-arch cave_15
+arch teleporter
+name teleporter 113
+hp 1
+sp 20
+x 15
+y 23
+speed 0.0
+connected 113
+end
+arch silver frost
 x 15
 y 23
 end
@@ -3711,7 +3729,16 @@ arch cave22
 x 25
 y 28
 end
-arch cave_15
+arch teleporter
+name teleporter 106
+hp 25
+sp 2
+x 25
+y 29
+speed 0.0
+connected 106
+end
+arch rock2
 x 25
 y 29
 end
@@ -3846,23 +3873,38 @@ arch cave_15
 x 26
 y 24
 end
-arch cave_15
+arch button_plate
+name large button 113
 x 26
 y 25
+connected 113
 end
-arch cave_15
+arch button_plate
+name large button 112
 x 26
 y 26
+connected 112
 end
-arch cave_15
+arch button_plate
+name large button 111
 x 26
 y 27
+connected 111
 end
 arch cave_15
 x 26
 y 28
 end
-arch cave_15
+arch teleporter
+name teleporter 107
+hp 16
+sp 5
+x 26
+y 29
+speed 0.0
+connected 107
+end
+arch rock2
 x 26
 y 29
 end
@@ -3989,23 +4031,40 @@ arch cave_15
 x 27
 y 24
 end
-arch cave_15
+arch button_plate
+name large button 106
 x 27
 y 25
+connected 106
 end
-arch cave_15
+arch spikes_moving
 x 27
 y 26
 end
-arch cave_15
+arch boulder
+x 27
+y 26
+end
+arch button_plate
+name large button 110
 x 27
 y 27
+connected 110
 end
 arch cave_15
 x 27
 y 28
 end
-arch cave_15
+arch teleporter
+name teleporter 108
+hp 14
+sp 12
+x 27
+y 29
+speed 0.0
+connected 108
+end
+arch rock2
 x 27
 y 29
 end
@@ -4132,23 +4191,38 @@ arch cave_15
 x 28
 y 24
 end
-arch cave_15
+arch button_plate
+name large button 107
 x 28
 y 25
+connected 107
 end
-arch cave_15
+arch button_plate
+name large button 108
 x 28
 y 26
+connected 108
 end
-arch cave_15
+arch button_plate
+name large button 109
 x 28
 y 27
+connected 109
 end
 arch cave_15
 x 28
 y 28
 end
-arch cave_15
+arch teleporter
+name teleporter 109
+hp 3
+sp 1
+x 28
+y 29
+speed 0.0
+connected 109
+end
+arch mithril
 x 28
 y 29
 end
@@ -4279,7 +4353,16 @@ arch cave_15
 x 29
 y 28
 end
-arch cave_15
+arch teleporter
+name teleporter 110
+hp 2
+sp 13
+x 29
+y 29
+speed 0.0
+connected 110
+end
+arch amethyst
 x 29
 y 29
 end
