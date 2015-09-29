@@ -7,7 +7,7 @@ width 30
 height 30
 msg
 Created:  2015-03-26 Rick Tanner
-Modified: 2015-04-03 Rick Tanner
+Modified: 2015-09-28 Rick Tanner
 endmsg
 tile_path_1 uworld_107_124
 tile_path_2 uworld_108_125
@@ -42,25 +42,55 @@ end
 arch cave_15
 y 9
 end
-arch cave_15
+arch button_plate
+name large button 113
 y 10
+connected 113
 end
-arch cave_15
+arch button_plate
+name large button 112
 y 11
+connected 112
 end
-arch cave_15
+arch button_plate
+name large button 111
 y 12
+connected 111
 end
 arch cave_15
 y 13
 end
-arch cave_15
+arch teleporter
+name teleporter 113
+hp 21
+sp 4
+y 14
+speed 0.0
+connected 113
+end
+arch field_stone
 y 14
 end
-arch cave_15
+arch teleporter
+name teleporter 112
+hp 19
+sp 17
+y 15
+speed 0.0
+connected 112
+end
+arch field_stone
 y 15
 end
-arch cave_15
+arch teleporter
+name teleporter 111
+hp 2
+sp 27
+y 16
+speed 0.0
+connected 111
+end
+arch silver frost
 y 16
 end
 arch cave_15
@@ -150,23 +180,40 @@ arch cave_15
 x 1
 y 9
 end
-arch cave_15
+arch button_plate
+name large button 106
 x 1
 y 10
+connected 106
 end
-arch cave_15
+arch spikes_moving
 x 1
 y 11
 end
-arch cave_15
+arch boulder
+x 1
+y 11
+end
+arch button_plate
+name large button 110
 x 1
 y 12
+connected 110
 end
 arch cave_15
 x 1
 y 13
 end
-arch cave_15
+arch teleporter
+name teleporter 106
+hp 28
+sp 2
+x 1
+y 14
+speed 0.0
+connected 106
+end
+arch silver frost
 x 1
 y 14
 end
@@ -174,7 +221,16 @@ arch cave_15
 x 1
 y 15
 end
-arch cave_15
+arch teleporter
+name teleporter 110
+hp 23
+sp 17
+x 1
+y 16
+speed 0.0
+connected 110
+end
+arch rock2
 x 1
 y 16
 end
@@ -297,31 +353,64 @@ arch cave_15
 x 2
 y 9
 end
-arch cave_15
+arch button_plate
+name large button 107
 x 2
 y 10
+connected 107
 end
-arch cave_15
+arch button_plate
+name large button 108
 x 2
 y 11
+connected 108
 end
-arch cave_15
+arch button_plate
+name large button 109
 x 2
 y 12
+connected 109
 end
 arch cave_15
 x 2
 y 13
 end
-arch cave_15
+arch teleporter
+name teleporter 107
+hp 3
+sp 6
+x 2
+y 14
+speed 0.0
+connected 107
+end
+arch silver frost
 x 2
 y 14
 end
-arch cave_15
+arch teleporter
+name teleporter 108
+hp 24
+sp 3
+x 2
+y 15
+speed 0.0
+connected 108
+end
+arch smallnugget
 x 2
 y 15
 end
-arch cave_15
+arch teleporter
+name teleporter 109
+hp 18
+sp 26
+x 2
+y 16
+speed 0.0
+connected 109
+end
+arch field_stone
 x 2
 y 16
 end
