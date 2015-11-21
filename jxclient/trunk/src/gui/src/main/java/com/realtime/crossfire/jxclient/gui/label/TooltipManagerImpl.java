@@ -28,6 +28,7 @@ import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipText;
 import com.realtime.crossfire.jxclient.util.SwingUtilities2;
 import java.awt.Component;
+import java.util.Map;
 import java.util.WeakHashMap;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -80,7 +81,7 @@ public class TooltipManagerImpl implements TooltipManager {
      * to show no tooltip.
      */
     @NotNull
-    private final WeakHashMap<GUIElement, TooltipText> tooltipTexts = new WeakHashMap<GUIElement, TooltipText>();
+    private final Map<GUIElement, TooltipText> tooltipTexts = new WeakHashMap<GUIElement, TooltipText>();
 
     /**
      * The {@link Runnable} that implements the functionality of {@link

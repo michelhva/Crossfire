@@ -67,6 +67,7 @@ import java.text.SimpleDateFormat;
 import java.util.Collection;
 import java.util.Date;
 import java.util.Iterator;
+import java.util.List;
 import java.util.ListIterator;
 import java.util.concurrent.CopyOnWriteArrayList;
 import javax.swing.JFrame;
@@ -232,7 +233,7 @@ public class JXCWindowRenderer {
      * dialog is at the end.
      */
     @NotNull
-    private final CopyOnWriteArrayList<Gui> openDialogs = new CopyOnWriteArrayList<Gui>();
+    private final List<Gui> openDialogs = new CopyOnWriteArrayList<Gui>();
 
     /**
      * Listeners to be notified about {@link #rendererGuiState} changes.
