@@ -246,6 +246,7 @@ public class KeybindingsManager {
      * @return whether the event has been consumed
      */
     public boolean handleKeyPress(@NotNull final KeyEvent2 e) {
+        //noinspection SimplifiableIfStatement
         if (characterKeyBindings != null && characterKeyBindings.handleKeyPress(e)) {
             return true;
         }
