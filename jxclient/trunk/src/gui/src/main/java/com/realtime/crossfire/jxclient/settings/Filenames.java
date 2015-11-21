@@ -96,10 +96,10 @@ public class Filenames {
 
     /**
      * Returns the shortcuts file.
-     * @param hostname the hostname of the character; <code>null</code>=global
-     * key bindings file
-     * @param character the character name; <code>null</code>=global key
+     * @param hostname the hostname of the character; {@code null}=global key
      * bindings file
+     * @param character the character name; {@code null}=global key bindings
+     * file
      * @return the shortcuts file
      * @throws IOException if the file cannot be accessed
      */
@@ -110,12 +110,12 @@ public class Filenames {
 
     /**
      * Returns the keybindings file.
-     * @param hostname the hostname of the character; <code>null</code>=global
-     * key bindings file
-     * @param character the character name; <code>null</code>=global key
+     * @param hostname the hostname of the character; {@code null}=global key
      * bindings file
-     * @return the keybindings file; return <code>null</code> if the file cannot
-     *         be accessed
+     * @param character the character name; {@code null}=global key bindings
+     * file
+     * @return the keybindings file; return {@code null} if the file cannot be
+     * accessed
      * @throws IOException if the keybindings file cannot be accessed
      */
     @Nullable
@@ -125,8 +125,8 @@ public class Filenames {
 
     /**
      * Returns the metaserver cache file.
-     * @return the metaserver cache file, or <code>null</code> if the file
-     *         cannot be accessed
+     * @return the metaserver cache file, or {@code null} if the file cannot be
+     * accessed
      */
     @Nullable
     public static File getMetaserverCacheFile() {
@@ -202,7 +202,7 @@ public class Filenames {
 
     /**
      * Returns the log file for text message logging.
-     * @param hostname the server hostname or <code>null</code>
+     * @param hostname the server hostname or {@code null}
      * @return the log file
      * @throws IOException if the log file cannot be determined
      */

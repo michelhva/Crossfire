@@ -47,6 +47,7 @@ import org.jetbrains.annotations.Nullable;
  * final ClientSocket clientSocket = new ClientSocket(...);
  * clientSocket.writePacket(...);
  * clientSocket.disconnect();
+ * </pre>
  * @author Andreas Kirschbaum
  */
 public class ClientSocket {
@@ -63,7 +64,7 @@ public class ClientSocket {
     private final Model model;
 
     /**
-     * The appender to write state changes to. May be <code>null</code> to not
+     * The appender to write state changes to. May be {@code null} to not
      * write anything.
      */
     @Nullable
@@ -106,7 +107,7 @@ public class ClientSocket {
     private boolean reconnectIsError;
 
     /**
-     * The host to connect to. Set to <code>null</code> for disconnect.
+     * The host to connect to. Set to {@code null} for disconnect.
      */
     @Nullable
     private String host;
@@ -158,9 +159,9 @@ public class ClientSocket {
     private final ByteBuffer inputBuffer = ByteBuffer.wrap(inputBuf);
 
     /**
-     * If set to <code>-1</code>, a two-byte packet header is read next from
-     * {@link #inputBuffer}. Otherwise it is set to the packet length which will
-     * be read from {@link #inputBuffer}.
+     * If set to {@code -1}, a two-byte packet header is read next from {@link
+     * #inputBuffer}. Otherwise it is set to the packet length which will be
+     * read from {@link #inputBuffer}.
      */
     private int inputLen = -1;
 
@@ -178,7 +179,7 @@ public class ClientSocket {
     private final ByteBuffer outputBuffer = ByteBuffer.allocate(2+MAXIMUM_PACKET_SIZE);
 
     /**
-     * The {@link SocketChannel} when connected. Set to <code>null</code> when
+     * The {@link SocketChannel} when connected. Set to {@code null} when
      * not connected.
      */
     @Nullable
@@ -205,8 +206,8 @@ public class ClientSocket {
     /**
      * Creates a new instance.
      * @param model the model to update
-     * @param debugProtocol tf non-<code>null</code>, write all protocol
-     * commands to this writer
+     * @param debugProtocol tf non-{@code null}, write all protocol commands to
+     * this writer
      * @throws IOException if the socket cannot be created
      */
     public ClientSocket(@NotNull final Model model, @Nullable final DebugWriter debugProtocol) throws IOException {
@@ -667,8 +668,7 @@ public class ClientSocket {
 
     /**
      * Updates {@link #selectionKey}'s interest ops to match {@link
-     * #interestOps}. Does nothing if <code>selectionKey</code> is
-     * <code>null</code>.
+     * #interestOps}. Does nothing if {@code selectionKey} is {@code null}.
      */
     private void updateInterestOps() {
         if (debugProtocol != null) {

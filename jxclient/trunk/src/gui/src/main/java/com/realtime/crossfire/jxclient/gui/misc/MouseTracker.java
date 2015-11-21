@@ -40,8 +40,8 @@ import org.jetbrains.annotations.Nullable;
 /**
  * Tracks mouse actions and delivers mouse events to affected {@link
  * GUIElement}.
- * <p/>
- * <p>XXX: some delivered MouseEvents are not relative to the underlying
+ * <p>
+ * XXX: some delivered MouseEvents are not relative to the underlying
  * GUIElement.
  * @author Andreas Kirschbaum
  */
@@ -59,7 +59,7 @@ public class MouseTracker {
     private final boolean debugGui;
 
     /**
-     * The {@link Writer} to write mouse debug to or <code>null</code>.
+     * The {@link Writer} to write mouse debug to or {@code null}.
      */
     @Nullable
     private final Writer debugMouse;
@@ -101,7 +101,7 @@ public class MouseTracker {
     /**
      * Creates a new instance.
      * @param debugGui whether GUI elements should be highlighted
-     * @param debugMouse the writer to write mouse debug to or <code>null</code>
+     * @param debugMouse the writer to write mouse debug to or {@code null}
      */
     public MouseTracker(final boolean debugGui, @Nullable final Writer debugMouse) {
         this.debugGui = debugGui;
@@ -222,7 +222,7 @@ public class MouseTracker {
 
     /**
      * Sets a new {@link #mouseElement} and generate entered/exited events.
-     * @param element the new element; it may be <code>null</code>
+     * @param element the new element; it may be {@code null}
      * @param e the event parameter
      */
     private void enterElement(@Nullable final AbstractGUIElement element, @NotNull final MouseEvent e) {

@@ -99,8 +99,7 @@ public class JXCWindowRenderer {
     private static final int DEFAULT_MAP_HEIGHT = 9;
 
     /**
-     * The associated {@link JFrame}. Set to <code>null</code> while not
-     * visible.
+     * The associated {@link JFrame}. Set to {@code null} while not visible.
      */
     @Nullable
     private JFrame frame;
@@ -138,7 +137,7 @@ public class JXCWindowRenderer {
     private final CrossfireServerConnection crossfireServerConnection;
 
     /**
-     * The {@link Writer} to write screen debug to or <code>null</code>.
+     * The {@link Writer} to write screen debug to or {@code null}.
      */
     @Nullable
     private final Writer debugScreen;
@@ -211,7 +210,7 @@ public class JXCWindowRenderer {
     };
 
     /**
-     * The current {@link BufferStrategy}. Set to <code>null</code> until {@link
+     * The current {@link BufferStrategy}. Set to {@code null} until {@link
      * #setFullScreenMode(JFrame, Resolution)} or {@link #setWindowMode(JFrame,
      * Resolution, Resolution, boolean)} has been called.
      */
@@ -262,7 +261,7 @@ public class JXCWindowRenderer {
     private final Collection<GUIFloorList> floorLists = new CopyOnWriteArrayList<GUIFloorList>();
 
     /**
-     * The tooltip to use, or <code>null</code> if no tooltips should be shown.
+     * The tooltip to use, or {@code null} if no tooltips should be shown.
      */
     @Nullable
     private Component tooltip;
@@ -336,8 +335,7 @@ public class JXCWindowRenderer {
      * Creates a new instance.
      * @param mouseTracker the mouse tracker instance
      * @param crossfireServerConnection the server connection to monitor
-     * @param debugScreen the writer to write screen debug to or
-     * <code>null</code>
+     * @param debugScreen the writer to write screen debug to or {@code null}
      */
     public JXCWindowRenderer(@NotNull final MouseTracker mouseTracker, @NotNull final CrossfireServerConnection crossfireServerConnection, @Nullable final Writer debugScreen) {
         this.mouseTracker = mouseTracker;
@@ -353,7 +351,7 @@ public class JXCWindowRenderer {
      * Tries to switch to the given resolution. If resolution switching fails,
      * the window might be invisible.
      * @param frame the associated frame
-     * @param resolution the resolution to switch to; <code>null</code> to keep
+     * @param resolution the resolution to switch to; {@code null} to keep
      * current resolution
      * @return whether the resolution has been changed
      */
@@ -426,8 +424,7 @@ public class JXCWindowRenderer {
      * Tries to switch to the given resolution. If resolution switching fails,
      * the window might be invisible.
      * @param frame the associated frame
-     * @param resolution the resolution to switch to, <code>null</code> for
-     * default
+     * @param resolution the resolution to switch to, {@code null} for default
      * @param minResolution the minimal supported resolution
      * @param fixedSize whether the window should have fixed size
      */
@@ -652,8 +649,8 @@ public class JXCWindowRenderer {
      * @param dialog the dialog to show
      * @param autoCloseOnDeactivate whether the dialog should auto-close when it
      * becomes inactive; ignored if the dialog is already open
-     * @return whether the dialog was opened or raised; <code>false</code> if
-     *         the dialog already was opened as the topmost dialog
+     * @return whether the dialog was opened or raised; {@code false} if the
+     * dialog already was opened as the topmost dialog
      */
     public boolean openDialog(@NotNull final Gui dialog, final boolean autoCloseOnDeactivate) {
         if (dialog == currentGui) {
@@ -772,8 +769,8 @@ public class JXCWindowRenderer {
     /**
      * Closes a dialog. Does nothing if the given dialog is not open.
      * @param dialog the dialog to close
-     * @return whether the dialog has been closed; <code>false</code> if the
-     *         dialog was not open
+     * @return whether the dialog has been closed; {@code false} if the dialog
+     * was not open
      */
     public boolean closeDialog(@NotNull final Gui dialog) {
         if (!openDialogsRemove(dialog)) {
@@ -809,9 +806,8 @@ public class JXCWindowRenderer {
     }
 
     /**
-     * Sets the tooltip to use, or <code>null</code> if no tooltips should be
-     * shown.
-     * @param tooltip the tooltip to use, or <code>null</code>
+     * Sets the tooltip to use, or {@code null} if no tooltips should be shown.
+     * @param tooltip the tooltip to use, or {@code null}
      */
     public void setTooltip(@Nullable final Component tooltip) {
         if (this.tooltip != null) {
@@ -999,7 +995,7 @@ public class JXCWindowRenderer {
 
     /**
      * Returns the active message buffer.
-     * @return the active message buffer or <code>null</code> if none is active
+     * @return the active message buffer or {@code null} if none is active
      */
     @Nullable
     public Buffer getActiveMessageBuffer() {
@@ -1022,7 +1018,7 @@ public class JXCWindowRenderer {
     /**
      * Returns the active message buffer for a {@link Gui} instance.
      * @param gui the gui instance
-     * @return the active message buffer or <code>null</code>
+     * @return the active message buffer or {@code null}
      */
     @Nullable
     private static Buffer getActiveMessageBuffer(@NotNull final Gui gui) {
@@ -1045,7 +1041,7 @@ public class JXCWindowRenderer {
     /**
      * Activates the command input text field. If more than one input field
      * exists, the first matching one is selected.
-     * @return the command input text field or <code>null</code> if no command
+     * @return the command input text field or {@code null} if no command
      *         input text field exists
      */
     @Nullable
@@ -1135,7 +1131,7 @@ public class JXCWindowRenderer {
      * Finds the gui element a given {@link Component} is part of.
      * @param component the component to search
      * @param mouseEvent the mouse event to update
-     * @return the gui element found or <code>null</code> if none was found
+     * @return the gui element found or {@code null} if none was found
      */
     @Nullable
     private static AbstractGUIElement findElement(@NotNull final Component component, @NotNull final MouseEvent mouseEvent) {
@@ -1157,7 +1153,7 @@ public class JXCWindowRenderer {
      * was found, update the event mouse coordinates to be relative to the gui
      * element.
      * @param e the mouse event to process
-     * @return the gui element found, or <code>null</code> if none was found
+     * @return the gui element found, or {@code null} if none was found
      */
     @Nullable
     private AbstractGUIElement findElement(@NotNull final MouseEvent e) {
@@ -1192,8 +1188,8 @@ public class JXCWindowRenderer {
      * @param gui the gui to search
      * @param eX the x-coordinate to check
      * @param eY the y-coordinate to check
-     * @return the <code>GUIElement</code> at the given coordinate or
-     *         <code>null</code> if none was found
+     * @return the {@code GUIElement} at the given coordinate or {@code null}
+     * if none was found
      */
     @Nullable
     private AbstractGUIElement getElementFromPoint(@NotNull final Gui gui, final int eX, final int eY) {
@@ -1383,7 +1379,7 @@ public class JXCWindowRenderer {
     /**
      * Returns the first command text field of a gui and make it active.
      * @param gui the gui to check
-     * @return the comment text field, or <code>null</code> if this gui does not
+     * @return the comment text field, or {@code null} if this gui does not
      *         contain any command text fields
      */
     @Nullable

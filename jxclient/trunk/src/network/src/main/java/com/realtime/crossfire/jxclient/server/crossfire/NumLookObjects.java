@@ -46,8 +46,8 @@ public class NumLookObjects {
     private final CrossfireServerConnection crossfireServerConnection;
 
     /**
-     * The appender to write protocol commands to. May be <code>null</code> to
-     * not write anything.
+     * The appender to write protocol commands to. May be {@code null} to not
+     * write anything.
      */
     @Nullable
     private final DebugWriter debugProtocol;
@@ -71,7 +71,7 @@ public class NumLookObjects {
 
     /**
      * The number of ground view objects being negotiated with the server. Set
-     * to <code>0</code> when not negotiating.
+     * to {@code 0} when not negotiating.
      */
     private int pendingNumLookObjects;
 

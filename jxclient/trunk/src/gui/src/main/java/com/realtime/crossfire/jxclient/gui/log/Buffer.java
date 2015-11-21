@@ -111,8 +111,8 @@ public class Buffer {
 
     /**
      * Creates a new instance.
-     * @param fonts the <code>Fonts</code> instance for looking up fonts
-     * @param context the <code>FontRenderContext</code> to use
+     * @param fonts the {@code Fonts} instance for looking up fonts
+     * @param context the {@code FontRenderContext} to use
      * @param renderWidth the width to render
      */
     public Buffer(@NotNull final Fonts fonts, @NotNull final FontRenderContext context, final int renderWidth) {
@@ -220,7 +220,7 @@ public class Buffer {
 
     /**
      * Returns one {@link Line} by line index. The first line has the index
-     * <code>0</code>.
+     * {@code 0}.
      * @param line the line index
      * @return the line
      */
@@ -362,7 +362,7 @@ public class Buffer {
 
     /**
      * Returns the number of merged lines. Should not be called unless directly
-     * after {@link #mergeLines(String, Color)} did freturn <code>true</code>.
+     * after {@link #mergeLines(String, Color)} did freturn {@code true}.
      * @return the number of merged lines
      */
     public int getLastCount() {

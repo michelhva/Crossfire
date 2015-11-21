@@ -88,15 +88,14 @@ public class GUIItemSpell extends GUIItemItem {
     private final CurrentSpellManager currentSpellManager;
 
     /**
-     * The currently selected spell or <code>null</code> if none is selected. It
-     * has {@link #spellListener} attached. Corresponds to index {@link
-     * #index}.
+     * The currently selected spell or {@code null} if none is selected. It has
+     * {@link #spellListener} attached. Corresponds to index {@link #index}.
      */
     @Nullable
     private Spell spell;
 
     /**
-     * The currently selected spell or <code>-1</code> if none is selected.
+     * The currently selected spell or {@code -1} if none is selected.
      * Corresponds to {@link #spell}.
      */
     private int index = -1;
@@ -175,7 +174,7 @@ public class GUIItemSpell extends GUIItemItem {
      * @param currentSpellManager the current spell manager to update when a
      * spell is selected
      * @param spellsView the spells view to use
-     * @param size the size of the component or <code>0</code> for undefined
+     * @param size the size of the component or {@code 0} for undefined
      */
     public GUIItemSpell(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final SpellsManager spellsManager, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final ItemView spellsView, final int size) {
         super(tooltipManager, elementListener, name, itemPainter, facesManager);

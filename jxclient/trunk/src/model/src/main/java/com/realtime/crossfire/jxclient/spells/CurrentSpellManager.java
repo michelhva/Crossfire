@@ -38,7 +38,7 @@ public class CurrentSpellManager {
     private final EventListenerList2<CurrentSpellManagerListener> listeners = new EventListenerList2<CurrentSpellManagerListener>(CurrentSpellManagerListener.class);
 
     /**
-     * The currently selected spell, or <code>null</code>.
+     * The currently selected spell, or {@code null}.
      */
     @Nullable
     private Spell currentSpell;
@@ -60,7 +60,7 @@ public class CurrentSpellManager {
 
     /**
      * Returns the currently selected spell object.
-     * @return the spell object, or <code>null</code> if no spell is selected
+     * @return the spell object, or {@code null} if no spell is selected
      */
     @Nullable
     public Spell getCurrentSpell() {

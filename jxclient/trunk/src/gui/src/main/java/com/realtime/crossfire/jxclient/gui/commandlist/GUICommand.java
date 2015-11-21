@@ -35,7 +35,7 @@ public interface GUICommand {
 
     /**
      * Executes the command. Does nothing if called while {@link #canExecute()}
-     * returns <code>false</code>.
+     * returns {@code false}.
      */
     void execute();
 

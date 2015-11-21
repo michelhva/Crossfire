@@ -45,8 +45,8 @@ public class SoundManager {
     private final ClipManager clipManager;
 
     /**
-     * The writer for logging sound related information or <code>null</code> to
-     * not log.
+     * The writer for logging sound related information or {@code null} to not
+     * log.
      */
     @Nullable
     private final DebugWriter debugSound;
@@ -120,7 +120,7 @@ public class SoundManager {
      * Creates a new instance.
      * @param guiStateManager the gui state manager to watch
      * @param debugSound the writer for logging sound related information or
-     * <code>null</code> to not log
+     * {@code null} to not log
      */
     public SoundManager(@NotNull final GuiStateManager guiStateManager, @Nullable final DebugWriter debugSound) {
         final AudioFileLoader audioFileLoader = new AudioFileLoader(debugSound);
@@ -173,8 +173,7 @@ public class SoundManager {
     /**
      * Mutes or unmutes sound effects.
      * @param type the sound type to affect
-     * @param mute whether to mute (<code>true</code>) or unmute
-     * (<code>false</code>)
+     * @param mute whether to mute ({@code true}) or unmute ({@code false})
      */
     private void mute(@NotNull final Sounds type, final boolean mute) {
         if (mute) {
@@ -196,8 +195,7 @@ public class SoundManager {
 
     /**
      * Mutes or unmutes background music.
-     * @param muted whether to mute (<code>true</code>) or unmute
-     * (<code>false</code>)
+     * @param muted whether to mute ({@code true}) or unmute ({@code false})
      */
     private void muteMusic(final boolean muted) {
         musicManager.setMuted(muted);

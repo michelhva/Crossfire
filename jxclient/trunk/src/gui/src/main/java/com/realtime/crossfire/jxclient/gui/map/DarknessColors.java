@@ -45,7 +45,7 @@ public class DarknessColors {
 
     /**
      * Cache to lookup darkness overlay colors. Maps darkness value to overlay
-     * color. Not yet allocated entries are set to <code>null</code>.
+     * color. Not yet allocated entries are set to {@code null}.
      */
     @NotNull
     private static final Color[] DARKNESS_COLORS = new Color[256];

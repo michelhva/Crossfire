@@ -307,13 +307,13 @@ public class SmoothingRenderer {
     }
 
     /**
-     * Draws a <code>tileSize</code> x <code>tileSize</code> part of an {@link
+     * Draws a {@code tileSize} x {@code tileSize} part of an {@link
      * ImageIcon}.
      * @param graphics the graphics to paint to
      * @param dstX the x coordinate to paint to
      * @param dstY the y coordinate to paint to
-     * @param srcX the x coordinate to copy from <code>imageIcon</code>
-     * @param srcY the y coordinate to copy from <code>imageIcon</code>
+     * @param srcX the x coordinate to copy from {@code imageIcon}
+     * @param srcY the y coordinate to copy from {@code imageIcon}
      * @param imageIcon the image icon to copy from
      * @param tileSize the size in pixels to copy
      */

@@ -53,7 +53,7 @@ public class GuiElementParser {
     /**
      * Returns a {@link GUIText} by element name.
      * @param name the element name
-     * @return the <code>GUIText</code> element
+     * @return the {@code GUIText} element
      * @throws JXCSkinException if the element name is undefined
      */
     @NotNull
@@ -69,7 +69,7 @@ public class GuiElementParser {
     /**
      * Returns a {@link AbstractLabel} by element name.
      * @param name the element name
-     * @return the <code>AbstractLabel</code> element
+     * @return the {@code AbstractLabel} element
      * @throws JXCSkinException if the element name is undefined
      */
     @NotNull
@@ -85,7 +85,7 @@ public class GuiElementParser {
     /**
      * Returns a {@link AbstractLabel} by element name.
      * @param name the element name
-     * @return the <code>AbstractLabel</code> element
+     * @return the {@code AbstractLabel} element
      * @throws JXCSkinException if the element name is undefined
      */
     @NotNull

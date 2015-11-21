@@ -57,7 +57,7 @@ public abstract class GUIComboBox<T> extends AbstractGUIElement {
     private final DefaultComboBoxModel model = new DefaultComboBoxModel();
 
     /**
-     * The {@link GUILog} to update or <code>null</code>.
+     * The {@link GUILog} to update or {@code null}.
      */
     @Nullable
     private final GUILabelLog label;
@@ -100,7 +100,7 @@ public abstract class GUIComboBox<T> extends AbstractGUIElement {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param label the label to update or <code>null</code>
+     * @param label the label to update or {@code null}
      */
     protected GUIComboBox(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final GUILabelLog label) {
         super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT);
@@ -159,9 +159,9 @@ public abstract class GUIComboBox<T> extends AbstractGUIElement {
     }
 
     /**
-     * Returns a {@link Component} that displays the <code>value</code>.
+     * Returns a {@link Component} that displays the {@code value}.
      * @param list the list that contains the value
-     * @param value the value that is displayed or <code>null</code>
+     * @param value the value that is displayed or {@code null}
      * @param index the list index
      * @param selected whether the value is selected
      * @param cellHasFocus whether the value has the focus

@@ -123,7 +123,7 @@ public abstract class AbstractFacesManager implements FacesManager {
      * will be updated as soon as loading has finished.
      * @param faceNum the face ID
      * @param isUnknownImage returns whether the returned face is the "unknown"
-     * face; ignored if <code>null</code>
+     * face; ignored if {@code null}
      * @return the face images information
      */
     @NotNull

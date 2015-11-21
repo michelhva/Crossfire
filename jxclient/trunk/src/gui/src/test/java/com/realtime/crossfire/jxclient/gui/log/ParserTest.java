@@ -263,8 +263,8 @@ public class ParserTest {
 
         /**
          * Appends the contents of a {@link Buffer} to a {@link StringBuilder}.
-         * @param sb the <code>StringBuilder</code> to append to
-         * @param buffer the <code>Buffer</code> to append
+         * @param sb the {@code StringBuilder} to append to
+         * @param buffer the {@code Buffer} to append
          */
         private static void dumpBuffer(@NotNull final StringBuilder sb, @NotNull final Buffer buffer) {
             sb.append("buffer:\n");
@@ -279,8 +279,8 @@ public class ParserTest {
 
         /**
          * Appends the contents of a {@link Line} to a {@link StringBuilder}.
-         * @param sb the <code>StringBuilder</code> to append to
-         * @param line the <code>Line</code> to append
+         * @param sb the {@code StringBuilder} to append to
+         * @param line the {@code Line} to append
          */
         private static void dumpLine(@NotNull final StringBuilder sb, @NotNull final Iterable<Segment> line) {
             sb.append("line:\n");

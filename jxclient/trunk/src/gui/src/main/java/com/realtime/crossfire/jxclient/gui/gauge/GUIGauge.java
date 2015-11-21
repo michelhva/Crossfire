@@ -102,12 +102,12 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
      * @param name the name of this element
      * @param fullImage the image representing a full gauge
      * @param negativeImage the image representing a more-than-empty gauge; if
-     * set to <code>null</code> the gauge remains in empty state
+     * set to {@code null} the gauge remains in empty state
      * @param emptyImage the image representing an empty gauge; if set to
-     * <code>null</code> an empty background is used instead
+     * {@code null} an empty background is used instead
      * @param orientation the gauge's orientation
      * @param tooltipFormat the format for displaying tooltips; if set to
-     * <code>null</code> no tooltips are shown
+     * {@code null} no tooltips are shown
      * @param alpha alpha value of the gauge to use
      * @param commandList the command list that is executed on button 2
      */
@@ -260,10 +260,12 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
 
     /**
      * Returns a formatted string using the given format.
-     * <p/>
-     * Supported format strings: <ul> <li>%% - a literal % character <li>%T -
-     * the default tooltip text </ul>
-     * @return the formatted string or <code>null</code> to not show a tooltip
+     * <p>
+     * Supported format strings:
+     * <ul>
+     * <li>%% - a literal % character <li>%T - the default tooltip text
+     * </ul>
+     * @return the formatted string or {@code null} to not show a tooltip
      */
     @Nullable
     private String formatTooltip() {

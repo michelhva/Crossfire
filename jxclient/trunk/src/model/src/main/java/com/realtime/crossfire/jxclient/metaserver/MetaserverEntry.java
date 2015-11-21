@@ -262,12 +262,22 @@ public class MetaserverEntry implements Comparable<MetaserverEntry> {
 
     /**
      * Returns a formatted string using the given format.
-     * <p/>
-     * Supported format strings: <ul> <li>%% - a literal % character <li>%A -
-     * arch base <li>%C - server comment <li>%E - code base <li>%H - hostname
-     * <li>%I - bytes in <li>%M - map base <li>%O - bytes out <li>%P - number of
-     * players <li>%T - uptime in seconds <li>%U - time since last update in
-     * seconds <li>%V - server version </ul>
+     * <p>
+     * Supported format strings:
+     * <ul>
+     * <li>%% - a literal % character
+     * <li>%A - arch base
+     * <li>%C - server comment
+     * <li>%E - code base
+     * <li>%H - hostname
+     * <li>%I - bytes in
+     * <li>%M - map base
+     * <li>%O - bytes out
+     * <li>%P - number of players
+     * <li>%T - uptime in seconds
+     * <li>%U - time since last update in seconds
+     * <li>%V - server version
+     * </ul>
      * @param format the format
      * @return the formatted string
      */

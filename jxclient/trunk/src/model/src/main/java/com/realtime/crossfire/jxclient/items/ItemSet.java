@@ -68,7 +68,7 @@ public class ItemSet {
     private CfItem player;
 
     /**
-     * The currently opened container or <code>0</code>.
+     * The currently opened container or {@code 0}.
      */
     private int openContainerFloor;
 
@@ -137,7 +137,7 @@ public class ItemSet {
 
     /**
      * Returns the number of items in a given location. Undefined locations
-     * return <code>0</code>.
+     * return {@code 0}.
      * @param location the location to check
      * @return the number of items
      */
@@ -151,8 +151,7 @@ public class ItemSet {
      * @param tag the item's tag to remove
      * @param notifyListeners whether listeners should be notified about the
      * removal
-     * @return the index where the item has been removed from or
-     *         <code>-1</code>
+     * @return the index where the item has been removed from or {@code -1}
      */
     private int removeItemByTag(final int tag, final boolean notifyListeners) {
         synchronized (sync) {
@@ -270,7 +269,7 @@ public class ItemSet {
     /**
      * Returns an item by tag.
      * @param tag the tag
-     * @return the item or <code>null</code> if no such items exists
+     * @return the item or {@code null} if no such items exists
      */
     @Nullable
     public CfItem getItemByTag(final int tag) {
@@ -319,7 +318,7 @@ public class ItemSet {
     /**
      * Returns an item by tag. This function may return the player object.
      * @param tag the tag
-     * @return the item or <code>null</code> if no such item exists
+     * @return the item or {@code null} if no such item exists
      */
     @Nullable
     private CfItem getItemOrPlayer(final int tag) {
@@ -417,7 +416,7 @@ public class ItemSet {
 
     /**
      * Sets the currently opened container.
-     * @param openContainerFloor the opened container's tag or <code>0</code>
+     * @param openContainerFloor the opened container's tag or {@code 0}
      */
     private void setOpenContainer(final int openContainerFloor) {
         if (this.openContainerFloor == openContainerFloor) {
@@ -442,8 +441,7 @@ public class ItemSet {
      * Returns a {@link CfItem} from the inventory of an item.
      * @param tag the item's tag
      * @param index the index of the inventory item to return
-     * @return the inventory item or <code>null</code> if the index does not
-     *         exist
+     * @return the inventory item or {@code null} if the index does not exist
      */
     @Nullable
     public CfItem getInventoryItem(final int tag, final int index) {

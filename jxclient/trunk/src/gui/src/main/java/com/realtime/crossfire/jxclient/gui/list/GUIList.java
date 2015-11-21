@@ -70,8 +70,8 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
     private final GUIListCellRenderer listCellRenderer;
 
     /**
-     * The {@link CommandList} to execute on double-clicks or <code>null</code>
-     * to ignore double-clicks.
+     * The {@link CommandList} to execute on double-clicks or {@code null} to
+     * ignore double-clicks.
      */
     @Nullable
     private final CommandList doubleClickCommandList;
@@ -101,14 +101,13 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
     private final JScrollPane scrollPane;
 
     /**
-     * The index of the currently shown tooltip. Set to <code>-1</code> if no
+     * The index of the currently shown tooltip. Set to {@code -1} if no
      * tooltip is shown.
      */
     private int tooltipIndex = -1;
 
     /**
-     * The location of the tooltip. Set to <code>null</code> if no tooltip is
-     * shown.
+     * The location of the tooltip. Set to {@code null} if no tooltip is shown.
      */
     @Nullable
     private Rectangle tooltipRectangle;
@@ -135,7 +134,7 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
      * @param cellHeight the height of each cell
      * @param listCellRenderer the renderer for the list
      * @param doubleClickCommandList the command list to execute on double-click
-     * or <code>null</code> to ignore double-clicks
+     * or {@code null} to ignore double-clicks
      */
     protected GUIList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final GUIListCellRenderer listCellRenderer, @Nullable final CommandList doubleClickCommandList) {
         super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT);
@@ -577,7 +576,7 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
 
     /**
      * Returns the selected list object.
-     * @return the selected object or <code>null</code> if none is selected
+     * @return the selected object or {@code null} if none is selected
      */
     @NotNull
     protected Object getSelectedObject() {

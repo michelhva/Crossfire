@@ -40,8 +40,8 @@ public interface CrossfireUpdateMapListener extends EventListener {
 
     /**
      * Parsing of a "map2" command has been started.
-     * @return the synchronization object which must be <code>synchronized</code>
-     *         while calling any other function (except <code>newMap()</code>)
+     * @return the synchronization object which must be {@code synchronized}
+     *         while calling any other function (except {@code newMap()})
      */
     @NotNull
     Object mapBegin();

@@ -70,7 +70,7 @@ public class RawScale2x {
      * code about tolerance checking.
      * @param a the first pixel value
      * @param b the second pixel value
-     * @return <code>true</code> if the pixels are different
+     * @return {@code true} if the pixels are different
      */
     private static boolean different(final int a, final int b) {
         return a != b;

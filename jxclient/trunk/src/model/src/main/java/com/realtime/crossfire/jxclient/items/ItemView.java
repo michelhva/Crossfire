@@ -39,7 +39,7 @@ public interface ItemView {
     /**
      * Returns the {@link CfItem} in a given slot.
      * @param index the slot index
-     * @return the item or <code>null</code> if the slot is empty
+     * @return the item or {@code null} if the slot is empty
      */
     @Nullable
     CfItem getItem(int index);

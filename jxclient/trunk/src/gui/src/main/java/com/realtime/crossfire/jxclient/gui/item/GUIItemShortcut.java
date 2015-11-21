@@ -122,8 +122,8 @@ public class GUIItemShortcut extends GUIItem {
     private final CurrentSpellManager currentSpellManager;
 
     /**
-     * The currently monitored {@link Shortcut} instance. Set to
-     * <code>null</code> if not active.
+     * The currently monitored {@link Shortcut} instance. Set to {@code null}
+     * if not active.
      */
     @Nullable
     private Shortcut shortcut;

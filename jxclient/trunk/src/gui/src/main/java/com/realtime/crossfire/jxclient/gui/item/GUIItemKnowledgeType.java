@@ -68,7 +68,7 @@ public class GUIItemKnowledgeType extends GUIItemItem {
     private final int defaultIndex;
 
     /**
-     * The currently selected spell or <code>-1</code> if none is selected.
+     * The currently selected spell or {@code -1} if none is selected.
      * Corresponds to {@link #currentFace}.
      */
     private int index = -1;
@@ -111,7 +111,7 @@ public class GUIItemKnowledgeType extends GUIItemItem {
      * @param facesManager the faces manager for looking up faces
      * @param knowledgeManager the knowledge manager instance to watch
      * @param itemView the item view to use
-     * @param size the size of the component or <code>0</code> for undefined
+     * @param size the size of the component or {@code 0} for undefined
      */
     public GUIItemKnowledgeType(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final KnowledgeManager knowledgeManager, @NotNull final ItemView itemView, final int size) {
         super(tooltipManager, elementListener, name, itemPainter, facesManager);

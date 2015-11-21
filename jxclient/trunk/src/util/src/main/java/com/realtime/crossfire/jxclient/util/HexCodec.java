@@ -43,7 +43,7 @@ public class HexCodec {
 
     /**
      * Append a given value as a two digits hexadecimal number.
-     * @param sb the <code>StringBuilder</code> to append to
+     * @param sb the {@code StringBuilder} to append to
      * @param value the value to append
      */
     public static void hexEncode2(@NotNull final StringBuilder sb, final int value) {
@@ -53,7 +53,7 @@ public class HexCodec {
 
     /**
      * Append a given value as a four digits hexadecimal number.
-     * @param sb the <code>StringBuilder</code> to append to
+     * @param sb the {@code StringBuilder} to append to
      * @param value the value to append
      */
     private static void hexEncode4(@NotNull final StringBuilder sb, final int value) {

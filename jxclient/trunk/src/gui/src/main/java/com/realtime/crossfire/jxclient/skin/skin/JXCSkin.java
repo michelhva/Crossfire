@@ -73,7 +73,7 @@ public interface JXCSkin extends Iterable<Gui> {
     /**
      * Returns the "really quit?" dialog. It is opened when the user presses
      * ESCAPE.
-     * @return the dialog or <code>null</code> if the dialog does not exist
+     * @return the dialog or {@code null} if the dialog does not exist
      */
     @Nullable
     Gui getDialogQuit();
@@ -81,7 +81,7 @@ public interface JXCSkin extends Iterable<Gui> {
     /**
      * Returns the "disconnect from server?" dialog. It is opened when the user
      * presses ESCAPE.
-     * @return the dialog or <code>null</code> if the dialog does not exist
+     * @return the dialog or {@code null} if the dialog does not exist
      */
     @Nullable
     Gui getDialogDisconnect();
@@ -89,7 +89,7 @@ public interface JXCSkin extends Iterable<Gui> {
     /**
      * Returns the "connection in progress" dialog. It is opened while the
      * connection establishment is in progress.
-     * @return the dialog or <code>null</code> if the dialog does not exist
+     * @return the dialog or {@code null} if the dialog does not exist
      */
     @Nullable
     Gui getDialogConnect();
@@ -182,7 +182,7 @@ public interface JXCSkin extends Iterable<Gui> {
 
     /**
      * Returns the {@link AbstractLabel} that is used to display tooltips.
-     * @return the label or <code>null</code> if tooltips are disabled
+     * @return the label or {@code null} if tooltips are disabled
      */
     @Nullable
     AbstractLabel getTooltipLabel();

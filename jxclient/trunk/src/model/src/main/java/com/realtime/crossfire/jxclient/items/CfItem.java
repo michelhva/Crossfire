@@ -459,7 +459,7 @@ public class CfItem {
     }
 
     /**
-     * Add a <code>CfItemModifiedListener</code>. The listener will be notified
+     * Add a {@code CfItemModifiedListener}. The listener will be notified
      * about attribute changes of this item.
      * @param listener the listener to remove
      */
@@ -468,7 +468,7 @@ public class CfItem {
     }
 
     /**
-     * Remove a <code>CfItemModifiedListener</code>.
+     * Remove a {@code CfItemModifiedListener}.
      * @param listener the listener to remove
      */
     public void removeCfItemModifiedListener(@NotNull final CfItemListener listener) {
@@ -543,8 +543,7 @@ public class CfItem {
     }
 
     /**
-     * Appends "(&lt;ident&gt;)" if this item has the flag <code>flag</code>
-     * set.
+     * Appends "(&lt;ident&gt;)" if this item has the flag {@code flag} set.
      * @param sb the string builder to append to
      * @param flag the flag to check
      * @param ident the ident string to append

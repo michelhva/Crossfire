@@ -46,8 +46,8 @@ public class ClipCache {
     private final AudioFileLoader audioFileLoader;
 
     /**
-     * The writer for logging sound related information or <code>null</code> to
-     * not log.
+     * The writer for logging sound related information or {@code null} to not
+     * log.
      */
     @Nullable
     private final DebugWriter debugSound;
@@ -56,7 +56,7 @@ public class ClipCache {
      * Creates a new instance.
      * @param audioFileLoader the audio file loader for loading audio files
      * @param debugSound the writer for logging sound related information or
-     * <code>null</code> to not log
+     * {@code null} to not log
      */
     public ClipCache(@NotNull final AudioFileLoader audioFileLoader, @Nullable final DebugWriter debugSound) {
         this.audioFileLoader = audioFileLoader;
@@ -67,7 +67,7 @@ public class ClipCache {
      * Allocates a new clip.
      * @param name an optional prefix for the action name
      * @param action the action name of the clip to allocate
-     * @return the new clip, or <code>null</code> if an error occurs
+     * @return the new clip, or {@code null} if an error occurs
      */
     @Nullable
     public DataLine allocateClip(@Nullable final String name, @NotNull final String action) {
@@ -89,7 +89,7 @@ public class ClipCache {
      * Allocates a new clip.
      * @param name an optional prefix for the action name
      * @param action the action name of the clip to allocate
-     * @return the new clip, or <code>null</code> if an error occurs
+     * @return the new clip, or {@code null} if an error occurs
      */
     @Nullable
     private DataLine newClip(@Nullable final String name, @NotNull final String action) {

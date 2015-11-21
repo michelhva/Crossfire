@@ -101,7 +101,7 @@ public class CommandHistory {
 
     /**
      * Returns the previous command.
-     * @return the previous command or <code>null</code> if no previous command
+     * @return the previous command or {@code null} if no previous command
      *         exists
      */
     @Nullable
@@ -111,8 +111,7 @@ public class CommandHistory {
 
     /**
      * Returns the next command.
-     * @return the next command or <code>null</code> if no previous command
-     *         exists
+     * @return the next command or {@code null} if no previous command exists
      */
     @Nullable
     public String down() {
@@ -126,7 +125,7 @@ public class CommandHistory {
      * Returns the last executed command.
      * @param index the index of the command; 0=last command, 1=second to last,
      * etc.
-     * @return the last executed command or <code>null</code> if the index is
+     * @return the last executed command or {@code null} if the index is
      *         invalid
      */
     @Nullable

@@ -42,7 +42,7 @@ public interface FacesManager {
      * updated as soon as loading has finished.
      * @param faceNum the face ID
      * @param isUnknownImage returns whether the returned face is the "unknown"
-     * face; ignored if <code>null</code>
+     * face; ignored if {@code null}
      * @return the face, or the "unknown" face if the face is not loaded
      */
     @NotNull
@@ -54,7 +54,7 @@ public interface FacesManager {
      * updated as soon as loading has finished.
      * @param faceNum the face ID
      * @param isUnknownImage returns whether the returned face is the "unknown"
-     * face; ignored if <code>null</code>
+     * face; ignored if {@code null}
      * @return the face, or the "unknown" face if the face is not loaded
      */
     @NotNull
@@ -66,7 +66,7 @@ public interface FacesManager {
      * updated as soon as loading has finished.
      * @param faceNum the face ID
      * @param isUnknownImage returns whether the returned face is the "unknown"
-     * face; ignored if <code>null</code>
+     * face; ignored if {@code null}
      * @return the face, or the "unknown" face if the face is not loaded
      */
     @NotNull
@@ -85,7 +85,7 @@ public interface FacesManager {
      * Returns the {@link Face} instance for a given face ID. Requests the face
      * from the server if necessary.
      * @param faceNum the face ID to request
-     * @return the face or <code>null</code> for the empty face
+     * @return the face or {@code null} for the empty face
      */
     @Nullable
     Face getFace2(int faceNum);

@@ -91,7 +91,7 @@ public class GaugeState {
      * Creates a new instance.
      * @param fullImage the image representing a full gauge
      * @param negativeImage the image representing a more-than-empty gauge; if
-     * set to <code>null</code> the gauge remains in empty state
+     * set to {@code null} the gauge remains in empty state
      * @param dx the x-offset for drawing
      * @param dy the y-offset for drawing
      */

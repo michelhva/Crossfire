@@ -58,7 +58,7 @@ import org.jetbrains.annotations.Nullable;
 public class GuiManager {
 
     /**
-     * The currently active skin. Set to <code>null</code> if no skin is set.
+     * The currently active skin. Set to {@code null} if no skin is set.
      */
     @Nullable
     private JXCSkin skin;
@@ -94,29 +94,29 @@ public class GuiManager {
     private final KeybindingsManager keybindingsManager;
 
     /**
-     * The "really quit?" dialog. Set to <code>null</code> if the skin does not
+     * The "really quit?" dialog. Set to {@code null} if the skin does not
      * define this dialog.
      */
     @Nullable
     private Gui dialogQuit;
 
     /**
-     * The "really disconnect?" dialog. Set to <code>null</code> if the skin
-     * does not define this dialog.
+     * The "really disconnect?" dialog. Set to {@code null} if the skin does
+     * not define this dialog.
      */
     @Nullable
     private Gui dialogDisconnect;
 
     /**
-     * The "connect in progress" dialog. Set to <code>null</code> if the skin
-     * does not define this dialog.
+     * The "connect in progress" dialog. Set to {@code null} if the skin does
+     * not define this dialog.
      */
     @Nullable
     private Gui dialogConnect;
 
     /**
-     * The "message" field within {@link #dialogConnect}. Set to
-     * <code>null</code> if the dialog does not define a "message" label.
+     * The "message" field within {@link #dialogConnect}. Set to {@code null}
+     * if the dialog does not define a "message" label.
      */
     @Nullable
     private AbstractLabel dialogConnectLabel;
@@ -577,8 +577,8 @@ public class GuiManager {
      * @param dialog the dialog to show
      * @param autoCloseOnDeactivate whether the dialog should auto-close when it
      * becomes inactive; ignored if the dialog is already open
-     * @return whether the dialog was opened or raised; <code>false</code> if
-     *         the dialog already was opened as the topmost dialog
+     * @return whether the dialog was opened or raised; {@code false} if the
+     * dialog already was opened as the topmost dialog
      */
     public boolean openDialog(@NotNull final Gui dialog, final boolean autoCloseOnDeactivate) {
         final boolean[] result = new boolean[1];
@@ -778,8 +778,8 @@ public class GuiManager {
     /**
      * Closes the given dialog. Does nothing if the dialog is not opened.
      * @param dialog the dialog to close
-     * @return whether the dialog has been closed; <code>false</code> if the
-     *         dialog was not open
+     * @return whether the dialog has been closed; {@code false} if the dialog
+     * was not open
      */
     public boolean closeDialog(@NotNull final Gui dialog) {
         return windowRenderer.closeDialog(dialog);
@@ -804,8 +804,8 @@ public class GuiManager {
      * input field, the first matching one is selected. <p>If neither the main
      * gui nor any visible dialog has an input text field, invisible GUIs are
      * checked as well. If one is found, it is made visible.
-     * @return the command input text field, or <code>null</code> if the skin
-     *         has no command input text field defined
+     * @return the command input text field, or {@code null} if the skin has no
+     * command input text field defined
      */
     @Nullable
     private GUIText activateCommandInput() {
@@ -831,10 +831,10 @@ public class GuiManager {
     /**
      * Activates the command input text field. If the skin defines more than one
      * input field, the first matching one is selected.
-     * <p/>
+     * <p>
      * If neither the main gui nor any visible dialog has an input text field,
      * invisible GUIs are checked as well. If one is found, it is made visible.
-     * @param newText the new command text if non-<code>null</code>
+     * @param newText the new command text if non-{@code null}
      */
     public void activateCommandInput(@Nullable final String newText) {
         final GUIText textArea = activateCommandInput();

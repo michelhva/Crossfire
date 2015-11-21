@@ -29,7 +29,7 @@ import org.jetbrains.annotations.Nullable;
 /**
  * Represents a square in a {@link CfMap}. A square comprises of {@link
  * Map2#NUM_LAYERS} faces as well as a darkness value.
- * <p/>
+ * <p>
  * This class assumes that the "head" part of a face is the part the server did
  * sent. This is the bottom-right part for multi-square objects. Not that this
  * definition is inconsistent to what the server assumes as the head part of an
@@ -81,9 +81,8 @@ public class CfMapSquare {
     private final int y;
 
     /**
-     * Flag used to defer clearing the values: when a <code>CfMapSquare</code>
-     * is cleared, the old values remain valid until at least one field is
-     * re-set.
+     * Flag used to defer clearing the values: when a {@code CfMapSquare} is
+     * cleared, the old values remain valid until at least one field is re-set.
      */
     private boolean fogOfWar;
 
@@ -185,8 +184,8 @@ public class CfMapSquare {
 
     /**
      * Sets the darkness value of this square.
-     * @param darkness the new darkness value between <code>0</code> and
-     * <code>255</code>; 0=dark, 255=full bright
+     * @param darkness the new darkness value between {@code 0} and {@code 255};
+     * 0=dark, 255=full bright
      * @return whether fog-of-war has been cleared
      */
     public boolean setDarkness(final int darkness) {
@@ -210,7 +209,7 @@ public class CfMapSquare {
 
     /**
      * Sets the smooth value of this square.
-     * @param layer the layer between <code>0</code> and <code>LAYERS-1</code>
+     * @param layer the layer between {@code 0} and {@code LAYERS-1}
      * @param smooth the new smooth value
      * @return whether fog-of-war has been cleared (1) or whether the smooth
      *         value has changed (2)
@@ -229,7 +228,7 @@ public class CfMapSquare {
 
     /**
      * Returns the smooth value of this square.
-     * @param layer the layer between <code>0</code> and <code>LAYERS-1</code>
+     * @param layer the layer between {@code 0} and {@code LAYERS-1}
      * @return the smooth value of the square
      */
     public int getSmooth(final int layer) {
@@ -262,8 +261,8 @@ public class CfMapSquare {
 
     /**
      * Sets the face of a layer.
-     * @param layer the layer for the new face between <code>0</code> and
-     * <code>LAYERS-1</code>
+     * @param layer the layer for the new face between {@code 0} and {@code
+     * LAYERS-1}
      * @param face the face to set
      */
     public void setFace(final int layer, @Nullable final Face face) {
@@ -285,10 +284,10 @@ public class CfMapSquare {
 
     /**
      * Sets the map square containing the head face for a layer.
-     * @param layer the layer for the new head face between <code>0</code> and
-     * <code>LAYERS-1</code>
+     * @param layer the layer for the new head face between {@code 0} and
+     * {@code LAYERS-1}
      * @param mapSquare the map square containing the head face; may be
-     * <code>null</code>
+     * {@code null}
      * @param setAlways if set, always update the face; if unset, only update
      * when fog-of-war
      */
@@ -302,7 +301,7 @@ public class CfMapSquare {
     /**
      * Returns the map square of the head of a multi-square object.
      * @param layer the layer to return the head for
-     * @return the head map square, or <code>null</code> if this square does not
+     * @return the head map square, or {@code null} if this square does not
      *         contain a multi-tail
      */
     @Nullable

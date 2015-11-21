@@ -83,8 +83,8 @@ public class Processor implements Runnable {
 
     /**
      * Stops playing music. The music is faded out rather than cut off.
-     * @param fadeOut Whether tp fade out the music (<code>true</code>) or to
-     * cut it off (<code>false</code>).
+     * @param fadeOut Whether tp fade out the music ({@code true}) or to cut it
+     * off ({@code false}).
      */
     public void terminate(final boolean fadeOut) {
         state = fadeOut ? 2 : 4;

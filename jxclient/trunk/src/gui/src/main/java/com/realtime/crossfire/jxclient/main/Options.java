@@ -48,8 +48,8 @@ public class Options {
     private boolean fullScreen = true;
 
     /**
-     * The Crossfire server to connect to or <code>null</code> to show the
-     * server selections screen.
+     * The Crossfire server to connect to or {@code null} to show the server
+     * selections screen.
      */
     @Nullable
     private String server;
@@ -60,48 +60,47 @@ public class Options {
     private boolean debugGui;
 
     /**
-     * The filename for Crossfire protocol message logs or <code>null</code> to
-     * not log protocol messages.
+     * The filename for Crossfire protocol message logs or {@code null} to not
+     * log protocol messages.
      */
     @Nullable
     private String debugProtocolFilename;
 
     /**
-     * The filename for keyboard debug logs or <code>null</code> to not log
-     * keyboard input.
+     * The filename for keyboard debug logs or {@code null} to not log keyboard
+     * input.
      */
     @Nullable
     private String debugKeyboardFilename;
 
     /**
-     * The filename for mouse debug logs or <code>null</code> to not log
-     * mouse input.
+     * The filename for mouse debug logs or {@code null} to not log mouse
+     * input.
      */
     @Nullable
     private String debugMouseFilename;
 
     /**
-     * The filename for screen debug logs or <code>null</code> to not log screen
+     * The filename for screen debug logs or {@code null} to not log screen
      * logs.
      */
     @Nullable
     private String debugScreenFilename;
 
     /**
-     * The filename for sound debug logs or <code>null</code> to not log sound
-     * logs.
+     * The filename for sound debug logs or {@code null} to not log sound logs.
      */
     @Nullable
     private String debugSoundFilename;
 
     /**
-     * The resolution to use or <code>null</code> for default.
+     * The resolution to use or {@code null} for default.
      */
     @Nullable
     private Resolution resolution;
 
     /**
-     * The skin name to load or <code>null</code> for the default skin.
+     * The skin name to load or {@code null} for the default skin.
      */
     @Nullable
     private String skin;
@@ -227,7 +226,7 @@ public class Options {
 
     /**
      * Returns the filename for Crossfire protocol debug logs.
-     * @return the filename or <code>null</code> to not log Crossfire protocol
+     * @return the filename or {@code null} to not log Crossfire protocol
      *         messages
      */
     @Nullable
@@ -237,7 +236,7 @@ public class Options {
 
     /**
      * Returns the filename for keyboard debug logs.
-     * @return the filename or <code>null</code> to not log keyboard input
+     * @return the filename or {@code null} to not log keyboard input
      */
     @Nullable
     public String getDebugKeyboardFilename() {
@@ -246,7 +245,7 @@ public class Options {
 
     /**
      * Returns the filename for mouse debug logs.
-     * @return the filename or <code>null</code> to not log mouse input
+     * @return the filename or {@code null} to not log mouse input
      */
     @Nullable
     public String getDebugMouseFilename() {
@@ -255,7 +254,7 @@ public class Options {
 
     /**
      * Returns the filename for screen debug logs.
-     * @return the filename or <code>null</code> to not log screen logs
+     * @return the filename or {@code null} to not log screen logs
      */
     @Nullable
     public String getDebugScreenFilename() {
@@ -264,7 +263,7 @@ public class Options {
 
     /**
      * Returns the filename for sound debug logs.
-     * @return the filename or <code>null</code> to not log sound logs
+     * @return the filename or {@code null} to not log sound logs
      */
     @Nullable
     public String getDebugSoundFilename() {
@@ -281,7 +280,7 @@ public class Options {
 
     /**
      * Returns the resolution.
-     * @return the resolution or <code>null</code> for default
+     * @return the resolution or {@code null} for default
      */
     @Nullable
     public Resolution getResolution() {
@@ -290,7 +289,7 @@ public class Options {
 
     /**
      * Returns the skin name.
-     * @return the skin name or <code>null</code> for the default skin
+     * @return the skin name or {@code null} for the default skin
      */
     @Nullable
     public String getSkin() {
@@ -315,7 +314,7 @@ public class Options {
 
     /**
      * Returns the Crossfire server to connect to.
-     * @return the server or <code>null</code> for interactive server selection
+     * @return the server or {@code null} for interactive server selection
      */
     @Nullable
     public String getServer() {

@@ -64,8 +64,8 @@ public class StatsWatcher {
 
     /**
      * Ignore level changes until this time has reached. This is used to
-     * suppress false positives right after login. The value <code>0</code>
-     * means not to ignore level changes.
+     * suppress false positives right after login. The value {@code 0} means
+     * not to ignore level changes.
      */
     private long ignoreLevelChange = System.currentTimeMillis()+DELAY;
 

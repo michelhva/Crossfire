@@ -63,7 +63,7 @@ public class ServerCache {
 
     /**
      * Creates a new instance.
-     * @param file the backing file or <code>null</code> to not cache on disk
+     * @param file the backing file or {@code null} to not cache on disk
      */
     public ServerCache(@Nullable final File file) {
         this.file = file;

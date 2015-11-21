@@ -38,8 +38,8 @@ import org.jetbrains.annotations.Nullable;
 public class AudioFileLoader {
 
     /**
-     * The writer for logging sound related information or <code>null</code> to
-     * not log.
+     * The writer for logging sound related information or {@code null} to not
+     * log.
      */
     @Nullable
     private final DebugWriter debugSound;
@@ -47,17 +47,17 @@ public class AudioFileLoader {
     /**
      * Private constructor to prevent instantiation.
      * @param debugSound the writer for logging sound related information or
-     * <code>null</code> to not log
+     * {@code null} to not log
      */
     public AudioFileLoader(@Nullable final DebugWriter debugSound) {
         this.debugSound = debugSound;
     }
 
     /**
-     * Returns an input stream for an audio file. <code>action</code> identifies
-     * the audio file. <code>name</code> is an optional prefix.
+     * Returns an input stream for an audio file. {@code action} identifies the
+     * audio file. {@code name} is an optional prefix.
      * @param name the name
-     * @param action the action; may be <code>null</code>
+     * @param action the action; may be {@code null}
      * @return the input stream
      * @throws IOException if the file cannot be located
      */

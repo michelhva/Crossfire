@@ -59,8 +59,8 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     private final MetaserverModel metaserverModel;
 
     /**
-     * An image to draw before the server description. May be <code>null</code>
-     * to draw no image.
+     * An image to draw before the server description. May be {@code null} to
+     * draw no image.
      */
     @Nullable
     private final Image image;
@@ -119,7 +119,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
      * @param metaserverModel the metaserver model to monitor
      * @param name the name of this element
      * @param image an image to draw before the server description; may be
-     * <code>null</code> to draw no image
+     * {@code null} to draw no image
      * @param font the font to use
      * @param defaultIndex the initial metaserver index
      * @param format the format used to display metaserver instances

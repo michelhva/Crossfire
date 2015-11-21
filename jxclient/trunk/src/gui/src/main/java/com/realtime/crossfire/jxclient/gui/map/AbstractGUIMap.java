@@ -86,7 +86,7 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
     private final FacesProvider facesProvider;
 
     /**
-     * The {@link SmoothingRenderer} to use or <code>null</code> to not draw
+     * The {@link SmoothingRenderer} to use or {@code null} to not draw
      * smoothed faces.
      */
     @Nullable
@@ -178,25 +178,25 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
 
     /**
      * The distance the leftmost visible tile reaches outside the map window.
-     * <code>-{@link #tileSize}<displayMinOffsetX<=0</code>.
+     * {@code -tileSize<displayMinOffsetX<=0}.
      */
     private int displayMinOffsetX;
 
     /**
      * The number of pixels that are visible in the rightmost visible tile.
-     * <code>0<=displayMaxOffsetX<{@link #tileSize}</code>.
+     * {@code 0<=displayMaxOffsetX<tileSize}.
      */
     private int displayMaxOffsetX;
 
     /**
      * The distance the topmost visible tile reaches outside the map window.
-     * <code>-{@link #tileSize}<displayMinOffsetX<=0</code>.
+     * {@code -tileSize<displayMinOffsetX<=0}.
      */
     private int displayMinOffsetY;
 
     /**
      * The number of pixels that are visible in the bottommost visible tile.
-     * <code>0<=displayMaxOffsetY<{@link #tileSize}</code>.
+     * {@code 0<=displayMaxOffsetY<tileSize}.
      */
     private int displayMaxOffsetY;
 
@@ -307,8 +307,8 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
      * @param name the name of this element
      * @param mapUpdaterState the map updater state instance to use
      * @param facesProvider the faces provider for looking up faces
-     * @param smoothingRenderer the smoothing renderer to use or
-     * <code>null</code> to not draw smoothed faces
+     * @param smoothingRenderer the smoothing renderer to use or {@code null}
+     * to not draw smoothed faces
      */
     protected AbstractGUIMap(final boolean avoidCopyArea, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final FacesProvider facesProvider, @Nullable final SmoothingRenderer smoothingRenderer) {
         super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT);

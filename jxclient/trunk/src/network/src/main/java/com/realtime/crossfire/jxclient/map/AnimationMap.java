@@ -35,8 +35,8 @@ import org.jetbrains.annotations.Nullable;
 public class AnimationMap {
 
     /**
-     * The active {@link AnimationState} instances. Maps map {@link Location} to
-     * <code>AnimationState</code> instance.
+     * The active {@link AnimationState} instances. Maps map {@link Location}
+     * to {@code AnimationState} instance.
      */
     @NotNull
     private final Map<Location, AnimationState> animations = new HashMap<Location, AnimationState>();
@@ -104,8 +104,8 @@ public class AnimationMap {
 
     /**
      * Calls {@link AnimationState#free(Location)}.
-     * @param animationState the instance to call <code>free()</code> on or
-     * <code>null</code> to do nothing
+     * @param animationState the instance to call {@code free()} on or {@code
+     * null} to do nothing
      * @param location the location to pass
      */
     private static void freeAnimationState(@Nullable final AnimationState animationState, @NotNull final Location location) {

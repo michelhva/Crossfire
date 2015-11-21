@@ -76,8 +76,8 @@ public interface ReceivedPacketListener extends EventListener {
      * A stats packet has been received.
      * @param command the command string
      * @param stat the stat value
-     * @param args the stat arguments depending on <code>type</code> and
-     * <code>stat</code>
+     * @param args the stat arguments depending on {@code type} and {@code
+     * stat}
      */
     void processStats(@NotNull String command, int stat, @NotNull Object[] args);
 

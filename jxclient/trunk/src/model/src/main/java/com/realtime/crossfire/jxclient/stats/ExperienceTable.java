@@ -59,7 +59,7 @@ public class ExperienceTable {
     /**
      * Adds a new level-&gt;experience mapping.
      * @param level the level to update
-     * @param exp the experience needed to reach level <code>level</code>
+     * @param exp the experience needed to reach level {@code level}
      */
     private void add(final int level, final long exp) {
         if (level < 1) {
@@ -112,7 +112,7 @@ public class ExperienceTable {
      * Returns the experience needed to reach the next level.
      * @param currentLevel the current level
      * @param currentExp the current experience
-     * @return the experience to reach level <code>currentLevel+1</code>
+     * @return the experience to reach level {@code currentLevel+1}
      */
     public long getExperienceToNextLevel(final int currentLevel, final long currentExp) {
         final long expNextLevel = getExperience(currentLevel+1);

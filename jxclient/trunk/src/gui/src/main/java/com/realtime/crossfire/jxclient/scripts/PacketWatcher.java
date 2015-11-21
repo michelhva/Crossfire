@@ -55,8 +55,8 @@ public class PacketWatcher {
     private final ScriptProcess scriptProcess;
 
     /**
-     * A {@link Pattern} matching all {@link #commands}. Set to
-     * <code>null</code> when not watching for commands.
+     * A {@link Pattern} matching all {@link #commands}. Set to {@code null}
+     * when not watching for commands.
      */
     @Nullable
     private Pattern pattern;
@@ -64,7 +64,7 @@ public class PacketWatcher {
     /**
      * The {@link ReceivedPacketListener} attached to {@link
      * #crossfireServerConnection}. It is attached if and only if {@link
-     * #pattern} is non-<code>null</code>.
+     * #pattern} is non-{@code null}.
      */
     @NotNull
     private final ReceivedPacketListener receivedPacketListener = new ReceivedPacketListener() {
@@ -150,8 +150,8 @@ public class PacketWatcher {
         }
 
         /**
-         * Extracts a two-byte integer value from a <code>byte</code> array.
-         * @param packet the <code>byte</code> array
+         * Extracts a two-byte integer value from a {@code byte} array.
+         * @param packet the {@code byte} array
          * @return the integer value
          */
         private int getShort(@NotNull final ByteBuffer packet) {
@@ -159,8 +159,8 @@ public class PacketWatcher {
         }
 
         /**
-         * Extracts a four-byte integer value from a <code>byte</code> array.
-         * @param packet the <code>byte</code> array
+         * Extracts a four-byte integer value from a {@code byte} array.
+         * @param packet the {@code byte} array
          * @return the integer value
          */
         private int getInt(@NotNull final ByteBuffer packet) {

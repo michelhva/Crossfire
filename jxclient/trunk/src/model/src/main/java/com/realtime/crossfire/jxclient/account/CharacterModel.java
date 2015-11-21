@@ -72,8 +72,7 @@ public class CharacterModel {
     /**
      * Returns a character entry by index.
      * @param index the index
-     * @return the character entry, or <code>null</code> if the index is
-     *         invalid
+     * @return the character entry, or {@code null} if the index is invalid
      */
     @Nullable
     public CharacterInformation getEntry(final int index) {
@@ -89,7 +88,7 @@ public class CharacterModel {
     /**
      * Returns the index of an entry by character name.
      * @param characterName the character name
-     * @return the index, or <code>-1</code> if not found
+     * @return the index, or {@code -1} if not found
      */
     public int getCharacterIndex(@NotNull final String characterName) {
         synchronized (sync) {

@@ -116,10 +116,10 @@ public interface GUIElement {
      * Will be called when the mouse moves within this component while the
      * button is pressed. This event will be delivered after {@link
      * #mouseMoved(MouseEvent)}.
-     * <p/>
+     * <p>
      * Note: if the mouse leaves this element's bounding box while the mouse
-     * button is still pressed, further <code>mouseDragged</code> (but no
-     * <code>mouseMoved</code>) events will be generated.
+     * button is still pressed, further {@code mouseDragged} (but no {@code
+     * mouseMoved}) events will be generated.
      * @param e the mouse event relative to this element
      */
     void mouseDragged(@NotNull MouseEvent e);
@@ -131,14 +131,14 @@ public interface GUIElement {
 
     /**
      * Sets the tooltip text to show when the mouse is inside this element.
-     * @param tooltipText the text to show or <code>null</cod> to disable the
+     * @param tooltipText the text to show or {@code null} to disable the
      * tooltip for this element
      */
     void setTooltipText(@Nullable String tooltipText);
 
     /**
      * Sets the tooltip text to show when the mouse is inside this element.
-     * @param tooltipText the text to show, or <code>null</cod> to disable the
+     * @param tooltipText the text to show, or {@code null} to disable the
      * tooltip for this element
      * @param x the x coordinate
      * @param y the y coordinate
@@ -156,7 +156,7 @@ public interface GUIElement {
     /**
      * Sets the {@link GUIElementChangedListener} to be notified. Note that at
      * most one such listener may be set per gui element.
-     * @param changedListener the listener or <code>null</code> to unset
+     * @param changedListener the listener or {@code null} to unset
      */
     void setChangedListener(@Nullable GUIElementChangedListener changedListener);
 

@@ -173,7 +173,7 @@ public class NewCharacterInformation {
     /**
      * Returns a {@link ClassRaceInfo} by race name.
      * @param race the race name
-     * @return the race info or <code>null</code> if no race info is defined
+     * @return the race info or {@code null} if no race info is defined
      */
     @Nullable
     public ClassRaceInfo getRaceInfo(@NotNull final String race) {
@@ -194,7 +194,7 @@ public class NewCharacterInformation {
     /**
      * Returns a {@link ClassRaceInfo class info} by class name.
      * @param className the class name
-     * @return the class race info or <code>null</code> if no such class info is
+     * @return the class race info or {@code null} if no such class info is
      *         defined
      */
     @Nullable

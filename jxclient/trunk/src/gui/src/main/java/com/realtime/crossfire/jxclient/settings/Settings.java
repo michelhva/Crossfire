@@ -71,7 +71,7 @@ public class Settings {
 
     /**
      * Returns the string associated with the specified key at a node, or
-     * <code>defaultValue</code> if there is no association for this key.
+     * {@code defaultValue} if there is no association for this key.
      * @param key the key to get the value for
      * @return the value
      */
@@ -83,7 +83,7 @@ public class Settings {
 
     /**
      * Returns the boolean associated with the specified key at a node or
-     * <code>defaultValue</code> if there is no association for this key.
+     * {@code defaultValue} if there is no association for this key.
      * @param key the key to get the value for
      * @return the value
      */
@@ -98,7 +98,7 @@ public class Settings {
 
     /**
      * Returns the integer associated with the specified key at a node or
-     * <code>defaultValue</code> if there is no association for this key.
+     * {@code defaultValue} if there is no association for this key.
      * @param key the key to get the value for
      * @return the value
      */
@@ -108,7 +108,7 @@ public class Settings {
 
     /**
      * Returns the long associated with the specified key at a node or
-     * <code>defaultValue</code> if there is no association for this key.
+     * {@code defaultValue} if there is no association for this key.
      * @param key the key to get the value for
      * @return the value
      */
@@ -275,7 +275,7 @@ public class Settings {
 
     /**
      * Saves one node.
-     * @param writer the <code>Writer</code> to write to
+     * @param writer the {@code Writer} to write to
      * @param node the node to save
      * @throws IOException if the node cannot be saved
      */

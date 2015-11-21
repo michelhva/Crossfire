@@ -48,6 +48,7 @@ public interface TooltipManager {
     /**
      * Updates the tooltip text of a GUI element. Does nothing if the given GUI
      * element is not active.
+     * @param element the GUI element
      * @param tooltipText the next tooltip text
      */
     void setTooltipText(@NotNull AbstractGUIElement element, @Nullable String tooltipText);
@@ -56,12 +57,18 @@ public interface TooltipManager {
      * Updates the tooltip text of a GUI element. Does nothing if the given GUI
      * element is not active.
      * @param element the GUI element to process
+     * @param tooltipText the text to display in the tooltip
+     * @param x the x coordinate of the tooltip
+     * @param y the y coordinate of the tooltip
+     * @param w the width of the tooltip
+     * @param h the height of the tooltip
      */
     void setTooltipText(@NotNull GUIElement element, @Nullable String tooltipText, int x, int y, int w, int h);
 
     /**
      * Returns whether the tooltip is enabled.
      * @param element the element to check
+     * @return whether the tooltip is enabled
      */
     boolean hasTooltipText(AbstractGUIElement element);
 

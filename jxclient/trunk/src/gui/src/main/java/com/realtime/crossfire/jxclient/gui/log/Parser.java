@@ -96,7 +96,7 @@ public class Parser {
     private FontID font = FontID.PRINT;
 
     /**
-     * The color to use. <code>null</code> means default color.
+     * The color to use. {@code null} means default color.
      */
     @Nullable
     private Color color;
@@ -151,7 +151,7 @@ public class Parser {
      * Parses one text line.
      * @param text the text to process
      * @param defaultColor the default color to use
-     * @return the <code>Line</code> instance
+     * @return the {@code Line} instance
      */
     @NotNull
     private Line parseLine(@NotNull final String text, @Nullable final Color defaultColor) {

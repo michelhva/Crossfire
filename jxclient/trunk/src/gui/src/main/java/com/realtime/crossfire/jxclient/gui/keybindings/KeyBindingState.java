@@ -44,7 +44,7 @@ public class KeyBindingState {
     private final KeyBindings keyBindings2;
 
     /**
-     * The commands to bind, or <code>null</code> to unbind.
+     * The commands to bind, or {@code null} to unbind.
      */
     @Nullable
     private final CommandList commands;
@@ -62,17 +62,17 @@ public class KeyBindingState {
     private int type = -1;
 
     /**
-     * The key evnt. Only valid if <code>{@link #type} == 0</code>.
+     * The key evnt. Only valid if {@code type == 0}.
      */
     private KeyEvent2 keyEvent;
 
     /**
      * Creates a new instance.
-     * @param keyBindings the <code>KeyBindings</code> to modify; may be
-     * <code>null</code> when removing bindings
-     * @param keyBindings2 the <code>KeyBindings</code> to modify; only used
-     * when removing bindings; may be <code>null</code> when removing bindings
-     * @param commands the commands to bind, or <code>null</code> to unbind
+     * @param keyBindings the {@code KeyBindings} to modify; may be {@code
+     * null} when removing bindings
+     * @param keyBindings2 the {@code KeyBindings} to modify; only used when
+     * removing bindings; may be {@code null} when removing bindings
+     * @param commands the commands to bind, or {@code null} to unbind
      */
     public KeyBindingState(@Nullable final KeyBindings keyBindings, @Nullable final KeyBindings keyBindings2, @Nullable final CommandList commands) {
         this.keyBindings = keyBindings;
@@ -92,8 +92,8 @@ public class KeyBindingState {
 
     /**
      * Records a key released event.
-     * @return <code>true</code> if the dialog has finished, or
-     *         <code>false</code> if the dialog is still active
+     * @return {@code true} if the dialog has finished, or {@code false} if the
+     * dialog is still active
      */
     public boolean keyReleased() {
         if (state == 0) {

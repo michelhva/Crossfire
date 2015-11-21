@@ -320,26 +320,26 @@ public class JXCSkinLoader {
     private final JXCSkinCache<Font> definedFonts = new JXCSkinCache<Font>("font");
 
     /**
-     * The text button factory. Set to <code>null</code> until defined.
+     * The text button factory. Set to {@code null} until defined.
      */
     @Nullable
     private TextButtonFactory textButtonFactory;
 
     /**
-     * The dialog factory. Set to <code>null</code> until defined.
+     * The dialog factory. Set to {@code null} until defined.
      */
     @Nullable
     private DialogFactory dialogFactory;
 
     /**
-     * The checkbox factory. Set to <code>null</code> until defined.
+     * The checkbox factory. Set to {@code null} until defined.
      */
     @Nullable
     private CheckBoxFactory checkBoxFactory;
 
     /**
-     * The {@link ItemPainter} for default item parameters. Set to
-     * <code>null</code> until defined.
+     * The {@link ItemPainter} for default item parameters. Set to {@code null}
+     * until defined.
      */
     @Nullable
     private ItemPainter defaultItemPainter;
@@ -408,6 +408,7 @@ public class JXCSkinLoader {
      * @param inventoryView the inventory item view to use
      * @param floorView the floor view to use
      * @param spellView the spells view to use
+     * @param spellSkillsView the spell skills view to use
      * @param facesManager the faces manager instance to use
      * @param mapUpdaterState the map updater state instance to use
      * @param defaultKeyBindings the default key bindings
@@ -1373,7 +1374,7 @@ public class JXCSkinLoader {
      * Returns an unreferenced GUI element by name.
      * @param name the gui element's name
      * @param unreferencedElements the unreferenced gui elements
-     * @return the named unreferenced gui element or <code>null</code>
+     * @return the named unreferenced gui element or {@code null}
      */
     @Nullable
     private Component getUnreferencedElement(@NotNull final String name, @NotNull final Collection<GUIElement> unreferencedElements) {

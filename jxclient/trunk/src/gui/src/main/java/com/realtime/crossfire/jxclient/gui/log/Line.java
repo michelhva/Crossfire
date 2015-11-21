@@ -45,7 +45,7 @@ public class Line implements Iterable<Segment> {
     private final List<Segment> segments = new ArrayList<Segment>();
 
     /**
-     * The total height of this line. Set to <code>-1</code> if unknown.
+     * The total height of this line. Set to {@code -1} if unknown.
      */
     private int height = -1;
 
@@ -56,7 +56,7 @@ public class Line implements Iterable<Segment> {
      * @param italic whether italic face is enabled
      * @param underline whether underlining is enabled
      * @param font the font to use
-     * @param color the color to use; <code>null</code> means "default color"
+     * @param color the color to use; {@code null} means "default color"
      */
     public void addSegment(@NotNull final String text, final boolean bold, final boolean italic, final boolean underline, @NotNull final FontID font, @Nullable final Color color) {
         segments.add(new TextSegment(text, bold, italic, underline, font, color));
@@ -73,7 +73,7 @@ public class Line implements Iterable<Segment> {
 
     /**
      * Returns the last segment.
-     * @return the last segment or <code>null</code> if the line is empty
+     * @return the last segment or {@code null} if the line is empty
      */
     @Nullable
     public Segment getLastSegment() {
@@ -88,7 +88,7 @@ public class Line implements Iterable<Segment> {
     }
 
     /**
-     * Returns the height of this line. Returns <code>-1</code> until {@link
+     * Returns the height of this line. Returns {@code -1} until {@link
      * #setHeight(int)} was called.
      * @return the height of this line
      */

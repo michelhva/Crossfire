@@ -36,7 +36,7 @@ public class Formatter {
     }
 
     /**
-     * Returns a <code>long</code> value formatted as a human readable string.
+     * Returns a {@code long} value formatted as a human readable string.
      * @param value the value
      * @return return the formatted value
      */

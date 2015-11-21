@@ -118,7 +118,7 @@ public abstract class GUIItemList extends GUIList {
 
     /**
      * Rebuilds the list cells.
-     * @param changedSlots the changed slots; <code>null</code>=all slots
+     * @param changedSlots the changed slots; {@code null}=all slots
      */
     private void rebuildList(@Nullable final Integer[] changedSlots) {
         synchronized (getTreeLock()) {
@@ -141,7 +141,7 @@ public abstract class GUIItemList extends GUIList {
 
     /**
      * Marks some slots as modified.
-     * @param changedSlots the slots to mark as modified; <code>null</code>=all
+     * @param changedSlots the slots to mark as modified; {@code null}=all
      * @param limit the limit; only slots less than this index are affected
      */
     private void setChanged(@Nullable final Integer[] changedSlots, final int limit) {
@@ -269,7 +269,7 @@ public abstract class GUIItemList extends GUIList {
 
     /**
      * Returns the selected {@link GUIItemItem} instance.
-     * @return the selected instance or <code>null</code> if none is selected
+     * @return the selected instance or {@code null} if none is selected
      */
     @Nullable
     public GUIItemItem getSelectedItem() {

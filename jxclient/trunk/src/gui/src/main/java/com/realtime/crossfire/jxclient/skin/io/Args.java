@@ -25,7 +25,7 @@ import java.io.IOException;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Iterates over a list of <code>String</code> arguments.
+ * Iterates over a list of {@code String} arguments.
  * @author Andreas Kirschbaum
  */
 public class Args {

@@ -50,7 +50,7 @@ import org.jetbrains.annotations.Nullable;
 /**
  * Abstract base class for text input fields. It allows entering and editing
  * text. Subclasses define the behavior when {@link #execute(String)} executing
- * the entered text when <code>ENTER</code> is pressed.
+ * the entered text when {@code ENTER} is pressed.
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
@@ -74,8 +74,8 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     private final CommandCallback commandCallback;
 
     /**
-     * The {@link CommandHistory} for this text field. Set to <code>null</code>
-     * is no command history is used.
+     * The {@link CommandHistory} for this text field. Set to {@code null} is
+     * no command history is used.
      */
     @Nullable
     private final CommandHistory commandHistory;
@@ -165,7 +165,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     /**
      * Creates a new instance.
      * @param commandCallback the command callback to use
-     * @param commandHistory the command history to use or <code>null</code> to
+     * @param commandHistory the command history to use or {@code null} to
      * disable command history access
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify

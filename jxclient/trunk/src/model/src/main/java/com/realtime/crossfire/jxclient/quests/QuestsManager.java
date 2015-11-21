@@ -179,7 +179,7 @@ public class QuestsManager {
     /**
      * Returns a {@link Quest} instance by index.
      * @param index the index
-     * @return the quest or <code>null</code> if the index is invalid
+     * @return the quest or {@code null} if the index is invalid
      */
     @Nullable
     public Quest getQuest(final int index) {

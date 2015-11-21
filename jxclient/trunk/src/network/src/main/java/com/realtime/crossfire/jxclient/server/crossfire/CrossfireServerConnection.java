@@ -113,7 +113,7 @@ public interface CrossfireServerConnection extends AskfaceQueue, ServerConnectio
     /**
      * Sets a listener to be notified about map changes. At most one such
      * listener may be set.
-     * @param listener the listener to set or <code>null</code> to unset it
+     * @param listener the listener to set or {@code null} to unset it
      */
     void setCrossfireUpdateMapListener(@Nullable CrossfireUpdateMapListener listener);
 
@@ -367,7 +367,7 @@ public interface CrossfireServerConnection extends AskfaceQueue, ServerConnectio
 
     /**
      * Returns the current account name.
-     * @return the current account name or <code>null</code>
+     * @return the current account name or {@code null}
      */
     @Nullable
     String getAccountName();

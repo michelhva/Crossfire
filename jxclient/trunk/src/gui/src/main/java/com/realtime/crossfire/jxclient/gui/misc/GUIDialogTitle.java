@@ -54,7 +54,7 @@ public class GUIDialogTitle extends GUIOneLineLabel {
 
     /**
      * Set to the distance of the dialog coordinates relative to the mouse
-     * position while dragging start. Else set to <code>null</code>.
+     * position while dragging start. Else set to {@code null}.
      */
     @Nullable
     private Point offset;

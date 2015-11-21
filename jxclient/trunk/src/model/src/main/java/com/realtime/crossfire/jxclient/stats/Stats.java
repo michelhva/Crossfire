@@ -34,9 +34,9 @@ import org.jetbrains.annotations.NotNull;
 /**
  * This is the representation of all the statistics of a player, like its speed
  * or its experience.
- * <p/>
- * <p>Constants named <code>C_STAT_xxx</code> are client-sided; constants named
- * <code>CS_STAT_xxx</code> are stats as sent by the server.
+ * <p>
+ * Constants named {@code C_STAT_xxx} are client-sided; constants named {@code
+ * CS_STAT_xxx} are stats as sent by the server.
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
@@ -448,8 +448,8 @@ public class Stats {
 
     /**
      * CS_STAT_SKILLINFO is used as the starting index point.  Skill
-     * number->name map is generated dynamically for the client, so a bunch of
-     * entries will be used here.
+     * number-&gt;name map is generated dynamically for the client, so a bunch
+     * of entries will be used here.
      */
     public static final int CS_STAT_SKILLINFO = 140;
 
@@ -576,8 +576,8 @@ public class Stats {
     /**
      * Sets whether the {@link #CS_STAT_WEAP_SP} value contains the weapon speed
      * directly.
-     * @param simpleWeaponSpeed whether <code>CS_STAT_WEAP_SP</code> is the
-     * weapon speed value
+     * @param simpleWeaponSpeed whether {@code CS_STAT_WEAP_SP} is the weapon
+     * speed value
      */
     public void setSimpleWeaponSpeed(final boolean simpleWeaponSpeed) {
         if (this.simpleWeaponSpeed == simpleWeaponSpeed) {

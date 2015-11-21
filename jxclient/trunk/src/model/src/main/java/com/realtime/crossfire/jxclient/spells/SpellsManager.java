@@ -348,7 +348,7 @@ public class SpellsManager implements Iterable<Spell> {
     /**
      * Returns a {@link Spell} instance by index.
      * @param index the index
-     * @return the spell or <code>null</code> if the index is invalid
+     * @return the spell or {@code null} if the index is invalid
      */
     @Nullable
     public Spell getSpell(final int index) {

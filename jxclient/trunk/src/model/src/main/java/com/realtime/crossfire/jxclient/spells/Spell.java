@@ -117,6 +117,7 @@ public class Spell {
      * Creates a new instance.
      * @param name the spell name
      * @param skillSet the skills
+     * @param stats the stats instance
      */
     public Spell(@NotNull final String name, @NotNull final SkillSet skillSet, @NotNull final Stats stats) {
         this.name = name;

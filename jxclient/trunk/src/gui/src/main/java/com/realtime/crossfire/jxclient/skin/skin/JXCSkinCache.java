@@ -42,7 +42,7 @@ public class JXCSkinCache<T> implements Iterable<T> {
 
     /**
      * The cached elements. Maps element name to element. Mapped elements are
-     * never <code>null</code>.
+     * never {@code null}.
      */
     @NotNull
     private final Map<String, T> cache = new LinkedHashMap<String, T>();
@@ -96,7 +96,7 @@ public class JXCSkinCache<T> implements Iterable<T> {
     /**
      * Looks up an element by name.
      * @param name the name of the element
-     * @return the element or <code>null</code> if no such element exists
+     * @return the element or {@code null} if no such element exists
      */
     @Nullable
     public T lookupOptional(@NotNull final String name) {

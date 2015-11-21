@@ -38,8 +38,8 @@ import org.jetbrains.annotations.Nullable;
 public class SkillSet {
 
     /**
-     * Maps stat number to skill instance. Entries may be <code>null</code> if
-     * the server did not provide a mapping.
+     * Maps stat number to skill instance. Entries may be {@code null} if the
+     * server did not provide a mapping.
      */
     @NotNull
     private final Skill[] numberedSkills = new Skill[Stats.CS_NUM_SKILLS];
@@ -163,8 +163,8 @@ public class SkillSet {
     /**
      * Returns the given skill as a Skill object.
      * @param id the numerical skill identifier
-     * @return the skill object matching the given identifier; may be
-     *         <code>null</code> for undefined skills
+     * @return the skill object matching the given identifier; may be {@code
+     * null} for undefined skills
      */
     @Nullable
     public Skill getSkill(final int id) {

@@ -31,7 +31,7 @@ import org.jetbrains.annotations.NotNull;
 public class FaceCache {
 
     /**
-     * The cached faces. Empty slots are set to <code>null</code>.
+     * The cached faces. Empty slots are set to {@code null}.
      */
     @NotNull
     private final Face[] faces = new Face[65536];

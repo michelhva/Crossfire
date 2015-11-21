@@ -57,13 +57,13 @@ public interface ItemSetListener extends EventListener {
 
     /**
      * The player {@link CfItem} has changed.
-     * @param player the new player item or <code>null</code>
+     * @param player the new player item or {@code null}
      */
     void playerChanged(@Nullable CfItem player);
 
     /**
      * The currently opened container has changed.
-     * @param tag the opened container's tag or <code>0</code>
+     * @param tag the opened container's tag or {@code 0}
      */
     void openContainerChanged(int tag);
 

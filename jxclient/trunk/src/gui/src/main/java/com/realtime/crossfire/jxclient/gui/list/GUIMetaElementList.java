@@ -97,13 +97,13 @@ public class GUIMetaElementList extends GUIList {
     private final String tooltip;
 
     /**
-     * The hostname input field to update; may be <code>null</code>.
+     * The hostname input field to update; may be {@code null}.
      */
     @Nullable
     private final GUIText hostname;
 
     /**
-     * The comment field to update; may be <code>null</code>.
+     * The comment field to update; may be {@code null}.
      */
     @Nullable
     private final AbstractLabel comment;
@@ -148,9 +148,8 @@ public class GUIMetaElementList extends GUIList {
      * @param font the font for drawing list entries
      * @param format the format for drawing list entries
      * @param tooltip the tooltip format for drawing list entries
-     * @param hostname the hostname input field to update; may be
-     * <code>null</code>
-     * @param comment the comment field to update; may be <code>null</code>
+     * @param hostname the hostname input field to update; may be {@code null}
+     * @param comment the comment field to update; may be {@code null}
      * @param connectCommandList the command list to connect to the server
      */
     public GUIMetaElementList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final MetaserverModel metaserverModel, @Nullable final Image image, @NotNull final Font font, @NotNull final String format, @NotNull final String tooltip, @Nullable final GUIText hostname, @Nullable final AbstractLabel comment, @NotNull final CommandList connectCommandList) {

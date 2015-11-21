@@ -36,8 +36,8 @@ import org.jetbrains.annotations.NotNull;
 public abstract class AbstractCrossfireServerConnection implements CrossfireServerConnection {
 
     /**
-     * The {@link Charset} used for parsing or encoding strings received from or
-     * sent to the Crossfire server.
+     * The {@link Charset} used for parsing or encoding strings received from
+     * or sent to the Crossfire server.
      */
     @NotNull
     protected static final Charset UTF8 = Charset.forName("UTF-8");
@@ -56,8 +56,8 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     private final EventListenerList2<CrossfireDrawinfoListener> drawinfoListeners = new EventListenerList2<CrossfireDrawinfoListener>(CrossfireDrawinfoListener.class);
 
     /**
-     * The {@link CrossfireDrawextinfoListener CrossfireDrawextinfoListeners} to
-     * be notified.
+     * The {@link CrossfireDrawextinfoListener CrossfireDrawextinfoListeners}
+     * to be notified.
      */
     @NotNull
     private final EventListenerList2<CrossfireDrawextinfoListener> drawextinfoListeners = new EventListenerList2<CrossfireDrawextinfoListener>(CrossfireDrawextinfoListener.class);
@@ -513,8 +513,8 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     }
 
     /**
-     * Notifies all {@link ReceivedPacketListener ReceivedPacketListeners} about
-     * an empty packet.
+     * Notifies all {@link ReceivedPacketListener ReceivedPacketListeners}
+     * about an empty packet.
      * @param command the command string
      */
     protected void notifyPacketWatcherListenersEmpty(@NotNull final String command) {
@@ -524,10 +524,10 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     }
 
     /**
-     * Notifies all {@link ReceivedPacketListener ReceivedPacketListeners} about
-     * a packet having ascii parameters.
+     * Notifies all {@link ReceivedPacketListener ReceivedPacketListeners}
+     * about a packet having ascii parameters.
      * @param packet the packet contents
-     * @param args the start index into <code>packet</code> of the packet's
+     * @param args the start index into {@code packet} of the packet's
      * arguments
      */
     protected void notifyPacketWatcherListenersAscii(@NotNull final ByteBuffer packet, final int args) {
@@ -546,10 +546,10 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     }
 
     /**
-     * Notifies all {@link ReceivedPacketListener ReceivedPacketListeners} about
-     * a packet having an array of short values as parameters.
+     * Notifies all {@link ReceivedPacketListener ReceivedPacketListeners}
+     * about a packet having an array of short values as parameters.
      * @param packet the packet contents
-     * @param args the start index into <code>packet</code> of the packet's
+     * @param args the start index into {@code packet} of the packet's
      * arguments
      */
     protected void notifyPacketWatcherListenersShortArray(@NotNull final ByteBuffer packet, final int args) {
@@ -568,10 +568,10 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     }
 
     /**
-     * Notifies all {@link ReceivedPacketListener ReceivedPacketListeners} about
-     * a packet having an array of int values as parameters.
+     * Notifies all {@link ReceivedPacketListener ReceivedPacketListeners}
+     * about a packet having an array of int values as parameters.
      * @param packet the packet contents
-     * @param args the start index into <code>packet</code> of the packet's
+     * @param args the start index into {@code packet} of the packet's
      * arguments
      */
     protected void notifyPacketWatcherListenersIntArray(@NotNull final ByteBuffer packet, final int args) {
@@ -590,10 +590,10 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     }
 
     /**
-     * Notifies all {@link ReceivedPacketListener ReceivedPacketListeners} about
-     * a packet having a short and an in value as parameters.
+     * Notifies all {@link ReceivedPacketListener ReceivedPacketListeners}
+     * about a packet having a short and an in value as parameters.
      * @param packet the packet contents
-     * @param args the start index into <code>packet</code> of the packet's
+     * @param args the start index into {@code packet} of the packet's
      * arguments
      */
     protected void notifyPacketWatcherListenersShortInt(@NotNull final ByteBuffer packet, final int args) {
@@ -612,10 +612,10 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     }
 
     /**
-     * Notifies all {@link ReceivedPacketListener ReceivedPacketListeners} about
-     * a packet having mixed parameters.
+     * Notifies all {@link ReceivedPacketListener ReceivedPacketListeners}
+     * about a packet having mixed parameters.
      * @param packet the packet contents
-     * @param args the start index into <code>packet</code> of the packet's
+     * @param args the start index into {@code packet} of the packet's
      * arguments
      */
     protected void notifyPacketWatcherListenersMixed(@NotNull final ByteBuffer packet, final int args) {
@@ -634,11 +634,11 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     }
 
     /**
-     * Notifies all {@link ReceivedPacketListener ReceivedPacketListeners} about
-     * a packet having stat parameters.
+     * Notifies all {@link ReceivedPacketListener ReceivedPacketListeners}
+     * about a packet having stat parameters.
      * @param stat the stat value
-     * @param args the stat arguments depending on <code>type</code> and
-     * <code>stat</code>
+     * @param args the stat arguments depending on {@code type} and {@code
+     * stat}
      */
     protected void notifyPacketWatcherListenersStats(final int stat, @NotNull final Object... args) {
         final ReceivedPacketListener[] listeners = receivedPacketListeners.getListeners();
@@ -650,10 +650,10 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     }
 
     /**
-     * Notifies all {@link ReceivedPacketListener ReceivedPacketListeners} about
-     * a packet having unknown parameters.
+     * Notifies all {@link ReceivedPacketListener ReceivedPacketListeners}
+     * about a packet having unknown parameters.
      * @param packet the packet contents
-     * @param args the start index into <code>packet</code> of the packet's
+     * @param args the start index into {@code packet} of the packet's
      * arguments
      */
     protected void notifyPacketWatcherListenersNoData(@NotNull final ByteBuffer packet, final int args) {

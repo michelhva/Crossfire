@@ -73,8 +73,8 @@ public class Expression {
     /**
      * Creates a new instance as the sum or difference of two expressions.
      * @param expression1 the left expression
-     * @param negative whether the right expression should be added
-     * (<code>false</code>) or subtracted (<code>true</code>)
+     * @param negative whether the right expression should be added ({@code
+     * false}) or subtracted ({@code true})
      * @param expression2 the right expression
      */
     public Expression(@NotNull final Expression expression1, final boolean negative, @NotNull final Expression expression2) {

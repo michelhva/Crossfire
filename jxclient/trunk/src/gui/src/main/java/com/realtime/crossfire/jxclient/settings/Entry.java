@@ -37,7 +37,7 @@ public class Entry {
     private String value;
 
     /**
-     * The documentation string or <code>null</code> if unknown.
+     * The documentation string or {@code null} if unknown.
      */
     @Nullable
     private String documentation;
@@ -45,8 +45,7 @@ public class Entry {
     /**
      * Creates a new instance.
      * @param value the value
-     * @param documentation the documentation string or <code>null</code> if
-     * unknown
+     * @param documentation the documentation string or {@code null} if unknown
      */
     public Entry(@NotNull final String value, @Nullable final String documentation) {
         this.value = value;
@@ -72,7 +71,7 @@ public class Entry {
 
     /**
      * Returns the documentation string.
-     * @return the documentation string or <code>null</code> if unknown
+     * @return the documentation string or {@code null} if unknown
      */
     @Nullable
     public String getDocumentation() {
@@ -81,8 +80,7 @@ public class Entry {
 
     /**
      * Sets the documentation string.
-     * @param documentation the documentation string or <code>null</code> if
-     * unknown
+     * @param documentation the documentation string or {@code null} if unknown
      */
     public void setDocumentation(@Nullable final String documentation) {
         if (this.documentation == null) {

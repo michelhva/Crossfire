@@ -59,8 +59,8 @@ public class Resolution {
      * representation is of the format "1024x768"; it is the format returned
      * from {@link #toString()}.
      * @param str the string representation
-     * @return the <code>Resolution instance</code>, or <code>null</code> if the
-     *         string representation is invalid
+     * @return the {@code Resolution instance}, or {@code null} if the string
+     * representation is invalid
      */
     @Nullable
     public static Resolution parse(@NotNull final String str) {
