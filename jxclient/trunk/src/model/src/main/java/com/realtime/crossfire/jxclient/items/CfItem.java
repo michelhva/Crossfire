@@ -485,11 +485,11 @@ public class CfItem {
         final String tooltipText2 = getTooltipText2();
         final String tooltipText3 = getTooltipText3();
         final StringBuilder sb = new StringBuilder(tooltipText1);
-        if (tooltipText2.length() > 0) {
+        if (!tooltipText2.isEmpty()) {
             sb.append("<br>");
             sb.append(tooltipText2);
         }
-        if (tooltipText3.length() > 0) {
+        if (!tooltipText3.isEmpty()) {
             sb.append("<br>");
             sb.append(tooltipText3);
         }

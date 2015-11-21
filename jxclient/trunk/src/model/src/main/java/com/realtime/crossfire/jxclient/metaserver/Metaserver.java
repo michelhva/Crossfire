@@ -94,7 +94,7 @@ public class Metaserver {
         try {
             final URL url = new URL(METASERVER_URL);
             final String httpProxy = System.getenv("http_proxy");
-            if (httpProxy != null && httpProxy.length() > 0) {
+            if (httpProxy != null && !httpProxy.isEmpty()) {
                 if (httpProxy.regionMatches(true, 0, "http://", 0, 7)) {
                     final String[] tmp = httpProxy.substring(7).replaceAll("/.*", "").split(":", 2);
                     System.setProperty("http.proxyHost", tmp[0]);

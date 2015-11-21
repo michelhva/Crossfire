@@ -621,7 +621,7 @@ public class JXCSkinLoader {
                             break;
                         }
 
-                        if (line.startsWith("#") || line.length() == 0) {
+                        if (line.startsWith("#") || line.isEmpty()) {
                             continue;
                         }
 
@@ -1086,7 +1086,7 @@ public class JXCSkinLoader {
         final Orientation orientationMod = ParseUtils.parseOrientation(args.get());
         final CommandList commandList = args.get().equals("null") ? null : skin.getCommandList(args.getPrev());
         final String tooltipPrefix = ParseUtils.parseText(args, lnr);
-        final GUIDupGauge element = new GUIDupGauge(tooltipManager, elementListener, name, positiveDivImage, positiveModImage, emptyImage, orientationDiv, orientationMod, tooltipPrefix.length() > 0 ? tooltipPrefix : null, commandList);
+        final GUIDupGauge element = new GUIDupGauge(tooltipManager, elementListener, name, positiveDivImage, positiveModImage, emptyImage, orientationDiv, orientationMod, tooltipPrefix.isEmpty() ? null : tooltipPrefix, commandList);
         insertGuiElement(element);
         gaugeUpdater.setGauge(element);
     }
@@ -1112,7 +1112,7 @@ public class JXCSkinLoader {
         final Font font = definedFonts.lookup(args.get());
         final CommandList commandList = args.get().equals("null") ? null : skin.getCommandList(args.getPrev());
         final String tooltipPrefix = ParseUtils.parseText(args, lnr);
-        final GUIDupTextGauge element = new GUIDupTextGauge(tooltipManager, elementListener, name, positiveDivImage, positiveModImage, emptyImage, orientationDiv, orientationMod, tooltipPrefix.length() > 0 ? tooltipPrefix : null, color, font, commandList);
+        final GUIDupTextGauge element = new GUIDupTextGauge(tooltipManager, elementListener, name, positiveDivImage, positiveModImage, emptyImage, orientationDiv, orientationMod, tooltipPrefix.isEmpty() ? null : tooltipPrefix, color, font, commandList);
         insertGuiElement(element);
         gaugeUpdater.setGauge(element);
     }
@@ -1215,7 +1215,7 @@ public class JXCSkinLoader {
         final String tooltipPrefix = ParseUtils.parseText(args, lnr);
         assert dialogFactory != null;
         final float alpha = dialogFactory.getFrameAlpha();
-        final GUIGauge element = new GUIGauge(tooltipManager, elementListener, name, positiveImage, negativeImage, emptyImage, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null, alpha, commandList);
+        final GUIGauge element = new GUIGauge(tooltipManager, elementListener, name, positiveImage, negativeImage, emptyImage, orientation, tooltipPrefix.isEmpty() ? null : tooltipPrefix, alpha, commandList);
         insertGuiElement(element);
         gaugeUpdater.setGauge(element);
     }
@@ -2039,7 +2039,7 @@ public class JXCSkinLoader {
         final String tooltipPrefix = ParseUtils.parseText(args, lnr);
         assert dialogFactory != null;
         final float alpha = dialogFactory.getFrameAlpha();
-        final GUITextGauge element = new GUITextGauge(tooltipManager, elementListener, name, positiveImage, negativeImage, emptyImage, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null, color, font, alpha, commandList);
+        final GUITextGauge element = new GUITextGauge(tooltipManager, elementListener, name, positiveImage, negativeImage, emptyImage, orientation, tooltipPrefix.isEmpty() ? null : tooltipPrefix, color, font, alpha, commandList);
         insertGuiElement(element);
         gaugeUpdater.setGauge(element);
     }
@@ -2237,7 +2237,7 @@ public class JXCSkinLoader {
                 throw new IOException("unterminated 'begin' block");
             }
 
-            if (line.startsWith("#") || line.length() == 0) {
+            if (line.startsWith("#") || line.isEmpty()) {
                 continue;
             }
 

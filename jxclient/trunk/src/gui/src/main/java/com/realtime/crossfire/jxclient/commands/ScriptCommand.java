@@ -60,7 +60,7 @@ public class ScriptCommand extends AbstractCommand {
      */
     @Override
     public void execute(@NotNull final String args) {
-        if (args.length() == 0) {
+        if (args.isEmpty()) {
             drawInfoError("Which script do you want to run?");
             return;
         }

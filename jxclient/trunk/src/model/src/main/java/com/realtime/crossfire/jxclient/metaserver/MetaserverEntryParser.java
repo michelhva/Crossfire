@@ -198,7 +198,7 @@ public class MetaserverEntryParser {
                     } else if (key.equals("html_comment")) {
                         comment = value;
                     } else if (key.equals("text_comment")) {
-                        if (comment.length() == 0) {
+                        if (comment.isEmpty()) {
                             comment = value;
                         }
                     } else if (key.equals("archbase")) {

@@ -61,7 +61,7 @@ public class ClearCommand extends AbstractCommand {
      */
     @Override
     public void execute(@NotNull final String args) {
-        if (args.length() != 0) {
+        if (!args.isEmpty()) {
             drawInfoError("The clear command does not take arguments.");
             return;
         }

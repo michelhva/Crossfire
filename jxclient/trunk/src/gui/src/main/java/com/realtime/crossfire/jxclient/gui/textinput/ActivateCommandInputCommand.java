@@ -84,7 +84,7 @@ public class ActivateCommandInputCommand implements GUICommand2 {
     @NotNull
     @Override
     public String getCommandString() {
-        return commandText.length() > 0 ? "-e "+commandText : "-e";
+        return commandText.isEmpty() ? "-e" : "-e "+commandText;
     }
 
 }

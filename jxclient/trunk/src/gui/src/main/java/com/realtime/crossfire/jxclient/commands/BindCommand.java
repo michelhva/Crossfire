@@ -85,7 +85,7 @@ public class BindCommand extends AbstractCommand {
             commandList = args;
         }
 
-        if (commandList.length() == 0) {
+        if (commandList.isEmpty()) {
             drawInfoError("Which command do you want to bind?");
             return;
         }

@@ -224,9 +224,9 @@ public class GUIDupGauge extends AbstractGUIElement implements GUIGaugeListener 
      * #tooltipText}.
      */
     private void updateTooltipText() {
-        if (tooltipPrefix == null || tooltipPrefix.length() == 0) {
+        if (tooltipPrefix == null || tooltipPrefix.isEmpty()) {
             setTooltipText(tooltipText);
-        } else if (tooltipText.length() == 0) {
+        } else if (tooltipText.isEmpty()) {
             setTooltipText(tooltipPrefix);
         } else {
             setTooltipText(tooltipPrefix+tooltipText);

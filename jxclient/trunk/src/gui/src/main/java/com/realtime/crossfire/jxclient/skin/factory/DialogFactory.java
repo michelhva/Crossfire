@@ -209,7 +209,7 @@ public class DialogFactory {
         final Collection<AbstractGUIElement> result = new ArrayList<AbstractGUIElement>();
         result.add(new GUIDialogBackground(tooltipManager, elementListener, "dialog_background", frameAlpha, frameNW, frameN, frameNE, frameW, frameC, frameE, frameSW, frameS, frameSE));
 
-        if (title.length() > 0) {
+        if (!title.isEmpty()) {
             result.add(new GUIDialogTitle(tooltipManager, windowRenderer, elementListener, "dialog_title", titleFont, titleColor, titleBackgroundColor, title));
         }
 
