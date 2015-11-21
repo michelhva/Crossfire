@@ -216,7 +216,7 @@ public class ParseUtils {
         try {
             return optionManager.getCheckBoxOption(name);
         } catch (final OptionException ex) {
-            throw new IOException(ex.getMessage());
+            throw new IOException(ex.getMessage(), ex);
         }
     }
 

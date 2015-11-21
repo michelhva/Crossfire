@@ -317,21 +317,21 @@ public class JXClient {
                     debugProtocolOutputStreamWriter.close();
                 }
             }
-        } catch (final IOException e) {
+        } catch (final IOException ex) {
             //noinspection CallToPrintStackTrace
-            e.printStackTrace();
+            ex.printStackTrace();
             System.exit(1);
-            throw new AssertionError();
-        } catch (final InterruptedException e) {
+            throw new AssertionError(ex);
+        } catch (final InterruptedException ex) {
             //noinspection CallToPrintStackTrace
-            e.printStackTrace();
+            ex.printStackTrace();
             System.exit(1);
-            throw new AssertionError();
-        } catch (final InvocationTargetException e) {
+            throw new AssertionError(ex);
+        } catch (final InvocationTargetException ex) {
             //noinspection CallToPrintStackTrace
-            e.printStackTrace();
+            ex.printStackTrace();
             System.exit(1);
-            throw new AssertionError();
+            throw new AssertionError(ex);
         }
 
         System.exit(0);

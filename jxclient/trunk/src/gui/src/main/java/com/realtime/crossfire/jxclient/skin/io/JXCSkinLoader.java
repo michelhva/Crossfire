@@ -474,13 +474,13 @@ public class JXCSkinLoader {
         try {
             nextGroupFace = ResourceUtils.loadImage(ResourceUtils.NEXT_GROUP_FACE).getImage();
         } catch (final IOException ex) {
-            throw new JXCSkinException(ex.getMessage());
+            throw new JXCSkinException(ex.getMessage(), ex);
         }
         final Image prevGroupFace;
         try {
             prevGroupFace = ResourceUtils.loadImage(ResourceUtils.PREV_GROUP_FACE).getImage();
         } catch (final IOException ex) {
-            throw new JXCSkinException(ex.getMessage());
+            throw new JXCSkinException(ex.getMessage(), ex);
         }
 
         final Dialogs dialogs = new Dialogs(guiFactory);
@@ -576,9 +576,9 @@ public class JXCSkinLoader {
                 inputStream.close();
             }
         } catch (final IOException ex) {
-            throw new JXCSkinException(skinSource.getURI(resourceName)+": "+ex.getMessage());
+            throw new JXCSkinException(skinSource.getURI(resourceName)+": "+ex.getMessage(), ex);
         } catch (final JXCSkinException ex) {
-            throw new JXCSkinException(skinSource.getURI(resourceName)+": "+ex.getMessage());
+            throw new JXCSkinException(skinSource.getURI(resourceName)+": "+ex.getMessage(), ex);
         } finally {
             definedGUIElements.clear();
         }
@@ -631,7 +631,7 @@ public class JXCSkinLoader {
                         try {
                             argsTmp = StringUtils.splitFields(line);
                         } catch (final UnterminatedTokenException ex) {
-                            throw new JXCSkinException(ex.getMessage());
+                            throw new JXCSkinException(ex.getMessage(), ex);
                         }
                         final Args args = new Args(argsTmp);
                         final String cmd = args.get();
@@ -766,12 +766,12 @@ public class JXCSkinLoader {
                         }
                     }
                 } catch (final IOException ex) {
-                    throw new IOException(ex.getMessage()+" in line "+lnr.getLineNumber());
+                    throw new IOException(ex.getMessage()+" in line "+lnr.getLineNumber(), ex);
                 } catch (final JXCSkinException ex) {
-                    throw new IOException(ex.getMessage()+" in line "+lnr.getLineNumber());
+                    throw new IOException(ex.getMessage()+" in line "+lnr.getLineNumber(), ex);
                 } catch (final IllegalArgumentException ex) {
                     final Object msg = ex.getMessage();
-                    throw new IOException("invalid parameter"+(msg == null ? "" : " ("+msg+")")+" in line "+lnr.getLineNumber());
+                    throw new IOException("invalid parameter"+(msg == null ? "" : " ("+msg+")")+" in line "+lnr.getLineNumber(), ex);
                 } finally {
                     lnr.close();
                 }
@@ -779,7 +779,7 @@ public class JXCSkinLoader {
                 isr.close();
             }
         } catch (final IOException ex) {
-            throw new JXCSkinException(skinSource.getURI(resourceName)+": "+ex.getMessage());
+            throw new JXCSkinException(skinSource.getURI(resourceName)+": "+ex.getMessage(), ex);
         }
 
         final Iterator<AbstractGUIElement> it = definedGUIElements.iterator();
@@ -1449,7 +1449,7 @@ public class JXCSkinLoader {
         try {
             keyBindings.parseKeyBinding(line.substring(4).trim(), true);
         } catch (final InvalidKeyBindingException ex) {
-            throw new IOException("invalid key binding: "+ex.getMessage());
+            throw new IOException("invalid key binding: "+ex.getMessage(), ex);
         }
 
         // consume all arguments to prevent syntax error
@@ -2243,7 +2243,7 @@ public class JXCSkinLoader {
             try {
                 argsTmp = StringUtils.splitFields(line);
             } catch (final UnterminatedTokenException ex) {
-                throw new JXCSkinException(ex.getMessage());
+                throw new JXCSkinException(ex.getMessage(), ex);
             }
             final Args args = new Args(argsTmp);
             final String cmd = args.get();

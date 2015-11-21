@@ -468,7 +468,7 @@ public class DefaultJXCSkin implements JXCSkin {
         try {
             optionManager.addOption(optionName, documentation, commandCheckBoxOption);
         } catch (final OptionException ex) {
-            throw new JXCSkinException(ex.getMessage());
+            throw new JXCSkinException(ex.getMessage(), ex);
         }
         optionNames.add(optionName);
     }

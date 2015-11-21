@@ -329,7 +329,7 @@ public class KeyHandler {
         } catch (final IOException ex) {
             System.err.println("Cannot write keyboard debug: "+ex.getMessage());
             System.exit(1);
-            throw new AssertionError();
+            throw new AssertionError(ex);
         }
     }
 

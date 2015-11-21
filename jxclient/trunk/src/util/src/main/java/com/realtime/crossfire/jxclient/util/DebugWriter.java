@@ -74,7 +74,7 @@ public class DebugWriter {
             } catch (final IOException ex) {
                 System.err.println("Cannot write debug protocol: "+ex.getMessage());
                 System.exit(1);
-                throw new AssertionError();
+                throw new AssertionError(ex);
             }
         }
     }
@@ -102,7 +102,7 @@ public class DebugWriter {
             } catch (final IOException ex) {
                 System.err.println("Cannot write debug protocol: "+ex.getMessage());
                 System.exit(1);
-                throw new AssertionError();
+                throw new AssertionError(ex);
             }
         }
     }

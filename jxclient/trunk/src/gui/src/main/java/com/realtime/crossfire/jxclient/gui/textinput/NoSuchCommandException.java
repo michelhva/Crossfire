@@ -37,9 +37,10 @@ public class NoSuchCommandException extends Exception {
     /**
      * Creates a new instance.
      * @param reason the failure reason
+     * @param cause the cause for this exception
      */
-    public NoSuchCommandException(@NotNull final String reason) {
-        super(reason);
+    public NoSuchCommandException(@NotNull final String reason, @NotNull final Throwable cause) {
+        super(reason, cause);
     }
 
 }

@@ -50,7 +50,7 @@ public class Filenames {
         } catch (final IOException ex) {
             System.err.println(ex.getMessage());
             System.exit(1);
-            throw new AssertionError();
+            throw new AssertionError(ex);
         }
     }
 
@@ -65,7 +65,7 @@ public class Filenames {
         } catch (final IOException ex) {
             System.err.println(ex.getMessage());
             System.exit(1);
-            throw new AssertionError();
+            throw new AssertionError(ex);
         }
     }
 
@@ -80,7 +80,7 @@ public class Filenames {
         } catch (final IOException ex) {
             System.err.println(ex.getMessage());
             System.exit(1);
-            throw new AssertionError();
+            throw new AssertionError(ex);
         }
     }
 

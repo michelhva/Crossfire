@@ -65,13 +65,13 @@ public class FontParser {
                 try {
                     font = Font.createFont(Font.TRUETYPE_FONT, ttf);
                 } catch (final FontFormatException ex) {
-                    throw new IOException(filename+": invalid font format: "+ex.getMessage());
+                    throw new IOException(filename+": invalid font format: "+ex.getMessage(), ex);
                 }
             } finally {
                 ttf.close();
             }
         } catch (final IOException ex) {
-            throw new IOException(skinSource.getURI(filename)+": i/o error: "+ex.getMessage());
+            throw new IOException(skinSource.getURI(filename)+": i/o error: "+ex.getMessage(), ex);
         }
         return font;
     }

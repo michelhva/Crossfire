@@ -42,4 +42,13 @@ public class JXCSkinException extends Exception {
         super(reason);
     }
 
+    /**
+     * Creates a new instance.
+     * @param reason the reason why the skin failed
+     * @param cause the cause for this exception
+     */
+    public JXCSkinException(@NotNull final String reason, @NotNull final Throwable cause) {
+        super(reason, cause);
+    }
+
 }
