@@ -367,7 +367,7 @@ public class Gui extends JComponent {
             return true;
         }
 
-        if (activeElement != null && activeElement instanceof KeyPressedHandler) {
+        if (activeElement instanceof KeyPressedHandler) {
             final KeyPressedHandler keyListener = (KeyPressedHandler)activeElement;
             if (keyListener.keyPressed(e)) {
                 return true;

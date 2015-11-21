@@ -188,7 +188,7 @@ public class CharacterInformation implements Comparable<CharacterInformation> {
      */
     @Override
     public boolean equals(@Nullable final Object obj) {
-        if (obj == null || !(obj instanceof CharacterInformation)) {
+        if (!(obj instanceof CharacterInformation)) {
             return false;
         }
 

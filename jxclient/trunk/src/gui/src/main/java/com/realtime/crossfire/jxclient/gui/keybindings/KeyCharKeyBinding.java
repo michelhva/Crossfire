@@ -61,7 +61,7 @@ public class KeyCharKeyBinding extends KeyBinding {
      */
     @Override
     public boolean equals(@Nullable final Object obj) {
-        if (obj == null || !(obj instanceof KeyCharKeyBinding)) {
+        if (!(obj instanceof KeyCharKeyBinding)) {
             return false;
         }
 

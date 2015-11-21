@@ -269,7 +269,7 @@ public class Parser {
 
         final CharSequence newText;
         final Segment prevSegment = line.getLastSegment();
-        if (prevSegment == null || !(prevSegment instanceof TextSegment)) {
+        if (!(prevSegment instanceof TextSegment)) {
             newText = text;
         } else {
             final TextSegment prevTextSegment = (TextSegment)prevSegment;
