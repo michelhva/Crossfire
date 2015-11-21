@@ -610,7 +610,7 @@ public class ClientSocket {
                 //noinspection UnusedCatchParameter
                 try {
                     socketChannel.close();
-                } catch (final IOException ignored2) {
+                } catch (final IOException ignore) {
                     // ignore
                 }
                 return;
