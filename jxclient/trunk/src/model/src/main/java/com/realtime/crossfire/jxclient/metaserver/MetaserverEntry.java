@@ -268,6 +268,7 @@ public class MetaserverEntry implements Comparable<MetaserverEntry> {
      * <li>%% - a literal % character
      * <li>%A - arch base
      * <li>%C - server comment
+     * <li>%D - server comment converted to plain text
      * <li>%E - code base
      * <li>%H - hostname
      * <li>%I - bytes in
