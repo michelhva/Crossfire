@@ -49,6 +49,7 @@ public class FacesQueue extends AbstractFaceQueue {
      * The {@link FaceQueueListener} attached to {@link #fileCacheFaceQueue}.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final FaceQueueListener fileCacheFaceQueueListener = new FaceQueueListener() {
 
         @Override
@@ -67,6 +68,7 @@ public class FacesQueue extends AbstractFaceQueue {
      * The {@link FaceQueueListener} attached to {@link #faceQueue}.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final FaceQueueListener askfaceFaceQueueListener = new FaceQueueListener() {
 
         @Override

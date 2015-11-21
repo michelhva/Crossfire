@@ -93,6 +93,7 @@ public class PlayerNameTracker {
      * connections.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final GuiStateListener guiStateListener = new GuiStateListener() {
 
         @Override

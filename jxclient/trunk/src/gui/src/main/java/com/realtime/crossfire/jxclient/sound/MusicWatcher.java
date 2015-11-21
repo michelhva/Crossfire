@@ -41,6 +41,7 @@ public class MusicWatcher {
      * The crossfire stats listener.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final CrossfireMusicListener crossfireMusicListener = new CrossfireMusicListener() {
 
         @Override

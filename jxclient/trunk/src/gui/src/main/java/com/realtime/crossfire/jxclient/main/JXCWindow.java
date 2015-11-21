@@ -137,6 +137,7 @@ public class JXCWindow {
      * player wants.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final WindowFocusListener windowFocusListener = new WindowAdapter() {
 
         @Override
@@ -191,6 +192,7 @@ public class JXCWindow {
      * The window listener attached to this frame.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final WindowListener windowListener = new WindowAdapter() {
 
         @Override
@@ -213,6 +215,7 @@ public class JXCWindow {
      * The {@link KeyListener} attached to the main window.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final KeyListener keyListener = new KeyListener() {
 
         @Override
@@ -258,6 +261,7 @@ public class JXCWindow {
      * connections.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final GuiStateListener guiStateListener = new GuiStateListener() {
 
         @Override
@@ -308,6 +312,7 @@ public class JXCWindow {
      * server.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final SentReplyListener sentReplyListener = new SentReplyListener() {
 
         @Override
@@ -321,6 +326,7 @@ public class JXCWindow {
      * The {@link CrossfireAccountListener} attached to {@link #server}.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final CrossfireAccountListener accountListener = new CrossfireAccountListener() {
 
         @Override

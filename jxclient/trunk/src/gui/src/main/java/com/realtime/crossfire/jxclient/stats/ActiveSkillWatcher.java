@@ -62,6 +62,7 @@ public class ActiveSkillWatcher {
      * The stats listener to detect the range stat.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final StatsListener statsListener = new StatsListener() {
 
         @Override
@@ -110,6 +111,7 @@ public class ActiveSkillWatcher {
      * The drawinfo listener to receive drawinfo messages.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final CrossfireDrawinfoListener drawinfoListener = new CrossfireDrawinfoListener() {
 
         @Override
@@ -123,6 +125,7 @@ public class ActiveSkillWatcher {
      * The drawextinfo listener to receive drawextinfo messages.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final CrossfireDrawextinfoListener drawextinfoListener = new CrossfireDrawextinfoListener() {
 
         @Override

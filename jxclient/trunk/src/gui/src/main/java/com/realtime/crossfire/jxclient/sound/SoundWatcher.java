@@ -42,6 +42,7 @@ public class SoundWatcher {
      * The crossfire sound listener.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final CrossfireSoundListener crossfireSoundListener = new CrossfireSoundListener() {
 
         @Override

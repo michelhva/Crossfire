@@ -587,6 +587,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * The {@link ClientSocketListener} attached to the server socket.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final ClientSocketListener clientSocketListener = new ClientSocketListener() {
 
         @Override

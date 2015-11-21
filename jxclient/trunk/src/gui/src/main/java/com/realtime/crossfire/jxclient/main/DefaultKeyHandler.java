@@ -71,6 +71,7 @@ public class DefaultKeyHandler implements KeyHandlerListener {
      * changes.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final ClientSocketListener clientSocketListener = new ClientSocketListener() {
 
         @Override

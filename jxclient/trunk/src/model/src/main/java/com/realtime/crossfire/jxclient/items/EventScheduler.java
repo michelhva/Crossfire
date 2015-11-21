@@ -82,6 +82,7 @@ public class EventScheduler {
      * #eventSchedulerCallback}.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final Runnable runnable = new Runnable() {
 
         @Override

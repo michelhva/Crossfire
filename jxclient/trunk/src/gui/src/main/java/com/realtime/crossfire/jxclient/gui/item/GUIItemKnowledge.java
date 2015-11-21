@@ -94,6 +94,7 @@ public class GUIItemKnowledge extends GUIItemItem {
      * The {@link FacesManagerListener} registered to detect updated faces.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final FacesManagerListener facesManagerListener = new FacesManagerListener() {
 
         @Override

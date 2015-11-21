@@ -72,6 +72,7 @@ public abstract class GUIComboBox<T> extends AbstractGUIElement {
      * The {@link ListCellRenderer} for {@link #comboBox}.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final ListCellRenderer renderer = new ListCellRenderer() {
 
         @Override
