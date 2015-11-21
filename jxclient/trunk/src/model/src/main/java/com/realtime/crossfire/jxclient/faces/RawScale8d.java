@@ -68,6 +68,7 @@ public class RawScale8d {
     public RawScale8d(@NotNull final int[] imageData, final int dataWidth, final int dataHeight) {
         width = dataWidth;
         height = dataHeight;
+        //noinspection AssignmentToCollectionOrArrayFieldFromParameter
         srcImage = imageData;
         dstImage = new int[imageData.length*4];
     }

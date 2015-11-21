@@ -61,6 +61,7 @@ public class RawScale2x {
     public RawScale2x(@NotNull final int[] imageData, final int dataWidth, final int dataHeight) {
         width = dataWidth;
         height = dataHeight;
+        //noinspection AssignmentToCollectionOrArrayFieldFromParameter
         srcImage = imageData;
         dstImage = new int[imageData.length*4];
     }
