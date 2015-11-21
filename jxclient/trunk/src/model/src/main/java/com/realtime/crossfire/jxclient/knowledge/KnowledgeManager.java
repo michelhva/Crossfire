@@ -198,7 +198,7 @@ public class KnowledgeManager {
     public KnowledgeItem getKnowledge(final int index) {
         try {
             return filteredItems.get(index);
-        } catch (IndexOutOfBoundsException ignored) {
+        } catch (final IndexOutOfBoundsException ignored) {
             return null;
         }
     }
