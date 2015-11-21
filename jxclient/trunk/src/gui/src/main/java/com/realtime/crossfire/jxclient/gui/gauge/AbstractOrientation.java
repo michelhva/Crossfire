@@ -191,11 +191,11 @@ public abstract class AbstractOrientation implements Orientation {
     protected static int calculate(final int val, final int max, final int size) {
         if (val <= 0 || max <= 0) {
             return 0;
-        } else if (val >= max) {
-            return size;
-        } else {
-            return (size*val+max/2)/max;
         }
+        if (val >= max) {
+            return size;
+        }
+        return (size*val+max/2)/max;
     }
 
     /**

@@ -178,6 +178,7 @@ public class ActiveSkillWatcher {
      * Sets the active skill name.
      * @param activeSkill the active skill name
      */
+    @SuppressWarnings("IfMayBeConditional")
     private void setActive(@NotNull final String activeSkill) {
         // Normalize skill name: the Crossfire server sometimes sends "Skill:
         // <skill item name>" rather than "Skill: <skill name>".

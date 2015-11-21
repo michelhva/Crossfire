@@ -95,9 +95,7 @@ public class RenderState {
                 topOffset = 0;
                 canScrollUp = false;
                 canScrollDown = false;
-            } else if (topOffset < 0) {
-                scrollToBottom(buffer);
-            } else if (scrollPos > bufferHeight-height || scrollPos == bufferHeight-oldHeight) {
+            } else if (topOffset < 0 || scrollPos > bufferHeight-height || scrollPos == bufferHeight-oldHeight) {
                 scrollToBottom(buffer);
             }
         }
@@ -126,9 +124,7 @@ public class RenderState {
      */
     public void linesReplaced(@NotNull final Buffer buffer) {
         synchronized (sync) {
-            if (topOffset < 0) {
-                scrollToBottom(buffer);
-            } else if (!canScrollDown) {
+            if (topOffset < 0 || !canScrollDown) {
                 scrollToBottom(buffer);
             }
             mustRepaint = true;

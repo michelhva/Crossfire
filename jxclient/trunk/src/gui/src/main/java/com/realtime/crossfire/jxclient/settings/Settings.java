@@ -78,7 +78,7 @@ public class Settings {
     @NotNull
     public String getString(@NotNull final SettingsEntry<?> key) {
         final Entry entry = values.get(key.getKey());
-        return entry != null ? entry.getValue() : key.getDefaultValue().toString();
+        return entry == null ? key.getDefaultValue().toString() : entry.getValue();
     }
 
     /**
@@ -123,14 +123,14 @@ public class Settings {
      */
     public void putString(@NotNull final SettingsEntry<?> key, @NotNull final String value) {
         final Entry oldEntry = values.get(key.getKey());
-        if (oldEntry != null) {
+        if (oldEntry == null) {
+            values.put(key.getKey(), new Entry(value, key.getComment()));
+        } else {
             oldEntry.setDocumentation(key.getComment());
             if (!oldEntry.getValue().equals(value)) {
                 oldEntry.setValue(value);
                 setChanged();
             }
-        } else {
-            values.put(key.getKey(), new Entry(value, key.getComment()));
         }
     }
 

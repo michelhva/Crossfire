@@ -158,13 +158,13 @@ public class GUIItemInventory extends GUIItemItem {
             synchronized (sync) {
                 return index >= -distance;
             }
-        } else if (distance > 0) {
+        }
+        if (distance > 0) {
             synchronized (sync) {
                 return index+distance < inventoryView.getSize();
             }
-        } else {
-            return false;
         }
+        return false;
     }
 
     /**
@@ -212,7 +212,7 @@ public class GUIItemInventory extends GUIItemItem {
 
         case Modifiers.CTRL|Modifiers.SHIFT:
             crossfireServerConnection.sendMark(item.getTag());
-            return;
+            break;
         }
     }
 
@@ -229,11 +229,11 @@ public class GUIItemInventory extends GUIItemItem {
         switch (modifiers&Modifiers.MASK) {
         case Modifiers.NONE:
             crossfireServerConnection.sendApply(item.getTag());
-            return;
+            break;
 
         case Modifiers.SHIFT:
             crossfireServerConnection.sendMark(item.getTag());
-            return;
+            break;
         }
     }
 

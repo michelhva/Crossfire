@@ -154,11 +154,12 @@ public class GUIItemKnowledge extends GUIItemItem {
     public boolean canScroll(final int distance) {
         if (distance < 0) {
             return index >= -distance;
-        } else if (distance > 0) {
-            return index+distance < knowledgeManager.getTypes();
-        } else {
-            return false;
         }
+        //noinspection SimplifiableIfStatement
+        if (distance > 0) {
+            return index+distance < knowledgeManager.getTypes();
+        }
+        return false;
     }
 
     /**

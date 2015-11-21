@@ -134,61 +134,86 @@ public class CommandParser {
     public GUICommand parseCommandArgs(@NotNull final Args args, @Nullable final AbstractGUIElement element, @NotNull final String command, @NotNull final GuiStateManager guiStateManager, @NotNull final CommandExecutor commandExecutor, @NotNull final LineNumberReader lnr, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) throws IOException, JXCSkinException {
         if (command.equals("SHOW")) {
             return parseShow(element);
-        } else if (command.equals("HIDE")) {
-            return parseHide(element);
-        } else if (command.equals("TOGGLE")) {
-            return parseToggle(element);
-        } else if (command.equals("PRINT")) {
-            return parsePrint(element);
-        } else if (command.equals("QUIT")) {
-            return parseQuit(element, commandCallback);
-        } else if (command.equals("CONNECT")) {
-            return parseConnect(element, guiStateManager);
-        } else if (command.equals("DISCONNECT")) {
-            return parseDisconnect(element, guiStateManager);
-        } else if (command.equals("GUI_META")) {
-            return parseGuiMeta(element, guiStateManager);
-        } else if (command.equals("GUI_START")) {
-            return parseGuiStart(element, guiStateManager);
-        } else if (command.equals("GUI_EXECUTE_ELEMENT")) {
-            return parseGuiExecuteElement(element);
-        } else if (command.equals("DIALOG_OPEN")) {
-            return parseDialogOpen(args, element, commandCallback);
-        } else if (command.equals("DIALOG_TOGGLE")) {
-            return parseDialogToggle(args, element, commandCallback);
-        } else if (command.equals("DIALOG_CLOSE")) {
-            return parseDialogClose(args, element, commandCallback);
-        } else if (command.equals("GUI_EXECUTE_COMMAND")) {
-            return parseGuiExecuteCommand(args, element, commandExecutor, lnr, macros);
-        } else if (command.equals("EXEC_SELECTION")) {
-            return parseExecSelection(args, element, commandQueue, crossfireServerConnection);
-        } else if (command.equals("MOVE_SELECTION")) {
-            return parseMoveSelection(args, element);
-        } else if (command.equals("SCROLL_LIST")) {
-            return parseScrollList(args, element);
-        } else if (command.equals("SCROLL") || command.equals("SCROLL_NEVER")) {
-            return parseScroll(args, element, command.equals("SCROLL"));
-        } else if (command.equals("SCROLL_RESET")) {
-            return parseScrollReset(element);
-        } else if (command.equals("MOVE_FOCUS")) {
-            return parseMoveFocus(args, element);
-        } else if (command.equals("ACCOUNT_LOGIN")) {
-            return parseAccountLogin(element, commandCallback);
-        } else if (command.equals("ACCOUNT_CREATE")) {
-            return parseAccountCreate(element, commandCallback);
-        } else if (command.equals("ACCOUNT_PLAY")) {
-            return parseAccountPlay(element, commandCallback);
-        } else if (command.equals("ACCOUNT_LINK")) {
-            return parseAccountLink(element, commandCallback);
-        } else if (command.equals("ACCOUNT_CREATE_CHARACTER")) {
-            return parseAccountCreateCharacter(element, commandCallback);
-        } else if (command.equals("ACCOUNT_PASSWORD")) {
-            return parseAccountPassword(element, commandCallback);
-        } else if (command.equals("SELECT")) {
-            return parseSelect(args, element);
-        } else {
-            throw new JXCSkinException("unknown command '"+command+"'");
         }
+        if (command.equals("HIDE")) {
+            return parseHide(element);
+        }
+        if (command.equals("TOGGLE")) {
+            return parseToggle(element);
+        }
+        if (command.equals("PRINT")) {
+            return parsePrint(element);
+        }
+        if (command.equals("QUIT")) {
+            return parseQuit(element, commandCallback);
+        }
+        if (command.equals("CONNECT")) {
+            return parseConnect(element, guiStateManager);
+        }
+        if (command.equals("DISCONNECT")) {
+            return parseDisconnect(element, guiStateManager);
+        }
+        if (command.equals("GUI_META")) {
+            return parseGuiMeta(element, guiStateManager);
+        }
+        if (command.equals("GUI_START")) {
+            return parseGuiStart(element, guiStateManager);
+        }
+        if (command.equals("GUI_EXECUTE_ELEMENT")) {
+            return parseGuiExecuteElement(element);
+        }
+        if (command.equals("DIALOG_OPEN")) {
+            return parseDialogOpen(args, element, commandCallback);
+        }
+        if (command.equals("DIALOG_TOGGLE")) {
+            return parseDialogToggle(args, element, commandCallback);
+        }
+        if (command.equals("DIALOG_CLOSE")) {
+            return parseDialogClose(args, element, commandCallback);
+        }
+        if (command.equals("GUI_EXECUTE_COMMAND")) {
+            return parseGuiExecuteCommand(args, element, commandExecutor, lnr, macros);
+        }
+        if (command.equals("EXEC_SELECTION")) {
+            return parseExecSelection(args, element, commandQueue, crossfireServerConnection);
+        }
+        if (command.equals("MOVE_SELECTION")) {
+            return parseMoveSelection(args, element);
+        }
+        if (command.equals("SCROLL_LIST")) {
+            return parseScrollList(args, element);
+        }
+        if (command.equals("SCROLL") || command.equals("SCROLL_NEVER")) {
+            return parseScroll(args, element, command.equals("SCROLL"));
+        }
+        if (command.equals("SCROLL_RESET")) {
+            return parseScrollReset(element);
+        }
+        if (command.equals("MOVE_FOCUS")) {
+            return parseMoveFocus(args, element);
+        }
+        if (command.equals("ACCOUNT_LOGIN")) {
+            return parseAccountLogin(element, commandCallback);
+        }
+        if (command.equals("ACCOUNT_CREATE")) {
+            return parseAccountCreate(element, commandCallback);
+        }
+        if (command.equals("ACCOUNT_PLAY")) {
+            return parseAccountPlay(element, commandCallback);
+        }
+        if (command.equals("ACCOUNT_LINK")) {
+            return parseAccountLink(element, commandCallback);
+        }
+        if (command.equals("ACCOUNT_CREATE_CHARACTER")) {
+            return parseAccountCreateCharacter(element, commandCallback);
+        }
+        if (command.equals("ACCOUNT_PASSWORD")) {
+            return parseAccountPassword(element, commandCallback);
+        }
+        if (command.equals("SELECT")) {
+            return parseSelect(args, element);
+        }
+        throw new JXCSkinException("unknown command '"+command+"'");
     }
 
     /**

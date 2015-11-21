@@ -250,14 +250,9 @@ public class TooltipManagerImpl implements TooltipManager {
         final int preferredX = tooltipText.getX()+tooltipText.getW()/2-tmpTooltip.getWidth()/2;
         final int maxX = windowWidth-tmpTooltip.getWidth();
         final int tx = Math.max(0, Math.min(preferredX, maxX));
-        final int ty;
         final int elementY = tooltipText.getY();
         final int preferredY = elementY+tooltipText.getH()+TOOLTIP_DISTANCE;
-        if (preferredY+tmpTooltip.getHeight() <= windowHeight) {
-            ty = preferredY;
-        } else {
-            ty = elementY-tmpTooltip.getHeight()-TOOLTIP_DISTANCE;
-        }
+        final int ty = preferredY+tmpTooltip.getHeight() <= windowHeight ? preferredY : elementY-tmpTooltip.getHeight()-TOOLTIP_DISTANCE;
         tmpTooltip.setLocation(tx, ty);
     }
 

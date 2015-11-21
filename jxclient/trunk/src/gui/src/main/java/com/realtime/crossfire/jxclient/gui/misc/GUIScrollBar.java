@@ -233,6 +233,7 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
      * valid value.
      * @param pos the slider position
      */
+    @SuppressWarnings("IfMayBeConditional")
     private void setPosition(final int pos) {
         if (pos < valueMin) {
             sliderPos = valueMin;

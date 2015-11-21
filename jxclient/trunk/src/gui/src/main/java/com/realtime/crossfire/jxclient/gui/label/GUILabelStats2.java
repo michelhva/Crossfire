@@ -205,17 +205,9 @@ public class GUILabelStats2 extends GUIOneLineLabel {
         if (currValueWithoutGear < baseValue) {
             newColor = colorDepleted;
         } else if (currValueWithoutGear == baseValue) {
-            if (baseValue < raceValue) {
-                newColor = colorUpgradable;
-            } else {
-                newColor = GUILabelStats2.super.getTextColor();
-            }
+            newColor = baseValue < raceValue ? colorUpgradable : GUILabelStats2.super.getTextColor();
         } else {
-            if (baseValue < raceValue) {
-                newColor = colorBoostedUpgradable;
-            } else {
-                newColor = colorBoosted;
-            }
+            newColor = baseValue < raceValue ? colorBoostedUpgradable : colorBoosted;
         }
         if (color != newColor) {
             color = newColor;

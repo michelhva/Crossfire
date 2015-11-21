@@ -3163,6 +3163,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @param packet the packet's payload
      * @throws UnknownCommandException if the packet is invalid
      */
+    @SuppressWarnings("IfStatementWithIdenticalBranches")
     private void processSetup(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final int args = packet.position();
         final List<String> options = new ArrayList<String>();

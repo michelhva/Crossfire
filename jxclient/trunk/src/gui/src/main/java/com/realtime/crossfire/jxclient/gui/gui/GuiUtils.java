@@ -61,7 +61,7 @@ public class GuiUtils {
      */
     public static int getElementX(@NotNull final Component element) {
         final Component gui = getGui(element);
-        int x = gui != null ? gui.getX() : 0;
+        int x = gui == null ? 0 : gui.getX();
         for (Component component = element; component != null && !(component instanceof Gui); component = component.getParent()) {
             x += component.getX();
         }
@@ -75,7 +75,7 @@ public class GuiUtils {
      */
     public static int getElementY(@NotNull final Component element) {
         final Component gui = getGui(element);
-        int y = gui != null ? gui.getY() : 0;
+        int y = gui == null ? 0 : gui.getY();
         for (Component component = element; component != null && !(component instanceof Gui); component = component.getParent()) {
             y += component.getY();
         }

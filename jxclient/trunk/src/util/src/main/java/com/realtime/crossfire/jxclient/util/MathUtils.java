@@ -42,9 +42,8 @@ public class MathUtils {
     public static int div(final int numerator, final int denominator) {
         if (numerator >= 0) {
             return numerator/denominator;
-        } else {
-            return -((denominator-1-numerator)/denominator);
         }
+        return -((denominator-1-numerator)/denominator);
     }
 
     /**
@@ -67,9 +66,8 @@ public class MathUtils {
     public static int divRoundUp(final int numerator, final int denominator) {
         if (numerator >= 0) {
             return (numerator+denominator-1)/denominator;
-        } else {
-            return -(-numerator/denominator);
         }
+        return -(-numerator/denominator);
     }
 
     /**
@@ -81,9 +79,8 @@ public class MathUtils {
     public static int divRound(final int numerator, final int denominator) {
         if (numerator >= 0) {
             return (numerator+denominator/2)/denominator;
-        } else {
-            return -((-numerator-denominator/2+1)/denominator);
         }
+        return -((-numerator-denominator/2+1)/denominator);
     }
 
 }

@@ -111,6 +111,7 @@ public class GUILabelStats extends GUIOneLineLabel {
         }
 
         @Override
+        @SuppressWarnings("IfMayBeConditional")
         public void rangeChanged(@NotNull final String range) {
             if (stat != Stats.CS_STAT_RANGE) {
                 return;
@@ -119,9 +120,7 @@ public class GUILabelStats extends GUIOneLineLabel {
             final String text;
             if (range.startsWith("Range: spell ")) {
                 text = range.substring(13);
-            } else if (range.startsWith("Range: ")) {
-                text = range.substring(7);
-            } else if (range.startsWith("Skill: ")) {
+            } else if (range.startsWith("Range: ") || range.startsWith("Skill: ")) {
                 text = range.substring(7);
             } else {
                 text = range;

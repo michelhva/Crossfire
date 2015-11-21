@@ -251,11 +251,12 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
             final int index = list.getSelectedIndex();
             if (distance > 0) {
                 return index == -1 || index+distance < list.getModel().getSize();
-            } else if (distance < 0) {
-                return index == -1 || index >= -distance;
-            } else {
-                return false;
             }
+            //noinspection SimplifiableIfStatement
+            if (distance < 0) {
+                return index == -1 || index >= -distance;
+            }
+            return false;
         }
     }
 
@@ -279,23 +280,16 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
             final int index = list.getSelectedIndex();
             final int newIndex;
             if (distance > 0) {
-                if (index == -1) {
-                    newIndex = 0;
-                } else {
-                    newIndex = Math.min(index+distance, list.getModel().getSize()-1);
-                }
+                newIndex = index == -1 ? 0 : Math.min(index+distance, list.getModel().getSize()-1);
             } else if (distance < 0) {
+                //noinspection IfMayBeConditional
                 if (index == -1) {
                     newIndex = list.getModel().getSize()-1;
                 } else {
                     newIndex = Math.max(index+distance, 0);
                 }
             } else {
-                if (index == -1) {
-                    newIndex = 0;
-                } else {
-                    newIndex = index;
-                }
+                newIndex = index == -1 ? 0 : index;
             }
             setSelectedIndex(newIndex);
         }
@@ -312,11 +306,12 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
             final Adjustable scrollBar = scrollPane.getVerticalScrollBar();
             if (distance > 0) {
                 return scrollBar.getValue() < scrollBar.getMaximum()-scrollBar.getVisibleAmount();
-            } else if (distance < 0) {
-                return scrollBar.getValue() > scrollBar.getMinimum();
-            } else {
-                return false;
             }
+            //noinspection SimplifiableIfStatement
+            if (distance < 0) {
+                return scrollBar.getValue() > scrollBar.getMinimum();
+            }
+            return false;
         }
     }
 
@@ -354,10 +349,8 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
                             final int newColumn;
                             if (newTmpColumn <= lastIndex) {
                                 newColumn = newTmpColumn;
-                            } else if (newTmpColumn >= columns) {
-                                newColumn = newTmpColumn-columns;
                             } else {
-                                newColumn = lastIndex;
+                                newColumn = newTmpColumn >= columns ? newTmpColumn-columns : lastIndex;
                             }
                             setSelectedIndex(newColumn);
                             break;

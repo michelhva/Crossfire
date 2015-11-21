@@ -174,6 +174,7 @@ public class MetaserverEntryParser {
      * @throws IOException if the response line is invalid
      */
     @Nullable
+    @SuppressWarnings("IfStatementWithIdenticalBranches")
     public MetaserverEntry parseLine(@NotNull final String line) throws IOException {
         if (inSection) {
             if (line.equals("END_SERVER_DATA")) {
@@ -187,49 +188,48 @@ public class MetaserverEntryParser {
                 clear();
                 inSection = false;
                 return metaserverEntry;
-            } else {
-                final String[] tmp = line.split("=", 2);
-                if (tmp.length == 2) {
-                    final String key = tmp[0];
-                    final String value = tmp[1];
-                    if (key.equals("hostname")) {
-                        hostname = value;
-                    } else if (key.equals("port")) {
-                    } else if (key.equals("html_comment")) {
+            }
+            final String[] tmp = line.split("=", 2);
+            if (tmp.length == 2) {
+                final String key = tmp[0];
+                final String value = tmp[1];
+                if (key.equals("hostname")) {
+                    hostname = value;
+                } else if (key.equals("port")) {
+                } else if (key.equals("html_comment")) {
+                    comment = value;
+                } else if (key.equals("text_comment")) {
+                    if (comment.isEmpty()) {
                         comment = value;
-                    } else if (key.equals("text_comment")) {
-                        if (comment.isEmpty()) {
-                            comment = value;
-                        }
-                    } else if (key.equals("archbase")) {
-                        archBase = value;
-                    } else if (key.equals("mapbase")) {
-                        mapBase = value;
-                    } else if (key.equals("codebase")) {
-                        codeBase = value;
-                    } else if (key.equals("num_players")) {
-                        players = NumberParser.parseInt(value, 0);
-                    } else if (key.equals("in_bytes")) {
-                        bytesIn = NumberParser.parseLong(value, 0);
-                    } else if (key.equals("out_bytes")) {
-                        bytesOut = NumberParser.parseLong(value, 0);
-                    } else if (key.equals("uptime")) {
-                        uptimeSeconds = NumberParser.parseInt(value, 0);
-                    } else if (key.equals("version")) {
-                        version = value;
-                    } else if (key.equals("sc_version")) {
-                    } else if (key.equals("cs_version")) {
-                    } else if (key.equals("last_update")) {
-                        final long now = (System.currentTimeMillis()+500)/1000;
-                        final long uptime = NumberParser.parseLong(value, now);
-                        updateSeconds = Math.max((int)((uptime-now)/1000), 0);
-                    } else if (key.equals("flags")) {
-                    } else {
-                        System.err.println("Ignoring unknown key: "+key);
                     }
+                } else if (key.equals("archbase")) {
+                    archBase = value;
+                } else if (key.equals("mapbase")) {
+                    mapBase = value;
+                } else if (key.equals("codebase")) {
+                    codeBase = value;
+                } else if (key.equals("num_players")) {
+                    players = NumberParser.parseInt(value, 0);
+                } else if (key.equals("in_bytes")) {
+                    bytesIn = NumberParser.parseLong(value, 0);
+                } else if (key.equals("out_bytes")) {
+                    bytesOut = NumberParser.parseLong(value, 0);
+                } else if (key.equals("uptime")) {
+                    uptimeSeconds = NumberParser.parseInt(value, 0);
+                } else if (key.equals("version")) {
+                    version = value;
+                } else if (key.equals("sc_version")) {
+                } else if (key.equals("cs_version")) {
+                } else if (key.equals("last_update")) {
+                    final long now = (System.currentTimeMillis()+500)/1000;
+                    final long uptime = NumberParser.parseLong(value, now);
+                    updateSeconds = Math.max((int)((uptime-now)/1000), 0);
+                } else if (key.equals("flags")) {
                 } else {
-                    throw new IOException("syntax error: "+line);
+                    System.err.println("Ignoring unknown key: "+key);
                 }
+            } else {
+                throw new IOException("syntax error: "+line);
             }
         } else {
             if (line.equals("START_SERVER_DATA")) {

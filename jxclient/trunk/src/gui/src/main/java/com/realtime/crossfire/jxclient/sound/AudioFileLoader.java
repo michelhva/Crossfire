@@ -64,20 +64,20 @@ public class AudioFileLoader {
     @NotNull
     public InputStream getInputStream(@Nullable final String name, @NotNull final String action) throws IOException {
         @Nullable final IOException savedException;
-        if (name != null) {
+        if (name == null) {
+            savedException = null;
+        } else {
             try {
                 return getResource(name+"/"+action);
             } catch (final IOException ex) {
                 savedException = ex;
             }
-        } else {
-            savedException = null;
         }
 
         try {
             return getResource(action);
         } catch (final IOException ex) {
-            throw savedException != null ? savedException : ex;
+            throw savedException == null ? ex : savedException;
         }
     }
 

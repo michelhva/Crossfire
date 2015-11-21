@@ -271,10 +271,10 @@ public class JXClient {
                                             window[0].init(options.getResolution(), options.getSkin(), options.isFullScreen(), skinLoader);
                                             keybindingsManager.loadKeybindings();
                                             final String serverInfo = options.getServer();
-                                            if (serverInfo != null) {
-                                                model.getGuiStateManager().connect(serverInfo);
-                                            } else {
+                                            if (serverInfo == null) {
                                                 model.getGuiStateManager().changeGUI(JXCWindow.DISABLE_START_GUI ? GuiState.METASERVER : GuiState.START);
+                                            } else {
+                                                model.getGuiStateManager().connect(serverInfo);
                                             }
                                         }
 

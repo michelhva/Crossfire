@@ -513,12 +513,14 @@ public class Gui extends JComponent {
                 } else if (!initialPositionSet) {
                     final Dimension preferredSize = getPreferredSize();
                     final int x;
+                    //noinspection IfMayBeConditional
                     if (defaultX == null) {
                         x = (screenWidth-preferredSize.width)/2;
                     } else {
                         x = defaultX.evaluate(screenWidth, screenHeight, preferredSize.width, preferredSize.height);
                     }
                     final int y;
+                    //noinspection IfMayBeConditional
                     if (defaultY == null) {
                         y = (screenHeight-preferredSize.height)/2;
                     } else {
