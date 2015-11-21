@@ -52,6 +52,7 @@ public class KeyCodeMap {
         for (final Field field : KeyEvent.class.getDeclaredFields()) {
             if (field.getName().startsWith("VK_")) {
                 final int keyCode;
+                //noinspection ErrorNotRethrown
                 try {
                     keyCode = field.getInt(null);
                 } catch (final SecurityException ignored) {
