@@ -1,5 +1,3 @@
 defaultTasks 'jar'
 
 apply plugin: 'java'
-
-sourceCompatibility = 1.6
