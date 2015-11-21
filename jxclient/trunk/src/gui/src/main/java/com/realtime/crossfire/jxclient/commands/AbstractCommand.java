@@ -91,6 +91,7 @@ public abstract class AbstractCommand implements Command {
      * {@inheritDoc}
      */
     @NotNull
+    @Override
     public String toString() {
         return commandName;
     }
