@@ -30,6 +30,7 @@ import com.realtime.crossfire.jxclient.gui.list.GUIKnowledgeTypeList;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.knowledge.KnowledgeManager;
+import com.realtime.crossfire.jxclient.knowledge.KnowledgeManager.KnowledgeListener;
 import java.awt.Dimension;
 import java.awt.Image;
 import org.jetbrains.annotations.NotNull;
@@ -122,7 +123,7 @@ public class GUIItemKnowledgeType extends GUIItemItem {
         this.itemView = itemView;
         setIndex(defaultIndex);
 
-        knowledgeManager.addKnowledgeListener(new KnowledgeManager.KnowledgeListener() {
+        knowledgeManager.addKnowledgeListener(new KnowledgeListener() {
             @Override
             public void typeAdded(final int index) {
                 if (GUIItemKnowledgeType.this.index >= index) {

@@ -158,6 +158,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.TreeSet;
 import javax.swing.GroupLayout;
+import javax.swing.GroupLayout.Group;
+import javax.swing.GroupLayout.SequentialGroup;
 import javax.swing.SwingConstants;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -1316,7 +1318,7 @@ public class JXCSkinLoader {
             unreferencedElements.add(element);
         }
         if (!isDialog) {
-            final GroupLayout.Group content = parseBegin(args, layout, lnr, unreferencedElements);
+            final Group content = parseBegin(args, layout, lnr, unreferencedElements);
             if (!unreferencedElements.isEmpty()) {
                 throw new IOException("layout doesn't define elements "+unreferencedElements);
             }
@@ -1327,30 +1329,30 @@ public class JXCSkinLoader {
         if (background == null) {
             throw new AssertionError("element 'dialog_background' is missing");
         }
-        final GroupLayout.Group content = parseBegin(args, layout, lnr, unreferencedElements);
+        final Group content = parseBegin(args, layout, lnr, unreferencedElements);
         final Component title = getUnreferencedElement("dialog_title", unreferencedElements);
         final Component close = getUnreferencedElement("dialog_close", unreferencedElements);
-        final GroupLayout.Group group2 = layout.createSequentialGroup();
+        final Group group2 = layout.createSequentialGroup();
         group2.addGap(DIALOG_BORDER_WIDTH);
         if (title == null) {
             if (close == null) {
-                final GroupLayout.Group group3 = layout.createParallelGroup();
+                final Group group3 = layout.createParallelGroup();
                 group3.addGroup(content);
                 group2.addGroup(group3);
             } else {
-                final GroupLayout.Group group3 = layout.createParallelGroup();
+                final Group group3 = layout.createParallelGroup();
                 group3.addGap(0, 0, Short.MAX_VALUE);
                 group3.addComponent(close);
                 group2.addGroup(group3);
                 group2.addGroup(content);
             }
         } else {
-            final GroupLayout.Group group3 = layout.createParallelGroup();
+            final Group group3 = layout.createParallelGroup();
             if (close == null) {
                 group3.addComponent(title);
                 group3.addGroup(content);
             } else {
-                final GroupLayout.Group group4 = layout.createSequentialGroup();
+                final Group group4 = layout.createSequentialGroup();
                 group4.addComponent(title);
                 group4.addComponent(close);
                 group3.addGroup(group4);
@@ -1363,7 +1365,7 @@ public class JXCSkinLoader {
             throw new IOException("layout doesn't define elements "+unreferencedElements);
         }
 
-        final GroupLayout.Group group1 = layout.createParallelGroup();
+        final Group group1 = layout.createParallelGroup();
         group1.addGroup(group2);
         group1.addComponent(background);
 
@@ -2080,7 +2082,7 @@ public class JXCSkinLoader {
             unreferencedElements.add(element);
         }
         if (!isDialog) {
-            final GroupLayout.Group content = parseBegin(args, layout, lnr, unreferencedElements);
+            final Group content = parseBegin(args, layout, lnr, unreferencedElements);
             if (!unreferencedElements.isEmpty()) {
                 throw new IOException("layout doesn't define elements "+unreferencedElements);
             }
@@ -2091,17 +2093,17 @@ public class JXCSkinLoader {
         if (background == null) {
             throw new AssertionError("element 'dialog_background' is missing");
         }
-        final GroupLayout.Group content = parseBegin(args, layout, lnr, unreferencedElements);
+        final Group content = parseBegin(args, layout, lnr, unreferencedElements);
         final Component title = getUnreferencedElement("dialog_title", unreferencedElements);
         final Component close = getUnreferencedElement("dialog_close", unreferencedElements);
-        final GroupLayout.Group group2 = layout.createSequentialGroup();
+        final Group group2 = layout.createSequentialGroup();
         group2.addGap(DIALOG_BORDER_WIDTH);
         if (title == null) {
             if (close != null) {
-                final GroupLayout.Group group4 = layout.createParallelGroup();
+                final Group group4 = layout.createParallelGroup();
                 group4.addComponent(close);
                 group4.addGap(0, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE);
-                final GroupLayout.Group group3 = layout.createParallelGroup();
+                final Group group3 = layout.createParallelGroup();
                 group3.addGroup(content);
                 group3.addGroup(group4);
                 group2.addGroup(group3);
@@ -2113,7 +2115,7 @@ public class JXCSkinLoader {
                 group2.addComponent(title);
                 group2.addGroup(content);
             } else {
-                final GroupLayout.Group group3 = layout.createParallelGroup();
+                final Group group3 = layout.createParallelGroup();
                 group3.addComponent(title);
                 group3.addComponent(close);
                 group2.addGroup(group3);
@@ -2125,7 +2127,7 @@ public class JXCSkinLoader {
             throw new IOException("layout doesn't define elements "+unreferencedElements);
         }
 
-        final GroupLayout.Group group1 = layout.createParallelGroup();
+        final Group group1 = layout.createParallelGroup();
         group1.addGroup(group2);
         group1.addComponent(background);
 
@@ -2220,9 +2222,9 @@ public class JXCSkinLoader {
      * @throws JXCSkinException if the block cannot be parsed
      */
     @NotNull
-    private GroupLayout.Group parseBegin(@NotNull final Args beginArgs, @NotNull final GroupLayout layout, @NotNull final LineNumberReader lnr, @NotNull final Collection<GUIElement> unreferencedElements) throws IOException, JXCSkinException {
+    private Group parseBegin(@NotNull final Args beginArgs, @NotNull final GroupLayout layout, @NotNull final LineNumberReader lnr, @NotNull final Collection<GUIElement> unreferencedElements) throws IOException, JXCSkinException {
         final String type = beginArgs.get();
-        final GroupLayout.Group group;
+        final Group group;
         if (type.equals("seq")) {
             group = layout.createSequentialGroup();
         } else if (type.equals("par")) {
@@ -2255,10 +2257,10 @@ public class JXCSkinLoader {
             if (cmd.equals("begin")) {
                 group.addGroup(parseBegin(args, layout, lnr, unreferencedElements));
             } else if (cmd.equals("border_gap")) {
-                if (!(group instanceof GroupLayout.SequentialGroup)) {
+                if (!(group instanceof SequentialGroup)) {
                     throw new IOException("'border_gap' cannot be used outside 'seq' groups");
                 }
-                ((GroupLayout.SequentialGroup)group).addContainerGap();
+                ((SequentialGroup)group).addContainerGap();
             } else if (cmd.equals("gap")) {
                 if (args.hasMore()) {
                     final int tmp = ExpressionParser.parseInt(args.get());
