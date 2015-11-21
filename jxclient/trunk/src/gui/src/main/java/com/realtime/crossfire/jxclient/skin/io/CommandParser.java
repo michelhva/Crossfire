@@ -269,6 +269,7 @@ public class CommandParser {
      */
     @NotNull
     private static GUICommand parsePrint(@Nullable final GUIElement element) throws IOException {
+        //noinspection VariableNotUsedInsideIf
         if (element != null) {
             throw new IOException("<element> is not allowed");
         }
@@ -285,6 +286,7 @@ public class CommandParser {
      */
     @NotNull
     private static GUICommand parseQuit(@Nullable final GUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
+        //noinspection VariableNotUsedInsideIf
         if (element != null) {
             throw new IOException("<element> is not allowed");
         }
@@ -321,6 +323,7 @@ public class CommandParser {
      */
     @NotNull
     private static GUICommand parseDisconnect(@Nullable final GUIElement element, @NotNull final GuiStateManager guiStateManager) throws IOException {
+        //noinspection VariableNotUsedInsideIf
         if (element != null) {
             throw new IOException("<element> is not allowed");
         }
@@ -337,6 +340,7 @@ public class CommandParser {
      */
     @NotNull
     private static GUICommand parseGuiMeta(@Nullable final GUIElement element, @NotNull final GuiStateManager guiStateManager) throws IOException {
+        //noinspection VariableNotUsedInsideIf
         if (element != null) {
             throw new IOException("<element> is not allowed");
         }
@@ -353,6 +357,7 @@ public class CommandParser {
      */
     @NotNull
     private static GUICommand parseGuiStart(@Nullable final GUIElement element, @NotNull final GuiStateManager guiStateManager) throws IOException {
+        //noinspection VariableNotUsedInsideIf
         if (element != null) {
             throw new IOException("<element> is not allowed");
         }
@@ -389,6 +394,7 @@ public class CommandParser {
      */
     @NotNull
     private GUICommand parseDialogOpen(@NotNull final Args args, @Nullable final GUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
+        //noinspection VariableNotUsedInsideIf
         if (element != null) {
             throw new IOException("<element> is not allowed");
         }
@@ -406,6 +412,7 @@ public class CommandParser {
      */
     @NotNull
     private GUICommand parseDialogToggle(@NotNull final Args args, @Nullable final GUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
+        //noinspection VariableNotUsedInsideIf
         if (element != null) {
             throw new IOException("<element> is not allowed");
         }
@@ -423,6 +430,7 @@ public class CommandParser {
      */
     @NotNull
     private GUICommand parseDialogClose(@NotNull final Args args, @Nullable final GUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
+        //noinspection VariableNotUsedInsideIf
         if (element != null) {
             throw new IOException("<element> is not allowed");
         }
@@ -442,6 +450,7 @@ public class CommandParser {
      */
     @NotNull
     private static GUICommand parseGuiExecuteCommand(@NotNull final Args args, @Nullable final GUIElement element, @NotNull final CommandExecutor commandExecutor, @NotNull final LineNumberReader lnr, @NotNull final Macros macros) throws IOException {
+        //noinspection VariableNotUsedInsideIf
         if (element != null) {
             throw new IOException("<element> is not allowed");
         }

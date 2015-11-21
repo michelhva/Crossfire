@@ -4358,6 +4358,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     private void sendPendingRequestInfo() {
         final String infoType;
         synchronized (writeBuffer) {
+            //noinspection VariableNotUsedInsideIf
             if (sendingRequestInfo != null) {
                 return;
             }

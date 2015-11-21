@@ -85,7 +85,7 @@ public class StartingMapBuilder {
             return;
         }
         if (this.name != null) {
-            System.err.println("duplicate name '"+name+"' in startingmap block");
+            System.err.println("duplicate name '"+name+"' in startingmap block; previous name was '"+this.name+"'");
             return;
         }
         this.name = name;
@@ -102,7 +102,7 @@ public class StartingMapBuilder {
             return;
         }
         if (this.description != null) {
-            System.err.println("duplicate description '"+description+"' in startingmap block");
+            System.err.println("duplicate description '"+description+"' in startingmap block; previous description was '"+this.description+"'");
             return;
         }
         this.description = description;
