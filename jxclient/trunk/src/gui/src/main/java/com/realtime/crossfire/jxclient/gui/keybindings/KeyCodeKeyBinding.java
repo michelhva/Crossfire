@@ -105,6 +105,7 @@ public class KeyCodeKeyBinding extends KeyBinding {
         final StringBuilder sb = new StringBuilder();
         final int modifiers = keyEvent.getModifiers();
         if (modifiers != KeyEvent2.NONE) {
+            //noinspection MagicConstant
             sb.append(KeyEvent.getKeyModifiersText(modifiers)).append("+");
         }
         sb.append(KeyEvent.getKeyText(keyEvent.getKeyCode()));
