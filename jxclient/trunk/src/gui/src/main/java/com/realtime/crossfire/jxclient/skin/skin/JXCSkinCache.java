@@ -30,6 +30,7 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * Implements a cache for elements identified by name.
+ * @param <T> the type of the cached elements
  * @author Andreas Kirschbaum
  */
 public class JXCSkinCache<T> implements Iterable<T> {

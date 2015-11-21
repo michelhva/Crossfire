@@ -28,10 +28,10 @@ import org.jetbrains.annotations.NotNull;
 /**
  * Utility class to encode arbitrary Strings to fit in a single text line. For
  * any string {@code s}, {@code encode(s)} is a string that does not contain \r
- * or \n characters and {@code s.equals(decode(encode(s)))}
- * holds.
+ * or \n and <code>s.equals(decode(encode(s)))</code> holds.
  * @author Andreas Kirschbaum
  */
+@SuppressWarnings("HtmlTagCanBeJavadocTag")
 public class Codec {
 
     /**
