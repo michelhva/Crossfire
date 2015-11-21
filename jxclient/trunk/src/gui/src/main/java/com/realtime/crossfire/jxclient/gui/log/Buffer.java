@@ -361,7 +361,7 @@ public class Buffer {
 
     /**
      * Returns the number of merged lines. Should not be called unless directly
-     * after {@link #mergeLines(String, Color)} did freturn {@code true}.
+     * after {@link #mergeLines(String, Color)} did return {@code true}.
      * @return the number of merged lines
      */
     public int getLastCount() {

@@ -83,7 +83,7 @@ public class ImageScale2x {
      * @param args the command-line arguments (ignored)
      */
     public static void main(@NotNull final String[] args) {
-        final String srcFile = "randam_orig.png";
+        final String srcFile = "random_orig.png";
         System.out.println("Reading: "+srcFile);
         final ImageIcon src = new ImageIcon(srcFile);
         final ImageScale2x scaler = new ImageScale2x(src);

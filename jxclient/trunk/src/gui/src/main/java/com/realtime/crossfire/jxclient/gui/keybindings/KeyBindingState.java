@@ -62,7 +62,7 @@ public class KeyBindingState {
     private int type = -1;
 
     /**
-     * The key evnt. Only valid if {@code type == 0}.
+     * The key event. Only valid if {@code type == 0}.
      */
     private KeyEvent2 keyEvent;
 

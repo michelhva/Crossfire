@@ -77,10 +77,13 @@ public class PacketWatcherTest {
 
         sb.setLength(0);
         for (final ReceivedPacketListener listener : listeners) {
+            //noinspection SpellCheckingInspection
             listener.processEmpty("comman");
             listener.processEmpty("command");
+            //noinspection SpellCheckingInspection
             listener.processEmpty("commandx");
         }
+        //noinspection SpellCheckingInspection
         Assert.assertEquals("watch command\n"+"watch commandx\n", sb.toString());
     }
 
