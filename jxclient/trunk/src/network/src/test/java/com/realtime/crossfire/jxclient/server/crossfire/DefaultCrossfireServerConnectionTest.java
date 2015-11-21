@@ -301,6 +301,7 @@ public class DefaultCrossfireServerConnectionTest {
     private static Socket acceptClient(@NotNull final ServerSocket server) {
         final Socket client;
         try {
+            //noinspection SocketOpenedButNotSafelyClosed
             client = server.accept();
         } catch (final IOException ex) {
             Assert.fail(ex.getMessage());

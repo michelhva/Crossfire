@@ -352,6 +352,7 @@ public class JXClient {
         try {
             final FileOutputStream outputStream = new FileOutputStream(filename);
             try {
+                //noinspection IOResourceOpenedButNotSafelyClosed
                 writer = new OutputStreamWriter(outputStream, "UTF-8");
             } finally {
                 if (writer == null) {
