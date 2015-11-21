@@ -186,6 +186,7 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
      * The number of pixels that are visible in the rightmost visible tile.
      * {@code 0<=displayMaxOffsetX<tileSize}.
      */
+    @SuppressWarnings("JavaDoc")
     private int displayMaxOffsetX;
 
     /**
@@ -198,6 +199,7 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
      * The number of pixels that are visible in the bottommost visible tile.
      * {@code 0<=displayMaxOffsetY<tileSize}.
      */
+    @SuppressWarnings("JavaDoc")
     private int displayMaxOffsetY;
 
     /**

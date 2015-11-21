@@ -41,6 +41,7 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link GUIElement} that displays a combo box.
+ * @param <T> the type of the entries of this list
  * @author Andreas Kirschbaum
  */
 public abstract class GUIComboBox<T> extends AbstractGUIElement {

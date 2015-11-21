@@ -27,6 +27,7 @@ import org.jetbrains.annotations.Nullable;
 /**
  * An entry in the settings file. It consists of a key/value pair and a comment
  * that explains the entry.
+ * @param <T> the type of the values
  * @author Andreas Kirschbaum
  */
 public class SettingsEntry<T> {

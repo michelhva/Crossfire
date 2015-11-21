@@ -28,6 +28,7 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Type-safe version of {@link EventListenerList}.
+ * @param <T> the type of the listeners
  * @author Andreas Kirschbaum
  */
 public class EventListenerList2<T extends EventListener> implements Serializable {
