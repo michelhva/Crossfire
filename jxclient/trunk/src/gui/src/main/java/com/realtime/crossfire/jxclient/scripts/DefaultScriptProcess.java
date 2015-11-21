@@ -752,7 +752,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
      */
     @Override
     public boolean equals(@Nullable final Object obj) {
-        if (obj == null || !(obj instanceof ScriptProcess)) {
+        if (!(obj instanceof ScriptProcess)) {
             return false;
         }
 

@@ -255,7 +255,7 @@ public class GUIItemShortcut extends GUIItem {
             break;
 
         case Modifiers.CTRL:
-            if (shortcut != null && shortcut instanceof ShortcutSpell) {
+            if (shortcut instanceof ShortcutSpell) {
                 final ShortcutSpell shortcutSpell = (ShortcutSpell)shortcut;
                 shortcutSpell.setCast(!shortcutSpell.isCast());
             }
@@ -270,7 +270,7 @@ public class GUIItemShortcut extends GUIItem {
     public void button2Clicked(final int modifiers) {
         switch (modifiers&Modifiers.MASK) {
         case Modifiers.NONE:
-            if (shortcut != null && shortcut instanceof ShortcutSpell) {
+            if (shortcut instanceof ShortcutSpell) {
                 final ShortcutSpell shortcutSpell = (ShortcutSpell)shortcut;
                 shortcutSpell.setCast(!shortcutSpell.isCast());
             }
