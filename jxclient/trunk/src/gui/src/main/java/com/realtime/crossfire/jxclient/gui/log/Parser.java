@@ -222,7 +222,7 @@ public class Parser {
      * @param defaultColor the default color to use
      */
     private void processTag(@NotNull final String tag, @Nullable final Color defaultColor) {
-        if (tag.length() == 0) {
+        if (tag.isEmpty()) {
             return;
         }
 
@@ -262,7 +262,7 @@ public class Parser {
      * @param line the line to add to
      */
     private void processText(@NotNull final String text, @NotNull final Line line) {
-        if (text.length() == 0) {
+        if (text.isEmpty()) {
             return;
         }
 
@@ -284,7 +284,7 @@ public class Parser {
         for (int i = 0; i < words.length-1; i++) {
             line.addSegment(words[i]+" ", bold, italic, underline, font, color);
         }
-        if (words[words.length-1].length() > 0) {
+        if (!words[words.length-1].isEmpty()) {
             line.addSegment(words[words.length-1], bold, italic, underline, font, color);
         }
     }

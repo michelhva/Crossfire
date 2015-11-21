@@ -62,7 +62,7 @@ public class ExecCommand extends AbstractCommand {
      */
     @Override
     public void execute(@NotNull final String args) {
-        if (args.length() == 0) {
+        if (args.isEmpty()) {
             drawInfoError("Which command do you want to run?");
             return;
         }

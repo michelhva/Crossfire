@@ -402,7 +402,7 @@ public class Spell {
         } else {
             sb.append("<br><b>Denied</b>");
         }
-        if (message.length() > 0) {
+        if (!message.isEmpty()) {
             sb.append("<br>");
             sb.append(StringSplitter.splitAsHtml(message));
         }

@@ -549,7 +549,7 @@ public class GuiManager {
             final String hostname = connection.getHostname();
             if (hostname != null) {
                 final String playerName = settings.getString(SettingsEntries.getPlayerSettingsEntry(hostname));
-                if (playerName.length() > 0) {
+                if (!playerName.isEmpty()) {
                     assert queryDialog != null;
                     final GUIText textArea = queryDialog.getFirstElement(GUIText.class);
                     if (textArea != null) {
@@ -604,7 +604,7 @@ public class GuiManager {
                                 final String hostname = connection.getHostname();
                                 if (hostname != null) {
                                     final String accountName = settings.getString(SettingsEntries.getLoginAccountSettingsEntry(hostname));
-                                    if (accountName.length() > 0) {
+                                    if (!accountName.isEmpty()) {
                                         loginField.setText(accountName);
 
                                         final GUIText passwordField = dialog.getFirstElement(GUIText.class, "account_password");
@@ -636,7 +636,7 @@ public class GuiManager {
                                     final String hostname = connection.getHostname();
                                     if (hostname != null) {
                                         final String characterName = settings.getString(SettingsEntries.getLoginAccountSettingsEntry(hostname, accountName));
-                                        if (characterName.length() > 0) {
+                                        if (!characterName.isEmpty()) {
                                             characterList.setCharacter(characterName);
                                         }
                                     }
@@ -749,7 +749,7 @@ public class GuiManager {
      */
     private void activateMetaserverGui() {
         final String serverName = settings.getString(SettingsEntries.SERVER);
-        if (serverName.length() > 0) {
+        if (!serverName.isEmpty()) {
             windowRenderer.setSelectedHostname(serverName);
         }
     }
@@ -839,7 +839,7 @@ public class GuiManager {
      */
     public void activateCommandInput(@Nullable final String newText) {
         final GUIText textArea = activateCommandInput();
-        if (textArea != null && newText != null && newText.length() > 0) {
+        if (textArea != null && newText != null && !newText.isEmpty()) {
             textArea.setText(newText);
         }
     }

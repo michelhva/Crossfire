@@ -78,7 +78,7 @@ public class ScreenshotCommand extends AbstractCommand {
     @Override
     public void execute(@NotNull final String args) {
         final File file;
-        if (args.length() == 0) {
+        if (args.isEmpty()) {
             try {
                 file = screenshotFiles.getFile();
             } catch (final IOException ex) {
