@@ -65,7 +65,7 @@ public class DarknessColors {
     public static Color getDarknessColor(final int darkness) {
         synchronized (DARKNESS_COLORS) {
             if (DARKNESS_COLORS[darkness] == null) {
-                final float alpha = MAX_DARKNESS_ALPHA*(CfMapSquare.DARKNESS_FULL_BRIGHT-darkness)/(float)CfMapSquare.DARKNESS_FULL_BRIGHT;
+                final float alpha = MAX_DARKNESS_ALPHA*(CfMapSquare.DARKNESS_FULL_BRIGHT-darkness)/CfMapSquare.DARKNESS_FULL_BRIGHT;
                 DARKNESS_COLORS[darkness] = new Color(0, 0, 0, alpha);
             }
 
