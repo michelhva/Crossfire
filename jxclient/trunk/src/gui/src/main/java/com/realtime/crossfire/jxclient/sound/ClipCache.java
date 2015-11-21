@@ -101,7 +101,9 @@ public class ClipCache {
                     clip = AudioSystem.getClip();
                     clip.open(audioInputStream);
                 } catch (final IllegalArgumentException ex) {
-                    throw new UnsupportedAudioFileException(ex.getMessage());
+                    final UnsupportedAudioFileException ex2 = new UnsupportedAudioFileException(ex.getMessage());
+                    ex2.initCause(ex);
+                    throw ex2;
                 }
                 if (debugSound != null) {
                     debugSound.debugProtocolWrite("newClip: "+System.identityHashCode(clip)+" "+name+"/"+action);

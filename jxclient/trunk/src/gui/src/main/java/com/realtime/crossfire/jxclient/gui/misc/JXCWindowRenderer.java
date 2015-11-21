@@ -1212,7 +1212,7 @@ public class JXCWindowRenderer {
         } catch (final IOException ex) {
             System.err.println("Cannot write screen debug: "+ex.getMessage());
             System.exit(1);
-            throw new AssertionError();
+            throw new AssertionError(ex);
         }
     }
 

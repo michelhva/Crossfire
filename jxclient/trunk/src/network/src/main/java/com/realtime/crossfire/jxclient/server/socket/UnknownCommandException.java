@@ -45,4 +45,13 @@ public class UnknownCommandException extends Exception {
         super(str);
     }
 
+    /**
+     * Creates a new exception with the given text message as a parameter.
+     * @param str the message to assign to this exception
+     * @param cause the cause for this exception
+     */
+    public UnknownCommandException(@NotNull final String str, @NotNull final Throwable cause) {
+        super(str, cause);
+    }
+
 }

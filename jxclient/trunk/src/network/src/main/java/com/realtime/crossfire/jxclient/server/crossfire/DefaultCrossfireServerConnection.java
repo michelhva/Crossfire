@@ -3154,7 +3154,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         try {
             cmdReplyinfo(infoType, packet);
         } catch (final IOException ex) {
-            throw new UnknownCommandException("invalid replyinfo command: "+ex.getMessage());
+            throw new UnknownCommandException("invalid replyinfo command: "+ex.getMessage(), ex);
         }
         notifyPacketWatcherListenersAscii(packet, args);
     }

@@ -494,7 +494,7 @@ public class JXCWindow {
             } catch (final JXCSkinException ex2) {
                 System.err.println("cannot load default skin "+Options.DEFAULT_SKIN+": "+ex2.getMessage());
                 System.exit(1);
-                throw new AssertionError();
+                throw new AssertionError(ex2);
             }
         }
         guiManager.unsetSkin();

@@ -1042,7 +1042,7 @@ public class GuiManager {
         try {
             return skin.getCommandList(args);
         } catch (final JXCSkinException ex) {
-            throw new NoSuchCommandException(ex.getMessage());
+            throw new NoSuchCommandException(ex.getMessage(), ex);
         }
     }
 

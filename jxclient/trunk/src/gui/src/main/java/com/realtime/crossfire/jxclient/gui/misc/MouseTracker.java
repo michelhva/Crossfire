@@ -281,7 +281,7 @@ public class MouseTracker {
         } catch (final IOException ex) {
             System.err.println("Cannot write mouse debug: "+ex.getMessage());
             System.exit(1);
-            throw new AssertionError();
+            throw new AssertionError(ex);
         }
     }
 
