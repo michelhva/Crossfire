@@ -292,7 +292,7 @@ public class CfMapSquare {
      * when fog-of-war
      */
     public void setHeadMapSquare(final int layer, @Nullable final CfMapSquare mapSquare, final boolean setAlways) {
-        if (heads[layer] != mapSquare && (setAlways || heads[layer] == null || heads[layer].isFogOfWar())) {
+        if (heads[layer] != mapSquare && (setAlways || heads[layer] == null || heads[layer].fogOfWar)) {
             heads[layer] = mapSquare;
             dirty();
         }

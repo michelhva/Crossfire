@@ -66,7 +66,7 @@ public class KeyCharKeyBinding extends KeyBinding {
         }
 
         final KeyCharKeyBinding keyBinding = (KeyCharKeyBinding)obj;
-        return keyBinding.getKeyChar() == keyChar;
+        return keyBinding.keyChar == keyChar;
     }
 
     /**
