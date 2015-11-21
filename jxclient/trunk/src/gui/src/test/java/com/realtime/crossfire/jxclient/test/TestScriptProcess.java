@@ -23,9 +23,9 @@ package com.realtime.crossfire.jxclient.test;
 
 import com.realtime.crossfire.jxclient.scripts.ScriptProcess;
 import com.realtime.crossfire.jxclient.scripts.ScriptProcessListener;
-import junit.framework.Assert;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import org.junit.Assert;
 
 /**
  * Implements {@link ScriptProcess} for regression tests. All functions do call
