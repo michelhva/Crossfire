@@ -96,9 +96,9 @@ public class EventScheduler {
                             sync.wait();
                             fireEvent = false;
                         } else {
-                            final long delay = Math.max(nextAction, nextActionNotBefore)-now;
-                            if (delay > 0) {
-                                sync.wait(delay);
+                            final long thisDelay = Math.max(nextAction, nextActionNotBefore)-now;
+                            if (thisDelay > 0) {
+                                sync.wait(thisDelay);
                                 fireEvent = false;
                             } else {
                                 fireEvent = true;
