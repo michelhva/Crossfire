@@ -68,7 +68,7 @@ public class KeyEvent2 {
     public static final int MASK = ALT|ALT_GRAPH|CTRL|META|SHIFT;
 
     /**
-     * The key code. See {@link java.awt.event.KeyEvent VK_xxx} constants.
+     * The key code. See {@link KeyEvent VK_xxx} constants.
      */
     private final int keyCode;
 
@@ -96,8 +96,7 @@ public class KeyEvent2 {
     }
 
     /**
-     * Returns the key code. See {@link java.awt.event.KeyEvent VK_xxx}
-     * constants.
+     * Returns the key code. See {@link KeyEvent VK_xxx} constants.
      * @return the key code
      */
     public int getKeyCode() {
