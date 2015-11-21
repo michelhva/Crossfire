@@ -122,11 +122,11 @@ public class GUIButton extends AbstractButton {
         super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT, autoRepeat, commandList);
         final int preferredWidth = imageUp.getWidth();
         if (preferredWidth != imageDown.getWidth()) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("preferredWidth="+preferredWidth+", imageWidth="+imageDown.getWidth());
         }
         final int preferredHeight = imageUp.getHeight();
         if (preferredHeight != imageDown.getHeight()) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("preferredHeight="+preferredHeight+", imageHeight="+imageDown.getHeight());
         }
         this.imageUp = imageUp;
         this.imageDown = imageDown;

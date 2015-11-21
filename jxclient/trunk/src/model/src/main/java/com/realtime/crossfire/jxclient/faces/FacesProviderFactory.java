@@ -56,7 +56,7 @@ public class FacesProviderFactory {
     private void add(@NotNull final FacesProvider facesProvider) {
         final int size = facesProvider.getSize();
         if (facesProviders.containsKey(size)) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("faces provider for size "+size+" already set");
         }
         facesProviders.put(size, facesProvider);
     }

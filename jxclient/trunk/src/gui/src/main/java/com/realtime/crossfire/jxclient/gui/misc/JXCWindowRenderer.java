@@ -1103,7 +1103,7 @@ public class JXCWindowRenderer {
 
         @Override
         public void remove() {
-            throw new UnsupportedOperationException();
+            throw new UnsupportedOperationException("remove() not implemented");
         }
 
     }

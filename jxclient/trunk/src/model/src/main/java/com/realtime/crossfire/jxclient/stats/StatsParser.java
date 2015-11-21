@@ -121,7 +121,7 @@ public class StatsParser {
      */
     public static int parseStat(@NotNull final String name) {
         if (!STAT_TABLE.containsKey(name)) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("undefined stat '"+name+"'");
         }
 
         return STAT_TABLE.get(name);

@@ -197,10 +197,10 @@ public class GUIDupGauge extends AbstractGUIElement implements GUIGaugeListener 
     @Override
     public void setValues(final int curValue, final int minValue, final int maxValue, @NotNull final String labelText, @NotNull final String tooltipText) {
         if (minValue != 0) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("minValue="+minValue);
         }
         if (maxValue != 99) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("maxValue="+maxValue);
         }
         if (!orientationDiv.setValues(curValue/10, 0, 9) && !orientationMod.setValues(curValue%10, 0, 9) && this.labelText.equals(labelText) && this.tooltipText.equals(tooltipText)) {
             return;

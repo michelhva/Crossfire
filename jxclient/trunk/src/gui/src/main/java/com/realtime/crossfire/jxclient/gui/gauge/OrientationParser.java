@@ -55,7 +55,7 @@ public class OrientationParser {
         if (name.equals("WE")) {
             return new OrientationWE();
         }
-        throw new IllegalArgumentException();
+        throw new IllegalArgumentException("invalid orientation '"+name+"'");
     }
 
 }

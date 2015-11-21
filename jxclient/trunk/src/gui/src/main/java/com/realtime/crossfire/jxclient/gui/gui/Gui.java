@@ -135,7 +135,7 @@ public class Gui extends JComponent {
         }
 
         if ((getWidth() == 0 || getHeight() == 0) && (initialPositionSet || x != 0 || y != 0)) {
-            throw new IllegalStateException();
+            throw new IllegalStateException("width="+getWidth()+", height="+getHeight()+", initialPositionSet="+initialPositionSet+", x="+x+", y="+y);
         }
 
         initialPositionSet = true;

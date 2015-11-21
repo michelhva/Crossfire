@@ -82,7 +82,7 @@ public class GuiStateManager {
                     break;
 
                 case CONNECTING:
-                    throw new IllegalArgumentException();
+                    throw new IllegalArgumentException("changeGUI() called in state CONNECTING");
 
                 case CONNECTED:
                     for (final GuiStateListener listener : guiStateListeners.getListeners()) {
@@ -91,7 +91,7 @@ public class GuiStateManager {
                     break;
 
                 case CONNECT_FAILED:
-                    throw new IllegalArgumentException();
+                    throw new IllegalArgumentException("changeGUI() called in state CONNECT_FAILED");
                 }
             }
 
@@ -113,8 +113,10 @@ public class GuiStateManager {
 
             switch (guiState) {
             case START:
+                throw new IllegalArgumentException("changeGUI() called in state START");
+
             case METASERVER:
-                throw new IllegalArgumentException();
+                throw new IllegalArgumentException("changeGUI() called in state METASERVER");
 
             case CONNECTING:
                 for (final GuiStateListener listener : guiStateListeners.getListeners()) {
@@ -126,7 +128,7 @@ public class GuiStateManager {
                 break;
 
             case CONNECTED:
-                throw new IllegalArgumentException();
+                throw new IllegalArgumentException("changeGUI() called in state CONNECTED");
 
             case CONNECT_FAILED:
                 for (final GuiStateListener listener : guiStateListeners.getListeners()) {
