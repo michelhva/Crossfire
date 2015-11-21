@@ -1137,6 +1137,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                     processFailure(packet);
                     return;
                 }
+                break;
 
             case 'g':
                 if (packet.get() != 'o') {
