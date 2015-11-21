@@ -33,7 +33,7 @@ task createJar(type: Jar, dependsOn: assemble) {
     manifest.attributes 'SplashScreen-Image': 'resource/splashscreen.png'
     from sourceSets.main.output
     from {
-        configurations.runtime.filter{
+        configurations.runtime.filter {
             it.name != 'annotations-0.0.jar'
         }.collect {
             it.isDirectory() ? it : zipTree(it)
