@@ -3663,6 +3663,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         accountName = login;
         synchronized (writeBuffer) {
             byteBuffer.clear();
+            //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(ACCOUNT_LOGIN_PREFIX);
             final byte[] loginBytes = login.getBytes(UTF8);
             byteBuffer.put((byte)loginBytes.length);
@@ -3696,6 +3697,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
+            //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(APPLY_PREFIX);
             putDecimal(tag);
             defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
@@ -3712,6 +3714,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
+            //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(ASKFACE_PREFIX);
             putDecimal(faceNum);
             defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
@@ -3728,6 +3731,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
+            //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(EXAMINE_PREFIX);
             putDecimal(tag);
             defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
@@ -3744,6 +3748,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
+            //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(LOCK_PREFIX);
             byteBuffer.put((byte)(val ? 1 : 0));
             byteBuffer.putInt(tag);
@@ -3761,6 +3766,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
+            //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(LOOKAT_PREFIX);
             putDecimal(dx);
             byteBuffer.put((byte)' ');
@@ -3779,6 +3785,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
+            //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(MARK_PREFIX);
             byteBuffer.putInt(tag);
             defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
@@ -3795,6 +3802,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
+            //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(MOVE_PREFIX);
             putDecimal(to);
             byteBuffer.put((byte)' ');
@@ -3817,6 +3825,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         synchronized (writeBuffer) {
             thisPacket = packet++&0x00FF;
             byteBuffer.clear();
+            //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(NCOM_PREFIX);
             byteBuffer.putShort((short)thisPacket);
             byteBuffer.putInt(repeat);
@@ -3836,6 +3845,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
+            //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(REPLY_PREFIX);
             byteBuffer.put(text.getBytes(UTF8));
             defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
@@ -3853,6 +3863,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
+            //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(REQUESTINFO_PREFIX);
             byteBuffer.put(infoType.getBytes(UTF8));
             defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
@@ -3870,6 +3881,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
+            //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(SETUP_PREFIX);
             if (options.length <= 0) {
                 byteBuffer.put((byte)' ');
@@ -3897,6 +3909,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
+            //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(TOGGLEEXTENDEDTEXT_PREFIX);
             for (final int type : types) {
                 byteBuffer.put((byte)' ');
@@ -3916,6 +3929,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
+            //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(VERSION_PREFIX);
             putDecimal(csval);
             byteBuffer.put((byte)' ');
@@ -4080,6 +4094,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
+            //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(ACCOUNT_PLAY_PREFIX);
             byteBuffer.put(name.getBytes(UTF8));
             defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
@@ -4102,6 +4117,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
+            //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(ACCOUNT_ADD_PLAYER_PREFIX);
             byteBuffer.put((byte)force);
             final byte[] loginBytes = login.getBytes(UTF8);
@@ -4126,6 +4142,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         accountName = login;
         synchronized (writeBuffer) {
             byteBuffer.clear();
+            //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(ACCOUNT_NEW_PREFIX);
             final byte[] loginBytes = login.getBytes(UTF8);
             byteBuffer.put((byte)loginBytes.length);
@@ -4148,6 +4165,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
+            //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(CREATE_PLAYER_PREFIX);
             final byte[] loginBytes = login.getBytes(UTF8);
             byteBuffer.put((byte)loginBytes.length);
@@ -4170,6 +4188,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
+            //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(ACCOUNT_PASSWORD_PREFIX);
             final byte[] currentPasswordBytes = currentPassword.getBytes(UTF8);
             byteBuffer.put((byte)currentPasswordBytes.length);
