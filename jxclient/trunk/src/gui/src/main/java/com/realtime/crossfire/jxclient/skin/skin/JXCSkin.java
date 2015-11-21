@@ -68,6 +68,7 @@ public interface JXCSkin extends Iterable<Gui> {
      */
     @NotNull
     @Override
+    @SuppressWarnings("AbstractMethodOverridesAbstractMethod")
     Iterator<Gui> iterator();
 
     /**
