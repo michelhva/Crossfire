@@ -185,6 +185,7 @@ public class GUISpellList extends GUIItemList {
             return;
         }
 
+        //noinspection StringBufferReplaceableByString
         final StringBuilder sb = new StringBuilder(spell.getTooltipText());
 
         // find bindings to cast or invoke the spell

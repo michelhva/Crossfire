@@ -121,6 +121,7 @@ public class PacketWatcher {
         @Override
         public void processMixed(@NotNull final String command, @NotNull final ByteBuffer packet) {
             if (matchesCommand(command)) {
+                //noinspection StringBufferReplaceableByString
                 final StringBuilder sb = new StringBuilder("watch ");
                 sb.append(command);
                 sb.append(' ');
