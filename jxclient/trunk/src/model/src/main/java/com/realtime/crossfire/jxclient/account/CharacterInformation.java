@@ -172,7 +172,7 @@ public class CharacterInformation implements Comparable<CharacterInformation> {
      */
     @Override
     public int compareTo(@NotNull final CharacterInformation o) {
-        return name.compareTo(o.getName());
+        return name.compareTo(o.name);
     }
 
     /**
@@ -193,7 +193,7 @@ public class CharacterInformation implements Comparable<CharacterInformation> {
         }
 
         final CharacterInformation characterInformation = (CharacterInformation)obj;
-        return characterInformation.getName().equals(name);
+        return characterInformation.name.equals(name);
     }
 
     /**
