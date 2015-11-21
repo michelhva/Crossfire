@@ -269,9 +269,7 @@ public class Parser {
 
         final CharSequence newText;
         final Segment prevSegment = line.getLastSegment();
-        if (!(prevSegment instanceof TextSegment)) {
-            newText = text;
-        } else {
+        if (prevSegment instanceof TextSegment) {
             final TextSegment prevTextSegment = (TextSegment)prevSegment;
             if (prevTextSegment.matches(bold, italic, underline, font, color)) {
                 newText = prevTextSegment.getText()+text;
@@ -279,6 +277,8 @@ public class Parser {
             } else {
                 newText = text;
             }
+        } else {
+            newText = text;
         }
 
         final String[] words = WORD_SEPARATOR_PATTERN.split(newText, -1);
