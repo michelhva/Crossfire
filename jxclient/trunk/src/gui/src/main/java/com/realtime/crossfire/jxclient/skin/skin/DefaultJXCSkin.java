@@ -363,6 +363,7 @@ public class DefaultJXCSkin implements JXCSkin {
      */
     @Override
     public void attach(@NotNull final TooltipManagerImpl tooltipManager) {
+        //noinspection VariableNotUsedInsideIf
         if (this.tooltipManager != null) {
             throw new IllegalStateException("skin is already attached");
         }

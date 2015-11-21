@@ -1162,6 +1162,7 @@ public class JXCWindowRenderer {
         for (final Gui dialog : openDialogs) {
             if (!dialog.isHidden(rendererGuiState)) {
                 elected = getElementFromPoint(dialog, eX-dialog.getX(), eY-dialog.getY());
+                //noinspection VariableNotUsedInsideIf
                 if (elected != null) {
                     break;
                 }
