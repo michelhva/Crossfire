@@ -175,7 +175,7 @@ public class CfMap {
     public int getDarkness(final int x, final int y) {
         assert Thread.holdsLock(this);
         final CfMapPatch mapPatch = getMapPatch(x, y);
-        return mapPatch != null ? mapPatch.getDarkness(ox, oy) : CfMapSquare.DEFAULT_DARKNESS;
+        return mapPatch == null ? CfMapSquare.DEFAULT_DARKNESS : mapPatch.getDarkness(ox, oy);
     }
 
     /**
@@ -210,7 +210,7 @@ public class CfMap {
      */
     public int getSmooth(final int x, final int y, final int layer) {
         final CfMapPatch mapPatch = getMapPatch(x, y);
-        final int result = mapPatch != null ? mapPatch.getSmooth(ox, oy, layer) : CfMapSquare.DEFAULT_SMOOTH;
+        final int result = mapPatch == null ? CfMapSquare.DEFAULT_SMOOTH : mapPatch.getSmooth(ox, oy, layer);
         return result;
     }
 
@@ -243,7 +243,7 @@ public class CfMap {
     public int getColor(final int x, final int y) {
         assert Thread.holdsLock(this);
         final CfMapPatch mapPatch = getMapPatch(x, y);
-        return mapPatch != null ? mapPatch.getColor(ox, oy) : CfMapSquare.DEFAULT_COLOR;
+        return mapPatch == null ? CfMapSquare.DEFAULT_COLOR : mapPatch.getColor(ox, oy);
     }
 
     /**
@@ -348,7 +348,7 @@ public class CfMap {
     public Face getFace(final int x, final int y, final int layer) {
         assert Thread.holdsLock(this);
         final CfMapPatch mapPatch = getMapPatch(x, y);
-        return mapPatch != null ? mapPatch.getFace(ox, oy, layer) : CfMapSquare.DEFAULT_FACE;
+        return mapPatch == null ? CfMapSquare.DEFAULT_FACE : mapPatch.getFace(ox, oy, layer);
     }
 
     /**
@@ -378,7 +378,7 @@ public class CfMap {
     public CfMapSquare getHeadMapSquare(final int x, final int y, final int layer) {
         assert Thread.holdsLock(this);
         final CfMapPatch mapPatch = getMapPatch(x, y);
-        return mapPatch != null ? mapPatch.getHeadMapSquare(ox, oy, layer) : null;
+        return mapPatch == null ? null : mapPatch.getHeadMapSquare(ox, oy, layer);
     }
 
     /**

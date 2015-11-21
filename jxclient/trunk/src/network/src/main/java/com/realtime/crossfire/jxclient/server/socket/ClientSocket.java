@@ -636,10 +636,10 @@ public class ClientSocket {
 
             outputBuffer.flip();
             try {
-                if (socketChannel != null) {
-                    socketChannel.write(outputBuffer);
-                } else {
+                if (socketChannel == null) {
                     outputBuffer.position(outputBuffer.limit());
+                } else {
+                    socketChannel.write(outputBuffer);
                 }
             } finally {
                 outputBuffer.compact();
@@ -654,6 +654,7 @@ public class ClientSocket {
     private void updateWriteInterestOps() {
         synchronized (syncOutput) {
             final int newInterestOps;
+            //noinspection IfMayBeConditional
             if (outputBuffer.position() > 0) {
                 newInterestOps = interestOps|SelectionKey.OP_WRITE;
             } else {

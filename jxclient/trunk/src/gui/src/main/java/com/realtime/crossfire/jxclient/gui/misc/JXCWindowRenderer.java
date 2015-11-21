@@ -446,6 +446,7 @@ public class JXCWindowRenderer {
         frame.setResizable(!fixedSize);
         final Point centerPoint = geCenterPoint();
         final Dimension dimension;
+        //noinspection IfMayBeConditional
         if (resolution == null) {
             dimension = new Dimension(currentDisplayMode.getWidth(), currentDisplayMode.getHeight());
         } else {
@@ -534,7 +535,9 @@ public class JXCWindowRenderer {
         updateWindowSize(dimension.width, dimension.height);
 
         frame.add(layeredPane);
-        if (currentGui != null) {
+        if (currentGui == null) {
+            frame.validate();
+        } else {
             addToLayeredPane(currentGui, 0, -1);
             if (windowWidth > 0 && windowHeight > 0) {
                 assert currentGui != null;
@@ -543,8 +546,6 @@ public class JXCWindowRenderer {
 
             frame.validate();
             updateServerSettings();
-        } else {
-            frame.validate();
         }
 
         debugScreenWrite("setResolutionPost: success");
@@ -664,20 +665,14 @@ public class JXCWindowRenderer {
 
         if (!openDialogsRemove(dialog)) {
             dialog.activateDefaultElement();
-            @Nullable final GuiAutoCloseListener guiAutoCloseListener;
-            if (autoCloseOnDeactivate) {
-                guiAutoCloseListener = new GuiAutoCloseListener() {
+            final GuiAutoCloseListener guiAutoCloseListener = autoCloseOnDeactivate ? new GuiAutoCloseListener() {
 
-                    @Override
-                    public void autoClosed() {
-                        closeDialog(dialog);
-                    }
+                @Override
+                public void autoClosed() {
+                    closeDialog(dialog);
+                }
 
-                };
-
-            } else {
-                guiAutoCloseListener = null;
-            }
+            } : null;
             dialog.setGuiAutoCloseListener(guiAutoCloseListener);
         }
         openDialogsAdd(dialog);
@@ -913,6 +908,7 @@ public class JXCWindowRenderer {
         addToLayeredPane(dialog, 1, 0);
         final Dimension preferredSize = dialog.getPreferredSize();
         final Dimension size;
+        //noinspection IfMayBeConditional
         if (preferredSize == null) {
             size = new Dimension(320, 200);
         } else {

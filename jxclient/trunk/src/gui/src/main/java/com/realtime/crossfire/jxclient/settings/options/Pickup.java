@@ -304,6 +304,7 @@ public class Pickup {
      */
     public void setPickupMode(final long pickupMode, final boolean set) {
         final long newPickupMode;
+        //noinspection IfMayBeConditional
         if (set) {
             newPickupMode = this.pickupMode|pickupMode;
         } else {

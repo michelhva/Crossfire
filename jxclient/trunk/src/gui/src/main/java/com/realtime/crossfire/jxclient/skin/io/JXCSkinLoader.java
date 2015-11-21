@@ -771,11 +771,7 @@ public class JXCSkinLoader {
                     throw new IOException(ex.getMessage()+" in line "+lnr.getLineNumber());
                 } catch (final IllegalArgumentException ex) {
                     final Object msg = ex.getMessage();
-                    if (msg != null) {
-                        throw new IOException("invalid parameter ("+ex.getMessage()+") in line "+lnr.getLineNumber());
-                    } else {
-                        throw new IOException("invalid parameter in line "+lnr.getLineNumber());
-                    }
+                    throw new IOException("invalid parameter"+(msg == null ? "" : " ("+msg+")")+" in line "+lnr.getLineNumber());
                 } finally {
                     lnr.close();
                 }
@@ -1449,7 +1445,7 @@ public class JXCSkinLoader {
      * @throws IOException if the command cannot be parsed
      */
     private void parseKey(@NotNull final Args args, @Nullable final Gui gui, @NotNull final String line) throws IOException {
-        final KeyBindings keyBindings = gui != null ? gui.getKeyBindings() : skin.getDefaultKeyBindings();
+        final KeyBindings keyBindings = gui == null ? skin.getDefaultKeyBindings() : gui.getKeyBindings();
         try {
             keyBindings.parseKeyBinding(line.substring(4).trim(), true);
         } catch (final InvalidKeyBindingException ex) {
@@ -2099,7 +2095,9 @@ public class JXCSkinLoader {
         final Group group2 = layout.createSequentialGroup();
         group2.addGap(DIALOG_BORDER_WIDTH);
         if (title == null) {
-            if (close != null) {
+            if (close == null) {
+                group2.addGroup(content);
+            } else {
                 final Group group4 = layout.createParallelGroup();
                 group4.addComponent(close);
                 group4.addGap(0, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE);
@@ -2107,8 +2105,6 @@ public class JXCSkinLoader {
                 group3.addGroup(content);
                 group3.addGroup(group4);
                 group2.addGroup(group3);
-            } else {
-                group2.addGroup(content);
             }
         } else {
             if (close == null) {

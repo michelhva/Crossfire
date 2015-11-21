@@ -97,11 +97,11 @@ public class GUICommandFactoryImpl implements GUICommandFactory {
     public GUICommand createCommand(@NotNull final String commandString) {
         if (commandString.equals("-e")) {
             return new ActivateCommandInputCommand("", commandCallback, macros);
-        } else if (commandString.startsWith("-e ")) {
-            return new ActivateCommandInputCommand(StringUtils.trimLeading(commandString.substring(3)), commandCallback, macros);
-        } else {
-            return new ExecuteCommandCommand(commandExecutor, commandString, macros);
         }
+        if (commandString.startsWith("-e ")) {
+            return new ActivateCommandInputCommand(StringUtils.trimLeading(commandString.substring(3)), commandCallback, macros);
+        }
+        return new ExecuteCommandCommand(commandExecutor, commandString, macros);
     }
 
     /**

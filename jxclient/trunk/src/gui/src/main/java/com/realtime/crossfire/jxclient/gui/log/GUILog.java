@@ -189,11 +189,12 @@ public abstract class GUILog extends AbstractGUIElement implements GUIScrollable
     public boolean canScroll(final int distance) { // XXX: implement |distance|>1
         if (distance < 0) {
             return renderStateManager.canScrollUp();
-        } else if (distance > 0) {
-            return renderStateManager.canScrollDown();
-        } else {
-            return false;
         }
+        //noinspection SimplifiableIfStatement
+        if (distance > 0) {
+            return renderStateManager.canScrollDown();
+        }
+        return false;
     }
 
     /**

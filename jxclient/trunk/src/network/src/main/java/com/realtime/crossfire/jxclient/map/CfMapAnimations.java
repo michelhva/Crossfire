@@ -118,13 +118,13 @@ public class CfMapAnimations {
         case Map2.ANIM_SYNC: // animation is synchronized with other animations
             final int animationId = animation.getAnimationId();
             final AnimationState tmp = syncAnimationStates.get(animationId);
-            if (tmp != null) {
-                animationState = tmp;
-                addToPendingTickUpdates = false;
-            } else {
+            if (tmp == null) {
                 animationState = new AnimationState(animation, 0);
                 syncAnimationStates.put(animationId, animationState);
                 addToPendingTickUpdates = true;
+            } else {
+                animationState = tmp;
+                addToPendingTickUpdates = false;
             }
             break;
         }

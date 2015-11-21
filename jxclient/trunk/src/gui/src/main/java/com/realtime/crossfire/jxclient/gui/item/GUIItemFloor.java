@@ -161,11 +161,12 @@ public class GUIItemFloor extends GUIItemItem {
     public boolean canScroll(final int distance) {
         if (distance < 0) {
             return index >= -distance;
-        } else if (distance > 0) {
-            return index+distance < floorView.getSize();
-        } else {
-            return false;
         }
+        //noinspection SimplifiableIfStatement
+        if (distance > 0) {
+            return index+distance < floorView.getSize();
+        }
+        return false;
     }
 
     /**

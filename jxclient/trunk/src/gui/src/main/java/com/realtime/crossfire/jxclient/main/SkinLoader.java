@@ -200,13 +200,7 @@ public class SkinLoader {
     public JXCSkin loadSkin(@NotNull final String skinName) throws JXCSkinException {
         // check for skin in directory
         final File dir = new File(skinName);
-        final JXCSkinSource skinSource;
-        if (dir.exists() && dir.isDirectory()) {
-            skinSource = new JXCSkinDirSource(dir);
-        } else {
-            // fallback: built-in resource
-            skinSource = new JXCSkinClassSource("com/realtime/crossfire/jxclient/skins/"+skinName);
-        }
+        final JXCSkinSource skinSource = dir.exists() && dir.isDirectory() ? new JXCSkinDirSource(dir) : new JXCSkinClassSource("com/realtime/crossfire/jxclient/skins/"+skinName);
         final GuiFactory guiFactory = new GuiFactory(guiCommandFactory);
         final GUIElementListener elementListener = new GUIElementListener() {
 

@@ -162,7 +162,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
             g.drawImage(image, 0, 0, null);
         }
         final MetaserverEntry metaEntry = metaserverModel.getEntry(index);
-        g.drawString(metaEntry == null ? "" : metaEntry.format(format), image != null ? image.getWidth(this) : 0, font.getSize()+1);
+        g.drawString(metaEntry == null ? "" : metaEntry.format(format), image == null ? 0 : image.getWidth(this), font.getSize()+1);
     }
 
     /**
@@ -233,11 +233,12 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     public boolean canScroll(final int distance) {
         if (distance < 0) {
             return index >= -distance;
-        } else if (distance > 0) {
-            return index+distance < metaserverModel.size();
-        } else {
-            return false;
         }
+        //noinspection SimplifiableIfStatement
+        if (distance > 0) {
+            return index+distance < metaserverModel.size();
+        }
+        return false;
     }
 
     /**

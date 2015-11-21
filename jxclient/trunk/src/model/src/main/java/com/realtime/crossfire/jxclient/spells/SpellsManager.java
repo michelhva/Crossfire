@@ -233,11 +233,11 @@ public class SpellsManager implements Iterable<Spell> {
             synchronized (unknownSpells) {
                 existingSpell = unknownSpells.remove(spellName);
             }
-            if (existingSpell != null) {
+            if (existingSpell == null) {
+                spell = key;
+            } else {
                 spell = existingSpell;
                 spell.setParameters(faceNum, tag, message, level, castingTime, mana, grace, damage, skill, path);
-            } else {
-                spell = key;
             }
             index = -index-1;
             spells.add(index, spell);

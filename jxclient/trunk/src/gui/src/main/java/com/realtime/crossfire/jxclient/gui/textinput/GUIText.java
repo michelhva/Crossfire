@@ -465,7 +465,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             return false;
         }
         final String commandDown = commandHistory.down();
-        setText(commandDown != null ? commandDown : "");
+        setText(commandDown == null ? "" : commandDown);
         return true;
     }
 

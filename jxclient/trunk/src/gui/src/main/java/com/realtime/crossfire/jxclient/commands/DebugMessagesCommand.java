@@ -75,9 +75,7 @@ public class DebugMessagesCommand extends AbstractCommand {
             crossfireServerConnection.drawInfoSetDebugMode(false);
         } else {
             drawInfoError("Valid arguments are 'colors', 'types', 'on', or 'off'. 'colors' prints messages using different message types, 'on' and 'off' enable/disable printing of message types.");
-            return;
         }
-
     }
 
 }

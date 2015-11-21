@@ -250,6 +250,7 @@ public class JXCConnection {
     /**
      * Updates the window title to reflect the current connection state.
      */
+    @SuppressWarnings("IfMayBeConditional")
     private void updateTitle() {
         if (frame == null) {
             return;

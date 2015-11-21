@@ -126,6 +126,7 @@ public class GUISpellSkillList extends GUIItemList {
      * {@inheritDoc}
      */
     @Override
+    @SuppressWarnings("IfMayBeConditional")
     protected void updateTooltip(final int index, final int x, final int y, final int w, final int h) {
         final Skill skill = spellsManager.getSpellSkill(index);
         final String text;

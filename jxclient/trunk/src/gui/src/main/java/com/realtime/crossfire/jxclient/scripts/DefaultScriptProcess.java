@@ -426,11 +426,11 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
             sb.append(' ').append(stats.getExperience());
             for (int i = Stats.CS_STAT_SKILLINFO; i < Stats.CS_STAT_SKILLINFO+Stats.CS_NUM_SKILLS; i++) {
                 final Skill skill = skillSet.getSkill(i);
-                if (skill != null) {
+                if (skill == null) {
+                    sb.append(" 0 0");
+                } else {
                     sb.append(' ').append(skill.getLevel());
                     sb.append(' ').append(skill.getExperience());
-                } else {
-                    sb.append(" 0 0");
                 }
             }
             commandSent(sb.toString());
@@ -732,11 +732,11 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
     public int compareTo(@NotNull final ScriptProcess o) {
         if (scriptId < o.getScriptId()) {
             return -1;
-        } else if (scriptId > o.getScriptId()) {
-            return +1;
-        } else {
-            return 0;
         }
+        if (scriptId > o.getScriptId()) {
+            return +1;
+        }
+        return 0;
     }
 
     /**

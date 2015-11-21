@@ -212,11 +212,12 @@ public class GUIItemSpell extends GUIItemItem {
     public boolean canScroll(final int distance) {
         if (distance < 0) {
             return index >= -distance;
-        } else if (distance > 0) {
-            return index+distance < spellsManager.getSpells();
-        } else {
-            return false;
         }
+        //noinspection SimplifiableIfStatement
+        if (distance > 0) {
+            return index+distance < spellsManager.getSpells();
+        }
+        return false;
     }
 
     /**

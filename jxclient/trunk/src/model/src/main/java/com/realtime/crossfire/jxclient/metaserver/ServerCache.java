@@ -157,6 +157,7 @@ public class ServerCache {
                             }
                             if (!addEntry(tmp[1], timestamp)) {
                                 System.err.println(file+":"+lnr.getLineNumber()+": syntax error");
+                                //noinspection UnnecessaryContinue
                                 continue;
                             }
                         }

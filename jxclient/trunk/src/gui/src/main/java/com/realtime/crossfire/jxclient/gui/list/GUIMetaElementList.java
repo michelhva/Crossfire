@@ -222,10 +222,10 @@ public class GUIMetaElementList extends GUIList {
         } else {
             final MetaserverEntry metaEntry = metaserverModel.getEntry(selectedIndex);
             if (hostname != null) {
-                hostname.setText(metaEntry != null ? metaEntry.getHostname() : "");
+                hostname.setText(metaEntry == null ? "" : metaEntry.getHostname());
             }
             if (comment != null) {
-                comment.setText(metaEntry != null ? metaEntry.getComment() : "");
+                comment.setText(metaEntry == null ? "" : metaEntry.getComment());
             }
         }
     }

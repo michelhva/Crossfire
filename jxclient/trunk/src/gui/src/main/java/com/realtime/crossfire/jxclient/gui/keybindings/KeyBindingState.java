@@ -101,17 +101,17 @@ public class KeyBindingState {
         }
 
         assert type != -1;
-        if (commands != null) {
-            if (keyBindings != null) {
-                keyBindings.addKeyBindingAsKeyCode(keyEvent, commands, false);
-            }
-        } else {
+        if (commands == null) {
             if (keyBindings != null) {
                 keyBindings.deleteKeyBindingAsKeyCode(keyEvent);
             }
 
             if (keyBindings2 != null) {
                 keyBindings2.deleteKeyBindingAsKeyCode(keyEvent);
+            }
+        } else {
+            if (keyBindings != null) {
+                keyBindings.addKeyBindingAsKeyCode(keyEvent, commands, false);
             }
         }
 
