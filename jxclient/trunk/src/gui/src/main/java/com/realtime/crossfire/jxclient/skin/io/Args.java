@@ -46,7 +46,7 @@ public class Args {
      * @param args the string arguments
      */
     public Args(@NotNull final String[] args) {
-        this.args = args;
+        this.args = args.clone();
     }
 
     /**
