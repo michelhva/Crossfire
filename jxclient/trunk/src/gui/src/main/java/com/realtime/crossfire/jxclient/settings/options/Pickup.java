@@ -202,6 +202,7 @@ public class Pickup {
     /**
      * The pickup mode.
      */
+    @SuppressWarnings("RedundantFieldInitialization")
     private long pickupMode = DEFAULT_PICKUP_MODE;
 
     /**
