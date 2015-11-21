@@ -24,7 +24,7 @@ import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Describes an ingame quest.
+ * Describes an in-game quest.
  * @author Nicolas Weeger
  */
 public class Quest {

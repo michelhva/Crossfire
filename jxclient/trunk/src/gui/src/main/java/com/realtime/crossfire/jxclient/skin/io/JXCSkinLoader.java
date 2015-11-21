@@ -1441,7 +1441,7 @@ public class JXCSkinLoader {
      * Parses a "key" command.
      * @param args the command arguments
      * @param gui the gui to add to
-     * @param line the unparsed command line
+     * @param line the command line to parse
      * @throws IOException if the command cannot be parsed
      */
     private void parseKey(@NotNull final Args args, @Nullable final Gui gui, @NotNull final String line) throws IOException {

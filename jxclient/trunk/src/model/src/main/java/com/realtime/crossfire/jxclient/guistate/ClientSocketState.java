@@ -22,7 +22,7 @@
 package com.realtime.crossfire.jxclient.guistate;
 
 /**
- * Connection progress states of the Crossfire server conneciton. The state
+ * Connection progress states of the Crossfire server connection. The state
  * transitions in the declared order.
  * @author Andreas Kirschbaum
  */

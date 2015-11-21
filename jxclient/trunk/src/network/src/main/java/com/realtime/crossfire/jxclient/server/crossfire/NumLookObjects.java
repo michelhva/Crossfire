@@ -147,7 +147,7 @@ public class NumLookObjects {
             }
             pendingNumLookObjects = numLookObjects;
             if (debugProtocol != null) {
-                debugProtocol.debugProtocolWrite("negotateNumLookObjects: pending_num_look_objects="+pendingNumLookObjects+", sending setup command");
+                debugProtocol.debugProtocolWrite("negotiateNumLookObjects: pending_num_look_objects="+pendingNumLookObjects+", sending setup command");
             }
             sync.notifyAll();
         }
