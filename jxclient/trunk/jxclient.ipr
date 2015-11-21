@@ -234,10 +234,10 @@
         <inspection_tool class="AbstractMethodOverridesConcreteMethod" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="AbstractMethodWithMissingImplementations" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="AccessToNonThreadSafeStaticFieldFromInstance" enabled="true" level="WARNING" enabled_by_default="true">
-          <option name="nonThreadSafeTypes" value="java.text.DateFormat,java.util.Calendar" />
           <option name="nonThreadSafeClasses">
             <value />
           </option>
+          <option name="nonThreadSafeTypes" value="java.text.DateFormat,java.util.Calendar" />
         </inspection_tool>
         <inspection_tool class="AnnotationNamingConvention" enabled="true" level="WARNING" enabled_by_default="true">
           <option name="m_regex" value="[A-Z][A-Za-z\d]*" />
@@ -661,9 +661,6 @@
           <option name="m_minLength" value="1" />
           <option name="m_maxLength" value="99" />
         </inspection_tool>
-        <inspection_tool class="PointlessArithmeticExpression" enabled="true" level="WARNING" enabled_by_default="true">
-          <option name="m_ignoreExpressionsContainingConstants" value="true" />
-        </inspection_tool>
         <inspection_tool class="PointlessBitwiseExpression" enabled="false" level="WARNING" enabled_by_default="false">
           <option name="m_ignoreExpressionsContainingConstants" value="false" />
         </inspection_tool>
@@ -834,7 +831,6 @@
           <option name="onlyWeakentoInterface" value="true" />
         </inspection_tool>
         <inspection_tool class="TypeParameterExtendsFinalClass" enabled="true" level="WARNING" enabled_by_default="true" />
-        <inspection_tool class="TypeParameterHidesVisibleType" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="TypeParameterNamingConvention" enabled="true" level="WARNING" enabled_by_default="true">
           <option name="m_regex" value="[A-Z\d]" />
           <option name="m_minLength" value="1" />
@@ -897,10 +893,10 @@
         <inspection_tool class="UseOfPropertiesAsHashtable" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="UtilityClassWithPublicConstructor" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="UtilityClassWithoutPrivateConstructor" enabled="true" level="WARNING" enabled_by_default="true">
-          <option name="ignoreClassesWithOnlyMain" value="false" />
           <option name="ignorableAnnotations">
             <value />
           </option>
+          <option name="ignoreClassesWithOnlyMain" value="false" />
         </inspection_tool>
         <inspection_tool class="VariableNotUsedInsideIf" enabled="true" level="WARNING" enabled_by_default="true" />
         <inspection_tool class="VolatileArrayField" enabled="true" level="WARNING" enabled_by_default="true" />
@@ -1187,12 +1183,7 @@
           <option name="SPACE_AROUND_MULTIPLICATIVE_OPERATORS" value="false" />
           <option name="SPACE_AROUND_SHIFT_OPERATORS" value="false" />
           <option name="SPACE_AFTER_TYPE_CAST" value="false" />
-          <option name="ARRAY_INITIALIZER_WRAP" value="2" />
-          <option name="ARRAY_INITIALIZER_LBRACE_ON_NEXT_LINE" value="true" />
-          <option name="ARRAY_INITIALIZER_RBRACE_ON_NEXT_LINE" value="true" />
-          <option name="WRAP_COMMENTS" value="true" />
           <option name="IF_BRACE_FORCE" value="3" />
-          <option name="DOWHILE_BRACE_FORCE" value="3" />
           <option name="WHILE_BRACE_FORCE" value="3" />
           <option name="FOR_BRACE_FORCE" value="3" />
           <option name="ENUM_CONSTANTS_WRAP" value="2" />
@@ -1225,7 +1216,6 @@
           <option name="ARRAY_INITIALIZER_WRAP" value="2" />
           <option name="ARRAY_INITIALIZER_LBRACE_ON_NEXT_LINE" value="true" />
           <option name="ARRAY_INITIALIZER_RBRACE_ON_NEXT_LINE" value="true" />
-          <option name="WRAP_COMMENTS" value="true" />
           <option name="IF_BRACE_FORCE" value="3" />
           <option name="DOWHILE_BRACE_FORCE" value="3" />
           <option name="WHILE_BRACE_FORCE" value="3" />
@@ -1237,6 +1227,11 @@
             <option name="TAB_SIZE" value="8" />
             <option name="LABEL_INDENT_ABSOLUTE" value="true" />
           </indentOptions>
+        </codeStyleSettings>
+        <codeStyleSettings language="JSON">
+          <option name="KEEP_LINE_BREAKS" value="false" />
+          <option name="KEEP_BLANK_LINES_IN_CODE" value="1" />
+          <option name="PARENT_SETTINGS_INSTALLED" value="true" />
         </codeStyleSettings>
         <codeStyleSettings language="XML">
           <indentOptions>
@@ -1464,4 +1459,3 @@
     </library>
   </component>
 </project>
-
