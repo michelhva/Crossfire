@@ -138,6 +138,7 @@ public class RawScale8d {
             }
         }
 
+        //noinspection ReturnOfCollectionOrArrayField
         return dstImage;
     }
 

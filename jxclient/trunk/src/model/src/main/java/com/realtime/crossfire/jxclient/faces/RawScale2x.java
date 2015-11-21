@@ -152,6 +152,7 @@ public class RawScale2x {
             }
         }
 
+        //noinspection ReturnOfCollectionOrArrayField
         return dstImage;
     }
 

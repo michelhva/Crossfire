@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.server.crossfire;
 import com.realtime.crossfire.jxclient.character.StartingMap;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -114,7 +115,7 @@ public class StartingMapBuilder {
     @NotNull
     public Collection<StartingMap> finish() {
         addStartingMap();
-        return startingMaps;
+        return Collections.unmodifiableCollection(startingMaps);
     }
 
     /**
