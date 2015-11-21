@@ -366,7 +366,7 @@ public class Spell {
         if ((path&stats.getStat(Stats.CS_STAT_SPELL_DENY)) == 0) {
             final Skill sk = skillSet.getSkill(skill);
             if (sk != null) {
-                sb.append("<br>Skill: ").append(sk.toString());
+                sb.append("<br>Skill: ").append(sk);
             }
             if (level > 0) {
                 sb.append("<br>Level: ");

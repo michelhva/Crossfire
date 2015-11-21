@@ -1248,7 +1248,7 @@ public class JXCSkinLoader {
      */
     private void parseList(@NotNull final Args args, final ListType type, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection server, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final Image nextGroupFace, @NotNull final Image prevGroupFace) throws IOException, JXCSkinException {
         if (defaultItemPainter == null) {
-            throw new IOException("cannot use '"+type.toString()+"_list"+"' without 'def item' command");
+            throw new IOException("cannot use '"+type+"_list"+"' without 'def item' command");
         }
 
         final String name = args.get();
