@@ -141,7 +141,7 @@ public class GUIDialogBackground extends AbstractGUIElement {
      * @param frameSE the south-east frame picture
      */
     public GUIDialogBackground(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final float alpha, @NotNull final Image frameNW, @NotNull final Image frameN, @NotNull final Image frameNE, @NotNull final Image frameW, @NotNull final Image frameC, @NotNull final Image frameE, @NotNull final Image frameSW, @NotNull final Image frameS, @NotNull final Image frameSE) {
-        super(tooltipManager, elementListener, name, alpha < 1F ? Transparency.TRANSLUCENT : Transparency.OPAQUE);
+        super(tooltipManager, elementListener, name, alpha < 1.0F ? Transparency.TRANSLUCENT : Transparency.OPAQUE);
         this.frameNW = frameNW;
         this.frameN = frameN;
         this.frameNE = frameNE;
@@ -188,7 +188,7 @@ public class GUIDialogBackground extends AbstractGUIElement {
     @Override
     public void paintComponent(@NotNull final Graphics g) {
         final Graphics paint;
-        if (alpha < 1F) {
+        if (alpha < 1.0F) {
             final Graphics2D g2d = (Graphics2D)g.create();
             g2d.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, alpha));
             paint = g2d;

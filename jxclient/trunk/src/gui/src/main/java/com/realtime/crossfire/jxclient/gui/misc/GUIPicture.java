@@ -65,7 +65,7 @@ public class GUIPicture extends AbstractGUIElement {
      * @param preferredHeight the preferred height of this picture
      */
     public GUIPicture(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final BufferedImage image, final float alpha, final int preferredWidth, final int preferredHeight) {
-        super(tooltipManager, elementListener, name, alpha < 1F ? Transparency.TRANSLUCENT : image.getTransparency());
+        super(tooltipManager, elementListener, name, alpha < 1.0F ? Transparency.TRANSLUCENT : image.getTransparency());
         this.image = image;
         preferredSize = new Dimension(preferredWidth, preferredHeight);
     }

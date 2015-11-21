@@ -145,7 +145,7 @@ public class DialogFactory {
         this.frameS = frameS;
         this.frameSE = frameSE;
         this.frameAlpha = frameAlpha;
-        if (frameAlpha < 0F || frameAlpha > 1F) {
+        if (frameAlpha < 0.0F || frameAlpha > 1.0F) {
             throw new IllegalArgumentException("alpha transparency should be between 0 and 1 inclusive");
         }
         final int sizeN = frameN.getHeight(null);
