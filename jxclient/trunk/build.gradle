@@ -23,6 +23,13 @@ allprojects.each { project ->
     }
 }
 
+allprojects {
+    tasks.withType(JavaCompile) {
+        sourceCompatibility = JavaVersion.VERSION_1_6
+        targetCompatibility = JavaVersion.VERSION_1_6
+    }
+}
+
 File createJavadocOptions(Project project) {
     // Write -tag options to an option file as MinimalJavadocOptions neither
     // supports -tag directly nor through addStringOption(). The latter
