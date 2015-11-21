@@ -106,6 +106,7 @@ public class SpellsManager implements Iterable<Spell> {
      * connections.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final GuiStateListener guiStateListener = new GuiStateListener() {
 
         @Override

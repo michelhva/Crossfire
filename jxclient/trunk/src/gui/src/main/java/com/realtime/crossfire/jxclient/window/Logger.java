@@ -61,6 +61,7 @@ public class Logger {
     /**
      * The {@link CrossfireQueryListener} registered to receive query commands.
      */
+    @SuppressWarnings("FieldCanBeLocal")
     private final CrossfireQueryListener crossfireQueryListener = new CrossfireQueryListener() {
 
         @Override
@@ -74,6 +75,7 @@ public class Logger {
      * The {@link CrossfireDrawextinfoListener} registered to receive
      * drawextinfo commands.
      */
+    @SuppressWarnings("FieldCanBeLocal")
     private final CrossfireDrawextinfoListener crossfireDrawextinfoListener = new CrossfireDrawextinfoListener() {
 
         @Override
@@ -92,6 +94,7 @@ public class Logger {
      * The {@link CrossfireDrawinfoListener} registered to receive drawinfo
      * commands.
      */
+    @SuppressWarnings("FieldCanBeLocal")
     private final CrossfireDrawinfoListener crossfireDrawinfoListener = new CrossfireDrawinfoListener() {
 
         @Override

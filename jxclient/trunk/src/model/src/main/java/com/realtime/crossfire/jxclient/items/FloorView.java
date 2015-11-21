@@ -50,6 +50,7 @@ public class FloorView extends AbstractItemView {
      * The {@link ItemSetListener} for detecting opened or closed containers.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final ItemSetListener itemSetListener = new ItemSetListener() {
 
         @Override

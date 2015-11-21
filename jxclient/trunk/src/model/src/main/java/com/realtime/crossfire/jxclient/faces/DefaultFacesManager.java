@@ -59,6 +59,7 @@ public class DefaultFacesManager extends AbstractFacesManager {
      * The {@link FaceQueueListener} registered to {@link #faceQueue}.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final FaceQueueListener faceQueueListener = new FaceQueueListener() {
 
         @Override

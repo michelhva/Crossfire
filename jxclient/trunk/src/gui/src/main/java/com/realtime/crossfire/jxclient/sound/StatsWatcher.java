@@ -73,6 +73,7 @@ public class StatsWatcher {
      * The crossfire stats listener.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final StatsListener statsListener = new StatsListener() {
 
         @Override
@@ -121,6 +122,7 @@ public class StatsWatcher {
      * The gui state listener.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final RendererGuiStateListener rendererGuiStateListener = new RendererGuiStateListener() {
 
         @Override
@@ -135,6 +137,7 @@ public class StatsWatcher {
      * The {@link CrossfireUpdateItemListener} to receive item updates.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final CrossfireUpdateItemListener crossfireUpdateItemListener = new CrossfireUpdateItemListener() {
 
         @Override

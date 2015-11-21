@@ -92,6 +92,7 @@ public abstract class GUILog extends AbstractGUIElement implements GUIScrollable
      * The {@link RenderStateListener} attached to {@link #renderStateManager}.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final RenderStateListener renderStateListener = new RenderStateListener() {
 
         @Override

@@ -58,6 +58,7 @@ public class Macros {
      * The {@link CrossfireDrawextinfoListener} for tracking tells.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final CrossfireDrawextinfoListener crossfireDrawextinfoListener = new CrossfireDrawextinfoListener() {
 
         @Override

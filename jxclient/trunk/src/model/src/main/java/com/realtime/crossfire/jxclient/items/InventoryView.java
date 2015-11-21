@@ -70,6 +70,7 @@ public class InventoryView extends AbstractItemView {
      * current player object.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final ItemSetListener itemSetListener = new ItemSetListener() {
 
         @Override

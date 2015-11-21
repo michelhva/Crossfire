@@ -114,6 +114,7 @@ public class JXCConnection {
      * connections.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final GuiStateListener guiStateListener = new GuiStateListener() {
 
         @Override

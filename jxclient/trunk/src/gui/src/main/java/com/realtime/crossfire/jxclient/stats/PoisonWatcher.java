@@ -82,6 +82,7 @@ public class PoisonWatcher {
      * The drawinfo listener to receive drawinfo messages.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final CrossfireDrawinfoListener drawinfoListener = new CrossfireDrawinfoListener() {
 
         @Override
@@ -95,6 +96,7 @@ public class PoisonWatcher {
      * The drawextinfo listener to receive drawextinfo messages.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final CrossfireDrawextinfoListener drawextinfoListener = new CrossfireDrawextinfoListener() {
 
         @Override

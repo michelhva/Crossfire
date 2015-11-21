@@ -71,6 +71,7 @@ public class CommandQueue {
      * The listener to track comc commands.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final CrossfireComcListener crossfireComcListener = new CrossfireComcListener() {
 
         @Override
@@ -98,6 +99,7 @@ public class CommandQueue {
      * connections.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final GuiStateListener guiStateListener = new GuiStateListener() {
 
         @Override

@@ -55,6 +55,7 @@ public class SkillSet {
      * connections.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final GuiStateListener guiStateListener = new GuiStateListener() {
 
         @Override

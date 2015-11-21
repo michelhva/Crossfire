@@ -44,6 +44,7 @@ public class FacesTracker {
      * The {@link GuiStateListener} to track connections to servers.
      */
     @NotNull
+    @SuppressWarnings("FieldCanBeLocal")
     private final GuiStateListener guiStateListener = new GuiStateListener() {
 
         @Override
