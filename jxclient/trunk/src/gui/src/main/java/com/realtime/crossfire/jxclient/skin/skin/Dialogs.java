@@ -22,9 +22,9 @@
 package com.realtime.crossfire.jxclient.skin.skin;
 
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.Iterator;
-import java.util.Set;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -52,7 +52,7 @@ public class Dialogs implements Iterable<Gui> {
      * Names of pending skin files.
      */
     @NotNull
-    private final Set<String> dialogsToLoad = new HashSet<String>();
+    private final Collection<String> dialogsToLoad = new HashSet<String>();
 
     /**
      * Creates a new instance.

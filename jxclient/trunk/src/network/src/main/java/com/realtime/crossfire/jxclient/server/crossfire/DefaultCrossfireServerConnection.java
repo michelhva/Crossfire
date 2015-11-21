@@ -1903,7 +1903,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                 final BufferedReader d = new BufferedReader(isr);
                 try {
                     while (true) {
-                        final String r = d.readLine();
+                        final CharSequence r = d.readLine();
                         if (r == null) {
                             break;
                         }
@@ -1990,7 +1990,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                 final BufferedReader d = new BufferedReader(isr);
                 try {
                     while (true) {
-                        final String r = d.readLine();
+                        final CharSequence r = d.readLine();
                         if (r == null) {
                             break;
                         }

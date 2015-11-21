@@ -36,7 +36,7 @@ import java.awt.Image;
 import java.awt.Transparency;
 import java.awt.font.FontRenderContext;
 import java.awt.image.BufferedImage;
-import java.util.ListIterator;
+import java.util.Iterator;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -160,7 +160,7 @@ public abstract class GUILog extends AbstractGUIElement implements GUIScrollable
         int y = -renderStateManager.getTopOffset();
         final int topIndex = renderStateManager.getTopIndex();
         synchronized (buffer.getSyncObject()) {
-            final ListIterator<Line> it = buffer.listIterator(topIndex);
+            final Iterator<Line> it = buffer.listIterator(topIndex);
             while (y < getHeight() && it.hasNext()) {
                 final Line line = it.next();
                 drawLine(g, y, line);

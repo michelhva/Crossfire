@@ -29,7 +29,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
-import java.util.ListIterator;
 import java.util.concurrent.CopyOnWriteArrayList;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -253,12 +252,12 @@ public class Buffer {
     }
 
     /**
-     * Returns a {@link ListIterator} for the lines in this buffer.
+     * Returns an {@link Iterator} for the lines in this buffer.
      * @param line the initial line index of the list iterator
      * @return the list iterator
      */
     @NotNull
-    public ListIterator<Line> listIterator(final int line) {
+    public Iterator<Line> listIterator(final int line) {
         assert Thread.holdsLock(sync);
         return Collections.unmodifiableList(lines).listIterator(line);
     }
