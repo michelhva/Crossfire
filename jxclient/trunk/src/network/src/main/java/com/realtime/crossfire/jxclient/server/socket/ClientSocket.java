@@ -542,7 +542,7 @@ public class ClientSocket {
             }
 
             if (socketChannel.read(inputBuffer) == -1) {
-                throw new EOFException();
+                throw new EOFException("EOF");
             }
         }
         inputBuffer.flip();

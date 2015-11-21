@@ -157,28 +157,28 @@ public class GUIDialogBackground extends AbstractGUIElement {
         widthW = frameW.getWidth(null);
         widthE = frameE.getWidth(null);
         if (frameNW.getWidth(null) != widthW) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("frameNW.width="+frameNW.getWidth(null)+" != "+widthW+"=widthW");
         }
         if (frameSW.getWidth(null) != widthW) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("frameSW.width="+frameSW.getWidth(null)+" != "+widthW+"=widthW");
         }
         if (frameNE.getWidth(null) != widthE) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("frameNE.width="+frameNE.getWidth(null)+" != "+widthE+"=widthE");
         }
         if (frameSE.getWidth(null) != widthE) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("frameSE.width="+frameSE.getWidth(null)+" != "+widthE+"=widthE");
         }
         if (frameNW.getHeight(null) != heightN) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("frameNW.height="+frameNW.getHeight(null)+" != "+heightN+"heightN");
         }
         if (frameSW.getHeight(null) != heightS) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("frameSW.height="+frameSW.getHeight(null)+" != "+heightS+"=heightS");
         }
         if (frameNE.getHeight(null) != heightN) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("frameNE.height="+frameNE.getHeight(null)+" != "+heightN+"=heightN");
         }
         if (frameSE.getHeight(null) != heightS) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("frameSE.height="+frameSE.getHeight(null)+" != "+heightS+"=heightS");
         }
     }
 

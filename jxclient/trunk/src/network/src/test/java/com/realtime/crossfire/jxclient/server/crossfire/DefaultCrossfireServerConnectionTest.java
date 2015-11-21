@@ -259,7 +259,7 @@ public class DefaultCrossfireServerConnectionTest {
                     throw new AssertionError(ex);
                 }
                 if (ch == -1) {
-                    throw new EOFException();
+                    throw new EOFException("EOF");
                 }
                 return ch;
             }

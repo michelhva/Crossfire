@@ -135,10 +135,10 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
     @Override
     public void setRange(final int valueMin, final int valueMax, final int sliderPos, final int sliderSize) {
         if (valueMax <= valueMin) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("valueMax="+valueMax+" <= "+valueMin+"="+valueMin);
         }
         if (sliderSize <= 0) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("sliderSize="+sliderSize+" <= 0");
         }
 
         this.valueMin = valueMin;

@@ -649,7 +649,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     @Override
     public void setCrossfireUpdateMapListener(@Nullable final CrossfireUpdateMapListener listener) {
         if (listener != null && crossfireUpdateMapListener != null) {
-            throw new IllegalStateException();
+            throw new IllegalStateException("listener already set to "+crossfireUpdateMapListener.getClass().getName());
         }
         crossfireUpdateMapListener = listener;
     }

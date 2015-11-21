@@ -184,7 +184,7 @@ public class ParseUtils {
             while (true) {
                 final String line = lnr.readLine();
                 if (line == null) {
-                    throw new IOException();
+                    throw new IOException("EOF");
                 }
                 if (line.equals("EOF")) {
                     break;

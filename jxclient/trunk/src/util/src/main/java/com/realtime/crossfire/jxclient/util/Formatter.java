@@ -89,7 +89,7 @@ public class Formatter {
             return tmp/1000+"."+tmp/100%10+tmp/10%10+tmp%10;
         }
 
-        throw new IllegalArgumentException();
+        throw new IllegalArgumentException("invalid digits "+digits);
     }
 
 }

@@ -141,7 +141,7 @@ public class AnimationState implements Iterable<Location> {
      */
     public void allocate(@NotNull final MapUpdaterState mapUpdaterState, @NotNull final Location location) {
         if (!locations.add(location)) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("duplicate location "+location);
         }
         if (lastFace != -1) {
             mapUpdaterState.mapFace(location, lastFace, false);
@@ -154,7 +154,7 @@ public class AnimationState implements Iterable<Location> {
      */
     public void free(@NotNull final Location location) {
         if (!locations.remove(location)) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("undefined location "+location);
         }
     }
 

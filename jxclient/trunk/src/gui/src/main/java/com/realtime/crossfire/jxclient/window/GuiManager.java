@@ -159,7 +159,7 @@ public class GuiManager {
         @Override
         public void commandDrawextinfoReceived(final int color, final int type, final int subtype, @NotNull final String message) {
             if (skin == null) {
-                throw new IllegalStateException();
+                throw new IllegalStateException("no skin set");
             }
 
             @Nullable final Gui dialog;
@@ -359,7 +359,7 @@ public class GuiManager {
         @Override
         public void connecting(@NotNull final String serverInfo) {
             if (skin == null) {
-                throw new IllegalStateException();
+                throw new IllegalStateException("no skin set");
             }
 
             closeTransientDialogs();
@@ -542,7 +542,7 @@ public class GuiManager {
      */
     public void openQueryDialog(@NotNull final String prompt, final int queryType) {
         if (queryDialog == null) {
-            throw new IllegalStateException();
+            throw new IllegalStateException("query dialog not set");
         }
 
         openDialog(queryDialog, false);
@@ -675,7 +675,7 @@ public class GuiManager {
      */
     public void closeQueryDialog() {
         if (queryDialog == null) {
-            throw new IllegalStateException();
+            throw new IllegalStateException("query dialog not set");
         }
 
         closeDialog(queryDialog);
@@ -688,7 +688,7 @@ public class GuiManager {
      */
     private boolean openDialogByName(@NotNull final String name) {
         if (skin == null) {
-            throw new IllegalStateException();
+            throw new IllegalStateException("skin not set");
         }
 
         final Gui dialog;
@@ -709,7 +709,7 @@ public class GuiManager {
      */
     private void closeDialogByName(@NotNull final String name) {
         if (skin == null) {
-            throw new IllegalStateException();
+            throw new IllegalStateException("skin not set");
         }
 
         final Gui dialog;
@@ -727,8 +727,11 @@ public class GuiManager {
      * dialogs.
      */
     private void closeTransientDialogs() {
-        if (queryDialog == null || skin == null) {
-            throw new IllegalStateException();
+        if (queryDialog == null) {
+            throw new IllegalStateException("query dialog not set");
+        }
+        if (skin == null) {
+            throw new IllegalStateException("skin not set");
         }
 
         if (dialogDisconnect != null) {
@@ -762,7 +765,7 @@ public class GuiManager {
      */
     private void openKeybindDialog() {
         if (keybindDialog == null) {
-            throw new IllegalStateException();
+            throw new IllegalStateException("keybinding dialog not set");
         }
 
         openDialog(keybindDialog, false);
@@ -773,7 +776,7 @@ public class GuiManager {
      */
     public void closeKeybindDialog() {
         if (keybindDialog == null) {
-            throw new IllegalStateException();
+            throw new IllegalStateException("keybinding dialog not set");
         }
 
         closeDialog(keybindDialog);
@@ -1033,7 +1036,7 @@ public class GuiManager {
     @NotNull
     public CommandList getCommandList(@NotNull final String args) throws NoSuchCommandException {
         if (skin == null) {
-            throw new IllegalStateException();
+            throw new IllegalStateException("skin not set");
         }
 
         try {

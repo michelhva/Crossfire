@@ -104,7 +104,7 @@ public class Expression {
      */
     public int evaluateConstant() {
         if (widthFactor != 0 || heightFactor != 0) {
-            throw new IllegalStateException();
+            throw new IllegalStateException("widthFactor="+widthFactor+", heightFactor="+heightFactor);
         }
 
         return constant;

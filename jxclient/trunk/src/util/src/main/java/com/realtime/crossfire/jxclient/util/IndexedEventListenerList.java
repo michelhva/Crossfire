@@ -79,7 +79,7 @@ public class IndexedEventListenerList<T extends EventListener> {
     @NotNull
     private EventListenerList2<T> getLocationListeners(final int index) {
         if (index < 0) {
-            throw new IllegalArgumentException();
+            throw new IllegalArgumentException("index="+index+" < 0");
         }
         synchronized (locationListeners) {
             try {
