@@ -40,7 +40,7 @@ public class Processor implements Runnable {
     /**
      * The minimum factor for fading in/out effects.
      */
-    private static final float MIN_VALUE = 1E-3F;
+    private static final float MIN_VALUE = 1.0E-3F;
 
     /**
      * The step for the fading in/out factor. It is multiplied to the current
@@ -147,9 +147,9 @@ public class Processor implements Runnable {
                             case 0: // fade in
                                 for (int i = 0; i+3 < len; i += 4) {
                                     volume *= VOLUME_STEP_PER_SAMPLE;
-                                    if (volume >= 1F) {
+                                    if (volume >= 1.0F) {
                                         state = 1;
-                                        volume = 1F;
+                                        volume = 1.0F;
                                         break;
                                     }
 

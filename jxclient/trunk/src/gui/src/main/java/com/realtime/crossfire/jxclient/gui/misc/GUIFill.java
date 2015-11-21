@@ -57,7 +57,7 @@ public class GUIFill extends AbstractGUIElement {
      * @param alpha the transparency value
      */
     public GUIFill(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Color color, final float alpha) {
-        super(tooltipManager, elementListener, name, alpha < 1F ? Transparency.TRANSLUCENT : Transparency.OPAQUE);
+        super(tooltipManager, elementListener, name, alpha < 1.0F ? Transparency.TRANSLUCENT : Transparency.OPAQUE);
         this.color = color;
     }
 

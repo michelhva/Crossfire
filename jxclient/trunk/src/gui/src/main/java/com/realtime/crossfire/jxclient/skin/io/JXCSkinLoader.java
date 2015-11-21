@@ -980,7 +980,7 @@ public class JXCSkinLoader {
             final Color titleColor = ParseUtils.parseColor(args.get());
             final Color titleBackgroundColor = ParseUtils.parseColor(args.get());
             final float alpha = NumberParser.parseFloat(args.get());
-            if (alpha < 0 || alpha > 1F) {
+            if (alpha < 0 || alpha > 1.0F) {
                 throw new IOException("invalid alpha value: "+alpha);
             }
             dialogFactory = new DialogFactory(frameNW, frameN, frameNE, frameW, frameC, frameE, frameSW, frameS, frameSE, titleFont, titleColor, titleBackgroundColor, alpha);
@@ -1170,7 +1170,7 @@ public class JXCSkinLoader {
         final String name = args.get();
         final Color color = ParseUtils.parseColor(args.get());
         final float alpha = NumberParser.parseFloat(args.get());
-        if (alpha < 0 || alpha > 1F) {
+        if (alpha < 0 || alpha > 1.0F) {
             throw new IOException("invalid alpha value: "+alpha);
         }
         insertGuiElement(new GUIFill(tooltipManager, elementListener, name, color, alpha));
@@ -1825,7 +1825,7 @@ public class JXCSkinLoader {
         final String name = args.get();
         final BufferedImage image = imageParser.getImage(args.get());
         final float alpha = NumberParser.parseFloat(args.get());
-        if (alpha < 0 || alpha > 1F) {
+        if (alpha < 0 || alpha > 1.0F) {
             throw new IOException("invalid alpha value: "+alpha);
         }
         insertGuiElement(new GUIPicture(tooltipManager, elementListener, name, image, alpha, image.getWidth(), image.getHeight()));

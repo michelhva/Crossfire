@@ -112,7 +112,7 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
      * @param commandList the command list that is executed on button 2
      */
     public GUIGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final Image fullImage, @Nullable final Image negativeImage, @Nullable final Image emptyImage, @NotNull final Orientation orientation, @Nullable final String tooltipFormat, final float alpha, @Nullable final CommandList commandList) {
-        super(tooltipManager, elementListener, name, alpha < 1F ? Transparency.TRANSLUCENT : Transparency.OPAQUE);
+        super(tooltipManager, elementListener, name, alpha < 1.0F ? Transparency.TRANSLUCENT : Transparency.OPAQUE);
         this.emptyImage = emptyImage;
         this.orientation = orientation;
         this.tooltipFormat = tooltipFormat;
@@ -150,7 +150,7 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
         }
 
         final Graphics paint;
-        if (alpha < 1F) {
+        if (alpha < 1.0F) {
             final Graphics2D g2d = (Graphics2D)g.create();
             g2d.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, alpha));
             paint = g2d;
