@@ -70,8 +70,8 @@ public abstract class GUILog extends AbstractGUIElement implements GUIScrollable
     private final Buffer buffer;
 
     /**
-     * The background image drawn below the text contents. Set to
-     * <code>null</code> if unused.
+     * The background image drawn below the text contents. Set to {@code null}
+     * if unused.
      */
     @Nullable
     private final Image backgroundImage;
@@ -114,9 +114,9 @@ public abstract class GUILog extends AbstractGUIElement implements GUIScrollable
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param backgroundImage the background image; may be <code>null</code> if
+     * @param backgroundImage the background image; may be {@code null} if
      * unused
-     * @param fonts the <code>Fonts</code> instance for looking up fonts
+     * @param fonts the {@code Fonts} instance for looking up fonts
      */
     protected GUILog(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final Image backgroundImage, @NotNull final Fonts fonts) {
         super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT);

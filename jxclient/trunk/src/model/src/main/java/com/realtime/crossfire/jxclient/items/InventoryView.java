@@ -30,7 +30,7 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * Provides a view of all items in the current player's inventory.
- * <p/>
+ * <p>
  * If no player object is known an empty inventory view is generated.
  * @author Andreas Kirschbaum
  */
@@ -49,7 +49,7 @@ public class InventoryView extends AbstractItemView {
     private final Comparator<CfItem> comparator;
 
     /**
-     * The tag of the current player object or <code>-1</code>.
+     * The tag of the current player object or {@code -1}.
      */
     private int currentPlayerTag = -1;
 
@@ -157,7 +157,7 @@ public class InventoryView extends AbstractItemView {
 
     /**
      * Updates the current player object.
-     * @param currentPlayerTag the tag of the player object or <code>-1</code>
+     * @param currentPlayerTag the tag of the player object or {@code -1}
      */
     private void setCurrentPlayerTag(final int currentPlayerTag) {
         final int prevSize;

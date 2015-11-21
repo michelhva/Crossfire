@@ -128,7 +128,7 @@ public class MetaserverEntryParser {
     /**
      * Parses a metaserver response line.
      * @param entry the response line to parse
-     * @return the metaserver entry or <code>null</code> if the line is invalid
+     * @return the metaserver entry or {@code null} if the line is invalid
      */
     @Nullable
     public static MetaserverEntry parseEntry(@NotNull final CharSequence entry) {
@@ -170,8 +170,7 @@ public class MetaserverEntryParser {
     /**
      * Parses a metaserver response line.
      * @param line the response line to parse
-     * @return the metaserver entry, or <code>null</code> if the line is
-     *         invalid
+     * @return the metaserver entry, or {@code null} if the line is invalid
      * @throws IOException if the response line is invalid
      */
     @Nullable

@@ -115,6 +115,7 @@ public class NumberParser {
 
     /**
      * Parses an enum constant.
+     * @param <T> the enum class
      * @param class_ the enum class the enum constant belongs to
      * @param name the enum constant to parse
      * @param ident the description of the enum class for building error

@@ -85,7 +85,7 @@ public class GuiUtils {
     /**
      * Returns the {@link Gui} an element is part of.
      * @param element the element
-     * @return the gui or <code>null</code>
+     * @return the gui or {@code null}
      */
     @Nullable
     public static Gui getGui(@NotNull final Component element) {

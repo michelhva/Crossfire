@@ -31,7 +31,7 @@ import org.jetbrains.annotations.Nullable;
 public class CommandExec {
 
     /**
-     * The command to execute or <code>null</code> to send as "ncom".
+     * The command to execute or {@code null} to send as "ncom".
      */
     @Nullable
     private final Command command;
@@ -44,8 +44,7 @@ public class CommandExec {
 
     /**
      * Creates a new instance.
-     * @param command the command to execute or <code>null</code> to send as
-     * "ncom"
+     * @param command the command to execute or {@code null} to send as "ncom"
      * @param args the command arguments
      */
     public CommandExec(@Nullable final Command command, @NotNull final String args) {
@@ -54,9 +53,8 @@ public class CommandExec {
     }
 
     /**
-     * Returns the command to execute or <code>null</code> to execute as
-     * "ncom".
-     * @return the command or <code>null</code>
+     * Returns the command to execute or {@code null} to execute as "ncom".
+     * @return the command or {@code null}
      */
     @Nullable
     public Command getCommand() {

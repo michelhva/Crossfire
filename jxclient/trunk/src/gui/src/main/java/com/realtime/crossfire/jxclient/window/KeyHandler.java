@@ -45,7 +45,7 @@ public class KeyHandler {
 
     /**
      * The {@link Writer} for logging keyboard debug output. Log nothing if
-     * <code>null</code>.
+     * {@code null}.
      */
     @Nullable
     private final Writer debugKeyboard;
@@ -81,8 +81,8 @@ public class KeyHandler {
     private final DateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss,SSS ");
 
     /**
-     * The active {@link KeyBindings}. Set to <code>null</code> when no key
-     * bindings are active.
+     * The active {@link KeyBindings}. Set to {@code null} when no key bindings
+     * are active.
      */
     @Nullable
     private KeyBindings keyBindings;
@@ -105,7 +105,7 @@ public class KeyHandler {
 
     /**
      * Sets the active {@link KeyBindings}.
-     * @param keyBindings the key bindings or <code>null</code> to unset
+     * @param keyBindings the key bindings or {@code null} to unset
      */
     @SuppressWarnings("NullableProblems")
     public void setKeyBindings(@NotNull final KeyBindings keyBindings) {

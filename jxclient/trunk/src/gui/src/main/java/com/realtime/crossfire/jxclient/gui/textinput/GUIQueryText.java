@@ -51,7 +51,7 @@ public class GUIQueryText extends GUIText {
     /**
      * Creates a new instance.
      * @param server the crossfire server connection for sending reply commands
-     * @param commandHistory the command history to use or <code>null</code> to
+     * @param commandHistory the command history to use or {@code null} to
      * disable command history access
      * @param commandCallback the command callback to use
      * @param tooltipManager the tooltip manager to update

@@ -43,14 +43,13 @@ public abstract class AbstractOrientation implements Orientation {
     private int cur;
 
     /**
-     * The minimum value; the gauge is displayed as empty if <code>{@link #cur}
-     * &gt;= min</code>.
+     * The minimum value; the gauge is displayed as empty if {@code cur >=
+     * min}.
      */
     private int min;
 
     /**
-     * The maximum value; the gauge is displayed as full if <code>{@link #cur}
-     * &gt;= max</code>.
+     * The maximum value; the gauge is displayed as full if {@code cur >= max}.
      */
     private int max;
 
@@ -183,8 +182,7 @@ public abstract class AbstractOrientation implements Orientation {
     protected abstract void reCalculate();
 
     /**
-     * Returns the fraction <code>val/max</code> rounded to
-     * [<code>0..size</code>].
+     * Returns the fraction {@code val/max} rounded to [{@code 0..size}].
      * @param val the value
      * @param max the range size
      * @param size the size of the result

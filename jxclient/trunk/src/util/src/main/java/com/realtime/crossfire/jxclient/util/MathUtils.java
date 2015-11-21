@@ -34,7 +34,7 @@ public class MathUtils {
     }
 
     /**
-     * Calculates \floor(<code>a/b</code>).
+     * Calculates \floor({@code a/b}).
      * @param numerator the numerator
      * @param denominator the denominator
      * @return the quotient
@@ -48,7 +48,7 @@ public class MathUtils {
     }
 
     /**
-     * Calculates the remainder of <code>a/b</code>.
+     * Calculates the remainder of {@code a/b}.
      * @param numerator the numerator
      * @param denominator the denominator
      * @return the quotient

@@ -35,22 +35,22 @@ import org.jetbrains.annotations.Nullable;
 public class StartingMapBuilder {
 
     /**
-     * The archetype name of the current entry. Set to <code>null</code> until
-     * the first entry was started.
+     * The archetype name of the current entry. Set to {@code null} until the
+     * first entry was started.
      */
     @Nullable
     private byte[] archName;
 
     /**
-     * The proper name of this entry. Set to <code>null</code> if no proper name
-     * has been set yet.
+     * The proper name of this entry. Set to {@code null} if no proper name has
+     * been set yet.
      */
     @Nullable
     private String name;
 
     /**
-     * The description of this entry. Set to <code>null</code> if no description
-     * has been set yet.
+     * The description of this entry. Set to {@code null} if no description has
+     * been set yet.
      */
     @Nullable
     private String description;

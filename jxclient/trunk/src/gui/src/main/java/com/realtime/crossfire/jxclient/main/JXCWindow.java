@@ -467,8 +467,7 @@ public class JXCWindow {
 
     /**
      * Initializes the instance: loads and displays the skin.
-     * @param resolution the size of the client area, <code>null</code> for
-     * default
+     * @param resolution the size of the client area, {@code null} for default
      * @param skinName the skin to load
      * @param fullScreen whether full-screen mode should be enabled
      * @param skinLoader the skin loader instance

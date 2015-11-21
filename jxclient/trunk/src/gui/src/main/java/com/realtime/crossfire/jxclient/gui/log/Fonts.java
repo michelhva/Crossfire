@@ -57,12 +57,12 @@ public class Fonts {
 
     /**
      * Creates a new instance.
-     * @param fontPrint the font to use for <code>FontID.PRINT</code>,
-     * <code>FontID.HAND</code>, and <code>FontID.STRANGE</code> text
-     * @param fontFixed the font to use for <code>FontID.FIXED</code> text
-     * @param fontFixedBold the font to use for <code>FontID.FIXED</code> text
-     * which has bold enabled
-     * @param fontArcane the font to use for <code>FontID.ARCANE</code> text
+     * @param fontPrint the font to use for {@code FontID.PRINT}, {@code
+     * FontID.HAND}, and {@code FontID.STRANGE} text
+     * @param fontFixed the font to use for {@code FontID.FIXED} text
+     * @param fontFixedBold the font to use for {@code FontID.FIXED} text which
+     * has bold enabled
+     * @param fontArcane the font to use for {@code FontID.ARCANE} text
      */
     public Fonts(@NotNull final Font fontPrint, @NotNull final Font fontFixed, @NotNull final Font fontFixedBold, @NotNull final Font fontArcane) {
         this.fontPrint = fontPrint;

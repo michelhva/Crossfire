@@ -65,13 +65,13 @@ public class TextSegment extends AbstractSegment {
     private final FontID font;
 
     /**
-     * The color to use. <code>null</code> means "default color".
+     * The color to use. {@code null} means "default color".
      */
     @Nullable
     private final Color color;
 
     /**
-     * The distance of the underline to the base line. Set to <code>0</code> if
+     * The distance of the underline to the base line. Set to {@code 0} if
      * unknown.
      */
     private int underlineOffset;
@@ -83,7 +83,7 @@ public class TextSegment extends AbstractSegment {
      * @param italic whether italic face is enabled
      * @param underline whether underlining is enabled
      * @param font the font to use
-     * @param color the color to use; <code>null</code> means "default color"
+     * @param color the color to use; {@code null} means "default color"
      */
     public TextSegment(@NotNull final String text, final boolean bold, final boolean italic, final boolean underline, @NotNull final FontID font, @Nullable final Color color) {
         this.text = text;
@@ -105,7 +105,7 @@ public class TextSegment extends AbstractSegment {
 
     /**
      * Returns the {@link Font} to use for a given {@link Segment}.
-     * @param fonts the <code>Fonts</code> instance to use
+     * @param fonts the {@code Fonts} instance to use
      * @return the font
      */
     @NotNull

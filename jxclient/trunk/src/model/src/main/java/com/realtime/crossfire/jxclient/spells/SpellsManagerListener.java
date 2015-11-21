@@ -31,15 +31,13 @@ public interface SpellsManagerListener extends EventListener {
 
     /**
      * A new spell was added.
-     * @param index the current index of <code>spell</code> in the spells
-     * manager
+     * @param index the current index of {@code spell} in the spells manager
      */
     void spellAdded(int index);
 
     /**
      * A spell was removed.
-     * @param index the former index of <code>spell</code> in the spells
-     * manager
+     * @param index the former index of {@code spell} in the spells manager
      */
     void spellRemoved(int index);
 

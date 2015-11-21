@@ -27,8 +27,8 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Utility class to encode arbitrary Strings to fit in a single text line. For
- * any string <code>s</code>, <code>encode(s)</code> is a string that does not
- * contain \r or \n characters and <code>s.equals(decode(encode(s)))</code>
+ * any string {@code s}, {@code encode(s)} is a string that does not contain \r
+ * or \n characters and {@code s.equals(decode(encode(s)))}
  * holds.
  * @author Andreas Kirschbaum
  */

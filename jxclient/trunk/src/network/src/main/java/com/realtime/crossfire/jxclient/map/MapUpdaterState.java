@@ -38,7 +38,7 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * Update a {@link CfMap} model from protocol commands.
- * <p/>
+ * <p>
  * The map updater is called from two threads: the {@link
  * com.realtime.crossfire.jxclient.server.socket.ClientSocket} reading commands
  * received from the Crossfire server, and {@link com.realtime.crossfire.jxclient.faces.FileCacheFaceQueue}
@@ -121,8 +121,7 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
     /**
      * Creates a new instance.
      * @param facesManager the faces manager to track for updated faces
-     * @param guiStateManager the gui state manager to watch or
-     * <code>null</code>
+     * @param guiStateManager the gui state manager to watch or {@code null}
      */
     public MapUpdaterState(@NotNull final FacesManager facesManager, @Nullable final GuiStateManager guiStateManager) {
         this.facesManager = facesManager;
@@ -235,7 +234,7 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
     /**
      * Updates a map square by changing a face.
      * @param location the location to update
-     * @param faceNum the face to set; <code>0</code> clears the square
+     * @param faceNum the face to set; {@code 0} clears the square
      * @param clearAnimation whether an animation should be cleared
      */
     public void mapFace(@NotNull final Location location, final int faceNum, final boolean clearAnimation) {

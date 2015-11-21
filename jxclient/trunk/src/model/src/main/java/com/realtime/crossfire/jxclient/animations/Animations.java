@@ -88,8 +88,8 @@ public class Animations {
 
     /**
      * Creates a new instance.
-     * @param guiStateManager the gui state manager to watch; <code>null</code>
-     * to not watch
+     * @param guiStateManager the gui state manager to watch; {@code null} to
+     * not watch
      */
     public Animations(@Nullable final GuiStateManager guiStateManager) {
         if (guiStateManager != null) {
@@ -117,8 +117,8 @@ public class Animations {
     /**
      * Returns the animation for an animation id.
      * @param animationId the animation id
-     * @return the animation instance, or <code>null</code> if the animation id
-     *         does not exist
+     * @return the animation instance, or {@code null} if the animation id does
+     * not exist
      */
     @Nullable
     public Animation get(final int animationId) {

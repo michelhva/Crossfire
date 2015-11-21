@@ -50,7 +50,7 @@ public class GUICommandText extends GUIText {
     /**
      * Creates a new instance.
      * @param commandCallback the command callback to use
-     * @param commandHistory the command history to use or <code>null</code> to
+     * @param commandHistory the command history to use or {@code null} to
      * disable command history access
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify

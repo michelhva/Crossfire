@@ -92,6 +92,7 @@ public class GUIKnowledgeTypeList extends GUIItemList {
      * @param itemView the item view to monitor
      * @param currentItem the label to update with information about the
      * selected item.
+     * @param knowledgeManager the knowledge manager to use
      * @param itemPainter the item painter for painting the icon
      * @param facesManager the faces manager to use
      */

@@ -68,7 +68,7 @@ public class JXCConnection {
     private final Settings settings;
 
     /**
-     * The {@link Frame} for updating the title or <code>null</code>.
+     * The {@link Frame} for updating the title or {@code null}.
      */
     @Nullable
     private Frame frame;
@@ -93,7 +93,7 @@ public class JXCConnection {
     private final Logger logger;
 
     /**
-     * The currently connected server. Set to <code>null</code> if unconnected.
+     * The currently connected server. Set to {@code null} if unconnected.
      */
     @Nullable
     private String hostname;
@@ -104,8 +104,7 @@ public class JXCConnection {
     private int port;
 
     /**
-     * The currently logged in character. Set to <code>null</code> if not logged
-     * in.
+     * The currently logged in character. Set to {@code null} if not logged in.
      */
     @Nullable
     private String character;
@@ -189,7 +188,7 @@ public class JXCConnection {
 
     /**
      * Sets the {@link Frame} for updating the title.
-     * @param frame the frame or <code>null</code>
+     * @param frame the frame or {@code null}
      */
     public void setFrame(@Nullable final Frame frame) {
         this.frame = frame;
@@ -198,7 +197,7 @@ public class JXCConnection {
 
     /**
      * Returns the currently connected server.
-     * @return the server or <code>null</code> if unconnected
+     * @return the server or {@code null} if unconnected
      */
     @Nullable
     public String getHostname() {
@@ -207,7 +206,7 @@ public class JXCConnection {
 
     /**
      * Returns the currently connected port.
-     * @return the port or <code>0</code> if unconnected
+     * @return the port or {@code 0} if unconnected
      */
     public int getPort() {
         return port;
@@ -215,8 +214,7 @@ public class JXCConnection {
 
     /**
      * Updates the active character name.
-     * @param character the active character; <code>null</code> if not logged
-     * in
+     * @param character the active character; {@code null} if not logged in
      */
     public void setCharacter(@Nullable final String character) {
         if (this.character == null ? character == null : this.character.equals(character)) {
@@ -268,7 +266,7 @@ public class JXCConnection {
 
     /**
      * Updates information about the connected host.
-     * @param serverInfo the hostname; <code>null</code> if not connected
+     * @param serverInfo the hostname; {@code null} if not connected
      */
     public void setHost(@Nullable final String serverInfo) {
         @Nullable final String newHostname;

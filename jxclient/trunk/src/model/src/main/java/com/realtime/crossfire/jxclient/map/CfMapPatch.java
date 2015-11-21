@@ -42,8 +42,8 @@ public class CfMapPatch {
     public static final int SIZE = 1<<SIZE_LOG;
 
     /**
-     * The array of {@link CfMapSquare CfMapSquares}. Elements are never
-     * <code>null</code>.
+     * The array of {@link CfMapSquare CfMapSquares}. Elements are never {@code
+     * null}.
      */
     @NotNull
     private final CfMapSquare[][] square = new CfMapSquare[SIZE][SIZE];
@@ -155,7 +155,7 @@ public class CfMapPatch {
      * @param x the x-coordinate of the square
      * @param y the y-coordinate of the square
      * @param layer the layer of the face
-     * @return the face; dark (i.e. not yet set) faces return <code>null</code>
+     * @return the face; dark (i.e. not yet set) faces return {@code null}
      */
     @Nullable
     public Face getFace(final int x, final int y, final int layer) {
@@ -166,10 +166,10 @@ public class CfMapPatch {
      * Sets the map square containing the head face for a layer.
      * @param x the x-coordinate of the square
      * @param y the y-coordinate of the square
-     * @param layer the layer for the new head face between <code>0</code> and
-     * <code>LAYERS-1</code>
-     * @param mapSquare the map square containing the head face; may be
-     * <code>null</code>
+     * @param layer the layer for the new head face between {@code 0} and
+     * {@code LAYERS-1}
+     * @param mapSquare the map square containing the head face; may be {@code
+     * null}
      * @param setAlways if set, always update the face; if unset, only update
      * when fog-of-war
      */
@@ -182,7 +182,7 @@ public class CfMapPatch {
      * @param x the x-coordinate of the square
      * @param y the y-coordinate of the square
      * @param layer the layer to return the head for
-     * @return the head map square, or <code>null</code> if this square does not
+     * @return the head map square, or {@code null} if this square does not
      *         contain a multi-tail
      */
     @Nullable

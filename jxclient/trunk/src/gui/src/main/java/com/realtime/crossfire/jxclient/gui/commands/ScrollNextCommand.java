@@ -53,7 +53,7 @@ public class ScrollNextCommand implements GUICommand {
      * Creates a new instance.
      * @param nextElement the element to activate
      * @param prevElement the element to deactivate
-     * @param apply whether <code>nextElement</code> should be applied
+     * @param apply whether {@code nextElement} should be applied
      */
     public ScrollNextCommand(@NotNull final ActivatableGUIElement nextElement, @NotNull final ActivatableGUIElement prevElement, final boolean apply) {
         this.nextElement = nextElement;

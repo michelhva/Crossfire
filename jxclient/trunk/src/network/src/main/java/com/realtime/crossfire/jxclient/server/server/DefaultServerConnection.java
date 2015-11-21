@@ -46,8 +46,8 @@ public class DefaultServerConnection implements ServerConnection {
     /**
      * Creates a new instance.
      * @param model the model to update
-     * @param debugProtocol tf non-<code>null</code>, write all protocol
-     * commands to this writer
+     * @param debugProtocol tf non-{@code null}, write all protocol commands to
+     * this writer
      * @throws IOException if an internal error occurs
      */
     public DefaultServerConnection(@NotNull final Model model, @Nullable final DebugWriter debugProtocol) throws IOException {
@@ -89,7 +89,7 @@ public class DefaultServerConnection implements ServerConnection {
      * Writes a Crossfire Message on the socket, so it is sent to the server.
      * @param packet the packet to be sent; it does not include the length bytes
      * but only actual payload data
-     * @param length the length of <code>packet</code>; if the array is larger,
+     * @param length the length of {@code packet}; if the array is larger,
      * excess data is ignored
      */
     public void writePacket(@NotNull final byte[] packet, final int length) {

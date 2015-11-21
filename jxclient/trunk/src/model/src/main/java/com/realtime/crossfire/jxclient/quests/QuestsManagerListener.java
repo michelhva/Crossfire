@@ -30,8 +30,7 @@ public interface QuestsManagerListener extends EventListener {
 
     /**
      * A new quest.
-     * @param index the current index of <code>quest</code> in the quests
-     * manager
+     * @param index the current index of {@code quest} in the quests manager
      */
     void questAdded(int index);
 }

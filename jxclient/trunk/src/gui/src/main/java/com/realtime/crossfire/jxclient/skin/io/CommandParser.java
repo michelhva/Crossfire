@@ -504,8 +504,8 @@ public class CommandParser {
      * Parses and builds a "SCROLL" or "SCROLL_NEVER command.
      * @param args the list of arguments
      * @param element the target element
-     * @param isScroll whether to parse a "SCROLL" (<code>true</code>) or a
-     * "SCROLL_NEVER" (<code>false</code>) command
+     * @param isScroll whether to parse a "SCROLL" ({@code true}) or a
+     * "SCROLL_NEVER" ({@code false}) command
      * @return the command arguments
      * @throws IOException if a syntax error occurs
      */

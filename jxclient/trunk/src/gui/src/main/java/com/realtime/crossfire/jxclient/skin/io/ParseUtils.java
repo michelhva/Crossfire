@@ -97,7 +97,7 @@ public class ParseUtils {
     /**
      * Parses a color name, optionally followed by "/&lt;alpha&gt;".
      * @param name the color name to parse
-     * @return the color or <code>null</code> if the color name does not exist
+     * @return the color or {@code null} if the color name does not exist
      */
     @Nullable
     public static Color parseColorNull(@NotNull final String name) {
@@ -131,7 +131,7 @@ public class ParseUtils {
     /**
      * Parses a color name.
      * @param name the color name to parse
-     * @return the color or <code>null</code> if the color name does not exist
+     * @return the color or {@code null} if the color name does not exist
      */
     @Nullable
     private static Color parseColorName(@NotNull final String name) {
@@ -162,12 +162,12 @@ public class ParseUtils {
 
     /**
      * Concatenates trailing arguments into a string. If the first line is
-     * "<<EOF", all text up to the next line containing only "EOF" is appended.
-     * Comments starting with "#" are dropped.
+     * "&lt;&lt;EOF", all text up to the next line containing only "EOF" is
+     * appended. Comments starting with "#" are dropped.
      * @param args the args to concatenate
      * @param lnr where to read additional lines from
      * @return the concatenated string
-     * @throws IOException if reading from <code>lnr</lnr> fails
+     * @throws IOException if reading from {@code lnr} fails
      */
     @NotNull
     public static String parseText(@NotNull final Args args, @NotNull final LineNumberReader lnr) throws IOException {

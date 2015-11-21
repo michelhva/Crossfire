@@ -98,7 +98,7 @@ public class ShortcutSpell extends Shortcut {
 
     /**
      * Returns whether the spell should be "cast" or "invoked".
-     * @return <code>true</code> for "cast", or <code>false</code> for "invoke"
+     * @return {@code true} for "cast", or {@code false} for "invoke"
      */
     public boolean isCast() {
         return command == CAST;
@@ -106,8 +106,7 @@ public class ShortcutSpell extends Shortcut {
 
     /**
      * Sets whether the spell should be "cast" or "invoked".
-     * @param cast <code>true</code> for "cast", or <code>false</code> for
-     * "invoke"
+     * @param cast {@code true} for "cast", or {@code false} for "invoke"
      */
     public void setCast(final boolean cast) {
         final String newCommand = cast ? CAST : INVOKE;

@@ -96,7 +96,7 @@ public class Dialogs implements Iterable<Gui> {
 
     /**
      * Returns one dialog pending loading. Each dialog is returned only once.
-     * @return a dialog pending loading or <code>null</code>
+     * @return a dialog pending loading or {@code null}
      */
     @Nullable
     public String getDialogToLoad() {

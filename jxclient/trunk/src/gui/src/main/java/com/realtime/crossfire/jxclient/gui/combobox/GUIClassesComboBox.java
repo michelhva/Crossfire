@@ -90,7 +90,7 @@ public class GUIClassesComboBox extends GUIComboBox<String> {
      * @param elementListener the element listener to notify
      * @param name the name of this element
      * @param model the model to display
-     * @param label the label to update or <code>null</code>
+     * @param label the label to update or {@code null}
      */
     public GUIClassesComboBox(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Model model, @Nullable final GUILabelLog label) {
         super(tooltipManager, elementListener, name, label);

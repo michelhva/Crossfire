@@ -40,7 +40,7 @@ public class Shortcuts implements Iterable<Shortcut> {
 
     /**
      * The shortcuts. Maps index to {@link Shortcut}. Unset entries are set to
-     * <code>null</code>.
+     * {@code null}.
      */
     @NotNull
     private final List<Shortcut> shortcuts = new ArrayList<Shortcut>();
@@ -109,7 +109,7 @@ public class Shortcuts implements Iterable<Shortcut> {
     /**
      * Returns a shortcut.
      * @param index the shortcut index
-     * @return the shortcut or <code>null</code> if the shortcut is unset
+     * @return the shortcut or {@code null} if the shortcut is unset
      */
     @Nullable
     private Shortcut getShortcut(final int index) {
@@ -123,7 +123,7 @@ public class Shortcuts implements Iterable<Shortcut> {
     /**
      * Sets a {@link Shortcut}.
      * @param index the shortcut index
-     * @param shortcut the shortcut to set or <code>null</code> to unset
+     * @param shortcut the shortcut to set or {@code null} to unset
      */
     public void setShortcut(final int index, @Nullable final Shortcut shortcut) {
         while (shortcuts.size() <= index) {
@@ -158,8 +158,8 @@ public class Shortcuts implements Iterable<Shortcut> {
      * Sets a {@link Shortcut} to a spell.
      * @param index the shortcut index
      * @param spellName the spell name to cast or invoke
-     * @param cast whether the spell should be cast (<code>true</code>) or
-     * invoked (<code>false</code>)
+     * @param cast whether the spell should be cast ({@code true}) or invoked
+     * ({@code false})
      */
     public void setSpellShortcut(final int index, @NotNull final String spellName, final boolean cast) {
         final Spell spell = spellsManager.getSpell(spellName);
@@ -170,8 +170,8 @@ public class Shortcuts implements Iterable<Shortcut> {
      * Sets a {@link Shortcut} to a spell.
      * @param index the shortcut index
      * @param spell the spell to cast or invoke
-     * @param cast whether the spell should be cast (<code>true</code>) or
-     * invoked (<code>false</code>)
+     * @param cast whether the spell should be cast ({@code true}) or invoked
+     * ({@code false})
      */
     public void setSpellShortcut(final int index, @NotNull final Spell spell, final boolean cast) {
         final ShortcutSpell shortcutSpell = new ShortcutSpell(commandQueue, spell);
@@ -244,7 +244,7 @@ public class Shortcuts implements Iterable<Shortcut> {
 
     /**
      * Returns the backing file.
-     * @return the backing file or <code>null</code> if unknown
+     * @return the backing file or {@code null} if unknown
      */
     @Nullable
     public File getFile() {
@@ -253,7 +253,7 @@ public class Shortcuts implements Iterable<Shortcut> {
 
     /**
      * Sets the backing file.
-     * @param file the backing file or <code>null</code> if unknown
+     * @param file the backing file or {@code null} if unknown
      */
     public void setFile(@Nullable final File file) {
         this.file = file;

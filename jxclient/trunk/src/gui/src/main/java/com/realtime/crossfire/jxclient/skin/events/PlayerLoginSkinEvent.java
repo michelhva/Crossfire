@@ -35,8 +35,8 @@ import org.jetbrains.annotations.Nullable;
 public class PlayerLoginSkinEvent implements SkinEvent {
 
     /**
-     * Whether to generate login events (<code>true</code>) or logout events
-     * (<code>false</code>).
+     * Whether to generate login events ({@code true}) or logout events ({@code
+     * false}).
      */
     private final boolean login;
 
@@ -101,8 +101,8 @@ public class PlayerLoginSkinEvent implements SkinEvent {
 
     /**
      * Creates a new instance.
-     * @param login whether to generate login events (<code>true</code>) or
-     * logout events (<code>false</code>)
+     * @param login whether to generate login events ({@code true}) or logout
+     * events ({@code false})
      * @param commandList the command list to execute
      * @param itemSet the item set to watch
      */

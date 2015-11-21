@@ -26,10 +26,10 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * Provides a view to all items comprising the current floor view.
- * <p/>
+ * <p>
  * If an opened container exists, the floor view consists of the container in
  * the first slot followed by the contained items. Otherwise all objects in
- * location <code>0</code> are returned.
+ * location {@code 0} are returned.
  * @author Andreas Kirschbaum
  */
 public class FloorView extends AbstractItemView {
@@ -41,8 +41,8 @@ public class FloorView extends AbstractItemView {
     private final ItemSet itemSet;
 
     /**
-     * The tag of the currently shown container or <code>0</code> if no
-     * container is open.
+     * The tag of the currently shown container or {@code 0} if no container is
+     * open.
      */
     private int currentFloor;
 
@@ -129,7 +129,7 @@ public class FloorView extends AbstractItemView {
 
     /**
      * Returns the current floor location.
-     * @return the current floor location: a container's tag or <code>0</code>
+     * @return the current floor location: a container's tag or {@code 0}
      */
     public int getCurrentFloor() {
         return currentFloor;

@@ -127,7 +127,7 @@ public class GUIItemFloor extends GUIItemItem {
      * @param facesManager the faces manager instance to use
      * @param nextGroupFace the image for "prev group of items"
      * @param prevGroupFace the image for "next group of items"
-     * @param size the size of the component or <code>0</code> for undefined
+     * @param size the size of the component or {@code 0} for undefined
      */
     public GUIItemFloor(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemView floorView, @NotNull final ItemSet itemSet, @NotNull final FacesManager facesManager, @NotNull final Image nextGroupFace, @NotNull final Image prevGroupFace, final int size) {
         super(tooltipManager, elementListener, name, itemPainter, facesManager);
@@ -263,8 +263,8 @@ public class GUIItemFloor extends GUIItemItem {
     /**
      * Set the floor tile to display.
      * @param index the floor tile
-     * @param forced if unset, do nothing if the <code>index</code> is
-     * unchanged; if set, always render the item
+     * @param forced if unset, do nothing if the {@code index} is unchanged; if
+     * set, always render the item
      */
     private void setIndex(final int index, final boolean forced) {
         if (this.index != index) {

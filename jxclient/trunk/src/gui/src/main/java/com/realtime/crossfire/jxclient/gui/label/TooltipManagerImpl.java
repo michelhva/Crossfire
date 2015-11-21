@@ -55,7 +55,7 @@ public class TooltipManagerImpl implements TooltipManager {
     private int windowHeight;
 
     /**
-     * The tooltip label. Set to <code>null</code> if the skin does not use
+     * The tooltip label. Set to {@code null} if the skin does not use
      * tooltips.
      */
     @Nullable
@@ -76,8 +76,8 @@ public class TooltipManagerImpl implements TooltipManager {
 
     /**
      * Maps {@link GUIElement} to associated {@link TooltipText}. The tooltip
-     * text is shown when the mouse is inside this element. May be
-     * <code>null</code> to show no tooltip.
+     * text is shown when the mouse is inside this element. May be {@code null}
+     * to show no tooltip.
      */
     @NotNull
     private final WeakHashMap<GUIElement, TooltipText> tooltipTexts = new WeakHashMap<GUIElement, TooltipText>();
@@ -111,7 +111,7 @@ public class TooltipManagerImpl implements TooltipManager {
 
     /**
      * Sets the tooltip label.
-     * @param tooltip the tooltip label, or <code>null</code>
+     * @param tooltip the tooltip label, or {@code null}
      */
     public void setTooltip(@Nullable final AbstractLabel tooltip) {
         this.tooltip = tooltip;

@@ -50,14 +50,14 @@ public class KeybindingsManager {
     private final KeyBindings keyBindings;
 
     /**
-     * The key bindings for the current user. Set to <code>null</code> if no
-     * user is logged in.
+     * The key bindings for the current user. Set to {@code null} if no user is
+     * logged in.
      */
     @Nullable
     private KeyBindings characterKeyBindings;
 
     /**
-     * The current key binding state. Set to <code>null</code> if no key binding
+     * The current key binding state. Set to {@code null} if no key binding
      * dialog is active.
      */
     @Nullable
@@ -122,8 +122,8 @@ public class KeybindingsManager {
      * Returns the active key bindings.
      * @param perCharacter if set, return the per-character key bindings; else
      * return the global bindings
-     * @return the key bindings or <code>null</code> if no per-character
-     *         bindings exist because no character is logged in
+     * @return the key bindings or {@code null} if no per-character bindings
+     * exist because no character is logged in
      */
     @Nullable
     private KeyBindings getKeyBindings(final boolean perCharacter) {

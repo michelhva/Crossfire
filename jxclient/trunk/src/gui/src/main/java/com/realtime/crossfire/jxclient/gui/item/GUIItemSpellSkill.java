@@ -72,14 +72,14 @@ public class GUIItemSpellSkill extends GUIItemItem {
     private final SpellsManager spellsManager;
 
     /**
-     * The currently selected spell or <code>null</code> if none is selected.
+     * The currently selected spell or {@code null} if none is selected.
      * Corresponds to index {@link #index}.
      */
     @Nullable
     private Skill skill;
 
     /**
-     * The currently selected spell or <code>-1</code> if none is selected.
+     * The currently selected spell or {@code -1} if none is selected.
      * Corresponds to {@link #skill}.
      */
     private int index = -1;
@@ -147,7 +147,7 @@ public class GUIItemSpellSkill extends GUIItemItem {
      * @param itemView the spells view to use
      * @param defaultSkillIcon the default icon to use the skills if not
      * defined
-     * @param size the size of the component or <code>0</code> for undefined
+     * @param size the size of the component or {@code 0} for undefined
      */
     public GUIItemSpellSkill(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final SpellsManager spellsManager, @NotNull final ItemView itemView, @NotNull final FaceImages defaultSkillIcon, final int size) {
         super(tooltipManager, elementListener, name, itemPainter, facesManager);

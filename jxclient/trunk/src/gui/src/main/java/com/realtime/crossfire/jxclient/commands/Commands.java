@@ -51,8 +51,7 @@ public class Commands {
     /**
      * Returns a {@link Command} by name.
      * @param commandName the command name to search
-     * @return the command or <code>null</code> if <code>commandName</code> is
-     *         undefined
+     * @return the command or {@code null} if {@code commandName} is undefined
      */
     @Nullable
     public Command findCommand(@NotNull final String commandName) {

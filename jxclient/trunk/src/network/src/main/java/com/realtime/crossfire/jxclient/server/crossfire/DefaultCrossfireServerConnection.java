@@ -166,14 +166,14 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     private int preferredMapHeight = 13;
 
     /**
-     * The map width that is being negotiated with the server. Set to
-     * <code>0</code> when not negotiating.
+     * The map width that is being negotiated with the server. Set to {@code 0}
+     * when not negotiating.
      */
     private int pendingMapWidth;
 
     /**
-     * The map height that is being negotiated with the server. Set to
-     * <code>0</code> when not negotiating.
+     * The map height that is being negotiated with the server. Set to {@code
+     * 0} when not negotiating.
      */
     private int pendingMapHeight;
 
@@ -539,8 +539,8 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     private final String version;
 
     /**
-     * The appender to write protocol commands to. May be <code>null</code> to
-     * not write anything.
+     * The appender to write protocol commands to. May be {@code null} to not
+     * write anything.
      */
     @Nullable
     private final DebugWriter debugProtocol;
@@ -552,7 +552,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     private ClientSocketState clientSocketState = ClientSocketState.CONNECTING;
 
     /**
-     * The account name. Set to <code>null</code> if no account name is known.
+     * The account name. Set to {@code null} if no account name is known.
      */
     @Nullable
     private String accountName;
@@ -563,15 +563,15 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     private int loginMethod;
 
     /**
-     * The {@link CrossfireUpdateMapListener} to be notified. Set to
-     * <code>null</code> if unset.
+     * The {@link CrossfireUpdateMapListener} to be notified. Set to {@code
+     * null} if unset.
      */
     @Nullable
     private CrossfireUpdateMapListener crossfireUpdateMapListener;
 
     /**
-     * If non-<code>null</code>: the last sent "requestinfo" command for which
-     * no "replyinfo" response has been received yet.
+     * If non-{@code null}: the last sent "requestinfo" command for which no
+     * "replyinfo" response has been received yet.
      */
     @Nullable
     private String sendingRequestInfo;
@@ -624,8 +624,8 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     /**
      * Creates a new instance.
      * @param model the model instance to update
-     * @param debugProtocol if non-<code>null</code>, write all protocol
-     * commands to this writer
+     * @param debugProtocol if non-{@code null}, write all protocol commands to
+     * this writer
      * @param version the version information to send to the server when
      * connecting
      * @throws IOException if an internal error occurs
@@ -687,7 +687,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     /**
      * Processes a received packet. This function does not avoid buffer
      * underflow exceptions when reading data from the packet. Instead, a
-     * <code>try...catch</code> clause is used to detect invalid packets.
+     * {@code try...catch} clause is used to detect invalid packets.
      * @param packet the packet's payload
      * @throws UnknownCommandException if the packet cannot be parsed
      */
@@ -3945,7 +3945,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * Parses a character into an integer.
      * @param ch the character to parse
      * @return the integer representing the character
-     * @throws UnknownCommandException if <code>ch</code> is not a digit
+     * @throws UnknownCommandException if {@code ch} is not a digit
      */
     private static int parseDigit(final byte ch) throws UnknownCommandException {
         final int digit = ch-'0';

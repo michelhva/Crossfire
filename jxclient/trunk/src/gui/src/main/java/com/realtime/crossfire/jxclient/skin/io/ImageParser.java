@@ -69,9 +69,9 @@ public class ImageParser {
 
     /**
      * Optionally loads an image by base file name.
-     * @param color if non-<code>null</code>, return <code>null</code>
+     * @param color if non-{@code null}, return {@code null}
      * @param name the base file name
-     * @return the image, or <code>null</code> if <code>color!=null</code>
+     * @return the image, or {@code null} if {@code color!=null}
      * @throws IOException if the image cannot be loaded
      */
     @Nullable

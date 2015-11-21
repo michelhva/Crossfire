@@ -39,22 +39,22 @@ public class MusicManager {
     private final AudioFileLoader audioFileLoader;
 
     /**
-     * The writer for logging sound related information or <code>null</code> to
-     * not log.
+     * The writer for logging sound related information or {@code null} to not
+     * log.
      */
     @Nullable
     private final DebugWriter debugSound;
 
     /**
-     * The currently running processor, or <code>null</code> if none is active
-     * or if music is disabled.
+     * The currently running processor, or {@code null} if none is active or if
+     * music is disabled.
      */
     @Nullable
     private Processor processor;
 
     /**
-     * The {@link Thread} executing {@link #processor}. Set to <code>null</code>
-     * if none is executing.
+     * The {@link Thread} executing {@link #processor}. Set to {@code null} if
+     * none is executing.
      */
     @Nullable
     private Thread thread;
@@ -70,7 +70,7 @@ public class MusicManager {
     private boolean muted = true;
 
     /**
-     * The currently playing music name. Set to <code>null</code> if no music is
+     * The currently playing music name. Set to {@code null} if no music is
      * playing.
      */
     @Nullable
@@ -80,7 +80,7 @@ public class MusicManager {
      * Creates a new instance.
      * @param audioFileLoader the audio file loader for loading audio files
      * @param debugSound the writer for logging sound related information or
-     * <code>null</code> to not log
+     * {@code null} to not log
      */
     public MusicManager(@NotNull final AudioFileLoader audioFileLoader, @Nullable final DebugWriter debugSound) {
         this.audioFileLoader = audioFileLoader;
@@ -90,7 +90,7 @@ public class MusicManager {
     /**
      * Plays the given music. If the new music name is unchanged, continue
      * playing.
-     * @param name the music name, or <code>null</code> to stop playing music
+     * @param name the music name, or {@code null} to stop playing music
      */
     public void play(@Nullable final String name) {
         if (this.name == null ? name == null : this.name.equals(name)) {

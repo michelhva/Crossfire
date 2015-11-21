@@ -56,9 +56,9 @@ public class GUILabelLog extends GUILog {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param backgroundImage the background image; may be <code>null</code> if
+     * @param backgroundImage the background image; may be {@code null} if
      * unused
-     * @param fonts the <code>Fonts</code> instance for looking up fonts
+     * @param fonts the {@code Fonts} instance for looking up fonts
      * @param defaultColor the default color to use for text message not
      * specifying a color
      */

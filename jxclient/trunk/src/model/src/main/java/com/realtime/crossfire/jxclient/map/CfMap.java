@@ -35,10 +35,10 @@ import org.jetbrains.annotations.Nullable;
 /**
  * Represents a map (as seen by the client). A map is a grid in which {@link
  * CfMapSquare CfMapSquares} can be stored.
- * <p/>
+ * <p>
  * The map will be automatically enlarged by accesses to new squares. Not yet
  * set squares are considered dark.
- * <p/>
+ * <p>
  * All accesses must be synchronized on the map instance.
  * @author Andreas Kirschbaum
  */
@@ -252,7 +252,7 @@ public class CfMap {
      * @param x the x-coordinate of the square
      * @param y the y-coordinate of the square
      * @param layer the layer to set
-     * @param face the face to set; may be <code>null</code> to remove the face
+     * @param face the face to set; may be {@code null} to remove the face
      */
     public void setFace(final int x, final int y, final int layer, @Nullable final Face face) {
         assert Thread.holdsLock(this);
@@ -272,7 +272,7 @@ public class CfMap {
      * @param x the x-coordinate of the square
      * @param y the y-coordinate of the square
      * @param layer the layer to set
-     * @param face the face to set; may be <code>null</code> to remove the face
+     * @param face the face to set; may be {@code null} to remove the face
      */
     private void setFaceInternal(final int x, final int y, final int layer, @Nullable final Face face) {
         final CfMapSquare headMapSquare = expandTo(x, y).getSquare(ox, oy);
@@ -295,7 +295,7 @@ public class CfMap {
      * @param face the face to expand
      * @param oldMapSquare the map square of the tail part
      * @param newMapSquare the map square of the tail part to add pointers, or
-     * <code>null</code> to remove pointers
+     * {@code null} to remove pointers
      */
     private void expandFace(final int x, final int y, final int layer, @NotNull final Face face, @NotNull final CfMapSquare oldMapSquare, @Nullable final CfMapSquare newMapSquare) {
         final int sx = face.getTileWidth();
@@ -342,7 +342,7 @@ public class CfMap {
      * @param x the x-coordinate of the square
      * @param y the y-coordinate of the square
      * @param layer the layer of the face
-     * @return the face; dark (i.e. not yet set) faces return <code>null</code>
+     * @return the face; dark (i.e. not yet set) faces return {@code null}
      */
     @Nullable
     public Face getFace(final int x, final int y, final int layer) {
@@ -355,10 +355,10 @@ public class CfMap {
      * Sets the map square containing the head face for a layer.
      * @param x the x-coordinate of the square
      * @param y the y-coordinate of the square
-     * @param layer the layer for the new head face between <code>0</code> and
-     * <code>LAYERS-1</code>
-     * @param mapSquare the map square containing the head face; may be
-     * <code>null</code>
+     * @param layer the layer for the new head face between {@code 0} and
+     * {@code LAYERS-1}
+     * @param mapSquare the map square containing the head face; may be {@code
+     * null}
      * @param setAlways if set, always update the face; if unset, only update
      * when fog-of-war
      */
@@ -371,7 +371,7 @@ public class CfMap {
      * @param x the x-coordinate of the square
      * @param y the y-coordinate of the square
      * @param layer the layer to return the head for
-     * @return the head map square, or <code>null</code> if this square does not
+     * @return the head map square, or {@code null} if this square does not
      *         contain a multi-tail
      */
     @Nullable
@@ -426,8 +426,8 @@ public class CfMap {
      * additional information in {@link #ox} and {@link #oy}.
      * @param x the x-coordinate to check
      * @param y the y-coordinate to check
-     * @return the map patch or <code>null</code> if the coordinates are out of
-     *         map bounds
+     * @return the map patch or {@code null} if the coordinates are out of map
+     * bounds
      */
     @Nullable
     private CfMapPatch getMapPatch(final int x, final int y) {
@@ -484,8 +484,8 @@ public class CfMap {
      * (Possibly) expands the defined area of the map to a given position.
      * @param x the x-coordinate to expand the defined area to
      * @param y the y-coordinate to expand the defined area to
-     * @return the map patch or <code>null</code> if the coordinates are out of
-     *         map bounds
+     * @return the map patch or {@code null} if the coordinates are out of map
+     * bounds
      */
     @NotNull
     private CfMapPatch expandTo(final int x, final int y) {
@@ -674,7 +674,7 @@ public class CfMap {
      * Returns a map square.
      * @param x the x-coordinate
      * @param y the y-coordinate
-     * @return the map square or <code>null</code> if it would be dirty
+     * @return the map square or {@code null} if it would be dirty
      */
     @Nullable
     public CfMapSquare getMapSquareUnlessDirty(final int x, final int y) {

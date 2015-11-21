@@ -63,21 +63,20 @@ public class KeyBindings {
     private boolean modified;
 
     /**
-     * The file for saving the bindings; <code>null</code> to not save.
+     * The file for saving the bindings; {@code null} to not save.
      */
     @Nullable
     private final File file;
 
     /**
-     * The key code map to use. Set to <code>null</code> until first use.
+     * The key code map to use. Set to {@code null} until first use.
      */
     @Nullable
     private KeyCodeMap keyCodeMap;
 
     /**
      * Creates a new instance.
-     * @param file the file for saving the bindings; <code>null</code> to not
-     * save
+     * @param file the file for saving the bindings; {@code null} to not save
      * @param guiCommandFactory the gui command factory for creating commands
      */
     public KeyBindings(@Nullable final File file, @NotNull final GUICommandFactory guiCommandFactory) {
@@ -86,7 +85,7 @@ public class KeyBindings {
     }
 
     /**
-     * Returns the file for saving the bindings; <code>null</code> to not save.
+     * Returns the file for saving the bindings; {@code null} to not save.
      * @return the file
      */
     @Nullable
@@ -141,7 +140,7 @@ public class KeyBindings {
 
     /**
      * Removes a key binding.
-     * @param keyBinding the key binding; may be <code>null</code>
+     * @param keyBinding the key binding; may be {@code null}
      */
     private void deleteKeyBinding(@Nullable final KeyBinding keyBinding) {
         if (keyBinding != null) {
@@ -263,8 +262,7 @@ public class KeyBindings {
     /**
      * Finds a key binding associated to a key code/modifiers pair.
      * @param keyEvent the key to look up
-     * @return the key binding, or <code>null</code> if no key binding is
-     *         associated
+     * @return the key binding, or {@code null} if no key binding is associated
      */
     @Nullable
     private KeyBinding getKeyBindingAsKeyCode(final KeyEvent2 keyEvent) {
@@ -280,8 +278,7 @@ public class KeyBindings {
     /**
      * Finds a key binding associated to a key character.
      * @param keyChar the key character to look up
-     * @return the key binding, or <code>null</code> if no key binding is
-     *         associated
+     * @return the key binding, or {@code null} if no key binding is associated
      */
     @Nullable
     private KeyBinding getKeyBindingAsKeyChar(final char keyChar) {
@@ -383,7 +380,7 @@ public class KeyBindings {
 
     /**
      * Executes a {@link KeyBinding} instance.
-     * @param keyBinding the key binding to execute; may be <code>null</code>
+     * @param keyBinding the key binding to execute; may be {@code null}
      */
     private static void executeKeyBinding(@NotNull final KeyBinding keyBinding) {
         keyBinding.getCommands().execute();

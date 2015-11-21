@@ -123,14 +123,14 @@ public class DefaultJXCSkin implements JXCSkin {
     private final Collection<String> optionNames = new HashSet<String>();
 
     /**
-     * The tooltip label or <code>null</code>.
+     * The tooltip label or {@code null}.
      */
     @Nullable
     private AbstractLabel tooltipLabel;
 
     /**
-     * The {@link TooltipManagerImpl} currently attached to or <code>null</code>
-     * if not attached.
+     * The {@link TooltipManagerImpl} currently attached to or {@code null} if
+     * not attached.
      */
     @Nullable
     private TooltipManagerImpl tooltipManager;
@@ -431,7 +431,7 @@ public class DefaultJXCSkin implements JXCSkin {
 
     /**
      * Returns one dialog pending loading. Each dialog is returned only once.
-     * @return a dialog pending loading or <code>null</code>
+     * @return a dialog pending loading or {@code null}
      */
     @Nullable
     public String getDialogToLoad() {
@@ -475,7 +475,7 @@ public class DefaultJXCSkin implements JXCSkin {
 
     /**
      * Sets the {@link AbstractLabel} that is used to display tooltips.
-     * @param tooltipLabel the label or <code>null</code> to disable tooltips
+     * @param tooltipLabel the label or {@code null} to disable tooltips
      */
     public void setTooltipLabel(@Nullable final AbstractLabel tooltipLabel) {
         this.tooltipLabel = tooltipLabel;

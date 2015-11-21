@@ -67,7 +67,7 @@ public class EventScheduler {
     private final Thread thread;
 
     /**
-     * The timestamp for the next notification. Set to <code>0</code> when not
+     * The timestamp for the next notification. Set to {@code 0} when not
      * active.
      */
     private long nextAction;

@@ -61,14 +61,14 @@ public class GUIButton extends AbstractButton {
     private final Image imageDown;
 
     /**
-     * The overlay text or <code>null</code> to display only the image. The text
-     * is rendered using {@link #font}.
+     * The overlay text or {@code null} to display only the image. The text is
+     * rendered using {@link #font}.
      */
     @Nullable
     private final String text;
 
     /**
-     * The {@link Font} for the overlay {@link #text} or <code>null</code> to
+     * The {@link Font} for the overlay {@link #text} or {@code null} to
      * display only the image.
      */
     @Nullable
@@ -86,8 +86,8 @@ public class GUIButton extends AbstractButton {
     private final int textY;
 
     /**
-     * The {@link Color} of the overlay text or <code>null</code> to display
-     * only the image.
+     * The {@link Color} of the overlay text or {@code null} to display only
+     * the image.
      */
     @Nullable
     private final Color color;
@@ -99,20 +99,19 @@ public class GUIButton extends AbstractButton {
     private final Dimension preferredSize;
 
     /**
-     * Creates a new instance. Both <code>imageUp</code> and
-     * <code>imageDown</code> must have the same size. The x/y coordinates
-     * specify the base line of the first character of the overlay text.
+     * Creates a new instance. Both {@code imageUp} and {@code imageDown} must
+     * have the same size. The x/y coordinates specify the base line of the
+     * first character of the overlay text.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
      * @param imageUp the image in unselected state
      * @param imageDown the image in selected state
-     * @param text the overlay text or <code>null</code> to display only the
-     * image
-     * @param font the font for the overlay text or <code>null</code> to display
+     * @param text the overlay text or {@code null} to display only the image
+     * @param font the font for the overlay text or {@code null} to display
      * only the image
-     * @param color the color of the overlay text or <code>null</code> to
-     * display only the image
+     * @param color the color of the overlay text or {@code null} to display
+     * only the image
      * @param textX the x coordinate of the overlay text
      * @param textY the y coordinate of the overlay text
      * @param autoRepeat whether the button should autorepeat while being

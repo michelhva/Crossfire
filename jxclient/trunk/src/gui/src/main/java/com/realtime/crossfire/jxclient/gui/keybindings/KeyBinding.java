@@ -110,7 +110,7 @@ public abstract class KeyBinding {
     /**
      * Returns whether the key binding is a "default" binding which should not
      * be saved.
-     * @return <code>true</code>=do not save
+     * @return {@code true}=do not save
      */
     public boolean isDefault() {
         return isDefault;

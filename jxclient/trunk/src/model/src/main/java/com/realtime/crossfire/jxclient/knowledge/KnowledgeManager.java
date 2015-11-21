@@ -191,7 +191,7 @@ public class KnowledgeManager {
     /**
      * Returns a {@link KnowledgeItem} instance by index.
      * @param index the index
-     * @return the item or <code>null</code> if the index is invalid
+     * @return the item or {@code null} if the index is invalid
      */
     @Nullable
     public KnowledgeItem getKnowledge(final int index) {

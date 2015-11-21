@@ -33,7 +33,7 @@ public interface CurrentSpellManagerListener extends EventListener {
 
     /**
      * The selected spell has changed.
-     * @param spell the newly selected spell or <code>null</code> if none is
+     * @param spell the newly selected spell or {@code null} if none is
      * selected
      */
     void spellChanged(@Nullable Spell spell);

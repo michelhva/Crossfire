@@ -78,7 +78,7 @@ public class GUIItemQuest extends GUIItemItem {
     private Quest quest;
 
     /**
-     * The currently selected quest or <code>-1</code> if none is selected.
+     * The currently selected quest or {@code -1} if none is selected.
      * Corresponds to {@link #quest}.
      */
     private int index = -1;
@@ -147,7 +147,7 @@ public class GUIItemQuest extends GUIItemItem {
      * @param facesManager the faces manager for looking up faces
      * @param questsManager the quests manager instance to watch
      * @param questsView the quests view to use
-     * @param size the size of the component or <code>0</code> for undefined
+     * @param size the size of the component or {@code 0} for undefined
      */
     public GUIItemQuest(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final QuestsManager questsManager, @NotNull final ItemView questsView, final int size) {
         super(tooltipManager, elementListener, name, itemPainter, facesManager);

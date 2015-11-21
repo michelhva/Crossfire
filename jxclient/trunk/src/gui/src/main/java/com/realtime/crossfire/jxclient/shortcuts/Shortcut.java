@@ -80,7 +80,7 @@ public abstract class Shortcut {
     public abstract String getTooltipText();
 
     /**
-     * Calls a {@link ShortcutVisitor}'s <code>visit()</code> function for this
+     * Calls a {@link ShortcutVisitor}'s {@code visit()} function for this
      * instance.
      * @param visitor the visitor to call
      */

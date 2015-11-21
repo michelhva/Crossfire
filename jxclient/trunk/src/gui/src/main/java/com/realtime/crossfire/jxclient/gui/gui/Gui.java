@@ -35,7 +35,7 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * Combines a list of {@link GUIElement GUIElements} to for a gui.
- * <p/>
+ * <p>
  * A dialog can be modal. Such dialogs do not propagate key or mouse events to
  * lower dialogs.
  * @author Andreas Kirschbaum
@@ -54,8 +54,8 @@ public class Gui extends JComponent {
     private final KeyBindings keyBindings;
 
     /**
-     * The extent of the dialog if it is auto-sizing or <code>null</code>
-     * otherwise. Auto-sizing dialogs cannot be moved or resized manually.
+     * The extent of the dialog if it is auto-sizing or {@code null} otherwise.
+     * Auto-sizing dialogs cannot be moved or resized manually.
      */
     @Nullable
     private Extent autoSize;
@@ -77,14 +77,14 @@ public class Gui extends JComponent {
     private final Collection<RendererGuiState> hideInStates = EnumSet.noneOf(RendererGuiState.class);
 
     /**
-     * If non-<code>null</code>, this element is always active. No other element
-     * can become active.
+     * If non-{@code null}, this element is always active. No other element can
+     * become active.
      */
     @Nullable
     private ActivatableGUIElement forcedActive;
 
     /**
-     * The gui element which has the focus. Set to <code>null</code> if no such
+     * The gui element which has the focus. Set to {@code null} if no such
      * element exists.
      */
     @Nullable
@@ -103,14 +103,14 @@ public class Gui extends JComponent {
     private GuiAutoCloseListener guiAutoCloseListener;
 
     /**
-     * The default x-coordinate for this dialog. Set to <code>null</code> for
+     * The default x-coordinate for this dialog. Set to {@code null} for
      * default.
      */
     @Nullable
     private Expression defaultX;
 
     /**
-     * The default y-coordinate for this dialog. Set to <code>null</code> for
+     * The default y-coordinate for this dialog. Set to {@code null} for
      * default.
      */
     @Nullable
@@ -145,7 +145,7 @@ public class Gui extends JComponent {
     /**
      * Sets the auto-size state. Auto-size dialogs cannot be moved or resized
      * manually.
-     * @param autoSize the new auto-size or <code>null</code>
+     * @param autoSize the new auto-size or {@code null}
      */
     public void setAutoSize(@Nullable final Extent autoSize) {
         this.autoSize = autoSize;
@@ -178,7 +178,7 @@ public class Gui extends JComponent {
 
     /**
      * Returns the first default gui element of this gui.
-     * @return the default gui element, or <code>null</code>
+     * @return the default gui element, or {@code null}
      */
     @Nullable
     private ActivatableGUIElement getDefaultElement() {
@@ -209,9 +209,10 @@ public class Gui extends JComponent {
     /**
      * Returns the first gui element of this gui which belongs to the given
      * class and that's name ends with the given ending.
+     * @param <T> the class to search for
      * @param class_ the class to search for
      * @param ending the ending to search for
-     * @return the gui element or <code>null</code> if not found
+     * @return the gui element or {@code null} if not found
      */
     @Nullable
     public <T extends GUIElement> T getFirstElementEndingWith(@NotNull final Class<T> class_, @NotNull final String ending) {
@@ -232,9 +233,10 @@ public class Gui extends JComponent {
     /**
      * Returns the first gui element of this gui which belongs to the given
      * class and that's name does not end with the given ending.
+     * @param <T> the class to search for
      * @param class_ the class to search for
      * @param ending the ending to search for
-     * @return the gui element or <code>null</code> if not found
+     * @return the gui element or {@code null} if not found
      */
     @Nullable
     public <T extends GUIElement> T getFirstElementNotEndingWith(@NotNull final Class<T> class_, @NotNull final String ending) {
@@ -254,8 +256,9 @@ public class Gui extends JComponent {
 
     /**
      * Returns the first gui element of this gui belonging to the given class.
+     * @param <T> the class to search for
      * @param class_ the class to search for
-     * @return the gui element or <code>null</code> if not found
+     * @return the gui element or {@code null} if not found
      */
     @Nullable
     public <T extends GUIElement> T getFirstElement(@NotNull final Class<T> class_) {
@@ -277,8 +280,8 @@ public class Gui extends JComponent {
      * Determines the {@link GUIElement} for a given coordinate.
      * @param x the x-coordinate to check
      * @param y the y-coordinate to check
-     * @return the <code>GUIElement</code> at the given coordinate or
-     *         <code>null</code> if none was found
+     * @return the {@code GUIElement} at the given coordinate or {@code null}
+     * if none was found
      */
     @Nullable
     public AbstractGUIElement getElementFromPoint(final int x, final int y) {
@@ -409,9 +412,10 @@ public class Gui extends JComponent {
     /**
      * Returns the first gui element of this gui belonging to the given class
      * and having the given name.
+     * @param <T> the class to search for
      * @param class_ the class to search for
      * @param name the button's name
-     * @return the button or <code>null</code> if no button matches
+     * @return the button or {@code null} if no button matches
      */
     @Nullable
     public <T extends GUIElement> T getFirstElement(@NotNull final Class<T> class_, @NotNull final String name) {
@@ -457,8 +461,7 @@ public class Gui extends JComponent {
     /**
      * Sets the {@link GuiAutoCloseListener} to be notified when this dialog
      * becomes inactive.
-     * @param guiAutoCloseListener the listener to be notified or
-     * <code>null</code>
+     * @param guiAutoCloseListener the listener to be notified or {@code null}
      */
     public void setGuiAutoCloseListener(@Nullable final GuiAutoCloseListener guiAutoCloseListener) {
         this.guiAutoCloseListener = guiAutoCloseListener;
@@ -477,7 +480,7 @@ public class Gui extends JComponent {
     /**
      * Sets an {@link ActivatableGUIElement} that is always active. It prevents
      * any other element from getting active.
-     * @param forcedActive the element to set or <code>null</code> to unset
+     * @param forcedActive the element to set or {@code null} to unset
      */
     public void setForcedActive(@Nullable final ActivatableGUIElement forcedActive) {
         this.forcedActive = forcedActive;

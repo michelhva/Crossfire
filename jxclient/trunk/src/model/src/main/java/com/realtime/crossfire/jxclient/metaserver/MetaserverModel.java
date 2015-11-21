@@ -73,8 +73,7 @@ public class MetaserverModel {
     /**
      * Returns a metaserver entry by index.
      * @param index the index
-     * @return the metaserver entry, or <code>null</code> if the index is
-     *         invalid
+     * @return the metaserver entry, or {@code null} if the index is invalid
      */
     @Nullable
     public MetaserverEntry getEntry(final int index) {
@@ -90,7 +89,7 @@ public class MetaserverModel {
     /**
      * Returns the index of an entry by server name.
      * @param serverName the server name
-     * @return the index, or <code>-1</code> if not found
+     * @return the index, or {@code -1} if not found
      */
     public int getServerIndex(@NotNull final String serverName) {
         synchronized (sync) {

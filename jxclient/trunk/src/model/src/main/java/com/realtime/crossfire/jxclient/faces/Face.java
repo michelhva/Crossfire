@@ -26,8 +26,8 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * A <code>Face</code> represents one image received from a Crossfire server.
- * The face is uniquely identified by a face id; it has a face name and three
+ * A {@code Face} represents one image received from a Crossfire server. The
+ * face is uniquely identified by a face id; it has a face name and three
  * images (original as sent by the server, scaled for use in map view, scaled
  * for use in magic map view) attached.
  * @author Lauwenmark
@@ -67,7 +67,7 @@ public class Face {
     private int tileHeight = 1;
 
     /**
-     * The images for this face. Set to <code>null</code> if unknown.
+     * The images for this face. Set to {@code null} if unknown.
      */
     @Nullable
     private FaceImages faceImages;
@@ -107,9 +107,9 @@ public class Face {
     }
 
     /**
-     * Returns the images. May return <code>null</code> if the images are not
-     * yet known, or if they have been dropped from the cache.
-     * @return the images or <code>null</code>
+     * Returns the images. May return {@code null} if the images are not yet
+     * known, or if they have been dropped from the cache.
+     * @return the images or {@code null}
      */
     @Nullable
     public FaceImages getFaceImages() {

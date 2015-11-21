@@ -40,7 +40,7 @@ public class SmoothFaces {
     /**
      * Returns the smoothing face associated with a given face.
      * @param face the face
-     * @return the smoothing face or <code>0</code>
+     * @return the smoothing face or {@code 0}
      */
     public int getSmoothFace(final int face) {
         final Integer smooth;

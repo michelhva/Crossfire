@@ -299,7 +299,7 @@ public class Pickup {
     /**
      * Sets or unsets the pickup mode.
      * @param pickupMode the pickup mode(s) to affect
-     * @param set <code>true</code>=set, <code>false</code>=unset
+     * @param set {@code true}=set, {@code false}=unset
      */
     public void setPickupMode(final long pickupMode, final boolean set) {
         final long newPickupMode;

@@ -339,8 +339,8 @@ public class JXClient {
 
     /**
      * Opens an debug output stream.
-     * @param filename the filename to write to or <code>null</code>
-     * @return the output stream or <code>null</code>
+     * @param filename the filename to write to or {@code null}
+     * @return the output stream or {@code null}
      */
     @Nullable
     private static Writer openDebugStream(@Nullable final String filename) {

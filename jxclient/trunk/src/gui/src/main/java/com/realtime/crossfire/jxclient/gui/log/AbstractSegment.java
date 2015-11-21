@@ -28,20 +28,17 @@ package com.realtime.crossfire.jxclient.gui.log;
 public abstract class AbstractSegment implements Segment {
 
     /**
-     * The x-coordinate to display the segment. Set to <code>-1</code> if
-     * unknown.
+     * The x-coordinate to display the segment. Set to {@code -1} if unknown.
      */
     private int x = -1;
 
     /**
-     * The y-coordinate to display the segment. Set to <code>-1</code> if
-     * unknown.
+     * The y-coordinate to display the segment. Set to {@code -1} if unknown.
      */
     private int y = -1;
 
     /**
-     * The width of the segment if displayed. Set to <code>-1</code> if
-     * unknown.
+     * The width of the segment if displayed. Set to {@code -1} if unknown.
      */
     private int width = -1;
 

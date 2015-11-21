@@ -95,7 +95,7 @@ public class SkinLoader {
     private final CurrentSpellManager currentSpellManager = new CurrentSpellManager();
 
     /**
-     * The size of the client area. Set to <code>null</code> for default.
+     * The size of the client area. Set to {@code null} for default.
      */
     @Nullable
     private final Resolution resolution;
@@ -158,8 +158,7 @@ public class SkinLoader {
      * Creates a new instance.
      * @param commandCallback the command callback to use
      * @param metaserverModel the metaserver model to use
-     * @param resolution the size of the client area, <code>null</code> for
-     * default
+     * @param resolution the size of the client area, {@code null} for default
      * @param macros the macros instance
      * @param windowRenderer the window renderer to use
      * @param server the crossfire server connection to use
