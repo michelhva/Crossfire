@@ -225,7 +225,7 @@ public class KnowledgeManager {
     private void filterKnowledge() {
         filteredItems.clear();
         for (final KnowledgeItem item : items) {
-            if ("".equals(typeFilter) || item.getType().equals(typeFilter)) {
+            if (typeFilter.isEmpty() || item.getType().equals(typeFilter)) {
                 filteredItems.add(item);
             }
         }
