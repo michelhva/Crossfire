@@ -27,14 +27,14 @@ import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.util.Stack;
 import javax.swing.text.MutableAttributeSet;
-import javax.swing.text.html.HTML;
-import javax.swing.text.html.HTMLEditorKit;
+import javax.swing.text.html.HTML.Tag;
+import javax.swing.text.html.HTMLEditorKit.ParserCallback;
 import org.jetbrains.annotations.NotNull;
 
 /**
  * @author Lauwenmark
  */
-public class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback {
+public class InternalHTMLRenderer extends ParserCallback {
 
     @NotNull
     private final Stack<Font> fonts = new Stack<Font>();
@@ -75,18 +75,18 @@ public class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback {
     }
 
     @Override
-    public void handleStartTag(@NotNull final HTML.Tag t, @NotNull final MutableAttributeSet a, final int pos) {
-        if (t.equals(HTML.Tag.A)) {
+    public void handleStartTag(@NotNull final Tag t, @NotNull final MutableAttributeSet a, final int pos) {
+        if (t.equals(Tag.A)) {
             fonts.push(fonts.peek());
             colors.push(Color.YELLOW);
             //y += defaultFont.getSize()+1;
-        } else if (t.equals(HTML.Tag.B)) {
+        } else if (t.equals(Tag.B)) {
             fonts.push(fonts.peek().deriveFont(Font.BOLD));
             colors.push(colors.peek());
-        } else if (t.equals(HTML.Tag.I)) {
+        } else if (t.equals(Tag.I)) {
             fonts.push(fonts.peek().deriveFont(Font.ITALIC));
             colors.push(colors.peek());
-        } else if (t.equals(HTML.Tag.LI)) {
+        } else if (t.equals(Tag.LI)) {
             fonts.push(fonts.peek());
             colors.push(colors.peek());
             gc.setFont(fonts.peek());
@@ -105,15 +105,15 @@ public class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback {
     }
 
     @Override
-    public void handleSimpleTag(@NotNull final HTML.Tag t, @NotNull final MutableAttributeSet a, final int pos) {
-        if (t.equals(HTML.Tag.BR)) {
+    public void handleSimpleTag(@NotNull final Tag t, @NotNull final MutableAttributeSet a, final int pos) {
+        if (t.equals(Tag.BR)) {
             y += fonts.peek().getSize()+1;
             x = origX;
         }
     }
 
     @Override
-    public void handleEndTag(@NotNull final HTML.Tag t, final int pos) {
+    public void handleEndTag(@NotNull final Tag t, final int pos) {
         fonts.pop();
         colors.pop();
     }

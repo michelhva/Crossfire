@@ -4,6 +4,7 @@ import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
 import com.realtime.crossfire.jxclient.knowledge.KnowledgeManager;
+import com.realtime.crossfire.jxclient.knowledge.KnowledgeManager.KnowledgeListener;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -21,7 +22,7 @@ public class KnowledgeTypeView extends AbstractItemView {
     public KnowledgeTypeView(@NotNull final FacesManager facesManager, @NotNull final KnowledgeManager knowledgeManager) {
         this.facesManager = facesManager;
         this.knowledgeManager = knowledgeManager;
-        knowledgeManager.addKnowledgeListener(new KnowledgeManager.KnowledgeListener() {
+        knowledgeManager.addKnowledgeListener(new KnowledgeListener() {
             @Override
             public void typeAdded(final int index) {
                 addModifiedRange(0, knowledgeManager.getTypes());

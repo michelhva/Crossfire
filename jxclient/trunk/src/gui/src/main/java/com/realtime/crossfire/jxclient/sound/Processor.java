@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.sound;
 
 import java.io.IOException;
 import javax.sound.sampled.AudioFormat;
+import javax.sound.sampled.AudioFormat.Encoding;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.LineUnavailableException;
@@ -105,7 +106,7 @@ public class Processor implements Runnable {
                     System.err.println("music "+name+": cannot handle more than two channels");
                     return;
                 }
-                if (audioFormat.getEncoding() != AudioFormat.Encoding.PCM_SIGNED) {
+                if (audioFormat.getEncoding() != Encoding.PCM_SIGNED) {
                     System.err.println("music "+name+": encoding must be PCM_SIGNED");
                     return;
                 }

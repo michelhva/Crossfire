@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.gui.log;
 import java.awt.Color;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.regex.Pattern;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -298,7 +299,7 @@ public class Parser {
     public static String toString(@NotNull final Color color) {
         // function need not be efficient since it is used for regression tests
         // only
-        for (final Map.Entry<String, Color> e : COLORS.entrySet()) {
+        for (final Entry<String, Color> e : COLORS.entrySet()) {
             if (e.getValue() == color) {
                 return e.getKey();
             }

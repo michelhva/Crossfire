@@ -33,6 +33,7 @@ import java.io.OutputStreamWriter;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.Map.Entry;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -104,7 +105,7 @@ public class ServerCache {
     @NotNull
     public Map<String, MetaserverEntry> getAll() {
         final Map<String, MetaserverEntry> result = new HashMap<String, MetaserverEntry>();
-        for (final Map.Entry<String, Info> entry : entries.entrySet()) {
+        for (final Entry<String, Info> entry : entries.entrySet()) {
             result.put(entry.getKey(), entry.getValue().getMetaserverEntry());
         }
         return result;

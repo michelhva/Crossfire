@@ -31,6 +31,7 @@ import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.knowledge.KnowledgeItem;
 import com.realtime.crossfire.jxclient.knowledge.KnowledgeManager;
+import com.realtime.crossfire.jxclient.knowledge.KnowledgeManager.KnowledgeListener;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import java.awt.Dimension;
 import java.awt.Image;
@@ -128,7 +129,7 @@ public class GUIItemKnowledge extends GUIItemItem {
         this.commandQueue = commandQueue;
         setIndex(defaultIndex);
 
-        knowledgeManager.addKnowledgeListener(new KnowledgeManager.KnowledgeListener() {
+        knowledgeManager.addKnowledgeListener(new KnowledgeListener() {
             @Override
             public void typeAdded(final int index) {
             }
