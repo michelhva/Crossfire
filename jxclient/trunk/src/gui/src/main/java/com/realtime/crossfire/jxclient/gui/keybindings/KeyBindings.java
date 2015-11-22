@@ -388,15 +388,17 @@ public class KeyBindings {
 
     /**
      * Search bindings having a command text starting with the specified value.
-     * @param commandStart start of the text to search for
+     * @param command the text to search for
+     * @param startOnly if true only search the text at the start of the command, else anywhere.
      * @return the matching bindings
      */
     @NotNull
-    public Collection<KeyBinding> getBindingsForPartialCommand(@NotNull final String commandStart) {
+    public Collection<KeyBinding> getBindingsForPartialCommand(@NotNull final String command, final boolean startOnly) {
         final Collection<KeyBinding> matches = new HashSet<KeyBinding>();
 
         for (final KeyBinding binding : keybindings) {
-            if (binding.getCommandString().startsWith(commandStart)) {
+            if ((startOnly && binding.getCommandString().startsWith(command))
+                || (!startOnly && binding.getCommandString().contains(command))) {
                 matches.add(binding);
             }
         }

@@ -40,7 +40,8 @@ public class BindingsCommand extends AbstractCommand {
    */
   @Override
   public void execute(@NotNull final String args) {
-    final Iterable<KeyBinding> bindings = keybindingsManager.getBindingsForPartialCommand("");
+    final Iterable<KeyBinding> bindings = keybindingsManager.getBindingsForPartialCommand(args, false);
+    drawInfo("Keybindings:");
     for (final KeyBinding binding : bindings) {
       drawInfo(binding.getBindingDescription() + ": " + binding.getCommandString());
     }

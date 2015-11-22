@@ -157,7 +157,7 @@ public class GUISpellList extends GUIItemList {
         // because key bindings can specify partial names, we search in 2 steps:
         // - search all bindings with the first spell letter
         // - from those bindings only keep the ones the spell's command matches
-        final Iterable<KeyBinding> bindings = keybindingsManager.getBindingsForPartialCommand(search);
+        final Iterable<KeyBinding> bindings = keybindingsManager.getBindingsForPartialCommand(search, true);
         boolean first = true;
         final StringBuilder sb = new StringBuilder();
 
