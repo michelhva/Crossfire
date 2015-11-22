@@ -45,7 +45,7 @@ public class Logger {
      * The format for writing timestamps.
      */
     @NotNull
-    private static final SimpleDateFormat FORMAT = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss ");
+    private final SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss ");
 
     /**
      * The hostname.
@@ -142,7 +142,7 @@ public class Logger {
             try {
                 final OutputStreamWriter osw = new OutputStreamWriter(fos);
                 try {
-                    osw.write(FORMAT.format(now)+message+"\n");
+                    osw.write(format.format(now)+message+"\n");
                 } finally {
                     osw.close();
                 }
