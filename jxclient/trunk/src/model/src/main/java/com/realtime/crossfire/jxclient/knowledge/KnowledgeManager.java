@@ -232,4 +232,5 @@ public class KnowledgeManager {
         }
         Collections.sort(filteredItems, KNOWLEDGE_COMPARATOR);
     }
+
 }
