@@ -83,6 +83,7 @@ import com.realtime.crossfire.jxclient.gui.log.Fonts;
 import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.gui.log.GUIMessageLog;
 import com.realtime.crossfire.jxclient.gui.log.MessageBufferUpdater;
+import com.realtime.crossfire.jxclient.gui.map.DarknessColors;
 import com.realtime.crossfire.jxclient.gui.map.GUIMap;
 import com.realtime.crossfire.jxclient.gui.map.GUIMiniMap;
 import com.realtime.crossfire.jxclient.gui.misc.GUIFill;
@@ -381,6 +382,13 @@ public class JXCSkinLoader {
      */
     @NotNull
     private DefaultJXCSkin skin;
+
+    /**
+     * The {@link DarknessColors} instance for converting darkness values into
+     * colors.
+     */
+    @NotNull
+    private final DarknessColors darknessColors = new DarknessColors();
 
     /**
      * A {@link Comparator} that compares {@link GUIElement} instances by
@@ -1765,7 +1773,7 @@ public class JXCSkinLoader {
         if (facesProvider == null) {
             throw new IOException("cannot create faces with size 4");
         }
-        final AbstractGUIElement element = new GUIMiniMap(avoidCopyArea, tooltipManager, elementListener, name, mapUpdaterState, facesProvider, w, h);
+        final AbstractGUIElement element = new GUIMiniMap(avoidCopyArea, tooltipManager, elementListener, name, mapUpdaterState, facesProvider, darknessColors, w, h);
         insertGuiElement(element);
     }
 
@@ -1785,7 +1793,7 @@ public class JXCSkinLoader {
         if (facesProvider == null) {
             throw new IOException("cannot create faces with size "+defaultTileSize);
         }
-        insertGuiElement(new GUIMap(avoidCopyArea, tooltipManager, elementListener, name, mapUpdaterState, facesProvider, server, smoothFaces));
+        insertGuiElement(new GUIMap(avoidCopyArea, tooltipManager, elementListener, name, mapUpdaterState, facesProvider, server, smoothFaces, darknessColors));
     }
 
     /**

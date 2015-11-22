@@ -93,6 +93,13 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
     private final SmoothingRenderer smoothingRenderer;
 
     /**
+     * The {@link DarknessColors} instance for converting darkness values into
+     * colors.
+     */
+    @NotNull
+    private final DarknessColors darknessColors;
+
+    /**
      * Synchronizes access to {@link #bufferedImage}, {@link #clearMapPending},
      * and {@link #scrollMapPending}.
      */
@@ -311,11 +318,14 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
      * @param facesProvider the faces provider for looking up faces
      * @param smoothingRenderer the smoothing renderer to use or {@code null}
      * to not draw smoothed faces
+     * @param darknessColors the darkness colors instance for converting
+     * darkness values into colors
      */
-    protected AbstractGUIMap(final boolean avoidCopyArea, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final FacesProvider facesProvider, @Nullable final SmoothingRenderer smoothingRenderer) {
+    protected AbstractGUIMap(final boolean avoidCopyArea, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final FacesProvider facesProvider, @Nullable final SmoothingRenderer smoothingRenderer, @NotNull final DarknessColors darknessColors) {
         super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT);
         this.avoidCopyArea = avoidCopyArea;
         this.smoothingRenderer = smoothingRenderer;
+        this.darknessColors = darknessColors;
         tileSize = facesProvider.getSize();
         assert tileSize > 0;
         this.mapUpdaterState = mapUpdaterState;
@@ -436,7 +446,7 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
         }
         final int darkness = mapSquare.getDarkness();
         if (darkness < CfMapSquare.DARKNESS_FULL_BRIGHT) {
-            paintColoredSquare(g, DarknessColors.getDarknessColor(darkness), offsetX+x*tileSize, offsetY+y*tileSize);
+            paintColoredSquare(g, darknessColors.getDarknessColor(darkness), offsetX+x*tileSize, offsetY+y*tileSize);
         }
     }
 

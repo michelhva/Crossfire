@@ -71,9 +71,11 @@ public class GUIMap extends AbstractGUIMap {
      * @param facesProvider the faces provider for looking up faces
      * @param crossfireServerConnection the server connection to monitor
      * @param smoothFaces the smooth faces to use
+     * @param darknessColors the darkness colors instance for converting
+     * darkness values into colors
      */
-    public GUIMap(final boolean avoidCopyArea, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final FacesProvider facesProvider, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final SmoothFaces smoothFaces) {
-        super(avoidCopyArea, tooltipManager, elementListener, name, mapUpdaterState, facesProvider, new SmoothingRenderer(smoothFaces, facesProvider));
+    public GUIMap(final boolean avoidCopyArea, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final FacesProvider facesProvider, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final SmoothFaces smoothFaces, @NotNull final DarknessColors darknessColors) {
+        super(avoidCopyArea, tooltipManager, elementListener, name, mapUpdaterState, facesProvider, new SmoothingRenderer(smoothFaces, facesProvider), darknessColors);
         this.crossfireServerConnection = crossfireServerConnection;
         tileSize = facesProvider.getSize();
     }
