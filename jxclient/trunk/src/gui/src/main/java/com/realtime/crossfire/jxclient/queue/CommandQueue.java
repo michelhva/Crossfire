@@ -231,12 +231,14 @@ public class CommandQueue {
      * @return whether running was active
      */
     public boolean stopRunning() {
-        final boolean result = isRunning;
-        if (result) {
-            sendNcom(true, 0, "run_stop");
-            assert !isRunning;
+        synchronized (pendingCommands) {
+            final boolean result = isRunning;
+            if (result) {
+                sendNcom(true, 0, "run_stop");
+                assert !isRunning;
+            }
+            return result;
         }
-        return result;
     }
 
     /**
@@ -244,7 +246,9 @@ public class CommandQueue {
      * @return whether the character is running
      */
     public boolean checkRun() {
-        return isRunning;
+        synchronized (pendingCommands) {
+            return isRunning;
+        }
     }
 
     /**
