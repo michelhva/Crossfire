@@ -3,8 +3,8 @@ package com.realtime.crossfire.jxclient.items;
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
+import com.realtime.crossfire.jxclient.knowledge.KnowledgeListener;
 import com.realtime.crossfire.jxclient.knowledge.KnowledgeManager;
-import com.realtime.crossfire.jxclient.knowledge.KnowledgeManager.KnowledgeListener;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

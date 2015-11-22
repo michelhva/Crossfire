@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.EventListener;
 import java.util.List;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -18,13 +17,6 @@ import org.jetbrains.annotations.Nullable;
  * @author Nicolas Weeger
  */
 public class KnowledgeManager {
-
-    public interface KnowledgeListener extends EventListener {
-
-        void typeAdded(int index);
-
-        void knowledgeAdded(int index);
-    }
 
     /**
      * Compare two knowledge items.
