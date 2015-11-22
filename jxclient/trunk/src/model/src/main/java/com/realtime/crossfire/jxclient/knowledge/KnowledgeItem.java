@@ -31,11 +31,11 @@ import org.jetbrains.annotations.NotNull;
 public class KnowledgeItem {
 
     /**
-     * The {@link KnowledgeListener KnowledgeListeners} to be notified of
+     * The {@link KnowledgeItemListener KnowledgeListeners} to be notified of
      * changes.
      */
     @NotNull
-    private final EventListenerList2<KnowledgeListener> listeners = new EventListenerList2<KnowledgeListener>(KnowledgeListener.class);
+    private final EventListenerList2<KnowledgeItemListener> listeners = new EventListenerList2<KnowledgeItemListener>(KnowledgeItemListener.class);
 
     /**
      * The knowledge identifier.
@@ -120,24 +120,24 @@ public class KnowledgeItem {
      * Notifies all listeners.
      */
     private void fireChanged() {
-        for (final KnowledgeListener listener : listeners.getListeners()) {
+        for (final KnowledgeItemListener listener : listeners.getListeners()) {
             listener.knowledgeChanged();
         }
     }
 
     /**
-     * Adds a {@link KnowledgeListener} to be notified of changes.
+     * Adds a {@link KnowledgeItemListener} to be notified of changes.
      * @param listener the listener to add
      */
-    public void addKnowledgeListener(@NotNull final KnowledgeListener listener) {
+    public void addKnowledgeItemListener(@NotNull final KnowledgeItemListener listener) {
         listeners.add(listener);
     }
 
     /**
-     * Removes a {@link KnowledgeListener} to be notified of changes.
+     * Removes a {@link KnowledgeItemListener} to be notified of changes.
      * @param listener the listener to remove
      */
-    public void removeKnowledgeListener(@NotNull final KnowledgeListener listener) {
+    public void removeKnowledgeItemListener(@NotNull final KnowledgeItemListener listener) {
         listeners.remove(listener);
     }
 
