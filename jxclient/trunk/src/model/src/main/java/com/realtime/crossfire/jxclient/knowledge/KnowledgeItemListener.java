@@ -27,7 +27,7 @@ import java.util.EventListener;
  * Interface for listeners interested in {@link KnowledgeItem} related events.
  * @author Andreas Kirschbaum
  */
-public interface KnowledgeListener extends EventListener {
+public interface KnowledgeItemListener extends EventListener {
 
     /**
      * The associated {@link KnowledgeItem} instance has changed.
