@@ -29,6 +29,7 @@ public class KnowledgeManager {
     /**
      * Compare two knowledge items.
      */
+    @NotNull
     private static final Comparator<KnowledgeItem> KNOWLEDGE_COMPARATOR = new Comparator<KnowledgeItem>() {
 
         @Override
@@ -44,18 +45,25 @@ public class KnowledgeManager {
     @NotNull
     private final EventListenerList2<KnowledgeListener> listeners = new EventListenerList2<KnowledgeListener>(KnowledgeListener.class);
 
+    @NotNull
     private final List<String> types = new ArrayList<String>();
 
+    @NotNull
     private final List<String> names = new ArrayList<String>();
 
+    @NotNull
     private final List<Integer> faces = new ArrayList<Integer>();
 
+    @NotNull
     private final List<Boolean> attempt = new ArrayList<Boolean>();
 
+    @NotNull
     private final Collection<KnowledgeItem> items = new ArrayList<KnowledgeItem>();
 
+    @NotNull
     private final List<KnowledgeItem> filteredItems = new ArrayList<KnowledgeItem>();
 
+    @NotNull
     private String typeFilter = "";
 
     /**
@@ -128,7 +136,7 @@ public class KnowledgeManager {
         listeners.add(listener);
     }
 
-    public void addKnowledgeType(final String type, final String name, final int face, final boolean canAttempt) {
+    public void addKnowledgeType(@NotNull final String type, @NotNull final String name, final int face, final boolean canAttempt) {
         types.add(type);
         if (type.isEmpty()) {
             names.add("All types");
@@ -153,6 +161,7 @@ public class KnowledgeManager {
         return types.size();
     }
 
+    @NotNull
     public String getTypeName(final int index) {
         if (index < 0 || index >= faces.size()) {
             return "";
