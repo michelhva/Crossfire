@@ -98,11 +98,13 @@ public class GUIMiniMap extends AbstractGUIMap {
      * @param name the name of this element
      * @param mapUpdaterState the map updater state instance to use
      * @param facesProvider the faces provider for looking up faces
+     * @param darknessColors the darkness colors instance for converting
+     * darkness values into colors
      * @param width the map width in squares
      * @param height the map height in squares
      */
-    public GUIMiniMap(final boolean avoidCopyArea, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final FacesProvider facesProvider, final int width, final int height) {
-        super(avoidCopyArea, tooltipManager, elementListener, name, mapUpdaterState, facesProvider, null);
+    public GUIMiniMap(final boolean avoidCopyArea, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final FacesProvider facesProvider, @NotNull final DarknessColors darknessColors, final int width, final int height) {
+        super(avoidCopyArea, tooltipManager, elementListener, name, mapUpdaterState, facesProvider, null, darknessColors);
         this.mapUpdaterState = mapUpdaterState;
         this.width = width;
         this.height = height;
