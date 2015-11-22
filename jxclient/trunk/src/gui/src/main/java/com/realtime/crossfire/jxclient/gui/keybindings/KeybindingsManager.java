@@ -257,10 +257,11 @@ public class KeybindingsManager {
     /**
      * Searches bindings having a command text starting with the specified
      * value.
-     * @param commandStart the start of the text to search for
+     * @param command the text to search for
+     * @param startOnly if true only search the text at the start of the command, else anywhere.
      * @return the matching bindings
      */
-    public Iterable<KeyBinding> getBindingsForPartialCommand(@NotNull final String commandStart) {
+    public Iterable<KeyBinding> getBindingsForPartialCommand(@NotNull final String command, final boolean startOnly) {
         final Collection<KeyBinding> matches = new HashSet<KeyBinding>();
 
         /*
@@ -268,9 +269,9 @@ public class KeybindingsManager {
          * duplicates
          */
         if (characterKeyBindings != null) {
-            matches.addAll(characterKeyBindings.getBindingsForPartialCommand(commandStart));
+            matches.addAll(characterKeyBindings.getBindingsForPartialCommand(command, startOnly));
         }
-        final Iterable<KeyBinding> global = keyBindings.getBindingsForPartialCommand(commandStart);
+        final Iterable<KeyBinding> global = keyBindings.getBindingsForPartialCommand(command, startOnly);
         for (final KeyBinding candidate : global) {
             boolean used = false;
             for (final KeyBinding check : matches) {
