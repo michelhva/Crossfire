@@ -24,6 +24,7 @@ dam 1
 type 1
 speed 1
 weight 70000
+food 999
 resist_poison 30
 can_use_shield 1
 can_use_armour 1
