@@ -8,7 +8,7 @@ enter_x 13
 enter_y 12
 msg
 Created:  2004-04-10 Avion
-Modified: 2015-03-26 Rick Tanner
+Modified: 2015-12-01 Rick Tanner
 endmsg
 end
 arch blocked
@@ -2118,13 +2118,6 @@ arch tile_white_floor
 x 11
 y 10
 unique 1
-end
-arch exit
-slaying under_world/uworld_107_123
-hp 12
-sp 19
-x 11
-y 10
 end
 arch tile_white_floor
 x 11
