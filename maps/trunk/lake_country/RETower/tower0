@@ -8,7 +8,7 @@ enter_x 20
 enter_y 36
 msg
 Created:  1995-04-03
-Modified: 2015-10-29 Rick Tanner
+Modified: 2015-12-01 Rick Tanner
 endmsg
 end
 arch biglake_s
@@ -5088,18 +5088,36 @@ arch woodfloor
 x 20
 y 21
 end
+arch magic_ear
+msg
+@match exit
+Vummm..
+endmsg
+x 20
+y 22
+connected 73
+end
+arch magic_mouth
+msg
+Trapped inside this room?
+Say exit to get teleporterd out of here.
+endmsg
+x 20
+y 22
+end
 arch woodfloor
 x 20
 y 22
 end
-arch table
+arch teleporter
+name teleporter to lobby
+slaying tower0
+hp 20
+sp 24
 x 20
 y 22
-end
-arch booze
-x 20
-y 22
-nrof 5
+speed 0.0
+connected 73
 end
 arch woodfloor
 x 20
