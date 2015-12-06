@@ -71,14 +71,6 @@ public class EventListenerList2<T extends EventListener> implements Serializable
     }
 
     /**
-     * Returns the number of registered listeners.
-     * @return the number of registered listeners
-     */
-    public int getListenerCount() {
-        return eventListenerList.getListenerCount(t);
-    }
-
-    /**
      * Adds a listener.
      * @param listener the listener
      */
