@@ -285,10 +285,10 @@ public class JXClient {
                                         @Override
                                         public void run() {
                                             window[0].term();
-                                            soundManager.shutdown();
                                         }
 
                                     });
+                                    soundManager.shutdown();
                                 } finally {
                                     server.stop();
                                 }
