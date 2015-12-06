@@ -49,7 +49,7 @@ public class GuiStateManager {
      * The connection state listeners to notify.
      */
     @NotNull
-    private final EventListenerList2<GuiStateListener> guiStateListeners = new EventListenerList2<GuiStateListener>(GuiStateListener.class);
+    private final EventListenerList2<GuiStateListener> guiStateListeners = new EventListenerList2<GuiStateListener>();
 
     /**
      * Sets a new {@link GuiState}.
@@ -70,13 +70,13 @@ public class GuiStateManager {
             public void run() {
                 switch (guiState) {
                 case START:
-                    for (final GuiStateListener listener : guiStateListeners.getListeners()) {
+                    for (final GuiStateListener listener : guiStateListeners) {
                         listener.start();
                     }
                     break;
 
                 case METASERVER:
-                    for (final GuiStateListener listener : guiStateListeners.getListeners()) {
+                    for (final GuiStateListener listener : guiStateListeners) {
                         listener.metaserver();
                     }
                     break;
@@ -85,7 +85,7 @@ public class GuiStateManager {
                     throw new IllegalArgumentException("changeGUI() called in state CONNECTING");
 
                 case CONNECTED:
-                    for (final GuiStateListener listener : guiStateListeners.getListeners()) {
+                    for (final GuiStateListener listener : guiStateListeners) {
                         listener.connected();
                     }
                     break;
@@ -119,10 +119,10 @@ public class GuiStateManager {
                 throw new IllegalArgumentException("changeGUI() called in state METASERVER");
 
             case CONNECTING:
-                for (final GuiStateListener listener : guiStateListeners.getListeners()) {
+                for (final GuiStateListener listener : guiStateListeners) {
                     listener.preConnecting(param);
                 }
-                for (final GuiStateListener listener : guiStateListeners.getListeners()) {
+                for (final GuiStateListener listener : guiStateListeners) {
                     listener.connecting(param);
                 }
                 break;
@@ -131,7 +131,7 @@ public class GuiStateManager {
                 throw new IllegalArgumentException("changeGUI() called in state CONNECTED");
 
             case CONNECT_FAILED:
-                for (final GuiStateListener listener : guiStateListeners.getListeners()) {
+                for (final GuiStateListener listener : guiStateListeners) {
                     listener.connectFailed(param);
                 }
                 break;
@@ -186,7 +186,7 @@ public class GuiStateManager {
      * @param clientSocketState the new state
      */
     public void setClientSocketState(@NotNull final ClientSocketState clientSocketState) {
-        for (final GuiStateListener listener : guiStateListeners.getListeners()) {
+        for (final GuiStateListener listener : guiStateListeners) {
             listener.connecting(clientSocketState);
         }
         if (clientSocketState == ClientSocketState.CONNECTED) {

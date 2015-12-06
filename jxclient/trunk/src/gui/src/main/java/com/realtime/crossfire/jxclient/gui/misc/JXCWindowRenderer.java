@@ -239,7 +239,7 @@ public class JXCWindowRenderer {
      * Listeners to be notified about {@link #rendererGuiState} changes.
      */
     @NotNull
-    private final EventListenerList2<RendererGuiStateListener> rendererGuiStateListeners = new EventListenerList2<RendererGuiStateListener>(RendererGuiStateListener.class);
+    private final EventListenerList2<RendererGuiStateListener> rendererGuiStateListeners = new EventListenerList2<RendererGuiStateListener>();
 
     /**
      * The currently displayed {@link Gui}.
@@ -842,7 +842,7 @@ public class JXCWindowRenderer {
 
         });
         updateServerSettings();
-        for (final RendererGuiStateListener listener : rendererGuiStateListeners.getListeners()) {
+        for (final RendererGuiStateListener listener : rendererGuiStateListeners) {
             listener.guiStateChanged(rendererGuiState);
         }
     }

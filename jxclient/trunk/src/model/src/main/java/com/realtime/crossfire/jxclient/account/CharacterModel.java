@@ -60,7 +60,7 @@ public class CharacterModel {
      * All registered character listeners.
      */
     @NotNull
-    private final EventListenerList2<CharacterListener> characterListeners = new EventListenerList2<CharacterListener>(CharacterListener.class);
+    private final EventListenerList2<CharacterListener> characterListeners = new EventListenerList2<CharacterListener>();
 
     /**
      * All registered character entry listeners. Maps entry index to list of
@@ -147,12 +147,12 @@ public class CharacterModel {
         }
         charactersPending.clear();
 
-        for (final CharacterListener characterListener : characterListeners.getListeners()) {
+        for (final CharacterListener characterListener : characterListeners) {
             characterListener.numberOfItemsChanged();
         }
 
         for (int i = 0, iMax = Math.max(oldMetaListSize, newMetaListSize); i < iMax; i++) {
-            for (final CharacterInformationListener characterInformationListener : getCharacterInformationListeners(i).getListeners()) {
+            for (final CharacterInformationListener characterInformationListener : getCharacterInformationListeners(i)) {
                 characterInformationListener.informationChanged();
             }
         }
@@ -205,7 +205,7 @@ public class CharacterModel {
                 return existingListeners;
             }
 
-            final EventListenerList2<CharacterInformationListener> newListeners = new EventListenerList2<CharacterInformationListener>(CharacterInformationListener.class);
+            final EventListenerList2<CharacterInformationListener> newListeners = new EventListenerList2<CharacterInformationListener>();
             characterInformationListeners.put(index, newListeners);
             return newListeners;
         }

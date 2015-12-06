@@ -38,14 +38,14 @@ public abstract class AbstractItemView implements ItemView {
      * notified about changes.
      */
     @NotNull
-    private final EventListenerList2<LocationsListener> locationsListeners = new EventListenerList2<LocationsListener>(LocationsListener.class);
+    private final EventListenerList2<LocationsListener> locationsListeners = new EventListenerList2<LocationsListener>();
 
     /**
      * The registered {@link ItemListener ItemListeners} to be notified about
      * changes.
      */
     @NotNull
-    private final IndexedEventListenerList<LocationListener> locationListeners = new IndexedEventListenerList<LocationListener>(LocationListener.class);
+    private final IndexedEventListenerList<LocationListener> locationListeners = new IndexedEventListenerList<LocationListener>();
 
     /**
      * The pending modified floor slots to be reported to listeners.
@@ -154,7 +154,7 @@ public abstract class AbstractItemView implements ItemView {
             modifiedSlots.clear();
         }
         if (tmpModifiedSlots.length > 0) {
-            for (final LocationsListener locationsListener : locationsListeners.getListeners()) {
+            for (final LocationsListener locationsListener : locationsListeners) {
                 locationsListener.locationsModified(tmpModifiedSlots);
             }
             for (final int index : tmpModifiedSlots) {

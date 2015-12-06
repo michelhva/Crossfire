@@ -35,7 +35,7 @@ public class KnowledgeManager {
      * changes.
      */
     @NotNull
-    private final EventListenerList2<KnowledgeListener> listeners = new EventListenerList2<KnowledgeListener>(KnowledgeListener.class);
+    private final EventListenerList2<KnowledgeListener> listeners = new EventListenerList2<KnowledgeListener>();
 
     @NotNull
     private final List<String> types = new ArrayList<String>();
@@ -137,7 +137,7 @@ public class KnowledgeManager {
         }
         faces.add(face);
         attempt.add(canAttempt);
-        for (final KnowledgeListener listener : listeners.getListeners()) {
+        for (final KnowledgeListener listener : listeners) {
             listener.typeAdded(0);
         }
     }
@@ -181,7 +181,7 @@ public class KnowledgeManager {
     public void addKnowledge(final int index, @NotNull final String type, @NotNull final String title, final int face) {
         items.add(new KnowledgeItem(index, type, title, face));
         filterKnowledge();
-        for (final KnowledgeListener listener : listeners.getListeners()) {
+        for (final KnowledgeListener listener : listeners) {
             listener.knowledgeAdded(0);
         }
     }
@@ -218,7 +218,7 @@ public class KnowledgeManager {
         typeFilter = filter;
         filterKnowledge();
 
-        for (final KnowledgeListener listener : listeners.getListeners()) {
+        for (final KnowledgeListener listener : listeners) {
             listener.knowledgeAdded(0);
         }
     }

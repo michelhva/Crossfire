@@ -26,6 +26,7 @@ import com.realtime.crossfire.jxclient.server.server.ReceivedPacketListener;
 import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
+import java.util.Iterator;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -53,95 +54,95 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
      * notified.
      */
     @NotNull
-    private final EventListenerList2<CrossfireDrawinfoListener> drawinfoListeners = new EventListenerList2<CrossfireDrawinfoListener>(CrossfireDrawinfoListener.class);
+    private final EventListenerList2<CrossfireDrawinfoListener> drawinfoListeners = new EventListenerList2<CrossfireDrawinfoListener>();
 
     /**
      * The {@link CrossfireDrawextinfoListener CrossfireDrawextinfoListeners}
      * to be notified.
      */
     @NotNull
-    private final EventListenerList2<CrossfireDrawextinfoListener> drawextinfoListeners = new EventListenerList2<CrossfireDrawextinfoListener>(CrossfireDrawextinfoListener.class);
+    private final EventListenerList2<CrossfireDrawextinfoListener> drawextinfoListeners = new EventListenerList2<CrossfireDrawextinfoListener>();
 
     /**
      * The {@link CrossfireQueryListener CrossfireQueryListeners} to be
      * notified.
      */
     @NotNull
-    private final EventListenerList2<CrossfireQueryListener> queryListeners = new EventListenerList2<CrossfireQueryListener>(CrossfireQueryListener.class);
+    private final EventListenerList2<CrossfireQueryListener> queryListeners = new EventListenerList2<CrossfireQueryListener>();
 
     /**
      * The {@link CrossfireMagicmapListener CrossfireMagicmapListeners} to be
      * notified of received magicmap commands.
      */
     @NotNull
-    private final EventListenerList2<CrossfireMagicmapListener> magicmapListeners = new EventListenerList2<CrossfireMagicmapListener>(CrossfireMagicmapListener.class);
+    private final EventListenerList2<CrossfireMagicmapListener> magicmapListeners = new EventListenerList2<CrossfireMagicmapListener>();
 
     /**
      * The {@link CrossfireUpdateItemListener CrossfireUpdateItemListeners} to
      * be notified.
      */
     @NotNull
-    private final EventListenerList2<CrossfireUpdateItemListener> crossfireUpdateItemListeners = new EventListenerList2<CrossfireUpdateItemListener>(CrossfireUpdateItemListener.class);
+    private final EventListenerList2<CrossfireUpdateItemListener> crossfireUpdateItemListeners = new EventListenerList2<CrossfireUpdateItemListener>();
 
     /**
      * The {@link CrossfireTickListener CrossfireTickListeners} to be notified.
      */
     @NotNull
-    private final EventListenerList2<CrossfireTickListener> crossfireTickListeners = new EventListenerList2<CrossfireTickListener>(CrossfireTickListener.class);
+    private final EventListenerList2<CrossfireTickListener> crossfireTickListeners = new EventListenerList2<CrossfireTickListener>();
 
     /**
      * The {@link CrossfireSoundListener CrossfireSoundListeners} to be
      * notified.
      */
     @NotNull
-    private final EventListenerList2<CrossfireSoundListener> crossfireSoundListeners = new EventListenerList2<CrossfireSoundListener>(CrossfireSoundListener.class);
+    private final EventListenerList2<CrossfireSoundListener> crossfireSoundListeners = new EventListenerList2<CrossfireSoundListener>();
 
     /**
      * The {@link CrossfireMusicListener CrossfireMusicListeners} to be
      * notified.
      */
     @NotNull
-    private final EventListenerList2<CrossfireMusicListener> crossfireMusicListeners = new EventListenerList2<CrossfireMusicListener>(CrossfireMusicListener.class);
+    private final EventListenerList2<CrossfireMusicListener> crossfireMusicListeners = new EventListenerList2<CrossfireMusicListener>();
 
     /**
      * The {@link CrossfireComcListener CrossfireComcListeners} to be notified.
      */
     @NotNull
-    private final EventListenerList2<CrossfireComcListener> crossfireComcListeners = new EventListenerList2<CrossfireComcListener>(CrossfireComcListener.class);
+    private final EventListenerList2<CrossfireComcListener> crossfireComcListeners = new EventListenerList2<CrossfireComcListener>();
 
     /**
      * The {@link ReceivedPacketListener ReceivedPacketListeners} to be
      * notified.
      */
     @NotNull
-    private final EventListenerList2<ReceivedPacketListener> receivedPacketListeners = new EventListenerList2<ReceivedPacketListener>(ReceivedPacketListener.class);
+    private final EventListenerList2<ReceivedPacketListener> receivedPacketListeners = new EventListenerList2<ReceivedPacketListener>();
 
     /**
      * The {@link SentReplyListener SentReplyListeners} to be notified.
      */
     @NotNull
-    private final EventListenerList2<SentReplyListener> sentReplyListeners = new EventListenerList2<SentReplyListener>(SentReplyListener.class);
+    private final EventListenerList2<SentReplyListener> sentReplyListeners = new EventListenerList2<SentReplyListener>();
 
     /**
      * The {@link CrossfirePickupListener CrossfirePickupListeners} to be
      * notified.
      */
     @NotNull
-    private final EventListenerList2<CrossfirePickupListener> crossfirePickupListeners = new EventListenerList2<CrossfirePickupListener>(CrossfirePickupListener.class);
+    private final EventListenerList2<CrossfirePickupListener> crossfirePickupListeners = new EventListenerList2<CrossfirePickupListener>();
 
     /**
      * The {@link CrossfireAccountListener CrossfireAccountListeners} to be
      * notified.
      */
     @NotNull
-    private final EventListenerList2<CrossfireAccountListener> crossfireAccountListeners = new EventListenerList2<CrossfireAccountListener>(CrossfireAccountListener.class);
+    private final EventListenerList2<CrossfireAccountListener> crossfireAccountListeners = new EventListenerList2<CrossfireAccountListener>();
 
     /**
      * The {@link CrossfireFailureListener CrossfireFailureListeners} to be
      * notified.
      */
     @NotNull
-    private final EventListenerList2<CrossfireFailureListener> crossfireFailureListeners = new EventListenerList2<CrossfireFailureListener>(CrossfireFailureListener.class);
+    private final EventListenerList2<CrossfireFailureListener> crossfireFailureListeners = new EventListenerList2<CrossfireFailureListener>();
 
     /**
      * Creates a new instance.
@@ -344,51 +345,51 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     }
 
     protected void fireManageAccount() {
-        for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners.getListeners()) {
+        for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
             crossfireAccountListener.manageAccount();
         }
     }
 
     protected void fireStartAccountList(@NotNull final String accountName) {
-        for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners.getListeners()) {
+        for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
             crossfireAccountListener.startAccountList(accountName);
         }
     }
 
     protected void fireAddAccount(@NotNull final CharacterInformation characterInformation) {
-        for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners.getListeners()) {
+        for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
             crossfireAccountListener.addAccount(characterInformation);
         }
     }
 
     protected void fireEndAccountList(final int count) {
-        for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners.getListeners()) {
+        for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
             crossfireAccountListener.endAccountList(count);
         }
     }
 
     protected void fireStartPlaying() {
-        for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners.getListeners()) {
+        for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
             crossfireAccountListener.startPlaying();
         }
     }
 
     protected void fireCommandComcReceived(final int packetNo, final int time) {
-        for (final CrossfireComcListener listener : crossfireComcListeners.getListeners()) {
+        for (final CrossfireComcListener listener : crossfireComcListeners) {
             listener.commandComcReceived(packetNo, time);
         }
     }
 
     protected void fireDelinvReceived(final int tag) {
         model.getItemsManager().delinvReceived(tag);
-        for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners.getListeners()) {
+        for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners) {
             crossfireUpdateItemListener.delinvReceived(tag);
         }
     }
 
     protected void fireDelitemReceived(@NotNull final int[] tags) {
         model.getItemsManager().delitemReceived(tags);
-        for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners.getListeners()) {
+        for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners) {
             crossfireUpdateItemListener.delitemReceived(tags);
         }
     }
@@ -398,7 +399,7 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     }
 
     protected void fireFailure(@NotNull final String command, @NotNull final String arguments) {
-        for (final CrossfireFailureListener crossfireFailureListener : crossfireFailureListeners.getListeners()) {
+        for (final CrossfireFailureListener crossfireFailureListener : crossfireFailureListeners) {
             crossfireFailureListener.failure(command, arguments);
         }
     }
@@ -408,70 +409,70 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
      * displayed failure.
      */
     protected void clearFailure() {
-        for (final CrossfireFailureListener crossfireFailureListener : crossfireFailureListeners.getListeners()) {
+        for (final CrossfireFailureListener crossfireFailureListener : crossfireFailureListeners) {
             crossfireFailureListener.clearFailure();
         }
     }
 
     protected void fireAddItemReceived(final int location, final int tag, final int flags, final int weight, final int faceNum, final String name, final String namePl, final int anim, final int animSpeed, final int nrof, final int type) {
         model.getItemsManager().addItemReceived(location, tag, flags, weight, faceNum, name, namePl, anim, animSpeed, nrof, type);
-        for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners.getListeners()) {
+        for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners) {
             crossfireUpdateItemListener.addItemReceived(location, tag, flags, weight, faceNum, name, namePl, anim, animSpeed, nrof, type);
         }
     }
 
     protected void fireMagicMap() {
-        for (final CrossfireMagicmapListener listener : magicmapListeners.getListeners()) {
+        for (final CrossfireMagicmapListener listener : magicmapListeners) {
             listener.commandMagicmapReceived();
         }
     }
 
     protected void fireMusicReceived(@NotNull final String music) {
-        for (final CrossfireMusicListener listener : crossfireMusicListeners.getListeners()) {
+        for (final CrossfireMusicListener listener : crossfireMusicListeners) {
             listener.commandMusicReceived(music);
         }
     }
 
     protected void firePickupChanged(final int pickupOptions) {
-        for (final CrossfirePickupListener crossfirePickupListener : crossfirePickupListeners.getListeners()) {
+        for (final CrossfirePickupListener crossfirePickupListener : crossfirePickupListeners) {
             crossfirePickupListener.pickupChanged(pickupOptions);
         }
     }
 
     protected void firePlayerReceived(final int tag, final int weight, final int faceNum, @NotNull final String name) {
         model.getItemsManager().playerReceived(tag, weight, faceNum, name);
-        for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners.getListeners()) {
+        for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners) {
             crossfireUpdateItemListener.playerReceived(tag, weight, faceNum, name);
         }
     }
 
     protected void fireCommandQueryReceived(@NotNull final String prompt, final int queryType) {
-        for (final CrossfireQueryListener listener : queryListeners.getListeners()) {
+        for (final CrossfireQueryListener listener : queryListeners) {
             listener.commandQueryReceived(prompt, queryType);
         }
     }
 
     protected void fireCommandSoundReceived(final int x, final int y, final int num, final int type) {
-        for (final CrossfireSoundListener listener : crossfireSoundListeners.getListeners()) {
+        for (final CrossfireSoundListener listener : crossfireSoundListeners) {
             listener.commandSoundReceived(x, y, num, type);
         }
     }
 
     protected void fireCommandSound2Received(final int x, final int y, final int dir, final int volume, final int type, @NotNull final String action, @NotNull final String name) {
-        for (final CrossfireSoundListener listener : crossfireSoundListeners.getListeners()) {
+        for (final CrossfireSoundListener listener : crossfireSoundListeners) {
             listener.commandSound2Received(x, y, dir, volume, type, action, name);
         }
     }
 
     protected void fireTick(final int tickNo) {
-        for (final CrossfireTickListener listener : crossfireTickListeners.getListeners()) {
+        for (final CrossfireTickListener listener : crossfireTickListeners) {
             listener.tick(tickNo);
         }
     }
 
     protected void fireUpditemReceived(final int flags, final int tag, final int valLocation, final int valFlags, final int valWeight, final int valFaceNum, @NotNull final String valName, @NotNull final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof) {
         model.getItemsManager().upditemReceived(flags, tag, valLocation, valFlags, valWeight, valFaceNum, valName, valNamePl, valAnim, valAnimSpeed, valNrof);
-        for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners.getListeners()) {
+        for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners) {
             crossfireUpdateItemListener.upditemReceived(flags, tag, valLocation, valFlags, valWeight, valFaceNum, valName, valNamePl, valAnim, valAnimSpeed, valNrof);
         }
     }
@@ -481,7 +482,7 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
      */
     @Override
     public void drawInfo(@NotNull final String message, final int color) {
-        for (final CrossfireDrawinfoListener listener : drawinfoListeners.getListeners()) {
+        for (final CrossfireDrawinfoListener listener : drawinfoListeners) {
             listener.commandDrawinfoReceived(message, color);
         }
     }
@@ -491,7 +492,7 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
      */
     @Override
     public void drawextinfo(final int color, final int type, final int subtype, final String message) {
-        for (final CrossfireDrawextinfoListener listener : drawextinfoListeners.getListeners()) {
+        for (final CrossfireDrawextinfoListener listener : drawextinfoListeners) {
             listener.commandDrawextinfoReceived(color, type, subtype, message);
         }
     }
@@ -501,13 +502,13 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
      */
     @Override
     public void drawInfoSetDebugMode(final boolean printMessageTypes) {
-        for (final CrossfireDrawextinfoListener listener : drawextinfoListeners.getListeners()) {
+        for (final CrossfireDrawextinfoListener listener : drawextinfoListeners) {
             listener.setDebugMode(printMessageTypes);
         }
     }
 
     protected void fireReplySent() {
-        for (final SentReplyListener sentReplyListener : sentReplyListeners.getListeners()) {
+        for (final SentReplyListener sentReplyListener : sentReplyListeners) {
             sentReplyListener.replySent();
         }
     }
@@ -518,7 +519,7 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
      * @param command the command string
      */
     protected void notifyPacketWatcherListenersEmpty(@NotNull final String command) {
-        for (final ReceivedPacketListener receivedPacketListener : receivedPacketListeners.getListeners()) {
+        for (final ReceivedPacketListener receivedPacketListener : receivedPacketListeners) {
             receivedPacketListener.processEmpty(command);
         }
     }
@@ -531,11 +532,12 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
      * arguments
      */
     protected void notifyPacketWatcherListenersAscii(@NotNull final ByteBuffer packet, final int args) {
-        final ReceivedPacketListener[] listeners = receivedPacketListeners.getListeners();
-        if (listeners.length > 0) {
+        final Iterator<ReceivedPacketListener> listeners = receivedPacketListeners.iterator();
+        if (listeners.hasNext()) {
             final String command = extractCommand(packet);
             if (packet.hasRemaining()) { // XXX: should check payload, not whole command?
-                for (final ReceivedPacketListener receivedPacketListener : listeners) {
+                while(listeners.hasNext()) {
+                    final ReceivedPacketListener receivedPacketListener = listeners.next();
                     packet.position(args);
                     receivedPacketListener.processAscii(command, packet);
                 }
@@ -553,11 +555,12 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
      * arguments
      */
     protected void notifyPacketWatcherListenersShortArray(@NotNull final ByteBuffer packet, final int args) {
-        final ReceivedPacketListener[] listeners = receivedPacketListeners.getListeners();
-        if (listeners.length > 0) {
+        final Iterator<ReceivedPacketListener> listeners = receivedPacketListeners.iterator();
+        if (listeners.hasNext()) {
             final String command = extractCommand(packet);
             if (packet.hasRemaining()) { // XXX: should check payload, not whole command?
-                for (final ReceivedPacketListener receivedPacketListener : listeners) {
+                while (listeners.hasNext()) {
+                    final ReceivedPacketListener receivedPacketListener = listeners.next();
                     packet.position(args);
                     receivedPacketListener.processShortArray(command, packet);
                 }
@@ -575,11 +578,12 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
      * arguments
      */
     protected void notifyPacketWatcherListenersIntArray(@NotNull final ByteBuffer packet, final int args) {
-        final ReceivedPacketListener[] listeners = receivedPacketListeners.getListeners();
-        if (listeners.length > 0) {
+        final Iterator<ReceivedPacketListener> listeners = receivedPacketListeners.iterator();
+        if (listeners.hasNext()) {
             final String command = extractCommand(packet);
             if (packet.hasRemaining()) { // XXX: should check payload, not whole command?
-                for (final ReceivedPacketListener receivedPacketListener : listeners) {
+                while (listeners.hasNext()) {
+                    final ReceivedPacketListener receivedPacketListener = listeners.next();
                     packet.position(args);
                     receivedPacketListener.processIntArray(command, packet);
                 }
@@ -597,11 +601,12 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
      * arguments
      */
     protected void notifyPacketWatcherListenersShortInt(@NotNull final ByteBuffer packet, final int args) {
-        final ReceivedPacketListener[] listeners = receivedPacketListeners.getListeners();
-        if (listeners.length > 0) {
+        final Iterator<ReceivedPacketListener> listeners = receivedPacketListeners.iterator();
+        if (listeners.hasNext()) {
             final String command = extractCommand(packet);
             if (packet.hasRemaining()) { // XXX: should check payload, not whole command?
-                for (final ReceivedPacketListener receivedPacketListener : listeners) {
+                while (listeners.hasNext()) {
+                    final ReceivedPacketListener receivedPacketListener = listeners.next();
                     packet.position(args);
                     receivedPacketListener.processShortInt(command, packet);
                 }
@@ -619,11 +624,12 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
      * arguments
      */
     protected void notifyPacketWatcherListenersMixed(@NotNull final ByteBuffer packet, final int args) {
-        final ReceivedPacketListener[] listeners = receivedPacketListeners.getListeners();
-        if (listeners.length > 0) {
+        final Iterator<ReceivedPacketListener> listeners = receivedPacketListeners.iterator();
+        if (listeners.hasNext()) {
             final String command = extractCommand(packet);
             if (packet.hasRemaining()) { // XXX: should check payload, not whole command?
-                for (final ReceivedPacketListener receivedPacketListener : listeners) {
+                while (listeners.hasNext()) {
+                    final ReceivedPacketListener receivedPacketListener = listeners.next();
                     packet.position(args);
                     receivedPacketListener.processMixed(command, packet);
                 }
@@ -641,11 +647,8 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
      * stat}
      */
     protected void notifyPacketWatcherListenersStats(final int stat, @NotNull final Object... args) {
-        final ReceivedPacketListener[] listeners = receivedPacketListeners.getListeners();
-        if (listeners.length > 0) {
-            for (final ReceivedPacketListener receivedPacketListener : listeners) {
-                receivedPacketListener.processStats("stats", stat, args);
-            }
+        for (final ReceivedPacketListener receivedPacketListener : receivedPacketListeners) {
+            receivedPacketListener.processStats("stats", stat, args);
         }
     }
 
@@ -657,11 +660,12 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
      * arguments
      */
     protected void notifyPacketWatcherListenersNoData(@NotNull final ByteBuffer packet, final int args) {
-        final ReceivedPacketListener[] listeners = receivedPacketListeners.getListeners();
-        if (listeners.length > 0) {
+        final Iterator<ReceivedPacketListener> listeners = receivedPacketListeners.iterator();
+        if (listeners.hasNext()) {
             final String command = extractCommand(packet);
             if (packet.hasRemaining()) { // XXX: should check payload, not whole command?
-                for (final ReceivedPacketListener receivedPacketListener : listeners) {
+                while (listeners.hasNext()) {
+                    final ReceivedPacketListener receivedPacketListener = listeners.next();
                     packet.position(args);
                     receivedPacketListener.processNoData(command, packet);
                 }
@@ -706,7 +710,7 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
         model.getSpellsManager().selectCharacter();
         model.getQuestsManager().selectCharacter();
         model.getKnowledgeManager().selectCharacter();
-        for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners.getListeners()) {
+        for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
             crossfireAccountListener.selectCharacter(accountName, characterName);
         }
     }

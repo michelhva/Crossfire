@@ -37,7 +37,7 @@ public abstract class AbstractFacesManager implements FacesManager {
      * changed faces.
      */
     @NotNull
-    private final EventListenerList2<FacesManagerListener> facesManagerListeners = new EventListenerList2<FacesManagerListener>(FacesManagerListener.class);
+    private final EventListenerList2<FacesManagerListener> facesManagerListeners = new EventListenerList2<FacesManagerListener>();
 
     /**
      * The {@link FaceCache} instance used to look up in-memory faces.
@@ -75,7 +75,7 @@ public abstract class AbstractFacesManager implements FacesManager {
      * @param face the face
      */
     protected void fireFaceUpdated(@NotNull final Face face) {
-        for (final FacesManagerListener facesManagerListener : facesManagerListeners.getListeners()) {
+        for (final FacesManagerListener facesManagerListener : facesManagerListeners) {
             facesManagerListener.faceUpdated(face);
         }
     }

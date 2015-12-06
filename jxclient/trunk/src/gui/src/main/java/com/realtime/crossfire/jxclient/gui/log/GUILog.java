@@ -61,7 +61,7 @@ public abstract class GUILog extends AbstractGUIElement implements GUIScrollable
      * All listeners.
      */
     @NotNull
-    private final EventListenerList2<ScrollableListener> listeners = new EventListenerList2<ScrollableListener>(ScrollableListener.class);
+    private final EventListenerList2<ScrollableListener> listeners = new EventListenerList2<ScrollableListener>();
 
     /**
      * The {@link Buffer} containing all received text messages.
@@ -98,7 +98,7 @@ public abstract class GUILog extends AbstractGUIElement implements GUIScrollable
         @Override
         public void stateChanged() {
             setChanged();
-            for (final ScrollableListener listener : listeners.getListeners()) {
+            for (final ScrollableListener listener : listeners) {
                 listener.setRange(0, buffer.getTotalHeight(), renderStateManager.getScrollPos(), getHeight());
             }
         }

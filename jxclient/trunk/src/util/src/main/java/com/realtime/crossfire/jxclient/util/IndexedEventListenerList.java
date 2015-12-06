@@ -29,24 +29,10 @@ import org.jetbrains.annotations.NotNull;
 public class IndexedEventListenerList<T extends EventListener> {
 
     /**
-     * The listener class.
-     */
-    @NotNull
-    private final Class<T> class_;
-
-    /**
      * The registered listeners to be notified about changes.
      */
     @NotNull
     private final List<EventListenerList2<T>> locationListeners = new ArrayList<EventListenerList2<T>>();
-
-    /**
-     * Creates a new instance.
-     * @param class_ the listener class
-     */
-    public IndexedEventListenerList(@NotNull final Class<T> class_) {
-        this.class_ = class_;
-    }
 
     /**
      * Adds a listener.
@@ -67,13 +53,13 @@ public class IndexedEventListenerList<T extends EventListener> {
     }
 
     /**
-     * Returns an array of all the listeners.
+     * Returns all the listeners by index.
      * @param index the listener's index
      * @return all the listeners
      */
     @NotNull
-    public T[] getListeners(final int index) {
-        return getLocationListeners(index).getListeners();
+    public Iterable<T> getListeners(final int index) {
+        return getLocationListeners(index);
     }
 
     @NotNull
@@ -86,7 +72,7 @@ public class IndexedEventListenerList<T extends EventListener> {
                 return locationListeners.get(index);
             } catch (final IndexOutOfBoundsException ignored) {
                 for (int i = locationListeners.size(); i <= index; i++) {
-                    locationListeners.add(new EventListenerList2<T>(class_));
+                    locationListeners.add(new EventListenerList2<T>());
                 }
                 return locationListeners.get(index);
             }

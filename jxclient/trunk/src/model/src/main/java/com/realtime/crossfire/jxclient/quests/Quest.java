@@ -33,7 +33,7 @@ public class Quest {
      * The {@link QuestListener QuestListeners} to be notified of changes.
      */
     @NotNull
-    private final EventListenerList2<QuestListener> listeners = new EventListenerList2<QuestListener>(QuestListener.class);
+    private final EventListenerList2<QuestListener> listeners = new EventListenerList2<QuestListener>();
 
     /**
      * Quest internal code.
@@ -166,7 +166,7 @@ public class Quest {
      * Notifies all listeners.
      */
     private void fireChanged() {
-        for (final QuestListener listener : listeners.getListeners()) {
+        for (final QuestListener listener : listeners) {
             listener.questChanged();
         }
     }

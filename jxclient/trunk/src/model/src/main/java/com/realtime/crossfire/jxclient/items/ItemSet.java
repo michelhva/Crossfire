@@ -77,14 +77,14 @@ public class ItemSet {
      * changes.
      */
     @NotNull
-    private final EventListenerList2<ItemSetListener> itemSetListeners = new EventListenerList2<ItemSetListener>(ItemSetListener.class);
+    private final EventListenerList2<ItemSetListener> itemSetListeners = new EventListenerList2<ItemSetListener>();
 
     /**
      * The registered {@link ItemListener ItemListeners} to be notified about
      * changes.
      */
     @NotNull
-    private final HashedEventListenerList<ItemListener> itemListeners = new HashedEventListenerList<ItemListener>(ItemListener.class);
+    private final HashedEventListenerList<ItemListener> itemListeners = new HashedEventListenerList<ItemListener>();
 
     /**
      * Adds an {@link ItemSetListener} to be notified about changes.
@@ -160,7 +160,7 @@ public class ItemSet {
                 return -1;
             }
 
-            for (final ItemSetListener listener : itemSetListeners.getListeners()) {
+            for (final ItemSetListener listener : itemSetListeners) {
                 listener.itemRemoved(item);
             }
 
@@ -184,7 +184,7 @@ public class ItemSet {
             }
 
             if (notifyListeners) {
-                for (final ItemSetListener listener : itemSetListeners.getListeners()) {
+                for (final ItemSetListener listener : itemSetListeners) {
                     listener.itemRemoved(item);
                 }
             }
@@ -242,7 +242,7 @@ public class ItemSet {
         list.add(item);
 
         if (notifyListeners) {
-            for (final ItemSetListener listener : itemSetListeners.getListeners()) {
+            for (final ItemSetListener listener : itemSetListeners) {
                 listener.itemAdded(item);
             }
         }
@@ -298,7 +298,7 @@ public class ItemSet {
             }
 
             this.player = player;
-            for (final ItemSetListener listener : itemSetListeners.getListeners()) {
+            for (final ItemSetListener listener : itemSetListeners) {
                 listener.playerChanged(player);
             }
         }
@@ -375,12 +375,12 @@ public class ItemSet {
                 item.setLocation(valLocation);
                 addItem(item, false);
 
-                for (final ItemSetListener listener : itemSetListeners.getListeners()) {
+                for (final ItemSetListener listener : itemSetListeners) {
                     listener.itemMoved(item);
                 }
             }
             if ((flags&~UpdItem.UPD_LOCATION) != 0) {
-                for (final ItemSetListener listener : itemSetListeners.getListeners()) {
+                for (final ItemSetListener listener : itemSetListeners) {
                     listener.itemChanged(item);
                 }
                 for (final ItemListener itemListener : itemListeners.getListeners(tag)) {
@@ -424,7 +424,7 @@ public class ItemSet {
         }
 
         this.openContainerFloor = openContainerFloor;
-        for (final ItemSetListener listener : itemSetListeners.getListeners()) {
+        for (final ItemSetListener listener : itemSetListeners) {
             listener.openContainerChanged(openContainerFloor);
         }
     }
