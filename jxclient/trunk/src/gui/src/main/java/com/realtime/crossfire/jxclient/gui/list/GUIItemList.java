@@ -32,6 +32,7 @@ import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.items.LocationsListener;
 import java.awt.event.MouseEvent;
 import javax.swing.JList;
+import javax.swing.SwingUtilities;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -66,7 +67,14 @@ public abstract class GUIItemList extends GUIList {
 
         @Override
         public void locationsModified(@NotNull final Integer[] changedSlots) {
-            rebuildList(changedSlots);
+            SwingUtilities.invokeLater(new Runnable() {
+
+                @Override
+                public void run() {
+                    rebuildList(changedSlots);
+                }
+
+            });
         }
 
     };

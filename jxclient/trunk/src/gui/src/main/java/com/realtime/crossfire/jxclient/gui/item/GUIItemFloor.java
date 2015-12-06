@@ -33,6 +33,7 @@ import com.realtime.crossfire.jxclient.items.LocationListener;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import java.awt.Image;
+import javax.swing.SwingUtilities;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -108,6 +109,19 @@ public class GUIItemFloor extends GUIItemItem {
 
         @Override
         public void locationChanged() {
+            SwingUtilities.invokeLater(locationListenerEdt);
+        }
+
+    };
+
+    /**
+     * Called from {@link #locationListener} but runs on the EDT.
+     */
+    @NotNull
+    private final Runnable locationListenerEdt = new Runnable() {
+
+        @Override
+        public void run() {
             setIndex(index, true);
         }
 

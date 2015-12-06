@@ -21,8 +21,6 @@
 
 package com.realtime.crossfire.jxclient.items;
 
-import java.lang.reflect.InvocationTargetException;
-import javax.swing.SwingUtilities;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -107,11 +105,7 @@ public class EventScheduler {
                     }
 
                     if (fireEvent) {
-                        try {
-                            SwingUtilities.invokeAndWait(eventSchedulerCallback);
-                        } catch (final InvocationTargetException ex) {
-                            throw new AssertionError(ex);
-                        }
+                        eventSchedulerCallback.run();
                         nextAction = 0;
                         nextActionNotBefore = System.currentTimeMillis()+afterEventDelay;
                     }
