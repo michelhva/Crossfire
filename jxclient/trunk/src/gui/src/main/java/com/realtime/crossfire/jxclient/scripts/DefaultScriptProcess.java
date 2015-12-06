@@ -136,7 +136,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
      * The {@link ScriptProcessListener ScriptProcessListeners} to notify.
      */
     @NotNull
-    private final EventListenerList2<ScriptProcessListener> scriptProcessListeners = new EventListenerList2<ScriptProcessListener>(ScriptProcessListener.class);
+    private final EventListenerList2<ScriptProcessListener> scriptProcessListeners = new EventListenerList2<ScriptProcessListener>();
 
     /**
      * The {@link PacketWatcher} to process "watch" commands.
@@ -290,7 +290,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
                 crossfireServerConnection.removeClientSocketListener(clientSocketListener);
             }
             packetWatcher.destroy();
-            for (final ScriptProcessListener scriptProcessListener : scriptProcessListeners.getListeners()) {
+            for (final ScriptProcessListener scriptProcessListener : scriptProcessListeners) {
                 scriptProcessListener.scriptTerminated(result);
             }
         }

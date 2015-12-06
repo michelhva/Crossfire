@@ -152,7 +152,7 @@ public class CfItem {
     /**
      * The listeners to be notified.
      */
-    private final EventListenerList2<CfItemListener> listeners = new EventListenerList2<CfItemListener>(CfItemListener.class);
+    private final EventListenerList2<CfItemListener> listeners = new EventListenerList2<CfItemListener>();
 
     /**
      * Creates a new instance.
@@ -453,7 +453,7 @@ public class CfItem {
         }
         modified = false;
 
-        for (final CfItemListener listener : listeners.getListeners()) {
+        for (final CfItemListener listener : listeners) {
             listener.itemModified();
         }
     }

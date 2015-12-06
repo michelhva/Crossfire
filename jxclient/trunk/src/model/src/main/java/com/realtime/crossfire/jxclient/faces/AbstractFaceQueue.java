@@ -36,7 +36,7 @@ public abstract class AbstractFaceQueue implements FaceQueue {
      * The registered {@link FaceQueueListener FaceQueueListeners}.
      */
     @NotNull
-    private final EventListenerList2<FaceQueueListener> faceQueueListeners = new EventListenerList2<FaceQueueListener>(FaceQueueListener.class);
+    private final EventListenerList2<FaceQueueListener> faceQueueListeners = new EventListenerList2<FaceQueueListener>();
 
     /**
      * {@inheritDoc}
@@ -61,7 +61,7 @@ public abstract class AbstractFaceQueue implements FaceQueue {
      * @param faceImages the face images instance that has been loaded
      */
     protected void fireFaceLoaded(@NotNull final Face face, @NotNull final FaceImages faceImages) {
-        for (final FaceQueueListener faceQueueListener : faceQueueListeners.getListeners()) {
+        for (final FaceQueueListener faceQueueListener : faceQueueListeners) {
             faceQueueListener.faceLoaded(face, faceImages);
         }
     }
@@ -71,7 +71,7 @@ public abstract class AbstractFaceQueue implements FaceQueue {
      * @param face the face that has failed to load
      */
     protected void fireFaceFailed(@NotNull final Face face) {
-        for (final FaceQueueListener faceQueueListener : faceQueueListeners.getListeners()) {
+        for (final FaceQueueListener faceQueueListener : faceQueueListeners) {
             faceQueueListener.faceFailed(face);
         }
     }

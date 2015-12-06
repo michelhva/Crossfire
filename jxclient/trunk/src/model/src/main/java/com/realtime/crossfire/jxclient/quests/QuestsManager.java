@@ -48,7 +48,7 @@ public class QuestsManager {
      * changes.
      */
     @NotNull
-    private final EventListenerList2<QuestsManagerListener> listeners = new EventListenerList2<QuestsManagerListener>(QuestsManagerListener.class);
+    private final EventListenerList2<QuestsManagerListener> listeners = new EventListenerList2<QuestsManagerListener>();
 
     /**
      * A {@link Comparator} to compare {@link Quest} instances by title and
@@ -149,7 +149,7 @@ public class QuestsManager {
             quest.setStep(end, description);
         }
 
-        for (final QuestsManagerListener listener : listeners.getListeners()) {
+        for (final QuestsManagerListener listener : listeners) {
             listener.questAdded(index);
         }
     }

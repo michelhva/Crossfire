@@ -29,24 +29,10 @@ import org.jetbrains.annotations.NotNull;
 public class HashedEventListenerList<T extends EventListener> {
 
     /**
-     * The listener class.
-     */
-    @NotNull
-    private final Class<T> class_;
-
-    /**
      * The registered listener to be notified about changes.
      */
     @NotNull
     private final Map<Integer, EventListenerList2<T>> locationListeners = new HashMap<Integer, EventListenerList2<T>>();
-
-    /**
-     * Creates a new instance.
-     * @param class_ the listener class
-     */
-    public HashedEventListenerList(@NotNull final Class<T> class_) {
-        this.class_ = class_;
-    }
 
     /**
      * Adds a listener.
@@ -72,8 +58,8 @@ public class HashedEventListenerList<T extends EventListener> {
      * @return all the listeners
      */
     @NotNull
-    public T[] getListeners(final int index) {
-        return getLocationListeners(index).getListeners();
+    public Iterable<T> getListeners(final int index) {
+        return getLocationListeners(index);
     }
 
     @NotNull
@@ -84,7 +70,7 @@ public class HashedEventListenerList<T extends EventListener> {
                 return existingEventListenerList;
             }
 
-            final EventListenerList2<T> eventListenerList = new EventListenerList2<T>(class_);
+            final EventListenerList2<T> eventListenerList = new EventListenerList2<T>();
             locationListeners.put(index, eventListenerList);
             return eventListenerList;
         }

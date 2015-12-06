@@ -22,16 +22,18 @@
 package com.realtime.crossfire.jxclient.util;
 
 import java.io.Serializable;
+import java.util.Collections;
 import java.util.EventListener;
-import javax.swing.event.EventListenerList;
+import java.util.Iterator;
+import java.util.concurrent.CopyOnWriteArrayList;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Type-safe version of {@link EventListenerList}.
+ * A list of event listeners.
  * @param <T> the type of the listeners
  * @author Andreas Kirschbaum
  */
-public class EventListenerList2<T extends EventListener> implements Serializable {
+public class EventListenerList2<T extends EventListener> implements Iterable<T>, Serializable {
 
     /**
      * The serial version UID.
@@ -39,43 +41,17 @@ public class EventListenerList2<T extends EventListener> implements Serializable
     private static final long serialVersionUID = 1L;
 
     /**
-     * The listener's type.
+     * The {@link CopyOnWriteArrayList} holding all listener.
      */
     @NotNull
-    private final Class<T> t;
-
-    /**
-     * The {@link EventListenerList} flor delegation.
-     */
-    @NotNull
-    private final EventListenerList eventListenerList = new EventListenerList();
-
-    /**
-     * Creates a new instance.
-     * @param t the listener's type
-     */
-    //Assume the constructor call has passed the right type; can't use Class<T>
-    //here since class literals do not work for parametrized types.
-    @SuppressWarnings("unchecked")
-    public EventListenerList2(@NotNull final Class<? extends EventListener> t) {
-        this.t = (Class<T>)t;
-    }
-
-    /**
-     * Returns an array of all the listeners.
-     * @return all the listeners
-     */
-    @NotNull
-    public T[] getListeners() {
-        return eventListenerList.getListeners(t);
-    }
+    private final CopyOnWriteArrayList<T> eventListenerList = new CopyOnWriteArrayList<T>();
 
     /**
      * Adds a listener.
      * @param listener the listener
      */
     public void add(@NotNull final T listener) {
-        eventListenerList.add(t, listener);
+        eventListenerList.add(listener);
     }
 
     /**
@@ -83,7 +59,7 @@ public class EventListenerList2<T extends EventListener> implements Serializable
      * @param listener the listener
      */
     public void remove(@NotNull final T listener) {
-        eventListenerList.remove(t, listener);
+        eventListenerList.remove(listener);
     }
 
     /**
@@ -93,6 +69,15 @@ public class EventListenerList2<T extends EventListener> implements Serializable
     @Override
     public String toString() {
         return eventListenerList.toString();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    public Iterator<T> iterator() {
+        return Collections.unmodifiableList(eventListenerList).iterator();
     }
 
 }

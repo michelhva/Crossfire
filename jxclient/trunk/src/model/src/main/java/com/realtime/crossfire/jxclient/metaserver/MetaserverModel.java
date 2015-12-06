@@ -61,7 +61,7 @@ public class MetaserverModel {
      * All registered metaserver listeners.
      */
     @NotNull
-    private final EventListenerList2<MetaserverListener> metaserverListeners = new EventListenerList2<MetaserverListener>(MetaserverListener.class);
+    private final EventListenerList2<MetaserverListener> metaserverListeners = new EventListenerList2<MetaserverListener>();
 
     /**
      * All registered metaserver entry listeners. Maps entry index to list of
@@ -148,12 +148,12 @@ public class MetaserverModel {
         }
         metaListPending.clear();
 
-        for (final MetaserverListener metaserverListener : metaserverListeners.getListeners()) {
+        for (final MetaserverListener metaserverListener : metaserverListeners) {
             metaserverListener.numberOfEntriesChanged();
         }
 
         for (int i = 0, iMax = Math.max(oldMetaListSize, newMetaListSize); i < iMax; i++) {
-            for (final MetaserverEntryListener metaserverEntryListener : getMetaserverEntryListeners(i).getListeners()) {
+            for (final MetaserverEntryListener metaserverEntryListener : getMetaserverEntryListeners(i)) {
                 metaserverEntryListener.entryChanged();
             }
         }
@@ -206,7 +206,7 @@ public class MetaserverModel {
                 return existingListeners;
             }
 
-            final EventListenerList2<MetaserverEntryListener> newListeners = new EventListenerList2<MetaserverEntryListener>(MetaserverEntryListener.class);
+            final EventListenerList2<MetaserverEntryListener> newListeners = new EventListenerList2<MetaserverEntryListener>();
             metaserverEntryListeners.put(index, newListeners);
             return newListeners;
         }

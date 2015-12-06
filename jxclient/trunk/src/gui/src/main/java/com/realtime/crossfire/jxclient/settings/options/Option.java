@@ -35,13 +35,13 @@ public abstract class Option {
      * The listeners to be notified.
      */
     @NotNull
-    private final EventListenerList2<OptionListener> listeners = new EventListenerList2<OptionListener>(OptionListener.class);
+    private final EventListenerList2<OptionListener> listeners = new EventListenerList2<OptionListener>();
 
     /**
      * Notifies all listeners that the state has changed.
      */
     protected void fireStateChangedEvent() {
-        for (final OptionListener listener : listeners.getListeners()) {
+        for (final OptionListener listener : listeners) {
             listener.stateChanged();
         }
     }

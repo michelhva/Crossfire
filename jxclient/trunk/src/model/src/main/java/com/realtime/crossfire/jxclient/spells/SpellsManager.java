@@ -92,7 +92,7 @@ public class SpellsManager implements Iterable<Spell> {
      * changes.
      */
     @NotNull
-    private final EventListenerList2<SpellsManagerListener> listeners = new EventListenerList2<SpellsManagerListener>(SpellsManagerListener.class);
+    private final EventListenerList2<SpellsManagerListener> listeners = new EventListenerList2<SpellsManagerListener>();
 
     /**
      * A {@link Comparator} to compare {@link Spell} instances by spell path and
@@ -249,7 +249,7 @@ public class SpellsManager implements Iterable<Spell> {
         rebuildSkills();
         filterSpells();
 
-        for (final SpellsManagerListener listener : listeners.getListeners()) {
+        for (final SpellsManagerListener listener : listeners) {
             listener.spellAdded(index);
         }
     }
@@ -298,7 +298,7 @@ public class SpellsManager implements Iterable<Spell> {
             unknownSpells.put(spell.getName(), spell);
         }
 
-        for (final SpellsManagerListener listener : listeners.getListeners()) {
+        for (final SpellsManagerListener listener : listeners) {
             listener.spellRemoved(index);
         }
 
@@ -401,7 +401,7 @@ public class SpellsManager implements Iterable<Spell> {
         skillFilter = id;
         filterSpells();
 
-        for (final SpellsManagerListener listener : listeners.getListeners()) {
+        for (final SpellsManagerListener listener : listeners) {
             listener.spellAdded(0);
         }
     }

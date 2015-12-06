@@ -45,7 +45,7 @@ public class Spell {
      * The {@link SpellListener SpellListeners} to be notified of changes.
      */
     @NotNull
-    private final EventListenerList2<SpellListener> listeners = new EventListenerList2<SpellListener>(SpellListener.class);
+    private final EventListenerList2<SpellListener> listeners = new EventListenerList2<SpellListener>();
 
     /**
      * The face number.
@@ -413,7 +413,7 @@ public class Spell {
      * Notifies all listeners.
      */
     private void fireChanged() {
-        for (final SpellListener listener : listeners.getListeners()) {
+        for (final SpellListener listener : listeners) {
             listener.spellChanged();
         }
     }

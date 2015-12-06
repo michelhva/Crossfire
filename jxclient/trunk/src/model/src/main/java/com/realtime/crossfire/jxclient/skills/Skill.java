@@ -35,7 +35,7 @@ public class Skill {
      * The listeners to inform of changes.
      */
     @NotNull
-    private final EventListenerList2<SkillListener> listeners = new EventListenerList2<SkillListener>(SkillListener.class);
+    private final EventListenerList2<SkillListener> listeners = new EventListenerList2<SkillListener>();
 
     /**
      * The skill name.
@@ -152,7 +152,7 @@ public class Skill {
      * Notifies all listeners about a gained skill.
      */
     private void fireAddSkill() {
-        for (final SkillListener listener : listeners.getListeners()) {
+        for (final SkillListener listener : listeners) {
             listener.gainedSkill();
         }
     }
@@ -161,7 +161,7 @@ public class Skill {
      * Notifies all listeners about a lost attribute.
      */
     private void fireDelSkill() {
-        for (final SkillListener listener : listeners.getListeners()) {
+        for (final SkillListener listener : listeners) {
             listener.lostSkill();
         }
     }
@@ -170,7 +170,7 @@ public class Skill {
      * Notifies all listeners about an updated attribute.
      */
     private void fireUpdSkill() {
-        for (final SkillListener listener : listeners.getListeners()) {
+        for (final SkillListener listener : listeners) {
             listener.changedSkill();
         }
     }

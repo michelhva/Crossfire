@@ -35,7 +35,7 @@ public class KnowledgeItem {
      * changes.
      */
     @NotNull
-    private final EventListenerList2<KnowledgeItemListener> listeners = new EventListenerList2<KnowledgeItemListener>(KnowledgeItemListener.class);
+    private final EventListenerList2<KnowledgeItemListener> listeners = new EventListenerList2<KnowledgeItemListener>();
 
     /**
      * The knowledge identifier.
@@ -120,7 +120,7 @@ public class KnowledgeItem {
      * Notifies all listeners.
      */
     private void fireChanged() {
-        for (final KnowledgeItemListener listener : listeners.getListeners()) {
+        for (final KnowledgeItemListener listener : listeners) {
             listener.knowledgeChanged();
         }
     }

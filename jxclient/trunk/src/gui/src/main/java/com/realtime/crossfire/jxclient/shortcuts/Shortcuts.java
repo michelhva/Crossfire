@@ -61,7 +61,7 @@ public class Shortcuts implements Iterable<Shortcut> {
      * The listeners to be notified.
      */
     @NotNull
-    private final EventListenerList2<ShortcutsListener> listeners = new EventListenerList2<ShortcutsListener>(ShortcutsListener.class);
+    private final EventListenerList2<ShortcutsListener> listeners = new EventListenerList2<ShortcutsListener>();
 
     /**
      * The command queue for executing commands.
@@ -96,7 +96,7 @@ public class Shortcuts implements Iterable<Shortcut> {
         for (int i = 0; i < shortcuts.size(); i++) {
             final Shortcut shortcut = shortcuts.get(i);
             if (shortcut != null) {
-                for (final ShortcutsListener listener : listeners.getListeners()) {
+                for (final ShortcutsListener listener : listeners) {
                     listener.shortcutRemoved(i, shortcut);
                 }
                 shortcut.dispose();
@@ -132,7 +132,7 @@ public class Shortcuts implements Iterable<Shortcut> {
 
         final Shortcut oldShortcut = shortcuts.get(index);
         if (oldShortcut != null) {
-            for (final ShortcutsListener listener : listeners.getListeners()) {
+            for (final ShortcutsListener listener : listeners) {
                 listener.shortcutRemoved(index, oldShortcut);
             }
             oldShortcut.dispose();
@@ -140,7 +140,7 @@ public class Shortcuts implements Iterable<Shortcut> {
         shortcuts.set(index, shortcut);
         modified = true;
         if (shortcut != null) {
-            for (final ShortcutsListener listener : listeners.getListeners()) {
+            for (final ShortcutsListener listener : listeners) {
                 listener.shortcutAdded(index, shortcut);
             }
         }

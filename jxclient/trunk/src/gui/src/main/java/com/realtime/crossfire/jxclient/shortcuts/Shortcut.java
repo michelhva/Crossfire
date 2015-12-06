@@ -35,7 +35,7 @@ public abstract class Shortcut {
      * The listeners to be notified.
      */
     @NotNull
-    private final EventListenerList2<ShortcutListener> listeners = new EventListenerList2<ShortcutListener>(ShortcutListener.class);
+    private final EventListenerList2<ShortcutListener> listeners = new EventListenerList2<ShortcutListener>();
 
     /**
      * Releases all allocated resources.
@@ -67,7 +67,7 @@ public abstract class Shortcut {
      * Notifies all listeners about a modification.
      */
     protected void fireModifiedEvent() {
-        for (final ShortcutListener listener : listeners.getListeners()) {
+        for (final ShortcutListener listener : listeners) {
             listener.shortcutModified();
         }
     }

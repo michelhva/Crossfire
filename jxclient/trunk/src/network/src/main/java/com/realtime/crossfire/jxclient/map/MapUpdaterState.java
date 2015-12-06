@@ -86,25 +86,25 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
      * The listeners to notify about changed map squares.
      */
     @NotNull
-    private final EventListenerList2<MapListener> mapListeners = new EventListenerList2<MapListener>(MapListener.class);
+    private final EventListenerList2<MapListener> mapListeners = new EventListenerList2<MapListener>();
 
     /**
      * The listeners to notify about cleared maps.
      */
     @NotNull
-    private final EventListenerList2<NewmapListener> newmapListeners = new EventListenerList2<NewmapListener>(NewmapListener.class);
+    private final EventListenerList2<NewmapListener> newmapListeners = new EventListenerList2<NewmapListener>();
 
     /**
      * The listeners to notify about scrolled maps.
      */
     @NotNull
-    private final EventListenerList2<MapScrollListener> mapScrollListeners = new EventListenerList2<MapScrollListener>(MapScrollListener.class);
+    private final EventListenerList2<MapScrollListener> mapScrollListeners = new EventListenerList2<MapScrollListener>();
 
     /**
      * The {@link MapSizeListener MapSizeListeners} to be notified.
      */
     @NotNull
-    private final EventListenerList2<MapSizeListener> mapSizeListeners = new EventListenerList2<MapSizeListener>(MapSizeListener.class);
+    private final EventListenerList2<MapSizeListener> mapSizeListeners = new EventListenerList2<MapSizeListener>();
 
     /**
      * The animations in the visible map area.
@@ -339,7 +339,7 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
                 return;
             }
 
-            for (final MapListener listener : mapListeners.getListeners()) {
+            for (final MapListener listener : mapListeners) {
                 listener.mapChanged(map, squares);
             }
         }
@@ -365,7 +365,7 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
             }
         }
 
-        for (final MapScrollListener mapscrollListener : mapScrollListeners.getListeners()) {
+        for (final MapScrollListener mapscrollListener : mapScrollListeners) {
             mapscrollListener.mapScrolled(dx, dy);
         }
     }
@@ -401,12 +401,12 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
             visibleAnimations.setMapSize(mapWidth, mapHeight);
 
             if (changed) {
-                for (final MapSizeListener listener : mapSizeListeners.getListeners()) {
+                for (final MapSizeListener listener : mapSizeListeners) {
                     listener.mapSizeChanged(mapWidth, mapHeight);
                 }
             }
 
-            for (final NewmapListener listener : newmapListeners.getListeners()) {
+            for (final NewmapListener listener : newmapListeners) {
                 listener.commandNewmapReceived();
             }
         }
