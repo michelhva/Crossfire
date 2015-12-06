@@ -9,7 +9,7 @@ enter_x 29
 enter_y 112
 msg
 Created:  2003-11-09 mikeeusa
-Modified: 2014-09-17 Rick Tanner
+Modified: 2015-11-28 Kevin Zheng
 endmsg
 outdoor 1
 end
@@ -70798,7 +70798,7 @@ x 55
 y 134
 end
 arch house_2
-name_pl Random House
+name random house
 slaying /!
 msg
 layoutstyle onion
@@ -74131,7 +74131,7 @@ x 57
 y 131
 end
 arch house_2
-name_pl Random House
+name random house
 slaying /!
 msg
 layoutstyle onion
@@ -75922,7 +75922,7 @@ x 58
 y 137
 end
 arch house_2
-name_pl Random House
+name random house
 slaying /!
 msg
 layoutstyle onion
@@ -84882,11 +84882,6 @@ face fog.111
 x 63
 y 132
 end
-arch barrack_up
-name Guest House
-x 63
-y 132
-end
 arch blocked
 name nothing
 x 63
@@ -84900,7 +84895,7 @@ face fog.111
 x 63
 y 133
 end
-arch barrack_long
+arch house_largish
 name Guest House
 slaying cwdcguestofmarquis1
 hp 43
@@ -86962,6 +86957,7 @@ x 64
 y 136
 end
 arch house_2
+name random house
 slaying /!
 msg
 layoutstyle onion
