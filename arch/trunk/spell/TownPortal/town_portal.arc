@@ -26,4 +26,6 @@ no_pick 1
 animation town_portal
 exp 1
 client_type 25011
+anim_speed 3
+client_anim_random 1
 end
