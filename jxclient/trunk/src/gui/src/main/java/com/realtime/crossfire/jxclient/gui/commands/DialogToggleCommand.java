@@ -22,7 +22,6 @@
 package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.gui.commandlist.GUICommand;
-import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.textinput.CommandCallback;
 import org.jetbrains.annotations.NotNull;
 
@@ -42,14 +41,14 @@ public class DialogToggleCommand implements GUICommand {
      * The dialog to toggle.
      */
     @NotNull
-    private final Gui dialog;
+    private final String dialog;
 
     /**
      * Creates a new instance.
      * @param commandCallback the command callback to use
      * @param dialog the dialog to toggle
      */
-    public DialogToggleCommand(@NotNull final CommandCallback commandCallback, @NotNull final Gui dialog) {
+    public DialogToggleCommand(@NotNull final CommandCallback commandCallback, @NotNull final String dialog) {
         this.commandCallback = commandCallback;
         this.dialog = dialog;
     }

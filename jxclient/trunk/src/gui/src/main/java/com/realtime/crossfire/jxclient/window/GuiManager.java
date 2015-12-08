@@ -48,6 +48,8 @@ import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
 import com.realtime.crossfire.jxclient.util.SwingUtilities2;
+import java.util.HashMap;
+import java.util.Map;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -149,6 +151,12 @@ public class GuiManager {
      */
     @NotNull
     private final CrossfireServerConnection server;
+
+    /**
+     * Maps dialog name to dialog instance.
+     */
+    @NotNull
+    private final Map<String, Gui> dialogs = new HashMap<String, Gui>();
 
     /**
      * The {@link CrossfireDrawextinfoListener} attached to {@link #server}.
@@ -421,6 +429,15 @@ public class GuiManager {
     }
 
     /**
+     * Adds a dialog for name based lookup.
+     * @param name the name of the dialog
+     * @param dialog the dialog
+     */
+    public void addDialog(@NotNull final String name, @NotNull final Gui dialog) {
+        dialogs.put(name, dialog);
+    }
+
+    /**
      * A "player" protocol command has been received.
      */
     public void playerReceived() {
@@ -577,6 +594,17 @@ public class GuiManager {
     }
 
     /**
+     * Opens a dialog by name. Raises the dialog if open.
+     * @param name the name of the dialog
+     */
+    public void openDialog(@NotNull final String name) {
+        final Gui dialog = dialogs.get(name);
+        if (dialog != null) {
+            openDialog(dialog, false);
+        }
+    }
+
+    /**
      * Opens a dialog. Raises the dialog if it is open.
      * @param dialog the dialog to show
      * @param autoCloseOnDeactivate whether the dialog should auto-close when it
@@ -584,7 +612,7 @@ public class GuiManager {
      * @return whether the dialog was opened or raised; {@code false} if the
      * dialog already was opened as the topmost dialog
      */
-    public boolean openDialog(@NotNull final Gui dialog, final boolean autoCloseOnDeactivate) {
+    private boolean openDialog(@NotNull final Gui dialog, final boolean autoCloseOnDeactivate) {
         final boolean[] result = new boolean[1];
         SwingUtilities2.invokeAndWait(new Runnable() {
 
@@ -662,10 +690,11 @@ public class GuiManager {
 
     /**
      * Toggles a dialog.
-     * @param dialog the dialog to toggle
+     * @param name the name of the dialog
      */
-    public void toggleDialog(@NotNull final Gui dialog) {
-        if (windowRenderer.toggleDialog(dialog) && dialog == queryDialog) {
+    public void toggleDialog(@NotNull final String name) {
+        final Gui dialog = dialogs.get(name);
+        if (dialog != null && windowRenderer.toggleDialog(dialog) && dialog == queryDialog) {
             setHideInput(false);
         }
     }
@@ -780,6 +809,17 @@ public class GuiManager {
         }
 
         closeDialog(keybindDialog);
+    }
+
+    /**
+     * Closes the given dialog. Does nothing if the dialog is not opened.
+     * @param name the name of the dialog
+     */
+    public void closeDialog(@NotNull final String name) {
+        final Gui dialog = dialogs.get(name);
+        if (dialog != null) {
+            windowRenderer.closeDialog(dialog);
+        }
     }
 
     /**

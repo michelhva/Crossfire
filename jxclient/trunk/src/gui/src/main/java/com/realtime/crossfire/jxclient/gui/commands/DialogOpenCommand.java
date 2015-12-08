@@ -42,14 +42,14 @@ public class DialogOpenCommand implements GUICommand {
      * The dialog to open.
      */
     @NotNull
-    private final Gui dialog;
+    private final String dialog;
 
     /**
      * Creates a new instance.
      * @param commandCallback the command callback to use
      * @param dialog the dialog to open
      */
-    public DialogOpenCommand(@NotNull final CommandCallback commandCallback, @NotNull final Gui dialog) {
+    public DialogOpenCommand(@NotNull final CommandCallback commandCallback, @NotNull final String dialog) {
         this.commandCallback = commandCallback;
         this.dialog = dialog;
     }

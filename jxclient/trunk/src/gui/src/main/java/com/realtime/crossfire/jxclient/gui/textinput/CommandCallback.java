@@ -22,7 +22,6 @@
 package com.realtime.crossfire.jxclient.gui.textinput;
 
 import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
-import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -40,19 +39,19 @@ public interface CommandCallback {
      * Opens a dialog. Does nothing if the dialog is open.
      * @param dialog the dialog to open
      */
-    void openDialog(@NotNull Gui dialog);
+    void openDialog(@NotNull String dialog);
 
     /**
      * Toggles a dialog.
      * @param dialog the dialog to toggle
      */
-    void toggleDialog(@NotNull Gui dialog);
+    void toggleDialog(@NotNull String dialog);
 
     /**
      * Closes a dialog. Does nothing if the dialog is not open.
      * @param dialog the dialog to close
      */
-    void closeDialog(@NotNull Gui dialog);
+    void closeDialog(@NotNull String dialog);
 
     /**
      * Returns a command list.
