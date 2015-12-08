@@ -22,7 +22,6 @@
 package com.realtime.crossfire.jxclient.main;
 
 import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
-import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.textinput.CommandCallback;
 import com.realtime.crossfire.jxclient.gui.textinput.NoSuchCommandException;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
@@ -91,15 +90,15 @@ public class GuiManagerCommandCallback implements CommandCallback {
      * {@inheritDoc}
      */
     @Override
-    public void openDialog(@NotNull final Gui dialog) {
-        guiManager.openDialog(dialog, false);
+    public void openDialog(@NotNull final String dialog) {
+        guiManager.openDialog(dialog);
     }
 
     /**
      * {@inheritDoc}
      */
     @Override
-    public void toggleDialog(@NotNull final Gui dialog) {
+    public void toggleDialog(@NotNull final String dialog) {
         guiManager.toggleDialog(dialog);
     }
 
@@ -107,7 +106,7 @@ public class GuiManagerCommandCallback implements CommandCallback {
      * {@inheritDoc}
      */
     @Override
-    public void closeDialog(@NotNull final Gui dialog) {
+    public void closeDialog(@NotNull final String dialog) {
         guiManager.closeDialog(dialog);
     }
 

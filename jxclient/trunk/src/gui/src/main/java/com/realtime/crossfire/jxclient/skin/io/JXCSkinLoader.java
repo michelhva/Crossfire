@@ -142,6 +142,7 @@ import com.realtime.crossfire.jxclient.util.Resolution;
 import com.realtime.crossfire.jxclient.util.ResourceUtils;
 import com.realtime.crossfire.jxclient.util.StringUtils;
 import com.realtime.crossfire.jxclient.util.UnterminatedTokenException;
+import com.realtime.crossfire.jxclient.window.GuiManager;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Container;
@@ -284,6 +285,12 @@ public class JXCSkinLoader {
      */
     @NotNull
     private final CommandHistoryFactory commandHistoryFactory;
+
+    /**
+     * The {@link GuiManager} to use.
+     */
+    @NotNull
+    private final GuiManager guiManager;
 
     /**
      * The {@link FacesProviderFactory} instance for creating faces provider
@@ -431,8 +438,9 @@ public class JXCSkinLoader {
      * @param knowledgeTypeView the knowledge type view to use
      * @param avoidCopyArea whether map scrolling is done by copying pixel
      * areas; if unset, always repaint all map squares
+     * @param guiManager the GUI Manager to use
      */
-    public JXCSkinLoader(@NotNull final Model model, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final SpellsView spellView, @NotNull final SpellSkillView spellSkillsView, @NotNull final FacesManager facesManager, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, final int defaultTileSize, @NotNull final KeybindingsManager keybindingsManager, @NotNull final QuestsView questView, @NotNull final CommandHistoryFactory commandHistoryFactory, @NotNull final KnowledgeView knowledgeView, @NotNull final KnowledgeTypeView knowledgeTypeView, final boolean avoidCopyArea) {
+    public JXCSkinLoader(@NotNull final Model model, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final SpellsView spellView, @NotNull final SpellSkillView spellSkillsView, @NotNull final FacesManager facesManager, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, final int defaultTileSize, @NotNull final KeybindingsManager keybindingsManager, @NotNull final QuestsView questView, @NotNull final CommandHistoryFactory commandHistoryFactory, @NotNull final KnowledgeView knowledgeView, @NotNull final KnowledgeTypeView knowledgeTypeView, final boolean avoidCopyArea, @NotNull final GuiManager guiManager) {
         this.model = model;
         this.inventoryView = inventoryView;
         this.floorView = floorView;
@@ -441,6 +449,7 @@ public class JXCSkinLoader {
         this.facesManager = facesManager;
         this.defaultTileSize = defaultTileSize;
         this.commandHistoryFactory = commandHistoryFactory;
+        this.guiManager = guiManager;
         facesProviderFactory = new FacesProviderFactory(facesManager);
         this.mapUpdaterState = mapUpdaterState;
         this.defaultKeyBindings = defaultKeyBindings;
@@ -491,7 +500,7 @@ public class JXCSkinLoader {
             throw new JXCSkinException(ex.getMessage(), ex);
         }
 
-        final Dialogs dialogs = new Dialogs(guiFactory);
+        final Dialogs dialogs = new Dialogs(guiFactory, guiManager);
         gaugeUpdaterParser = new GaugeUpdaterParser(model.getStats(), model.getItemSet(), model.getSkillSet());
         commandParser = new CommandParser(dialogs, floorView, definedGUIElements);
         skin = new DefaultJXCSkin(defaultKeyBindings, optionManager, dialogs);

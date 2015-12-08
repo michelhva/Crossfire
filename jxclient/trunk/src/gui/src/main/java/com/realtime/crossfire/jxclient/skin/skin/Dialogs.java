@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.skin.skin;
 
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
+import com.realtime.crossfire.jxclient.window.GuiManager;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -43,6 +44,12 @@ public class Dialogs implements Iterable<Gui> {
     private final GuiFactory guiFactory;
 
     /**
+     * The {@link GuiManager} to add dialogs to.
+     */
+    @NotNull
+    private final GuiManager guiManager;
+
+    /**
      * The existing dialogs.
      */
     @NotNull
@@ -57,9 +64,11 @@ public class Dialogs implements Iterable<Gui> {
     /**
      * Creates a new instance.
      * @param guiFactory the gui factory for creating gui instances
+     * @param guiManager the GUI manager to add dialogs to
      */
-    public Dialogs(@NotNull final GuiFactory guiFactory) {
+    public Dialogs(@NotNull final GuiFactory guiFactory, @NotNull final GuiManager guiManager) {
         this.guiFactory = guiFactory;
+        this.guiManager = guiManager;
     }
 
     /**
@@ -90,6 +99,7 @@ public class Dialogs implements Iterable<Gui> {
                 throw new AssertionError(ex);
             }
             dialogsToLoad.add(name);
+            guiManager.addDialog(name, gui);
             return gui;
         }
     }
