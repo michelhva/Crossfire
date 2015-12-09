@@ -71,7 +71,7 @@ public class Metaserver {
         this.metaserverModel = metaserverModel;
         metaserverModel.begin();
         for (final MetaserverEntry metaserverEntry : serverCache.getAll().values()) {
-            metaserverModel.add(metaserverEntry);
+            metaserverModel.addMetaserverEntry(metaserverEntry);
         }
         metaserverModel.commit();
     }
@@ -87,7 +87,7 @@ public class Metaserver {
 
         final MetaserverEntry localhostMetaserverEntry = MetaserverEntryParser.parseEntry(ServerCache.DEFAULT_ENTRY_LOCALHOST);
         assert localhostMetaserverEntry != null;
-        metaserverModel.add(localhostMetaserverEntry);
+        metaserverModel.addMetaserverEntry(localhostMetaserverEntry);
         oldEntries.remove(ServerCache.makeKey(localhostMetaserverEntry));
         serverCache.put(localhostMetaserverEntry);
 
@@ -123,7 +123,7 @@ public class Metaserver {
 
                                 final MetaserverEntry metaserverEntry = metaserverEntryParser.parseLine(line);
                                 if (metaserverEntry != null) {
-                                    metaserverModel.add(metaserverEntry);
+                                    metaserverModel.addMetaserverEntry(metaserverEntry);
                                     oldEntries.remove(ServerCache.makeKey(metaserverEntry));
                                     serverCache.put(metaserverEntry);
                                 }
@@ -144,7 +144,7 @@ public class Metaserver {
 
         // add previously known entries that are not anymore present
         for (final MetaserverEntry metaserverEntry : oldEntries.values()) {
-            metaserverModel.add(metaserverEntry);
+            metaserverModel.addMetaserverEntry(metaserverEntry);
         }
 
         metaserverModel.commit();
