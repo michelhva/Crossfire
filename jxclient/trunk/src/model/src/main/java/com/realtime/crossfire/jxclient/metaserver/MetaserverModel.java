@@ -120,7 +120,7 @@ public class MetaserverModel {
      * Adds an entry.
      * @param metaserverEntry the entry to add
      */
-    public void add(@NotNull final MetaserverEntry metaserverEntry) {
+    public void addMetaserverEntry(@NotNull final MetaserverEntry metaserverEntry) {
         synchronized (sync) {
             metaListPending.add(metaserverEntry);
         }
