@@ -1,5 +1,6 @@
 Object thief_1
 race human
+name thief
 randomitems thief_1
 face thief.151
 animation thief_1
