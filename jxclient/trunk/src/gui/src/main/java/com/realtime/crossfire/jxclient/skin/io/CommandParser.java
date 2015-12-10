@@ -393,13 +393,15 @@ public class CommandParser {
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseDialogOpen(@NotNull final Args args, @Nullable final GUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
+    private GUICommand parseDialogOpen(@NotNull final Args args, @Nullable final GUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
         //noinspection VariableNotUsedInsideIf
         if (element != null) {
             throw new IOException("<element> is not allowed");
         }
 
-        return new DialogOpenCommand(commandCallback, args.get());
+        final String name = args.get();
+        dialogs.addDialog(name);
+        return new DialogOpenCommand(commandCallback, name);
     }
 
     /**
@@ -411,13 +413,15 @@ public class CommandParser {
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseDialogToggle(@NotNull final Args args, @Nullable final GUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
+    private GUICommand parseDialogToggle(@NotNull final Args args, @Nullable final GUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
         //noinspection VariableNotUsedInsideIf
         if (element != null) {
             throw new IOException("<element> is not allowed");
         }
 
-        return new DialogToggleCommand(commandCallback, args.get());
+        final String name = args.get();
+        dialogs.addDialog(name);
+        return new DialogToggleCommand(commandCallback, name);
     }
 
     /**
@@ -429,13 +433,15 @@ public class CommandParser {
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseDialogClose(@NotNull final Args args, @Nullable final GUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
+    private GUICommand parseDialogClose(@NotNull final Args args, @Nullable final GUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
         //noinspection VariableNotUsedInsideIf
         if (element != null) {
             throw new IOException("<element> is not allowed");
         }
 
-        return new DialogCloseCommand(commandCallback, args.get());
+        final String name = args.get();
+        dialogs.addDialog(name);
+        return new DialogCloseCommand(commandCallback, name);
     }
 
     /**
