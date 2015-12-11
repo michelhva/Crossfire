@@ -58,7 +58,7 @@ public class StatsWatcher {
     private boolean poisoned;
 
     /**
-     * The last know level.
+     * The last known level.
      */
     private int level;
 
