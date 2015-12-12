@@ -253,17 +253,12 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
      * The {@link NewmapListener} registered to receive newmap commands.
      */
     @NotNull
-    private final NewmapListener newmapListener = new NewmapListener() {
-
-        @Override
-        public void commandNewmapReceived() {
-            synchronized (bufferedImageSync) {
-                clearMapPending = true;
-                scrollMapPending.clear();
-            }
-            setChanged();
+    private final NewmapListener newmapListener = () -> {
+        synchronized (bufferedImageSync) {
+            clearMapPending = true;
+            scrollMapPending.clear();
         }
-
+        setChanged();
     };
 
     /**
@@ -281,30 +276,20 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
      * The {@link MapScrollListener} registered to receive map_scroll commands.
      */
     @NotNull
-    private final MapScrollListener mapscrollListener = new MapScrollListener() {
-
-        @Override
-        public void mapScrolled(final int dx, final int dy) {
-            synchronized (bufferedImageSync) {
-                scrollMapPending.offerLast(((long)dx<<32)|(dy&0xFFFFFFFFL));
-            }
-            setChanged();
+    private final MapScrollListener mapscrollListener = (dx, dy) -> {
+        synchronized (bufferedImageSync) {
+            scrollMapPending.offerLast(((long)dx<<32)|(dy&0xFFFFFFFFL));
         }
-
+        setChanged();
     };
 
     /**
      * The {@link MapSizeListener} registered to detect map size changes.
      */
     @NotNull
-    private final MapSizeListener mapSizeListener = new MapSizeListener() {
-
-        @Override
-        public void mapSizeChanged(final int mapWidth, final int mapHeight) {
-            setMapSize(mapWidth, mapHeight);
-            redrawAll();
-        }
-
+    private final MapSizeListener mapSizeListener = (mapWidth1, mapHeight1) -> {
+        setMapSize(mapWidth1, mapHeight1);
+        redrawAll();
     };
 
     /**

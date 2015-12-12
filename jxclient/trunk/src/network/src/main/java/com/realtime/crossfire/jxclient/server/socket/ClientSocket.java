@@ -194,14 +194,7 @@ public class ClientSocket {
      * The {@link Thread} used to operate the socket.
      */
     @NotNull
-    private final Thread thread = new Thread(new Runnable() {
-
-        @Override
-        public void run() {
-            process();
-        }
-
-    }, "JXClient:ClientSocket");
+    private final Thread thread = new Thread(() -> process(), "JXClient:ClientSocket");
 
     /**
      * Creates a new instance.

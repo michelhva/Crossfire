@@ -614,76 +614,71 @@ public class GuiManager {
      */
     private boolean openDialog(@NotNull final Gui dialog, final boolean autoCloseOnDeactivate) {
         final boolean[] result = new boolean[1];
-        SwingUtilities2.invokeAndWait(new Runnable() {
+        SwingUtilities2.invokeAndWait(() -> {
+            result[0] = windowRenderer.openDialog(dialog, autoCloseOnDeactivate);
+            if (dialog == queryDialog) {
+                setHideInput(false);
+            } else {
+                final AbstractLabel labelFailure = dialog.getFirstElement(GUILabelFailure.class);
+                if (labelFailure != null) {
+                    labelFailure.setText("");
+                }
 
-            @Override
-            public void run() {
-                result[0] = windowRenderer.openDialog(dialog, autoCloseOnDeactivate);
-                if (dialog == queryDialog) {
-                    setHideInput(false);
-                } else {
-                    final AbstractLabel labelFailure = dialog.getFirstElement(GUILabelFailure.class);
-                    if (labelFailure != null) {
-                        labelFailure.setText("");
-                    }
+                final String name = dialog.getName();
+                if (name != null) {
+                    if (name.equals("account_login")) {
+                        final GUIText loginField = dialog.getFirstElement(GUIText.class, "account_login");
+                        if (loginField == null) {
+                            final GUIText passwordField = dialog.getFirstElement(GUIText.class, "account_password");
+                            if (passwordField != null) {
+                                passwordField.setText("");
+                            }
+                        } else {
+                            final String hostname = connection.getHostname();
+                            if (hostname != null) {
+                                final String accountName = settings.getString(SettingsEntries.getLoginAccountSettingsEntry(hostname));
+                                if (accountName.isEmpty()) {
+                                    loginField.setText("");
+                                    loginField.setActive(true);
 
-                    final String name = dialog.getName();
-                    if (name != null) {
-                        if (name.equals("account_login")) {
-                            final GUIText loginField = dialog.getFirstElement(GUIText.class, "account_login");
-                            if (loginField == null) {
-                                final GUIText passwordField = dialog.getFirstElement(GUIText.class, "account_password");
-                                if (passwordField != null) {
-                                    passwordField.setText("");
+                                    final GUIText passwordField = dialog.getFirstElement(GUIText.class, "account_password");
+                                    if (passwordField != null) {
+                                        passwordField.setText("");
+                                    }
+                                } else {
+                                    loginField.setText(accountName);
+
+                                    final GUIText passwordField = dialog.getFirstElement(GUIText.class, "account_password");
+                                    if (passwordField != null) {
+                                        passwordField.setText("");
+                                        passwordField.setActive(true);
+                                    }
                                 }
-                            } else {
+                            }
+                        }
+                    } else if (name.equals("account_characters")) {
+                        final GUICharacterList characterList = dialog.getFirstElement(GUICharacterList.class);
+                        if (characterList != null) {
+                            final String accountName = server.getAccountName();
+                            if (accountName != null) {
                                 final String hostname = connection.getHostname();
                                 if (hostname != null) {
-                                    final String accountName = settings.getString(SettingsEntries.getLoginAccountSettingsEntry(hostname));
-                                    if (accountName.isEmpty()) {
-                                        loginField.setText("");
-                                        loginField.setActive(true);
-
-                                        final GUIText passwordField = dialog.getFirstElement(GUIText.class, "account_password");
-                                        if (passwordField != null) {
-                                            passwordField.setText("");
-                                        }
-                                    } else {
-                                        loginField.setText(accountName);
-
-                                        final GUIText passwordField = dialog.getFirstElement(GUIText.class, "account_password");
-                                        if (passwordField != null) {
-                                            passwordField.setText("");
-                                            passwordField.setActive(true);
-                                        }
+                                    final String characterName = settings.getString(SettingsEntries.getLoginAccountSettingsEntry(hostname, accountName));
+                                    if (!characterName.isEmpty()) {
+                                        characterList.setCharacter(characterName);
                                     }
                                 }
                             }
-                        } else if (name.equals("account_characters")) {
-                            final GUICharacterList characterList = dialog.getFirstElement(GUICharacterList.class);
-                            if (characterList != null) {
-                                final String accountName = server.getAccountName();
-                                if (accountName != null) {
-                                    final String hostname = connection.getHostname();
-                                    if (hostname != null) {
-                                        final String characterName = settings.getString(SettingsEntries.getLoginAccountSettingsEntry(hostname, accountName));
-                                        if (!characterName.isEmpty()) {
-                                            characterList.setCharacter(characterName);
-                                        }
-                                    }
-                                }
-                            }
-                        } else if (name.equals("account_character_new")) {
-                            final GUIText characterField = dialog.getFirstElement(GUIText.class, "character_login");
-                            if (characterField != null) {
-                                characterField.setText("");
-                                characterField.setActive(true);
-                            }
+                        }
+                    } else if (name.equals("account_character_new")) {
+                        final GUIText characterField = dialog.getFirstElement(GUIText.class, "character_login");
+                        if (characterField != null) {
+                            characterField.setText("");
+                            characterField.setActive(true);
                         }
                     }
                 }
             }
-
         });
         return result[0];
     }
@@ -1053,16 +1048,11 @@ public class GuiManager {
         if (skin != null) {
             skin.setScreenSize(width, height);
             assert skin != null;
-            SwingUtilities2.invokeAndWait(new Runnable() {
-
-                @Override
-                public void run() {
-                    for (final Gui dialog : skin) {
-                        dialog.autoSize(width, height);
-                    }
-                    tooltipManager.setScreenSize(width, height);
+            SwingUtilities2.invokeAndWait(() -> {
+                for (final Gui dialog : skin) {
+                    dialog.autoSize(width, height);
                 }
-
+                tooltipManager.setScreenSize(width, height);
             });
         }
     }

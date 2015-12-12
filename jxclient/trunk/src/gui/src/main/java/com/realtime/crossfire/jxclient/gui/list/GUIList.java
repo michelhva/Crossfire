@@ -42,7 +42,6 @@ import javax.swing.JViewport;
 import javax.swing.ListSelectionModel;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.border.EmptyBorder;
-import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -117,14 +116,7 @@ public abstract class GUIList<T extends GUIElement> extends ActivatableGUIElemen
      * The {@link ListSelectionListener} attached to {@link #list}.
      */
     @NotNull
-    private final ListSelectionListener listSelectionListener = new ListSelectionListener() {
-
-        @Override
-        public void valueChanged(@NotNull final ListSelectionEvent e) {
-            selectionChanged();
-        }
-
-    };
+    private final ListSelectionListener listSelectionListener = e -> selectionChanged();
 
     /**
      * Creates a new instance.

@@ -402,15 +402,10 @@ public class JXCSkinLoader {
      * element name.
      */
     @NotNull
-    private static final Comparator<GUIElement> ELEMENT_COMPARATOR = new Comparator<GUIElement>() {
-
-        @Override
-        public int compare(@NotNull final GUIElement o1, @NotNull final GUIElement o2) {
-            final Comparable<String> n1 = o1.getName();
-            final String n2 = o2.getName();
-            return n1.compareTo(n2);
-        }
-
+    private static final Comparator<GUIElement> ELEMENT_COMPARATOR = (o1, o2) -> {
+        final Comparable<String> n1 = o1.getName();
+        final String n2 = o2.getName();
+        return n1.compareTo(n2);
     };
 
     /**

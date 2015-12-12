@@ -118,14 +118,7 @@ public class GUIItemFloor extends GUIItemItem {
      * Called from {@link #locationListener} but runs on the EDT.
      */
     @NotNull
-    private final Runnable locationListenerEdt = new Runnable() {
-
-        @Override
-        public void run() {
-            setIndex(index, true);
-        }
-
-    };
+    private final Runnable locationListenerEdt = () -> setIndex(index, true);
 
     /**
      * Creates a new instance.

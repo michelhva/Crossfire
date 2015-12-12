@@ -28,7 +28,6 @@ import com.realtime.crossfire.jxclient.gui.gui.KeyPressedHandler;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyEvent2;
 import java.awt.Dimension;
-import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
@@ -72,14 +71,7 @@ public abstract class AbstractButton extends ActivatableGUIElement implements Ke
      * The {@link ActionListener} for generating autorepeat events.
      */
     @NotNull
-    private final ActionListener timeoutEvent = new ActionListener() {
-
-        @Override
-        public void actionPerformed(@NotNull final ActionEvent e) {
-            execute();
-        }
-
-    };
+    private final ActionListener timeoutEvent = e -> execute();
 
     /**
      * The {@link Timer} for auto-repeating buttons.

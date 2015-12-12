@@ -23,7 +23,6 @@ package com.realtime.crossfire.jxclient.items;
 
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
-import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
 import com.realtime.crossfire.jxclient.skills.Skill;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.spells.SpellsManagerListener;
@@ -69,15 +68,10 @@ public class SpellSkillView extends AbstractItemView {
             }
 
         });
-        facesManager.addFacesManagerListener(new FacesManagerListener() {
-
-            @Override
-            public void faceUpdated(@NotNull final Face face) {
-                if (spellsManager.displaysFace(face.getFaceNum())) {
-                    addModifiedRange(0, spellsManager.getSpellSkills());
-                }
+        facesManager.addFacesManagerListener(face -> {
+            if (spellsManager.displaysFace(face.getFaceNum())) {
+                addModifiedRange(0, spellsManager.getSpellSkills());
             }
-
         });
     }
 

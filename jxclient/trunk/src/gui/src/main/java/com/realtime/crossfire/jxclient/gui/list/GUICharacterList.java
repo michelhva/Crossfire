@@ -22,11 +22,8 @@ package com.realtime.crossfire.jxclient.gui.list;
 
 import com.realtime.crossfire.jxclient.account.CharacterInformation;
 import com.realtime.crossfire.jxclient.account.CharacterInformationListener;
-import com.realtime.crossfire.jxclient.account.CharacterListener;
 import com.realtime.crossfire.jxclient.account.CharacterModel;
-import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
-import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
@@ -93,14 +90,7 @@ public class GUICharacterList extends GUIList<GUICharacter> {
      * accordingly.
      */
     @NotNull
-    private final CharacterInformationListener characterInformationListener = new CharacterInformationListener() {
-
-        @Override
-        public void informationChanged() {
-            setChanged();
-        }
-
-    };
+    private final CharacterInformationListener characterInformationListener = () -> setChanged();
 
     /**
      * Creates a new instance.
@@ -117,27 +107,15 @@ public class GUICharacterList extends GUIList<GUICharacter> {
         super(tooltipManager, elementListener, name, cellWidth, cellHeight, new CharacterCellRenderer(new GUICharacter(tooltipManager, facesManager, elementListener, name+"_template", 50, 20, font, 0, characterModel)), null);
         this.characterModel = characterModel;
         this.facesManager = facesManager;
-        this.facesManager.addFacesManagerListener(new FacesManagerListener() {
-
-            @Override
-            public void faceUpdated(@NotNull final Face face) {
-                if (characterModel.displaysFace(face.getFaceNum())) {
-                    final Gui parent = GuiUtils.getGui(GUICharacterList.this);
-                    if (parent != null) {
-                        parent.repaint();
-                    }
+        this.facesManager.addFacesManagerListener(face -> {
+            if (characterModel.displaysFace(face.getFaceNum())) {
+                final Gui parent = GuiUtils.getGui(GUICharacterList.this);
+                if (parent != null) {
+                    parent.repaint();
                 }
             }
-
         });
-        this.characterModel.addCharacterListener(new CharacterListener() {
-
-            @Override
-            public void numberOfItemsChanged() {
-                rebuildList();
-            }
-
-        });
+        this.characterModel.addCharacterListener(() -> rebuildList());
         this.tooltipManager = tooltipManager;
         this.font = font;
         this.elementListener = elementListener;

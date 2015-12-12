@@ -665,14 +665,7 @@ public class JXCWindowRenderer {
 
         if (!openDialogsRemove(dialog)) {
             dialog.activateDefaultElement();
-            final GuiAutoCloseListener guiAutoCloseListener = autoCloseOnDeactivate ? new GuiAutoCloseListener() {
-
-                @Override
-                public void autoClosed() {
-                    closeDialog(dialog);
-                }
-
-            } : null;
+            final GuiAutoCloseListener guiAutoCloseListener = autoCloseOnDeactivate ? () -> closeDialog(dialog) : null;
             dialog.setGuiAutoCloseListener(guiAutoCloseListener);
         }
         openDialogsAdd(dialog);
@@ -720,14 +713,7 @@ public class JXCWindowRenderer {
      */
     @NotNull
     public Iterable<Gui> getOpenDialogs() {
-        return new Iterable<Gui>() {
-
-            @Override
-            public Iterator<Gui> iterator() {
-                return new OpenDialogsIterator();
-            }
-
-        };
+        return () -> new OpenDialogsIterator();
     }
 
     /**
@@ -736,28 +722,23 @@ public class JXCWindowRenderer {
      */
     @SuppressWarnings("NullableProblems")
     public void setCurrentGui(@NotNull final Gui gui) {
-        SwingUtilities2.invokeAndWait(new Runnable() {
-
-            @Override
-            public void run() {
-                if (frame != null && currentGui != null) {
-                    removeFromLayeredPane(currentGui);
-                }
-                currentGui = gui;
-                //noinspection VariableNotUsedInsideIf
-                if (frame != null) {
-                    addToLayeredPane(currentGui, 0, -1);
-                }
-
-                if (windowWidth > 0 && windowHeight > 0) {
-                    assert currentGui != null;
-                    currentGui.setSize(windowWidth, windowHeight);
-                }
-                if (frame != null) {
-                    frame.validate();
-                }
+        SwingUtilities2.invokeAndWait(() -> {
+            if (frame != null && currentGui != null) {
+                removeFromLayeredPane(currentGui);
+            }
+            currentGui = gui;
+            //noinspection VariableNotUsedInsideIf
+            if (frame != null) {
+                addToLayeredPane(currentGui, 0, -1);
             }
 
+            if (windowWidth > 0 && windowHeight > 0) {
+                assert currentGui != null;
+                currentGui.setSize(windowWidth, windowHeight);
+            }
+            if (frame != null) {
+                frame.validate();
+            }
         });
         updateServerSettings();
     }
@@ -825,21 +806,16 @@ public class JXCWindowRenderer {
         }
 
         this.rendererGuiState = rendererGuiState;
-        SwingUtilities2.invokeAndWait(new Runnable() {
-
-            @Override
-            public void run() {
-                for (final Gui dialog : openDialogs) {
-                    removeFromLayeredPane(dialog);
-                    if (!dialog.isHidden(rendererGuiState)) {
-                        addToLayeredPane(dialog, 1, 0);
-                    }
-                }
-                if (frame != null) {
-                    frame.validate();
+        SwingUtilities2.invokeAndWait(() -> {
+            for (final Gui dialog : openDialogs) {
+                removeFromLayeredPane(dialog);
+                if (!dialog.isHidden(rendererGuiState)) {
+                    addToLayeredPane(dialog, 1, 0);
                 }
             }
-
+            if (frame != null) {
+                frame.validate();
+            }
         });
         updateServerSettings();
         for (final RendererGuiStateListener listener : rendererGuiStateListeners) {

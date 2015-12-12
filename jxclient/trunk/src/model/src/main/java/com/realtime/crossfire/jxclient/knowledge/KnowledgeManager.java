@@ -22,13 +22,7 @@ public class KnowledgeManager {
      * Compare two knowledge items.
      */
     @NotNull
-    private static final Comparator<KnowledgeItem> KNOWLEDGE_COMPARATOR = new Comparator<KnowledgeItem>() {
-
-        @Override
-        public int compare(final KnowledgeItem o1, final KnowledgeItem o2) {
-            return o1.getKnowledgeTitle().compareTo(o2.getKnowledgeTitle());
-        }
-    };
+    private static final Comparator<KnowledgeItem> KNOWLEDGE_COMPARATOR = (o1, o2) -> o1.getKnowledgeTitle().compareTo(o2.getKnowledgeTitle());
 
     /**
      * The {@link KnowledgeListener KnowledgeListeners} to notify about

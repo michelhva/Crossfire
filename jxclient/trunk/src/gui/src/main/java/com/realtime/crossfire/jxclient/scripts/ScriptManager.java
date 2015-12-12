@@ -138,18 +138,13 @@ public class ScriptManager {
         }
         nextScriptId++;
         scriptProcesses.add(scriptProcess);
-        scriptProcess.addScriptProcessListener(new ScriptProcessListener() {
-
-            @Override
-            public void scriptTerminated(final String result) {
-                scriptProcesses.remove(scriptProcess);
-                if (result == null) {
-                    crossfireServerConnection.drawInfo("Script '"+scriptProcess+"' finished.", CrossfireDrawinfoListener.NDI_BLACK);
-                } else {
-                    crossfireServerConnection.drawInfo("Script '"+scriptProcess+"' failed: "+result, CrossfireDrawinfoListener.NDI_RED);
-                }
+        scriptProcess.addScriptProcessListener(result -> {
+            scriptProcesses.remove(scriptProcess);
+            if (result == null) {
+                crossfireServerConnection.drawInfo("Script '"+scriptProcess+"' finished.", CrossfireDrawinfoListener.NDI_BLACK);
+            } else {
+                crossfireServerConnection.drawInfo("Script '"+scriptProcess+"' failed: "+result, CrossfireDrawinfoListener.NDI_RED);
             }
-
         });
         crossfireServerConnection.drawInfo("Script '"+scriptProcess+"' started.", CrossfireDrawinfoListener.NDI_BLACK);
         new Thread(scriptProcess, "JXClient:ScriptProcess:"+scriptProcess).start();

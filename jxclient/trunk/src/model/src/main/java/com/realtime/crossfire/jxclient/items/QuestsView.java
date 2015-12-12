@@ -22,10 +22,8 @@ package com.realtime.crossfire.jxclient.items;
 
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
-import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
 import com.realtime.crossfire.jxclient.quests.Quest;
 import com.realtime.crossfire.jxclient.quests.QuestsManager;
-import com.realtime.crossfire.jxclient.quests.QuestsManagerListener;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -55,21 +53,11 @@ public class QuestsView extends AbstractItemView {
     public QuestsView(@NotNull final QuestsManager questsManager, @NotNull final FacesManager facesManager) {
         this.questsManager = questsManager;
         this.facesManager = facesManager;
-        questsManager.addCrossfireQuestChangedListener(new QuestsManagerListener() {
-            @Override
-            public void questAdded(final int index) {
-                addModifiedRange(index, questsManager.getQuests());
+        questsManager.addCrossfireQuestChangedListener(index -> addModifiedRange(index, questsManager.getQuests()));
+        facesManager.addFacesManagerListener(face -> {
+            if (questsManager.displaysFace(face.getFaceNum())) {
+                addModifiedRange(0, questsManager.getQuests());
             }
-        });
-        facesManager.addFacesManagerListener(new FacesManagerListener() {
-
-            @Override
-            public void faceUpdated(@NotNull final Face face) {
-                if (questsManager.displaysFace(face.getFaceNum())) {
-                    addModifiedRange(0, questsManager.getQuests());
-                }
-            }
-
         });
     }
 
