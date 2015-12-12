@@ -170,7 +170,7 @@ public class CfMap {
      * @param x the x-coordinate of the square
      * @param y the y-coordinate of the square
      * @return the darkness value of the square; 0=dark, 255=full bright; not
-     *         yet set faces return 0
+     * yet set faces return 0
      */
     public int getDarkness(final int x, final int y) {
         assert Thread.holdsLock(this);
@@ -355,8 +355,8 @@ public class CfMap {
      * Sets the map square containing the head face for a layer.
      * @param x the x-coordinate of the square
      * @param y the y-coordinate of the square
-     * @param layer the layer for the new head face between {@code 0} and
-     * {@code LAYERS-1}
+     * @param layer the layer for the new head face between {@code 0} and {@code
+     * LAYERS-1}
      * @param mapSquare the map square containing the head face; may be {@code
      * null}
      * @param setAlways if set, always update the face; if unset, only update
@@ -372,7 +372,7 @@ public class CfMap {
      * @param y the y-coordinate of the square
      * @param layer the layer to return the head for
      * @return the head map square, or {@code null} if this square does not
-     *         contain a multi-tail
+     * contain a multi-tail
      */
     @Nullable
     public CfMapSquare getHeadMapSquare(final int x, final int y, final int layer) {

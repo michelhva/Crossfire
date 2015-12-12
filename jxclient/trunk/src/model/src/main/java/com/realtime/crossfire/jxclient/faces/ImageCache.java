@@ -34,8 +34,8 @@ public interface ImageCache {
     /**
      * Retrieves an image from the cache.
      * @param face the face to retrieve
-     * @return the image icon, or {@code null} if the cache does not contain
-     * the image
+     * @return the image icon, or {@code null} if the cache does not contain the
+     * image
      */
     @Nullable
     ImageIcon load(@NotNull Face face);

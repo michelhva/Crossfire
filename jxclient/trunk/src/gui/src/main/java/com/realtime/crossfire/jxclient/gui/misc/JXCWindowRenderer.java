@@ -1038,8 +1038,8 @@ public class JXCWindowRenderer {
     /**
      * Activates the command input text field. If more than one input field
      * exists, the first matching one is selected.
-     * @return the command input text field or {@code null} if no command
-     *         input text field exists
+     * @return the command input text field or {@code null} if no command input
+     * text field exists
      */
     @Nullable
     public GUIText activateCommandInput() {
@@ -1186,8 +1186,8 @@ public class JXCWindowRenderer {
      * @param gui the gui to search
      * @param eX the x-coordinate to check
      * @param eY the y-coordinate to check
-     * @return the {@code GUIElement} at the given coordinate or {@code null}
-     * if none was found
+     * @return the {@code GUIElement} at the given coordinate or {@code null} if
+     * none was found
      */
     @Nullable
     private AbstractGUIElement getElementFromPoint(@NotNull final Gui gui, final int eX, final int eY) {
@@ -1378,7 +1378,7 @@ public class JXCWindowRenderer {
      * Returns the first command text field of a gui and make it active.
      * @param gui the gui to check
      * @return the comment text field, or {@code null} if this gui does not
-     *         contain any command text fields
+     * contain any command text fields
      */
     @Nullable
     public static GUIText activateCommandInput(@NotNull final Gui gui) {

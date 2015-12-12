@@ -109,12 +109,12 @@ public class GUIDupGauge extends AbstractGUIElement implements GUIGaugeListener 
      * @param name the name of this element
      * @param fullImageDiv the top image
      * @param fullImageMod the bottom image
-     * @param emptyImage the image representing an empty gauge; if set to
-     * {@code null} an empty background is used instead
+     * @param emptyImage the image representing an empty gauge; if set to {@code
+     * null} an empty background is used instead
      * @param orientationDiv the gauge's orientation
      * @param orientationMod the gauge's orientation
-     * @param tooltipPrefix the prefix for displaying tooltips; if set to
-     * {@code null} no tooltips are shown
+     * @param tooltipPrefix the prefix for displaying tooltips; if set to {@code
+     * null} no tooltips are shown
      * @param commandList the command list that is executed on button 2
      */
     public GUIDupGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Image fullImageDiv, @NotNull final Image fullImageMod, @Nullable final Image emptyImage, @NotNull final Orientation orientationDiv, @NotNull final Orientation orientationMod, @Nullable final String tooltipPrefix, @Nullable final CommandList commandList) {

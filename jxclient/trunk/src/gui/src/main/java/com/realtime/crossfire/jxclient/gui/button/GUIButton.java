@@ -68,8 +68,8 @@ public class GUIButton extends AbstractButton {
     private final String text;
 
     /**
-     * The {@link Font} for the overlay {@link #text} or {@code null} to
-     * display only the image.
+     * The {@link Font} for the overlay {@link #text} or {@code null} to display
+     * only the image.
      */
     @Nullable
     private final Font font;
@@ -86,8 +86,8 @@ public class GUIButton extends AbstractButton {
     private final int textY;
 
     /**
-     * The {@link Color} of the overlay text or {@code null} to display only
-     * the image.
+     * The {@link Color} of the overlay text or {@code null} to display only the
+     * image.
      */
     @Nullable
     private final Color color;
@@ -108,8 +108,8 @@ public class GUIButton extends AbstractButton {
      * @param imageUp the image in unselected state
      * @param imageDown the image in selected state
      * @param text the overlay text or {@code null} to display only the image
-     * @param font the font for the overlay text or {@code null} to display
-     * only the image
+     * @param font the font for the overlay text or {@code null} to display only
+     * the image
      * @param color the color of the overlay text or {@code null} to display
      * only the image
      * @param textX the x coordinate of the overlay text

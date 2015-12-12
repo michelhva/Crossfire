@@ -172,8 +172,8 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     private int pendingMapWidth;
 
     /**
-     * The map height that is being negotiated with the server. Set to {@code
-     * 0} when not negotiating.
+     * The map height that is being negotiated with the server. Set to {@code 0}
+     * when not negotiating.
      */
     private int pendingMapHeight;
 
@@ -687,8 +687,8 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
 
     /**
      * Processes a received packet. This function does not avoid buffer
-     * underflow exceptions when reading data from the packet. Instead, a
-     * {@code try...catch} clause is used to detect invalid packets.
+     * underflow exceptions when reading data from the packet. Instead, a {@code
+     * try...catch} clause is used to detect invalid packets.
      * @param packet the packet's payload
      * @throws UnknownCommandException if the packet cannot be parsed
      */

@@ -147,7 +147,7 @@ public class GUISpellList extends GUIItemList {
      * @param prefix invocation prefix, "cast " or "invoke ",  to search for
      * @param legend the text before the binding(s)
      * @return empty string if no matching bindings, else text in the form
-     *         "legend (binding 1) ; (binding 2) ; ..."
+     * "legend (binding 1) ; (binding 2) ; ..."
      */
     @NotNull
     private String getBindings(@NotNull final Spell spell, @NotNull final String prefix, @NotNull final String legend) {

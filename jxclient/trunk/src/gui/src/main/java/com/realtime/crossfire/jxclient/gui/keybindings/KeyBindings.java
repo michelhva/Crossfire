@@ -389,7 +389,8 @@ public class KeyBindings {
     /**
      * Search bindings having a command text starting with the specified value.
      * @param command the text to search for
-     * @param startOnly if true only search the text at the start of the command, else anywhere.
+     * @param startOnly if true only search the text at the start of the
+     * command, else anywhere.
      * @return the matching bindings
      */
     @NotNull
@@ -397,8 +398,7 @@ public class KeyBindings {
         final Collection<KeyBinding> matches = new HashSet<KeyBinding>();
 
         for (final KeyBinding binding : keybindings) {
-            if ((startOnly && binding.getCommandString().startsWith(command))
-                || (!startOnly && binding.getCommandString().contains(command))) {
+            if ((startOnly && binding.getCommandString().startsWith(command)) || (!startOnly && binding.getCommandString().contains(command))) {
                 matches.add(binding);
             }
         }

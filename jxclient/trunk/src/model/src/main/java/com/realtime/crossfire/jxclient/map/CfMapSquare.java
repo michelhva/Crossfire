@@ -212,7 +212,7 @@ public class CfMapSquare {
      * @param layer the layer between {@code 0} and {@code LAYERS-1}
      * @param smooth the new smooth value
      * @return whether fog-of-war has been cleared (1) or whether the smooth
-     *         value has changed (2)
+     * value has changed (2)
      */
     public int setSmooth(final int layer, final int smooth) {
         final boolean fogOfWarCleared = fogOfWar;
@@ -284,10 +284,10 @@ public class CfMapSquare {
 
     /**
      * Sets the map square containing the head face for a layer.
-     * @param layer the layer for the new head face between {@code 0} and
-     * {@code LAYERS-1}
-     * @param mapSquare the map square containing the head face; may be
-     * {@code null}
+     * @param layer the layer for the new head face between {@code 0} and {@code
+     * LAYERS-1}
+     * @param mapSquare the map square containing the head face; may be {@code
+     * null}
      * @param setAlways if set, always update the face; if unset, only update
      * when fog-of-war
      */
@@ -302,7 +302,7 @@ public class CfMapSquare {
      * Returns the map square of the head of a multi-square object.
      * @param layer the layer to return the head for
      * @return the head map square, or {@code null} if this square does not
-     *         contain a multi-tail
+     * contain a multi-tail
      */
     @Nullable
     public CfMapSquare getHeadMapSquare(final int layer) {

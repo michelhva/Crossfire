@@ -68,8 +68,8 @@ public class KeyBindingState {
 
     /**
      * Creates a new instance.
-     * @param keyBindings the {@code KeyBindings} to modify; may be {@code
-     * null} when removing bindings
+     * @param keyBindings the {@code KeyBindings} to modify; may be {@code null}
+     * when removing bindings
      * @param keyBindings2 the {@code KeyBindings} to modify; only used when
      * removing bindings; may be {@code null} when removing bindings
      * @param commands the commands to bind, or {@code null} to unbind

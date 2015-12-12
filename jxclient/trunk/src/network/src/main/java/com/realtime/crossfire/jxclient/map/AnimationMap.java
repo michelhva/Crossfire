@@ -35,8 +35,8 @@ import org.jetbrains.annotations.Nullable;
 public class AnimationMap {
 
     /**
-     * The active {@link AnimationState} instances. Maps map {@link Location}
-     * to {@code AnimationState} instance.
+     * The active {@link AnimationState} instances. Maps map {@link Location} to
+     * {@code AnimationState} instance.
      */
     @NotNull
     private final Map<Location, AnimationState> animations = new HashMap<Location, AnimationState>();

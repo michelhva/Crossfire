@@ -86,8 +86,8 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
     private final FacesProvider facesProvider;
 
     /**
-     * The {@link SmoothingRenderer} to use or {@code null} to not draw
-     * smoothed faces.
+     * The {@link SmoothingRenderer} to use or {@code null} to not draw smoothed
+     * faces.
      */
     @Nullable
     private final SmoothingRenderer smoothingRenderer;
@@ -316,8 +316,8 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
      * @param name the name of this element
      * @param mapUpdaterState the map updater state instance to use
      * @param facesProvider the faces provider for looking up faces
-     * @param smoothingRenderer the smoothing renderer to use or {@code null}
-     * to not draw smoothed faces
+     * @param smoothingRenderer the smoothing renderer to use or {@code null} to
+     * not draw smoothed faces
      * @param darknessColors the darkness colors instance for converting
      * darkness values into colors
      */

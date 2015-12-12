@@ -227,7 +227,7 @@ public class Options {
     /**
      * Returns the filename for Crossfire protocol debug logs.
      * @return the filename or {@code null} to not log Crossfire protocol
-     *         messages
+     * messages
      */
     @Nullable
     public String getDebugProtocolFilename() {

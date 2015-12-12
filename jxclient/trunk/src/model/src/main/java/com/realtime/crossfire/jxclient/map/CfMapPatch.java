@@ -99,7 +99,7 @@ public class CfMapPatch {
      * @param x the x-coordinate of the square
      * @param y the y-coordinate of the square
      * @return the darkness value of the square; 0=dark, 255=full bright; not
-     *         yet set faces return 0
+     * yet set faces return 0
      */
     public int getDarkness(final int x, final int y) {
         return square[x][y].getDarkness();
@@ -112,7 +112,7 @@ public class CfMapPatch {
      * @param layer the layer to set
      * @param smooth the smooth value to set
      * @return whether fog-of-war has been cleared (1) or whether the smooth
-     *         value has changed (2)
+     * value has changed (2)
      */
     public int setSmooth(final int x, final int y, final int layer, final int smooth) {
         return square[x][y].setSmooth(layer, smooth);
@@ -166,8 +166,8 @@ public class CfMapPatch {
      * Sets the map square containing the head face for a layer.
      * @param x the x-coordinate of the square
      * @param y the y-coordinate of the square
-     * @param layer the layer for the new head face between {@code 0} and
-     * {@code LAYERS-1}
+     * @param layer the layer for the new head face between {@code 0} and {@code
+     * LAYERS-1}
      * @param mapSquare the map square containing the head face; may be {@code
      * null}
      * @param setAlways if set, always update the face; if unset, only update
@@ -183,7 +183,7 @@ public class CfMapPatch {
      * @param y the y-coordinate of the square
      * @param layer the layer to return the head for
      * @return the head map square, or {@code null} if this square does not
-     *         contain a multi-tail
+     * contain a multi-tail
      */
     @Nullable
     public CfMapSquare getHeadMapSquare(final int x, final int y, final int layer) {

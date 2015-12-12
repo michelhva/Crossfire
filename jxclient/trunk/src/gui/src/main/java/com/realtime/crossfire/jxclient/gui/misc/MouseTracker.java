@@ -41,8 +41,7 @@ import org.jetbrains.annotations.Nullable;
  * Tracks mouse actions and delivers mouse events to affected {@link
  * GUIElement}.
  * <p>
- * XXX: some delivered MouseEvents are not relative to the underlying
- * GUIElement.
+ * XXX: some delivered MouseEvents are not relative to the underlying GUIElement.
  * @author Andreas Kirschbaum
  */
 public class MouseTracker {

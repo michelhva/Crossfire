@@ -67,8 +67,8 @@ public class FileCache implements ImageCache {
      * Retrieves an image from the cache.
      * @param faceName the image name to retrieve
      * @param faceChecksum the checksum to retrieve
-     * @return the image icon, or {@code null} if the cache does not contain
-     * the image
+     * @return the image icon, or {@code null} if the cache does not contain the
+     * image
      */
     @Nullable
     private ImageIcon load(@NotNull final String faceName, final int faceChecksum) {

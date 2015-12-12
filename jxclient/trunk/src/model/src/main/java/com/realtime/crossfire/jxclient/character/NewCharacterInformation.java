@@ -195,7 +195,7 @@ public class NewCharacterInformation {
      * Returns a {@link ClassRaceInfo class info} by class name.
      * @param className the class name
      * @return the class race info or {@code null} if no such class info is
-     *         defined
+     * defined
      */
     @Nullable
     public ClassRaceInfo getClassInfo(@NotNull final String className) {

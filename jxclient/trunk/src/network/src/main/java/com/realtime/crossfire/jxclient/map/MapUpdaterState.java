@@ -41,9 +41,10 @@ import org.jetbrains.annotations.Nullable;
  * <p>
  * The map updater is called from two threads: the {@link
  * com.realtime.crossfire.jxclient.server.socket.ClientSocket} reading commands
- * received from the Crossfire server, and {@link com.realtime.crossfire.jxclient.faces.FileCacheFaceQueue}
- * reading faces from the (file) cache. Synchronization is by {@link #sync} and
- * applies to the whole map model {@link #map}.
+ * received from the Crossfire server, and {@link
+ * com.realtime.crossfire.jxclient.faces.FileCacheFaceQueue} reading faces from
+ * the (file) cache. Synchronization is by {@link #sync} and applies to the
+ * whole map model {@link #map}.
  * @author Andreas Kirschbaum
  */
 public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMapListener, FacesManagerListener {

@@ -101,8 +101,8 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
     private final JScrollPane scrollPane;
 
     /**
-     * The index of the currently shown tooltip. Set to {@code -1} if no
-     * tooltip is shown.
+     * The index of the currently shown tooltip. Set to {@code -1} if no tooltip
+     * is shown.
      */
     private int tooltipIndex = -1;
 

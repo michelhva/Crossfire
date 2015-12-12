@@ -115,8 +115,8 @@ public class GUISpellLabel extends GUIHTMLLabel {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the gui element name
-     * @param picture the background picture; may be {@code null}; it is
-     * ignored for type {@code SPELL_ICON}
+     * @param picture the background picture; may be {@code null}; it is ignored
+     * for type {@code SPELL_ICON}
      * @param facesManager the instance for looking up faces
      * @param font the font to use
      * @param type the display type
