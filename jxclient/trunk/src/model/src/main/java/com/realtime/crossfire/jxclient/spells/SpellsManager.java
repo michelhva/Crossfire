@@ -36,6 +36,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.stream.Collectors;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -405,11 +406,7 @@ public class SpellsManager implements Iterable<Spell> {
      */
     private void filterSpells() {
         filteredSpells.clear();
-        for (final Spell spell : spells) {
-            if (skillFilter == -1 || spell.getSkill() == skillFilter) {
-                filteredSpells.add(spell);
-            }
-        }
+        filteredSpells.addAll(spells.stream().filter(spell -> skillFilter == -1 || spell.getSkill() == skillFilter).collect(Collectors.toList()));
     }
 
     /**

@@ -35,6 +35,7 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
+import java.util.stream.Collectors;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -191,13 +192,7 @@ public class ScriptManager {
      */
     @NotNull
     private Set<ScriptProcess> getScriptsByName(@NotNull final CharSequence partialScriptName) {
-        final Set<ScriptProcess> result = new HashSet<>();
-        for (final ScriptProcess scriptProcess : scriptProcesses) {
-            if (scriptProcess.getFilename().contains(partialScriptName)) {
-                result.add(scriptProcess);
-            }
-        }
-        return result;
+        return scriptProcesses.stream().filter(scriptProcess -> scriptProcess.getFilename().contains(partialScriptName)).collect(Collectors.toSet());
     }
 
     /**

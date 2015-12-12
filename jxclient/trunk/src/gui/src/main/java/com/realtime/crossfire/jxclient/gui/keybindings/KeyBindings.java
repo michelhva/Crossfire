@@ -35,6 +35,7 @@ import java.io.LineNumberReader;
 import java.io.OutputStreamWriter;
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.stream.Collectors;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -377,14 +378,6 @@ public class KeyBindings {
      */
     @NotNull
     public Collection<KeyBinding> getBindingsForPartialCommand(@NotNull final String command, final boolean startOnly) {
-        final Collection<KeyBinding> matches = new HashSet<>();
-
-        for (final KeyBinding binding : keybindings) {
-            if ((startOnly && binding.getCommandString().startsWith(command)) || (!startOnly && binding.getCommandString().contains(command))) {
-                matches.add(binding);
-            }
-        }
-
-        return matches;
+        return keybindings.stream().filter(binding -> (startOnly && binding.getCommandString().startsWith(command)) || (!startOnly && binding.getCommandString().contains(command))).collect(Collectors.toSet());
     }
 }

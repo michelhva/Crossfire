@@ -67,9 +67,7 @@ public class ScriptkillallCommand extends AbstractCommand {
             drawInfoError(scriptManager.hasScripts() ? "No matching scripts." : "No scripts running.");
             return;
         }
-        for (final ScriptProcess scriptProcess : scriptProcesses) {
-            scriptProcess.killScript();
-        }
+        scriptProcesses.forEach(ScriptProcess::killScript);
     }
 
 }

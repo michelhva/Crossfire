@@ -371,9 +371,7 @@ public class DefaultJXCSkin implements JXCSkin {
         this.tooltipManager = tooltipManager;
         tooltipManager.setTooltip(tooltipLabel);
 
-        for (final CommandList commandList : initEvents) {
-            commandList.execute();
-        }
+        initEvents.forEach(CommandList::execute);
     }
 
     /**
@@ -387,16 +385,10 @@ public class DefaultJXCSkin implements JXCSkin {
             tmpTooltipManager.setTooltip(null);
         }
 
-        for (final String optionName : optionNames) {
-            optionManager.removeOption(optionName);
-        }
+        optionNames.forEach(optionManager::removeOption);
         optionNames.clear();
-        for (final GUIElement guiElement : guiElements) {
-            guiElement.dispose();
-        }
-        for (final SkinEvent skinEvent : skinEvents) {
-            skinEvent.dispose();
-        }
+        guiElements.forEach(GUIElement::dispose);
+        skinEvents.forEach(SkinEvent::dispose);
         guiElements.clear();
     }
 

@@ -99,9 +99,7 @@ public class CommandList {
             return;
         }
 
-        for (final GUICommand command : commandList) {
-            command.execute();
-        }
+        commandList.forEach(GUICommand::execute);
     }
 
     /**
