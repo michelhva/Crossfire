@@ -102,7 +102,7 @@ public class CommandHistory {
     /**
      * Returns the previous command.
      * @return the previous command or {@code null} if no previous command
-     *         exists
+     * exists
      */
     @Nullable
     public String up() {
@@ -125,8 +125,7 @@ public class CommandHistory {
      * Returns the last executed command.
      * @param index the index of the command; 0=last command, 1=second to last,
      * etc.
-     * @return the last executed command or {@code null} if the index is
-     *         invalid
+     * @return the last executed command or {@code null} if the index is invalid
      */
     @Nullable
     public CharSequence last(final int index) {

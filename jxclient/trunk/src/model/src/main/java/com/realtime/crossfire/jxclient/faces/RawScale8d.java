@@ -128,7 +128,7 @@ public class RawScale8d {
      * Returns the scale image data. Note this is the method that does the work
      * so it might take some time to process.
      * @return an array of pixels 64 times smaller than the input array
-     *         containing the scaled down image
+     * containing the scaled down image
      */
     @NotNull
     public int[] getScaledData() {

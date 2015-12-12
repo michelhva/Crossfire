@@ -229,7 +229,7 @@ public class KeybindingsManager {
     /**
      * Processes a pressed ESC key.
      * @return whether the event has been consumed and the key bindings dialog
-     *         should be closed
+     * should be closed
      */
     public boolean escPressed() {
         if (keyBindingState == null) {
@@ -258,7 +258,8 @@ public class KeybindingsManager {
      * Searches bindings having a command text starting with the specified
      * value.
      * @param command the text to search for
-     * @param startOnly if true only search the text at the start of the command, else anywhere.
+     * @param startOnly if true only search the text at the start of the
+     * command, else anywhere.
      * @return the matching bindings
      */
     public Iterable<KeyBinding> getBindingsForPartialCommand(@NotNull final String command, final boolean startOnly) {

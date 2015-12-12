@@ -103,8 +103,8 @@ public class GuiManager {
     private Gui dialogQuit;
 
     /**
-     * The "really disconnect?" dialog. Set to {@code null} if the skin does
-     * not define this dialog.
+     * The "really disconnect?" dialog. Set to {@code null} if the skin does not
+     * define this dialog.
      */
     @Nullable
     private Gui dialogDisconnect;
@@ -117,8 +117,8 @@ public class GuiManager {
     private Gui dialogConnect;
 
     /**
-     * The "message" field within {@link #dialogConnect}. Set to {@code null}
-     * if the dialog does not define a "message" label.
+     * The "message" field within {@link #dialogConnect}. Set to {@code null} if
+     * the dialog does not define a "message" label.
      */
     @Nullable
     private AbstractLabel dialogConnectLabel;
@@ -513,7 +513,7 @@ public class GuiManager {
      * The ESC key has been pressed.
      * @param connected whether a connection to the server is active
      * @return whether how the key has been consumed: 0=ignore key, 1=disconnect
-     *         from server, quit=quit application
+     * from server, quit=quit application
      */
     @SuppressWarnings("IfStatementWithIdenticalBranches")
     public EscAction escPressed(final boolean connected) {

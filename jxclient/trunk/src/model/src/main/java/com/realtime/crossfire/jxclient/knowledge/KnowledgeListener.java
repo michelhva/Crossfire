@@ -25,7 +25,7 @@ import java.util.EventListener;
 
 /**
  * @author Nicolas Weeger
-*/
+ */
 public interface KnowledgeListener extends EventListener {
 
     void typeAdded(int index);

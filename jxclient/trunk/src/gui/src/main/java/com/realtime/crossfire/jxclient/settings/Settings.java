@@ -70,8 +70,8 @@ public class Settings {
     }
 
     /**
-     * Returns the string associated with the specified key at a node, or
-     * {@code defaultValue} if there is no association for this key.
+     * Returns the string associated with the specified key at a node, or {@code
+     * defaultValue} if there is no association for this key.
      * @param key the key to get the value for
      * @return the value
      */
@@ -82,8 +82,8 @@ public class Settings {
     }
 
     /**
-     * Returns the boolean associated with the specified key at a node or
-     * {@code defaultValue} if there is no association for this key.
+     * Returns the boolean associated with the specified key at a node or {@code
+     * defaultValue} if there is no association for this key.
      * @param key the key to get the value for
      * @return the value
      */
@@ -97,8 +97,8 @@ public class Settings {
     }
 
     /**
-     * Returns the integer associated with the specified key at a node or
-     * {@code defaultValue} if there is no association for this key.
+     * Returns the integer associated with the specified key at a node or {@code
+     * defaultValue} if there is no association for this key.
      * @param key the key to get the value for
      * @return the value
      */
@@ -107,8 +107,8 @@ public class Settings {
     }
 
     /**
-     * Returns the long associated with the specified key at a node or
-     * {@code defaultValue} if there is no association for this key.
+     * Returns the long associated with the specified key at a node or {@code
+     * defaultValue} if there is no association for this key.
      * @param key the key to get the value for
      * @return the value
      */

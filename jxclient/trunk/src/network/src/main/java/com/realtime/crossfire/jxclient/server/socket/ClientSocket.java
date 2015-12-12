@@ -64,8 +64,8 @@ public class ClientSocket {
     private final Model model;
 
     /**
-     * The appender to write state changes to. May be {@code null} to not
-     * write anything.
+     * The appender to write state changes to. May be {@code null} to not write
+     * anything.
      */
     @Nullable
     private final DebugWriter debugProtocol;
@@ -179,8 +179,8 @@ public class ClientSocket {
     private final ByteBuffer outputBuffer = ByteBuffer.allocate(2+MAXIMUM_PACKET_SIZE);
 
     /**
-     * The {@link SocketChannel} when connected. Set to {@code null} when
-     * not connected.
+     * The {@link SocketChannel} when connected. Set to {@code null} when not
+     * connected.
      */
     @Nullable
     private SocketChannel socketChannel;

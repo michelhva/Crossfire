@@ -32,8 +32,8 @@ public interface ScriptProcessListener extends EventListener {
 
     /**
      * Called after the script has been terminated.
-     * @param result the termination reason or {@code null} if the script
-     * exited successfully
+     * @param result the termination reason or {@code null} if the script exited
+     * successfully
      */
     void scriptTerminated(@Nullable String result);
 

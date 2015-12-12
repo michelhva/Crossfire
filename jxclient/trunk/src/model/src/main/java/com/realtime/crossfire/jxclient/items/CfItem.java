@@ -459,8 +459,8 @@ public class CfItem {
     }
 
     /**
-     * Add a {@code CfItemModifiedListener}. The listener will be notified
-     * about attribute changes of this item.
+     * Add a {@code CfItemModifiedListener}. The listener will be notified about
+     * attribute changes of this item.
      * @param listener the listener to remove
      */
     public void addCfItemModifiedListener(@NotNull final CfItemListener listener) {

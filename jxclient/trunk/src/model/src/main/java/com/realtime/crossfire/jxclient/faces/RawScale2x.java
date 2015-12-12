@@ -142,7 +142,7 @@ public class RawScale2x {
      * Gets the scale image data. Note this is the method that does the work so
      * it might take some time to process.
      * @return an array of pixels 4 times the size of the input array containing
-     *         the smoothly scaled image
+     * the smoothly scaled image
      */
     @NotNull
     public int[] getScaledData() {

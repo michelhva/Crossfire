@@ -280,8 +280,8 @@ public class Gui extends JComponent {
      * Determines the {@link GUIElement} for a given coordinate.
      * @param x the x-coordinate to check
      * @param y the y-coordinate to check
-     * @return the {@code GUIElement} at the given coordinate or {@code null}
-     * if none was found
+     * @return the {@code GUIElement} at the given coordinate or {@code null} if
+     * none was found
      */
     @Nullable
     public AbstractGUIElement getElementFromPoint(final int x, final int y) {

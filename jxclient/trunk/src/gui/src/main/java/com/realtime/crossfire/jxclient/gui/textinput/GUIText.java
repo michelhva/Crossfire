@@ -74,8 +74,8 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     private final CommandCallback commandCallback;
 
     /**
-     * The {@link CommandHistory} for this text field. Set to {@code null} is
-     * no command history is used.
+     * The {@link CommandHistory} for this text field. Set to {@code null} is no
+     * command history is used.
      */
     @Nullable
     private final CommandHistory commandHistory;
