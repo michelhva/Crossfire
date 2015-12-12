@@ -36,7 +36,7 @@ public class MoveSelectionCommand implements GUICommand {
      * The list to scroll.
      */
     @NotNull
-    private final GUIList list;
+    private final GUIList<?> list;
 
     /**
      * The distance in lines to scroll.
@@ -54,7 +54,7 @@ public class MoveSelectionCommand implements GUICommand {
      * @param diffLines the distance in lines to scroll
      * @param diffElements the distance in elements to scroll
      */
-    public MoveSelectionCommand(@NotNull final GUIList list, final int diffLines, final int diffElements) {
+    public MoveSelectionCommand(@NotNull final GUIList<?> list, final int diffLines, final int diffElements) {
         this.list = list;
         this.diffLines = diffLines;
         this.diffElements = diffElements;

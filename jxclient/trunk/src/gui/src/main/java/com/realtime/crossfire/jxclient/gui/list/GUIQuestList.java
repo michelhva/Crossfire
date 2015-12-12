@@ -21,7 +21,6 @@
 package com.realtime.crossfire.jxclient.gui.list;
 
 import com.realtime.crossfire.jxclient.faces.FacesManager;
-import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemQuest;
@@ -37,7 +36,7 @@ import org.jetbrains.annotations.Nullable;
  * A {@link GUIList} to display quests.
  * @author Nicolas Weeger
  */
-public class GUIQuestList extends GUIItemList {
+public class GUIQuestList extends GUIItemList<GUIItemQuest> {
 
     /**
      * The serial version UID.
@@ -130,7 +129,7 @@ public class GUIQuestList extends GUIItemList {
      */
     @NotNull
     @Override
-    protected GUIElement newItem(final int index) {
+    protected GUIItemQuest newItem(final int index) {
         return new GUIItemQuest(tooltipManager, elementListener, name+index, itemPainter, index, facesManager, questsManager, itemView, 0);
     }
 

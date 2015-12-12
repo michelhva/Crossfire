@@ -22,7 +22,6 @@
 package com.realtime.crossfire.jxclient.gui.list;
 
 import com.realtime.crossfire.jxclient.faces.FacesManager;
-import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemKnowledge;
@@ -37,7 +36,7 @@ import org.jetbrains.annotations.Nullable;
 /**
  * @author nicolas
  */
-public class GUIKnowledgeList extends GUIItemList {
+public class GUIKnowledgeList extends GUIItemList<GUIItemKnowledge> {
 
     /**
      * The serial version UID.
@@ -124,7 +123,7 @@ public class GUIKnowledgeList extends GUIItemList {
      */
     @NotNull
     @Override
-    protected GUIElement newItem(final int index) {
+    protected GUIItemKnowledge newItem(final int index) {
         return new GUIItemKnowledge(tooltipManager, elementListener, name+index, itemPainter, index, facesManager, knowledgeManager, itemView, commandQueue, 0);
     }
 

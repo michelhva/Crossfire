@@ -486,7 +486,7 @@ public class CommandParser {
             throw new IOException("'"+element+"' must be an item list");
         }
 
-        return new ExecSelectionCommand((GUIItemList)element, commandType, crossfireServerConnection, floorView, commandQueue);
+        return new ExecSelectionCommand((GUIItemList<?>)element, commandType, crossfireServerConnection, floorView, commandQueue);
     }
 
     /**
@@ -512,7 +512,7 @@ public class CommandParser {
             throw new IOException("'"+element+"' must be a list");
         }
 
-        return new MoveSelectionCommand((GUIList)element, diffLines, diffElements);
+        return new MoveSelectionCommand((GUIList<?>)element, diffLines, diffElements);
     }
 
     /**

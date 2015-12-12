@@ -55,7 +55,7 @@ public abstract class GUIComboBox<T> extends AbstractGUIElement {
      * The model for {@link #comboBox}.
      */
     @NotNull
-    private final DefaultComboBoxModel model = new DefaultComboBoxModel();
+    private final DefaultComboBoxModel<T> model = new DefaultComboBoxModel<>();
 
     /**
      * The {@link GUILog} to update or {@code null}.
@@ -67,19 +67,18 @@ public abstract class GUIComboBox<T> extends AbstractGUIElement {
      * The Swing component that implements the combo box.
      */
     @NotNull
-    private final JComboBox comboBox = new JComboBox(model);
+    private final JComboBox<T> comboBox = new JComboBox<>(model);
 
     /**
      * The {@link ListCellRenderer} for {@link #comboBox}.
      */
     @NotNull
     @SuppressWarnings("FieldCanBeLocal")
-    private final ListCellRenderer renderer = new ListCellRenderer() {
+    private final ListCellRenderer<T> renderer = new ListCellRenderer<T>() {
 
         @Override
-        public Component getListCellRendererComponent(final JList list, final Object value, final int index, final boolean isSelected, final boolean cellHasFocus) {
-            @SuppressWarnings("unchecked") final T tmp = (T)value;
-            return GUIComboBox.this.getListCellRendererComponent(list, tmp, index, isSelected, cellHasFocus);
+        public Component getListCellRendererComponent(final JList<? extends T> list, final T value, final int index, final boolean isSelected, final boolean cellHasFocus) {
+            return GUIComboBox.this.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
         }
 
     };
@@ -170,7 +169,7 @@ public abstract class GUIComboBox<T> extends AbstractGUIElement {
      * @return the component to render the value
      */
     @NotNull
-    protected abstract Component getListCellRendererComponent(@NotNull final JList list, @Nullable final T value, final int index, final boolean selected, final boolean cellHasFocus);
+    protected abstract Component getListCellRendererComponent(@NotNull final JList<? extends T> list, @Nullable final T value, final int index, final boolean selected, final boolean cellHasFocus);
 
     /**
      * Called whenever the selected item has changed.

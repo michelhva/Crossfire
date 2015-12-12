@@ -31,9 +31,10 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link ListCellRenderer} that renders {@link GUIMetaElement} instances.
+ * @param <T> the type of the list elements
  * @author Andreas Kirschbaum
  */
-public class ItemItemCellRenderer extends JPanel implements GUIListCellRenderer {
+public class ItemItemCellRenderer<T extends GUIItemItem> extends JPanel implements GUIListCellRenderer<T> {
 
     /**
      * The serial version UID.
@@ -61,8 +62,8 @@ public class ItemItemCellRenderer extends JPanel implements GUIListCellRenderer 
      * {@inheritDoc}
      */
     @Override
-    public Component getListCellRendererComponent(@NotNull final JList list, @NotNull final Object value, final int index, final boolean isSelected, final boolean cellHasFocus) {
-        template.setIndexNoListeners(((GUIItemItem)value).getIndex());
+    public Component getListCellRendererComponent(@NotNull final JList<? extends T> list, @NotNull final T value, final int index, final boolean isSelected, final boolean cellHasFocus) {
+        template.setIndexNoListeners(value.getIndex());
         template.setSelected(isSelected);
         return this;
     }

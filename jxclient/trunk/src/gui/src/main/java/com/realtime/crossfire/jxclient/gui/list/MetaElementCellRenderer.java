@@ -32,7 +32,7 @@ import org.jetbrains.annotations.NotNull;
  * A {@link ListCellRenderer} that renders {@link GUIMetaElement} instances.
  * @author Andreas Kirschbaum
  */
-public class MetaElementCellRenderer extends JPanel implements GUIListCellRenderer {
+public class MetaElementCellRenderer extends JPanel implements GUIListCellRenderer<GUIMetaElement> {
 
     /**
      * The serial version UID.
@@ -61,8 +61,8 @@ public class MetaElementCellRenderer extends JPanel implements GUIListCellRender
      */
     @NotNull
     @Override
-    public Component getListCellRendererComponent(@NotNull final JList list, @NotNull final Object value, final int index, final boolean isSelected, final boolean cellHasFocus) {
-        template.setIndex(((GUIMetaElement)value).getIndex());
+    public Component getListCellRendererComponent(@NotNull final JList<? extends GUIMetaElement> list, @NotNull final GUIMetaElement value, final int index, final boolean isSelected, final boolean cellHasFocus) {
+        template.setIndex(value.getIndex());
         template.setSelected(isSelected);
         return this;
     }

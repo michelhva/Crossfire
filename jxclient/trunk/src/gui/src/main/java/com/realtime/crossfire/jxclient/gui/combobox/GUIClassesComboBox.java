@@ -122,7 +122,7 @@ public class GUIClassesComboBox extends GUIComboBox<String> {
      */
     @NotNull
     @Override
-    protected Component getListCellRendererComponent(@NotNull final JList list, @Nullable final String value, final int index, final boolean selected, final boolean cellHasFocus) {
+    protected Component getListCellRendererComponent(@NotNull final JList<? extends String> list, @Nullable final String value, final int index, final boolean selected, final boolean cellHasFocus) {
         final ClassRaceInfo classInfo = value == null ? null : model.getNewCharacterInformation().getClassInfo(value);
         renderer.setText(classInfo == null ? value : classInfo.getName());
         return renderer;

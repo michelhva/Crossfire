@@ -22,7 +22,6 @@
 package com.realtime.crossfire.jxclient.gui.list;
 
 import com.realtime.crossfire.jxclient.faces.FacesManager;
-import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemSpell;
@@ -42,7 +41,7 @@ import org.jetbrains.annotations.Nullable;
  * A {@link GUIList} to display spells.
  * @author Nicolas Weeger
  */
-public class GUISpellList extends GUIItemList {
+public class GUISpellList extends GUIItemList<GUIItemSpell> {
 
     /**
      * The serial version UID.
@@ -200,7 +199,7 @@ public class GUISpellList extends GUIItemList {
      */
     @NotNull
     @Override
-    protected GUIElement newItem(final int index) {
+    protected GUIItemSpell newItem(final int index) {
         return new GUIItemSpell(tooltipManager, elementListener, commandQueue, name+index, itemPainter, index, facesManager, spellsManager, currentSpellManager, itemView, 0);
     }
 
