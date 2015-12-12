@@ -61,20 +61,30 @@ public class DebugMessagesCommand extends AbstractCommand {
      */
     @Override
     public void execute(@NotNull final String args) {
-        if (args.equals("colors")) {
+        switch (args) {
+        case "colors":
             for (int color = 0; color < MessageBufferUpdater.NUM_COLORS; color++) {
                 drawInfo("This line is color #"+color+" ("+MessageBufferUpdater.getColorName(color)+").", color);
             }
-        } else if (args.equals("types")) {
+            break;
+
+        case "types":
             for (final int type : MessageTypes.getAllTypes()) {
                 crossfireServerConnection.drawextinfo(0, type, 0, "This line is type #"+type+".");
             }
-        } else if (args.equals("on")) {
+            break;
+
+        case "on":
             crossfireServerConnection.drawInfoSetDebugMode(true);
-        } else if (args.equals("off")) {
+            break;
+
+        case "off":
             crossfireServerConnection.drawInfoSetDebugMode(false);
-        } else {
+            break;
+
+        default:
             drawInfoError("Valid arguments are 'colors', 'types', 'on', or 'off'. 'colors' prints messages using different message types, 'on' and 'off' enable/disable printing of message types.");
+            break;
         }
     }
 

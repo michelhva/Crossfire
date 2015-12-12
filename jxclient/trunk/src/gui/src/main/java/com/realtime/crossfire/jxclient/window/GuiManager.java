@@ -626,7 +626,8 @@ public class GuiManager {
 
                 final String name = dialog.getName();
                 if (name != null) {
-                    if (name.equals("account_login")) {
+                    switch (name) {
+                    case "account_login":
                         final GUIText loginField = dialog.getFirstElement(GUIText.class, "account_login");
                         if (loginField == null) {
                             final GUIText passwordField = dialog.getFirstElement(GUIText.class, "account_password");
@@ -656,7 +657,9 @@ public class GuiManager {
                                 }
                             }
                         }
-                    } else if (name.equals("account_characters")) {
+                        break;
+
+                    case "account_characters":
                         final GUICharacterList characterList = dialog.getFirstElement(GUICharacterList.class);
                         if (characterList != null) {
                             final String accountName = server.getAccountName();
@@ -670,12 +673,15 @@ public class GuiManager {
                                 }
                             }
                         }
-                    } else if (name.equals("account_character_new")) {
+                        break;
+
+                    case "account_character_new":
                         final GUIText characterField = dialog.getFirstElement(GUIText.class, "character_login");
                         if (characterField != null) {
                             characterField.setText("");
                             characterField.setActive(true);
                         }
+                        break;
                     }
                 }
             }

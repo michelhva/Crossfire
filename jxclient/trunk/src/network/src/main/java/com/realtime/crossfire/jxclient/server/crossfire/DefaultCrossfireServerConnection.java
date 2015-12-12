@@ -1832,28 +1832,50 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
         sendPendingRequestInfo();
 
-        if (infoType.equals("image_info")) {
+        switch (infoType) {
+        case "image_info":
             processImageInfoReplyinfo(packet);
-        } else if (infoType.equals("skill_info")) {
+            break;
+
+        case "skill_info":
             processSkillInfoReplyinfo(packet);
-        } else if (infoType.equals("exp_table")) {
+            break;
+
+        case "exp_table":
             processExpTableReplyinfo(packet);
-        } else if (infoType.equals("knowledge_info")) {
+            break;
+
+        case "knowledge_info":
             processKnowledgeInfoReplyinfo(packet);
-        } else if (infoType.equals("startingmap")) {
+            break;
+
+        case "startingmap":
             processStartingMapReplyinfo(packet);
-        } else if (infoType.equals("race_list")) {
+            break;
+
+        case "race_list":
             processRaceListReplyinfo(packet);
-        } else if (infoType.equals("class_list")) {
+            break;
+
+        case "class_list":
             processClassListReplyinfo(packet);
-        } else if (infoType.equals("race_info")) {
+            break;
+
+        case "race_info":
             processClassRaceInfoReplyinfo(packet, true);
-        } else if (infoType.equals("class_info")) {
+            break;
+
+        case "class_info":
             processClassRaceInfoReplyinfo(packet, false);
-        } else if (infoType.equals("newcharinfo")) {
+            break;
+
+        case "newcharinfo":
             processNewCharInfoReplyinfo(packet);
-        } else {
+            break;
+
+        default:
             System.err.println("Ignoring unexpected replyinfo type '"+infoType+"'.");
+            break;
         }
     }
 
@@ -2075,16 +2097,26 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         final ClassRaceInfoBuilder rb = new ClassRaceInfoBuilder(raceName);
         while (packet.hasRemaining()) {
             final String type = getStringDelimiter(packet, ' ');
-            if (type.equals("name")) {
+            switch (type) {
+            case "name":
                 rb.setName(getString(packet, getInt1(packet)));
-            } else if (type.equals("msg")) {
+                break;
+
+            case "msg":
                 rb.setMsg(getString(packet, getInt2(packet)));
-            } else if (type.equals("stats")) {
+                break;
+
+            case "stats":
                 parseClassRaceInfoStats(packet, rb);
-            } else if (type.equals("choice")) {
+                break;
+
+            case "choice":
                 parseClassRaceInfoChoice(packet, rb);
-            } else {
+                break;
+
+            default:
                 System.err.println("Ignoring race_info type "+type);
+                break;
             }
         }
         final ClassRaceInfo classRaceInfo = rb.finish();
@@ -2117,15 +2149,24 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             final String typeString = tokens[0];
             final String variableName = tokens[1];
             final String values = tokens[2];
-            if (typeString.equals("R")) {
+            switch (typeString) {
+            case "R":
                 parseNewCharInfoValue(newCharInfoBuilder, true, variableName, values);
-            } else if (typeString.equals("O")) {
+                break;
+
+            case "O":
                 parseNewCharInfoValue(newCharInfoBuilder, false, variableName, values);
-            } else if (typeString.equals("V")) {
+                break;
+
+            case "V":
                 parseNewCharInfoValues(newCharInfoBuilder, variableName, values);
-            } else if (typeString.equals("I")) {
+                break;
+
+            case "I":
                 parseNewCharInfoInformational(variableName, values);
-            } else {
+                break;
+
+            default:
                 throw new UnknownCommandException("unknown type '"+typeString+"' in replyinfo newcharinfo: "+line);
             }
         }
@@ -2175,7 +2216,8 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @throws UnknownCommandException if the entry cannot be parsed
      */
     private static void parseNewCharInfoValues(@NotNull final NewCharInfoBuilder newCharInfoBuilder, @NotNull final String variableName, @NotNull final String values) throws UnknownCommandException {
-        if (variableName.equals("points")) {
+        switch (variableName) {
+        case "points":
             final int points;
             try {
                 points = Integer.parseInt(values);
@@ -2183,7 +2225,9 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                 throw new UnknownCommandException("'"+variableName+"' variable in replyinfo newcharinfo has invalid value '"+values+"'.");
             }
             newCharInfoBuilder.setPoints(points);
-        } else if (variableName.equals("statrange")) {
+            break;
+
+        case "statrange":
             final String[] tmp = PATTERN_SPACE.split(values, 2);
             if (tmp.length != 2) {
                 throw new UnknownCommandException("'"+variableName+"' variable in replyinfo newcharinfo has invalid value '"+values+"'.");
@@ -2197,9 +2241,13 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                 throw new UnknownCommandException("'"+variableName+"' variable in replyinfo newcharinfo has invalid value '"+values+"'.");
             }
             newCharInfoBuilder.setStatRange(minValue, maxValue);
-        } else if (variableName.equals("statname")) {
+            break;
+
+        case "statname":
             newCharInfoBuilder.setStatNames(PATTERN_SPACE.split(values));
-        } else {
+            break;
+
+        default:
             throw new UnknownCommandException("unknown variable name '"+variableName+"' in replyinfo newcharinfo");
         }
     }
@@ -3163,32 +3211,47 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         for (int i = 0; i+1 < options.size(); i += 2) {
             final String option = options.get(i);
             final String value = options.get(i+1);
-            if (option.equals("spellmon")) {
+            switch (option) {
+            case "spellmon":
                 if (!value.equals("1")) {
                     throw new UnknownCommandException("Error: the server is too old for this client since it does not support the spellmon=1 setup option.");
                 }
-            } else if (option.equals("sound2")) {
+                break;
+
+            case "sound2":
                 // ignore: if the server sends sound info it is processed
-            } else if (option.equals("exp64")) {
+                break;
+
+            case "exp64":
                 // Ignored since it only enables additional/improved stat
                 // commands but the old version is also supported.
-            } else if (option.equals("newmapcmd")) {
+                break;
+
+            case "newmapcmd":
                 if (!value.equals("1")) {
                     throw new UnknownCommandException("Error: the server is too old for this client since it does not support the newmapcmd=1 setup option.");
                 }
-            } else if (option.equals("facecache")) {
+                break;
+
+            case "facecache":
                 if (!value.equals("1")) {
                     throw new UnknownCommandException("the server is too old for this client since it does not support the facecache=1 setup option.");
                 }
-            } else if (option.equals("extendedTextInfos")) {
+                break;
+
+            case "extendedTextInfos":
                 if (!value.equals("1")) {
                     throw new UnknownCommandException("the server is too old for this client since it does not support the extendedTextInfos=1 setup option.");
                 }
-            } else if (option.equals("itemcmd")) {
+                break;
+
+            case "itemcmd":
                 if (!value.equals("2")) {
                     throw new UnknownCommandException("the server is too old for this client since it does not support the itemcmd=2 setup option.");
                 }
-            } else if (option.equals("mapsize")) {
+                break;
+
+            case "mapsize":
                 final String[] tmp = value.split("x", 2);
                 if (tmp.length != 2) {
                     throw new UnknownCommandException("the server returned 'setup mapsize "+value+"'.");
@@ -3247,25 +3310,41 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                     pendingMapHeight = 0;
                     negotiateMapSize(tmpMapWidth, tmpMapHeight);
                 }
-            } else if (option.equals("map2cmd")) {
+                break;
+
+            case "map2cmd":
                 if (!value.equals("1")) {
                     throw new UnknownCommandException("the server is too old for this client since it does not support the map2cmd=1 setup option.");
                 }
-            } else if (option.equals("darkness")) {
+                break;
+
+            case "darkness":
                 // do not care
-            } else if (option.equals("tick")) {
+                break;
+
+            case "tick":
                 if (!value.equals("1")) {
                     throw new UnknownCommandException("the server is too old for this client since it does not support the tick=1 setup option.");
                 }
-            } else if (option.equals("num_look_objects")) {
+                break;
+
+            case "num_look_objects":
                 numLookObjects.processSetupNumLookObjects(value);
-            } else if (option.equals("faceset")) {
+                break;
+
+            case "faceset":
                 // ignore: we do not care about the face set
-            } else if (option.equals("want_pickup")) {
+                break;
+
+            case "want_pickup":
                 // ignore: we do not care whether this option has been ignored
-            } else if (option.equals("extended_stats")) {
+                break;
+
+            case "extended_stats":
                 // ignore: we do not care whether this option has been ignored
-            } else if (option.equals("loginmethod")) {
+                break;
+
+            case "loginmethod":
                 if (value.equals("FALSE")) {
                     loginMethod = 0;
                     continue;
@@ -3281,10 +3360,15 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                     throw new UnknownCommandException("the server returned 'setup loginmethod "+value+"'.");
                 }
                 loginMethod = method;
-            } else if (option.equals("notifications")) {
+                break;
+
+            case "notifications":
                 // ignore: we do not care whether this option has been ignored
-            } else {
+                break;
+
+            default:
                 System.err.println("Warning: ignoring unknown setup option from server: "+option+"="+value);
+                break;
             }
         }
 

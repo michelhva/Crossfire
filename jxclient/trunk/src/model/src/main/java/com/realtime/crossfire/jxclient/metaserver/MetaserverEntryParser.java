@@ -193,40 +193,74 @@ public class MetaserverEntryParser {
             if (tmp.length == 2) {
                 final String key = tmp[0];
                 final String value = tmp[1];
-                if (key.equals("hostname")) {
+                switch (key) {
+                case "hostname":
                     hostname = value;
-                } else if (key.equals("port")) {
-                } else if (key.equals("html_comment")) {
+                    break;
+
+                case "port":
+                    break;
+
+                case "html_comment":
                     comment = value;
-                } else if (key.equals("text_comment")) {
+                    break;
+
+                case "text_comment":
                     if (comment.isEmpty()) {
                         comment = value;
                     }
-                } else if (key.equals("archbase")) {
+                    break;
+
+                case "archbase":
                     archBase = value;
-                } else if (key.equals("mapbase")) {
+                    break;
+
+                case "mapbase":
                     mapBase = value;
-                } else if (key.equals("codebase")) {
+                    break;
+
+                case "codebase":
                     codeBase = value;
-                } else if (key.equals("num_players")) {
+                    break;
+
+                case "num_players":
                     players = NumberParser.parseInt(value, 0);
-                } else if (key.equals("in_bytes")) {
+                    break;
+
+                case "in_bytes":
                     bytesIn = NumberParser.parseLong(value, 0);
-                } else if (key.equals("out_bytes")) {
+                    break;
+
+                case "out_bytes":
                     bytesOut = NumberParser.parseLong(value, 0);
-                } else if (key.equals("uptime")) {
+                    break;
+
+                case "uptime":
                     uptimeSeconds = NumberParser.parseInt(value, 0);
-                } else if (key.equals("version")) {
+                    break;
+
+                case "version":
                     version = value;
-                } else if (key.equals("sc_version")) {
-                } else if (key.equals("cs_version")) {
-                } else if (key.equals("last_update")) {
+                    break;
+
+                case "sc_version":
+                    break;
+
+                case "cs_version":
+                    break;
+
+                case "last_update":
                     final long now = (System.currentTimeMillis()+500)/1000;
                     final long uptime = NumberParser.parseLong(value, now);
                     updateSeconds = Math.max((int)((uptime-now)/1000), 0);
-                } else if (key.equals("flags")) {
-                } else {
+                    break;
+
+                case "flags":
+                    break;
+
+                default:
                     System.err.println("Ignoring unknown key: "+key);
+                    break;
                 }
             } else {
                 throw new IOException("syntax error: "+line);

@@ -645,7 +645,8 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
      */
     private void runScriptCommand(@NotNull final String cmdLine) {
         final String[] tmp = cmdLine.split(" +", 2);
-        if (tmp[0].equals("watch")) {
+        switch (tmp[0]) {
+        case "watch":
             if (tmp.length == 1) {
                 packetWatcher.addCommand("");
             } else if (tmp[1].indexOf(' ') != -1) {
@@ -653,15 +654,21 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
             } else {
                 packetWatcher.addCommand(tmp[1]);
             }
-        } else if (tmp[0].equals("unwatch")) {
+            break;
+
+        case "unwatch":
             packetWatcher.removeCommand(tmp.length >= 2 ? tmp[1] : "");
-        } else if (tmp[0].equals("request")) {
+            break;
+
+        case "request":
             if (tmp.length == 2) {
                 cmdRequest(tmp[1]);
             } else {
                 reportError("syntax error: "+cmdLine);
             }
-        } else if (tmp[0].equals("issue")) {
+            break;
+
+        case "issue":
             if (tmp.length != 2) {
                 reportError("syntax error: "+cmdLine);
             } else if (tmp[1].startsWith("mark ")) {
@@ -671,26 +678,35 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
             } else {
                 cmdIssue(tmp[1]);
             }
-        } else if (tmp[0].equals("draw")) {
+            break;
+
+        case "draw":
             if (tmp.length == 2) {
                 cmdDraw(tmp[1]);
             } else {
                 reportError("syntax error: "+cmdLine);
             }
-        } else if (tmp[0].equals("monitor")) {
+            break;
+
+        case "monitor":
             if (tmp.length == 1) {
                 cmdMonitor();
             } else {
                 reportError("The 'monitor' command does not take arguments.");
             }
-        } else if (tmp[0].equals("unmonitor")) {
+            break;
+
+        case "unmonitor":
             if (tmp.length == 1) {
                 cmdUnmonitor();
             } else {
                 reportError("The 'unmonitor' command does not take arguments.");
             }
-        } else {
+            break;
+
+        default:
             reportError("unrecognized command from script: "+cmdLine);
+            break;
         }
     }
 
