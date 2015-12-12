@@ -112,14 +112,14 @@ public class GUIMetaElementList extends GUIList<GUIMetaElement> {
      * detects added or removed entries and updates the list accordingly.
      */
     @NotNull
-    private final MetaserverListener metaserverListener = () -> rebuildList();
+    private final MetaserverListener metaserverListener = this::rebuildList;
 
     /**
      * The {@link MetaserverEntryListener} attached to all tracked metaserver
      * entries. It detects changed contents and updates the list accordingly.
      */
     @NotNull
-    private final MetaserverEntryListener metaserverEntryListener = () -> setChanged();
+    private final MetaserverEntryListener metaserverEntryListener = this::setChanged;
 
     /**
      * Creates a new instance.

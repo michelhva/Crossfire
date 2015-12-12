@@ -137,7 +137,7 @@ public class GUIItemSpell extends GUIItemItem {
      * The {@link SpellListener} attached to {@link #spell}.
      */
     @NotNull
-    private final SpellListener spellListener = () -> setSpell();
+    private final SpellListener spellListener = this::setSpell;
 
     /**
      * The {@link FacesManagerListener} registered to detect updated faces.

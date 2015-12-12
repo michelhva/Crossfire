@@ -108,7 +108,7 @@ public class GUIItemQuest extends GUIItemItem {
      * The {@link QuestListener} attached to {@link #quest}.
      */
     @NotNull
-    private final QuestListener questListener = () -> setQuest();
+    private final QuestListener questListener = this::setQuest;
 
     /**
      * The {@link FacesManagerListener} registered to detect updated faces.

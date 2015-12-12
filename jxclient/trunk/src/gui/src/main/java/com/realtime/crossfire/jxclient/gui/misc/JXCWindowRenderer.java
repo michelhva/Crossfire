@@ -713,7 +713,7 @@ public class JXCWindowRenderer {
      */
     @NotNull
     public Iterable<Gui> getOpenDialogs() {
-        return () -> new OpenDialogsIterator();
+        return OpenDialogsIterator::new;
     }
 
     /**
