@@ -109,7 +109,7 @@ public class GUICharacterList extends GUIList<GUICharacter> {
         this.facesManager = facesManager;
         this.facesManager.addFacesManagerListener(face -> {
             if (characterModel.displaysFace(face.getFaceNum())) {
-                final Gui parent = GuiUtils.getGui(GUICharacterList.this);
+                final Gui parent = GuiUtils.getGui(this);
                 if (parent != null) {
                     parent.repaint();
                 }
