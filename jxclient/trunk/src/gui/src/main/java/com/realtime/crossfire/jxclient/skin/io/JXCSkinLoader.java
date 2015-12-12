@@ -1183,7 +1183,7 @@ public class JXCSkinLoader {
             break;
         }
 
-        case "skill": {
+        case "skill":
             final String subtype = args.get();
             final Skill skill = model.getSkillSet().getNamedSkill(args.get().replaceAll("_", " "), -1);
             final CommandList commandList = skin.getCommandList(args.get());
@@ -1200,7 +1200,6 @@ public class JXCSkinLoader {
                 throw new IOException("undefined event sub-type: "+subtype);
             }
             break;
-        }
 
         default:
             throw new IOException("undefined event type: "+type);
@@ -1482,7 +1481,7 @@ public class JXCSkinLoader {
             element = new GUIItemShortcut(tooltipManager, elementListener, name, castColor, castImage, invokeColor, invokeImage, index, facesManager, shortcuts, font, currentSpellManager);
             break;
 
-        case "spelllist": {
+        case "spelllist":
             if (defaultItemPainter == null) {
                 throw new IOException("cannot use 'item spelllist' without 'def item' command");
             }
@@ -1490,7 +1489,6 @@ public class JXCSkinLoader {
             final ItemPainter itemPainter = defaultItemPainter.newItemPainter();
             element = new GUIItemSpell(tooltipManager, elementListener, commandQueue, name, itemPainter, index, facesManager, model.getSpellsManager(), currentSpellManager, spellView, 0);
             break;
-        }
 
         default:
             throw new IOException("undefined item type: "+type);

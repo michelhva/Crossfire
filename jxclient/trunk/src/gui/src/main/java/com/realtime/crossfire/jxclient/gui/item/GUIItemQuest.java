@@ -99,7 +99,7 @@ public class GUIItemQuest extends GUIItemItem {
      */
     @NotNull
     private final QuestsManagerListener questsManagerListener = index1 -> {
-        if (GUIItemQuest.this.index >= index1) {
+        if (index >= index1) {
             setQuest();
         }
     };
