@@ -38,9 +38,10 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link GUIList} instance that displays {@link GUIItemItem} instances.
+ * @param <T> the type of the list elements
  * @author Andreas Kirschbaum
  */
-public abstract class GUIItemList extends GUIList {
+public abstract class GUIItemList<T extends GUIItemItem> extends GUIList<T> {
 
     /**
      * The serial version UID.
@@ -107,7 +108,7 @@ public abstract class GUIItemList extends GUIList {
      * @param templateItem the template item for painting the list
      */
     protected GUIItemList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final GUIItemItem templateItem) {
-        super(tooltipManager, elementListener, name, cellWidth, cellHeight, new ItemItemCellRenderer(templateItem), null);
+        super(tooltipManager, elementListener, name, cellWidth, cellHeight, new ItemItemCellRenderer<>(templateItem), null);
         this.itemView = itemView;
         this.currentItem = currentItem;
         setLayoutOrientation(JList.HORIZONTAL_WRAP, -1);
@@ -134,7 +135,7 @@ public abstract class GUIItemList extends GUIList {
             final int oldSize = resizeElements(newSize);
             if (oldSize < newSize) {
                 for (int i = oldSize; i < newSize; i++) {
-                    final GUIElement item = newItem(i);
+                    final T item = newItem(i);
                     addElement(item);
                     item.setChangedListener(itemChangedListener);
                 }
@@ -290,6 +291,6 @@ public abstract class GUIItemList extends GUIList {
      * @return the new instance
      */
     @NotNull
-    protected abstract GUIElement newItem(final int index);
+    protected abstract T newItem(final int index);
 
 }

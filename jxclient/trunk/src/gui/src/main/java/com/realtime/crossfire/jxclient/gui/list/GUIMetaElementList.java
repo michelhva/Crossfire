@@ -22,7 +22,6 @@
 package com.realtime.crossfire.jxclient.gui.list;
 
 import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
-import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
@@ -41,7 +40,7 @@ import org.jetbrains.annotations.Nullable;
  * A {@link GUIList} that tracks a {@link Metaserver} instance.
  * @author Andreas Kirschbaum
  */
-public class GUIMetaElementList extends GUIList {
+public class GUIMetaElementList extends GUIList<GUIMetaElement> {
 
     /**
      * The serial version UID.
@@ -189,7 +188,7 @@ public class GUIMetaElementList extends GUIList {
             final int oldSize = resizeElements(newSize);
             if (oldSize < newSize) {
                 for (int i = oldSize; i < newSize; i++) {
-                    final GUIElement metaElement = new GUIMetaElement(tooltipManager, elementListener, metaserverModel, name+i, image, font, i, format, tooltip);
+                    final GUIMetaElement metaElement = new GUIMetaElement(tooltipManager, elementListener, metaserverModel, name+i, image, font, i, format, tooltip);
                     addElement(metaElement);
                     metaserverModel.addMetaserverEntryListener(i, metaserverEntryListener);
                 }

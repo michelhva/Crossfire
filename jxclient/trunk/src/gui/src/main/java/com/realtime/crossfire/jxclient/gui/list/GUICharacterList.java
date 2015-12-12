@@ -27,7 +27,6 @@ import com.realtime.crossfire.jxclient.account.CharacterModel;
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
-import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
@@ -40,7 +39,7 @@ import org.jetbrains.annotations.Nullable;
  * A {@link GUIList} display characters of an account.
  * @author Nicolas Weeger
  */
-public class GUICharacterList extends GUIList {
+public class GUICharacterList extends GUIList<GUICharacter> {
 
     /**
      * The serial version UID.
@@ -176,7 +175,7 @@ public class GUICharacterList extends GUIList {
             final int oldSize = resizeElements(newSize);
             if (oldSize < newSize) {
                 for (int i = oldSize; i < newSize; i++) {
-                    final GUIElement metaElement = new GUICharacter(tooltipManager, facesManager, elementListener, name+i, 1, 1, font, i, characterModel);
+                    final GUICharacter metaElement = new GUICharacter(tooltipManager, facesManager, elementListener, name+i, 1, 1, font, i, characterModel);
                     addElement(metaElement);
                     characterModel.addCharacterInformationListener(i, characterInformationListener);
                 }

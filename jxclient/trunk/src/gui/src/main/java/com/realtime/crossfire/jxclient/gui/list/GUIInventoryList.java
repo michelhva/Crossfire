@@ -22,7 +22,6 @@
 package com.realtime.crossfire.jxclient.gui.list;
 
 import com.realtime.crossfire.jxclient.faces.FacesManager;
-import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemInventory;
@@ -39,7 +38,7 @@ import org.jetbrains.annotations.Nullable;
  * A {@link GUIItemList} for inventory views.
  * @author Andreas Kirschbaum
  */
-public class GUIInventoryList extends GUIItemList {
+public class GUIInventoryList extends GUIItemList<GUIItemInventory> {
 
     /**
      * The serial version UID.
@@ -134,7 +133,7 @@ public class GUIInventoryList extends GUIItemList {
      */
     @Override
     @NotNull
-    protected GUIElement newItem(final int index) {
+    protected GUIItemInventory newItem(final int index) {
         return new GUIItemInventory(tooltipManager, elementListener, commandQueue, name+index, itemPainter, index, crossfireServerConnection, facesManager, floorView, itemView, 0);
     }
 

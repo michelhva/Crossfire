@@ -30,7 +30,7 @@ import org.jetbrains.annotations.NotNull;
  * A {@link GUIList} that tracks a {@link GUICharacter} instance.
  * @author Nicolas Weeger
  */
-public class CharacterCellRenderer extends JPanel implements GUIListCellRenderer {
+public class CharacterCellRenderer extends JPanel implements GUIListCellRenderer<GUICharacter> {
 
     /**
      * The serial version UID.
@@ -58,8 +58,8 @@ public class CharacterCellRenderer extends JPanel implements GUIListCellRenderer
      * {@inheritDoc}
      */
     @Override
-    public Component getListCellRendererComponent(@NotNull final JList list, @NotNull final Object value, final int index, final boolean isSelected, final boolean cellHasFocus) {
-        template.setIndex(((GUICharacter)value).getIndex());
+    public Component getListCellRendererComponent(@NotNull final JList<? extends GUICharacter> list, @NotNull final GUICharacter value, final int index, final boolean isSelected, final boolean cellHasFocus) {
+        template.setIndex(value.getIndex());
         template.setSelected(isSelected);
         return this;
     }

@@ -50,8 +50,9 @@ import org.jetbrains.annotations.Nullable;
 /**
  * A {@link GUIElement} that displays a list of entries.
  * @author Andreas Kirschbaum
+ * @param <T> the type of the list elements
  */
-public abstract class GUIList extends ActivatableGUIElement implements GUIScrollable {
+public abstract class GUIList<T extends GUIElement> extends ActivatableGUIElement implements GUIScrollable {
 
     /**
      * The serial version UID.
@@ -67,7 +68,7 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
      * The {@link GUIListCellRenderer} for the {@link #list}.
      */
     @NotNull
-    private final GUIListCellRenderer listCellRenderer;
+    private final GUIListCellRenderer<? extends T> listCellRenderer;
 
     /**
      * The {@link CommandList} to execute on double-clicks or {@code null} to
@@ -80,13 +81,13 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
      * The list model of {@link #list}.
      */
     @NotNull
-    private final DefaultListModel model = new DefaultListModel();
+    private final DefaultListModel<T> model = new DefaultListModel<>();
 
     /**
      * The list used to display the cells.
      */
     @NotNull
-    private final JList list = new JList(model);
+    private final JList<T> list = new JList<>(model);
 
     /**
      * The viewport used by {@link #scrollPane}.
@@ -136,7 +137,7 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
      * @param doubleClickCommandList the command list to execute on double-click
      * or {@code null} to ignore double-clicks
      */
-    protected GUIList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final GUIListCellRenderer listCellRenderer, @Nullable final CommandList doubleClickCommandList) {
+    protected GUIList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final GUIListCellRenderer<T> listCellRenderer, @Nullable final CommandList doubleClickCommandList) {
         super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT);
         this.cellHeight = cellHeight;
         this.listCellRenderer = listCellRenderer;
@@ -184,15 +185,15 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
      * @return the gui element
      */
     @NotNull
-    public GUIElement getElement(final int index) {
-        return (GUIElement)model.get(index);
+    public T getElement(final int index) {
+        return model.get(index);
     }
 
     /**
      * Adds an {@link GUIElement} to the list.
      * @param element the element to add
      */
-    protected void addElement(@NotNull final GUIElement element) {
+    protected void addElement(@NotNull final T element) {
         assert Thread.holdsLock(getTreeLock());
         model.addElement(element);
         list.setSize(getWidth(), Integer.MAX_VALUE);
@@ -215,7 +216,7 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
         final int oldSize = model.getSize();
         if (newSize < oldSize) {
             for (int i = newSize; i < oldSize; i++) {
-                final GUIElement element = (GUIElement)model.get(i);
+                final GUIElement element = model.get(i);
                 if (element instanceof GUIItemItem) {
                     element.dispose();
                 }

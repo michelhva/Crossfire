@@ -22,7 +22,6 @@
 package com.realtime.crossfire.jxclient.gui.list;
 
 import com.realtime.crossfire.jxclient.faces.FacesManager;
-import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemFloor;
@@ -40,7 +39,7 @@ import org.jetbrains.annotations.Nullable;
  * A {@link GUIItemList} for floor views.
  * @author Andreas Kirschbaum
  */
-public class GUIFloorList extends GUIItemList {
+public class GUIFloorList extends GUIItemList<GUIItemFloor> {
 
     /**
      * The serial version UID.
@@ -171,7 +170,7 @@ public class GUIFloorList extends GUIItemList {
      */
     @Override
     @NotNull
-    protected GUIElement newItem(final int index) {
+    protected GUIItemFloor newItem(final int index) {
         return new GUIItemFloor(tooltipManager, elementListener, commandQueue, name+index, itemPainter, index, crossfireServerConnection, itemView, itemSet, facesManager, nextGroupFace, prevGroupFace, 0);
     }
 

@@ -39,7 +39,7 @@ public class ExecSelectionCommand implements GUICommand {
      * The list to execute in.
      */
     @NotNull
-    private final GUIItemList list;
+    private final GUIItemList<?> list;
 
     /**
      * The command to execute.
@@ -73,7 +73,7 @@ public class ExecSelectionCommand implements GUICommand {
      * @param floorView the floor view to use
      * @param commandQueue the command queue to use
      */
-    public ExecSelectionCommand(@NotNull final GUIItemList list, @NotNull final CommandType command, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FloorView floorView, @NotNull final CommandQueue commandQueue) {
+    public ExecSelectionCommand(@NotNull final GUIItemList<?> list, @NotNull final CommandType command, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FloorView floorView, @NotNull final CommandQueue commandQueue) {
         this.list = list;
         this.command = command;
         this.crossfireServerConnection = crossfireServerConnection;
