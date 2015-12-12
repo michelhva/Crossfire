@@ -90,9 +90,6 @@ public class KeyCharKeyBinding extends KeyBinding {
      */
     @Override
     public boolean matchesKeyChar(final char keyChar) {
-        if (this.keyChar == keyChar) {
-            System.out.print("");
-        }
         return this.keyChar == keyChar;
     }
 
