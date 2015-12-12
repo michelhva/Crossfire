@@ -53,7 +53,7 @@ public class NewCharInfoBuilder {
      * The stat names to set.
      */
     @NotNull
-    private final List<String> statNames = new ArrayList<String>();
+    private final List<String> statNames = new ArrayList<>();
 
     /**
      * Whether a race should be selected.

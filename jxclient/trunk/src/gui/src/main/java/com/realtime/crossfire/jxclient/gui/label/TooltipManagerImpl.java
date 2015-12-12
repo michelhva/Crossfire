@@ -81,7 +81,7 @@ public class TooltipManagerImpl implements TooltipManager {
      * to show no tooltip.
      */
     @NotNull
-    private final Map<GUIElement, TooltipText> tooltipTexts = new WeakHashMap<GUIElement, TooltipText>();
+    private final Map<GUIElement, TooltipText> tooltipTexts = new WeakHashMap<>();
 
     /**
      * The {@link Runnable} that implements the functionality of {@link

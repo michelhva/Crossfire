@@ -37,10 +37,10 @@ import org.jetbrains.annotations.NotNull;
 public class InternalHTMLRenderer extends ParserCallback {
 
     @NotNull
-    private final Stack<Font> fonts = new Stack<Font>();
+    private final Stack<Font> fonts = new Stack<>();
 
     @NotNull
-    private final Stack<Color> colors = new Stack<Color>();
+    private final Stack<Color> colors = new Stack<>();
 
     @NotNull
     private final Graphics gc;

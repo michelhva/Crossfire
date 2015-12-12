@@ -44,7 +44,7 @@ public class EventListenerList2<T extends EventListener> implements Iterable<T>,
      * The {@link CopyOnWriteArrayList} holding all listener.
      */
     @NotNull
-    private final CopyOnWriteArrayList<T> eventListenerList = new CopyOnWriteArrayList<T>();
+    private final CopyOnWriteArrayList<T> eventListenerList = new CopyOnWriteArrayList<>();
 
     /**
      * Adds a listener.

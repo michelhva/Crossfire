@@ -66,7 +66,7 @@ public class AnimationState implements Iterable<Location> {
      * All map {@link Location locations} this animation is displayed at.
      */
     @NotNull
-    private final Set<Location> locations = new HashSet<Location>();
+    private final Set<Location> locations = new HashSet<>();
 
     /**
      * Creates a new instance.
@@ -175,7 +175,7 @@ public class AnimationState implements Iterable<Location> {
      * @param height the map height
      */
     public void scroll(final int dx, final int dy, final int width, final int height) {
-        final Collection<Location> tmp = new HashSet<Location>();
+        final Collection<Location> tmp = new HashSet<>();
         for (final Location location : locations) {
             if (0 <= location.getX() && location.getX() < width && 0 <= location.getY() && location.getY() < height) { // out-of-map bounds animations are dropped, not scrolled
                 final int newX = location.getX()-dx;

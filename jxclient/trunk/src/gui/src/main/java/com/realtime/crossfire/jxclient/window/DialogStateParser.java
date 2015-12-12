@@ -163,7 +163,7 @@ public class DialogStateParser {
             System.err.println(skin.getSkinName()+": cannot create directory");
         }
 
-        final List<Gui> openDialogs = new LinkedList<Gui>();
+        final List<Gui> openDialogs = new LinkedList<>();
         for (final Gui dialog : windowRenderer.getOpenDialogs()) {
             openDialogs.add(0, dialog);
         }

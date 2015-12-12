@@ -35,7 +35,7 @@ public class ExperienceTable {
      * Maps level to experience needed to reach the level.
      */
     @NotNull
-    private final Map<Integer, Long> info = new HashMap<Integer, Long>();
+    private final Map<Integer, Long> info = new HashMap<>();
 
     /**
      * The minimum level value in {@link #info}.

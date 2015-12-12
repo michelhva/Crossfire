@@ -78,25 +78,25 @@ public class DefaultJXCSkin implements JXCSkin {
      * All "event init" commands in execution order.
      */
     @NotNull
-    private final Collection<CommandList> initEvents = new ArrayList<CommandList>();
+    private final Collection<CommandList> initEvents = new ArrayList<>();
 
     /**
      * All defined command lists.
      */
     @NotNull
-    private final JXCSkinCache<CommandList> definedCommandLists = new JXCSkinCache<CommandList>("command list");
+    private final JXCSkinCache<CommandList> definedCommandLists = new JXCSkinCache<>("command list");
 
     /**
      * All GUI elements.
      */
     @NotNull
-    private final Collection<GUIElement> guiElements = new HashSet<GUIElement>();
+    private final Collection<GUIElement> guiElements = new HashSet<>();
 
     /**
      * All {@link SkinEvent SkinEvents} attached to this instance.
      */
     @NotNull
-    private final Collection<SkinEvent> skinEvents = new HashSet<SkinEvent>();
+    private final Collection<SkinEvent> skinEvents = new HashSet<>();
 
     /**
      * All defined dialogs.
@@ -120,7 +120,7 @@ public class DefaultJXCSkin implements JXCSkin {
      * The defined option names.
      */
     @NotNull
-    private final Collection<String> optionNames = new HashSet<String>();
+    private final Collection<String> optionNames = new HashSet<>();
 
     /**
      * The tooltip label or {@code null}.

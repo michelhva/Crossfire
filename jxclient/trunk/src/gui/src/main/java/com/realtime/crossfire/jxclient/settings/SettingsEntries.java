@@ -34,13 +34,13 @@ public class SettingsEntries {
      * The server to which the previous connection was made.
      */
     @NotNull
-    public static final SettingsEntry<String> SERVER = new SettingsEntry<String>("server", "crossfire.metalforge.net", "The server last connected to.");
+    public static final SettingsEntry<String> SERVER = new SettingsEntry<>("server", "crossfire.metalforge.net", "The server last connected to.");
 
     /**
      * Whether to record of all text messages received from the server.
      */
     @NotNull
-    public static final SettingsEntry<Boolean> MESSAGE_LOG_SETTINGS_ENTRY = new SettingsEntry<Boolean>("messagelog", false, "Whether to record all text messages into a file.");
+    public static final SettingsEntry<Boolean> MESSAGE_LOG_SETTINGS_ENTRY = new SettingsEntry<>("messagelog", false, "Whether to record all text messages into a file.");
 
     /**
      * Private constructor to prevent instantiation.
@@ -56,7 +56,7 @@ public class SettingsEntries {
      */
     @NotNull
     public static SettingsEntry<String> getPlayerSettingsEntry(@NotNull final String hostname) {
-        return new SettingsEntry<String>("player_"+hostname, "", "The charactername last played on the server.");
+        return new SettingsEntry<>("player_"+hostname, "", "The charactername last played on the server.");
     }
 
     /**
@@ -67,7 +67,7 @@ public class SettingsEntries {
      */
     @NotNull
     public static SettingsEntry<String> getLoginAccountSettingsEntry(@NotNull final String hostname) {
-        return new SettingsEntry<String>("login_account_"+hostname, "", "The account last logged in on the server.");
+        return new SettingsEntry<>("login_account_"+hostname, "", "The account last logged in on the server.");
     }
 
     /**
@@ -79,7 +79,7 @@ public class SettingsEntries {
      */
     @NotNull
     public static SettingsEntry<String> getLoginAccountSettingsEntry(@NotNull final String hostname, @NotNull final String accountName) {
-        return new SettingsEntry<String>("login_account_"+hostname+"_"+accountName, "", "The character last selected on the account.");
+        return new SettingsEntry<>("login_account_"+hostname+"_"+accountName, "", "The character last selected on the account.");
     }
 
     /**
@@ -91,7 +91,7 @@ public class SettingsEntries {
      */
     @NotNull
     public static SettingsEntry<Long> getPickupSettingsEntry(@NotNull final String hostname, @NotNull final String characterName) {
-        return new SettingsEntry<Long>("pickup_"+hostname+"_"+characterName, Pickup.PU_NOTHING, "The character's pickup mode.");
+        return new SettingsEntry<>("pickup_"+hostname+"_"+characterName, Pickup.PU_NOTHING, "The character's pickup mode.");
     }
 
 }

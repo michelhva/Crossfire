@@ -45,7 +45,7 @@ public class Spell {
      * The {@link SpellListener SpellListeners} to be notified of changes.
      */
     @NotNull
-    private final EventListenerList2<SpellListener> listeners = new EventListenerList2<SpellListener>();
+    private final EventListenerList2<SpellListener> listeners = new EventListenerList2<>();
 
     /**
      * The face number.

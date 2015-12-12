@@ -61,20 +61,20 @@ public class AskfaceFaceQueue extends AbstractFaceQueue {
      * instance.
      */
     @NotNull
-    private final Map<Integer, Face> pendingAskfaces = new HashMap<Integer, Face>();
+    private final Map<Integer, Face> pendingAskfaces = new HashMap<>();
 
     /**
      * Face numbers for which an "askface" command should be sent. It includes
      * all elements of {@link #pendingAskfaces}.
      */
     @NotNull
-    private final Map<Integer, Face> pendingFaces = new HashMap<Integer, Face>();
+    private final Map<Integer, Face> pendingFaces = new HashMap<>();
 
     /**
      * The same elements as {@link #pendingFaces} in query order.
      */
     @NotNull
-    private final List<Face> pendingFacesQueue = new LinkedList<Face>();
+    private final List<Face> pendingFacesQueue = new LinkedList<>();
 
     /**
      * Creates a new instance.

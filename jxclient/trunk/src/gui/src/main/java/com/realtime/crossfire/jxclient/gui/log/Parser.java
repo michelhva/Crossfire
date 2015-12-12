@@ -40,7 +40,7 @@ public class Parser {
      * Maps font tag name to font instance.
      */
     @NotNull
-    private static final Map<String, FontID> FONTS = new HashMap<String, FontID>();
+    private static final Map<String, FontID> FONTS = new HashMap<>();
 
     static {
         FONTS.put("print", FontID.PRINT);
@@ -54,7 +54,7 @@ public class Parser {
      * Maps color tag name to color instance. The keys must be lower case.
      */
     @NotNull
-    private static final Map<String, Color> COLORS = new HashMap<String, Color>();
+    private static final Map<String, Color> COLORS = new HashMap<>();
 
     static {
         COLORS.put("black", Color.BLACK);

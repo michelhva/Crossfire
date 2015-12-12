@@ -61,7 +61,7 @@ public abstract class GUILog extends AbstractGUIElement implements GUIScrollable
      * All listeners.
      */
     @NotNull
-    private final EventListenerList2<ScrollableListener> listeners = new EventListenerList2<ScrollableListener>();
+    private final EventListenerList2<ScrollableListener> listeners = new EventListenerList2<>();
 
     /**
      * The {@link Buffer} containing all received text messages.

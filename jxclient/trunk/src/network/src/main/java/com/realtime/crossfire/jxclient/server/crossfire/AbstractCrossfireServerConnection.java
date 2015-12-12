@@ -54,95 +54,95 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
      * notified.
      */
     @NotNull
-    private final EventListenerList2<CrossfireDrawinfoListener> drawinfoListeners = new EventListenerList2<CrossfireDrawinfoListener>();
+    private final EventListenerList2<CrossfireDrawinfoListener> drawinfoListeners = new EventListenerList2<>();
 
     /**
      * The {@link CrossfireDrawextinfoListener CrossfireDrawextinfoListeners} to
      * be notified.
      */
     @NotNull
-    private final EventListenerList2<CrossfireDrawextinfoListener> drawextinfoListeners = new EventListenerList2<CrossfireDrawextinfoListener>();
+    private final EventListenerList2<CrossfireDrawextinfoListener> drawextinfoListeners = new EventListenerList2<>();
 
     /**
      * The {@link CrossfireQueryListener CrossfireQueryListeners} to be
      * notified.
      */
     @NotNull
-    private final EventListenerList2<CrossfireQueryListener> queryListeners = new EventListenerList2<CrossfireQueryListener>();
+    private final EventListenerList2<CrossfireQueryListener> queryListeners = new EventListenerList2<>();
 
     /**
      * The {@link CrossfireMagicmapListener CrossfireMagicmapListeners} to be
      * notified of received magicmap commands.
      */
     @NotNull
-    private final EventListenerList2<CrossfireMagicmapListener> magicmapListeners = new EventListenerList2<CrossfireMagicmapListener>();
+    private final EventListenerList2<CrossfireMagicmapListener> magicmapListeners = new EventListenerList2<>();
 
     /**
      * The {@link CrossfireUpdateItemListener CrossfireUpdateItemListeners} to
      * be notified.
      */
     @NotNull
-    private final EventListenerList2<CrossfireUpdateItemListener> crossfireUpdateItemListeners = new EventListenerList2<CrossfireUpdateItemListener>();
+    private final EventListenerList2<CrossfireUpdateItemListener> crossfireUpdateItemListeners = new EventListenerList2<>();
 
     /**
      * The {@link CrossfireTickListener CrossfireTickListeners} to be notified.
      */
     @NotNull
-    private final EventListenerList2<CrossfireTickListener> crossfireTickListeners = new EventListenerList2<CrossfireTickListener>();
+    private final EventListenerList2<CrossfireTickListener> crossfireTickListeners = new EventListenerList2<>();
 
     /**
      * The {@link CrossfireSoundListener CrossfireSoundListeners} to be
      * notified.
      */
     @NotNull
-    private final EventListenerList2<CrossfireSoundListener> crossfireSoundListeners = new EventListenerList2<CrossfireSoundListener>();
+    private final EventListenerList2<CrossfireSoundListener> crossfireSoundListeners = new EventListenerList2<>();
 
     /**
      * The {@link CrossfireMusicListener CrossfireMusicListeners} to be
      * notified.
      */
     @NotNull
-    private final EventListenerList2<CrossfireMusicListener> crossfireMusicListeners = new EventListenerList2<CrossfireMusicListener>();
+    private final EventListenerList2<CrossfireMusicListener> crossfireMusicListeners = new EventListenerList2<>();
 
     /**
      * The {@link CrossfireComcListener CrossfireComcListeners} to be notified.
      */
     @NotNull
-    private final EventListenerList2<CrossfireComcListener> crossfireComcListeners = new EventListenerList2<CrossfireComcListener>();
+    private final EventListenerList2<CrossfireComcListener> crossfireComcListeners = new EventListenerList2<>();
 
     /**
      * The {@link ReceivedPacketListener ReceivedPacketListeners} to be
      * notified.
      */
     @NotNull
-    private final EventListenerList2<ReceivedPacketListener> receivedPacketListeners = new EventListenerList2<ReceivedPacketListener>();
+    private final EventListenerList2<ReceivedPacketListener> receivedPacketListeners = new EventListenerList2<>();
 
     /**
      * The {@link SentReplyListener SentReplyListeners} to be notified.
      */
     @NotNull
-    private final EventListenerList2<SentReplyListener> sentReplyListeners = new EventListenerList2<SentReplyListener>();
+    private final EventListenerList2<SentReplyListener> sentReplyListeners = new EventListenerList2<>();
 
     /**
      * The {@link CrossfirePickupListener CrossfirePickupListeners} to be
      * notified.
      */
     @NotNull
-    private final EventListenerList2<CrossfirePickupListener> crossfirePickupListeners = new EventListenerList2<CrossfirePickupListener>();
+    private final EventListenerList2<CrossfirePickupListener> crossfirePickupListeners = new EventListenerList2<>();
 
     /**
      * The {@link CrossfireAccountListener CrossfireAccountListeners} to be
      * notified.
      */
     @NotNull
-    private final EventListenerList2<CrossfireAccountListener> crossfireAccountListeners = new EventListenerList2<CrossfireAccountListener>();
+    private final EventListenerList2<CrossfireAccountListener> crossfireAccountListeners = new EventListenerList2<>();
 
     /**
      * The {@link CrossfireFailureListener CrossfireFailureListeners} to be
      * notified.
      */
     @NotNull
-    private final EventListenerList2<CrossfireFailureListener> crossfireFailureListeners = new EventListenerList2<CrossfireFailureListener>();
+    private final EventListenerList2<CrossfireFailureListener> crossfireFailureListeners = new EventListenerList2<>();
 
     /**
      * Creates a new instance.

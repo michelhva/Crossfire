@@ -54,7 +54,7 @@ public class Buffer {
      * The listeners to notify about changes.
      */
     @NotNull
-    private final EventListenerList2<BufferListener> listeners = new EventListenerList2<BufferListener>();
+    private final EventListenerList2<BufferListener> listeners = new EventListenerList2<>();
 
     /**
      * The {@link Fonts} instance for looking up fonts.
@@ -77,7 +77,7 @@ public class Buffer {
      * The lines in display order.
      */
     @NotNull
-    private final List<Line> lines = new CopyOnWriteArrayList<Line>();
+    private final List<Line> lines = new CopyOnWriteArrayList<>();
 
     /**
      * The total height of all {@link #lines}.
@@ -147,7 +147,7 @@ public class Buffer {
     public void clear() {
         final List<Line> removedLines;
         synchronized (sync) {
-            removedLines = new ArrayList<Line>(lines);
+            removedLines = new ArrayList<>(lines);
             totalHeight = 0;
             lines.clear();
         }
@@ -205,7 +205,7 @@ public class Buffer {
                 return;
             }
 
-            removedLines = new ArrayList<Line>(lines.size()-MAX_LINES);
+            removedLines = new ArrayList<>(lines.size()-MAX_LINES);
             while (lines.size() > MAX_LINES) {
                 final Line line = lines.remove(0);
                 removedLines.add(line);

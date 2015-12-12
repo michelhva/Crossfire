@@ -35,7 +35,7 @@ public class CurrentSpellManager {
      * The listeners to notify object changed spell objects.
      */
     @NotNull
-    private final EventListenerList2<CurrentSpellManagerListener> listeners = new EventListenerList2<CurrentSpellManagerListener>();
+    private final EventListenerList2<CurrentSpellManagerListener> listeners = new EventListenerList2<>();
 
     /**
      * The currently selected spell, or {@code null}.

@@ -33,7 +33,7 @@ public class Quest {
      * The {@link QuestListener QuestListeners} to be notified of changes.
      */
     @NotNull
-    private final EventListenerList2<QuestListener> listeners = new EventListenerList2<QuestListener>();
+    private final EventListenerList2<QuestListener> listeners = new EventListenerList2<>();
 
     /**
      * Quest internal code.

@@ -35,7 +35,7 @@ public class Skill {
      * The listeners to inform of changes.
      */
     @NotNull
-    private final EventListenerList2<SkillListener> listeners = new EventListenerList2<SkillListener>();
+    private final EventListenerList2<SkillListener> listeners = new EventListenerList2<>();
 
     /**
      * The skill name.

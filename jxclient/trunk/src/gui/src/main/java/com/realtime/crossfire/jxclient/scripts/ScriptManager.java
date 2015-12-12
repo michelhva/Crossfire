@@ -95,7 +95,7 @@ public class ScriptManager {
      * All running {@link ScriptProcess}es.
      */
     @NotNull
-    private final Collection<ScriptProcess> scriptProcesses = new CopyOnWriteArraySet<ScriptProcess>();
+    private final Collection<ScriptProcess> scriptProcesses = new CopyOnWriteArraySet<>();
 
     /**
      * The script ID for the next created script.
@@ -178,7 +178,7 @@ public class ScriptManager {
      */
     @NotNull
     private Set<ScriptProcess> getScriptByScriptId(final int scriptId) {
-        final Set<ScriptProcess> result = new HashSet<ScriptProcess>();
+        final Set<ScriptProcess> result = new HashSet<>();
         for (final ScriptProcess scriptProcess : scriptProcesses) {
             if (scriptProcess.getScriptId() == scriptId) {
                 result.add(scriptProcess);
@@ -196,7 +196,7 @@ public class ScriptManager {
      */
     @NotNull
     private Set<ScriptProcess> getScriptsByName(@NotNull final CharSequence partialScriptName) {
-        final Set<ScriptProcess> result = new HashSet<ScriptProcess>();
+        final Set<ScriptProcess> result = new HashSet<>();
         for (final ScriptProcess scriptProcess : scriptProcesses) {
             if (scriptProcess.getFilename().contains(partialScriptName)) {
                 result.add(scriptProcess);

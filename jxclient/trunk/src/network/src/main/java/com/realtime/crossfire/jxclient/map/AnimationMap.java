@@ -39,7 +39,7 @@ public class AnimationMap {
      * {@code AnimationState} instance.
      */
     @NotNull
-    private final Map<Location, AnimationState> animations = new HashMap<Location, AnimationState>();
+    private final Map<Location, AnimationState> animations = new HashMap<>();
 
     /**
      * Forgets all state.
@@ -92,7 +92,7 @@ public class AnimationMap {
      * @param height the map height
      */
     public void scroll(final int dx, final int dy, final int width, final int height) {
-        final Iterable<AnimationState> tmp = new HashSet<AnimationState>(animations.values());
+        final Iterable<AnimationState> tmp = new HashSet<>(animations.values());
         animations.clear();
         for (final AnimationState animationState : tmp) {
             animationState.scroll(dx, dy, width, height);

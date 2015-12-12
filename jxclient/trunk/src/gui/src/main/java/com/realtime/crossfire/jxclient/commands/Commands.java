@@ -36,7 +36,7 @@ public class Commands {
      * Maps command name to {@link Command} instance.
      */
     @NotNull
-    private final Map<String, Command> commands = new HashMap<String, Command>();
+    private final Map<String, Command> commands = new HashMap<>();
 
     /**
      * Adds an executable {@link Command}.

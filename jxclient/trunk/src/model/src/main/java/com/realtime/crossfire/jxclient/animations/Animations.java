@@ -40,7 +40,7 @@ public class Animations {
      * All defined animations. Maps animation id to animation instance.
      */
     @NotNull
-    private final Map<Integer, Animation> animations = new HashMap<Integer, Animation>();
+    private final Map<Integer, Animation> animations = new HashMap<>();
 
     /**
      * The {@link GuiStateListener} for detecting established or dropped

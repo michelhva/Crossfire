@@ -35,7 +35,7 @@ public class KnowledgeItem {
      * changes.
      */
     @NotNull
-    private final EventListenerList2<KnowledgeItemListener> listeners = new EventListenerList2<KnowledgeItemListener>();
+    private final EventListenerList2<KnowledgeItemListener> listeners = new EventListenerList2<>();
 
     /**
      * The knowledge identifier.

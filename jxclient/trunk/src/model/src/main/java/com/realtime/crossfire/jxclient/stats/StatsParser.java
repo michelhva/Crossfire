@@ -36,7 +36,7 @@ public class StatsParser {
      * included.
      */
     @NotNull
-    private static final Map<String, Integer> STAT_TABLE = new HashMap<String, Integer>();
+    private static final Map<String, Integer> STAT_TABLE = new HashMap<>();
 
     static {
         STAT_TABLE.put("AC", Stats.CS_STAT_AC);

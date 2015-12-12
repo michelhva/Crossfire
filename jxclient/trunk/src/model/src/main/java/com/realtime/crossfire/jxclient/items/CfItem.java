@@ -152,7 +152,7 @@ public class CfItem {
     /**
      * The listeners to be notified.
      */
-    private final EventListenerList2<CfItemListener> listeners = new EventListenerList2<CfItemListener>();
+    private final EventListenerList2<CfItemListener> listeners = new EventListenerList2<>();
 
     /**
      * Creates a new instance.

@@ -42,7 +42,7 @@ public class PacketWatcherTest {
      */
     @Test
     public void test1() {
-        final Collection<ReceivedPacketListener> listeners = new ArrayList<ReceivedPacketListener>();
+        final Collection<ReceivedPacketListener> listeners = new ArrayList<>();
         final CrossfireServerConnection connection = new TestCrossfireServerConnection() {
 
             @Override

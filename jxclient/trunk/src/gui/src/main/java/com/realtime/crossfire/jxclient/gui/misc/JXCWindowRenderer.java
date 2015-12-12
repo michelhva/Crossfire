@@ -233,13 +233,13 @@ public class JXCWindowRenderer {
      * dialog is at the end.
      */
     @NotNull
-    private final List<Gui> openDialogs = new CopyOnWriteArrayList<Gui>();
+    private final List<Gui> openDialogs = new CopyOnWriteArrayList<>();
 
     /**
      * Listeners to be notified about {@link #rendererGuiState} changes.
      */
     @NotNull
-    private final EventListenerList2<RendererGuiStateListener> rendererGuiStateListeners = new EventListenerList2<RendererGuiStateListener>();
+    private final EventListenerList2<RendererGuiStateListener> rendererGuiStateListeners = new EventListenerList2<>();
 
     /**
      * The currently displayed {@link Gui}.
@@ -252,14 +252,14 @@ public class JXCWindowRenderer {
      * #openDialogs} contain.
      */
     @NotNull
-    private final Collection<GUIMap> maps = new CopyOnWriteArrayList<GUIMap>();
+    private final Collection<GUIMap> maps = new CopyOnWriteArrayList<>();
 
     /**
      * The {@link GUIItemList} instances that {@link #currentGui} and {@link
      * #openDialogs} contain and that display floor items.
      */
     @NotNull
-    private final Collection<GUIFloorList> floorLists = new CopyOnWriteArrayList<GUIFloorList>();
+    private final Collection<GUIFloorList> floorLists = new CopyOnWriteArrayList<>();
 
     /**
      * The tooltip to use, or {@code null} if no tooltips should be shown.

@@ -54,7 +54,7 @@ public class KeyBindings {
      * The active key bindings.
      */
     @NotNull
-    private final Collection<KeyBinding> keybindings = new HashSet<KeyBinding>();
+    private final Collection<KeyBinding> keybindings = new HashSet<>();
 
     /**
      * Whether the contents of {@link #keybindings} have been modified from the
@@ -377,7 +377,7 @@ public class KeyBindings {
      */
     @NotNull
     public Collection<KeyBinding> getBindingsForPartialCommand(@NotNull final String command, final boolean startOnly) {
-        final Collection<KeyBinding> matches = new HashSet<KeyBinding>();
+        final Collection<KeyBinding> matches = new HashSet<>();
 
         for (final KeyBinding binding : keybindings) {
             if ((startOnly && binding.getCommandString().startsWith(command)) || (!startOnly && binding.getCommandString().contains(command))) {

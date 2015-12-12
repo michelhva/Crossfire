@@ -36,7 +36,7 @@ public class CommandHistoryFactory {
      * to instance.
      */
     @NotNull
-    private final Map<String, CommandHistory> commandHistories = new HashMap<String, CommandHistory>();
+    private final Map<String, CommandHistory> commandHistories = new HashMap<>();
 
     /**
      * Returns a {@link CommandHistory} instance by name. Calling this function

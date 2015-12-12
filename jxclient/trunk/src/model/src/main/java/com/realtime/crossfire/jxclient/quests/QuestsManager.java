@@ -41,14 +41,14 @@ public class QuestsManager {
      * All quests.
      */
     @NotNull
-    private final List<Quest> quests = new CopyOnWriteArrayList<Quest>();
+    private final List<Quest> quests = new CopyOnWriteArrayList<>();
 
     /**
      * The {@link QuestsManagerListener QuestsManagerListeners} to notify about
      * changes.
      */
     @NotNull
-    private final EventListenerList2<QuestsManagerListener> listeners = new EventListenerList2<QuestsManagerListener>();
+    private final EventListenerList2<QuestsManagerListener> listeners = new EventListenerList2<>();
 
     /**
      * A {@link Comparator} to compare {@link Quest} instances by title and

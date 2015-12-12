@@ -463,7 +463,7 @@ public class Stats {
      * The listeners to inform of stat changes.
      */
     @NotNull
-    private final EventListenerList2<StatsListener> statsListeners = new EventListenerList2<StatsListener>();
+    private final EventListenerList2<StatsListener> statsListeners = new EventListenerList2<>();
 
     /**
      * The {@link ExperienceTable} instance to use.
@@ -515,7 +515,7 @@ public class Stats {
      * All unhandled stat values for which an error has been printed.
      */
     @NotNull
-    private final Collection<String> unhandledStats = new HashSet<String>(0);
+    private final Collection<String> unhandledStats = new HashSet<>(0);
 
     /**
      * The {@link GuiStateListener} for detecting established or dropped

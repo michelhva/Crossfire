@@ -41,14 +41,14 @@ public class CharacterModel {
      * The current entries.
      */
     @NotNull
-    private final List<CharacterInformation> characters = new ArrayList<CharacterInformation>();
+    private final List<CharacterInformation> characters = new ArrayList<>();
 
     /**
      * The pending entries. Only valid between {@link #begin()} and {@link
      * #commit()}.
      */
     @NotNull
-    private final Collection<CharacterInformation> charactersPending = new ArrayList<CharacterInformation>();
+    private final Collection<CharacterInformation> charactersPending = new ArrayList<>();
 
     /**
      * Object used for synchronization.
@@ -60,14 +60,14 @@ public class CharacterModel {
      * All registered character listeners.
      */
     @NotNull
-    private final EventListenerList2<CharacterListener> characterListeners = new EventListenerList2<CharacterListener>();
+    private final EventListenerList2<CharacterListener> characterListeners = new EventListenerList2<>();
 
     /**
      * All registered character entry listeners. Maps entry index to list of
      * listeners.
      */
     @NotNull
-    private final Map<Integer, EventListenerList2<CharacterInformationListener>> characterInformationListeners = new HashMap<Integer, EventListenerList2<CharacterInformationListener>>();
+    private final Map<Integer, EventListenerList2<CharacterInformationListener>> characterInformationListeners = new HashMap<>();
 
     /**
      * Returns a character entry by index.
@@ -205,7 +205,7 @@ public class CharacterModel {
                 return existingListeners;
             }
 
-            final EventListenerList2<CharacterInformationListener> newListeners = new EventListenerList2<CharacterInformationListener>();
+            final EventListenerList2<CharacterInformationListener> newListeners = new EventListenerList2<>();
             characterInformationListeners.put(index, newListeners);
             return newListeners;
         }

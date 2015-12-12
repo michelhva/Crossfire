@@ -64,20 +64,20 @@ public class CfMapAnimations {
      * All {@link AnimationState} instances referenced by {@link #animations}.
      */
     @NotNull
-    private final Map<AnimationState, Void> animationStates = new WeakHashMap<AnimationState, Void>();
+    private final Map<AnimationState, Void> animationStates = new WeakHashMap<>();
 
     /**
      * All {@link AnimationState} for {@link Map2#ANIM_SYNC} animations.
      */
     @NotNull
-    private final Map<Integer, AnimationState> syncAnimationStates = new HashMap<Integer, AnimationState>();
+    private final Map<Integer, AnimationState> syncAnimationStates = new HashMap<>();
 
     /**
      * The {@link AnimationState} instances that have been added but not yet
      * received a "tick" value.
      */
     @NotNull
-    private final Collection<AnimationState> pendingTickUpdates = new ArrayList<AnimationState>();
+    private final Collection<AnimationState> pendingTickUpdates = new ArrayList<>();
 
     /**
      * Forgets all animations.
@@ -185,7 +185,7 @@ public class CfMapAnimations {
             animationState.setTickNo(tickNo);
         }
         pendingTickUpdates.clear();
-        final Iterable<AnimationState> animationStatesToUpdate = new ArrayList<AnimationState>(animationStates.keySet());
+        final Iterable<AnimationState> animationStatesToUpdate = new ArrayList<>(animationStates.keySet());
         synchronized (mapUpdaterState.mapBegin()) {
             for (final AnimationState animationState : animationStatesToUpdate) {
                 animationState.updateTickNo(mapUpdaterState, tickNo);

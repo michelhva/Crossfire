@@ -74,7 +74,7 @@ public class ClientSocket {
      * The {@link ClientSocketListener ClientSocketListeners} to notify.
      */
     @NotNull
-    private final EventListenerList2<ClientSocketListener> clientSocketListeners = new EventListenerList2<ClientSocketListener>();
+    private final EventListenerList2<ClientSocketListener> clientSocketListeners = new EventListenerList2<>();
 
     /**
      * The {@link Selector} used for waiting.

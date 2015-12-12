@@ -35,7 +35,7 @@ public class SmoothFaces {
      * All known smoothing mappings. Maps face to associated smoothing face.
      */
     @NotNull
-    private final Map<Integer, Integer> smoothFaces = new HashMap<Integer, Integer>();
+    private final Map<Integer, Integer> smoothFaces = new HashMap<>();
 
     /**
      * Returns the smoothing face associated with a given face.

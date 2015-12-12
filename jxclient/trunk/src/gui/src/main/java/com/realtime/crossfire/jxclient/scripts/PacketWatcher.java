@@ -40,7 +40,7 @@ public class PacketWatcher {
      * The commands to watch for.
      */
     @NotNull
-    private final Collection<String> commands = new HashSet<String>();
+    private final Collection<String> commands = new HashSet<>();
 
     /**
      * The {@link CrossfireServerConnection} to watch.

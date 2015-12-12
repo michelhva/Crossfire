@@ -32,7 +32,7 @@ public class IndexedEventListenerList<T extends EventListener> {
      * The registered listeners to be notified about changes.
      */
     @NotNull
-    private final List<EventListenerList2<T>> locationListeners = new ArrayList<EventListenerList2<T>>();
+    private final List<EventListenerList2<T>> locationListeners = new ArrayList<>();
 
     /**
      * Adds a listener.
@@ -72,7 +72,7 @@ public class IndexedEventListenerList<T extends EventListener> {
                 return locationListeners.get(index);
             } catch (final IndexOutOfBoundsException ignored) {
                 for (int i = locationListeners.size(); i <= index; i++) {
-                    locationListeners.add(new EventListenerList2<T>());
+                    locationListeners.add(new EventListenerList2<>());
                 }
                 return locationListeners.get(index);
             }

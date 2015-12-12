@@ -35,7 +35,7 @@ public abstract class Shortcut {
      * The listeners to be notified.
      */
     @NotNull
-    private final EventListenerList2<ShortcutListener> listeners = new EventListenerList2<ShortcutListener>();
+    private final EventListenerList2<ShortcutListener> listeners = new EventListenerList2<>();
 
     /**
      * Releases all allocated resources.

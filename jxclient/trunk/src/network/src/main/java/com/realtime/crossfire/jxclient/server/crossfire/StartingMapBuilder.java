@@ -60,7 +60,7 @@ public class StartingMapBuilder {
      * The {@link StartingMap} entries parsed so far.
      */
     @NotNull
-    private final Collection<StartingMap> startingMaps = new ArrayList<StartingMap>();
+    private final Collection<StartingMap> startingMaps = new ArrayList<>();
 
     /**
      * Starts a new starting map entry.

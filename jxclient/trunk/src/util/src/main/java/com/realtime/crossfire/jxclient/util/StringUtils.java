@@ -62,7 +62,7 @@ public class StringUtils {
      */
     @NotNull
     public static String[] splitFields(@NotNull final String line) throws UnterminatedTokenException {
-        final List<String> tokens = new ArrayList<String>(64);
+        final List<String> tokens = new ArrayList<>(64);
 
         final char[] chars = line.toCharArray();
 

@@ -32,7 +32,7 @@ public class HashedEventListenerList<T extends EventListener> {
      * The registered listener to be notified about changes.
      */
     @NotNull
-    private final Map<Integer, EventListenerList2<T>> locationListeners = new HashMap<Integer, EventListenerList2<T>>();
+    private final Map<Integer, EventListenerList2<T>> locationListeners = new HashMap<>();
 
     /**
      * Adds a listener.
@@ -70,7 +70,7 @@ public class HashedEventListenerList<T extends EventListener> {
                 return existingEventListenerList;
             }
 
-            final EventListenerList2<T> eventListenerList = new EventListenerList2<T>();
+            final EventListenerList2<T> eventListenerList = new EventListenerList2<>();
             locationListeners.put(index, eventListenerList);
             return eventListenerList;
         }

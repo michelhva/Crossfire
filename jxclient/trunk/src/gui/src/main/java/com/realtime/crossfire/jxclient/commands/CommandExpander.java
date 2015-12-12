@@ -59,7 +59,7 @@ public class CommandExpander {
      * @return the list of commands
      */
     public static Collection<CommandExec> expand(@NotNull final CharSequence commandList, @NotNull final Commands commands) {
-        final Collection<CommandExec> list = new ArrayList<CommandExec>();
+        final Collection<CommandExec> list = new ArrayList<>();
         CharSequence remainingCommandList = commandList;
         while (true) {
             final String[] tmp = PATTERN_SEPARATOR.split(remainingCommandList, 2);

@@ -42,7 +42,7 @@ public class Line implements Iterable<Segment> {
      * first; subsequent segments are to be displayed without padding.
      */
     @NotNull
-    private final List<Segment> segments = new ArrayList<Segment>();
+    private final List<Segment> segments = new ArrayList<>();
 
     /**
      * The total height of this line. Set to {@code -1} if unknown.
