@@ -110,10 +110,8 @@ public class Metaserver {
                 conn.connect();
                 if (conn.getResponseCode() == HttpURLConnection.HTTP_OK) {
                     final InputStream in = conn.getInputStream();
-                    final InputStreamReader isr = new InputStreamReader(in, "ISO-8859-1");
-                    try {
-                        final BufferedReader br = new BufferedReader(isr);
-                        try {
+                    try (final InputStreamReader isr = new InputStreamReader(in, "ISO-8859-1")) {
+                        try (final BufferedReader br = new BufferedReader(isr)) {
                             final MetaserverEntryParser metaserverEntryParser = new MetaserverEntryParser();
                             while (true) {
                                 final String line = br.readLine();
@@ -128,11 +126,7 @@ public class Metaserver {
                                     serverCache.put(metaserverEntry);
                                 }
                             }
-                        } finally {
-                            br.close();
                         }
-                    } finally {
-                        isr.close();
                     }
                 }
             } finally {

@@ -67,21 +67,12 @@ public class ShortcutsLoader {
         try {
             shortcuts.clearShortcuts();
             try {
-                final FileInputStream fis = new FileInputStream(file);
-                try {
-                    final InputStreamReader isr = new InputStreamReader(fis, "UTF-8");
-                    try {
-                        final BufferedReader br = new BufferedReader(isr);
-                        try {
+                try (final FileInputStream fis = new FileInputStream(file)) {
+                    try (final InputStreamReader isr = new InputStreamReader(fis, "UTF-8")) {
+                        try (final BufferedReader br = new BufferedReader(isr)) {
                             loadShortcuts(shortcuts, br);
-                        } finally {
-                            br.close();
                         }
-                    } finally {
-                        isr.close();
                     }
-                } finally {
-                    fis.close();
                 }
             } catch (final IOException ex) {
                 shortcuts.clearShortcuts();
@@ -148,12 +139,9 @@ public class ShortcutsLoader {
                 return;
             }
 
-            final FileOutputStream fos = new FileOutputStream(file);
-            try {
-                final OutputStreamWriter osw = new OutputStreamWriter(fos);
-                try {
-                    final BufferedWriter bw = new BufferedWriter(osw);
-                    try {
+            try (final FileOutputStream fos = new FileOutputStream(file)) {
+                try (final OutputStreamWriter osw = new OutputStreamWriter(fos)) {
+                    try (final BufferedWriter bw = new BufferedWriter(osw)) {
                         for (final Shortcut shortcut : shortcuts) {
                             if (shortcut == null) {
                                 bw.write("empty\n");
@@ -172,14 +160,8 @@ public class ShortcutsLoader {
                                 throw new AssertionError();
                             }
                         }
-                    } finally {
-                        bw.close();
                     }
-                } finally {
-                    osw.close();
                 }
-            } finally {
-                fos.close();
             }
         } catch (final IOException ex) {
             System.err.println("Cannot write shortcuts file "+shortcuts.getFile()+": "+ex.getMessage());

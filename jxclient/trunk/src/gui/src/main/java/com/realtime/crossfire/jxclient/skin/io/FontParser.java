@@ -60,15 +60,12 @@ public class FontParser {
 
         final Font font;
         try {
-            final InputStream ttf = skinSource.getInputStream(filename);
-            try {
+            try (final InputStream ttf = skinSource.getInputStream(filename)) {
                 try {
                     font = Font.createFont(Font.TRUETYPE_FONT, ttf);
                 } catch (final FontFormatException ex) {
                     throw new IOException(filename+": invalid font format: "+ex.getMessage(), ex);
                 }
-            } finally {
-                ttf.close();
             }
         } catch (final IOException ex) {
             throw new IOException(skinSource.getURI(filename)+": i/o error: "+ex.getMessage(), ex);

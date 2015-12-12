@@ -94,8 +94,7 @@ public class ClipCache {
     @Nullable
     private DataLine newClip(@Nullable final String name, @NotNull final String action) {
         try {
-            final AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(audioFileLoader.getInputStream(name, action));
-            try {
+            try (final AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(audioFileLoader.getInputStream(name, action))) {
                 final Clip clip;
                 try {
                     clip = AudioSystem.getClip();
@@ -109,8 +108,6 @@ public class ClipCache {
                     debugSound.debugProtocolWrite("newClip: "+System.identityHashCode(clip)+" "+name+"/"+action);
                 }
                 return clip;
-            } finally {
-                audioInputStream.close();
             }
         } catch (final UnsupportedAudioFileException ex) {
             if (debugSound != null) {

@@ -257,10 +257,8 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
         @Nullable String result = "unexpected";
         try {
             try {
-                final InputStreamReader isr = new InputStreamReader(in);
-                try {
-                    final BufferedReader br = new BufferedReader(isr);
-                    try {
+                try (final InputStreamReader isr = new InputStreamReader(in)) {
+                    try (final BufferedReader br = new BufferedReader(isr)) {
                         while (true) {
                             final String line = br.readLine();
                             if (line == null) {
@@ -269,11 +267,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
 
                             runScriptCommand(line);
                         }
-                    } finally {
-                        br.close();
                     }
-                } finally {
-                    isr.close();
                 }
                 try {
                     final int exitStatus = process.waitFor();

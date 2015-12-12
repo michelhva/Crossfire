@@ -141,16 +141,10 @@ public class Logger {
         final Date now = new Date();
         try {
             final File file = Filenames.getMessageLogFile(hostname);
-            final FileOutputStream fos = new FileOutputStream(file, true);
-            try {
-                final OutputStreamWriter osw = new OutputStreamWriter(fos);
-                try {
+            try (final FileOutputStream fos = new FileOutputStream(file, true)) {
+                try (final OutputStreamWriter osw = new OutputStreamWriter(fos)) {
                     osw.write(format.format(now)+message+"\n");
-                } finally {
-                    osw.close();
                 }
-            } finally {
-                fos.close();
             }
         } catch (final IOException ex) {
             System.err.println(ex.getMessage());

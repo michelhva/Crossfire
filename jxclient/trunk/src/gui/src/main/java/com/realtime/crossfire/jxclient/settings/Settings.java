@@ -194,21 +194,12 @@ public class Settings {
         values.clear();
 
         try {
-            final FileInputStream fis = new FileInputStream(file);
-            try {
-                final InputStreamReader isr = new InputStreamReader(fis, "UTF-8");
-                try {
-                    final LineNumberReader lnr = new LineNumberReader(isr);
-                    try {
+            try (final FileInputStream fis = new FileInputStream(file)) {
+                try (final InputStreamReader isr = new InputStreamReader(fis, "UTF-8")) {
+                    try (final LineNumberReader lnr = new LineNumberReader(isr)) {
                         loadValues(lnr);
-                    } finally {
-                        lnr.close();
                     }
-                } finally {
-                    isr.close();
                 }
-            } finally {
-                fis.close();
             }
         } catch (final FileNotFoundException ignored) {
             // ignore
@@ -251,21 +242,12 @@ public class Settings {
      */
     private void saveValues() throws IOException {
         final File tmpFile = new File(file.getPath()+".tmp");
-        final FileOutputStream fos = new FileOutputStream(tmpFile);
-        try {
-            final OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8");
-            try {
-                final BufferedWriter bw = new BufferedWriter(osw);
-                try {
+        try (final FileOutputStream fos = new FileOutputStream(tmpFile)) {
+            try (final OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8")) {
+                try (final BufferedWriter bw = new BufferedWriter(osw)) {
                     saveNode(bw, values);
-                } finally {
-                    bw.close();
                 }
-            } finally {
-                osw.close();
             }
-        } finally {
-            fos.close();
         }
 
         if (!tmpFile.renameTo(file)) {
