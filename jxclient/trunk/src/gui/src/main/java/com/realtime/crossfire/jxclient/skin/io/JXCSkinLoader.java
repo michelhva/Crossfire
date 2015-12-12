@@ -587,9 +587,7 @@ public class JXCSkinLoader {
             } finally {
                 inputStream.close();
             }
-        } catch (final IOException ex) {
-            throw new JXCSkinException(skinSource.getURI(resourceName)+": "+ex.getMessage(), ex);
-        } catch (final JXCSkinException ex) {
+        } catch (final IOException | JXCSkinException ex) {
             throw new JXCSkinException(skinSource.getURI(resourceName)+": "+ex.getMessage(), ex);
         } finally {
             definedGUIElements.clear();
@@ -776,9 +774,7 @@ public class JXCSkinLoader {
                             throw new IOException("excess arguments");
                         }
                     }
-                } catch (final IOException ex) {
-                    throw new IOException(ex.getMessage()+" in line "+lnr.getLineNumber(), ex);
-                } catch (final JXCSkinException ex) {
+                } catch (final IOException | JXCSkinException ex) {
                     throw new IOException(ex.getMessage()+" in line "+lnr.getLineNumber(), ex);
                 } catch (final IllegalArgumentException ex) {
                     final Object msg = ex.getMessage();

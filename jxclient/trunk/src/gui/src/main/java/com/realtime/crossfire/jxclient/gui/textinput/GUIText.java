@@ -582,9 +582,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         final String str;
         try {
             str = (String)content.getTransferData(DataFlavor.stringFlavor);
-        } catch (final UnsupportedFlavorException ignored) {
-            return;
-        } catch (final IOException ignored) {
+        } catch (final IOException | UnsupportedFlavorException ignored) {
             return;
         }
         insertString(str);

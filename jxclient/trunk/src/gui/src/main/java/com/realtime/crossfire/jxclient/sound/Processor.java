@@ -193,11 +193,7 @@ public class Processor implements Runnable {
             } finally {
                 audioInputStream.close();
             }
-        } catch (final IOException ex) {
-            System.err.println("music "+name+": "+ex.getMessage());
-        } catch (final LineUnavailableException ex) {
-            System.err.println("music "+name+": "+ex.getMessage());
-        } catch (final UnsupportedAudioFileException ex) {
+        } catch (final IOException | LineUnavailableException | UnsupportedAudioFileException ex) {
             System.err.println("music "+name+": "+ex.getMessage());
         }
     }
