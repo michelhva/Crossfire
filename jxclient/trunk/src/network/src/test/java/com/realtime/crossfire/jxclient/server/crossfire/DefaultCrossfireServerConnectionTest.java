@@ -117,18 +117,30 @@ public class DefaultCrossfireServerConnectionTest {
                             if (paramsIndex < data.length && data[paramsIndex] == (byte)' ') {
                                 paramsIndex++;
                             }
-                            if (cmd.equals("version")) {
+                            switch (cmd) {
+                            case "version":
                                 writeString(out, "version 1 1 info");
-                            } else if (cmd.equals("setup")) {
+                                break;
+
+                            case "setup":
                                 processSetup(out, new String(data, paramsIndex, data.length-paramsIndex, charset));
-                            } else if (cmd.equals("requestinfo")) {
+                                break;
+
+                            case "requestinfo":
                                 processRequestinfo(out, new String(data, paramsIndex, data.length-paramsIndex, charset));
-                            } else if (cmd.equals("toggleextendedtext")) {
+                                break;
+
+                            case "toggleextendedtext":
                                 // ignore
-                            } else if (cmd.equals("addme")) {
+                                break;
+
+                            case "addme":
                                 processAddme(out);
-                            } else {
+                                break;
+
+                            default:
                                 Assert.fail("received unexpected command: "+cmd);
+                                break;
                             }
                         }
                     }

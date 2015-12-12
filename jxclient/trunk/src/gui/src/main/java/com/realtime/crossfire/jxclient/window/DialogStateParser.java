@@ -90,11 +90,16 @@ public class DialogStateParser {
                             }
 
                             final boolean open;
-                            if (tmp[0].equals("open")) {
+                            switch (tmp[0]) {
+                            case "open":
                                 open = true;
-                            } else if (tmp[0].equals("close")) {
+                                break;
+
+                            case "close":
                                 open = false;
-                            } else {
+                                break;
+
+                            default:
                                 throw new IOException("syntax error: "+line);
                             }
 

@@ -878,11 +878,16 @@ public class JXCSkinLoader {
         final String type = args.get();
         final GUILabelLog label = args.get().equals("null") ? null : guiElementParser.lookupLabelLogElement(args.getPrev());
         final AbstractGUIElement element;
-        if (type.equals("classes")) {
+        switch (type) {
+        case "classes":
             element = new GUIClassesComboBox(tooltipManager, elementListener, name, model, label);
-        } else if (type.equals("races")) {
+            break;
+
+        case "races":
             element = new GUIRacesComboBox(tooltipManager, elementListener, name, model, label);
-        } else {
+            break;
+
+        default:
             throw new IOException("undefined 'combobox' type '"+type+"'");
         }
         insertGuiElement(element);
@@ -962,19 +967,25 @@ public class JXCSkinLoader {
      */
     private void parseDef(@NotNull final Args args, @NotNull final LineNumberReader lnr) throws IOException, JXCSkinException {
         final String type = args.get();
-        if (type.equals("checkbox")) {
+        switch (type) {
+        case "checkbox": {
             final BufferedImage checkedImage = imageParser.getImage(args.get());
             final BufferedImage uncheckedImage = imageParser.getImage(args.get());
             final Font font = definedFonts.lookup(args.get());
             final Color color = ParseUtils.parseColor(args.get());
             checkBoxFactory = new CheckBoxFactory(checkedImage, uncheckedImage, font, color);
-        } else if (type.equals("checkbox_option")) {
+            break;
+        }
+
+        case "checkbox_option":
             final String optionName = args.get();
             final CommandList commandOn = skin.getCommandList(args.get());
             final CommandList commandOff = skin.getCommandList(args.get());
             final String documentation = ParseUtils.parseText(args, lnr);
             skin.addOption(optionName, documentation, new CommandCheckBoxOption(commandOn, commandOff, documentation));
-        } else if (type.equals("dialog")) {
+            break;
+
+        case "dialog":
             final String frame = args.get();
             final Image frameNW = imageParser.getImage(frame+"_nw");
             final Image frameN = imageParser.getImage(frame+"_n");
@@ -993,7 +1004,9 @@ public class JXCSkinLoader {
                 throw new IOException("invalid alpha value: "+alpha);
             }
             dialogFactory = new DialogFactory(frameNW, frameN, frameNE, frameW, frameC, frameE, frameSW, frameS, frameSE, titleFont, titleColor, titleBackgroundColor, alpha);
-        } else if (type.equals("item")) {
+            break;
+
+        case "item": {
             final Color cursedColor = ParseUtils.parseColorNull(args.get());
             final Image cursedImage = imageParser.getImage(cursedColor, args.getPrev());
             final Color damnedColor = ParseUtils.parseColorNull(args.get());
@@ -1015,7 +1028,10 @@ public class JXCSkinLoader {
             final Font font = definedFonts.lookup(args.get());
             final Color nrofColor = ParseUtils.parseColor(args.get());
             defaultItemPainter = new ItemPainter(cursedImage, damnedImage, magicImage, blessedImage, appliedImage, unidentifiedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, unidentifiedColor, selectorColor, lockedColor, unpaidColor, font, nrofColor);
-        } else if (type.equals("textbutton")) {
+            break;
+        }
+
+        case "textbutton":
             final String up = args.get();
             final String down = args.get();
             final Font font = definedFonts.lookup(args.get());
@@ -1024,7 +1040,9 @@ public class JXCSkinLoader {
             final ButtonImages upImages = new ButtonImages(imageParser.getImage(up+"_w"), imageParser.getImage(up+"_c"), imageParser.getImage(up+"_e"));
             final ButtonImages downImages = new ButtonImages(imageParser.getImage(down+"_w"), imageParser.getImage(down+"_c"), imageParser.getImage(down+"_e"));
             textButtonFactory = new TextButtonFactory(upImages, downImages, font, color, colorSelected);
-        } else {
+            break;
+
+        default:
             throw new IOException("unknown type '"+type+"'");
         }
     }
@@ -1134,35 +1152,61 @@ public class JXCSkinLoader {
      */
     private void parseEvent(@NotNull final Args args, @NotNull final GuiStateManager guiStateManager, @NotNull final CrossfireServerConnection server) throws IOException, JXCSkinException {
         final String type = args.get();
-        if (type.equals("connect")) {
+        switch (type) {
+        case "connect": {
             final CommandList commandList = skin.getCommandList(args.get());
             skin.addSkinEvent(new ConnectionStateSkinEvent(commandList, guiStateManager));
-        } else if (type.equals("init")) {
+            break;
+        }
+
+        case "init":
             skin.addInitEvent(skin.getCommandList(args.get()));
-        } else if (type.equals("login")) {
+            break;
+
+        case "login": {
             final CommandList commandList = skin.getCommandList(args.get());
             skin.addSkinEvent(new PlayerLoginSkinEvent(true, commandList, model.getItemSet()));
-        } else if (type.equals("logout")) {
+            break;
+        }
+
+        case "logout": {
             final CommandList commandList = skin.getCommandList(args.get());
             skin.addSkinEvent(new PlayerLoginSkinEvent(false, commandList, model.getItemSet()));
-        } else if (type.equals("magicmap")) {
+            break;
+        }
+
+        case "magicmap": {
             final CommandList commandList = skin.getCommandList(args.get());
             skin.addSkinEvent(new CrossfireMagicmapSkinEvent(commandList, server));
-        } else if (type.equals("mapscroll")) {
+            break;
+        }
+
+        case "mapscroll": {
             final CommandList commandList = skin.getCommandList(args.get());
             skin.addSkinEvent(new MapScrollSkinEvent(commandList, mapUpdaterState));
-        } else if (type.equals("skill")) {
+            break;
+        }
+
+        case "skill": {
             final String subtype = args.get();
             final Skill skill = model.getSkillSet().getNamedSkill(args.get().replaceAll("_", " "), -1);
             final CommandList commandList = skin.getCommandList(args.get());
-            if (subtype.equals("add")) {
+            switch (subtype) {
+            case "add":
                 skin.addSkinEvent(new SkillAddedSkinEvent(commandList, skill));
-            } else if (subtype.equals("del")) {
+                break;
+
+            case "del":
                 skin.addSkinEvent(new SkillRemovedSkinEvent(commandList, skill));
-            } else {
+                break;
+
+            default:
                 throw new IOException("undefined event sub-type: "+subtype);
             }
-        } else {
+            break;
+        }
+
+        default:
             throw new IOException("undefined event type: "+type);
         }
     }
@@ -1412,35 +1456,47 @@ public class JXCSkinLoader {
         final String name = args.get();
         final int index = ExpressionParser.parseInt(args.get());
         final AbstractGUIElement element;
-        if (type.equals("floor")) {
+        switch (type) {
+        case "floor": {
             if (defaultItemPainter == null) {
                 throw new IOException("cannot use 'item floor' without 'def item' command");
             }
 
             final ItemPainter itemPainter = defaultItemPainter.newItemPainter();
             element = new GUIItemFloor(tooltipManager, elementListener, commandQueue, name, itemPainter, index, server, floorView, model.getItemSet(), facesManager, nextGroupFace, prevGroupFace, 0);
-        } else if (type.equals("inventory")) {
+            break;
+        }
+
+        case "inventory": {
             if (defaultItemPainter == null) {
                 throw new IOException("cannot use 'item inventory' without 'def item' command");
             }
 
             final ItemPainter itemPainter = defaultItemPainter.newItemPainter();
             element = new GUIItemInventory(tooltipManager, elementListener, commandQueue, name, itemPainter, index, server, facesManager, floorView, inventoryView, 0);
-        } else if (type.equals("shortcut")) {
+            break;
+        }
+
+        case "shortcut":
             final Color castColor = ParseUtils.parseColorNull(args.get());
             final Image castImage = imageParser.getImage(castColor, args.getPrev());
             final Color invokeColor = ParseUtils.parseColorNull(args.get());
             final Image invokeImage = imageParser.getImage(invokeColor, args.getPrev());
             final Font font = definedFonts.lookup(args.get());
             element = new GUIItemShortcut(tooltipManager, elementListener, name, castColor, castImage, invokeColor, invokeImage, index, facesManager, shortcuts, font, currentSpellManager);
-        } else if (type.equals("spelllist")) {
+            break;
+
+        case "spelllist": {
             if (defaultItemPainter == null) {
                 throw new IOException("cannot use 'item spelllist' without 'def item' command");
             }
 
             final ItemPainter itemPainter = defaultItemPainter.newItemPainter();
             element = new GUIItemSpell(tooltipManager, elementListener, commandQueue, name, itemPainter, index, facesManager, model.getSpellsManager(), currentSpellManager, spellView, 0);
-        } else {
+            break;
+        }
+
+        default:
             throw new IOException("undefined item type: "+type);
         }
         insertGuiElement(element);
@@ -1648,14 +1704,21 @@ public class JXCSkinLoader {
         }
         final Component[] array = elements.toArray(new Component[elements.size()]);
         final GroupLayout layout = (GroupLayout)gui.getLayout();
-        if (type.equals("horizontal")) {
+        switch (type) {
+        case "horizontal":
             layout.linkSize(SwingConstants.HORIZONTAL, array);
-        } else if (type.equals("vertical")) {
+            break;
+
+        case "vertical":
             layout.linkSize(SwingConstants.VERTICAL, array);
-        } else if (type.equals("both")) {
+            break;
+
+        case "both":
             layout.linkSize(SwingConstants.HORIZONTAL, array);
             layout.linkSize(SwingConstants.VERTICAL, array);
-        } else {
+            break;
+
+        default:
             throw new IOException("undefined type '"+type+"'");
         }
     }
@@ -1733,11 +1796,16 @@ public class JXCSkinLoader {
         final String name = args.get();
         final String type = args.get();
         final boolean add;
-        if (type.equals("only")) {
+        switch (type) {
+        case "only":
             add = true;
-        } else if (type.equals("not")) {
+            break;
+
+        case "not":
             add = false;
-        } else {
+            break;
+
+        default:
             throw new IOException("type '"+type+"' is invalid");
         }
         int types = 0;
@@ -2230,11 +2298,16 @@ public class JXCSkinLoader {
     private Group parseBegin(@NotNull final Args beginArgs, @NotNull final GroupLayout layout, @NotNull final LineNumberReader lnr, @NotNull final Collection<GUIElement> unreferencedElements) throws IOException, JXCSkinException {
         final String type = beginArgs.get();
         final Group group;
-        if (type.equals("seq")) {
+        switch (type) {
+        case "seq":
             group = layout.createSequentialGroup();
-        } else if (type.equals("par")) {
+            break;
+
+        case "par":
             group = layout.createParallelGroup();
-        } else {
+            break;
+
+        default:
             throw new IOException("undefined type '"+type+"'");
         }
 
@@ -2259,14 +2332,19 @@ public class JXCSkinLoader {
             if (cmd.equals("end")) {
                 break;
             }
-            if (cmd.equals("begin")) {
+            switch (cmd) {
+            case "begin":
                 group.addGroup(parseBegin(args, layout, lnr, unreferencedElements));
-            } else if (cmd.equals("border_gap")) {
+                break;
+
+            case "border_gap":
                 if (!(group instanceof SequentialGroup)) {
                     throw new IOException("'border_gap' cannot be used outside 'seq' groups");
                 }
                 ((SequentialGroup)group).addContainerGap();
-            } else if (cmd.equals("gap")) {
+                break;
+
+            case "gap":
                 if (args.hasMore()) {
                     final int tmp = ExpressionParser.parseInt(args.get());
                     if (args.hasMore()) {
@@ -2279,7 +2357,9 @@ public class JXCSkinLoader {
                 } else {
                     group.addGap(0, 1, Short.MAX_VALUE);
                 }
-            } else {
+                break;
+
+            default:
                 final AbstractGUIElement element = definedGUIElements.lookup(cmd);
                 if (!unreferencedElements.remove(element)) {
                     throw new IOException("layout defines element '"+element+"' more than once");
@@ -2302,6 +2382,7 @@ public class JXCSkinLoader {
                 } else {
                     group.addComponent(element);
                 }
+                break;
             }
             if (args.hasMore()) {
                 throw new IOException("excess arguments");

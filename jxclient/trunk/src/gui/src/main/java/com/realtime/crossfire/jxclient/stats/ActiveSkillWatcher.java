@@ -176,12 +176,18 @@ public class ActiveSkillWatcher {
         // Normalize skill name: the Crossfire server sometimes sends "Skill:
         // <skill item name>" rather than "Skill: <skill name>".
         final String normalizedActiveSkill;
-        if (activeSkill.equals("lockpicks")) {
+        switch (activeSkill) {
+        case "lockpicks":
             normalizedActiveSkill = "lockpicking";
-        } else if (activeSkill.equals("writing pen")) {
+            break;
+
+        case "writing pen":
             normalizedActiveSkill = "inscription";
-        } else {
+            break;
+
+        default:
             normalizedActiveSkill = activeSkill;
+            break;
         }
 
         synchronized (sync) {
