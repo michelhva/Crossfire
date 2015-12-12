@@ -67,14 +67,7 @@ public class ShortcutSpell extends Shortcut {
      * The {@link SpellListener} attached to {@link #spell}.
      */
     @NotNull
-    private final SpellListener spellListener = new SpellListener() {
-
-        @Override
-        public void spellChanged() {
-            fireModifiedEvent();
-        }
-
-    };
+    private final SpellListener spellListener = () -> fireModifiedEvent();
 
     /**
      * Creates a new instance.

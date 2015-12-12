@@ -64,35 +64,16 @@ public abstract class GUIItemList<T extends GUIItemItem> extends GUIList<T> {
      * The {@link LocationsListener} to be notified about changes.
      */
     @NotNull
-    private final LocationsListener locationsListener = new LocationsListener() {
-
-        @Override
-        public void locationsModified(@NotNull final Integer[] changedSlots) {
-            SwingUtilities.invokeLater(new Runnable() {
-
-                @Override
-                public void run() {
-                    rebuildList(changedSlots);
-                }
-
-            });
-        }
-
-    };
+    private final LocationsListener locationsListener = changedSlots -> SwingUtilities.invokeLater(() -> rebuildList(changedSlots));
 
     /**
      * The {@link GUIElementChangedListener} attached to all {@link GUIItemItem}
      * instances in the list.
      */
     @NotNull
-    private final GUIElementChangedListener itemChangedListener = new GUIElementChangedListener() {
-
-        @Override
-        public void notifyChanged() {
-            selectionChanged();
-            setChanged();
-        }
-
+    private final GUIElementChangedListener itemChangedListener = () -> {
+        selectionChanged();
+        setChanged();
     };
 
     /**

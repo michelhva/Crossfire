@@ -72,26 +72,21 @@ public class CommandQueue {
      */
     @NotNull
     @SuppressWarnings("FieldCanBeLocal")
-    private final CrossfireComcListener crossfireComcListener = new CrossfireComcListener() {
+    private final CrossfireComcListener crossfireComcListener = (packetNo, time) -> {
+        synchronized (pendingCommands) {
+            final int index = pendingCommands.indexOf(packetNo);
+            if (index == -1) {
+                System.err.println("Error: got unexpected comc command #"+packetNo);
+                return;
+            }
+            if (index > 0) {
+                System.err.println("Warning: got out of order comc command #"+packetNo);
+            }
 
-        @Override
-        public void commandComcReceived(final int packetNo, final int time) {
-            synchronized (pendingCommands) {
-                final int index = pendingCommands.indexOf(packetNo);
-                if (index == -1) {
-                    System.err.println("Error: got unexpected comc command #"+packetNo);
-                    return;
-                }
-                if (index > 0) {
-                    System.err.println("Warning: got out of order comc command #"+packetNo);
-                }
-
-                for (int i = 0; i <= index; i++) {
-                    pendingCommands.remove(0);
-                }
+            for (int i = 0; i <= index; i++) {
+                pendingCommands.remove(0);
             }
         }
-
     };
 
     /**

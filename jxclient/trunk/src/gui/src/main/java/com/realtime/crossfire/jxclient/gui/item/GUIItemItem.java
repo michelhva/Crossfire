@@ -70,14 +70,9 @@ public abstract class GUIItemItem extends GUIItem {
      * displayed item.
      */
     @NotNull
-    private final CfItemListener itemListener = new CfItemListener() {
-
-        @Override
-        public void itemModified() {
-            setChanged();
-            updateTooltipText();
-        }
-
+    private final CfItemListener itemListener = () -> {
+        setChanged();
+        updateTooltipText();
     };
 
     /**

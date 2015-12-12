@@ -68,22 +68,17 @@ public class ClipManager {
             return;
         }
 
-        executorService.execute(new Runnable() {
-
-            @Override
-            public void run() {
+        executorService.execute(() -> {
+            try {
+                clip.start();
                 try {
-                    clip.start();
-                    try {
-                        clip.drain();
-                    } finally {
-                        clip.stop();
-                    }
+                    clip.drain();
                 } finally {
-                    clipCache.freeClip(clip);
+                    clip.stop();
                 }
+            } finally {
+                clipCache.freeClip(clip);
             }
-
         });
     }
 

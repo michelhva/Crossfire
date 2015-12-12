@@ -98,29 +98,17 @@ public class GUIItemQuest extends GUIItemItem {
      * The {@link QuestsManagerListener} used to detect spell changes.
      */
     @NotNull
-    private final QuestsManagerListener questsManagerListener = new QuestsManagerListener() {
-
-        @Override
-        public void questAdded(final int index) {
-            if (GUIItemQuest.this.index >= index) {
-                setQuest();
-            }
+    private final QuestsManagerListener questsManagerListener = index1 -> {
+        if (GUIItemQuest.this.index >= index1) {
+            setQuest();
         }
-
     };
 
     /**
      * The {@link QuestListener} attached to {@link #quest}.
      */
     @NotNull
-    private final QuestListener questListener = new QuestListener() {
-
-        @Override
-        public void questChanged() {
-            setQuest();
-        }
-
-    };
+    private final QuestListener questListener = () -> setQuest();
 
     /**
      * The {@link FacesManagerListener} registered to detect updated faces.

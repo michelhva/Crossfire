@@ -21,7 +21,6 @@
 
 package com.realtime.crossfire.jxclient.gui.item;
 
-import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
@@ -92,15 +91,10 @@ public class GUIItemKnowledgeType extends GUIItemItem {
      */
     @NotNull
     @SuppressWarnings("FieldCanBeLocal")
-    private final FacesManagerListener facesManagerListener = new FacesManagerListener() {
-
-        @Override
-        public void faceUpdated(@NotNull final Face face) {
-            if (currentFace == face.getFaceNum()) {
-                setChanged();
-            }
+    private final FacesManagerListener facesManagerListener = face -> {
+        if (currentFace == face.getFaceNum()) {
+            setChanged();
         }
-
     };
 
     /**

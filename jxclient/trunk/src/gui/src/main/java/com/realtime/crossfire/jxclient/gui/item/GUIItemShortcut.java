@@ -153,13 +153,9 @@ public class GUIItemShortcut extends GUIItem {
      * The {@link ShortcutListener} attached to {@link #shortcut}.
      */
     @NotNull
-    private final ShortcutListener shortcutListener = new ShortcutListener() {
-
-        @Override
-        public void shortcutModified() {
-            setChanged();
-            updateTooltipText();
-        }
+    private final ShortcutListener shortcutListener = () -> {
+        setChanged();
+        updateTooltipText();
     };
 
     /**

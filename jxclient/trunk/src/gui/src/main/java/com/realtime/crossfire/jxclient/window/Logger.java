@@ -63,14 +63,7 @@ public class Logger {
      */
     @NotNull
     @SuppressWarnings("FieldCanBeLocal")
-    private final CrossfireQueryListener crossfireQueryListener = new CrossfireQueryListener() {
-
-        @Override
-        public void commandQueryReceived(@NotNull final String prompt, final int queryType) {
-            log(prompt);
-        }
-
-    };
+    private final CrossfireQueryListener crossfireQueryListener = (prompt, queryType) -> log(prompt);
 
     /**
      * The {@link CrossfireDrawextinfoListener} registered to receive
@@ -98,14 +91,7 @@ public class Logger {
      */
     @NotNull
     @SuppressWarnings("FieldCanBeLocal")
-    private final CrossfireDrawinfoListener crossfireDrawinfoListener = new CrossfireDrawinfoListener() {
-
-        @Override
-        public void commandDrawinfoReceived(@NotNull final String text, final int type) {
-            log(text);
-        }
-
-    };
+    private final CrossfireDrawinfoListener crossfireDrawinfoListener = (text, type) -> log(text);
 
     /**
      * Create a new instance.

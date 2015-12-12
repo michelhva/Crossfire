@@ -112,14 +112,7 @@ public class ActiveSkillWatcher {
      */
     @NotNull
     @SuppressWarnings("FieldCanBeLocal")
-    private final CrossfireDrawinfoListener drawinfoListener = new CrossfireDrawinfoListener() {
-
-        @Override
-        public void commandDrawinfoReceived(@NotNull final String text, final int type) {
-            checkMessage(text);
-        }
-
-    };
+    private final CrossfireDrawinfoListener drawinfoListener = (text, type) -> checkMessage(text);
 
     /**
      * The drawextinfo listener to receive drawextinfo messages.

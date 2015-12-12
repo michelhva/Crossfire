@@ -213,81 +213,69 @@ public class JXClient {
 
                                     final Exiter exiter = new Exiter();
                                     final JXCWindow[] window = new JXCWindow[1];
-                                    SwingUtilities.invokeAndWait(new Runnable() {
-
-                                        @Override
-                                        public void run() {
-                                            final JXCWindowRenderer windowRenderer = new JXCWindowRenderer(mouseTracker, server, debugScreenOutputStreamWriter);
-                                            new StatsWatcher(model.getStats(), windowRenderer, server, soundManager);
-                                            final TooltipManagerImpl tooltipManager = new TooltipManagerImpl();
-                                            final Pickup characterPickup;
-                                            try {
-                                                characterPickup = new Pickup(commandQueue, optionManager);
-                                            } catch (final OptionException ex) {
-                                                throw new AssertionError(ex);
-                                            }
-                                            final GuiManagerCommandCallback commandCallback = new GuiManagerCommandCallback(exiter, server);
-                                            final ScreenshotFiles screenshotFiles = new ScreenshotFiles();
-                                            final Commands commands = new Commands();
-                                            final CommandExecutor commandExecutor = new CommandExecutorImpl(commandQueue, commands);
-                                            final CommandHistoryFactory commandHistoryFactory = new CommandHistoryFactory();
-                                            final GUICommandFactory guiCommandFactory = new GUICommandFactoryImpl(commandCallback, commandExecutor, macros);
-                                            commands.addCommand(new BindCommand(server, commandCallback, guiCommandFactory));
-                                            commands.addCommand(new UnbindCommand(commandCallback, server));
-                                            commands.addCommand(new ScreenshotCommand(windowRenderer, server, screenshotFiles));
-                                            commands.addCommand(new ScriptCommand(scriptManager, server));
-                                            commands.addCommand(new ScriptkillCommand(scriptManager, server));
-                                            commands.addCommand(new ScriptkillallCommand(scriptManager, server));
-                                            commands.addCommand(new ScriptsCommand(scriptManager, server));
-                                            commands.addCommand(new ScripttellCommand(scriptManager, server));
-                                            commands.addCommand(new ExecCommand(commandCallback, server));
-                                            commands.addCommand(new SetCommand(server, optionManager));
-                                            commands.addCommand(new ClearCommand(windowRenderer, server));
-                                            commands.addCommand(new DebugMessagesCommand(server));
-                                            commands.addCommand(new AgainCommand(server, commandExecutor, commandHistoryFactory.getCommandHistory("command")));
-                                            final File keybindingsFile;
-                                            try {
-                                                keybindingsFile = Filenames.getKeybindingsFile(null, null);
-                                            } catch (final IOException ex) {
-                                                System.err.println("Cannot read keybindings file: "+ex.getMessage());
-                                                exiter.terminate();
-                                                return;
-                                            }
-                                            final KeybindingsManager keybindingsManager = new KeybindingsManager(keybindingsFile, guiCommandFactory);
-                                            commands.addCommand(new BindingsCommand(server, keybindingsManager));
-                                            final JXCConnection connection = new JXCConnection(keybindingsManager, shortcuts, settings, characterPickup, server, model.getGuiStateManager(), logger);
-                                            final GuiFactory guiFactory = new GuiFactory(guiCommandFactory);
-                                            final GuiManager guiManager = new GuiManager(model.getGuiStateManager(), tooltipManager, settings, server, windowRenderer, guiFactory, keybindingsManager, connection);
-                                            commandCallback.init(guiManager);
-                                            final KeyBindings defaultKeyBindings = new KeyBindings(null, guiCommandFactory);
-                                            final JXCSkinLoader jxcSkinLoader = new JXCSkinLoader(model, inventoryView, floorView, spellsView, spellSkillsView, facesManager, mapUpdaterState, defaultKeyBindings, optionManager, options.getTileSize(), keybindingsManager, questsView, commandHistoryFactory, knowledgeView, knowledgeTypesView, options.isAvoidCopyArea(), guiManager);
-                                            final SkinLoader skinLoader = new SkinLoader(commandCallback, metaserverModel, options.getResolution(), macros, windowRenderer, server, model.getGuiStateManager(), tooltipManager, commandQueue, jxcSkinLoader, commandExecutor, shortcuts, characterModel, model.getSmoothFaces(), guiCommandFactory);
-                                            new FacesTracker(model.getGuiStateManager(), facesManager);
-                                            new PlayerNameTracker(model.getGuiStateManager(), connection, model.getItemSet());
-                                            new OutputCountTracker(model.getGuiStateManager(), server, commandQueue);
-                                            final DefaultKeyHandler defaultKeyHandler = new DefaultKeyHandler(exiter, guiManager, server, model.getGuiStateManager());
-                                            final KeyHandler keyHandler = new KeyHandler(debugKeyboardOutputStreamWriter, keybindingsManager, commandQueue, windowRenderer, defaultKeyHandler);
-                                            window[0] = new JXCWindow(exiter, server, optionManager, model.getGuiStateManager(), windowRenderer, commandQueue, guiManager, keyHandler, characterModel, connection);
-                                            window[0].init(options.getResolution(), options.getSkin(), options.isFullScreen(), skinLoader);
-                                            keybindingsManager.loadKeybindings();
-                                            final String serverInfo = options.getServer();
-                                            if (serverInfo == null) {
-                                                model.getGuiStateManager().changeGUI(JXCWindow.DISABLE_START_GUI ? GuiState.METASERVER : GuiState.START);
-                                            } else {
-                                                model.getGuiStateManager().connect(serverInfo);
-                                            }
+                                    SwingUtilities.invokeAndWait(() -> {
+                                        final JXCWindowRenderer windowRenderer = new JXCWindowRenderer(mouseTracker, server, debugScreenOutputStreamWriter);
+                                        new StatsWatcher(model.getStats(), windowRenderer, server, soundManager);
+                                        final TooltipManagerImpl tooltipManager = new TooltipManagerImpl();
+                                        final Pickup characterPickup;
+                                        try {
+                                            characterPickup = new Pickup(commandQueue, optionManager);
+                                        } catch (final OptionException ex) {
+                                            throw new AssertionError(ex);
                                         }
-
+                                        final GuiManagerCommandCallback commandCallback = new GuiManagerCommandCallback(exiter, server);
+                                        final ScreenshotFiles screenshotFiles = new ScreenshotFiles();
+                                        final Commands commands = new Commands();
+                                        final CommandExecutor commandExecutor = new CommandExecutorImpl(commandQueue, commands);
+                                        final CommandHistoryFactory commandHistoryFactory = new CommandHistoryFactory();
+                                        final GUICommandFactory guiCommandFactory = new GUICommandFactoryImpl(commandCallback, commandExecutor, macros);
+                                        commands.addCommand(new BindCommand(server, commandCallback, guiCommandFactory));
+                                        commands.addCommand(new UnbindCommand(commandCallback, server));
+                                        commands.addCommand(new ScreenshotCommand(windowRenderer, server, screenshotFiles));
+                                        commands.addCommand(new ScriptCommand(scriptManager, server));
+                                        commands.addCommand(new ScriptkillCommand(scriptManager, server));
+                                        commands.addCommand(new ScriptkillallCommand(scriptManager, server));
+                                        commands.addCommand(new ScriptsCommand(scriptManager, server));
+                                        commands.addCommand(new ScripttellCommand(scriptManager, server));
+                                        commands.addCommand(new ExecCommand(commandCallback, server));
+                                        commands.addCommand(new SetCommand(server, optionManager));
+                                        commands.addCommand(new ClearCommand(windowRenderer, server));
+                                        commands.addCommand(new DebugMessagesCommand(server));
+                                        commands.addCommand(new AgainCommand(server, commandExecutor, commandHistoryFactory.getCommandHistory("command")));
+                                        final File keybindingsFile;
+                                        try {
+                                            keybindingsFile = Filenames.getKeybindingsFile(null, null);
+                                        } catch (final IOException ex) {
+                                            System.err.println("Cannot read keybindings file: "+ex.getMessage());
+                                            exiter.terminate();
+                                            return;
+                                        }
+                                        final KeybindingsManager keybindingsManager = new KeybindingsManager(keybindingsFile, guiCommandFactory);
+                                        commands.addCommand(new BindingsCommand(server, keybindingsManager));
+                                        final JXCConnection connection = new JXCConnection(keybindingsManager, shortcuts, settings, characterPickup, server, model.getGuiStateManager(), logger);
+                                        final GuiFactory guiFactory = new GuiFactory(guiCommandFactory);
+                                        final GuiManager guiManager = new GuiManager(model.getGuiStateManager(), tooltipManager, settings, server, windowRenderer, guiFactory, keybindingsManager, connection);
+                                        commandCallback.init(guiManager);
+                                        final KeyBindings defaultKeyBindings = new KeyBindings(null, guiCommandFactory);
+                                        final JXCSkinLoader jxcSkinLoader = new JXCSkinLoader(model, inventoryView, floorView, spellsView, spellSkillsView, facesManager, mapUpdaterState, defaultKeyBindings, optionManager, options.getTileSize(), keybindingsManager, questsView, commandHistoryFactory, knowledgeView, knowledgeTypesView, options.isAvoidCopyArea(), guiManager);
+                                        final SkinLoader skinLoader = new SkinLoader(commandCallback, metaserverModel, options.getResolution(), macros, windowRenderer, server, model.getGuiStateManager(), tooltipManager, commandQueue, jxcSkinLoader, commandExecutor, shortcuts, characterModel, model.getSmoothFaces(), guiCommandFactory);
+                                        new FacesTracker(model.getGuiStateManager(), facesManager);
+                                        new PlayerNameTracker(model.getGuiStateManager(), connection, model.getItemSet());
+                                        new OutputCountTracker(model.getGuiStateManager(), server, commandQueue);
+                                        final DefaultKeyHandler defaultKeyHandler = new DefaultKeyHandler(exiter, guiManager, server, model.getGuiStateManager());
+                                        final KeyHandler keyHandler = new KeyHandler(debugKeyboardOutputStreamWriter, keybindingsManager, commandQueue, windowRenderer, defaultKeyHandler);
+                                        window[0] = new JXCWindow(exiter, server, optionManager, model.getGuiStateManager(), windowRenderer, commandQueue, guiManager, keyHandler, characterModel, connection);
+                                        window[0].init(options.getResolution(), options.getSkin(), options.isFullScreen(), skinLoader);
+                                        keybindingsManager.loadKeybindings();
+                                        final String serverInfo = options.getServer();
+                                        if (serverInfo == null) {
+                                            model.getGuiStateManager().changeGUI(JXCWindow.DISABLE_START_GUI ? GuiState.METASERVER : GuiState.START);
+                                        } else {
+                                            model.getGuiStateManager().connect(serverInfo);
+                                        }
                                     });
                                     exiter.waitForTermination();
-                                    SwingUtilities.invokeAndWait(new Runnable() {
-
-                                        @Override
-                                        public void run() {
-                                            window[0].term();
-                                        }
-
-                                    });
+                                    SwingUtilities.invokeAndWait(() -> window[0].term());
                                     soundManager.shutdown();
                                 } finally {
                                     server.stop();

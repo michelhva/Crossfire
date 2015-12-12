@@ -137,14 +137,7 @@ public class GUIItemSpell extends GUIItemItem {
      * The {@link SpellListener} attached to {@link #spell}.
      */
     @NotNull
-    private final SpellListener spellListener = new SpellListener() {
-
-        @Override
-        public void spellChanged() {
-            setSpell();
-        }
-
-    };
+    private final SpellListener spellListener = () -> setSpell();
 
     /**
      * The {@link FacesManagerListener} registered to detect updated faces.

@@ -79,14 +79,9 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
      * All listeners to the entry itself.
      */
     @NotNull
-    private final CharacterInformationListener characterInformationListener = new CharacterInformationListener() {
-
-        @Override
-        public void informationChanged() {
-            setChanged();
-            updateTooltip();
-        }
-
+    private final CharacterInformationListener characterInformationListener = () -> {
+        setChanged();
+        updateTooltip();
     };
 
     /**

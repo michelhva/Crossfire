@@ -24,7 +24,6 @@ package com.realtime.crossfire.jxclient.stats;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireDrawextinfoListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireDrawinfoListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
-import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.Timer;
 import org.jetbrains.annotations.NotNull;
@@ -83,14 +82,7 @@ public class PoisonWatcher {
      */
     @NotNull
     @SuppressWarnings("FieldCanBeLocal")
-    private final CrossfireDrawinfoListener drawinfoListener = new CrossfireDrawinfoListener() {
-
-        @Override
-        public void commandDrawinfoReceived(@NotNull final String text, final int type) {
-            check(text);
-        }
-
-    };
+    private final CrossfireDrawinfoListener drawinfoListener = (text, type) -> check(text);
 
     /**
      * The drawextinfo listener to receive drawextinfo messages.
@@ -116,14 +108,7 @@ public class PoisonWatcher {
      * missed.
      */
     @NotNull
-    private final ActionListener timeoutEvent = new ActionListener() {
-
-        @Override
-        public void actionPerformed(@NotNull final ActionEvent e) {
-            setActive(false);
-        }
-
-    };
+    private final ActionListener timeoutEvent = e -> setActive(false);
 
     /**
      * The {@link Timer} for turning off the poison symbol.

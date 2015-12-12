@@ -90,14 +90,7 @@ public class GUICheckBox extends ActivatableGUIElement {
      * The {@link OptionListener} attached to {@link #option}.
      */
     @NotNull
-    private final OptionListener optionListener = new OptionListener() {
-
-        @Override
-        public void stateChanged() {
-            setChanged();
-        }
-
-    };
+    private final OptionListener optionListener = () -> setChanged();
 
     /**
      * Creates a new instance.

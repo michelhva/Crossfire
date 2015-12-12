@@ -30,7 +30,6 @@ import com.realtime.crossfire.jxclient.gui.log.GUILog;
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Transparency;
-import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JComboBox;
@@ -74,27 +73,13 @@ public abstract class GUIComboBox<T> extends AbstractGUIElement {
      */
     @NotNull
     @SuppressWarnings("FieldCanBeLocal")
-    private final ListCellRenderer<T> renderer = new ListCellRenderer<T>() {
-
-        @Override
-        public Component getListCellRendererComponent(final JList<? extends T> list, final T value, final int index, final boolean isSelected, final boolean cellHasFocus) {
-            return GUIComboBox.this.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
-        }
-
-    };
+    private final ListCellRenderer<T> renderer = (list, value, index, isSelected, cellHasFocus) -> GUIComboBox.this.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
 
     /**
      * The {@link ActionListener} for {@link #comboBox}.
      */
     @NotNull
-    private final ActionListener actionListener = new ActionListener() {
-
-        @Override
-        public void actionPerformed(final ActionEvent e) {
-            updateSelectedItem();
-        }
-
-    };
+    private final ActionListener actionListener = e -> updateSelectedItem();
 
     /**
      * Creates a new instance.

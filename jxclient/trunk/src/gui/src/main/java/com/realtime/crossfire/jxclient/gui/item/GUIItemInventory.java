@@ -116,14 +116,9 @@ public class GUIItemInventory extends GUIItemItem {
      * Called from {@link #locationListener} but runs on the EDT.
      */
     @NotNull
-    private final Runnable locationListenerEdt = new Runnable() {
-
-        @Override
-        public void run() {
-            setChanged();
-            updateTooltipText();
-        }
-
+    private final Runnable locationListenerEdt = () -> {
+        setChanged();
+        updateTooltipText();
     };
 
     /**

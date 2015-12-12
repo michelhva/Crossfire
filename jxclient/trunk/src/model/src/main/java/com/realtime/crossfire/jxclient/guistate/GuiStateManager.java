@@ -64,37 +64,32 @@ public class GuiStateManager {
             this.guiState = guiState;
         }
 
-        SwingUtilities2.invokeAndWait(new Runnable() {
-
-            @Override
-            public void run() {
-                switch (guiState) {
-                case START:
-                    for (final GuiStateListener listener : guiStateListeners) {
-                        listener.start();
-                    }
-                    break;
-
-                case METASERVER:
-                    for (final GuiStateListener listener : guiStateListeners) {
-                        listener.metaserver();
-                    }
-                    break;
-
-                case CONNECTING:
-                    throw new IllegalArgumentException("changeGUI() called in state CONNECTING");
-
-                case CONNECTED:
-                    for (final GuiStateListener listener : guiStateListeners) {
-                        listener.connected();
-                    }
-                    break;
-
-                case CONNECT_FAILED:
-                    throw new IllegalArgumentException("changeGUI() called in state CONNECT_FAILED");
+        SwingUtilities2.invokeAndWait(() -> {
+            switch (guiState) {
+            case START:
+                for (final GuiStateListener listener : guiStateListeners) {
+                    listener.start();
                 }
-            }
+                break;
 
+            case METASERVER:
+                for (final GuiStateListener listener : guiStateListeners) {
+                    listener.metaserver();
+                }
+                break;
+
+            case CONNECTING:
+                throw new IllegalArgumentException("changeGUI() called in state CONNECTING");
+
+            case CONNECTED:
+                for (final GuiStateListener listener : guiStateListeners) {
+                    listener.connected();
+                }
+                break;
+
+            case CONNECT_FAILED:
+                throw new IllegalArgumentException("changeGUI() called in state CONNECT_FAILED");
+            }
         });
     }
 

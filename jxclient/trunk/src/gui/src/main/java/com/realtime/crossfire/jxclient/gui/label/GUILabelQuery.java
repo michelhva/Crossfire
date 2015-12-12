@@ -51,14 +51,7 @@ public class GUILabelQuery extends GUIMultiLineLabel {
      * The {@link CrossfireQueryListener} registered to receive query commands.
      */
     @NotNull
-    private final CrossfireQueryListener crossfireQueryListener = new CrossfireQueryListener() {
-
-        @Override
-        public void commandQueryReceived(@NotNull final String prompt, final int queryType) {
-            setText(prompt);
-        }
-
-    };
+    private final CrossfireQueryListener crossfireQueryListener = (prompt, queryType) -> setText(prompt);
 
     /**
      * Creates a new instance.
