@@ -79,13 +79,10 @@ public class FileCache implements ImageCache {
         }
         final byte[] data = new byte[(int)len];
         try {
-            final FileInputStream fis = new FileInputStream(file);
-            try {
+            try (final FileInputStream fis = new FileInputStream(file)) {
                 if (fis.read(data) != data.length) {
                     return null;
                 }
-            } finally {
-                fis.close();
             }
         } catch (final IOException ignored) {
             return null;

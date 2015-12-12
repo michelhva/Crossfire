@@ -191,16 +191,13 @@ public class RenderStateTest {
             final Graphics2D g = image.createGraphics();
             final Font font;
             try {
-                final InputStream fis = getClass().getClassLoader().getResourceAsStream("com/realtime/crossfire/jxclient/skins/ragnorok/fonts/regular.ttf");
-                try {
+                try (final InputStream fis = getClass().getClassLoader().getResourceAsStream("com/realtime/crossfire/jxclient/skins/ragnorok/fonts/regular.ttf")) {
                     try {
                         font = Font.createFont(Font.TRUETYPE_FONT, fis);
                     } catch (final FontFormatException ex) {
                         Assert.fail();
                         throw new AssertionError(ex);
                     }
-                } finally {
-                    fis.close();
                 }
             } catch (final IOException ex) {
                 Assert.fail();

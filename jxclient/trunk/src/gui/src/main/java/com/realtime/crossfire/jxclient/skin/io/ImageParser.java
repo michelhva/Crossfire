@@ -96,11 +96,8 @@ public class ImageParser {
 
         final String filename = "pictures/"+name+".png";
         final BufferedImage image;
-        final InputStream inputStream = skinSource.getInputStream(filename);
-        try {
+        try (final InputStream inputStream = skinSource.getInputStream(filename)) {
             image = ImageIO.read(inputStream);
-        } finally {
-            inputStream.close();
         }
         if (image == null) {
             throw new IOException("image '"+skinSource.getURI(filename)+"' does not exist");

@@ -130,12 +130,9 @@ public class ServerCache {
         }
 
         try {
-            final FileInputStream fis = new FileInputStream(file);
-            try {
-                final InputStreamReader isr = new InputStreamReader(fis, "UTF-8");
-                try {
-                    final LineNumberReader lnr = new LineNumberReader(isr);
-                    try {
+            try (final FileInputStream fis = new FileInputStream(file)) {
+                try (final InputStreamReader isr = new InputStreamReader(fis, "UTF-8")) {
+                    try (final LineNumberReader lnr = new LineNumberReader(isr)) {
                         while (true) {
                             final String line = lnr.readLine();
                             if (line == null) {
@@ -161,14 +158,8 @@ public class ServerCache {
                                 continue;
                             }
                         }
-                    } finally {
-                        lnr.close();
                     }
-                } finally {
-                    isr.close();
                 }
-            } finally {
-                fis.close();
             }
         } catch (final FileNotFoundException ignored) {
             // add default entries if the cache files does not exist
@@ -218,26 +209,17 @@ public class ServerCache {
      * @throws IOException if an I/O error occurs
      */
     private void saveInternal(@NotNull final File file) throws IOException {
-        final FileOutputStream fos = new FileOutputStream(file);
-        try {
-            final OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8");
-            try {
-                final BufferedWriter bw = new BufferedWriter(osw);
-                try {
+        try (final FileOutputStream fos = new FileOutputStream(file)) {
+            try (final OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8")) {
+                try (final BufferedWriter bw = new BufferedWriter(osw)) {
                     for (final Info info : entries.values()) {
                         bw.write(Long.toString(info.getTimestamp()));
                         bw.write(' ');
                         bw.write(MetaserverEntryParser.format(info.getMetaserverEntry()));
                         bw.write('\n');
                     }
-                } finally {
-                    bw.close();
                 }
-            } finally {
-                osw.close();
             }
-        } finally {
-            fos.close();
         }
     }
 

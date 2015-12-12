@@ -99,8 +99,7 @@ public class DefaultCrossfireServerConnectionTest {
             @Override
             public void run() {
                 try {
-                    final Socket client = acceptClient(server);
-                    try {
+                    try (final Socket client = acceptClient(server)) {
                         final InputStream in = getInputStream(client);
                         final OutputStream out = getOutputStream(client);
                         while (true) {
@@ -132,8 +131,6 @@ public class DefaultCrossfireServerConnectionTest {
                                 Assert.fail("received unexpected command: "+cmd);
                             }
                         }
-                    } finally {
-                        client.close();
                     }
                 } catch (final IOException ex) {
                     Assert.fail(ex.getMessage());

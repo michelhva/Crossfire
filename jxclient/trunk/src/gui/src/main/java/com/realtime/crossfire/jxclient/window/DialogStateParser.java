@@ -75,12 +75,9 @@ public class DialogStateParser {
         }
 
         try {
-            final FileInputStream fis = new FileInputStream(dialogsFile);
-            try {
-                final InputStreamReader isr = new InputStreamReader(fis, "UTF-8");
-                try {
-                    final BufferedReader br = new BufferedReader(isr);
-                    try {
+            try (final FileInputStream fis = new FileInputStream(dialogsFile)) {
+                try (final InputStreamReader isr = new InputStreamReader(fis, "UTF-8")) {
+                    try (final BufferedReader br = new BufferedReader(isr)) {
                         while (true) {
                             final String line = br.readLine();
                             if (line == null) {
@@ -137,14 +134,8 @@ public class DialogStateParser {
                                 windowRenderer.closeDialog(dialog);
                             }
                         }
-                    } finally {
-                        br.close();
                     }
-                } finally {
-                    isr.close();
                 }
-            } finally {
-                fis.close();
             }
         } catch (final FileNotFoundException ignored) {
             // ignore
@@ -178,12 +169,9 @@ public class DialogStateParser {
         }
 
         try {
-            final FileOutputStream fos = new FileOutputStream(dialogsFile);
-            try {
-                final OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8");
-                try {
-                    final BufferedWriter bw = new BufferedWriter(osw);
-                    try {
+            try (final FileOutputStream fos = new FileOutputStream(dialogsFile)) {
+                try (final OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8")) {
+                    try (final BufferedWriter bw = new BufferedWriter(osw)) {
                         for (final Gui dialog : openDialogs) {
                             saveDialog(dialog, "open", bw);
                         }
@@ -193,14 +181,8 @@ public class DialogStateParser {
                                 saveDialog(dialog, "close", bw);
                             }
                         }
-                    } finally {
-                        bw.close();
                     }
-                } finally {
-                    osw.close();
                 }
-            } finally {
-                fos.close();
             }
         } catch (final IOException ex) {
             System.err.println(dialogsFile+": "+ex.getMessage());

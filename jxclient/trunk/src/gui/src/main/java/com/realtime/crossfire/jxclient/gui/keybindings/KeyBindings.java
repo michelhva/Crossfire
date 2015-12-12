@@ -166,12 +166,9 @@ public class KeyBindings {
         }
 
         try {
-            final FileInputStream fis = new FileInputStream(file);
-            try {
-                final InputStreamReader isr = new InputStreamReader(fis, "UTF-8");
-                try {
-                    final LineNumberReader lnr = new LineNumberReader(isr);
-                    try {
+            try (final FileInputStream fis = new FileInputStream(file)) {
+                try (final InputStreamReader isr = new InputStreamReader(fis, "UTF-8")) {
+                    try (final LineNumberReader lnr = new LineNumberReader(isr)) {
                         while (true) {
                             final String line = lnr.readLine();
                             if (line == null) {
@@ -184,14 +181,8 @@ public class KeyBindings {
                                 System.err.println("ignoring invalid key binding ("+ex.getMessage()+"): "+line);
                             }
                         }
-                    } finally {
-                        lnr.close();
                     }
-                } finally {
-                    isr.close();
                 }
-            } finally {
-                fis.close();
             }
         } catch (final FileNotFoundException ignored) {
             // no error message
@@ -221,12 +212,9 @@ public class KeyBindings {
             return;
         }
 
-        final FileOutputStream fos = new FileOutputStream(file);
-        try {
-            final OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8");
-            try {
-                final BufferedWriter bw = new BufferedWriter(osw);
-                try {
+        try (final FileOutputStream fos = new FileOutputStream(file)) {
+            try (final OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8")) {
+                try (final BufferedWriter bw = new BufferedWriter(osw)) {
                     for (final KeyBinding keyBinding : keybindings) {
                         if (keyBinding.isDefault()) {
                             // ignore
@@ -248,14 +236,8 @@ public class KeyBindings {
                             throw new AssertionError("Cannot encode "+keyBinding.getClass().getName());
                         }
                     }
-                } finally {
-                    bw.close();
                 }
-            } finally {
-                osw.close();
             }
-        } finally {
-            fos.close();
         }
     }
 
