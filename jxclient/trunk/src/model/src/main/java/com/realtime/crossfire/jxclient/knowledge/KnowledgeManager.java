@@ -9,6 +9,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -219,11 +220,7 @@ public class KnowledgeManager {
 
     private void filterKnowledge() {
         filteredItems.clear();
-        for (final KnowledgeItem item : items) {
-            if (typeFilter.isEmpty() || item.getType().equals(typeFilter)) {
-                filteredItems.add(item);
-            }
-        }
+        filteredItems.addAll(items.stream().filter(item -> typeFilter.isEmpty() || item.getType().equals(typeFilter)).collect(Collectors.toList()));
         Collections.sort(filteredItems, KNOWLEDGE_COMPARATOR);
     }
 

@@ -70,9 +70,7 @@ public class Metaserver {
         serverCache = new ServerCache(metaserverCacheFile);
         this.metaserverModel = metaserverModel;
         metaserverModel.begin();
-        for (final MetaserverEntry metaserverEntry : serverCache.getAll().values()) {
-            metaserverModel.addMetaserverEntry(metaserverEntry);
-        }
+        serverCache.getAll().values().forEach(metaserverModel::addMetaserverEntry);
         metaserverModel.commit();
     }
 
@@ -137,9 +135,7 @@ public class Metaserver {
         }
 
         // add previously known entries that are not anymore present
-        for (final MetaserverEntry metaserverEntry : oldEntries.values()) {
-            metaserverModel.addMetaserverEntry(metaserverEntry);
-        }
+        oldEntries.values().forEach(metaserverModel::addMetaserverEntry);
 
         metaserverModel.commit();
         serverCache.save();
