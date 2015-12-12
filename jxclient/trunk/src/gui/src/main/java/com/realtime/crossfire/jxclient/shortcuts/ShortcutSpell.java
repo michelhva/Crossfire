@@ -67,7 +67,7 @@ public class ShortcutSpell extends Shortcut {
      * The {@link SpellListener} attached to {@link #spell}.
      */
     @NotNull
-    private final SpellListener spellListener = () -> fireModifiedEvent();
+    private final SpellListener spellListener = this::fireModifiedEvent;
 
     /**
      * Creates a new instance.

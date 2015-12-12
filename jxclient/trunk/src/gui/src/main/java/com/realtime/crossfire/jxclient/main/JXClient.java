@@ -275,7 +275,7 @@ public class JXClient {
                                         }
                                     });
                                     exiter.waitForTermination();
-                                    SwingUtilities.invokeAndWait(() -> window[0].term());
+                                    SwingUtilities.invokeAndWait(window[0]::term);
                                     soundManager.shutdown();
                                 } finally {
                                     server.stop();

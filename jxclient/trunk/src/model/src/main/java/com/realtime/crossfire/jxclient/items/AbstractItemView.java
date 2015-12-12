@@ -65,7 +65,7 @@ public abstract class AbstractItemView implements ItemView {
      * "get all" command.
      */
     @NotNull
-    private final Runnable fireEventCallback = () -> deliverEvents();
+    private final Runnable fireEventCallback = this::deliverEvents;
 
     /**
      * Creates a new instance.

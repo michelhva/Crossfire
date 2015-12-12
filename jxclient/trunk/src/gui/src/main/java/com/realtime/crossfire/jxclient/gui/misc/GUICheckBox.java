@@ -90,7 +90,7 @@ public class GUICheckBox extends ActivatableGUIElement {
      * The {@link OptionListener} attached to {@link #option}.
      */
     @NotNull
-    private final OptionListener optionListener = () -> setChanged();
+    private final OptionListener optionListener = this::setChanged;
 
     /**
      * Creates a new instance.

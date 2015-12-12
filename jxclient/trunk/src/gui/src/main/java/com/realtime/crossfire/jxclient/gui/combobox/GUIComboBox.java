@@ -73,7 +73,7 @@ public abstract class GUIComboBox<T> extends AbstractGUIElement {
      */
     @NotNull
     @SuppressWarnings("FieldCanBeLocal")
-    private final ListCellRenderer<T> renderer = (list, value, index, isSelected, cellHasFocus) -> GUIComboBox.this.getListCellRendererComponent(list, value, index, isSelected, cellHasFocus);
+    private final ListCellRenderer<T> renderer = this::getListCellRendererComponent;
 
     /**
      * The {@link ActionListener} for {@link #comboBox}.
