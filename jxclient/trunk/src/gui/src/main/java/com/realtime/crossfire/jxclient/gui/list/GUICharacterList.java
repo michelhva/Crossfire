@@ -90,7 +90,7 @@ public class GUICharacterList extends GUIList<GUICharacter> {
      * accordingly.
      */
     @NotNull
-    private final CharacterInformationListener characterInformationListener = () -> setChanged();
+    private final CharacterInformationListener characterInformationListener = this::setChanged;
 
     /**
      * Creates a new instance.
@@ -115,7 +115,7 @@ public class GUICharacterList extends GUIList<GUICharacter> {
                 }
             }
         });
-        this.characterModel.addCharacterListener(() -> rebuildList());
+        this.characterModel.addCharacterListener(this::rebuildList);
         this.tooltipManager = tooltipManager;
         this.font = font;
         this.elementListener = elementListener;
