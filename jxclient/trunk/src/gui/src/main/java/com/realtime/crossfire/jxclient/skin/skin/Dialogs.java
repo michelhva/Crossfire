@@ -53,13 +53,13 @@ public class Dialogs implements Iterable<Gui> {
      * The existing dialogs.
      */
     @NotNull
-    private final JXCSkinCache<Gui> dialogs = new JXCSkinCache<Gui>("dialog");
+    private final JXCSkinCache<Gui> dialogs = new JXCSkinCache<>("dialog");
 
     /**
      * Names of pending skin files.
      */
     @NotNull
-    private final Collection<String> dialogsToLoad = new HashSet<String>();
+    private final Collection<String> dialogsToLoad = new HashSet<>();
 
     /**
      * Creates a new instance.

@@ -44,7 +44,7 @@ public class ImageParser {
      * All defined images.
      */
     @NotNull
-    private final JXCSkinCache<BufferedImage> definedImages = new JXCSkinCache<BufferedImage>("image");
+    private final JXCSkinCache<BufferedImage> definedImages = new JXCSkinCache<>("image");
 
     /**
      * The {@link JXCSkinSource} for loading resources.

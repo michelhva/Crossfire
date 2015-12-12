@@ -74,7 +74,7 @@ public class StringSplitter {
     private static Iterable<String> split(@NotNull final String message) {
         final String paddedMessage = message.trim()+" ";
 
-        final Collection<String> result = new ArrayList<String>();
+        final Collection<String> result = new ArrayList<>();
         int start = 0;
         while (true) {
             while (start < paddedMessage.length() && paddedMessage.charAt(start) == ' ') {

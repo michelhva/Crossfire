@@ -54,7 +54,7 @@ public class CommandQueue {
      * #MAX_PENDING_COMMANDS} due to "must send" commands.
      */
     @NotNull
-    private final List<Integer> pendingCommands = new LinkedList<Integer>();
+    private final List<Integer> pendingCommands = new LinkedList<>();
 
     /**
      * The default repeat counter for ncom commands.

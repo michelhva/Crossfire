@@ -36,7 +36,7 @@ public class StatUtils {
      * The stat names: maps stat value to stat name.
      */
     @NotNull
-    private static final Map<Integer, String> STAT_NAMES = new HashMap<Integer, String>();
+    private static final Map<Integer, String> STAT_NAMES = new HashMap<>();
 
     static {
         STAT_NAMES.put(Stats.CS_STAT_HP, "hp");

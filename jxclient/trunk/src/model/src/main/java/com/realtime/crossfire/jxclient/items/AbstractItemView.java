@@ -38,20 +38,20 @@ public abstract class AbstractItemView implements ItemView {
      * notified about changes.
      */
     @NotNull
-    private final EventListenerList2<LocationsListener> locationsListeners = new EventListenerList2<LocationsListener>();
+    private final EventListenerList2<LocationsListener> locationsListeners = new EventListenerList2<>();
 
     /**
      * The registered {@link ItemListener ItemListeners} to be notified about
      * changes.
      */
     @NotNull
-    private final IndexedEventListenerList<LocationListener> locationListeners = new IndexedEventListenerList<LocationListener>();
+    private final IndexedEventListenerList<LocationListener> locationListeners = new IndexedEventListenerList<>();
 
     /**
      * The pending modified floor slots to be reported to listeners.
      */
     @NotNull
-    private final Collection<Integer> modifiedSlots = new HashSet<Integer>();
+    private final Collection<Integer> modifiedSlots = new HashSet<>();
 
     /**
      * The synchronization object for accesses to {@link #modifiedSlots}.

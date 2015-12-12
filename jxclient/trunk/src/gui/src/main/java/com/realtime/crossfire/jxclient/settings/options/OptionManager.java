@@ -37,7 +37,7 @@ public class OptionManager {
      * Maps option name to option instance.
      */
     @NotNull
-    private final Map<String, Entry> options = new HashMap<String, Entry>();
+    private final Map<String, Entry> options = new HashMap<>();
 
     /**
      * The settings instance for loading/saving option values.
@@ -101,7 +101,7 @@ public class OptionManager {
             final Object option = e.getValue().getOption();
             if (option instanceof CheckBoxOption) {
                 final CheckBoxOption checkBoxOption = (CheckBoxOption)option;
-                final boolean checked = settings.getBoolean(new SettingsEntry<Boolean>(optionName, checkBoxOption.isDefaultChecked(), null));
+                final boolean checked = settings.getBoolean(new SettingsEntry<>(optionName, checkBoxOption.isDefaultChecked(), null));
                 if (checkBoxOption.isChecked() == checked) {
                     // make sure the appropriate option command is executed
                     checkBoxOption.fireStateChangedEvent();
@@ -125,7 +125,7 @@ public class OptionManager {
             if (!option.inhibitSave()) {
                 if (option instanceof CheckBoxOption) {
                     final CheckBoxOption checkBoxOption = (CheckBoxOption)option;
-                    settings.putBoolean(new SettingsEntry<Boolean>(optionName, false, entry.getDocumentation()), checkBoxOption.isChecked());
+                    settings.putBoolean(new SettingsEntry<>(optionName, false, entry.getDocumentation()), checkBoxOption.isChecked());
                 } else {
                     throw new AssertionError();
                 }

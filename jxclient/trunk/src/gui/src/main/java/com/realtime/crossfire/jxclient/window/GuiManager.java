@@ -156,7 +156,7 @@ public class GuiManager {
      * Maps dialog name to dialog instance.
      */
     @NotNull
-    private final Map<String, Gui> dialogs = new HashMap<String, Gui>();
+    private final Map<String, Gui> dialogs = new HashMap<>();
 
     /**
      * The {@link CrossfireDrawextinfoListener} attached to {@link #server}.

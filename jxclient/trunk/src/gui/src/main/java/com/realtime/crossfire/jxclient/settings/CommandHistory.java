@@ -42,7 +42,7 @@ public class CommandHistory {
      * The commands.
      */
     @NotNull
-    private final List<String> commands = new ArrayList<String>(HISTORY_SIZE);
+    private final List<String> commands = new ArrayList<>(HISTORY_SIZE);
 
     /**
      * The current command index.

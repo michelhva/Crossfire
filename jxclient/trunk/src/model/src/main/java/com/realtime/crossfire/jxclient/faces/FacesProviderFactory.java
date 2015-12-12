@@ -37,7 +37,7 @@ public class FacesProviderFactory {
      * pixels to faces provider instance.
      */
     @NotNull
-    private final Map<Integer, FacesProvider> facesProviders = new HashMap<Integer, FacesProvider>();
+    private final Map<Integer, FacesProvider> facesProviders = new HashMap<>();
 
     /**
      * Creates a new instance.

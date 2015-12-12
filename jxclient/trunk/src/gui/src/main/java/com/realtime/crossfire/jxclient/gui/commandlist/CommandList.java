@@ -41,7 +41,7 @@ public class CommandList {
      * The list of {@link GUICommand GUICommands} in execution order.
      */
     @NotNull
-    private final Collection<GUICommand> commandList = new ArrayList<GUICommand>();
+    private final Collection<GUICommand> commandList = new ArrayList<>();
 
     /**
      * Creates a new instance as an empty command list.

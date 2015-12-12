@@ -54,7 +54,7 @@ public class ServerCache {
      * {@link Info} instance for the metaserver entry.
      */
     @NotNull
-    private final Map<String, Info> entries = new HashMap<String, Info>();
+    private final Map<String, Info> entries = new HashMap<>();
 
     /**
      * The backing file.
@@ -104,7 +104,7 @@ public class ServerCache {
      */
     @NotNull
     public Map<String, MetaserverEntry> getAll() {
-        final Map<String, MetaserverEntry> result = new HashMap<String, MetaserverEntry>();
+        final Map<String, MetaserverEntry> result = new HashMap<>();
         for (final Entry<String, Info> entry : entries.entrySet()) {
             result.put(entry.getKey(), entry.getValue().getMetaserverEntry());
         }

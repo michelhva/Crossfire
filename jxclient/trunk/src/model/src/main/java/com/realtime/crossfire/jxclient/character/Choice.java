@@ -59,7 +59,7 @@ public class Choice {
     public Choice(@NotNull final String choiceName, @NotNull final String choiceDescription, @NotNull final Map<String, String> choices) {
         this.choiceName = choiceName;
         this.choiceDescription = choiceDescription;
-        this.choices = new LinkedHashMap<String, String>(choices);
+        this.choices = new LinkedHashMap<>(choices);
     }
 
     /**

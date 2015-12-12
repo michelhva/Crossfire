@@ -46,7 +46,7 @@ public class JXCSkinCache<T> implements Iterable<T> {
      * never {@code null}.
      */
     @NotNull
-    private final Map<String, T> cache = new LinkedHashMap<String, T>();
+    private final Map<String, T> cache = new LinkedHashMap<>();
 
     /**
      * Creates a new instance.

@@ -35,7 +35,7 @@ public class Mapping {
      * The mappings. Maps source index to destination index.
      */
     @NotNull
-    private final List<Integer> mapping = new ArrayList<Integer>();
+    private final List<Integer> mapping = new ArrayList<>();
 
     /**
      * Removes all mappings.

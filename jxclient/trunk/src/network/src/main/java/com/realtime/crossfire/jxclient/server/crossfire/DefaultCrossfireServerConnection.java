@@ -581,7 +581,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * #sendingRequestInfo} is unset.
      */
     @NotNull
-    private final List<String> pendingRequestInfos = new ArrayList<String>();
+    private final List<String> pendingRequestInfos = new ArrayList<>();
 
     /**
      * The {@link ClientSocketListener} attached to the server socket.
@@ -2326,7 +2326,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         final String choiceDescription = getString(packet, getInt1(packet));
         final String archName = getString(packet, getInt1(packet));
         final String archDesc = getString(packet, getInt1(packet));
-        final Map<String, String> choices = new LinkedHashMap<String, String>();
+        final Map<String, String> choices = new LinkedHashMap<>();
         choices.put(archName, archDesc);
         while (true) {
             final int archNameLength = getInt1(packet);
@@ -3140,7 +3140,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     @SuppressWarnings("IfStatementWithIdenticalBranches")
     private void processSetup(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final int args = packet.position();
-        final List<String> options = new ArrayList<String>();
+        final List<String> options = new ArrayList<>();
         while (packet.hasRemaining()) {
             while (packet.get(packet.position()) == ' ') {
                 packet.get();

@@ -116,14 +116,14 @@ public class CfMap {
      * The "dirty" map squares that have been modified.
      */
     @NotNull
-    private final Set<CfMapSquare> dirtyMapSquares = new HashSet<CfMapSquare>();
+    private final Set<CfMapSquare> dirtyMapSquares = new HashSet<>();
 
     /**
      * The map squares containing pending faces. Maps face number to map squares
      * that need to be repainted when the face becomes available.
      */
     @NotNull
-    private final Map<Integer, Collection<CfMapSquare>> pendingFaceSquares = new HashMap<Integer, Collection<CfMapSquare>>();
+    private final Map<Integer, Collection<CfMapSquare>> pendingFaceSquares = new HashMap<>();
 
     /**
      * Clears the map contents.
@@ -745,7 +745,7 @@ public class CfMap {
         final Integer tmpFaceNum = faceNum;
         Collection<CfMapSquare> mapSquares = pendingFaceSquares.get(tmpFaceNum);
         if (mapSquares == null) {
-            mapSquares = new HashSet<CfMapSquare>();
+            mapSquares = new HashSet<>();
             pendingFaceSquares.put(tmpFaceNum, mapSquares);
         }
         mapSquares.add(getMapSquare(x, y));
@@ -758,7 +758,7 @@ public class CfMap {
     @NotNull
     public Set<CfMapSquare> getDirtyMapSquares() {
         assert Thread.holdsLock(this);
-        final Set<CfMapSquare> result = new HashSet<CfMapSquare>(dirtyMapSquares);
+        final Set<CfMapSquare> result = new HashSet<>(dirtyMapSquares);
         dirtyMapSquares.clear();
         return result;
     }

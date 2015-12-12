@@ -35,25 +35,25 @@ public class KnowledgeManager {
      * changes.
      */
     @NotNull
-    private final EventListenerList2<KnowledgeListener> listeners = new EventListenerList2<KnowledgeListener>();
+    private final EventListenerList2<KnowledgeListener> listeners = new EventListenerList2<>();
 
     @NotNull
-    private final List<String> types = new ArrayList<String>();
+    private final List<String> types = new ArrayList<>();
 
     @NotNull
-    private final List<String> names = new ArrayList<String>();
+    private final List<String> names = new ArrayList<>();
 
     @NotNull
-    private final List<Integer> faces = new ArrayList<Integer>();
+    private final List<Integer> faces = new ArrayList<>();
 
     @NotNull
-    private final List<Boolean> attempt = new ArrayList<Boolean>();
+    private final List<Boolean> attempt = new ArrayList<>();
 
     @NotNull
-    private final Collection<KnowledgeItem> items = new ArrayList<KnowledgeItem>();
+    private final Collection<KnowledgeItem> items = new ArrayList<>();
 
     @NotNull
-    private final List<KnowledgeItem> filteredItems = new ArrayList<KnowledgeItem>();
+    private final List<KnowledgeItem> filteredItems = new ArrayList<>();
 
     @NotNull
     private String typeFilter = "";

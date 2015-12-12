@@ -47,13 +47,13 @@ public class ItemSet {
      * the client.
      */
     @NotNull
-    private final Map<Integer, CfItem> allItems = new HashMap<Integer, CfItem>();
+    private final Map<Integer, CfItem> allItems = new HashMap<>();
 
     /**
      * Maps location (=tag) to list of items in that location.
      */
     @NotNull
-    private final Map<Integer, List<CfItem>> items = new HashMap<Integer, List<CfItem>>();
+    private final Map<Integer, List<CfItem>> items = new HashMap<>();
 
     /**
      * The synchronization object for {@link #player}.
@@ -77,14 +77,14 @@ public class ItemSet {
      * changes.
      */
     @NotNull
-    private final EventListenerList2<ItemSetListener> itemSetListeners = new EventListenerList2<ItemSetListener>();
+    private final EventListenerList2<ItemSetListener> itemSetListeners = new EventListenerList2<>();
 
     /**
      * The registered {@link ItemListener ItemListeners} to be notified about
      * changes.
      */
     @NotNull
-    private final HashedEventListenerList<ItemListener> itemListeners = new HashedEventListenerList<ItemListener>();
+    private final HashedEventListenerList<ItemListener> itemListeners = new HashedEventListenerList<>();
 
     /**
      * Adds an {@link ItemSetListener} to be notified about changes.
@@ -233,7 +233,7 @@ public class ItemSet {
         final int where = item.getLocation();
         List<CfItem> list = items.get(where);
         if (list == null) {
-            list = new CopyOnWriteArrayList<CfItem>();
+            list = new CopyOnWriteArrayList<>();
             if (items.put(where, list) != null) {
                 throw new AssertionError();
             }
@@ -405,7 +405,7 @@ public class ItemSet {
             if (player != null) {
                 cleanInventory(player.getTag());
             }
-            final Iterable<CfItem> tmp = new HashSet<CfItem>(allItems.values());
+            final Iterable<CfItem> tmp = new HashSet<>(allItems.values());
             for (final CfItem item : tmp) {
                 removeItemByTag(item.getTag(), true);
             }

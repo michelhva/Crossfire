@@ -70,7 +70,7 @@ public class FileCacheFaceQueue extends AbstractFaceQueue {
      * not yet processed.
      */
     @NotNull
-    private final Collection<Face> pendingLoadFaces = new HashSet<Face>();
+    private final Collection<Face> pendingLoadFaces = new HashSet<>();
 
     /**
      * Counts the number of calls to {@link #reset()}. An {@link

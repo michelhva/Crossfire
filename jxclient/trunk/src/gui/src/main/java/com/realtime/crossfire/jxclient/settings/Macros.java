@@ -52,7 +52,7 @@ public class Macros {
      * The macro expansions. Maps macro name to macro expansion.
      */
     @NotNull
-    private final Map<String, String> expansions = new HashMap<String, String>();
+    private final Map<String, String> expansions = new HashMap<>();
 
     /**
      * The {@link CrossfireDrawextinfoListener} for tracking tells.

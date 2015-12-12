@@ -327,7 +327,7 @@ public class JXCSkinLoader {
      * All defined fonts.
      */
     @NotNull
-    private final JXCSkinCache<Font> definedFonts = new JXCSkinCache<Font>("font");
+    private final JXCSkinCache<Font> definedFonts = new JXCSkinCache<>("font");
 
     /**
      * The text button factory. Set to {@code null} until defined.
@@ -382,7 +382,7 @@ public class JXCSkinLoader {
      * The defined {@link GUIElement GUIElements}.
      */
     @NotNull
-    private final JXCSkinCache<AbstractGUIElement> definedGUIElements = new JXCSkinCache<AbstractGUIElement>("gui element");
+    private final JXCSkinCache<AbstractGUIElement> definedGUIElements = new JXCSkinCache<>("gui element");
 
     /**
      * The {@link JXCSkin} being loaded.
@@ -1323,7 +1323,7 @@ public class JXCSkinLoader {
         if (!begin.equals("begin")) {
             throw new IOException("syntax error: expecting 'begin'");
         }
-        final Collection<GUIElement> unreferencedElements = new TreeSet<GUIElement>(ELEMENT_COMPARATOR);
+        final Collection<GUIElement> unreferencedElements = new TreeSet<>(ELEMENT_COMPARATOR);
         for (final GUIElement element : definedGUIElements) {
             unreferencedElements.add(element);
         }
@@ -1644,7 +1644,7 @@ public class JXCSkinLoader {
      */
     private void parseLinkSize(@NotNull final Args args, @NotNull final Container gui) throws IOException, JXCSkinException {
         final String type = args.get();
-        final List<Component> elements = new ArrayList<Component>();
+        final List<Component> elements = new ArrayList<>();
         while (args.hasMore()) {
             elements.add(definedGUIElements.lookup(args.get()));
         }
@@ -2087,7 +2087,7 @@ public class JXCSkinLoader {
         if (!begin.equals("begin")) {
             throw new IOException("syntax error: expecting 'begin'");
         }
-        final Collection<GUIElement> unreferencedElements = new TreeSet<GUIElement>(ELEMENT_COMPARATOR);
+        final Collection<GUIElement> unreferencedElements = new TreeSet<>(ELEMENT_COMPARATOR);
         for (final GUIElement element : definedGUIElements) {
             unreferencedElements.add(element);
         }

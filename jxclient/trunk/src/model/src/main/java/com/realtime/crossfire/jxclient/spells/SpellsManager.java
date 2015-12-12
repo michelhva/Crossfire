@@ -66,13 +66,13 @@ public class SpellsManager implements Iterable<Spell> {
      * All known spells.
      */
     @NotNull
-    private final List<Spell> spells = new CopyOnWriteArrayList<Spell>();
+    private final List<Spell> spells = new CopyOnWriteArrayList<>();
 
     /**
      * Spells currently exposed, based on the filter.
      */
     @NotNull
-    private final List<Spell> filteredSpells = new CopyOnWriteArrayList<Spell>();
+    private final List<Spell> filteredSpells = new CopyOnWriteArrayList<>();
 
     /**
      * Skill to filter spells by, as a skill id in {@link SkillSet}. -1 means to
@@ -85,14 +85,14 @@ public class SpellsManager implements Iterable<Spell> {
      * {@link Spell} instance. Accesses are synchronized on this instance.
      */
     @NotNull
-    private final Map<String, Spell> unknownSpells = new HashMap<String, Spell>();
+    private final Map<String, Spell> unknownSpells = new HashMap<>();
 
     /**
      * The {@link SpellsManagerListener SpellsManagerListeners} to notify about
      * changes.
      */
     @NotNull
-    private final EventListenerList2<SpellsManagerListener> listeners = new EventListenerList2<SpellsManagerListener>();
+    private final EventListenerList2<SpellsManagerListener> listeners = new EventListenerList2<>();
 
     /**
      * A {@link Comparator} to compare {@link Spell} instances by spell path and
@@ -166,7 +166,7 @@ public class SpellsManager implements Iterable<Spell> {
     /**
      * Skills used by the spell, including the "all" skill.
      */
-    private final List<Skill> spellSkills = new ArrayList<Skill>();
+    private final List<Skill> spellSkills = new ArrayList<>();
 
     /**
      * Compare 2 skills.

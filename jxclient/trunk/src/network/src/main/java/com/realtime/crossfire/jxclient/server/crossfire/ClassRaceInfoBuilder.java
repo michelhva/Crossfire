@@ -58,13 +58,13 @@ public class ClassRaceInfoBuilder {
      * The stat adjustments. Maps stat number to adjustment.
      */
     @NotNull
-    private final Map<Integer, Long> stats = new HashMap<Integer, Long>();
+    private final Map<Integer, Long> stats = new HashMap<>();
 
     /**
      * The available choices.
      */
     @NotNull
-    private final List<Choice> choices = new ArrayList<Choice>();
+    private final List<Choice> choices = new ArrayList<>();
 
     /**
      * Creates a new instance.

@@ -43,7 +43,7 @@ public class Shortcuts implements Iterable<Shortcut> {
      * {@code null}.
      */
     @NotNull
-    private final List<Shortcut> shortcuts = new ArrayList<Shortcut>();
+    private final List<Shortcut> shortcuts = new ArrayList<>();
 
     /**
      * Whether the contents of {@link #shortcuts} have been modified from the
@@ -61,7 +61,7 @@ public class Shortcuts implements Iterable<Shortcut> {
      * The listeners to be notified.
      */
     @NotNull
-    private final EventListenerList2<ShortcutsListener> listeners = new EventListenerList2<ShortcutsListener>();
+    private final EventListenerList2<ShortcutsListener> listeners = new EventListenerList2<>();
 
     /**
      * The command queue for executing commands.

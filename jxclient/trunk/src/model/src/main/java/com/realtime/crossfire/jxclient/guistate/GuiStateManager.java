@@ -49,7 +49,7 @@ public class GuiStateManager {
      * The connection state listeners to notify.
      */
     @NotNull
-    private final EventListenerList2<GuiStateListener> guiStateListeners = new EventListenerList2<GuiStateListener>();
+    private final EventListenerList2<GuiStateListener> guiStateListeners = new EventListenerList2<>();
 
     /**
      * Sets a new {@link GuiState}.

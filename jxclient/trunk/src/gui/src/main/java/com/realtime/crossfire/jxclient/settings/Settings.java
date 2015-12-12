@@ -52,7 +52,7 @@ public class Settings {
      * The stored values. Maps key name to value.
      */
     @NotNull
-    private final Map<String, Entry> values = new TreeMap<String, Entry>();
+    private final Map<String, Entry> values = new TreeMap<>();
 
     /**
      * Flag to inhibit saving.
@@ -232,7 +232,7 @@ public class Settings {
             final String key = tmp[0];
             final String value = tmp[1];
 
-            putString(new SettingsEntry<String>(key, "", null), value);
+            putString(new SettingsEntry<>(key, "", null), value);
         }
     }
 

@@ -58,7 +58,7 @@ public class RawScale8d {
      * Maps pixel value to number of pixels.
      */
     @NotNull
-    private final Map<Integer, Integer> pixels = new HashMap<Integer, Integer>();
+    private final Map<Integer, Integer> pixels = new HashMap<>();
 
     /**
      * Creates a new instance.

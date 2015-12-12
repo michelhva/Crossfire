@@ -36,7 +36,7 @@ public abstract class AbstractFaceQueue implements FaceQueue {
      * The registered {@link FaceQueueListener FaceQueueListeners}.
      */
     @NotNull
-    private final EventListenerList2<FaceQueueListener> faceQueueListeners = new EventListenerList2<FaceQueueListener>();
+    private final EventListenerList2<FaceQueueListener> faceQueueListeners = new EventListenerList2<>();
 
     /**
      * {@inheritDoc}

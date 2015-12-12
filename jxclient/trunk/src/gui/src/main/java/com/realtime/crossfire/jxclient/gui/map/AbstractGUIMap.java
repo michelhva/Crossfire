@@ -122,7 +122,7 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
      * Pending map scrolls.
      */
     @NotNull
-    private final Deque<Long> scrollMapPending = new ArrayDeque<Long>();
+    private final Deque<Long> scrollMapPending = new ArrayDeque<>();
 
     /**
      * The map width in squares.
@@ -214,7 +214,7 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
      * square.
      */
     @NotNull
-    private final Map<Color, Image> images = new HashMap<Color, Image>();
+    private final Map<Color, Image> images = new HashMap<>();
 
     /**
      * The {@link MapListener} registered to receive map updates.

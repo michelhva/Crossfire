@@ -87,25 +87,25 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
      * The listeners to notify about changed map squares.
      */
     @NotNull
-    private final EventListenerList2<MapListener> mapListeners = new EventListenerList2<MapListener>();
+    private final EventListenerList2<MapListener> mapListeners = new EventListenerList2<>();
 
     /**
      * The listeners to notify about cleared maps.
      */
     @NotNull
-    private final EventListenerList2<NewmapListener> newmapListeners = new EventListenerList2<NewmapListener>();
+    private final EventListenerList2<NewmapListener> newmapListeners = new EventListenerList2<>();
 
     /**
      * The listeners to notify about scrolled maps.
      */
     @NotNull
-    private final EventListenerList2<MapScrollListener> mapScrollListeners = new EventListenerList2<MapScrollListener>();
+    private final EventListenerList2<MapScrollListener> mapScrollListeners = new EventListenerList2<>();
 
     /**
      * The {@link MapSizeListener MapSizeListeners} to be notified.
      */
     @NotNull
-    private final EventListenerList2<MapSizeListener> mapSizeListeners = new EventListenerList2<MapSizeListener>();
+    private final EventListenerList2<MapSizeListener> mapSizeListeners = new EventListenerList2<>();
 
     /**
      * The animations in the visible map area.
@@ -117,7 +117,7 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
      * All multi-tiled faces with heads outside the visible map area.
      */
     @NotNull
-    private final Collection<Location> outOfViewMultiFaces = new HashSet<Location>();
+    private final Collection<Location> outOfViewMultiFaces = new HashSet<>();
 
     /**
      * Creates a new instance.

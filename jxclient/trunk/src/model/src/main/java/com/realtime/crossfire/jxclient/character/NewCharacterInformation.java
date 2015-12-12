@@ -42,31 +42,31 @@ public class NewCharacterInformation {
      * The {@link StartingMap} entries available for character creation.
      */
     @NotNull
-    private final List<StartingMap> startingMaps = new ArrayList<StartingMap>();
+    private final List<StartingMap> startingMaps = new ArrayList<>();
 
     /**
      * The races available for character creation.
      */
     @NotNull
-    private final List<String> raceList = new ArrayList<String>();
+    private final List<String> raceList = new ArrayList<>();
 
     /**
      * The classes available for character creation.
      */
     @NotNull
-    private final List<String> classList = new ArrayList<String>();
+    private final List<String> classList = new ArrayList<>();
 
     /**
      * The defined races for character creation.
      */
     @NotNull
-    private final Map<String, ClassRaceInfo> raceInfo = new HashMap<String, ClassRaceInfo>();
+    private final Map<String, ClassRaceInfo> raceInfo = new HashMap<>();
 
     /**
      * The defined classes for character creation.
      */
     @NotNull
-    private final Map<String, ClassRaceInfo> classInfo = new HashMap<String, ClassRaceInfo>();
+    private final Map<String, ClassRaceInfo> classInfo = new HashMap<>();
 
     /**
      * The {@link NewCharInfo} for creating new characters.
@@ -78,7 +78,7 @@ public class NewCharacterInformation {
      * All registered character listeners.
      */
     @NotNull
-    private final EventListenerList2<NewCharacterInformationListener> newCharacterInformationListeners = new EventListenerList2<NewCharacterInformationListener>();
+    private final EventListenerList2<NewCharacterInformationListener> newCharacterInformationListeners = new EventListenerList2<>();
 
     /**
      * Sets the {@link StartingMap} entries available for character creation.

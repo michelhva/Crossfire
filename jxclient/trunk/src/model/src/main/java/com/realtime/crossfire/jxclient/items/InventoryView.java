@@ -57,7 +57,7 @@ public class InventoryView extends AbstractItemView {
      * The items in the inventory ordered by {@link #comparator}.
      */
     @NotNull
-    private final List<CfItem> items = new ArrayList<CfItem>();
+    private final List<CfItem> items = new ArrayList<>();
 
     /**
      * Maps external index to original index.

@@ -42,14 +42,14 @@ public class MetaserverModel {
      * The current entries.
      */
     @NotNull
-    private final List<MetaserverEntry> metaList = new ArrayList<MetaserverEntry>();
+    private final List<MetaserverEntry> metaList = new ArrayList<>();
 
     /**
      * The pending entries. Only valid between {@link #begin()} and {@link
      * #commit()}.
      */
     @NotNull
-    private final Collection<MetaserverEntry> metaListPending = new ArrayList<MetaserverEntry>();
+    private final Collection<MetaserverEntry> metaListPending = new ArrayList<>();
 
     /**
      * Object used for synchronization.
@@ -61,14 +61,14 @@ public class MetaserverModel {
      * All registered metaserver listeners.
      */
     @NotNull
-    private final EventListenerList2<MetaserverListener> metaserverListeners = new EventListenerList2<MetaserverListener>();
+    private final EventListenerList2<MetaserverListener> metaserverListeners = new EventListenerList2<>();
 
     /**
      * All registered metaserver entry listeners. Maps entry index to list of
      * listeners.
      */
     @NotNull
-    private final Map<Integer, EventListenerList2<MetaserverEntryListener>> metaserverEntryListeners = new HashMap<Integer, EventListenerList2<MetaserverEntryListener>>();
+    private final Map<Integer, EventListenerList2<MetaserverEntryListener>> metaserverEntryListeners = new HashMap<>();
 
     /**
      * Returns a metaserver entry by index.
@@ -206,7 +206,7 @@ public class MetaserverModel {
                 return existingListeners;
             }
 
-            final EventListenerList2<MetaserverEntryListener> newListeners = new EventListenerList2<MetaserverEntryListener>();
+            final EventListenerList2<MetaserverEntryListener> newListeners = new EventListenerList2<>();
             metaserverEntryListeners.put(index, newListeners);
             return newListeners;
         }

@@ -48,7 +48,7 @@ public class SkillSet {
      * Maps skill name to skill instance.
      */
     @NotNull
-    private final Map<String, Skill> namedSkills = new HashMap<String, Skill>();
+    private final Map<String, Skill> namedSkills = new HashMap<>();
 
     /**
      * The {@link GuiStateListener} for detecting established or dropped

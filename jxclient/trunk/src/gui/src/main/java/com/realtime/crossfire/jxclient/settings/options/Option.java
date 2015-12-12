@@ -35,7 +35,7 @@ public abstract class Option {
      * The listeners to be notified.
      */
     @NotNull
-    private final EventListenerList2<OptionListener> listeners = new EventListenerList2<OptionListener>();
+    private final EventListenerList2<OptionListener> listeners = new EventListenerList2<>();
 
     /**
      * Notifies all listeners that the state has changed.

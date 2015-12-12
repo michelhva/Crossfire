@@ -37,13 +37,13 @@ public class KeyCodeMap {
      * Maps key name to key code.
      */
     @NotNull
-    private final Map<String, Integer> keyCodes = new HashMap<String, Integer>();
+    private final Map<String, Integer> keyCodes = new HashMap<>();
 
     /**
      * Maps key code to key name.
      */
     @NotNull
-    private final Map<Integer, String> keyNames = new HashMap<Integer, String>();
+    private final Map<Integer, String> keyNames = new HashMap<>();
 
     /**
      * Creates a new instance.

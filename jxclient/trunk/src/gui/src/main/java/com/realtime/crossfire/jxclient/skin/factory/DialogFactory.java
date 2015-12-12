@@ -206,7 +206,7 @@ public class DialogFactory {
      */
     @NotNull
     public Iterable<AbstractGUIElement> newDialog(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final String title) {
-        final Collection<AbstractGUIElement> result = new ArrayList<AbstractGUIElement>();
+        final Collection<AbstractGUIElement> result = new ArrayList<>();
         result.add(new GUIDialogBackground(tooltipManager, elementListener, "dialog_background", frameAlpha, frameNW, frameN, frameNE, frameW, frameC, frameE, frameSW, frameS, frameSE));
 
         if (!title.isEmpty()) {

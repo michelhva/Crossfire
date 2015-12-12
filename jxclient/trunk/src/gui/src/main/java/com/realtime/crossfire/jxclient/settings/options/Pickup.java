@@ -191,7 +191,7 @@ public class Pickup {
      * All pickup options.
      */
     @NotNull
-    private final Collection<PickupOption> pickupOptions = new LinkedList<PickupOption>();
+    private final Collection<PickupOption> pickupOptions = new LinkedList<>();
 
     /**
      * The command queue for sending pickup commands.

@@ -263,7 +263,7 @@ public class KeybindingsManager {
      * @return the matching bindings
      */
     public Iterable<KeyBinding> getBindingsForPartialCommand(@NotNull final String command, final boolean startOnly) {
-        final Collection<KeyBinding> matches = new HashSet<KeyBinding>();
+        final Collection<KeyBinding> matches = new HashSet<>();
 
         /*
          * character-specific bindings override global ones, so need to check for

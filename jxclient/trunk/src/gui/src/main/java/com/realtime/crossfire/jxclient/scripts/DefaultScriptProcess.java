@@ -136,7 +136,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
      * The {@link ScriptProcessListener ScriptProcessListeners} to notify.
      */
     @NotNull
-    private final EventListenerList2<ScriptProcessListener> scriptProcessListeners = new EventListenerList2<ScriptProcessListener>();
+    private final EventListenerList2<ScriptProcessListener> scriptProcessListeners = new EventListenerList2<>();
 
     /**
      * The {@link PacketWatcher} to process "watch" commands.
