@@ -7,4 +7,5 @@ speed 1
 food 8
 is_used_up 1
 no_pick 1
+move_type fly_low
 end
