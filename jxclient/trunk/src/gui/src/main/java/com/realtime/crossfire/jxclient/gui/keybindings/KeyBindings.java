@@ -380,4 +380,5 @@ public class KeyBindings {
     public Collection<KeyBinding> getBindingsForPartialCommand(@NotNull final String command, final boolean startOnly) {
         return keybindings.stream().filter(binding -> (startOnly && binding.getCommandString().startsWith(command)) || (!startOnly && binding.getCommandString().contains(command))).collect(Collectors.toSet());
     }
+
 }

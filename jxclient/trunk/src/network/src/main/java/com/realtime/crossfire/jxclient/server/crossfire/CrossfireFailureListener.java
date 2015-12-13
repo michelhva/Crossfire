@@ -43,4 +43,5 @@ public interface CrossfireFailureListener extends EventListener {
      * Failure is not relevant anymore, clean it.
      */
     void clearFailure();
+
 }

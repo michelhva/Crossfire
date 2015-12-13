@@ -47,4 +47,5 @@ public class QuestComparator implements Comparator<Quest>, Serializable {
 
         return o1.getCode() < o2.getCode() ? -1 : o1.getCode() > o2.getCode() ? 1 : 0;
     }
+
 }

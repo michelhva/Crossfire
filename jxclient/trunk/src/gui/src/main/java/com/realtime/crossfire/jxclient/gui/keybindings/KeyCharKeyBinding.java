@@ -110,4 +110,5 @@ public class KeyCharKeyBinding extends KeyBinding {
         }
         return new String(new char[] { keyChar });
     }
+
 }
