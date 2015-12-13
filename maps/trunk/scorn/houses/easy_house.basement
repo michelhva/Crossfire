@@ -9,7 +9,7 @@ enter_x 7
 enter_y 5
 msg
 Created:  2006-05-26 Bort
-Modified: 2012-01-08 Rick Tanner
+Modified: 2015-12-12 Daniel Hawkins
 endmsg
 end
 arch cobblestones2
@@ -776,7 +776,7 @@ x 7
 y 5
 end
 arch stair_up_2
-slaying easy_house.1.a
+slaying easy_house.floor1
 hp 9
 sp 8
 x 7

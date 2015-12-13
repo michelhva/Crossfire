@@ -9,7 +9,7 @@ enter_x 10
 enter_y 19
 msg
 Created:  2006-05-26 Bort
-Modified: 2012-01-08 Rick Tanner
+Modified: 2015-12-13 Daniel Hawkins
 endmsg
 end
 arch grass
@@ -1171,7 +1171,7 @@ x 9
 y 8
 end
 arch stair_down_2
-slaying easy_house.1.c
+slaying easy_house.basement
 hp 7
 sp 5
 x 9
@@ -2067,7 +2067,7 @@ x 16
 y 6
 end
 arch stair_up_1
-slaying easy_house.1.b
+slaying easy_house.floor2
 hp 14
 sp 4
 x 16
