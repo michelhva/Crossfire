@@ -137,7 +137,8 @@ public class SkillSet {
      * @param face the skill face to set.
      * @return the skill instance
      */
-    public Skill getNamedSkill(final String skillName, final int face) {
+    @NotNull
+    public Skill getNamedSkill(@NotNull final String skillName, final int face) {
         final Skill oldSkill = namedSkills.get(skillName);
         if (oldSkill != null) {
             oldSkill.setFace(face);
