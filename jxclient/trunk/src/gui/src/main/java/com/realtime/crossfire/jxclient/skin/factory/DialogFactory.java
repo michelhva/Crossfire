@@ -223,4 +223,5 @@ public class DialogFactory {
     public float getFrameAlpha() {
         return frameAlpha;
     }
+
 }

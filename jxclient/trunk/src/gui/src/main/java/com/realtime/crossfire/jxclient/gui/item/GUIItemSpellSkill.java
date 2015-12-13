@@ -338,4 +338,5 @@ public class GUIItemSpellSkill extends GUIItemItem {
     @Override
     public void button3Clicked(final int modifiers) {
     }
+
 }

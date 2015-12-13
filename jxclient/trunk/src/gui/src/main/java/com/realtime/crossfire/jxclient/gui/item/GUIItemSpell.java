@@ -403,4 +403,5 @@ public class GUIItemSpell extends GUIItemItem {
 
         setItemNoListeners(spellsView.getItem(this.index));
     }
+
 }

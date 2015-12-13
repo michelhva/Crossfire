@@ -321,4 +321,4 @@ public class SmoothingRenderer {
         graphics.drawImage(imageIcon.getImage(), dstX, dstY, dstX+tileSize, dstY+tileSize, srcX, srcY, srcX+tileSize, srcY+tileSize, null);
     }
 
-} // class SmoothingRenderer
+}

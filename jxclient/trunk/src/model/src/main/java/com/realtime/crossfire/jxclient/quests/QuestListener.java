@@ -32,4 +32,5 @@ public interface QuestListener extends EventListener {
      * The associated {@link Quest} instance has changed.
      */
     void questChanged();
+
 }

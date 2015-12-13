@@ -62,4 +62,5 @@ public class TestCommand extends AbstractCommand {
     public void execute(@NotNull final String args) {
         throw new AssertionError();
     }
+
 }

@@ -136,4 +136,5 @@ public interface CommandCallback {
      * @param newPassword the new account password
      */
     void accountPassword(@NotNull String currentPassword, @NotNull String newPassword);
+
 }

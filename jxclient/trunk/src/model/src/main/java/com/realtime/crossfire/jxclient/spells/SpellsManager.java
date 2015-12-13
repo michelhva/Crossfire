@@ -441,4 +441,5 @@ public class SpellsManager implements Iterable<Spell> {
     public Skill getSpellSkill(final int index) {
         return 0 <= index && index < spellSkills.size() ? spellSkills.get(index) : null;
     }
+
 }

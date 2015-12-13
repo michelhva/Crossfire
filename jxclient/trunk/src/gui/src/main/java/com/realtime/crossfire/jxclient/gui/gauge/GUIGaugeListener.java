@@ -45,4 +45,5 @@ public interface GUIGaugeListener {
      * @param hidden whether the gauge is hidden
      */
     void setHidden(boolean hidden);
+
 }

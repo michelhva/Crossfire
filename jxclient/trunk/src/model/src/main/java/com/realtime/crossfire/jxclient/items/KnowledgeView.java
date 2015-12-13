@@ -51,4 +51,5 @@ public class KnowledgeView extends AbstractItemView {
         final Face face = facesManager.getFace(item.getFaceNum());
         return new CfItem(0, 0, 0, 0, face, item.getKnowledgeTitle(), item.getKnowledgeTitle(), 0, 0, 0, 0);
     }
+
 }
