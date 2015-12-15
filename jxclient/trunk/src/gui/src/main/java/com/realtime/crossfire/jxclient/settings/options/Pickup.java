@@ -78,7 +78,7 @@ public class Pickup {
     public final PickupOption drink = newPickupOption(0x00000020L, "<html>Picks up drinkable items.");
 
     /**
-     * Pickup mode: rings and amulets.
+     * Pickup mode: money and gems.
      */
     @NotNull
     @SuppressWarnings("PublicField")
@@ -211,7 +211,7 @@ public class Pickup {
     public final PickupOption notCursed = newPickupOption(0x01000000L, "<html>Ignores cursed items.");
 
     /**
-     * Pickup mode: jewels and money.
+     * Pickup mode: rings and amulets.
      */
     @NotNull
     @SuppressWarnings("PublicField")
