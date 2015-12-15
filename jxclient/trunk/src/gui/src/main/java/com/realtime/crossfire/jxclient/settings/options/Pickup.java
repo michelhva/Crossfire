@@ -215,7 +215,7 @@ public class Pickup {
      */
     @NotNull
     @SuppressWarnings("PublicField")
-    public final PickupOption jewels = newPickupOption(0x02000000L, "<html>Picks up rings and amulets.");
+    public final PickupOption jewel = newPickupOption(0x02000000L, "<html>Picks up rings and amulets.");
 
     /**
      * Pickup mode: flesh.
@@ -302,7 +302,7 @@ public class Pickup {
         optionManager.addOption("pickup_readables", "Pickup mode: readables.", readable);
         optionManager.addOption("pickup_magic_device", "Pickup mode: magic devices.", magicDevice);
         optionManager.addOption("pickup_not_cursed", "Pickup mode: not cursed items.", notCursed);
-        optionManager.addOption("pickup_jewels", "Pickup mode: jewels.", jewels);
+        optionManager.addOption("pickup_jewels", "Pickup mode: jewels.", jewel);
         optionManager.addOption("pickup_flesh", "Pickup mode: flesh.", flesh);
         optionManager.addOption("pickup_containers", "Pickup mode: container.", container);
         optionManager.addOption("pickup_inhibit", "Pickup mode: inhibit pickup.", inhibit);
