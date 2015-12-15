@@ -48,150 +48,202 @@ public class Pickup {
     public static final long PU_RATIO = 0x0000000FL;
 
     /**
-     * Pickup mode: food.
-     */
-    public static final long PU_FOOD = 0x00000010L;
-
-    /**
-     * Pickup mode: drinks.
-     */
-    public static final long PU_DRINK = 0x00000020L;
-
-    /**
-     * Pickup mode: rings and amulets.
-     */
-    public static final long PU_VALUABLES = 0x00000040L;
-
-    /**
-     * Pickup mode: bows.
-     */
-    public static final long PU_BOW = 0x00000080L;
-
-    /**
-     * Pickup mode: arrows.
-     */
-    public static final long PU_ARROW = 0x00000100L;
-
-    /**
-     * Pickup mode: helmets.
-     */
-    public static final long PU_HELMET = 0x00000200L;
-
-    /**
-     * Pickup mode: shields.
-     */
-    public static final long PU_SHIELD = 0x00000400L;
-
-    /**
-     * Pickup mode: armors.
-     */
-    public static final long PU_ARMOUR = 0x00000800L;
-
-    /**
-     * Pickup mode: boots.
-     */
-    public static final long PU_BOOTS = 0x00001000L;
-
-    /**
-     * Pickup mode: gloves.
-     */
-    public static final long PU_GLOVES = 0x00002000L;
-
-    /**
-     * Pickup mode: cloaks.
-     */
-    public static final long PU_CLOAK = 0x00004000L;
-
-    /**
-     * Pickup mode: keys.
-     */
-    public static final long PU_KEY = 0x00008000L;
-
-    /**
-     * Pickup mode: missile weapons.
-     */
-    public static final long PU_MISSILE_WEAPON = 0x00010000L;
-
-    /**
-     * Pickup mode: all weapons.
-     */
-    public static final long PU_MELEE_WEAPON = 0x00020000L;
-
-    /**
-     * Pickup mode: magical items.
-     */
-    public static final long PU_MAGICAL = 0x00040000L;
-
-    /**
-     * Pickup mode: potions.
-     */
-    public static final long PU_POTION = 0x00080000L;
-
-    /**
-     * Pickup mode: spellbooks.
-     */
-    public static final long PU_SPELLBOOK = 0x00100000L;
-
-    /**
-     * Pickup mode: skillscrolls.
-     */
-    public static final long PU_SKILLSCROLL = 0x00200000L;
-
-    /**
-     * Pickup mode: normal books and scrolls.
-     */
-    public static final long PU_READABLES = 0x00400000L;
-
-    /**
-     * Pickup mode: magic devices.
-     */
-    public static final long PU_MAGIC_DEVICE = 0x00800000L;
-
-    /**
-     * Pickup mode: ignore cursed items.
-     */
-    public static final long PU_NOT_CURSED = 0x01000000L;
-
-    /**
-     * Pickup mode: jewels and money.
-     */
-    public static final long PU_JEWELS = 0x02000000L;
-
-    /**
-     * Pickup mode: flesh.
-     */
-    public static final long PU_FLESH = 0x04000000L;
-
-    /**
-     * Pickup mode: container.
-     */
-    public static final long PU_CONTAINER = 0x08000000L;
-
-    /**
      * Pickup mode: debug.
      */
-    public static final long PU_DEBUG = 0x10000000L;
-
-    /**
-     * Pickup mode: disable pickup.
-     */
-    public static final long PU_INHIBIT = 0x20000000L;
-
-    /**
-     * Pickup mode: stop before pickup.
-     */
-    public static final long PU_STOP = 0x40000000L;
+    private static final long PU_DEBUG = 0x10000000L;
 
     /**
      * Pickup mode: enable newpickup mode.
      */
-    public static final long PU_NEW_MODE = 0x80000000L;
+    private static final long PU_NEW_MODE = 0x80000000L;
 
     /**
      * All pickup options.
      */
     @NotNull
     private final Collection<PickupOption> pickupOptions = new LinkedList<>();
+
+    /**
+     * Pickup mode: food.
+     */
+    @NotNull
+    @SuppressWarnings("PublicField")
+    public final PickupOption food = newPickupOption(0x00000010L, "<html>Picks up food items.<br>Flesh items are not included.");
+
+    /**
+     * Pickup mode: drinks.
+     */
+    @NotNull
+    @SuppressWarnings("PublicField")
+    public final PickupOption drink = newPickupOption(0x00000020L, "<html>Picks up drinkable items.");
+
+    /**
+     * Pickup mode: rings and amulets.
+     */
+    @NotNull
+    @SuppressWarnings("PublicField")
+    public final PickupOption valuables = newPickupOption(0x00000040L, "<html>Picks up money and gems.");
+
+    /**
+     * Pickup mode: bows.
+     */
+    @NotNull
+    @SuppressWarnings("PublicField")
+    public final PickupOption bow = newPickupOption(0x00000080L, "<html>Picks up bows and crossbows.");
+
+    /**
+     * Pickup mode: arrows.
+     */
+    @NotNull
+    @SuppressWarnings("PublicField")
+    public final PickupOption arrow = newPickupOption(0x00000100L, "<html>Picks up arrows and bolts.");
+
+    /**
+     * Pickup mode: helmets.
+     */
+    @NotNull
+    @SuppressWarnings("PublicField")
+    public final PickupOption helmet = newPickupOption(0x00000200L, "<html>Picks up helmets.");
+
+    /**
+     * Pickup mode: shields.
+     */
+    @NotNull
+    @SuppressWarnings("PublicField")
+    public final PickupOption shield = newPickupOption(0x00000400L, "<html>Picks up shields.");
+
+    /**
+     * Pickup mode: armors.
+     */
+    @NotNull
+    @SuppressWarnings("PublicField")
+    public final PickupOption armor = newPickupOption(0x00000800L, "<html>Picks up armors.");
+
+    /**
+     * Pickup mode: boots.
+     */
+    @NotNull
+    @SuppressWarnings("PublicField")
+    public final PickupOption boot = newPickupOption(0x00001000L, "<html>Picks up boots.");
+
+    /**
+     * Pickup mode: gloves.
+     */
+    @NotNull
+    @SuppressWarnings("PublicField")
+    public final PickupOption glove = newPickupOption(0x00002000L, "<html>Picks up gloves.");
+
+    /**
+     * Pickup mode: cloaks.
+     */
+    @NotNull
+    @SuppressWarnings("PublicField")
+    public final PickupOption cloak = newPickupOption(0x00004000L, "<html>Picks up cloaks.");
+
+    /**
+     * Pickup mode: keys.
+     */
+    @NotNull
+    @SuppressWarnings("PublicField")
+    public final PickupOption key = newPickupOption(0x00008000L, "<html>Picks up keys.");
+
+    /**
+     * Pickup mode: missile weapons.
+     */
+    @NotNull
+    @SuppressWarnings("PublicField")
+    public final PickupOption missileWeapon = newPickupOption(0x00010000L, "<html>Picks up missile weapons.");
+
+    /**
+     * Pickup mode: all weapons.
+     */
+    @NotNull
+    @SuppressWarnings("PublicField")
+    public final PickupOption meleeWeapon = newPickupOption(0x00020000L, "<html>Picks up melee weapons.");
+
+    /**
+     * Pickup mode: magical items.
+     */
+    @NotNull
+    @SuppressWarnings("PublicField")
+    public final PickupOption magicalItem = newPickupOption(0x00040000L, "<html>Picks up magical items.");
+
+    /**
+     * Pickup mode: potions.
+     */
+    @NotNull
+    @SuppressWarnings("PublicField")
+    public final PickupOption potion = newPickupOption(0x00080000L, "<html>Picks up potions.");
+
+    /**
+     * Pickup mode: spellbooks.
+     */
+    @NotNull
+    @SuppressWarnings("PublicField")
+    public final PickupOption spellbook = newPickupOption(0x00100000L, "<html>Picks up spellbooks and prayer books.");
+
+    /**
+     * Pickup mode: skillscrolls.
+     */
+    @NotNull
+    @SuppressWarnings("PublicField")
+    public final PickupOption skillscroll = newPickupOption(0x00200000L, "<html>Picks up skillscrolls.");
+
+    /**
+     * Pickup mode: normal books and scrolls.
+     */
+    @NotNull
+    @SuppressWarnings("PublicField")
+    public final PickupOption readable = newPickupOption(0x00400000L, "<html>Picks up readables.");
+
+    /**
+     * Pickup mode: magic devices.
+     */
+    @NotNull
+    @SuppressWarnings("PublicField")
+    public final PickupOption magicDevice = newPickupOption(0x00800000L, "<html>Picks up magic devices.");
+
+    /**
+     * Pickup mode: ignore cursed items.
+     */
+    @NotNull
+    @SuppressWarnings("PublicField")
+    public final PickupOption notCursed = newPickupOption(0x01000000L, "<html>Ignores cursed items.");
+
+    /**
+     * Pickup mode: jewels and money.
+     */
+    @NotNull
+    @SuppressWarnings("PublicField")
+    public final PickupOption jewels = newPickupOption(0x02000000L, "<html>Picks up rings and amulets.");
+
+    /**
+     * Pickup mode: flesh.
+     */
+    @NotNull
+    @SuppressWarnings("PublicField")
+    public final PickupOption flesh = newPickupOption(0x04000000L, "<html>Picks up flesh items.");
+
+    /**
+     * Pickup mode: container.
+     */
+    @NotNull
+    @SuppressWarnings("PublicField")
+    public final PickupOption container = newPickupOption(0x08000000L, "<html>Picks up containers.");
+
+    /**
+     * Pickup mode: disable pickup.
+     */
+    @NotNull
+    @SuppressWarnings("PublicField")
+    public final PickupOption inhibit = newPickupOption(0x20000000L, "<html>Disables pickup mode.");
+
+    /**
+     * Pickup mode: stop before pickup.
+     */
+    @NotNull
+    @SuppressWarnings("PublicField")
+    public final PickupOption stop = newPickupOption(0x40000000L, "<html>Stops running when picking up items.");
 
     /**
      * The command queue for sending pickup commands.
@@ -229,32 +281,32 @@ public class Pickup {
         //      optionManager.addOption("pickup_ratio65", "Pickup mode: weight/value >= 65", newPickupOption(PU_RATIO, 13));
         //      optionManager.addOption("pickup_ratio70", "Pickup mode: weight/value >= 70", newPickupOption(PU_RATIO, 14));
         //      optionManager.addOption("pickup_ratio75", "Pickup mode: weight/value >= 75", newPickupOption(PU_RATIO, 15));
-        optionManager.addOption("pickup_food", "Pickup mode: food.", newPickupOption(PU_FOOD, "<html>Picks up food items.<br>Flesh items are not included."));
-        optionManager.addOption("pickup_drink", "Pickup mode: drinks.", newPickupOption(PU_DRINK, "<html>Picks up drinkable items."));
-        optionManager.addOption("pickup_valuables", "Pickup mode: valuables.", newPickupOption(PU_VALUABLES, "<html>Picks up money and gems."));
-        optionManager.addOption("pickup_bow", "Pickup mode: bows.", newPickupOption(PU_BOW, "<html>Picks up bows and crossbows."));
-        optionManager.addOption("pickup_arrow", "Pickup mode: arrows.", newPickupOption(PU_ARROW, "<html>Picks up arrows and bolts."));
-        optionManager.addOption("pickup_helmet", "Pickup mode: helmets.", newPickupOption(PU_HELMET, "<html>Picks up helmets."));
-        optionManager.addOption("pickup_shield", "Pickup mode: shields.", newPickupOption(PU_SHIELD, "<html>Picks up shields."));
-        optionManager.addOption("pickup_armour", "Pickup mode: armors.", newPickupOption(PU_ARMOUR, "<html>Picks up armors."));
-        optionManager.addOption("pickup_boots", "Pickup mode: boots.", newPickupOption(PU_BOOTS, "<html>Picks up boots."));
-        optionManager.addOption("pickup_gloves", "Pickup mode: gloves.", newPickupOption(PU_GLOVES, "<html>Picks up gloves."));
-        optionManager.addOption("pickup_cloak", "Pickup mode: cloaks.", newPickupOption(PU_CLOAK, "<html>Picks up cloaks."));
-        optionManager.addOption("pickup_key", "Pickup mode: keys.", newPickupOption(PU_KEY, "<html>Picks up keys."));
-        optionManager.addOption("pickup_missile_weapon", "Pickup mode: missile weapons.", newPickupOption(PU_MISSILE_WEAPON, "<html>Picks up missile weapons."));
-        optionManager.addOption("pickup_melee_weapon", "Pickup mode: melee weapons.", newPickupOption(PU_MELEE_WEAPON, "<html>Picks up melee weapons."));
-        optionManager.addOption("pickup_magical", "Pickup mode: magical items.", newPickupOption(PU_MAGICAL, "<html>Picks up magical items."));
-        optionManager.addOption("pickup_potion", "Pickup mode: potions.", newPickupOption(PU_POTION, "<html>Picks up potions."));
-        optionManager.addOption("pickup_spellbook", "Pickup mode: spellbooks.", newPickupOption(PU_SPELLBOOK, "<html>Picks up spellbooks and prayer books."));
-        optionManager.addOption("pickup_skillscroll", "Pickup mode: skillscrolls.", newPickupOption(PU_SKILLSCROLL, "<html>Picks up skillscrolls."));
-        optionManager.addOption("pickup_readables", "Pickup mode: readables.", newPickupOption(PU_READABLES, "<html>Picks up readables."));
-        optionManager.addOption("pickup_magic_device", "Pickup mode: magic devices.", newPickupOption(PU_MAGIC_DEVICE, "<html>Picks up magic devices."));
-        optionManager.addOption("pickup_not_cursed", "Pickup mode: not cursed items.", newPickupOption(PU_NOT_CURSED, "<html>Ignores cursed items."));
-        optionManager.addOption("pickup_jewels", "Pickup mode: jewels.", newPickupOption(PU_JEWELS, "<html>Picks up rings and amulets."));
-        optionManager.addOption("pickup_flesh", "Pickup mode: flesh.", newPickupOption(PU_FLESH, "<html>Picks up flesh items."));
-        optionManager.addOption("pickup_containers", "Pickup mode: container.", newPickupOption(PU_CONTAINER, "<html>Picks up containers."));
-        optionManager.addOption("pickup_inhibit", "Pickup mode: inhibit pickup.", newPickupOption(PU_INHIBIT, "<html>Disables pickup mode."));
-        optionManager.addOption("pickup_stop", "Pickup mode: stop before pickup.", newPickupOption(PU_STOP, "<html>Stops running when picking up items."));
+        optionManager.addOption("pickup_food", "Pickup mode: food.", food);
+        optionManager.addOption("pickup_drink", "Pickup mode: drinks.", drink);
+        optionManager.addOption("pickup_valuables", "Pickup mode: valuables.", valuables);
+        optionManager.addOption("pickup_bow", "Pickup mode: bows.", bow);
+        optionManager.addOption("pickup_arrow", "Pickup mode: arrows.", arrow);
+        optionManager.addOption("pickup_helmet", "Pickup mode: helmets.", helmet);
+        optionManager.addOption("pickup_shield", "Pickup mode: shields.", shield);
+        optionManager.addOption("pickup_armour", "Pickup mode: armors.", armor);
+        optionManager.addOption("pickup_boots", "Pickup mode: boots.", boot);
+        optionManager.addOption("pickup_gloves", "Pickup mode: gloves.", glove);
+        optionManager.addOption("pickup_cloak", "Pickup mode: cloaks.", cloak);
+        optionManager.addOption("pickup_key", "Pickup mode: keys.", key);
+        optionManager.addOption("pickup_missile_weapon", "Pickup mode: missile weapons.", missileWeapon);
+        optionManager.addOption("pickup_melee_weapon", "Pickup mode: melee weapons.", meleeWeapon);
+        optionManager.addOption("pickup_magical", "Pickup mode: magical items.", magicalItem);
+        optionManager.addOption("pickup_potion", "Pickup mode: potions.", potion);
+        optionManager.addOption("pickup_spellbook", "Pickup mode: spellbooks.", spellbook);
+        optionManager.addOption("pickup_skillscroll", "Pickup mode: skillscrolls.", skillscroll);
+        optionManager.addOption("pickup_readables", "Pickup mode: readables.", readable);
+        optionManager.addOption("pickup_magic_device", "Pickup mode: magic devices.", magicDevice);
+        optionManager.addOption("pickup_not_cursed", "Pickup mode: not cursed items.", notCursed);
+        optionManager.addOption("pickup_jewels", "Pickup mode: jewels.", jewels);
+        optionManager.addOption("pickup_flesh", "Pickup mode: flesh.", flesh);
+        optionManager.addOption("pickup_containers", "Pickup mode: container.", container);
+        optionManager.addOption("pickup_inhibit", "Pickup mode: inhibit pickup.", inhibit);
+        optionManager.addOption("pickup_stop", "Pickup mode: stop before pickup.", stop);
     }
 
     /**
@@ -264,7 +316,7 @@ public class Pickup {
      * @return the pickup option
      */
     @NotNull
-    private Option newPickupOption(final long option, @NotNull final String tooltipText) {
+    private PickupOption newPickupOption(final long option, @NotNull final String tooltipText) {
         final PickupOption pickupOption = new PickupOption(this, option, tooltipText);
         pickupOptions.add(pickupOption);
         return pickupOption;
