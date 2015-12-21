@@ -28,7 +28,7 @@ dam 5
 ac 1
 end
 Object grate_open_2
-name iron gate
+name grate
 type 91
 activate_on_push 1
 activate_on_release 1
