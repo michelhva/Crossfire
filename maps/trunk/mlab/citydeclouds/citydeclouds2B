@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-08-28 mikeeusa
-Modified: 2012-02-13 Rick Tanner
+Modified: 2015-12-22 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 citydeclouds2A
@@ -12497,10 +12497,6 @@ arch brush
 x 33
 y 31
 end
-arch dungeon_magic
-x 33
-y 32
-end
 arch dungeon_floor
 x 33
 y 32
@@ -12509,10 +12505,6 @@ arch dwall_2_2_2
 x 33
 y 32
 end
-arch dungeon_magic
-x 33
-y 33
-end
 arch dungeon_floor
 x 33
 y 33
@@ -12520,10 +12512,6 @@ end
 arch dwall_2_1_1
 x 33
 y 33
-end
-arch dungeon_magic
-x 33
-y 34
 end
 arch dungeon_floor
 x 33
@@ -12533,10 +12521,6 @@ arch dwall_2_1_1
 x 33
 y 34
 end
-arch dungeon_magic
-x 33
-y 35
-end
 arch dungeon_floor
 x 33
 y 35
@@ -12544,10 +12528,6 @@ end
 arch dwall_2_1_1
 x 33
 y 35
-end
-arch dungeon_magic
-x 33
-y 36
 end
 arch dungeon_floor
 x 33
@@ -12557,10 +12537,6 @@ arch dwall_2_1_1
 x 33
 y 36
 end
-arch dungeon_magic
-x 33
-y 37
-end
 arch dungeon_floor
 x 33
 y 37
@@ -12568,10 +12544,6 @@ end
 arch dwall_2_1_1
 x 33
 y 37
-end
-arch dungeon_magic
-x 33
-y 38
 end
 arch dungeon_floor
 x 33
@@ -12581,10 +12553,6 @@ arch dwall_2_1_1
 x 33
 y 38
 end
-arch dungeon_magic
-x 33
-y 39
-end
 arch dungeon_floor
 x 33
 y 39
@@ -12592,10 +12560,6 @@ end
 arch dwall_2_1_1
 x 33
 y 39
-end
-arch dungeon_magic
-x 33
-y 40
 end
 arch dungeon_floor
 x 33
@@ -12605,10 +12569,6 @@ arch dwall_2_1_1
 x 33
 y 40
 end
-arch dungeon_magic
-x 33
-y 41
-end
 arch dungeon_floor
 x 33
 y 41
@@ -12616,10 +12576,6 @@ end
 arch dwall_2_1_1
 x 33
 y 41
-end
-arch dungeon_magic
-x 33
-y 42
 end
 arch dungeon_floor
 x 33
@@ -12629,15 +12585,7 @@ arch dwall_2_1_1
 x 33
 y 42
 end
-arch dungeon_magic
-x 33
-y 43
-end
 arch dungeon_floor
-x 33
-y 43
-end
-arch swall_1_1
 x 33
 y 43
 end
@@ -12645,25 +12593,13 @@ arch dwall_2_1_1
 x 33
 y 43
 end
-arch dungeon_magic
-x 33
-y 44
-end
 arch dungeon_floor
-x 33
-y 44
-end
-arch swall_2_2_1
 x 33
 y 44
 end
 arch dwall_2_1_1
 x 33
 y 44
-end
-arch dungeon_magic
-x 33
-y 45
 end
 arch dungeon_floor
 x 33
@@ -12672,10 +12608,6 @@ end
 arch dwall_2_1_1
 x 33
 y 45
-end
-arch dungeon_magic
-x 33
-y 46
 end
 arch dungeon_floor
 x 33
@@ -13038,10 +12970,6 @@ arch brush
 x 34
 y 31
 end
-arch dungeon_magic
-x 34
-y 32
-end
 arch dungeon_floor
 x 34
 y 32
@@ -13050,26 +12978,9 @@ arch dwall_2_1_2
 x 34
 y 32
 end
-arch dungeon_magic
-x 34
-y 33
-end
 arch dungeon_floor
 x 34
 y 33
-end
-arch sailor
-name John
-x 34
-y 33
-end
-arch dungeon_magic
-x 34
-y 34
-end
-arch swall_0
-x 34
-y 34
 end
 arch dungeon_floor
 x 34
@@ -13079,313 +12990,49 @@ arch table_3
 x 34
 y 34
 end
-arch dungeon_magic
-x 34
-y 35
-end
 arch dungeon_floor
 x 34
 y 35
 end
-arch dungeon_magic
-x 34
-y 36
-end
 arch dungeon_floor
 x 34
 y 36
 end
-arch wwall_0
-x 34
-y 36
-end
-arch dungeon_magic
+arch dungeon_floor
 x 34
 y 37
 end
 arch dungeon_floor
 x 34
-y 37
-end
-arch chest
-x 34
-y 37
-nrof 3
-carrying 75
-randomitems none
-arch note
-name O-W-N-E-D-!
-msg
-You've been had! AHHAHAHAHAH!!!11111
-endmsg
-end
-arch trap_needle
-end
-arch trap_needle
-end
-arch trap_needle
-end
-arch trap_needle
-end
-arch trap_needle
-end
-arch trap_needle
-end
-arch trap_needle
-end
-arch trap_needle
-end
-arch trap_needle
-end
-arch trap_needle
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-arch trap_blades
-end
-end
-arch dungeon_magic
-x 34
 y 38
 end
 arch dungeon_floor
-x 34
-y 38
-end
-arch wwall_0
-x 34
-y 38
-end
-arch dungeon_magic
 x 34
 y 39
 end
 arch dungeon_floor
 x 34
-y 39
-end
-arch light_sword
-name Excalibur
-face excalibur.111
-Str -2
-Dex -2
-Con -2
-Wis -2
-Pow -2
-Cha -2
-Int -2
-dam 0
-x 34
-y 39
-damned 1
-end
-arch dungeon_magic
-x 34
 y 40
 end
 arch dungeon_floor
-x 34
-y 40
-end
-arch wwall_0
-x 34
-y 40
-end
-arch dungeon_magic
 x 34
 y 41
 end
 arch dungeon_floor
 x 34
-y 41
-end
-arch light_sword
-name Deathbringer
-face deathbring.111
-Str -2
-Dex -2
-Con -2
-Wis -2
-Pow -2
-Cha -2
-Int -2
-dam 0
-x 34
-y 41
-damned 1
-end
-arch dungeon_magic
-x 34
 y 42
 end
 arch dungeon_floor
-x 34
-y 42
-end
-arch wwall_0
-x 34
-y 42
-end
-arch dungeon_magic
 x 34
 y 43
 end
 arch dungeon_floor
 x 34
-y 43
-end
-arch t_dagger
-name poisoned disc
-face blades.111
-animation NONE
-dam 16
-x 34
-y 43
-nrof 40
-attacktype 1093
-is_turnable 0
-end
-arch dungeon_magic
-x 34
 y 44
 end
 arch dungeon_floor
-x 34
-y 44
-end
-arch swall_2_1_2
-x 34
-y 44
-end
-arch dungeon_magic
 x 34
 y 45
-end
-arch shop_special
-x 34
-y 45
-end
-arch dungeon_magic
-x 34
-y 46
 end
 arch dungeon_floor
 x 34
@@ -13708,10 +13355,6 @@ arch brush
 x 35
 y 31
 end
-arch dungeon_magic
-x 35
-y 32
-end
 arch dungeon_floor
 x 35
 y 32
@@ -13720,14 +13363,6 @@ arch dwall_2_1_2
 x 35
 y 32
 end
-arch dungeon_magic
-x 35
-y 33
-end
-arch swall_0
-x 35
-y 33
-end
 arch dungeon_floor
 x 35
 y 33
@@ -13735,14 +13370,6 @@ end
 arch table_3
 x 35
 y 33
-end
-arch dungeon_magic
-x 35
-y 34
-end
-arch swall_0
-x 35
-y 34
 end
 arch dungeon_floor
 x 35
@@ -13752,141 +13379,49 @@ arch table_3
 x 35
 y 34
 end
-arch dungeon_magic
-x 35
-y 35
-end
 arch dungeon_floor
 x 35
 y 35
 end
-arch dungeon_magic
-x 35
-y 36
-end
 arch dungeon_floor
 x 35
 y 36
 end
-arch wwall_0
-x 35
-y 36
-end
-arch dungeon_magic
+arch dungeon_floor
 x 35
 y 37
 end
 arch dungeon_floor
 x 35
-y 37
-end
-arch grate_closed_2
-x 35
-y 37
-speed 0.500000
-connected 481
-end
-arch dungeon_magic
-x 35
 y 38
 end
 arch dungeon_floor
-x 35
-y 38
-end
-arch wwall_0
-x 35
-y 38
-end
-arch dungeon_magic
 x 35
 y 39
 end
 arch dungeon_floor
 x 35
-y 39
-end
-arch grate_closed_2
-x 35
-y 39
-speed 0.500000
-connected 482
-end
-arch dungeon_magic
-x 35
 y 40
 end
 arch dungeon_floor
-x 35
-y 40
-end
-arch wwall_0
-x 35
-y 40
-end
-arch dungeon_magic
 x 35
 y 41
 end
 arch dungeon_floor
 x 35
-y 41
-end
-arch grate_closed_2
-x 35
-y 41
-speed 0.500000
-connected 483
-end
-arch dungeon_magic
-x 35
 y 42
 end
 arch dungeon_floor
-x 35
-y 42
-end
-arch wwall_0
-x 35
-y 42
-end
-arch dungeon_magic
 x 35
 y 43
 end
 arch dungeon_floor
 x 35
-y 43
-end
-arch grate_closed_2
-x 35
-y 43
-speed 0.500000
-connected 484
-end
-arch dungeon_magic
-x 35
 y 44
 end
 arch dungeon_floor
-x 35
-y 44
-end
-arch swall_1_3
-x 35
-y 44
-end
-arch dungeon_magic
 x 35
 y 45
-end
-arch shop_special
-x 35
-y 45
-end
-arch dungeon_magic
-x 35
-y 46
 end
 arch dungeon_floor
 x 35
@@ -14171,10 +13706,6 @@ arch brush
 x 36
 y 31
 end
-arch dungeon_magic
-x 36
-y 32
-end
 arch dungeon_floor
 x 36
 y 32
@@ -14183,177 +13714,57 @@ arch dwall_2_1_2
 x 36
 y 32
 end
-arch dungeon_magic
-x 36
-y 33
-end
 arch dungeon_floor
 x 36
 y 33
 end
-arch dungeon_magic
+arch dungeon_floor
 x 36
 y 34
 end
 arch dungeon_floor
 x 36
-y 34
-end
-arch dungeon_magic
-x 36
 y 35
 end
 arch dungeon_floor
 x 36
-y 35
-end
-arch dungeon_magic
-x 36
 y 36
 end
 arch dungeon_floor
-x 36
-y 36
-end
-arch sign_w
-name 3 Heavily Trapped Chests
-msg
-Have a hearty laugh as your friend cringes in pain due to his own greed!  HAHAHA! Great party gag.
-endmsg
-x 36
-y 36
-end
-arch dungeon_magic
 x 36
 y 37
 end
 arch dungeon_floor
 x 36
-y 37
-end
-arch goldfloor
-name drop 50 plat
-slaying money
-food 250
-x 36
-y 37
-connected 481
-end
-arch dungeon_magic
-x 36
 y 38
 end
 arch dungeon_floor
-x 36
-y 38
-end
-arch sign_w
-name Mock Damned Excalibur
-msg
-Going with a party out on an adventure? Be sure to give one of your fellow warriors one of these mock weapons.  He'll try to fight but will have no might! AHAHHAHAHAH!!
-endmsg
-x 36
-y 38
-end
-arch dungeon_magic
 x 36
 y 39
 end
 arch dungeon_floor
 x 36
-y 39
-end
-arch goldfloor
-name drop 85 plat
-slaying money
-food 4250
-x 36
-y 39
-connected 482
-end
-arch dungeon_magic
-x 36
 y 40
 end
 arch dungeon_floor
-x 36
-y 40
-end
-arch sign_w
-name Mock Damned Deathbringer
-msg
-Someone annoy you more than they should? Give them this nice little ... gift... and laugh as they attempt to fend of even ants with no effect! EVEN ANTS!!!
-endmsg
-x 36
-y 40
-end
-arch dungeon_magic
 x 36
 y 41
 end
 arch dungeon_floor
 x 36
-y 41
-end
-arch goldfloor
-name drop 85 plat
-slaying money
-food 4250
-x 36
-y 41
-connected 483
-end
-arch dungeon_magic
-x 36
 y 42
 end
 arch dungeon_floor
 x 36
-y 42
-end
-arch sign_w
-name Rare Poisoned Discs
-msg
-Rare Poisoned Discs imported from the East.  The finest quality light-weight alloys are used to create these fast throwing blades.  Each disc has eight blades each dipped with a deadly toxin.  Useful when faced against Kung-Fu fighting.
-endmsg
-x 36
-y 42
-end
-arch dungeon_magic
-x 36
 y 43
 end
 arch dungeon_floor
-x 36
-y 43
-end
-arch goldfloor
-name drop 4000 plat
-slaying money
-food 200000
-x 36
-y 43
-connected 484
-end
-arch dungeon_magic
 x 36
 y 44
 end
 arch dungeon_floor
 x 36
-y 44
-end
-arch dungeon_magic
-x 36
 y 45
-end
-arch shop_special
-x 36
-y 45
-end
-arch dungeon_magic
-x 36
-y 46
 end
 arch dungeon_floor
 x 36
@@ -14689,10 +14100,6 @@ arch brush
 x 37
 y 31
 end
-arch dungeon_magic
-x 37
-y 32
-end
 arch dungeon_floor
 x 37
 y 32
@@ -14701,117 +14108,57 @@ arch dwall_2_1_2
 x 37
 y 32
 end
-arch dungeon_magic
+arch dungeon_floor
 x 37
 y 33
 end
 arch dungeon_floor
 x 37
-y 33
-end
-arch dungeon_magic
-x 37
 y 34
 end
 arch dungeon_floor
-x 37
-y 34
-end
-arch shop_mat
-x 37
-y 34
-end
-arch dungeon_magic
 x 37
 y 35
 end
 arch dungeon_floor
 x 37
-y 35
-end
-arch dungeon_magic
-x 37
 y 36
 end
 arch dungeon_floor
-x 37
-y 36
-end
-arch dungeon_magic
 x 37
 y 37
 end
 arch dungeon_floor
 x 37
-y 37
-end
-arch dungeon_magic
-x 37
 y 38
 end
 arch dungeon_floor
-x 37
-y 38
-end
-arch dungeon_magic
 x 37
 y 39
 end
 arch dungeon_floor
 x 37
-y 39
-end
-arch dungeon_magic
-x 37
 y 40
 end
 arch dungeon_floor
-x 37
-y 40
-end
-arch dungeon_magic
 x 37
 y 41
 end
 arch dungeon_floor
 x 37
-y 41
-end
-arch dungeon_magic
-x 37
 y 42
 end
 arch dungeon_floor
-x 37
-y 42
-end
-arch dungeon_magic
 x 37
 y 43
 end
 arch dungeon_floor
 x 37
-y 43
-end
-arch dungeon_magic
-x 37
 y 44
 end
 arch dungeon_floor
 x 37
-y 44
-end
-arch dungeon_magic
-x 37
 y 45
-end
-arch shop_special
-x 37
-y 45
-end
-arch dungeon_magic
-x 37
-y 46
 end
 arch dungeon_floor
 x 37
@@ -15094,10 +14441,6 @@ arch brush
 x 38
 y 31
 end
-arch dungeon_magic
-x 38
-y 32
-end
 arch dungeon_floor
 x 38
 y 32
@@ -15106,15 +14449,7 @@ arch dwall_2_2_3
 x 38
 y 32
 end
-arch dungeon_magic
-x 38
-y 33
-end
 arch dungeon_floor
-x 38
-y 33
-end
-arch swall_1_1
 x 38
 y 33
 end
@@ -15122,27 +14457,15 @@ arch dwall_1_2
 x 38
 y 33
 end
-arch dungeon_magic
-x 38
-y 34
-end
 arch dungeon_floor
 x 38
 y 34
 end
-arch swall_2_1_1
+arch door_1
 x 38
 y 34
 end
-arch dungeon_magic
-x 38
-y 35
-end
 arch dungeon_floor
-x 38
-y 35
-end
-arch swall_1_2
 x 38
 y 35
 end
@@ -15150,10 +14473,6 @@ arch dwall_1_1
 x 38
 y 35
 end
-arch dungeon_magic
-x 38
-y 36
-end
 arch dungeon_floor
 x 38
 y 36
@@ -15161,10 +14480,6 @@ end
 arch dwall_2_1_1
 x 38
 y 36
-end
-arch dungeon_magic
-x 38
-y 37
 end
 arch dungeon_floor
 x 38
@@ -15174,10 +14489,6 @@ arch dwall_2_1_1
 x 38
 y 37
 end
-arch dungeon_magic
-x 38
-y 38
-end
 arch dungeon_floor
 x 38
 y 38
@@ -15185,10 +14496,6 @@ end
 arch dwall_2_1_1
 x 38
 y 38
-end
-arch dungeon_magic
-x 38
-y 39
 end
 arch dungeon_floor
 x 38
@@ -15198,10 +14505,6 @@ arch dwall_2_1_1
 x 38
 y 39
 end
-arch dungeon_magic
-x 38
-y 40
-end
 arch dungeon_floor
 x 38
 y 40
@@ -15209,10 +14512,6 @@ end
 arch dwall_2_1_1
 x 38
 y 40
-end
-arch dungeon_magic
-x 38
-y 41
 end
 arch dungeon_floor
 x 38
@@ -15222,10 +14521,6 @@ arch dwall_2_1_1
 x 38
 y 41
 end
-arch dungeon_magic
-x 38
-y 42
-end
 arch dungeon_floor
 x 38
 y 42
@@ -15233,10 +14528,6 @@ end
 arch dwall_2_1_1
 x 38
 y 42
-end
-arch dungeon_magic
-x 38
-y 43
 end
 arch dungeon_floor
 x 38
@@ -15246,10 +14537,6 @@ arch dwall_2_1_1
 x 38
 y 43
 end
-arch dungeon_magic
-x 38
-y 44
-end
 arch dungeon_floor
 x 38
 y 44
@@ -15258,10 +14545,6 @@ arch dwall_2_1_1
 x 38
 y 44
 end
-arch dungeon_magic
-x 38
-y 45
-end
 arch dungeon_floor
 x 38
 y 45
@@ -15269,10 +14552,6 @@ end
 arch dwall_2_1_1
 x 38
 y 45
-end
-arch dungeon_magic
-x 38
-y 46
 end
 arch dungeon_floor
 x 38
@@ -15563,10 +14842,6 @@ arch pstone_1
 x 39
 y 34
 end
-arch shop_mat
-x 39
-y 34
-end
 arch brush
 x 39
 y 35
@@ -15574,7 +14849,7 @@ end
 arch sign_w
 name John's Specialty Store
 msg
-John's Specialty Store
+CLOSED BY ORDER OF THE CITY COUNCIL
 endmsg
 x 39
 y 35
