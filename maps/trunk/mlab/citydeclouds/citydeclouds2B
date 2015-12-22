@@ -17221,21 +17221,12 @@ name floor
 x 44
 y 48
 end
-arch grate_closed_2
-x 44
-y 48
-speed 0.500000
-end
 arch dungeon_magic
 x 44
 y 49
 end
 arch afloor_right
 name floor
-x 44
-y 49
-end
-arch woodwall_0
 x 44
 y 49
 end
@@ -17693,10 +17684,6 @@ name floor
 x 45
 y 48
 end
-arch stair_up_1
-x 45
-y 48
-end
 arch dungeon_magic
 x 45
 y 49
@@ -17705,11 +17692,6 @@ arch afloor_left
 name floor
 x 45
 y 49
-end
-arch grate_closed_1
-x 45
-y 49
-speed 0.500000
 end
 arch dungeon_magic
 x 46
