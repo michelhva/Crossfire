@@ -2,142 +2,2736 @@ arch map
 name Butakis' Elite Training Tower, Level 3
 difficulty 14
 region lakecountry
-width 25
-height 25
+width 41
+height 41
 enter_x 12
 enter_y 12
 msg
 Created:  1995-04-04 Kundi, Xue (xkd@soda.csua.berkeley.edu)
-Modified: 2012-03-18 Rick Tanner
+Modified: 2015-10-28 Rick Tanner
 endmsg
 end
-arch gwall_2_2_2
+arch blocked
+name nothing
+move_block 0
+blocksview 0
 end
-arch gwall_2_1_1
+arch blocked
+name nothing
 y 1
+move_block 0
+blocksview 0
 end
-arch gwall_2_1_1
+arch blocked
+name nothing
 y 2
+move_block 0
+blocksview 0
 end
-arch gwall_2_1_1
+arch blocked
+name nothing
 y 3
+move_block 0
+blocksview 0
 end
-arch gwall_2_1_1
+arch blocked
+name nothing
 y 4
+move_block 0
+blocksview 0
 end
-arch gwall_2_1_1
+arch blocked
+name nothing
 y 5
+move_block 0
+blocksview 0
 end
-arch gwall_2_1_1
+arch blocked
+name nothing
 y 6
+move_block 0
+blocksview 0
 end
-arch gwall_3_2
+arch blocked
+name nothing
+y 7
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+y 8
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+y 9
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+y 10
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+y 11
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+y 12
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+y 13
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+y 14
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+y 15
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+y 16
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+y 17
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+y 18
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+y 19
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+y 20
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+y 21
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+y 22
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+y 23
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+y 24
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+y 25
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+y 26
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+y 27
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+y 28
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+y 29
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+y 30
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+y 31
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+y 32
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+y 33
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+y 34
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+y 35
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+y 36
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+y 37
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+y 38
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 1
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 2
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 3
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 4
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 5
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 6
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 7
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 8
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 9
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 10
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 11
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 12
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 13
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 14
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 15
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 16
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 17
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 18
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 19
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 20
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 21
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 22
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 23
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 24
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 25
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 26
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 27
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 28
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 29
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 30
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 31
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 32
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 33
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 34
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 35
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 36
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 37
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 38
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 1
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 2
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 2
+y 1
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 2
+y 2
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 2
+y 3
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 2
+y 4
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 2
+y 5
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 2
+y 6
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 2
+y 7
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 2
+y 8
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 2
+y 9
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 2
+y 10
+move_block 0
+blocksview 0
+end
+arch flagstone
+x 2
+y 11
+end
+arch dwall_2_2_2
+x 2
+y 11
+end
+arch flagstone
+x 2
+y 12
+end
+arch dwall_3_2
+x 2
+y 12
+end
+arch flagstone
+x 2
+y 13
+end
+arch dwall_3_2
+x 2
+y 13
+end
+arch flagstone
+x 2
+y 14
+end
+arch dwall_3_2
+x 2
+y 14
+end
+arch flagstone
+x 2
+y 15
+end
+arch dwall_3_2
+x 2
+y 15
+end
+arch flagstone
+x 2
+y 16
+end
+arch dwall_3_2
+x 2
+y 16
+end
+arch flagstone
+x 2
+y 17
+end
+arch dwall_3_2
+x 2
+y 17
+end
+arch flagstone
+x 2
+y 18
+end
+arch dwall_3_2
+x 2
+y 18
+end
+arch flagstone
+x 2
+y 19
+end
+arch dwall_3_2
+x 2
+y 19
+end
+arch flagstone
+x 2
+y 20
+end
+arch dwall_3_2
+x 2
+y 20
+end
+arch flagstone
+x 2
+y 21
+end
+arch dwall_3_2
+x 2
+y 21
+end
+arch flagstone
+x 2
+y 22
+end
+arch dwall_3_2
+x 2
+y 22
+end
+arch flagstone
+x 2
+y 23
+end
+arch dwall_3_2
+x 2
+y 23
+end
+arch flagstone
+x 2
+y 24
+end
+arch dwall_3_2
+x 2
+y 24
+end
+arch flagstone
+x 2
+y 25
+end
+arch dwall_3_2
+x 2
+y 25
+end
+arch flagstone
+x 2
+y 26
+end
+arch dwall_3_2
+x 2
+y 26
+end
+arch flagstone
+x 2
+y 27
+end
+arch dwall_3_2
+x 2
+y 27
+end
+arch flagstone
+x 2
+y 28
+end
+arch dwall_3_2
+x 2
+y 28
+end
+arch flagstone
+x 2
+y 29
+end
+arch dwall_2_2_1
+x 2
+y 29
+end
+arch blocked
+name nothing
+x 2
+y 30
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 2
+y 31
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 2
+y 32
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 2
+y 33
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 2
+y 34
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 2
+y 35
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 2
+y 36
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 2
+y 37
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 2
+y 38
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 2
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 2
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 3
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 3
+y 1
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 3
+y 2
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 3
+y 3
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 3
+y 4
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 3
+y 5
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 3
+y 6
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 3
+y 7
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 3
+y 8
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 3
+y 9
+move_block 0
+blocksview 0
+end
+arch flagstone
+x 3
+y 10
+end
+arch dwall_2_2_2
+x 3
+y 10
+end
+arch flagstone
+x 3
+y 11
+end
+arch dwall_4
+x 3
+y 11
+end
+arch flagstone
+x 3
+y 12
+end
+arch dwall_4
+x 3
+y 12
+end
+arch flagstone
+x 3
+y 13
+end
+arch dwall_4
+x 3
+y 13
+end
+arch flagstone
+x 3
+y 14
+end
+arch dwall_4
+x 3
+y 14
+end
+arch flagstone
+x 3
+y 15
+end
+arch dwall_4
+x 3
+y 15
+end
+arch flagstone
+x 3
+y 16
+end
+arch dwall_4
+x 3
+y 16
+end
+arch flagstone
+x 3
+y 17
+end
+arch dwall_4
+x 3
+y 17
+end
+arch flagstone
+x 3
+y 18
+end
+arch dwall_4
+x 3
+y 18
+end
+arch flagstone
+x 3
+y 19
+end
+arch dwall_4
+x 3
+y 19
+end
+arch flagstone
+x 3
+y 20
+end
+arch dwall_4
+x 3
+y 20
+end
+arch flagstone
+x 3
+y 21
+end
+arch dwall_4
+x 3
+y 21
+end
+arch flagstone
+x 3
+y 22
+end
+arch dwall_4
+x 3
+y 22
+end
+arch flagstone
+x 3
+y 23
+end
+arch dwall_4
+x 3
+y 23
+end
+arch flagstone
+x 3
+y 24
+end
+arch dwall_4
+x 3
+y 24
+end
+arch flagstone
+x 3
+y 25
+end
+arch dwall_4
+x 3
+y 25
+end
+arch flagstone
+x 3
+y 26
+end
+arch dwall_4
+x 3
+y 26
+end
+arch flagstone
+x 3
+y 27
+end
+arch dwall_4
+x 3
+y 27
+end
+arch flagstone
+x 3
+y 28
+end
+arch dwall_4
+x 3
+y 28
+end
+arch flagstone
+x 3
+y 29
+end
+arch dwall_4
+x 3
+y 29
+end
+arch flagstone
+x 3
+y 30
+end
+arch dwall_2_2_1
+x 3
+y 30
+end
+arch blocked
+name nothing
+x 3
+y 31
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 3
+y 32
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 3
+y 33
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 3
+y 34
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 3
+y 35
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 3
+y 36
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 3
+y 37
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 3
+y 38
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 3
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 3
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 4
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 4
+y 1
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 4
+y 2
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 4
+y 3
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 4
+y 4
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 4
+y 5
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 4
+y 6
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 4
+y 7
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 4
+y 8
+move_block 0
+blocksview 0
+end
+arch flagstone
+x 4
+y 9
+end
+arch dwall_2_2_2
+x 4
+y 9
+end
+arch flagstone
+x 4
+y 10
+end
+arch dwall_4
+x 4
+y 10
+end
+arch flagstone
+x 4
+y 11
+end
+arch dwall_4
+x 4
+y 11
+end
+arch flagstone
+x 4
+y 12
+end
+arch dwall_4
+x 4
+y 12
+end
+arch flagstone
+x 4
+y 13
+end
+arch dwall_4
+x 4
+y 13
+end
+arch flagstone
+x 4
+y 14
+end
+arch dwall_4
+x 4
+y 14
+end
+arch flagstone
+x 4
+y 15
+end
+arch dwall_4
+x 4
+y 15
+end
+arch flagstone
+x 4
+y 16
+end
+arch dwall_4
+x 4
+y 16
+end
+arch flagstone
+x 4
+y 17
+end
+arch dwall_4
+x 4
+y 17
+end
+arch flagstone
+x 4
+y 18
+end
+arch dwall_4
+x 4
+y 18
+end
+arch flagstone
+x 4
+y 19
+end
+arch dwall_4
+x 4
+y 19
+end
+arch flagstone
+x 4
+y 20
+end
+arch dwall_4
+x 4
+y 20
+end
+arch flagstone
+x 4
+y 21
+end
+arch dwall_4
+x 4
+y 21
+end
+arch flagstone
+x 4
+y 22
+end
+arch dwall_4
+x 4
+y 22
+end
+arch flagstone
+x 4
+y 23
+end
+arch dwall_4
+x 4
+y 23
+end
+arch flagstone
+x 4
+y 24
+end
+arch dwall_4
+x 4
+y 24
+end
+arch flagstone
+x 4
+y 25
+end
+arch dwall_4
+x 4
+y 25
+end
+arch flagstone
+x 4
+y 26
+end
+arch dwall_4
+x 4
+y 26
+end
+arch flagstone
+x 4
+y 27
+end
+arch dwall_4
+x 4
+y 27
+end
+arch flagstone
+x 4
+y 28
+end
+arch dwall_4
+x 4
+y 28
+end
+arch flagstone
+x 4
+y 29
+end
+arch dwall_4
+x 4
+y 29
+end
+arch flagstone
+x 4
+y 30
+end
+arch dwall_4
+x 4
+y 30
+end
+arch flagstone
+x 4
+y 31
+end
+arch dwall_2_2_1
+x 4
+y 31
+end
+arch blocked
+name nothing
+x 4
+y 32
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 4
+y 33
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 4
+y 34
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 4
+y 35
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 4
+y 36
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 4
+y 37
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 4
+y 38
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 4
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 4
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 5
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 5
+y 1
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 5
+y 2
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 5
+y 3
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 5
+y 4
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 5
+y 5
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 5
+y 6
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 5
+y 7
+move_block 0
+blocksview 0
+end
+arch flagstone
+x 5
+y 8
+end
+arch dwall_2_2_2
+x 5
+y 8
+end
+arch flagstone
+x 5
+y 9
+end
+arch dwall_4
+x 5
+y 9
+end
+arch flagstone
+x 5
+y 10
+end
+arch dwall_4
+x 5
+y 10
+end
+arch flagstone
+x 5
+y 11
+end
+arch dwall_4
+x 5
+y 11
+end
+arch flagstone
+x 5
+y 12
+end
+arch dwall_4
+x 5
+y 12
+end
+arch flagstone
+x 5
+y 13
+end
+arch dwall_4
+x 5
+y 13
+end
+arch flagstone
+x 5
+y 14
+end
+arch dwall_4
+x 5
+y 14
+end
+arch flagstone
+x 5
+y 15
+end
+arch dwall_4
+x 5
+y 15
+end
+arch flagstone
+x 5
+y 16
+end
+arch dwall_4
+x 5
+y 16
+end
+arch flagstone
+x 5
+y 17
+end
+arch dwall_4
+x 5
+y 17
+end
+arch flagstone
+x 5
+y 18
+end
+arch dwall_4
+x 5
+y 18
+end
+arch flagstone
+x 5
+y 19
+end
+arch dwall_4
+x 5
+y 19
+end
+arch flagstone
+x 5
+y 20
+end
+arch dwall_4
+x 5
+y 20
+end
+arch flagstone
+x 5
+y 21
+end
+arch dwall_4
+x 5
+y 21
+end
+arch flagstone
+x 5
+y 22
+end
+arch dwall_4
+x 5
+y 22
+end
+arch flagstone
+x 5
+y 23
+end
+arch dwall_4
+x 5
+y 23
+end
+arch flagstone
+x 5
+y 24
+end
+arch dwall_4
+x 5
+y 24
+end
+arch flagstone
+x 5
+y 25
+end
+arch dwall_4
+x 5
+y 25
+end
+arch flagstone
+x 5
+y 26
+end
+arch dwall_4
+x 5
+y 26
+end
+arch flagstone
+x 5
+y 27
+end
+arch dwall_4
+x 5
+y 27
+end
+arch flagstone
+x 5
+y 28
+end
+arch dwall_4
+x 5
+y 28
+end
+arch flagstone
+x 5
+y 29
+end
+arch dwall_4
+x 5
+y 29
+end
+arch flagstone
+x 5
+y 30
+end
+arch dwall_4
+x 5
+y 30
+end
+arch flagstone
+x 5
+y 31
+end
+arch dwall_4
+x 5
+y 31
+end
+arch flagstone
+x 5
+y 32
+end
+arch dwall_2_2_1
+x 5
+y 32
+end
+arch blocked
+name nothing
+x 5
+y 33
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 5
+y 34
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 5
+y 35
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 5
+y 36
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 5
+y 37
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 5
+y 38
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 5
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 5
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 6
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 6
+y 1
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 6
+y 2
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 6
+y 3
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 6
+y 4
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 6
+y 5
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 6
+y 6
+move_block 0
+blocksview 0
+end
+arch flagstone
+x 6
 y 7
 end
-arch gwall_2_1_1
+arch dwall_2_2_2
+x 6
+y 7
+end
+arch flagstone
+x 6
+y 8
+end
+arch dwall_4
+x 6
+y 8
+end
+arch flagstone
+x 6
+y 9
+end
+arch dwall_4
+x 6
+y 9
+end
+arch flagstone
+x 6
+y 10
+end
+arch dwall_4
+x 6
+y 10
+end
+arch flagstone
+x 6
+y 11
+end
+arch dwall_4
+x 6
+y 11
+end
+arch flagstone
+x 6
+y 12
+end
+arch dwall_4
+x 6
+y 12
+end
+arch flagstone
+x 6
+y 13
+end
+arch dwall_4
+x 6
+y 13
+end
+arch flagstone
+x 6
+y 14
+end
+arch dwall_4
+x 6
+y 14
+end
+arch flagstone
+x 6
+y 15
+end
+arch dwall_4
+x 6
+y 15
+end
+arch flagstone
+x 6
+y 16
+end
+arch dwall_4
+x 6
+y 16
+end
+arch flagstone
+x 6
+y 17
+end
+arch dwall_4
+x 6
+y 17
+end
+arch flagstone
+x 6
+y 18
+end
+arch dwall_4
+x 6
+y 18
+end
+arch flagstone
+x 6
+y 19
+end
+arch dwall_4
+x 6
+y 19
+end
+arch flagstone
+x 6
+y 20
+end
+arch dwall_4
+x 6
+y 20
+end
+arch flagstone
+x 6
+y 21
+end
+arch dwall_4
+x 6
+y 21
+end
+arch flagstone
+x 6
+y 22
+end
+arch dwall_4
+x 6
+y 22
+end
+arch flagstone
+x 6
+y 23
+end
+arch dwall_4
+x 6
+y 23
+end
+arch flagstone
+x 6
+y 24
+end
+arch dwall_4
+x 6
+y 24
+end
+arch flagstone
+x 6
+y 25
+end
+arch dwall_4
+x 6
+y 25
+end
+arch flagstone
+x 6
+y 26
+end
+arch dwall_4
+x 6
+y 26
+end
+arch flagstone
+x 6
+y 27
+end
+arch dwall_4
+x 6
+y 27
+end
+arch flagstone
+x 6
+y 28
+end
+arch dwall_4
+x 6
+y 28
+end
+arch flagstone
+x 6
+y 29
+end
+arch dwall_4
+x 6
+y 29
+end
+arch flagstone
+x 6
+y 30
+end
+arch dwall_4
+x 6
+y 30
+end
+arch flagstone
+x 6
+y 31
+end
+arch dwall_4
+x 6
+y 31
+end
+arch flagstone
+x 6
+y 32
+end
+arch dwall_4
+x 6
+y 32
+end
+arch flagstone
+x 6
+y 33
+end
+arch dwall_2_2_1
+x 6
+y 33
+end
+arch blocked
+name nothing
+x 6
+y 34
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 6
+y 35
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 6
+y 36
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 6
+y 37
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 6
+y 38
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 6
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 6
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 7
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 7
+y 1
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 7
+y 2
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 7
+y 3
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 7
+y 4
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 7
+y 5
+move_block 0
+blocksview 0
+end
+arch flagstone
+x 7
+y 6
+end
+arch dwall_2_2_2
+x 7
+y 6
+end
+arch flagstone
+x 7
+y 7
+end
+arch dwall_4
+x 7
+y 7
+end
+arch flagstone
+x 7
+y 8
+end
+arch dwall_3_4
+x 7
+y 8
+end
+arch flagstone
+x 7
+y 9
+end
+arch dwall_3_4
+x 7
+y 9
+end
+arch flagstone
+x 7
+y 10
+end
+arch dwall_3_4
+x 7
+y 10
+end
+arch flagstone
+x 7
+y 11
+end
+arch dwall_3_4
+x 7
+y 11
+end
+arch flagstone
+x 7
+y 12
+end
+arch dwall_3_4
+x 7
+y 12
+end
+arch flagstone
+x 7
+y 13
+end
+arch dwall_3_4
+x 7
+y 13
+end
+arch flagstone
+x 7
+y 14
+end
+arch dwall_3_4
+x 7
+y 14
+end
+arch flagstone
+x 7
+y 15
+end
+arch dwall_3_4
+x 7
+y 15
+end
+arch flagstone
+x 7
+y 16
+end
+arch dwall_3_4
+x 7
+y 16
+end
+arch flagstone
+x 7
+y 17
+end
+arch dwall_3_4
+x 7
+y 17
+end
+arch flagstone
+x 7
+y 18
+end
+arch dwall_3_4
+x 7
+y 18
+end
+arch flagstone
+x 7
+y 19
+end
+arch dwall_3_4
+x 7
+y 19
+end
+arch flagstone
+x 7
+y 20
+end
+arch dwall_3_4
+x 7
+y 20
+end
+arch flagstone
+x 7
+y 21
+end
+arch dwall_3_4
+x 7
+y 21
+end
+arch flagstone
+x 7
+y 22
+end
+arch dwall_3_4
+x 7
+y 22
+end
+arch flagstone
+x 7
+y 23
+end
+arch dwall_3_4
+x 7
+y 23
+end
+arch flagstone
+x 7
+y 24
+end
+arch dwall_3_4
+x 7
+y 24
+end
+arch flagstone
+x 7
+y 25
+end
+arch dwall_3_4
+x 7
+y 25
+end
+arch flagstone
+x 7
+y 26
+end
+arch dwall_3_4
+x 7
+y 26
+end
+arch flagstone
+x 7
+y 27
+end
+arch dwall_3_4
+x 7
+y 27
+end
+arch flagstone
+x 7
+y 28
+end
+arch dwall_3_4
+x 7
+y 28
+end
+arch flagstone
+x 7
+y 29
+end
+arch dwall_3_4
+x 7
+y 29
+end
+arch flagstone
+x 7
+y 30
+end
+arch dwall_3_4
+x 7
+y 30
+end
+arch flagstone
+x 7
+y 31
+end
+arch dwall_3_4
+x 7
+y 31
+end
+arch flagstone
+x 7
+y 32
+end
+arch dwall_3_4
+x 7
+y 32
+end
+arch flagstone
+x 7
+y 33
+end
+arch dwall_4
+x 7
+y 33
+end
+arch flagstone
+x 7
+y 34
+end
+arch dwall_2_2_1
+x 7
+y 34
+end
+arch blocked
+name nothing
+x 7
+y 35
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 7
+y 36
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 7
+y 37
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 7
+y 38
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 7
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 7
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 8
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 8
+y 1
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 8
+y 2
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 8
+y 3
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 8
+y 4
+move_block 0
+blocksview 0
+end
+arch flagstone
+x 8
+y 5
+end
+arch dwall_2_2_2
+x 8
+y 5
+end
+arch flagstone
+x 8
+y 6
+end
+arch dwall_4
+x 8
+y 6
+end
+arch flagstone
+x 8
+y 7
+end
+arch dwall_3_1
+x 8
+y 7
+end
+arch gwall_2_2_2
+x 8
 y 8
 end
 arch gwall_2_1_1
+x 8
 y 9
 end
 arch gwall_2_1_1
+x 8
 y 10
 end
-arch gwall_3_2
+arch gwall_2_1_1
+x 8
 y 11
 end
 arch gwall_2_1_1
+x 8
 y 12
 end
 arch gwall_2_1_1
+x 8
 y 13
 end
 arch gwall_2_1_1
+x 8
 y 14
 end
-arch gwall_2_1_1
+arch gwall_3_2
+x 8
 y 15
 end
-arch gwall_3_2
+arch gwall_2_1_1
+x 8
 y 16
 end
 arch gwall_2_1_1
+x 8
 y 17
 end
 arch gwall_2_1_1
+x 8
 y 18
 end
 arch gwall_3_2
+x 8
 y 19
 end
 arch gwall_2_1_1
+x 8
 y 20
 end
 arch gwall_2_1_1
+x 8
 y 21
 end
 arch gwall_2_1_1
+x 8
 y 22
 end
 arch gwall_2_1_1
+x 8
 y 23
 end
-arch gwall_2_2_1
+arch gwall_3_2
+x 8
 y 24
 end
-arch gwall_2_1_2
-x 1
+arch gwall_2_1_1
+x 8
+y 25
 end
-arch afloor_right
-x 1
+arch gwall_2_1_1
+x 8
+y 26
+end
+arch gwall_3_2
+x 8
+y 27
+end
+arch gwall_2_1_1
+x 8
+y 28
+end
+arch gwall_2_1_1
+x 8
+y 29
+end
+arch gwall_2_1_1
+x 8
+y 30
+end
+arch gwall_2_1_1
+x 8
+y 31
+end
+arch gwall_2_2_1
+x 8
+y 32
+end
+arch flagstone
+x 8
+y 33
+end
+arch dwall_3_3
+x 8
+y 33
+end
+arch flagstone
+x 8
+y 34
+end
+arch dwall_4
+x 8
+y 34
+end
+arch flagstone
+x 8
+y 35
+end
+arch dwall_2_2_1
+x 8
+y 35
+end
+arch blocked
+name nothing
+x 8
+y 36
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 8
+y 37
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 8
+y 38
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 8
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 8
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 9
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 9
 y 1
+move_block 0
+blocksview 0
 end
-arch vampire
-x 1
-y 1
-end
-arch afloor_right
-x 1
+arch blocked
+name nothing
+x 9
 y 2
+move_block 0
+blocksview 0
 end
-arch generate_vampire
-x 1
-y 2
-end
-arch afloor_right
-x 1
+arch blocked
+name nothing
+x 9
 y 3
+move_block 0
+blocksview 0
 end
-arch vampire
-x 1
-y 3
-end
-arch afloor_right
-x 1
+arch flagstone
+x 9
 y 4
 end
-arch generate_vampire
-x 1
+arch dwall_2_2_2
+x 9
 y 4
 end
-arch afloor_right
-x 1
+arch flagstone
+x 9
 y 5
 end
-arch vampire
-x 1
+arch dwall_4
+x 9
 y 5
 end
-arch afloor_right
-x 1
+arch flagstone
+x 9
 y 6
+end
+arch dwall_4
+x 9
+y 6
+end
+arch flagstone
+x 9
+y 7
+end
+arch dwall_3_1
+x 9
+y 7
+end
+arch gwall_2_1_2
+x 9
+y 8
+end
+arch afloor_right
+x 9
+y 9
+end
+arch vampire
+x 9
+y 9
+end
+arch afloor_right
+x 9
+y 10
+end
+arch generate_vampire
+x 9
+y 10
+end
+arch afloor_right
+x 9
+y 11
+end
+arch vampire
+x 9
+y 11
+end
+arch afloor_right
+x 9
+y 12
+end
+arch generate_vampire
+x 9
+y 12
+end
+arch afloor_right
+x 9
+y 13
+end
+arch vampire
+x 9
+y 13
+end
+arch afloor_right
+x 9
+y 14
 end
 arch spectre
 name Fierce Spectre
 hp 1200
 exp 5000
-x 1
-y 6
+x 9
+y 14
 carrying 200
 arch key2
 name A pinch of magical dust, kinda different
@@ -151,1171 +2745,1787 @@ face enchantment.111
 end
 end
 arch afloor_right
-x 1
-y 7
+x 9
+y 15
 end
 arch locked_door1
 slaying 24
 msg
 The wall refuse to admit you in.
 endmsg
-x 1
-y 7
+x 9
+y 15
 end
 arch gwall_2_1_2
-x 1
-y 7
+x 9
+y 15
 move_block 0
 end
 arch magic_banned
-x 1
-y 8
+x 9
+y 16
 end
 arch afloor_right
-x 1
-y 8
+x 9
+y 16
 end
 arch waybread
-x 1
-y 8
+x 9
+y 16
 end
 arch magic_banned
-x 1
-y 9
+x 9
+y 17
 end
 arch afloor_right
-x 1
-y 9
+x 9
+y 17
 end
 arch waybread
-x 1
-y 9
+x 9
+y 17
 nrof 2
 end
 arch magic_banned
-x 1
-y 10
+x 9
+y 18
 end
 arch afloor_right
-x 1
-y 10
+x 9
+y 18
 end
 arch waybread
-x 1
-y 10
+x 9
+y 18
 nrof 3
 end
 arch afloor_right
-x 1
-y 11
+x 9
+y 19
 end
 arch gwall_2_1_2
-x 1
-y 11
+x 9
+y 19
 end
 arch afloor_right
-x 1
-y 12
+x 9
+y 20
 end
 arch skeleton
-x 1
-y 12
+x 9
+y 20
 end
 arch afloor_right
-x 1
-y 13
+x 9
+y 21
 end
 arch skeleton
-x 1
-y 13
+x 9
+y 21
 end
 arch afloor_right
-x 1
-y 14
+x 9
+y 22
 end
 arch zombie
-x 1
-y 14
+x 9
+y 22
 end
 arch afloor_right
-x 1
-y 15
+x 9
+y 23
 end
 arch zombie
-x 1
-y 15
+x 9
+y 23
 end
 arch afloor_right
-x 1
-y 16
+x 9
+y 24
 end
 arch locked_door1
 slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
-x 1
-y 16
-end
-arch gwall_2_1_2
-x 1
-y 16
-move_block 0
-end
-arch afloor_right
-x 1
-y 17
-end
-arch skeleton
-x 1
-y 17
-end
-arch afloor_right
-x 1
-y 18
-end
-arch zombie
-x 1
-y 18
-end
-arch afloor_right
-x 1
-y 19
-end
-arch locked_door1
-slaying 23
-msg
-The wall refuse to admit you in.
-endmsg
-x 1
-y 19
-end
-arch gwall_2_1_2
-x 1
-y 19
-move_block 0
-end
-arch afloor_right
-x 1
-y 20
-end
-arch zombie
-x 1
-y 20
-end
-arch afloor_right
-x 1
-y 21
-end
-arch zombie
-x 1
-y 21
-end
-arch afloor_right
-x 1
-y 22
-end
-arch zombie
-x 1
-y 22
-end
-arch afloor_right
-x 1
-y 23
-end
-arch zombie
-x 1
-y 23
-end
-arch gwall_2_1_2
-x 1
+x 9
 y 24
 end
 arch gwall_2_1_2
-x 2
+x 9
+y 24
+move_block 0
 end
 arch afloor_right
-x 2
-y 1
+x 9
+y 25
 end
-arch generate_vampire
-x 2
-y 1
+arch skeleton
+x 9
+y 25
 end
 arch afloor_right
-x 2
+x 9
+y 26
+end
+arch zombie
+x 9
+y 26
+end
+arch afloor_right
+x 9
+y 27
+end
+arch locked_door1
+slaying 23
+msg
+The wall refuse to admit you in.
+endmsg
+x 9
+y 27
+end
+arch gwall_2_1_2
+x 9
+y 27
+move_block 0
+end
+arch afloor_right
+x 9
+y 28
+end
+arch zombie
+x 9
+y 28
+end
+arch afloor_right
+x 9
+y 29
+end
+arch zombie
+x 9
+y 29
+end
+arch afloor_right
+x 9
+y 30
+end
+arch zombie
+x 9
+y 30
+end
+arch afloor_right
+x 9
+y 31
+end
+arch zombie
+x 9
+y 31
+end
+arch gwall_2_1_2
+x 9
+y 32
+end
+arch flagstone
+x 9
+y 33
+end
+arch dwall_3_3
+x 9
+y 33
+end
+arch flagstone
+x 9
+y 34
+end
+arch dwall_4
+x 9
+y 34
+end
+arch flagstone
+x 9
+y 35
+end
+arch dwall_4
+x 9
+y 35
+end
+arch flagstone
+x 9
+y 36
+end
+arch dwall_2_2_1
+x 9
+y 36
+end
+arch blocked
+name nothing
+x 9
+y 37
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 9
+y 38
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 9
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 9
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 10
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 10
+y 1
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 10
 y 2
+move_block 0
+blocksview 0
 end
-arch afloor_right
-x 2
+arch flagstone
+x 10
 y 3
 end
-arch spectre
-x 2
+arch dwall_2_2_2
+x 10
 y 3
 end
-arch afloor_right
-x 2
+arch flagstone
+x 10
 y 4
 end
-arch spectre
-x 2
+arch dwall_4
+x 10
 y 4
 end
-arch afloor_right
-x 2
+arch flagstone
+x 10
 y 5
 end
-arch spectre
-x 2
+arch dwall_4
+x 10
 y 5
 end
-arch afloor_right
-x 2
+arch flagstone
+x 10
 y 6
 end
-arch generate_vampire
-x 2
+arch dwall_4
+x 10
 y 6
 end
-arch afloor_right
-x 2
+arch flagstone
+x 10
+y 7
+end
+arch dwall_3_1
+x 10
 y 7
 end
 arch gwall_2_1_2
-x 2
-y 7
-end
-arch magic_banned
-x 2
+x 10
 y 8
 end
 arch afloor_right
-x 2
-y 8
+x 10
+y 9
+end
+arch generate_vampire
+x 10
+y 9
+end
+arch afloor_right
+x 10
+y 10
+end
+arch afloor_right
+x 10
+y 11
+end
+arch spectre
+x 10
+y 11
+end
+arch afloor_right
+x 10
+y 12
+end
+arch spectre
+x 10
+y 12
+end
+arch afloor_right
+x 10
+y 13
+end
+arch spectre
+x 10
+y 13
+end
+arch afloor_right
+x 10
+y 14
+end
+arch generate_vampire
+x 10
+y 14
+end
+arch afloor_right
+x 10
+y 15
+end
+arch gwall_2_1_2
+x 10
+y 15
+end
+arch magic_banned
+x 10
+y 16
+end
+arch afloor_right
+x 10
+y 16
 end
 arch gem
-x 2
-y 8
+x 10
+y 16
 nrof 10
 end
 arch magic_banned
-x 2
-y 9
+x 10
+y 17
 end
 arch afloor_right
-x 2
-y 9
+x 10
+y 17
 end
 arch pearl
-x 2
-y 9
+x 10
+y 17
 nrof 30
 end
 arch magic_banned
-x 2
-y 10
+x 10
+y 18
 end
 arch afloor_right
-x 2
-y 10
+x 10
+y 18
 end
 arch ruby
-x 2
-y 10
+x 10
+y 18
 nrof 20
 end
 arch afloor_right
-x 2
-y 11
+x 10
+y 19
 end
 arch gwall_2_1_2
-x 2
-y 11
+x 10
+y 19
 end
 arch afloor_right
-x 2
-y 12
+x 10
+y 20
 end
 arch skeleton
-x 2
-y 12
+x 10
+y 20
 end
 arch afloor_right
-x 2
-y 13
+x 10
+y 21
 end
 arch skeleton
-x 2
-y 13
+x 10
+y 21
 end
 arch afloor_right
-x 2
-y 14
+x 10
+y 22
 end
 arch zombie
-x 2
-y 14
+x 10
+y 22
 end
 arch afloor_right
-x 2
-y 15
+x 10
+y 23
 end
 arch zombie
-x 2
-y 15
+x 10
+y 23
 end
 arch afloor_right
-x 2
-y 16
+x 10
+y 24
 end
 arch gwall_3_3
-x 2
-y 16
+x 10
+y 24
 end
 arch afloor_right
-x 2
-y 17
+x 10
+y 25
 end
 arch locked_door1
 slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
-x 2
-y 17
+x 10
+y 25
 end
 arch gwall_2_1_1
-x 2
-y 17
+x 10
+y 25
 move_block 0
 end
 arch afloor_right
-x 2
-y 18
+x 10
+y 26
 end
 arch gwall_2_1_1
-x 2
-y 18
+x 10
+y 26
 end
 arch afloor_right
-x 2
-y 19
+x 10
+y 27
 end
 arch gwall_3_1
-x 2
-y 19
+x 10
+y 27
 end
 arch afloor_right
-x 2
-y 20
+x 10
+y 28
 end
 arch zombie
-x 2
-y 20
+x 10
+y 28
 end
 arch afloor_right
-x 2
-y 21
+x 10
+y 29
 end
 arch zombie
-x 2
-y 21
+x 10
+y 29
 end
 arch afloor_right
-x 2
-y 22
+x 10
+y 30
 end
 arch zombie
-x 2
-y 22
+x 10
+y 30
 end
 arch afloor_right
-x 2
-y 23
+x 10
+y 31
 end
 arch zombie
-x 2
-y 23
+x 10
+y 31
 end
 arch gwall_2_1_2
-x 2
-y 24
+x 10
+y 32
 end
-arch gwall_2_1_2
-x 3
+arch flagstone
+x 10
+y 33
 end
-arch afloor_right
-x 3
+arch dwall_3_3
+x 10
+y 33
+end
+arch flagstone
+x 10
+y 34
+end
+arch dwall_4
+x 10
+y 34
+end
+arch flagstone
+x 10
+y 35
+end
+arch dwall_4
+x 10
+y 35
+end
+arch flagstone
+x 10
+y 36
+end
+arch dwall_4
+x 10
+y 36
+end
+arch flagstone
+x 10
+y 37
+end
+arch dwall_2_2_1
+x 10
+y 37
+end
+arch blocked
+name nothing
+x 10
+y 38
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 10
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 10
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 11
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 11
 y 1
+move_block 0
+blocksview 0
 end
-arch afloor_right
-x 3
+arch flagstone
+x 11
 y 2
 end
-arch afloor_right
-x 3
+arch dwall_2_2_2
+x 11
+y 2
+end
+arch flagstone
+x 11
 y 3
 end
-arch afloor_right
-x 3
+arch dwall_4
+x 11
+y 3
+end
+arch flagstone
+x 11
 y 4
+end
+arch dwall_4
+x 11
+y 4
+end
+arch flagstone
+x 11
+y 5
+end
+arch dwall_4
+x 11
+y 5
+end
+arch flagstone
+x 11
+y 6
+end
+arch dwall_4
+x 11
+y 6
+end
+arch flagstone
+x 11
+y 7
+end
+arch dwall_3_1
+x 11
+y 7
+end
+arch gwall_2_1_2
+x 11
+y 8
+end
+arch afloor_right
+x 11
+y 9
+end
+arch afloor_right
+x 11
+y 10
+end
+arch afloor_right
+x 11
+y 11
+end
+arch afloor_right
+x 11
+y 12
 end
 arch generate_vampire
-x 3
-y 4
+x 11
+y 12
 end
 arch afloor_right
-x 3
-y 5
+x 11
+y 13
 end
 arch vampire
-x 3
-y 5
+x 11
+y 13
 end
 arch afloor_right
-x 3
-y 6
+x 11
+y 14
 end
 arch vampire
 name old vampire
 hp 350
-x 3
-y 6
+x 11
+y 14
 end
 arch afloor_right
-x 3
-y 7
+x 11
+y 15
 end
 arch gwall_2_1_2
-x 3
-y 7
+x 11
+y 15
 end
 arch magic_banned
-x 3
-y 8
+x 11
+y 16
 end
 arch afloor_right
-x 3
-y 8
+x 11
+y 16
 end
 arch random_scroll
-x 3
-y 8
+x 11
+y 16
 end
 arch magic_banned
-x 3
-y 9
+x 11
+y 17
 end
 arch afloor_right
-x 3
-y 9
+x 11
+y 17
 end
 arch random_scroll
-x 3
-y 9
+x 11
+y 17
 end
 arch magic_banned
-x 3
-y 10
+x 11
+y 18
 end
 arch afloor_right
-x 3
-y 10
+x 11
+y 18
 end
 arch random_wealth
-x 3
-y 10
+x 11
+y 18
 end
 arch random_talisman
-x 3
-y 10
+x 11
+y 18
 end
 arch afloor_right
-x 3
-y 11
+x 11
+y 19
 end
 arch gwall_3_3
-x 3
-y 11
+x 11
+y 19
 end
 arch afloor_right
-x 3
-y 12
+x 11
+y 20
 end
 arch gwall_2_1_1
-x 3
-y 12
+x 11
+y 20
 end
 arch afloor_right
-x 3
-y 13
+x 11
+y 21
 end
 arch gwall_3_2
-x 3
-y 13
-end
-arch afloor_right
-x 3
-y 14
-end
-arch gwall_2_1_1
-x 3
-y 14
-end
-arch afloor_right
-x 3
-y 15
-end
-arch gwall_2_1_1
-x 3
-y 15
-end
-arch afloor_right
-x 3
-y 16
-end
-arch gwall_2_2_4
-x 3
-y 16
-end
-arch afloor_right
-x 3
-y 17
-end
-arch ghost
-x 3
-y 17
-end
-arch afloor_right
-x 3
-y 18
-end
-arch generate_ghost
-x 3
-y 18
-end
-arch afloor_right
-x 3
-y 19
-end
-arch gwall_2_1_2
-x 3
-y 19
-end
-arch afloor_right
-x 3
-y 20
-end
-arch zombie
-x 3
-y 20
-end
-arch afloor_right
-x 3
-y 21
-end
-arch zombie
-x 3
+x 11
 y 21
 end
 arch afloor_right
-x 3
+x 11
 y 22
 end
-arch zombie
-x 3
+arch gwall_2_1_1
+x 11
 y 22
 end
 arch afloor_right
-x 3
+x 11
 y 23
 end
-arch wraith
-x 3
+arch gwall_2_1_1
+x 11
 y 23
 end
-arch gwall_2_1_2
-x 3
+arch afloor_right
+x 11
 y 24
 end
-arch gwall_3_3
-x 4
+arch gwall_2_2_4
+x 11
+y 24
 end
 arch afloor_right
-x 4
+x 11
+y 25
+end
+arch ghost
+x 11
+y 25
+end
+arch afloor_right
+x 11
+y 26
+end
+arch generate_ghost
+x 11
+y 26
+end
+arch afloor_right
+x 11
+y 27
+end
+arch gwall_2_1_2
+x 11
+y 27
+end
+arch afloor_right
+x 11
+y 28
+end
+arch zombie
+x 11
+y 28
+end
+arch afloor_right
+x 11
+y 29
+end
+arch zombie
+x 11
+y 29
+end
+arch afloor_right
+x 11
+y 30
+end
+arch zombie
+x 11
+y 30
+end
+arch afloor_right
+x 11
+y 31
+end
+arch wraith
+x 11
+y 31
+end
+arch gwall_2_1_2
+x 11
+y 32
+end
+arch flagstone
+x 11
+y 33
+end
+arch dwall_3_3
+x 11
+y 33
+end
+arch flagstone
+x 11
+y 34
+end
+arch dwall_4
+x 11
+y 34
+end
+arch flagstone
+x 11
+y 35
+end
+arch dwall_4
+x 11
+y 35
+end
+arch flagstone
+x 11
+y 36
+end
+arch dwall_4
+x 11
+y 36
+end
+arch flagstone
+x 11
+y 37
+end
+arch dwall_4
+x 11
+y 37
+end
+arch flagstone
+x 11
+y 38
+end
+arch dwall_2_2_1
+x 11
+y 38
+end
+arch blocked
+name nothing
+x 11
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 11
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 12
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 12
 y 1
+move_block 0
+blocksview 0
+end
+arch flagstone
+x 12
+y 2
+end
+arch dwall_3_3
+x 12
+y 2
+end
+arch flagstone
+x 12
+y 3
+end
+arch dwall_4
+x 12
+y 3
+end
+arch flagstone
+x 12
+y 4
+end
+arch dwall_4
+x 12
+y 4
+end
+arch flagstone
+x 12
+y 5
+end
+arch dwall_4
+x 12
+y 5
+end
+arch flagstone
+x 12
+y 6
+end
+arch dwall_4
+x 12
+y 6
+end
+arch flagstone
+x 12
+y 7
+end
+arch dwall_3_1
+x 12
+y 7
+end
+arch gwall_3_3
+x 12
+y 8
+end
+arch afloor_right
+x 12
+y 9
 end
 arch locked_door1
 slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
-x 4
-y 1
+x 12
+y 9
 end
 arch gwall_2_1_1
-x 4
-y 1
+x 12
+y 9
 move_block 0
 end
 arch afloor_right
-x 4
-y 2
+x 12
+y 10
 end
 arch gwall_2_1_1
-x 4
-y 2
+x 12
+y 10
 end
 arch afloor_right
-x 4
-y 3
+x 12
+y 11
 end
 arch gwall_2_1_1
-x 4
-y 3
+x 12
+y 11
 end
 arch afloor_right
-x 4
-y 4
+x 12
+y 12
 end
 arch gwall_2_1_1
-x 4
-y 4
+x 12
+y 12
 end
 arch afloor_right
-x 4
-y 5
+x 12
+y 13
 end
 arch gwall_2_1_1
-x 4
-y 5
+x 12
+y 13
 end
 arch afloor_right
-x 4
-y 6
+x 12
+y 14
 end
 arch gwall_2_1_1
-x 4
-y 6
+x 12
+y 14
 end
 arch afloor_right
-x 4
-y 7
+x 12
+y 15
 end
 arch gwall_3_1
-x 4
-y 7
+x 12
+y 15
 end
 arch magic_banned
-x 4
-y 8
+x 12
+y 16
 end
 arch afloor_right
-x 4
-y 8
+x 12
+y 16
 end
 arch random_weapon
-x 4
-y 8
+x 12
+y 16
 end
 arch random_weapon
-x 4
-y 8
+x 12
+y 16
 end
 arch random_weapon
-x 4
-y 8
+x 12
+y 16
 end
 arch random_weapon
-x 4
-y 8
+x 12
+y 16
 end
 arch random_weapon
-x 4
-y 8
+x 12
+y 16
 end
 arch magic_banned
-x 4
-y 9
+x 12
+y 17
 end
 arch afloor_right
-x 4
-y 9
+x 12
+y 17
 end
 arch random_wealth
-x 4
-y 9
+x 12
+y 17
 end
 arch random_talisman
-x 4
-y 9
+x 12
+y 17
 end
 arch magic_banned
-x 4
-y 10
+x 12
+y 18
 end
 arch afloor_right
-x 4
-y 10
+x 12
+y 18
 end
 arch teleporter
 name teleporter out
 slaying tower3
 hp 13
 sp 13
-x 4
-y 10
+x 12
+y 18
 end
 arch afloor_right
-x 4
-y 11
+x 12
+y 19
 end
 arch gwall_2_1_2
-x 4
-y 11
+x 12
+y 19
 end
 arch afloor_right
-x 4
-y 12
+x 12
+y 20
 end
 arch afloor_right
-x 4
-y 13
+x 12
+y 21
 end
 arch locked_door1
 slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
-x 4
-y 13
+x 12
+y 21
 end
 arch gwall_2_1_2
-x 4
-y 13
+x 12
+y 21
 move_block 0
 end
 arch afloor_right
-x 4
-y 14
-end
-arch ghost
-x 4
-y 14
-end
-arch afloor_right
-x 4
-y 15
-end
-arch ghost
-x 4
-y 15
-end
-arch afloor_right
-x 4
-y 16
-end
-arch ghost
-x 4
-y 16
-end
-arch afloor_right
-x 4
-y 17
-end
-arch ghost
-x 4
-y 17
-end
-arch afloor_right
-x 4
-y 18
-end
-arch ghost
-x 4
-y 18
-end
-arch afloor_right
-x 4
-y 19
-end
-arch gwall_2_1_2
-x 4
-y 19
-end
-arch afloor_right
-x 4
-y 20
-end
-arch zombie
-x 4
-y 20
-end
-arch afloor_right
-x 4
-y 21
-end
-arch zombie
-x 4
-y 21
-end
-arch afloor_right
-x 4
+x 12
 y 22
 end
-arch zombie
-x 4
+arch ghost
+x 12
 y 22
 end
 arch afloor_right
-x 4
+x 12
 y 23
 end
-arch zombie
-x 4
+arch ghost
+x 12
 y 23
 end
-arch gwall_2_1_2
-x 4
+arch afloor_right
+x 12
 y 24
 end
-arch gwall_2_1_2
-x 5
+arch ghost
+x 12
+y 24
 end
 arch afloor_right
-x 5
+x 12
+y 25
+end
+arch ghost
+x 12
+y 25
+end
+arch afloor_right
+x 12
+y 26
+end
+arch ghost
+x 12
+y 26
+end
+arch afloor_right
+x 12
+y 27
+end
+arch gwall_2_1_2
+x 12
+y 27
+end
+arch afloor_right
+x 12
+y 28
+end
+arch zombie
+x 12
+y 28
+end
+arch afloor_right
+x 12
+y 29
+end
+arch zombie
+x 12
+y 29
+end
+arch afloor_right
+x 12
+y 30
+end
+arch zombie
+x 12
+y 30
+end
+arch afloor_right
+x 12
+y 31
+end
+arch zombie
+x 12
+y 31
+end
+arch gwall_2_1_2
+x 12
+y 32
+end
+arch flagstone
+x 12
+y 33
+end
+arch dwall_3_3
+x 12
+y 33
+end
+arch flagstone
+x 12
+y 34
+end
+arch dwall_4
+x 12
+y 34
+end
+arch flagstone
+x 12
+y 35
+end
+arch dwall_4
+x 12
+y 35
+end
+arch flagstone
+x 12
+y 36
+end
+arch dwall_4
+x 12
+y 36
+end
+arch flagstone
+x 12
+y 37
+end
+arch dwall_4
+x 12
+y 37
+end
+arch flagstone
+x 12
+y 38
+end
+arch dwall_3_1
+x 12
+y 38
+end
+arch blocked
+name nothing
+x 12
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 12
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 13
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 13
 y 1
+move_block 0
+blocksview 0
+end
+arch flagstone
+x 13
+y 2
+end
+arch dwall_3_3
+x 13
+y 2
+end
+arch flagstone
+x 13
+y 3
+end
+arch dwall_4
+x 13
+y 3
+end
+arch flagstone
+x 13
+y 4
+end
+arch dwall_4
+x 13
+y 4
+end
+arch flagstone
+x 13
+y 5
+end
+arch dwall_4
+x 13
+y 5
+end
+arch flagstone
+x 13
+y 6
+end
+arch dwall_4
+x 13
+y 6
+end
+arch flagstone
+x 13
+y 7
+end
+arch dwall_3_1
+x 13
+y 7
+end
+arch gwall_2_1_2
+x 13
+y 8
+end
+arch afloor_right
+x 13
+y 9
 end
 arch wraith
-x 5
-y 1
+x 13
+y 9
 end
 arch afloor_right
-x 5
-y 2
+x 13
+y 10
 end
 arch nightmare
-x 5
-y 2
+x 13
+y 10
 end
 arch afloor_right
-x 5
-y 3
+x 13
+y 11
 end
 arch spectre
-x 5
-y 3
+x 13
+y 11
 end
 arch afloor_right
-x 5
-y 4
+x 13
+y 12
 end
 arch wraith
-x 5
-y 4
+x 13
+y 12
 end
 arch afloor_right
-x 5
-y 5
+x 13
+y 13
 end
 arch ghost
-x 5
-y 5
+x 13
+y 13
 end
 arch afloor_right
-x 5
-y 6
+x 13
+y 14
 end
 arch ghost
-x 5
-y 6
+x 13
+y 14
 end
 arch afloor_right
-x 5
-y 7
+x 13
+y 15
 end
 arch gwall_2_1_2
-x 5
-y 7
+x 13
+y 15
 end
 arch magic_banned
-x 5
-y 8
+x 13
+y 16
 end
 arch afloor_right
-x 5
-y 8
+x 13
+y 16
 end
 arch random_bow
-x 5
-y 8
+x 13
+y 16
 end
 arch random_bow
-x 5
-y 8
+x 13
+y 16
 end
 arch random_bow
-x 5
-y 8
+x 13
+y 16
 end
 arch random_bow
-x 5
-y 8
+x 13
+y 16
 end
 arch random_bow
-x 5
-y 8
+x 13
+y 16
 end
 arch magic_banned
-x 5
-y 9
+x 13
+y 17
 end
 arch afloor_right
-x 5
-y 9
+x 13
+y 17
 end
 arch random_scroll
-x 5
-y 9
+x 13
+y 17
 end
 arch magic_banned
-x 5
-y 10
+x 13
+y 18
 end
 arch afloor_right
-x 5
-y 10
+x 13
+y 18
 end
 arch chest_2
-x 5
-y 10
+x 13
+y 18
 carrying 1500
 arch potiondex
 end
 end
 arch afloor_right
-x 5
-y 11
+x 13
+y 19
 end
 arch gwall_2_1_2
-x 5
-y 11
+x 13
+y 19
 end
 arch afloor_right
-x 5
-y 12
+x 13
+y 20
 end
 arch afloor_right
-x 5
-y 13
+x 13
+y 21
 end
 arch gwall_3_3
-x 5
-y 13
+x 13
+y 21
 end
 arch afloor_right
-x 5
-y 14
+x 13
+y 22
 end
 arch gwall_2_1_1
-x 5
-y 14
+x 13
+y 22
 end
 arch afloor_right
-x 5
-y 15
+x 13
+y 23
 end
 arch gwall_3_2
-x 5
-y 15
+x 13
+y 23
 end
 arch afloor_right
-x 5
-y 16
+x 13
+y 24
 end
 arch gwall_2_1_1
-x 5
-y 16
+x 13
+y 24
 end
 arch afloor_right
-x 5
-y 17
+x 13
+y 25
 end
 arch gwall_2_2_1
-x 5
-y 17
+x 13
+y 25
 end
 arch afloor_right
-x 5
-y 18
+x 13
+y 26
 end
 arch afloor_right
-x 5
-y 19
+x 13
+y 27
 end
 arch gwall_2_2_3
-x 5
-y 19
+x 13
+y 27
 end
 arch afloor_right
-x 5
-y 20
+x 13
+y 28
 end
 arch gwall_3_2
-x 5
-y 20
+x 13
+y 28
 end
 arch afloor_right
-x 5
-y 21
+x 13
+y 29
 end
 arch gwall_2_1_1
-x 5
-y 21
+x 13
+y 29
 end
 arch afloor_right
-x 5
-y 22
+x 13
+y 30
 end
 arch gwall_2_1_1
-x 5
-y 22
+x 13
+y 30
 end
 arch afloor_right
-x 5
-y 23
+x 13
+y 31
 end
 arch locked_door1
 slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
-x 5
-y 23
+x 13
+y 31
 end
 arch gwall_2_1_1
-x 5
-y 23
+x 13
+y 31
 move_block 0
 end
 arch gwall_3_1
-x 5
-y 24
+x 13
+y 32
+end
+arch flagstone
+x 13
+y 33
+end
+arch dwall_3_3
+x 13
+y 33
+end
+arch flagstone
+x 13
+y 34
+end
+arch dwall_4
+x 13
+y 34
+end
+arch flagstone
+x 13
+y 35
+end
+arch dwall_4
+x 13
+y 35
+end
+arch flagstone
+x 13
+y 36
+end
+arch dwall_4
+x 13
+y 36
+end
+arch flagstone
+x 13
+y 37
+end
+arch dwall_4
+x 13
+y 37
+end
+arch flagstone
+x 13
+y 38
+end
+arch dwall_3_1
+x 13
+y 38
+end
+arch blocked
+name nothing
+x 13
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 13
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 14
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 14
+y 1
+move_block 0
+blocksview 0
+end
+arch flagstone
+x 14
+y 2
+end
+arch dwall_3_3
+x 14
+y 2
+end
+arch flagstone
+x 14
+y 3
+end
+arch dwall_4
+x 14
+y 3
+end
+arch flagstone
+x 14
+y 4
+end
+arch dwall_4
+x 14
+y 4
+end
+arch flagstone
+x 14
+y 5
+end
+arch dwall_4
+x 14
+y 5
+end
+arch flagstone
+x 14
+y 6
+end
+arch dwall_4
+x 14
+y 6
+end
+arch flagstone
+x 14
+y 7
+end
+arch dwall_3_1
+x 14
+y 7
 end
 arch gwall_2_1_2
-x 6
+x 14
+y 8
 end
 arch afloor_right
-x 6
-y 1
+x 14
+y 9
 end
 arch nightmare
-x 6
-y 1
+x 14
+y 9
 end
 arch afloor_right
-x 6
-y 2
+x 14
+y 10
 end
 arch spectre
-x 6
-y 2
+x 14
+y 10
 end
 arch afloor_right
-x 6
-y 3
+x 14
+y 11
 end
 arch nightmare
-x 6
-y 3
+x 14
+y 11
 end
 arch afloor_right
-x 6
-y 4
+x 14
+y 12
 end
 arch vampire
-x 6
-y 4
-end
-arch afloor_right
-x 6
-y 5
-end
-arch ghost
-x 6
-y 5
-end
-arch afloor_right
-x 6
-y 6
-end
-arch ghost
-x 6
-y 6
-end
-arch afloor_right
-x 6
-y 7
-end
-arch gwall_3_3
-x 6
-y 7
-end
-arch afloor_right
-x 6
-y 8
-end
-arch gwall_2_1_1
-x 6
-y 8
-end
-arch afloor_right
-x 6
-y 9
-end
-arch gwall_2_1_1
-x 6
-y 9
-end
-arch afloor_right
-x 6
-y 10
-end
-arch gwall_2_1_1
-x 6
-y 10
-end
-arch afloor_right
-x 6
-y 11
-end
-arch gwall_3_1
-x 6
-y 11
-end
-arch afloor_right
-x 6
+x 14
 y 12
 end
 arch afloor_right
-x 6
+x 14
 y 13
 end
-arch gwall_2_1_2
-x 6
+arch ghost
+x 14
 y 13
 end
 arch afloor_right
-x 6
+x 14
 y 14
+end
+arch ghost
+x 14
+y 14
+end
+arch afloor_right
+x 14
+y 15
+end
+arch gwall_3_3
+x 14
+y 15
+end
+arch afloor_right
+x 14
+y 16
+end
+arch gwall_2_1_1
+x 14
+y 16
+end
+arch afloor_right
+x 14
+y 17
+end
+arch gwall_2_1_1
+x 14
+y 17
+end
+arch afloor_right
+x 14
+y 18
+end
+arch gwall_2_1_1
+x 14
+y 18
+end
+arch afloor_right
+x 14
+y 19
+end
+arch gwall_3_1
+x 14
+y 19
+end
+arch afloor_right
+x 14
+y 20
+end
+arch afloor_right
+x 14
+y 21
+end
+arch gwall_2_1_2
+x 14
+y 21
+end
+arch afloor_right
+x 14
+y 22
 end
 arch wraith
 name a darker wraith
 hp 100
 exp 500
-x 6
-y 14
+x 14
+y 22
 carrying 1040
 arch key2
 name glowing magical dust
@@ -1327,1461 +4537,2329 @@ arch ring_nodrain
 end
 end
 arch afloor_right
-x 6
-y 15
+x 14
+y 23
 end
 arch locked_door1
 slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
-x 6
-y 15
+x 14
+y 23
 end
 arch gwall_2_1_2
-x 6
-y 15
+x 14
+y 23
 move_block 0
 end
 arch afloor_right
-x 6
-y 16
-end
-arch skeleton
-x 6
-y 16
-end
-arch afloor_right
-x 6
-y 17
-end
-arch gwall_2_1_2
-x 6
-y 17
-end
-arch afloor_right
-x 6
-y 18
-end
-arch ghost
-x 6
-y 18
-end
-arch afloor_right
-x 6
-y 19
-end
-arch generate_ghost
-x 6
-y 19
-end
-arch afloor_right
-x 6
-y 20
-end
-arch gwall_2_1_2
-x 6
-y 20
-end
-arch afloor_right
-x 6
-y 21
-end
-arch skeleton
-x 6
-y 21
-end
-arch afloor_right
-x 6
-y 22
-end
-arch skeleton
-x 6
-y 22
-end
-arch afloor_right
-x 6
-y 23
-end
-arch skeleton
-x 6
-y 23
-end
-arch gwall_2_1_2
-x 6
+x 14
 y 24
 end
-arch gwall_2_1_2
-x 7
+arch skeleton
+x 14
+y 24
 end
 arch afloor_right
-x 7
+x 14
+y 25
+end
+arch gwall_2_1_2
+x 14
+y 25
+end
+arch afloor_right
+x 14
+y 26
+end
+arch ghost
+x 14
+y 26
+end
+arch afloor_right
+x 14
+y 27
+end
+arch generate_ghost
+x 14
+y 27
+end
+arch afloor_right
+x 14
+y 28
+end
+arch gwall_2_1_2
+x 14
+y 28
+end
+arch afloor_right
+x 14
+y 29
+end
+arch skeleton
+x 14
+y 29
+end
+arch afloor_right
+x 14
+y 30
+end
+arch skeleton
+x 14
+y 30
+end
+arch afloor_right
+x 14
+y 31
+end
+arch skeleton
+x 14
+y 31
+end
+arch gwall_2_1_2
+x 14
+y 32
+end
+arch flagstone
+x 14
+y 33
+end
+arch dwall_3_3
+x 14
+y 33
+end
+arch flagstone
+x 14
+y 34
+end
+arch dwall_4
+x 14
+y 34
+end
+arch flagstone
+x 14
+y 35
+end
+arch dwall_4
+x 14
+y 35
+end
+arch flagstone
+x 14
+y 36
+end
+arch dwall_4
+x 14
+y 36
+end
+arch flagstone
+x 14
+y 37
+end
+arch dwall_4
+x 14
+y 37
+end
+arch flagstone
+x 14
+y 38
+end
+arch dwall_3_1
+x 14
+y 38
+end
+arch blocked
+name nothing
+x 14
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 14
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 15
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 15
 y 1
+move_block 0
+blocksview 0
+end
+arch flagstone
+x 15
+y 2
+end
+arch dwall_3_3
+x 15
+y 2
+end
+arch flagstone
+x 15
+y 3
+end
+arch dwall_4
+x 15
+y 3
+end
+arch flagstone
+x 15
+y 4
+end
+arch dwall_4
+x 15
+y 4
+end
+arch flagstone
+x 15
+y 5
+end
+arch dwall_4
+x 15
+y 5
+end
+arch flagstone
+x 15
+y 6
+end
+arch dwall_4
+x 15
+y 6
+end
+arch flagstone
+x 15
+y 7
+end
+arch dwall_3_1
+x 15
+y 7
+end
+arch gwall_2_1_2
+x 15
+y 8
+end
+arch afloor_right
+x 15
+y 9
 end
 arch spectre
-x 7
-y 1
+x 15
+y 9
 end
 arch afloor_right
-x 7
-y 2
+x 15
+y 10
 end
 arch nightmare
-x 7
-y 2
+x 15
+y 10
 end
 arch afloor_right
-x 7
-y 3
+x 15
+y 11
 end
 arch vampire
-x 7
-y 3
+x 15
+y 11
 end
 arch afloor_right
-x 7
-y 4
+x 15
+y 12
 end
 arch grimreaper
-x 7
-y 4
+x 15
+y 12
 end
 arch afloor_right
-x 7
-y 5
+x 15
+y 13
 end
 arch ghost
-x 7
-y 5
+x 15
+y 13
 end
 arch afloor_right
-x 7
-y 6
+x 15
+y 14
 end
 arch ghost
-x 7
-y 6
+x 15
+y 14
 end
 arch afloor_right
-x 7
-y 7
+x 15
+y 15
 end
 arch locked_door1
 slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
-x 7
-y 7
+x 15
+y 15
 end
 arch gwall_2_1_2
-x 7
-y 7
+x 15
+y 15
 move_block 0
 end
 arch afloor_right
-x 7
-y 8
+x 15
+y 16
 end
 arch afloor_right
-x 7
-y 9
+x 15
+y 17
 end
 arch wraith
-x 7
-y 9
+x 15
+y 17
 end
 arch afloor_right
-x 7
-y 10
+x 15
+y 18
 end
 arch wraith
-x 7
-y 10
+x 15
+y 18
 end
 arch afloor_right
-x 7
-y 11
+x 15
+y 19
 end
 arch gwall_2_1_2
-x 7
-y 11
+x 15
+y 19
 end
 arch afloor_right
-x 7
-y 12
+x 15
+y 20
 end
 arch afloor_right
-x 7
-y 13
+x 15
+y 21
 end
 arch gwall_2_2_3
-x 7
+x 15
+y 21
+end
+arch afloor_right
+x 15
+y 22
+end
+arch gwall_3_2
+x 15
+y 22
+end
+arch afloor_right
+x 15
+y 23
+end
+arch gwall_2_2_4
+x 15
+y 23
+end
+arch afloor_right
+x 15
+y 24
+end
+arch skeleton
+x 15
+y 24
+end
+arch afloor_right
+x 15
+y 25
+end
+arch gwall_2_1_2
+x 15
+y 25
+end
+arch afloor_right
+x 15
+y 26
+end
+arch generate_ghost
+x 15
+y 26
+end
+arch afloor_right
+x 15
+y 27
+end
+arch ghost
+x 15
+y 27
+end
+arch afloor_right
+x 15
+y 28
+end
+arch gwall_2_1_2
+x 15
+y 28
+end
+arch afloor_right
+x 15
+y 29
+end
+arch skeleton
+x 15
+y 29
+end
+arch afloor_right
+x 15
+y 30
+end
+arch skeleton
+x 15
+y 30
+end
+arch afloor_right
+x 15
+y 31
+end
+arch skeleton
+x 15
+y 31
+end
+arch gwall_2_1_2
+x 15
+y 32
+end
+arch flagstone
+x 15
+y 33
+end
+arch dwall_3_3
+x 15
+y 33
+end
+arch flagstone
+x 15
+y 34
+end
+arch dwall_4
+x 15
+y 34
+end
+arch flagstone
+x 15
+y 35
+end
+arch dwall_4
+x 15
+y 35
+end
+arch flagstone
+x 15
+y 36
+end
+arch dwall_4
+x 15
+y 36
+end
+arch flagstone
+x 15
+y 37
+end
+arch dwall_4
+x 15
+y 37
+end
+arch flagstone
+x 15
+y 38
+end
+arch dwall_3_1
+x 15
+y 38
+end
+arch blocked
+name nothing
+x 15
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 15
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 16
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 16
+y 1
+move_block 0
+blocksview 0
+end
+arch flagstone
+x 16
+y 2
+end
+arch dwall_3_3
+x 16
+y 2
+end
+arch flagstone
+x 16
+y 3
+end
+arch dwall_4
+x 16
+y 3
+end
+arch flagstone
+x 16
+y 4
+end
+arch dwall_4
+x 16
+y 4
+end
+arch flagstone
+x 16
+y 5
+end
+arch dwall_4
+x 16
+y 5
+end
+arch flagstone
+x 16
+y 6
+end
+arch dwall_4
+x 16
+y 6
+end
+arch flagstone
+x 16
+y 7
+end
+arch dwall_3_1
+x 16
+y 7
+end
+arch gwall_3_3
+x 16
+y 8
+end
+arch afloor_right
+x 16
+y 9
+end
+arch gwall_2_1_1
+x 16
+y 9
+end
+arch afloor_right
+x 16
+y 10
+end
+arch gwall_3_2
+x 16
+y 10
+end
+arch afloor_right
+x 16
+y 11
+end
+arch gwall_2_1_1
+x 16
+y 11
+end
+arch afloor_right
+x 16
+y 12
+end
+arch gwall_3_2
+x 16
+y 12
+end
+arch afloor_right
+x 16
+y 13
+end
+arch gwall_2_1_1
+x 16
 y 13
 end
 arch afloor_right
-x 7
+x 16
 y 14
 end
-arch gwall_3_2
-x 7
+arch gwall_2_1_1
+x 16
 y 14
 end
 arch afloor_right
-x 7
+x 16
 y 15
-end
-arch gwall_2_2_4
-x 7
-y 15
-end
-arch afloor_right
-x 7
-y 16
-end
-arch skeleton
-x 7
-y 16
-end
-arch afloor_right
-x 7
-y 17
-end
-arch gwall_2_1_2
-x 7
-y 17
-end
-arch afloor_right
-x 7
-y 18
-end
-arch generate_ghost
-x 7
-y 18
-end
-arch afloor_right
-x 7
-y 19
-end
-arch ghost
-x 7
-y 19
-end
-arch afloor_right
-x 7
-y 20
-end
-arch gwall_2_1_2
-x 7
-y 20
-end
-arch afloor_right
-x 7
-y 21
-end
-arch skeleton
-x 7
-y 21
-end
-arch afloor_right
-x 7
-y 22
-end
-arch skeleton
-x 7
-y 22
-end
-arch afloor_right
-x 7
-y 23
-end
-arch skeleton
-x 7
-y 23
-end
-arch gwall_2_1_2
-x 7
-y 24
-end
-arch gwall_3_3
-x 8
-end
-arch afloor_right
-x 8
-y 1
-end
-arch gwall_2_1_1
-x 8
-y 1
-end
-arch afloor_right
-x 8
-y 2
-end
-arch gwall_3_2
-x 8
-y 2
-end
-arch afloor_right
-x 8
-y 3
-end
-arch gwall_2_1_1
-x 8
-y 3
-end
-arch afloor_right
-x 8
-y 4
-end
-arch gwall_3_2
-x 8
-y 4
-end
-arch afloor_right
-x 8
-y 5
-end
-arch gwall_2_1_1
-x 8
-y 5
-end
-arch afloor_right
-x 8
-y 6
-end
-arch gwall_2_1_1
-x 8
-y 6
-end
-arch afloor_right
-x 8
-y 7
 end
 arch gwall_3_1
-x 8
-y 7
+x 16
+y 15
 end
 arch afloor_right
-x 8
-y 8
+x 16
+y 16
 end
 arch nightmare
-x 8
-y 8
+x 16
+y 16
 end
 arch afloor_right
-x 8
-y 9
+x 16
+y 17
 end
 arch wraith
-x 8
-y 9
+x 16
+y 17
 end
 arch afloor_right
-x 8
-y 10
+x 16
+y 18
 end
 arch spectre
-x 8
-y 10
+x 16
+y 18
 end
 arch afloor_right
-x 8
-y 11
+x 16
+y 19
 end
 arch gwall_2_1_2
-x 8
-y 11
+x 16
+y 19
 end
 arch afloor_right
-x 8
-y 12
+x 16
+y 20
 end
 arch magic_mouth
 msg
 You need some of these special magic to pass the some of the walls.
 endmsg
-x 8
-y 13
+x 16
+y 21
 end
 arch afloor_right
-x 8
-y 13
+x 16
+y 21
 end
 arch key2
 name glowing magical dust
 slaying 23
 face paralyse.111
-x 8
-y 13
+x 16
+y 21
 nrof 10
 end
 arch afloor_right
-x 8
-y 14
+x 16
+y 22
 end
 arch gwall_2_1_2
-x 8
-y 14
+x 16
+y 22
 end
 arch afloor_right
-x 8
-y 15
+x 16
+y 23
 end
 arch skeleton
-x 8
-y 15
+x 16
+y 23
 end
 arch afloor_right
-x 8
-y 16
+x 16
+y 24
 end
 arch skeleton
-x 8
-y 16
+x 16
+y 24
 end
 arch afloor_right
-x 8
-y 17
+x 16
+y 25
 end
 arch gwall_2_2_3
-x 8
-y 17
+x 16
+y 25
 end
 arch afloor_right
-x 8
-y 18
+x 16
+y 26
 end
 arch gwall_2_2_1
-x 8
-y 18
+x 16
+y 26
 end
 arch afloor_right
-x 8
-y 19
+x 16
+y 27
 end
 arch ghost
-x 8
-y 19
+x 16
+y 27
 end
 arch afloor_right
-x 8
-y 20
+x 16
+y 28
 end
 arch gwall_2_1_2
-x 8
-y 20
+x 16
+y 28
 end
 arch afloor_right
-x 8
-y 21
+x 16
+y 29
 end
 arch skeleton
-x 8
-y 21
+x 16
+y 29
 end
 arch afloor_right
-x 8
-y 22
+x 16
+y 30
 end
 arch skeleton
-x 8
-y 22
+x 16
+y 30
 end
 arch afloor_right
-x 8
-y 23
+x 16
+y 31
 end
 arch skeleton
-x 8
-y 23
+x 16
+y 31
 end
 arch gwall_2_1_2
-x 8
-y 24
+x 16
+y 32
 end
-arch gwall_2_1_2
-x 9
+arch flagstone
+x 16
+y 33
 end
-arch afloor_right
-x 9
-y 1
+arch dwall_3_3
+x 16
+y 33
 end
-arch nightmare
-x 9
-y 1
+arch flagstone
+x 16
+y 34
 end
-arch afloor_right
-x 9
-y 2
+arch dwall_4
+x 16
+y 34
 end
-arch locked_door1
-slaying 23
-msg
-The wall refuse to admit you in.
-endmsg
-x 9
-y 2
+arch flagstone
+x 16
+y 35
 end
-arch gwall_2_1_2
-x 9
-y 2
+arch dwall_4
+x 16
+y 35
+end
+arch flagstone
+x 16
+y 36
+end
+arch dwall_4
+x 16
+y 36
+end
+arch flagstone
+x 16
+y 37
+end
+arch dwall_4
+x 16
+y 37
+end
+arch flagstone
+x 16
+y 38
+end
+arch dwall_3_1
+x 16
+y 38
+end
+arch blocked
+name nothing
+x 16
+y 39
 move_block 0
+blocksview 0
 end
-arch afloor_right
-x 9
+arch blocked
+name nothing
+x 16
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 17
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 17
+y 1
+move_block 0
+blocksview 0
+end
+arch flagstone
+x 17
+y 2
+end
+arch dwall_3_3
+x 17
+y 2
+end
+arch flagstone
+x 17
 y 3
 end
-arch wraith
-x 9
+arch dwall_4
+x 17
 y 3
 end
-arch afloor_right
-x 9
+arch flagstone
+x 17
 y 4
 end
-arch locked_door1
-slaying 23
-msg
-The wall refuse to admit you in.
-endmsg
-x 9
+arch dwall_4
+x 17
 y 4
 end
-arch gwall_2_1_2
-x 9
-y 4
-move_block 0
-end
-arch afloor_right
-x 9
+arch flagstone
+x 17
 y 5
 end
-arch wraith
-x 9
+arch dwall_4
+x 17
 y 5
 end
-arch afloor_right
-x 9
+arch flagstone
+x 17
 y 6
 end
-arch grimreaper
-x 9
+arch dwall_4
+x 17
 y 6
 end
-arch afloor_right
-x 9
+arch flagstone
+x 17
 y 7
 end
-arch locked_door1
-slaying 23
-msg
-The wall refuse to admit you in.
-endmsg
-x 9
+arch dwall_3_1
+x 17
 y 7
 end
 arch gwall_2_1_2
-x 9
-y 7
-move_block 0
-end
-arch afloor_right
-x 9
+x 17
 y 8
+end
+arch afloor_right
+x 17
+y 9
 end
 arch nightmare
-x 9
-y 8
-end
-arch afloor_right
-x 9
-y 9
-end
-arch wraith
-x 9
+x 17
 y 9
 end
 arch afloor_right
-x 9
+x 17
 y 10
 end
-arch wraith
-x 9
+arch locked_door1
+slaying 23
+msg
+The wall refuse to admit you in.
+endmsg
+x 17
 y 10
-end
-arch afloor_right
-x 9
-y 11
 end
 arch gwall_2_1_2
-x 9
+x 17
+y 10
+move_block 0
+end
+arch afloor_right
+x 17
+y 11
+end
+arch wraith
+x 17
 y 11
 end
 arch afloor_right
-x 9
+x 17
 y 12
 end
+arch locked_door1
+slaying 23
+msg
+The wall refuse to admit you in.
+endmsg
+x 17
+y 12
+end
+arch gwall_2_1_2
+x 17
+y 12
+move_block 0
+end
 arch afloor_right
-x 9
+x 17
+y 13
+end
+arch wraith
+x 17
 y 13
 end
 arch afloor_right
-x 9
+x 17
 y 14
 end
-arch gwall_2_1_2
-x 9
+arch grimreaper
+x 17
 y 14
 end
 arch afloor_right
-x 9
+x 17
 y 15
-end
-arch skeleton
-x 9
-y 15
-end
-arch afloor_right
-x 9
-y 16
-end
-arch skeleton
-x 9
-y 16
-end
-arch afloor_right
-x 9
-y 17
-end
-arch skeleton
-x 9
-y 17
-end
-arch afloor_right
-x 9
-y 18
 end
 arch locked_door1
 slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
-x 9
-y 18
+x 17
+y 15
 end
 arch gwall_2_1_2
-x 9
-y 18
+x 17
+y 15
 move_block 0
 end
 arch afloor_right
-x 9
-y 19
-end
-arch ghost
-x 9
-y 19
-end
-arch afloor_right
-x 9
-y 20
-end
-arch gwall_2_1_2
-x 9
-y 20
-end
-arch afloor_right
-x 9
-y 21
-end
-arch generate_skeleton
-x 9
-y 21
-end
-arch afloor_right
-x 9
-y 22
-end
-arch skeleton
-x 9
-y 22
-end
-arch afloor_right
-x 9
-y 23
-end
-arch generate_skeleton
-x 9
-y 23
-end
-arch gwall_2_1_2
-x 9
-y 24
-end
-arch gwall_2_1_2
-x 10
-end
-arch afloor_right
-x 10
-y 1
+x 17
+y 16
 end
 arch nightmare
-x 10
+x 17
+y 16
+end
+arch afloor_right
+x 17
+y 17
+end
+arch wraith
+x 17
+y 17
+end
+arch afloor_right
+x 17
+y 18
+end
+arch wraith
+x 17
+y 18
+end
+arch afloor_right
+x 17
+y 19
+end
+arch gwall_2_1_2
+x 17
+y 19
+end
+arch afloor_right
+x 17
+y 20
+end
+arch afloor_right
+x 17
+y 21
+end
+arch afloor_right
+x 17
+y 22
+end
+arch gwall_2_1_2
+x 17
+y 22
+end
+arch afloor_right
+x 17
+y 23
+end
+arch skeleton
+x 17
+y 23
+end
+arch afloor_right
+x 17
+y 24
+end
+arch skeleton
+x 17
+y 24
+end
+arch afloor_right
+x 17
+y 25
+end
+arch skeleton
+x 17
+y 25
+end
+arch afloor_right
+x 17
+y 26
+end
+arch locked_door1
+slaying 23
+msg
+The wall refuse to admit you in.
+endmsg
+x 17
+y 26
+end
+arch gwall_2_1_2
+x 17
+y 26
+move_block 0
+end
+arch afloor_right
+x 17
+y 27
+end
+arch ghost
+x 17
+y 27
+end
+arch afloor_right
+x 17
+y 28
+end
+arch gwall_2_1_2
+x 17
+y 28
+end
+arch afloor_right
+x 17
+y 29
+end
+arch generate_skeleton
+x 17
+y 29
+end
+arch afloor_right
+x 17
+y 30
+end
+arch skeleton
+x 17
+y 30
+end
+arch afloor_right
+x 17
+y 31
+end
+arch generate_skeleton
+x 17
+y 31
+end
+arch gwall_2_1_2
+x 17
+y 32
+end
+arch flagstone
+x 17
+y 33
+end
+arch dwall_3_3
+x 17
+y 33
+end
+arch flagstone
+x 17
+y 34
+end
+arch dwall_4
+x 17
+y 34
+end
+arch flagstone
+x 17
+y 35
+end
+arch dwall_4
+x 17
+y 35
+end
+arch flagstone
+x 17
+y 36
+end
+arch dwall_4
+x 17
+y 36
+end
+arch flagstone
+x 17
+y 37
+end
+arch dwall_4
+x 17
+y 37
+end
+arch flagstone
+x 17
+y 38
+end
+arch dwall_3_1
+x 17
+y 38
+end
+arch blocked
+name nothing
+x 17
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 17
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 18
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 18
 y 1
+move_block 0
+blocksview 0
 end
-arch afloor_right
-x 10
+arch flagstone
+x 18
 y 2
 end
-arch gwall_2_1_2
-x 10
+arch dwall_3_3
+x 18
 y 2
 end
-arch afloor_right
-x 10
+arch flagstone
+x 18
 y 3
 end
-arch wraith
-x 10
+arch dwall_4
+x 18
 y 3
 end
-arch afloor_right
-x 10
+arch flagstone
+x 18
 y 4
 end
-arch gwall_2_1_2
-x 10
+arch dwall_4
+x 18
 y 4
 end
-arch afloor_right
-x 10
+arch flagstone
+x 18
 y 5
 end
-arch wraith
-x 10
+arch dwall_4
+x 18
 y 5
 end
-arch afloor_right
-x 10
+arch flagstone
+x 18
 y 6
 end
-arch wraith
-x 10
+arch dwall_4
+x 18
 y 6
 end
-arch afloor_right
-x 10
+arch flagstone
+x 18
 y 7
+end
+arch dwall_3_1
+x 18
+y 7
+end
+arch gwall_2_1_2
+x 18
+y 8
+end
+arch afloor_right
+x 18
+y 9
+end
+arch nightmare
+x 18
+y 9
+end
+arch afloor_right
+x 18
+y 10
+end
+arch gwall_2_1_2
+x 18
+y 10
+end
+arch afloor_right
+x 18
+y 11
+end
+arch wraith
+x 18
+y 11
+end
+arch afloor_right
+x 18
+y 12
+end
+arch gwall_2_1_2
+x 18
+y 12
+end
+arch afloor_right
+x 18
+y 13
+end
+arch wraith
+x 18
+y 13
+end
+arch afloor_right
+x 18
+y 14
+end
+arch wraith
+x 18
+y 14
+end
+arch afloor_right
+x 18
+y 15
 end
 arch gwall_3_3
-x 10
-y 7
+x 18
+y 15
 end
 arch afloor_right
-x 10
-y 8
+x 18
+y 16
 end
 arch gwall_2_1_1
-x 10
-y 8
+x 18
+y 16
 end
 arch afloor_right
-x 10
-y 9
+x 18
+y 17
 end
 arch locked_door1
 slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
-x 10
-y 9
+x 18
+y 17
 end
 arch gwall_2_1_1
-x 10
-y 9
+x 18
+y 17
 move_block 0
 end
 arch afloor_right
-x 10
-y 10
+x 18
+y 18
 end
 arch gwall_3_2
-x 10
-y 10
+x 18
+y 18
 end
 arch afloor_right
-x 10
-y 11
+x 18
+y 19
 end
 arch gwall_2_2_4
-x 10
-y 11
+x 18
+y 19
 end
 arch afloor_right
-x 10
-y 12
+x 18
+y 20
 end
 arch block_door_closed
-x 10
-y 12
+x 18
+y 20
 speed 0.500000
 connected 1
 end
 arch afloor_right
-x 10
-y 13
+x 18
+y 21
 end
 arch block_door_closed
-x 10
-y 13
+x 18
+y 21
 speed 0.500000
 connected 1
 end
 arch afloor_right
-x 10
-y 14
+x 18
+y 22
 end
 arch gwall_2_2_3
-x 10
-y 14
+x 18
+y 22
 end
 arch afloor_right
-x 10
-y 15
+x 18
+y 23
 end
 arch gwall_3_2
-x 10
-y 15
+x 18
+y 23
 end
 arch afloor_right
-x 10
-y 16
+x 18
+y 24
 end
 arch gwall_2_1_1
-x 10
-y 16
+x 18
+y 24
 end
 arch afloor_right
-x 10
-y 17
+x 18
+y 25
 end
 arch gwall_2_1_1
-x 10
-y 17
+x 18
+y 25
 end
 arch afloor_right
-x 10
-y 18
+x 18
+y 26
 end
 arch gwall_3_4
-x 10
-y 18
+x 18
+y 26
 end
 arch afloor_right
-x 10
-y 19
+x 18
+y 27
 end
 arch locked_door1
 slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
-x 10
-y 19
+x 18
+y 27
 end
 arch gwall_2_1_1
-x 10
-y 19
+x 18
+y 27
 move_block 0
 end
 arch afloor_right
-x 10
-y 20
+x 18
+y 28
 end
 arch gwall_3_4
-x 10
-y 20
+x 18
+y 28
 end
 arch afloor_right
-x 10
-y 21
+x 18
+y 29
 end
 arch gwall_2_1_1
-x 10
-y 21
+x 18
+y 29
 end
 arch afloor_right
-x 10
-y 22
+x 18
+y 30
 end
 arch gwall_3_2
-x 10
-y 22
+x 18
+y 30
 end
 arch afloor_right
-x 10
-y 23
+x 18
+y 31
 end
 arch gwall_2_1_1
-x 10
-y 23
+x 18
+y 31
 end
 arch gwall_3_1
-x 10
-y 24
+x 18
+y 32
+end
+arch flagstone
+x 18
+y 33
+end
+arch dwall_3_3
+x 18
+y 33
+end
+arch flagstone
+x 18
+y 34
+end
+arch dwall_4
+x 18
+y 34
+end
+arch flagstone
+x 18
+y 35
+end
+arch dwall_4
+x 18
+y 35
+end
+arch flagstone
+x 18
+y 36
+end
+arch dwall_4
+x 18
+y 36
+end
+arch flagstone
+x 18
+y 37
+end
+arch dwall_4
+x 18
+y 37
+end
+arch flagstone
+x 18
+y 38
+end
+arch dwall_3_1
+x 18
+y 38
+end
+arch blocked
+name nothing
+x 18
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 18
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 19
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 19
+y 1
+move_block 0
+blocksview 0
+end
+arch flagstone
+x 19
+y 2
+end
+arch dwall_3_3
+x 19
+y 2
+end
+arch flagstone
+x 19
+y 3
+end
+arch dwall_4
+x 19
+y 3
+end
+arch flagstone
+x 19
+y 4
+end
+arch dwall_4
+x 19
+y 4
+end
+arch flagstone
+x 19
+y 5
+end
+arch dwall_4
+x 19
+y 5
+end
+arch flagstone
+x 19
+y 6
+end
+arch dwall_4
+x 19
+y 6
+end
+arch flagstone
+x 19
+y 7
+end
+arch dwall_3_1
+x 19
+y 7
 end
 arch gwall_2_1_2
-x 11
+x 19
+y 8
 end
 arch afloor_right
-x 11
-y 1
+x 19
+y 9
 end
 arch nightmare
-x 11
-y 1
-end
-arch afloor_right
-x 11
-y 2
-end
-arch gwall_2_1_2
-x 11
-y 2
-end
-arch afloor_right
-x 11
-y 3
-end
-arch wraith
-x 11
-y 3
-end
-arch afloor_right
-x 11
-y 4
-end
-arch gwall_2_1_2
-x 11
-y 4
-end
-arch afloor_right
-x 11
-y 5
-end
-arch grimreaper
-x 11
-y 5
-end
-arch afloor_right
-x 11
-y 6
-end
-arch grimreaper
-x 11
-y 6
-end
-arch afloor_right
-x 11
-y 7
-end
-arch gwall_2_1_2
-x 11
-y 7
-end
-arch afloor_right
-x 11
-y 8
-end
-arch wraith
-x 11
-y 8
-end
-arch afloor_right
-x 11
-y 9
-end
-arch wraith
-x 11
+x 19
 y 9
 end
 arch afloor_right
-x 11
+x 19
 y 10
 end
 arch gwall_2_1_2
-x 11
+x 19
 y 10
 end
 arch afloor_right
-x 11
+x 19
 y 11
+end
+arch wraith
+x 19
+y 11
+end
+arch afloor_right
+x 19
+y 12
+end
+arch gwall_2_1_2
+x 19
+y 12
+end
+arch afloor_right
+x 19
+y 13
+end
+arch grimreaper
+x 19
+y 13
+end
+arch afloor_right
+x 19
+y 14
+end
+arch grimreaper
+x 19
+y 14
+end
+arch afloor_right
+x 19
+y 15
+end
+arch gwall_2_1_2
+x 19
+y 15
+end
+arch afloor_right
+x 19
+y 16
+end
+arch wraith
+x 19
+y 16
+end
+arch afloor_right
+x 19
+y 17
+end
+arch wraith
+x 19
+y 17
+end
+arch afloor_right
+x 19
+y 18
+end
+arch gwall_2_1_2
+x 19
+y 18
+end
+arch afloor_right
+x 19
+y 19
 end
 arch stair_3_up
 slaying tower4
-hp 11
-sp 11
-x 11
-y 11
+hp 19
+sp 19
+x 19
+y 19
 end
 arch magic_mouth
 msg
 Drop 250 platinum coins to pay the training fee.
 endmsg
-x 11
-y 12
+x 19
+y 20
 end
 arch afloor_right
-x 11
-y 12
+x 19
+y 20
 end
 arch altar
 name money altar
 slaying platinum coin
 food 250
-x 11
-y 12
+x 19
+y 20
 connected 1
 end
 arch magic_mouth
 msg
 Drop thirty diamonds to pay the training fee.
 endmsg
-x 11
-y 13
+x 19
+y 21
 end
 arch afloor_right
-x 11
-y 13
+x 19
+y 21
 end
 arch altar
 name diamond altar
 slaying diamond
 food 30
-x 11
-y 13
+x 19
+y 21
 connected 1
 end
 arch afloor_right
-x 11
-y 14
+x 19
+y 22
 end
 arch stair_3_up
 slaying tower4
-hp 11
-sp 14
-x 11
-y 14
-end
-arch afloor_right
-x 11
-y 15
-end
-arch gwall_2_1_2
-x 11
-y 15
-end
-arch afloor_right
-x 11
-y 16
-end
-arch skeleton
-x 11
-y 16
-end
-arch afloor_right
-x 11
-y 17
-end
-arch skeleton
-x 11
-y 17
-end
-arch afloor_right
-x 11
-y 18
-end
-arch skeleton
-x 11
-y 18
-end
-arch afloor_right
-x 11
-y 19
-end
-arch skeleton
-x 11
-y 19
-end
-arch afloor_right
-x 11
-y 20
-end
-arch skeleton
-x 11
-y 20
-end
-arch afloor_right
-x 11
-y 21
-end
-arch skeleton
-x 11
-y 21
-end
-arch afloor_right
-x 11
+hp 19
+sp 22
+x 19
 y 22
 end
-arch locked_door1
-slaying 23
-msg
-The wall refuse to admit you in.
-endmsg
-x 11
-y 22
-end
-arch gwall_2_1_2
-x 11
-y 22
-move_block 0
-end
 arch afloor_right
-x 11
-y 23
-end
-arch wight
-x 11
+x 19
 y 23
 end
 arch gwall_2_1_2
-x 11
+x 19
+y 23
+end
+arch afloor_right
+x 19
 y 24
 end
-arch gwall_2_1_2
-x 12
+arch skeleton
+x 19
+y 24
 end
 arch afloor_right
-x 12
-y 1
+x 19
+y 25
 end
-arch nightmare
-x 12
-y 1
-end
-arch afloor_right
-x 12
-y 2
-end
-arch gwall_2_1_2
-x 12
-y 2
+arch skeleton
+x 19
+y 25
 end
 arch afloor_right
-x 12
-y 3
+x 19
+y 26
 end
-arch wraith
-x 12
-y 3
-end
-arch afloor_right
-x 12
-y 4
-end
-arch gwall_2_2_3
-x 12
-y 4
+arch skeleton
+x 19
+y 26
 end
 arch afloor_right
-x 12
-y 5
+x 19
+y 27
 end
-arch gwall_3_2
-x 12
-y 5
+arch skeleton
+x 19
+y 27
 end
 arch afloor_right
-x 12
-y 6
+x 19
+y 28
+end
+arch skeleton
+x 19
+y 28
+end
+arch afloor_right
+x 19
+y 29
+end
+arch skeleton
+x 19
+y 29
+end
+arch afloor_right
+x 19
+y 30
 end
 arch locked_door1
 slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
-x 12
-y 6
+x 19
+y 30
 end
-arch gwall_2_1_1
-x 12
-y 6
+arch gwall_2_1_2
+x 19
+y 30
 move_block 0
 end
 arch afloor_right
-x 12
+x 19
+y 31
+end
+arch wight
+x 19
+y 31
+end
+arch gwall_2_1_2
+x 19
+y 32
+end
+arch flagstone
+x 19
+y 33
+end
+arch dwall_3_3
+x 19
+y 33
+end
+arch flagstone
+x 19
+y 34
+end
+arch dwall_4
+x 19
+y 34
+end
+arch flagstone
+x 19
+y 35
+end
+arch dwall_4
+x 19
+y 35
+end
+arch flagstone
+x 19
+y 36
+end
+arch dwall_4
+x 19
+y 36
+end
+arch flagstone
+x 19
+y 37
+end
+arch dwall_4
+x 19
+y 37
+end
+arch flagstone
+x 19
+y 38
+end
+arch dwall_3_1
+x 19
+y 38
+end
+arch blocked
+name nothing
+x 19
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 19
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 20
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 20
+y 1
+move_block 0
+blocksview 0
+end
+arch flagstone
+x 20
+y 2
+end
+arch dwall_3_3
+x 20
+y 2
+end
+arch flagstone
+x 20
+y 3
+end
+arch dwall_4
+x 20
+y 3
+end
+arch flagstone
+x 20
+y 4
+end
+arch dwall_4
+x 20
+y 4
+end
+arch flagstone
+x 20
+y 5
+end
+arch dwall_4
+x 20
+y 5
+end
+arch flagstone
+x 20
+y 6
+end
+arch dwall_4
+x 20
+y 6
+end
+arch flagstone
+x 20
 y 7
 end
-arch gwall_3_1
-x 12
+arch dwall_3_1
+x 20
 y 7
 end
-arch afloor_right
-x 12
-y 8
-end
-arch spectre
-x 12
+arch gwall_2_1_2
+x 20
 y 8
 end
 arch afloor_right
-x 12
+x 20
+y 9
+end
+arch nightmare
+x 20
 y 9
 end
 arch afloor_right
-x 12
+x 20
 y 10
 end
 arch gwall_2_1_2
-x 12
+x 20
 y 10
 end
 arch afloor_right
-x 12
+x 20
 y 11
+end
+arch wraith
+x 20
+y 11
+end
+arch afloor_right
+x 20
+y 12
+end
+arch gwall_2_2_3
+x 20
+y 12
+end
+arch afloor_right
+x 20
+y 13
+end
+arch gwall_3_2
+x 20
+y 13
+end
+arch afloor_right
+x 20
+y 14
+end
+arch locked_door1
+slaying 23
+msg
+The wall refuse to admit you in.
+endmsg
+x 20
+y 14
+end
+arch gwall_2_1_1
+x 20
+y 14
+move_block 0
+end
+arch afloor_right
+x 20
+y 15
+end
+arch gwall_3_1
+x 20
+y 15
+end
+arch afloor_right
+x 20
+y 16
+end
+arch spectre
+x 20
+y 16
+end
+arch afloor_right
+x 20
+y 17
+end
+arch afloor_right
+x 20
+y 18
+end
+arch gwall_2_1_2
+x 20
+y 18
+end
+arch afloor_right
+x 20
+y 19
 end
 arch sign
 msg
 This is the undead training level.  Be careful, some of them drain you! And other nasty things.  You need special magical dust to pass through walls.  And some undead carry them.  So you need to find them before you run out of magical dust.  Extreme caution is advised.
 endmsg
-x 12
-y 11
+x 20
+y 19
 end
 arch dungeon_floor
-x 12
-y 12
+x 20
+y 20
 end
 arch stair_3_down
 slaying tower2
-hp 12
-sp 12
-x 12
-y 12
+hp 20
+sp 20
+x 20
+y 20
 end
 arch dungeon_floor
-x 12
-y 13
+x 20
+y 21
 end
 arch stair_3_down
 slaying tower2
-hp 12
-sp 13
-x 12
-y 13
+hp 20
+sp 21
+x 20
+y 21
 end
 arch afloor_right
-x 12
-y 14
+x 20
+y 22
 end
 arch afloor_right
-x 12
-y 15
+x 20
+y 23
 end
 arch gwall_2_2_3
-x 12
-y 15
-end
-arch afloor_right
-x 12
-y 16
-end
-arch gwall_2_1_1
-x 12
-y 16
-end
-arch afloor_right
-x 12
-y 17
-end
-arch gwall_2_2_1
-x 12
-y 17
-end
-arch afloor_right
-x 12
-y 18
-end
-arch ghost
-x 12
-y 18
-end
-arch afloor_right
-x 12
-y 19
-end
-arch ghost
-x 12
-y 19
-end
-arch afloor_right
-x 12
-y 20
-end
-arch ghost
-x 12
-y 20
-end
-arch afloor_right
-x 12
-y 21
-end
-arch ghost
-x 12
-y 21
-end
-arch afloor_right
-x 12
-y 22
-end
-arch gwall_2_1_2
-x 12
-y 22
-end
-arch afloor_right
-x 12
+x 20
 y 23
 end
-arch wight
-x 12
-y 23
-end
-arch gwall_2_1_2
-x 12
+arch afloor_right
+x 20
 y 24
 end
+arch gwall_2_1_1
+x 20
+y 24
+end
+arch afloor_right
+x 20
+y 25
+end
+arch gwall_2_2_1
+x 20
+y 25
+end
+arch afloor_right
+x 20
+y 26
+end
+arch ghost
+x 20
+y 26
+end
+arch afloor_right
+x 20
+y 27
+end
+arch ghost
+x 20
+y 27
+end
+arch afloor_right
+x 20
+y 28
+end
+arch ghost
+x 20
+y 28
+end
+arch afloor_right
+x 20
+y 29
+end
+arch ghost
+x 20
+y 29
+end
+arch afloor_right
+x 20
+y 30
+end
 arch gwall_2_1_2
-x 13
+x 20
+y 30
 end
 arch afloor_right
-x 13
-y 1
+x 20
+y 31
 end
-arch nightmare
-x 13
-y 1
+arch wight
+x 20
+y 31
 end
-arch afloor_right
-x 13
+arch gwall_2_1_2
+x 20
+y 32
+end
+arch flagstone
+x 20
+y 33
+end
+arch dwall_3_3
+x 20
+y 33
+end
+arch flagstone
+x 20
+y 34
+end
+arch dwall_4
+x 20
+y 34
+end
+arch flagstone
+x 20
+y 35
+end
+arch dwall_4
+x 20
+y 35
+end
+arch flagstone
+x 20
+y 36
+end
+arch dwall_4
+x 20
+y 36
+end
+arch flagstone
+x 20
+y 37
+end
+arch dwall_4
+x 20
+y 37
+end
+arch flagstone
+x 20
+y 38
+end
+arch dwall_3_1
+x 20
+y 38
+end
+arch blocked
+name nothing
+x 20
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 20
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 21
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 21
+y 1
+move_block 0
+blocksview 0
+end
+arch flagstone
+x 21
 y 2
 end
-arch gwall_2_1_2
-x 13
+arch dwall_3_3
+x 21
 y 2
 end
-arch afloor_right
-x 13
+arch flagstone
+x 21
 y 3
 end
-arch wraith
-x 13
+arch dwall_4
+x 21
 y 3
 end
-arch afloor_right
-x 13
+arch flagstone
+x 21
 y 4
 end
-arch wraith
-x 13
+arch dwall_4
+x 21
 y 4
 end
-arch afloor_right
-x 13
+arch flagstone
+x 21
 y 5
 end
-arch gwall_2_1_2
-x 13
+arch dwall_4
+x 21
 y 5
 end
-arch afloor_right
-x 13
+arch flagstone
+x 21
 y 6
 end
-arch wraith
-x 13
+arch dwall_4
+x 21
 y 6
 end
-arch afloor_right
-x 13
+arch flagstone
+x 21
+y 7
+end
+arch dwall_3_1
+x 21
 y 7
 end
 arch gwall_2_1_2
-x 13
-y 7
-end
-arch afloor_right
-x 13
+x 21
 y 8
 end
 arch afloor_right
-x 13
+x 21
+y 9
+end
+arch nightmare
+x 21
 y 9
 end
 arch afloor_right
-x 13
+x 21
 y 10
 end
 arch gwall_2_1_2
-x 13
+x 21
 y 10
 end
 arch afloor_right
-x 13
+x 21
 y 11
 end
-arch dungeon_floor
-x 13
+arch wraith
+x 21
+y 11
+end
+arch afloor_right
+x 21
 y 12
 end
-arch stair_3_down
-slaying tower2
-hp 13
-sp 12
-x 13
+arch wraith
+x 21
 y 12
 end
-arch dungeon_floor
-x 13
+arch afloor_right
+x 21
 y 13
 end
-arch stair_3_down
-slaying tower2
-hp 13
-sp 13
-x 13
+arch gwall_2_1_2
+x 21
 y 13
 end
 arch afloor_right
-x 13
+x 21
 y 14
 end
-arch magic_banned
-x 13
+arch wraith
+x 21
+y 14
+end
+arch afloor_right
+x 21
+y 15
+end
+arch gwall_2_1_2
+x 21
 y 15
 end
 arch afloor_right
-x 13
-y 15
+x 21
+y 16
+end
+arch afloor_right
+x 21
+y 17
+end
+arch afloor_right
+x 21
+y 18
+end
+arch gwall_2_1_2
+x 21
+y 18
+end
+arch afloor_right
+x 21
+y 19
+end
+arch dungeon_floor
+x 21
+y 20
+end
+arch stair_3_down
+slaying tower2
+hp 21
+sp 20
+x 21
+y 20
+end
+arch dungeon_floor
+x 21
+y 21
+end
+arch stair_3_down
+slaying tower2
+hp 21
+sp 21
+x 21
+y 21
+end
+arch afloor_right
+x 21
+y 22
+end
+arch magic_banned
+x 21
+y 23
+end
+arch afloor_right
+x 21
+y 23
 end
 arch locked_door1
 slaying 301
 msg
 The dark panther pushes you back.
 endmsg
-x 13
-y 15
+x 21
+y 23
 end
 arch statue
 name Dark panther
@@ -2796,17 +6874,17 @@ If you finish the training and get the dust of the Fierce Spectre to prove it, I
 Hello.  Finish the training and you may get a prize.
 endmsg
 face panther.131
-x 13
-y 15
+x 21
+y 23
 move_block 0
 end
 arch afloor_right
-x 13
-y 16
+x 21
+y 24
 end
 arch table_3
-x 13
-y 16
+x 21
+y 24
 end
 arch sting
 name Undead Banisher
@@ -2814,1776 +6892,2768 @@ slaying undead
 msg
 The Banisher glows with fierce bright light.  You feel its hunger for power.
 endmsg
-x 13
-y 16
-end
-arch afloor_right
-x 13
-y 17
-end
-arch gwall_2_1_2
-x 13
-y 17
-end
-arch afloor_right
-x 13
-y 18
-end
-arch wraith
-x 13
-y 18
-end
-arch afloor_right
-x 13
-y 19
-end
-arch wraith
-x 13
-y 19
-end
-arch afloor_right
-x 13
-y 20
-end
-arch wraith
-x 13
-y 20
-end
-arch afloor_right
-x 13
-y 21
-end
-arch wraith
-x 13
-y 21
-end
-arch afloor_right
-x 13
-y 22
-end
-arch gwall_2_1_2
-x 13
-y 22
-end
-arch afloor_right
-x 13
-y 23
-end
-arch wight
-x 13
-y 23
-end
-arch gwall_2_1_2
-x 13
+x 21
 y 24
 end
+arch afloor_right
+x 21
+y 25
+end
 arch gwall_2_1_2
-x 14
+x 21
+y 25
 end
 arch afloor_right
-x 14
+x 21
+y 26
+end
+arch wraith
+x 21
+y 26
+end
+arch afloor_right
+x 21
+y 27
+end
+arch wraith
+x 21
+y 27
+end
+arch afloor_right
+x 21
+y 28
+end
+arch wraith
+x 21
+y 28
+end
+arch afloor_right
+x 21
+y 29
+end
+arch wraith
+x 21
+y 29
+end
+arch afloor_right
+x 21
+y 30
+end
+arch gwall_2_1_2
+x 21
+y 30
+end
+arch afloor_right
+x 21
+y 31
+end
+arch wight
+x 21
+y 31
+end
+arch gwall_2_1_2
+x 21
+y 32
+end
+arch flagstone
+x 21
+y 33
+end
+arch dwall_3_3
+x 21
+y 33
+end
+arch flagstone
+x 21
+y 34
+end
+arch dwall_4
+x 21
+y 34
+end
+arch flagstone
+x 21
+y 35
+end
+arch dwall_4
+x 21
+y 35
+end
+arch flagstone
+x 21
+y 36
+end
+arch dwall_4
+x 21
+y 36
+end
+arch flagstone
+x 21
+y 37
+end
+arch dwall_4
+x 21
+y 37
+end
+arch flagstone
+x 21
+y 38
+end
+arch dwall_3_1
+x 21
+y 38
+end
+arch blocked
+name nothing
+x 21
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 21
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 22
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 22
 y 1
+move_block 0
+blocksview 0
+end
+arch flagstone
+x 22
+y 2
+end
+arch dwall_3_3
+x 22
+y 2
+end
+arch flagstone
+x 22
+y 3
+end
+arch dwall_4
+x 22
+y 3
+end
+arch flagstone
+x 22
+y 4
+end
+arch dwall_4
+x 22
+y 4
+end
+arch flagstone
+x 22
+y 5
+end
+arch dwall_4
+x 22
+y 5
+end
+arch flagstone
+x 22
+y 6
+end
+arch dwall_4
+x 22
+y 6
+end
+arch flagstone
+x 22
+y 7
+end
+arch dwall_3_1
+x 22
+y 7
+end
+arch gwall_2_1_2
+x 22
+y 8
+end
+arch afloor_right
+x 22
+y 9
 end
 arch nightmare
-x 14
-y 1
+x 22
+y 9
 end
 arch afloor_right
-x 14
-y 2
+x 22
+y 10
 end
 arch gwall_2_1_2
-x 14
-y 2
+x 22
+y 10
 end
 arch afloor_right
-x 14
-y 3
+x 22
+y 11
 end
 arch wraith
-x 14
-y 3
+x 22
+y 11
 end
 arch afloor_right
-x 14
-y 4
+x 22
+y 12
 end
 arch gwall_2_2_2
-x 14
-y 4
-end
-arch afloor_right
-x 14
-y 5
-end
-arch gwall_2_2_4
-x 14
-y 5
-end
-arch afloor_right
-x 14
-y 6
-end
-arch wraith
-x 14
-y 6
-end
-arch afloor_right
-x 14
-y 7
-end
-arch gwall_2_1_2
-x 14
-y 7
-end
-arch afloor_right
-x 14
-y 8
-end
-arch spectre
-x 14
-y 8
-end
-arch afloor_right
-x 14
-y 9
-end
-arch spectre
-x 14
-y 9
-end
-arch afloor_right
-x 14
-y 10
-end
-arch gwall_2_1_2
-x 14
-y 10
-end
-arch afloor_right
-x 14
-y 11
-end
-arch stair_3_up
-slaying tower4
-hp 14
-sp 11
-x 14
-y 11
-end
-arch afloor_right
-x 14
+x 22
 y 12
 end
 arch afloor_right
-x 14
+x 22
+y 13
+end
+arch gwall_2_2_4
+x 22
 y 13
 end
 arch afloor_right
-x 14
+x 22
 y 14
+end
+arch wraith
+x 22
+y 14
+end
+arch afloor_right
+x 22
+y 15
+end
+arch gwall_2_1_2
+x 22
+y 15
+end
+arch afloor_right
+x 22
+y 16
+end
+arch spectre
+x 22
+y 16
+end
+arch afloor_right
+x 22
+y 17
+end
+arch spectre
+x 22
+y 17
+end
+arch afloor_right
+x 22
+y 18
+end
+arch gwall_2_1_2
+x 22
+y 18
+end
+arch afloor_right
+x 22
+y 19
 end
 arch stair_3_up
 slaying tower4
-hp 14
-sp 14
-x 14
+hp 22
+sp 19
+x 22
+y 19
+end
+arch afloor_right
+x 22
+y 20
+end
+arch afloor_right
+x 22
+y 21
+end
+arch afloor_right
+x 22
+y 22
+end
+arch stair_3_up
+slaying tower4
+hp 22
+sp 22
+x 22
+y 22
+end
+arch afloor_right
+x 22
+y 23
+end
+arch gwall_2_2_2
+x 22
+y 23
+end
+arch afloor_right
+x 22
+y 24
+end
+arch gwall_2_1_1
+x 22
+y 24
+end
+arch afloor_right
+x 22
+y 25
+end
+arch gwall_3_4
+x 22
+y 25
+end
+arch afloor_right
+x 22
+y 26
+end
+arch gwall_2_1_1
+x 22
+y 26
+end
+arch afloor_right
+x 22
+y 27
+end
+arch gwall_3_2
+x 22
+y 27
+end
+arch afloor_right
+x 22
+y 28
+end
+arch gwall_2_1_1
+x 22
+y 28
+end
+arch afloor_right
+x 22
+y 29
+end
+arch gwall_2_1_1
+x 22
+y 29
+end
+arch afloor_right
+x 22
+y 30
+end
+arch gwall_2_2_4
+x 22
+y 30
+end
+arch afloor_right
+x 22
+y 31
+end
+arch wight
+x 22
+y 31
+end
+arch gwall_2_1_2
+x 22
+y 32
+end
+arch flagstone
+x 22
+y 33
+end
+arch dwall_3_3
+x 22
+y 33
+end
+arch flagstone
+x 22
+y 34
+end
+arch dwall_4
+x 22
+y 34
+end
+arch flagstone
+x 22
+y 35
+end
+arch dwall_4
+x 22
+y 35
+end
+arch flagstone
+x 22
+y 36
+end
+arch dwall_4
+x 22
+y 36
+end
+arch flagstone
+x 22
+y 37
+end
+arch dwall_4
+x 22
+y 37
+end
+arch flagstone
+x 22
+y 38
+end
+arch dwall_3_1
+x 22
+y 38
+end
+arch blocked
+name nothing
+x 22
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 22
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 23
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 23
+y 1
+move_block 0
+blocksview 0
+end
+arch flagstone
+x 23
+y 2
+end
+arch dwall_3_3
+x 23
+y 2
+end
+arch flagstone
+x 23
+y 3
+end
+arch dwall_4
+x 23
+y 3
+end
+arch flagstone
+x 23
+y 4
+end
+arch dwall_4
+x 23
+y 4
+end
+arch flagstone
+x 23
+y 5
+end
+arch dwall_4
+x 23
+y 5
+end
+arch flagstone
+x 23
+y 6
+end
+arch dwall_4
+x 23
+y 6
+end
+arch flagstone
+x 23
+y 7
+end
+arch dwall_3_1
+x 23
+y 7
+end
+arch gwall_2_1_2
+x 23
+y 8
+end
+arch afloor_right
+x 23
+y 9
+end
+arch nightmare
+x 23
+y 9
+end
+arch afloor_right
+x 23
+y 10
+end
+arch gwall_2_1_2
+x 23
+y 10
+end
+arch afloor_right
+x 23
+y 11
+end
+arch wraith
+x 23
+y 11
+end
+arch afloor_right
+x 23
+y 12
+end
+arch gwall_2_1_2
+x 23
+y 12
+end
+arch afloor_right
+x 23
+y 13
+end
+arch wraith
+x 23
+y 13
+end
+arch afloor_right
+x 23
+y 14
+end
+arch wraith
+x 23
 y 14
 end
 arch afloor_right
-x 14
+x 23
 y 15
-end
-arch gwall_2_2_2
-x 14
-y 15
-end
-arch afloor_right
-x 14
-y 16
-end
-arch gwall_2_1_1
-x 14
-y 16
-end
-arch afloor_right
-x 14
-y 17
-end
-arch gwall_3_4
-x 14
-y 17
-end
-arch afloor_right
-x 14
-y 18
-end
-arch gwall_2_1_1
-x 14
-y 18
-end
-arch afloor_right
-x 14
-y 19
-end
-arch gwall_3_2
-x 14
-y 19
-end
-arch afloor_right
-x 14
-y 20
-end
-arch gwall_2_1_1
-x 14
-y 20
-end
-arch afloor_right
-x 14
-y 21
-end
-arch gwall_2_1_1
-x 14
-y 21
-end
-arch afloor_right
-x 14
-y 22
-end
-arch gwall_2_2_4
-x 14
-y 22
-end
-arch afloor_right
-x 14
-y 23
-end
-arch wight
-x 14
-y 23
-end
-arch gwall_2_1_2
-x 14
-y 24
-end
-arch gwall_2_1_2
-x 15
-end
-arch afloor_right
-x 15
-y 1
-end
-arch nightmare
-x 15
-y 1
-end
-arch afloor_right
-x 15
-y 2
-end
-arch gwall_2_1_2
-x 15
-y 2
-end
-arch afloor_right
-x 15
-y 3
-end
-arch wraith
-x 15
-y 3
-end
-arch afloor_right
-x 15
-y 4
-end
-arch gwall_2_1_2
-x 15
-y 4
-end
-arch afloor_right
-x 15
-y 5
-end
-arch wraith
-x 15
-y 5
-end
-arch afloor_right
-x 15
-y 6
-end
-arch wraith
-x 15
-y 6
-end
-arch afloor_right
-x 15
-y 7
 end
 arch gwall_3_3
-x 15
-y 7
+x 23
+y 15
 end
 arch afloor_right
-x 15
-y 8
+x 23
+y 16
 end
 arch gwall_2_1_1
-x 15
-y 8
+x 23
+y 16
 end
 arch afloor_right
-x 15
-y 9
+x 23
+y 17
 end
 arch gwall_3_2
-x 15
-y 9
+x 23
+y 17
 end
 arch afloor_right
-x 15
-y 10
+x 23
+y 18
 end
 arch gwall_3_4
-x 15
-y 10
+x 23
+y 18
 end
 arch afloor_right
-x 15
-y 11
+x 23
+y 19
 end
 arch gwall_2_1_1
-x 15
-y 11
+x 23
+y 19
 end
 arch afloor_right
-x 15
-y 12
+x 23
+y 20
 end
 arch gwall_2_1_1
-x 15
-y 12
+x 23
+y 20
 end
 arch afloor_right
-x 15
-y 13
+x 23
+y 21
 end
 arch gwall_2_1_1
-x 15
-y 13
+x 23
+y 21
 end
 arch afloor_right
-x 15
-y 14
+x 23
+y 22
 end
 arch gwall_2_1_1
-x 15
-y 14
+x 23
+y 22
 end
 arch afloor_right
-x 15
-y 15
+x 23
+y 23
 end
 arch gwall_3_1
-x 15
-y 15
+x 23
+y 23
 end
 arch afloor_right
-x 15
-y 16
+x 23
+y 24
 end
 arch nightmare
-x 15
-y 16
+x 23
+y 24
 end
 arch afloor_right
-x 15
-y 17
+x 23
+y 25
 end
 arch nightmare
-x 15
-y 17
+x 23
+y 25
 end
 arch afloor_right
-x 15
-y 18
+x 23
+y 26
 end
 arch nightmare
-x 15
-y 18
+x 23
+y 26
 end
 arch afloor_right
-x 15
-y 19
+x 23
+y 27
 end
 arch locked_door1
 slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
-x 15
-y 19
+x 23
+y 27
 end
 arch gwall_2_1_2
-x 15
-y 19
+x 23
+y 27
 move_block 0
 end
 arch afloor_right
-x 15
-y 20
+x 23
+y 28
 end
 arch wight
-x 15
-y 20
+x 23
+y 28
 end
 arch afloor_right
-x 15
-y 21
+x 23
+y 29
 end
 arch wight
-x 15
-y 21
+x 23
+y 29
 end
 arch afloor_right
-x 15
-y 22
+x 23
+y 30
 end
 arch wight
-x 15
-y 22
+x 23
+y 30
 end
 arch afloor_right
-x 15
-y 23
+x 23
+y 31
 end
 arch wight
-x 15
-y 23
+x 23
+y 31
 end
 arch gwall_2_1_2
-x 15
-y 24
+x 23
+y 32
 end
-arch gwall_2_1_2
-x 16
+arch flagstone
+x 23
+y 33
 end
-arch afloor_right
-x 16
+arch dwall_3_3
+x 23
+y 33
+end
+arch flagstone
+x 23
+y 34
+end
+arch dwall_4
+x 23
+y 34
+end
+arch flagstone
+x 23
+y 35
+end
+arch dwall_4
+x 23
+y 35
+end
+arch flagstone
+x 23
+y 36
+end
+arch dwall_4
+x 23
+y 36
+end
+arch flagstone
+x 23
+y 37
+end
+arch dwall_4
+x 23
+y 37
+end
+arch flagstone
+x 23
+y 38
+end
+arch dwall_3_1
+x 23
+y 38
+end
+arch blocked
+name nothing
+x 23
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 23
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 24
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 24
 y 1
+move_block 0
+blocksview 0
+end
+arch flagstone
+x 24
+y 2
+end
+arch dwall_3_3
+x 24
+y 2
+end
+arch flagstone
+x 24
+y 3
+end
+arch dwall_4
+x 24
+y 3
+end
+arch flagstone
+x 24
+y 4
+end
+arch dwall_4
+x 24
+y 4
+end
+arch flagstone
+x 24
+y 5
+end
+arch dwall_4
+x 24
+y 5
+end
+arch flagstone
+x 24
+y 6
+end
+arch dwall_4
+x 24
+y 6
+end
+arch flagstone
+x 24
+y 7
+end
+arch dwall_3_1
+x 24
+y 7
+end
+arch gwall_2_1_2
+x 24
+y 8
+end
+arch afloor_right
+x 24
+y 9
 end
 arch nightmare
-x 16
-y 1
+x 24
+y 9
 end
 arch afloor_right
-x 16
-y 2
+x 24
+y 10
 end
 arch gwall_3_3
-x 16
-y 2
+x 24
+y 10
 end
 arch afloor_right
-x 16
-y 3
+x 24
+y 11
 end
 arch gwall_2_1_1
-x 16
-y 3
+x 24
+y 11
 end
 arch afloor_right
-x 16
-y 4
+x 24
+y 12
 end
 arch gwall_4
-x 16
-y 4
+x 24
+y 12
 end
 arch afloor_right
-x 16
-y 5
+x 24
+y 13
 end
 arch gwall_2_1_1
-x 16
-y 5
+x 24
+y 13
 end
 arch afloor_right
-x 16
-y 6
+x 24
+y 14
 end
 arch locked_door1
 slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
-x 16
-y 6
+x 24
+y 14
 end
 arch gwall_2_1_1
-x 16
-y 6
+x 24
+y 14
 move_block 0
 end
 arch afloor_right
-x 16
-y 7
+x 24
+y 15
 end
 arch gwall_3_1
-x 16
-y 7
+x 24
+y 15
 end
 arch afloor_right
-x 16
-y 8
+x 24
+y 16
 end
 arch wraith
-x 16
-y 8
+x 24
+y 16
 end
 arch afloor_right
-x 16
-y 9
+x 24
+y 17
 end
 arch locked_door1
 slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
-x 16
-y 9
+x 24
+y 17
 end
 arch gwall_2_1_2
-x 16
-y 9
+x 24
+y 17
 move_block 0
 end
 arch afloor_right
-x 16
-y 10
+x 24
+y 18
 end
 arch ghast
-x 16
-y 10
+x 24
+y 18
 end
 arch afloor_right
-x 16
-y 11
+x 24
+y 19
 end
 arch wraith
-x 16
-y 11
+x 24
+y 19
 end
 arch afloor_right
-x 16
-y 12
+x 24
+y 20
 end
 arch wight
-x 16
-y 12
+x 24
+y 20
 end
 arch afloor_right
-x 16
-y 13
+x 24
+y 21
 end
 arch skeleton
-x 16
-y 13
+x 24
+y 21
 end
 arch afloor_right
-x 16
-y 14
+x 24
+y 22
 end
 arch skeleton
-x 16
-y 14
+x 24
+y 22
 end
 arch afloor_right
-x 16
-y 15
+x 24
+y 23
 end
 arch gwall_3_3
-x 16
-y 15
+x 24
+y 23
 end
 arch afloor_right
-x 16
-y 16
+x 24
+y 24
 end
 arch locked_door1
 slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
-x 16
-y 16
+x 24
+y 24
 end
 arch gwall_2_1_1
-x 16
-y 16
+x 24
+y 24
 move_block 0
 end
 arch afloor_right
-x 16
-y 17
+x 24
+y 25
 end
 arch gwall_2_1_1
-x 16
-y 17
+x 24
+y 25
 end
 arch afloor_right
-x 16
-y 18
+x 24
+y 26
 end
 arch gwall_2_1_1
-x 16
-y 18
+x 24
+y 26
 end
 arch afloor_right
-x 16
-y 19
+x 24
+y 27
 end
 arch gwall_3_1
-x 16
-y 19
+x 24
+y 27
 end
 arch afloor_right
-x 16
-y 20
+x 24
+y 28
 end
 arch wight
-x 16
-y 20
+x 24
+y 28
 end
 arch afloor_right
-x 16
-y 21
+x 24
+y 29
 end
 arch wight
-x 16
-y 21
+x 24
+y 29
 end
 arch afloor_right
-x 16
-y 22
+x 24
+y 30
 end
 arch wight
-x 16
-y 22
+x 24
+y 30
 end
 arch afloor_right
-x 16
-y 23
+x 24
+y 31
 end
 arch wight
-x 16
-y 23
+x 24
+y 31
 end
 arch gwall_2_1_2
-x 16
-y 24
+x 24
+y 32
 end
-arch gwall_2_1_2
-x 17
+arch flagstone
+x 24
+y 33
 end
-arch afloor_right
-x 17
+arch dwall_3_3
+x 24
+y 33
+end
+arch flagstone
+x 24
+y 34
+end
+arch dwall_4
+x 24
+y 34
+end
+arch flagstone
+x 24
+y 35
+end
+arch dwall_4
+x 24
+y 35
+end
+arch flagstone
+x 24
+y 36
+end
+arch dwall_4
+x 24
+y 36
+end
+arch flagstone
+x 24
+y 37
+end
+arch dwall_4
+x 24
+y 37
+end
+arch flagstone
+x 24
+y 38
+end
+arch dwall_3_1
+x 24
+y 38
+end
+arch blocked
+name nothing
+x 24
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 24
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 25
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 25
 y 1
+move_block 0
+blocksview 0
+end
+arch flagstone
+x 25
+y 2
+end
+arch dwall_3_3
+x 25
+y 2
+end
+arch flagstone
+x 25
+y 3
+end
+arch dwall_4
+x 25
+y 3
+end
+arch flagstone
+x 25
+y 4
+end
+arch dwall_4
+x 25
+y 4
+end
+arch flagstone
+x 25
+y 5
+end
+arch dwall_4
+x 25
+y 5
+end
+arch flagstone
+x 25
+y 6
+end
+arch dwall_4
+x 25
+y 6
+end
+arch flagstone
+x 25
+y 7
+end
+arch dwall_3_1
+x 25
+y 7
+end
+arch gwall_2_1_2
+x 25
+y 8
+end
+arch afloor_right
+x 25
+y 9
 end
 arch nightmare
-x 17
-y 1
+x 25
+y 9
 end
 arch afloor_right
-x 17
-y 2
+x 25
+y 10
 end
 arch gwall_2_1_2
-x 17
-y 2
+x 25
+y 10
 end
 arch afloor_right
-x 17
-y 3
+x 25
+y 11
 end
 arch teleporter
 slaying tower0
 hp 12
 sp 1
-x 17
-y 3
+x 25
+y 11
 end
 arch afloor_right
-x 17
-y 4
+x 25
+y 12
 end
 arch gwall_2_1_2
-x 17
-y 4
+x 25
+y 12
 end
 arch afloor_right
-x 17
-y 5
+x 25
+y 13
 end
 arch grimreaper
-x 17
-y 5
+x 25
+y 13
 end
 arch afloor_right
-x 17
-y 6
+x 25
+y 14
 end
 arch grimreaper
-x 17
-y 6
+x 25
+y 14
 end
 arch afloor_right
-x 17
-y 7
+x 25
+y 15
 end
 arch gwall_3_3
-x 17
-y 7
+x 25
+y 15
 end
 arch afloor_right
-x 17
-y 8
+x 25
+y 16
 end
 arch locked_door1
 slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
-x 17
-y 8
+x 25
+y 16
 end
 arch gwall_2_1_1
-x 17
-y 8
+x 25
+y 16
 move_block 0
 end
 arch afloor_right
-x 17
-y 9
+x 25
+y 17
 end
 arch gwall_3_1
-x 17
+x 25
+y 17
+end
+arch afloor_right
+x 25
+y 18
+end
+arch ghast
+x 25
+y 18
+end
+arch afloor_right
+x 25
+y 19
+end
+arch wraith
+x 25
+y 19
+end
+arch afloor_right
+x 25
+y 20
+end
+arch wight
+x 25
+y 20
+end
+arch afloor_right
+x 25
+y 21
+end
+arch nightmare
+x 25
+y 21
+end
+arch afloor_right
+x 25
+y 22
+end
+arch skeleton
+x 25
+y 22
+end
+arch afloor_right
+x 25
+y 23
+end
+arch gwall_2_1_2
+x 25
+y 23
+end
+arch afloor_right
+x 25
+y 24
+end
+arch nightmare
+x 25
+y 24
+end
+arch afloor_right
+x 25
+y 25
+end
+arch nightmare
+x 25
+y 25
+end
+arch afloor_right
+x 25
+y 26
+end
+arch nightmare
+x 25
+y 26
+end
+arch afloor_right
+x 25
+y 27
+end
+arch gwall_2_1_2
+x 25
+y 27
+end
+arch afloor_right
+x 25
+y 28
+end
+arch wight
+x 25
+y 28
+end
+arch afloor_right
+x 25
+y 29
+end
+arch wight
+x 25
+y 29
+end
+arch afloor_right
+x 25
+y 30
+end
+arch wight
+x 25
+y 30
+end
+arch afloor_right
+x 25
+y 31
+end
+arch wight
+x 25
+y 31
+end
+arch gwall_2_1_2
+x 25
+y 32
+end
+arch flagstone
+x 25
+y 33
+end
+arch dwall_3_3
+x 25
+y 33
+end
+arch flagstone
+x 25
+y 34
+end
+arch dwall_4
+x 25
+y 34
+end
+arch flagstone
+x 25
+y 35
+end
+arch dwall_4
+x 25
+y 35
+end
+arch flagstone
+x 25
+y 36
+end
+arch dwall_4
+x 25
+y 36
+end
+arch flagstone
+x 25
+y 37
+end
+arch dwall_4
+x 25
+y 37
+end
+arch flagstone
+x 25
+y 38
+end
+arch dwall_3_1
+x 25
+y 38
+end
+arch blocked
+name nothing
+x 25
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 25
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 26
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 26
+y 1
+move_block 0
+blocksview 0
+end
+arch flagstone
+x 26
+y 2
+end
+arch dwall_3_3
+x 26
+y 2
+end
+arch flagstone
+x 26
+y 3
+end
+arch dwall_4
+x 26
+y 3
+end
+arch flagstone
+x 26
+y 4
+end
+arch dwall_4
+x 26
+y 4
+end
+arch flagstone
+x 26
+y 5
+end
+arch dwall_4
+x 26
+y 5
+end
+arch flagstone
+x 26
+y 6
+end
+arch dwall_4
+x 26
+y 6
+end
+arch flagstone
+x 26
+y 7
+end
+arch dwall_3_1
+x 26
+y 7
+end
+arch gwall_2_1_2
+x 26
+y 8
+end
+arch afloor_right
+x 26
+y 9
+end
+arch nightmare
+x 26
 y 9
 end
 arch afloor_right
-x 17
+x 26
 y 10
 end
-arch ghast
-x 17
+arch gwall_2_1_2
+x 26
 y 10
 end
 arch afloor_right
-x 17
+x 26
 y 11
-end
-arch wraith
-x 17
-y 11
-end
-arch afloor_right
-x 17
-y 12
-end
-arch wight
-x 17
-y 12
-end
-arch afloor_right
-x 17
-y 13
-end
-arch nightmare
-x 17
-y 13
-end
-arch afloor_right
-x 17
-y 14
-end
-arch skeleton
-x 17
-y 14
-end
-arch afloor_right
-x 17
-y 15
-end
-arch gwall_2_1_2
-x 17
-y 15
-end
-arch afloor_right
-x 17
-y 16
-end
-arch nightmare
-x 17
-y 16
-end
-arch afloor_right
-x 17
-y 17
-end
-arch nightmare
-x 17
-y 17
-end
-arch afloor_right
-x 17
-y 18
-end
-arch nightmare
-x 17
-y 18
-end
-arch afloor_right
-x 17
-y 19
-end
-arch gwall_2_1_2
-x 17
-y 19
-end
-arch afloor_right
-x 17
-y 20
-end
-arch wight
-x 17
-y 20
-end
-arch afloor_right
-x 17
-y 21
-end
-arch wight
-x 17
-y 21
-end
-arch afloor_right
-x 17
-y 22
-end
-arch wight
-x 17
-y 22
-end
-arch afloor_right
-x 17
-y 23
-end
-arch wight
-x 17
-y 23
-end
-arch gwall_2_1_2
-x 17
-y 24
-end
-arch gwall_2_1_2
-x 18
-end
-arch afloor_right
-x 18
-y 1
-end
-arch nightmare
-x 18
-y 1
-end
-arch afloor_right
-x 18
-y 2
-end
-arch gwall_2_1_2
-x 18
-y 2
-end
-arch afloor_right
-x 18
-y 3
 end
 arch random_bow
-x 18
-y 3
+x 26
+y 11
 end
 arch random_food
-x 18
-y 3
+x 26
+y 11
 end
 arch random_spells
-x 18
-y 3
+x 26
+y 11
 end
 arch random_spells
-x 18
-y 3
+x 26
+y 11
 end
 arch random_food
-x 18
-y 3
+x 26
+y 11
 end
 arch random_spells
-x 18
-y 3
+x 26
+y 11
 end
 arch random_shield
-x 18
-y 3
+x 26
+y 11
 end
 arch random_potion
-x 18
-y 3
+x 26
+y 11
 end
 arch random_talisman
-x 18
-y 3
+x 26
+y 11
 end
 arch random_weapon
-x 18
-y 3
+x 26
+y 11
 end
 arch random_spells
-x 18
-y 3
+x 26
+y 11
 end
 arch random_shield
-x 18
-y 3
+x 26
+y 11
 end
 arch random_wealth
-x 18
-y 3
+x 26
+y 11
 end
 arch random_talisman
-x 18
-y 3
+x 26
+y 11
 end
 arch random_treasure
-x 18
-y 3
+x 26
+y 11
 end
 arch random_wealth
-x 18
-y 3
+x 26
+y 11
 end
 arch random_treasure
-x 18
-y 3
+x 26
+y 11
 end
 arch random_weapon
-x 18
-y 3
+x 26
+y 11
 end
 arch random_weapon
-x 18
-y 3
+x 26
+y 11
 end
 arch random_weapon
-x 18
-y 3
+x 26
+y 11
 end
 arch random_food
-x 18
-y 3
+x 26
+y 11
 end
 arch random_food
-x 18
-y 3
+x 26
+y 11
 end
 arch sign
 msg
 Congratulations for making so far.  It's a good option to step on the teleporter and leave now.  But there are greater rewards with greater challenge waiting.
 endmsg
-x 18
-y 3
+x 26
+y 11
 end
 arch afloor_right
-x 18
-y 4
+x 26
+y 12
 end
 arch locked_door1
 slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
-x 18
-y 4
+x 26
+y 12
 end
 arch gwall_2_1_2
-x 18
-y 4
+x 26
+y 12
 move_block 0
 end
 arch afloor_right
-x 18
-y 5
+x 26
+y 13
 end
 arch grimreaper
-x 18
-y 5
+x 26
+y 13
 end
 arch afloor_right
-x 18
-y 6
+x 26
+y 14
 end
 arch grimreaper
-x 18
-y 6
+x 26
+y 14
 end
 arch afloor_right
-x 18
-y 7
+x 26
+y 15
 end
 arch gwall_2_1_2
-x 18
-y 7
+x 26
+y 15
 end
 arch afloor_right
-x 18
-y 8
+x 26
+y 16
 end
 arch grimreaper
-x 18
-y 8
+x 26
+y 16
 end
 arch afloor_right
-x 18
-y 9
+x 26
+y 17
 end
 arch gwall_2_1_2
-x 18
-y 9
+x 26
+y 17
 end
 arch afloor_right
-x 18
-y 10
+x 26
+y 18
 end
 arch ghast
-x 18
-y 10
+x 26
+y 18
 end
 arch afloor_right
-x 18
-y 11
+x 26
+y 19
 end
 arch wraith
-x 18
-y 11
+x 26
+y 19
 end
 arch afloor_right
-x 18
-y 12
+x 26
+y 20
 end
 arch wight
-x 18
-y 12
+x 26
+y 20
 end
 arch afloor_right
-x 18
-y 13
+x 26
+y 21
 end
 arch nightmare
-x 18
-y 13
+x 26
+y 21
 end
 arch afloor_right
-x 18
-y 14
+x 26
+y 22
 end
 arch skeleton
-x 18
-y 14
-end
-arch afloor_right
-x 18
-y 15
-end
-arch gwall_2_1_2
-x 18
-y 15
-end
-arch afloor_right
-x 18
-y 16
-end
-arch nightmare
-x 18
-y 16
-end
-arch afloor_right
-x 18
-y 17
-end
-arch nightmare
-x 18
-y 17
-end
-arch afloor_right
-x 18
-y 18
-end
-arch nightmare
-x 18
-y 18
-end
-arch afloor_right
-x 18
-y 19
-end
-arch gwall_2_1_2
-x 18
-y 19
-end
-arch afloor_right
-x 18
-y 20
-end
-arch ghast
-x 18
-y 20
-end
-arch afloor_right
-x 18
-y 21
-end
-arch ghast
-x 18
-y 21
-end
-arch afloor_right
-x 18
-y 22
-end
-arch ghast
-x 18
+x 26
 y 22
 end
 arch afloor_right
-x 18
-y 23
-end
-arch ghast
-x 18
+x 26
 y 23
 end
 arch gwall_2_1_2
-x 18
+x 26
+y 23
+end
+arch afloor_right
+x 26
 y 24
 end
-arch gwall_3_3
-x 19
+arch nightmare
+x 26
+y 24
 end
 arch afloor_right
-x 19
+x 26
+y 25
+end
+arch nightmare
+x 26
+y 25
+end
+arch afloor_right
+x 26
+y 26
+end
+arch nightmare
+x 26
+y 26
+end
+arch afloor_right
+x 26
+y 27
+end
+arch gwall_2_1_2
+x 26
+y 27
+end
+arch afloor_right
+x 26
+y 28
+end
+arch ghast
+x 26
+y 28
+end
+arch afloor_right
+x 26
+y 29
+end
+arch ghast
+x 26
+y 29
+end
+arch afloor_right
+x 26
+y 30
+end
+arch ghast
+x 26
+y 30
+end
+arch afloor_right
+x 26
+y 31
+end
+arch ghast
+x 26
+y 31
+end
+arch gwall_2_1_2
+x 26
+y 32
+end
+arch flagstone
+x 26
+y 33
+end
+arch dwall_3_3
+x 26
+y 33
+end
+arch flagstone
+x 26
+y 34
+end
+arch dwall_4
+x 26
+y 34
+end
+arch flagstone
+x 26
+y 35
+end
+arch dwall_4
+x 26
+y 35
+end
+arch flagstone
+x 26
+y 36
+end
+arch dwall_4
+x 26
+y 36
+end
+arch flagstone
+x 26
+y 37
+end
+arch dwall_4
+x 26
+y 37
+end
+arch flagstone
+x 26
+y 38
+end
+arch dwall_3_1
+x 26
+y 38
+end
+arch blocked
+name nothing
+x 26
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 26
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 27
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 27
 y 1
+move_block 0
+blocksview 0
+end
+arch flagstone
+x 27
+y 2
+end
+arch dwall_3_3
+x 27
+y 2
+end
+arch flagstone
+x 27
+y 3
+end
+arch dwall_4
+x 27
+y 3
+end
+arch flagstone
+x 27
+y 4
+end
+arch dwall_4
+x 27
+y 4
+end
+arch flagstone
+x 27
+y 5
+end
+arch dwall_4
+x 27
+y 5
+end
+arch flagstone
+x 27
+y 6
+end
+arch dwall_4
+x 27
+y 6
+end
+arch flagstone
+x 27
+y 7
+end
+arch dwall_3_1
+x 27
+y 7
+end
+arch gwall_3_3
+x 27
+y 8
+end
+arch afloor_right
+x 27
+y 9
 end
 arch locked_door1
 slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
-x 19
-y 1
+x 27
+y 9
 end
 arch gwall_2_1_1
-x 19
-y 1
+x 27
+y 9
 move_block 0
 end
 arch afloor_right
-x 19
-y 2
+x 27
+y 10
 end
 arch gwall_3_4
-x 19
-y 2
+x 27
+y 10
 end
 arch afloor_right
-x 19
-y 3
+x 27
+y 11
 end
 arch gwall_2_1_1
-x 19
-y 3
+x 27
+y 11
 end
 arch afloor_right
-x 19
-y 4
+x 27
+y 12
 end
 arch gwall_3_4
-x 19
-y 4
+x 27
+y 12
 end
 arch afloor_right
-x 19
-y 5
+x 27
+y 13
 end
 arch gwall_2_1_1
-x 19
-y 5
+x 27
+y 13
 end
 arch afloor_right
-x 19
-y 6
+x 27
+y 14
 end
 arch gwall_2_1_1
-x 19
-y 6
+x 27
+y 14
 end
 arch afloor_right
-x 19
-y 7
+x 27
+y 15
 end
 arch gwall_4
-x 19
-y 7
+x 27
+y 15
 end
 arch afloor_right
-x 19
-y 8
+x 27
+y 16
 end
 arch locked_door1
 slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
-x 19
-y 8
+x 27
+y 16
 end
 arch gwall_2_1_1
-x 19
-y 8
+x 27
+y 16
 move_block 0
 end
 arch afloor_right
-x 19
-y 9
+x 27
+y 17
 end
 arch gwall_3_1
-x 19
-y 9
+x 27
+y 17
 end
 arch afloor_right
-x 19
-y 10
+x 27
+y 18
 end
 arch ghast
-x 19
-y 10
+x 27
+y 18
 end
 arch afloor_right
-x 19
-y 11
+x 27
+y 19
 end
 arch wraith
-x 19
-y 11
+x 27
+y 19
 end
 arch afloor_right
-x 19
-y 12
+x 27
+y 20
 end
 arch vampire
-x 19
-y 12
+x 27
+y 20
 end
 arch afloor_right
-x 19
-y 13
+x 27
+y 21
 end
 arch nightmare
-x 19
-y 13
+x 27
+y 21
 end
 arch afloor_right
-x 19
-y 14
+x 27
+y 22
 end
 arch skeleton
-x 19
-y 14
+x 27
+y 22
 end
 arch afloor_right
-x 19
-y 15
+x 27
+y 23
 end
 arch gwall_3_3
-x 19
-y 15
+x 27
+y 23
 end
 arch afloor_right
-x 19
-y 16
+x 27
+y 24
 end
 arch gwall_2_1_1
-x 19
-y 16
+x 27
+y 24
 end
 arch afloor_right
-x 19
-y 17
+x 27
+y 25
 end
 arch locked_door1
 slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
-x 19
-y 17
+x 27
+y 25
 end
 arch gwall_2_1_1
-x 19
-y 17
+x 27
+y 25
 move_block 0
 end
 arch afloor_right
-x 19
-y 18
+x 27
+y 26
 end
 arch gwall_2_1_1
-x 19
-y 18
+x 27
+y 26
 end
 arch afloor_right
-x 19
-y 19
+x 27
+y 27
 end
 arch gwall_3_1
-x 19
-y 19
+x 27
+y 27
 end
 arch afloor_right
-x 19
-y 20
+x 27
+y 28
 end
 arch ghast
-x 19
-y 20
+x 27
+y 28
 end
 arch afloor_right
-x 19
-y 21
+x 27
+y 29
 end
 arch ghast
-x 19
-y 21
+x 27
+y 29
 end
 arch afloor_right
-x 19
-y 22
+x 27
+y 30
 end
 arch ghast
-x 19
-y 22
+x 27
+y 30
 end
 arch afloor_right
-x 19
-y 23
+x 27
+y 31
 end
 arch ghast
-x 19
-y 23
+x 27
+y 31
 end
 arch gwall_2_1_2
-x 19
-y 24
+x 27
+y 32
 end
-arch gwall_2_1_2
-x 20
+arch flagstone
+x 27
+y 33
 end
-arch afloor_right
-x 20
+arch dwall_3_3
+x 27
+y 33
+end
+arch flagstone
+x 27
+y 34
+end
+arch dwall_4
+x 27
+y 34
+end
+arch flagstone
+x 27
+y 35
+end
+arch dwall_4
+x 27
+y 35
+end
+arch flagstone
+x 27
+y 36
+end
+arch dwall_4
+x 27
+y 36
+end
+arch flagstone
+x 27
+y 37
+end
+arch dwall_4
+x 27
+y 37
+end
+arch flagstone
+x 27
+y 38
+end
+arch dwall_3_1
+x 27
+y 38
+end
+arch blocked
+name nothing
+x 27
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 27
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 28
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 28
 y 1
+move_block 0
+blocksview 0
 end
-arch wraith
-x 20
-y 1
-end
-arch afloor_right
-x 20
+arch flagstone
+x 28
 y 2
 end
-arch wraith
-x 20
+arch dwall_3_3
+x 28
 y 2
 end
-arch afloor_right
-x 20
+arch flagstone
+x 28
 y 3
 end
-arch wraith
-x 20
+arch dwall_4
+x 28
 y 3
 end
-arch afloor_right
-x 20
+arch flagstone
+x 28
 y 4
 end
-arch ghast
-x 20
+arch dwall_4
+x 28
 y 4
 end
-arch afloor_right
-x 20
+arch flagstone
+x 28
 y 5
 end
-arch ghast
-x 20
+arch dwall_4
+x 28
 y 5
 end
-arch afloor_right
-x 20
+arch flagstone
+x 28
 y 6
 end
-arch ghast
-x 20
+arch dwall_4
+x 28
 y 6
 end
-arch afloor_right
-x 20
+arch flagstone
+x 28
+y 7
+end
+arch dwall_3_1
+x 28
 y 7
 end
 arch gwall_2_1_2
-x 20
-y 7
-end
-arch afloor_right
-x 20
+x 28
 y 8
+end
+arch afloor_right
+x 28
+y 9
+end
+arch wraith
+x 28
+y 9
+end
+arch afloor_right
+x 28
+y 10
+end
+arch wraith
+x 28
+y 10
+end
+arch afloor_right
+x 28
+y 11
+end
+arch wraith
+x 28
+y 11
+end
+arch afloor_right
+x 28
+y 12
+end
+arch ghast
+x 28
+y 12
+end
+arch afloor_right
+x 28
+y 13
+end
+arch ghast
+x 28
+y 13
+end
+arch afloor_right
+x 28
+y 14
+end
+arch ghast
+x 28
+y 14
+end
+arch afloor_right
+x 28
+y 15
+end
+arch gwall_2_1_2
+x 28
+y 15
+end
+arch afloor_right
+x 28
+y 16
 end
 arch vampire
-x 20
-y 8
+x 28
+y 16
 end
 arch afloor_right
-x 20
-y 9
+x 28
+y 17
 end
 arch gwall_2_1_2
-x 20
-y 9
+x 28
+y 17
 end
 arch afloor_right
-x 20
-y 10
+x 28
+y 18
 end
 arch ghast
-x 20
-y 10
+x 28
+y 18
 end
 arch afloor_right
-x 20
-y 11
+x 28
+y 19
 end
 arch wraith
-x 20
-y 11
+x 28
+y 19
 end
 arch afloor_right
-x 20
-y 12
+x 28
+y 20
 end
 arch wight
-x 20
-y 12
+x 28
+y 20
 end
 arch afloor_right
-x 20
-y 13
+x 28
+y 21
 end
 arch nightmare
-x 20
-y 13
+x 28
+y 21
 end
 arch afloor_right
-x 20
-y 14
+x 28
+y 22
 end
 arch skeleton
-x 20
-y 14
+x 28
+y 22
 end
 arch afloor_right
-x 20
-y 15
+x 28
+y 23
 end
 arch gwall_2_1_2
-x 20
-y 15
+x 28
+y 23
 end
 arch afloor_right
-x 20
-y 16
+x 28
+y 24
 end
 arch skeleton
-x 20
-y 16
+x 28
+y 24
 end
 arch afloor_right
-x 20
-y 17
+x 28
+y 25
 end
 arch skeleton
-x 20
-y 17
+x 28
+y 25
 end
 arch afloor_right
-x 20
-y 18
+x 28
+y 26
 end
 arch skeleton
-x 20
-y 18
+x 28
+y 26
 end
 arch afloor_right
-x 20
-y 19
+x 28
+y 27
 end
 arch gwall_2_2_3
-x 20
-y 19
+x 28
+y 27
 end
 arch afloor_right
-x 20
-y 20
+x 28
+y 28
 end
 arch gwall_2_1_1
-x 20
-y 20
+x 28
+y 28
 end
 arch afloor_right
-x 20
-y 21
+x 28
+y 29
 end
 arch gwall_3_2
-x 20
-y 21
+x 28
+y 29
 end
 arch afloor_right
-x 20
-y 22
+x 28
+y 30
 end
 arch gwall_2_1_1
-x 20
-y 22
+x 28
+y 30
 end
 arch afloor_right
-x 20
-y 23
+x 28
+y 31
 end
 arch gwall_2_1_1
-x 20
-y 23
+x 28
+y 31
 end
 arch gwall_3_1
-x 20
-y 24
+x 28
+y 32
+end
+arch flagstone
+x 28
+y 33
+end
+arch dwall_3_3
+x 28
+y 33
+end
+arch flagstone
+x 28
+y 34
+end
+arch dwall_4
+x 28
+y 34
+end
+arch flagstone
+x 28
+y 35
+end
+arch dwall_4
+x 28
+y 35
+end
+arch flagstone
+x 28
+y 36
+end
+arch dwall_4
+x 28
+y 36
+end
+arch flagstone
+x 28
+y 37
+end
+arch dwall_4
+x 28
+y 37
+end
+arch flagstone
+x 28
+y 38
+end
+arch dwall_3_1
+x 28
+y 38
+end
+arch blocked
+name nothing
+x 28
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 28
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 29
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 29
+y 1
+move_block 0
+blocksview 0
+end
+arch flagstone
+x 29
+y 2
+end
+arch dwall_2_2_3
+x 29
+y 2
+end
+arch flagstone
+x 29
+y 3
+end
+arch dwall_4
+x 29
+y 3
+end
+arch flagstone
+x 29
+y 4
+end
+arch dwall_4
+x 29
+y 4
+end
+arch flagstone
+x 29
+y 5
+end
+arch dwall_4
+x 29
+y 5
+end
+arch flagstone
+x 29
+y 6
+end
+arch dwall_4
+x 29
+y 6
+end
+arch flagstone
+x 29
+y 7
+end
+arch dwall_3_1
+x 29
+y 7
 end
 arch gwall_2_1_2
-x 21
+x 29
+y 8
 end
 arch afloor_right
-x 21
-y 1
+x 29
+y 9
 end
 arch wraith
-x 21
-y 1
+x 29
+y 9
 end
 arch afloor_right
-x 21
-y 2
+x 29
+y 10
 end
 arch wraith
-x 21
-y 2
+x 29
+y 10
 end
 arch afloor_right
-x 21
-y 3
+x 29
+y 11
 end
 arch wraith
-x 21
-y 3
+x 29
+y 11
 end
 arch afloor_right
-x 21
-y 4
+x 29
+y 12
 end
 arch ghast
-x 21
-y 4
+x 29
+y 12
 end
 arch afloor_right
-x 21
-y 5
+x 29
+y 13
 end
 arch ghast
-x 21
-y 5
+x 29
+y 13
 end
 arch afloor_right
-x 21
-y 6
+x 29
+y 14
 end
 arch ghast
-x 21
-y 6
+x 29
+y 14
 end
 arch afloor_right
-x 21
-y 7
+x 29
+y 15
 end
 arch gwall_3_3
-x 21
-y 7
+x 29
+y 15
 end
 arch afloor_right
-x 21
-y 8
+x 29
+y 16
 end
 arch locked_door1
 slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
-x 21
-y 8
+x 29
+y 16
 end
 arch gwall_3_2
-x 21
-y 8
+x 29
+y 16
 move_block 0
 end
 arch afloor_right
-x 21
-y 9
+x 29
+y 17
 end
 arch gwall_3_1
-x 21
-y 9
+x 29
+y 17
 end
 arch afloor_right
-x 21
-y 10
+x 29
+y 18
 end
 arch ghast
-x 21
-y 10
+x 29
+y 18
 end
 arch afloor_right
-x 21
-y 11
+x 29
+y 19
 end
 arch wraith
-x 21
-y 11
+x 29
+y 19
 end
 arch afloor_right
-x 21
-y 12
+x 29
+y 20
 end
 arch wight
-x 21
-y 12
+x 29
+y 20
 end
 arch afloor_right
-x 21
-y 13
+x 29
+y 21
 end
 arch nightmare
-x 21
-y 13
-end
-arch afloor_right
-x 21
-y 14
-end
-arch skeleton
-x 21
-y 14
-end
-arch afloor_right
-x 21
-y 15
-end
-arch gwall_2_1_2
-x 21
-y 15
-end
-arch afloor_right
-x 21
-y 16
-end
-arch skeleton
-x 21
-y 16
-end
-arch afloor_right
-x 21
-y 17
-end
-arch skeleton
-x 21
-y 17
-end
-arch afloor_right
-x 21
-y 18
-end
-arch wight
-x 21
-y 18
-end
-arch afloor_right
-x 21
-y 19
-end
-arch wight
-x 21
-y 19
-end
-arch afloor_right
-x 21
-y 20
-end
-arch wight
-x 21
-y 20
-end
-arch afloor_right
-x 21
-y 21
-end
-arch gwall_2_1_2
-x 21
+x 29
 y 21
 end
 arch afloor_right
-x 21
+x 29
 y 22
+end
+arch skeleton
+x 29
+y 22
+end
+arch afloor_right
+x 29
+y 23
+end
+arch gwall_2_1_2
+x 29
+y 23
+end
+arch afloor_right
+x 29
+y 24
+end
+arch skeleton
+x 29
+y 24
+end
+arch afloor_right
+x 29
+y 25
+end
+arch skeleton
+x 29
+y 25
+end
+arch afloor_right
+x 29
+y 26
+end
+arch wight
+x 29
+y 26
+end
+arch afloor_right
+x 29
+y 27
+end
+arch wight
+x 29
+y 27
+end
+arch afloor_right
+x 29
+y 28
+end
+arch wight
+x 29
+y 28
+end
+arch afloor_right
+x 29
+y 29
+end
+arch gwall_2_1_2
+x 29
+y 29
+end
+arch afloor_right
+x 29
+y 30
 end
 arch wraith
-x 21
-y 22
+x 29
+y 30
 end
 arch afloor_right
-x 21
-y 23
+x 29
+y 31
 end
 arch grimreaper
 name mean grimreaper
 hp 150
-x 21
-y 23
+x 29
+y 31
 carrying 700
 arch key2
 name glowing magical dust
@@ -4593,286 +9663,530 @@ nrof 7
 end
 end
 arch gwall_2_1_2
-x 21
-y 24
+x 29
+y 32
+end
+arch flagstone
+x 29
+y 33
+end
+arch dwall_3_3
+x 29
+y 33
+end
+arch flagstone
+x 29
+y 34
+end
+arch dwall_4
+x 29
+y 34
+end
+arch flagstone
+x 29
+y 35
+end
+arch dwall_4
+x 29
+y 35
+end
+arch flagstone
+x 29
+y 36
+end
+arch dwall_4
+x 29
+y 36
+end
+arch flagstone
+x 29
+y 37
+end
+arch dwall_4
+x 29
+y 37
+end
+arch flagstone
+x 29
+y 38
+end
+arch dwall_2_2_4
+x 29
+y 38
+end
+arch blocked
+name nothing
+x 29
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 29
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 30
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 30
+y 1
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 30
+y 2
+move_block 0
+blocksview 0
+end
+arch flagstone
+x 30
+y 3
+end
+arch dwall_2_2_3
+x 30
+y 3
+end
+arch flagstone
+x 30
+y 4
+end
+arch dwall_4
+x 30
+y 4
+end
+arch flagstone
+x 30
+y 5
+end
+arch dwall_4
+x 30
+y 5
+end
+arch flagstone
+x 30
+y 6
+end
+arch dwall_4
+x 30
+y 6
+end
+arch flagstone
+x 30
+y 7
+end
+arch dwall_3_1
+x 30
+y 7
 end
 arch gwall_2_1_2
-x 22
+x 30
+y 8
 end
 arch afloor_right
-x 22
-y 1
+x 30
+y 9
 end
 arch wraith
-x 22
-y 1
+x 30
+y 9
 end
 arch afloor_right
-x 22
-y 2
+x 30
+y 10
 end
 arch wraith
-x 22
-y 2
+x 30
+y 10
 end
 arch afloor_right
-x 22
-y 3
+x 30
+y 11
 end
 arch wraith
-x 22
-y 3
+x 30
+y 11
 end
 arch afloor_right
-x 22
-y 4
+x 30
+y 12
 end
 arch ghast
-x 22
-y 4
+x 30
+y 12
 end
 arch afloor_right
-x 22
-y 5
+x 30
+y 13
 end
 arch ghast
-x 22
-y 5
+x 30
+y 13
 end
 arch afloor_right
-x 22
-y 6
+x 30
+y 14
 end
 arch ghast
-x 22
-y 6
+x 30
+y 14
 end
 arch afloor_right
-x 22
-y 7
+x 30
+y 15
 end
 arch gwall_3_3
-x 22
-y 7
+x 30
+y 15
 end
 arch afloor_right
-x 22
-y 8
+x 30
+y 16
 end
 arch locked_door1
 slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
-x 22
-y 8
+x 30
+y 16
 end
 arch gwall_3_4
-x 22
-y 8
+x 30
+y 16
 move_block 0
 end
 arch afloor_right
-x 22
-y 9
+x 30
+y 17
 end
 arch gwall_3_1
-x 22
+x 30
+y 17
+end
+arch afloor_right
+x 30
+y 18
+end
+arch ghast
+x 30
+y 18
+end
+arch afloor_right
+x 30
+y 19
+end
+arch wraith
+x 30
+y 19
+end
+arch afloor_right
+x 30
+y 20
+end
+arch wight
+x 30
+y 20
+end
+arch afloor_right
+x 30
+y 21
+end
+arch skeleton
+x 30
+y 21
+end
+arch afloor_right
+x 30
+y 22
+end
+arch skeleton
+x 30
+y 22
+end
+arch afloor_right
+x 30
+y 23
+end
+arch gwall_2_1_2
+x 30
+y 23
+end
+arch afloor_right
+x 30
+y 24
+end
+arch wraith
+x 30
+y 24
+end
+arch afloor_right
+x 30
+y 25
+end
+arch wraith
+x 30
+y 25
+end
+arch afloor_right
+x 30
+y 26
+end
+arch wraith
+x 30
+y 26
+end
+arch afloor_right
+x 30
+y 27
+end
+arch wraith
+x 30
+y 27
+end
+arch afloor_right
+x 30
+y 28
+end
+arch wraith
+x 30
+y 28
+end
+arch afloor_right
+x 30
+y 29
+end
+arch gwall_2_1_2
+x 30
+y 29
+end
+arch afloor_right
+x 30
+y 30
+end
+arch wraith
+x 30
+y 30
+end
+arch afloor_right
+x 30
+y 31
+end
+arch wraith
+x 30
+y 31
+end
+arch gwall_2_1_2
+x 30
+y 32
+end
+arch flagstone
+x 30
+y 33
+end
+arch dwall_3_3
+x 30
+y 33
+end
+arch flagstone
+x 30
+y 34
+end
+arch dwall_4
+x 30
+y 34
+end
+arch flagstone
+x 30
+y 35
+end
+arch dwall_4
+x 30
+y 35
+end
+arch flagstone
+x 30
+y 36
+end
+arch dwall_4
+x 30
+y 36
+end
+arch flagstone
+x 30
+y 37
+end
+arch dwall_2_2_4
+x 30
+y 37
+end
+arch blocked
+name nothing
+x 30
+y 38
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 30
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 30
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 31
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 31
+y 1
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 31
+y 2
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 31
+y 3
+move_block 0
+blocksview 0
+end
+arch flagstone
+x 31
+y 4
+end
+arch dwall_2_2_3
+x 31
+y 4
+end
+arch flagstone
+x 31
+y 5
+end
+arch dwall_4
+x 31
+y 5
+end
+arch flagstone
+x 31
+y 6
+end
+arch dwall_4
+x 31
+y 6
+end
+arch flagstone
+x 31
+y 7
+end
+arch dwall_3_1
+x 31
+y 7
+end
+arch gwall_2_1_2
+x 31
+y 8
+end
+arch afloor_right
+x 31
+y 9
+end
+arch wraith
+x 31
 y 9
 end
 arch afloor_right
-x 22
+x 31
 y 10
 end
-arch ghast
-x 22
+arch wraith
+x 31
 y 10
 end
 arch afloor_right
-x 22
+x 31
 y 11
 end
 arch wraith
-x 22
+x 31
 y 11
 end
 arch afloor_right
-x 22
+x 31
 y 12
 end
-arch wight
-x 22
+arch ghast
+x 31
 y 12
 end
 arch afloor_right
-x 22
+x 31
 y 13
 end
-arch skeleton
-x 22
+arch ghast
+x 31
 y 13
 end
 arch afloor_right
-x 22
+x 31
 y 14
 end
-arch skeleton
-x 22
+arch ghast
+x 31
 y 14
 end
 arch afloor_right
-x 22
+x 31
 y 15
-end
-arch gwall_2_1_2
-x 22
-y 15
-end
-arch afloor_right
-x 22
-y 16
-end
-arch wraith
-x 22
-y 16
-end
-arch afloor_right
-x 22
-y 17
-end
-arch wraith
-x 22
-y 17
-end
-arch afloor_right
-x 22
-y 18
-end
-arch wraith
-x 22
-y 18
-end
-arch afloor_right
-x 22
-y 19
-end
-arch wraith
-x 22
-y 19
-end
-arch afloor_right
-x 22
-y 20
-end
-arch wraith
-x 22
-y 20
-end
-arch afloor_right
-x 22
-y 21
-end
-arch gwall_2_1_2
-x 22
-y 21
-end
-arch afloor_right
-x 22
-y 22
-end
-arch wraith
-x 22
-y 22
-end
-arch afloor_right
-x 22
-y 23
-end
-arch wraith
-x 22
-y 23
-end
-arch gwall_2_1_2
-x 22
-y 24
-end
-arch gwall_2_1_2
-x 23
-end
-arch afloor_right
-x 23
-y 1
-end
-arch wraith
-x 23
-y 1
-end
-arch afloor_right
-x 23
-y 2
-end
-arch wraith
-x 23
-y 2
-end
-arch afloor_right
-x 23
-y 3
-end
-arch wraith
-x 23
-y 3
-end
-arch afloor_right
-x 23
-y 4
-end
-arch ghast
-x 23
-y 4
-end
-arch afloor_right
-x 23
-y 5
-end
-arch ghast
-x 23
-y 5
-end
-arch afloor_right
-x 23
-y 6
-end
-arch ghast
-x 23
-y 6
-end
-arch afloor_right
-x 23
-y 7
 end
 arch locked_door1
 slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
-x 23
-y 7
+x 31
+y 15
 end
 arch gwall_2_1_2
-x 23
-y 7
+x 31
+y 15
 move_block 0
 end
 arch afloor_right
-x 23
-y 8
+x 31
+y 16
 end
 arch vampire
 name old vampire
 hp 350
-x 23
-y 8
+x 31
+y 16
 carrying 1000
 arch key2
 name glowing magical dust
@@ -4882,243 +10196,2853 @@ nrof 10
 end
 end
 arch afloor_right
-x 23
-y 9
+x 31
+y 17
 end
 arch gwall_2_1_2
-x 23
-y 9
+x 31
+y 17
 end
 arch afloor_right
-x 23
-y 10
+x 31
+y 18
 end
 arch ghast
-x 23
-y 10
+x 31
+y 18
 end
 arch afloor_right
-x 23
-y 11
+x 31
+y 19
 end
 arch wraith
-x 23
-y 11
+x 31
+y 19
 end
 arch afloor_right
-x 23
-y 12
+x 31
+y 20
 end
 arch wight
-x 23
-y 12
+x 31
+y 20
 end
 arch afloor_right
-x 23
-y 13
+x 31
+y 21
 end
 arch skeleton
-x 23
-y 13
+x 31
+y 21
 end
 arch afloor_right
-x 23
-y 14
+x 31
+y 22
 end
 arch skeleton
-x 23
-y 14
+x 31
+y 22
 end
 arch afloor_right
-x 23
-y 15
+x 31
+y 23
 end
 arch locked_door1
 slaying 23
 msg
 The wall refuse to admit you in.
 endmsg
-x 23
-y 15
-end
-arch gwall_2_1_2
-x 23
-y 15
-move_block 0
-end
-arch afloor_right
-x 23
-y 16
-end
-arch wight
-x 23
-y 16
-end
-arch afloor_right
-x 23
-y 17
-end
-arch wight
-x 23
-y 17
-end
-arch afloor_right
-x 23
-y 18
-end
-arch wight
-x 23
-y 18
-end
-arch afloor_right
-x 23
-y 19
-end
-arch wight
-x 23
-y 19
-end
-arch afloor_right
-x 23
-y 20
-end
-arch wight
-x 23
-y 20
-end
-arch afloor_right
-x 23
-y 21
-end
-arch locked_door1
-slaying 23
-msg
-The wall refuse to admit you in.
-endmsg
-x 23
-y 21
-end
-arch gwall_2_1_2
-x 23
-y 21
-move_block 0
-end
-arch afloor_right
-x 23
-y 22
-end
-arch wraith
-x 23
-y 22
-end
-arch afloor_right
-x 23
-y 23
-end
-arch nightmare
-x 23
+x 31
 y 23
 end
 arch gwall_2_1_2
-x 23
+x 31
+y 23
+move_block 0
+end
+arch afloor_right
+x 31
 y 24
 end
-arch gwall_2_2_3
-x 24
+arch wight
+x 31
+y 24
 end
-arch gwall_2_1_1
-x 24
+arch afloor_right
+x 31
+y 25
+end
+arch wight
+x 31
+y 25
+end
+arch afloor_right
+x 31
+y 26
+end
+arch wight
+x 31
+y 26
+end
+arch afloor_right
+x 31
+y 27
+end
+arch wight
+x 31
+y 27
+end
+arch afloor_right
+x 31
+y 28
+end
+arch wight
+x 31
+y 28
+end
+arch afloor_right
+x 31
+y 29
+end
+arch locked_door1
+slaying 23
+msg
+The wall refuse to admit you in.
+endmsg
+x 31
+y 29
+end
+arch gwall_2_1_2
+x 31
+y 29
+move_block 0
+end
+arch afloor_right
+x 31
+y 30
+end
+arch wraith
+x 31
+y 30
+end
+arch afloor_right
+x 31
+y 31
+end
+arch nightmare
+x 31
+y 31
+end
+arch gwall_2_1_2
+x 31
+y 32
+end
+arch flagstone
+x 31
+y 33
+end
+arch dwall_3_3
+x 31
+y 33
+end
+arch flagstone
+x 31
+y 34
+end
+arch dwall_4
+x 31
+y 34
+end
+arch flagstone
+x 31
+y 35
+end
+arch dwall_4
+x 31
+y 35
+end
+arch flagstone
+x 31
+y 36
+end
+arch dwall_2_2_4
+x 31
+y 36
+end
+arch blocked
+name nothing
+x 31
+y 37
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 31
+y 38
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 31
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 31
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 32
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 32
 y 1
+move_block 0
+blocksview 0
 end
-arch gwall_2_1_1
-x 24
+arch blocked
+name nothing
+x 32
 y 2
+move_block 0
+blocksview 0
 end
-arch gwall_2_1_1
-x 24
+arch blocked
+name nothing
+x 32
 y 3
+move_block 0
+blocksview 0
 end
-arch gwall_2_1_1
-x 24
+arch blocked
+name nothing
+x 32
 y 4
+move_block 0
+blocksview 0
 end
-arch gwall_2_1_1
-x 24
+arch flagstone
+x 32
 y 5
 end
-arch gwall_2_1_1
-x 24
+arch dwall_2_2_3
+x 32
+y 5
+end
+arch flagstone
+x 32
 y 6
 end
-arch gwall_3_4
-x 24
+arch dwall_4
+x 32
+y 6
+end
+arch flagstone
+x 32
 y 7
 end
-arch gwall_2_1_1
-x 24
+arch dwall_3_1
+x 32
+y 7
+end
+arch gwall_2_2_3
+x 32
 y 8
 end
-arch gwall_3_4
-x 24
+arch gwall_2_1_1
+x 32
 y 9
 end
 arch gwall_2_1_1
-x 24
+x 32
 y 10
 end
 arch gwall_2_1_1
-x 24
+x 32
 y 11
 end
 arch gwall_2_1_1
-x 24
+x 32
 y 12
 end
 arch gwall_2_1_1
-x 24
+x 32
 y 13
 end
 arch gwall_2_1_1
-x 24
+x 32
 y 14
 end
 arch gwall_3_4
-x 24
+x 32
 y 15
 end
 arch gwall_2_1_1
-x 24
+x 32
 y 16
 end
-arch gwall_2_1_1
-x 24
+arch gwall_3_4
+x 32
 y 17
 end
 arch gwall_2_1_1
-x 24
+x 32
 y 18
 end
 arch gwall_2_1_1
-x 24
+x 32
 y 19
 end
 arch gwall_2_1_1
-x 24
+x 32
 y 20
 end
-arch gwall_3_4
-x 24
+arch gwall_2_1_1
+x 32
 y 21
 end
 arch gwall_2_1_1
-x 24
+x 32
 y 22
 end
-arch gwall_2_1_1
-x 24
+arch gwall_3_4
+x 32
 y 23
 end
-arch gwall_2_2_4
-x 24
+arch gwall_2_1_1
+x 32
 y 24
+end
+arch gwall_2_1_1
+x 32
+y 25
+end
+arch gwall_2_1_1
+x 32
+y 26
+end
+arch gwall_2_1_1
+x 32
+y 27
+end
+arch gwall_2_1_1
+x 32
+y 28
+end
+arch gwall_3_4
+x 32
+y 29
+end
+arch gwall_2_1_1
+x 32
+y 30
+end
+arch gwall_2_1_1
+x 32
+y 31
+end
+arch gwall_2_2_4
+x 32
+y 32
+end
+arch flagstone
+x 32
+y 33
+end
+arch dwall_3_3
+x 32
+y 33
+end
+arch flagstone
+x 32
+y 34
+end
+arch dwall_4
+x 32
+y 34
+end
+arch flagstone
+x 32
+y 35
+end
+arch dwall_2_2_4
+x 32
+y 35
+end
+arch blocked
+name nothing
+x 32
+y 36
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 32
+y 37
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 32
+y 38
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 32
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 32
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 33
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 33
+y 1
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 33
+y 2
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 33
+y 3
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 33
+y 4
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 33
+y 5
+move_block 0
+blocksview 0
+end
+arch flagstone
+x 33
+y 6
+end
+arch dwall_2_2_3
+x 33
+y 6
+end
+arch flagstone
+x 33
+y 7
+end
+arch dwall_4
+x 33
+y 7
+end
+arch flagstone
+x 33
+y 8
+end
+arch dwall_3_2
+x 33
+y 8
+end
+arch flagstone
+x 33
+y 9
+end
+arch dwall_3_2
+x 33
+y 9
+end
+arch flagstone
+x 33
+y 10
+end
+arch dwall_3_2
+x 33
+y 10
+end
+arch flagstone
+x 33
+y 11
+end
+arch dwall_3_2
+x 33
+y 11
+end
+arch flagstone
+x 33
+y 12
+end
+arch dwall_3_2
+x 33
+y 12
+end
+arch flagstone
+x 33
+y 13
+end
+arch dwall_3_2
+x 33
+y 13
+end
+arch flagstone
+x 33
+y 14
+end
+arch dwall_3_2
+x 33
+y 14
+end
+arch flagstone
+x 33
+y 15
+end
+arch dwall_3_2
+x 33
+y 15
+end
+arch flagstone
+x 33
+y 16
+end
+arch dwall_3_2
+x 33
+y 16
+end
+arch flagstone
+x 33
+y 17
+end
+arch dwall_3_2
+x 33
+y 17
+end
+arch flagstone
+x 33
+y 18
+end
+arch dwall_3_2
+x 33
+y 18
+end
+arch flagstone
+x 33
+y 19
+end
+arch dwall_3_2
+x 33
+y 19
+end
+arch flagstone
+x 33
+y 20
+end
+arch dwall_3_2
+x 33
+y 20
+end
+arch flagstone
+x 33
+y 21
+end
+arch dwall_3_2
+x 33
+y 21
+end
+arch flagstone
+x 33
+y 22
+end
+arch dwall_3_2
+x 33
+y 22
+end
+arch flagstone
+x 33
+y 23
+end
+arch dwall_3_2
+x 33
+y 23
+end
+arch flagstone
+x 33
+y 24
+end
+arch dwall_3_2
+x 33
+y 24
+end
+arch flagstone
+x 33
+y 25
+end
+arch dwall_3_2
+x 33
+y 25
+end
+arch flagstone
+x 33
+y 26
+end
+arch dwall_3_2
+x 33
+y 26
+end
+arch flagstone
+x 33
+y 27
+end
+arch dwall_3_2
+x 33
+y 27
+end
+arch flagstone
+x 33
+y 28
+end
+arch dwall_3_2
+x 33
+y 28
+end
+arch flagstone
+x 33
+y 29
+end
+arch dwall_3_2
+x 33
+y 29
+end
+arch flagstone
+x 33
+y 30
+end
+arch dwall_3_2
+x 33
+y 30
+end
+arch flagstone
+x 33
+y 31
+end
+arch dwall_3_2
+x 33
+y 31
+end
+arch flagstone
+x 33
+y 32
+end
+arch dwall_3_2
+x 33
+y 32
+end
+arch flagstone
+x 33
+y 33
+end
+arch dwall_4
+x 33
+y 33
+end
+arch flagstone
+x 33
+y 34
+end
+arch dwall_2_2_4
+x 33
+y 34
+end
+arch blocked
+name nothing
+x 33
+y 35
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 33
+y 36
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 33
+y 37
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 33
+y 38
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 33
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 33
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 34
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 34
+y 1
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 34
+y 2
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 34
+y 3
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 34
+y 4
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 34
+y 5
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 34
+y 6
+move_block 0
+blocksview 0
+end
+arch flagstone
+x 34
+y 7
+end
+arch dwall_2_2_3
+x 34
+y 7
+end
+arch flagstone
+x 34
+y 8
+end
+arch dwall_4
+x 34
+y 8
+end
+arch flagstone
+x 34
+y 9
+end
+arch dwall_4
+x 34
+y 9
+end
+arch flagstone
+x 34
+y 10
+end
+arch dwall_4
+x 34
+y 10
+end
+arch flagstone
+x 34
+y 11
+end
+arch dwall_4
+x 34
+y 11
+end
+arch flagstone
+x 34
+y 12
+end
+arch dwall_4
+x 34
+y 12
+end
+arch flagstone
+x 34
+y 13
+end
+arch dwall_4
+x 34
+y 13
+end
+arch flagstone
+x 34
+y 14
+end
+arch dwall_4
+x 34
+y 14
+end
+arch flagstone
+x 34
+y 15
+end
+arch dwall_4
+x 34
+y 15
+end
+arch flagstone
+x 34
+y 16
+end
+arch dwall_4
+x 34
+y 16
+end
+arch flagstone
+x 34
+y 17
+end
+arch dwall_4
+x 34
+y 17
+end
+arch flagstone
+x 34
+y 18
+end
+arch dwall_4
+x 34
+y 18
+end
+arch flagstone
+x 34
+y 19
+end
+arch dwall_4
+x 34
+y 19
+end
+arch flagstone
+x 34
+y 20
+end
+arch dwall_4
+x 34
+y 20
+end
+arch flagstone
+x 34
+y 21
+end
+arch dwall_4
+x 34
+y 21
+end
+arch flagstone
+x 34
+y 22
+end
+arch dwall_4
+x 34
+y 22
+end
+arch flagstone
+x 34
+y 23
+end
+arch dwall_4
+x 34
+y 23
+end
+arch flagstone
+x 34
+y 24
+end
+arch dwall_4
+x 34
+y 24
+end
+arch flagstone
+x 34
+y 25
+end
+arch dwall_4
+x 34
+y 25
+end
+arch flagstone
+x 34
+y 26
+end
+arch dwall_4
+x 34
+y 26
+end
+arch flagstone
+x 34
+y 27
+end
+arch dwall_4
+x 34
+y 27
+end
+arch flagstone
+x 34
+y 28
+end
+arch dwall_4
+x 34
+y 28
+end
+arch flagstone
+x 34
+y 29
+end
+arch dwall_4
+x 34
+y 29
+end
+arch flagstone
+x 34
+y 30
+end
+arch dwall_4
+x 34
+y 30
+end
+arch flagstone
+x 34
+y 31
+end
+arch dwall_4
+x 34
+y 31
+end
+arch flagstone
+x 34
+y 32
+end
+arch dwall_4
+x 34
+y 32
+end
+arch flagstone
+x 34
+y 33
+end
+arch dwall_2_2_4
+x 34
+y 33
+end
+arch blocked
+name nothing
+x 34
+y 34
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 34
+y 35
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 34
+y 36
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 34
+y 37
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 34
+y 38
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 34
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 34
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 35
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 35
+y 1
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 35
+y 2
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 35
+y 3
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 35
+y 4
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 35
+y 5
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 35
+y 6
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 35
+y 7
+move_block 0
+blocksview 0
+end
+arch flagstone
+x 35
+y 8
+end
+arch dwall_2_2_3
+x 35
+y 8
+end
+arch flagstone
+x 35
+y 9
+end
+arch dwall_4
+x 35
+y 9
+end
+arch flagstone
+x 35
+y 10
+end
+arch dwall_4
+x 35
+y 10
+end
+arch flagstone
+x 35
+y 11
+end
+arch dwall_4
+x 35
+y 11
+end
+arch flagstone
+x 35
+y 12
+end
+arch dwall_4
+x 35
+y 12
+end
+arch flagstone
+x 35
+y 13
+end
+arch dwall_4
+x 35
+y 13
+end
+arch flagstone
+x 35
+y 14
+end
+arch dwall_4
+x 35
+y 14
+end
+arch flagstone
+x 35
+y 15
+end
+arch dwall_4
+x 35
+y 15
+end
+arch flagstone
+x 35
+y 16
+end
+arch dwall_4
+x 35
+y 16
+end
+arch flagstone
+x 35
+y 17
+end
+arch dwall_4
+x 35
+y 17
+end
+arch flagstone
+x 35
+y 18
+end
+arch dwall_4
+x 35
+y 18
+end
+arch flagstone
+x 35
+y 19
+end
+arch dwall_4
+x 35
+y 19
+end
+arch flagstone
+x 35
+y 20
+end
+arch dwall_4
+x 35
+y 20
+end
+arch flagstone
+x 35
+y 21
+end
+arch dwall_4
+x 35
+y 21
+end
+arch flagstone
+x 35
+y 22
+end
+arch dwall_4
+x 35
+y 22
+end
+arch flagstone
+x 35
+y 23
+end
+arch dwall_4
+x 35
+y 23
+end
+arch flagstone
+x 35
+y 24
+end
+arch dwall_4
+x 35
+y 24
+end
+arch flagstone
+x 35
+y 25
+end
+arch dwall_4
+x 35
+y 25
+end
+arch flagstone
+x 35
+y 26
+end
+arch dwall_4
+x 35
+y 26
+end
+arch flagstone
+x 35
+y 27
+end
+arch dwall_4
+x 35
+y 27
+end
+arch flagstone
+x 35
+y 28
+end
+arch dwall_4
+x 35
+y 28
+end
+arch flagstone
+x 35
+y 29
+end
+arch dwall_4
+x 35
+y 29
+end
+arch flagstone
+x 35
+y 30
+end
+arch dwall_4
+x 35
+y 30
+end
+arch flagstone
+x 35
+y 31
+end
+arch dwall_4
+x 35
+y 31
+end
+arch flagstone
+x 35
+y 32
+end
+arch dwall_2_2_4
+x 35
+y 32
+end
+arch blocked
+name nothing
+x 35
+y 33
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 35
+y 34
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 35
+y 35
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 35
+y 36
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 35
+y 37
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 35
+y 38
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 35
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 35
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 36
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 36
+y 1
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 36
+y 2
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 36
+y 3
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 36
+y 4
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 36
+y 5
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 36
+y 6
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 36
+y 7
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 36
+y 8
+move_block 0
+blocksview 0
+end
+arch flagstone
+x 36
+y 9
+end
+arch dwall_2_2_3
+x 36
+y 9
+end
+arch flagstone
+x 36
+y 10
+end
+arch dwall_4
+x 36
+y 10
+end
+arch flagstone
+x 36
+y 11
+end
+arch dwall_4
+x 36
+y 11
+end
+arch flagstone
+x 36
+y 12
+end
+arch dwall_4
+x 36
+y 12
+end
+arch flagstone
+x 36
+y 13
+end
+arch dwall_4
+x 36
+y 13
+end
+arch flagstone
+x 36
+y 14
+end
+arch dwall_4
+x 36
+y 14
+end
+arch flagstone
+x 36
+y 15
+end
+arch dwall_4
+x 36
+y 15
+end
+arch flagstone
+x 36
+y 16
+end
+arch dwall_4
+x 36
+y 16
+end
+arch flagstone
+x 36
+y 17
+end
+arch dwall_4
+x 36
+y 17
+end
+arch flagstone
+x 36
+y 18
+end
+arch dwall_4
+x 36
+y 18
+end
+arch flagstone
+x 36
+y 19
+end
+arch dwall_4
+x 36
+y 19
+end
+arch flagstone
+x 36
+y 20
+end
+arch dwall_4
+x 36
+y 20
+end
+arch flagstone
+x 36
+y 21
+end
+arch dwall_4
+x 36
+y 21
+end
+arch flagstone
+x 36
+y 22
+end
+arch dwall_4
+x 36
+y 22
+end
+arch flagstone
+x 36
+y 23
+end
+arch dwall_4
+x 36
+y 23
+end
+arch flagstone
+x 36
+y 24
+end
+arch dwall_4
+x 36
+y 24
+end
+arch flagstone
+x 36
+y 25
+end
+arch dwall_4
+x 36
+y 25
+end
+arch flagstone
+x 36
+y 26
+end
+arch dwall_4
+x 36
+y 26
+end
+arch flagstone
+x 36
+y 27
+end
+arch dwall_4
+x 36
+y 27
+end
+arch flagstone
+x 36
+y 28
+end
+arch dwall_4
+x 36
+y 28
+end
+arch flagstone
+x 36
+y 29
+end
+arch dwall_4
+x 36
+y 29
+end
+arch flagstone
+x 36
+y 30
+end
+arch dwall_4
+x 36
+y 30
+end
+arch flagstone
+x 36
+y 31
+end
+arch dwall_2_2_4
+x 36
+y 31
+end
+arch blocked
+name nothing
+x 36
+y 32
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 36
+y 33
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 36
+y 34
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 36
+y 35
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 36
+y 36
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 36
+y 37
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 36
+y 38
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 36
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 36
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 37
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 37
+y 1
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 37
+y 2
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 37
+y 3
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 37
+y 4
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 37
+y 5
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 37
+y 6
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 37
+y 7
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 37
+y 8
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 37
+y 9
+move_block 0
+blocksview 0
+end
+arch flagstone
+x 37
+y 10
+end
+arch dwall_2_2_3
+x 37
+y 10
+end
+arch flagstone
+x 37
+y 11
+end
+arch dwall_4
+x 37
+y 11
+end
+arch flagstone
+x 37
+y 12
+end
+arch dwall_4
+x 37
+y 12
+end
+arch flagstone
+x 37
+y 13
+end
+arch dwall_4
+x 37
+y 13
+end
+arch flagstone
+x 37
+y 14
+end
+arch dwall_4
+x 37
+y 14
+end
+arch flagstone
+x 37
+y 15
+end
+arch dwall_4
+x 37
+y 15
+end
+arch flagstone
+x 37
+y 16
+end
+arch dwall_4
+x 37
+y 16
+end
+arch flagstone
+x 37
+y 17
+end
+arch dwall_4
+x 37
+y 17
+end
+arch flagstone
+x 37
+y 18
+end
+arch dwall_4
+x 37
+y 18
+end
+arch flagstone
+x 37
+y 19
+end
+arch dwall_4
+x 37
+y 19
+end
+arch flagstone
+x 37
+y 20
+end
+arch dwall_4
+x 37
+y 20
+end
+arch flagstone
+x 37
+y 21
+end
+arch dwall_4
+x 37
+y 21
+end
+arch flagstone
+x 37
+y 22
+end
+arch dwall_4
+x 37
+y 22
+end
+arch flagstone
+x 37
+y 23
+end
+arch dwall_4
+x 37
+y 23
+end
+arch flagstone
+x 37
+y 24
+end
+arch dwall_4
+x 37
+y 24
+end
+arch flagstone
+x 37
+y 25
+end
+arch dwall_4
+x 37
+y 25
+end
+arch flagstone
+x 37
+y 26
+end
+arch dwall_4
+x 37
+y 26
+end
+arch flagstone
+x 37
+y 27
+end
+arch dwall_4
+x 37
+y 27
+end
+arch flagstone
+x 37
+y 28
+end
+arch dwall_4
+x 37
+y 28
+end
+arch flagstone
+x 37
+y 29
+end
+arch dwall_4
+x 37
+y 29
+end
+arch flagstone
+x 37
+y 30
+end
+arch dwall_2_2_4
+x 37
+y 30
+end
+arch blocked
+name nothing
+x 37
+y 31
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 37
+y 32
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 37
+y 33
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 37
+y 34
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 37
+y 35
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 37
+y 36
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 37
+y 37
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 37
+y 38
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 37
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 37
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 38
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 38
+y 1
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 38
+y 2
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 38
+y 3
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 38
+y 4
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 38
+y 5
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 38
+y 6
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 38
+y 7
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 38
+y 8
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 38
+y 9
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 38
+y 10
+move_block 0
+blocksview 0
+end
+arch flagstone
+x 38
+y 11
+end
+arch dwall_2_2_3
+x 38
+y 11
+end
+arch flagstone
+x 38
+y 12
+end
+arch dwall_3_4
+x 38
+y 12
+end
+arch flagstone
+x 38
+y 13
+end
+arch dwall_3_4
+x 38
+y 13
+end
+arch flagstone
+x 38
+y 14
+end
+arch dwall_3_4
+x 38
+y 14
+end
+arch flagstone
+x 38
+y 15
+end
+arch dwall_3_4
+x 38
+y 15
+end
+arch flagstone
+x 38
+y 16
+end
+arch dwall_3_4
+x 38
+y 16
+end
+arch flagstone
+x 38
+y 17
+end
+arch dwall_3_4
+x 38
+y 17
+end
+arch flagstone
+x 38
+y 18
+end
+arch dwall_3_4
+x 38
+y 18
+end
+arch flagstone
+x 38
+y 19
+end
+arch dwall_3_4
+x 38
+y 19
+end
+arch flagstone
+x 38
+y 20
+end
+arch dwall_3_4
+x 38
+y 20
+end
+arch flagstone
+x 38
+y 21
+end
+arch dwall_3_4
+x 38
+y 21
+end
+arch flagstone
+x 38
+y 22
+end
+arch dwall_3_4
+x 38
+y 22
+end
+arch flagstone
+x 38
+y 23
+end
+arch dwall_3_4
+x 38
+y 23
+end
+arch flagstone
+x 38
+y 24
+end
+arch dwall_3_4
+x 38
+y 24
+end
+arch flagstone
+x 38
+y 25
+end
+arch dwall_3_4
+x 38
+y 25
+end
+arch flagstone
+x 38
+y 26
+end
+arch dwall_3_4
+x 38
+y 26
+end
+arch flagstone
+x 38
+y 27
+end
+arch dwall_3_4
+x 38
+y 27
+end
+arch flagstone
+x 38
+y 28
+end
+arch dwall_3_4
+x 38
+y 28
+end
+arch flagstone
+x 38
+y 29
+end
+arch dwall_2_2_4
+x 38
+y 29
+end
+arch blocked
+name nothing
+x 38
+y 30
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 38
+y 31
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 38
+y 32
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 38
+y 33
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 38
+y 34
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 38
+y 35
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 38
+y 36
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 38
+y 37
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 38
+y 38
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 38
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 38
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 1
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 2
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 3
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 4
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 5
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 6
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 7
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 8
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 9
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 10
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 11
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 12
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 13
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 14
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 15
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 16
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 17
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 18
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 19
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 20
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 21
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 22
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 23
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 24
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 25
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 26
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 27
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 28
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 29
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 30
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 31
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 32
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 33
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 34
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 35
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 36
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 37
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 38
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 39
+y 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 1
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 2
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 3
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 4
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 5
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 6
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 7
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 8
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 9
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 10
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 11
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 12
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 13
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 14
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 15
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 16
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 17
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 18
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 19
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 20
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 21
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 22
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 23
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 24
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 25
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 26
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 27
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 28
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 29
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 30
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 31
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 32
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 33
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 34
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 35
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 36
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 37
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 38
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 39
+move_block 0
+blocksview 0
+end
+arch blocked
+name nothing
+x 40
+y 40
+move_block 0
+blocksview 0
 end
