@@ -5,7 +5,7 @@ region darcap
 width 50
 height 50
 msg
-Modified: 2013-11-21 SilverNexus
+Modified: 2015-06-06 tecslicer
 endmsg
 outdoor 1
 tile_path_1 world_116_101
@@ -6633,10 +6633,10 @@ name tame chicken
 msg
 Ooh, a tame chicken! And look, it's a new pet shop!
 endmsg
-invisible 0
 face chicken.172
 x 23
 y 44
+invisible 0
 end
 arch grass
 x 23
@@ -11556,7 +11556,8 @@ end
 arch house_small
 name Darcap Raffle 1
 slaying ../darcap/raffle/raffle1
-sp 7
+hp 1
+sp 8
 x 39
 y 9
 end
