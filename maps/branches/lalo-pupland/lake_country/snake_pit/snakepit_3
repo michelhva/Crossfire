@@ -9,7 +9,7 @@ enter_x 18
 enter_y 29
 msg
 Created:  1995-06-04 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2011-08-27 Andreas Kirschbaum
+Modified: 2015-04-02 Rick Tanner
 endmsg
 end
 arch large_stones
@@ -154,13 +154,13 @@ end
 arch large_stones
 y 24
 end
-arch cave17
+arch cave23
 y 24
 end
 arch large_stones
 y 25
 end
-arch cave18
+arch cave24
 y 25
 end
 arch large_stones
@@ -257,7 +257,7 @@ arch large_stones
 x 1
 y 1
 end
-arch cave24
+arch cave23
 x 1
 y 1
 end
@@ -2618,7 +2618,7 @@ arch large_stones
 x 11
 y 22
 end
-arch cave20
+arch cave22
 x 11
 y 22
 end
@@ -2936,7 +2936,7 @@ arch large_stones
 x 12
 y 36
 end
-arch cave18
+arch cave24
 x 12
 y 36
 end
@@ -2944,7 +2944,7 @@ arch large_stones
 x 12
 y 37
 end
-arch cave17
+arch cave23
 x 12
 y 37
 end
@@ -3010,7 +3010,7 @@ arch large_stones
 x 13
 y 6
 end
-arch cave19
+arch cave25
 x 13
 y 6
 end
@@ -3264,7 +3264,7 @@ arch large_stones
 x 14
 y 6
 end
-arch cave18
+arch cave24
 x 14
 y 6
 end
@@ -3272,7 +3272,7 @@ arch large_stones
 x 14
 y 7
 end
-arch cave17
+arch cave23
 x 14
 y 7
 end
@@ -3615,6 +3615,10 @@ x 15
 y 21
 end
 arch large_stones
+x 15
+y 22
+end
+arch swall_1_4_half
 x 15
 y 22
 end
@@ -4072,6 +4076,10 @@ x 17
 y 22
 end
 arch cave1
+x 17
+y 22
+end
+arch swall_1_3_half
 x 17
 y 22
 end
@@ -5631,7 +5639,7 @@ arch large_stones
 x 24
 y 19
 end
-arch cave20
+arch cave22
 x 24
 y 19
 end
@@ -6033,7 +6041,7 @@ arch large_stones
 x 25
 y 38
 end
-arch cave20
+arch cave22
 x 25
 y 38
 end
@@ -6063,7 +6071,7 @@ arch large_stones
 x 26
 y 2
 end
-arch cave18
+arch cave24
 x 26
 y 2
 end
@@ -6071,7 +6079,7 @@ arch large_stones
 x 26
 y 3
 end
-arch cave17
+arch cave23
 x 26
 y 3
 end
@@ -6295,7 +6303,7 @@ arch large_stones
 x 26
 y 38
 end
-arch cave17
+arch cave23
 x 26
 y 38
 end
@@ -6573,7 +6581,7 @@ arch large_stones
 x 27
 y 39
 end
-arch cave17
+arch cave23
 x 27
 y 39
 end
@@ -6731,7 +6739,7 @@ arch large_stones
 x 28
 y 18
 end
-arch cave17
+arch cave23
 x 28
 y 18
 end
@@ -6747,7 +6755,7 @@ arch large_stones
 x 28
 y 20
 end
-arch cave19
+arch cave25
 x 28
 y 20
 end
@@ -7785,7 +7793,7 @@ arch large_stones
 x 33
 y 11
 end
-arch cave17
+arch cave23
 x 33
 y 11
 end
@@ -7793,7 +7801,7 @@ arch large_stones
 x 33
 y 12
 end
-arch cave19
+arch cave25
 x 33
 y 12
 end
@@ -8868,7 +8876,7 @@ arch large_stones
 x 37
 y 35
 end
-arch cave20
+arch cave22
 x 37
 y 35
 end
@@ -9253,7 +9261,7 @@ arch large_stones
 x 39
 y 6
 end
-arch cave19
+arch cave25
 x 39
 y 6
 end
@@ -9325,7 +9333,7 @@ arch large_stones
 x 39
 y 15
 end
-arch cave19
+arch cave25
 x 39
 y 15
 end
@@ -9349,7 +9357,7 @@ arch large_stones
 x 39
 y 18
 end
-arch cave20
+arch cave22
 x 39
 y 18
 end
