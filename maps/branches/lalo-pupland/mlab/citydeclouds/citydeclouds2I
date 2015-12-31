@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-08-28 mikeeusa
-Modified: 2012-02-13 Rick Tanner
+Modified: 2015-11-28 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 citydeclouds2H
@@ -334,61 +334,6 @@ arch evergreens
 name cloud
 face fog.111
 y 44
-end
-arch blocked
-name nothing
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-y 45
-end
-arch blocked
-name nothing
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-y 46
-end
-arch blocked
-name nothing
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-y 47
-end
-arch blocked
-name nothing
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-y 48
-end
-arch blocked
-name nothing
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-y 49
 end
 arch flagstone
 name floor
@@ -835,71 +780,6 @@ face fog.111
 x 1
 y 44
 end
-arch blocked
-name nothing
-x 1
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 1
-y 45
-end
-arch blocked
-name nothing
-x 1
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 1
-y 46
-end
-arch blocked
-name nothing
-x 1
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 1
-y 47
-end
-arch blocked
-name nothing
-x 1
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 1
-y 48
-end
-arch blocked
-name nothing
-x 1
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 1
-y 49
-end
 arch flagstone
 name floor
 face shop_empty.111
@@ -1306,71 +1186,6 @@ name cloud
 face fog.111
 x 2
 y 44
-end
-arch blocked
-name nothing
-x 2
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 2
-y 45
-end
-arch blocked
-name nothing
-x 2
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 2
-y 46
-end
-arch blocked
-name nothing
-x 2
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 2
-y 47
-end
-arch blocked
-name nothing
-x 2
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 2
-y 48
-end
-arch blocked
-name nothing
-x 2
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 2
-y 49
 end
 arch flagstone
 name floor
@@ -1821,71 +1636,6 @@ face fog.111
 x 3
 y 44
 end
-arch blocked
-name nothing
-x 3
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 3
-y 45
-end
-arch blocked
-name nothing
-x 3
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 3
-y 46
-end
-arch blocked
-name nothing
-x 3
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 3
-y 47
-end
-arch blocked
-name nothing
-x 3
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 3
-y 48
-end
-arch blocked
-name nothing
-x 3
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 3
-y 49
-end
 arch woodfloor
 x 4
 end
@@ -2306,71 +2056,6 @@ face fog.111
 x 4
 y 44
 end
-arch blocked
-name nothing
-x 4
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 4
-y 45
-end
-arch blocked
-name nothing
-x 4
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 4
-y 46
-end
-arch blocked
-name nothing
-x 4
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 4
-y 47
-end
-arch blocked
-name nothing
-x 4
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 4
-y 48
-end
-arch blocked
-name nothing
-x 4
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 4
-y 49
-end
 arch woodfloor
 x 5
 end
@@ -2739,71 +2424,6 @@ face fog.111
 x 5
 y 44
 end
-arch blocked
-name nothing
-x 5
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 5
-y 45
-end
-arch blocked
-name nothing
-x 5
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 5
-y 46
-end
-arch blocked
-name nothing
-x 5
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 5
-y 47
-end
-arch blocked
-name nothing
-x 5
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 5
-y 48
-end
-arch blocked
-name nothing
-x 5
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 5
-y 49
-end
 arch woodfloor
 x 6
 end
@@ -3167,71 +2787,6 @@ name cloud
 face fog.111
 x 6
 y 44
-end
-arch blocked
-name nothing
-x 6
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 6
-y 45
-end
-arch blocked
-name nothing
-x 6
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 6
-y 46
-end
-arch blocked
-name nothing
-x 6
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 6
-y 47
-end
-arch blocked
-name nothing
-x 6
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 6
-y 48
-end
-arch blocked
-name nothing
-x 6
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 6
-y 49
 end
 arch woodfloor
 x 7
@@ -3645,71 +3200,6 @@ face fog.111
 x 7
 y 44
 end
-arch blocked
-name nothing
-x 7
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 7
-y 45
-end
-arch blocked
-name nothing
-x 7
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 7
-y 46
-end
-arch blocked
-name nothing
-x 7
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 7
-y 47
-end
-arch blocked
-name nothing
-x 7
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 7
-y 48
-end
-arch blocked
-name nothing
-x 7
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 7
-y 49
-end
 arch woodfloor
 x 8
 end
@@ -4115,71 +3605,6 @@ face fog.111
 x 8
 y 44
 end
-arch blocked
-name nothing
-x 8
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 8
-y 45
-end
-arch blocked
-name nothing
-x 8
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 8
-y 46
-end
-arch blocked
-name nothing
-x 8
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 8
-y 47
-end
-arch blocked
-name nothing
-x 8
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 8
-y 48
-end
-arch blocked
-name nothing
-x 8
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 8
-y 49
-end
 arch woodfloor
 x 9
 end
@@ -4548,71 +3973,6 @@ face fog.111
 x 9
 y 44
 end
-arch blocked
-name nothing
-x 9
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 9
-y 45
-end
-arch blocked
-name nothing
-x 9
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 9
-y 46
-end
-arch blocked
-name nothing
-x 9
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 9
-y 47
-end
-arch blocked
-name nothing
-x 9
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 9
-y 48
-end
-arch blocked
-name nothing
-x 9
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 9
-y 49
-end
 arch woodfloor
 x 10
 end
@@ -5004,71 +4364,6 @@ name cloud
 face fog.111
 x 10
 y 44
-end
-arch blocked
-name nothing
-x 10
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 10
-y 45
-end
-arch blocked
-name nothing
-x 10
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 10
-y 46
-end
-arch blocked
-name nothing
-x 10
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 10
-y 47
-end
-arch blocked
-name nothing
-x 10
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 10
-y 48
-end
-arch blocked
-name nothing
-x 10
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 10
-y 49
 end
 arch woodfloor
 x 11
@@ -5470,71 +4765,6 @@ face fog.111
 x 11
 y 44
 end
-arch blocked
-name nothing
-x 11
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 11
-y 45
-end
-arch blocked
-name nothing
-x 11
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 11
-y 46
-end
-arch blocked
-name nothing
-x 11
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 11
-y 47
-end
-arch blocked
-name nothing
-x 11
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 11
-y 48
-end
-arch blocked
-name nothing
-x 11
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 11
-y 49
-end
 arch woodfloor
 x 12
 end
@@ -5918,71 +5148,6 @@ name cloud
 face fog.111
 x 12
 y 44
-end
-arch blocked
-name nothing
-x 12
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 12
-y 45
-end
-arch blocked
-name nothing
-x 12
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 12
-y 46
-end
-arch blocked
-name nothing
-x 12
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 12
-y 47
-end
-arch blocked
-name nothing
-x 12
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 12
-y 48
-end
-arch blocked
-name nothing
-x 12
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 12
-y 49
 end
 arch woodfloor
 x 13
@@ -6384,71 +5549,6 @@ face fog.111
 x 13
 y 44
 end
-arch blocked
-name nothing
-x 13
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 13
-y 45
-end
-arch blocked
-name nothing
-x 13
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 13
-y 46
-end
-arch blocked
-name nothing
-x 13
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 13
-y 47
-end
-arch blocked
-name nothing
-x 13
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 13
-y 48
-end
-arch blocked
-name nothing
-x 13
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 13
-y 49
-end
 arch woodfloor
 x 14
 end
@@ -6840,71 +5940,6 @@ name cloud
 face fog.111
 x 14
 y 44
-end
-arch blocked
-name nothing
-x 14
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 14
-y 45
-end
-arch blocked
-name nothing
-x 14
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 14
-y 46
-end
-arch blocked
-name nothing
-x 14
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 14
-y 47
-end
-arch blocked
-name nothing
-x 14
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 14
-y 48
-end
-arch blocked
-name nothing
-x 14
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 14
-y 49
 end
 arch woodfloor
 x 15
@@ -7318,71 +6353,6 @@ face fog.111
 x 15
 y 44
 end
-arch blocked
-name nothing
-x 15
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 15
-y 45
-end
-arch blocked
-name nothing
-x 15
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 15
-y 46
-end
-arch blocked
-name nothing
-x 15
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 15
-y 47
-end
-arch blocked
-name nothing
-x 15
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 15
-y 48
-end
-arch blocked
-name nothing
-x 15
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 15
-y 49
-end
 arch woodfloor
 x 16
 end
@@ -7778,71 +6748,6 @@ name cloud
 face fog.111
 x 16
 y 44
-end
-arch blocked
-name nothing
-x 16
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 16
-y 45
-end
-arch blocked
-name nothing
-x 16
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 16
-y 46
-end
-arch blocked
-name nothing
-x 16
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 16
-y 47
-end
-arch blocked
-name nothing
-x 16
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 16
-y 48
-end
-arch blocked
-name nothing
-x 16
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 16
-y 49
 end
 arch woodfloor
 x 17
@@ -8244,71 +7149,6 @@ name cloud
 face fog.111
 x 17
 y 44
-end
-arch blocked
-name nothing
-x 17
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 17
-y 45
-end
-arch blocked
-name nothing
-x 17
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 17
-y 46
-end
-arch blocked
-name nothing
-x 17
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 17
-y 47
-end
-arch blocked
-name nothing
-x 17
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 17
-y 48
-end
-arch blocked
-name nothing
-x 17
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 17
-y 49
 end
 arch woodfloor
 x 18
@@ -8721,71 +7561,6 @@ name cloud
 face fog.111
 x 18
 y 44
-end
-arch blocked
-name nothing
-x 18
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 18
-y 45
-end
-arch blocked
-name nothing
-x 18
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 18
-y 46
-end
-arch blocked
-name nothing
-x 18
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 18
-y 47
-end
-arch blocked
-name nothing
-x 18
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 18
-y 48
-end
-arch blocked
-name nothing
-x 18
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 18
-y 49
 end
 arch woodfloor
 x 19
@@ -9203,71 +7978,6 @@ face fog.111
 x 19
 y 44
 end
-arch blocked
-name nothing
-x 19
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 19
-y 45
-end
-arch blocked
-name nothing
-x 19
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 19
-y 46
-end
-arch blocked
-name nothing
-x 19
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 19
-y 47
-end
-arch blocked
-name nothing
-x 19
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 19
-y 48
-end
-arch blocked
-name nothing
-x 19
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 19
-y 49
-end
 arch woodfloor
 x 20
 end
@@ -9676,71 +8386,6 @@ face fog.111
 x 20
 y 44
 end
-arch blocked
-name nothing
-x 20
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 20
-y 45
-end
-arch blocked
-name nothing
-x 20
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 20
-y 46
-end
-arch blocked
-name nothing
-x 20
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 20
-y 47
-end
-arch blocked
-name nothing
-x 20
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 20
-y 48
-end
-arch blocked
-name nothing
-x 20
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 20
-y 49
-end
 arch woodfloor
 x 21
 end
@@ -10110,71 +8755,6 @@ face fog.111
 x 21
 y 44
 end
-arch blocked
-name nothing
-x 21
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 21
-y 45
-end
-arch blocked
-name nothing
-x 21
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 21
-y 46
-end
-arch blocked
-name nothing
-x 21
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 21
-y 47
-end
-arch blocked
-name nothing
-x 21
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 21
-y 48
-end
-arch blocked
-name nothing
-x 21
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 21
-y 49
-end
 arch woodfloor
 x 22
 end
@@ -10508,71 +9088,6 @@ name cloud
 face fog.111
 x 22
 y 44
-end
-arch blocked
-name nothing
-x 22
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 22
-y 45
-end
-arch blocked
-name nothing
-x 22
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 22
-y 46
-end
-arch blocked
-name nothing
-x 22
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 22
-y 47
-end
-arch blocked
-name nothing
-x 22
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 22
-y 48
-end
-arch blocked
-name nothing
-x 22
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 22
-y 49
 end
 arch woodfloor
 x 23
@@ -10926,71 +9441,6 @@ name cloud
 face fog.111
 x 23
 y 44
-end
-arch blocked
-name nothing
-x 23
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 23
-y 45
-end
-arch blocked
-name nothing
-x 23
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 23
-y 46
-end
-arch blocked
-name nothing
-x 23
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 23
-y 47
-end
-arch blocked
-name nothing
-x 23
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 23
-y 48
-end
-arch blocked
-name nothing
-x 23
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 23
-y 49
 end
 arch woodfloor
 x 24
@@ -11363,71 +9813,6 @@ face fog.111
 x 24
 y 44
 end
-arch blocked
-name nothing
-x 24
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 24
-y 45
-end
-arch blocked
-name nothing
-x 24
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 24
-y 46
-end
-arch blocked
-name nothing
-x 24
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 24
-y 47
-end
-arch blocked
-name nothing
-x 24
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 24
-y 48
-end
-arch blocked
-name nothing
-x 24
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 24
-y 49
-end
 arch woodfloor
 x 25
 end
@@ -11748,71 +10133,6 @@ name cloud
 face fog.111
 x 25
 y 44
-end
-arch blocked
-name nothing
-x 25
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 25
-y 45
-end
-arch blocked
-name nothing
-x 25
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 25
-y 46
-end
-arch blocked
-name nothing
-x 25
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 25
-y 47
-end
-arch blocked
-name nothing
-x 25
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 25
-y 48
-end
-arch blocked
-name nothing
-x 25
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 25
-y 49
 end
 arch woodfloor
 x 26
@@ -12116,71 +10436,6 @@ end
 arch cwall_2_2_1
 x 26
 y 44
-end
-arch blocked
-name nothing
-x 26
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 26
-y 45
-end
-arch blocked
-name nothing
-x 26
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 26
-y 46
-end
-arch blocked
-name nothing
-x 26
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 26
-y 47
-end
-arch blocked
-name nothing
-x 26
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 26
-y 48
-end
-arch blocked
-name nothing
-x 26
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 26
-y 49
 end
 arch woodfloor
 x 27
@@ -12496,71 +10751,6 @@ end
 arch cwall_3_1
 x 27
 y 44
-end
-arch blocked
-name nothing
-x 27
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 27
-y 45
-end
-arch blocked
-name nothing
-x 27
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 27
-y 46
-end
-arch blocked
-name nothing
-x 27
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 27
-y 47
-end
-arch blocked
-name nothing
-x 27
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 27
-y 48
-end
-arch blocked
-name nothing
-x 27
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 27
-y 49
 end
 arch woodfloor
 x 28
@@ -12897,71 +11087,6 @@ arch cwall_3_1
 x 28
 y 44
 end
-arch blocked
-name nothing
-x 28
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 28
-y 45
-end
-arch blocked
-name nothing
-x 28
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 28
-y 46
-end
-arch blocked
-name nothing
-x 28
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 28
-y 47
-end
-arch blocked
-name nothing
-x 28
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 28
-y 48
-end
-arch blocked
-name nothing
-x 28
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 28
-y 49
-end
 arch woodfloor
 x 29
 end
@@ -13256,71 +11381,6 @@ end
 arch cwall_3_1
 x 29
 y 44
-end
-arch blocked
-name nothing
-x 29
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 29
-y 45
-end
-arch blocked
-name nothing
-x 29
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 29
-y 46
-end
-arch blocked
-name nothing
-x 29
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 29
-y 47
-end
-arch blocked
-name nothing
-x 29
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 29
-y 48
-end
-arch blocked
-name nothing
-x 29
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 29
-y 49
 end
 arch woodfloor
 x 30
@@ -13639,71 +11699,6 @@ arch cwall_3_1
 x 30
 y 44
 end
-arch blocked
-name nothing
-x 30
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 30
-y 45
-end
-arch blocked
-name nothing
-x 30
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 30
-y 46
-end
-arch blocked
-name nothing
-x 30
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 30
-y 47
-end
-arch blocked
-name nothing
-x 30
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 30
-y 48
-end
-arch blocked
-name nothing
-x 30
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 30
-y 49
-end
 arch woodfloor
 x 31
 end
@@ -14004,71 +11999,6 @@ end
 arch cwall_3_1
 x 31
 y 44
-end
-arch blocked
-name nothing
-x 31
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 31
-y 45
-end
-arch blocked
-name nothing
-x 31
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 31
-y 46
-end
-arch blocked
-name nothing
-x 31
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 31
-y 47
-end
-arch blocked
-name nothing
-x 31
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 31
-y 48
-end
-arch blocked
-name nothing
-x 31
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 31
-y 49
 end
 arch woodfloor
 x 32
@@ -14385,71 +12315,6 @@ arch cwall_3_1
 x 32
 y 44
 end
-arch blocked
-name nothing
-x 32
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 32
-y 45
-end
-arch blocked
-name nothing
-x 32
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 32
-y 46
-end
-arch blocked
-name nothing
-x 32
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 32
-y 47
-end
-arch blocked
-name nothing
-x 32
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 32
-y 48
-end
-arch blocked
-name nothing
-x 32
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 32
-y 49
-end
 arch woodfloor
 x 33
 end
@@ -14758,71 +12623,6 @@ end
 arch cwall_3_1
 x 33
 y 44
-end
-arch blocked
-name nothing
-x 33
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 33
-y 45
-end
-arch blocked
-name nothing
-x 33
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 33
-y 46
-end
-arch blocked
-name nothing
-x 33
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 33
-y 47
-end
-arch blocked
-name nothing
-x 33
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 33
-y 48
-end
-arch blocked
-name nothing
-x 33
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 33
-y 49
 end
 arch woodfloor
 x 34
@@ -15110,71 +12910,6 @@ end
 arch cwall_3_1
 x 34
 y 44
-end
-arch blocked
-name nothing
-x 34
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 34
-y 45
-end
-arch blocked
-name nothing
-x 34
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 34
-y 46
-end
-arch blocked
-name nothing
-x 34
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 34
-y 47
-end
-arch blocked
-name nothing
-x 34
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 34
-y 48
-end
-arch blocked
-name nothing
-x 34
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 34
-y 49
 end
 arch woodfloor
 x 35
@@ -15556,71 +13291,6 @@ arch cwall_3_1
 x 35
 y 44
 end
-arch blocked
-name nothing
-x 35
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 35
-y 45
-end
-arch blocked
-name nothing
-x 35
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 35
-y 46
-end
-arch blocked
-name nothing
-x 35
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 35
-y 47
-end
-arch blocked
-name nothing
-x 35
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 35
-y 48
-end
-arch blocked
-name nothing
-x 35
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 35
-y 49
-end
 arch flagstone
 name floor
 face shop_empty.111
@@ -16071,71 +13741,6 @@ arch cwall_3_1
 x 36
 y 44
 end
-arch blocked
-name nothing
-x 36
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 36
-y 45
-end
-arch blocked
-name nothing
-x 36
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 36
-y 46
-end
-arch blocked
-name nothing
-x 36
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 36
-y 47
-end
-arch blocked
-name nothing
-x 36
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 36
-y 48
-end
-arch blocked
-name nothing
-x 36
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 36
-y 49
-end
 arch flagstone
 name floor
 face shop_empty.111
@@ -16580,71 +14185,6 @@ arch cwall_3_1
 x 37
 y 44
 end
-arch blocked
-name nothing
-x 37
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 37
-y 45
-end
-arch blocked
-name nothing
-x 37
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 37
-y 46
-end
-arch blocked
-name nothing
-x 37
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 37
-y 47
-end
-arch blocked
-name nothing
-x 37
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 37
-y 48
-end
-arch blocked
-name nothing
-x 37
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 37
-y 49
-end
 arch flagstone
 name floor
 face shop_empty.111
@@ -16994,71 +14534,6 @@ end
 arch cwall_3_1
 x 38
 y 44
-end
-arch blocked
-name nothing
-x 38
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 38
-y 45
-end
-arch blocked
-name nothing
-x 38
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 38
-y 46
-end
-arch blocked
-name nothing
-x 38
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 38
-y 47
-end
-arch blocked
-name nothing
-x 38
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 38
-y 48
-end
-arch blocked
-name nothing
-x 38
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 38
-y 49
 end
 arch flagstone
 name floor
@@ -17437,71 +14912,6 @@ arch cwall_3_1
 x 39
 y 44
 end
-arch blocked
-name nothing
-x 39
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 39
-y 45
-end
-arch blocked
-name nothing
-x 39
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 39
-y 46
-end
-arch blocked
-name nothing
-x 39
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 39
-y 47
-end
-arch blocked
-name nothing
-x 39
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 39
-y 48
-end
-arch blocked
-name nothing
-x 39
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 39
-y 49
-end
 arch flagstone
 name floor
 face shop_empty.111
@@ -17873,71 +15283,6 @@ end
 arch cwall_3_1
 x 40
 y 44
-end
-arch blocked
-name nothing
-x 40
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 40
-y 45
-end
-arch blocked
-name nothing
-x 40
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 40
-y 46
-end
-arch blocked
-name nothing
-x 40
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 40
-y 47
-end
-arch blocked
-name nothing
-x 40
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 40
-y 48
-end
-arch blocked
-name nothing
-x 40
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 40
-y 49
 end
 arch flagstone
 name floor
@@ -18342,71 +15687,6 @@ end
 arch cwall_3_1
 x 41
 y 44
-end
-arch blocked
-name nothing
-x 41
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 41
-y 45
-end
-arch blocked
-name nothing
-x 41
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 41
-y 46
-end
-arch blocked
-name nothing
-x 41
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 41
-y 47
-end
-arch blocked
-name nothing
-x 41
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 41
-y 48
-end
-arch blocked
-name nothing
-x 41
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 41
-y 49
 end
 arch flagstone
 name floor
@@ -18823,71 +16103,6 @@ arch cwall_3_1
 x 42
 y 44
 end
-arch blocked
-name nothing
-x 42
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 42
-y 45
-end
-arch blocked
-name nothing
-x 42
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 42
-y 46
-end
-arch blocked
-name nothing
-x 42
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 42
-y 47
-end
-arch blocked
-name nothing
-x 42
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 42
-y 48
-end
-arch blocked
-name nothing
-x 42
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 42
-y 49
-end
 arch flagstone
 name floor
 face shop_empty.111
@@ -19255,71 +16470,6 @@ end
 arch cwall_3_1
 x 43
 y 44
-end
-arch blocked
-name nothing
-x 43
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 43
-y 45
-end
-arch blocked
-name nothing
-x 43
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 43
-y 46
-end
-arch blocked
-name nothing
-x 43
-y 47
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 43
-y 47
-end
-arch blocked
-name nothing
-x 43
-y 48
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 43
-y 48
-end
-arch blocked
-name nothing
-x 43
-y 49
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 43
-y 49
 end
 arch flagstone
 name floor
@@ -19702,32 +16852,6 @@ end
 arch cwall_3_1
 x 44
 y 44
-end
-arch blocked
-name nothing
-x 44
-y 45
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 44
-y 45
-end
-arch blocked
-name nothing
-x 44
-y 46
-move_block 0
-blocksview 0
-end
-arch evergreens
-name cloud
-face fog.111
-x 44
-y 46
 end
 arch blocked
 x 44
