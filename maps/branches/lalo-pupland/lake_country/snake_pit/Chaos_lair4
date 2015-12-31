@@ -9,7 +9,7 @@ enter_x 9
 enter_y 20
 msg
 Created:  1995-06-06 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2012-02-10 Rick Tanner
+Modified: 2015-04-02 Rick Tanner
 endmsg
 end
 arch button_handle
@@ -345,7 +345,7 @@ arch large_stones
 x 2
 y 4
 end
-arch cave19
+arch cave25
 x 2
 y 4
 end
@@ -1015,15 +1015,15 @@ arch cave_15
 x 5
 y 21
 end
-arch cave_15
+arch cave24
 x 5
 y 22
 end
-arch cave_15
+arch cave3
 x 5
 y 23
 end
-arch cave_15
+arch cave23
 x 5
 y 24
 end
@@ -2987,18 +2987,9 @@ speed 0.500000
 speed_left -2.100000
 connected 2
 end
-arch large_stones
+arch cave_15
 x 17
 y 17
-end
-arch block_door_closed
-name Rock Pillar
-face blocked.111
-x 17
-y 17
-speed 0.500000
-speed_left -2.100000
-connected 2
 end
 arch large_stones
 x 17

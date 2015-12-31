@@ -9,7 +9,7 @@ enter_x 16
 enter_y 30
 msg
 Created:  1995-06-04 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2012-03-18 Rick Tanner
+Modified: 2015-04-02 Rick Tanner
 endmsg
 maplore
 @def ChaosLair
@@ -6864,7 +6864,7 @@ arch cave11
 x 30
 y 24
 end
-arch cave20
+arch cave22
 x 30
 y 25
 end
@@ -7022,7 +7022,7 @@ arch large_stones
 x 31
 y 24
 end
-arch cave20
+arch cave22
 x 31
 y 24
 end
@@ -7241,7 +7241,7 @@ arch large_stones
 x 32
 y 23
 end
-arch cave20
+arch cave22
 x 32
 y 23
 end

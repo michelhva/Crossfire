@@ -9,7 +9,7 @@ enter_x 3
 enter_y 2
 msg
 Created:  1995-06-06 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2012-02-10 Rick Tanner
+Modified: 2015-04-02 Rick Tanner
 endmsg
 end
 arch large_stones
@@ -25,7 +25,7 @@ end
 arch large_stones
 y 2
 end
-arch cave18
+arch cave24
 y 2
 end
 arch large_stones
@@ -37,7 +37,7 @@ end
 arch large_stones
 y 4
 end
-arch cave17
+arch cave23
 y 4
 end
 arch large_stones
@@ -88,14 +88,14 @@ arch large_stones
 x 1
 y 5
 end
-arch cave17
+arch cave23
 x 1
 y 5
 end
 arch large_stones
 x 2
 end
-arch cave18
+arch cave24
 x 2
 end
 arch large_stones
@@ -193,14 +193,14 @@ arch large_stones
 x 3
 y 5
 end
-arch cave20
+arch cave22
 x 3
 y 5
 end
 arch large_stones
 x 4
 end
-arch cave19
+arch cave25
 x 4
 end
 arch large_stones
@@ -253,7 +253,7 @@ arch large_stones
 x 5
 y 1
 end
-arch cave19
+arch cave25
 x 5
 y 1
 end
@@ -269,7 +269,7 @@ arch large_stones
 x 5
 y 3
 end
-arch cave20
+arch cave22
 x 5
 y 3
 end
