@@ -878,10 +878,10 @@ end
 arch c_woman
 name Giselle
 msg
-@match *
-I'm busy right now - come back later or ask Colette for help.
 @match coffee
 The Coffee Controls The Post.  Whoever Controls The Post Controls The Empire.
+@match *
+I'm busy right now - come back later or ask Colette for help.
 endmsg
 x 9
 y 4
