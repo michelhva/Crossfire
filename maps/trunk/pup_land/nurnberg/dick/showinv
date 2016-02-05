@@ -8,7 +8,7 @@ enter_x 1
 enter_y 2
 msg
 Created:  1996-02-11
-Modified: 2012-03-02 Rick Tanner
+Modified: 2016-02-04 radish
 endmsg
 end
 arch afloor_right
@@ -1556,12 +1556,6 @@ arch dungeon_magic
 x 9
 y 1
 end
-arch button_small
-x 9
-y 1
-invisible 1
-connected 2
-end
 arch afloor_right
 x 9
 y 2
@@ -2019,6 +2013,7 @@ Use two spells and one item:
  1. show invisible
  2. create earthwall
  3. a heavy item
+Careful. It only works one time.
 endmsg
 x 11
 y 12
@@ -4000,6 +3995,12 @@ end
 arch dungeon_magic
 x 22
 y 1
+end
+arch button_small
+x 22
+y 1
+invisible 1
+connected 2
 end
 arch afloor_right
 x 22

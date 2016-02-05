@@ -8,7 +8,7 @@ enter_x 1
 enter_y 3
 msg
 Created:  1996-02-09
-Modified: 2012-04-07 Rick Tanner
+Modified: 2016-02-04 radish
 endmsg
 end
 arch grass
@@ -527,9 +527,9 @@ I hate him! He is very stingy! I built his Castle, but he didn't pay enough mone
 @match dot
 Ok!
 @match tod
-Really,you want to get a death?
+Really? You want to die?
 @match extra
-Oh, You want to try the extra dungeon, do you? Then please say the keyword that is obtained by Proof Scrolls.
+Oh, You want to try the extra dungeon, do you? Then please say the keyword from the Proof Scrolls.
 @match yes
 Ok.  Please drop 5 platinum on the alter, and go to the next room.
 @match *
@@ -541,7 +541,6 @@ face human.111
 hp 100
 x 4
 y 10
-type 0
 move_type walk
 monster 1
 friendly 1
@@ -1223,7 +1222,7 @@ There are three dungeons.
  1.Click de Pon (low level)
  2.ShowInv de Pon (medium level)
  3.Bomb de Pon (high level)
-There are special items in each dungeon: one is a key, another is the Proof Scroll.  Go to dungeon and pick them.
+There are special items in each dungeon: one is a key, another is the Proof Scroll.  Go to the dungeons and get them.
 endmsg
 x 10
 y 6

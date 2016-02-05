@@ -8,7 +8,7 @@ enter_x 18
 enter_y 2
 msg
 Created:  1996-02-12
-Modified: 2012-03-02 Rick Tanner
+Modified: 2016-02-04 radish
 endmsg
 end
 arch dungeon_floor
@@ -4706,7 +4706,23 @@ arch flagstone
 x 14
 y 11
 end
+arch magic_ear
+msg
+@match open
+Click.
+endmsg
+x 14
+y 11
+connected 2
+end
 arch dungeon_magic
+x 14
+y 11
+end
+arch sign
+msg
+Stand here and say "open" to open the gate if you are trapped.
+endmsg
 x 14
 y 11
 end
@@ -6229,9 +6245,9 @@ y 7
 end
 arch sign
 msg
-That Dave is very strong.  So, you'd better to activate the Monster Transfer System, lead the monster to the pentagram, and transfer monster to bomb area.  You should not enter the pentagram.
+Dave is very strong.  So, you'd bette activate the Monster Transfer System, lead the monster to the pentagram, and transfer monster to comet room.  You should probably not enter the pentagram...
 
-Be careful to the mover.
+Be careful of the movers. They will push you in.
 
 Data:
 --- Dave ----
