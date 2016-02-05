@@ -8,7 +8,7 @@ enter_x 16
 enter_y 23
 msg
 Created:  1996-02-10
-Modified: 2012-04-07 Rick Tanner
+Modified: 2016-02-04 Kevin Zheng
 endmsg
 end
 arch igate_open_1
@@ -2563,9 +2563,8 @@ x 15
 y 19
 end
 arch sign
-name Instruction
 msg
-Bomb is very powerful in this game.  Move to on the marking rune, open next door, cast create much bomb, and escape from explosion.
+Create bomb is a very powerful spell. Move to the marking rune, open the door, create some bombs, and escape from the explosion.
 endmsg
 x 15
 y 19
@@ -2903,7 +2902,7 @@ y 19
 end
 arch rune_mark
 msg
-Cast create bomb from here.
+Create bombs here.
 endmsg
 x 17
 y 19
@@ -3371,13 +3370,10 @@ x 20
 y 18
 end
 arch sign
-name Instruction2
 msg
-Wait!
-Don't turn left carelessly, or you'll catch cold breath.
+Stop! Don't move left carelessly, or you'll be hit with cold breath.
 
-Can you cast sunspear?
-If you can do, cast it, and create bombs from marking rune spot.
+Can you cast sunspear? If so, cast it and create bombs near the marking rune.
 endmsg
 x 20
 y 18
@@ -3833,7 +3829,7 @@ y 23
 end
 arch sign
 msg
-On this corridor, you cannot use magic except marking rune spot.
+In this corridor, the only place you can use magic is on the marking rune.
 endmsg
 x 23
 y 23
