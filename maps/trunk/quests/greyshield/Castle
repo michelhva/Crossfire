@@ -8,7 +8,7 @@ enter_x 15
 enter_y 30
 msg
 Created:  1996-09-16 Chris Jeske
-Modified: 2012-03-09 Rick Tanner
+Modified: 2016-02-12 Kevin Zheng
 endmsg
 end
 arch woods_3
@@ -2754,12 +2754,13 @@ arch cobblestones2
 x 15
 y 24
 end
-arch sea1
+arch biglake_n
 name moat
 x 15
 y 25
+move_block 0
 end
-arch drawbridge_2
+arch river_bridge_ns
 x 15
 y 25
 end
@@ -2947,12 +2948,13 @@ arch cobblestones2
 x 16
 y 24
 end
-arch sea1
+arch biglake_n
 name moat
 x 16
 y 25
+move_block 0
 end
-arch drawbridge_2
+arch river_bridge_ns
 x 16
 y 25
 end
