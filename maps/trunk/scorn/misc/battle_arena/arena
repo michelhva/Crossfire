@@ -9,7 +9,7 @@ enter_x 3
 enter_y 3
 msg
 Created:  2000-11-08 Andreas Vogl (red.blaze@gmx.net)
-Modified: 2013-03-18 Kevin Zheng
+Modified: 2016-02-15 Kevin Zheng
 endmsg
 end
 arch cobblestones2
@@ -2583,12 +2583,15 @@ x 6
 y 15
 end
 arch grass
+slaying arena_ud
+hp 1
+sp 10
 x 6
 y 15
 end
-arch stair_down_2
+arch stair_down_4
 slaying arena_ud
-hp 2
+hp 1
 sp 10
 x 6
 y 15
@@ -2643,10 +2646,10 @@ arch grass
 x 6
 y 19
 end
-arch stair_down_2
+arch stair_down_4
 slaying arena_ud
-hp 2
-sp 18
+hp 1
+sp 14
 x 6
 y 19
 end
@@ -6093,10 +6096,10 @@ arch grass
 x 13
 y 6
 end
-arch stair_down_2
+arch stair_down_1
 slaying arena_ud
-hp 10
-sp 2
+hp 8
+sp 1
 x 13
 y 6
 end
@@ -6189,10 +6192,10 @@ name stonefloor
 x 13
 y 13
 end
-arch stair_down_2
+arch stair_down_4
 slaying arena_ud
-hp 10
-sp 10
+hp 8
+sp 8
 x 13
 y 13
 end
@@ -6291,10 +6294,10 @@ name stonefloor
 x 13
 y 21
 end
-arch stair_down_2
+arch stair_down_4
 slaying arena_ud
-hp 10
-sp 18
+hp 8
+sp 16
 x 13
 y 21
 end
@@ -6450,10 +6453,10 @@ arch grass
 x 13
 y 28
 end
-arch stair_down_2
+arch stair_down_3
 slaying arena_ud
-hp 2
-sp 3
+hp 8
+sp 23
 x 13
 y 28
 end
@@ -10832,10 +10835,10 @@ arch grass
 x 21
 y 6
 end
-arch stair_down_2
+arch stair_down_1
 slaying arena_ud
-hp 18
-sp 2
+hp 16
+sp 1
 x 21
 y 6
 end
@@ -10998,8 +11001,8 @@ y 13
 end
 arch stair_down_2
 slaying arena_ud
-hp 18
-sp 10
+hp 16
+sp 8
 x 21
 y 13
 end
@@ -11125,8 +11128,8 @@ y 21
 end
 arch stair_down_2
 slaying arena_ud
-hp 18
-sp 18
+hp 16
+sp 16
 x 21
 y 21
 end
@@ -11218,10 +11221,10 @@ arch grass
 x 21
 y 28
 end
-arch stair_down_2
+arch stair_down_3
 slaying arena_ud
-hp 26
-sp 3
+hp 16
+sp 23
 x 21
 y 28
 end
@@ -14774,7 +14777,7 @@ y 15
 end
 arch stair_down_2
 slaying arena_ud
-hp 26
+hp 23
 sp 10
 x 28
 y 15
@@ -14831,8 +14834,8 @@ y 19
 end
 arch stair_down_2
 slaying arena_ud
-hp 26
-sp 18
+hp 23
+sp 14
 x 28
 y 19
 end
