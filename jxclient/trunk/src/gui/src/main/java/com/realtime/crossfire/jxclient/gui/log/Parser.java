@@ -247,9 +247,14 @@ public class Parser {
             if (COLORS.containsKey(colorName)) {
                 color = COLORS.get(colorName);
                 assert color != null;
-                //} else {
-                // ignore unknown color
+            } else if (colorName.startsWith("#") && colorName.length() == 7) {
+              try {
+                color = Color.decode(colorName);
+              } catch (final NumberFormatException ignored) {
+                // never mind invalid colors
+              }
             }
+            // ignore unknown color
         } else if (tag.equals("/color")) {
             color = defaultColor;
             //} else {
@@ -305,7 +310,7 @@ public class Parser {
             }
         }
 
-        return "unknown";
+        return color.toString();
     }
 
 }
