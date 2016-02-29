@@ -8,7 +8,7 @@ enter_x 31
 enter_y 16
 msg
 Created:  2008-07-31 Raphaël Quinet
-Modified: 2013-07-18 Kevin Zheng
+Modified: 2016-02-16 Kevin Zheng
 endmsg
 outdoor 1
 end
@@ -5282,12 +5282,10 @@ x 40
 y 4
 end
 arch perm_magic_portal
-name Game Pending
-slaying fz_lobby
-x 40
-y 4
-end
-arch dust_effect
+name Orc Pits
+slaying fz_orcpit
+hp 25
+sp 28
 x 40
 y 4
 end
