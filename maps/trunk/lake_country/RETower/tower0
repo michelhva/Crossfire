@@ -8,7 +8,7 @@ enter_x 20
 enter_y 36
 msg
 Created:  1995-04-03
-Modified: 2015-12-01 Rick Tanner
+Modified: 2016-03-29 Rick Tanner
 endmsg
 end
 arch biglake_s
@@ -4711,6 +4711,7 @@ end
 arch grass
 x 18
 y 39
+move_block all
 end
 arch grass
 x 18
@@ -4951,6 +4952,13 @@ arch dungeon_magic
 x 19
 y 38
 end
+arch invis_exit
+slaying ../../world/world_109_126
+hp 19
+sp 23
+x 19
+y 38
+end
 arch dungeon_floor
 x 19
 y 38
@@ -4958,6 +4966,7 @@ end
 arch grass
 x 19
 y 39
+move_block all
 end
 arch grass
 x 19
@@ -5198,6 +5207,13 @@ arch dungeon_magic
 x 20
 y 38
 end
+arch invis_exit
+slaying ../../world/world_109_126
+hp 19
+sp 23
+x 20
+y 38
+end
 arch dungeon_floor
 x 20
 y 38
@@ -5205,6 +5221,7 @@ end
 arch grass
 x 20
 y 39
+move_block all
 end
 arch grass
 x 20
@@ -5449,6 +5466,13 @@ arch dungeon_magic
 x 21
 y 38
 end
+arch invis_exit
+slaying ../../world/world_109_126
+hp 19
+sp 23
+x 21
+y 38
+end
 arch dungeon_floor
 x 21
 y 38
@@ -5456,6 +5480,7 @@ end
 arch grass
 x 21
 y 39
+move_block all
 end
 arch grass
 x 21
@@ -5765,6 +5790,7 @@ end
 arch grass
 x 22
 y 39
+move_block all
 end
 arch grass
 x 22
