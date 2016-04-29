@@ -3,7 +3,7 @@ name world_109_127
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2016-04-29 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_109_126
@@ -1133,7 +1133,7 @@ x 4
 y 25
 elevation 637
 end
-arch desert
+arch beach
 x 4
 y 26
 elevation 91
@@ -1393,12 +1393,12 @@ arch tree3
 x 5
 y 24
 end
-arch desert
+arch beach
 x 5
 y 25
 elevation 628
 end
-arch desert
+arch beach
 x 5
 y 26
 elevation 40
@@ -1668,7 +1668,7 @@ x 6
 y 26
 elevation 37
 end
-arch desert
+arch beach
 x 6
 y 27
 elevation 178
@@ -1947,6 +1947,13 @@ x 7
 y 28
 elevation 440
 end
+arch ixalovh_temple
+slaying ../lake_country/temples/ixalovh-temple
+hp 11
+sp 13
+x 7
+y 28
+end
 arch sea
 x 7
 y 29
@@ -2191,7 +2198,7 @@ x 8
 y 23
 elevation 645
 end
-arch desert
+arch beach
 x 8
 y 24
 elevation 251
@@ -2201,12 +2208,12 @@ x 8
 y 25
 elevation 7
 end
-arch desert
+arch beach
 x 8
 y 26
 elevation 14
 end
-arch desert
+arch beach
 x 8
 y 27
 elevation 201
@@ -2463,7 +2470,7 @@ x 9
 y 26
 elevation 13
 end
-arch desert
+arch beach
 x 9
 y 27
 elevation 222
