@@ -7,7 +7,7 @@ width 30
 height 30
 msg
 Created:  2015-03-31 Rick Tanner
-Modified: 2015-04-03 Rick Tanner
+Modified: 2016-04-28 Rick Tanner
 endmsg
 tile_path_1 uworld_110_122
 tile_path_3 uworld_110_124
@@ -1238,6 +1238,9 @@ x 9
 y 20
 end
 arch barrack_long
+slaying ../brest/dungeons/kolmtak-mine/kolmtak-barracks1
+hp 10
+sp 11
 x 9
 y 20
 end
@@ -1262,6 +1265,9 @@ x 9
 y 24
 end
 arch barrack_long
+slaying ../brest/dungeons/kolmtak-mine/kolmtak-barracks3
+hp 10
+sp 11
 x 9
 y 24
 end
@@ -1524,6 +1530,9 @@ x 11
 y 22
 end
 arch barrack_long
+slaying ../brest/dungeons/kolmtak-mine/kolmtak-barracks2
+hp 10
+sp 11
 x 11
 y 22
 end
@@ -1544,6 +1553,9 @@ x 11
 y 26
 end
 arch barrack_long
+slaying ../brest/dungeons/kolmtak-mine/kolmtak-barracks4
+hp 10
+sp 11
 x 11
 y 26
 end
