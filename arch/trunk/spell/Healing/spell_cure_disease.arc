@@ -8,7 +8,6 @@ level 10
 grace 30
 casting_time 10
 path_attuned 256
-other_arch healing
 skill praying
 type 101
 subtype 21
