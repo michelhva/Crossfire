@@ -8,7 +8,7 @@ enter_x 3
 enter_y 5
 msg
 Created:  1995-03-27
-Modified: 2012-09-13 Rick Tanner
+Modified: 2016-05-06 Rick Tanner
 endmsg
 end
 arch grass
@@ -3304,7 +3304,10 @@ arch grass
 x 14
 y 13
 end
-arch evergreen
+arch valkyrie_temple
+slaying temples/valkyrie-temple
+hp 11
+sp 13
 x 14
 y 13
 end
