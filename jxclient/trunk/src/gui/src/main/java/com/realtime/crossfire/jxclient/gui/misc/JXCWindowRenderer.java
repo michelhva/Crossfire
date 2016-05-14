@@ -444,7 +444,7 @@ public class JXCWindowRenderer {
         debugScreenWrite("setResolutionPre: windowed mode requested");
         frame.setUndecorated(false);
         frame.setResizable(!fixedSize);
-        final Point centerPoint = geCenterPoint();
+        final Point centerPoint = getCenterPoint();
         final Dimension dimension;
         //noinspection IfMayBeConditional
         if (resolution == null) {
@@ -1429,7 +1429,7 @@ public class JXCWindowRenderer {
      * @return the center point
      */
     @NotNull
-    private Point geCenterPoint() {
+    private Point getCenterPoint() {
         final Point result = graphicsEnvironment.getCenterPoint();
         debugScreenWrite("getCenterPoint()="+result);
         return result;
