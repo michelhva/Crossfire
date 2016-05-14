@@ -48,8 +48,8 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link GUIElement} that displays a list of entries.
- * @author Andreas Kirschbaum
  * @param <T> the type of the list elements
+ * @author Andreas Kirschbaum
  */
 public abstract class GUIList<T extends GUIElement> extends ActivatableGUIElement implements GUIScrollable {
 
