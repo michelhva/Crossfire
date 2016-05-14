@@ -26,8 +26,8 @@ import javax.swing.ListCellRenderer;
 /**
  * A {@link ListCellRenderer} that implements resizing after screen resolution
  * changes.
- * @author Andreas Kirschbaum
  * @param <T> the type of the list elements
+ * @author Andreas Kirschbaum
  */
 public interface GUIListCellRenderer<T> extends ListCellRenderer<T> {
 

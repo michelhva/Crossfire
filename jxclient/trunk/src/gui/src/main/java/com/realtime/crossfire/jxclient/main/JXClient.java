@@ -305,7 +305,7 @@ public class JXClient {
                     debugProtocolOutputStreamWriter.close();
                 }
             }
-        } catch (final InterruptedException | InvocationTargetException | IOException ex) {
+        } catch (final InterruptedException|InvocationTargetException|IOException ex) {
             //noinspection CallToPrintStackTrace
             ex.printStackTrace();
             System.exit(1);
