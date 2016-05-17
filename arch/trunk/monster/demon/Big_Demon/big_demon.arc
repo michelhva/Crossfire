@@ -45,7 +45,7 @@ end
 More
 Object big_demon_2
 name big demon
-face big_demon.x31
+face big_demon.x71
 animation big_demon
 monster 1
 move_type walk
@@ -56,7 +56,7 @@ end
 More
 Object big_demon_3
 name big demon
-face big_demon.x31
+face big_demon.x71
 animation big_demon
 monster 1
 move_type walk
@@ -67,7 +67,7 @@ end
 More
 Object big_demon_4
 name big demon
-face big_demon.x31
+face big_demon.x71
 animation big_demon
 monster 1
 move_type walk
@@ -78,7 +78,7 @@ end
 More
 Object big_demon_5
 name big demon
-face big_demon.x31
+face big_demon.x71
 animation big_demon
 monster 1
 move_type walk
@@ -90,7 +90,7 @@ end
 More
 Object big_demon_6
 name big demon
-face big_demon.x31
+face big_demon.x71
 animation big_demon
 monster 1
 move_type walk
@@ -102,7 +102,7 @@ end
 More
 Object big_demon_7
 name big demon
-face big_demon.x31
+face big_demon.x71
 animation big_demon
 monster 1
 move_type walk
