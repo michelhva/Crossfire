@@ -11,7 +11,7 @@ enter_x 9
 enter_y 15
 msg
 Created:  2002-02-28
-Modified: 2012-01-12 Rick Tanner
+Modified: 2016-05-17 SilverNexus
 endmsg
 outdoor 1
 end
@@ -1343,6 +1343,7 @@ endmsg
 x 10
 y 5
 no_pick 1
+identified 1
 end
 arch flagstone
 x 10
@@ -1360,6 +1361,7 @@ endmsg
 x 10
 y 6
 no_pick 1
+identified 1
 end
 arch flagstone
 x 10
@@ -1375,6 +1377,7 @@ endmsg
 x 10
 y 7
 no_pick 1
+identified 1
 end
 arch flagstone
 x 10

@@ -11,7 +11,7 @@ enter_x 10
 enter_y 33
 msg
 Created:  1999-04-02
-Modified: 2014-09-04 Rick Tanner
+Modified: 2016-05-17 SilverNexus
 endmsg
 end
 arch grass
@@ -2852,6 +2852,7 @@ You find a lengthy treatise on disease and its cure.  Some diseases, apparently,
 endmsg
 x 10
 y 26
+identified 1
 end
 arch woodfloor
 x 10
@@ -2870,6 +2871,7 @@ The healing potion is equivalent to the heal spell. The Restoration spell does N
 endmsg
 x 10
 y 27
+identified 1
 end
 arch woodfloor
 x 10
@@ -3224,6 +3226,7 @@ Poison may be cured via the "cure poison" prayer.  Madness or confusion may be c
 endmsg
 x 11
 y 27
+identified 1
 end
 arch woodfloor
 x 11
@@ -3581,6 +3584,7 @@ Drained abilities (stats), lost by fighting undead, or dying, may be restored vi
 endmsg
 x 12
 y 26
+identified 1
 end
 arch woodfloor
 x 12
