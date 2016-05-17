@@ -12,7 +12,7 @@ enter_x 40
 enter_y 21
 msg
 Created:  1999-04-02
-Modified: 2012-03-27 Rick Tanner
+Modified: 2016-05-17 SilverNexus
 endmsg
 outdoor 1
 end
@@ -7047,6 +7047,7 @@ There are two factors controlling one's magical powers: Spell Point capacity, an
 endmsg
 x 37
 y 10
+identified 1
 end
 arch magic_banned
 x 37
@@ -7070,6 +7071,7 @@ o  Special weapons crafted for mages may also have Spell Point regeneration bonu
 endmsg
 x 37
 y 11
+identified 1
 end
 arch magic_banned
 x 37
