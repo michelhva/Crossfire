@@ -103,7 +103,7 @@ index = 0;
 
 for jsonRule in dialogs:
     replies = None
-    if jsonRule.has_key('replies'):
+    if 'replies' in jsonRule:
         replies = jsonRule['replies']
     rule = DialogRule(jsonRule["match"],
                       jsonRule["pre"],
