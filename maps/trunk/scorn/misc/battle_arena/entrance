@@ -9,7 +9,7 @@ enter_x 11
 enter_y 24
 msg
 Created:  2000-11-08 Andreas Vogl (red.blaze@gmx.net)
-Modified: 2014-03-15 Kevin Zheng
+Modified: 2016-05-22 SilverNexus
 endmsg
 end
 arch pstone_2
@@ -3378,6 +3378,7 @@ x 18
 y 19
 material 0
 no_pick 1
+identified 1
 end
 arch dungeon_magic
 x 18
@@ -3396,6 +3397,7 @@ x 18
 y 20
 material 0
 no_pick 1
+identified 1
 end
 arch dungeon_magic
 x 18
@@ -3414,6 +3416,7 @@ x 18
 y 21
 material 0
 no_pick 1
+identified 1
 end
 arch pstone_2
 x 18
