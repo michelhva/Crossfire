@@ -52,10 +52,11 @@ typedef enum {
     Woods3=15,
     Hills=16,
     HillsRocky=17,
-    Steppe=17,
+    Steppe=18,
     Mountain=19,
     HighMountain=20,
-    WasteLand=21
+    WasteLand=21, /*Now just higher mountain */
+    Beach = 22
 } Terrain_Types;
 
 char *Terrain_Names[][2] = {
@@ -84,7 +85,9 @@ char *Terrain_Names[][2] = {
     {"steppe",	    "150 97 34 "},
     {"mountain",    "183 190 190 "},
     {"mountain2",   "191 196 185 "},
-    {"wasteland",   "255 255 255 "},
+    {"mountain4",   "255 255 255 "},
+    /* Maybe need to put in order? */
+    {"beach",	    "232 228 165 "},
 };
 
 
@@ -145,6 +148,9 @@ void write_crossfire_maps(int mapy, int mapx)
 		if (altitude[y][x] < 10) {
 		    terrain[x + y * mapx] = Swamp + (r1 % 2);
 		}
+		else if (altitude[y][x] < 75){
+		    terrain[x + y * mapx] = Beach;
+		}
 		else if (altitude[y][x] < 1000) {
 		    terrain[x + y * mapx] = Grass + (r1 % 3);
 		} else if (altitude[y][x] < 3000) {
@@ -171,7 +177,10 @@ void write_crossfire_maps(int mapy, int mapx)
 	    if (altitude[y][x] < 10) {
 		terrain[x + y * mapx] = Swamp + (r1 % 2);
 	    }
-	    if (altitude[y][x] < 1000) {
+	    else if (altitude[y][x] < 75){
+		terrain[x + y * mapx] = Beach;
+	    }
+	    else if (altitude[y][x] < 1000) {
 		terrain[x + y * mapx] = Grass + (r1 % 3);
 	    } else if (altitude[y][x] < 3000) {
 		    terrain[x + y * mapx] = EverGreens + (r2 % 9);
@@ -204,7 +213,7 @@ void write_crossfire_maps(int mapy, int mapx)
 	    fprintf(fp,"width %d\n", MAP_SIZE);
 	    fprintf(fp,"height %d\n", MAP_SIZE);
 	    /* Not used right now, but useful to include */
-	    fprintf(fp,"outdoor 1\n", MAP_SIZE);
+	    fprintf(fp,"outdoor 1\n");
 
 	    /* don't do difficult, reset time, or enter coordinates */
 	    /* Set up the tile paths */
@@ -250,7 +259,7 @@ void write_crossfire_maps(int mapy, int mapx)
     fprintf(fp, "P3 %d %d 255\n", mapy, mapx);
     for (y=0; y < mapy; y++) {
 	    for (x=0; x < mapx; x++) {
-		fprintf(fp, Terrain_Names[terrain[x + y * mapx]][1]);
+		fprintf(fp, "%s", Terrain_Names[terrain[x + y * mapx]][1]);
 	    }
 	fprintf(fp, "\n");
 	}
