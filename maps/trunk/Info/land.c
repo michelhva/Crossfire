@@ -331,6 +331,7 @@ main(int argc, char *argv)
 
 	    case 'Y':
 	        starty = atoi(optarg);
+		break;
 
 	    case 's':
 		seed = atoi(optarg);
