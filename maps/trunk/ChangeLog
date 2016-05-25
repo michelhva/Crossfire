@@ -2,6 +2,8 @@
 
 	* Info/land.c: Updated to solve some compiler warnings, use impassable
 	  mountains instead of wastelands, and generate beaches.
+	  Also, generate very high mountains at extreme altitude and make the old
+	  highest mountains a different color on the output map.
 
 2016-05-22 15:59  Daniel Hawkins
 

@@ -56,7 +56,8 @@ typedef enum {
     Mountain=19,
     HighMountain=20,
     WasteLand=21, /*Now just higher mountain */
-    Beach = 22
+    Beach = 22,
+    VeryHighMountain=23
 } Terrain_Types;
 
 char *Terrain_Names[][2] = {
@@ -85,9 +86,10 @@ char *Terrain_Names[][2] = {
     {"steppe",	    "150 97 34 "},
     {"mountain",    "183 190 190 "},
     {"mountain2",   "191 196 185 "},
-    {"mountain4",   "255 255 255 "},
+    {"mountain4",   "215 215 215 "},
     /* Maybe need to put in order? */
     {"beach",	    "232 228 165 "},
+    {"mountain5",   "255 255 255 "},
 };
 
 
@@ -110,9 +112,8 @@ void write_crossfire_maps(int mapy, int mapx)
 		terrain[x + y * mapx] = MediumWater;
 	    } else if (altitude[y][x] < 1) {
 		terrain[x + y * mapx] = ShallowWater;
-	    } else if (altitude[y][x] >=12000) {
-		/* Not really precisely wasteland, but wastelands are impassable */
-		terrain[x + y * mapx] = WasteLand;
+	    } else if (altitude[y][x] >=25000) {
+		terrain[x + y * mapx] = VeryHighMountain;
 	    }
 	}
     }
@@ -161,6 +162,9 @@ void write_crossfire_maps(int mapy, int mapx)
 		    terrain[x + y * mapx] = Mountain;
 		} else if (altitude[y][x] < 12000) {
 		    terrain[x + y * mapx] = HighMountain;
+		} else if (altitude[y][x] < 25000) {
+		    /* Not really precisely wasteland, but wastelands are impassable */
+		    terrain[x + y * mapx] = WasteLand;
 		}
 		else fprintf(stderr,"altitude %d did not get filled in?\n", altitude[y][x]);
 	    }
@@ -190,6 +194,8 @@ void write_crossfire_maps(int mapy, int mapx)
 		    terrain[x + y * mapx] = Mountain;
 	    } else if (altitude[y][x] < 12000) {
 		    terrain[x + y * mapx] = HighMountain;
+	    } else if (altitude[y][x] < 25000) {
+		    terrain[x + y * mapx] = WasteLand;
 	    }
 	}
     }
