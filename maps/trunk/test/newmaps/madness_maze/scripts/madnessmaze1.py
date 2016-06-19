@@ -33,7 +33,7 @@ if whoami==Guardian:
     if text[0]=='5':
         message="If you go in there, you won't come back."
         whoami.Say(message)
-    if text[0]=="6"
+    if text[0]=="6":
         message="They cut them off, seemed to think I might be tempted by the maze, like I woulda been.  Figured I could warn people without arms, but I couldn't disarm the traps without arms."
         whoami.Say(message)
     if text[0]=="7":
