@@ -37,7 +37,7 @@ def do_enemy():
 		said = ';'
 	e = ';' + str(whoami.Enemy.Count) + ';'
 	if said.find(e) != -1:
-		return;
+		return
 	msg = Crossfire.ScriptParameters()
 
 	msg = msg.replace('%m', whoami.Name)

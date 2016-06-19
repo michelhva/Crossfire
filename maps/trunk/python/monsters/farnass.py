@@ -74,7 +74,7 @@ def check_ingredients():
 
 	if whoami.ReadKey(key_status) != st_getting:
 		whoami.Say('Oh, great, you found what I need to make my special caramel!')
-		whoami.WriteKey(key_status, st_getting, 1);
+		whoami.WriteKey(key_status, st_getting, 1)
 		return
 
 	# if called here, Farnass moved to the recipient, and can pick the ingredients

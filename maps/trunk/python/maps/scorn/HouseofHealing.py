@@ -37,7 +37,7 @@ def do_say():
 
 	if (uses < len(questions)):
 		if (message == answers[uses]):
-			who.Say('Correct! Be restored!');
+			who.Say('Correct! Be restored!')
 			result = player.RemoveDepletion(5)
 			player_set_status(uses + 1)
 			return

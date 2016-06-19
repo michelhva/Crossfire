@@ -82,9 +82,9 @@ def do_back():
 	while st != None:
 		if (st.ArchName != rw):
 			st = st.Above
-			continue;
+			continue
 		st.Remove()
-		break;
+		break
 
 	act.Message('You feel a powerful force engulf you.')
 	act.Teleport(dest, int(x), int(y))
@@ -102,7 +102,7 @@ def do_banquet():
 
 	if (last == now):
 		act.Message('You read the %s but nothing happens.'%l.Name)
-		return;
+		return
 
 	l.WriteKey('banquet_last', now, 1)
 

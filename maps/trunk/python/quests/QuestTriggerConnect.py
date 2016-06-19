@@ -32,7 +32,7 @@ import Crossfire
 def trigger():
     player = Crossfire.WhoIsActivator()
     if player.Type != Crossfire.Type.PLAYER:
-        return;
+        return
     params = Crossfire.ScriptParameters()
     args = params.split()
     questname = args[0]
