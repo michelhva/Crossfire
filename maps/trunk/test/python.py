@@ -78,7 +78,7 @@ def do_maps():
 	if (len(topic) > 1):
 		flag = 0
 		if len(topic) > 2:
-			flag = int(topic[2]);
+			flag = int(topic[2])
 		ready = Crossfire.ReadyMap(topic[1], flag)
 		if (ready):
 			whoami.Say('ok, loaded %d map %s'%(flag,ready.Name))
@@ -213,7 +213,7 @@ def do_misc():
 			whoami.Say('map %s is not loaded'%topic[1])
 
 def do_inventory():
-	whoami.Say('You have:');
+	whoami.Say('You have:')
 	inv = who.Inventory
 	while inv:
 		whoami.Say('%s (type = %d, subtype = %d)'%(inv.Name, inv.Type, inv.Subtype))
@@ -278,7 +278,7 @@ def do_bed():
 def do_readkey():
 	if (len(topic) < 2):
 		whoami.Say('read what key?')
-		return;
+		return
 	whoami.Say('key %s = %s'%(topic[1], who.ReadKey(topic[1])))
 
 def do_writekey():
@@ -298,7 +298,7 @@ def do_speed():
 	whoami.Say('Changed your speed, now %f and %f'%(who.Speed, who.SpeedLeft))
 
 def do_owner():
-	whoami.Say('Not implemented.');
+	whoami.Say('Not implemented.')
 
 def do_friendlylist():
 	friends = Crossfire.GetFriendlyList()
@@ -320,14 +320,14 @@ def do_create():
 		second.Teleport(whoami.Map, 2, 2)
 
 def do_directory():
-	whoami.Say('map = %s'%Crossfire.MapDirectory());
-	whoami.Say('unique = %s'%Crossfire.UniqueDirectory());
-	whoami.Say('temp = %s'%Crossfire.TempDirectory());
-	whoami.Say('config = %s'%Crossfire.ConfigDirectory());
-	whoami.Say('local = %s'%Crossfire.LocalDirectory());
-	whoami.Say('player = %s'%Crossfire.PlayerDirectory());
-	whoami.Say('data = %s'%Crossfire.DataDirectory());
-	whoami.Say('scriptname = %s'%Crossfire.ScriptName());
+	whoami.Say('map = %s'%Crossfire.MapDirectory())
+	whoami.Say('unique = %s'%Crossfire.UniqueDirectory())
+	whoami.Say('temp = %s'%Crossfire.TempDirectory())
+	whoami.Say('config = %s'%Crossfire.ConfigDirectory())
+	whoami.Say('local = %s'%Crossfire.LocalDirectory())
+	whoami.Say('player = %s'%Crossfire.PlayerDirectory())
+	whoami.Say('data = %s'%Crossfire.DataDirectory())
+	whoami.Say('scriptname = %s'%Crossfire.ScriptName())
 
 def do_event():
 	whoami.Say('event title = %s' %Crossfire.WhatIsEvent().Title)

@@ -99,7 +99,7 @@ if (Crossfire.ScriptParameters() != None):
     filename = Crossfire.ScriptParameters()
     dialogs = parseJSON([filename], '')
 speech = Dialog(player, npc, location)
-index = 0;
+index = 0
 
 for jsonRule in dialogs:
     replies = None
@@ -115,5 +115,5 @@ for jsonRule in dialogs:
 
 if speech.speak(Crossfire.WhatIsMessage()) == 0:
     # block the NPC for some time
-    Crossfire.WhoAmI().WriteKey('talked_to', str(random.randint(3, 8)), 1);
+    Crossfire.WhoAmI().WriteKey('talked_to', str(random.randint(3, 8)), 1)
     Crossfire.SetReturnValue(1)

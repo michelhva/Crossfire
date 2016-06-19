@@ -45,7 +45,7 @@ def do_release(friendly):
 		m.Friendly = 1
 		m.AttackMovement = 16 # petmode
 	m.Teleport(act.Map, act.X, act.Y)
-	l.WriteKey('sunnista_charges', '0', 1);
+	l.WriteKey('sunnista_charges', '0', 1)
 	act.Message('The %s spits a %s!'%(l.Name, affect))
 
 def do_absorb(count):
@@ -76,7 +76,7 @@ def do_find():
 				if item.ArchName == affect and item.Friendly == 0:
 					got = got + 1
 					item.Remove()
-					break;
+					break
 				if got > max_affect:
 					return got
 				item = item.Above

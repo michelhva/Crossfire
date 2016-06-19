@@ -223,7 +223,7 @@ class Dialog:
                     message = message.replace('$me', self.__speaker.QueryName())
                     message = message.replace('$you', self.__character.QueryName())
 
-                    Crossfire.NPCSay(self.__speaker, message);
+                    Crossfire.NPCSay(self.__speaker, message)
                     if rule.getSuggests() != None:
                         for reply in rule.getSuggests():
                             Crossfire.AddReply(reply[0], reply[1])
@@ -313,7 +313,7 @@ class Dialog:
     # prevents flags from conflicting with other non-dialog-related contents
     # in the player file.
     def getStatus(self, key):
-        character_status=self.__character.ReadKey("dialog_"+self.__location);
+        character_status=self.__character.ReadKey("dialog_"+self.__location)
         if character_status == "":
             return "0"
         pairs=character_status.split(";")
@@ -332,7 +332,7 @@ class Dialog:
             return
         ishere = 0
         finished = ""
-        character_status = self.__character.ReadKey("dialog_"+self.__location);
+        character_status = self.__character.ReadKey("dialog_"+self.__location)
         if character_status != "":
             pairs = character_status.split(";")
             for i in pairs:
@@ -355,7 +355,7 @@ class Dialog:
     # to be unique.  This also prevents flags from conflicting with other
     # non-dialog-related contents in the NPC.
     def getNPCStatus(self, key):
-        npc_status=self.__speaker.ReadKey("dialog_"+self.__location + "_" + self.__character.Name);
+        npc_status=self.__speaker.ReadKey("dialog_"+self.__location + "_" + self.__character.Name)
         if npc_status == "":
             return "0"
         pairs=npc_status.split(";")
@@ -375,7 +375,7 @@ class Dialog:
             return
         ishere = 0
         finished = ""
-        npc_status = self.__speaker.ReadKey("dialog_"+self.__location + "_" + self.__character.Name);
+        npc_status = self.__speaker.ReadKey("dialog_"+self.__location + "_" + self.__character.Name)
         if npc_status != "":
             pairs = npc_status.split(";")
             for i in pairs:

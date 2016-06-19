@@ -30,7 +30,7 @@ def do_give():
 		whoami.Say('And what am I supposed to do with this %s.'%whoisother.Name)
 		return
 
-	whoami.Say('Ohhhhhhhh... This, this dagger...');
+	whoami.Say('Ohhhhhhhh... This, this dagger...')
 	pl.Message('%s puts her hand to her forehead, and staggers.'%whoami.Name)
 	whoami.WriteKey('witherspoon_saw_dagger', '1', 1)
 	whoami.WriteKey('witherspoon_seated', '', 1)
