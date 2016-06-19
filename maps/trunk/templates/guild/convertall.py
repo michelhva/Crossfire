@@ -15,4 +15,4 @@ t.close()
 b=a.split('\n')
 for c in b:
         print c + local_copy
-	os.system('./convert.py '+c + local_copy)
+        os.system('./convert.py '+c + local_copy)
