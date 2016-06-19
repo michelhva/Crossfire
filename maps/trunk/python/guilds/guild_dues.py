@@ -250,7 +250,8 @@ class GuildDues:
                 whoami.Say("Uh? Ya wanna trick me, %s." % random.choice(buddylist))
             elif int(cost) > 1:
                 plural=''
-                if ucurrency.endswith('NOTE'): plural = 's'
+                if ucurrency.endswith('NOTE'):
+                    plural = 's'
                 whoami.Say("%s, you don't have %s %s%s." % (random.choice(exclaimlist), cost, currency, plural))
             else:
                 whoami.Say("You don't have any %s, %s." % (currency, random.choice(buddylist)))
