@@ -8,7 +8,7 @@ enter_x 7
 enter_y 2
 msg
 Created:  1996-05-30
-Modified: 2015-04-18 Jason Zheng
+Modified: 2016-06-25 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -590,10 +590,10 @@ x 6
 y 2
 end
 arch dragon_exit
-name Dragon to Pupland Terminal
+name Dragon to Pup Land Dragon Terminal
 slaying /pup_land/terminal
 msg
-The dragon flies high up into the sky, heading towards the Pupland Terminal...
+The dragon flies high up into the sky, heading towards the Pup Land Dragon Terminal...
 endmsg
 hp 10
 sp 16

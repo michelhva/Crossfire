@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2001-02-16
-Modified: 2015-04-18 Jason Zheng
+Modified: 2016-06-25 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_104_114
@@ -11983,10 +11983,10 @@ x 42
 y 23
 end
 arch dragon_exit
-name Dragon to Pupland Terminal
+name Dragon to Pup Land Dragon Terminal
 slaying /pup_land/terminal
 msg
-The dragon flies high up into the sky, heading towards the Pupland Terminal...
+The dragon flies high up into the sky, heading towards the Pup Land Dragon Terminal...
 endmsg
 hp 10
 sp 2
@@ -12865,7 +12865,7 @@ x 44
 y 31
 end
 arch store_weapons
-name Weapon Shop
+name Scorn Weapon Shop
 slaying /scorn/shops/weaponshop
 hp 11
 sp 19
@@ -12913,7 +12913,7 @@ x 44
 y 36
 end
 arch store_alchemy
-name Alchemy Shop
+name Scorn Alchemy Shop
 slaying /scorn/shops/potionshop
 hp 6
 sp 16
@@ -14074,7 +14074,7 @@ x 47
 y 31
 end
 arch store_armour
-name Armour Shop
+name Scorn Armour Shop
 slaying /scorn/shops/armourshop
 hp 5
 sp 19
