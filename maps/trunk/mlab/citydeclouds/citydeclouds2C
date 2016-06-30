@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-08-28 mikeeusa
-Modified: 2012-03-14 Rick Tanner
+Modified: 2016-06-30 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 citydeclouds2B
@@ -17558,6 +17558,13 @@ x 49
 y 24
 end
 arch marble
+x 49
+y 25
+end
+arch stair_up_4
+slaying cdccotgf1
+hp 18
+sp 67
 x 49
 y 25
 end

@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-08-28 mikeeusa
-Modified: 2016-01-07 Kevin Zheng
+Modified: 2016-06-30 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 citydeclouds2H
@@ -3333,6 +3333,13 @@ arch flagstone
 x 8
 y 18
 end
+arch stair_3_up
+slaying cdccotgf1
+hp 77
+sp 70
+x 8
+y 18
+end
 arch flagstone
 x 8
 y 19
@@ -3384,6 +3391,13 @@ x 8
 y 24
 end
 arch flagstone
+x 8
+y 25
+end
+arch stair_3_up
+slaying cdccotgf1
+hp 77
+sp 67
 x 8
 y 25
 end
@@ -17337,6 +17351,13 @@ x 46
 y 5
 end
 arch dungeon_floor
+x 46
+y 6
+end
+arch stair_up_2
+slaying cdccotgf1
+hp 115
+sp 48
 x 46
 y 6
 end
