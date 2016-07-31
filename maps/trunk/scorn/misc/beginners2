@@ -8,509 +8,551 @@ enter_x 10
 enter_y 15
 msg
 Created:  1997-06-19
-Modified: 2014-06-05 Kevin Zheng
+Modified: 2016-07-31 Rick Tanner
 endmsg
 end
-arch cobblestones2
+arch pstone_2
 end
-arch grass_only
+arch cave24
+end
+arch pstone_2
 y 1
 end
-arch grass_only
+arch cave3
+y 1
+end
+arch pstone_2
 y 2
 end
-arch grass_only
+arch cave3
+y 2
+end
+arch pstone_2
 y 3
 end
-arch grass_only
+arch cave3
+y 3
+end
+arch pstone_2
 y 4
 end
-arch grass_only
+arch cave3
+y 4
+end
+arch pstone_2
 y 5
 end
-arch grass_only
+arch cave3
+y 5
+end
+arch pstone_2
 y 6
 end
-arch grass_only
+arch cave3
+y 6
+end
+arch pstone_2
 y 7
 end
-arch grass_only
+arch cave3
+y 7
+end
+arch pstone_2
 y 8
 end
-arch grass_only
+arch cave3
+y 8
+end
+arch pstone_2
 y 9
 end
-arch grass_only
-y 10
-end
-arch grass_only
-y 11
-end
-arch grass_only
-y 12
-end
-arch grass_only
-y 13
-end
-arch grass_only
-y 14
-end
-arch grass_only
-y 15
-end
-arch grass_only
-y 16
-end
-arch grass_only
-y 17
-end
-arch grass_only
-y 18
-end
-arch grass_only
-y 19
-end
-arch cobblestones2
-x 1
-end
-arch grass_only
-x 1
-y 1
-end
-arch grass_only
-x 1
-y 2
-end
-arch grass_only
-x 1
-y 3
-end
-arch grass_only
-x 1
-y 4
-end
-arch grass_only
-x 1
-y 5
-end
-arch grass_only
-x 1
-y 6
-end
-arch grass_only
-x 1
-y 7
-end
-arch grass_only
-x 1
-y 8
-end
-arch grass_only
-x 1
+arch cave3
 y 9
 end
-arch grass_only
-x 1
+arch pstone_2
 y 10
 end
-arch grass_only
-x 1
+arch cave3
+y 10
+end
+arch pstone_2
 y 11
 end
-arch grass_only
-x 1
+arch cave3
+y 11
+end
+arch pstone_2
 y 12
 end
-arch grass_only
-x 1
+arch cave3
+y 12
+end
+arch pstone_2
 y 13
 end
-arch grass_only
-x 1
+arch cave3
+y 13
+end
+arch pstone_2
 y 14
 end
-arch grass_only
-x 1
+arch cave3
+y 14
+end
+arch pstone_2
 y 15
 end
-arch grass_only
-x 1
+arch cave3
+y 15
+end
+arch pstone_2
 y 16
 end
-arch grass_only
-x 1
+arch cave3
+y 16
+end
+arch pstone_2
 y 17
 end
-arch grass_only
-x 1
+arch cave3
+y 17
+end
+arch pstone_2
 y 18
 end
-arch grass_only
-x 1
+arch cave23
+y 18
+end
+arch pstone_2
 y 19
 end
-arch cobblestones2
-x 2
+arch cave_15
+y 19
 end
-arch grass_only
-x 2
+arch pstone_2
+x 1
+end
+arch cave4
+x 1
+end
+arch pstone_2
+x 1
 y 1
 end
-arch woodfloor
-x 2
+arch red_key
+name Red key
+slaying beginners2-reward
+x 1
+y 1
+end
+arch pstone_2
+x 1
 y 2
 end
-arch wwall_2_2_2
-x 2
+arch awall_2_2_2
+x 1
 y 2
 end
-arch woodfloor
-x 2
+arch pstone_2
+x 1
 y 3
 end
 arch wwall_2_1_1
-x 2
+x 1
 y 3
 end
-arch woodfloor
-x 2
+arch awall_2_1_1
+x 1
+y 3
+end
+arch pstone_2
+x 1
 y 4
 end
 arch wwall_2_1_1
-x 2
+x 1
 y 4
 end
-arch woodfloor
-x 2
+arch awall_2_1_1
+x 1
+y 4
+end
+arch pstone_2
+x 1
 y 5
 end
 arch wwall_2_1_1
-x 2
+x 1
 y 5
 end
-arch woodfloor
-x 2
+arch awall_2_1_1
+x 1
+y 5
+end
+arch pstone_2
+x 1
 y 6
 end
-arch wwall_3_2
-x 2
+arch awall_3_2
+x 1
 y 6
 end
-arch woodfloor
-x 2
+arch pstone_2
+x 1
 y 7
 end
 arch wwall_2_1_1
-x 2
+x 1
 y 7
 end
-arch woodfloor
-x 2
+arch awall_2_1_1
+x 1
+y 7
+end
+arch pstone_2
+x 1
 y 8
 end
 arch wwall_2_1_1
-x 2
+x 1
 y 8
 end
-arch woodfloor
-x 2
+arch awall_2_1_1
+x 1
+y 8
+end
+arch pstone_2
+x 1
 y 9
 end
 arch wwall_win1
-x 2
+x 1
 y 9
 end
-arch woodfloor
-x 2
+arch awall_2_1_1
+x 1
+y 9
+end
+arch pstone_2
+x 1
 y 10
 end
-arch wwall_3_2
-x 2
+arch awall_3_2
+x 1
 y 10
 end
-arch woodfloor
-x 2
+arch pstone_2
+x 1
 y 11
 end
-arch wwall_2_1_1
-x 2
+arch awall_2_1_1
+x 1
 y 11
 end
-arch woodfloor
-x 2
+arch pstone_2
+x 1
 y 12
 end
-arch wwall_3_2
-x 2
+arch awall_3_2
+x 1
 y 12
 end
-arch woodfloor
-x 2
+arch pstone_2
+x 1
 y 13
 end
-arch wwall_2_1_1
-x 2
+arch awall_2_1_1
+x 1
 y 13
 end
-arch woodfloor
-x 2
+arch pstone_2
+x 1
 y 14
 end
-arch wwall_3_2
-x 2
+arch awall_3_2
+x 1
 y 14
 end
-arch woodfloor
-x 2
+arch pstone_2
+x 1
 y 15
 end
-arch wwall_2_1_1
-x 2
+arch awall_2_1_1
+x 1
 y 15
 end
-arch woodfloor
-x 2
+arch pstone_2
+x 1
 y 16
 end
-arch wwall_2_1_1
-x 2
+arch awall_2_1_1
+x 1
 y 16
 end
-arch woodfloor
-x 2
+arch pstone_2
+x 1
 y 17
 end
-arch wwall_2_2_1
-x 2
+arch awall_2_2_1
+x 1
 y 17
 end
-arch grass_only
-x 2
+arch pstone_2
+x 1
 y 18
 end
-arch grass_only
-x 2
+arch cave2
+x 1
+y 18
+end
+arch pstone_2
+x 1
 y 19
 end
-arch cobblestones2
-x 3
+arch cave_15
+x 1
+y 19
 end
-arch grass_only
-x 3
+arch pstone_2
+x 2
+end
+arch cave8
+x 2
+end
+arch pstone_2
+x 2
 y 1
 end
-arch woodfloor
-x 3
+arch pstone_2
+x 2
 y 2
 end
-arch wwall_2_1_2
-x 3
+arch weak_wall_2
+x 2
 y 2
 end
-arch woodfloor
-x 3
+arch pstone_2
+x 2
 y 3
 end
-arch woodfloor
-x 3
+arch pstone_2
+x 2
 y 4
 end
 arch kobold
-x 3
+x 2
 y 4
 end
-arch woodfloor
-x 3
+arch pstone_2
+x 2
 y 5
 end
 arch generate_kobold
-x 3
+x 2
 y 5
 generator_limit 15
 end
-arch woodfloor
-x 3
+arch pstone_2
+x 2
 y 6
 end
-arch wwall_2_1_2
-x 3
+arch awall_2_1_2
+x 2
 y 6
 end
-arch woodfloor
-x 3
+arch pstone_2
+x 2
 y 7
 end
-arch woodfloor
-x 3
+arch pstone_2
+x 2
 y 8
 end
-arch door_look_1
-x 3
+arch locked_door1
+slaying beginners2-gnoll
+x 2
 y 8
 end
-arch woodfloor
-x 3
+arch pstone_2
+x 2
 y 9
 end
 arch rune_confusion
-x 3
+x 2
 y 9
 end
-arch woodfloor
-x 3
+arch pstone_2
+x 2
 y 10
 end
-arch wwall_2_1_2
-x 3
+arch awall_2_1_2
+x 2
 y 10
 end
-arch woodfloor
-x 3
+arch pstone_2
+x 2
 y 11
 end
 arch rune_create_bomb
-x 3
+x 2
 y 11
 end
-arch woodfloor
-x 3
+arch pstone_2
+x 2
 y 12
 end
-arch wwall_2_1_2
-x 3
+arch awall_2_1_2
+x 2
 y 12
 end
-arch woodfloor
-x 3
+arch pstone_2
+x 2
+y 13
+end
+arch brown_key
+name Brown key
+slaying beginners2-gnoll
+x 2
 y 13
 end
 arch chest
-x 3
+x 2
 y 13
 end
-arch woodfloor
-x 3
+arch pstone_2
+x 2
 y 14
 end
-arch wwall_2_1_2
-x 3
+arch awall_2_1_2
+x 2
 y 14
 end
-arch woodfloor
-x 3
+arch pstone_2
+x 2
 y 15
 end
 arch random_food
-x 3
+x 2
 y 15
 blessed 1
 end
-arch woodfloor
-x 3
+arch pstone_2
+x 2
 y 16
 end
 arch random_food
-x 3
+x 2
 y 16
 blessed 1
 end
-arch woodfloor
-x 3
+arch pstone_2
+x 2
 y 17
 end
-arch wwall_win2
-x 3
+arch awall_2_1_2
+x 2
 y 17
 end
-arch grass_only
-x 3
+arch pstone_2
+x 2
 y 18
 end
-arch grass_only
-x 3
+arch cave7
+x 2
+y 18
+end
+arch pstone_2
+x 2
 y 19
 end
-arch cobblestones2
-x 4
+arch cave23
+x 2
+y 19
 end
-arch grass_only
-x 4
+arch pstone_2
+x 3
+end
+arch cave5
+x 3
+end
+arch pstone_2
+x 3
 y 1
 end
-arch woodfloor
-x 4
+arch pstone_2
+x 3
 y 2
 end
-arch wwall_2_1_2
-x 4
+arch weak_wall_2
+x 3
 y 2
 end
-arch woodfloor
-x 4
+arch pstone_2
+x 3
 y 3
 end
-arch woodfloor
-x 4
+arch pstone_2
+x 3
 y 4
 end
-arch wwall_2_2_2
-x 4
+arch awall_2_2_2
+x 3
 y 4
 end
-arch woodfloor
-x 4
+arch pstone_2
+x 3
 y 5
 end
-arch wwall_2_1_1
-x 4
+arch awall_2_1_1
+x 3
 y 5
 end
-arch woodfloor
-x 4
+arch pstone_2
+x 3
 y 6
 end
-arch wwall_2_2_4
-x 4
+arch awall_2_2_4
+x 3
 y 6
 end
-arch woodfloor
-x 4
+arch pstone_2
+x 3
 y 7
 end
-arch woodfloor
-x 4
+arch pstone_2
+x 3
 y 8
 end
-arch wwall_1_4
-x 4
+arch awall_1_4
+x 3
 y 8
 end
-arch woodfloor
-x 4
+arch pstone_2
+x 3
 y 9
 end
-arch woodfloor
-x 4
+arch pstone_2
+x 3
 y 10
 end
-arch wwall_2_1_2
-x 4
+arch awall_2_1_2
+x 3
 y 10
 end
-arch woodfloor
-x 4
+arch pstone_2
+x 3
 y 11
 end
-arch woodfloor
-x 4
+arch pstone_2
+x 3
 y 12
 end
-arch wwall_2_1_2
-x 4
+arch awall_2_1_2
+x 3
 y 12
 end
-arch woodfloor
-x 4
+arch pstone_2
+x 3
 y 13
 end
 arch sign
@@ -518,626 +560,701 @@ name Check chests for Traps
 msg
 Always check chests for traps as they may be trapped also!
 endmsg
-x 4
+x 3
 y 13
 end
-arch woodfloor
-x 4
+arch pstone_2
+x 3
 y 14
 end
-arch wwall_2_1_2
-x 4
+arch awall_2_1_2
+x 3
 y 14
 end
-arch woodfloor
-x 4
+arch pstone_2
+x 3
 y 15
 end
 arch random_food
-x 4
+x 3
 y 15
 blessed 1
 end
-arch woodfloor
-x 4
+arch pstone_2
+x 3
 y 16
 end
 arch random_food
-x 4
+x 3
 y 16
 blessed 1
 end
 arch mouse
-x 4
+x 3
 y 16
 end
-arch woodfloor
-x 4
+arch pstone_2
+x 3
 y 17
 end
-arch wwall_2_1_2
-x 4
+arch weak_wall_2
+x 3
 y 17
 end
-arch grass_only
-x 4
+arch pstone_2
+x 3
 y 18
 end
-arch grass_only
-x 4
+arch random_mineral
+x 3
+y 18
+end
+arch pstone_2
+x 3
 y 19
 end
-arch cobblestones2
-x 5
+arch cave2
+x 3
+y 19
 end
-arch grass_only
-x 5
+arch pstone_2
+x 4
+end
+arch cave4
+x 4
+end
+arch pstone_2
+x 4
 y 1
 end
-arch woodfloor
-x 5
+arch awall_2_2_2
+x 4
+y 1
+end
+arch pstone_2
+x 4
 y 2
 end
-arch wwall_win2
-x 5
+arch awall_2_2_4
+x 4
 y 2
 end
-arch woodfloor
-x 5
+arch pstone_2
+x 4
 y 3
 end
-arch woodfloor
-x 5
+arch pstone_2
+x 4
 y 4
 end
-arch wwall_1_3
-x 5
+arch awall_1_3
+x 4
 y 4
 end
-arch woodfloor
-x 5
+arch pstone_2
+x 4
 y 5
 end
 arch random_food
-x 5
+x 4
 y 5
 blessed 1
 end
-arch woodfloor
-x 5
+arch pstone_2
+x 4
 y 6
 end
-arch woodfloor
-x 5
+arch pstone_2
+x 4
 y 7
 end
-arch woodfloor
-x 5
+arch pstone_2
+x 4
 y 8
 end
-arch wwall_win2
-x 5
+arch awall_2_1_2
+x 4
 y 8
 end
-arch woodfloor
-x 5
+arch pstone_2
+x 4
 y 9
 end
-arch woodfloor
-x 5
+arch pstone_2
+x 4
 y 10
 end
-arch wwall_2_1_2
-x 5
+arch awall_2_1_2
+x 4
 y 10
 end
-arch woodfloor
-x 5
+arch pstone_2
+x 4
 y 11
 end
-arch woodfloor
-x 5
+arch pstone_2
+x 4
 y 12
 end
-arch wwall_2_1_2
-x 5
+arch awall_2_1_2
+x 4
 y 12
 end
-arch woodfloor
-x 5
+arch pstone_2
+x 4
 y 13
 end
-arch woodfloor
-x 5
+arch locked_door2
+slaying 200
+x 4
+y 13
+end
+arch pstone_2
+x 4
 y 14
 end
-arch wwall_2_2_3
-x 5
+arch awall_2_2_3
+x 4
 y 14
 end
-arch woodfloor
-x 5
+arch pstone_2
+x 4
 y 15
 end
-arch wwall_1_2
-x 5
+arch awall_1_2
+x 4
 y 15
 end
-arch woodfloor
-x 5
+arch pstone_2
+x 4
 y 16
 end
 arch random_food
-x 5
+x 4
 y 16
 blessed 1
 end
 arch mouse
-x 5
+x 4
 y 16
 end
-arch woodfloor
-x 5
+arch pstone_2
+x 4
 y 17
 end
-arch wwall_2_1_2
-x 5
+arch awall_2_1_2
+x 4
 y 17
 end
-arch grass_only
-x 5
+arch pstone_2
+x 4
 y 18
 end
-arch grass_only
-x 5
+arch silvercoin
+x 4
+y 18
+nrof 89
+end
+arch pstone_2
+x 4
 y 19
 end
-arch cobblestones2
-x 6
+arch cave2
+x 4
+y 19
 end
-arch grass_only
-x 6
+arch pstone_2
+x 5
+end
+arch cave4
+x 5
+end
+arch pstone_2
+x 5
 y 1
 end
-arch woodfloor
-x 6
+arch awall_2_1_2
+x 5
+y 1
+end
+arch pstone_2
+x 5
 y 2
 end
-arch wwall_2_1_2
-x 6
-y 2
-end
-arch woodfloor
-x 6
+arch pstone_2
+x 5
 y 3
 end
-arch woodfloor
-x 6
+arch pstone_2
+x 5
 y 4
 end
 arch door_look_1
-x 6
+x 5
 y 4
 end
-arch woodfloor
-x 6
+arch pstone_2
+x 5
 y 5
 end
-arch woodfloor
-x 6
+arch pstone_2
+x 5
 y 6
 end
-arch woodfloor
-x 6
+arch pstone_2
+x 5
 y 7
 end
-arch woodfloor
-x 6
+arch pstone_2
+x 5
 y 8
 end
-arch wwall_2_1_2
-x 6
+arch awall_2_1_2
+x 5
 y 8
 end
-arch woodfloor
-x 6
+arch pstone_2
+x 5
 y 9
 end
-arch woodfloor
-x 6
+arch pstone_2
+x 5
 y 10
 end
-arch wwall_2_1_2
-x 6
+arch awall_2_1_2
+x 5
 y 10
 end
-arch woodfloor
-x 6
+arch pstone_2
+x 5
 y 11
 end
-arch woodfloor
-x 6
+arch pstone_2
+x 5
 y 12
 end
-arch wwall_win2
-x 6
+arch awall_2_1_2
+x 5
 y 12
 end
-arch woodfloor
-x 6
+arch pstone_2
+x 5
 y 13
 end
-arch woodfloor
-x 6
+arch pstone_2
+x 5
 y 14
 end
-arch woodfloor
-x 6
+arch pstone_2
+x 5
 y 15
 end
 arch door_look_1
-x 6
+x 5
 y 15
 end
-arch woodfloor
-x 6
+arch pstone_2
+x 5
 y 16
 end
 arch random_food
-x 6
+x 5
 y 16
 blessed 1
 end
 arch mouse
-x 6
+x 5
 y 16
 end
-arch woodfloor
-x 6
+arch pstone_2
+x 5
 y 17
 end
-arch wwall_2_1_2
-x 6
+arch awall_2_1_2
+x 5
 y 17
 end
-arch grass_only
-x 6
+arch pstone_2
+x 5
 y 18
 end
-arch grass_only
-x 6
+arch cave6
+x 5
+y 18
+end
+arch pstone_2
+x 5
 y 19
 end
-arch cobblestones2
-x 7
+arch cave22
+x 5
+y 19
 end
-arch grass_only
-x 7
+arch pstone_2
+x 6
+end
+arch cave4
+x 6
+end
+arch pstone_2
+x 6
 y 1
 end
-arch woodfloor
-x 7
+arch awall_2_2_3
+x 6
+y 1
+end
+arch pstone_2
+x 6
 y 2
 end
-arch wwall_2_1_2
-x 7
+arch awall_2_2_1
+x 6
 y 2
 end
-arch woodfloor
-x 7
+arch pstone_2
+x 6
 y 3
 end
 arch random_food
-x 7
+x 6
 y 3
 blessed 1
 end
-arch woodfloor
-x 7
+arch pstone_2
+x 6
 y 4
 end
-arch wwall_1_4
-x 7
+arch awall_1_4
+x 6
 y 4
 end
-arch woodfloor
-x 7
+arch pstone_2
+x 6
 y 5
 end
 arch key
-x 7
+x 6
 y 5
 end
-arch woodfloor
-x 7
+arch pstone_2
+x 6
 y 6
 end
-arch woodfloor
-x 7
+arch pstone_2
+x 6
 y 7
 end
 arch gnoll_leader_arc
-x 7
+x 6
 y 7
 end
-arch woodfloor
-x 7
+arch pstone_2
+x 6
 y 8
 end
-arch wwall_2_1_2
-x 7
+arch awall_2_1_2
+x 6
 y 8
 end
-arch woodfloor
-x 7
+arch pstone_2
+x 6
 y 9
 end
-arch woodfloor
-x 7
+arch pstone_2
+x 6
 y 10
 end
-arch wwall_2_1_2
-x 7
+arch awall_2_1_2
+x 6
 y 10
 end
-arch woodfloor
-x 7
+arch pstone_2
+x 6
 y 11
 end
 arch rune_mark
 msg
 If you enter this corridor and don't react fast, you will die!
 endmsg
-x 7
+x 6
 y 11
 end
-arch woodfloor
-x 7
+arch pstone_2
+x 6
 y 12
 end
-arch wwall_2_1_2
-x 7
+arch awall_2_1_2
+x 6
 y 12
 end
-arch woodfloor
-x 7
+arch pstone_2
+x 6
 y 13
 end
-arch woodfloor
-x 7
+arch pstone_2
+x 6
 y 14
 end
 arch key
-x 7
+x 6
 y 14
 end
-arch woodfloor
-x 7
+arch pstone_2
+x 6
 y 15
 end
-arch wwall_1_4
-x 7
+arch awall_1_4
+x 6
 y 15
 end
-arch woodfloor
-x 7
+arch pstone_2
+x 6
 y 16
 end
 arch random_food
-x 7
+x 6
 y 16
 blessed 1
 end
 arch mouse
-x 7
+x 6
 y 16
 end
-arch woodfloor
-x 7
+arch pstone_2
+x 6
 y 17
 end
-arch wwall_win2
-x 7
+arch awall_2_1_2
+x 6
 y 17
 end
-arch grass_only
-x 7
+arch pstone_2
+x 6
 y 18
 end
-arch grass_only
-x 7
+arch cave2
+x 6
+y 18
+end
+arch pstone_2
+x 6
 y 19
 end
-arch cobblestones2
-x 8
+arch cave_15
+x 6
+y 19
 end
-arch grass_only
-x 8
+arch pstone_2
+x 7
+end
+arch cave25
+x 7
+end
+arch pstone_2
+x 7
 y 1
 end
-arch woodfloor
-x 8
+arch cave10
+x 7
+y 1
+end
+arch pstone_2
+x 7
 y 2
 end
-arch wwall_3_3
-x 8
+arch awall_3_3
+x 7
 y 2
 end
-arch woodfloor
-x 8
+arch pstone_2
+x 7
 y 3
 end
-arch wwall_2_1_1
-x 8
+arch awall_2_1_1
+x 7
 y 3
 end
-arch woodfloor
-x 8
+arch pstone_2
+x 7
 y 4
 end
-arch wwall_3_4
-x 8
+arch awall_3_4
+x 7
 y 4
 end
-arch woodfloor
-x 8
+arch pstone_2
+x 7
 y 5
 end
-arch wwall_2_1_1
-x 8
+arch awall_2_1_1
+x 7
 y 5
 end
-arch woodfloor
-x 8
+arch pstone_2
+x 7
 y 6
 end
-arch wwall_2_1_1
-x 8
+arch awall_2_1_1
+x 7
 y 6
 end
-arch woodfloor
-x 8
+arch pstone_2
+x 7
 y 7
 end
-arch wwall_2_1_1
-x 8
+arch awall_2_1_1
+x 7
 y 7
 end
-arch woodfloor
-x 8
+arch pstone_2
+x 7
 y 8
 end
-arch wwall_2_2_4
-x 8
+arch awall_2_2_4
+x 7
 y 8
 end
-arch woodfloor
-x 8
+arch pstone_2
+x 7
 y 9
 end
-arch woodfloor
-x 8
+arch pstone_2
+x 7
 y 10
 end
-arch wwall_1_3
-x 8
+arch awall_1_3
+x 7
 y 10
 end
-arch woodfloor
-x 8
+arch pstone_2
+x 7
 y 11
 end
 arch door_look_2
-x 8
+x 7
 y 11
 end
-arch woodfloor
-x 8
+arch pstone_2
+x 7
 y 12
 end
-arch wwall_1_3
-x 8
+arch awall_1_3
+x 7
 y 12
 end
-arch woodfloor
-x 8
+arch pstone_2
+x 7
 y 13
 end
 arch door_look_2
-x 8
+x 7
 y 13
 end
-arch woodfloor
-x 8
+arch pstone_2
+x 7
 y 14
 end
-arch wwall_1_1
-x 8
+arch awall_1_1
+x 7
 y 14
 end
-arch woodfloor
-x 8
+arch pstone_2
+x 7
 y 15
 end
-arch wwall_3_4
-x 8
+arch awall_3_4
+x 7
 y 15
 end
-arch woodfloor
-x 8
+arch pstone_2
+x 7
 y 16
 end
-arch wwall_2_1_1
-x 8
+arch awall_2_1_1
+x 7
 y 16
 end
-arch woodfloor
-x 8
+arch pstone_2
+x 7
 y 17
 end
-arch wwall_3_1
-x 8
+arch awall_2_2_4
+x 7
 y 17
 end
-arch dungeon_magic
-x 8
+arch pstone_2
+x 7
 y 18
 end
-arch grass_only
-x 8
+arch cave2
+x 7
 y 18
-move_block all
 end
-arch dungeon_magic
-x 8
+arch pstone_2
+x 7
 y 19
 end
-arch grass_only
-x 8
+arch cave_15
+x 7
 y 19
-move_block all
 end
-arch cobblestones2
-x 9
+arch pstone_2
+x 8
 end
-arch grass_only
-x 9
+arch cave_15
+x 8
+end
+arch pstone_2
+x 8
 y 1
 end
-arch woodfloor
-x 9
+arch cave4
+x 8
+y 1
+end
+arch pstone_2
+x 8
 y 2
 end
-arch wwall_2_1_2
-x 9
+arch awall_2_1_2
+x 8
 y 2
 end
-arch woodfloor
-x 9
+arch pstone_2
+x 8
 y 3
 end
-arch woodfloor
-x 9
+arch cave21
+x 8
+y 3
+end
+arch pstone_2
+x 8
 y 4
 end
-arch woodfloor
-x 9
+arch pstone_2
+x 8
 y 5
 end
-arch woodfloor
-x 9
+arch pstone_2
+x 8
 y 6
 end
-arch woodfloor
-x 9
+arch pstone_2
+x 8
 y 7
 end
-arch woodfloor
-x 9
+arch cave21
+x 8
+y 7
+end
+arch pstone_2
+x 8
 y 8
 end
-arch woodfloor
-x 9
+arch pstone_2
+x 8
 y 9
 end
 arch sign_w
@@ -1145,39 +1262,35 @@ name Check for Traps
 msg
 Check for traps before entering this corridor.
 endmsg
-x 9
+x 8
 y 9
 end
-arch woodfloor
-x 9
+arch pstone_2
+x 8
 y 10
 end
-arch key
-x 9
-y 10
-end
-arch woodfloor
-x 9
+arch pstone_2
+x 8
 y 11
 end
 arch key
-x 9
+x 8
 y 11
 end
-arch woodfloor
-x 9
+arch pstone_2
+x 8
 y 12
 end
-arch woodfloor
-x 9
+arch pstone_2
+x 8
 y 13
 end
 arch key
-x 9
+x 8
 y 13
 end
-arch woodfloor
-x 9
+arch pstone_2
+x 8
 y 14
 end
 arch sign
@@ -1185,181 +1298,394 @@ name Test doors for traps before opening
 msg
 Test a door for traps before you open it or you may regret it.
 endmsg
+x 8
+y 14
+end
+arch pstone_2
+x 8
+y 15
+end
+arch pstone_2
+x 8
+y 16
+end
+arch cave11
+x 8
+y 16
+end
+arch pstone_2
+x 8
+y 17
+end
+arch cave1
+x 8
+y 17
+end
+arch pstone_2
+x 8
+y 18
+end
+arch cave22
+x 8
+y 18
+end
+arch pstone_2
+x 8
+y 19
+end
+arch cave_15
+x 8
+y 19
+end
+arch pstone_2
+x 9
+end
+arch cave_15
+x 9
+end
+arch pstone_2
+x 9
+y 1
+end
+arch cave4
+x 9
+y 1
+end
+arch pstone_2
+x 9
+y 2
+end
+arch awall_2_1_2
+x 9
+y 2
+end
+arch pstone_2
+x 9
+y 3
+end
+arch pstone_2
+x 9
+y 4
+end
+arch pstone_2
+x 9
+y 5
+end
+arch pstone_2
+x 9
+y 6
+end
+arch pstone_2
+x 9
+y 7
+end
+arch pstone_2
+x 9
+y 8
+end
+arch pstone_2
+x 9
+y 9
+end
+arch pstone_2
+x 9
+y 10
+end
+arch pstone_2
+x 9
+y 11
+end
+arch pstone_2
+x 9
+y 12
+end
+arch cave21
+x 9
+y 12
+end
+arch pstone_2
+x 9
+y 13
+end
+arch pstone_2
 x 9
 y 14
 end
-arch woodfloor
+arch pstone_2
 x 9
 y 15
 end
-arch button_trigger
-x 9
-y 16
-connected 10
-end
-arch woodfloor
+arch pstone_2
 x 9
 y 16
 end
-arch woodfloor
+arch cave12
+x 9
+y 16
+end
+arch pstone_2
 x 9
 y 17
 end
-arch wwall_1_3
+arch cave3
 x 9
 y 17
 end
-arch invis_exit
-slaying /world/world_105_116
+arch pstone_2
 x 9
 y 18
 end
-arch grass_only
+arch cave23
 x 9
 y 18
 end
-arch dungeon_magic
+arch pstone_2
 x 9
 y 19
 end
-arch grass_only
+arch cave_15
 x 9
 y 19
-move_block all
 end
-arch cobblestones2
+arch pstone_2
 x 10
 end
-arch grass_only
+arch cave_15
+x 10
+end
+arch pstone_2
 x 10
 y 1
 end
-arch woodfloor
+arch cave4
+x 10
+y 1
+end
+arch pstone_2
 x 10
 y 2
 end
-arch wwall_win2
+arch awall_2_1_2
 x 10
 y 2
 end
-arch woodfloor
+arch pstone_2
 x 10
 y 3
 end
-arch woodfloor
+arch pstone_2
 x 10
 y 4
 end
-arch woodfloor
+arch pstone_2
 x 10
 y 5
 end
-arch woodfloor
+arch pstone_2
 x 10
 y 6
 end
-arch woodfloor
+arch pstone_2
 x 10
 y 7
 end
-arch woodfloor
+arch pstone_2
 x 10
 y 8
 end
-arch woodfloor
+arch pstone_2
 x 10
 y 9
 end
-arch woodfloor
+arch pstone_2
 x 10
 y 10
 end
-arch woodfloor
+arch pstone_2
 x 10
 y 11
 end
-arch woodfloor
+arch pstone_2
 x 10
 y 12
 end
-arch woodfloor
+arch pstone_2
 x 10
 y 13
 end
-arch woodfloor
+arch pstone_2
 x 10
 y 14
 end
-arch woodfloor
+arch pstone_2
 x 10
 y 15
 end
-arch button_trigger
-x 10
-y 16
-connected 10
-end
-arch woodfloor
+arch pstone_2
 x 10
 y 16
 end
-arch button_trigger
-x 10
-y 17
-connected 10
-end
-arch woodfloor
+arch pstone_2
 x 10
 y 17
 end
-arch odoorn2_closed_1
+arch exit
+slaying beginners2_entry
+hp 7
+sp 6
 x 10
 y 17
-connected 10
 end
-arch invis_exit
-slaying /world/world_105_116
+arch pstone_2
 x 10
 y 18
 end
-arch grass_only
+arch cave2
 x 10
 y 18
 end
-arch dungeon_magic
+arch pstone_2
 x 10
 y 19
 end
-arch grass_only
+arch cave_15
 x 10
 y 19
-move_block all
 end
-arch cobblestones2
+arch pstone_2
 x 11
 end
-arch grass_only
+arch cave_15
+x 11
+end
+arch pstone_2
 x 11
 y 1
 end
-arch woodfloor
+arch cave4
+x 11
+y 1
+end
+arch pstone_2
 x 11
 y 2
 end
-arch wwall_2_1_2
+arch awall_2_1_2
 x 11
 y 2
 end
-arch woodfloor
+arch pstone_2
 x 11
+y 3
+end
+arch pstone_2
+x 11
+y 4
+end
+arch pstone_2
+x 11
+y 5
+end
+arch pstone_2
+x 11
+y 6
+end
+arch pstone_2
+x 11
+y 7
+end
+arch pstone_2
+x 11
+y 8
+end
+arch pstone_2
+x 11
+y 9
+end
+arch pstone_2
+x 11
+y 10
+end
+arch pstone_2
+x 11
+y 11
+end
+arch pstone_2
+x 11
+y 12
+end
+arch pstone_2
+x 11
+y 13
+end
+arch pstone_2
+x 11
+y 14
+end
+arch pstone_2
+x 11
+y 15
+end
+arch pstone_2
+x 11
+y 16
+end
+arch pstone_2
+x 11
+y 17
+end
+arch cave15
+x 11
+y 17
+end
+arch pstone_2
+x 11
+y 18
+end
+arch cave22
+x 11
+y 18
+end
+arch pstone_2
+x 11
+y 19
+end
+arch cave_15
+x 11
+y 19
+end
+arch pstone_2
+x 12
+end
+arch cave_15
+x 12
+end
+arch pstone_2
+x 12
+y 1
+end
+arch cave4
+x 12
+y 1
+end
+arch pstone_2
+x 12
+y 2
+end
+arch awall_2_1_2
+x 12
+y 2
+end
+arch pstone_2
+x 12
 y 3
 end
 arch key
-x 11
+x 12
 y 3
 end
-arch woodfloor
-x 11
+arch pstone_2
+x 12
 y 4
 end
 arch sign
@@ -1367,563 +1693,682 @@ name Do not enter!
 msg
 You must learn when to fight, and when NOT to fight!
 endmsg
-x 11
+x 12
 y 4
 end
-arch woodfloor
-x 11
+arch pstone_2
+x 12
 y 5
 end
-arch woodfloor
-x 11
+arch pstone_2
+x 12
 y 6
 end
-arch woodfloor
-x 11
+arch pstone_2
+x 12
 y 7
 end
-arch woodfloor
-x 11
+arch pstone_2
+x 12
 y 8
 end
-arch woodfloor
-x 11
+arch pstone_2
+x 12
 y 9
 end
-arch woodfloor
-x 11
+arch pstone_2
+x 12
 y 10
 end
-arch woodfloor
-x 11
+arch pstone_2
+x 12
 y 11
 end
-arch woodfloor
-x 11
+arch cave21
+x 12
+y 11
+end
+arch pstone_2
+x 12
 y 12
 end
-arch woodfloor
-x 11
+arch pstone_2
+x 12
 y 13
 end
-arch woodfloor
-x 11
+arch pstone_2
+x 12
 y 14
 end
-arch woodfloor
-x 11
+arch pstone_2
+x 12
 y 15
 end
-arch button_trigger
-x 11
-y 16
-connected 10
-end
-arch woodfloor
-x 11
+arch pstone_2
+x 12
 y 16
 end
-arch woodfloor
-x 11
+arch pstone_2
+x 12
 y 17
 end
-arch wwall_1_4
-x 11
+arch cave16
+x 12
 y 17
 end
-arch invis_exit
-slaying /world/world_105_116
-x 11
+arch pstone_2
+x 12
 y 18
 end
-arch grass_only
-x 11
+arch cave23
+x 12
 y 18
 end
-arch dungeon_magic
-x 11
+arch pstone_2
+x 12
 y 19
 end
-arch grass_only
-x 11
+arch cave_15
+x 12
 y 19
-move_block all
 end
-arch cobblestones2
-x 12
+arch pstone_2
+x 13
 end
-arch grass_only
-x 12
+arch cave24
+x 13
+end
+arch pstone_2
+x 13
 y 1
 end
-arch woodfloor
-x 12
+arch cave13
+x 13
+y 1
+end
+arch pstone_2
+x 13
 y 2
 end
-arch wwall_2_1_2
-x 12
+arch awall_2_1_2
+x 13
 y 2
 end
-arch woodfloor
-x 12
+arch pstone_2
+x 13
 y 3
 end
 arch door_look_2
-x 12
+x 13
 y 3
 end
-arch woodfloor
-x 12
+arch pstone_2
+x 13
 y 4
 end
-arch wwall_1_1
-x 12
+arch awall_1_1
+x 13
 y 4
 end
-arch woodfloor
-x 12
+arch pstone_2
+x 13
 y 5
 end
 arch wwall_win1
-x 12
+x 13
 y 5
 end
-arch woodfloor
-x 12
+arch awall_2_1_1
+x 13
+y 5
+end
+arch pstone_2
+x 13
 y 6
 end
 arch wwall_2_1_1
-x 12
+x 13
 y 6
 end
-arch woodfloor
-x 12
+arch awall_2_1_1
+x 13
+y 6
+end
+arch pstone_2
+x 13
 y 7
 end
 arch wwall_2_1_1
-x 12
+x 13
 y 7
 end
-arch woodfloor
-x 12
+arch awall_2_1_1
+x 13
+y 7
+end
+arch pstone_2
+x 13
 y 8
 end
 arch wwall_2_1_1
-x 12
+x 13
 y 8
 end
-arch woodfloor
-x 12
+arch awall_2_1_1
+x 13
+y 8
+end
+arch pstone_2
+x 13
 y 9
 end
 arch wwall_win1
-x 12
-y 9
-end
-arch woodfloor
-x 12
-y 10
-end
-arch wwall_2_1_1
-x 12
-y 10
-end
-arch woodfloor
-x 12
-y 11
-end
-arch wwall_2_1_1
-x 12
-y 11
-end
-arch woodfloor
-x 12
-y 12
-end
-arch wwall_2_1_1
-x 12
-y 12
-end
-arch woodfloor
-x 12
-y 13
-end
-arch wwall_2_1_1
-x 12
-y 13
-end
-arch woodfloor
-x 12
-y 14
-end
-arch wwall_2_1_1
-x 12
-y 14
-end
-arch woodfloor
-x 12
-y 15
-end
-arch wwall_2_1_1
-x 12
-y 15
-end
-arch woodfloor
-x 12
-y 16
-end
-arch wwall_2_1_1
-x 12
-y 16
-end
-arch woodfloor
-x 12
-y 17
-end
-arch wwall_3_1
-x 12
-y 17
-end
-arch dungeon_magic
-x 12
-y 18
-end
-arch grass_only
-x 12
-y 18
-move_block all
-end
-arch dungeon_magic
-x 12
-y 19
-end
-arch grass_only
-x 12
-y 19
-move_block all
-end
-arch cobblestones2
-x 13
-end
-arch grass_only
-x 13
-y 1
-end
-arch woodfloor
-x 13
-y 2
-end
-arch wwall_2_1_2
-x 13
-y 2
-end
-arch woodfloor
-x 13
-y 3
-end
-arch woodfloor
-x 13
-y 4
-end
-arch woodfloor
-x 13
-y 5
-end
-arch woodfloor
-x 13
-y 6
-end
-arch woodfloor
-x 13
-y 7
-end
-arch spikes_moving
-x 13
-y 7
-end
-arch woodfloor
-x 13
-y 8
-end
-arch woodfloor
 x 13
 y 9
 end
-arch button_lever
+arch awall_2_1_1
 x 13
 y 9
-connected 1
 end
-arch woodfloor
+arch pstone_2
 x 13
 y 10
 end
-arch spikes_moving
+arch wwall_2_1_1
 x 13
 y 10
 end
-arch woodfloor
+arch awall_2_1_1
+x 13
+y 10
+end
+arch pstone_2
 x 13
 y 11
 end
-arch button_lever
+arch wwall_2_1_1
 x 13
 y 11
-connected 1
 end
-arch woodfloor
+arch awall_2_1_1
+x 13
+y 11
+end
+arch pstone_2
 x 13
 y 12
 end
-arch woodfloor
+arch wwall_2_1_1
+x 13
+y 12
+end
+arch awall_2_1_1
+x 13
+y 12
+end
+arch pstone_2
 x 13
 y 13
 end
-arch woodfloor
+arch wwall_2_1_1
+x 13
+y 13
+end
+arch awall_2_1_1
+x 13
+y 13
+end
+arch pstone_2
 x 13
 y 14
 end
-arch woodfloor
+arch wwall_2_1_1
+x 13
+y 14
+end
+arch awall_2_1_1
+x 13
+y 14
+end
+arch pstone_2
 x 13
 y 15
 end
-arch woodfloor
+arch wwall_2_1_1
+x 13
+y 15
+end
+arch awall_2_1_1
+x 13
+y 15
+end
+arch pstone_2
 x 13
 y 16
 end
-arch woodfloor
+arch wwall_2_1_1
+x 13
+y 16
+end
+arch awall_2_1_1
+x 13
+y 16
+end
+arch pstone_2
 x 13
 y 17
 end
-arch wwall_2_1_2
+arch awall_2_2_1
 x 13
 y 17
 end
-arch grass_only
+arch pstone_2
 x 13
 y 18
 end
-arch grass_only
+arch cave2
+x 13
+y 18
+end
+arch pstone_2
 x 13
 y 19
 end
-arch cobblestones2
+arch cave_15
+x 13
+y 19
+end
+arch pstone_2
 x 14
 end
-arch grass_only
+arch cave4
+x 14
+end
+arch pstone_2
 x 14
 y 1
 end
-arch woodfloor
+arch pstone_2
 x 14
 y 2
 end
-arch wwall_win2
+arch weak_wall_2
 x 14
 y 2
 end
-arch woodfloor
+arch pstone_2
 x 14
 y 3
 end
-arch woodfloor
+arch pstone_2
 x 14
 y 4
 end
-arch woodfloor
+arch pstone_2
 x 14
 y 5
 end
-arch woodfloor
+arch pstone_2
 x 14
 y 6
 end
-arch woodfloor
+arch pstone_2
 x 14
 y 7
 end
-arch woodfloor
+arch spikes_moving
+x 14
+y 7
+end
+arch pstone_2
 x 14
 y 8
 end
-arch woodfloor
+arch pstone_2
 x 14
 y 9
 end
-arch woodfloor
+arch button_lever
 x 14
+y 9
+connected 1
+end
+arch pstone_2
+x 14
+y 10
+end
+arch spikes_moving
+x 14
+y 10
+end
+arch pstone_2
+x 14
+y 11
+end
+arch button_lever
+x 14
+y 11
+connected 1
+end
+arch pstone_2
+x 14
+y 12
+end
+arch pstone_2
+x 14
+y 13
+end
+arch cave21
+x 14
+y 13
+end
+arch pstone_2
+x 14
+y 14
+end
+arch pstone_2
+x 14
+y 15
+end
+arch pstone_2
+x 14
+y 16
+end
+arch pstone_2
+x 14
+y 17
+end
+arch awall_2_1_2
+x 14
+y 17
+end
+arch pstone_2
+x 14
+y 18
+end
+arch cave2
+x 14
+y 18
+end
+arch pstone_2
+x 14
+y 19
+end
+arch cave_15
+x 14
+y 19
+end
+arch pstone_2
+x 15
+end
+arch cave4
+x 15
+end
+arch pstone_2
+x 15
+y 1
+end
+arch random_mineral
+x 15
+y 1
+end
+arch pstone_2
+x 15
+y 2
+end
+arch awall_2_1_2
+x 15
+y 2
+end
+arch pstone_2
+x 15
+y 3
+end
+arch pstone_2
+x 15
+y 4
+end
+arch pstone_2
+x 15
+y 5
+end
+arch pstone_2
+x 15
+y 6
+end
+arch pstone_2
+x 15
+y 7
+end
+arch pstone_2
+x 15
+y 8
+end
+arch pstone_2
+x 15
+y 9
+end
+arch pstone_2
+x 15
 y 10
 end
 arch spikes_closed
-x 14
+x 15
 y 10
 connected 1
 end
-arch woodfloor
-x 14
+arch pstone_2
+x 15
 y 11
 end
-arch woodfloor
-x 14
+arch pstone_2
+x 15
 y 12
 end
-arch woodfloor
-x 14
+arch pstone_2
+x 15
 y 13
 end
-arch woodfloor
-x 14
+arch pstone_2
+x 15
 y 14
 end
-arch woodfloor
-x 14
+arch pstone_2
+x 15
 y 15
 end
-arch woodfloor
-x 14
+arch pstone_2
+x 15
+y 16
+end
+arch white_key
+name White key
+slaying beginners2-white
+x 15
 y 16
 end
 arch generate_zombie
 hp 75
 maxhp 75
-x 14
+x 15
 y 16
 speed 0.0060
 generator_limit 10
 end
-arch woodfloor
-x 14
+arch pstone_2
+x 15
 y 17
 end
-arch wwall_2_1_2
-x 14
+arch awall_2_1_2
+x 15
 y 17
 end
-arch grass_only
-x 14
+arch pstone_2
+x 15
 y 18
 end
-arch grass_only
-x 14
+arch cave2
+x 15
+y 18
+end
+arch pstone_2
+x 15
 y 19
 end
-arch cobblestones2
+arch cave_15
 x 15
+y 19
 end
-arch grass_only
-x 15
+arch pstone_2
+x 16
+end
+arch cave4
+x 16
+end
+arch pstone_2
+x 16
 y 1
 end
-arch woodfloor
-x 15
+arch silvercoin
+x 16
+y 1
+nrof 101
+end
+arch pstone_2
+x 16
 y 2
 end
-arch wwall_2_1_2
-x 15
+arch awall_2_1_2
+x 16
 y 2
 end
-arch woodfloor
-x 15
+arch pstone_2
+x 16
 y 3
 end
-arch woodfloor
-x 15
+arch pstone_2
+x 16
 y 4
 end
-arch woodfloor
-x 15
+arch pstone_2
+x 16
 y 5
 end
-arch woodfloor
-x 15
+arch pstone_2
+x 16
 y 6
 end
-arch woodfloor
-x 15
+arch pstone_2
+x 16
 y 7
 end
-arch woodfloor
-x 15
+arch pstone_2
+x 16
 y 8
 end
-arch woodfloor
-x 15
+arch pstone_2
+x 16
 y 9
 end
-arch woodfloor
-x 15
+arch pstone_2
+x 16
 y 10
 end
 arch spikes_closed
-x 15
+x 16
 y 10
 connected 1
 end
-arch woodfloor
-x 15
+arch pstone_2
+x 16
 y 11
 end
-arch woodfloor
-x 15
+arch pstone_2
+x 16
 y 12
 end
-arch woodfloor
-x 15
+arch pstone_2
+x 16
 y 13
 end
-arch woodfloor
-x 15
+arch pstone_2
+x 16
 y 14
 end
-arch woodfloor
-x 15
+arch pstone_2
+x 16
 y 15
 end
-arch woodfloor
-x 15
+arch locked_white_door1
+slaying beginners2-white
+x 16
+y 15
+end
+arch pstone_2
+x 16
 y 16
 end
-arch woodfloor
-x 15
+arch locked_white_door2
+slaying beginners2-white
+x 16
+y 16
+end
+arch pstone_2
+x 16
 y 17
 end
-arch wwall_2_1_2
-x 15
+arch awall_2_1_2
+x 16
 y 17
 end
-arch grass_only
-x 15
+arch pstone_2
+x 16
 y 18
 end
-arch grass_only
-x 15
+arch cave7
+x 16
+y 18
+end
+arch pstone_2
+x 16
 y 19
 end
-arch cobblestones2
+arch cave23
 x 16
+y 19
 end
-arch grass_only
-x 16
+arch pstone_2
+x 17
+end
+arch cave25
+x 17
+end
+arch pstone_2
+x 17
 y 1
 end
-arch woodfloor
-x 16
+arch cave10
+x 17
+y 1
+end
+arch pstone_2
+x 17
 y 2
 end
-arch wwall_2_1_2
-x 16
+arch awall_2_1_2
+x 17
 y 2
 end
-arch woodfloor
-x 16
+arch pstone_2
+x 17
 y 3
 end
-arch woodfloor
-x 16
+arch pstone_2
+x 17
 y 4
 end
-arch woodfloor
-x 16
+arch pstone_2
+x 17
 y 5
 end
 arch sign
@@ -1931,385 +2376,454 @@ name Looking alone is not sufficient
 msg
 Not all that looks alike is the same.
 endmsg
-x 16
+x 17
 y 5
 end
-arch woodfloor
-x 16
+arch pstone_2
+x 17
 y 6
 end
 arch gravestone
 name grave
 face zombie_gen.111
-x 16
+x 17
 y 6
 end
-arch woodfloor
-x 16
+arch pstone_2
+x 17
 y 7
 end
 arch spikes_moving
-x 16
+x 17
 y 7
 end
-arch woodfloor
-x 16
+arch pstone_2
+x 17
 y 8
 end
-arch woodfloor
-x 16
+arch pstone_2
+x 17
 y 9
 end
-arch woodfloor
-x 16
+arch pstone_2
+x 17
 y 10
 end
 arch spikes_moving
-x 16
+x 17
 y 10
 end
-arch woodfloor
-x 16
+arch pstone_2
+x 17
 y 11
 end
-arch woodfloor
-x 16
+arch pstone_2
+x 17
 y 12
 end
-arch woodfloor
-x 16
+arch pstone_2
+x 17
 y 13
 end
-arch woodfloor
-x 16
+arch pstone_2
+x 17
 y 14
 end
-arch woodfloor
-x 16
+arch pstone_2
+x 17
 y 15
 end
-arch woodfloor
-x 16
+arch locked_white_door1
+slaying beginners2-white
+x 17
+y 15
+end
+arch pstone_2
+x 17
 y 16
 end
 arch chest
-x 16
+x 17
 y 16
+arch green_key
+name Green key
+slaying 200
 end
-arch woodfloor
-x 16
+end
+arch pstone_2
+x 17
 y 17
 end
-arch wwall_2_1_2
-x 16
+arch weak_wall_2
+x 17
 y 17
 end
-arch grass_only
-x 16
+arch pstone_2
+x 17
 y 18
 end
-arch grass_only
-x 16
+arch goldcoin
+x 17
+y 18
+nrof 11
+end
+arch pstone_2
+x 17
 y 19
 end
-arch cobblestones2
+arch cave2
 x 17
+y 19
 end
-arch grass_only
-x 17
+arch pstone_2
+x 18
+end
+arch cave_15
+x 18
+end
+arch pstone_2
+x 18
 y 1
 end
-arch woodfloor
-x 17
+arch cave4
+x 18
+y 1
+end
+arch pstone_2
+x 18
 y 2
 end
-arch wwall_2_2_3
-x 17
+arch awall_2_2_3
+x 18
 y 2
 end
-arch woodfloor
-x 17
+arch pstone_2
+x 18
 y 3
 end
-arch wwall_2_1_1
-x 17
+arch awall_2_1_1
+x 18
 y 3
 end
-arch woodfloor
-x 17
+arch pstone_2
+x 18
 y 4
 end
-arch wwall_2_1_1
-x 17
+arch awall_2_1_1
+x 18
 y 4
 end
-arch woodfloor
-x 17
+arch pstone_2
+x 18
 y 5
 end
-arch wwall_2_1_1
-x 17
+arch awall_2_1_1
+x 18
 y 5
 end
-arch woodfloor
-x 17
+arch pstone_2
+x 18
 y 6
 end
-arch wwall_2_1_1
-x 17
+arch awall_2_1_1
+x 18
 y 6
 end
-arch woodfloor
-x 17
+arch pstone_2
+x 18
 y 7
 end
-arch wwall_2_1_1
-x 17
+arch awall_2_1_1
+x 18
 y 7
 end
-arch woodfloor
-x 17
+arch pstone_2
+x 18
 y 8
 end
 arch wwall_2_1_1
-x 17
+x 18
 y 8
 end
-arch woodfloor
-x 17
+arch awall_2_1_1
+x 18
+y 8
+end
+arch pstone_2
+x 18
 y 9
 end
 arch wwall_win1
-x 17
-y 9
-end
-arch woodfloor
-x 17
-y 10
-end
-arch wwall_2_1_1
-x 17
-y 10
-end
-arch woodfloor
-x 17
-y 11
-end
-arch wwall_2_1_1
-x 17
-y 11
-end
-arch woodfloor
-x 17
-y 12
-end
-arch wwall_2_1_1
-x 17
-y 12
-end
-arch woodfloor
-x 17
-y 13
-end
-arch wwall_2_1_1
-x 17
-y 13
-end
-arch woodfloor
-x 17
-y 14
-end
-arch wwall_2_1_1
-x 17
-y 14
-end
-arch woodfloor
-x 17
-y 15
-end
-arch wwall_2_1_1
-x 17
-y 15
-end
-arch woodfloor
-x 17
-y 16
-end
-arch wwall_2_1_1
-x 17
-y 16
-end
-arch woodfloor
-x 17
-y 17
-end
-arch wwall_2_2_4
-x 17
-y 17
-end
-arch grass_only
-x 17
-y 18
-end
-arch grass_only
-x 17
-y 19
-end
-arch cobblestones2
-x 18
-end
-arch grass_only
-x 18
-y 1
-end
-arch grass_only
-x 18
-y 2
-end
-arch grass_only
-x 18
-y 3
-end
-arch grass_only
-x 18
-y 4
-end
-arch grass_only
-x 18
-y 5
-end
-arch grass_only
-x 18
-y 6
-end
-arch grass_only
-x 18
-y 7
-end
-arch grass_only
-x 18
-y 8
-end
-arch grass_only
 x 18
 y 9
 end
-arch grass_only
+arch awall_2_1_1
+x 18
+y 9
+end
+arch pstone_2
 x 18
 y 10
 end
-arch grass_only
+arch wwall_2_1_1
+x 18
+y 10
+end
+arch awall_2_1_1
+x 18
+y 10
+end
+arch pstone_2
 x 18
 y 11
 end
-arch grass_only
+arch wwall_2_1_1
+x 18
+y 11
+end
+arch awall_2_1_1
+x 18
+y 11
+end
+arch pstone_2
 x 18
 y 12
 end
-arch grass_only
+arch wwall_2_1_1
+x 18
+y 12
+end
+arch awall_2_1_1
+x 18
+y 12
+end
+arch pstone_2
 x 18
 y 13
 end
-arch grass_only
+arch wwall_2_1_1
+x 18
+y 13
+end
+arch awall_2_1_1
+x 18
+y 13
+end
+arch pstone_2
 x 18
 y 14
 end
-arch grass_only
+arch wwall_2_1_1
+x 18
+y 14
+end
+arch awall_2_1_1
+x 18
+y 14
+end
+arch pstone_2
 x 18
 y 15
 end
-arch grass_only
+arch wwall_2_1_1
+x 18
+y 15
+end
+arch awall_2_1_1
+x 18
+y 15
+end
+arch pstone_2
 x 18
 y 16
 end
-arch grass_only
+arch wwall_2_1_1
+x 18
+y 16
+end
+arch awall_2_1_1
+x 18
+y 16
+end
+arch pstone_2
 x 18
 y 17
 end
-arch grass_only
+arch awall_2_2_4
+x 18
+y 17
+end
+arch pstone_2
 x 18
 y 18
 end
-arch grass_only
+arch cave6
+x 18
+y 18
+end
+arch pstone_2
 x 18
 y 19
 end
-arch cobblestones2
+arch cave22
+x 18
+y 19
+end
+arch pstone_2
 x 19
 end
-arch grass_only
+arch cave_15
+x 19
+end
+arch pstone_2
 x 19
 y 1
 end
-arch grass_only
+arch cave25
+x 19
+y 1
+end
+arch pstone_2
 x 19
 y 2
 end
-arch grass_only
+arch cave1
+x 19
+y 2
+end
+arch pstone_2
 x 19
 y 3
 end
-arch grass_only
+arch cave1
+x 19
+y 3
+end
+arch pstone_2
 x 19
 y 4
 end
-arch grass_only
+arch cave1
+x 19
+y 4
+end
+arch pstone_2
 x 19
 y 5
 end
-arch grass_only
+arch cave1
+x 19
+y 5
+end
+arch pstone_2
 x 19
 y 6
 end
-arch grass_only
+arch cave1
+x 19
+y 6
+end
+arch pstone_2
 x 19
 y 7
 end
-arch grass_only
+arch cave1
+x 19
+y 7
+end
+arch pstone_2
 x 19
 y 8
 end
-arch grass_only
+arch cave1
+x 19
+y 8
+end
+arch pstone_2
 x 19
 y 9
 end
-arch grass_only
+arch cave1
+x 19
+y 9
+end
+arch pstone_2
 x 19
 y 10
 end
-arch grass_only
+arch cave1
+x 19
+y 10
+end
+arch pstone_2
 x 19
 y 11
 end
-arch grass_only
+arch cave1
+x 19
+y 11
+end
+arch pstone_2
 x 19
 y 12
 end
-arch grass_only
+arch cave1
+x 19
+y 12
+end
+arch pstone_2
 x 19
 y 13
 end
-arch grass_only
+arch cave1
+x 19
+y 13
+end
+arch pstone_2
 x 19
 y 14
 end
-arch grass_only
+arch cave1
+x 19
+y 14
+end
+arch pstone_2
 x 19
 y 15
 end
-arch grass_only
+arch cave1
+x 19
+y 15
+end
+arch pstone_2
 x 19
 y 16
 end
-arch grass_only
+arch cave1
+x 19
+y 16
+end
+arch pstone_2
 x 19
 y 17
 end
-arch grass_only
+arch cave1
+x 19
+y 17
+end
+arch pstone_2
 x 19
 y 18
 end
-arch grass_only
+arch cave22
+x 19
+y 18
+end
+arch pstone_2
+x 19
+y 19
+end
+arch cave_15
 x 19
 y 19
 end
