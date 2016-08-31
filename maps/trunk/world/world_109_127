@@ -3,7 +3,7 @@ name world_109_127
 width 50
 height 50
 msg
-Modified: 2016-04-29 Rick Tanner
+Modified: 2016-08-31 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_109_126
@@ -6653,7 +6653,11 @@ x 25
 y 1
 elevation 6050
 end
-arch mountain
+arch mountain_cave2
+name Foul Smelling Cave
+slaying ../lake_country/dungeons/foul-smelling-cave
+hp 27
+sp 28
 x 25
 y 2
 elevation 5457
