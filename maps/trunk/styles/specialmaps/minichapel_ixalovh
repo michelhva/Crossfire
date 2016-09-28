@@ -1,0 +1,133 @@
+arch map
+name Mini Chapel of Ixalovh
+width 6
+height 6
+enter_x 2
+enter_y 3
+msg
+Created:  2016-09-28 Rick Tanner
+Modified: 2016-09-28 Rick Tanner
+endmsg
+end
+arch cyanmarble
+x 1
+y 1
+end
+arch stwallblue_2_2_2
+x 1
+y 1
+end
+arch cyanmarble
+x 1
+y 2
+end
+arch stwallblue_2_1_1
+x 1
+y 2
+end
+arch cyanmarble
+x 1
+y 3
+end
+arch stwallblue_2_1_1
+x 1
+y 3
+end
+arch cyanmarble
+x 1
+y 4
+end
+arch stwallblue_2_2_1
+x 1
+y 4
+end
+arch cyanmarble
+x 2
+y 1
+end
+arch stwallblue_3_1
+x 2
+y 1
+end
+arch cyanmarble
+x 2
+y 2
+end
+arch altar_ixalovh
+x 2
+y 2
+end
+arch cyanmarble
+x 2
+y 3
+end
+arch cyanmarble
+x 2
+y 4
+end
+arch stwallblue_1_3
+x 2
+y 4
+move_block 0
+end
+arch cyanmarble
+x 3
+y 1
+end
+arch stwallblue_3_1
+x 3
+y 1
+end
+arch cyanmarble
+x 3
+y 2
+end
+arch brazier
+x 3
+y 2
+end
+arch cyanmarble
+x 3
+y 3
+end
+arch cyanmarble
+x 3
+y 4
+end
+arch stwallblue_1_4
+x 3
+y 4
+move_block 0
+end
+arch cyanmarble
+x 4
+y 1
+end
+arch stwallblue_2_2_3
+x 4
+y 1
+end
+arch cyanmarble
+x 4
+y 2
+end
+arch stwallblue_2_1_1
+x 4
+y 2
+end
+arch cyanmarble
+x 4
+y 3
+end
+arch stwallblue_2_1_1
+x 4
+y 3
+end
+arch cyanmarble
+x 4
+y 4
+end
+arch stwallblue_2_2_4
+x 4
+y 4
+end

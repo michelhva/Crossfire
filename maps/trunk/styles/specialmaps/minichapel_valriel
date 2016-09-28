@@ -1,0 +1,131 @@
+arch map
+name Mini Chapel of Valriel
+width 6
+height 6
+enter_x 2
+enter_y 3
+msg
+Created:  2016-09-28 Rick Tanner
+Modified: 2016-09-28 Rick Tanner
+endmsg
+end
+arch tile_white_floor
+x 1
+y 1
+end
+arch white_wall_2_2_2
+x 1
+y 1
+end
+arch tile_shop
+x 1
+y 2
+end
+arch white_wall_2_1_1
+x 1
+y 2
+end
+arch tile_shop
+x 1
+y 3
+end
+arch white_wall_2_1_1
+x 1
+y 3
+end
+arch tile_white_floor
+x 1
+y 4
+end
+arch white_wall_2_2_1
+x 1
+y 4
+end
+arch tile_shop
+x 2
+y 1
+end
+arch white_wall_2_1_2
+x 2
+y 1
+end
+arch tile_white_floor
+x 2
+y 2
+end
+arch firepot_bright
+x 2
+y 2
+end
+arch tile_white_floor
+x 2
+y 3
+end
+arch tile_shop
+x 2
+y 4
+end
+arch white_wall_left
+x 2
+y 4
+end
+arch tile_shop
+x 3
+y 1
+end
+arch white_wall_2_1_2
+x 3
+y 1
+end
+arch tile_white_floor
+x 3
+y 2
+end
+arch altar_valriel
+x 3
+y 2
+end
+arch tile_white_floor
+x 3
+y 3
+end
+arch tile_shop
+x 3
+y 4
+end
+arch white_wall_right
+x 3
+y 4
+end
+arch tile_white_floor
+x 4
+y 1
+end
+arch white_wall_2_2_3
+x 4
+y 1
+end
+arch tile_shop
+x 4
+y 2
+end
+arch white_wall_2_1_1
+x 4
+y 2
+end
+arch tile_shop
+x 4
+y 3
+end
+arch white_wall_2_1_1
+x 4
+y 3
+end
+arch tile_white_floor
+x 4
+y 4
+end
+arch white_wall_2_2_4
+x 4
+y 4
+end
