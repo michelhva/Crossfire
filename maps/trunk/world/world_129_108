@@ -4,7 +4,7 @@ region wolfsburg
 width 50
 height 50
 msg
-Modified: 2013-02-13 Rick Tanner
+Modified: 2016-11-30 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_129_107
@@ -1257,6 +1257,13 @@ arch desert
 x 4
 y 46
 elevation 124
+end
+arch ruggilli_temple
+slaying ../wolfsburg/volcano/temples/ruggilli
+hp 12
+sp 21
+x 4
+y 46
 end
 arch desert
 x 4
