@@ -8,7 +8,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Modified: 2007-12-24 tchize
+Modified: 2016-12-30 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_102_106
@@ -3756,6 +3756,14 @@ x 18
 y 33
 end
 arch beach
+x 18
+y 34
+end
+arch ixalovh_temple
+name Temple to Ixalovh
+slaying ../santo_dominion/temples/ixalovh-temple
+hp 11
+sp 13
 x 18
 y 34
 end
