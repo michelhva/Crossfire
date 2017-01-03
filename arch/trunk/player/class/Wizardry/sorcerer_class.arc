@@ -24,8 +24,8 @@ Object sorcerer_hat
 name Sorcerer's hat
 nrof 1
 type 34
-face wiz_hat.111
-animation wiz_hat
+face sorcerer_hat.111
+animation sorcerer_hat
 speed 0.1
 last_sp 12
 ac 1
