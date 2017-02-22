@@ -42,7 +42,7 @@ define ("DB_NAME", "metaserver");
 // Connect to a host and select the specified table
 function db_connect()
 {	
-    $link = mysql_connect(DB_HOST, DB_USER, DB_PWD)
+    $link = mysqli_connect(DB_HOST, DB_USER, DB_PWD)
 	    or die("Could not connect to " . DB_HOST . " as " . DB_USER . " with password\n");
 
     mysql_select_db(DB_NAME)
@@ -55,27 +55,27 @@ function db_connect()
 function db_close($link)
 {	
     // Closing connection
-    mysql_close($link);
+    mysqli_close($link);
 }
 	
 // Make a query
 function db_query($link, $query)
 {
-    return(mysql_query($query, $link));
+    return(mysqli_query($link, $query));
 }
 
 // Returns an assoc list of data from the database.
 // Passed in parameter is return from db_query
 function db_fetch_assoc($qlist)
 {
-    return(mysql_fetch_assoc($qlist));
+    return(mysqli_fetch_assoc($qlist));
 }
 
 // Returns the number of rows matched with a query.
 // Passed in parameter is return from db_query
 function db_num_rows($qlist)
 {
-	return(mysql_num_rows($qlist));
+	return(mysqli_num_rows($qlist));
 }
 
 
