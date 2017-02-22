@@ -1,4 +1,4 @@
-<?
+<?php
 //    $Id: meta_client.php 6865 2007-08-05 10:51:39Z ryo_saeba $
 //    CrossFire Metaserver
 //
