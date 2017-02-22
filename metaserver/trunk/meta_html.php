@@ -25,7 +25,6 @@
 
 require_once("common.php");
 
-
 if (!$db=db_connect()) {
     log_message(LOG_ERROR, "Unable to connect to database\n");
     exit;
