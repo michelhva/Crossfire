@@ -45,7 +45,7 @@ function db_connect()
     $link = mysqli_connect(DB_HOST, DB_USER, DB_PWD)
 	    or die("Could not connect to " . DB_HOST . " as " . DB_USER . " with password\n");
 
-    mysql_select_db(DB_NAME)
+    mysqli_select_db($link, DB_NAME)
 	    or die("Could not select database " . DB_NAME);
 				
     return $link;

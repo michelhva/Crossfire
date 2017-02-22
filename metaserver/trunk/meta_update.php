@@ -91,11 +91,10 @@ foreach (array_keys($_POST) as $key) {
     $our_post[$key] = str_replace("\n", " ", $_POST[$key]);
 
     // Don't double escape the strings.
-    if (!get_magic_quotes_gpc()) $our_post[$key] = mysql_real_escape_string($our_post[$key]);
+    if (!get_magic_quotes_gpc()) $our_post[$key] = mysqli_real_escape_string($db, $our_post[$key]);
 }
 
-$query="select * from servers where port=" . mysql_real_escape_string($our_post['port'])
-    ." and hostname='" .mysql_real_escape_string($our_post['hostname']) . "'";
+$query="select * from servers where port=" . mysqli_real_escape_string($db, $our_post['port']) . " and hostname='" .mysqli_real_escape_string($db, $our_post['hostname']) . "'";
 
 $qret = db_query($db, $query);
 
@@ -154,7 +153,7 @@ if (db_num_rows($qret)) {
 // Not really a query, but updat
 $result = db_query($db, $update);
 if (!$result) {
-    LOG(LOG_ERROR, "Update/insert failed: $query\n");
+    log_message(LOG_ERROR, "Update/insert failed: $query\n");
 }
 
 db_close($db);
