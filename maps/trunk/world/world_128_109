@@ -5,7 +5,7 @@ region wolfsburg
 width 50
 height 50
 msg
-Modified: 2012-09-10 Rick Tanner
+Modified: 2017-02-28 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_128_108
@@ -1522,7 +1522,10 @@ x 6
 y 9
 elevation 5163
 end
-arch mountain
+arch mountain_cave2
+slaying ../wolfsburg/temple/shrine_to_gnarg
+hp 38
+sp 1
 x 6
 y 10
 elevation 5067
