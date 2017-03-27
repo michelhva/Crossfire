@@ -10,7 +10,7 @@ enter_x 57
 enter_y 40
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2011-11-14 Rick Tanner
+Modified: 2017-03-26 Rick Tanner
 endmsg
 end
 arch cave_15
@@ -15736,7 +15736,7 @@ y 10
 resist_physical 10
 resist_fire 15
 resist_cold 20
-materialname iron and ice
+material 4098
 value 25000
 end
 arch snow
