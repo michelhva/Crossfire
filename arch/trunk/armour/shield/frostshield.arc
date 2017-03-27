@@ -13,4 +13,5 @@ resist_cold 15
 weight 2000
 value 100
 material 18
+body_arm -1
 end
