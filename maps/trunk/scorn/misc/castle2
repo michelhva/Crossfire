@@ -8,7 +8,7 @@ enter_x 10
 enter_y 13
 msg
 Created:  1997-04-27
-Modified: 2010-06-08 Cavesomething
+Modified: 2017-06-01 jason
 endmsg
 end
 arch grass
@@ -2485,12 +2485,6 @@ arch woodfloor2
 x 17
 y 7
 end
-arch stair_up
-hp 2
-sp 1
-x 17
-y 7
-end
 arch woodfloor2
 x 17
 y 8
@@ -2631,6 +2625,10 @@ x 18
 y 6
 end
 arch woodfloor2
+x 18
+y 7
+end
+arch stair_up_2
 x 18
 y 7
 end
