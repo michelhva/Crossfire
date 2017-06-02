@@ -8,7 +8,7 @@ enter_x 10
 enter_y 13
 msg
 Created:  1997-04-27
-Modified: 2017-06-01 jason
+Modified: 2017-06-02 Kevin Zheng
 endmsg
 end
 arch grass
@@ -1574,6 +1574,7 @@ y 5
 end
 arch mage
 name the king
+face mage.151
 x 11
 y 5
 level 120
