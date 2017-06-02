@@ -8,7 +8,7 @@ enter_x 9
 enter_y 17
 msg
 Created:  1996-04-03
-Modified: 2015-04-17 Jason Zheng
+Modified: 2017-06-02 jason
 endmsg
 end
 arch dungeon_floor
@@ -572,9 +572,9 @@ x 4
 y 4
 end
 arch sign_w
-name elite training center
+name Elite Training Center
 msg
-For members of Regular Army only!
+Only for members of the Regular Army!
 endmsg
 x 4
 y 4
@@ -1910,9 +1910,9 @@ x 14
 y 4
 end
 arch sign_e
-name public supply
+name Public Supply
 msg
-For members of Regular Army only!
+Only for members of the Regular Army!
 endmsg
 x 14
 y 4
