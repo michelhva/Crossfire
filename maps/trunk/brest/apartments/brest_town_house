@@ -8,7 +8,7 @@ enter_x 7
 enter_y 17
 msg
 Created:  2005-11-04 Gene Alexander
-Modified: 2012-01-25 Rick Tanner
+Modified: 2017-06-03 Jason Zheng
 endmsg
 end
 arch grassmedium
@@ -1574,28 +1574,25 @@ arch woodfloor2
 x 6
 y 16
 end
-arch bookshelf
+arch bookshelf_right
 x 6
 y 16
-no_pick 1
 end
 arch woodfloor2
 x 6
 y 17
 end
-arch bookshelf
+arch bookshelf_right
 x 6
 y 17
-no_pick 1
 end
 arch woodfloor2
 x 6
 y 18
 end
-arch bookshelf
+arch bookshelf_right
 x 6
 y 18
-no_pick 1
 end
 arch woodfloor2
 x 6
@@ -2132,9 +2129,9 @@ end
 arch book_clasp
 name Brest Town House Owner Guide
 msg
-Welcome to your new town house located in beautiful downtown Brest.  Brest Realty hopes you will have a long and happy residency in our town.
+Welcome to your new town house located in beautiful downtown Brest. Brest Realty hopes you will have a long and happy residency in our town.
 -=-
-Note that many areas of your new home are buildable.  Some materials may not fit with the existing walls and floors in your town house so choose your building materials wisely.  You may find the town house completely usable as is and feel no need to add-on with building materials.  However, the ability to modify your town home is available should you desire it.
+Note that many areas of your new home are buildable. Some materials may not fit with the existing walls and floors in your town house so choose your building materials wisely. You may find the town house completely usable as is and feel no need to add-on with building materials. However, the ability to modify your town home is available should you desire it.
 endmsg
 x 8
 y 26
