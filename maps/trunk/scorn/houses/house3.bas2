@@ -8,7 +8,7 @@ enter_x 8
 enter_y 18
 msg
 Created:  2005-03-23 Huhanhi
-Modified: 2013-07-19 Andreas Kirschbaum
+Modified: 2017-06-23 Kevin Zheng
 endmsg
 end
 arch cobblestones2
@@ -258,13 +258,17 @@ x 1
 y 10
 end
 arch button_plate
-msg
-The button looks broken.  You will need something *heavy* to activate it.
-endmsg
 x 1
 y 10
 weight 5000000
 connected 1
+end
+arch magic_mouth
+msg
+The button looks broken. You will need something *heavy* to activate it.
+endmsg
+x 1
+y 10
 end
 arch chest_2
 x 1
