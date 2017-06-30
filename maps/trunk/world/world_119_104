@@ -3,7 +3,7 @@ name world_119_104
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2017-06-30 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_119_103
@@ -9068,7 +9068,10 @@ x 34
 y 18
 elevation 5592
 end
-arch mountain
+arch mountain_cave2
+slaying ../dungeons/voragray-gauntlet/00-abandoned-shrine
+hp 11
+sp 1
 x 34
 y 19
 elevation 5101
