@@ -9,7 +9,7 @@ enter_x 3
 enter_y 3
 msg
 Created:  2000-11-08 Andreas Vogl (red.blaze@gmx.net)
-Modified: 2016-02-15 Kevin Zheng
+Modified: 2017-07-08 Kevin Zheng
 endmsg
 end
 arch cobblestones2
@@ -109,7 +109,7 @@ end
 arch cobblestones2
 y 16
 end
-arch exit
+arch stair_down
 slaying entrance
 hp 4
 sp 1
@@ -118,7 +118,7 @@ end
 arch cobblestones2
 y 17
 end
-arch exit
+arch stair_down
 slaying entrance
 hp 4
 sp 2
@@ -127,7 +127,7 @@ end
 arch cobblestones2
 y 18
 end
-arch exit
+arch stair_down
 slaying entrance
 hp 4
 sp 3
@@ -17350,7 +17350,7 @@ arch cobblestones2
 x 34
 y 16
 end
-arch exit
+arch stair_down_4
 slaying entrance
 hp 18
 sp 1
@@ -17361,7 +17361,7 @@ arch cobblestones2
 x 34
 y 17
 end
-arch exit
+arch stair_down_4
 slaying entrance
 hp 18
 sp 2
@@ -17372,7 +17372,7 @@ arch cobblestones2
 x 34
 y 18
 end
-arch exit
+arch stair_down_4
 slaying entrance
 hp 18
 sp 3
