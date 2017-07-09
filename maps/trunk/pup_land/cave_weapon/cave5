@@ -8,7 +8,7 @@ enter_x 15
 enter_y 15
 msg
 Created:  1996-02-08
-Modified: 2012-03-14 Rick Tanner
+Modified: 2017-07-08 Kevin Zheng
 endmsg
 end
 arch blocked
@@ -2970,7 +2970,7 @@ arch flagstone
 x 15
 y 16
 end
-arch chole_1
+arch ladder_down
 slaying cave5
 hp 10
 sp 22
