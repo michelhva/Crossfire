@@ -11,19 +11,12 @@ import Crossfire
 import CFBank
 import CFItemBroker
 
-# Set up a few easily-settable configuration variables.
 bank = CFBank.CFBank('ImperialBank_DB')
-service_charge = 1  # Service charge for transactions (as a percentage)
-fees = service_charge / 100.0 + 1
 
-# Set up variables for a few commonly-accessed objects.
 activator = Crossfire.WhoIsActivator()
 whoami = Crossfire.WhoAmI()
 x = activator.X
 y = activator.Y
-
-# Account to record bank fees. Let's see how much the bank is being used.
-Skuds = 'Imperial-Bank-Of-Skud' + str('Imperial-Bank-Of-Skud'.__hash__())
 
 # Associate coin names with their corresponding values in silver.
 CoinTypes = {
@@ -87,13 +80,11 @@ def get_inventory(obj):
         yield current_item
         current_item = next_item
 
-def deposit_with_fee(player, amount):
-    """Deposit the given amount for the player, with fees subtracted."""
-    deposit_value = int(amount / fees)
-    CFBank.deposit(player, deposit_value)
-    bank.deposit(Skuds, amount - deposit_value)
-    whoami.Say("A fee of %s has been charged on this transaction." \
-            % Crossfire.CostStringFromValue(amount - deposit_value))
+def do_deposit(player, amount):
+    """Deposit the given amount for the player."""
+    CFBank.deposit(player, amount)
+    whoami.Say("%s credited to your account." \
+            % Crossfire.CostStringFromValue(amount))
 
 def deposit_box_close():
     """Find the total value of items in the deposit box and deposit."""
@@ -102,31 +93,15 @@ def deposit_box_close():
         if obj.Name != 'Apply' and obj.Name != 'Close':
             total_value += obj.Value * obj.Quantity
             obj.Teleport(activator.Map, 15, 3)
-    deposit_with_fee(activator, total_value)
+    do_deposit(activator, total_value)
 
 def cmd_help():
     """Print a help message for the player."""
-    whoami.Say("The Bank of Skud can help you keep your money safe. In addition, you will be able to access your money from any bank in the world! A small service charge of %d percent will be placed on all deposits, though. What would you like to do?" % service_charge)
+    whoami.Say("The Bank of Skud can help you keep your money safe. In addition, you will be able to access your money from any bank in the world! What would you like to do?")
 
     Crossfire.AddReply("balance", "I want to check my balance.")
     Crossfire.AddReply("deposit", "I'd like to deposit some money.")
     Crossfire.AddReply("withdraw", "I'd like to withdraw some money.")
-    Crossfire.AddReply("profits", "How much money has the Bank of Skud made?")
-    if activator.DungeonMaster:
-        Crossfire.AddReply("reset-profits", "Reset bank profits!")
-
-def cmd_show_profits():
-    """Say the total bank profits."""
-    whoami.Say("To date, the Imperial Bank of Skud has made %s in profit." \
-            % Crossfire.CostStringFromValue(bank.getbalance(Skuds)))
-
-def cmd_reset_profit():
-    """Reset the total bank profits."""
-    if activator.DungeonMaster:
-        bank.withdraw(Skuds, bank.getbalance(Skuds))
-        cmd_show_profits()
-    else:
-        whoami.Say("Only the dungeon master can reset our profits!")
 
 def cmd_balance(argv):
     """Find out how much money the player has in his/her account."""
@@ -163,7 +138,7 @@ def cmd_deposit(text):
         # Make sure the player has enough cash on hand.
         actualAmount = amount * exchange_rate
         if activator.PayAmount(actualAmount):
-            deposit_with_fee(activator, actualAmount)
+            do_deposit(activator, actualAmount)
         else:
             whoami.Say("But you don't have that much in your inventory!")
     else:
@@ -205,10 +180,6 @@ def main_employee():
     text = Crossfire.WhatIsMessage().split()
     if text[0] == "learn":
         cmd_help()
-    elif text[0] == "profits":
-        cmd_show_profits()
-    elif text[0] == "reset-profits":
-        cmd_reset_profit()
     elif text[0] == "balance":
         cmd_balance(text)
     elif text[0] == "deposit":
