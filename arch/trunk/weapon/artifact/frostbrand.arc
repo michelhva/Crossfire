@@ -11,7 +11,7 @@ weight 22000
 value 85000
 magic 3
 resist_fire 30
-attacktype 16
+attacktype 17
 weapontype 1
 name_pl Frostbrands
 client_type 100
