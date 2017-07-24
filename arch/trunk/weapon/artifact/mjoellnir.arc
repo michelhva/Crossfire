@@ -11,7 +11,7 @@ weight 30000
 value 75000
 magic 3
 resist_electricity 30
-attacktype 8
+attacktype 9
 Str 1
 name_pl Mjoellnirs
 client_type 100

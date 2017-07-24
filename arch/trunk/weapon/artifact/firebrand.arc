@@ -14,7 +14,7 @@ weight 22000
 value 75000
 magic 3
 resist_cold 30
-attacktype 4
+attacktype 5
 weapontype 1
 name_pl Firebrands
 client_type 100
