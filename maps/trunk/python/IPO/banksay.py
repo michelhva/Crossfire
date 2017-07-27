@@ -11,8 +11,6 @@ import Crossfire
 import CFBank
 import CFItemBroker
 
-bank = CFBank.CFBank('ImperialBank_DB')
-
 activator = Crossfire.WhoIsActivator()
 whoami = Crossfire.WhoAmI()
 x = activator.X
@@ -82,9 +80,10 @@ def get_inventory(obj):
 
 def do_deposit(player, amount):
     """Deposit the given amount for the player."""
-    CFBank.deposit(player, amount)
-    whoami.Say("%s credited to your account." \
-            % Crossfire.CostStringFromValue(amount))
+    with CFBank.open() as bank:
+        bank.deposit(player.Name, amount)
+        whoami.Say("%s credited to your account." \
+                % Crossfire.CostStringFromValue(amount))
 
 def deposit_box_close():
     """Find the total value of items in the deposit box and deposit."""
@@ -105,7 +104,9 @@ def cmd_help():
 
 def cmd_balance(argv):
     """Find out how much money the player has in his/her account."""
-    balance = CFBank.balance(activator)
+    balance = 0
+    with CFBank.open() as bank:
+        balance = bank.getbalance(activator.Name)
     if len(argv) >= 2:
         # Give balance using the desired coin type.
         coinName = getCoinNameFromArgs(argv[1:])
@@ -159,17 +160,18 @@ def cmd_withdraw(argv):
             return
 
         # Make sure the player has sufficient funds.
-        if CFBank.withdraw(activator, amount * exchange_rate):
-            message = "%d %s withdrawn from your account. %s" \
-                    % (amount, coinName, random.choice(thanks_message))
+        with CFBank.open() as bank:
+            if bank.withdraw(activator.Name, amount * exchange_rate):
+                message = "%d %s withdrawn from your account. %s" \
+                        % (amount, coinName, random.choice(thanks_message))
 
-            # Drop the money and have the player pick it up.
-            withdrawal = activator.Map.CreateObject(
-                    ArchType.get(coinName.upper()), x, y)
-            CFItemBroker.Item(withdrawal).add(amount)
-            activator.Take(withdrawal)
-        else:
-            message = "I'm sorry, you don't have enough money."
+                # Drop the money and have the player pick it up.
+                withdrawal = activator.Map.CreateObject(
+                        ArchType.get(coinName.upper()), x, y)
+                CFItemBroker.Item(withdrawal).add(amount)
+                activator.Take(withdrawal)
+            else:
+                message = "I'm sorry, you don't have enough money."
     else:
         message = "How much money would you like to withdraw?"
         Crossfire.AddReply("withdraw <amount> <coin name>", "This much!")
@@ -201,6 +203,3 @@ else:
         main_employee()
     except ValueError:
         whoami.Say("I don't know how much money that is.")
-
-# Close bank database (required) and return.
-bank.close()

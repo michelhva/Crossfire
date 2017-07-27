@@ -29,5 +29,5 @@ name = activator.Name
 
 #If you add a new bank database add an entry here to remove their account
 #when the player quits
-bank = CFBank.CFBank('ImperialBank_DB')
-bank.remove_account(name)
+with CFBank.open() as bank:
+    bank.remove_account(name)
