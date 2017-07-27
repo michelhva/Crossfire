@@ -1,12 +1,4 @@
 import Crossfire
-import CFGuilds
-import CFItemBroker
-import random
-import string
-import sys
-import CFBank
-import CFMail
-import CFLog
 activator=Crossfire.WhoIsActivator()
 mymap=activator.Map
 
