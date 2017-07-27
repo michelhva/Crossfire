@@ -9,7 +9,7 @@ enter_y 16
 msg
 Created:  1993-10-10 skud the great (tvangod@ecst.csuchico.edu)
 Idea credited to Eric Mehlhaff.
-Modified: 2012-09-03 Rick Tanner
+Modified: 2017-07-26 Kevin Zheng
 endmsg
 end
 arch cobblestones2
@@ -3091,18 +3091,11 @@ x 17
 y 3
 end
 arch depositbox
-name Deposit Box
 x 17
 y 3
-arch event_apply
-name Apply
-title Python
-slaying /python/IPO/banksay.py
-end
 arch event_close
-name Close
 title Python
-slaying /python/IPO/banksay.py
+slaying /python/items/deposit_box.py
 end
 end
 arch dungeon_magic
@@ -3449,10 +3442,7 @@ x 19
 y 3
 end
 arch sign_w
-name ATM
-msg
-Note.  There is a service charge of 1% placed on deposits and withdrawls.
-endmsg
+name deposit box
 x 19
 y 3
 end

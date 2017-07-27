@@ -8,7 +8,7 @@ enter_x 10
 enter_y 11
 msg
 Created:  2012-09-03 Rick Tanner
-Modified: 2014-10-04 Kevin Zheng
+Modified: 2017-07-26 Kevin Zheng
 endmsg
 end
 arch grass_only
@@ -1387,7 +1387,7 @@ x 10
 y 9
 end
 arch sign_e
-name ATM
+name deposit box
 x 10
 y 9
 end
@@ -1544,18 +1544,11 @@ x 11
 y 9
 end
 arch depositbox
-name Deposit Box
 x 11
 y 9
-arch event_apply
-name Apply
-title Python
-slaying /python/IPO/banksay.py
-end
 arch event_close
-name Close
 title Python
-slaying /python/IPO/banksay.py
+slaying /python/items/deposit_box.py
 end
 end
 arch dungeon_magic

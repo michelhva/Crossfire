@@ -8,7 +8,7 @@ enter_x 9
 enter_y 18
 msg
 Created:  1996-01-29
-Modified: 2011-12-05 Rick Tanner
+Modified: 2017-07-26 Kevin Zheng
 endmsg
 end
 arch afloor_right
@@ -299,18 +299,11 @@ x 1
 y 18
 end
 arch depositbox
-name Deposit Box
 x 1
 y 18
-arch event_apply
-name Apply
-title Python
-slaying /python/IPO/banksay.py
-end
 arch event_close
-name Close
 title Python
-slaying /python/IPO/banksay.py
+slaying /python/items/deposit_box.py
 end
 end
 arch afloor_right
@@ -471,10 +464,7 @@ x 2
 y 18
 end
 arch sign_w
-name ATM
-msg
-Note.  A service charge of 1% is placed on deposits and withdrawals.
-endmsg
+name deposit box
 x 2
 y 18
 end
