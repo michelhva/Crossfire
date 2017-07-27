@@ -1,12 +1,7 @@
 """
 Created by: Joris Bontje <jbontje@suespammers.org>
 
-This module stores bank account information. Player accounts are stored in
-the player file using the 'balance' key. Other accounts (for guilds) are
-stored in the original bank file using the 'shelve' library.
-
-Since the original implementation stored player accounts using the 'shelve'
-library as well, this module also converts old bank accounts to new ones.
+This module stores bank account information.
 """
 
 import os.path
@@ -16,9 +11,14 @@ import Crossfire
 
 class CFBank:
     def __init__(self, bankfile):
-        self.bankdb_file = os.path.join(Crossfire.LocalDirectory(),
-                bankfile)
+        self.bankdb_file = os.path.join(Crossfire.LocalDirectory(), bankfile)
         self.bankdb = shelve.open(self.bankdb_file)
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        self.close()
 
     def deposit(self, user, amount):
         if not user in self.bankdb:
@@ -29,13 +29,14 @@ class CFBank:
 
     def withdraw(self, user, amount):
         if user in self.bankdb:
-            if self.bankdb[user] >= amount:
-                balance = self.bankdb[user]
+            balance = self.getbalance(user)
+            if balance >= amount:
                 self.bankdb[user] = balance - amount
                 return 1
         return 0
 
     def getbalance(self, user):
+        self._convert(user)
         if user in self.bankdb:
             return self.bankdb[user]
         else:
@@ -53,43 +54,26 @@ class CFBank:
     def close(self):
         self.bankdb.close()
 
+    def _convert(self, name):
+        """Move a player's balance from the player file to the bank."""
+        player = Crossfire.FindPlayer(name)
+        if player is None:
+            return 0
+        old_balance = _balance_legacy(player)
+        if old_balance > 0:
+            Crossfire.Log(Crossfire.LogInfo,
+                    "Converting bank account for %s with %d silver" \
+                            % (name, old_balance))
+            self.deposit(name, old_balance)
+            player.WriteKey("balance", "moved-to-bank-file", 1)
 
-def convert_bank(player):
-    """Move a player's balance from the bank file to the player file."""
-    bank = CFBank('ImperialBank_DB')
-    old_balance = bank.getbalance(player.Name)
-    if old_balance > 0:
-        Crossfire.Log(Crossfire.LogInfo,
-                "Converting bank account for %s with %d silver" \
-                        % (player.Name, old_balance))
-        player.WriteKey("balance", str(old_balance), 1)
-        bank.remove_account(player.Name)
-    bank.close()
-    return old_balance
+def open():
+    return CFBank('ImperialBank_DB')
 
-def balance(player):
+def _balance_legacy(player):
     """Return the balance of the given player's bank account."""
     try:
         balance_str = player.ReadKey("balance")
         return int(balance_str)
     except ValueError:
-        # If 'balance' key does not exist, try to convert from bank file.
-        return convert_bank(player)
-
-def deposit(player, amount):
-    """Deposit the given amount to the player's bank account."""
-    if amount < 0:
-        raise ValueError("Deposits must be positive")
-    new_balance = balance(player) + int(amount)
-    player.WriteKey("balance", str(new_balance), 1)
-
-def withdraw(player, amount):
-    """Withdraw the given amount from the player's bank account."""
-    if amount < 0:
-        raise ValueError("Withdrawals must be positive")
-    new_balance = balance(player) - int(amount)
-    if new_balance < 0:
-        return False
-    else:
-        player.WriteKey("balance", str(new_balance), 1)
-        return True
+        return 0
