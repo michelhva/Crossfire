@@ -9,7 +9,7 @@ enter_y 16
 msg
 Created:  1993-10-10 skud the great (tvangod@ecst.csuchico.edu)
 Idea credited to Eric Mehlhaff.
-Modified: 2015-02-22 Kevin Zheng
+Modified: 2017-07-26 Kevin Zheng
 endmsg
 outdoor 1
 end
@@ -1717,13 +1717,11 @@ x 12
 y 12
 end
 arch depositbox
-name Deposit Box
 x 12
 y 12
 arch event_close
-name Close
 title Python
-slaying /python/IPO/banksay.py
+slaying /python/items/deposit_box.py
 end
 end
 arch dungeon_magic
@@ -1910,10 +1908,7 @@ x 13
 y 12
 end
 arch sign_w
-name Deposit Box
-msg
-Note: There is a 1% service charge on all deposits.
-endmsg
+name deposit box
 x 13
 y 12
 end

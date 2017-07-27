@@ -2,7 +2,7 @@
 Created by: Joris Bontje <jbontje@suespammers.org>
 
 This module implements banking in Crossfire. It provides the 'say' event for
-bank tellers, as well as a deposit box for quickly depositing money.
+bank tellers.
 """
 
 import random
@@ -70,29 +70,12 @@ def getExchangeRate(coinName):
     else:
         return None
 
-def get_inventory(obj):
-    """An iterator for a given object's inventory."""
-    current_item = obj.Inventory
-    while current_item != None:
-        next_item = current_item.Below
-        yield current_item
-        current_item = next_item
-
 def do_deposit(player, amount):
     """Deposit the given amount for the player."""
     with CFBank.open() as bank:
         bank.deposit(player.Name, amount)
         whoami.Say("%s credited to your account." \
                 % Crossfire.CostStringFromValue(amount))
-
-def deposit_box_close():
-    """Find the total value of items in the deposit box and deposit."""
-    total_value = 0
-    for obj in get_inventory(whoami):
-        if obj.Name != 'Apply' and obj.Name != 'Close':
-            total_value += obj.Value * obj.Quantity
-            obj.Teleport(activator.Map, 15, 3)
-    do_deposit(activator, total_value)
 
 def cmd_help():
     """Print a help message for the player."""
@@ -192,14 +175,8 @@ def main_employee():
         whoami.Say("Hello, what can I help you with today?")
         Crossfire.AddReply("learn", "I want to learn how to use the bank.")
 
-# Find out if the script is being run by a deposit box or an employee.
-if whoami.Name.find('Deposit Box') > -1:
-    ScriptParm = Crossfire.ScriptParameters()
-    if ScriptParm == 'Close':
-        deposit_box_close()
-else:
-    Crossfire.SetReturnValue(1)
-    try:
-        main_employee()
-    except ValueError:
-        whoami.Say("I don't know how much money that is.")
+Crossfire.SetReturnValue(1)
+try:
+    main_employee()
+except ValueError:
+    whoami.Say("I don't know how much money that is.")
