@@ -89,8 +89,8 @@ skill one handed weapons
 end
 
 Object potion_empty
-name empty bottle
-name_pl empty bottles
+name empty flask
+name_pl empty flasks
 nrof 1
 last_sp 10
 type 15
