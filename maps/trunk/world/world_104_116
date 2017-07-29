@@ -4,7 +4,7 @@ region scorn
 width 50
 height 50
 msg
-Modified: 2014-06-05 Kevin Zheng
+Modified: 2017-07-28 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_104_115
@@ -10656,9 +10656,6 @@ arch grass
 x 41
 elevation 15244
 end
-arch barrack_long
-x 41
-end
 arch grass
 x 41
 y 1
@@ -12622,9 +12619,6 @@ end
 arch grass
 x 48
 end
-arch lamppost
-x 48
-end
 arch dungeon_magic
 x 48
 y 1
@@ -12645,10 +12639,6 @@ y 2
 end
 arch guard_house_4
 name Pump House
-x 48
-y 2
-end
-arch light2
 x 48
 y 2
 end
@@ -12937,6 +12927,9 @@ x 49
 elevation 9962
 end
 arch grass
+x 49
+end
+arch lamppost
 x 49
 end
 arch dungeon_magic

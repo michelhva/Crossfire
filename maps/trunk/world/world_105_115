@@ -9,7 +9,7 @@ enter_x 5
 enter_y 37
 msg
 Created:  2001-02-16
-Modified: 2016-06-25 Rick Tanner
+Modified: 2017-07-28 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_105_114
@@ -316,7 +316,11 @@ arch grass
 y 43
 elevation 6886
 end
-arch tree5
+arch barrack_long
+name Barracks
+slaying /scorn/houses/barracks
+hp 24
+sp 4
 y 43
 end
 arch dungeon_magic
@@ -354,7 +358,11 @@ arch grass
 y 48
 elevation 10145
 end
-arch tree5
+arch barrack_long
+name Mess Hall
+slaying /scorn/houses/messhall
+hp 24
+sp 4
 y 48
 end
 arch dungeon_magic
@@ -749,14 +757,10 @@ arch dungeon_magic
 x 1
 y 43
 end
-arch cobblestones2
+arch grass
 x 1
 y 43
-elevation 8288
-end
-arch tower_tob
-x 1
-y 43
+elevation 6886
 end
 arch dungeon_magic
 x 1
@@ -782,7 +786,6 @@ end
 arch guard_house_1
 x 1
 y 45
-type 0
 end
 arch dungeon_magic
 x 1
@@ -796,7 +799,6 @@ end
 arch guard_house_1
 x 1
 y 46
-type 0
 end
 arch dungeon_magic
 x 1
@@ -814,14 +816,10 @@ arch dungeon_magic
 x 1
 y 48
 end
-arch cobblestones2
+arch grass
 x 1
 y 48
-elevation 8288
-end
-arch tower_tob
-x 1
-y 48
+elevation 10145
 end
 arch dungeon_magic
 x 1
@@ -1215,7 +1213,6 @@ end
 arch guard_house_2
 x 2
 y 45
-type 0
 end
 arch dungeon_magic
 x 2
@@ -1229,7 +1226,6 @@ end
 arch guard_house_2
 x 2
 y 46
-type 0
 end
 arch dungeon_magic
 x 2
@@ -2834,6 +2830,10 @@ arch dungeon_magic
 x 6
 y 32
 end
+arch light1
+x 6
+y 32
+end
 arch grass
 x 6
 y 32
@@ -3723,22 +3723,7 @@ end
 arch grass
 x 8
 y 35
-elevation 2469
-end
-arch house_2
-name Random House
-slaying /!
-msg
-layoutstyle onion
-floorstyle indoor
-wallstyle wooden
-monsterstyle city
-dungeon_level 1
-dungeon_depth 1
-decorstyle furniture
-endmsg
-x 8
-y 35
+elevation 528
 end
 arch dungeon_magic
 x 8
@@ -4148,6 +4133,10 @@ arch dungeon_magic
 x 9
 y 32
 end
+arch light1
+x 9
+y 32
+end
 arch grass
 x 9
 y 32
@@ -4183,10 +4172,6 @@ arch grass
 x 9
 y 35
 elevation 528
-end
-arch house_2
-x 9
-y 35
 end
 arch dungeon_magic
 x 9
@@ -4579,6 +4564,10 @@ arch dungeon_magic
 x 10
 y 32
 end
+arch light1
+x 10
+y 32
+end
 arch grass
 x 10
 y 32
@@ -4617,15 +4606,7 @@ end
 arch grass
 x 10
 y 35
-elevation 707
-end
-arch house_small
-name Fun House
-slaying /scorn/houses/maze1
-hp 3
-sp 20
-x 10
-y 35
+elevation 3260
 end
 arch dungeon_magic
 x 10
@@ -4744,7 +4725,22 @@ end
 arch grass
 x 10
 y 45
-elevation 8959
+elevation 2469
+end
+arch house_2
+name Random House
+slaying /!
+msg
+layoutstyle onion
+floorstyle indoor
+wallstyle wooden
+monsterstyle city
+dungeon_level 1
+dungeon_depth 1
+decorstyle furniture
+endmsg
+x 10
+y 45
 end
 arch dungeon_magic
 x 10
@@ -5076,10 +5072,6 @@ x 11
 y 35
 elevation 3260
 end
-arch house_2
-x 11
-y 35
-end
 arch dungeon_magic
 x 11
 y 36
@@ -5163,12 +5155,12 @@ x 11
 y 42
 elevation 12197
 end
-arch grass
+arch cobblestones2
 x 11
 y 42
 end
 arch barrack_long
-name large house
+name Lake House
 slaying /scorn/houses/map.fr.ruin
 hp 1
 sp 19
@@ -5179,16 +5171,7 @@ arch dungeon_magic
 x 11
 y 43
 end
-arch grass
-x 11
-y 43
-elevation 5697
-end
-arch house_small
-name Wizard's Workshop
-slaying /scorn/houses/wizardw
-hp 6
-sp 13
+arch cobblestones2
 x 11
 y 43
 end
@@ -5551,6 +5534,10 @@ x 12
 y 34
 end
 arch dungeon_magic
+x 12
+y 35
+end
+arch light1
 x 12
 y 35
 end
@@ -5938,6 +5925,10 @@ x 13
 y 31
 end
 arch dungeon_magic
+x 13
+y 32
+end
+arch light1
 x 13
 y 32
 end
@@ -6470,7 +6461,15 @@ end
 arch grass
 x 14
 y 42
-elevation 7850
+elevation 707
+end
+arch house_small
+name Fun House
+slaying /scorn/houses/maze1
+hp 3
+sp 20
+x 14
+y 42
 end
 arch dungeon_magic
 x 14
@@ -6839,6 +6838,10 @@ arch dungeon_magic
 x 15
 y 35
 end
+arch light1
+x 15
+y 35
+end
 arch grass
 x 15
 y 35
@@ -6878,9 +6881,13 @@ end
 arch grass
 x 15
 y 39
-elevation 10124
+elevation 10000
 end
-arch market1
+arch house_small
+name Wizard's Workshop
+slaying /scorn/houses/wizardw
+hp 6
+sp 13
 x 15
 y 39
 end
@@ -6892,11 +6899,6 @@ arch grass
 x 15
 y 40
 elevation 6093
-end
-arch barrack_long
-name large house
-x 15
-y 40
 end
 arch dungeon_magic
 x 15
@@ -7274,6 +7276,10 @@ arch dungeon_magic
 x 16
 y 32
 end
+arch light1
+x 16
+y 32
+end
 arch grass
 x 16
 y 32
@@ -7297,6 +7303,10 @@ y 34
 elevation 4707
 end
 arch dungeon_magic
+x 16
+y 35
+end
+arch light1
 x 16
 y 35
 end
@@ -7340,10 +7350,6 @@ arch grass
 x 16
 y 39
 elevation 9163
-end
-arch market3
-x 16
-y 39
 end
 arch dungeon_magic
 x 16
@@ -7692,6 +7698,10 @@ arch dungeon_magic
 x 17
 y 32
 end
+arch light1
+x 17
+y 32
+end
 arch grass
 x 17
 y 32
@@ -7727,11 +7737,6 @@ arch grass
 x 17
 y 35
 elevation 4991
-end
-arch woodhouse
-x 17
-y 35
-elevation 596
 end
 arch dungeon_magic
 x 17
@@ -8136,19 +8141,17 @@ arch dungeon_magic
 x 18
 y 31
 end
-arch cobblestones2
+arch grass
 x 18
 y 31
-elevation 132
 end
 arch dungeon_magic
 x 18
 y 32
 end
-arch cobblestones2
+arch grass
 x 18
 y 32
-elevation 1560
 end
 arch dungeon_magic
 x 18
@@ -8579,7 +8582,7 @@ arch dungeon_magic
 x 19
 y 32
 end
-arch grass
+arch cobblestones2
 x 19
 y 32
 end
@@ -8613,6 +8616,10 @@ x 19
 y 35
 end
 arch grass
+x 19
+y 35
+end
+arch light1
 x 19
 y 35
 end
@@ -8994,10 +9001,9 @@ arch dungeon_magic
 x 20
 y 31
 end
-arch cobblestones2
+arch grass
 x 20
 y 31
-elevation 1352
 end
 arch dungeon_magic
 x 20
@@ -9011,10 +9017,9 @@ arch dungeon_magic
 x 20
 y 33
 end
-arch cobblestones2
+arch grass
 x 20
 y 33
-elevation 4671
 end
 arch dungeon_magic
 x 20
@@ -9511,10 +9516,8 @@ arch guard_house_1
 name Eastern Gate of Scorn
 x 21
 y 37
-type 0
 elevation 5383
 move_block all
-is_floor 1
 end
 arch guard_house_2
 name Eastern Gate of Scorn
@@ -10207,6 +10210,7 @@ y 41
 elevation 1773
 end
 arch farmhouse
+name Terry's Farm
 slaying /scorn/houses/farmhouse
 hp 11
 sp 9
@@ -12877,8 +12881,7 @@ x 33
 y 35
 elevation 46
 end
-arch sign_w
-name Scorn City Limits
+arch cross_sign
 msg
 Santo Dominion - 350 chains north
 Brest - 518 chains south
@@ -12886,7 +12889,6 @@ Navar City - 948 chains east
 endmsg
 x 33
 y 35
-elevation 3176
 end
 arch cobblestones
 x 33
