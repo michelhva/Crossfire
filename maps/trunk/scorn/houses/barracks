@@ -9,7 +9,7 @@ enter_x 24
 enter_y 4
 msg
 Created:  2003-01-04
-Modified: 2008-12-21 Rick Tanner
+Modified: 2017-07-28 Kevin Zheng
 endmsg
 end
 arch cobblestones2
@@ -1596,9 +1596,9 @@ x 24
 y 3
 end
 arch invis_exit
-slaying /world/world_104_115
-hp 46
-sp 34
+slaying /world/world_105_115
+hp 0
+sp 43
 x 24
 y 4
 end
@@ -1607,9 +1607,9 @@ x 24
 y 4
 end
 arch invis_exit
-slaying /world/world_104_115
-hp 46
-sp 34
+slaying /world/world_105_115
+hp 0
+sp 43
 x 24
 y 5
 end
