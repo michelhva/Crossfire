@@ -5,7 +5,7 @@ randomitems serpentman_player_items
 face serpentman.131
 msg
 Skills: Clawing, Jumping
-Resistances: Cold -50, Fire +30, Electricity +30, Acid +30, Poison +30, Physical +5
+Resistances: Cold -20, Fire +30, Electricity +30, Acid +30, Poison +30, Physical +5
 Attunements: None
 Special: Can not wear boots and helmets, can wear extra ring and bracers.
 
@@ -29,7 +29,7 @@ weight 70000
 food 999
 speed 1
 attacktype 1
-resist_cold -50
+resist_cold -20
 resist_fire 30
 resist_electricity 30
 resist_acid 30
