@@ -3,7 +3,7 @@ name Defender
 anim_suffix double_sword
 nrof 1
 last_sp 8
-ac -1
+ac 1
 type 15
 face defender.111
 material 2
