@@ -22,7 +22,7 @@ path_denied 393216
 resist_drain 100
 resist_deplete 100
 resist_death 100
-resist_fear -100
+resist_fear -15
 ac -5
 wc -1
 dam 50
