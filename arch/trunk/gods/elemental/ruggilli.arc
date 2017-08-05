@@ -23,7 +23,7 @@ path_denied 65536
 resist_fire 100
 resist_physical 30
 resist_magic 30
-resist_cold -30
+resist_cold -15
 ac -5
 wc -3
 dam 60

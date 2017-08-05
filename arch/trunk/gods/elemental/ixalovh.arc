@@ -20,7 +20,7 @@ attacktype 17
 path_attuned 16388
 path_repelled 514
 path_denied 65536
-resist_fire -30
+resist_fire -20
 resist_physical 20
 resist_magic 20
 resist_cold 80
