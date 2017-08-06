@@ -40,7 +40,7 @@ end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-sp 3
+direction 3
 y 1
 speed -0.05
 level 50
@@ -61,7 +61,7 @@ end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-sp 3
+direction 3
 y 2
 speed -0.05
 level 50
@@ -82,7 +82,7 @@ end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-sp 1
+direction 1
 y 3
 speed -0.05
 level 50
@@ -358,7 +358,7 @@ end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-sp 7
+direction 7
 x 1
 y 1
 speed -0.05
@@ -381,7 +381,7 @@ end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-sp 7
+direction 7
 x 1
 y 2
 speed -0.05
@@ -404,7 +404,7 @@ end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-sp 1
+direction 1
 x 1
 y 3
 speed -0.05
@@ -3698,7 +3698,7 @@ end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-sp 3
+direction 3
 x 10
 speed -0.05
 level 50
@@ -3720,7 +3720,7 @@ end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-sp 3
+direction 3
 x 10
 y 1
 speed -0.05
@@ -4090,7 +4090,7 @@ end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-sp 1
+direction 1
 x 11
 y 1
 speed -0.05
@@ -4542,7 +4542,7 @@ end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-sp 1
+direction 1
 x 12
 y 1
 speed -0.05
@@ -5004,7 +5004,7 @@ end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-sp 7
+direction 7
 x 13
 speed -0.05
 level 50
@@ -5026,7 +5026,7 @@ end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-sp 7
+direction 7
 x 13
 y 1
 speed -0.05
@@ -5891,7 +5891,7 @@ end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-sp 3
+direction 3
 x 15
 speed -0.05
 level 50
@@ -5914,7 +5914,7 @@ end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-sp 3
+direction 3
 x 15
 y 1
 speed -0.05
@@ -6284,7 +6284,7 @@ end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-sp 1
+direction 1
 x 16
 y 1
 speed -0.05
@@ -6664,7 +6664,7 @@ end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-sp 1
+direction 1
 x 17
 y 1
 speed -0.05
@@ -7114,7 +7114,7 @@ end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-sp 7
+direction 7
 x 18
 speed -0.05
 level 50
@@ -7137,7 +7137,7 @@ end
 arch firewall_5
 name fearsome statue
 face earthwall.111
-sp 7
+direction 7
 x 18
 y 1
 speed -0.05
