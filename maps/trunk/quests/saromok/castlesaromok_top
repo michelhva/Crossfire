@@ -4009,7 +4009,7 @@ blocksview 0
 end
 arch bulletwall_7
 face fog.111
-sp 4
+direction 4
 x 7
 arch spell_large_lightning
 end
@@ -4273,7 +4273,7 @@ blocksview 0
 end
 arch bulletwall_7
 face fog.111
-sp 2
+direction 2
 x 7
 y 24
 arch spell_large_lightning
@@ -5346,7 +5346,7 @@ blocksview 0
 end
 arch bulletwall_7
 face fog.111
-sp 4
+direction 4
 x 9
 arch spell_large_lightning
 end
@@ -5610,7 +5610,7 @@ blocksview 0
 end
 arch bulletwall_7
 face fog.111
-sp 2
+direction 2
 x 9
 y 24
 arch spell_large_lightning
@@ -9515,7 +9515,7 @@ blocksview 0
 end
 arch bulletwall_7
 face fog.111
-sp 6
+direction 6
 x 15
 arch spell_large_lightning
 end
@@ -9779,7 +9779,7 @@ blocksview 0
 end
 arch bulletwall_7
 face fog.111
-sp 8
+direction 8
 x 15
 y 24
 arch spell_large_lightning
@@ -10860,7 +10860,7 @@ blocksview 0
 end
 arch bulletwall_7
 face fog.111
-sp 6
+direction 6
 x 17
 arch spell_large_lightning
 end
@@ -11124,7 +11124,7 @@ blocksview 0
 end
 arch bulletwall_7
 face fog.111
-sp 8
+direction 8
 x 17
 y 24
 arch spell_large_lightning
