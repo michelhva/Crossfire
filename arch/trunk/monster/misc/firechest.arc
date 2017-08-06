@@ -11,5 +11,5 @@ alive 1
 level 1
 no_pick 1
 resist_fire 100
-sp 0
+direction 0
 end

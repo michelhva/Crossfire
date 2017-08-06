@@ -10,7 +10,7 @@ exp 50
 resist_cold 100
 blocksview 0
 invisible 1
-sp 0
+direction 0
 arch spell_icestorm
 end
 end
