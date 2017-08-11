@@ -11,7 +11,7 @@ enter_x 8
 enter_y 24
 msg
 Created:  2002-04-02 Bernd Edler (edler@heydernet.de)
-Modified: 2013-09-28 Rick Tanner
+Modified: 2017-08-11 SilverNexus
 endmsg
 end
 arch dungeon_magic
@@ -131,6 +131,7 @@ Don't step beyond the line!
 endmsg
 y 6
 connected 4
+move_on 0
 end
 arch dungeon_magic
 y 6
@@ -148,6 +149,7 @@ Good. You smashed the vampire.
 endmsg
 y 7
 connected 32
+move_on 0
 end
 arch dungeon_magic
 y 7
@@ -289,6 +291,7 @@ endmsg
 x 1
 y 6
 connected 31
+move_on 0
 end
 arch dungeon_magic
 x 1
@@ -310,6 +313,7 @@ endmsg
 x 1
 y 7
 connected 33
+move_on 0
 end
 arch dungeon_magic
 x 1
@@ -630,6 +634,7 @@ endmsg
 x 2
 y 19
 connected 2
+move_on 0
 end
 arch dungeon_magic
 x 2
@@ -1271,6 +1276,15 @@ arch woodfloor
 x 4
 y 7
 end
+arch mover_5
+x 4
+y 7
+speed -20.0
+level 1
+attacktype 1
+move_type walk fly_low fly_high
+move_on walk fly_low fly_high
+end
 arch dungeon_magic
 x 4
 y 8
@@ -1629,6 +1643,15 @@ end
 arch woodfloor
 x 5
 y 7
+end
+arch mover_5
+x 5
+y 7
+speed -20.0
+level 1
+attacktype 1
+move_type walk fly_low fly_high
+move_on walk fly_low fly_high
 end
 arch dungeon_magic
 x 5
@@ -2060,6 +2083,15 @@ arch woodfloor
 x 6
 y 7
 end
+arch mover_5
+x 6
+y 7
+speed -20.0
+level 1
+attacktype 1
+move_type walk fly_low fly_high
+move_on walk fly_low fly_high
+end
 arch dungeon_magic
 x 6
 y 8
@@ -2440,6 +2472,15 @@ arch woodfloor
 x 7
 y 7
 end
+arch mover_5
+x 7
+y 7
+speed -20.0
+level 1
+attacktype 1
+move_type walk fly_low fly_high
+move_on walk fly_low fly_high
+end
 arch dungeon_magic
 x 7
 y 8
@@ -2792,6 +2833,15 @@ end
 arch woodfloor
 x 8
 y 7
+end
+arch mover_5
+x 8
+y 7
+speed -20.0
+level 1
+attacktype 1
+move_type walk fly_low fly_high
+move_on walk fly_low fly_high
 end
 arch dungeon_magic
 x 8
@@ -3166,6 +3216,15 @@ end
 arch woodfloor
 x 9
 y 7
+end
+arch mover_5
+x 9
+y 7
+speed -20.0
+level 1
+attacktype 1
+move_type walk fly_low fly_high
+move_on walk fly_low fly_high
 end
 arch dungeon_magic
 x 9
@@ -4104,6 +4163,7 @@ food 1
 x 11
 y 20
 connected 3
+move_on 0
 end
 arch dungeon_magic
 x 11
@@ -4137,6 +4197,7 @@ food 1
 x 11
 y 23
 connected 1
+move_on 0
 end
 arch dungeon_magic
 x 11
