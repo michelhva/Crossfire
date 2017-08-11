@@ -9,7 +9,7 @@ width 20
 height 16
 msg
 Created:  1999-01-28 Cater & Wade (john_cater@yahoo.com)
-Modified: 2014-08-27 Rick Tanner
+Modified: 2017-08-11 SilverNexus
 endmsg
 end
 arch pstone_1
@@ -822,9 +822,10 @@ end
 arch mover_3
 x 6
 y 5
-speed -20.000000
+speed -20.0
 level 1
 attacktype 1
+move_type walk fly_low
 end
 arch unholy_ground
 x 6
@@ -845,9 +846,10 @@ end
 arch mover_3
 x 6
 y 6
-speed -20.000000
+speed -20.0
 level 1
 attacktype 1
+move_type walk fly_low
 end
 arch unholy_ground
 x 6
@@ -868,9 +870,10 @@ end
 arch mover_3
 x 6
 y 7
-speed -20.000000
+speed -20.0
 level 1
 attacktype 1
+move_type walk fly_low
 end
 arch unholy_ground
 x 6
@@ -891,9 +894,10 @@ end
 arch mover_3
 x 6
 y 8
-speed -20.000000
+speed -20.0
 level 1
 attacktype 1
+move_type walk fly_low
 end
 arch unholy_ground
 x 6
@@ -914,9 +918,10 @@ end
 arch mover_3
 x 6
 y 9
-speed -20.000000
+speed -20.0
 level 1
 attacktype 1
+move_type walk fly_low
 end
 arch unholy_ground
 x 6
@@ -937,9 +942,10 @@ end
 arch mover_3
 x 6
 y 10
-speed -20.000000
+speed -20.0
 level 1
 attacktype 1
+move_type walk fly_low
 end
 arch unholy_ground
 x 6
