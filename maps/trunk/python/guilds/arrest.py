@@ -30,7 +30,7 @@ if activator == None or activator.Type != Crossfire.Type.PLAYER:
 
 if (Approved != 'Access granted'):
     if (ActionRequired == "A"):
-        activator.Teleport(Crossfire.ReadyMap('/scorn/misc/jail'),int(15),random.choice([1,3,5,9,11]))
+        activator.Teleport(Crossfire.ReadyMap('/scorn/misc/jail'),int(15),random.choice([1,3]))
     elif (ActionRequired == "D"):
         x4=random.randint(21, 23)
         y4=random.randint(22,24)
