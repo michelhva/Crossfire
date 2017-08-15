@@ -9,7 +9,7 @@ enter_x 9
 enter_y 10
 msg
 Created:  1996-01-28
-Modified: 2012-02-28 Rick Tanner
+Modified: 2017-08-02 Jason Zheng
 endmsg
 end
 arch blocked
@@ -391,10 +391,6 @@ arch dungeon_floor
 x 2
 y 7
 end
-arch sign
-x 2
-y 7
-end
 arch ogre
 x 2
 y 7
@@ -655,6 +651,7 @@ x 3
 y 13
 end
 arch big_elec
+name resistant electric dragon
 x 3
 y 13
 resist_acid 100
@@ -1018,10 +1015,6 @@ arch madman
 x 5
 y 2
 end
-arch dungeon_floor
-x 5
-y 3
-end
 arch cobblestones
 x 5
 y 3
@@ -1029,10 +1022,6 @@ end
 arch madman
 x 5
 y 3
-end
-arch dungeon_floor
-x 5
-y 4
 end
 arch cobblestones
 x 5
@@ -1042,49 +1031,25 @@ arch madman
 x 5
 y 4
 end
-arch dungeon_floor
-x 5
-y 5
-end
 arch cobblestones
 x 5
 y 5
 end
-arch dungeon_floor
+arch cobblestones
 x 5
 y 6
 end
 arch cobblestones
 x 5
-y 6
-end
-arch dungeon_floor
-x 5
 y 7
 end
 arch cobblestones
-x 5
-y 7
-end
-arch dungeon_floor
 x 5
 y 8
 end
 arch cobblestones
 x 5
-y 8
-end
-arch dungeon_floor
-x 5
 y 9
-end
-arch cobblestones
-x 5
-y 9
-end
-arch dungeon_floor
-x 5
-y 10
 end
 arch cobblestones
 x 5
@@ -1259,10 +1224,6 @@ end
 arch madman
 x 6
 y 2
-end
-arch dungeon_floor
-x 6
-y 3
 end
 arch cobblestones
 x 6
@@ -1355,6 +1316,7 @@ x 6
 y 14
 end
 arch big_elec
+name resistant electric dragon
 x 6
 y 14
 resist_acid 100
@@ -1516,10 +1478,6 @@ arch madman
 x 7
 y 2
 end
-arch dungeon_floor
-x 7
-y 3
-end
 arch cobblestones
 x 7
 y 3
@@ -1570,7 +1528,7 @@ y 9
 end
 arch magic_mouth
 msg
-His son is ..
+His son is...
 endmsg
 x 7
 y 10
@@ -1729,10 +1687,6 @@ arch madman
 x 8
 y 2
 end
-arch dungeon_floor
-x 8
-y 3
-end
 arch cobblestones
 x 8
 y 3
@@ -1812,9 +1766,7 @@ end
 arch magic_ear
 msg
 @match is
-Click.
-
-Run away!
+The floor beneath you begins to rumble.
 endmsg
 x 8
 y 15
@@ -1835,7 +1787,7 @@ connected 4
 end
 arch magic_ear
 msg
-@match he has no daughter
+@match none|no|doesn't|not
 Click.
 endmsg
 x 8
@@ -1983,7 +1935,7 @@ y 2
 end
 arch magic_mouth
 msg
-His wife is ..
+His wife is...
 endmsg
 x 9
 y 3
@@ -2073,10 +2025,9 @@ y 15
 end
 arch magic_mouth
 msg
-*******   DANGEROUS   ******
-*** VERY high level area ***
+You have a bad feeling about this...
 
-His daughter is ....
+His daughter is...
 endmsg
 x 9
 y 16
@@ -2467,10 +2418,6 @@ arch generate_beholder
 x 11
 y 2
 end
-arch dungeon_floor
-x 11
-y 3
-end
 arch cobblestones
 x 11
 y 3
@@ -2694,10 +2641,6 @@ arch generate_beholder
 x 12
 y 2
 end
-arch dungeon_floor
-x 12
-y 3
-end
 arch cobblestones
 x 12
 y 3
@@ -2751,10 +2694,6 @@ x 12
 y 10
 end
 arch dungeon_floor
-x 12
-y 11
-end
-arch sign
 x 12
 y 11
 end
@@ -2920,10 +2859,6 @@ end
 arch mine4
 x 13
 y 2
-end
-arch dungeon_floor
-x 13
-y 3
 end
 arch cobblestones
 x 13
@@ -3177,10 +3112,6 @@ arch mine13
 x 14
 y 2
 end
-arch dungeon_floor
-x 14
-y 3
-end
 arch cobblestones
 x 14
 y 3
@@ -3188,10 +3119,6 @@ end
 arch beholder
 x 14
 y 3
-end
-arch dungeon_floor
-x 14
-y 4
 end
 arch cobblestones
 x 14
@@ -3201,10 +3128,6 @@ arch beholder
 x 14
 y 4
 end
-arch dungeon_floor
-x 14
-y 5
-end
 arch cobblestones
 x 14
 y 5
@@ -3212,10 +3135,6 @@ end
 arch beholder
 x 14
 y 5
-end
-arch dungeon_floor
-x 14
-y 6
 end
 arch cobblestones
 x 14
@@ -3225,10 +3144,6 @@ arch devil
 x 14
 y 6
 end
-arch dungeon_floor
-x 14
-y 7
-end
 arch cobblestones
 x 14
 y 7
@@ -3236,10 +3151,6 @@ end
 arch devil
 x 14
 y 7
-end
-arch dungeon_floor
-x 14
-y 8
 end
 arch cobblestones
 x 14
@@ -3251,7 +3162,7 @@ y 8
 end
 arch magic_mouth
 msg
-He is ..
+He is...
 endmsg
 x 14
 y 9
