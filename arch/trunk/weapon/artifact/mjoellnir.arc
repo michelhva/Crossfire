@@ -16,6 +16,6 @@ Str 1
 name_pl Mjoellnirs
 client_type 100
 body_arm -2
-skill two handed weapons
+skill one handed weapons
 item_power 6
 end
