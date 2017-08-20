@@ -23,6 +23,6 @@ no_drop 1
 invisible 1
 skill pyromancy
 msg
-Dragonbreath is a cone effect that fires sheets of non-magical fire.  The fire is not magical, so it can harm creatures with immunity to magic but which are vulnerable to fire.
+Few have bargained with dragonkin and benefited, yet knowledge of this spell is a testament to the potential of such a relationship. Unlike traditional pyromancy, Dragonbreath projects fire without the necessity of weaving magic to control it resulting in a cone of fire that is not magical. The potential for pyromancers to inflict burns on magically protected creatures is a massive boom.
 endmsg
 end

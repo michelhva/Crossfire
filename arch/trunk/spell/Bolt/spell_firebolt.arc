@@ -21,6 +21,6 @@ duration 9
 no_drop 1
 invisible 1
 msg
-Propels a damaging bolt of fire in the direction that the spell is cast.
+By projecting tight vortex of magic and injecting fire, pyromancer's can propel a damaging bolt of magical fire at will.
 endmsg
 end
