@@ -82,4 +82,3 @@ name platter
 name_pl platters
 client_type 2030
 end
-

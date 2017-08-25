@@ -61,4 +61,3 @@ body_arm -2
 skill missile weapons
 anim_suffix bow
 end
-

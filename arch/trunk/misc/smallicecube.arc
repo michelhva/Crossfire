@@ -9,4 +9,3 @@ resist_cold 100
 name_pl small icecubes
 client_type 8020
 end
-

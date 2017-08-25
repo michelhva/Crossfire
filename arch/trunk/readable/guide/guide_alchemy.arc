@@ -15,4 +15,3 @@ skill literacy
 material 1
 weight 4000
 end
-

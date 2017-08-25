@@ -28,4 +28,3 @@ body_shoulder 1
 body_wrist 2
 body_waist 1
 end
-

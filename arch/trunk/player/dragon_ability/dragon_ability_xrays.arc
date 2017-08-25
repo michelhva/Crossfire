@@ -8,4 +8,3 @@ invisible 1
 xrays 1
 no_drop 1
 end
-

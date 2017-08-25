@@ -37,5 +37,3 @@ client_type 161
 body_arm -1
 skill missile weapons
 end
-
-

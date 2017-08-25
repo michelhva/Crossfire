@@ -77,4 +77,3 @@ no_pick 1
 alive 1
 level 1
 end
-

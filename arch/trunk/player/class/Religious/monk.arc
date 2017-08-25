@@ -19,4 +19,3 @@ Your mental equilibrium requires you to forego the use of weapons, but your phys
 Your inner peace grants you the ability to regenerate faster and to sense metaphysical auras.
 endmsg
 end
-

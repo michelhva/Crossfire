@@ -57,5 +57,3 @@ attacktype 1024
 no_drop 1
 animation pl_dragon_g
 end
-
-

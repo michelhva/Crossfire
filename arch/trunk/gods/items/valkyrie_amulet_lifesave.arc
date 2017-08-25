@@ -15,4 +15,3 @@ item_power 3
 startequip 1
 inv_locked 1
 end
-

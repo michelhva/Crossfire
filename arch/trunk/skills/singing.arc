@@ -10,4 +10,3 @@ exp 10
 level 150
 anim_suffix singing
 end
-

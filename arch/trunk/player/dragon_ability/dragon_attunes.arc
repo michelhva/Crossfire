@@ -19,4 +19,3 @@ invisible 1
 path_attuned 8
 no_drop 1
 end
-

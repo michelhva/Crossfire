@@ -11,4 +11,3 @@ level 100
 wc_increase_rate 4
 wc 1
 end
-

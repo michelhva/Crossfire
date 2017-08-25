@@ -21,4 +21,3 @@ auto_apply 1
 randomitems shopweapoeast
 damned 1
 end
-

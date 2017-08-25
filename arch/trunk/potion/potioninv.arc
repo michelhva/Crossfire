@@ -26,4 +26,3 @@ name_pl potions of aethereality
 on_use_yield potion_empty
 client_type 651
 end
-

@@ -11,4 +11,3 @@ level 100
 dam 1
 wc_increase_rate 5
 end
-

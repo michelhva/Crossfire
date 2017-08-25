@@ -15,4 +15,3 @@ is_floor 1
 smoothlevel 30
 smoothface white-green-h-marble.112 empty_S.111
 end
-
