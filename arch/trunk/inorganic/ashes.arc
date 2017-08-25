@@ -6,4 +6,3 @@ client_type 642
 type 73
 identified 1
 end
-

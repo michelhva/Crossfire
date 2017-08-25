@@ -14,4 +14,3 @@ body_skill -1
 exp 5
 level 250
 end
-

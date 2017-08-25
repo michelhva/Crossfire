@@ -21,5 +21,3 @@ is_floor 1
 smoothlevel 30
 smoothface slate_r.111 empty_S.111
 end
-
-

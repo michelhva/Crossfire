@@ -74,4 +74,3 @@ Wis 20
 see_invisible 1
 run_away 2
 end
-

@@ -52,4 +52,3 @@ body_finger 2
 body_arm 2
 body_range 1
 end
-

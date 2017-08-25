@@ -28,4 +28,3 @@ on_use_yield potion_empty
 other_arch protection_fire_effect
 client_type 651
 end
-

@@ -10,4 +10,3 @@ exp 0
 level 100
 wc_increase_rate 5
 end
-

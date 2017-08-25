@@ -29,4 +29,3 @@ face shrine_east_r.x11
 no_pick 1
 y 1
 end
-

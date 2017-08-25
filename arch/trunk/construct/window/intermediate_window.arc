@@ -12,4 +12,3 @@ Object intermediate_window_21
 name intermediate_window
 face intermediate_window_2.111
 end
-

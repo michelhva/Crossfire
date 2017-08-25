@@ -11,4 +11,3 @@ exp 0
 level 100
 anim_suffix praying
 end
-

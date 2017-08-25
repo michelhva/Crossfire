@@ -6,4 +6,3 @@ no_pick 1
 is_floor 1
 speed 0.3
 end
-

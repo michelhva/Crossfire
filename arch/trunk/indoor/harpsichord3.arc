@@ -45,4 +45,3 @@ face harpsichord3.x11
 no_pick 1
 move_on walk
 end
-

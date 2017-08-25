@@ -32,4 +32,3 @@ resist_acid -70
 resist_drain 70
 resist_poison 50
 end
-

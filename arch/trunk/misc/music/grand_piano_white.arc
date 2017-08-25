@@ -45,4 +45,3 @@ face grand_piano_white.x11
 no_pick 1
 move_on walk
 end
-

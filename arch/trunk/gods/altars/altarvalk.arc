@@ -14,4 +14,3 @@ slaying /python/gods/altar_valkyrie.py
 type 116
 subtype 1
 end
-

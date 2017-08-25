@@ -15,4 +15,3 @@ no_pick 1
 is_water 1
 is_floor 1
 end
-

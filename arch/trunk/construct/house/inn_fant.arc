@@ -15,4 +15,3 @@ blocksview 1
 x 1
 no_pick 1
 end
-
