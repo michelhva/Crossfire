@@ -15,7 +15,7 @@ attacktype 9
 Str 1
 name_pl Mjoellnirs
 client_type 100
-body_arm -2
+body_arm -1
 skill one handed weapons
 item_power 6
 end
