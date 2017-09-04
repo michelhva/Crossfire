@@ -3,6 +3,8 @@ face ant_larvae.111
 race insect
 other_arch war_ant
 animation ant_larvae
+# larva is the singular form. larvae is plural
+name ant larva
 monster 1
 move_type walk
 no_pick 1

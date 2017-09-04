@@ -4,6 +4,7 @@ race insect
 other_arch ant_larvae
 monster 1
 move_type walk
+name ant egg
 no_pick 1
 alive 1
 exp 1
