@@ -23,6 +23,6 @@ range 24
 no_drop 1
 invisible 1
 msg
-Tales tell of the devoted worshipers of Sorig who were gifted with the ability to command forked lightning through divine prayer. The resultant electrical spell sends devastating bolts of lightning that fork into multiple smaller bolts showering a cone-shaped area infront of the worshiper. The propensity to reflect off of walls further increases the havok caused when unleashed in confined spaces.
+Tales tell of the devoted worshippers of Sorig who were gifted with the ability to command forked lightning through divine prayer. The resultant electrical spell sends devastating bolts of lightning that fork into multiple smaller bolts showering a cone-shaped area in-front of the worshipper. The propensity to reflect off of walls further increases the havoc caused when unleashed in confined spaces.
 endmsg
 end
