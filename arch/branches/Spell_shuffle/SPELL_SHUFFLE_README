@@ -1,0 +1,11 @@
+This branch reassigns spells based on the following definitions:
+
+Evocation - Spells that create things (physical damage, food, strengthening)
+Sorcery - Spells that remove energy (cold spells, poison, draining?, depletion?)
+Pyromancy - Spells that add energy (fire, lightning, light)
+Summoning - Spells that call and control monsters (golems, pets, etc)
+Praying - Spells gifted by channelling your gods wishes through prayer
+
+For server administrators using this branch for the first time, experience in the sorcery and evocation schools should be flipped. To do so navigate to the player folder (usually /usr/games/crossfire/var/crossfire/players). Any space characters (e.g. \ ) in both folders and file names must be replaced with "_" (e.g. player name.pl -> player_name.pl). admins should then run the following command to swap experience for each player:
+
+grep -rl $"arch skill_evocation" . | xargs sed -i "s/$arch skill_evocation/$arch skill_evoplace/g" && grep -rl $"arch skill_sorcery" . | xargs sed -i "s/$arch skill_sorcery/$arch skill_evocation/g" && grep -rl $"arch skill_evoplace" . | xargs sed -i "s/$arch skill_evoplace/$arch skill_sorcery/g"
