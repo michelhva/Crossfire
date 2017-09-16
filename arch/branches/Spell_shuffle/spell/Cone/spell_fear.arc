@@ -20,7 +20,7 @@ value 40
 attacktype 16386
 no_drop 1
 invisible 1
-skill evocation
+skill sorcery
 msg
 Fires a cone of fear, possibly causing enemies within the cone to flee.
 endmsg
