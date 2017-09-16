@@ -20,7 +20,7 @@ value 20
 attacktype 2
 no_drop 1
 invisible 1
-skill evocation
+skill sorcery
 msg
 Mana blast fires a cone of magical energy.  The energy is pure magic, to which few creatures have resistance.
 endmsg

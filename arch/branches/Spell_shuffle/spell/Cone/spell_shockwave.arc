@@ -20,7 +20,7 @@ value 140
 attacktype 3
 no_drop 1
 invisible 1
-skill evocation
+skill sorcery
 msg
 Fires a cone of force that attacks creatures in its path with both magical and physical damage.
 endmsg

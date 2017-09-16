@@ -20,7 +20,7 @@ value 10
 attacktype 2050
 no_drop 1
 invisible 1
-skill sorcery
+skill evocation
 msg
 Fires a cone-shaped force that slows down the creatures it hits.
 endmsg
