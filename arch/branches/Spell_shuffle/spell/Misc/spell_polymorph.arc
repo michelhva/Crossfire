@@ -7,7 +7,7 @@ level 6
 sp 20
 casting_time 30
 path_attuned 16384
-skill sorcery
+skill evocation
 type 101
 subtype 29
 value 60

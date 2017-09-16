@@ -8,7 +8,7 @@ sp 30
 casting_time 10
 path_attuned 128
 other_arch cancellation
-skill evocation
+skill sorcery
 type 101
 subtype 4
 value 100

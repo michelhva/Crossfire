@@ -10,7 +10,7 @@ sp 6
 casting_time 10
 path_attuned 16
 other_arch lg_speedball
-skill evocation
+skill sorcery
 value 60
 no_drop 1
 invisible 1

@@ -11,7 +11,7 @@ level 4
 value 40
 sp 10
 casting_time 10
-skill evocation
+skill sorcery
 path_attuned 4
 other_arch rune_frost
 msg

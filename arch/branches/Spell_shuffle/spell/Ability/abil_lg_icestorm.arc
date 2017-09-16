@@ -20,5 +20,5 @@ value 120
 attacktype 16
 no_drop 1
 invisible 1
-skill evocation                                                              
+skill sorcery                                                              
 end

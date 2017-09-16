@@ -7,7 +7,7 @@ level 10
 sp 20
 casting_time 20
 path_attuned 8192
-skill sorcery
+skill evocation
 type 101
 subtype 24
 value 100

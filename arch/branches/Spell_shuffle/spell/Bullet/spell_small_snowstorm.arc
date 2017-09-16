@@ -19,7 +19,7 @@ value 10
 attacktype 18
 no_drop 1
 invisible 1
-skill evocation
+skill sorcery
 weight 500
 food 4
 msg

@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name missile swarm
 name_pl missile swarm
 face spell_missile_swarm.111
-skill sorcery
+skill evocation
 type 101
 subtype 36
 level 14

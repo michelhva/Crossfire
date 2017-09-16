@@ -9,7 +9,7 @@ value 20
 weight 5000
 nrof 1
 client_type 1001
-randomitems sorcery_book
+randomitems evocation_book
 end
 #
 # Starting spellbooks for sorcerers.
@@ -25,5 +25,5 @@ value 20
 weight 5000
 nrof 1
 client_type 1001
-randomitems sorcery_l1
+randomitems evocation_l1
 end

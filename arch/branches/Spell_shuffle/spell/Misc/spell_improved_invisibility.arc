@@ -8,7 +8,7 @@ sp 25
 casting_time 10
 path_attuned 524288
 other_arch enchantment
-skill sorcery
+skill evocation
 type 101
 subtype 19
 value 80

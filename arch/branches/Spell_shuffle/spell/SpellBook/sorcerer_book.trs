@@ -1,4 +1,4 @@
-treasureone sorcery_book_low
+treasureone evocation_book_low
   arch spell_detect_magic
     chance 10
   more
@@ -57,7 +57,7 @@ treasureone sorcery_book_low
     chance 1
 end
 
-treasureone sorcery_book_medium
+treasureone evocation_book_medium
   arch spell_invisible
     chance 4
   more
@@ -92,7 +92,7 @@ treasureone sorcery_book_medium
     chance 1
 end
 
-treasureone sorcery_book_high
+treasureone evocation_book_high
   arch spell_magic_drain
     chance 1
   more
@@ -109,17 +109,17 @@ treasureone sorcery_book_high
     chance 1
 end
 
-treasureone sorcery_book
-  list sorcery_book_low
+treasureone evocation_book
+  list evocation_book_low
     chance 20
     nrof 1
   more
-  list sorcery_book_medium
+  list evocation_book_medium
     chance 30
     magic 6
     nrof 1
   more
-  list sorcery_book_high
+  list evocation_book_high
     chance 40
     magic 11
     nrof 1

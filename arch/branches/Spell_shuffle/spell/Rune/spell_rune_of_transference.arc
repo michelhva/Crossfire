@@ -12,7 +12,7 @@ level 6
 value 60
 sp 12
 casting_time 15
-skill sorcery
+skill evocation
 path_attuned 32768
 maxsp 24
 msg

@@ -11,7 +11,7 @@ level 17
 value 170
 sp 20
 casting_time 15
-skill sorcery
+skill evocation
 path_attuned 262144
 other_arch rune_death
 msg

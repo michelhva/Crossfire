@@ -8,7 +8,7 @@ sp 10
 casting_time 15
 path_attuned 2048
 other_arch color_spray
-skill evocation
+skill sorcery
 type 101
 subtype 15
 value 100

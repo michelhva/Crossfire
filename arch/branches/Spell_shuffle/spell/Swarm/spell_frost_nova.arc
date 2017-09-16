@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name frost nova
 name_pl frost nova
 face spell_evocation.111
-skill evocation
+skill sorcery
 type 101
 subtype 36
 level 24

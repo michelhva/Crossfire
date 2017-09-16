@@ -11,7 +11,7 @@ other_arch magic_missile
 dam 9
 dam_modifier 1
 maxsp 20
-skill sorcery
+skill evocation
 type 101
 subtype 11
 value 10

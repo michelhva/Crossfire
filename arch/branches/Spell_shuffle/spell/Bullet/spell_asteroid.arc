@@ -20,7 +20,7 @@ subtype 5
 attacktype 256
 no_drop 1
 invisible 1
-skill evocation
+skill sorcery
 food 10
 msg
 Fires an asteroid bullet that delivers a weaponmagic attack.

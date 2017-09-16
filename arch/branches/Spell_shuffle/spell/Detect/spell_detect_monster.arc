@@ -6,7 +6,7 @@ face spell_detect_monster.111
 level 4
 sp 2
 casting_time 15
-skill evocation
+skill sorcery
 path_attuned 8192
 type 101
 subtype 33
