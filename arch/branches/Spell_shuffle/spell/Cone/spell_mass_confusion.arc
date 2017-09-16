@@ -20,7 +20,7 @@ value 70
 attacktype 34
 no_drop 1
 invisible 1
-skill sorcery
+skill evocation
 msg
 A confusion spell that propogates from the caster in a cone shape.  Confused opponents have a hard time coordinating movements and attacks.
 endmsg

@@ -20,8 +20,8 @@ value 120
 attacktype 18
 no_drop 1
 invisible 1
-skill evocation
+skill sorcery
 msg
-Fires a cone of ice that damages creatures caught inside it. The spell increases in power with the caster's evocation level.  A side-effect of the storm is that items tend to become encased in blocks of ice.
+Fires a cone of ice that damages creatures caught inside it. The spell increases in power with the caster's sorcery level.  A side-effect of the storm is that items tend to become encased in blocks of ice.
 endmsg
 end

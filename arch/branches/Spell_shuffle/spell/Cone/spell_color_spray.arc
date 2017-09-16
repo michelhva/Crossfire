@@ -20,7 +20,7 @@ value 130
 attacktype 262144
 no_drop 1
 invisible 1
-skill sorcery
+skill evocation
 msg
 Color spray fires a cone of energy.  The energy hits with many different attacktypes, so creatures that are highly resistant to some will still take damage from some of the other attacktypes of the spray.
 

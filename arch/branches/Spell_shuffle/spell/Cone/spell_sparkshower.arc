@@ -20,7 +20,7 @@ value 10
 attacktype 10
 no_drop 1
 invisible 1
-skill sorcery
+skill evocation
 msg
 Fires cone shaped attack that is made up of magical and electrical energy.
 endmsg
