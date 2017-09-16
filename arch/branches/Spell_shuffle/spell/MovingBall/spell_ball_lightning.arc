@@ -9,7 +9,7 @@ level 18
 value 90
 sp 10
 casting_time 10
-skill sorcery
+skill pyromancy
 path_attuned 8
 other_arch ball_lightning
 dam 8

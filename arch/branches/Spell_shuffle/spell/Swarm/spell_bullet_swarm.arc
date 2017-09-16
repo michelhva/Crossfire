@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name bullet swarm
 name_pl bullet swarm
 face spell_bullet_swarm.111
-skill sorcery
+skill evocation
 type 101
 subtype 36
 level 14
@@ -18,6 +18,6 @@ maxsp 20
 no_drop 1
 invisible 1
 msg
-This spell fires many magic bullets in the direction the caster is facing. The caster should beware: the bullets will do damage to the caster.  The number and damage of the bullets depends on the level of the caster.
+This spell fires many small magic bullets in the direction the caster is facing. The caster should beware: the bullets will do damage to the caster.  The number and damage of the bullets depends on the level of the caster.
 endmsg
 end

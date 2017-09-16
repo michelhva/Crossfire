@@ -7,7 +7,7 @@ level 12
 sp 10
 casting_time 20
 path_attuned 2048
-skill summoning
+skill evocation
 type 101
 subtype 22
 value 60
