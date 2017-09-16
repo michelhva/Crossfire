@@ -8,7 +8,7 @@ sp 8
 casting_time 10
 path_attuned 2048
 other_arch icestorm
-skill evocation
+skill sorcery
 type 101
 subtype 15
 value 80

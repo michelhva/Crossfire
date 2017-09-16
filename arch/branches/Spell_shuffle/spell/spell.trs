@@ -5,10 +5,10 @@
 # somewhat useful - maybe toss in some spell that are quest items
 # even to make things interesting.
 treasureone wonder_spells
-  list evocation_book
+  list sorcery_book
      chance 5
   more
-  list sorcery_book
+  list evocation_book
      chance 5
   more
   list pyromancy_book

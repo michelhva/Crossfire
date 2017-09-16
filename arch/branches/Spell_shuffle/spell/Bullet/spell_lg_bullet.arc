@@ -11,7 +11,7 @@ other_arch lbullet
 dam 25
 dam_modifier 1
 maxsp 25
-skill evocation
+skill sorcery
 type 101
 subtype 5
 value 40

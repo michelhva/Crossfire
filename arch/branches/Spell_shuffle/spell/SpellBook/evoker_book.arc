@@ -9,7 +9,7 @@ value 20
 weight 5000
 nrof 1
 client_type 1001
-randomitems evocation_book
+randomitems sorcery_book
 end
 #
 Object evoker_book_l1
@@ -23,5 +23,5 @@ value 20
 weight 5000
 nrof 1
 client_type 1001
-randomitems evocation_l1
+randomitems sorcery_l1
 end

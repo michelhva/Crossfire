@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name bullet swarm
 name_pl bullet swarm
 face spell_bullet_swarm.111
-skill evocation
+skill sorcery
 type 101
 subtype 36
 level 14

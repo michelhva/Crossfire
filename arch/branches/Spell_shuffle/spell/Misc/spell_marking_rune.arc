@@ -9,7 +9,7 @@ level 1
 value 10
 sp 2
 casting_time 10
-skill sorcery
+skill evocation
 path_attuned 64
 no_drop 1
 invisible 1

@@ -9,7 +9,7 @@ level 5
 value 50
 sp 10
 casting_time 20
-skill sorcery
+skill evocation
 path_attuned 32768
 no_drop 1
 invisible 1

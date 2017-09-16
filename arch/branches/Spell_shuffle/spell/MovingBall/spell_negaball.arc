@@ -9,7 +9,7 @@ level 18
 value 90
 sp 10
 casting_time 11
-skill evocation
+skill sorcery
 path_attuned 8
 other_arch negaball
 dam 8

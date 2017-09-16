@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name bullet storm
 name_pl bullet storm
 face spell_bullet_storm.111
-skill evocation
+skill sorcery
 type 101
 subtype 36
 level 20

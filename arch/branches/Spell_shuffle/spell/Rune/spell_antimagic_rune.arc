@@ -11,7 +11,7 @@ level 7
 value 70
 sp 5
 casting_time 20
-skill sorcery
+skill evocation
 path_attuned 128
 other_arch rune_antimagic
 msg

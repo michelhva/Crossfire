@@ -10,7 +10,7 @@ level 12
 value 120
 sp 5
 casting_time 15
-skill evocation
+skill sorcery
 path_attuned 2048
 face spell_sigil.111
 msg

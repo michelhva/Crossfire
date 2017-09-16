@@ -13,7 +13,7 @@ dam 12
 dam_modifier 2
 duration 8
 duration_modifier 5
-skill sorcery
+skill evocation
 type 101
 subtype 4
 value 50

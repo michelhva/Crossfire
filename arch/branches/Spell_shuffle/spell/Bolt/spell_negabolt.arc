@@ -12,7 +12,7 @@ dam 8
 dam_modifier 3
 duration 16
 maxsp 24
-skill evocation
+skill sorcery
 type 101
 subtype 4
 value 40

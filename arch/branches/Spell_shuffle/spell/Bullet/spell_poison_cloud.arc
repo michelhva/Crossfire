@@ -19,7 +19,7 @@ value 20
 attacktype 1026
 no_drop 1
 invisible 1
-skill sorcery
+skill evocation
 food 5
 msg
 Fires a bullet that explodes on contact into a poisonous cloud.  Affected creatures may be slowed, weakened, or killed.

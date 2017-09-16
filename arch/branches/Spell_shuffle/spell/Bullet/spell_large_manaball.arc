@@ -19,7 +19,7 @@ value 60
 attacktype 2
 no_drop 1
 invisible 1
-skill evocation
+skill sorcery
 food 15
 msg
 Fires a ball of magical energy that explodes in a large burst of magical energy when it hits something.  Few creatures can resist magical attacks.

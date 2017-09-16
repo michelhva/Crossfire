@@ -11,7 +11,7 @@ level 14
 value 140
 sp 30
 casting_time 15
-skill evocation
+skill sorcery
 path_attuned 32768
 other_arch rune_drain_magic
 msg

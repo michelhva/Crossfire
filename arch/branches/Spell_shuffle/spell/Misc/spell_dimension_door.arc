@@ -11,7 +11,7 @@ path_attuned 4096
 range 25
 range_modifier 5
 maxsp 25
-skill sorcery
+skill evocation
 type 101
 subtype 13
 no_drop 1

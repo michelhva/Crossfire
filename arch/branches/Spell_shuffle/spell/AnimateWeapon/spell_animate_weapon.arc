@@ -9,7 +9,7 @@ level 7
 value 70
 sp 25
 casting_time 10
-skill sorcery
+skill evocation
 path_attuned 4096
 other_arch dancingsword
 dam 2

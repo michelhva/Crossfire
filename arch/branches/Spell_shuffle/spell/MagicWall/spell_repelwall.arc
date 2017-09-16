@@ -9,7 +9,7 @@ attacktype 1
 casting_time 20
 path_attuned 2048
 race smover_%d
-skill sorcery
+skill evocation
 type 101
 subtype 15
 value 80

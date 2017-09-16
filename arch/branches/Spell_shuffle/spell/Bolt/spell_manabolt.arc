@@ -12,7 +12,7 @@ other_arch manabolt
 dam 10
 dam_modifier 3
 duration 9
-skill evocation
+skill sorcery
 type 101
 subtype 4
 value 30

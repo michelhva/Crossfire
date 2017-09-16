@@ -10,7 +10,7 @@ sp 3
 casting_time 5
 path_attuned 16
 other_arch speedball
-skill evocation
+skill sorcery
 value 30
 no_drop 1
 invisible 1

@@ -7,7 +7,7 @@ level 8
 sp 60
 casting_time 20
 path_attuned 8192
-skill sorcery
+skill evocation
 other_arch enchantment
 type 101
 subtype 32
@@ -17,6 +17,6 @@ invisible 1
 dam 3
 dam_modifier 5
 msg
-Identifies the characteristics of a small number of unidentified objects in in inventory or on the floor where the character is standing.  The number of objects identified increases as caster's sorcery level increases.
+Identifies the characteristics of a small number of unidentified objects in in inventory or on the floor where the character is standing.  The number of objects identified increases as caster's evocation level increases.
 endmsg
 end
