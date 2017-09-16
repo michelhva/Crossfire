@@ -8,7 +8,7 @@ sp 5
 casting_time 15
 path_attuned 16384
 other_arch destruction
-skill summoning
+skill sorcery
 type 101
 subtype 23
 value 20

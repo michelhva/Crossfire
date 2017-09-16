@@ -3,14 +3,14 @@ anim_suffix spellcasting
 name magic bullet
 name_pl magic bullet
 face spell_magic_bullet.111
-level 1
+level 4
 sp 1
 casting_time 2
 path_attuned 16
 other_arch bullet
-dam 10
+dam 16
 dam_modifier 1
-maxsp 6
+maxsp 12
 skill evocation
 type 101
 subtype 5

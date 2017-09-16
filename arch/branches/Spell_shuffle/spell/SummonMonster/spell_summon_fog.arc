@@ -9,7 +9,7 @@ level 4
 sp 5
 casting_time 10
 path_attuned 2048
-skill summoning
+skill evocation
 value 20
 no_drop 1
 invisible 1
