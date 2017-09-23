@@ -21,6 +21,6 @@ range 12
 no_drop 1
 invisible 1
 msg
-Novice pyromancer's are often given their first taste of dangers of electricity with the notorious lightning bolt. Practitioners are taught to use magic to create a strong electrical current and, when ready to do so, project a straight path for it to follow. It does have the sometimes unfortunate property of reflecting off of walls which can then return to strike the caster.
+Novice Pyromancer's are often given their first taste of dangers of electricity with the notorious lightning bolt. Practitioners are taught to use magic to create a strong electrical current and, when ready to do so, project a straight path for it to follow. It does have the sometimes unfortunate property of reflecting off of walls which can then return to strike the caster.
 endmsg
 end
