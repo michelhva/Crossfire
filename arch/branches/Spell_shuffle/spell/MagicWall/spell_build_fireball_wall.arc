@@ -24,6 +24,6 @@ is_used_up 1
 tear_down 1
 move_block all
 msg
-It is said that to give a man a fish and you feed him for a day; teach a man to fish and you feed him for a lifetime. Only the most practised of pyromancers can conjure a construct capable of continuously billowing fireballs. Given the finite magic that can be funnelled into each device, they only run for a limited duration.
+It is said that to give a man a fish and you feed him for a day; teach a man to fish and you feed him for a lifetime. Only the most practised of Pyromancers can conjure a construct capable of continuously billowing fireballs. Given the finite magic that can be funnelled into each device, they only run for a limited duration.
 endmsg
 end

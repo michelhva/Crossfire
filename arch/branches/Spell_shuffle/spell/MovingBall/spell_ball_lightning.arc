@@ -21,6 +21,6 @@ attacktype 10
 no_drop 1
 invisible 1
 msg
-Master pyromancers, bored of simple fireballs, started toying with the creation of lightningballs. Using a similar process, electricity is funnelled into a magical framework and then safely thrown at will. Strangely, unlike fireballs that shatter and release flames, this ball lightning hovers unpredictably and even appears to linger around any unfortunate souls in the vicinity before suddenly dissipating.
+Master Pyromancers, bored of simple fireballs, started toying with the creation of lightningballs. Using a similar process, electricity is funnelled into a magical framework and then safely thrown at will. Strangely, unlike fireballs that shatter and release flames, this ball lightning hovers unpredictably and even appears to linger around any unfortunate souls in the vicinity before suddenly dissipating.
 endmsg
 end
