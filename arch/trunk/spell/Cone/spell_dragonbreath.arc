@@ -23,6 +23,6 @@ no_drop 1
 invisible 1
 skill pyromancy
 msg
-Few have bargained with dragonkin and benefited, yet knowledge of this spell is a testament to the potential of such a relationship. Unlike traditional pyromancy, Dragonbreath projects fire without the necessity of weaving magic to control it resulting in a cone of fire that is not magical. The potential for pyromancers to inflict burns on magically protected creatures is a massive boom.
+Few have bargained with dragonkin and benefited, yet knowledge of this spell is a testament to the potential of such a relationship. Unlike traditional pyromancy, Dragonbreath projects fire without the necessity of weaving magic to control it, this results in a cone of fire that is not magical. The potential for Pyromancers to inflict burns on magically protected creatures is a massive boon.
 endmsg
 end

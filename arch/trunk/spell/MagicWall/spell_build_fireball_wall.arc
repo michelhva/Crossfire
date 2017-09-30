@@ -24,6 +24,6 @@ is_used_up 1
 tear_down 1
 move_block all
 msg
-Build fireball wall creates a wall that fires fireballs.  These fireballs behave just like normal fireballs.  The wall can be torn down by creatures, and will eventually expire of its own accord.
+It is said that to give a man a fish and you feed him for a day; teach a man to fish and you feed him for a lifetime. Only the most practised of Pyromancers can conjure a construct capable of continuously billowing fireballs. Given the finite magic that can be funnelled into each device, they only run for a limited duration.
 endmsg
 end

@@ -18,7 +18,7 @@ maxsp 20
 no_drop 1
 invisible 1
 msg
-Meteor swarm fires several comet spells that cut a swath of physical, fire, and weaponmagic damage.
+Inspired by the heavens and seeking to create even more havoc, master Pyromancers can link numerous comets together into a rain of fire know as a meteor swarm. The resulting damage transcends fire and trauma and in addition cause a type of harm equivocal to the most potent magical weapons.
 endmsg
 weight 1250
 end

@@ -21,6 +21,6 @@ duration 9
 no_drop 1
 invisible 1
 msg
-By projecting tight vortex of magic and injecting fire, pyromancer's can propel a damaging bolt of magical fire at will.
+By projecting tight vortex of magic and injecting heat, Pyromancer's can propel a damaging bolt of magical fire at will. This scorching beam does significant damage to anything in its path.
 endmsg
 end

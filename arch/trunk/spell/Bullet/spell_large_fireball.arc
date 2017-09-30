@@ -22,6 +22,6 @@ invisible 1
 skill pyromancy
 food 4
 msg
-Fires a bullet that explodes into a large fire storm when it hits something. Items caught in the blaze may be destroyed.
+By weaving a magical framework, intense heat can be contained resulting in a glowing 'fireball' which can literally be thrown. Pyromancers delight in the subsequent large fire storm that explodes out where these fireballs land although the intensity of the heat produced is consistent with other fireballs . Items caught in the blaze may be destroyed.
 endmsg
 end
