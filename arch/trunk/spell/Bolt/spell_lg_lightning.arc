@@ -21,6 +21,6 @@ range 24
 no_drop 1
 invisible 1
 msg
-Creates a large bolt of lightning with extended range that does more electrical damage than its smaller counterpart. The bolt can reflect off walls and return to hit the caster.
+Lightning bolts are controlled using magic to create a strong electrical current and, when ready to do so, project a straight path for it to follow. With practice, larger lightning bolts can be released that have greater range and duration. They still have the sometimes unfortunate property of reflecting off of walls which can then return to strike the caster.
 endmsg
 end

@@ -17,8 +17,6 @@ other_arch town_portal
 race town_portal_active
 slaying town_portal_magic
 msg
-  Creates a magical portal from one point to another. It must be invoked twice: the first use marks one end of the portal, and the second marks the other.
-
-  Once both ends of the portal exist, the caster may use it to quickly travel between the points.  For example, create one end or the portal in a town and the other in a dungeon, then use the portal to quickly travel back and forth to carry off the plunder.
+Sorcerers are universally known for their ability to call forth monsters from other realms to do their bidding but few know that this skill can also be used to move the practitioner and their allies to and from the battlefield. By connecting two summons together, a magical portal can be opened instantly teleporting those who use it from one place to another. It must be invoked twice: once to mark the start of the portal, and the second to mark the end. Very few summoners can sustain more than one of these portals at a time.
 endmsg
 end

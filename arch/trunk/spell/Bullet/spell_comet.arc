@@ -23,6 +23,6 @@ invisible 1
 skill pyromancy
 food 10
 msg
-Fires a comet that delivers damage in three forms: physical, fire-based, and weaponmagic.
+The most adept of Pyromancers, once bored of simple fireballs, seek to add more and more heat. With enough heat, the fires within can become self sustaining and no longer require their magical framework. These spells are known as comets for nothing terrestrial compares to the brilliance and subsequent damage that is caused when they strike. The effects transcend fire and trauma and in addition cause a type of harm equivocal to the most potent magical weapons.
 endmsg
 end
