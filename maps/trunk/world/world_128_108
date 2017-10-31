@@ -4,7 +4,7 @@ region wolfsburg
 width 50
 height 50
 msg
-Modified: 2008-10-02 Rick Tanner
+Modified: 2017-10-30 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_128_107
@@ -6744,10 +6744,18 @@ arch tree3
 x 26
 y 44
 end
-arch woods
+arch brush
 x 26
 y 45
 elevation 1485
+end
+arch valkyrie_temple
+name Shrine to Valkyrie
+slaying ../wolfsburg/temple/shrine_to_valkyrie
+hp 11
+sp 12
+x 26
+y 45
 end
 arch jungle_1
 x 26
