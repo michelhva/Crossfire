@@ -228,6 +228,13 @@ public class ClientSocket {
             debugProtocol.debugProtocolWrite("socket:stop");
         }
         thread.interrupt();
+        try {
+            selector.close();
+        } catch (final IOException ex) {
+            if (debugProtocol != null) {
+                debugProtocol.debugProtocolWrite("close failed: "+ex.getMessage());
+            }
+        }
         thread.join();
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("socket:stopped");
