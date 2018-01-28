@@ -1,3 +1,7 @@
+Fix r13937, which changed coffee to poison_food type when it meant to change to drink.
+food/coffee.arc
+Daniel Hawkins 2018-01-27
+
 Make beholder leaders look slightly dfferent from regular beholders and give them a second forward face.
 monster/beholder/beholder_leader_arc.face
 monster/beholder/beholder_leader.face
