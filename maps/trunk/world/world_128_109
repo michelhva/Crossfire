@@ -5,7 +5,7 @@ region wolfsburg
 width 50
 height 50
 msg
-Modified: 2017-02-28 Rick Tanner
+Modified: 2018-01-31 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_128_108
@@ -6054,6 +6054,11 @@ arch dungeon_floor
 x 24
 y 1
 end
+arch keep
+name west gatehouse
+x 24
+y 1
+end
 arch dungeon_floor
 x 24
 y 2
@@ -6320,11 +6325,6 @@ arch dungeon_floor
 x 25
 y 1
 end
-arch keep
-name west gatehouse
-x 25
-y 1
-end
 arch dungeon_floor
 x 25
 y 2
@@ -6580,10 +6580,14 @@ end
 arch dungeon_floor
 x 26
 end
-arch cwall_2_1_2
+arch cwall_4
 x 26
 end
 arch dungeon_floor
+x 26
+y 1
+end
+arch cwall_2_2_1
 x 26
 y 1
 end
@@ -6827,10 +6831,17 @@ end
 arch dungeon_floor
 x 27
 end
-arch cityport_a
+arch guard_house_4
 x 27
 end
 arch dungeon_floor
+x 27
+y 1
+end
+arch guard_house_3
+slaying ../wolfsburg/wolfsburggatehouse
+hp 7
+sp 15
 x 27
 y 1
 end
@@ -7057,10 +7068,17 @@ end
 arch dungeon_floor
 x 28
 end
-arch cityport_a
+arch guard_house_4
 x 28
 end
 arch dungeon_floor
+x 28
+y 1
+end
+arch guard_house_3
+slaying ../wolfsburg/wolfsburggatehouse
+hp 14
+sp 15
 x 28
 y 1
 end
@@ -7279,15 +7297,14 @@ end
 arch dungeon_floor
 x 29
 end
-arch cwall_2_1_2
+arch cwall_4
 x 29
 end
 arch dungeon_floor
 x 29
 y 1
 end
-arch keep
-name east gatehouse
+arch cwall_2_2_4
 x 29
 y 1
 end
@@ -7522,6 +7539,11 @@ arch cwall_2_1_2
 x 30
 end
 arch dungeon_floor
+x 30
+y 1
+end
+arch keep
+name east gatehouse
 x 30
 y 1
 end

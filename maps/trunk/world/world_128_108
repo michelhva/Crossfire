@@ -4,7 +4,7 @@ region wolfsburg
 width 50
 height 50
 msg
-Modified: 2017-10-30 Rick Tanner
+Modified: 2018-01-31 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_128_107
@@ -6772,10 +6772,14 @@ x 26
 y 48
 elevation 2481
 end
-arch steppe
+arch dungeon_floor
 x 26
 y 49
 elevation 3242
+end
+arch cwall_1_1
+x 26
+y 49
 end
 arch desert
 x 27
@@ -7029,12 +7033,15 @@ x 27
 y 48
 elevation 1957
 end
-arch grass_only
+arch dungeon_floor
 x 27
 y 49
 elevation 2508
 end
-arch tree3
+arch invis_exit
+slaying ../wolfsburg/wolfsburggatehouse
+hp 6
+sp 2
 x 27
 y 49
 end
@@ -7298,10 +7305,17 @@ x 28
 y 48
 elevation 143
 end
-arch jungle_1
+arch dungeon_floor
 x 28
 y 49
 elevation 1862
+end
+arch invis_exit
+slaying ../wolfsburg/wolfsburggatehouse
+hp 13
+sp 2
+x 28
+y 49
 end
 arch shallow_sea
 x 29
@@ -7555,10 +7569,14 @@ x 29
 y 48
 elevation 663
 end
-arch woods
+arch dungeon_floor
 x 29
 y 49
 elevation 1562
+end
+arch cwall_1_1
+x 29
+y 49
 end
 arch shallow_sea
 x 30
