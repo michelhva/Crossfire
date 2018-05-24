@@ -8,7 +8,10 @@ material 16
 dam 8
 weight 2000
 value 20
-attacktype 1
+# Give death attacktype, since that circumvents the immunity by vampires
+# Recent changes (May 2018) make it so this also doesn't do death damage to non-slaying creatures.
+# So everything else should only be hit by physical damage.
+attacktype 131073
 weapontype 5
 name_pl stakes
 client_type 145

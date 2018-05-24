@@ -1,7 +1,7 @@
 Object spit_ant
 randomitems spit_ant
 face spit_ant.131
-race insect
+race insect,ant
 name Spitting Ant
 animation spit_ant
 monster 1

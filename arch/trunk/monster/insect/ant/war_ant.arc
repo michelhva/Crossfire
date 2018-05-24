@@ -1,7 +1,7 @@
 Object war_ant
 face war_ant.131
 name Warrior Ant
-race insect
+race insect,ant
 animation war_ant
 monster 1
 move_type walk
