@@ -1,5 +1,5 @@
 Object generate_ant
-race insect
+race insect,ant
 other_arch ant
 name ant hill
 face ant_gen.111

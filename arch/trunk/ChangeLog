@@ -1,3 +1,23 @@
+Updated races for several monsters so they can be hit by quirky effects like "slay ant"
+Also gave death attacktype to stake so it can actually kill vampires.
+monster/undead/vampire.arc
+monster/undead/skeleton.arc
+monster/undead/skeleton_chief_arc.arc
+monster/undead/skeleton_leader_arc.arc
+monster/undead/Skeletal_mage/skeletalmage.arc
+monster/misc/deathtree.arc
+monster/insect/ant/ant.arc
+monster/insect/ant/ant_gen.arc
+monster/insect/ant/ant_larvae.arc
+monster/insect/ant/breeder_ant.arc
+monster/insect/ant/fly_ant.arc
+monster/insect/ant/guard_ant.arc
+monster/insect/ant/spit_ant.arc
+monster/insect/ant/war_ant.arc
+monster/insect/ant/work_ant.arc
+weapons/misc/stake.arc
+Daniel Hawkins 2018-05-23
+
 New graphical face for the archon (monster/chaos/archon) monster, as the original graphic is of questionable
 origin.
 monster/chaos/archon.base.111.png
