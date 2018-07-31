@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-02-19
-Modified: 2018-03-30 Rick Tanner
+Modified: 2018-07-31 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_102_107
@@ -5499,7 +5499,11 @@ arch grass
 x 22
 y 22
 end
-arch dwall_2_2_2
+arch t_house1
+name Santo Dominion Library
+slaying ../santo_dominion/sdlibrary
+hp 9
+sp 14
 x 22
 y 22
 end
@@ -5507,15 +5511,11 @@ arch grass
 x 22
 y 23
 end
-arch cwall_2_1_1
-x 22
-y 23
-end
 arch brush
 x 22
 y 24
 end
-arch cwall_2_2_4
+arch cwall_2_1_2
 x 22
 y 24
 end
@@ -5758,15 +5758,15 @@ arch grass
 x 23
 y 22
 end
-arch cwall_2_1_2
-x 23
-y 22
-end
 arch grass
 x 23
 y 23
 end
 arch grass
+x 23
+y 24
+end
+arch cwall_2_1_2
 x 23
 y 24
 end
@@ -5985,7 +5985,7 @@ arch grass
 x 24
 y 22
 end
-arch cwall_2_1_2
+arch cwall_2_2_2
 x 24
 y 22
 end
@@ -5993,7 +5993,15 @@ arch grass
 x 24
 y 23
 end
+arch cwall_2_1_1
+x 24
+y 23
+end
 arch brush
+x 24
+y 24
+end
+arch cwall_2_2_4
 x 24
 y 24
 end
