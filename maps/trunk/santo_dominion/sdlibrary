@@ -5,7 +5,7 @@ width 19
 height 19
 msg
 Created:  2018-07-31 Rick Tanner
-Modified: 2018-07-31 Rick Tanner
+Modified: 2018-08-31 Rick Tanner
 endmsg
 end
 arch cobblestones
@@ -1077,6 +1077,13 @@ arch woodlgvertical
 x 7
 y 4
 end
+arch magic_mouth
+msg
+Before you is a replica spellbook of Frost Nova. Frost Nova is a power evocation spell that fires a swarm of asteroid bullets that deliver a weaponmagic attack.
+endmsg
+x 7
+y 4
+end
 arch dungeon_magic
 x 7
 y 5
@@ -1809,6 +1816,13 @@ x 11
 y 4
 end
 arch woodlgvertical
+x 11
+y 4
+end
+arch magic_mouth
+msg
+Before you is a replica spellbook of Negative Energy Ball. Negative Energy Ball is a devestating evocation spell that creates a ball of negative energy that heads in the direction it is cast, and if it encounters a living target, sticks to it and does drain and cold damage.
+endmsg
 x 11
 y 4
 end
