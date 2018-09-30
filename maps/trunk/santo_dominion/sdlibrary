@@ -871,6 +871,16 @@ arch woodlgvertical
 x 6
 y 2
 end
+arch book_read
+name Replica Spellbook of Meteor Swarm
+msg
+
+endmsg
+x 6
+y 2
+no_pick 1
+identified 1
+end
 arch dungeon_magic
 x 6
 y 3
@@ -888,6 +898,13 @@ x 6
 y 4
 end
 arch woodlgvertical
+x 6
+y 4
+end
+arch magic_mouth
+msg
+Before you is a replica spellbook of Meteor Swarm. This is an extremely strong pyromancy attack spell. This spell fires several comets in the direction of the caster.
+endmsg
 x 6
 y 4
 end
@@ -1092,7 +1109,7 @@ y 4
 end
 arch magic_mouth
 msg
-Before you is a replica spellbook of Frost Nova. Frost Nova is a power evocation spell that fires a swarm of asteroid bullets that deliver a weaponmagic attack.
+Before you is a replica spellbook of Frost Nova. Frost Nova is a powerful evocation spell that fires a swarm of asteroid bullets that deliver a weaponmagic attack.
 endmsg
 x 7
 y 4
@@ -2011,6 +2028,13 @@ arch woodlgvertical
 x 12
 y 2
 end
+arch evoker_book
+name Replica Spellbook of Asteroid
+x 12
+y 2
+no_pick 1
+identified 1
+end
 arch dungeon_magic
 x 12
 y 3
@@ -2028,6 +2052,13 @@ x 12
 y 4
 end
 arch woodlgvertical
+x 12
+y 4
+end
+arch magic_mouth
+msg
+Before you is a replica spellbook of Asteroid. This evocation spell fires a very powerful asteroid that delivers weaponmagic damage and then explodes to cover the area in frost and ice.
+endmsg
 x 12
 y 4
 end
