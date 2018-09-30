@@ -9,7 +9,7 @@ enter_x 2
 enter_y 15
 msg
 Created:  1995-04-26 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2015-04-02 Rick Tanner
+Modified: 2018-09-30 Rick Tanner
 endmsg
 end
 arch cave_15
@@ -4339,7 +4339,7 @@ x 38
 y 3
 end
 arch stair_up
-slaying /world/world_109_126
+slaying ../../world/world_109_126
 hp 37
 sp 19
 x 38
@@ -4350,7 +4350,7 @@ x 38
 y 4
 end
 arch stair_up
-slaying /world/world_109_126
+slaying ../../world/world_109_126
 hp 37
 sp 19
 x 38
@@ -4361,7 +4361,7 @@ x 38
 y 5
 end
 arch stair_up
-slaying /world/world_109_126
+slaying ../../world/world_109_126
 hp 37
 sp 19
 x 38
