@@ -3,7 +3,7 @@ name world_101_108
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2018-12-28 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_101_107
@@ -6193,7 +6193,7 @@ x 24
 y 49
 elevation 1468
 end
-arch shallow_sea
+arch sea
 x 25
 elevation -75
 end
@@ -6450,7 +6450,7 @@ x 25
 y 49
 elevation 2084
 end
-arch shallow_sea
+arch sea
 x 26
 elevation -81
 end
@@ -6714,16 +6714,16 @@ x 26
 y 49
 elevation 2686
 end
-arch shallow_sea
+arch sea
 x 27
 elevation -85
 end
-arch shallow_sea
+arch sea
 x 27
 y 1
 elevation -89
 end
-arch shallow_sea
+arch sea
 x 27
 y 2
 elevation -88
@@ -6987,21 +6987,21 @@ x 27
 y 49
 elevation 3289
 end
-arch shallow_sea
+arch sea
 x 28
 elevation -88
 end
-arch shallow_sea
+arch sea
 x 28
 y 1
 elevation -95
 end
-arch shallow_sea
+arch sea
 x 28
 y 2
 elevation -97
 end
-arch shallow_sea
+arch sea
 x 28
 y 3
 elevation -95
@@ -7260,11 +7260,11 @@ x 28
 y 49
 elevation 3547
 end
-arch shallow_sea
+arch sea
 x 29
 elevation -89
 end
-arch shallow_sea
+arch sea
 x 29
 y 1
 elevation -98
@@ -7279,7 +7279,7 @@ x 29
 y 3
 elevation -103
 end
-arch sea
+arch shallow_sea
 x 29
 y 4
 elevation -100
@@ -7541,11 +7541,11 @@ x 29
 y 49
 elevation 3559
 end
-arch shallow_sea
+arch sea
 x 30
 elevation -88
 end
-arch shallow_sea
+arch sea
 x 30
 y 1
 elevation -99
@@ -7826,11 +7826,11 @@ x 30
 y 49
 elevation 2348
 end
-arch shallow_sea
+arch sea
 x 31
 elevation -84
 end
-arch shallow_sea
+arch sea
 x 31
 y 1
 elevation -98
@@ -8119,11 +8119,11 @@ x 31
 y 49
 elevation 1700
 end
-arch shallow_sea
+arch sea
 x 32
 elevation -78
 end
-arch shallow_sea
+arch sea
 x 32
 y 1
 elevation -94
@@ -8392,11 +8392,11 @@ x 32
 y 49
 elevation 4311
 end
-arch shallow_sea
+arch sea
 x 33
 elevation -69
 end
-arch shallow_sea
+arch sea
 x 33
 y 1
 elevation -87
@@ -8665,16 +8665,16 @@ x 33
 y 49
 elevation 5341
 end
-arch shallow_sea
+arch sea
 x 34
 elevation -55
 end
-arch shallow_sea
+arch sea
 x 34
 y 1
 elevation -77
 end
-arch shallow_sea
+arch sea
 x 34
 y 2
 elevation -99
@@ -8954,12 +8954,12 @@ arch shallow_sea
 x 35
 elevation -38
 end
-arch shallow_sea
+arch sea
 x 35
 y 1
 elevation -63
 end
-arch shallow_sea
+arch sea
 x 35
 y 2
 elevation -92
@@ -9252,7 +9252,7 @@ x 36
 y 1
 elevation -42
 end
-arch shallow_sea
+arch sea
 x 36
 y 2
 elevation -86
@@ -9541,7 +9541,7 @@ x 37
 y 1
 elevation -10
 end
-arch shallow_sea
+arch sea
 x 37
 y 2
 elevation -87

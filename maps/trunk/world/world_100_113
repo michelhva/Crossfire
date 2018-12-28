@@ -3,7 +3,7 @@ name world_100_113
 width 50
 height 50
 msg
-Modified: 2010-06-01 Kevin Bulgrien
+Modified: 2018-12-28 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_100_112
@@ -3926,7 +3926,7 @@ x 15
 y 46
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 15
 y 47
 elevation -21
@@ -4167,12 +4167,12 @@ arch sea
 x 16
 y 45
 end
-arch shallow_sea
+arch sea
 x 16
 y 46
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 16
 y 47
 elevation -21
@@ -4404,21 +4404,21 @@ arch sea
 x 17
 y 43
 end
-arch shallow_sea
+arch sea
 x 17
 y 44
 end
-arch shallow_sea
+arch sea
 x 17
 y 45
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 17
 y 46
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 17
 y 47
 elevation -21
@@ -4641,29 +4641,29 @@ arch sea
 x 18
 y 41
 end
-arch shallow_sea
+arch sea
 x 18
 y 42
 end
-arch shallow_sea
+arch sea
 x 18
 y 43
 end
-arch shallow_sea
+arch sea
 x 18
 y 44
 end
-arch shallow_sea
+arch sea
 x 18
 y 45
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 18
 y 46
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 18
 y 47
 elevation -21
@@ -4872,41 +4872,41 @@ x 19
 y 38
 elevation -1478
 end
-arch shallow_sea
+arch sea
 x 19
 y 39
 end
-arch shallow_sea
+arch sea
 x 19
 y 40
 end
-arch shallow_sea
+arch sea
 x 19
 y 41
 end
-arch shallow_sea
+arch sea
 x 19
 y 42
 end
-arch shallow_sea
+arch sea
 x 19
 y 43
 end
-arch shallow_sea
+arch sea
 x 19
 y 44
 end
-arch shallow_sea
+arch sea
 x 19
 y 45
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 19
 y 46
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 19
 y 47
 elevation -21
@@ -5100,54 +5100,54 @@ x 20
 y 35
 elevation -1035
 end
-arch shallow_sea
+arch sea
 x 20
 y 36
 end
-arch shallow_sea
+arch sea
 x 20
 y 37
 end
-arch shallow_sea
+arch sea
 x 20
 y 38
 end
-arch shallow_sea
+arch sea
 x 20
 y 39
 end
-arch shallow_sea
+arch sea
 x 20
 y 40
 end
-arch shallow_sea
+arch sea
 x 20
 y 41
 end
-arch shallow_sea
+arch sea
 x 20
 y 42
 end
-arch shallow_sea
+arch sea
 x 20
 y 43
 end
-arch shallow_sea
+arch sea
 x 20
 y 44
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 20
 y 45
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 20
 y 46
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 20
 y 47
 elevation -21
@@ -5338,54 +5338,54 @@ arch shallow_sea
 x 21
 y 35
 end
-arch shallow_sea
+arch sea
 x 21
 y 36
 end
-arch shallow_sea
+arch sea
 x 21
 y 37
 end
-arch shallow_sea
+arch sea
 x 21
 y 38
 end
-arch shallow_sea
+arch sea
 x 21
 y 39
 end
-arch shallow_sea
+arch sea
 x 21
 y 40
 end
-arch shallow_sea
+arch sea
 x 21
 y 41
 end
-arch shallow_sea
+arch sea
 x 21
 y 42
 end
-arch shallow_sea
+arch sea
 x 21
 y 43
 end
-arch shallow_sea
+arch sea
 x 21
 y 44
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 21
 y 45
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 21
 y 46
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 21
 y 47
 elevation -21
@@ -5576,55 +5576,55 @@ arch shallow_sea
 x 22
 y 36
 end
-arch shallow_sea
+arch sea
 x 22
 y 37
 end
-arch shallow_sea
+arch sea
 x 22
 y 38
 end
-arch shallow_sea
+arch sea
 x 22
 y 39
 end
-arch shallow_sea
+arch sea
 x 22
 y 40
 end
-arch shallow_sea
+arch sea
 x 22
 y 41
 end
-arch shallow_sea
+arch sea
 x 22
 y 42
 end
-arch shallow_sea
+arch sea
 x 22
 y 43
 end
-arch shallow_sea
+arch sea
 x 22
 y 44
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 22
 y 45
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 22
 y 46
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 22
 y 47
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 22
 y 48
 elevation -21
@@ -5816,60 +5816,60 @@ arch shallow_sea
 x 23
 y 36
 end
-arch shallow_sea
+arch sea
 x 23
 y 37
 end
-arch shallow_sea
+arch sea
 x 23
 y 38
 end
-arch shallow_sea
+arch sea
 x 23
 y 39
 end
-arch shallow_sea
+arch sea
 x 23
 y 40
 end
-arch shallow_sea
+arch sea
 x 23
 y 41
 end
-arch shallow_sea
+arch sea
 x 23
 y 42
 end
-arch shallow_sea
+arch sea
 x 23
 y 43
 end
-arch shallow_sea
+arch sea
 x 23
 y 44
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 23
 y 45
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 23
 y 46
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 23
 y 47
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 23
 y 48
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 23
 y 49
 elevation -21
@@ -6061,57 +6061,57 @@ arch shallow_sea
 x 24
 y 37
 end
-arch shallow_sea
+arch sea
 x 24
 y 38
 end
-arch shallow_sea
+arch sea
 x 24
 y 39
 end
-arch shallow_sea
+arch sea
 x 24
 y 40
 end
-arch shallow_sea
+arch sea
 x 24
 y 41
 end
-arch shallow_sea
+arch sea
 x 24
 y 42
 end
-arch shallow_sea
+arch sea
 x 24
 y 43
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 24
 y 44
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 24
 y 45
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 24
 y 46
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 24
 y 47
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 24
 y 48
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 24
 y 49
 elevation -21
@@ -6303,57 +6303,57 @@ arch shallow_sea
 x 25
 y 37
 end
-arch shallow_sea
+arch sea
 x 25
 y 38
 end
-arch shallow_sea
+arch sea
 x 25
 y 39
 end
-arch shallow_sea
+arch sea
 x 25
 y 40
 end
-arch shallow_sea
+arch sea
 x 25
 y 41
 end
-arch shallow_sea
+arch sea
 x 25
 y 42
 end
-arch shallow_sea
+arch sea
 x 25
 y 43
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 25
 y 44
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 25
 y 45
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 25
 y 46
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 25
 y 47
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 25
 y 48
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 25
 y 49
 elevation -21
@@ -6550,53 +6550,53 @@ arch shallow_sea
 x 26
 y 38
 end
-arch shallow_sea
+arch sea
 x 26
 y 39
 end
-arch shallow_sea
+arch sea
 x 26
 y 40
 end
-arch shallow_sea
+arch sea
 x 26
 y 41
 end
-arch shallow_sea
+arch sea
 x 26
 y 42
 end
-arch shallow_sea
+arch sea
 x 26
 y 43
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 26
 y 44
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 26
 y 45
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 26
 y 46
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 26
 y 47
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 26
 y 48
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 26
 y 49
 elevation -21
@@ -6798,20 +6798,20 @@ arch shallow_sea
 x 27
 y 39
 end
-arch shallow_sea
+arch sea
 x 27
 y 40
 end
-arch shallow_sea
+arch sea
 x 27
 y 41
 end
-arch shallow_sea
+arch sea
 x 27
 y 42
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 27
 y 43
 elevation -21
@@ -6836,12 +6836,12 @@ x 27
 y 47
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 27
 y 48
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 27
 y 49
 elevation -21
@@ -7044,22 +7044,22 @@ arch shallow_sea
 x 28
 y 39
 end
-arch shallow_sea
+arch sea
 x 28
 y 40
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 28
 y 41
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 28
 y 42
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 28
 y 43
 elevation -21
@@ -7298,17 +7298,17 @@ x 29
 y 40
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 29
 y 41
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 29
 y 42
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 29
 y 43
 elevation -21
@@ -7556,12 +7556,12 @@ x 30
 y 41
 elevation -81
 end
-arch shallow_sea
+arch sea
 x 30
 y 42
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 30
 y 43
 elevation -21
@@ -7818,12 +7818,12 @@ x 31
 y 42
 elevation -59
 end
-arch shallow_sea
+arch sea
 x 31
 y 43
 elevation -69
 end
-arch shallow_sea
+arch sea
 x 31
 y 44
 elevation -64
