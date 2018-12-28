@@ -1,5 +1,5 @@
 Object sailing_galleon
-name sailing galleon
+name sailing caravel
 speed 0.5
 type 2
 container 10000000

@@ -1,4 +1,5 @@
 Object galleon
+name caravel
 face galleon.111
 type 66
 no_pick 1
