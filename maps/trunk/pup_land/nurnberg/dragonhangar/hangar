@@ -2620,7 +2620,7 @@ x 7
 y 1
 end
 arch creator
-slaying Ticket To Dtabb
+slaying Ticket To Darcap
 other_arch card
 x 7
 y 1
@@ -2637,7 +2637,7 @@ y 2
 end
 arch magic_mouth
 msg
-Drop 1250 gold coins to buy a ticket to Dtabb.
+Drop 1250 gold coins to buy a ticket to Darcap.
 endmsg
 x 7
 y 2
@@ -3806,8 +3806,8 @@ x 10
 y 17
 end
 arch altar_trigger
-name To Dtabb
-slaying Ticket To Dtabb
+name To Darcap
+slaying Ticket To Darcap
 food 1
 x 10
 y 17
@@ -3819,7 +3819,7 @@ y 18
 end
 arch magic_mouth
 msg
-Dtabb
+Darcap
 endmsg
 x 10
 y 18
