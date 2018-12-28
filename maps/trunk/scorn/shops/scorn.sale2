@@ -2,13 +2,14 @@ arch map
 name Scorn Pawn Shop
 difficulty 3
 region scorn
+shopgreed 2.00000
 width 21
 height 20
 enter_x 10
 enter_y 1
 msg
 Created:  2004-07-01 Gene Alexander (gene@eracc.com)
-Modified: 2013-03-18 Kevin Zheng
+Modified: 2018-12-27 Kevin Zheng
 endmsg
 end
 arch shop_empty
