@@ -1,10 +1,10 @@
 Object sailing_galleon
 name sailing caravel
-speed 0.5
+speed 2
 type 2
-container 10000000
+container 5000000
 move_type boat
-passenger_limit 2
+passenger_limit 3
 face galleon.111
 animation sailing_galleon
 no_pick 1
