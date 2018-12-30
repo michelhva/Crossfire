@@ -8,7 +8,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Modified: 2008-10-30 Rick Tanner
+Modified: 2018-12-30 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_105_113
@@ -11093,10 +11093,9 @@ x 40
 y 44
 elevation 0
 end
-arch hills_rocky
+arch footpath_1_4
 x 40
 y 45
-elevation 0
 end
 arch hills
 x 40
@@ -11342,10 +11341,9 @@ x 41
 y 44
 elevation 0
 end
-arch hills_rocky
+arch footpath_1_3
 x 41
 y 45
-elevation 0
 end
 arch grass_only
 x 41
@@ -11619,10 +11617,9 @@ x 42
 y 46
 elevation 0
 end
-arch grass_only
+arch footpath_0
 x 42
 y 47
-elevation 0
 end
 arch tree3
 x 42
