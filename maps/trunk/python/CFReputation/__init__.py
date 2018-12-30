@@ -5,7 +5,7 @@ import Crossfire
 
 _dict_name = 'CFReputationConnection'
 
-def _init_schema(con, version, *init_files):
+def _init_schema(con, version, *schema_files):
     con.execute("PRAGMA journal_mode=WAL;");
     con.execute("PRAGMA synchronous=NORMAL;");
     con.execute("CREATE TABLE IF NOT EXISTS schema(version INT);");
@@ -14,7 +14,7 @@ def _init_schema(con, version, *init_files):
     if curr < version:
         Crossfire.Log(Crossfire.LogInfo,
                 "Initializing factions schema %d->%d" % (curr, version))
-        for f in init_files:
+        for f in schema_files:
             with open(f) as initfile:
                 con.executescript(initfile.read())
         con.commit()
@@ -24,10 +24,14 @@ def _get_sql_path(f):
             "python/CFReputation/sql", f)
 
 def _init_db():
+    schema_files = map(_get_sql_path, ["schema.sql"])
     init_files = map(_get_sql_path, ["init.sql", "gods.sql"])
     db_path = os.path.join(Crossfire.LocalDirectory(), "factions.db")
     con = sqlite3.connect(':memory:')
-    _init_schema(con, 1, *init_files)
+    _init_schema(con, 1, *schema_files)
+    for f in init_files:
+        with open(f) as initfile:
+            con.executescript(initfile.read())
     Crossfire.GetSharedDictionary()[_dict_name] = con
 
 def _get_db():

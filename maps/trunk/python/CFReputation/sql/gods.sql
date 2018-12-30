@@ -1,51 +1,54 @@
-insert into regions values ('Valriel', 'ALL', 0.25);
-insert into relations values ('Valriel', 'angel', 1);
-insert into relations values ('Valriel', 'demon', -1);
-insert into regions values ('Gorokh', 'ALL', 0.25);
-insert into relations values ('Gorokh', 'demon', 1);
-insert into relations values ('Gorokh', 'angel', -1);
-insert into regions values ('Devourers', 'ALL', 0.25);
-insert into relations values ('Devourers', 'undead', 1);
-insert into relations values ('Devourers', 'none', -1);
-insert into regions values ('Sorig', 'ALL', 0.25);
-insert into relations values ('Sorig', 'air_elemental', 1);
-insert into relations values ('Sorig', 'none', -1);
-insert into regions values ('Ruggilli', 'ALL', 0.25);
-insert into relations values ('Ruggilli', 'consuming_fire_creatures', 1);
-insert into relations values ('Ruggilli', 'chaotic_water_creatures', -1);
-insert into regions values ('Ixalovh', 'ALL', 0.25);
-insert into relations values ('Ixalovh', 'chaotic_water_creatures', 1);
-insert into relations values ('Ixalovh', 'consuming_fire_creatures', -1);
-insert into regions values ('Gaea', 'ALL', 0.25);
-insert into relations values ('Gaea', 'animal', 1);
-insert into relations values ('Gaea', 'bird', 1);
-insert into relations values ('Gaea', 'slime', 1);
-insert into relations values ('Gaea', 'insect', 1);
-insert into relations values ('Gaea', 'reptile', 1);
-insert into relations values ('Gaea', 'water_elemental', 1);
-insert into relations values ('Gaea', 'earth_elemental', 1);
-insert into relations values ('Gaea', 'air_elemental', 1);
-insert into relations values ('Gaea', 'fire_elemental', 1);
-insert into relations values ('Gaea', 'undead', -1);
-insert into relations values ('Gaea', 'unnatural', -1);
-insert into regions values ('Valkyrie', 'ALL', 0.25);
-insert into relations values ('Valkyrie', 'human', 1);
-insert into relations values ('Valkyrie', 'troll', 1);
-insert into relations values ('Valkyrie', 'unnatural', -1);
-insert into relations values ('Valkyrie', 'angel', -1);
-insert into relations values ('Valkyrie', 'demon', -1);
-insert into relations values ('Valkyrie', 'undead', -1);
-insert into regions values ('Mostrai', 'ALL', 0.25);
-insert into relations values ('Mostrai', 'dwarf', 1);
-insert into relations values ('Mostrai', 'goblin', -1);
-insert into relations values ('Mostrai', 'giant', -1);
-insert into regions values ('Lythander', 'ALL', 0.25);
-insert into relations values ('Lythander', 'faerie', 1);
-insert into relations values ('Lythander', 'goblin', -1);
-insert into relations values ('Lythander', 'troll', -1);
-insert into regions values ('Gnarg', 'ALL', 0.25);
-insert into relations values ('Gnarg', 'goblin', 1);
-insert into relations values ('Gnarg', 'giant', 1);
-insert into relations values ('Gnarg', 'troll', 1);
-insert into relations values ('Gnarg', 'faerie', -1);
-insert into relations values ('Gnarg', 'dwarf', -1);
+INSERT OR REPLACE INTO regions VALUES
+('Valriel', 'ALL', 0.25),
+('Gorokh', 'ALL', 0.25),
+('Devourers', 'ALL', 0.25),
+('Sorig', 'ALL', 0.25),
+('Ruggilli', 'ALL', 0.25),
+('Ixalovh', 'ALL', 0.25),
+('Gaea', 'ALL', 0.25),
+('Valkyrie', 'ALL', 0.25),
+('Mostrai', 'ALL', 0.25),
+('Lythander', 'ALL', 0.25),
+('Gnarg', 'ALL', 0.25);
+
+INSERT OR REPLACE INTO relations VALUES
+('Valriel', 'angel', 1),
+('Valriel', 'demon', -1),
+('Gorokh', 'demon', 1),
+('Gorokh', 'angel', -1),
+('Devourers', 'undead', 1),
+('Devourers', 'none', -1),
+('Sorig', 'air_elemental', 1),
+('Sorig', 'none', -1),
+('Ruggilli', 'consuming_fire_creatures', 1),
+('Ruggilli', 'chaotic_water_creatures', -1),
+('Ixalovh', 'chaotic_water_creatures', 1),
+('Ixalovh', 'consuming_fire_creatures', -1),
+('Gaea', 'animal', 1),
+('Gaea', 'bird', 1),
+('Gaea', 'slime', 1),
+('Gaea', 'insect', 1),
+('Gaea', 'reptile', 1),
+('Gaea', 'water_elemental', 1),
+('Gaea', 'earth_elemental', 1),
+('Gaea', 'air_elemental', 1),
+('Gaea', 'fire_elemental', 1),
+('Gaea', 'undead', -1),
+('Gaea', 'unnatural', -1),
+('Valkyrie', 'human', 1),
+('Valkyrie', 'troll', 1),
+('Valkyrie', 'unnatural', -1),
+('Valkyrie', 'angel', -1),
+('Valkyrie', 'demon', -1),
+('Valkyrie', 'undead', -1),
+('Mostrai', 'dwarf', 1),
+('Mostrai', 'goblin', -1),
+('Mostrai', 'giant', -1),
+('Lythander', 'faerie', 1),
+('Lythander', 'goblin', -1),
+('Lythander', 'troll', -1),
+('Gnarg', 'goblin', 1),
+('Gnarg', 'giant', 1),
+('Gnarg', 'troll', 1),
+('Gnarg', 'faerie', -1),
+('Gnarg', 'dwarf', -1);
