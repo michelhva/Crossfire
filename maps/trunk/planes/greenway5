@@ -8,7 +8,7 @@ enter_x 18
 enter_y 24
 msg
 Created:  2004-05-24 Avion
-Modified: 2013-07-19 Andreas Kirschbaum
+Modified: 2018-12-30 Kevin Zheng
 endmsg
 tile_path_1 greenway8
 tile_path_2 greenway6
@@ -923,8 +923,8 @@ y 31
 end
 arch archway_tree
 slaying /navar_city/temples/gaea
-hp 38
-sp 1
+hp 33
+sp 8
 x 4
 y 31
 end
@@ -9454,14 +9454,10 @@ arch brush
 x 46
 y 23
 end
-arch brush
-x 46
-y 23
-end
 arch archway_tree
 slaying /world/world_115_101
-hp 48
-sp 31
+hp 38
+sp 14
 x 46
 y 23
 end
