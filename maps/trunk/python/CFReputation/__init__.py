@@ -40,14 +40,26 @@ def _get_db():
         _init_db()
     return d[_dict_name]
 
-def reputation(player):
+def reputation(player, faction=None):
+    """
+    Return tuple with the name and reputation of the player with the given
+    faction. If faction is None, return all known reputations.
+    """
     con = _get_db()
-    query="""
+    if faction is None:
+        query="""
 SELECT faction, CAST(ROUND(reputation*100) as integer) as rep
 FROM reputations
 WHERE name=? AND ABS(rep) > 0;
-    """
-    result = con.execute(query, (player,)).fetchall()
+        """
+        result = con.execute(query, (player,)).fetchall()
+    else:
+        query="""
+SELECT faction, CAST(ROUND(reputation*100) as integer) as rep
+FROM reputations
+WHERE name=? AND faction=? AND ABS(rep) > 0;
+        """
+        result = con.execute(query, (player, faction)).fetchall()
     return result
 
 def record_kill(race, region, player, fraction=0.0001, limit=0.4):
