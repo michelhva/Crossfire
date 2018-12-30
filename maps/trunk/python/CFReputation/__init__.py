@@ -50,7 +50,7 @@ WHERE name=? AND ABS(rep) > 0;
     result = con.execute(query, (player,)).fetchall()
     return result
 
-def record_kill(race, region, player, fraction=0.0005, limit=0.4):
+def record_kill(race, region, player, fraction=0.0001, limit=0.4):
     con = _get_db()
     query = """
 WITH updates AS (
