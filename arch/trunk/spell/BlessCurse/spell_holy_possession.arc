@@ -10,7 +10,7 @@ path_attuned 128
 skill praying
 type 101
 subtype 25
-race holy_blessing
+race holy possession
 value 90
 no_drop 1
 invisible 1
