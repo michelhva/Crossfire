@@ -4,11 +4,11 @@ reset_timeout 7200
 difficulty 3
 region santodominion
 width 26
-height 24
+height 26
 enter_x 9
 enter_y 23
 msg
-Modified: 2012-01-04 Rick Tanner
+Modified: 2019-01-29 Rick Tanner
 endmsg
 end
 arch grass
@@ -108,6 +108,12 @@ y 23
 end
 arch tree3
 y 23
+end
+arch grass
+y 24
+end
+arch cobblestones
+y 25
 end
 arch grass
 x 1
@@ -344,6 +350,14 @@ x 1
 y 23
 end
 arch grass
+x 1
+y 24
+end
+arch cobblestones
+x 1
+y 25
+end
+arch grass
 x 2
 end
 arch dungeon_magic
@@ -469,6 +483,14 @@ end
 arch grass
 x 2
 y 23
+end
+arch grass
+x 2
+y 24
+end
+arch cobblestones
+x 2
+y 25
 end
 arch grass
 x 3
@@ -625,6 +647,14 @@ x 3
 y 23
 end
 arch grass
+x 3
+y 24
+end
+arch cobblestones
+x 3
+y 25
+end
+arch grass
 x 4
 end
 arch tree3
@@ -767,6 +797,14 @@ x 4
 y 23
 end
 arch grass
+x 4
+y 24
+end
+arch cobblestones
+x 4
+y 25
+end
+arch grass
 x 5
 end
 arch dungeon_magic
@@ -880,6 +918,14 @@ end
 arch grass
 x 5
 y 23
+end
+arch grass
+x 5
+y 24
+end
+arch cobblestones
+x 5
+y 25
 end
 arch grass
 x 6
@@ -1077,6 +1123,14 @@ x 6
 y 23
 end
 arch grass
+x 6
+y 24
+end
+arch cobblestones
+x 6
+y 25
+end
+arch grass
 x 7
 end
 arch dungeon_magic
@@ -1232,6 +1286,14 @@ x 7
 y 23
 end
 arch grass
+x 7
+y 24
+end
+arch cobblestones
+x 7
+y 25
+end
+arch grass
 x 8
 end
 arch dungeon_magic
@@ -1353,6 +1415,19 @@ end
 arch wwall_1_3
 x 8
 y 23
+end
+arch dungeon_magic
+x 8
+y 24
+end
+arch grass
+x 8
+y 24
+move_block all
+end
+arch cobblestones
+x 8
+y 25
 end
 arch grass
 x 9
@@ -1478,6 +1553,19 @@ hp 23
 sp 18
 x 9
 y 23
+end
+arch dungeon_magic
+x 9
+y 24
+end
+arch grass
+x 9
+y 24
+move_block all
+end
+arch cobblestones
+x 9
+y 25
 end
 arch grass
 x 10
@@ -1658,6 +1746,19 @@ arch wwall_1_4
 x 10
 y 23
 end
+arch dungeon_magic
+x 10
+y 24
+end
+arch grass
+x 10
+y 24
+move_block all
+end
+arch cobblestones
+x 10
+y 25
+end
 arch grass
 x 11
 end
@@ -1788,6 +1889,14 @@ end
 arch wwall_2_1_2
 x 11
 y 23
+end
+arch grass
+x 11
+y 24
+end
+arch cobblestones
+x 11
+y 25
 end
 arch grass
 x 12
@@ -1953,6 +2062,14 @@ x 12
 y 23
 end
 arch grass
+x 12
+y 24
+end
+arch cobblestones
+x 12
+y 25
+end
+arch grass
 x 13
 end
 arch dungeon_magic
@@ -2070,6 +2187,14 @@ end
 arch wwall_2_1_2
 x 13
 y 23
+end
+arch grass
+x 13
+y 24
+end
+arch cobblestones
+x 13
+y 25
 end
 arch grass
 x 14
@@ -2199,6 +2324,14 @@ x 14
 y 23
 end
 arch grass
+x 14
+y 24
+end
+arch cobblestones
+x 14
+y 25
+end
+arch grass
 x 15
 end
 arch dungeon_magic
@@ -2342,6 +2475,14 @@ x 15
 y 23
 end
 arch grass
+x 15
+y 24
+end
+arch cobblestones
+x 15
+y 25
+end
+arch grass
 x 16
 end
 arch dungeon_magic
@@ -2459,6 +2600,14 @@ end
 arch wwall_2_1_2
 x 16
 y 23
+end
+arch grass
+x 16
+y 24
+end
+arch cobblestones
+x 16
+y 25
 end
 arch grass
 x 17
@@ -2683,6 +2832,14 @@ arch wwall_2_2_4
 x 17
 y 23
 end
+arch grass
+x 17
+y 24
+end
+arch cobblestones
+x 17
+y 25
+end
 arch brush
 x 18
 end
@@ -2811,6 +2968,14 @@ end
 arch grass
 x 18
 y 23
+end
+arch grass
+x 18
+y 24
+end
+arch cobblestones
+x 18
+y 25
 end
 arch grass
 x 19
@@ -2972,6 +3137,14 @@ end
 arch grass
 x 19
 y 23
+end
+arch grass
+x 19
+y 24
+end
+arch cobblestones
+x 19
+y 25
 end
 arch brush
 x 20
@@ -3108,6 +3281,14 @@ end
 arch grass
 x 20
 y 23
+end
+arch grass
+x 20
+y 24
+end
+arch cobblestones
+x 20
+y 25
 end
 arch brush
 x 21
@@ -3261,6 +3442,14 @@ end
 arch grass
 x 21
 y 23
+end
+arch grass
+x 21
+y 24
+end
+arch cobblestones
+x 21
+y 25
 end
 arch brush
 x 22
@@ -3461,6 +3650,14 @@ arch grass
 x 22
 y 23
 end
+arch grass
+x 22
+y 24
+end
+arch cobblestones
+x 22
+y 25
+end
 arch brush
 x 23
 end
@@ -3556,6 +3753,14 @@ arch grass
 x 23
 y 23
 end
+arch grass
+x 23
+y 24
+end
+arch cobblestones
+x 23
+y 25
+end
 arch blocked
 x 24
 end
@@ -3650,6 +3855,14 @@ end
 arch blocked
 x 24
 y 23
+end
+arch blocked
+x 24
+y 24
+end
+arch blocked
+x 24
+y 25
 end
 arch blocked
 x 25
@@ -3861,4 +4074,12 @@ end
 arch blocked
 x 25
 y 23
+end
+arch blocked
+x 25
+y 24
+end
+arch blocked
+x 25
+y 25
 end
