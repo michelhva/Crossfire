@@ -9,7 +9,7 @@ enter_x 5
 enter_y 37
 msg
 Created:  2001-02-16
-Modified: 2018-12-29 Kevin Zheng
+Modified: 2019-02-22 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_105_114
@@ -8571,11 +8571,19 @@ arch cwall_2_1_2
 x 19
 y 30
 end
+arch swall_1_1_half
+x 19
+y 30
+end
 arch dungeon_magic
 x 19
 y 31
 end
 arch grass
+x 19
+y 31
+end
+arch swall_1_2_half
 x 19
 y 31
 end
@@ -9453,6 +9461,10 @@ x 21
 y 31
 end
 arch cwall_2_1_1
+x 21
+y 31
+end
+arch swall_1_3_half
 x 21
 y 31
 end
