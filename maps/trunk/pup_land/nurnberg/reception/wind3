@@ -8,26 +8,18 @@ enter_x 3
 enter_y 12
 msg
 Created:  1996-02-27
-Modified: 2008-10-27 Rick Tanner
+Modified: 2019-03-03 DraugTheWhopper
 endmsg
-end
-arch dungeon_magic
 end
 arch flagstone
 end
 arch cwall_2_2_2
 end
-arch dungeon_magic
-y 1
-end
 arch flagstone
 y 1
 end
 arch cwall_2_1_1
 y 1
-end
-arch dungeon_magic
-y 2
 end
 arch flagstone
 y 2
@@ -35,17 +27,11 @@ end
 arch cwall_2_1_1
 y 2
 end
-arch dungeon_magic
-y 3
-end
 arch flagstone
 y 3
 end
 arch cwall_2_1_1
 y 3
-end
-arch dungeon_magic
-y 4
 end
 arch flagstone
 y 4
@@ -53,17 +39,11 @@ end
 arch cwall_2_1_1
 y 4
 end
-arch dungeon_magic
-y 5
-end
 arch flagstone
 y 5
 end
 arch cwall_2_1_1
 y 5
-end
-arch dungeon_magic
-y 6
 end
 arch flagstone
 y 6
@@ -71,17 +51,11 @@ end
 arch cwall_2_1_1
 y 6
 end
-arch dungeon_magic
-y 7
-end
 arch flagstone
 y 7
 end
 arch cwall_2_1_1
 y 7
-end
-arch dungeon_magic
-y 8
 end
 arch flagstone
 y 8
@@ -89,17 +63,11 @@ end
 arch cwall_2_1_1
 y 8
 end
-arch dungeon_magic
-y 9
-end
 arch flagstone
 y 9
 end
 arch cwall_2_1_1
 y 9
-end
-arch dungeon_magic
-y 10
 end
 arch flagstone
 y 10
@@ -107,17 +75,11 @@ end
 arch cwall_2_1_1
 y 10
 end
-arch dungeon_magic
-y 11
-end
 arch flagstone
 y 11
 end
 arch cwall_2_1_1
 y 11
-end
-arch dungeon_magic
-y 12
 end
 arch flagstone
 y 12
@@ -125,26 +87,17 @@ end
 arch cwall_2_1_1
 y 12
 end
-arch dungeon_magic
-y 13
-end
 arch flagstone
 y 13
 end
 arch cwall_2_1_1
 y 13
 end
-arch dungeon_magic
-y 14
-end
 arch flagstone
 y 14
 end
 arch cwall_2_1_1
 y 14
-end
-arch dungeon_magic
-y 15
 end
 arch flagstone
 y 15
@@ -152,20 +105,17 @@ end
 arch cwall_2_2_1
 y 15
 end
-arch dungeon_magic
-x 1
-end
 arch flagstone
 x 1
 end
 arch cwall_2_1_2
 x 1
 end
-arch dungeon_magic
+arch flagstone
 x 1
 y 1
 end
-arch flagstone
+arch dungeon_magic
 x 1
 y 1
 end
@@ -175,10 +125,6 @@ y 1
 speed 10.000000
 speed_left -2.060000
 end
-arch dungeon_magic
-x 1
-y 2
-end
 arch pedestal
 slaying icecube
 x 1
@@ -189,16 +135,16 @@ arch flagstone
 x 1
 y 2
 end
+arch dungeon_magic
+x 1
+y 2
+end
 arch mover_1
 maxhp 1
 x 1
 y 2
 speed 10.000000
 speed_left -1.610000
-end
-arch dungeon_magic
-x 1
-y 3
 end
 arch pedestal
 slaying icecube
@@ -210,6 +156,10 @@ arch flagstone
 x 1
 y 3
 end
+arch dungeon_magic
+x 1
+y 3
+end
 arch mover_1
 maxhp 1
 x 1
@@ -217,10 +167,6 @@ y 3
 speed 10.000000
 speed_left -1.610000
 end
-arch dungeon_magic
-x 1
-y 4
-end
 arch pedestal
 slaying icecube
 x 1
@@ -231,16 +177,16 @@ arch flagstone
 x 1
 y 4
 end
+arch dungeon_magic
+x 1
+y 4
+end
 arch mover_1
 maxhp 1
 x 1
 y 4
 speed 10.000000
 speed_left -1.610000
-end
-arch dungeon_magic
-x 1
-y 5
 end
 arch pedestal
 slaying icecube
@@ -252,6 +198,10 @@ arch flagstone
 x 1
 y 5
 end
+arch dungeon_magic
+x 1
+y 5
+end
 arch mover_1
 maxhp 1
 x 1
@@ -259,10 +209,6 @@ y 5
 speed 10.000000
 speed_left -1.610000
 end
-arch dungeon_magic
-x 1
-y 6
-end
 arch pedestal
 slaying icecube
 x 1
@@ -273,16 +219,16 @@ arch flagstone
 x 1
 y 6
 end
+arch dungeon_magic
+x 1
+y 6
+end
 arch mover_1
 maxhp 1
 x 1
 y 6
 speed 10.000000
 speed_left -1.610000
-end
-arch dungeon_magic
-x 1
-y 7
 end
 arch pedestal
 slaying icecube
@@ -294,6 +240,10 @@ arch flagstone
 x 1
 y 7
 end
+arch dungeon_magic
+x 1
+y 7
+end
 arch mover_1
 maxhp 1
 x 1
@@ -301,10 +251,6 @@ y 7
 speed 10.000000
 speed_left -1.610000
 end
-arch dungeon_magic
-x 1
-y 8
-end
 arch pedestal
 slaying icecube
 x 1
@@ -315,16 +261,16 @@ arch flagstone
 x 1
 y 8
 end
+arch dungeon_magic
+x 1
+y 8
+end
 arch mover_1
 maxhp 1
 x 1
 y 8
 speed 10.000000
 speed_left -1.610000
-end
-arch dungeon_magic
-x 1
-y 9
 end
 arch pedestal
 slaying icecube
@@ -336,6 +282,10 @@ arch flagstone
 x 1
 y 9
 end
+arch dungeon_magic
+x 1
+y 9
+end
 arch mover_1
 maxhp 1
 x 1
@@ -343,10 +293,6 @@ y 9
 speed 10.000000
 speed_left -1.610000
 end
-arch dungeon_magic
-x 1
-y 10
-end
 arch pedestal
 slaying icecube
 x 1
@@ -357,16 +303,16 @@ arch flagstone
 x 1
 y 10
 end
+arch dungeon_magic
+x 1
+y 10
+end
 arch mover_1
 maxhp 1
 x 1
 y 10
 speed 10.000000
 speed_left -1.610000
-end
-arch dungeon_magic
-x 1
-y 11
 end
 arch pedestal
 slaying icecube
@@ -378,6 +324,10 @@ arch flagstone
 x 1
 y 11
 end
+arch dungeon_magic
+x 1
+y 11
+end
 arch mover_1
 maxhp 1
 x 1
@@ -385,10 +335,6 @@ y 11
 speed 10.000000
 speed_left -1.610000
 end
-arch dungeon_magic
-x 1
-y 12
-end
 arch pedestal
 slaying icecube
 x 1
@@ -399,16 +345,16 @@ arch flagstone
 x 1
 y 12
 end
+arch dungeon_magic
+x 1
+y 12
+end
 arch mover_1
 maxhp 1
 x 1
 y 12
 speed 10.000000
 speed_left -1.610000
-end
-arch dungeon_magic
-x 1
-y 13
 end
 arch pedestal
 slaying icecube
@@ -420,16 +366,16 @@ arch flagstone
 x 1
 y 13
 end
+arch dungeon_magic
+x 1
+y 13
+end
 arch mover_1
 maxhp 1
 x 1
 y 13
 speed 10.000000
 speed_left -1.610000
-end
-arch dungeon_magic
-x 1
-y 14
 end
 arch pedestal
 slaying icecube
@@ -441,16 +387,16 @@ arch flagstone
 x 1
 y 14
 end
+arch dungeon_magic
+x 1
+y 14
+end
 arch mover_1
 maxhp 1
 x 1
 y 14
 speed 10.000000
 speed_left -1.610000
-end
-arch dungeon_magic
-x 1
-y 15
 end
 arch flagstone
 x 1
@@ -460,20 +406,17 @@ arch cwall_2_1_2
 x 1
 y 15
 end
-arch dungeon_magic
-x 2
-end
 arch flagstone
 x 2
 end
 arch cwall_2_1_2
 x 2
 end
-arch dungeon_magic
+arch flagstone
 x 2
 y 1
 end
-arch flagstone
+arch dungeon_magic
 x 2
 y 1
 end
@@ -482,10 +425,6 @@ x 2
 y 1
 speed 10.000000
 speed_left -2.060000
-end
-arch dungeon_magic
-x 2
-y 2
 end
 arch flagstone
 x 2
@@ -495,10 +434,6 @@ arch cwall_2_2_2
 x 2
 y 2
 end
-arch dungeon_magic
-x 2
-y 3
-end
 arch flagstone
 x 2
 y 3
@@ -506,10 +441,6 @@ end
 arch cwall_2_1_1
 x 2
 y 3
-end
-arch dungeon_magic
-x 2
-y 4
 end
 arch flagstone
 x 2
@@ -519,10 +450,6 @@ arch cwall_2_1_1
 x 2
 y 4
 end
-arch dungeon_magic
-x 2
-y 5
-end
 arch flagstone
 x 2
 y 5
@@ -530,10 +457,6 @@ end
 arch cwall_2_1_1
 x 2
 y 5
-end
-arch dungeon_magic
-x 2
-y 6
 end
 arch flagstone
 x 2
@@ -543,10 +466,6 @@ arch cwall_2_1_1
 x 2
 y 6
 end
-arch dungeon_magic
-x 2
-y 7
-end
 arch flagstone
 x 2
 y 7
@@ -555,10 +474,6 @@ arch cwall_2_1_1
 x 2
 y 7
 end
-arch dungeon_magic
-x 2
-y 8
-end
 arch flagstone
 x 2
 y 8
@@ -566,10 +481,6 @@ end
 arch cwall_2_1_1
 x 2
 y 8
-end
-arch dungeon_magic
-x 2
-y 9
 end
 arch flagstone
 x 2
@@ -579,10 +490,6 @@ arch cwall_3_2
 x 2
 y 9
 end
-arch dungeon_magic
-x 2
-y 10
-end
 arch flagstone
 x 2
 y 10
@@ -590,10 +497,6 @@ end
 arch cwall_2_1_1
 x 2
 y 10
-end
-arch dungeon_magic
-x 2
-y 11
 end
 arch flagstone
 x 2
@@ -603,10 +506,6 @@ arch cwall_2_1_1
 x 2
 y 11
 end
-arch dungeon_magic
-x 2
-y 12
-end
 arch flagstone
 x 2
 y 12
@@ -614,10 +513,6 @@ end
 arch cwall_2_1_1
 x 2
 y 12
-end
-arch dungeon_magic
-x 2
-y 13
 end
 arch flagstone
 x 2
@@ -627,11 +522,11 @@ arch cwall_2_2_1
 x 2
 y 13
 end
-arch dungeon_magic
+arch flagstone
 x 2
 y 14
 end
-arch flagstone
+arch dungeon_magic
 x 2
 y 14
 end
@@ -642,10 +537,6 @@ y 14
 speed 10.000000
 speed_left -0.420000
 end
-arch dungeon_magic
-x 2
-y 15
-end
 arch flagstone
 x 2
 y 15
@@ -654,20 +545,17 @@ arch cwall_2_1_2
 x 2
 y 15
 end
-arch dungeon_magic
-x 3
-end
 arch flagstone
 x 3
 end
 arch cwall_2_1_2
 x 3
 end
-arch dungeon_magic
+arch flagstone
 x 3
 y 1
 end
-arch flagstone
+arch dungeon_magic
 x 3
 y 1
 end
@@ -677,10 +565,6 @@ y 1
 speed 10.000000
 speed_left -2.060000
 end
-arch dungeon_magic
-x 3
-y 2
-end
 arch flagstone
 x 3
 y 2
@@ -688,10 +572,6 @@ end
 arch cwall_2_1_2
 x 3
 y 2
-end
-arch dungeon_magic
-x 3
-y 3
 end
 arch flagstone
 x 3
@@ -701,10 +581,6 @@ arch random_wealth
 x 3
 y 3
 end
-arch dungeon_magic
-x 3
-y 4
-end
 arch flagstone
 x 3
 y 4
@@ -712,10 +588,6 @@ end
 arch air_elemental
 x 3
 y 4
-end
-arch dungeon_magic
-x 3
-y 5
 end
 arch flagstone
 x 3
@@ -725,10 +597,6 @@ arch air_elemental
 x 3
 y 5
 end
-arch dungeon_magic
-x 3
-y 6
-end
 arch flagstone
 x 3
 y 6
@@ -737,25 +605,13 @@ arch air_elemental
 x 3
 y 6
 end
-arch dungeon_magic
+arch flagstone
 x 3
 y 7
 end
 arch flagstone
 x 3
-y 7
-end
-arch dungeon_magic
-x 3
 y 8
-end
-arch flagstone
-x 3
-y 8
-end
-arch dungeon_magic
-x 3
-y 9
 end
 arch flagstone
 x 3
@@ -765,29 +621,13 @@ arch cwall_1_3
 x 3
 y 9
 end
-arch dungeon_magic
-x 3
-y 10
-end
-arch dungeon_magic
+arch flagstone
 x 3
 y 10
 end
 arch flagstone
 x 3
-y 10
-end
-arch dungeon_magic
-x 3
 y 11
-end
-arch flagstone
-x 3
-y 11
-end
-arch dungeon_magic
-x 3
-y 12
 end
 arch flagstone
 x 3
@@ -800,10 +640,6 @@ sp 17
 x 3
 y 12
 end
-arch dungeon_magic
-x 3
-y 13
-end
 arch flagstone
 x 3
 y 13
@@ -812,11 +648,11 @@ arch cwall_1_3
 x 3
 y 13
 end
-arch dungeon_magic
+arch flagstone
 x 3
 y 14
 end
-arch flagstone
+arch dungeon_magic
 x 3
 y 14
 end
@@ -827,10 +663,6 @@ y 14
 speed 10.000000
 speed_left -0.420000
 end
-arch dungeon_magic
-x 3
-y 15
-end
 arch flagstone
 x 3
 y 15
@@ -839,20 +671,17 @@ arch cwall_2_1_2
 x 3
 y 15
 end
-arch dungeon_magic
-x 4
-end
 arch flagstone
 x 4
 end
 arch cwall_2_1_2
 x 4
 end
-arch dungeon_magic
+arch flagstone
 x 4
 y 1
 end
-arch flagstone
+arch dungeon_magic
 x 4
 y 1
 end
@@ -862,10 +691,6 @@ y 1
 speed 10.000000
 speed_left -2.060000
 end
-arch dungeon_magic
-x 4
-y 2
-end
 arch flagstone
 x 4
 y 2
@@ -873,10 +698,6 @@ end
 arch cwall_2_1_2
 x 4
 y 2
-end
-arch dungeon_magic
-x 4
-y 3
 end
 arch flagstone
 x 4
@@ -886,10 +707,6 @@ arch random_wealth
 x 4
 y 3
 end
-arch dungeon_magic
-x 4
-y 4
-end
 arch flagstone
 x 4
 y 4
@@ -898,29 +715,17 @@ arch air_elemental
 x 4
 y 4
 end
-arch dungeon_magic
+arch flagstone
 x 4
 y 5
 end
 arch flagstone
 x 4
-y 5
-end
-arch dungeon_magic
-x 4
-y 6
-end
-arch flagstone
-x 4
 y 6
 end
 arch air_elemental
 x 4
 y 6
-end
-arch dungeon_magic
-x 4
-y 7
 end
 arch flagstone
 x 4
@@ -930,17 +735,9 @@ arch air_elemental
 x 4
 y 7
 end
-arch dungeon_magic
-x 4
-y 8
-end
 arch flagstone
 x 4
 y 8
-end
-arch dungeon_magic
-x 4
-y 9
 end
 arch flagstone
 x 4
@@ -950,25 +747,13 @@ arch door_look_1
 x 4
 y 9
 end
-arch dungeon_magic
+arch flagstone
 x 4
 y 10
 end
 arch flagstone
 x 4
-y 10
-end
-arch dungeon_magic
-x 4
 y 11
-end
-arch flagstone
-x 4
-y 11
-end
-arch dungeon_magic
-x 4
-y 12
 end
 arch magic_mouth
 msg
@@ -981,11 +766,11 @@ arch flagstone
 x 4
 y 12
 end
-arch dungeon_magic
+arch flagstone
 x 4
 y 13
 end
-arch flagstone
+arch dungeon_magic
 x 4
 y 13
 end
@@ -995,11 +780,11 @@ y 13
 speed 0.500000
 connected 100
 end
-arch dungeon_magic
+arch flagstone
 x 4
 y 14
 end
-arch flagstone
+arch dungeon_magic
 x 4
 y 14
 end
@@ -1010,10 +795,6 @@ y 14
 speed 10.000000
 speed_left -0.420000
 end
-arch dungeon_magic
-x 4
-y 15
-end
 arch flagstone
 x 4
 y 15
@@ -1022,20 +803,17 @@ arch cwall_2_1_2
 x 4
 y 15
 end
-arch dungeon_magic
-x 5
-end
 arch flagstone
 x 5
 end
 arch cwall_2_1_2
 x 5
 end
-arch dungeon_magic
+arch flagstone
 x 5
 y 1
 end
-arch flagstone
+arch dungeon_magic
 x 5
 y 1
 end
@@ -1045,10 +823,6 @@ y 1
 speed 10.000000
 speed_left -2.060000
 end
-arch dungeon_magic
-x 5
-y 2
-end
 arch flagstone
 x 5
 y 2
@@ -1056,10 +830,6 @@ end
 arch cwall_2_1_2
 x 5
 y 2
-end
-arch dungeon_magic
-x 5
-y 3
 end
 arch flagstone
 x 5
@@ -1069,17 +839,9 @@ arch random_wealth
 x 5
 y 3
 end
-arch dungeon_magic
-x 5
-y 4
-end
 arch flagstone
 x 5
 y 4
-end
-arch dungeon_magic
-x 5
-y 5
 end
 arch flagstone
 x 5
@@ -1089,17 +851,9 @@ arch air_elemental
 x 5
 y 5
 end
-arch dungeon_magic
-x 5
-y 6
-end
 arch flagstone
 x 5
 y 6
-end
-arch dungeon_magic
-x 5
-y 7
 end
 arch flagstone
 x 5
@@ -1109,17 +863,9 @@ arch air_elemental
 x 5
 y 7
 end
-arch dungeon_magic
-x 5
-y 8
-end
 arch flagstone
 x 5
 y 8
-end
-arch dungeon_magic
-x 5
-y 9
 end
 arch flagstone
 x 5
@@ -1128,10 +874,6 @@ end
 arch cwall_1_4
 x 5
 y 9
-end
-arch dungeon_magic
-x 5
-y 10
 end
 arch flagstone
 x 5
@@ -1142,25 +884,13 @@ x 5
 y 10
 connected 100
 end
-arch dungeon_magic
+arch flagstone
 x 5
 y 11
 end
 arch flagstone
 x 5
-y 11
-end
-arch dungeon_magic
-x 5
 y 12
-end
-arch flagstone
-x 5
-y 12
-end
-arch dungeon_magic
-x 5
-y 13
 end
 arch flagstone
 x 5
@@ -1170,11 +900,11 @@ arch cwall_1_4
 x 5
 y 13
 end
-arch dungeon_magic
+arch flagstone
 x 5
 y 14
 end
-arch flagstone
+arch dungeon_magic
 x 5
 y 14
 end
@@ -1185,10 +915,6 @@ y 14
 speed 10.000000
 speed_left -0.420000
 end
-arch dungeon_magic
-x 5
-y 15
-end
 arch flagstone
 x 5
 y 15
@@ -1197,20 +923,17 @@ arch cwall_2_1_2
 x 5
 y 15
 end
-arch dungeon_magic
-x 6
-end
 arch flagstone
 x 6
 end
 arch cwall_2_1_2
 x 6
 end
-arch dungeon_magic
+arch flagstone
 x 6
 y 1
 end
-arch flagstone
+arch dungeon_magic
 x 6
 y 1
 end
@@ -1220,10 +943,6 @@ y 1
 speed 10.000000
 speed_left -2.060000
 end
-arch dungeon_magic
-x 6
-y 2
-end
 arch flagstone
 x 6
 y 2
@@ -1231,10 +950,6 @@ end
 arch cwall_2_1_2
 x 6
 y 2
-end
-arch dungeon_magic
-x 6
-y 3
 end
 arch flagstone
 x 6
@@ -1244,10 +959,6 @@ arch random_wealth
 x 6
 y 3
 end
-arch dungeon_magic
-x 6
-y 4
-end
 arch flagstone
 x 6
 y 4
@@ -1256,25 +967,13 @@ arch random_spells
 x 6
 y 4
 end
-arch dungeon_magic
+arch flagstone
 x 6
 y 5
 end
 arch flagstone
 x 6
-y 5
-end
-arch dungeon_magic
-x 6
 y 6
-end
-arch flagstone
-x 6
-y 6
-end
-arch dungeon_magic
-x 6
-y 7
 end
 arch flagstone
 x 6
@@ -1284,17 +983,9 @@ arch air_elemental
 x 6
 y 7
 end
-arch dungeon_magic
-x 6
-y 8
-end
 arch flagstone
 x 6
 y 8
-end
-arch dungeon_magic
-x 6
-y 9
 end
 arch flagstone
 x 6
@@ -1304,10 +995,6 @@ arch cwall_2_2_3
 x 6
 y 9
 end
-arch dungeon_magic
-x 6
-y 10
-end
 arch flagstone
 x 6
 y 10
@@ -1315,10 +1002,6 @@ end
 arch cwall_1_2
 x 6
 y 10
-end
-arch dungeon_magic
-x 6
-y 11
 end
 arch flagstone
 x 6
@@ -1328,10 +1011,6 @@ arch door_look_2
 x 6
 y 11
 end
-arch dungeon_magic
-x 6
-y 12
-end
 arch flagstone
 x 6
 y 12
@@ -1339,10 +1018,6 @@ end
 arch cwall_1_1
 x 6
 y 12
-end
-arch dungeon_magic
-x 6
-y 13
 end
 arch flagstone
 x 6
@@ -1352,11 +1027,11 @@ arch cwall_3_1
 x 6
 y 13
 end
-arch dungeon_magic
+arch flagstone
 x 6
 y 14
 end
-arch flagstone
+arch dungeon_magic
 x 6
 y 14
 end
@@ -1369,23 +1044,19 @@ speed_left -0.420000
 end
 arch icecube
 race icecube
-Con 50
+Con 25
 hp 10000
-ac -50
+ac -25
 x 6
 y 14
 carrying 300
-move_type 1
+move_type walk
 alive 1
 arch key2
 name Tower Key
 slaying 1010542567
 end
 end
-arch dungeon_magic
-x 6
-y 15
-end
 arch flagstone
 x 6
 y 15
@@ -1394,20 +1065,17 @@ arch cwall_2_1_2
 x 6
 y 15
 end
-arch dungeon_magic
-x 7
-end
 arch flagstone
 x 7
 end
 arch cwall_2_1_2
 x 7
 end
-arch dungeon_magic
+arch flagstone
 x 7
 y 1
 end
-arch flagstone
+arch dungeon_magic
 x 7
 y 1
 end
@@ -1417,10 +1085,6 @@ y 1
 speed 10.000000
 speed_left -2.060000
 end
-arch dungeon_magic
-x 7
-y 2
-end
 arch flagstone
 x 7
 y 2
@@ -1428,10 +1092,6 @@ end
 arch cwall_2_1_2
 x 7
 y 2
-end
-arch dungeon_magic
-x 7
-y 3
 end
 arch flagstone
 x 7
@@ -1441,33 +1101,17 @@ arch random_wealth
 x 7
 y 3
 end
-arch dungeon_magic
-x 7
-y 4
-end
 arch flagstone
 x 7
 y 4
 end
-arch dungeon_magic
+arch flagstone
 x 7
 y 5
 end
 arch flagstone
 x 7
-y 5
-end
-arch dungeon_magic
-x 7
 y 6
-end
-arch flagstone
-x 7
-y 6
-end
-arch dungeon_magic
-x 7
-y 7
 end
 arch flagstone
 x 7
@@ -1477,10 +1121,6 @@ arch air_elemental
 x 7
 y 7
 end
-arch dungeon_magic
-x 7
-y 8
-end
 arch flagstone
 x 7
 y 8
@@ -1488,10 +1128,6 @@ end
 arch para_air
 x 7
 y 8
-end
-arch dungeon_magic
-x 7
-y 9
 end
 arch flagstone
 x 7
@@ -1501,33 +1137,17 @@ arch para_air
 x 7
 y 9
 end
-arch dungeon_magic
-x 7
-y 10
-end
 arch flagstone
 x 7
 y 10
 end
-arch dungeon_magic
+arch flagstone
 x 7
 y 11
 end
 arch flagstone
 x 7
-y 11
-end
-arch dungeon_magic
-x 7
 y 12
-end
-arch flagstone
-x 7
-y 12
-end
-arch dungeon_magic
-x 7
-y 13
 end
 arch flagstone
 x 7
@@ -1536,10 +1156,6 @@ end
 arch cwall_2_1_2
 x 7
 y 13
-end
-arch dungeon_magic
-x 7
-y 14
 end
 arch pedestal_trigger
 x 7
@@ -1551,6 +1167,10 @@ arch flagstone
 x 7
 y 14
 end
+arch dungeon_magic
+x 7
+y 14
+end
 arch mover_7
 maxhp 1
 x 7
@@ -1558,10 +1178,6 @@ y 14
 speed 10.000000
 speed_left -0.420000
 end
-arch dungeon_magic
-x 7
-y 15
-end
 arch flagstone
 x 7
 y 15
@@ -1570,20 +1186,17 @@ arch cwall_2_1_2
 x 7
 y 15
 end
-arch dungeon_magic
-x 8
-end
 arch flagstone
 x 8
 end
 arch cwall_2_1_2
 x 8
 end
-arch dungeon_magic
+arch flagstone
 x 8
 y 1
 end
-arch flagstone
+arch dungeon_magic
 x 8
 y 1
 end
@@ -1593,10 +1206,6 @@ y 1
 speed 10.000000
 speed_left -2.060000
 end
-arch dungeon_magic
-x 8
-y 2
-end
 arch flagstone
 x 8
 y 2
@@ -1604,10 +1213,6 @@ end
 arch cwall_2_1_2
 x 8
 y 2
-end
-arch dungeon_magic
-x 8
-y 3
 end
 arch flagstone
 x 8
@@ -1617,18 +1222,10 @@ arch random_wealth
 x 8
 y 3
 end
-arch dungeon_magic
-x 8
-y 4
-end
 arch flagstone
 x 8
 y 4
 end
-arch dungeon_magic
-x 8
-y 5
-end
 arch flagstone
 x 8
 y 5
@@ -1636,10 +1233,6 @@ end
 arch air_elemental
 x 8
 y 5
-end
-arch dungeon_magic
-x 8
-y 6
 end
 arch flagstone
 x 8
@@ -1649,10 +1242,6 @@ arch air_elemental
 x 8
 y 6
 end
-arch dungeon_magic
-x 8
-y 7
-end
 arch flagstone
 x 8
 y 7
@@ -1661,29 +1250,17 @@ arch air_elemental
 x 8
 y 7
 end
-arch dungeon_magic
+arch flagstone
 x 8
 y 8
 end
 arch flagstone
 x 8
-y 8
-end
-arch dungeon_magic
-x 8
-y 9
-end
-arch flagstone
-x 8
 y 9
 end
 arch para_air
 x 8
 y 9
-end
-arch dungeon_magic
-x 8
-y 10
 end
 arch flagstone
 x 8
@@ -1693,29 +1270,17 @@ arch para_air
 x 8
 y 10
 end
-arch dungeon_magic
+arch flagstone
 x 8
 y 11
 end
 arch flagstone
 x 8
-y 11
-end
-arch dungeon_magic
-x 8
-y 12
-end
-arch flagstone
-x 8
 y 12
 end
 arch para_air
 x 8
 y 12
-end
-arch dungeon_magic
-x 8
-y 13
 end
 arch flagstone
 x 8
@@ -1725,11 +1290,11 @@ arch cwall_2_1_2
 x 8
 y 13
 end
-arch dungeon_magic
+arch flagstone
 x 8
 y 14
 end
-arch flagstone
+arch dungeon_magic
 x 8
 y 14
 end
@@ -1740,10 +1305,6 @@ y 14
 speed 10.000000
 speed_left -0.420000
 end
-arch dungeon_magic
-x 8
-y 15
-end
 arch flagstone
 x 8
 y 15
@@ -1752,20 +1313,17 @@ arch cwall_2_1_2
 x 8
 y 15
 end
-arch dungeon_magic
-x 9
-end
 arch flagstone
 x 9
 end
 arch cwall_2_1_2
 x 9
 end
-arch dungeon_magic
+arch flagstone
 x 9
 y 1
 end
-arch flagstone
+arch dungeon_magic
 x 9
 y 1
 end
@@ -1774,10 +1332,6 @@ x 9
 y 1
 speed 10.000000
 speed_left -2.060000
-end
-arch dungeon_magic
-x 9
-y 2
 end
 arch flagstone
 x 9
@@ -1787,10 +1341,6 @@ arch cwall_3_3
 x 9
 y 2
 end
-arch dungeon_magic
-x 9
-y 3
-end
 arch flagstone
 x 9
 y 3
@@ -1798,10 +1348,6 @@ end
 arch cwall_1_2
 x 9
 y 3
-end
-arch dungeon_magic
-x 9
-y 4
 end
 arch flagstone
 x 9
@@ -1811,10 +1357,6 @@ arch door_look_2
 x 9
 y 4
 end
-arch dungeon_magic
-x 9
-y 5
-end
 arch flagstone
 x 9
 y 5
@@ -1822,10 +1364,6 @@ end
 arch cwall_1_1
 x 9
 y 5
-end
-arch dungeon_magic
-x 9
-y 6
 end
 arch flagstone
 x 9
@@ -1835,57 +1373,29 @@ arch cwall_2_2_1
 x 9
 y 6
 end
-arch dungeon_magic
-x 9
-y 7
-end
 arch flagstone
 x 9
 y 7
 end
-arch dungeon_magic
+arch flagstone
 x 9
 y 8
 end
 arch flagstone
 x 9
-y 8
-end
-arch dungeon_magic
-x 9
 y 9
 end
 arch flagstone
-x 9
-y 9
-end
-arch dungeon_magic
 x 9
 y 10
 end
 arch flagstone
 x 9
-y 10
-end
-arch dungeon_magic
-x 9
 y 11
 end
 arch flagstone
 x 9
-y 11
-end
-arch dungeon_magic
-x 9
 y 12
-end
-arch flagstone
-x 9
-y 12
-end
-arch dungeon_magic
-x 9
-y 13
 end
 arch flagstone
 x 9
@@ -1895,11 +1405,11 @@ arch cwall_2_1_2
 x 9
 y 13
 end
-arch dungeon_magic
+arch flagstone
 x 9
 y 14
 end
-arch flagstone
+arch dungeon_magic
 x 9
 y 14
 end
@@ -1910,10 +1420,6 @@ y 14
 speed 10.000000
 speed_left -0.420000
 end
-arch dungeon_magic
-x 9
-y 15
-end
 arch flagstone
 x 9
 y 15
@@ -1922,20 +1428,17 @@ arch cwall_2_1_2
 x 9
 y 15
 end
-arch dungeon_magic
-x 10
-end
 arch flagstone
 x 10
 end
 arch cwall_2_1_2
 x 10
 end
-arch dungeon_magic
+arch flagstone
 x 10
 y 1
 end
-arch flagstone
+arch dungeon_magic
 x 10
 y 1
 end
@@ -1945,10 +1448,6 @@ y 1
 speed 10.000000
 speed_left -2.060000
 end
-arch dungeon_magic
-x 10
-y 2
-end
 arch flagstone
 x 10
 y 2
@@ -1957,33 +1456,17 @@ arch cwall_2_1_2
 x 10
 y 2
 end
-arch dungeon_magic
-x 10
-y 3
-end
 arch flagstone
 x 10
 y 3
 end
-arch dungeon_magic
+arch flagstone
 x 10
 y 4
 end
 arch flagstone
 x 10
-y 4
-end
-arch dungeon_magic
-x 10
 y 5
-end
-arch flagstone
-x 10
-y 5
-end
-arch dungeon_magic
-x 10
-y 6
 end
 arch flagstone
 x 10
@@ -1993,25 +1476,13 @@ arch cwall_1_3
 x 10
 y 6
 end
-arch dungeon_magic
+arch flagstone
 x 10
 y 7
 end
 arch flagstone
 x 10
-y 7
-end
-arch dungeon_magic
-x 10
 y 8
-end
-arch flagstone
-x 10
-y 8
-end
-arch dungeon_magic
-x 10
-y 9
 end
 arch flagstone
 x 10
@@ -2021,25 +1492,13 @@ arch para_air
 x 10
 y 9
 end
-arch dungeon_magic
+arch flagstone
 x 10
 y 10
 end
 arch flagstone
 x 10
-y 10
-end
-arch dungeon_magic
-x 10
 y 11
-end
-arch flagstone
-x 10
-y 11
-end
-arch dungeon_magic
-x 10
-y 12
 end
 arch flagstone
 x 10
@@ -2048,10 +1507,6 @@ end
 arch para_air
 x 10
 y 12
-end
-arch dungeon_magic
-x 10
-y 13
 end
 arch flagstone
 x 10
@@ -2061,11 +1516,11 @@ arch cwall_2_1_2
 x 10
 y 13
 end
-arch dungeon_magic
+arch flagstone
 x 10
 y 14
 end
-arch flagstone
+arch dungeon_magic
 x 10
 y 14
 end
@@ -2076,10 +1531,6 @@ y 14
 speed 10.000000
 speed_left -0.420000
 end
-arch dungeon_magic
-x 10
-y 15
-end
 arch flagstone
 x 10
 y 15
@@ -2088,20 +1539,17 @@ arch cwall_2_1_2
 x 10
 y 15
 end
-arch dungeon_magic
-x 11
-end
 arch flagstone
 x 11
 end
 arch cwall_2_1_2
 x 11
 end
-arch dungeon_magic
+arch flagstone
 x 11
 y 1
 end
-arch flagstone
+arch dungeon_magic
 x 11
 y 1
 end
@@ -2111,10 +1559,6 @@ y 1
 speed 10.000000
 speed_left -2.060000
 end
-arch dungeon_magic
-x 11
-y 2
-end
 arch flagstone
 x 11
 y 2
@@ -2123,33 +1567,17 @@ arch cwall_2_1_2
 x 11
 y 2
 end
-arch dungeon_magic
-x 11
-y 3
-end
 arch flagstone
 x 11
 y 3
 end
-arch dungeon_magic
+arch flagstone
 x 11
 y 4
 end
 arch flagstone
 x 11
-y 4
-end
-arch dungeon_magic
-x 11
 y 5
-end
-arch flagstone
-x 11
-y 5
-end
-arch dungeon_magic
-x 11
-y 6
 end
 arch flagstone
 x 11
@@ -2159,18 +1587,10 @@ arch door_look_1
 x 11
 y 6
 end
-arch dungeon_magic
-x 11
-y 7
-end
 arch flagstone
 x 11
 y 7
 end
-arch dungeon_magic
-x 11
-y 8
-end
 arch flagstone
 x 11
 y 8
@@ -2178,10 +1598,6 @@ end
 arch para_air
 x 11
 y 8
-end
-arch dungeon_magic
-x 11
-y 9
 end
 arch flagstone
 x 11
@@ -2191,10 +1607,6 @@ arch para_air
 x 11
 y 9
 end
-arch dungeon_magic
-x 11
-y 10
-end
 arch flagstone
 x 11
 y 10
@@ -2203,10 +1615,6 @@ arch para_air
 x 11
 y 10
 end
-arch dungeon_magic
-x 11
-y 11
-end
 arch flagstone
 x 11
 y 11
@@ -2214,10 +1622,6 @@ end
 arch para_air
 x 11
 y 11
-end
-arch dungeon_magic
-x 11
-y 12
 end
 arch flagstone
 x 11
@@ -2231,10 +1635,6 @@ arch para_air
 x 11
 y 12
 end
-arch dungeon_magic
-x 11
-y 13
-end
 arch flagstone
 x 11
 y 13
@@ -2243,11 +1643,11 @@ arch cwall_2_1_2
 x 11
 y 13
 end
-arch dungeon_magic
+arch flagstone
 x 11
 y 14
 end
-arch flagstone
+arch dungeon_magic
 x 11
 y 14
 end
@@ -2258,10 +1658,6 @@ y 14
 speed 10.000000
 speed_left -0.420000
 end
-arch dungeon_magic
-x 11
-y 15
-end
 arch flagstone
 x 11
 y 15
@@ -2270,20 +1666,17 @@ arch cwall_2_1_2
 x 11
 y 15
 end
-arch dungeon_magic
-x 12
-end
 arch flagstone
 x 12
 end
 arch cwall_2_1_2
 x 12
 end
-arch dungeon_magic
+arch flagstone
 x 12
 y 1
 end
-arch flagstone
+arch dungeon_magic
 x 12
 y 1
 end
@@ -2293,10 +1686,6 @@ y 1
 speed 10.000000
 speed_left -2.060000
 end
-arch dungeon_magic
-x 12
-y 2
-end
 arch flagstone
 x 12
 y 2
@@ -2304,10 +1693,6 @@ end
 arch cwall_2_1_2
 x 12
 y 2
-end
-arch dungeon_magic
-x 12
-y 3
 end
 arch flagstone
 x 12
@@ -2320,25 +1705,13 @@ sp 8
 x 12
 y 3
 end
-arch dungeon_magic
+arch flagstone
 x 12
 y 4
 end
 arch flagstone
 x 12
-y 4
-end
-arch dungeon_magic
-x 12
 y 5
-end
-arch flagstone
-x 12
-y 5
-end
-arch dungeon_magic
-x 12
-y 6
 end
 arch flagstone
 x 12
@@ -2348,10 +1721,6 @@ arch cwall_1_4
 x 12
 y 6
 end
-arch dungeon_magic
-x 12
-y 7
-end
 arch flagstone
 x 12
 y 7
@@ -2359,10 +1728,6 @@ end
 arch random_food
 x 12
 y 7
-end
-arch dungeon_magic
-x 12
-y 8
 end
 arch flagstone
 x 12
@@ -2372,10 +1737,6 @@ arch random_food
 x 12
 y 8
 end
-arch dungeon_magic
-x 12
-y 9
-end
 arch flagstone
 x 12
 y 9
@@ -2383,10 +1744,6 @@ end
 arch random_food
 x 12
 y 9
-end
-arch dungeon_magic
-x 12
-y 10
 end
 arch flagstone
 x 12
@@ -2396,10 +1753,6 @@ arch random_food
 x 12
 y 10
 end
-arch dungeon_magic
-x 12
-y 11
-end
 arch flagstone
 x 12
 y 11
@@ -2408,10 +1761,6 @@ arch random_food
 x 12
 y 11
 end
-arch dungeon_magic
-x 12
-y 12
-end
 arch flagstone
 x 12
 y 12
@@ -2419,10 +1768,6 @@ end
 arch random_food
 x 12
 y 12
-end
-arch dungeon_magic
-x 12
-y 13
 end
 arch flagstone
 x 12
@@ -2432,11 +1777,11 @@ arch cwall_2_1_2
 x 12
 y 13
 end
-arch dungeon_magic
+arch flagstone
 x 12
 y 14
 end
-arch flagstone
+arch dungeon_magic
 x 12
 y 14
 end
@@ -2447,10 +1792,6 @@ y 14
 speed 10.000000
 speed_left -0.420000
 end
-arch dungeon_magic
-x 12
-y 15
-end
 arch flagstone
 x 12
 y 15
@@ -2459,20 +1800,17 @@ arch cwall_2_1_2
 x 12
 y 15
 end
-arch dungeon_magic
-x 13
-end
 arch flagstone
 x 13
 end
 arch cwall_2_1_2
 x 13
 end
-arch dungeon_magic
+arch flagstone
 x 13
 y 1
 end
-arch flagstone
+arch dungeon_magic
 x 13
 y 1
 end
@@ -2482,10 +1820,6 @@ y 1
 speed 10.000000
 speed_left -2.060000
 end
-arch dungeon_magic
-x 13
-y 2
-end
 arch flagstone
 x 13
 y 2
@@ -2494,10 +1828,6 @@ arch cwall_2_2_3
 x 13
 y 2
 end
-arch dungeon_magic
-x 13
-y 3
-end
 arch flagstone
 x 13
 y 3
@@ -2505,10 +1835,6 @@ end
 arch cwall_2_1_1
 x 13
 y 3
-end
-arch dungeon_magic
-x 13
-y 4
 end
 arch flagstone
 x 13
@@ -2518,10 +1844,6 @@ arch cwall_2_1_1
 x 13
 y 4
 end
-arch dungeon_magic
-x 13
-y 5
-end
 arch flagstone
 x 13
 y 5
@@ -2529,10 +1851,6 @@ end
 arch cwall_2_1_1
 x 13
 y 5
-end
-arch dungeon_magic
-x 13
-y 6
 end
 arch flagstone
 x 13
@@ -2542,10 +1860,6 @@ arch cwall_3_4
 x 13
 y 6
 end
-arch dungeon_magic
-x 13
-y 7
-end
 arch flagstone
 x 13
 y 7
@@ -2553,10 +1867,6 @@ end
 arch cwall_2_1_1
 x 13
 y 7
-end
-arch dungeon_magic
-x 13
-y 8
 end
 arch flagstone
 x 13
@@ -2566,10 +1876,6 @@ arch cwall_2_1_1
 x 13
 y 8
 end
-arch dungeon_magic
-x 13
-y 9
-end
 arch flagstone
 x 13
 y 9
@@ -2577,10 +1883,6 @@ end
 arch cwall_2_1_1
 x 13
 y 9
-end
-arch dungeon_magic
-x 13
-y 10
 end
 arch flagstone
 x 13
@@ -2590,10 +1892,6 @@ arch cwall_2_1_1
 x 13
 y 10
 end
-arch dungeon_magic
-x 13
-y 11
-end
 arch flagstone
 x 13
 y 11
@@ -2602,10 +1900,6 @@ arch cwall_2_1_1
 x 13
 y 11
 end
-arch dungeon_magic
-x 13
-y 12
-end
 arch flagstone
 x 13
 y 12
@@ -2613,10 +1907,6 @@ end
 arch cwall_2_1_1
 x 13
 y 12
-end
-arch dungeon_magic
-x 13
-y 13
 end
 arch flagstone
 x 13
@@ -2626,11 +1916,11 @@ arch cwall_2_2_4
 x 13
 y 13
 end
-arch dungeon_magic
+arch flagstone
 x 13
 y 14
 end
-arch flagstone
+arch dungeon_magic
 x 13
 y 14
 end
@@ -2641,10 +1931,6 @@ y 14
 speed 10.000000
 speed_left -0.420000
 end
-arch dungeon_magic
-x 13
-y 15
-end
 arch flagstone
 x 13
 y 15
@@ -2653,19 +1939,12 @@ arch cwall_2_1_2
 x 13
 y 15
 end
-arch dungeon_magic
-x 14
-end
 arch flagstone
 x 14
 end
 arch cwall_2_1_2
 x 14
 end
-arch dungeon_magic
-x 14
-y 1
-end
 arch pedestal
 slaying icecube
 x 14
@@ -2676,16 +1955,16 @@ arch flagstone
 x 14
 y 1
 end
+arch dungeon_magic
+x 14
+y 1
+end
 arch mover_5
 maxhp 1
 x 14
 y 1
 speed 10.000000
 speed_left -0.460000
-end
-arch dungeon_magic
-x 14
-y 2
 end
 arch pedestal
 slaying icecube
@@ -2697,6 +1976,10 @@ arch flagstone
 x 14
 y 2
 end
+arch dungeon_magic
+x 14
+y 2
+end
 arch mover_5
 maxhp 1
 x 14
@@ -2704,10 +1987,6 @@ y 2
 speed 10.000000
 speed_left -0.460000
 end
-arch dungeon_magic
-x 14
-y 3
-end
 arch pedestal
 slaying icecube
 x 14
@@ -2718,16 +1997,16 @@ arch flagstone
 x 14
 y 3
 end
+arch dungeon_magic
+x 14
+y 3
+end
 arch mover_5
 maxhp 1
 x 14
 y 3
 speed 10.000000
 speed_left -0.460000
-end
-arch dungeon_magic
-x 14
-y 4
 end
 arch pedestal
 slaying icecube
@@ -2739,6 +2018,10 @@ arch flagstone
 x 14
 y 4
 end
+arch dungeon_magic
+x 14
+y 4
+end
 arch mover_5
 maxhp 1
 x 14
@@ -2746,10 +2029,6 @@ y 4
 speed 10.000000
 speed_left -0.460000
 end
-arch dungeon_magic
-x 14
-y 5
-end
 arch pedestal
 slaying icecube
 x 14
@@ -2760,16 +2039,16 @@ arch flagstone
 x 14
 y 5
 end
+arch dungeon_magic
+x 14
+y 5
+end
 arch mover_5
 maxhp 1
 x 14
 y 5
 speed 10.000000
 speed_left -0.460000
-end
-arch dungeon_magic
-x 14
-y 6
 end
 arch pedestal
 slaying icecube
@@ -2781,6 +2060,10 @@ arch flagstone
 x 14
 y 6
 end
+arch dungeon_magic
+x 14
+y 6
+end
 arch mover_5
 maxhp 1
 x 14
@@ -2788,10 +2071,6 @@ y 6
 speed 10.000000
 speed_left -0.460000
 end
-arch dungeon_magic
-x 14
-y 7
-end
 arch pedestal
 slaying icecube
 x 14
@@ -2802,16 +2081,16 @@ arch flagstone
 x 14
 y 7
 end
+arch dungeon_magic
+x 14
+y 7
+end
 arch mover_5
 maxhp 1
 x 14
 y 7
 speed 10.000000
 speed_left -0.460000
-end
-arch dungeon_magic
-x 14
-y 8
 end
 arch pedestal
 slaying icecube
@@ -2823,6 +2102,10 @@ arch flagstone
 x 14
 y 8
 end
+arch dungeon_magic
+x 14
+y 8
+end
 arch mover_5
 maxhp 1
 x 14
@@ -2830,10 +2113,6 @@ y 8
 speed 10.000000
 speed_left -0.460000
 end
-arch dungeon_magic
-x 14
-y 9
-end
 arch pedestal
 slaying icecube
 x 14
@@ -2844,16 +2123,16 @@ arch flagstone
 x 14
 y 9
 end
+arch dungeon_magic
+x 14
+y 9
+end
 arch mover_5
 maxhp 1
 x 14
 y 9
 speed 10.000000
 speed_left -0.460000
-end
-arch dungeon_magic
-x 14
-y 10
 end
 arch pedestal
 slaying icecube
@@ -2865,6 +2144,10 @@ arch flagstone
 x 14
 y 10
 end
+arch dungeon_magic
+x 14
+y 10
+end
 arch mover_5
 maxhp 1
 x 14
@@ -2872,10 +2155,6 @@ y 10
 speed 10.000000
 speed_left -0.460000
 end
-arch dungeon_magic
-x 14
-y 11
-end
 arch pedestal
 slaying icecube
 x 14
@@ -2886,16 +2165,16 @@ arch flagstone
 x 14
 y 11
 end
+arch dungeon_magic
+x 14
+y 11
+end
 arch mover_5
 maxhp 1
 x 14
 y 11
 speed 10.000000
 speed_left -0.460000
-end
-arch dungeon_magic
-x 14
-y 12
 end
 arch pedestal
 slaying icecube
@@ -2907,16 +2186,16 @@ arch flagstone
 x 14
 y 12
 end
+arch dungeon_magic
+x 14
+y 12
+end
 arch mover_5
 maxhp 1
 x 14
 y 12
 speed 10.000000
 speed_left -0.460000
-end
-arch dungeon_magic
-x 14
-y 13
 end
 arch pedestal
 slaying icecube
@@ -2928,6 +2207,10 @@ arch flagstone
 x 14
 y 13
 end
+arch dungeon_magic
+x 14
+y 13
+end
 arch mover_5
 maxhp 1
 x 14
@@ -2935,11 +2218,11 @@ y 13
 speed 10.000000
 speed_left -0.460000
 end
-arch dungeon_magic
+arch flagstone
 x 14
 y 14
 end
-arch flagstone
+arch dungeon_magic
 x 14
 y 14
 end
@@ -2950,10 +2233,6 @@ y 14
 speed 10.000000
 speed_left -0.420000
 end
-arch dungeon_magic
-x 14
-y 15
-end
 arch flagstone
 x 14
 y 15
@@ -2961,9 +2240,6 @@ end
 arch cwall_2_1_2
 x 14
 y 15
-end
-arch dungeon_magic
-x 15
 end
 arch flagstone
 x 15
@@ -2971,10 +2247,6 @@ end
 arch cwall_2_2_3
 x 15
 end
-arch dungeon_magic
-x 15
-y 1
-end
 arch flagstone
 x 15
 y 1
@@ -2982,10 +2254,6 @@ end
 arch cwall_2_1_1
 x 15
 y 1
-end
-arch dungeon_magic
-x 15
-y 2
 end
 arch flagstone
 x 15
@@ -2995,10 +2263,6 @@ arch cwall_2_1_1
 x 15
 y 2
 end
-arch dungeon_magic
-x 15
-y 3
-end
 arch flagstone
 x 15
 y 3
@@ -3006,10 +2270,6 @@ end
 arch cwall_2_1_1
 x 15
 y 3
-end
-arch dungeon_magic
-x 15
-y 4
 end
 arch flagstone
 x 15
@@ -3019,10 +2279,6 @@ arch cwall_2_1_1
 x 15
 y 4
 end
-arch dungeon_magic
-x 15
-y 5
-end
 arch flagstone
 x 15
 y 5
@@ -3030,10 +2286,6 @@ end
 arch cwall_2_1_1
 x 15
 y 5
-end
-arch dungeon_magic
-x 15
-y 6
 end
 arch flagstone
 x 15
@@ -3043,10 +2295,6 @@ arch cwall_2_1_1
 x 15
 y 6
 end
-arch dungeon_magic
-x 15
-y 7
-end
 arch flagstone
 x 15
 y 7
@@ -3054,10 +2302,6 @@ end
 arch cwall_2_1_1
 x 15
 y 7
-end
-arch dungeon_magic
-x 15
-y 8
 end
 arch flagstone
 x 15
@@ -3067,10 +2311,6 @@ arch cwall_2_1_1
 x 15
 y 8
 end
-arch dungeon_magic
-x 15
-y 9
-end
 arch flagstone
 x 15
 y 9
@@ -3078,10 +2318,6 @@ end
 arch cwall_2_1_1
 x 15
 y 9
-end
-arch dungeon_magic
-x 15
-y 10
 end
 arch flagstone
 x 15
@@ -3091,10 +2327,6 @@ arch cwall_2_1_1
 x 15
 y 10
 end
-arch dungeon_magic
-x 15
-y 11
-end
 arch flagstone
 x 15
 y 11
@@ -3102,10 +2334,6 @@ end
 arch cwall_2_1_1
 x 15
 y 11
-end
-arch dungeon_magic
-x 15
-y 12
 end
 arch flagstone
 x 15
@@ -3115,10 +2343,6 @@ arch cwall_2_1_1
 x 15
 y 12
 end
-arch dungeon_magic
-x 15
-y 13
-end
 arch flagstone
 x 15
 y 13
@@ -3127,10 +2351,6 @@ arch cwall_2_1_1
 x 15
 y 13
 end
-arch dungeon_magic
-x 15
-y 14
-end
 arch flagstone
 x 15
 y 14
@@ -3138,10 +2358,6 @@ end
 arch cwall_2_1_1
 x 15
 y 14
-end
-arch dungeon_magic
-x 15
-y 15
 end
 arch flagstone
 x 15
