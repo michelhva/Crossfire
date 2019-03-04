@@ -8,7 +8,7 @@ enter_x 12
 enter_y 11
 msg
 Created:  1996-02-18
-Modified: 2012-03-04 Rick Tanner
+Modified: 2019-03-03 DraugTheWhopper
 endmsg
 end
 arch grass
@@ -556,11 +556,11 @@ arch grass
 x 5
 y 4
 end
-arch dungeon_magic
+arch dungeon_floor
 x 5
 y 5
 end
-arch dungeon_floor
+arch dungeon_magic
 x 5
 y 5
 end
@@ -568,23 +568,23 @@ arch swall_2_2_2
 x 5
 y 5
 end
+arch dungeon_floor
+x 5
+y 6
+end
 arch dungeon_magic
+x 5
+y 6
+end
+arch swall_2_1_1
 x 5
 y 6
 end
 arch dungeon_floor
 x 5
-y 6
-end
-arch swall_2_1_1
-x 5
-y 6
-end
-arch dungeon_magic
-x 5
 y 7
 end
-arch dungeon_floor
+arch dungeon_magic
 x 5
 y 7
 end
@@ -592,23 +592,23 @@ arch swall_2_1_1
 x 5
 y 7
 end
+arch dungeon_floor
+x 5
+y 8
+end
 arch dungeon_magic
+x 5
+y 8
+end
+arch swall_2_1_1
 x 5
 y 8
 end
 arch dungeon_floor
 x 5
-y 8
-end
-arch swall_2_1_1
-x 5
-y 8
-end
-arch dungeon_magic
-x 5
 y 9
 end
-arch dungeon_floor
+arch dungeon_magic
 x 5
 y 9
 end
@@ -616,23 +616,23 @@ arch swall_2_1_1
 x 5
 y 9
 end
+arch dungeon_floor
+x 5
+y 10
+end
 arch dungeon_magic
+x 5
+y 10
+end
+arch swall_2_1_1
 x 5
 y 10
 end
 arch dungeon_floor
 x 5
-y 10
-end
-arch swall_2_1_1
-x 5
-y 10
-end
-arch dungeon_magic
-x 5
 y 11
 end
-arch dungeon_floor
+arch dungeon_magic
 x 5
 y 11
 end
@@ -640,23 +640,23 @@ arch swall_2_1_1
 x 5
 y 11
 end
+arch dungeon_floor
+x 5
+y 12
+end
 arch dungeon_magic
+x 5
+y 12
+end
+arch swall_2_1_1
 x 5
 y 12
 end
 arch dungeon_floor
 x 5
-y 12
-end
-arch swall_2_1_1
-x 5
-y 12
-end
-arch dungeon_magic
-x 5
 y 13
 end
-arch dungeon_floor
+arch dungeon_magic
 x 5
 y 13
 end
@@ -664,11 +664,11 @@ arch swall_2_1_1
 x 5
 y 13
 end
-arch dungeon_magic
+arch dungeon_floor
 x 5
 y 14
 end
-arch dungeon_floor
+arch dungeon_magic
 x 5
 y 14
 end
@@ -676,11 +676,11 @@ arch swall_2_1_1
 x 5
 y 14
 end
-arch dungeon_magic
+arch dungeon_floor
 x 5
 y 15
 end
-arch dungeon_floor
+arch dungeon_magic
 x 5
 y 15
 end
@@ -688,11 +688,11 @@ arch swall_2_1_1
 x 5
 y 15
 end
-arch dungeon_magic
+arch dungeon_floor
 x 5
 y 16
 end
-arch dungeon_floor
+arch dungeon_magic
 x 5
 y 16
 end
@@ -700,11 +700,11 @@ arch swall_2_1_1
 x 5
 y 16
 end
-arch dungeon_magic
+arch dungeon_floor
 x 5
 y 17
 end
-arch dungeon_floor
+arch dungeon_magic
 x 5
 y 17
 end
@@ -712,11 +712,11 @@ arch swall_3_2
 x 5
 y 17
 end
-arch dungeon_magic
+arch dungeon_floor
 x 5
 y 18
 end
-arch dungeon_floor
+arch dungeon_magic
 x 5
 y 18
 end
@@ -724,11 +724,11 @@ arch swall_2_1_1
 x 5
 y 18
 end
-arch dungeon_magic
+arch dungeon_floor
 x 5
 y 19
 end
-arch dungeon_floor
+arch dungeon_magic
 x 5
 y 19
 end
@@ -736,11 +736,11 @@ arch swall_2_1_1
 x 5
 y 19
 end
-arch dungeon_magic
+arch dungeon_floor
 x 5
 y 20
 end
-arch dungeon_floor
+arch dungeon_magic
 x 5
 y 20
 end
@@ -752,11 +752,11 @@ arch grass
 x 5
 y 21
 end
-arch dungeon_magic
+arch woodfloor
 x 5
 y 22
 end
-arch woodfloor
+arch dungeon_magic
 x 5
 y 22
 end
@@ -764,11 +764,11 @@ arch swall_2_2_2
 x 5
 y 22
 end
-arch dungeon_magic
+arch woodfloor
 x 5
 y 23
 end
-arch woodfloor
+arch dungeon_magic
 x 5
 y 23
 end
@@ -776,11 +776,11 @@ arch swall_2_1_1
 x 5
 y 23
 end
-arch dungeon_magic
+arch woodfloor
 x 5
 y 24
 end
-arch woodfloor
+arch dungeon_magic
 x 5
 y 24
 end
@@ -788,11 +788,11 @@ arch swall_2_1_1
 x 5
 y 24
 end
-arch dungeon_magic
+arch woodfloor
 x 5
 y 25
 end
-arch woodfloor
+arch dungeon_magic
 x 5
 y 25
 end
@@ -800,11 +800,11 @@ arch swall_2_1_1
 x 5
 y 25
 end
-arch dungeon_magic
+arch woodfloor
 x 5
 y 26
 end
-arch woodfloor
+arch dungeon_magic
 x 5
 y 26
 end
@@ -831,11 +831,11 @@ arch evergreens
 x 6
 y 4
 end
-arch dungeon_magic
+arch dungeon_floor
 x 6
 y 5
 end
-arch dungeon_floor
+arch dungeon_magic
 x 6
 y 5
 end
@@ -918,11 +918,11 @@ arch dungeon_floor
 x 6
 y 19
 end
-arch dungeon_magic
+arch cobblestones2
 x 6
 y 20
 end
-arch cobblestones2
+arch dungeon_magic
 x 6
 y 20
 end
@@ -930,11 +930,11 @@ arch swall_2_2_3
 x 6
 y 20
 end
-arch dungeon_magic
+arch cobblestones2
 x 6
 y 21
 end
-arch cobblestones2
+arch dungeon_magic
 x 6
 y 21
 end
@@ -942,11 +942,11 @@ arch swall_2_1_1
 x 6
 y 21
 end
-arch dungeon_magic
+arch cobblestones2
 x 6
 y 22
 end
-arch cobblestones2
+arch dungeon_magic
 x 6
 y 22
 end
@@ -989,11 +989,11 @@ arch evergreens
 x 7
 y 4
 end
-arch dungeon_magic
+arch dungeon_floor
 x 7
 y 5
 end
-arch dungeon_floor
+arch dungeon_magic
 x 7
 y 5
 end
@@ -1082,19 +1082,19 @@ arch dungeon_floor
 x 7
 y 19
 end
-arch dungeon_magic
-x 7
-y 20
-end
 arch cobblestones2
 x 7
 y 20
 end
 arch dungeon_magic
+x 7
+y 20
+end
+arch cobblestones2
 x 7
 y 21
 end
-arch cobblestones2
+arch dungeon_magic
 x 7
 y 21
 end
@@ -1105,11 +1105,11 @@ sp 6
 x 7
 y 22
 end
-arch dungeon_magic
+arch cobblestones2
 x 7
 y 22
 end
-arch cobblestones2
+arch dungeon_magic
 x 7
 y 22
 end
@@ -1148,11 +1148,11 @@ arch evergreens
 x 8
 y 4
 end
-arch dungeon_magic
+arch dungeon_floor
 x 8
 y 5
 end
-arch dungeon_floor
+arch dungeon_magic
 x 8
 y 5
 end
@@ -1312,11 +1312,11 @@ arch dungeon_floor
 x 8
 y 19
 end
-arch dungeon_magic
+arch cobblestones2
 x 8
 y 20
 end
-arch cobblestones2
+arch dungeon_magic
 x 8
 y 20
 end
@@ -1324,11 +1324,11 @@ arch swall_2_2_2
 x 8
 y 20
 end
-arch dungeon_magic
+arch cobblestones2
 x 8
 y 21
 end
-arch cobblestones2
+arch dungeon_magic
 x 8
 y 21
 end
@@ -1336,11 +1336,11 @@ arch swall_2_1_1
 x 8
 y 21
 end
-arch dungeon_magic
+arch cobblestones2
 x 8
 y 22
 end
-arch cobblestones2
+arch dungeon_magic
 x 8
 y 22
 end
@@ -1383,11 +1383,11 @@ arch evergreens
 x 9
 y 4
 end
-arch dungeon_magic
+arch dungeon_floor
 x 9
 y 5
 end
-arch dungeon_floor
+arch dungeon_magic
 x 9
 y 5
 end
@@ -1451,11 +1451,11 @@ arch dungeon_floor
 x 9
 y 19
 end
-arch dungeon_magic
+arch dungeon_floor
 x 9
 y 20
 end
-arch dungeon_floor
+arch dungeon_magic
 x 9
 y 20
 end
@@ -1467,11 +1467,11 @@ arch grass
 x 9
 y 21
 end
-arch dungeon_magic
+arch woodfloor
 x 9
 y 22
 end
-arch woodfloor
+arch dungeon_magic
 x 9
 y 22
 end
@@ -1546,11 +1546,11 @@ arch grass
 x 10
 y 4
 end
-arch dungeon_magic
+arch dungeon_floor
 x 10
 y 5
 end
-arch dungeon_floor
+arch dungeon_magic
 x 10
 y 5
 end
@@ -1717,11 +1717,11 @@ arch swall_2_1_1
 x 10
 y 19
 end
-arch dungeon_magic
+arch dungeon_floor
 x 10
 y 20
 end
-arch dungeon_floor
+arch dungeon_magic
 x 10
 y 20
 end
@@ -1733,11 +1733,11 @@ arch grass
 x 10
 y 21
 end
-arch dungeon_magic
+arch woodfloor
 x 10
 y 22
 end
-arch woodfloor
+arch dungeon_magic
 x 10
 y 22
 end
@@ -1787,11 +1787,11 @@ arch evergreens
 x 11
 y 4
 end
-arch dungeon_magic
+arch dungeon_floor
 x 11
 y 5
 end
-arch dungeon_floor
+arch dungeon_magic
 x 11
 y 5
 end
@@ -1878,11 +1878,11 @@ arch dungeon_floor
 x 11
 y 19
 end
-arch dungeon_magic
+arch cobblestones2
 x 11
 y 20
 end
-arch cobblestones2
+arch dungeon_magic
 x 11
 y 20
 end
@@ -1890,11 +1890,11 @@ arch swall_2_2_3
 x 11
 y 20
 end
-arch dungeon_magic
+arch cobblestones2
 x 11
 y 21
 end
-arch cobblestones2
+arch dungeon_magic
 x 11
 y 21
 end
@@ -1902,11 +1902,11 @@ arch swall_2_1_1
 x 11
 y 21
 end
-arch dungeon_magic
+arch cobblestones2
 x 11
 y 22
 end
-arch cobblestones2
+arch dungeon_magic
 x 11
 y 22
 end
@@ -1973,11 +1973,11 @@ arch evergreens
 x 12
 y 4
 end
-arch dungeon_magic
+arch dungeon_floor
 x 12
 y 5
 end
-arch dungeon_floor
+arch dungeon_magic
 x 12
 y 5
 end
@@ -2064,19 +2064,19 @@ arch dungeon_floor
 x 12
 y 19
 end
-arch dungeon_magic
-x 12
-y 20
-end
 arch cobblestones2
 x 12
 y 20
 end
 arch dungeon_magic
+x 12
+y 20
+end
+arch cobblestones2
 x 12
 y 21
 end
-arch cobblestones2
+arch dungeon_magic
 x 12
 y 21
 end
@@ -2087,11 +2087,11 @@ sp 6
 x 12
 y 22
 end
-arch dungeon_magic
+arch cobblestones2
 x 12
 y 22
 end
-arch cobblestones2
+arch dungeon_magic
 x 12
 y 22
 end
@@ -2138,11 +2138,11 @@ arch grass
 x 13
 y 4
 end
-arch dungeon_magic
+arch dungeon_floor
 x 13
 y 5
 end
-arch dungeon_floor
+arch dungeon_magic
 x 13
 y 5
 end
@@ -2281,11 +2281,11 @@ arch swall_2_1_1
 x 13
 y 19
 end
-arch dungeon_magic
+arch cobblestones2
 x 13
 y 20
 end
-arch cobblestones2
+arch dungeon_magic
 x 13
 y 20
 end
@@ -2392,11 +2392,11 @@ arch evergreens
 x 14
 y 4
 end
-arch dungeon_magic
+arch dungeon_floor
 x 14
 y 5
 end
-arch dungeon_floor
+arch dungeon_magic
 x 14
 y 5
 end
@@ -2480,11 +2480,11 @@ arch dungeon_floor
 x 14
 y 19
 end
-arch dungeon_magic
+arch dungeon_floor
 x 14
 y 20
 end
-arch dungeon_floor
+arch dungeon_magic
 x 14
 y 20
 end
@@ -2543,11 +2543,11 @@ arch grass
 x 15
 y 4
 end
-arch dungeon_magic
+arch dungeon_floor
 x 15
 y 5
 end
-arch dungeon_floor
+arch dungeon_magic
 x 15
 y 5
 end
@@ -2627,11 +2627,11 @@ arch dungeon_floor
 x 15
 y 19
 end
-arch dungeon_magic
+arch dungeon_floor
 x 15
 y 20
 end
-arch dungeon_floor
+arch dungeon_magic
 x 15
 y 20
 end
@@ -2690,11 +2690,11 @@ arch evergreens
 x 16
 y 4
 end
-arch dungeon_magic
+arch dungeon_floor
 x 16
 y 5
 end
-arch dungeon_floor
+arch dungeon_magic
 x 16
 y 5
 end
@@ -2774,11 +2774,11 @@ arch dungeon_floor
 x 16
 y 19
 end
-arch dungeon_magic
+arch dungeon_floor
 x 16
 y 20
 end
-arch dungeon_floor
+arch dungeon_magic
 x 16
 y 20
 end
@@ -2837,11 +2837,11 @@ arch evergreens
 x 17
 y 4
 end
-arch dungeon_magic
+arch dungeon_floor
 x 17
 y 5
 end
-arch dungeon_floor
+arch dungeon_magic
 x 17
 y 5
 end
@@ -2928,11 +2928,11 @@ arch dungeon_floor
 x 17
 y 19
 end
-arch dungeon_magic
+arch dungeon_floor
 x 17
 y 20
 end
-arch dungeon_floor
+arch dungeon_magic
 x 17
 y 20
 end
@@ -2995,11 +2995,11 @@ arch evergreens
 x 18
 y 4
 end
-arch dungeon_magic
+arch dungeon_floor
 x 18
 y 5
 end
-arch dungeon_floor
+arch dungeon_magic
 x 18
 y 5
 end
@@ -3079,11 +3079,11 @@ arch dungeon_floor
 x 18
 y 19
 end
-arch dungeon_magic
+arch dungeon_floor
 x 18
 y 20
 end
-arch dungeon_floor
+arch dungeon_magic
 x 18
 y 20
 end
@@ -3146,11 +3146,11 @@ arch evergreens
 x 19
 y 4
 end
-arch dungeon_magic
+arch dungeon_floor
 x 19
 y 5
 end
-arch dungeon_floor
+arch dungeon_magic
 x 19
 y 5
 end
@@ -3230,11 +3230,11 @@ arch dungeon_floor
 x 19
 y 19
 end
-arch dungeon_magic
+arch dungeon_floor
 x 19
 y 20
 end
-arch dungeon_floor
+arch dungeon_magic
 x 19
 y 20
 end
@@ -3293,11 +3293,11 @@ arch grass
 x 20
 y 4
 end
-arch dungeon_magic
+arch dungeon_floor
 x 20
 y 5
 end
-arch dungeon_floor
+arch dungeon_magic
 x 20
 y 5
 end
@@ -3305,11 +3305,11 @@ arch swall_2_2_3
 x 20
 y 5
 end
-arch dungeon_magic
+arch dungeon_floor
 x 20
 y 6
 end
-arch dungeon_floor
+arch dungeon_magic
 x 20
 y 6
 end
@@ -3317,11 +3317,11 @@ arch swall_2_1_1
 x 20
 y 6
 end
-arch dungeon_magic
+arch dungeon_floor
 x 20
 y 7
 end
-arch dungeon_floor
+arch dungeon_magic
 x 20
 y 7
 end
@@ -3329,11 +3329,11 @@ arch swall_2_1_1
 x 20
 y 7
 end
-arch dungeon_magic
+arch dungeon_floor
 x 20
 y 8
 end
-arch dungeon_floor
+arch dungeon_magic
 x 20
 y 8
 end
@@ -3341,11 +3341,11 @@ arch swall_3_4
 x 20
 y 8
 end
-arch dungeon_magic
+arch dungeon_floor
 x 20
 y 9
 end
-arch dungeon_floor
+arch dungeon_magic
 x 20
 y 9
 end
@@ -3353,11 +3353,11 @@ arch swall_2_1_1
 x 20
 y 9
 end
-arch dungeon_magic
+arch cobblestones2
 x 20
 y 10
 end
-arch cobblestones2
+arch dungeon_magic
 x 20
 y 10
 end
@@ -3365,19 +3365,19 @@ arch swall_2_2_1
 x 20
 y 10
 end
-arch dungeon_magic
-x 20
-y 11
-end
 arch cobblestones2
 x 20
 y 11
 end
 arch dungeon_magic
+x 20
+y 11
+end
+arch cobblestones2
 x 20
 y 12
 end
-arch cobblestones2
+arch dungeon_magic
 x 20
 y 12
 end
@@ -3385,11 +3385,11 @@ arch swall_2_2_2
 x 20
 y 12
 end
-arch dungeon_magic
+arch dungeon_floor
 x 20
 y 13
 end
-arch dungeon_floor
+arch dungeon_magic
 x 20
 y 13
 end
@@ -3397,23 +3397,23 @@ arch swall_3_4
 x 20
 y 13
 end
+arch dungeon_floor
+x 20
+y 14
+end
 arch dungeon_magic
+x 20
+y 14
+end
+arch swall_2_1_1
 x 20
 y 14
 end
 arch dungeon_floor
 x 20
-y 14
-end
-arch swall_2_1_1
-x 20
-y 14
-end
-arch dungeon_magic
-x 20
 y 15
 end
-arch dungeon_floor
+arch dungeon_magic
 x 20
 y 15
 end
@@ -3421,23 +3421,23 @@ arch swall_2_1_1
 x 20
 y 15
 end
+arch dungeon_floor
+x 20
+y 16
+end
 arch dungeon_magic
+x 20
+y 16
+end
+arch swall_2_1_1
 x 20
 y 16
 end
 arch dungeon_floor
 x 20
-y 16
-end
-arch swall_2_1_1
-x 20
-y 16
-end
-arch dungeon_magic
-x 20
 y 17
 end
-arch dungeon_floor
+arch dungeon_magic
 x 20
 y 17
 end
@@ -3445,11 +3445,11 @@ arch swall_2_1_1
 x 20
 y 17
 end
-arch dungeon_magic
+arch dungeon_floor
 x 20
 y 18
 end
-arch dungeon_floor
+arch dungeon_magic
 x 20
 y 18
 end
@@ -3457,11 +3457,11 @@ arch swall_2_1_1
 x 20
 y 18
 end
-arch dungeon_magic
+arch dungeon_floor
 x 20
 y 19
 end
-arch dungeon_floor
+arch dungeon_magic
 x 20
 y 19
 end
@@ -3469,11 +3469,11 @@ arch swall_2_1_1
 x 20
 y 19
 end
-arch dungeon_magic
+arch dungeon_floor
 x 20
 y 20
 end
-arch dungeon_floor
+arch dungeon_magic
 x 20
 y 20
 end
@@ -3584,21 +3584,17 @@ arch grass
 x 21
 y 9
 end
-arch dungeon_magic
+arch cobblestones2
 x 21
 y 10
 end
-arch cobblestones2
+arch dungeon_magic
 x 21
 y 10
 end
 arch swall_2_1_2
 x 21
 y 10
-end
-arch dungeon_magic
-x 21
-y 11
 end
 arch cobblestones2
 x 21
@@ -3613,11 +3609,11 @@ x 21
 y 11
 speed 0.500000
 end
-arch dungeon_magic
+arch cobblestones2
 x 21
 y 12
 end
-arch cobblestones2
+arch dungeon_magic
 x 21
 y 12
 end
@@ -3764,11 +3760,11 @@ arch swall_2_1_1
 x 22
 y 9
 end
-arch dungeon_magic
+arch cobblestones2
 x 22
 y 10
 end
-arch cobblestones2
+arch dungeon_magic
 x 22
 y 10
 end
@@ -3783,19 +3779,19 @@ sp 11
 x 22
 y 11
 end
-arch dungeon_magic
-x 22
-y 11
-end
 arch cobblestones2
 x 22
 y 11
 end
 arch dungeon_magic
+x 22
+y 11
+end
+arch cobblestones2
 x 22
 y 12
 end
-arch cobblestones2
+arch dungeon_magic
 x 22
 y 12
 end
@@ -3803,11 +3799,11 @@ arch swall_2_2_3
 x 22
 y 12
 end
-arch dungeon_magic
+arch flagstone
 x 22
 y 13
 end
-arch flagstone
+arch dungeon_magic
 x 22
 y 13
 end

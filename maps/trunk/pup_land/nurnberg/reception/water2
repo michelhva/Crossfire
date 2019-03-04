@@ -9,7 +9,7 @@ enter_x 11
 enter_y 5
 msg
 Created:  1996-02-21
-Modified: 2012-03-04 Rick Tanner
+Modified: 2019-03-03 DraugTheWhopper
 endmsg
 end
 arch dungeon_floor
@@ -164,11 +164,11 @@ arch dungeon_floor
 x 1
 y 7
 end
-arch dungeon_magic
+arch dungeon_floor
 x 1
 y 8
 end
-arch dungeon_floor
+arch dungeon_magic
 x 1
 y 8
 end
@@ -309,11 +309,11 @@ y 7
 speed 0.500000
 connected 3
 end
-arch dungeon_magic
+arch dungeon_floor
 x 2
 y 8
 end
-arch dungeon_floor
+arch dungeon_magic
 x 2
 y 8
 end
@@ -439,6 +439,10 @@ y 7
 connected 1
 end
 arch dungeon_floor
+x 3
+y 8
+end
+arch dungeon_magic
 x 3
 y 8
 end
@@ -792,11 +796,11 @@ end
 arch swall_1_1_half
 x 6
 end
-arch dungeon_magic
+arch dungeon_floor
 x 6
 y 1
 end
-arch dungeon_floor
+arch dungeon_magic
 x 6
 y 1
 end
@@ -1661,11 +1665,11 @@ arch dungeon_floor
 x 14
 y 5
 end
-arch dungeon_magic
+arch dungeon_floor
 x 14
 y 6
 end
-arch dungeon_floor
+arch dungeon_magic
 x 14
 y 6
 end

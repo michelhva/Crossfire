@@ -9,7 +9,7 @@ enter_x 2
 enter_y 1
 msg
 Created:  1996-02-23
-Modified: 2012-03-04 Rick Tanner
+Modified: 2019-03-03 DraugTheWhopper
 endmsg
 end
 arch dungeon_floor
@@ -1078,11 +1078,11 @@ arch swall_1_2
 x 10
 y 6
 end
-arch dungeon_magic
+arch dungeon_floor
 x 10
 y 7
 end
-arch dungeon_floor
+arch dungeon_magic
 x 10
 y 7
 end

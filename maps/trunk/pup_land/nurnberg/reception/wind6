@@ -8,7 +8,7 @@ enter_x 3
 enter_y 12
 msg
 Created:  1996-02-28
-Modified: 2012-03-04 Rick Tanner
+Modified: 2019-03-03 DraugTheWhopper
 endmsg
 end
 arch flagstone
@@ -179,10 +179,6 @@ arch flagstone
 x 1
 y 13
 end
-arch dungeon_magic
-x 1
-y 14
-end
 arch flagstone
 x 1
 y 14
@@ -333,10 +329,6 @@ arch swall_2_2_1
 x 2
 y 13
 end
-arch dungeon_magic
-x 2
-y 14
-end
 arch flagstone
 x 2
 y 14
@@ -387,27 +379,27 @@ arch swall_2_1_2
 x 3
 y 6
 end
-arch dungeon_magic
-x 3
-y 7
-end
 arch flagstone
 x 3
 y 7
 end
 arch dungeon_magic
 x 3
-y 8
+y 7
 end
 arch flagstone
 x 3
 y 8
 end
 arch dungeon_magic
+x 3
+y 8
+end
+arch flagstone
 x 3
 y 9
 end
-arch flagstone
+arch dungeon_magic
 x 3
 y 9
 end
@@ -464,10 +456,6 @@ arch swall_2_1_2
 x 3
 y 13
 end
-arch dungeon_magic
-x 3
-y 14
-end
 arch flagstone
 x 3
 y 14
@@ -522,10 +510,6 @@ arch swall_2_1_2
 x 4
 y 6
 end
-arch dungeon_magic
-x 4
-y 7
-end
 arch mover_3
 maxhp 1
 x 4
@@ -535,6 +519,10 @@ speed_left -1.210000
 level 1
 end
 arch flagstone
+x 4
+y 7
+end
+arch dungeon_magic
 x 4
 y 7
 end
@@ -550,11 +538,11 @@ arch swall_1_4
 x 4
 y 8
 end
-arch dungeon_magic
+arch flagstone
 x 4
 y 9
 end
-arch flagstone
+arch dungeon_magic
 x 4
 y 9
 end
@@ -606,10 +594,6 @@ arch swall_2_1_2
 x 4
 y 13
 end
-arch dungeon_magic
-x 4
-y 14
-end
 arch flagstone
 x 4
 y 14
@@ -680,11 +664,11 @@ arch swall_2_1_2
 x 5
 y 6
 end
-arch dungeon_magic
+arch flagstone
 x 5
 y 7
 end
-arch flagstone
+arch dungeon_magic
 x 5
 y 7
 end
@@ -700,10 +684,6 @@ arch swall_2_1_2
 x 5
 y 8
 end
-arch dungeon_magic
-x 5
-y 9
-end
 arch mover_7
 maxhp 1
 x 5
@@ -713,6 +693,10 @@ speed_left -1.480000
 level 1
 end
 arch flagstone
+x 5
+y 9
+end
+arch dungeon_magic
 x 5
 y 9
 end
@@ -747,10 +731,6 @@ end
 arch swall_2_1_2
 x 5
 y 13
-end
-arch dungeon_magic
-x 5
-y 14
 end
 arch flagstone
 x 5
@@ -805,10 +785,6 @@ end
 arch swall_2_1_2
 x 6
 y 6
-end
-arch dungeon_magic
-x 6
-y 7
 end
 arch mover_3
 maxhp 1
@@ -822,6 +798,10 @@ arch flagstone
 x 6
 y 7
 end
+arch dungeon_magic
+x 6
+y 7
+end
 arch flagstone
 x 6
 y 8
@@ -834,11 +814,11 @@ arch swall_2_1_2
 x 6
 y 8
 end
-arch dungeon_magic
+arch flagstone
 x 6
 y 9
 end
-arch flagstone
+arch dungeon_magic
 x 6
 y 9
 end
@@ -873,10 +853,6 @@ end
 arch swall_2_1_2
 x 6
 y 13
-end
-arch dungeon_magic
-x 6
-y 14
 end
 arch flagstone
 x 6
@@ -932,11 +908,11 @@ arch swall_2_1_2
 x 7
 y 6
 end
-arch dungeon_magic
+arch flagstone
 x 7
 y 7
 end
-arch flagstone
+arch dungeon_magic
 x 7
 y 7
 end
@@ -952,10 +928,6 @@ arch swall_2_1_2
 x 7
 y 8
 end
-arch dungeon_magic
-x 7
-y 9
-end
 arch mover_7
 maxhp 1
 x 7
@@ -965,6 +937,10 @@ speed_left -1.480000
 level 1
 end
 arch flagstone
+x 7
+y 9
+end
+arch dungeon_magic
 x 7
 y 9
 end
@@ -1016,10 +992,6 @@ arch swall_2_1_2
 x 7
 y 13
 end
-arch dungeon_magic
-x 7
-y 14
-end
 arch flagstone
 x 7
 y 14
@@ -1073,10 +1045,6 @@ end
 arch swall_2_1_2
 x 8
 y 6
-end
-arch dungeon_magic
-x 8
-y 7
 end
 arch mover_3
 maxhp 1
@@ -1090,6 +1058,10 @@ arch flagstone
 x 8
 y 7
 end
+arch dungeon_magic
+x 8
+y 7
+end
 arch flagstone
 x 8
 y 8
@@ -1102,11 +1074,11 @@ arch swall_2_1_2
 x 8
 y 8
 end
-arch dungeon_magic
+arch flagstone
 x 8
 y 9
 end
-arch flagstone
+arch dungeon_magic
 x 8
 y 9
 end
@@ -1141,10 +1113,6 @@ end
 arch swall_2_1_2
 x 8
 y 13
-end
-arch dungeon_magic
-x 8
-y 14
 end
 arch flagstone
 x 8
@@ -1216,11 +1184,11 @@ arch swall_2_1_2
 x 9
 y 6
 end
-arch dungeon_magic
+arch flagstone
 x 9
 y 7
 end
-arch flagstone
+arch dungeon_magic
 x 9
 y 7
 end
@@ -1236,10 +1204,6 @@ arch swall_2_1_2
 x 9
 y 8
 end
-arch dungeon_magic
-x 9
-y 9
-end
 arch mover_7
 maxhp 1
 x 9
@@ -1249,6 +1213,10 @@ speed_left -1.480000
 level 1
 end
 arch flagstone
+x 9
+y 9
+end
+arch dungeon_magic
 x 9
 y 9
 end
@@ -1283,10 +1251,6 @@ end
 arch swall_2_1_2
 x 9
 y 13
-end
-arch dungeon_magic
-x 9
-y 14
 end
 arch flagstone
 x 9
@@ -1342,10 +1306,6 @@ arch swall_2_1_2
 x 10
 y 6
 end
-arch dungeon_magic
-x 10
-y 7
-end
 arch mover_3
 maxhp 1
 x 10
@@ -1355,6 +1315,10 @@ speed_left -1.210000
 level 1
 end
 arch flagstone
+x 10
+y 7
+end
+arch dungeon_magic
 x 10
 y 7
 end
@@ -1370,11 +1334,11 @@ arch swall_2_1_2
 x 10
 y 8
 end
-arch dungeon_magic
+arch flagstone
 x 10
 y 9
 end
-arch flagstone
+arch dungeon_magic
 x 10
 y 9
 end
@@ -1409,10 +1373,6 @@ end
 arch swall_2_1_2
 x 10
 y 13
-end
-arch dungeon_magic
-x 10
-y 14
 end
 arch flagstone
 x 10
@@ -1468,10 +1428,6 @@ arch swall_2_1_2
 x 11
 y 6
 end
-arch dungeon_magic
-x 11
-y 7
-end
 arch mover_3
 maxhp 1
 x 11
@@ -1481,6 +1437,10 @@ speed_left -1.210000
 level 1
 end
 arch flagstone
+x 11
+y 7
+end
+arch dungeon_magic
 x 11
 y 7
 end
@@ -1496,10 +1456,6 @@ arch swall_2_1_2
 x 11
 y 8
 end
-arch dungeon_magic
-x 11
-y 9
-end
 arch mover_7
 maxhp 1
 x 11
@@ -1509,6 +1465,10 @@ speed_left -1.480000
 level 1
 end
 arch flagstone
+x 11
+y 9
+end
+arch dungeon_magic
 x 11
 y 9
 end
@@ -1560,10 +1520,6 @@ arch swall_2_1_2
 x 11
 y 13
 end
-arch dungeon_magic
-x 11
-y 14
-end
 arch flagstone
 x 11
 y 14
@@ -1614,10 +1570,6 @@ arch swall_2_1_2
 x 12
 y 6
 end
-arch dungeon_magic
-x 12
-y 7
-end
 arch mover_3
 maxhp 1
 x 12
@@ -1627,6 +1579,10 @@ speed_left -1.210000
 level 1
 end
 arch flagstone
+x 12
+y 7
+end
+arch dungeon_magic
 x 12
 y 7
 end
@@ -1642,11 +1598,11 @@ arch swall_2_1_2
 x 12
 y 8
 end
-arch dungeon_magic
+arch flagstone
 x 12
 y 9
 end
-arch flagstone
+arch dungeon_magic
 x 12
 y 9
 end
@@ -1681,10 +1637,6 @@ end
 arch swall_2_1_2
 x 12
 y 13
-end
-arch dungeon_magic
-x 12
-y 14
 end
 arch flagstone
 x 12
@@ -1759,10 +1711,6 @@ arch swall_2_1_2
 x 13
 y 6
 end
-arch dungeon_magic
-x 13
-y 7
-end
 arch mover_3
 maxhp 1
 x 13
@@ -1772,6 +1720,10 @@ speed_left -1.210000
 level 1
 end
 arch flagstone
+x 13
+y 7
+end
+arch dungeon_magic
 x 13
 y 7
 end
@@ -1787,10 +1739,6 @@ arch swall_2_1_2
 x 13
 y 8
 end
-arch dungeon_magic
-x 13
-y 9
-end
 arch mover_7
 maxhp 1
 x 13
@@ -1800,6 +1748,10 @@ speed_left -1.480000
 level 1
 end
 arch flagstone
+x 13
+y 9
+end
+arch dungeon_magic
 x 13
 y 9
 end
@@ -1847,10 +1799,6 @@ arch swall_2_2_4
 x 13
 y 13
 end
-arch dungeon_magic
-x 13
-y 14
-end
 arch flagstone
 x 13
 y 14
@@ -1880,17 +1828,15 @@ sp 6
 x 14
 y 1
 end
-arch dungeon_magic
-x 14
-y 2
-end
 arch flagstone
 x 14
 y 2
 end
-arch gateTrg1
-hp 1
-maxhp 1
+arch dungeon_magic
+x 14
+y 2
+end
+arch gate_closed_1
 x 14
 y 2
 connected 2
@@ -1960,10 +1906,6 @@ end
 arch flagstone
 x 14
 y 13
-end
-arch dungeon_magic
-x 14
-y 14
 end
 arch flagstone
 x 14
@@ -2130,11 +2072,11 @@ arch grass
 x 16
 y 4
 end
-arch dungeon_magic
+arch evergreens
 x 16
 y 5
 end
-arch evergreens
+arch dungeon_magic
 x 16
 y 5
 end
@@ -2171,11 +2113,11 @@ arch grass
 x 16
 y 8
 end
-arch dungeon_magic
+arch grass
 x 16
 y 9
 end
-arch grass
+arch dungeon_magic
 x 16
 y 9
 end
@@ -2222,17 +2164,13 @@ arch evergreens
 x 17
 y 4
 end
-arch dungeon_magic
-x 17
-y 5
-end
 arch evergreens
 x 17
 y 5
 end
 arch dungeon_magic
 x 17
-y 6
+y 5
 end
 arch evergreens
 x 17
@@ -2240,7 +2178,7 @@ y 6
 end
 arch dungeon_magic
 x 17
-y 7
+y 6
 end
 arch grass
 x 17
@@ -2248,7 +2186,7 @@ y 7
 end
 arch dungeon_magic
 x 17
-y 8
+y 7
 end
 arch evergreens
 x 17
@@ -2256,9 +2194,13 @@ y 8
 end
 arch dungeon_magic
 x 17
-y 9
+y 8
 end
 arch evergreens
+x 17
+y 9
+end
+arch dungeon_magic
 x 17
 y 9
 end
