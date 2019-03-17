@@ -8,7 +8,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Modified: 2013-08-18 Kevin Zheng
+Modified: 2019-03-07 DraugTheWhopper
 endmsg
 outdoor 1
 tile_path_1 world_121_116
@@ -10917,14 +10917,12 @@ y 15
 end
 arch prisoner
 msg
-@match *
-We are doomed!  The city guards, the walls.. those won't protect us when the walking dead return!
 @match dead|undead|walking dead
 They are waiting for the command to plunder our fine city.  Just waiting for the gate to open so they can return!!
+@match gateway|portal
+The vile demilich Morkov still holds residence in this city.
 @match gate|return|waiting
 The army of undead are waiting for the ritual to finish to open the gateway.
-@match gateway
-The vile demilich Morkov still holds residence in this city.
 @match demilich|morkov
 One of the demilich minions attacked my home - I was dazed by some sort of yellow light which left me unable to move or speak.  I was then taken to a tall and dark tower.
 @match tower|dark tower
@@ -10932,11 +10930,13 @@ It was one of the towers here in the city.  We did not go beyond the city walls.
 @match help|guard|mayor|story
 It was easier to lock me up here and have rotten vegetables thrown at me like I'm some sort of looney then to put the city in some sort of panic or to chase ghost stories.
 @match minion
-The skeletal mage wore the pendent of the demilich around it's neck.  That's how I know Morkov is still here.
+The skeletal mage wore the pendant of the demilich around it's neck.  That's how I know Morkov is still here.
 @match capture|escape
 I found myself suddenly able to move again, so I ran as fast as I could but stumbled in to the river.. a city guard found me and thought I was some sort of drunk on a bender.  I was taken here.  When I told them what I saw.. well, you see where that has gotten me.
 @match ritual|dark
 The mage said they needed six more people for the dark ritual sacrifice to open the grand portal and allow undead to storm the city.  The mage then said, "Our master will then be proud.." while pointing to the pendent around it's neck.
+@match *
+We are doomed!  The city guards, the walls.. those won't protect us when the walking dead return!
 endmsg
 x 39
 y 15
