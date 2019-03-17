@@ -8,7 +8,7 @@ enter_x 9
 enter_y 10
 msg
 Created:  2003-04-27 Avion
-Modified: 2014-06-05 Kevin Zheng
+Modified: 2019-02-02 DraugTheWhopper
 endmsg
 end
 arch cobblestones2
@@ -627,11 +627,11 @@ stand_still 1
 arch NPCGift
 arch coffee
 name Eswald's superior coffee
-name_pl Eswald's superior coffees
+name_pl cups of Eswald's superior coffee
 end
 arch coffee
 name Eswald's inferior coffee
-name_pl Eswald's inferior coffees
+name_pl cups of Eswald's inferior coffee
 food 1
 arch quest_advance_apply
 name scorn/CoffeeGoose 0>10
