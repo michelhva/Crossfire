@@ -7,7 +7,7 @@ height 40
 enter_x 15
 enter_y 2
 msg
-Modified: 2008-10-25 Rick Tanner
+Modified: 2019-03-18 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -3248,8 +3248,8 @@ y 2
 end
 arch stair_down
 slaying floor_1
-hp 14
-sp 3
+hp 16
+sp 5
 x 15
 y 2
 end
