@@ -11,7 +11,7 @@ enter_x 15
 enter_y 6
 msg
 Created:  2009-01-22 Rick Tanner
-Modified: 2009-01-23 Rick Tanner
+Modified: 2019-03-25 Rick Tanner
 endmsg
 end
 arch dun33
@@ -117,83 +117,83 @@ arch dun33
 x 2
 y 1
 end
-arch woodfloor
+arch flagstone
 x 2
 y 2
 end
-arch bwall_3_2
+arch cwall_3_2
 x 2
 y 2
 end
-arch woodfloor
+arch flagstone
 x 2
 y 3
 end
-arch bwall_2_1_1
+arch cwall_2_1_1
 x 2
 y 3
 end
-arch woodfloor
+arch flagstone
 x 2
 y 4
 end
-arch bwall_2_1_1
+arch cwall_2_1_1
 x 2
 y 4
 end
-arch woodfloor
+arch flagstone
 x 2
 y 5
 end
-arch bwall_2_1_1
+arch cwall_2_1_1
 x 2
 y 5
 end
-arch woodfloor
+arch flagstone
 x 2
 y 6
 end
-arch bwall_2_1_1
+arch cwall_2_1_1
 x 2
 y 6
 end
-arch woodfloor
+arch flagstone
 x 2
 y 7
 end
-arch bwall_2_1_1
+arch cwall_2_1_1
 x 2
 y 7
 end
-arch woodfloor
+arch flagstone
 x 2
 y 8
 end
-arch bwall_2_1_1
+arch cwall_2_1_1
 x 2
 y 8
 end
-arch woodfloor
+arch flagstone
 x 2
 y 9
 end
-arch bwall_2_1_1
+arch cwall_2_1_1
 x 2
 y 9
 end
-arch woodfloor
+arch flagstone
 x 2
 y 10
 end
-arch bwall_2_1_1
+arch cwall_2_1_1
 x 2
 y 10
 end
-arch woodfloor
+arch flagstone
 x 2
 y 11
 end
-arch bwall_2_2_1
+arch cwall_2_2_1
 x 2
 y 11
 end
@@ -212,11 +212,11 @@ arch dun33
 x 3
 y 1
 end
-arch woodfloor
+arch flagstone
 x 3
 y 2
 end
-arch bwall_2_1_2
+arch cwall_2_1_2
 x 3
 y 2
 end
@@ -252,11 +252,11 @@ arch shop_special
 x 3
 y 10
 end
-arch woodfloor
+arch flagstone
 x 3
 y 11
 end
-arch bwall_2_1_2
+arch cwall_2_1_2
 x 3
 y 11
 end
@@ -275,11 +275,11 @@ arch dun33
 x 4
 y 1
 end
-arch woodfloor
+arch flagstone
 x 4
 y 2
 end
-arch bwall_2_1_2
+arch cwall_2_1_2
 x 4
 y 2
 end
@@ -315,11 +315,11 @@ arch shop_special
 x 4
 y 10
 end
-arch woodfloor
+arch flagstone
 x 4
 y 11
 end
-arch bwall_2_1_2
+arch cwall_2_1_2
 x 4
 y 11
 end
@@ -338,11 +338,11 @@ arch dun33
 x 5
 y 1
 end
-arch woodfloor
+arch flagstone
 x 5
 y 2
 end
-arch bwall_2_1_2
+arch cwall_2_1_2
 x 5
 y 2
 end
@@ -378,11 +378,11 @@ arch shop_special
 x 5
 y 10
 end
-arch woodfloor
+arch flagstone
 x 5
 y 11
 end
-arch bwall_2_1_2
+arch cwall_2_1_2
 x 5
 y 11
 end
@@ -401,11 +401,11 @@ arch dun33
 x 6
 y 1
 end
-arch woodfloor
+arch flagstone
 x 6
 y 2
 end
-arch bwall_2_1_2
+arch cwall_2_1_2
 x 6
 y 2
 end
@@ -441,11 +441,11 @@ arch shop_special
 x 6
 y 10
 end
-arch woodfloor
+arch flagstone
 x 6
 y 11
 end
-arch bwall_2_1_2
+arch cwall_2_1_2
 x 6
 y 11
 end
@@ -464,11 +464,11 @@ arch dun33
 x 7
 y 1
 end
-arch woodfloor
+arch flagstone
 x 7
 y 2
 end
-arch bwall_2_1_2
+arch cwall_2_1_2
 x 7
 y 2
 end
@@ -504,11 +504,11 @@ arch shop_special
 x 7
 y 10
 end
-arch woodfloor
+arch flagstone
 x 7
 y 11
 end
-arch bwall_2_1_2
+arch cwall_2_1_2
 x 7
 y 11
 end
@@ -527,11 +527,11 @@ arch dun33
 x 8
 y 1
 end
-arch woodfloor
+arch flagstone
 x 8
 y 2
 end
-arch bwall_2_1_2
+arch cwall_2_1_2
 x 8
 y 2
 end
@@ -567,11 +567,11 @@ arch shop_special
 x 8
 y 10
 end
-arch woodfloor
+arch flagstone
 x 8
 y 11
 end
-arch bwall_2_1_2
+arch cwall_2_1_2
 x 8
 y 11
 end
@@ -590,11 +590,11 @@ arch dun33
 x 9
 y 1
 end
-arch woodfloor
+arch flagstone
 x 9
 y 2
 end
-arch bwall_2_1_2
+arch cwall_2_1_2
 x 9
 y 2
 end
@@ -630,11 +630,11 @@ arch shop_special
 x 9
 y 10
 end
-arch woodfloor
+arch flagstone
 x 9
 y 11
 end
-arch bwall_2_1_2
+arch cwall_2_1_2
 x 9
 y 11
 end
@@ -653,11 +653,11 @@ arch dun33
 x 10
 y 1
 end
-arch woodfloor
+arch flagstone
 x 10
 y 2
 end
-arch bwall_2_1_2
+arch cwall_2_1_2
 x 10
 y 2
 end
@@ -693,11 +693,11 @@ arch shop_special
 x 10
 y 10
 end
-arch woodfloor
+arch flagstone
 x 10
 y 11
 end
-arch bwall_2_1_2
+arch cwall_2_1_2
 x 10
 y 11
 end
@@ -716,11 +716,11 @@ arch dun33
 x 11
 y 1
 end
-arch woodfloor
+arch flagstone
 x 11
 y 2
 end
-arch bwall_2_1_2
+arch cwall_2_1_2
 x 11
 y 2
 end
@@ -756,11 +756,11 @@ arch shop_special
 x 11
 y 10
 end
-arch woodfloor
+arch flagstone
 x 11
 y 11
 end
-arch bwall_2_1_2
+arch cwall_2_1_2
 x 11
 y 11
 end
@@ -779,11 +779,11 @@ arch dun33
 x 12
 y 1
 end
-arch woodfloor
+arch flagstone
 x 12
 y 2
 end
-arch bwall_2_1_2
+arch cwall_2_1_2
 x 12
 y 2
 end
@@ -819,11 +819,11 @@ arch shop_special
 x 12
 y 10
 end
-arch woodfloor
+arch flagstone
 x 12
 y 11
 end
-arch bwall_2_1_2
+arch cwall_2_1_2
 x 12
 y 11
 end
@@ -842,11 +842,11 @@ arch dun33
 x 13
 y 1
 end
-arch woodfloor
+arch flagstone
 x 13
 y 2
 end
-arch bwall_2_1_2
+arch cwall_2_1_2
 x 13
 y 2
 end
@@ -898,11 +898,11 @@ arch shop_special
 x 13
 y 10
 end
-arch woodfloor
+arch flagstone
 x 13
 y 11
 end
-arch bwall_2_1_2
+arch cwall_2_1_2
 x 13
 y 11
 end
@@ -921,11 +921,11 @@ arch dun33
 x 14
 y 1
 end
-arch woodfloor
+arch flagstone
 x 14
 y 2
 end
-arch bwall_2_1_2
+arch cwall_2_1_2
 x 14
 y 2
 end
@@ -983,11 +983,11 @@ arch shop_special
 x 14
 y 10
 end
-arch woodfloor
+arch flagstone
 x 14
 y 11
 end
-arch bwall_2_1_2
+arch cwall_2_1_2
 x 14
 y 11
 end
@@ -1006,11 +1006,11 @@ arch dun33
 x 15
 y 1
 end
-arch woodfloor
+arch flagstone
 x 15
 y 2
 end
-arch bwall_2_1_2
+arch cwall_2_1_2
 x 15
 y 2
 end
@@ -1054,11 +1054,11 @@ arch shop_special
 x 15
 y 10
 end
-arch woodfloor
+arch flagstone
 x 15
 y 11
 end
-arch bwall_2_1_2
+arch cwall_2_1_2
 x 15
 y 11
 end
@@ -1077,39 +1077,43 @@ arch dun33
 x 16
 y 1
 end
-arch woodfloor
+arch flagstone
 x 16
 y 2
 end
-arch bwall_3_4
+arch cwall_3_4
 x 16
 y 2
 end
-arch woodfloor
+arch flagstone
 x 16
 y 3
 end
-arch bwall_2_1_1
+arch cwall_2_1_1
 x 16
 y 3
 end
-arch woodfloor
+arch flagstone
 x 16
 y 4
 end
-arch bwall_2_1_1
+arch cwall_2_1_1
 x 16
 y 4
 end
-arch woodfloor
+arch flagstone
 x 16
 y 5
 end
-arch bwall_1_2
+arch cwall_1_2
 x 16
 y 5
 end
-arch woodfloor
+arch swall_1_3_half
+x 16
+y 5
+end
+arch flagstone
 x 16
 y 6
 end
@@ -1121,43 +1125,47 @@ x 16
 y 6
 move_on all
 end
-arch woodfloor
+arch flagstone
 x 16
 y 7
 end
-arch bwall_1_1
+arch cwall_1_1
 x 16
 y 7
 end
-arch woodfloor
+arch flagstone
 x 16
 y 8
 end
-arch bwall_2_1_1
+arch cwall_2_1_1
 x 16
 y 8
 end
-arch woodfloor
+arch swall_1_3_half
+x 16
+y 8
+end
+arch flagstone
 x 16
 y 9
 end
-arch bwall_2_1_1
+arch cwall_2_1_1
 x 16
 y 9
 end
-arch woodfloor
+arch flagstone
 x 16
 y 10
 end
-arch bwall_2_1_1
+arch cwall_2_1_1
 x 16
 y 10
 end
-arch woodfloor
+arch flagstone
 x 16
 y 11
 end
-arch bwall_3_1
+arch cwall_3_1
 x 16
 y 11
 end
