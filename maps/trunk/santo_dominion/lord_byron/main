@@ -8,7 +8,7 @@ height 60
 enter_x 25
 enter_y 58
 msg
-Modified: 2013-03-26 Rick Tanner
+Modified: 2019-03-24 Rick Tanner
 endmsg
 end
 arch sea
@@ -5829,6 +5829,10 @@ arch cwall_2_1_1
 x 20
 y 29
 end
+arch swall_1_3_half
+x 20
+y 29
+end
 arch flagstone
 x 20
 y 30
@@ -5855,6 +5859,10 @@ x 20
 y 32
 end
 arch cwall_1_1
+x 20
+y 32
+end
+arch swall_1_3_half
 x 20
 y 32
 end
@@ -5898,6 +5906,10 @@ arch cwall_1_2
 x 20
 y 37
 end
+arch swall_1_3_half
+x 20
+y 37
+end
 arch flagstone
 x 20
 y 38
@@ -5924,6 +5936,10 @@ x 20
 y 40
 end
 arch cwall_2_1_1
+x 20
+y 40
+end
+arch swall_1_3_half
 x 20
 y 40
 end
@@ -9030,6 +9046,10 @@ arch flagstone
 x 30
 y 29
 end
+arch swall_1_4_half
+x 30
+y 29
+end
 arch cwall_2_1_1
 x 30
 y 29
@@ -9056,6 +9076,10 @@ move_on all
 blocksview 1
 end
 arch flagstone
+x 30
+y 32
+end
+arch swall_1_4_half
 x 30
 y 32
 end
@@ -9091,6 +9115,10 @@ arch flagstone
 x 30
 y 36
 end
+arch swall_1_4_half
+x 30
+y 36
+end
 arch cwall_2_1_1
 x 30
 y 36
@@ -9117,6 +9145,10 @@ move_on all
 blocksview 1
 end
 arch flagstone
+x 30
+y 39
+end
+arch swall_1_4_half
 x 30
 y 39
 end
