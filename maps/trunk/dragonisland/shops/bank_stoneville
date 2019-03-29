@@ -5,10 +5,10 @@ region stoneville
 width 15
 height 15
 enter_x 10
-enter_y 11
+enter_y 10
 msg
 Created:  2012-09-03 Rick Tanner
-Modified: 2017-07-26 Kevin Zheng
+Modified: 2019-03-29 Rick Tanner
 endmsg
 end
 arch grass_only
@@ -1248,6 +1248,11 @@ arch dungeon_magic
 x 9
 y 11
 end
+arch button_small
+x 9
+y 11
+connected 10
+end
 arch woodlarge
 x 9
 y 11
@@ -1268,14 +1273,25 @@ arch dungeon_magic
 x 9
 y 13
 end
-arch grass_only
+arch invis_exit
+slaying /world/world_103_127
+hp 12
+sp 14
 x 9
 y 13
-move_block all
+end
+arch grass
+x 9
+y 13
+end
+arch dungeon_magic
+x 9
+y 14
 end
 arch grass_only
 x 9
 y 14
+move_block all
 end
 arch grass_only
 x 10
@@ -1403,6 +1419,11 @@ arch dungeon_magic
 x 10
 y 11
 end
+arch button_small
+x 10
+y 11
+connected 10
+end
 arch woodlarge
 x 10
 y 11
@@ -1411,30 +1432,43 @@ arch dungeon_magic
 x 10
 y 12
 end
+arch button_small
+x 10
+y 12
+connected 10
+end
 arch woodlarge
 x 10
 y 12
 end
-arch oakdoor_2
-slaying /world/world_103_127
-hp 12
-sp 14
+arch odoorn2_closed_1
 x 10
 y 12
-move_on all
+connected 10
 end
 arch dungeon_magic
 x 10
 y 13
 end
-arch grass_only
+arch invis_exit
+slaying /world/world_103_127
+hp 12
+sp 14
 x 10
 y 13
-move_block all
+end
+arch grass
+x 10
+y 13
+end
+arch dungeon_magic
+x 10
+y 14
 end
 arch grass_only
 x 10
 y 14
+move_block all
 end
 arch grass_only
 x 11
@@ -1563,6 +1597,11 @@ arch dungeon_magic
 x 11
 y 11
 end
+arch button_small
+x 11
+y 11
+connected 10
+end
 arch woodlarge
 x 11
 y 11
@@ -1583,14 +1622,25 @@ arch dungeon_magic
 x 11
 y 13
 end
-arch grass_only
+arch invis_exit
+slaying /world/world_103_127
+hp 12
+sp 14
 x 11
 y 13
-move_block all
+end
+arch grass
+x 11
+y 13
+end
+arch dungeon_magic
+x 11
+y 14
 end
 arch grass_only
 x 11
 y 14
+move_block all
 end
 arch grass_only
 x 12
@@ -1738,10 +1788,16 @@ end
 arch grass_only
 x 12
 y 13
+move_block all
+end
+arch dungeon_magic
+x 12
+y 14
 end
 arch grass_only
 x 12
 y 14
+move_block all
 end
 arch grass_only
 x 13
