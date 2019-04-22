@@ -7,7 +7,7 @@ type 101
 subtype 27
 level 4
 sp 5
-casting_time 10
+casting_time 5
 path_attuned 64
 skill summoning
 value 20
