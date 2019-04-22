@@ -20,17 +20,17 @@ Creates a number of pets that attack enemies of the caster.  They move and attac
 
 The type of monster varies by the caster's summoning skill level:
 - 1 bat;
-- 3 bird;
-- 4 bee;
-- 5 spider;
-- 6 killer bee;
-- 7 pixie;
-- 8 skeleton;
-- 9 stalker;
-- 11 devil;
-- 13 beholder;
-- 15 dark elf;
-- 17 skull;
+- 2 bird;
+- 3 bee;
+- 4 spider;
+- 5 killer bee;
+- 6 panther;
+- 7 wolf;
+- 8 stalker;
+- 10 devil;
+- 12 beholder;
+- 14 dark elf;
+- 16 skull;
 - 20 angel;
 - 25 vampire.
 
