@@ -54,9 +54,6 @@ public class FileCache implements ImageCache {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public ImageIcon load(@NotNull final Face face) {
@@ -91,9 +88,6 @@ public class FileCache implements ImageCache {
         return imageIcon.getIconWidth() <= 0 && imageIcon.getIconHeight() <= 0 ? null : imageIcon;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void save(@NotNull final Face face, @NotNull final ImageIcon imageIcon) {
         save(face.getFaceName(), face.getFaceChecksum(), imageIcon);

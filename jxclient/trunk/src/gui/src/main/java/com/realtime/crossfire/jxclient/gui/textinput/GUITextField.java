@@ -73,9 +73,6 @@ public class GUITextField extends GUIText {
         this.commandList = commandList;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected void execute(@NotNull final String command) {
         commandList.execute();

@@ -84,9 +84,6 @@ public abstract class AbstractOrientation implements Orientation {
     protected AbstractOrientation() {
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setHasNegativeImage(final boolean hasNegativeImage) {
         if (this.hasNegativeImage == hasNegativeImage) {
@@ -97,9 +94,6 @@ public abstract class AbstractOrientation implements Orientation {
         reCalculate();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean setValues(final int cur, final int min, final int max) {
         if (this.cur == cur && this.min == min && this.max == max) {
@@ -113,9 +107,6 @@ public abstract class AbstractOrientation implements Orientation {
         return true;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean setExtends(final int width, final int height) {
         if (this.width == width && this.height == height) {
@@ -128,49 +119,31 @@ public abstract class AbstractOrientation implements Orientation {
         return true;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public int getX() {
         return x;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public int getY() {
         return y;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public int getW() {
         return w;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public int getH() {
         return h;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean isNegativeImage() {
         return cur < min && hasNegativeImage;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean isValid() {
         return min < max;

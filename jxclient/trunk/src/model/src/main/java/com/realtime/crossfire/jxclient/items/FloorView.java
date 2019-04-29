@@ -154,17 +154,11 @@ public class FloorView extends AbstractItemView {
         addModifiedRange(0, Math.max(prevLastIndex, nextLastIndex));
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public int getSize() {
         return itemSet.getNumberOfItemsByLocation(currentFloor)+getOffset();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public CfItem getItem(final int index) {

@@ -53,17 +53,11 @@ public abstract class AbstractFacesManager implements FacesManager {
         this.faceCache = faceCache;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void addFacesManagerListener(@NotNull final FacesManagerListener facesManagerListener) {
         facesManagerListeners.add(facesManagerListener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void removeFacesManagerListener(@NotNull final FacesManagerListener facesManagerListener) {
         facesManagerListeners.remove(facesManagerListener);
@@ -80,36 +74,24 @@ public abstract class AbstractFacesManager implements FacesManager {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public ImageIcon getOriginalImageIcon(final int faceNum, @Nullable final boolean[] isUnknownImage) {
         return getFaceImages(faceNum, isUnknownImage).getOriginalImageIcon();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public ImageIcon getScaledImageIcon(final int faceNum, @Nullable final boolean[] isUnknownImage) {
         return getFaceImages(faceNum, isUnknownImage).getScaledImageIcon();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public ImageIcon getMagicMapImageIcon(final int faceNum, @Nullable final boolean[] isUnknownImage) {
         return getFaceImages(faceNum, isUnknownImage).getMagicMapImageIcon();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public Face getFace(final int faceNum) {
@@ -141,9 +123,6 @@ public abstract class AbstractFacesManager implements FacesManager {
         return faceCache.getFace(faceNum);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public Face getFace2(final int faceNum) {
@@ -155,9 +134,6 @@ public abstract class AbstractFacesManager implements FacesManager {
         return faceCache.getFace(faceNum);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void reset() {
         faceCache.reset();

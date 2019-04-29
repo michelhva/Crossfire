@@ -78,18 +78,12 @@ public abstract class AbstractCommand implements Command {
         crossfireServerConnection.drawInfo(message, color);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String getCommandName() {
         return commandName;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String toString() {

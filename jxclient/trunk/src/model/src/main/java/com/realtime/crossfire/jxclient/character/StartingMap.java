@@ -86,9 +86,6 @@ public class StartingMap {
         return description;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String toString() {

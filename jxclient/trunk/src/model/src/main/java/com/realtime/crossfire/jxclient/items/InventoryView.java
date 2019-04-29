@@ -189,17 +189,11 @@ public class InventoryView extends AbstractItemView {
         addModifiedRange(nextSize, prevSize-1);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public int getSize() {
         return items.size();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public CfItem getItem(final int index) {

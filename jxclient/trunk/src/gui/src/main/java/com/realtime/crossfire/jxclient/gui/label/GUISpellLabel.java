@@ -130,9 +130,6 @@ public class GUISpellLabel extends GUIHTMLLabel {
         this.currentSpellManager.addSpellListener(currentSpellManagerListener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void dispose() {
         super.dispose();

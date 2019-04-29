@@ -101,18 +101,12 @@ public class FacesQueue extends AbstractFaceQueue {
         faceQueue.addFaceQueueListener(askfaceFaceQueueListener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void reset() {
         fileCacheFaceQueue.reset();
         faceQueue.reset();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void loadFace(@NotNull final Face face) {
         fileCacheFaceQueue.loadFace(face);

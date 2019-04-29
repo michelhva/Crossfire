@@ -34,9 +34,6 @@ public class OrientationEW extends AbstractOrientation {
         reCalculate();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected void reCalculate() {
         final int width = getWidth();

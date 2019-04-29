@@ -233,18 +233,12 @@ public class GUILabelStats2 extends GUIOneLineLabel {
         setTooltipText(sb.toString());
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void dispose() {
         super.dispose();
         stats.removeCrossfireStatsListener(statsListener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     protected Color getTextColor() {

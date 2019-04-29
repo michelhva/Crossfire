@@ -124,9 +124,6 @@ public class DefaultFacesManager extends AbstractFacesManager {
         return unknownFaceImages;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void reset() {
         super.reset();

@@ -61,17 +61,11 @@ public class ScrollNextCommand implements GUICommand {
         this.apply = apply;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean canExecute() {
         return true;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void execute() {
         if (prevElement.isActive()) {

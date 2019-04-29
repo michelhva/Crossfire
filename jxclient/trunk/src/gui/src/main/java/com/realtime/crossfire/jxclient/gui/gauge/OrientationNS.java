@@ -34,9 +34,6 @@ public class OrientationNS extends AbstractOrientation {
         reCalculate();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected void reCalculate() {
         final int cur = getCur();

@@ -120,18 +120,12 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
         this.scrollable.addScrollableListener(this);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void dispose() {
         super.dispose();
         scrollable.removeScrollableListener(this);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setRange(final int valueMin, final int valueMax, final int sliderPos, final int sliderSize) {
         if (valueMax <= valueMin) {
@@ -147,16 +141,10 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
         setPosition(sliderPos);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected void activeChanged() {
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mousePressed(@NotNull final MouseEvent e) {
         super.mousePressed(e);
@@ -181,9 +169,6 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mouseReleased(@NotNull final MouseEvent e) {
         super.mouseReleased(e);
@@ -200,9 +185,6 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mouseDragged(@NotNull final MouseEvent e) {
         super.mouseDragged(e);
@@ -211,9 +193,6 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void execute() {
         // ignore
@@ -262,9 +241,6 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
         return (int)Math.round(sliderPos*(double)(getHeight()-sh)/(valueSize-sliderSize));
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void paintComponent(@NotNull final Graphics g) {
         super.paintComponent(g);
@@ -277,18 +253,12 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
         g.fillRect(0, sy, getWidth(), sh);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public Dimension getPreferredSize() {
         return new Dimension(16, 64);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public Dimension getMinimumSize() {

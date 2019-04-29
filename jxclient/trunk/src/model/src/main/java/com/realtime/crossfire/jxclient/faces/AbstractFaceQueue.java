@@ -38,17 +38,11 @@ public abstract class AbstractFaceQueue implements FaceQueue {
     @NotNull
     private final EventListenerList2<FaceQueueListener> faceQueueListeners = new EventListenerList2<>();
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void addFaceQueueListener(@NotNull final FaceQueueListener faceQueueListener) {
         faceQueueListeners.add(faceQueueListener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void removeFaceQueueListener(@NotNull final FaceQueueListener faceQueueListener) {
         faceQueueListeners.remove(faceQueueListener);

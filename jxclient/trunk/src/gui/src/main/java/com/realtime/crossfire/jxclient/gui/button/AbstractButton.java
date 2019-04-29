@@ -96,9 +96,6 @@ public abstract class AbstractButton extends ActivatableGUIElement implements Ke
         timer.setDelay(TIMEOUT_SECOND);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mouseClicked(@NotNull final MouseEvent e) {
         super.mouseClicked(e);
@@ -119,9 +116,6 @@ public abstract class AbstractButton extends ActivatableGUIElement implements Ke
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mouseReleased(@NotNull final MouseEvent e) {
         super.mouseReleased(e);
@@ -142,9 +136,6 @@ public abstract class AbstractButton extends ActivatableGUIElement implements Ke
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mousePressed(@NotNull final MouseEvent e) {
         super.mousePressed(e);
@@ -166,9 +157,6 @@ public abstract class AbstractButton extends ActivatableGUIElement implements Ke
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mouseExited(@NotNull final MouseEvent e) {
         super.mouseExited(e);
@@ -178,26 +166,17 @@ public abstract class AbstractButton extends ActivatableGUIElement implements Ke
         setActive(false);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void execute() {
         commandList.execute();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public Dimension getPreferredSize() {
         return getMinimumSizeInt();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public Dimension getMinimumSize() {
@@ -211,9 +190,6 @@ public abstract class AbstractButton extends ActivatableGUIElement implements Ke
     @NotNull
     protected abstract Dimension getMinimumSizeInt();
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean keyPressed(@NotNull final KeyEvent2 e) {
         switch (e.getKeyCode()) {

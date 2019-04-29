@@ -141,9 +141,6 @@ public abstract class AbstractLabel extends AbstractGUIElement {
         return textColor;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void paintComponent(@NotNull final Graphics g) {
         super.paintComponent(g);

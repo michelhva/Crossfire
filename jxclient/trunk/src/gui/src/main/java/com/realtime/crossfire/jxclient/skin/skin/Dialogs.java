@@ -120,9 +120,6 @@ public class Dialogs implements Iterable<Gui> {
         return result;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public Iterator<Gui> iterator() {

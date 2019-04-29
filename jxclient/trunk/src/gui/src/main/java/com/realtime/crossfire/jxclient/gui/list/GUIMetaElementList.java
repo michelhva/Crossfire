@@ -153,9 +153,6 @@ public class GUIMetaElementList extends GUIList<GUIMetaElement> {
         rebuildList();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void dispose() {
         super.dispose();
@@ -187,16 +184,10 @@ public class GUIMetaElementList extends GUIList<GUIMetaElement> {
         setChanged();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected void activeChanged() {
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected void selectionChanged(final int selectedIndex) {
         if (selectedIndex == -1) {

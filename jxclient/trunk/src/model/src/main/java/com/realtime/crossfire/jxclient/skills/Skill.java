@@ -122,9 +122,6 @@ public class Skill {
         return experience != 0 || level != 0;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String toString() {

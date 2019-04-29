@@ -149,18 +149,12 @@ public class GUIItemInventory extends GUIItemItem {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void dispose() {
         super.dispose();
         setIndex(-1);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean canScroll(final int distance) {
         if (distance < 0) {
@@ -176,9 +170,6 @@ public class GUIItemInventory extends GUIItemItem {
         return false;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void scroll(final int distance) {
         synchronized (sync) {
@@ -188,17 +179,11 @@ public class GUIItemInventory extends GUIItemItem {
         updateTooltipText();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void resetScroll() {
         setIndex(defaultIndex);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void button1Clicked(final int modifiers) {
         final CfItem item = getItem();
@@ -225,9 +210,6 @@ public class GUIItemInventory extends GUIItemItem {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void button2Clicked(final int modifiers) {
         final CfItem item = getItem();
@@ -246,9 +228,6 @@ public class GUIItemInventory extends GUIItemItem {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void button3Clicked(final int modifiers) {
         final CfItem item = getItem();
@@ -272,9 +251,6 @@ public class GUIItemInventory extends GUIItemItem {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setSelected(final boolean selected) {
         if (this.selected == selected) {
@@ -285,17 +261,11 @@ public class GUIItemInventory extends GUIItemItem {
         setChanged();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected boolean isSelected() {
         return selected || isActive();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public int getIndex() {
         synchronized (sync) {
@@ -325,9 +295,6 @@ public class GUIItemInventory extends GUIItemItem {
         setItem(inventoryView.getItem(this.index));
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setIndexNoListeners(final int index) {
         synchronized (sync) {
@@ -337,18 +304,12 @@ public class GUIItemInventory extends GUIItemItem {
         setItemNoListeners(inventoryView.getItem(this.index));
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     protected Image getFace(@NotNull final CfItem item) {
         return facesManager.getOriginalImageIcon(item.getFace().getFaceNum(), null).getImage();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setChanged() {
         super.setChanged();

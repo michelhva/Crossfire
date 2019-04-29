@@ -53,9 +53,6 @@ public class CommandExecutorImpl implements CommandExecutor {
         this.commands = commands;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void executeCommand(@NotNull final CharSequence commandLine) {
         final Iterable<CommandExec> commandList = CommandExpander.expand(commandLine, commands);

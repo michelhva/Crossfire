@@ -130,9 +130,6 @@ public class ClassRaceInfo {
         return Collections.unmodifiableList(choices);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String toString() {

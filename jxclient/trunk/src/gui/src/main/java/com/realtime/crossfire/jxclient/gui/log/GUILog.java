@@ -136,18 +136,12 @@ public abstract class GUILog extends AbstractGUIElement implements GUIScrollable
         renderStateManager.setHeight(getHeight());
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void dispose() {
         super.dispose();
         renderStateManager.dispose();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void paintComponent(@NotNull final Graphics g) {
         super.paintComponent(g);
@@ -182,9 +176,6 @@ public abstract class GUILog extends AbstractGUIElement implements GUIScrollable
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean canScroll(final int distance) { // XXX: implement |distance|>1
         if (distance < 0) {
@@ -197,9 +188,6 @@ public abstract class GUILog extends AbstractGUIElement implements GUIScrollable
         return false;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void scroll(final int distance) {
         if (distance < 0) {
@@ -211,33 +199,21 @@ public abstract class GUILog extends AbstractGUIElement implements GUIScrollable
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void resetScroll() {
         renderStateManager.resetScroll();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void scrollTo(final int pos) {
         renderStateManager.scrollTo(pos);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void addScrollableListener(@NotNull final ScrollableListener listener) {
         listeners.add(listener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void removeScrollableListener(@NotNull final ScrollableListener listener) {
         listeners.remove(listener);
@@ -252,9 +228,6 @@ public abstract class GUILog extends AbstractGUIElement implements GUIScrollable
         return buffer;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setBounds(final int x, final int y, final int width, final int height) {
         super.setBounds(x, y, width, height);
@@ -262,18 +235,12 @@ public abstract class GUILog extends AbstractGUIElement implements GUIScrollable
         renderStateManager.setHeight(height);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public Dimension getPreferredSize() {
         return new Dimension(600, 150); // XXX
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public Dimension getMinimumSize() {

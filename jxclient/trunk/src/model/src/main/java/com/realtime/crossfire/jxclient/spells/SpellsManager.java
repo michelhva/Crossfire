@@ -324,9 +324,6 @@ public class SpellsManager implements Iterable<Spell> {
         return spell;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public Iterator<Spell> iterator() {

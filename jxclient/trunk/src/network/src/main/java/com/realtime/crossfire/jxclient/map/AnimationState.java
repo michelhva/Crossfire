@@ -158,9 +158,6 @@ public class AnimationState implements Iterable<Location> {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public Iterator<Location> iterator() {

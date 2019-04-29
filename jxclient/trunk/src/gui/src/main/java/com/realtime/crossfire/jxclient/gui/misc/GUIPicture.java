@@ -70,36 +70,24 @@ public class GUIPicture extends AbstractGUIElement {
         preferredSize = new Dimension(preferredWidth, preferredHeight);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void paintComponent(@NotNull final Graphics g) {
         super.paintComponent(g);
         g.drawImage(image, 0, 0, null);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public Dimension getPreferredSize() {
         return new Dimension(preferredSize);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public Dimension getMinimumSize() {
         return new Dimension(preferredSize);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public Dimension getMaximumSize() {

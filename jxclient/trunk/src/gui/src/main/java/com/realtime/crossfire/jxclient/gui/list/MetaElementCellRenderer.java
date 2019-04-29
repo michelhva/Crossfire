@@ -56,9 +56,6 @@ public class MetaElementCellRenderer extends JPanel implements GUIListCellRender
         add(template, BorderLayout.CENTER);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public Component getListCellRendererComponent(@NotNull final JList<? extends GUIMetaElement> list, @NotNull final GUIMetaElement value, final int index, final boolean isSelected, final boolean cellHasFocus) {

@@ -81,9 +81,6 @@ public class GUILabelFailure extends GUIMultiLineLabel {
         this.crossfireServerConnection.addCrossfireFailureListener(crossfireFailureListener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void dispose() {
         super.dispose();

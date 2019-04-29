@@ -52,25 +52,16 @@ public class PickupOption extends CheckBoxOption {
         this.option = option;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected void execute(final boolean checked) {
         pickup.setPickupMode(option, checked);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean isDefaultChecked() {
         return (Pickup.DEFAULT_PICKUP_MODE&option) == option;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean inhibitSave() {
         return true;

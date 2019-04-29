@@ -62,18 +62,12 @@ public class EventListenerList2<T extends EventListener> implements Iterable<T>,
         eventListenerList.remove(listener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String toString() {
         return eventListenerList.toString();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public Iterator<T> iterator() {

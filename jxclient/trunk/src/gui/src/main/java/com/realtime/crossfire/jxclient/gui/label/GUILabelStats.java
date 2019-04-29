@@ -168,9 +168,6 @@ public class GUILabelStats extends GUIOneLineLabel {
         this.stats.addCrossfireStatsListener(statsListener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void dispose() {
         super.dispose();

@@ -62,25 +62,16 @@ public class ExecuteCommandCommand implements GUICommand2 {
         this.macros = macros;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean canExecute() {
         return true;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void execute() {
         commandExecutor.executeCommand(macros.expandMacros(command));
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String getCommandString() {

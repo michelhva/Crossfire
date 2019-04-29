@@ -205,9 +205,6 @@ public class GUIItemShortcut extends GUIItem {
         updateTooltipText();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void dispose() {
         super.dispose();
@@ -238,9 +235,6 @@ public class GUIItemShortcut extends GUIItem {
         updateTooltipText();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void button1Clicked(final int modifiers) {
         switch (modifiers&Modifiers.MASK) {
@@ -259,9 +253,6 @@ public class GUIItemShortcut extends GUIItem {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void button2Clicked(final int modifiers) {
         switch (modifiers&Modifiers.MASK) {
@@ -274,9 +265,6 @@ public class GUIItemShortcut extends GUIItem {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void button3Clicked(final int modifiers) {
         switch (modifiers&Modifiers.MASK) {
@@ -291,9 +279,6 @@ public class GUIItemShortcut extends GUIItem {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void paintComponent(@NotNull final Graphics g) {
         super.paintComponent(g);
@@ -334,18 +319,12 @@ public class GUIItemShortcut extends GUIItem {
         g.drawString("F"+(index+1), 1, 1+font.getSize()); // XXX: define in skin
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public Dimension getPreferredSize() {
         return getMinimumSizeInt();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public Dimension getMinimumSize() {
@@ -361,24 +340,15 @@ public class GUIItemShortcut extends GUIItem {
         return new Dimension(32, 32);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean canScroll(final int distance) {
         return false;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void scroll(final int distance) {
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void resetScroll() {
     }

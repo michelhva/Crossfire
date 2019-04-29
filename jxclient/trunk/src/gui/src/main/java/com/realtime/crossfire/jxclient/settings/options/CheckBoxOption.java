@@ -84,9 +84,6 @@ public abstract class CheckBoxOption extends Option {
      */
     protected abstract void execute(final boolean checked);
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected void fireStateChangedEvent() {
         execute(checked);

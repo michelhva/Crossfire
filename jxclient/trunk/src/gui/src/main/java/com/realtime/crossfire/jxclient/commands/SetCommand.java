@@ -50,17 +50,11 @@ public class SetCommand extends AbstractCommand {
         this.optionManager = optionManager;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean allArguments() {
         return false;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void execute(@NotNull final String args) {
         final String[] tmp = Patterns.PATTERN_WHITESPACE.split(args, 2);

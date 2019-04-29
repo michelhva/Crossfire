@@ -89,9 +89,6 @@ public class Choice {
         return Collections.unmodifiableMap(choices);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String toString() {

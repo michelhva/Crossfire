@@ -49,17 +49,11 @@ public class ExecCommand extends AbstractCommand {
         this.commandCallback = commandCallback;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean allArguments() {
         return false;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void execute(@NotNull final String args) {
         if (args.isEmpty()) {

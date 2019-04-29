@@ -84,9 +84,6 @@ public class GUIDupTextGauge extends GUIDupGauge {
         this.font = font;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void paintComponent(@NotNull final Graphics g) {
         super.paintComponent(g);
@@ -99,9 +96,6 @@ public class GUIDupTextGauge extends GUIDupGauge {
         g2.drawString(text, (int)Math.round((getWidth()-rectangle.getWidth())/2), (int)Math.round(getHeight()-rectangle.getMaxY()-rectangle.getMinY())/2);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setValues(final int curValue, final int minValue, final int maxValue, @NotNull final String labelText, @NotNull final String tooltipText) {
         super.setValues(curValue, minValue, maxValue, labelText, tooltipText);

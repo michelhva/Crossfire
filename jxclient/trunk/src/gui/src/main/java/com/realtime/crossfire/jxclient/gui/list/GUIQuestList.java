@@ -110,9 +110,6 @@ public class GUIQuestList extends GUIItemList<GUIItemQuest> {
         this.facesManager = facesManager;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected void updateTooltip(final int index, final int x, final int y, final int w, final int h) {
         final Quest quest = questsManager.getQuest(index);
@@ -124,9 +121,6 @@ public class GUIQuestList extends GUIItemList<GUIItemQuest> {
         setTooltipText(quest.getTooltipText());
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     protected GUIItemQuest newItem(final int index) {

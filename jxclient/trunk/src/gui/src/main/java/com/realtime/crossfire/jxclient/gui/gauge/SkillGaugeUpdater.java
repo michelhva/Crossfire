@@ -73,9 +73,6 @@ public class SkillGaugeUpdater extends GaugeUpdater {
         this.skill.addSkillListener(skillListener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void dispose() {
         skill.removeSkillListener(skillListener);

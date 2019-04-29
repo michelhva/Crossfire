@@ -232,26 +232,17 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
         osw = new OutputStreamWriter(process.getOutputStream());
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public int getScriptId() {
         return scriptId;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String getFilename() {
         return filename;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void run() {
         @Nullable String result = "unexpected";
@@ -290,9 +281,6 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void commandSent(@NotNull final String cmd) {
         if (killed) {
@@ -382,9 +370,6 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
         commandSent(sb.toString());
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String toString() {
@@ -718,26 +703,17 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
         crossfireServerConnection.drawInfo(string, CrossfireDrawinfoListener.NDI_RED);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void addScriptProcessListener(@NotNull final ScriptProcessListener scriptProcessListener) {
         scriptProcessListeners.add(scriptProcessListener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void killScript() {
         killed = true;
         process.destroy();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public int compareTo(@NotNull final ScriptProcess o) {
         if (scriptId < o.getScriptId()) {
@@ -749,17 +725,11 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
         return 0;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public int hashCode() {
         return scriptId;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean equals(@Nullable final Object obj) {
         if (!(obj instanceof ScriptProcess)) {

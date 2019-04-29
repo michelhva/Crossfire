@@ -105,9 +105,6 @@ public class ActiveSkillGaugeUpdater extends GaugeUpdater {
         this.stats.addCrossfireStatsListener(statsListener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void dispose() {
         stats.removeCrossfireStatsListener(statsListener);

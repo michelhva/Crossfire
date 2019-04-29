@@ -34,9 +34,6 @@ public class OrientationSN extends AbstractOrientation {
         reCalculate();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected void reCalculate() {
         final int height = getHeight();

@@ -34,18 +34,12 @@ import org.junit.Assert;
  */
 public class TestScriptProcess implements ScriptProcess {
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public int getScriptId() {
         Assert.fail();
         throw new AssertionError();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String getFilename() {
@@ -53,50 +47,32 @@ public class TestScriptProcess implements ScriptProcess {
         throw new AssertionError();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void commandSent(@NotNull final String cmd) {
         Assert.fail();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void addScriptProcessListener(@NotNull final ScriptProcessListener scriptProcessListener) {
         Assert.fail();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void killScript() {
         Assert.fail();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public int compareTo(@NotNull final ScriptProcess o) {
         Assert.fail();
         throw new AssertionError();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public int hashCode() {
         return 0;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean equals(@Nullable final Object obj) {
         return obj != null && obj.getClass() == getClass();

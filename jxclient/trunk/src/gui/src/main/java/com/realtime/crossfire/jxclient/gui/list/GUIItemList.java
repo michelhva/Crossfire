@@ -97,9 +97,6 @@ public abstract class GUIItemList<T extends GUIItemItem> extends GUIList<T> {
         rebuildList(null);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void dispose() {
         super.dispose();
@@ -156,9 +153,6 @@ public abstract class GUIItemList<T extends GUIItemItem> extends GUIList<T> {
         getElement(index).setChanged();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected void selectionChanged(final int selectedIndex) {
         if (currentItem != null) {
@@ -180,25 +174,16 @@ public abstract class GUIItemList<T extends GUIItemItem> extends GUIList<T> {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected void updateTooltip(final int index, final int x, final int y, final int w, final int h) {
         final CfItem item = itemView.getItem(index);
         setTooltipText(item == null ? null : item.getTooltipText(), x, y, w, h);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected void activeChanged() {
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mouseClicked(@NotNull final MouseEvent e) {
         super.mouseClicked(e);

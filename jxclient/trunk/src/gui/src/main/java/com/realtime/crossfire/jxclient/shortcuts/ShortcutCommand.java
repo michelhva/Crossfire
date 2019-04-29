@@ -62,41 +62,26 @@ public class ShortcutCommand extends Shortcut {
         return command;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void dispose() {
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void execute() {
         commandQueue.sendNcom(false, command);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String getTooltipText() {
         return command;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void visit(@NotNull final ShortcutVisitor visitor) {
         visitor.visit(this);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean displaysFace(final Face face) {
         return false;

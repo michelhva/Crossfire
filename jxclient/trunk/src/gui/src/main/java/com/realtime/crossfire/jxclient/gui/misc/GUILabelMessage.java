@@ -122,9 +122,6 @@ public class GUILabelMessage extends GUIMultiLineLabel {
         this.crossfireServerConnection.addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void dispose() {
         super.dispose();
@@ -132,9 +129,6 @@ public class GUILabelMessage extends GUIMultiLineLabel {
         crossfireServerConnection.removeCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setText(@NotNull final String text) {
         final StringBuilder sb = new StringBuilder();

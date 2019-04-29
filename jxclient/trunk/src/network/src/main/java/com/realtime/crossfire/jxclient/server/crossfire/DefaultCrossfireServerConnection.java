@@ -643,9 +643,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         numLookObjects = new NumLookObjects(this, debugProtocol);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setCrossfireUpdateMapListener(@Nullable final CrossfireUpdateMapListener listener) {
         if (listener != null && crossfireUpdateMapListener != null) {
@@ -654,17 +651,11 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         crossfireUpdateMapListener = listener;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void start() {
         defaultServerConnection.start();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void stop() throws InterruptedException {
         defaultServerConnection.stop();
@@ -3708,9 +3699,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         notifyPacketWatcherListenersAscii(packet, args);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void sendAccountLogin(@NotNull final String login, @NotNull final String password) {
         clearFailure();
@@ -3733,9 +3721,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
 
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void sendAddme() {
         if (debugProtocol != null) {
@@ -3744,9 +3729,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         defaultServerConnection.writePacket(ADDME_PREFIX, ADDME_PREFIX.length);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void sendApply(final int tag) {
         if (debugProtocol != null) {
@@ -3761,9 +3743,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void sendAskface(final int faceNum) {
         if (debugProtocol != null) {
@@ -3778,9 +3757,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void sendExamine(final int tag) {
         if (debugProtocol != null) {
@@ -3795,9 +3771,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void sendLock(final boolean val, final int tag) {
         if (debugProtocol != null) {
@@ -3813,9 +3786,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void sendLookat(final int dx, final int dy) {
         if (debugProtocol != null) {
@@ -3832,9 +3802,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void sendMark(final int tag) {
         if (debugProtocol != null) {
@@ -3849,9 +3816,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void sendMove(final int to, final int tag, final int nrof) {
         if (debugProtocol != null) {
@@ -3870,9 +3834,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public int sendNcom(final int repeat, @NotNull final String command) {
         if (debugProtocol != null) {
@@ -3892,9 +3853,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         return thisPacket;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void sendReply(@NotNull final String text) {
         if (debugProtocol != null) {
@@ -3910,9 +3868,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         fireReplySent();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void sendRequestinfo(@NotNull final String infoType) {
         if (debugProtocol != null) {
@@ -3928,9 +3883,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void sendSetup(@NotNull final String... options) {
         if (debugProtocol != null) {
@@ -3952,9 +3904,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void sendToggleextendedtext(@NotNull final int... types) {
         if (types.length <= 0) {
@@ -3976,9 +3925,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void sendVersion(final int csval, final int scval, @NotNull final String vinfo) {
         if (debugProtocol != null) {
@@ -4029,9 +3975,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         return digit;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setPreferredMapSize(final int preferredMapWidth, final int preferredMapHeight) {
         final int preferredMapWidth2 = Math.max(1, preferredMapWidth|1);
@@ -4070,26 +4013,17 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setPreferredNumLookObjects(final int preferredNumLookObjects) {
         numLookObjects.setPreferredNumLookObjects(preferredNumLookObjects);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public String getAccountName() {
         return accountName;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void connect(@NotNull final String hostname, final int port) {
         accountName = null;
@@ -4099,25 +4033,16 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         defaultServerConnection.connect(hostname, port);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void disconnect(@NotNull final String reason) {
         defaultServerConnection.disconnect(reason);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void addClientSocketListener(@NotNull final ClientSocketListener clientSocketListener) {
         defaultServerConnection.addClientSocketListener(clientSocketListener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void removeClientSocketListener(@NotNull final ClientSocketListener clientSocketListener) {
         defaultServerConnection.removeClientSocketListener(clientSocketListener);
@@ -4140,9 +4065,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         numLookObjects.setClientSocketState(clientSocketState);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void sendAccountPlay(@NotNull final String name) {
         clearFailure();
@@ -4163,9 +4085,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void sendAccountLink(final int force, @NotNull final String login, @NotNull final String password) {
         clearFailure();
@@ -4187,9 +4106,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void sendAccountCreate(@NotNull final String login, @NotNull final String password) {
         clearFailure();
@@ -4211,9 +4127,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void sendAccountCharacterCreate(@NotNull final String login, @NotNull final String password) {
         clearFailure();
@@ -4234,9 +4147,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void sendAccountPassword(@NotNull final String currentPassword, @NotNull final String newPassword) {
         clearFailure();

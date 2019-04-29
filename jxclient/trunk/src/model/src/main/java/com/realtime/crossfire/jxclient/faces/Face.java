@@ -133,9 +133,6 @@ public class Face {
         return faceChecksum;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String toString() {
@@ -158,17 +155,11 @@ public class Face {
         return tileHeight;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public int hashCode() {
         return faceChecksum;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean equals(@Nullable final Object obj) {
         if (obj == null) {

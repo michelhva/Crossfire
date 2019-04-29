@@ -59,17 +59,11 @@ public class BindCommand extends AbstractCommand {
         this.guiCommandFactory = guiCommandFactory;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean allArguments() {
         return true;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void execute(@NotNull final String args) {
         final String commandList;

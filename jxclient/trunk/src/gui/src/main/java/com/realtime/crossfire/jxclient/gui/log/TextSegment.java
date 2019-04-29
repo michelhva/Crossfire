@@ -130,9 +130,6 @@ public class TextSegment extends AbstractSegment {
         throw new AssertionError();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void draw(@NotNull final Graphics g, final int y, @NotNull final Fonts fonts) {
         g.setColor(color);
@@ -145,18 +142,12 @@ public class TextSegment extends AbstractSegment {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void updateAttributes(@NotNull final Fonts fonts, @NotNull final FontRenderContext context) {
         final LineMetrics lineMetrics = getFont(fonts).getLineMetrics(text, context);
         underlineOffset = Math.round(lineMetrics.getUnderlineOffset());
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public RectangularShape getSize(@NotNull final Fonts fonts, @NotNull final FontRenderContext context) {
@@ -176,9 +167,6 @@ public class TextSegment extends AbstractSegment {
         return this.bold == bold && this.italic == italic && this.underline == underline && this.font == font && this.color == color;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String toString() {

@@ -64,17 +64,11 @@ public class ScreenshotCommand extends AbstractCommand {
         this.screenshotFiles = screenshotFiles;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean allArguments() {
         return true;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void execute(@NotNull final String args) {
         final File file;

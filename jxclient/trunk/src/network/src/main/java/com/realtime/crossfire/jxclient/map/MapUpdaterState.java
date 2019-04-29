@@ -202,18 +202,12 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public Object mapBegin() {
         return sync;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mapClear(final int x, final int y) {
         assert Thread.holdsLock(sync);
@@ -224,9 +218,6 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mapFace(@NotNull final Location location, final int faceNum) {
         mapFace(location, faceNum, true);
@@ -258,9 +249,6 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mapAnimation(@NotNull final Location location, final int animationNum, final int animationType) {
         assert Thread.holdsLock(sync);
@@ -276,18 +264,12 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
         visibleAnimations.add(this, location, animation, animationType);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mapAnimationSpeed(@NotNull final Location location, final int animationSpeed) {
         assert Thread.holdsLock(sync);
         visibleAnimations.updateSpeed(this, location, animationSpeed);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mapSmooth(@NotNull final Location location, final int smooth) {
         assert Thread.holdsLock(sync);
@@ -296,9 +278,6 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mapDarkness(final int x, final int y, final int darkness) {
         assert Thread.holdsLock(sync);
@@ -307,9 +286,6 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void magicMap(final int x, final int y, final byte[][] data) {
         assert Thread.holdsLock(sync);
@@ -318,9 +294,6 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mapEnd() {
         mapEnd(true);
@@ -346,9 +319,6 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mapScroll(final int dx, final int dy) {
         assert Thread.holdsLock(sync);
@@ -371,9 +341,6 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void faceUpdated(@NotNull final Face face) {
         synchronized (mapBegin()) {
@@ -385,9 +352,6 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void newMap(final int mapWidth, final int mapHeight) {
         synchronized (sync) {
@@ -438,17 +402,11 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
         return mapHeight;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void addAnimation(final int animation, final int flags, @NotNull final int[] faces) {
         animations.addAnimation(animation, flags, faces);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void tick(final int tickNo) {
         synchronized (sync) {

@@ -486,9 +486,6 @@ public class Gui extends JComponent {
         this.forcedActive = forcedActive;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String toString() {

@@ -259,9 +259,6 @@ public class Shortcuts implements Iterable<Shortcut> {
         this.file = file;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public Iterator<Shortcut> iterator() {
         return shortcuts.iterator();

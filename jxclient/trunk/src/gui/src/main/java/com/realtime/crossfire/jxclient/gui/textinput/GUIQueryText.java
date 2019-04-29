@@ -72,9 +72,6 @@ public class GUIQueryText extends GUIText {
         this.server = server;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected void execute(@NotNull final String command) {
         server.sendReply(command);

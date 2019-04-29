@@ -52,9 +52,6 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
         super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mouseClicked(@NotNull final MouseEvent e) {
         super.mouseClicked(e);
@@ -74,9 +71,6 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void execute() {
         // ignore
@@ -100,17 +94,11 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
      */
     public abstract void button3Clicked(final int modifiers);
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void activeChanged() {
         setChanged();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setVisible(final boolean aFlag) {
         super.setVisible(aFlag);

@@ -217,9 +217,6 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         return text.toString();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void paintComponent(@NotNull final Graphics g) {
         super.paintComponent(g);
@@ -249,27 +246,18 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         g2.drawString(tmp, margin, y);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public Dimension getPreferredSize() {
         return new Dimension(preferredSize);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public Dimension getMinimumSize() {
         return new Dimension(preferredSize);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public Dimension getMaximumSize() {
@@ -295,9 +283,6 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         return hiddenText+" ";
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mouseClicked(@NotNull final MouseEvent e) {
         super.mouseClicked(e);
@@ -316,17 +301,11 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void execute() {
         // ignore
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected void activeChanged() {
         setChanged();
@@ -469,9 +448,6 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         return true;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean keyReleased(@NotNull final KeyEvent e) {
         return false;

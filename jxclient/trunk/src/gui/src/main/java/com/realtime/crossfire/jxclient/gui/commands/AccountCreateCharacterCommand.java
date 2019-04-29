@@ -57,17 +57,11 @@ public class AccountCreateCharacterCommand implements GUICommand {
         element = button;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean canExecute() {
         return true;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void execute() {
         final Gui gui = GuiUtils.getGui(element);

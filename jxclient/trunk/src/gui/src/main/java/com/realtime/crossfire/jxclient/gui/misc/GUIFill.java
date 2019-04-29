@@ -61,9 +61,6 @@ public class GUIFill extends AbstractGUIElement {
         this.color = color;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void paintComponent(@NotNull final Graphics g) {
         super.paintComponent(g);

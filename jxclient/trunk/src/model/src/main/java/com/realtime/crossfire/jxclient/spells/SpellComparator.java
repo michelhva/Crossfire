@@ -37,9 +37,6 @@ public class SpellComparator implements Comparator<Spell>, Serializable {
      */
     private static final long serialVersionUID = 1;
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public int compare(@NotNull final Spell o1, @NotNull final Spell o2) {
         final int path1 = o1.getPath();

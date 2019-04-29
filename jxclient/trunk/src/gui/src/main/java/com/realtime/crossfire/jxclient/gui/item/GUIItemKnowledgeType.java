@@ -135,9 +135,6 @@ public class GUIItemKnowledgeType extends GUIItemItem {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean canScroll(final int distance) {
         if (distance < 0) {
@@ -150,35 +147,23 @@ public class GUIItemKnowledgeType extends GUIItemItem {
         return false;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void scroll(final int distance) {
         setIndex(index+distance);
         setChanged();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void resetScroll() {
         setIndex(defaultIndex);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public Dimension getPreferredSize() {
         return getMinimumSizeInt();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public Dimension getMinimumSize() {
@@ -218,9 +203,6 @@ public class GUIItemKnowledgeType extends GUIItemItem {
         setSkill();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     protected Image getFace(@NotNull final CfItem item) {
@@ -230,9 +212,6 @@ public class GUIItemKnowledgeType extends GUIItemItem {
         return facesManager.getOriginalImageIcon(item.getFace().getFaceNum(), null).getImage();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setSelected(final boolean selected) {
         if (this.selected == selected) {
@@ -243,17 +222,11 @@ public class GUIItemKnowledgeType extends GUIItemItem {
         setChanged();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected boolean isSelected() {
         return selected || isActive();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public int getIndex() {
         synchronized (sync) {
@@ -261,9 +234,6 @@ public class GUIItemKnowledgeType extends GUIItemItem {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setIndexNoListeners(final int index) {
         synchronized (sync) {
@@ -273,23 +243,14 @@ public class GUIItemKnowledgeType extends GUIItemItem {
         setItemNoListeners(itemView.getItem(this.index));
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void button1Clicked(final int modifiers) {
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void button2Clicked(final int modifiers) {
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void button3Clicked(final int modifiers) {
     }

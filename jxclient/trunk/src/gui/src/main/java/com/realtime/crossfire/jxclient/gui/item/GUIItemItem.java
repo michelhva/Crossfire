@@ -105,9 +105,6 @@ public abstract class GUIItemItem extends GUIItem {
         this.facesManager.addFacesManagerListener(facesManagerListener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void dispose() {
         super.dispose();
@@ -115,9 +112,6 @@ public abstract class GUIItemItem extends GUIItem {
         setItem(null);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void paintComponent(@NotNull final Graphics g) {
         super.paintComponent(g);
@@ -131,18 +125,12 @@ public abstract class GUIItemItem extends GUIItem {
         itemPainter.paint(g2, tmpItem, isSelected(), getFace(tmpItem), getWidth(), getHeight());
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public Dimension getPreferredSize() {
         return itemPainter.getMinimumSize();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public Dimension getMinimumSize() {

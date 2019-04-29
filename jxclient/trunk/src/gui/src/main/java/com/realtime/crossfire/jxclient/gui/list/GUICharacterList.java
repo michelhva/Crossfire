@@ -122,24 +122,15 @@ public class GUICharacterList extends GUIList<GUICharacter> {
         this.name = name;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected void selectionChanged(final int selectedIndex) {
         this.selectedIndex = selectedIndex;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected void updateTooltip(final int index, final int x, final int y, final int w, final int h) {
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected void activeChanged() {
     }

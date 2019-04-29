@@ -146,9 +146,6 @@ public class NewCharInfo {
         return startingMapChoice;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String toString() {

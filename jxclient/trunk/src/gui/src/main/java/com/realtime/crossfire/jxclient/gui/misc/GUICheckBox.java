@@ -119,18 +119,12 @@ public class GUICheckBox extends ActivatableGUIElement {
         this.option.addOptionListener(optionListener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void dispose() {
         super.dispose();
         option.removeOptionListener(optionListener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void paintComponent(@NotNull final Graphics g) {
         super.paintComponent(g);
@@ -143,18 +137,12 @@ public class GUICheckBox extends ActivatableGUIElement {
         g2.drawString(text, checkedImage.getWidth()+4, y);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public Dimension getPreferredSize() {
         return getMinimumSizeInt();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public Dimension getMinimumSize() {
@@ -173,16 +161,10 @@ public class GUICheckBox extends ActivatableGUIElement {
         return result;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected void activeChanged() {
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mouseClicked(@NotNull final MouseEvent e) {
         super.mouseClicked(e);
@@ -200,9 +182,6 @@ public class GUICheckBox extends ActivatableGUIElement {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mousePressed(@NotNull final MouseEvent e) {
         super.mousePressed(e);
@@ -220,17 +199,11 @@ public class GUICheckBox extends ActivatableGUIElement {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void execute() {
         // ignore
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mouseEntered(@NotNull final MouseEvent e, final boolean debugGui) {
         if (!hasTooltipText()) { // XXX: properly initialize tooltip text

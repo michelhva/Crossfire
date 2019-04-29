@@ -45,17 +45,11 @@ public class QuitCommand implements GUICommand {
         this.commandCallback = commandCallback;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean canExecute() {
         return true;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void execute() {
         commandCallback.quitApplication();

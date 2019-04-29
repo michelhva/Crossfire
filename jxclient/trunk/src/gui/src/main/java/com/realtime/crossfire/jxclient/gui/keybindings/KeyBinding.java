@@ -65,15 +65,9 @@ public abstract class KeyBinding {
         this.isDefault = isDefault;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public abstract boolean equals(@Nullable final Object obj);
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public abstract int hashCode();
 

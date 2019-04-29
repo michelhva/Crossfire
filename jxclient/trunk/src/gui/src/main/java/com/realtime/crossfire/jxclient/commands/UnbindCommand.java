@@ -47,17 +47,11 @@ public class UnbindCommand extends AbstractCommand {
         this.commandCallback = commandCallback;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean allArguments() {
         return false;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void execute(@NotNull final String args) {
         final CharSequence commands;

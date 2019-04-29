@@ -120,9 +120,6 @@ public class DefaultKeyHandler implements KeyHandlerListener {
         server.addClientSocketListener(clientSocketListener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void escPressed() {
         if (guiStateManager.getGuiState() == GuiState.CONNECT_FAILED) {
@@ -144,9 +141,6 @@ public class DefaultKeyHandler implements KeyHandlerListener {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void keyReleased() {
         guiManager.closeKeybindDialog();

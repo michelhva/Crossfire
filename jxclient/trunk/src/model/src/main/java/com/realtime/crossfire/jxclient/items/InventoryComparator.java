@@ -31,9 +31,6 @@ import org.jetbrains.annotations.NotNull;
  */
 public class InventoryComparator implements Comparator<CfItem> {
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public int compare(@NotNull final CfItem o1, @NotNull final CfItem o2) {
         if (o1.getType() < o2.getType()) {
