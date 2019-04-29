@@ -13,14 +13,14 @@ jar.baseName = 'jxclient'
 jar.classifier = 'plain'
 
 dependencies {
-    compile name: 'annotations', version: '0.0'
+    compile 'org.jetbrains:annotations:17.0.0'
     compile project(':src:model')
     compile project(':src:network')
     compile project(':src:protocol')
     compile project(':src:resources')
     compile project(':src:skins')
     compile project(':src:util')
-    testCompile name: 'junit', version: '4.2'
+    testCompile 'junit:junit:4.12'
     testCompile project(':src:network').sourceSets.test.output
 }
 
