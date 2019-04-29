@@ -21,7 +21,6 @@
 
 package com.realtime.crossfire.jxclient.main;
 
-import com.realtime.crossfire.jxclient.settings.Settings;
 import com.realtime.crossfire.jxclient.util.Resolution;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -37,10 +36,6 @@ public class Options {
      * The default size of tiles in the map view in pixels.
      */
     private static final int DEFAULT_TILE_SIZE = 64;
-
-    /**
-     * The {@link Settings} for saving/restoring defaults.
-     */
 
     /**
      * Whether full-screen mode should be enabled.
