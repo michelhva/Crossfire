@@ -3,8 +3,8 @@ defaultTasks 'jar'
 apply plugin: 'java'
 
 dependencies {
-    compile name: 'annotations', version: '0.0'
+    compile 'org.jetbrains:annotations:17.0.0'
     compile project(':src:protocol')
     compile project(':src:util')
-    testCompile name: 'junit', version: '4.2'
+    testCompile 'junit:junit:4.12'
 }
