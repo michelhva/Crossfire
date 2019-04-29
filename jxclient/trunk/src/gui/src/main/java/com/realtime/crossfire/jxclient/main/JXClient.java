@@ -155,16 +155,11 @@ public class JXClient {
      */
     private JXClient(@NotNull final Options options, @NotNull final String buildNumber) {
         try {
-            final Writer debugProtocolOutputStreamWriter = openDebugStream(options.getDebugProtocolFilename());
-            try {
-                final Writer debugKeyboardOutputStreamWriter = openDebugStream(options.getDebugKeyboardFilename());
-                try {
-                    final Writer debugMouseOutputStreamWriter = openDebugStream(options.getDebugMouseFilename());
-                    try {
-                        final Writer debugScreenOutputStreamWriter = openDebugStream(options.getDebugScreenFilename());
-                        try {
-                            final Writer debugSoundOutputStreamWriter = openDebugStream(options.getDebugSoundFilename());
-                            try {
+            try (Writer debugProtocolOutputStreamWriter = openDebugStream(options.getDebugProtocolFilename())) {
+                try (Writer debugKeyboardOutputStreamWriter = openDebugStream(options.getDebugKeyboardFilename())) {
+                    try (Writer debugMouseOutputStreamWriter = openDebugStream(options.getDebugMouseFilename())) {
+                        try (Writer debugScreenOutputStreamWriter = openDebugStream(options.getDebugScreenFilename())) {
+                            try (Writer debugSoundOutputStreamWriter = openDebugStream(options.getDebugSoundFilename())) {
                                 final Settings settings = new Settings(Filenames.getSettingsFile());
                                 settings.remove("resolution"); // delete obsolete entry
                                 settings.remove("width"); // delete obsolete entry
@@ -280,29 +275,9 @@ public class JXClient {
                                 } finally {
                                     server.stop();
                                 }
-                            } finally {
-                                if (debugSoundOutputStreamWriter != null) {
-                                    debugSoundOutputStreamWriter.close();
-                                }
-                            }
-                        } finally {
-                            if (debugScreenOutputStreamWriter != null) {
-                                debugScreenOutputStreamWriter.close();
                             }
                         }
-                    } finally {
-                        if (debugMouseOutputStreamWriter != null) {
-                            debugMouseOutputStreamWriter.close();
-                        }
                     }
-                } finally {
-                    if (debugKeyboardOutputStreamWriter != null) {
-                        debugKeyboardOutputStreamWriter.close();
-                    }
-                }
-            } finally {
-                if (debugProtocolOutputStreamWriter != null) {
-                    debugProtocolOutputStreamWriter.close();
                 }
             }
         } catch (final InterruptedException|InvocationTargetException|IOException ex) {
