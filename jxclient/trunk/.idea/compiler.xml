@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <wildcardResourcePatterns>
+      <entry name="*" />
+    </wildcardResourcePatterns>
+    <bytecodeTargetLevel>
+      <module name="jxclient.src.gui.main" target="1.8" />
+      <module name="jxclient.src.gui.test" target="1.8" />
+      <module name="jxclient.src.model.main" target="1.8" />
+      <module name="jxclient.src.model.test" target="1.8" />
+      <module name="jxclient.src.network.main" target="1.8" />
+      <module name="jxclient.src.network.test" target="1.8" />
+      <module name="jxclient.src.protocol.main" target="1.8" />
+      <module name="jxclient.src.protocol.test" target="1.8" />
+      <module name="jxclient.src.resources.main" target="1.8" />
+      <module name="jxclient.src.resources.test" target="1.8" />
+      <module name="jxclient.src.skins.main" target="1.8" />
+      <module name="jxclient.src.skins.test" target="1.8" />
+      <module name="jxclient.src.util.main" target="1.8" />
+      <module name="jxclient.src.util.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
