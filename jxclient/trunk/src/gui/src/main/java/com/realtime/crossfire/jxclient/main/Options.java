@@ -40,7 +40,7 @@ public class Options {
     /**
      * Whether full-screen mode should be enabled.
      */
-    private boolean fullScreen = true;
+    private boolean fullScreen;
 
     /**
      * The Crossfire server to connect to or {@code null} to show the server
@@ -146,6 +146,8 @@ public class Options {
                 }
             } else if (args[i].equals("-N") || args[i].equals("-n") || args[i].equals("--no-full-screen")) {
                 fullScreen = false;
+            } else if (args[i].equals("--full-screen")) {
+                fullScreen = true;
             } else if (args[i].equals("--opengl")) {
                 System.setProperty("sun.java2d.opengl", "True");
             } else if (args[i].equals("--server") && i+1 < args.length) {
@@ -179,9 +181,10 @@ public class Options {
             } else {
                 System.out.println("");
                 System.out.println("Available options:");
-                System.out.println(" --no-full-screen");
+                System.out.println(" --full-screen  : Enable full-screen mode.");
+                //System.out.println(" --no-full-screen"); // not advertised; it is recognized only for compatibility
                 //System.out.println(" -N"); // not advertised as it is considered deprecated
-                System.out.println(" -n             : Disable full-screen mode.");
+                //System.out.println(" -n             : Disable full-screen mode."); // not advertised; it is recognized only for compatibility
                 System.out.println(" --resolution <width>x<height>");
                 System.out.println(" -r <width>x<height>");
                 System.out.println("                : Resolution to use. [default is maximum not exceeding screen]");
