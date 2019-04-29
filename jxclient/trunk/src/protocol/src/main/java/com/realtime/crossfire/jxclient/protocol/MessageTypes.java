@@ -212,66 +212,68 @@ public class MessageTypes {
      * @throws UnknownMessageTypeException if the string is unknown
      */
     public static int parseMessageType(@NotNull final String str) throws UnknownMessageTypeException {
-        if (str.equals("BOOK")) {
+        switch (str) {
+        case "BOOK":
             return MSG_TYPE_BOOK;
-        }
-        if (str.equals("CARD")) {
+
+        case "CARD":
             return MSG_TYPE_CARD;
-        }
-        if (str.equals("PAPER")) {
+
+        case "PAPER":
             return MSG_TYPE_PAPER;
-        }
-        if (str.equals("SIGN")) {
+
+        case "SIGN":
             return MSG_TYPE_SIGN;
-        }
-        if (str.equals("MONUMENT")) {
+
+        case "MONUMENT":
             return MSG_TYPE_MONUMENT;
-        }
-        if (str.equals("DIALOG")) {
+
+        case "DIALOG":
             return MSG_TYPE_DIALOG;
-        }
-        if (str.equals("MOTD")) {
+
+        case "MOTD":
             return MSG_TYPE_MOTD;
-        }
-        if (str.equals("ADMIN")) {
+
+        case "ADMIN":
             return MSG_TYPE_ADMIN;
-        }
-        if (str.equals("SHOP")) {
+
+        case "SHOP":
             return MSG_TYPE_SHOP;
-        }
-        if (str.equals("COMMAND")) {
+
+        case "COMMAND":
             return MSG_TYPE_COMMAND;
-        }
-        if (str.equals("ATTRIBUTE")) {
+
+        case "ATTRIBUTE":
             return MSG_TYPE_ATTRIBUTE;
-        }
-        if (str.equals("SKILL")) {
+
+        case "SKILL":
             return MSG_TYPE_SKILL;
-        }
-        if (str.equals("APPLY")) {
+
+        case "APPLY":
             return MSG_TYPE_APPLY;
-        }
-        if (str.equals("ATTACK")) {
+
+        case "ATTACK":
             return MSG_TYPE_ATTACK;
-        }
-        if (str.equals("COMMUNICATION")) {
+
+        case "COMMUNICATION":
             return MSG_TYPE_COMMUNICATION;
-        }
-        if (str.equals("SPELL")) {
+
+        case "SPELL":
             return MSG_TYPE_SPELL;
-        }
-        if (str.equals("ITEM")) {
+
+        case "ITEM":
             return MSG_TYPE_ITEM;
-        }
-        if (str.equals("MISC")) {
+
+        case "MISC":
             return MSG_TYPE_MISC;
-        }
-        if (str.equals("VICTIM")) {
+
+        case "VICTIM":
             return MSG_TYPE_VICTIM;
-        }
-        if (str.equals("QUERY")) {
+
+        case "QUERY":
             return MSG_TYPE_QUERY;
         }
+
         throw new UnknownMessageTypeException(str);
     }
 
