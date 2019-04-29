@@ -133,17 +133,11 @@ public class GUITextButton extends AbstractButton implements GUISelectable {
         preferredSize.width += 12;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void activeChanged() {
         setChanged();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void paintComponent(@NotNull final Graphics g) {
         super.paintComponent(g);
@@ -160,27 +154,18 @@ public class GUITextButton extends AbstractButton implements GUISelectable {
         g2.drawString(text, x, y);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     protected Dimension getMinimumSizeInt() {
         return new Dimension(preferredSize);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public Dimension getMaximumSize() {
         return new Dimension(Integer.MAX_VALUE, preferredSize.height);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void select(final boolean selected) {
         this.selected = selected;

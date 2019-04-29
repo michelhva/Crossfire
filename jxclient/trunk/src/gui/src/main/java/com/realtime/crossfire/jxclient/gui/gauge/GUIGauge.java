@@ -127,9 +127,6 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
         updateTooltipText();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setBounds(final int x, final int y, final int width, final int height) {
         super.setBounds(x, y, width, height);
@@ -140,9 +137,6 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void paintComponent(@NotNull final Graphics g) {
         if (hidden) {
@@ -168,9 +162,6 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setValues(final int curValue, final int minValue, final int maxValue, @NotNull final String labelText, @NotNull final String tooltipText) {
         if (!orientation.setValues(curValue, minValue, maxValue) && this.tooltipText.equals(tooltipText)) {
@@ -194,44 +185,29 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
         setTooltipText(formatTooltip());
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public Dimension getPreferredSize() {
         return gaugeState.getPreferredSize();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public Dimension getMinimumSize() {
         return gaugeState.getPreferredSize();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public Dimension getMaximumSize() {
         return gaugeState.getPreferredSize();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setHidden(final boolean hidden) {
         this.hidden = hidden;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mouseClicked(@NotNull final MouseEvent e) {
         super.mouseClicked(e);

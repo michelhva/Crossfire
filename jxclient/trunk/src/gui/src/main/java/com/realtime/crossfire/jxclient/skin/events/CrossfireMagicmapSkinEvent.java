@@ -69,9 +69,6 @@ public class CrossfireMagicmapSkinEvent implements SkinEvent {
         server.addCrossfireMagicmapListener(crossfireMagicmapListener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void dispose() {
         server.removeCrossfireMagicmapListener(crossfireMagicmapListener);

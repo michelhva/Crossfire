@@ -65,9 +65,6 @@ public abstract class GUILabel extends AbstractLabel {
         this.textAlignment = textAlignment;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected void textChanged() {
         setChanged();

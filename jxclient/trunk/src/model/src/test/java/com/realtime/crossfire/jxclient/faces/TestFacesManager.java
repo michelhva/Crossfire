@@ -39,9 +39,6 @@ public class TestFacesManager extends AbstractFacesManager {
         super(faceCache);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     protected FaceImages getFaceImages(final int faceNum, @Nullable final boolean[] isUnknownImage) {

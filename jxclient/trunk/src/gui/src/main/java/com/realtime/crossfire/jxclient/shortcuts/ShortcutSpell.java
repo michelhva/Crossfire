@@ -111,17 +111,11 @@ public class ShortcutSpell extends Shortcut {
         fireModifiedEvent();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void dispose() {
         spell.removeSpellListener(spellListener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void execute() {
         if (!spell.isUnknown()) {
@@ -129,26 +123,17 @@ public class ShortcutSpell extends Shortcut {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String getTooltipText() {
         return command+spell.getTooltipText();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void visit(@NotNull final ShortcutVisitor visitor) {
         visitor.visit(this);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean displaysFace(final Face face) {
         return face.getFaceNum() == spell.getFaceNum();

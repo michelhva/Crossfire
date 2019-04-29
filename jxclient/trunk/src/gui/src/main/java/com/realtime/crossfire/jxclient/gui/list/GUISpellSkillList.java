@@ -121,9 +121,6 @@ public class GUISpellSkillList extends GUIItemList<GUIItemSpellSkill> {
         this.defaultSkillIcon = defaultSkillIcon;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     @SuppressWarnings("IfMayBeConditional")
     protected void updateTooltip(final int index, final int x, final int y, final int w, final int h) {
@@ -139,18 +136,12 @@ public class GUISpellSkillList extends GUIItemList<GUIItemSpellSkill> {
         setTooltipText(text, x, y, w, h);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     protected GUIItemSpellSkill newItem(final int index) {
         return new GUIItemSpellSkill(tooltipManager, elementListener, name+index, itemPainter, index, facesManager, spellsManager, itemView, defaultSkillIcon, 0);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected void selectionChanged(final int selectedIndex) {
         if (spellsManager == null) {

@@ -72,9 +72,6 @@ public class GUICommandText extends GUIText {
         this.commandExecutor = commandExecutor;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected void execute(@NotNull final String command) {
         commandExecutor.executeCommand(command);

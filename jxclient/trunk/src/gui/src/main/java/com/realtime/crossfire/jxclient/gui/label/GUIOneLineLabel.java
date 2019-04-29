@@ -60,27 +60,18 @@ public class GUIOneLineLabel extends GUILabel {
         super(tooltipManager, elementListener, name, picture, text, font, color, backgroundColor, alignment);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void paintComponent(@NotNull final Graphics g) {
         super.paintComponent(g);
         drawLine((Graphics2D)g, 0, getHeight(), getText());
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public Dimension getPreferredSize() {
         return getMinimumSizeInt();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public Dimension getMinimumSize() {

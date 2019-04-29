@@ -105,17 +105,11 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
         index = defaultIndex;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected void activeChanged() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void paintComponent(@NotNull final Graphics g) {
         super.paintComponent(g);
@@ -145,18 +139,12 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
         g.drawString(character.getMap(), x, y);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public Dimension getPreferredSize() {
         return getMinimumSizeInt();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public Dimension getMinimumSize() {
@@ -173,25 +161,16 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
         return GuiUtils.getTextDimension(character == null ? "" : character.getName(), getFontMetrics(font));
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean canScroll(final int distance) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void scroll(final int distance) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void resetScroll() {
         throw new UnsupportedOperationException("Not supported yet.");
@@ -242,9 +221,6 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
         setChanged();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void execute() {
         // ignore

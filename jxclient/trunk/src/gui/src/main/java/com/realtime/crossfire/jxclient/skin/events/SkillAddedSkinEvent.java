@@ -79,9 +79,6 @@ public class SkillAddedSkinEvent implements SkinEvent {
         skill.addSkillListener(skillListener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void dispose() {
         skill.removeSkillListener(skillListener);

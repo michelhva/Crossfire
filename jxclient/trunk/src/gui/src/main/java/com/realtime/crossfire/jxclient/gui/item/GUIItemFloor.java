@@ -152,18 +152,12 @@ public class GUIItemFloor extends GUIItemItem {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void dispose() {
         super.dispose();
         setIndex(-1, false);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean canScroll(final int distance) {
         if (distance < 0) {
@@ -176,25 +170,16 @@ public class GUIItemFloor extends GUIItemItem {
         return false;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void scroll(final int distance) {
         setIndex(index+distance, false);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void resetScroll() {
         setIndex(defaultIndex, false);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void button1Clicked(final int modifiers) {
         final CfItem item = getItem();
@@ -217,9 +202,6 @@ public class GUIItemFloor extends GUIItemItem {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void button2Clicked(final int modifiers) {
         final CfItem item = getItem();
@@ -234,9 +216,6 @@ public class GUIItemFloor extends GUIItemItem {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void button3Clicked(final int modifiers) {
         final CfItem item = getItem();
@@ -260,9 +239,6 @@ public class GUIItemFloor extends GUIItemItem {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public int getIndex() {
         return index;
@@ -290,9 +266,6 @@ public class GUIItemFloor extends GUIItemItem {
         setItem(floorView.getItem(index));
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setIndexNoListeners(final int index) {
         this.index = index;
@@ -300,9 +273,6 @@ public class GUIItemFloor extends GUIItemItem {
         setItemNoListeners(floorView.getItem(index));
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     protected Image getFace(@NotNull final CfItem item) {
@@ -319,17 +289,11 @@ public class GUIItemFloor extends GUIItemItem {
         return index > min ? nextGroupFace : prevGroupFace;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setSelected(final boolean selected) {
         // ignore: floor objects are never selected
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected boolean isSelected() {
         return false;

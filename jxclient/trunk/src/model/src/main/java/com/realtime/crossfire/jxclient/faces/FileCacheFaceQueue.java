@@ -95,9 +95,6 @@ public class FileCacheFaceQueue extends AbstractFaceQueue {
         this.imageCacheMagicMap = imageCacheMagicMap;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void reset() {
         synchronized (sync) {
@@ -106,9 +103,6 @@ public class FileCacheFaceQueue extends AbstractFaceQueue {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void loadFace(@NotNull final Face face) {
         final boolean doAdd;

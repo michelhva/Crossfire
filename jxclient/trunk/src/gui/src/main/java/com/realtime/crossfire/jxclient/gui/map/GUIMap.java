@@ -80,24 +80,15 @@ public class GUIMap extends AbstractGUIMap {
         tileSize = facesProvider.getSize();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected void paintSquareBackground(@NotNull final Graphics g, final int px, final int py, final boolean hasImage, @NotNull final CfMapSquare mapSquare) {
         paintColoredSquare(g, Color.BLACK, px, py);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected void markPlayer(@NotNull final Graphics g, final int dx, final int dy) {
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mouseClicked(@NotNull final MouseEvent e) {
         super.mouseClicked(e);
@@ -122,9 +113,6 @@ public class GUIMap extends AbstractGUIMap {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public Dimension getPreferredSize() {

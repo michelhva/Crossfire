@@ -99,9 +99,6 @@ public class ConnectionStateSkinEvent implements SkinEvent {
         guiStateManager.addGuiStateListener(guiStateListener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void dispose() {
         guiStateManager.removeGuiStateListener(guiStateListener);

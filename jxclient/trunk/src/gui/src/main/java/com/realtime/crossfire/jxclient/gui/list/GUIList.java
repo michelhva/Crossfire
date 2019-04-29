@@ -159,9 +159,6 @@ public abstract class GUIList<T extends GUIElement> extends ActivatableGUIElemen
         listCellRenderer.setSize(getWidth(), cellHeight);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void dispose() {
         super.dispose();
@@ -359,17 +356,11 @@ public abstract class GUIList<T extends GUIElement> extends ActivatableGUIElemen
         setChanged();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void resetScroll() {
         setSelectedIndex(0);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mouseClicked(@NotNull final MouseEvent e) {
         doSelect(e);
@@ -379,45 +370,30 @@ public abstract class GUIList<T extends GUIElement> extends ActivatableGUIElemen
         super.mouseClicked(e);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mouseEntered(@NotNull final MouseEvent e, final boolean debugGui) {
         super.mouseEntered(e, debugGui);
         doTooltip(e);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mouseExited(@NotNull final MouseEvent e) {
         super.mouseExited(e);
         doTooltip(e);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mousePressed(@NotNull final MouseEvent e) {
         super.mouseClicked(e);
         doSelect(e);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mouseMoved(@NotNull final MouseEvent e) {
         super.mouseMoved(e);
         doTooltip(e);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mouseDragged(@NotNull final MouseEvent e) {
         super.mouseClicked(e);
@@ -520,18 +496,12 @@ public abstract class GUIList<T extends GUIElement> extends ActivatableGUIElemen
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setChanged() {
         super.setChanged();
         updateTooltip();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void execute() {
         // ignore
@@ -571,27 +541,18 @@ public abstract class GUIList<T extends GUIElement> extends ActivatableGUIElemen
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public Dimension getPreferredSize() {
         final Dimension result = list.getPreferredSize();
         return result == null ? super.getPreferredSize() : result;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public Dimension getMinimumSize() {
         final Dimension result = list.getMinimumSize();
         return result == null ? super.getMinimumSize() : result;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setBounds(final int x, final int y, final int width, final int height) {
         super.setBounds(x, y, width, height);

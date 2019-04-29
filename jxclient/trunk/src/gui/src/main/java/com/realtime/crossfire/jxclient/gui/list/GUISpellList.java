@@ -194,9 +194,6 @@ public class GUISpellList extends GUIItemList<GUIItemSpell> {
         setTooltipText(sb.toString(), x, y, w, h);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     protected GUIItemSpell newItem(final int index) {

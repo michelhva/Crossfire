@@ -167,25 +167,16 @@ public class CharacterInformation implements Comparable<CharacterInformation> {
         return faceNumber;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public int compareTo(@NotNull final CharacterInformation o) {
         return name.compareTo(o.name);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public int hashCode() {
         return name.hashCode();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean equals(@Nullable final Object obj) {
         if (!(obj instanceof CharacterInformation)) {
@@ -196,9 +187,6 @@ public class CharacterInformation implements Comparable<CharacterInformation> {
         return characterInformation.name.equals(name);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String toString() {

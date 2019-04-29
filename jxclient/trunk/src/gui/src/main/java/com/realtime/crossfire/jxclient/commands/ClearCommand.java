@@ -48,17 +48,11 @@ public class ClearCommand extends AbstractCommand {
         this.windowRenderer = windowRenderer;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean allArguments() {
         return false;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void execute(@NotNull final String args) {
         if (!args.isEmpty()) {

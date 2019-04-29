@@ -53,17 +53,11 @@ public class ScrollNeverCommand implements GUICommand {
         this.scrollable = scrollable;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean canExecute() {
         return false;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void execute() {
         scrollable.scroll(distance);

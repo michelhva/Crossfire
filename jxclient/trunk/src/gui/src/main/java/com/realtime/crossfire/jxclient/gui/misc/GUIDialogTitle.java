@@ -75,9 +75,6 @@ public class GUIDialogTitle extends GUIOneLineLabel {
         this.windowRenderer = windowRenderer;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mousePressed(@NotNull final MouseEvent e) {
         super.mousePressed(e);
@@ -91,9 +88,6 @@ public class GUIDialogTitle extends GUIOneLineLabel {
         offset = new Point(gui.getX()-point.x, gui.getY()-point.y);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mouseReleased(@NotNull final MouseEvent e) {
         super.mouseReleased(e);
@@ -101,9 +95,6 @@ public class GUIDialogTitle extends GUIOneLineLabel {
         offset = null;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mouseDragged(@NotNull final MouseEvent e) {
         super.mouseDragged(e);

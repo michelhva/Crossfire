@@ -118,9 +118,6 @@ public class GUIKnowledgeList extends GUIItemList<GUIItemKnowledge> {
         this.commandQueue = commandQueue;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     protected GUIItemKnowledge newItem(final int index) {

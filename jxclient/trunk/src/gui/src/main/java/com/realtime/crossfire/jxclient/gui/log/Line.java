@@ -62,9 +62,6 @@ public class Line implements Iterable<Segment> {
         segments.add(new TextSegment(text, bold, italic, underline, font, color));
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public Iterator<Segment> iterator() {

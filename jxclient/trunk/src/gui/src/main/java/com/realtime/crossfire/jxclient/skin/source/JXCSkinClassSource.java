@@ -48,9 +48,6 @@ public class JXCSkinClassSource extends AbstractJXCSkinSource {
         checkAccess();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public InputStream getInputStream(@NotNull final String name) throws IOException {
@@ -61,9 +58,6 @@ public class JXCSkinClassSource extends AbstractJXCSkinSource {
         return inputStream;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String getURI(@NotNull final String name) {

@@ -27,17 +27,11 @@ public class BindingsCommand extends AbstractCommand {
         this.keybindingsManager = keybindingsManager;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean allArguments() {
         return false;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void execute(@NotNull final String args) {
         final Iterable<KeyBinding> bindings = keybindingsManager.getBindingsForPartialCommand(args, false);

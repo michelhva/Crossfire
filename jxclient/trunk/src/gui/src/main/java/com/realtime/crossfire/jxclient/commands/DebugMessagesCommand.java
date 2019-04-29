@@ -48,17 +48,11 @@ public class DebugMessagesCommand extends AbstractCommand {
         this.crossfireServerConnection = crossfireServerConnection;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean allArguments() {
         return false;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void execute(@NotNull final String args) {
         switch (args) {

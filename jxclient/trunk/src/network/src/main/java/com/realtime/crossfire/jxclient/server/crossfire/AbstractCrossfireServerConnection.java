@@ -152,193 +152,121 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
         this.model = model;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void addCrossfireDrawinfoListener(@NotNull final CrossfireDrawinfoListener listener) {
         drawinfoListeners.add(listener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void removeCrossfireDrawinfoListener(@NotNull final CrossfireDrawinfoListener listener) {
         drawinfoListeners.remove(listener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void addCrossfireDrawextinfoListener(@NotNull final CrossfireDrawextinfoListener listener) {
         drawextinfoListeners.add(listener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void removeCrossfireDrawextinfoListener(@NotNull final CrossfireDrawextinfoListener listener) {
         drawextinfoListeners.remove(listener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void addCrossfireQueryListener(@NotNull final CrossfireQueryListener listener) {
         queryListeners.add(listener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void removeCrossfireQueryListener(@NotNull final CrossfireQueryListener listener) {
         queryListeners.remove(listener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void addCrossfireMagicmapListener(@NotNull final CrossfireMagicmapListener listener) {
         magicmapListeners.add(listener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void removeCrossfireMagicmapListener(@NotNull final CrossfireMagicmapListener listener) {
         magicmapListeners.remove(listener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void addCrossfireUpdateItemListener(@NotNull final CrossfireUpdateItemListener crossfireUpdateItemListener) {
         crossfireUpdateItemListeners.add(crossfireUpdateItemListener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void removeCrossfireUpdateItemListener(@NotNull final CrossfireUpdateItemListener crossfireUpdateItemListener) {
         crossfireUpdateItemListeners.remove(crossfireUpdateItemListener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void addCrossfireTickListener(@NotNull final CrossfireTickListener listener) {
         crossfireTickListeners.add(listener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void addCrossfireSoundListener(@NotNull final CrossfireSoundListener listener) {
         crossfireSoundListeners.add(listener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void addCrossfireMusicListener(@NotNull final CrossfireMusicListener listener) {
         crossfireMusicListeners.add(listener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void addCrossfireComcListener(@NotNull final CrossfireComcListener listener) {
         crossfireComcListeners.add(listener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void addPacketWatcherListener(@NotNull final ReceivedPacketListener listener) {
         receivedPacketListeners.add(listener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void addCrossfireAccountListener(@NotNull final CrossfireAccountListener listener) {
         crossfireAccountListeners.add(listener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void removeCrossfireAccountListener(@NotNull final CrossfireAccountListener listener) {
         crossfireAccountListeners.remove(listener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void removePacketWatcherListener(@NotNull final ReceivedPacketListener listener) {
         receivedPacketListeners.remove(listener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void addSentReplyListener(@NotNull final SentReplyListener listener) {
         sentReplyListeners.add(listener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void removeSentReplyListener(@NotNull final SentReplyListener listener) {
         sentReplyListeners.remove(listener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void addCrossfirePickupListener(@NotNull final CrossfirePickupListener listener) {
         crossfirePickupListeners.add(listener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void removeCrossfirePickupListener(@NotNull final CrossfirePickupListener listener) {
         crossfirePickupListeners.remove(listener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void addCrossfireFailureListener(@NotNull final CrossfireFailureListener listener) {
         crossfireFailureListeners.add(listener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void removeCrossfireFailureListener(@NotNull final CrossfireFailureListener listener) {
         crossfireFailureListeners.remove(listener);
@@ -477,9 +405,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void drawInfo(@NotNull final String message, final int color) {
         for (final CrossfireDrawinfoListener listener : drawinfoListeners) {
@@ -487,9 +412,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void drawextinfo(final int color, final int type, final int subtype, final String message) {
         for (final CrossfireDrawextinfoListener listener : drawextinfoListeners) {
@@ -497,9 +419,6 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void drawInfoSetDebugMode(final boolean printMessageTypes) {
         for (final CrossfireDrawextinfoListener listener : drawextinfoListeners) {

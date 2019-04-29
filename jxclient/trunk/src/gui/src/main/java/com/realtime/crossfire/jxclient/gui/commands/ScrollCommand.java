@@ -53,17 +53,11 @@ public class ScrollCommand implements GUICommand {
         this.scrollable = scrollable;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean canExecute() {
         return scrollable.canScroll(distance);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void execute() {
         scrollable.scroll(distance);

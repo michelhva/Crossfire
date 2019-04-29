@@ -69,17 +69,11 @@ public class DefaultServerConnection implements ServerConnection {
         clientSocket.stop();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void addClientSocketListener(@NotNull final ClientSocketListener clientSocketListener) {
         clientSocket.addClientSocketListener(clientSocketListener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void removeClientSocketListener(@NotNull final ClientSocketListener clientSocketListener) {
         clientSocket.removeClientSocketListener(clientSocketListener);
@@ -96,17 +90,11 @@ public class DefaultServerConnection implements ServerConnection {
         clientSocket.writePacket(packet, length);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void connect(@NotNull final String hostname, final int port) {
         clientSocket.connect(hostname, port);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void disconnect(@NotNull final String reason) {
         clientSocket.disconnect(reason, false);

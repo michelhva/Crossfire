@@ -81,17 +81,11 @@ public class ExecSelectionCommand implements GUICommand {
         this.commandQueue = commandQueue;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean canExecute() {
         return CommandType.canExecute(list.getSelectedItem());
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void execute() {
         command.execute(list.getSelectedItem(), crossfireServerConnection, floorView.getCurrentFloor(), commandQueue);

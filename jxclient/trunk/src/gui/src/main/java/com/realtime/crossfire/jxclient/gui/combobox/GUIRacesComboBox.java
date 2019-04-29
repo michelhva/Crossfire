@@ -99,9 +99,6 @@ public class GUIRacesComboBox extends GUIComboBox<String> {
         updateModel();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void dispose() {
         super.dispose();
@@ -117,9 +114,6 @@ public class GUIRacesComboBox extends GUIComboBox<String> {
         updateSelectedItem();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     protected Component getListCellRendererComponent(@NotNull final JList<? extends String> list, @Nullable final String value, final int index, final boolean selected, final boolean cellHasFocus) {
@@ -128,9 +122,6 @@ public class GUIRacesComboBox extends GUIComboBox<String> {
         return renderer;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     protected String getDescription(@NotNull final String item) {

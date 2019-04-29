@@ -147,9 +147,6 @@ public class DefaultJXCSkin implements JXCSkin {
         this.dialogs = dialogs;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String getSkinName() {
@@ -175,27 +172,18 @@ public class DefaultJXCSkin implements JXCSkin {
         this.maxResolution = maxResolution;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public Resolution getMinResolution() {
         return minResolution;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public Resolution getMaxResolution() {
         return maxResolution;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public Gui getDialogQuit() {
@@ -206,9 +194,6 @@ public class DefaultJXCSkin implements JXCSkin {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public Gui getDialogDisconnect() {
@@ -219,9 +204,6 @@ public class DefaultJXCSkin implements JXCSkin {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public Gui getDialogConnect() {
@@ -232,9 +214,6 @@ public class DefaultJXCSkin implements JXCSkin {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public Gui getDialogKeyBind() {
@@ -247,9 +226,6 @@ public class DefaultJXCSkin implements JXCSkin {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public Gui getDialogQuery() {
@@ -262,9 +238,6 @@ public class DefaultJXCSkin implements JXCSkin {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public Gui getDialogBook(final int bookNo) {
@@ -277,9 +250,6 @@ public class DefaultJXCSkin implements JXCSkin {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public Gui getMainInterface() {
@@ -292,9 +262,6 @@ public class DefaultJXCSkin implements JXCSkin {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public Gui getMetaInterface() {
@@ -307,9 +274,6 @@ public class DefaultJXCSkin implements JXCSkin {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public Gui getStartInterface() {
@@ -322,45 +286,30 @@ public class DefaultJXCSkin implements JXCSkin {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public Gui getDialog(@NotNull final String name) throws JXCSkinException {
         return dialogs.lookup(name);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public Iterator<Gui> iterator() {
         return dialogs.iterator();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public CommandList getCommandList(@NotNull final String name) throws JXCSkinException {
         return definedCommandLists.lookup(name);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public KeyBindings getDefaultKeyBindings() {
         return defaultKeyBindings;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void attach(@NotNull final TooltipManagerImpl tooltipManager) {
         //noinspection VariableNotUsedInsideIf
@@ -374,9 +323,6 @@ public class DefaultJXCSkin implements JXCSkin {
         initEvents.forEach(CommandList::execute);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void detach() {
         final TooltipManagerImpl tmpTooltipManager = tooltipManager;
@@ -392,9 +338,6 @@ public class DefaultJXCSkin implements JXCSkin {
         guiElements.clear();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setScreenSize(final int screenWidth, final int screenHeight) {
         final int newScreenWidth = Math.max(minResolution.getWidth(), Math.min(maxResolution.getWidth(), screenWidth));
@@ -474,9 +417,6 @@ public class DefaultJXCSkin implements JXCSkin {
         this.tooltipLabel = tooltipLabel;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public AbstractLabel getTooltipLabel() {

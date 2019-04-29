@@ -134,18 +134,12 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         updateTooltip();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void dispose() {
         super.dispose();
         metaserverModel.removeMetaserverEntryListener(index, metaserverEntryListener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void paintComponent(@NotNull final Graphics g) {
         super.paintComponent(g);
@@ -160,18 +154,12 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         g.drawString(metaEntry == null ? "" : metaEntry.format(format), image == null ? 0 : image.getWidth(this), font.getSize()+1);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public Dimension getPreferredSize() {
         return getMinimumSizeInt();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public Dimension getMinimumSize() {
@@ -192,9 +180,6 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         return result;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mouseClicked(@NotNull final MouseEvent e) {
         super.mouseClicked(e);
@@ -213,17 +198,11 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void execute() {
         // ignore
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean canScroll(final int distance) {
         if (distance < 0) {
@@ -236,17 +215,11 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         return false;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void scroll(final int distance) {
         setIndex(index+distance);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void resetScroll() {
         if (index != defaultIndex) {
@@ -254,9 +227,6 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected void activeChanged() {
         setChanged();

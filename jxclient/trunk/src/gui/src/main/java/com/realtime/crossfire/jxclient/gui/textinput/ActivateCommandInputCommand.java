@@ -62,25 +62,16 @@ public class ActivateCommandInputCommand implements GUICommand2 {
         this.macros = macros;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean canExecute() {
         return true;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void execute() {
         commandCallback.activateCommandInput(macros.expandMacros(commandText));
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String getCommandString() {

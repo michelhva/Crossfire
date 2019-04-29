@@ -56,9 +56,6 @@ public class KeyCharKeyBinding extends KeyBinding {
         return keyChar;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean equals(@Nullable final Object obj) {
         if (!(obj instanceof KeyCharKeyBinding)) {
@@ -69,33 +66,21 @@ public class KeyCharKeyBinding extends KeyBinding {
         return keyBinding.keyChar == keyChar;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public int hashCode() {
         return keyChar;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean matchesKeyCode(@NotNull final KeyEvent2 keyEvent) {
         return false;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean matchesKeyChar(final char keyChar) {
         return this.keyChar == keyChar;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String getBindingDescription() {

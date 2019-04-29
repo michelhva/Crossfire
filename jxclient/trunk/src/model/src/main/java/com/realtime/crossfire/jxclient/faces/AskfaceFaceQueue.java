@@ -84,9 +84,6 @@ public class AskfaceFaceQueue extends AbstractFaceQueue {
         this.askfaceQueue = askfaceQueue;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void reset() {
         synchronized (sync) {
@@ -96,9 +93,6 @@ public class AskfaceFaceQueue extends AbstractFaceQueue {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void loadFace(@NotNull final Face face) {
         final int faceNum = face.getFaceNum();

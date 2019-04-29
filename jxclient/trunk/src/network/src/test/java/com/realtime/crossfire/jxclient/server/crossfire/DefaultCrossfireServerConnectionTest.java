@@ -93,9 +93,6 @@ public class DefaultCrossfireServerConnectionTest {
             @NotNull
             private final Charset charset = Charset.forName("ISO-8859-1");
 
-            /**
-             * {@inheritDoc}
-             */
             @Override
             public void run() {
                 try {

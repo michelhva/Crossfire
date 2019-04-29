@@ -106,9 +106,6 @@ public class GUIKnowledgeTypeList extends GUIItemList<GUIItemKnowledgeType> {
         this.facesManager = facesManager;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected void selectionChanged(final int selectedIndex) {
         if (knowledgeManager == null) {
@@ -118,9 +115,6 @@ public class GUIKnowledgeTypeList extends GUIItemList<GUIItemKnowledgeType> {
         super.selectionChanged(selectedIndex);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     protected GUIItemKnowledgeType newItem(final int index) {

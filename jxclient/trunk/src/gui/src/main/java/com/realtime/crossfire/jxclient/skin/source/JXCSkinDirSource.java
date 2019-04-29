@@ -50,18 +50,12 @@ public class JXCSkinDirSource extends AbstractJXCSkinSource {
         checkAccess();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public InputStream getInputStream(@NotNull final String name) throws IOException {
         return new FileInputStream(new File(dir, name));
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String getURI(@NotNull final String name) {

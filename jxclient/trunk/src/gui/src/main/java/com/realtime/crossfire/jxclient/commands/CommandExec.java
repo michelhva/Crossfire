@@ -70,17 +70,11 @@ public class CommandExec {
         return args;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public int hashCode() {
         return (command == null ? 0 : command.hashCode())+args.hashCode();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean equals(@Nullable final Object obj) {
         if (obj == null || obj.getClass() != getClass()) {
@@ -90,9 +84,6 @@ public class CommandExec {
         return command == o.command && args.equals(o.args);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String toString() {

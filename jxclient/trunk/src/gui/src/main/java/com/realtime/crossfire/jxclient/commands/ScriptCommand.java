@@ -47,17 +47,11 @@ public class ScriptCommand extends AbstractCommand {
         this.scriptManager = scriptManager;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean allArguments() {
         return false;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void execute(@NotNull final String args) {
         if (args.isEmpty()) {

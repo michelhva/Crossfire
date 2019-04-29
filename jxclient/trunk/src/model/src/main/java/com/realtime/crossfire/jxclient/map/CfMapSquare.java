@@ -337,9 +337,6 @@ public class CfMapSquare {
         return true;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String toString() {

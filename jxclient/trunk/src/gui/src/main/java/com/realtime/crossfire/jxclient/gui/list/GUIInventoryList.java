@@ -128,9 +128,6 @@ public class GUIInventoryList extends GUIItemList<GUIItemInventory> {
         this.floorView = floorView;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     @NotNull
     protected GUIItemInventory newItem(final int index) {

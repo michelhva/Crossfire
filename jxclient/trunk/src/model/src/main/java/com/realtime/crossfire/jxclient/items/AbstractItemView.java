@@ -80,33 +80,21 @@ public abstract class AbstractItemView implements ItemView {
     @NotNull
     private final EventScheduler fireEventScheduler = new EventScheduler(100, 1, fireEventCallback);
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void addLocationsListener(@NotNull final LocationsListener locationsListener) {
         locationsListeners.add(locationsListener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void removeLocationsListener(@NotNull final LocationsListener locationsListener) {
         locationsListeners.remove(locationsListener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void addLocationListener(final int index, @NotNull final LocationListener locationListener) {
         locationListeners.add(index, locationListener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void removeLocationListener(final int index, @NotNull final LocationListener locationListener) {
         locationListeners.remove(index, locationListener);

@@ -78,124 +78,79 @@ public class GuiManagerCommandCallback implements CommandCallback {
         this.guiManager = guiManager;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void quitApplication() {
         exiter.terminate();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void openDialog(@NotNull final String dialog) {
         guiManager.openDialog(dialog);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void toggleDialog(@NotNull final String dialog) {
         guiManager.toggleDialog(dialog);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void closeDialog(@NotNull final String dialog) {
         guiManager.closeDialog(dialog);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public CommandList getCommandList(@NotNull final String args) throws NoSuchCommandException {
         return guiManager.getCommandList(args);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void updatePlayerName(@NotNull final String playerName) {
         guiManager.updatePlayerName(playerName);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void activateCommandInput(@NotNull final String newText) {
         guiManager.activateCommandInput(newText);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean createKeyBinding(final boolean perCharacter, @NotNull final CommandList commandList) {
         return guiManager.createKeyBinding(perCharacter, commandList);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean removeKeyBinding(final boolean perCharacter) {
         return guiManager.removeKeyBinding(perCharacter);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void accountLogin(@NotNull final String login, @NotNull final String password) {
         server.sendAccountLogin(login, password);
         lastAccountPassword = password;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void accountCreate(@NotNull final String login, @NotNull final String password) {
         server.sendAccountCreate(login, password);
         lastAccountPassword = password;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void accountPlayCharacter(@NotNull final String name) {
         server.sendAccountPlay(name);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void accountLink(final int force, @NotNull final String login, @NotNull final String password) {
         server.sendAccountLink(force, login, password);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void accountCreateCharacter(@NotNull final String login) {
         server.sendAccountCharacterCreate(login, lastAccountPassword);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void accountPassword(@NotNull final String currentPassword, @NotNull final String newPassword) {
         server.sendAccountPassword(currentPassword, newPassword);

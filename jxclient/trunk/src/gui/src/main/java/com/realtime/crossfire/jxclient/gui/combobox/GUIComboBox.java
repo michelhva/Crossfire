@@ -97,36 +97,24 @@ public abstract class GUIComboBox<T> extends AbstractGUIElement {
         add(comboBox);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void dispose() {
         super.dispose();
         comboBox.removeActionListener(actionListener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public Dimension getPreferredSize() {
         final Dimension result = comboBox.getPreferredSize();
         return result == null ? super.getPreferredSize() : result;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public Dimension getMinimumSize() {
         final Dimension result = comboBox.getMinimumSize();
         return result == null ? super.getMinimumSize() : result;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setBounds(final int x, final int y, final int width, final int height) {
         super.setBounds(x, y, width, height);

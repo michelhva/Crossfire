@@ -130,9 +130,6 @@ public class KeyEvent2 {
         return keyCode == keyEvent.keyCode && modifiers == keyEvent.modifiers;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean equals(@Nullable final Object obj) {
         if (obj == null || obj.getClass() != getClass()) {
@@ -142,17 +139,11 @@ public class KeyEvent2 {
         return keyCode == keyEvent.keyCode && keyChar == keyEvent.keyChar && modifiers == keyEvent.modifiers;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public int hashCode() {
         return keyCode^keyChar^modifiers;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String toString() {

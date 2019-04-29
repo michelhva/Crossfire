@@ -29,17 +29,11 @@ import com.realtime.crossfire.jxclient.gui.commandlist.GUICommand;
  */
 public class PrintCommand implements GUICommand {
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean canExecute() {
         return true;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void execute() {
     }

@@ -58,9 +58,6 @@ public class ItemItemCellRenderer<T extends GUIItemItem> extends JPanel implemen
         add(template, BorderLayout.CENTER);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public Component getListCellRendererComponent(@NotNull final JList<? extends T> list, @NotNull final T value, final int index, final boolean isSelected, final boolean cellHasFocus) {
         template.setIndexNoListeners(value.getIndex());

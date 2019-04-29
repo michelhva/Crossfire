@@ -182,9 +182,6 @@ public class GUIDialogBackground extends AbstractGUIElement {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void paintComponent(@NotNull final Graphics g) {
         final Graphics paint;
@@ -213,18 +210,12 @@ public class GUIDialogBackground extends AbstractGUIElement {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public Dimension getPreferredSize() {
         return getMinimumSize();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public Dimension getMinimumSize() {

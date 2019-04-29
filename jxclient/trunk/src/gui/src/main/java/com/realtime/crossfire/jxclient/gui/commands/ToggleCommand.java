@@ -62,17 +62,11 @@ public class ToggleCommand implements GUICommand {
         this.target = target;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean canExecute() {
         return true;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void execute() {
         SwingUtilities2.invokeAndWait(executeRunnable);

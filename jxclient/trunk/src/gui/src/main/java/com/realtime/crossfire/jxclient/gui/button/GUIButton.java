@@ -138,17 +138,11 @@ public class GUIButton extends AbstractButton {
         preferredSize = new Dimension(preferredWidth, preferredHeight);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void activeChanged() {
         setChanged();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void paintComponent(@NotNull final Graphics g) {
         super.paintComponent(g);
@@ -160,18 +154,12 @@ public class GUIButton extends AbstractButton {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     protected Dimension getMinimumSizeInt() {
         return new Dimension(preferredSize);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public Dimension getMaximumSize() {

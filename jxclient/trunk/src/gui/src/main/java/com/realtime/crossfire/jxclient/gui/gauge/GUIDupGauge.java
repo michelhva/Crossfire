@@ -137,9 +137,6 @@ public class GUIDupGauge extends AbstractGUIElement implements GUIGaugeListener 
         updateTooltipText();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void paintComponent(@NotNull final Graphics g) {
         super.paintComponent(g);
@@ -152,27 +149,18 @@ public class GUIDupGauge extends AbstractGUIElement implements GUIGaugeListener 
         gaugeStateMod.draw(g);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public Dimension getPreferredSize() {
         return getGaugeStateSize();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public Dimension getMinimumSize() {
         return getGaugeStateSize();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public Dimension getMaximumSize() {
@@ -191,9 +179,6 @@ public class GUIDupGauge extends AbstractGUIElement implements GUIGaugeListener 
         return new Dimension(Math.max(div.width, mod.width), div.height+mod.height);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setValues(final int curValue, final int minValue, final int maxValue, @NotNull final String labelText, @NotNull final String tooltipText) {
         if (minValue != 0) {
@@ -233,9 +218,6 @@ public class GUIDupGauge extends AbstractGUIElement implements GUIGaugeListener 
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setBounds(final int x, final int y, final int width, final int height) {
         super.setBounds(x, y, width, height);
@@ -244,17 +226,11 @@ public class GUIDupGauge extends AbstractGUIElement implements GUIGaugeListener 
         orientationMod.setExtends(width, height);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setHidden(final boolean hidden) {
         // nothing
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mouseClicked(@NotNull final MouseEvent e) {
         super.mouseClicked(e);

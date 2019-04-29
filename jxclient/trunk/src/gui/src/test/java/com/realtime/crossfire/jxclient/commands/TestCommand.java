@@ -47,17 +47,11 @@ public class TestCommand extends AbstractCommand {
         this.allArguments = allArguments;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean allArguments() {
         return allArguments;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void execute(@NotNull final String args) {
         throw new AssertionError();

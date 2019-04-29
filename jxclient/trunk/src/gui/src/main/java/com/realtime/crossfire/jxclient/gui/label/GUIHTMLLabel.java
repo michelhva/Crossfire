@@ -82,9 +82,6 @@ public class GUIHTMLLabel extends AbstractLabel {
         super(tooltipManager, elementListener, name, text, font, color, backgroundPicture, backgroundColor);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected void textChanged() {
         autoResize();
@@ -104,9 +101,6 @@ public class GUIHTMLLabel extends AbstractLabel {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void paintComponent(@NotNull final Graphics g) {
         super.paintComponent(g);
@@ -147,18 +141,12 @@ public class GUIHTMLLabel extends AbstractLabel {
         setSize(Math.max(1, width+2*AUTO_BORDER_SIZE), Math.max(1, height+2*AUTO_BORDER_SIZE));
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public Dimension getPreferredSize() {
         return new Dimension(100, 32); // XXX
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public Dimension getMinimumSize() {

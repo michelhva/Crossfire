@@ -227,9 +227,6 @@ public class StatGaugeUpdater extends GaugeUpdater {
         this.itemSet.addItemSetListener(itemSetListener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void dispose() {
         itemSet.removeItemSetListener(itemSetListener);

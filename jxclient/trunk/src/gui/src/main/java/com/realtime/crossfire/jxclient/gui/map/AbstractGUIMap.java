@@ -322,9 +322,6 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
         setMapSize(this.mapUpdaterState.getMapWidth(), this.mapUpdaterState.getMapHeight());
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void dispose() {
         super.dispose();
@@ -515,9 +512,6 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
      */
     protected abstract void markPlayer(@NotNull final Graphics g, final int dx, final int dy);
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void paintComponent(@NotNull final Graphics g) {
         super.paintComponent(g);
@@ -598,9 +592,6 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
         return offsetY;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setBounds(final int x, final int y, final int width, final int height) {
         super.setBounds(x, y, width, height);
@@ -714,9 +705,6 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
         return graphics;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public Dimension getMinimumSize() {

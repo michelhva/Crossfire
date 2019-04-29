@@ -98,9 +98,6 @@ public class KnowledgeItem {
         return faceNum;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String toString() {

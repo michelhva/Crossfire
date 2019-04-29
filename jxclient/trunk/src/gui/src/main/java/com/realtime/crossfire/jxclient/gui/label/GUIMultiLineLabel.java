@@ -76,18 +76,12 @@ public class GUIMultiLineLabel extends GUILabel {
         lines = LINE_SEPARATOR_PATTERN.split(getText(), -1);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected void textChanged() {
         lines = LINE_SEPARATOR_PATTERN.split(getText(), -1);
         super.textChanged();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void paintComponent(@NotNull final Graphics g) {
         super.paintComponent(g);
@@ -107,18 +101,12 @@ public class GUIMultiLineLabel extends GUILabel {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public Dimension getPreferredSize() {
         return getTextSize();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public Dimension getMinimumSize() {

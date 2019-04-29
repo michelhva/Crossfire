@@ -165,9 +165,6 @@ public class GUIFloorList extends GUIItemList<GUIItemFloor> {
         return Math.max(getWidth()/cellWidth, 1)*Math.max(getHeight()/cellHeight, 1);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     @NotNull
     protected GUIItemFloor newItem(final int index) {

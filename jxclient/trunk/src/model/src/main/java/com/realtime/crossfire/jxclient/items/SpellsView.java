@@ -74,17 +74,11 @@ public class SpellsView extends AbstractItemView {
         });
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public int getSize() {
         return spellsManager.getSpells();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public CfItem getItem(final int index) {

@@ -38,7 +38,6 @@ public enum CommandType {
      * Apply an item.
      */
     APPLY {
-        /** {@inheritDoc} */
         @Override
         protected void doExecute(@NotNull final CfItem item, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue) {
             crossfireServerConnection.sendApply(item.getTag());
@@ -49,7 +48,6 @@ public enum CommandType {
      * Drop an item (to the ground of into an opened container).
      */
     DROP {
-        /** {@inheritDoc} */
         @Override
         protected void doExecute(@NotNull final CfItem item, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue) {
             if (item.isLocked()) {
@@ -64,7 +62,6 @@ public enum CommandType {
      * Examine an item.
      */
     EXAMINE {
-        /** {@inheritDoc} */
         @Override
         protected void doExecute(@NotNull final CfItem item, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue) {
             crossfireServerConnection.sendExamine(item.getTag());
@@ -75,7 +72,6 @@ public enum CommandType {
      * Lock an item.
      */
     LOCK {
-        /** {@inheritDoc} */
         @Override
         protected void doExecute(@NotNull final CfItem item, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue) {
             crossfireServerConnection.sendLock(true, item.getTag());
@@ -86,7 +82,6 @@ public enum CommandType {
      * Toggle the lock of an item.
      */
     LOCK_TOGGLE {
-        /** {@inheritDoc} */
         @Override
         protected void doExecute(@NotNull final CfItem item, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue) {
             crossfireServerConnection.sendLock(!item.isLocked(), item.getTag());
@@ -97,7 +92,6 @@ public enum CommandType {
      * Mark an item.
      */
     MARK {
-        /** {@inheritDoc} */
         @Override
         protected void doExecute(@NotNull final CfItem item, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue) {
             crossfireServerConnection.sendMark(item.getTag());
@@ -108,7 +102,6 @@ public enum CommandType {
      * Unlock an item.
      */
     UNLOCK {
-        /** {@inheritDoc} */
         @Override
         protected void doExecute(@NotNull final CfItem item, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue) {
             crossfireServerConnection.sendLock(false, item.getTag());

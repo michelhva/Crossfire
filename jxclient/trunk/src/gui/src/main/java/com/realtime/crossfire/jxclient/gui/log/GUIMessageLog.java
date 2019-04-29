@@ -63,9 +63,6 @@ public class GUIMessageLog extends GUILog {
         messageBufferUpdater = new MessageBufferUpdater(crossfireServerConnection, getBuffer(), defaultColor);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void dispose() {
         super.dispose();

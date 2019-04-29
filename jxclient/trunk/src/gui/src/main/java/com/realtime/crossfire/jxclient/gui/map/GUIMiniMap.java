@@ -111,9 +111,6 @@ public class GUIMiniMap extends AbstractGUIMap {
         tileSize = facesProvider.getSize();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected void paintSquareBackground(@NotNull final Graphics g, final int px, final int py, final boolean hasImage, @NotNull final CfMapSquare mapSquare) {
         final Color color;
@@ -126,9 +123,6 @@ public class GUIMiniMap extends AbstractGUIMap {
         paintColoredSquare(g, color, px, py);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected void markPlayer(@NotNull final Graphics g, final int dx, final int dy) {
         if (dx != 0 || dy != 0) {
@@ -146,9 +140,6 @@ public class GUIMiniMap extends AbstractGUIMap {
         g.fillRect(getPlayerX(), getPlayerY(), tileSize, tileSize);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public Dimension getPreferredSize() {

@@ -106,9 +106,6 @@ public class Resolution {
         return width == displayMode.getWidth() && height == displayMode.getHeight();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean equals(@Nullable final Object obj) {
         if (obj == null) {
@@ -121,17 +118,11 @@ public class Resolution {
         return resolution.width == width && resolution.height == height;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public int hashCode() {
         return width^(height<<16)^(height>>16);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String toString() {

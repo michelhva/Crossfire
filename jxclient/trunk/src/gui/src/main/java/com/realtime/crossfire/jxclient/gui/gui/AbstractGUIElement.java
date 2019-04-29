@@ -122,119 +122,74 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
         setFocusable(false);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void dispose() {
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String toString() {
         return name;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean isDefault() {
         return isDefault;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setDefault(final boolean isDefault) {
         this.isDefault = isDefault;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setIgnore() {
         ignore = true;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean isIgnore() {
         return ignore;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String getName() {
         return name;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mouseClicked(@NotNull final MouseEvent e) {
         elementListener.raiseDialog(this);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mouseEntered(@NotNull final MouseEvent e, final boolean debugGui) {
         tooltipManager.setElement(this);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mouseExited(@NotNull final MouseEvent e) {
         tooltipManager.unsetElement(this);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mousePressed(@NotNull final MouseEvent e) {
         elementListener.raiseDialog(this);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mouseReleased(@NotNull final MouseEvent e) {
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mouseMoved(@NotNull final MouseEvent e) {
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void mouseDragged(@NotNull final MouseEvent e) {
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setChanged() {
         synchronized (setChangedRunnable) {
@@ -245,33 +200,21 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setTooltipText(@Nullable final String tooltipText) {
         tooltipManager.setTooltipText(this, tooltipText);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setTooltipText(@Nullable final String tooltipText, final int x, final int y, final int w, final int h) {
         tooltipManager.setTooltipText(this, tooltipText, x, y, w, h);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean hasTooltipText() {
         return tooltipManager.hasTooltipText(this);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setChangedListener(@Nullable final GUIElementChangedListener changedListener) {
         this.changedListener = changedListener;

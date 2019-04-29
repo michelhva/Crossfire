@@ -91,9 +91,6 @@ public class Processor implements Runnable {
         state = fadeOut ? 2 : 4;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void run() {
         try {

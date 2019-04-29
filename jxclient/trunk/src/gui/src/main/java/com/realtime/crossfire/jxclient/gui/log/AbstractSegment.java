@@ -42,9 +42,6 @@ public abstract class AbstractSegment implements Segment {
      */
     private int width = -1;
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setX(final int x) {
         this.x = x;
@@ -58,9 +55,6 @@ public abstract class AbstractSegment implements Segment {
         return x;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setY(final int y) {
         this.y = y;
@@ -74,9 +68,6 @@ public abstract class AbstractSegment implements Segment {
         return y;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setWidth(final int width) {
         this.width = width;

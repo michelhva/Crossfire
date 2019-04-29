@@ -69,9 +69,6 @@ public class GUILabelQuery extends GUIMultiLineLabel {
         this.crossfireServerConnection.addCrossfireQueryListener(crossfireQueryListener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void dispose() {
         super.dispose();

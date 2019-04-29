@@ -54,9 +54,6 @@ public class CharacterCellRenderer extends JPanel implements GUIListCellRenderer
         add(template, BorderLayout.CENTER);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public Component getListCellRendererComponent(@NotNull final JList<? extends GUICharacter> list, @NotNull final GUICharacter value, final int index, final boolean isSelected, final boolean cellHasFocus) {
         template.setIndex(value.getIndex());

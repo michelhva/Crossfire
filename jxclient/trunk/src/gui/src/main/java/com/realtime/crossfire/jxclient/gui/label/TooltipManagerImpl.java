@@ -125,9 +125,6 @@ public class TooltipManagerImpl implements TooltipManager {
         SwingUtilities2.invokeAndWait(resetRunnable);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setElement(@NotNull final GUIElement guiElement) {
         final TooltipText tooltipText = tooltipTexts.get(guiElement);
@@ -148,9 +145,6 @@ public class TooltipManagerImpl implements TooltipManager {
         });
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void unsetElement(@NotNull final GUIElement guiElement) {
         SwingUtilities2.invokeAndWait(() -> {
@@ -163,9 +157,6 @@ public class TooltipManagerImpl implements TooltipManager {
         });
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setTooltipText(@NotNull final AbstractGUIElement element, @Nullable final String tooltipText) {
         final Component gui = GuiUtils.getGui(element);
@@ -174,9 +165,6 @@ public class TooltipManagerImpl implements TooltipManager {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void setTooltipText(@NotNull final GUIElement element, @Nullable final String tooltipText, final int x, final int y, final int w, final int h) {
         final TooltipText oldTooltipText = tooltipTexts.get(element);
@@ -201,9 +189,6 @@ public class TooltipManagerImpl implements TooltipManager {
         });
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean hasTooltipText(final AbstractGUIElement element) {
         return tooltipTexts.get(element) != null;

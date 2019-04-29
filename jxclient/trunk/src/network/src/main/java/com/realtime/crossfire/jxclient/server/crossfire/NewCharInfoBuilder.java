@@ -128,9 +128,6 @@ public class NewCharInfoBuilder {
         startingMapChoice = true;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String toString() {

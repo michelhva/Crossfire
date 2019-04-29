@@ -61,17 +61,11 @@ public class QuestsView extends AbstractItemView {
         });
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public int getSize() {
         return questsManager.getQuests();
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Nullable
     @Override
     public CfItem getItem(final int index) {

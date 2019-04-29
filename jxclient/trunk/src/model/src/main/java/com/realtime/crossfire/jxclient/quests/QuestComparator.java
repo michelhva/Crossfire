@@ -35,9 +35,6 @@ public class QuestComparator implements Comparator<Quest>, Serializable {
      */
     private static final long serialVersionUID = 1;
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public int compare(@NotNull final Quest o1, @NotNull final Quest o2) {
         final int cmp = String.CASE_INSENSITIVE_ORDER.compare(o1.getTitle(), o2.getTitle());

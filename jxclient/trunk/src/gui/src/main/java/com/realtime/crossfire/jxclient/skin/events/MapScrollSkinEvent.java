@@ -69,9 +69,6 @@ public class MapScrollSkinEvent implements SkinEvent {
         this.mapUpdaterState.addCrossfireMapScrollListener(mapscrollListener);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void dispose() {
         mapUpdaterState.removeCrossfireMapScrollListener(mapscrollListener);

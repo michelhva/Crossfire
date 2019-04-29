@@ -52,17 +52,11 @@ public class SelectCommand implements GUICommand {
         this.selected = selected;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean canExecute() {
         return true;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void execute() {
         element.select(selected);

@@ -50,17 +50,11 @@ public class OriginalFacesProvider implements FacesProvider {
         this.facesManager = facesManager;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public int getSize() {
         return SIZE;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public ImageIcon getImageIcon(final int faceNum, @Nullable final boolean[] isUnknownImage) {

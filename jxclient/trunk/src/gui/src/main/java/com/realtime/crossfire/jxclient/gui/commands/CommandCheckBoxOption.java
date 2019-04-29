@@ -56,9 +56,6 @@ public class CommandCheckBoxOption extends CheckBoxOption {
         this.commandOff = commandOff;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     protected void execute(final boolean checked) {
         if (checked) {
@@ -68,9 +65,6 @@ public class CommandCheckBoxOption extends CheckBoxOption {
         }
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean isDefaultChecked() {
         return true;

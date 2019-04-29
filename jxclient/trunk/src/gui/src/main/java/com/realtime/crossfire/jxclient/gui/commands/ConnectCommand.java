@@ -54,17 +54,11 @@ public class ConnectCommand implements GUICommand {
         this.hostNameInputField = hostNameInputField;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean canExecute() {
         return true;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void execute() {
         guiStateManager.connect(hostNameInputField.getText());

@@ -52,17 +52,11 @@ public class ScrollListCommand implements GUICommand {
         this.distance = distance;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean canExecute() {
         return list.canScroll(distance);
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void execute() {
         list.scroll(distance);

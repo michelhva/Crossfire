@@ -53,17 +53,11 @@ public class DialogToggleCommand implements GUICommand {
         this.dialog = dialog;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean canExecute() {
         return true;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public void execute() {
         commandCallback.toggleDialog(dialog);

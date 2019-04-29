@@ -81,9 +81,6 @@ public class Location {
         return layer;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public boolean equals(@Nullable final Object obj) {
         if (obj == null) {
@@ -96,17 +93,11 @@ public class Location {
         return loc.x == x && loc.y == y && loc.layer == layer;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @Override
     public int hashCode() {
         return x^y*0x1000^layer*0x1000000;
     }
 
-    /**
-     * {@inheritDoc}
-     */
     @NotNull
     @Override
     public String toString() {
