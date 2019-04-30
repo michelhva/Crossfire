@@ -8,7 +8,7 @@ height 20
 enter_x 13
 enter_y 20
 msg
-Modified: 2013-08-06 Kevin Zheng
+Modified: 2019-04-30 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -1697,6 +1697,10 @@ arch woodfloor
 x 14
 y 4
 end
+arch swall_1_4_half
+x 14
+y 4
+end
 arch wall_2_1_1
 x 14
 y 4
@@ -1844,7 +1848,7 @@ arch woodfloor
 x 15
 y 4
 end
-arch swall_1_4
+arch swall_2_1_2
 x 15
 y 4
 end
@@ -2198,7 +2202,7 @@ arch woodfloor
 x 18
 y 4
 end
-arch swall_1_3
+arch swall_2_1_2
 x 18
 y 4
 end
@@ -2305,6 +2309,10 @@ x 19
 y 4
 end
 arch wall_1_2
+x 19
+y 4
+end
+arch swall_1_3_half
 x 19
 y 4
 end
