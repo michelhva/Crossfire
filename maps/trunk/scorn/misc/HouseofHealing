@@ -2100,59 +2100,45 @@ arch shop_empty
 x 8
 y 15
 end
-arch balm_generic
-name balm of curing disease
-name_pl balms of curing disease
+arch potion_generic
 x 8
 y 15
-level 20
 unpaid 1
 identified 1
-arch spell_cure_disease
-end
+artifact cure disease
 end
 arch shop_empty
 x 8
 y 16
 end
-arch balm_generic
-name balm of curing poison
-name_pl balms of curing poison
+arch potion_generic
 x 8
 y 16
-level 20
 unpaid 1
 identified 1
-arch spell_cure_poison
-end
+artifact cure poison
 end
 arch shop_empty
 x 8
 y 17
 end
-arch balm_generic
-name balm of cure vision
-name_pl balms of cure vision
+arch potion_generic
 x 8
 y 17
 unpaid 1
 identified 1
-arch spell_cure_blindness
-end
+artifact cure vision
 end
 arch shop_empty
 x 8
 y 18
 end
 arch balm_generic
-name balm of minor healing
-name_pl balms of minor healing
 x 8
 y 18
 unpaid 1
 identified 1
-arch spell_minor_healing
-end
+artifact first aid
 end
 arch shop_empty
 x 8
@@ -2402,59 +2388,45 @@ arch shop_empty
 x 9
 y 15
 end
-arch balm_generic
-name balm of curing disease
-name_pl balms of curing disease
+arch potion_generic
 x 9
 y 15
-level 20
 unpaid 1
 identified 1
-arch spell_cure_disease
-end
+artifact cure disease
 end
 arch shop_empty
 x 9
 y 16
 end
-arch balm_generic
-name balm of curing poison
-name_pl balms of curing poison
+arch potion_generic
 x 9
 y 16
-level 20
 unpaid 1
 identified 1
-arch spell_cure_poison
-end
+artifact cure poison
 end
 arch shop_empty
 x 9
 y 17
 end
-arch balm_generic
-name balm of cure vision
-name_pl balms of cure vision
+arch potion_generic
 x 9
 y 17
 unpaid 1
 identified 1
-arch spell_cure_blindness
-end
+artifact cure vision
 end
 arch shop_empty
 x 9
 y 18
 end
 arch balm_generic
-name balm of minor healing
-name_pl balms of minor healing
 x 9
 y 18
 unpaid 1
 identified 1
-arch spell_minor_healing
-end
+artifact first aid
 end
 arch shop_empty
 x 9
@@ -2742,59 +2714,45 @@ arch shop_empty
 x 10
 y 15
 end
-arch balm_generic
-name balm of curing disease
-name_pl balms of curing disease
+arch potion_generic
 x 10
 y 15
-level 20
 unpaid 1
 identified 1
-arch spell_cure_disease
-end
+artifact cure disease
 end
 arch shop_empty
 x 10
 y 16
 end
-arch balm_generic
-name balm of curing poison
-name_pl balms of curing poison
+arch potion_generic
 x 10
 y 16
-level 20
 unpaid 1
 identified 1
-arch spell_cure_poison
-end
+artifact cure poison
 end
 arch shop_empty
 x 10
 y 17
 end
-arch balm_generic
-name balm of cure vision
-name_pl balms of cure vision
+arch potion_generic
 x 10
 y 17
 unpaid 1
 identified 1
-arch spell_cure_blindness
-end
+artifact cure vision
 end
 arch shop_empty
 x 10
 y 18
 end
 arch balm_generic
-name balm of minor healing
-name_pl balms of minor healing
 x 10
 y 18
 unpaid 1
 identified 1
-arch spell_minor_healing
-end
+artifact first aid
 end
 arch shop_empty
 x 10
@@ -3106,59 +3064,45 @@ arch shop_empty
 x 11
 y 15
 end
-arch balm_generic
-name balm of curing disease
-name_pl balms of curing disease
+arch potion_generic
 x 11
 y 15
-level 20
 unpaid 1
 identified 1
-arch spell_cure_disease
-end
+artifact cure disease
 end
 arch shop_empty
 x 11
 y 16
 end
-arch balm_generic
-name balm of curing poison
-name_pl balms of curing poison
+arch potion_generic
 x 11
 y 16
-level 20
 unpaid 1
 identified 1
-arch spell_cure_poison
-end
+artifact cure poison
 end
 arch shop_empty
 x 11
 y 17
 end
-arch balm_generic
-name balm of cure vision
-name_pl balms of cure vision
+arch potion_generic
 x 11
 y 17
 unpaid 1
 identified 1
-arch spell_cure_blindness
-end
+artifact cure vision
 end
 arch shop_empty
 x 11
 y 18
 end
 arch balm_generic
-name balm of minor healing
-name_pl balms of minor healing
 x 11
 y 18
 unpaid 1
 identified 1
-arch spell_minor_healing
-end
+artifact first aid
 end
 arch shop_empty
 x 11
@@ -3474,59 +3418,45 @@ arch shop_empty
 x 12
 y 15
 end
-arch balm_generic
-name balm of curing disease
-name_pl balms of curing disease
+arch potion_generic
 x 12
 y 15
-level 20
 unpaid 1
 identified 1
-arch spell_cure_disease
-end
+artifact cure disease
 end
 arch shop_empty
 x 12
 y 16
 end
-arch balm_generic
-name balm of curing poison
-name_pl balms of curing poison
+arch potion_generic
 x 12
 y 16
-level 20
 unpaid 1
 identified 1
-arch spell_cure_poison
-end
+artifact cure poison
 end
 arch shop_empty
 x 12
 y 17
 end
-arch balm_generic
-name balm of cure vision
-name_pl balms of cure vision
+arch potion_generic
 x 12
 y 17
 unpaid 1
 identified 1
-arch spell_cure_blindness
-end
+artifact cure vision
 end
 arch shop_empty
 x 12
 y 18
 end
 arch balm_generic
-name balm of minor healing
-name_pl balms of minor healing
 x 12
 y 18
 unpaid 1
 identified 1
-arch spell_minor_healing
-end
+artifact first aid
 end
 arch shop_empty
 x 12
@@ -3827,59 +3757,45 @@ arch shop_empty
 x 13
 y 15
 end
-arch balm_generic
-name balm of curing disease
-name_pl balms of curing disease
+arch potion_generic
 x 13
 y 15
-level 20
 unpaid 1
 identified 1
-arch spell_cure_disease
-end
+artifact cure disease
 end
 arch shop_empty
 x 13
 y 16
 end
-arch balm_generic
-name balm of curing poison
-name_pl balms of curing poison
+arch potion_generic
 x 13
 y 16
-level 20
 unpaid 1
 identified 1
-arch spell_cure_poison
-end
+artifact cure poison
 end
 arch shop_empty
 x 13
 y 17
 end
-arch balm_generic
-name balm of cure vision
-name_pl balms of cure vision
+arch potion_generic
 x 13
 y 17
 unpaid 1
 identified 1
-arch spell_cure_blindness
-end
+artifact cure vision
 end
 arch shop_empty
 x 13
 y 18
 end
 arch balm_generic
-name balm of minor healing
-name_pl balms of minor healing
 x 13
 y 18
 unpaid 1
 identified 1
-arch spell_minor_healing
-end
+artifact first aid
 end
 arch shop_empty
 x 13
@@ -3890,28 +3806,22 @@ x 13
 y 20
 end
 arch potion_generic
-name potion of curing madness
-name_pl potions of curing madness
 x 13
 y 20
 unpaid 1
 identified 1
-arch spell_cure_confusion
-end
+artifact cure madness
 end
 arch shop_empty
 x 13
 y 21
 end
 arch potion_generic
-name potion of curing madness
-name_pl potions of curing madness
 x 13
 y 21
 unpaid 1
 identified 1
-arch spell_cure_confusion
-end
+artifact cure madness
 end
 arch woodfloor
 x 13
@@ -4187,59 +4097,45 @@ arch shop_empty
 x 14
 y 15
 end
-arch balm_generic
-name balm of curing disease
-name_pl balms of curing disease
+arch potion_generic
 x 14
 y 15
-level 20
 unpaid 1
 identified 1
-arch spell_cure_disease
-end
+artifact cure disease
 end
 arch shop_empty
 x 14
 y 16
 end
-arch balm_generic
-name balm of curing poison
-name_pl balms of curing poison
+arch potion_generic
 x 14
 y 16
-level 20
 unpaid 1
 identified 1
-arch spell_cure_poison
-end
+artifact cure poison
 end
 arch shop_empty
 x 14
 y 17
 end
-arch balm_generic
-name balm of cure vision
-name_pl balms of cure vision
+arch potion_generic
 x 14
 y 17
 unpaid 1
 identified 1
-arch spell_cure_blindness
-end
+artifact cure vision
 end
 arch shop_empty
 x 14
 y 18
 end
 arch balm_generic
-name balm of minor healing
-name_pl balms of minor healing
 x 14
 y 18
 unpaid 1
 identified 1
-arch spell_minor_healing
-end
+artifact first aid
 end
 arch shop_empty
 x 14
@@ -4250,28 +4146,22 @@ x 14
 y 20
 end
 arch potion_generic
-name potion of curing madness
-name_pl potions of curing madness
 x 14
 y 20
 unpaid 1
 identified 1
-arch spell_cure_confusion
-end
+artifact cure madness
 end
 arch shop_empty
 x 14
 y 21
 end
 arch potion_generic
-name potion of curing madness
-name_pl potions of curing madness
 x 14
 y 21
 unpaid 1
 identified 1
-arch spell_cure_confusion
-end
+artifact cure madness
 end
 arch woodfloor
 x 14
