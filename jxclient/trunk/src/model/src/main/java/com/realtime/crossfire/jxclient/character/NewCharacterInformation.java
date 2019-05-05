@@ -72,7 +72,7 @@ public class NewCharacterInformation {
      * The {@link NewCharInfo} for creating new characters.
      */
     @NotNull
-    private NewCharInfo newCharInfo = new NewCharInfo(0, 0, 0, Collections.<String>emptyList(), false, false, false);
+    private NewCharInfo newCharInfo = new NewCharInfo(0, 0, 0, Collections.emptyList(), false, false, false);
 
     /**
      * All registered character listeners.
