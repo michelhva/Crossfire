@@ -87,4 +87,8 @@ public class GUIOneLineLabel extends GUILabel {
         return GuiUtils.getTextDimension(getText(), getFontMetrics(getTextFont()));
     }
 
+    @Override
+    public void notifyOpen() {
+    }
+
 }

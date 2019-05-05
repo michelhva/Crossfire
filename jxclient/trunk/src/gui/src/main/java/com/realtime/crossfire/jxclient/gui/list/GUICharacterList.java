@@ -174,4 +174,8 @@ public class GUICharacterList extends GUIList<GUICharacter> {
         setSelectedIndex(characterModel.getCharacterIndex(characterName));
     }
 
+    @Override
+    public void notifyOpen() {
+    }
+
 }

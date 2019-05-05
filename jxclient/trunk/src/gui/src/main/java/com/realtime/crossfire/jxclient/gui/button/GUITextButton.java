@@ -171,4 +171,8 @@ public class GUITextButton extends AbstractButton implements GUISelectable {
         this.selected = selected;
     }
 
+    @Override
+    public void notifyOpen() {
+    }
+
 }

@@ -226,4 +226,8 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
         // ignore
     }
 
+    @Override
+    public void notifyOpen() {
+    }
+
 }

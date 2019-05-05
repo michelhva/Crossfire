@@ -78,4 +78,8 @@ public class GUICommandText extends GUIText {
         setText("");
     }
 
+    @Override
+    public void notifyOpen() {
+    }
+
 }

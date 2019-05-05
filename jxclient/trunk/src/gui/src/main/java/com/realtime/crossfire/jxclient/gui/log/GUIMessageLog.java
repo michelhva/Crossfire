@@ -69,6 +69,10 @@ public class GUIMessageLog extends GUILog {
         messageBufferUpdater.dispose();
     }
 
+    @Override
+    public void notifyOpen() {
+    }
+
     /**
      * Sets a color mapping.
      * @param index the color index to change

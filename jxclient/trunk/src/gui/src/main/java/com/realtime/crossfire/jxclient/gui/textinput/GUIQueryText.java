@@ -78,4 +78,8 @@ public class GUIQueryText extends GUIText {
         setText("");
     }
 
+    @Override
+    public void notifyOpen() {
+    }
+
 }

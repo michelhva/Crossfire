@@ -160,4 +160,9 @@ public interface GUIElement {
      */
     void setChangedListener(@Nullable GUIElementChangedListener changedListener);
 
+    /**
+     * Called each time the enclosing dialog is opened (or raised).
+     */
+    void notifyOpen();
+
 }

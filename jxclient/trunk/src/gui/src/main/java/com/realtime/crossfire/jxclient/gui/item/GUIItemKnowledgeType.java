@@ -255,4 +255,8 @@ public class GUIItemKnowledgeType extends GUIItemItem {
     public void button3Clicked(final int modifiers) {
     }
 
+    @Override
+    public void notifyOpen() {
+    }
+
 }

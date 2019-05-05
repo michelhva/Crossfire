@@ -200,4 +200,8 @@ public class GUISpellList extends GUIItemList<GUIItemSpell> {
         return new GUIItemSpell(tooltipManager, elementListener, commandQueue, name+index, itemPainter, index, facesManager, spellsManager, currentSpellManager, itemView, 0);
     }
 
+    @Override
+    public void notifyOpen() {
+    }
+
 }

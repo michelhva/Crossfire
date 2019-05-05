@@ -127,4 +127,8 @@ public class GUIQuestList extends GUIItemList<GUIItemQuest> {
         return new GUIItemQuest(tooltipManager, elementListener, name+index, itemPainter, index, facesManager, questsManager, itemView, 0);
     }
 
+    @Override
+    public void notifyOpen() {
+    }
+
 }

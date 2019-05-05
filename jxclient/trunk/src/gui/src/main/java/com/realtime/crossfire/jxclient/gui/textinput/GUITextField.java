@@ -78,4 +78,8 @@ public class GUITextField extends GUIText {
         commandList.execute();
     }
 
+    @Override
+    public void notifyOpen() {
+    }
+
 }

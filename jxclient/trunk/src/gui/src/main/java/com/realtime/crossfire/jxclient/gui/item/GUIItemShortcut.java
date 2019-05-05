@@ -213,6 +213,10 @@ public class GUIItemShortcut extends GUIItem {
         setShortcut(null);
     }
 
+    @Override
+    public void notifyOpen() {
+    }
+
     /**
      * Updates {@link #shortcut} and registers/de-registers {@link
      * #shortcutListener}.

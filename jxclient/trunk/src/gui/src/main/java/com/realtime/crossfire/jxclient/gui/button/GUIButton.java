@@ -166,4 +166,8 @@ public class GUIButton extends AbstractButton {
         return getMinimumSizeInt();
     }
 
+    @Override
+    public void notifyOpen() {
+    }
+
 }

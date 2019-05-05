@@ -113,6 +113,10 @@ public class GUIMap extends AbstractGUIMap {
         }
     }
 
+    @Override
+    public void notifyOpen() {
+    }
+
     @Nullable
     @Override
     public Dimension getPreferredSize() {

@@ -153,4 +153,8 @@ public class GUIHTMLLabel extends AbstractLabel {
         return new Dimension(100, 32); // XXX
     }
 
+    @Override
+    public void notifyOpen() {
+    }
+
 }
