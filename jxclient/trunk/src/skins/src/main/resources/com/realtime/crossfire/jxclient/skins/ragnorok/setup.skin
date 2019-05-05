@@ -21,12 +21,18 @@ checkbox checkbox_sound       sound_enabled Enable sound
 #checkbox checkbox_login       popup_login Login window
 #checkbox checkbox_book        16 popup_book Books
 
-horizontal begin par
-  label_sound
-  checkbox_sound
+horizontal begin seq
+  gap 8
+  begin par
+    label_sound
+    checkbox_sound
+  end
+  gap 8
 end
 
 vertical begin seq
+  gap 8
   label_sound
   checkbox_sound
+  gap 8
 end

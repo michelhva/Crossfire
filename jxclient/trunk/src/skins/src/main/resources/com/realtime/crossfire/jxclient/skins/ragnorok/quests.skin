@@ -29,13 +29,11 @@ commandlist_add command_quests_next quests MOVE_SELECTION 0 1
 commandlist command_quests_reset OR quests SCROLL_RESET
 event connect command_quests_reset
 
-horizontal begin par
-  begin seq
-    quests 480
-    begin par
-      slider_up
-      slider_down
-    end
+horizontal begin seq
+  quests 480
+  begin par
+    slider_up
+    slider_down
   end
 end
 

@@ -55,6 +55,7 @@ checkbox checkbox_potion      pickup_potion Potions
 checkbox checkbox_magic_device pickup_magic_device Magic devices
 
 horizontal begin seq
+  gap 8
   begin par
     label_general
     checkbox_inhibit
@@ -95,54 +96,59 @@ horizontal begin seq
     checkbox_potion
     checkbox_magic_device
   end
+  gap 8
 end
 
-vertical begin par
-  begin seq
-    label_general
-    checkbox_inhibit
-    checkbox_stop
-    checkbox_not_cursed
-    gap 8
-    label_misc
-    checkbox_key
-    checkbox_valuables
-    checkbox_jewels
-    gap
+vertical begin seq
+  gap 8
+  begin par
+    begin seq
+      label_general
+      checkbox_inhibit
+      checkbox_stop
+      checkbox_not_cursed
+      gap 8
+      label_misc
+      checkbox_key
+      checkbox_valuables
+      checkbox_jewels
+      gap
+    end
+    begin seq
+      label_weapons
+      checkbox_melee_weapon
+      checkbox_missile_weapon
+      checkbox_bow
+      checkbox_arrow
+      gap 8
+      label_armor
+      checkbox_armour
+      checkbox_boots
+      checkbox_cloak
+      checkbox_gloves
+      checkbox_helmet
+      checkbox_shield
+      gap
+    end
+    begin seq
+      label_readables
+      checkbox_skillscroll
+      checkbox_readables
+      checkbox_spellbook
+      gap 8
+      label_food
+      checkbox_drink
+      checkbox_food
+      checkbox_flesh
+      gap 8
+      label_magical
+      checkbox_magical
+      checkbox_potion
+      checkbox_magic_device
+      gap
+    end
   end
-  begin seq
-    label_weapons
-    checkbox_melee_weapon
-    checkbox_missile_weapon
-    checkbox_bow
-    checkbox_arrow
-    gap 8
-    label_armor
-    checkbox_armour
-    checkbox_boots
-    checkbox_cloak
-    checkbox_gloves
-    checkbox_helmet
-    checkbox_shield
-    gap
-  end
-  begin seq
-    label_readables
-    checkbox_skillscroll
-    checkbox_readables
-    checkbox_spellbook
-    gap 8
-    label_food
-    checkbox_drink
-    checkbox_food
-    checkbox_flesh
-    gap 8
-    label_magical
-    checkbox_magical
-    checkbox_potion
-    checkbox_magic_device
-    gap
-  end
+  gap 8
 end
 
 link_size both checkbox_inhibit checkbox_stop checkbox_not_cursed checkbox_key checkbox_valuables checkbox_jewels checkbox_melee_weapon checkbox_missile_weapon checkbox_bow checkbox_arrow checkbox_armour checkbox_boots checkbox_cloak checkbox_gloves checkbox_helmet checkbox_shield checkbox_skillscroll checkbox_readables checkbox_spellbook checkbox_drink checkbox_food checkbox_flesh checkbox_magical checkbox_potion checkbox_magic_device

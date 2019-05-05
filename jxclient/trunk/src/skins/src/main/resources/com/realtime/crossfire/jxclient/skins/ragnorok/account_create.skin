@@ -32,38 +32,32 @@ commandlist_add command_null_new account_login MOVE_FOCUS account_password
 commandlist_add command_null_new account_password MOVE_FOCUS account_password_confirm
 commandlist_add command_null_new account_password_confirm MOVE_FOCUS account_do_login 1
 
-horizontal begin par
-  begin seq
-    gap 8
+horizontal begin seq
+  gap 8
+  begin par
     information
-    gap 8
-  end
-  begin seq
-    gap 8
-    begin par
-      label_login
-      label_password
-      label_password_confirm
+    begin seq
+      begin par
+        label_login
+        label_password
+        label_password_confirm
+      end
+      begin par
+        account_login
+        account_password
+        account_password_confirm
+      end
     end
-    begin par
-      account_login
-      account_password
-      account_password_confirm
-    end
-    gap 8
-  end
-  begin seq
-    gap 8
     account_create_error
-    gap 8
+    begin seq
+      gap
+      account_do_login
+      gap 8
+      account_cancel_login
+      gap
+    end
   end
-  begin seq
-    gap
-    account_do_login
-    gap 8
-    account_cancel_login
-    gap
-  end
+  gap 8
 end
 
 vertical begin seq
@@ -91,6 +85,7 @@ vertical begin seq
     account_do_login
     account_cancel_login
   end
+  gap 8
 end
 
 link_size horizontal account_do_login account_cancel_login

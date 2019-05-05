@@ -8,14 +8,20 @@ query_text input       input_active input_inactive font_label GRAY BLACK 1 true
 set_default input
 set_forced_active input
 
-horizontal begin par
-  message2
-  message
-  input
+horizontal begin seq
+  gap 8
+  begin par
+    message2
+    message
+    input
+  end
+  gap 8
 end
 
 vertical begin seq
+  gap 8
   message2
   message
   input
+  gap 8
 end

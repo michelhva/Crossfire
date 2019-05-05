@@ -56,82 +56,87 @@ label_stat stat_wc     font_label BLACK WC RIGHT
 label_stat stat_arm    font_label BLACK RES_PHYS RIGHT
 label_stat stat_ac     font_label BLACK AC RIGHT
 
-horizontal begin par
-  label_title
-  begin seq
-    begin par
-      label_lvl
-      label_xp
-      label_xp2
+horizontal begin seq
+  gap 8
+  begin par
+    label_title
+    begin seq
+      begin par
+        label_lvl
+        label_xp
+        label_xp2
+      end
+      begin par
+        stat_lvl
+        stat_xp
+        stat_xp2
+      end
+      gap 12
+      begin par
+        label_hp
+        label_sp
+      end
+      begin par
+        stat_hp
+        stat_sp
+      end
+      gap 12
+      begin par
+        label_gp
+        label_fp
+      end
+      begin par
+        stat_gp
+        stat_fp
+      end
     end
-    begin par
-      stat_lvl
-      stat_xp
-      stat_xp2
+    begin seq
+      label_range
+      stat_range
     end
-    gap 12
-    begin par
-      label_hp
-      label_sp
-    end
-    begin par
-      stat_hp
-      stat_sp
-    end
-    gap 12
-    begin par
-      label_gp
-      label_fp
-    end
-    begin par
-      stat_gp
-      stat_fp
+    begin seq
+      begin par
+        label_str
+        label_dex
+        label_con
+        label_int
+        label_wis
+        label_pow
+        label_cha
+      end
+      begin par
+        stat_str
+        stat_dex
+        stat_con
+        stat_int
+        stat_wis
+        stat_pow
+        stat_cha
+      end
+      gap 12
+      begin par
+        label_spd
+        label_wspd
+        label_dam
+        label_wc
+        label_arm
+        label_ac
+      end
+      begin par
+        stat_spd
+        stat_wspd
+        stat_dam
+        stat_wc
+        stat_arm
+        stat_ac
+      end
     end
   end
-  begin seq
-    label_range
-    stat_range
-  end
-  begin seq
-    begin par
-      label_str
-      label_dex
-      label_con
-      label_int
-      label_wis
-      label_pow
-      label_cha
-    end
-    begin par
-      stat_str
-      stat_dex
-      stat_con
-      stat_int
-      stat_wis
-      stat_pow
-      stat_cha
-    end
-    gap 12
-    begin par
-      label_spd
-      label_wspd
-      label_dam
-      label_wc
-      label_arm
-      label_ac
-    end
-    begin par
-      stat_spd
-      stat_wspd
-      stat_dam
-      stat_wc
-      stat_arm
-      stat_ac
-    end
-  end
+  gap 8
 end
 
 vertical begin seq
+  gap 8
   label_title
   gap 4
   begin par
@@ -200,4 +205,5 @@ vertical begin seq
     label_ac
     stat_ac
   end
+  gap 8
 end
