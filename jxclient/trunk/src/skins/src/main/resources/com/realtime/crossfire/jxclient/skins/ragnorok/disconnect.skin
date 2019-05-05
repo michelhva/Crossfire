@@ -1,7 +1,7 @@
 dialog WIDTH/2 HEIGHT/2 false Disconnect from server?
 set_modal
 
-label_multi message font_label BLACK <<EOF
+label_multi message font_title BLACK <<EOF
 Do you really want to disconnect
 from the server?
 EOF

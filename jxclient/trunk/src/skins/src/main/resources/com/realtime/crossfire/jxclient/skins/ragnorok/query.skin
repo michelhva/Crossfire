@@ -2,7 +2,7 @@ dialog WIDTH/2 HEIGHT/2 false Query
 set_modal
 
 label_message message2 font_label BLACK
-label_query message    font_label BLACK
+label_query message    font_title BLACK
 query_text input       input_active input_inactive font_label GRAY BLACK 1 true
 
 set_default input

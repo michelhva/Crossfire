@@ -1,7 +1,7 @@
 dialog WIDTH/2 HEIGHT/2 false (Un)bind a key
 set_modal
 
-label_multi message font_label BLACK <<EOF
+label_multi message font_title BLACK <<EOF
 Type the key to (un)bind.
 (ESC to abort)
 EOF
