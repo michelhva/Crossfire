@@ -624,164 +624,165 @@ public class JXCSkinLoader {
     private void load(@NotNull final JXCSkinSource skinSource, @NotNull final String dialogName, @NotNull final String resourceName, @NotNull final InputStream inputStream, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CharacterModel characterModel, @NotNull final CommandQueue commandQueue, @Nullable final Gui gui, @NotNull final Shortcuts shortcuts, @NotNull final CommandExecutor commandExecutor, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros, @NotNull final Image nextGroupFace, @NotNull final Image prevGroupFace, @NotNull final SmoothFaces smoothFaces) throws JXCSkinException {
         try {
             try (final InputStreamReader isr = new InputStreamReader(inputStream, StandardCharsets.UTF_8)) {
-                final LineNumberReader lnr = new LineNumberReader(isr);
-                try {
-                    boolean isDialog = false;
-                    while (true) {
-                        final String line = lnr.readLine();
-                        if (line == null) {
-                            break;
-                        }
-
-                        if (line.startsWith("#") || line.isEmpty()) {
-                            continue;
-                        }
-
-                        final String[] argsTmp;
-                        try {
-                            argsTmp = StringUtils.splitFields(line);
-                        } catch (final UnterminatedTokenException ex) {
-                            throw new JXCSkinException(ex.getMessage(), ex);
-                        }
-                        final Args args = new Args(argsTmp);
-                        final String cmd = args.get();
-                        if (gui != null && cmd.equals("button")) {
-                            parseButton(args, tooltipManager, elementListener, lnr);
-                        } else if (gui != null && cmd.equals("checkbox")) {
-                            parseCheckbox(args, tooltipManager, elementListener, lnr);
-                        } else if (gui != null && cmd.equals("combobox")) {
-                            parseComboBox(args, tooltipManager, elementListener);
-                        } else if (cmd.equals("commandlist")) {
-                            parseCommandList(args, guiStateManager, lnr, commandExecutor, commandQueue, server, commandCallback, macros);
-                        } else if (cmd.equals("commandlist_add")) {
-                            parseCommandListAdd(args, guiStateManager, lnr, commandExecutor, commandQueue, server, commandCallback, macros);
-                        } else if (gui != null && cmd.equals("command_text")) {
-                            parseCommandText(args, commandCallback, tooltipManager, elementListener, commandExecutor);
-                        } else if (cmd.equals("def")) {
-                            parseDef(args, lnr);
-                        } else if (gui != null && cmd.equals("dialog")) {
-                            if (isDialog) {
-                                throw new JXCSkinException("'dialog' must not be used more than once per dialog");
+                try (LineNumberReader lnr = new LineNumberReader(isr)) {
+                    try {
+                        boolean isDialog = false;
+                        while (true) {
+                            final String line = lnr.readLine();
+                            if (line == null) {
+                                break;
                             }
-                            parseDialog(args, tooltipManager, windowRenderer, elementListener, lnr, gui, dialogName);
-                            isDialog = true;
-                        } else if (gui != null && cmd.equals("dialog_hide")) {
-                            parseDialogHide(args, gui);
-                        } else if (gui != null && cmd.equals("dupgauge")) {
-                            parseDupGauge(args, tooltipManager, elementListener, lnr);
-                        } else if (gui != null && cmd.equals("duptextgauge")) {
-                            parseDupTextGauge(args, tooltipManager, elementListener, lnr);
-                        } else if (cmd.equals("event")) {
-                            parseEvent(args, guiStateManager, server);
-                        } else if (gui != null && cmd.equals("fill")) {
-                            parseFill(args, tooltipManager, elementListener);
-                        } else if (cmd.equals("font")) {
-                            parseFont(args);
-                        } else if (gui != null && cmd.equals("gauge")) {
-                            parseGauge(args, tooltipManager, elementListener, lnr);
-                        } else if (gui != null && cmd.equals("ignore")) {
-                            parseIgnore(args);
-                        } else if (gui != null && cmd.equals("inventory_list")) {
-                            parseList(args, ListType.INVENTORY, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
-                        } else if (gui != null && cmd.equals("floor_list")) {
-                            parseList(args, ListType.GROUND, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
-                        } else if (gui != null && cmd.equals("spells_list")) {
-                            parseList(args, ListType.SPELL, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
-                        } else if (gui != null && cmd.equals("spell_skills")) {
-                            parseList(args, ListType.SPELL_SKILLS, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
-                        } else if (gui != null && cmd.equals("quests_list")) {
-                            parseList(args, ListType.QUEST, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
-                        } else if (gui != null && cmd.equals("knowledge_types")) {
-                            parseList(args, ListType.KNOWLEDGE_TYPES, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
-                        } else if (gui != null && cmd.equals("knowledge_list")) {
-                            parseList(args, ListType.KNOWLEDGE_LIST, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
-                        } else if (gui != null && cmd.equals("horizontal")) {
-                            parseHorizontal(args, gui, lnr, isDialog);
-                        } else if (gui != null && cmd.equals("item")) {
-                            parseItem(args, tooltipManager, elementListener, commandQueue, server, shortcuts, currentSpellManager, nextGroupFace, prevGroupFace);
-                        } else if (cmd.equals("key")) {
-                            parseKey(args, gui, line);
-                        } else if (gui != null && cmd.equals("label_html")) {
-                            parseLabelHtml(args, tooltipManager, elementListener, lnr);
-                        } else if (gui != null && cmd.equals("label_multi")) {
-                            parseLabelMulti(args, tooltipManager, elementListener, lnr);
-                        } else if (gui != null && cmd.equals("label_query")) {
-                            parseLabelQuery(args, tooltipManager, elementListener, server);
-                        } else if (gui != null && cmd.equals("label_failure")) {
-                            parseLabelFailure(args, tooltipManager, elementListener, server);
-                        } else if (gui != null && cmd.equals("label_message")) {
-                            parseLabelMessage(args, tooltipManager, elementListener, server, windowRenderer);
-                        } else if (gui != null && cmd.equals("label_text")) {
-                            parseLabelText(args, tooltipManager, elementListener, lnr);
-                        } else if (gui != null && cmd.equals("label_stat")) {
-                            parseLabelStat(args, tooltipManager, elementListener);
-                        } else if (gui != null && cmd.equals("label_stat2")) {
-                            parseLabelStat2(args, tooltipManager, elementListener);
-                        } else if (gui != null && cmd.equals("label_spell")) {
-                            parseLabelSpell(args, tooltipManager, elementListener, currentSpellManager);
-                        } else if (gui != null && cmd.equals("link_size")) {
-                            parseLinkSize(args, gui);
-                        } else if (gui != null && cmd.equals("log_label")) {
-                            parseLogLabel(args, tooltipManager, elementListener);
-                        } else if (gui != null && cmd.equals("log_message")) {
-                            parseLogMessage(args, tooltipManager, elementListener, server);
-                        } else if (gui != null && cmd.equals("log_color")) {
-                            parseLogColor(args);
-                        } else if (gui != null && cmd.equals("log_filter")) {
-                            parseLogFilter(args);
-                        } else if (gui != null && cmd.equals("minimap")) {
-                            parseMinimap(args, tooltipManager, elementListener);
-                        } else if (gui != null && cmd.equals("map")) {
-                            parseMap(args, tooltipManager, elementListener, server, smoothFaces);
-                        } else if (gui != null && cmd.equals("meta_list")) {
-                            parseMetaList(args, tooltipManager, elementListener, metaserverModel);
-                        } else if (gui != null && cmd.equals("picture")) {
-                            parsePicture(args, tooltipManager, elementListener);
-                        } else if (gui != null && cmd.equals("query_text")) {
-                            parseQueryText(args, server, commandCallback, tooltipManager, elementListener);
-                        } else if (gui != null && cmd.equals("set_forced_active")) {
-                            parseSetForcedActive(args, gui);
-                        } else if (gui != null && cmd.equals("set_auto_size")) {
-                            parseSetAutoSize(gui, args);
-                        } else if (gui != null && cmd.equals("set_default")) {
-                            parseSetDefault(args);
-                        } else if (gui != null && cmd.equals("set_invisible")) {
-                            parseSetInvisible(args);
-                        } else if (gui != null && cmd.equals("set_modal")) {
-                            parseSetModal(gui);
-                        } else if (gui != null && cmd.equals("scrollbar")) {
-                            parseScrollbar(args, tooltipManager, elementListener);
-                        } else if (gui == null && cmd.equals("skin_name")) {
-                            parseSkinName(args);
-                        } else if (gui != null && cmd.equals("text")) {
-                            parseText(args, commandCallback, tooltipManager, elementListener);
-                        } else if (gui != null && cmd.equals("textbutton")) {
-                            parseTextButton(args, tooltipManager, elementListener, lnr);
-                        } else if (gui != null && cmd.equals("textgauge")) {
-                            parseTextGauge(args, tooltipManager, elementListener, lnr);
-                        } else if (cmd.equals("tooltip")) {
-                            parseTooltip(args, tooltipManager, elementListener);
-                        } else if (cmd.equals("vertical")) {
-                            parseVertical(args, gui, lnr, isDialog);
-                        } else if (cmd.equals("character_list")) {
-                            parseCharacterList(args, tooltipManager, elementListener, characterModel);
-                        } else if (cmd.equals("hide_input")) {
-                            parseHideInput(args);
-                        } else {
-                            throw new IOException("unknown keyword '"+cmd+"'");
-                        }
 
-                        if (args.hasMore()) {
-                            throw new IOException("excess arguments");
+                            if (line.startsWith("#") || line.isEmpty()) {
+                                continue;
+                            }
+
+                            final String[] argsTmp;
+                            try {
+                                argsTmp = StringUtils.splitFields(line);
+                            } catch (final UnterminatedTokenException ex) {
+                                throw new JXCSkinException(ex.getMessage(), ex);
+                            }
+                            final Args args = new Args(argsTmp);
+                            final String cmd = args.get();
+                            if (gui != null && cmd.equals("button")) {
+                                parseButton(args, tooltipManager, elementListener, lnr);
+                            } else if (gui != null && cmd.equals("checkbox")) {
+                                parseCheckbox(args, tooltipManager, elementListener, lnr);
+                            } else if (gui != null && cmd.equals("combobox")) {
+                                parseComboBox(args, tooltipManager, elementListener);
+                            } else if (cmd.equals("commandlist")) {
+                                parseCommandList(args, guiStateManager, lnr, commandExecutor, commandQueue, server, commandCallback, macros);
+                            } else if (cmd.equals("commandlist_add")) {
+                                parseCommandListAdd(args, guiStateManager, lnr, commandExecutor, commandQueue, server, commandCallback, macros);
+                            } else if (gui != null && cmd.equals("command_text")) {
+                                parseCommandText(args, commandCallback, tooltipManager, elementListener, commandExecutor);
+                            } else if (cmd.equals("def")) {
+                                parseDef(args, lnr);
+                            } else if (gui != null && cmd.equals("dialog")) {
+                                if (isDialog) {
+                                    throw new JXCSkinException("'dialog' must not be used more than once per dialog");
+                                }
+                                parseDialog(args, tooltipManager, windowRenderer, elementListener, lnr, gui, dialogName);
+                                isDialog = true;
+                            } else if (gui != null && cmd.equals("dialog_hide")) {
+                                parseDialogHide(args, gui);
+                            } else if (gui != null && cmd.equals("dupgauge")) {
+                                parseDupGauge(args, tooltipManager, elementListener, lnr);
+                            } else if (gui != null && cmd.equals("duptextgauge")) {
+                                parseDupTextGauge(args, tooltipManager, elementListener, lnr);
+                            } else if (cmd.equals("event")) {
+                                parseEvent(args, guiStateManager, server);
+                            } else if (gui != null && cmd.equals("fill")) {
+                                parseFill(args, tooltipManager, elementListener);
+                            } else if (cmd.equals("font")) {
+                                parseFont(args);
+                            } else if (gui != null && cmd.equals("gauge")) {
+                                parseGauge(args, tooltipManager, elementListener, lnr);
+                            } else if (gui != null && cmd.equals("ignore")) {
+                                parseIgnore(args);
+                            } else if (gui != null && cmd.equals("inventory_list")) {
+                                parseList(args, ListType.INVENTORY, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
+                            } else if (gui != null && cmd.equals("floor_list")) {
+                                parseList(args, ListType.GROUND, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
+                            } else if (gui != null && cmd.equals("spells_list")) {
+                                parseList(args, ListType.SPELL, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
+                            } else if (gui != null && cmd.equals("spell_skills")) {
+                                parseList(args, ListType.SPELL_SKILLS, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
+                            } else if (gui != null && cmd.equals("quests_list")) {
+                                parseList(args, ListType.QUEST, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
+                            } else if (gui != null && cmd.equals("knowledge_types")) {
+                                parseList(args, ListType.KNOWLEDGE_TYPES, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
+                            } else if (gui != null && cmd.equals("knowledge_list")) {
+                                parseList(args, ListType.KNOWLEDGE_LIST, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
+                            } else if (gui != null && cmd.equals("horizontal")) {
+                                parseHorizontal(args, gui, lnr, isDialog);
+                            } else if (gui != null && cmd.equals("item")) {
+                                parseItem(args, tooltipManager, elementListener, commandQueue, server, shortcuts, currentSpellManager, nextGroupFace, prevGroupFace);
+                            } else if (cmd.equals("key")) {
+                                parseKey(args, gui, line);
+                            } else if (gui != null && cmd.equals("label_html")) {
+                                parseLabelHtml(args, tooltipManager, elementListener, lnr);
+                            } else if (gui != null && cmd.equals("label_multi")) {
+                                parseLabelMulti(args, tooltipManager, elementListener, lnr);
+                            } else if (gui != null && cmd.equals("label_query")) {
+                                parseLabelQuery(args, tooltipManager, elementListener, server);
+                            } else if (gui != null && cmd.equals("label_failure")) {
+                                parseLabelFailure(args, tooltipManager, elementListener, server);
+                            } else if (gui != null && cmd.equals("label_message")) {
+                                parseLabelMessage(args, tooltipManager, elementListener, server, windowRenderer);
+                            } else if (gui != null && cmd.equals("label_text")) {
+                                parseLabelText(args, tooltipManager, elementListener, lnr);
+                            } else if (gui != null && cmd.equals("label_stat")) {
+                                parseLabelStat(args, tooltipManager, elementListener);
+                            } else if (gui != null && cmd.equals("label_stat2")) {
+                                parseLabelStat2(args, tooltipManager, elementListener);
+                            } else if (gui != null && cmd.equals("label_spell")) {
+                                parseLabelSpell(args, tooltipManager, elementListener, currentSpellManager);
+                            } else if (gui != null && cmd.equals("link_size")) {
+                                parseLinkSize(args, gui);
+                            } else if (gui != null && cmd.equals("log_label")) {
+                                parseLogLabel(args, tooltipManager, elementListener);
+                            } else if (gui != null && cmd.equals("log_message")) {
+                                parseLogMessage(args, tooltipManager, elementListener, server);
+                            } else if (gui != null && cmd.equals("log_color")) {
+                                parseLogColor(args);
+                            } else if (gui != null && cmd.equals("log_filter")) {
+                                parseLogFilter(args);
+                            } else if (gui != null && cmd.equals("minimap")) {
+                                parseMinimap(args, tooltipManager, elementListener);
+                            } else if (gui != null && cmd.equals("map")) {
+                                parseMap(args, tooltipManager, elementListener, server, smoothFaces);
+                            } else if (gui != null && cmd.equals("meta_list")) {
+                                parseMetaList(args, tooltipManager, elementListener, metaserverModel);
+                            } else if (gui != null && cmd.equals("picture")) {
+                                parsePicture(args, tooltipManager, elementListener);
+                            } else if (gui != null && cmd.equals("query_text")) {
+                                parseQueryText(args, server, commandCallback, tooltipManager, elementListener);
+                            } else if (gui != null && cmd.equals("set_forced_active")) {
+                                parseSetForcedActive(args, gui);
+                            } else if (gui != null && cmd.equals("set_auto_size")) {
+                                parseSetAutoSize(gui, args);
+                            } else if (gui != null && cmd.equals("set_default")) {
+                                parseSetDefault(args);
+                            } else if (gui != null && cmd.equals("set_invisible")) {
+                                parseSetInvisible(args);
+                            } else if (gui != null && cmd.equals("set_modal")) {
+                                parseSetModal(gui);
+                            } else if (gui != null && cmd.equals("scrollbar")) {
+                                parseScrollbar(args, tooltipManager, elementListener);
+                            } else if (gui == null && cmd.equals("skin_name")) {
+                                parseSkinName(args);
+                            } else if (gui != null && cmd.equals("text")) {
+                                parseText(args, commandCallback, tooltipManager, elementListener);
+                            } else if (gui != null && cmd.equals("textbutton")) {
+                                parseTextButton(args, tooltipManager, elementListener, lnr);
+                            } else if (gui != null && cmd.equals("textgauge")) {
+                                parseTextGauge(args, tooltipManager, elementListener, lnr);
+                            } else if (cmd.equals("tooltip")) {
+                                parseTooltip(args, tooltipManager, elementListener);
+                            } else if (cmd.equals("vertical")) {
+                                parseVertical(args, gui, lnr, isDialog);
+                            } else if (cmd.equals("character_list")) {
+                                parseCharacterList(args, tooltipManager, elementListener, characterModel);
+                            } else if (cmd.equals("hide_input")) {
+                                parseHideInput(args);
+                            } else {
+                                throw new IOException("unknown keyword '"+cmd+"'");
+                            }
+
+                            if (args.hasMore()) {
+                                throw new IOException("excess arguments");
+                            }
                         }
+                    } catch (final IOException|JXCSkinException ex) {
+                        throw new IOException(ex.getMessage()+" in line "+lnr.getLineNumber(), ex);
+                    } catch (final IllegalArgumentException ex) {
+                        final Object msg = ex.getMessage();
+                        throw new IOException("invalid parameter"+(msg == null ? "" : " ("+msg+")")+" in line "+lnr.getLineNumber(), ex);
+                    } finally {
+                        lnr.close();
                     }
-                } catch (final IOException|JXCSkinException ex) {
-                    throw new IOException(ex.getMessage()+" in line "+lnr.getLineNumber(), ex);
-                } catch (final IllegalArgumentException ex) {
-                    final Object msg = ex.getMessage();
-                    throw new IOException("invalid parameter"+(msg == null ? "" : " ("+msg+")")+" in line "+lnr.getLineNumber(), ex);
-                } finally {
-                    lnr.close();
                 }
             }
         } catch (final IOException ex) {
