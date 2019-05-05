@@ -70,6 +70,7 @@ label_text label_holy_word    font_label BLACK Holy word:
 textgauge res_holy_word       gauge_gp gauge_gp_negative gauge_empty RES_HOLYWORD WE BLACK font_label null Holy word: %T
 
 horizontal begin seq
+  gap 8
   begin par
     label_phys
     label_fire
@@ -120,9 +121,11 @@ horizontal begin seq
     res_turn_undead
     res_holy_word
   end
+  gap 8
 end
 
 vertical begin seq
+  gap 8
   begin par
     label_phys
     res_phys
@@ -176,6 +179,7 @@ vertical begin seq
     label_holy_word
     res_holy_word
   end
+  gap 8
 end
 
 link_size horizontal label_phys label_fire label_cold label_elec label_acid label_magic label_conf label_fear label_slow label_para label_poison label_blind label_drain label_deplete label_death label_ghosthit label_turn_undead label_holy_word

@@ -7,9 +7,13 @@ Type the key to (un)bind.
 EOF
 
 horizontal begin seq
+  gap 8
   message
+  gap 8
 end
 
 vertical begin seq
+  gap 8
   message
+  gap 8
 end

@@ -205,6 +205,7 @@ textgauge  res_sorcery        gauge_gp gauge_gp_negative gauge_empty SKILL_sorce
 label_text label_sorcery      font_label BLACK Sorcery:
 
 horizontal begin seq
+  gap 8
   begin par
     begin seq
       begin par
@@ -348,9 +349,11 @@ horizontal begin seq
     act_evocation
     act_sorcery
   end
+  gap 8
 end
 
 vertical begin seq
+  gap 8
   begin par
     act_lockpicking
     act_smithery
@@ -588,6 +591,7 @@ vertical begin seq
       gap 1
     end
   end
+  gap 8
 end
 
 commandlist res_lockpicking_show AND res_lockpicking SHOW

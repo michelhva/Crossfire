@@ -7,9 +7,16 @@ key code ENTER 0 exec command_disconnect
 key code SPACE 0 exec command_disconnect
 
 horizontal begin seq
-  message
+  gap 8
+  begin par
+    message
+    gap 400
+  end
+  gap 8
 end
 
 vertical begin seq
+  gap 8
   message
+  gap 8
 end

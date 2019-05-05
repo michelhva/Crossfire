@@ -27,8 +27,8 @@ textbutton button_messages    false command_messages Messages
 textbutton button_protections false command_protections Protections
 textbutton button_skills      false command_skills Skills
 textbutton button_spells      false command_spells Spells
-textbutton button_quests      false command_quests Q
-textbutton button_knowledge   false command_knowledge K
+textbutton button_quests      false command_quests Quests
+textbutton button_knowledge   false command_knowledge Knowledge
 textbutton button_pickup      false command_pickup Pickup
 textbutton button_setup       false command_setup Setup
 
@@ -131,28 +131,20 @@ horizontal begin par
       end
       gauge_xp_back
     end
-    gap
-    button_help
-    gap 4
-    button_status
-    gap 4
-    button_inventory
-    gap 4
-    button_messages
-    gap 4
-    button_protections
-    gap 4
-    button_skills
-    gap 4
-    button_spells
-    gap 4
-    button_quests
-    gap 4
-    button_knowledge
-    gap 4
-    button_pickup
-    gap 4
-    button_setup
+    gap 0 10000 2147483647
+    begin par
+      button_help
+      button_status
+      button_inventory
+      button_messages
+      button_protections
+      button_skills
+      button_spells
+      button_quests
+      button_knowledge
+      button_pickup
+      button_setup
+    end
     gap 8
   end
   begin seq
@@ -215,17 +207,29 @@ vertical begin par
         gauge_xp
         gap 3
       end
-      button_help
-      button_status
-      button_inventory
-      button_messages
-      button_protections
-      button_skills
-      button_pickup
-      button_setup
-      button_spells
-      button_quests
-      button_knowledge
+      begin seq
+        button_help
+        gap 4
+        button_status
+        gap 4
+        button_inventory
+        gap 4
+        button_messages
+        gap 4
+        button_protections
+        gap 4
+        button_skills
+        gap 4
+        button_pickup
+        gap 4
+        button_setup
+        gap 4
+        button_spells
+        gap 4
+        button_quests
+        gap 4
+        button_knowledge
+      end
     end
     gap
   end

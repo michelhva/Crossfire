@@ -22,30 +22,24 @@ set_default character_login
 
 commandlist_add command_null_new_char character_login MOVE_FOCUS account_do_login 1
 
-horizontal begin par
-  begin seq
-    gap 8
+horizontal begin seq
+  gap 8
+  begin par
     information
-    gap 8
-  end
-  begin seq
-    gap 8
-    label_login
-    character_login
-    gap 8
-  end
-  begin seq
-    gap 8
+    begin seq
+      label_login
+      character_login
+    end
     account_create_error
-    gap 8
+    begin seq
+      gap
+      account_do_login
+      gap 8
+      account_cancel_login
+      gap
+    end
   end
-  begin seq
-    gap
-    account_do_login
-    gap 8
-    account_cancel_login
-    gap
-  end
+  gap 8
 end
 
 vertical begin seq
@@ -63,6 +57,7 @@ vertical begin seq
     account_do_login
     account_cancel_login
   end
+  gap 8
 end
 
 link_size horizontal account_do_login account_cancel_login

@@ -35,38 +35,43 @@ log_color messages 12 #959054
 commandlist_add command_new_char_up messages SCROLL -1
 commandlist_add command_new_char_down messages SCROLL 1
 
-horizontal begin par
-  stat_title
-  begin seq
-    begin par
-      messages_up
-      messages_slider
-      messages_down
-    end
-    messages
-    begin par
-      filler
-      label_str
-      label_dex
-      label_con
-      label_int
-      label_wis
-      label_pow
-      label_cha
-    end
-    begin par
-      stat_str
-      stat_dex
-      stat_con
-      stat_int
-      stat_wis
-      stat_pow
-      stat_cha
+horizontal begin seq
+  gap 8
+  begin par
+    stat_title
+    begin seq
+      begin par
+        messages_up
+        messages_slider
+        messages_down
+      end
+      messages
+      begin par
+        filler
+        label_str
+        label_dex
+        label_con
+        label_int
+        label_wis
+        label_pow
+        label_cha
+      end
+      begin par
+        stat_str
+        stat_dex
+        stat_con
+        stat_int
+        stat_wis
+        stat_pow
+        stat_cha
+      end
     end
   end
+  gap 8
 end
 
 vertical begin seq
+  gap 8
   stat_title
   begin par
     begin seq
@@ -107,4 +112,5 @@ vertical begin seq
       end
     end
   end
+  gap 8
 end
