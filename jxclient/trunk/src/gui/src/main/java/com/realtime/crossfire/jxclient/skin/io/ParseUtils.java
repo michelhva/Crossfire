@@ -150,6 +150,9 @@ public class ParseUtils {
         if (name.equals("WHITE")) {
             return Color.WHITE;
         }
+        if (name.equals("RED")) {
+            return Color.RED;
+        }
         if (name.length() == 7 && name.charAt(0) == '#' && name.charAt(1) != '-') {
             try {
                 return new Color(Integer.parseInt(name.substring(1), 16));
