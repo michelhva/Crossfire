@@ -69,7 +69,7 @@ public abstract class AbstractFacesManager implements FacesManager {
      * @param face the face
      */
     protected void fireFaceUpdated(@NotNull final Face face) {
-        for (final FacesManagerListener facesManagerListener : facesManagerListeners) {
+        for (FacesManagerListener facesManagerListener : facesManagerListeners) {
             facesManagerListener.faceUpdated(face);
         }
     }

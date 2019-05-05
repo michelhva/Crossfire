@@ -139,7 +139,7 @@ public class KeyHandler {
             return;
         }
 
-        for (final Gui dialog : windowRenderer.getOpenDialogs()) {
+        for (Gui dialog : windowRenderer.getOpenDialogs()) {
             if (!dialog.isHidden(windowRenderer.getGuiState())) {
                 if (dialog.handleKeyPress(e)) {
                     debugKeyboardWrite("keyPressed: dialog "+dialog+" consumed key");

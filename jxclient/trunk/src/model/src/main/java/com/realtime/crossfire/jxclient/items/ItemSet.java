@@ -160,7 +160,7 @@ public class ItemSet {
                 return -1;
             }
 
-            for (final ItemSetListener listener : itemSetListeners) {
+            for (ItemSetListener listener : itemSetListeners) {
                 listener.itemRemoved(item);
             }
 
@@ -179,17 +179,17 @@ public class ItemSet {
                 throw new AssertionError();
             }
 
-            for (final ItemListener itemListener : itemListeners.getListeners(where)) {
+            for (ItemListener itemListener : itemListeners.getListeners(where)) {
                 itemListener.inventoryRemoved(where, index);
             }
 
             if (notifyListeners) {
-                for (final ItemSetListener listener : itemSetListeners) {
+                for (ItemSetListener listener : itemSetListeners) {
                     listener.itemRemoved(item);
                 }
             }
 
-            for (final ItemListener itemListener : itemListeners.getListeners(tag)) {
+            for (ItemListener itemListener : itemListeners.getListeners(tag)) {
                 itemListener.itemRemoved(tag);
             }
 
@@ -202,7 +202,7 @@ public class ItemSet {
      * @param tags the tags to delete
      */
     public void removeItems(@NotNull final int[] tags) {
-        for (final int tag : tags) {
+        for (int tag : tags) {
             if (removeItemByTag(tag, true) == -1) {
                 System.err.println("removeItem3: item "+tag+" does not exist");
             }
@@ -242,12 +242,12 @@ public class ItemSet {
         list.add(item);
 
         if (notifyListeners) {
-            for (final ItemSetListener listener : itemSetListeners) {
+            for (ItemSetListener listener : itemSetListeners) {
                 listener.itemAdded(item);
             }
         }
 
-        for (final ItemListener itemListener : itemListeners.getListeners(where)) {
+        for (ItemListener itemListener : itemListeners.getListeners(where)) {
             itemListener.inventoryAdded(where, list.size()-1, item);
         }
     }
@@ -298,7 +298,7 @@ public class ItemSet {
             }
 
             this.player = player;
-            for (final ItemSetListener listener : itemSetListeners) {
+            for (ItemSetListener listener : itemSetListeners) {
                 listener.playerChanged(player);
             }
         }
@@ -375,15 +375,15 @@ public class ItemSet {
                 item.setLocation(valLocation);
                 addItem(item, false);
 
-                for (final ItemSetListener listener : itemSetListeners) {
+                for (ItemSetListener listener : itemSetListeners) {
                     listener.itemMoved(item);
                 }
             }
             if ((flags&~UpdItem.UPD_LOCATION) != 0) {
-                for (final ItemSetListener listener : itemSetListeners) {
+                for (ItemSetListener listener : itemSetListeners) {
                     listener.itemChanged(item);
                 }
-                for (final ItemListener itemListener : itemListeners.getListeners(tag)) {
+                for (ItemListener itemListener : itemListeners.getListeners(tag)) {
                     itemListener.itemChanged(tag);
                 }
             }
@@ -406,7 +406,7 @@ public class ItemSet {
                 cleanInventory(player.getTag());
             }
             final Iterable<CfItem> tmp = new HashSet<>(allItems.values());
-            for (final CfItem item : tmp) {
+            for (CfItem item : tmp) {
                 removeItemByTag(item.getTag(), true);
             }
             setOpenContainer(0);
@@ -424,7 +424,7 @@ public class ItemSet {
         }
 
         this.openContainerFloor = openContainerFloor;
-        for (final ItemSetListener listener : itemSetListeners) {
+        for (ItemSetListener listener : itemSetListeners) {
             listener.openContainerChanged(openContainerFloor);
         }
     }

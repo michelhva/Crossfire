@@ -67,7 +67,7 @@ public abstract class Shortcut {
      * Notifies all listeners about a modification.
      */
     protected void fireModifiedEvent() {
-        for (final ShortcutListener listener : listeners) {
+        for (ShortcutListener listener : listeners) {
             listener.shortcutModified();
         }
     }

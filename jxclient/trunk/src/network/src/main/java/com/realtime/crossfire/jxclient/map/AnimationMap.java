@@ -94,9 +94,9 @@ public class AnimationMap {
     public void scroll(final int dx, final int dy, final int width, final int height) {
         final Iterable<AnimationState> tmp = new HashSet<>(animations.values());
         animations.clear();
-        for (final AnimationState animationState : tmp) {
+        for (AnimationState animationState : tmp) {
             animationState.scroll(dx, dy, width, height);
-            for (final Location location : animationState) {
+            for (Location location : animationState) {
                 animations.put(location, animationState);
             }
         }

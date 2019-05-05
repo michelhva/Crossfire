@@ -55,7 +55,7 @@ public abstract class AbstractFaceQueue implements FaceQueue {
      * @param faceImages the face images instance that has been loaded
      */
     protected void fireFaceLoaded(@NotNull final Face face, @NotNull final FaceImages faceImages) {
-        for (final FaceQueueListener faceQueueListener : faceQueueListeners) {
+        for (FaceQueueListener faceQueueListener : faceQueueListeners) {
             faceQueueListener.faceLoaded(face, faceImages);
         }
     }
@@ -65,7 +65,7 @@ public abstract class AbstractFaceQueue implements FaceQueue {
      * @param face the face that has failed to load
      */
     protected void fireFaceFailed(@NotNull final Face face) {
-        for (final FaceQueueListener faceQueueListener : faceQueueListeners) {
+        for (FaceQueueListener faceQueueListener : faceQueueListeners) {
             faceQueueListener.faceFailed(face);
         }
     }

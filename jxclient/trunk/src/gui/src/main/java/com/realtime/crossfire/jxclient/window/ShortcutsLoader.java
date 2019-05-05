@@ -68,9 +68,9 @@ public class ShortcutsLoader {
         try {
             shortcuts.clearShortcuts();
             try {
-                try (final FileInputStream fis = new FileInputStream(file)) {
-                    try (final InputStreamReader isr = new InputStreamReader(fis, StandardCharsets.UTF_8)) {
-                        try (final BufferedReader br = new BufferedReader(isr)) {
+                try (FileInputStream fis = new FileInputStream(file)) {
+                    try (InputStreamReader isr = new InputStreamReader(fis, StandardCharsets.UTF_8)) {
+                        try (BufferedReader br = new BufferedReader(isr)) {
                             loadShortcuts(shortcuts, br);
                         }
                     }
@@ -140,10 +140,10 @@ public class ShortcutsLoader {
                 return;
             }
 
-            try (final FileOutputStream fos = new FileOutputStream(file)) {
-                try (final OutputStreamWriter osw = new OutputStreamWriter(fos)) {
-                    try (final BufferedWriter bw = new BufferedWriter(osw)) {
-                        for (final Shortcut shortcut : shortcuts) {
+            try (FileOutputStream fos = new FileOutputStream(file)) {
+                try (OutputStreamWriter osw = new OutputStreamWriter(fos)) {
+                    try (BufferedWriter bw = new BufferedWriter(osw)) {
+                        for (Shortcut shortcut : shortcuts) {
                             if (shortcut == null) {
                                 bw.write("empty\n");
                             } else if (shortcut instanceof ShortcutSpell) {

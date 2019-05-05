@@ -149,7 +149,7 @@ public class QuestsManager {
             quest.setStep(end, description);
         }
 
-        for (final QuestsManagerListener listener : listeners) {
+        for (QuestsManagerListener listener : listeners) {
             listener.questAdded(index);
         }
     }
@@ -161,7 +161,7 @@ public class QuestsManager {
      * @param step the quest's current step
      */
     public void updateQuest(final int code, final boolean end, @NotNull final String step) {
-        for (final Quest quest : quests) {
+        for (Quest quest : quests) {
             if (quest.getCode() == code) {
                 quest.setStep(end, step);
                 break;
@@ -193,7 +193,7 @@ public class QuestsManager {
      * @return whether the face was found
      */
     public boolean displaysFace(final int faceNum) {
-        for (final Quest quest : quests) {
+        for (Quest quest : quests) {
             if (quest.getFace() == faceNum) {
                 return true;
             }

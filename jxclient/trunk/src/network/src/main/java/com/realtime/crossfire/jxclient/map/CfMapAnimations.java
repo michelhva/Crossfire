@@ -181,13 +181,13 @@ public class CfMapAnimations {
      * @param tickNo the current tick number
      */
     public void tick(@NotNull final MapUpdaterState mapUpdaterState, final int tickNo) {
-        for (final AnimationState animationState : pendingTickUpdates) {
+        for (AnimationState animationState : pendingTickUpdates) {
             animationState.setTickNo(tickNo);
         }
         pendingTickUpdates.clear();
         final Iterable<AnimationState> animationStatesToUpdate = new ArrayList<>(animationStates.keySet());
         synchronized (mapUpdaterState.mapBegin()) {
-            for (final AnimationState animationState : animationStatesToUpdate) {
+            for (AnimationState animationState : animationStatesToUpdate) {
                 animationState.updateTickNo(mapUpdaterState, tickNo);
             }
             mapUpdaterState.mapEnd(false);

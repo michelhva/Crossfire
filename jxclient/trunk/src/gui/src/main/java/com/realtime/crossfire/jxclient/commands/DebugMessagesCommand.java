@@ -63,7 +63,7 @@ public class DebugMessagesCommand extends AbstractCommand {
             break;
 
         case "types":
-            for (final int type : MessageTypes.getAllTypes()) {
+            for (int type : MessageTypes.getAllTypes()) {
                 crossfireServerConnection.drawextinfo(0, type, 0, "This line is type #"+type+".");
             }
             break;

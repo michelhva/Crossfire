@@ -75,7 +75,7 @@ public class ScripttellCommand extends AbstractCommand {
         }
 
         final String cmd = "scripttell "+tmp[1];
-        for (final ScriptProcess scriptProcess : scriptProcesses) {
+        for (ScriptProcess scriptProcess : scriptProcesses) {
             scriptProcess.commandSent(cmd);
         }
     }

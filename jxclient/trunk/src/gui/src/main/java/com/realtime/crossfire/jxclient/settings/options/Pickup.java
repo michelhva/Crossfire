@@ -336,7 +336,7 @@ public class Pickup {
         if (sendToServer) {
             commandQueue.sendNcom(true, 1, "pickup "+((pickupMode == PU_NOTHING ? 0 : pickupMode|PU_NEW_MODE)&0xFFFFFFFFL));
         }
-        for (final PickupOption pickupOption : pickupOptions) {
+        for (PickupOption pickupOption : pickupOptions) {
             pickupOption.setPickupMode(pickupMode);
         }
     }

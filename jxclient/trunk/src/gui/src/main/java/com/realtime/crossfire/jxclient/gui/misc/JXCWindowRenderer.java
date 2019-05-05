@@ -807,7 +807,7 @@ public class JXCWindowRenderer {
 
         this.rendererGuiState = rendererGuiState;
         SwingUtilities2.invokeAndWait(() -> {
-            for (final Gui dialog : openDialogs) {
+            for (Gui dialog : openDialogs) {
                 removeFromLayeredPane(dialog);
                 if (!dialog.isHidden(rendererGuiState)) {
                     addToLayeredPane(dialog, 1, 0);
@@ -818,7 +818,7 @@ public class JXCWindowRenderer {
             }
         });
         updateServerSettings();
-        for (final RendererGuiStateListener listener : rendererGuiStateListeners) {
+        for (RendererGuiStateListener listener : rendererGuiStateListeners) {
             listener.guiStateChanged(rendererGuiState);
         }
     }
@@ -951,7 +951,7 @@ public class JXCWindowRenderer {
      * @return whether the command input text field has been deactivated
      */
     public boolean deactivateCommandInput() {
-        for (final Gui dialog : openDialogs) {
+        for (Gui dialog : openDialogs) {
             if (!dialog.isHidden(rendererGuiState)) {
                 if (dialog.deactivateCommandInput()) {
                     return true;
@@ -972,7 +972,7 @@ public class JXCWindowRenderer {
      */
     @Nullable
     public Buffer getActiveMessageBuffer() {
-        for (final Gui dialog : openDialogs) {
+        for (Gui dialog : openDialogs) {
             if (!dialog.isHidden(rendererGuiState)) {
                 final Buffer buffer = getActiveMessageBuffer(dialog);
                 if (buffer != null) {
@@ -1027,7 +1027,7 @@ public class JXCWindowRenderer {
         }
 
         // check visible dialogs
-        for (final Gui dialog : openDialogs) {
+        for (Gui dialog : openDialogs) {
             if (!dialog.isHidden(rendererGuiState)) {
                 final GUIText textArea2 = activateCommandInput(dialog);
                 if (textArea2 != null) {
@@ -1135,7 +1135,7 @@ public class JXCWindowRenderer {
 
         final int eX = ce.getX();
         final int eY = ce.getY();
-        for (final Gui dialog : openDialogs) {
+        for (Gui dialog : openDialogs) {
             if (!dialog.isHidden(rendererGuiState)) {
                 elected = getElementFromPoint(dialog, eX-dialog.getX(), eY-dialog.getY());
                 //noinspection VariableNotUsedInsideIf
@@ -1327,7 +1327,7 @@ public class JXCWindowRenderer {
     private Dimension getMapSize() {
         int width = DEFAULT_MAP_WIDTH;
         int height = DEFAULT_MAP_HEIGHT;
-        for (final GUIMap map : maps) {
+        for (GUIMap map : maps) {
             width = Math.max(width, map.getPreferredMapWidth());
             height = Math.max(height, map.getPreferredMapHeight());
         }
@@ -1340,7 +1340,7 @@ public class JXCWindowRenderer {
      */
     private int getNumLookObjects() {
         int minNumLookObjects = Integer.MAX_VALUE;
-        for (final GUIFloorList floorList : floorLists) {
+        for (GUIFloorList floorList : floorLists) {
             minNumLookObjects = Math.min(minNumLookObjects, floorList.getNumLookObjects());
         }
         if (minNumLookObjects < Integer.MAX_VALUE) {

@@ -76,9 +76,9 @@ public class DialogStateParser {
         }
 
         try {
-            try (final FileInputStream fis = new FileInputStream(dialogsFile)) {
-                try (final InputStreamReader isr = new InputStreamReader(fis, StandardCharsets.UTF_8)) {
-                    try (final BufferedReader br = new BufferedReader(isr)) {
+            try (FileInputStream fis = new FileInputStream(dialogsFile)) {
+                try (InputStreamReader isr = new InputStreamReader(fis, StandardCharsets.UTF_8)) {
+                    try (BufferedReader br = new BufferedReader(isr)) {
                         while (true) {
                             final String line = br.readLine();
                             if (line == null) {
@@ -170,19 +170,19 @@ public class DialogStateParser {
         }
 
         final List<Gui> openDialogs = new LinkedList<>();
-        for (final Gui dialog : windowRenderer.getOpenDialogs()) {
+        for (Gui dialog : windowRenderer.getOpenDialogs()) {
             openDialogs.add(0, dialog);
         }
 
         try {
-            try (final FileOutputStream fos = new FileOutputStream(dialogsFile)) {
-                try (final OutputStreamWriter osw = new OutputStreamWriter(fos, StandardCharsets.UTF_8)) {
-                    try (final BufferedWriter bw = new BufferedWriter(osw)) {
-                        for (final Gui dialog : openDialogs) {
+            try (FileOutputStream fos = new FileOutputStream(dialogsFile)) {
+                try (OutputStreamWriter osw = new OutputStreamWriter(fos, StandardCharsets.UTF_8)) {
+                    try (BufferedWriter bw = new BufferedWriter(osw)) {
+                        for (Gui dialog : openDialogs) {
                             saveDialog(dialog, "open", bw);
                         }
 
-                        for (final Gui dialog : skin) {
+                        for (Gui dialog : skin) {
                             if (!windowRenderer.isDialogOpen(dialog)) {
                                 saveDialog(dialog, "close", bw);
                             }

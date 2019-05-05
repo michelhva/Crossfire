@@ -155,7 +155,7 @@ public class SkillSet {
      * Clears all stat info in {@link #numberedSkills}.
      */
     public void clearNumberedSkills() {
-        for (final Skill skill : numberedSkills) {
+        for (Skill skill : numberedSkills) {
             if (skill != null) {
                 skill.set(0, 0);
             }

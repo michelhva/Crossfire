@@ -149,7 +149,7 @@ public class Skill {
      * Notifies all listeners about a gained skill.
      */
     private void fireAddSkill() {
-        for (final SkillListener listener : listeners) {
+        for (SkillListener listener : listeners) {
             listener.gainedSkill();
         }
     }
@@ -158,7 +158,7 @@ public class Skill {
      * Notifies all listeners about a lost attribute.
      */
     private void fireDelSkill() {
-        for (final SkillListener listener : listeners) {
+        for (SkillListener listener : listeners) {
             listener.lostSkill();
         }
     }
@@ -167,7 +167,7 @@ public class Skill {
      * Notifies all listeners about an updated attribute.
      */
     private void fireUpdSkill() {
-        for (final SkillListener listener : listeners) {
+        for (SkillListener listener : listeners) {
             listener.changedSkill();
         }
     }

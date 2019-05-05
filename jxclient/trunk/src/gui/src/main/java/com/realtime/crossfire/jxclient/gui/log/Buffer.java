@@ -133,7 +133,7 @@ public class Buffer {
 
         synchronized (sync) {
             totalHeight = 0;
-            for (final Line line : lines) {
+            for (Line line : lines) {
                 final int height = calculateHeight(line);
                 line.setHeight(height);
                 totalHeight += height;
@@ -151,7 +151,7 @@ public class Buffer {
             totalHeight = 0;
             lines.clear();
         }
-        for (final BufferListener listener : listeners) {
+        for (BufferListener listener : listeners) {
             listener.linesRemoved(removedLines);
         }
         lastCount = 0;
@@ -171,7 +171,7 @@ public class Buffer {
             lines.add(line);
         }
 
-        for (final BufferListener listener : listeners) {
+        for (BufferListener listener : listeners) {
             listener.lineAdded();
         }
     }
@@ -190,7 +190,7 @@ public class Buffer {
             lines.set(lastIndex, line);
         }
 
-        for (final BufferListener listener : listeners) {
+        for (BufferListener listener : listeners) {
             listener.lineReplaced();
         }
     }
@@ -212,7 +212,7 @@ public class Buffer {
                 totalHeight -= line.getHeight();
             }
         }
-        for (final BufferListener listener : listeners) {
+        for (BufferListener listener : listeners) {
             listener.linesRemoved(removedLines);
         }
     }
@@ -284,7 +284,7 @@ public class Buffer {
         int maxY = 0;
         int beginIndex = 0;
         int i = 0;
-        for (final Segment segment : line) {
+        for (Segment segment : line) {
             final RectangularShape rectangle = segment.getSize(fonts, context);
             final int width = (int)Math.round(rectangle.getWidth());
             if (x != 0 && x+width > renderWidth) {

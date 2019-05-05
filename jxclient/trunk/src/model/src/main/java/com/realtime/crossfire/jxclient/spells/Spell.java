@@ -410,7 +410,7 @@ public class Spell {
      * Notifies all listeners.
      */
     private void fireChanged() {
-        for (final SpellListener listener : listeners) {
+        for (SpellListener listener : listeners) {
             listener.spellChanged();
         }
     }

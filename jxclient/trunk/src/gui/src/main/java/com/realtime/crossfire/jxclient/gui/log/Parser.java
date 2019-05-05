@@ -110,7 +110,7 @@ public class Parser {
      */
     public void parse(@NotNull final CharSequence text, @Nullable final Color defaultColor, @NotNull final Buffer buffer) {
         resetAttributes(defaultColor);
-        for (final String line : END_OF_LINE_PATTERN.split(text, -1)) {
+        for (String line : END_OF_LINE_PATTERN.split(text, -1)) {
             parseLine(line, defaultColor, buffer);
         }
         buffer.prune();
@@ -128,7 +128,7 @@ public class Parser {
         }
 
         resetAttributes(color);
-        for (final String line : END_OF_LINE_PATTERN.split(text, -1)) {
+        for (String line : END_OF_LINE_PATTERN.split(text, -1)) {
             parseLineWithoutMediaTags(line, buffer);
         }
         buffer.prune();
@@ -304,7 +304,7 @@ public class Parser {
     public static String toString(@NotNull final Color color) {
         // function need not be efficient since it is used for regression tests
         // only
-        for (final Entry<String, Color> e : COLORS.entrySet()) {
+        for (Entry<String, Color> e : COLORS.entrySet()) {
             if (e.getValue() == color) {
                 return e.getKey();
             }

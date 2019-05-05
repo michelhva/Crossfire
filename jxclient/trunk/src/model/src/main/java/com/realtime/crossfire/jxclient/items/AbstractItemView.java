@@ -135,11 +135,11 @@ public abstract class AbstractItemView implements ItemView {
             modifiedSlots.clear();
         }
         if (tmpModifiedSlots.length > 0) {
-            for (final LocationsListener locationsListener : locationsListeners) {
+            for (LocationsListener locationsListener : locationsListeners) {
                 locationsListener.locationsModified(tmpModifiedSlots);
             }
-            for (final int index : tmpModifiedSlots) {
-                for (final LocationListener locationListener : locationListeners.getListeners(index)) {
+            for (int index : tmpModifiedSlots) {
+                for (LocationListener locationListener : locationListeners.getListeners(index)) {
                     locationListener.locationChanged();
                 }
             }

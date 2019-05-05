@@ -132,7 +132,7 @@ public class KnowledgeManager {
         }
         faces.add(face);
         attempt.add(canAttempt);
-        for (final KnowledgeListener listener : listeners) {
+        for (KnowledgeListener listener : listeners) {
             listener.typeAdded(0);
         }
     }
@@ -176,7 +176,7 @@ public class KnowledgeManager {
     public void addKnowledge(final int index, @NotNull final String type, @NotNull final String title, final int face) {
         items.add(new KnowledgeItem(index, type, title, face));
         filterKnowledge();
-        for (final KnowledgeListener listener : listeners) {
+        for (KnowledgeListener listener : listeners) {
             listener.knowledgeAdded(0);
         }
     }
@@ -213,7 +213,7 @@ public class KnowledgeManager {
         typeFilter = filter;
         filterKnowledge();
 
-        for (final KnowledgeListener listener : listeners) {
+        for (KnowledgeListener listener : listeners) {
             listener.knowledgeAdded(0);
         }
     }

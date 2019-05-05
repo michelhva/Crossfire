@@ -66,7 +66,7 @@ public class CommandList {
     private boolean canExecute() {
         switch (commandListType) {
         case AND:
-            for (final GUICommand command : commandList) {
+            for (GUICommand command : commandList) {
                 if (!command.canExecute()) {
                     return false;
                 }
@@ -75,7 +75,7 @@ public class CommandList {
 
         case OR:
             boolean ok = false;
-            for (final GUICommand command : commandList) {
+            for (GUICommand command : commandList) {
                 if (command.canExecute()) {
                     ok = true;
                     break;
@@ -110,7 +110,7 @@ public class CommandList {
     public String getCommandString() {
         final StringBuilder sb = new StringBuilder();
         boolean firstCommand = true;
-        for (final GUICommand guiCommand : commandList) {
+        for (GUICommand guiCommand : commandList) {
             if (!(guiCommand instanceof GUICommand2)) {
                 throw new AssertionError("Cannot encode command of type "+guiCommand.getClass().getName());
             }

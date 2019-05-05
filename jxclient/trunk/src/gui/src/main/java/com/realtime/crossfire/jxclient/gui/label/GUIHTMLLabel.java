@@ -133,7 +133,7 @@ public class GUIHTMLLabel extends AbstractLabel {
 
         int width = 0;
         int height = 0;
-        for (final String str : PATTERN_LINE_BREAK.split(getText(), -1)) {
+        for (String str : PATTERN_LINE_BREAK.split(getText(), -1)) {
             final Dimension size = GuiUtils.getTextDimension(str, fontMetrics);
             width = Math.max(width, size.width);
             height += size.height;

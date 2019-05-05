@@ -244,7 +244,7 @@ public class SpellsManager implements Iterable<Spell> {
         rebuildSkills();
         filterSpells();
 
-        for (final SpellsManagerListener listener : listeners) {
+        for (SpellsManagerListener listener : listeners) {
             listener.spellAdded(index);
         }
     }
@@ -258,7 +258,7 @@ public class SpellsManager implements Iterable<Spell> {
      * @param damage the spell's new damage
      */
     public void updateSpell(final int flags, final int tag, final int mana, final int grace, final int damage) {
-        for (final Spell spell : spells) {
+        for (Spell spell : spells) {
             if (spell.getTag() == tag) {
                 spell.updateParameters((flags&UPD_SP_MANA) != 0, mana, (flags&UPD_SP_GRACE) != 0, grace, (flags&UPD_SP_DAMAGE) != 0, damage);
                 break;
@@ -272,7 +272,7 @@ public class SpellsManager implements Iterable<Spell> {
      */
     public void deleteSpell(final int tag) {
         int index = 0;
-        for (final Spell spell : spells) {
+        for (Spell spell : spells) {
             if (spell.getTag() == tag) {
                 deleteSpellByIndex(index);
                 break;
@@ -293,7 +293,7 @@ public class SpellsManager implements Iterable<Spell> {
             unknownSpells.put(spell.getName(), spell);
         }
 
-        for (final SpellsManagerListener listener : listeners) {
+        for (SpellsManagerListener listener : listeners) {
             listener.spellRemoved(index);
         }
 
@@ -310,7 +310,7 @@ public class SpellsManager implements Iterable<Spell> {
      */
     @NotNull
     public Spell getSpell(@NotNull final String spellName) {
-        for (final Spell spell : spells) {
+        for (Spell spell : spells) {
             if (spell.getName().equals(spellName)) {
                 return spell;
             }
@@ -358,7 +358,7 @@ public class SpellsManager implements Iterable<Spell> {
      * @return whether the face was found
      */
     public boolean displaysFace(final int faceNum) {
-        for (final Spell spell : spells) {
+        for (Spell spell : spells) {
             if (spell.getFaceNum() == faceNum) {
                 return true;
             }
@@ -393,7 +393,7 @@ public class SpellsManager implements Iterable<Spell> {
         skillFilter = id;
         filterSpells();
 
-        for (final SpellsManagerListener listener : listeners) {
+        for (SpellsManagerListener listener : listeners) {
             listener.spellAdded(0);
         }
     }
@@ -411,7 +411,7 @@ public class SpellsManager implements Iterable<Spell> {
      */
     private void rebuildSkills() {
         spellSkills.clear();
-        for (final Spell spell : spells) {
+        for (Spell spell : spells) {
             final Skill skill = skillSet.getSkill(spell.getSkill());
             if (skill != null && !spellSkills.contains(skill)) {
                 spellSkills.add(skill);

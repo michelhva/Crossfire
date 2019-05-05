@@ -453,7 +453,7 @@ public class CfItem {
         }
         modified = false;
 
-        for (final CfItemListener listener : listeners) {
+        for (CfItemListener listener : listeners) {
             listener.itemModified();
         }
     }

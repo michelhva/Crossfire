@@ -95,7 +95,7 @@ public class GUIMultiLineLabel extends GUILabel {
         final int lineHeight = rectangle.height;
 
         int y = 0;
-        for (final String line : lines) {
+        for (String line : lines) {
             drawLine(g2, y, lineHeight, line);
             y += lineHeight;
         }
@@ -123,7 +123,7 @@ public class GUIMultiLineLabel extends GUILabel {
         final FontMetrics fontMetrics = getFontMetrics(getTextFont());
 
         int width = 0;
-        for (final String line : lines) {
+        for (String line : lines) {
             final Dimension dimension = GuiUtils.getTextDimension(line, fontMetrics);
             if (width < dimension.width) {
                 width = dimension.width;

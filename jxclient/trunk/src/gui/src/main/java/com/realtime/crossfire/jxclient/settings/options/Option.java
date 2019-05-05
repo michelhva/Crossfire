@@ -41,7 +41,7 @@ public abstract class Option {
      * Notifies all listeners that the state has changed.
      */
     protected void fireStateChangedEvent() {
-        for (final OptionListener listener : listeners) {
+        for (OptionListener listener : listeners) {
             listener.stateChanged();
         }
     }

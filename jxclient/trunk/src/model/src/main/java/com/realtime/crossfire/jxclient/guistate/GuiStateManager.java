@@ -67,13 +67,13 @@ public class GuiStateManager {
         SwingUtilities2.invokeAndWait(() -> {
             switch (guiState) {
             case START:
-                for (final GuiStateListener listener : guiStateListeners) {
+                for (GuiStateListener listener : guiStateListeners) {
                     listener.start();
                 }
                 break;
 
             case METASERVER:
-                for (final GuiStateListener listener : guiStateListeners) {
+                for (GuiStateListener listener : guiStateListeners) {
                     listener.metaserver();
                 }
                 break;
@@ -82,7 +82,7 @@ public class GuiStateManager {
                 throw new IllegalArgumentException("changeGUI() called in state CONNECTING");
 
             case CONNECTED:
-                for (final GuiStateListener listener : guiStateListeners) {
+                for (GuiStateListener listener : guiStateListeners) {
                     listener.connected();
                 }
                 break;
@@ -114,10 +114,10 @@ public class GuiStateManager {
                 throw new IllegalArgumentException("changeGUI() called in state METASERVER");
 
             case CONNECTING:
-                for (final GuiStateListener listener : guiStateListeners) {
+                for (GuiStateListener listener : guiStateListeners) {
                     listener.preConnecting(param);
                 }
-                for (final GuiStateListener listener : guiStateListeners) {
+                for (GuiStateListener listener : guiStateListeners) {
                     listener.connecting(param);
                 }
                 break;
@@ -126,7 +126,7 @@ public class GuiStateManager {
                 throw new IllegalArgumentException("changeGUI() called in state CONNECTED");
 
             case CONNECT_FAILED:
-                for (final GuiStateListener listener : guiStateListeners) {
+                for (GuiStateListener listener : guiStateListeners) {
                     listener.connectFailed(param);
                 }
                 break;
@@ -181,7 +181,7 @@ public class GuiStateManager {
      * @param clientSocketState the new state
      */
     public void setClientSocketState(@NotNull final ClientSocketState clientSocketState) {
-        for (final GuiStateListener listener : guiStateListeners) {
+        for (GuiStateListener listener : guiStateListeners) {
             listener.connecting(clientSocketState);
         }
         if (clientSocketState == ClientSocketState.CONNECTED) {

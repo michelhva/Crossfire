@@ -94,7 +94,7 @@ public class ClipCache {
     @Nullable
     private DataLine newClip(@Nullable final String name, @NotNull final String action) {
         try {
-            try (final AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(audioFileLoader.getInputStream(name, action))) {
+            try (AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(audioFileLoader.getInputStream(name, action))) {
                 final Clip clip;
                 try {
                     clip = AudioSystem.getClip();

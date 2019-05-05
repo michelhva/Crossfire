@@ -313,7 +313,7 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
                 return;
             }
 
-            for (final MapListener listener : mapListeners) {
+            for (MapListener listener : mapListeners) {
                 listener.mapChanged(map, squares);
             }
         }
@@ -323,7 +323,7 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
     public void mapScroll(final int dx, final int dy) {
         assert Thread.holdsLock(sync);
         synchronized (map) {
-            for (final Location location : outOfViewMultiFaces) {
+            for (Location location : outOfViewMultiFaces) {
                 visibleAnimations.remove(location);
                 map.setFace(location.getX(), location.getY(), location.getLayer(), null);
             }
@@ -336,7 +336,7 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
             }
         }
 
-        for (final MapScrollListener mapscrollListener : mapScrollListeners) {
+        for (MapScrollListener mapscrollListener : mapScrollListeners) {
             mapscrollListener.mapScrolled(dx, dy);
         }
     }
@@ -366,12 +366,12 @@ public class MapUpdaterState implements CrossfireTickListener, CrossfireUpdateMa
             visibleAnimations.setMapSize(mapWidth, mapHeight);
 
             if (changed) {
-                for (final MapSizeListener listener : mapSizeListeners) {
+                for (MapSizeListener listener : mapSizeListeners) {
                     listener.mapSizeChanged(mapWidth, mapHeight);
                 }
             }
 
-            for (final NewmapListener listener : newmapListeners) {
+            for (NewmapListener listener : newmapListeners) {
                 listener.commandNewmapReceived();
             }
         }

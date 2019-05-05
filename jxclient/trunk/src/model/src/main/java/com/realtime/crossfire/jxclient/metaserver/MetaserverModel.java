@@ -94,7 +94,7 @@ public class MetaserverModel {
     public int getServerIndex(@NotNull final String serverName) {
         synchronized (sync) {
             int index = 0;
-            for (final MetaserverEntry metaserverEntry : metaList) {
+            for (MetaserverEntry metaserverEntry : metaList) {
                 if (metaserverEntry.getHostname().equals(serverName)) {
                     return index;
                 }
@@ -148,12 +148,12 @@ public class MetaserverModel {
         }
         metaListPending.clear();
 
-        for (final MetaserverListener metaserverListener : metaserverListeners) {
+        for (MetaserverListener metaserverListener : metaserverListeners) {
             metaserverListener.numberOfEntriesChanged();
         }
 
         for (int i = 0, iMax = Math.max(oldMetaListSize, newMetaListSize); i < iMax; i++) {
-            for (final MetaserverEntryListener metaserverEntryListener : getMetaserverEntryListeners(i)) {
+            for (MetaserverEntryListener metaserverEntryListener : getMetaserverEntryListeners(i)) {
                 metaserverEntryListener.entryChanged();
             }
         }

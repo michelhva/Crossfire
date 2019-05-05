@@ -98,7 +98,7 @@ public abstract class GUILog extends AbstractGUIElement implements GUIScrollable
         @Override
         public void stateChanged() {
             setChanged();
-            for (final ScrollableListener listener : listeners) {
+            for (ScrollableListener listener : listeners) {
                 listener.setRange(0, buffer.getTotalHeight(), renderStateManager.getScrollPos(), getHeight());
             }
         }
@@ -171,7 +171,7 @@ public abstract class GUILog extends AbstractGUIElement implements GUIScrollable
      * @param line the line to draw
      */
     private void drawLine(@NotNull final Graphics g, final int y, @NotNull final Iterable<Segment> line) {
-        for (final Segment segment : line) {
+        for (Segment segment : line) {
             segment.draw(g, y, fonts);
         }
     }

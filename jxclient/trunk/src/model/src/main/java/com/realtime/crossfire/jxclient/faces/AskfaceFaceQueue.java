@@ -119,7 +119,7 @@ public class AskfaceFaceQueue extends AbstractFaceQueue {
      * Sends some pending "askface" commands.
      */
     private void sendAskface() {
-        for (final Face face : pendingFacesQueue) {
+        for (Face face : pendingFacesQueue) {
             if (pendingAskfaces.size() >= CONCURRENT_ASKFACE_COMMANDS) {
                 break;
             }

@@ -49,7 +49,7 @@ public class KeyCodeMap {
      * Creates a new instance.
      */
     public KeyCodeMap() {
-        for (final Field field : KeyEvent.class.getDeclaredFields()) {
+        for (Field field : KeyEvent.class.getDeclaredFields()) {
             if (field.getName().startsWith("VK_")) {
                 final int keyCode;
                 //noinspection ErrorNotRethrown

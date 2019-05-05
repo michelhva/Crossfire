@@ -106,7 +106,7 @@ public class ServerCache {
     @NotNull
     public Map<String, MetaserverEntry> getAll() {
         final Map<String, MetaserverEntry> result = new HashMap<>();
-        for (final Entry<String, Info> entry : entries.entrySet()) {
+        for (Entry<String, Info> entry : entries.entrySet()) {
             result.put(entry.getKey(), entry.getValue().getMetaserverEntry());
         }
         return result;
@@ -131,9 +131,9 @@ public class ServerCache {
         }
 
         try {
-            try (final FileInputStream fis = new FileInputStream(file)) {
-                try (final InputStreamReader isr = new InputStreamReader(fis, StandardCharsets.UTF_8)) {
-                    try (final LineNumberReader lnr = new LineNumberReader(isr)) {
+            try (FileInputStream fis = new FileInputStream(file)) {
+                try (InputStreamReader isr = new InputStreamReader(fis, StandardCharsets.UTF_8)) {
+                    try (LineNumberReader lnr = new LineNumberReader(isr)) {
                         while (true) {
                             final String line = lnr.readLine();
                             if (line == null) {
@@ -210,10 +210,10 @@ public class ServerCache {
      * @throws IOException if an I/O error occurs
      */
     private void saveInternal(@NotNull final File file) throws IOException {
-        try (final FileOutputStream fos = new FileOutputStream(file)) {
-            try (final OutputStreamWriter osw = new OutputStreamWriter(fos, StandardCharsets.UTF_8)) {
-                try (final BufferedWriter bw = new BufferedWriter(osw)) {
-                    for (final Info info : entries.values()) {
+        try (FileOutputStream fos = new FileOutputStream(file)) {
+            try (OutputStreamWriter osw = new OutputStreamWriter(fos, StandardCharsets.UTF_8)) {
+                try (BufferedWriter bw = new BufferedWriter(osw)) {
+                    for (Info info : entries.values()) {
                         bw.write(Long.toString(info.getTimestamp()));
                         bw.write(' ');
                         bw.write(MetaserverEntryParser.format(info.getMetaserverEntry()));

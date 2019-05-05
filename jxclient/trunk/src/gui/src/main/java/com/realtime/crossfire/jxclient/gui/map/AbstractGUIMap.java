@@ -230,7 +230,7 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
                 final int y0 = map.getOffsetY();
                 final Graphics2D g = createBufferGraphics(map);
                 try {
-                    for (final CfMapSquare mapSquare : changedSquares) {
+                    for (CfMapSquare mapSquare : changedSquares) {
                         final int x = mapSquare.getX()+x0;
                         if (displayMinX <= x && x < displayMaxX) {
                             final int y = mapSquare.getY()+y0;

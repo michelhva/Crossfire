@@ -273,51 +273,51 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     }
 
     protected void fireManageAccount() {
-        for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
+        for (CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
             crossfireAccountListener.manageAccount();
         }
     }
 
     protected void fireStartAccountList(@NotNull final String accountName) {
-        for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
+        for (CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
             crossfireAccountListener.startAccountList(accountName);
         }
     }
 
     protected void fireAddAccount(@NotNull final CharacterInformation characterInformation) {
-        for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
+        for (CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
             crossfireAccountListener.addAccount(characterInformation);
         }
     }
 
     protected void fireEndAccountList(final int count) {
-        for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
+        for (CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
             crossfireAccountListener.endAccountList(count);
         }
     }
 
     protected void fireStartPlaying() {
-        for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
+        for (CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
             crossfireAccountListener.startPlaying();
         }
     }
 
     protected void fireCommandComcReceived(final int packetNo, final int time) {
-        for (final CrossfireComcListener listener : crossfireComcListeners) {
+        for (CrossfireComcListener listener : crossfireComcListeners) {
             listener.commandComcReceived(packetNo, time);
         }
     }
 
     protected void fireDelinvReceived(final int tag) {
         model.getItemsManager().delinvReceived(tag);
-        for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners) {
+        for (CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners) {
             crossfireUpdateItemListener.delinvReceived(tag);
         }
     }
 
     protected void fireDelitemReceived(@NotNull final int[] tags) {
         model.getItemsManager().delitemReceived(tags);
-        for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners) {
+        for (CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners) {
             crossfireUpdateItemListener.delitemReceived(tags);
         }
     }
@@ -327,7 +327,7 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     }
 
     protected void fireFailure(@NotNull final String command, @NotNull final String arguments) {
-        for (final CrossfireFailureListener crossfireFailureListener : crossfireFailureListeners) {
+        for (CrossfireFailureListener crossfireFailureListener : crossfireFailureListeners) {
             crossfireFailureListener.failure(command, arguments);
         }
     }
@@ -337,97 +337,97 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
      * displayed failure.
      */
     protected void clearFailure() {
-        for (final CrossfireFailureListener crossfireFailureListener : crossfireFailureListeners) {
+        for (CrossfireFailureListener crossfireFailureListener : crossfireFailureListeners) {
             crossfireFailureListener.clearFailure();
         }
     }
 
     protected void fireAddItemReceived(final int location, final int tag, final int flags, final int weight, final int faceNum, final String name, final String namePl, final int anim, final int animSpeed, final int nrof, final int type) {
         model.getItemsManager().addItemReceived(location, tag, flags, weight, faceNum, name, namePl, anim, animSpeed, nrof, type);
-        for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners) {
+        for (CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners) {
             crossfireUpdateItemListener.addItemReceived(location, tag, flags, weight, faceNum, name, namePl, anim, animSpeed, nrof, type);
         }
     }
 
     protected void fireMagicMap() {
-        for (final CrossfireMagicmapListener listener : magicmapListeners) {
+        for (CrossfireMagicmapListener listener : magicmapListeners) {
             listener.commandMagicmapReceived();
         }
     }
 
     protected void fireMusicReceived(@NotNull final String music) {
-        for (final CrossfireMusicListener listener : crossfireMusicListeners) {
+        for (CrossfireMusicListener listener : crossfireMusicListeners) {
             listener.commandMusicReceived(music);
         }
     }
 
     protected void firePickupChanged(final int pickupOptions) {
-        for (final CrossfirePickupListener crossfirePickupListener : crossfirePickupListeners) {
+        for (CrossfirePickupListener crossfirePickupListener : crossfirePickupListeners) {
             crossfirePickupListener.pickupChanged(pickupOptions);
         }
     }
 
     protected void firePlayerReceived(final int tag, final int weight, final int faceNum, @NotNull final String name) {
         model.getItemsManager().playerReceived(tag, weight, faceNum, name);
-        for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners) {
+        for (CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners) {
             crossfireUpdateItemListener.playerReceived(tag, weight, faceNum, name);
         }
     }
 
     protected void fireCommandQueryReceived(@NotNull final String prompt, final int queryType) {
-        for (final CrossfireQueryListener listener : queryListeners) {
+        for (CrossfireQueryListener listener : queryListeners) {
             listener.commandQueryReceived(prompt, queryType);
         }
     }
 
     protected void fireCommandSoundReceived(final int x, final int y, final int num, final int type) {
-        for (final CrossfireSoundListener listener : crossfireSoundListeners) {
+        for (CrossfireSoundListener listener : crossfireSoundListeners) {
             listener.commandSoundReceived(x, y, num, type);
         }
     }
 
     protected void fireCommandSound2Received(final int x, final int y, final int dir, final int volume, final int type, @NotNull final String action, @NotNull final String name) {
-        for (final CrossfireSoundListener listener : crossfireSoundListeners) {
+        for (CrossfireSoundListener listener : crossfireSoundListeners) {
             listener.commandSound2Received(x, y, dir, volume, type, action, name);
         }
     }
 
     protected void fireTick(final int tickNo) {
-        for (final CrossfireTickListener listener : crossfireTickListeners) {
+        for (CrossfireTickListener listener : crossfireTickListeners) {
             listener.tick(tickNo);
         }
     }
 
     protected void fireUpditemReceived(final int flags, final int tag, final int valLocation, final int valFlags, final int valWeight, final int valFaceNum, @NotNull final String valName, @NotNull final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof) {
         model.getItemsManager().upditemReceived(flags, tag, valLocation, valFlags, valWeight, valFaceNum, valName, valNamePl, valAnim, valAnimSpeed, valNrof);
-        for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners) {
+        for (CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners) {
             crossfireUpdateItemListener.upditemReceived(flags, tag, valLocation, valFlags, valWeight, valFaceNum, valName, valNamePl, valAnim, valAnimSpeed, valNrof);
         }
     }
 
     @Override
     public void drawInfo(@NotNull final String message, final int color) {
-        for (final CrossfireDrawinfoListener listener : drawinfoListeners) {
+        for (CrossfireDrawinfoListener listener : drawinfoListeners) {
             listener.commandDrawinfoReceived(message, color);
         }
     }
 
     @Override
     public void drawextinfo(final int color, final int type, final int subtype, final String message) {
-        for (final CrossfireDrawextinfoListener listener : drawextinfoListeners) {
+        for (CrossfireDrawextinfoListener listener : drawextinfoListeners) {
             listener.commandDrawextinfoReceived(color, type, subtype, message);
         }
     }
 
     @Override
     public void drawInfoSetDebugMode(final boolean printMessageTypes) {
-        for (final CrossfireDrawextinfoListener listener : drawextinfoListeners) {
+        for (CrossfireDrawextinfoListener listener : drawextinfoListeners) {
             listener.setDebugMode(printMessageTypes);
         }
     }
 
     protected void fireReplySent() {
-        for (final SentReplyListener sentReplyListener : sentReplyListeners) {
+        for (SentReplyListener sentReplyListener : sentReplyListeners) {
             sentReplyListener.replySent();
         }
     }
@@ -438,7 +438,7 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
      * @param command the command string
      */
     protected void notifyPacketWatcherListenersEmpty(@NotNull final String command) {
-        for (final ReceivedPacketListener receivedPacketListener : receivedPacketListeners) {
+        for (ReceivedPacketListener receivedPacketListener : receivedPacketListeners) {
             receivedPacketListener.processEmpty(command);
         }
     }
@@ -566,7 +566,7 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
      * stat}
      */
     protected void notifyPacketWatcherListenersStats(final int stat, @NotNull final Object... args) {
-        for (final ReceivedPacketListener receivedPacketListener : receivedPacketListeners) {
+        for (ReceivedPacketListener receivedPacketListener : receivedPacketListeners) {
             receivedPacketListener.processStats("stats", stat, args);
         }
     }
@@ -629,7 +629,7 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
         model.getSpellsManager().selectCharacter();
         model.getQuestsManager().selectCharacter();
         model.getKnowledgeManager().selectCharacter();
-        for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
+        for (CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
             crossfireAccountListener.selectCharacter(accountName, characterName);
         }
     }

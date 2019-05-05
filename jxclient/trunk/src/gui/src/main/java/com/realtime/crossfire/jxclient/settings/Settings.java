@@ -195,9 +195,9 @@ public class Settings {
         values.clear();
 
         try {
-            try (final FileInputStream fis = new FileInputStream(file)) {
-                try (final InputStreamReader isr = new InputStreamReader(fis, StandardCharsets.UTF_8)) {
-                    try (final LineNumberReader lnr = new LineNumberReader(isr)) {
+            try (FileInputStream fis = new FileInputStream(file)) {
+                try (InputStreamReader isr = new InputStreamReader(fis, StandardCharsets.UTF_8)) {
+                    try (LineNumberReader lnr = new LineNumberReader(isr)) {
                         loadValues(lnr);
                     }
                 }
@@ -243,9 +243,9 @@ public class Settings {
      */
     private void saveValues() throws IOException {
         final File tmpFile = new File(file.getPath()+".tmp");
-        try (final FileOutputStream fos = new FileOutputStream(tmpFile)) {
-            try (final OutputStreamWriter osw = new OutputStreamWriter(fos, StandardCharsets.UTF_8)) {
-                try (final BufferedWriter bw = new BufferedWriter(osw)) {
+        try (FileOutputStream fos = new FileOutputStream(tmpFile)) {
+            try (OutputStreamWriter osw = new OutputStreamWriter(fos, StandardCharsets.UTF_8)) {
+                try (BufferedWriter bw = new BufferedWriter(osw)) {
                     saveNode(bw, values);
                 }
             }
@@ -267,7 +267,7 @@ public class Settings {
             return;
         }
 
-        for (final Map.Entry<String, Entry> entry : node.entrySet()) {
+        for (Map.Entry<String, Entry> entry : node.entrySet()) {
             final Entry value = entry.getValue();
 
             writer.newLine();

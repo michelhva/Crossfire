@@ -117,7 +117,7 @@ public class KnowledgeItem {
      * Notifies all listeners.
      */
     private void fireChanged() {
-        for (final KnowledgeItemListener listener : listeners) {
+        for (KnowledgeItemListener listener : listeners) {
             listener.knowledgeChanged();
         }
     }

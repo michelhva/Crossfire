@@ -623,7 +623,7 @@ public class JXCSkinLoader {
      */
     private void load(@NotNull final JXCSkinSource skinSource, @NotNull final String dialogName, @NotNull final String resourceName, @NotNull final InputStream inputStream, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CharacterModel characterModel, @NotNull final CommandQueue commandQueue, @Nullable final Gui gui, @NotNull final Shortcuts shortcuts, @NotNull final CommandExecutor commandExecutor, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros, @NotNull final Image nextGroupFace, @NotNull final Image prevGroupFace, @NotNull final SmoothFaces smoothFaces) throws JXCSkinException {
         try {
-            try (final InputStreamReader isr = new InputStreamReader(inputStream, StandardCharsets.UTF_8)) {
+            try (InputStreamReader isr = new InputStreamReader(inputStream, StandardCharsets.UTF_8)) {
                 try (LineNumberReader lnr = new LineNumberReader(isr)) {
                     try {
                         boolean isDialog = false;
@@ -1068,7 +1068,7 @@ public class JXCSkinLoader {
         final String title = ParseUtils.parseText(args, lnr);
         assert dialogFactory != null;
         final Iterable<AbstractGUIElement> elements = dialogFactory.newDialog(tooltipManager, windowRenderer, elementListener, title);
-        for (final AbstractGUIElement element : elements) {
+        for (AbstractGUIElement element : elements) {
             insertGuiElement(element);
         }
         gui.setName(dialogName);
@@ -1360,7 +1360,7 @@ public class JXCSkinLoader {
             throw new IOException("syntax error: expecting 'begin'");
         }
         final Collection<GUIElement> unreferencedElements = new TreeSet<>(ELEMENT_COMPARATOR);
-        for (final GUIElement element : definedGUIElements) {
+        for (GUIElement element : definedGUIElements) {
             unreferencedElements.add(element);
         }
         if (!isDialog) {
@@ -2147,7 +2147,7 @@ public class JXCSkinLoader {
             throw new IOException("syntax error: expecting 'begin'");
         }
         final Collection<GUIElement> unreferencedElements = new TreeSet<>(ELEMENT_COMPARATOR);
-        for (final GUIElement element : definedGUIElements) {
+        for (GUIElement element : definedGUIElements) {
             unreferencedElements.add(element);
         }
         if (!isDialog) {

@@ -96,7 +96,7 @@ public class OptionManager {
      * Loads all options' states from the backing settings instance.
      */
     public void loadOptions() {
-        for (final Map.Entry<String, Entry> e : options.entrySet()) {
+        for (Map.Entry<String, Entry> e : options.entrySet()) {
             final String optionName = e.getKey();
             final Object option = e.getValue().getOption();
             if (option instanceof CheckBoxOption) {
@@ -118,7 +118,7 @@ public class OptionManager {
      * Saves all options' states to the backing settings instance.
      */
     public void saveOptions() {
-        for (final Map.Entry<String, Entry> e : options.entrySet()) {
+        for (Map.Entry<String, Entry> e : options.entrySet()) {
             final String optionName = e.getKey();
             final Entry entry = e.getValue();
             final Option option = entry.getOption();

@@ -349,7 +349,7 @@ public class ClientSocket {
             }
         }
         if (notifyConnected) {
-            for (final ClientSocketListener clientSocketListener : clientSocketListeners) {
+            for (ClientSocketListener clientSocketListener : clientSocketListeners) {
                 clientSocketListener.connected();
             }
         }
@@ -432,7 +432,7 @@ public class ClientSocket {
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("socket:connecting to "+host+":"+port);
         }
-        for (final ClientSocketListener clientSocketListener : clientSocketListeners) {
+        for (ClientSocketListener clientSocketListener : clientSocketListeners) {
             clientSocketListener.connecting();
         }
 
@@ -490,7 +490,7 @@ public class ClientSocket {
         }
         if (notifyListeners) {
             model.getGuiStateManager().disconnecting(reason, isError);
-            for (final ClientSocketListener clientSocketListener : clientSocketListeners) {
+            for (ClientSocketListener clientSocketListener : clientSocketListeners) {
                 clientSocketListener.disconnecting(reason, isError);
             }
         }
@@ -524,7 +524,7 @@ public class ClientSocket {
         } finally {
             if (notifyListeners) {
                 model.getGuiStateManager().disconnected();
-                for (final ClientSocketListener clientSocketListener : clientSocketListeners) {
+                for (ClientSocketListener clientSocketListener : clientSocketListeners) {
                     clientSocketListener.disconnected(reason);
                 }
             }
@@ -574,7 +574,7 @@ public class ClientSocket {
             final ByteBuffer packet = ByteBuffer.wrap(inputBuf, start, end-start);
             packet.order(ByteOrder.BIG_ENDIAN);
             try {
-                for (final ClientSocketListener clientSocketListener : clientSocketListeners) {
+                for (ClientSocketListener clientSocketListener : clientSocketListeners) {
                     clientSocketListener.packetReceived(packet);
                 }
             } catch (final UnknownCommandException ex) {
@@ -618,7 +618,7 @@ public class ClientSocket {
         }
 
         selector.wakeup();
-        for (final ClientSocketListener clientSocketListener : clientSocketListeners) {
+        for (ClientSocketListener clientSocketListener : clientSocketListeners) {
             clientSocketListener.packetSent(buf, len);
         }
     }
