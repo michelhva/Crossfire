@@ -70,7 +70,6 @@ public class AccountCreateCharacterCommand implements GUICommand {
         }
 
         final GUIText loginField = gui.getFirstElement(GUIText.class, "character_login");
-
         if (loginField == null) {
             return;
         }
