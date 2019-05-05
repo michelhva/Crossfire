@@ -1566,8 +1566,7 @@ public class JXCSkinLoader {
         final String name = args.get();
         final Font font = definedFonts.lookup(args.get());
         final Color color = ParseUtils.parseColor(args.get());
-        final AbstractGUIElement element = new GUILabelQuery(tooltipManager, elementListener, name, server, font, color, null);
-        insertGuiElement(element);
+        insertGuiElement(new GUILabelQuery(tooltipManager, elementListener, name, server, font, color, null));
     }
 
     /**
@@ -1584,8 +1583,7 @@ public class JXCSkinLoader {
         final String name = args.get();
         final Font font = definedFonts.lookup(args.get());
         final Color color = ParseUtils.parseColor(args.get());
-        final AbstractGUIElement element = new GUILabelMessage(tooltipManager, elementListener, name, server, windowRenderer, font, color, null);
-        insertGuiElement(element);
+        insertGuiElement(new GUILabelMessage(tooltipManager, elementListener, name, server, windowRenderer, font, color, null));
     }
 
     /**
@@ -1601,8 +1599,7 @@ public class JXCSkinLoader {
         final String name = args.get();
         final Font font = definedFonts.lookup(args.get());
         final Color color = ParseUtils.parseColor(args.get());
-        final AbstractGUIElement element = new GUILabelFailure(tooltipManager, elementListener, name, server, font, color, null);
-        insertGuiElement(element);
+        insertGuiElement(new GUILabelFailure(tooltipManager, elementListener, name, server, font, color, null));
     }
 
     /**
@@ -1636,8 +1633,7 @@ public class JXCSkinLoader {
         final Color color = ParseUtils.parseColor(args.get());
         final int stat = ParseUtils.parseStat(args.get());
         final Alignment alignment = NumberParser.parseEnum(Alignment.class, args.get(), "text alignment");
-        final AbstractGUIElement element = new GUILabelStats(tooltipManager, elementListener, name, font, color, null, stat, alignment, model.getStats());
-        insertGuiElement(element);
+        insertGuiElement(new GUILabelStats(tooltipManager, elementListener, name, font, color, null, stat, alignment, model.getStats()));
     }
 
     /**
@@ -1661,8 +1657,7 @@ public class JXCSkinLoader {
         final int statRace = ParseUtils.parseStat(args.get());
         final int statApplied = ParseUtils.parseStat(args.get());
         final Alignment alignment = NumberParser.parseEnum(Alignment.class, args.get(), "text alignment");
-        final AbstractGUIElement element = new GUILabelStats2(tooltipManager, elementListener, name, font, colorNormal, colorUpgradable, colorDepleted, colorBoosted, colorBoostedUpgradable, null, statCurrent, statBase, statRace, statApplied, alignment, model.getStats());
-        insertGuiElement(element);
+        insertGuiElement(new GUILabelStats2(tooltipManager, elementListener, name, font, colorNormal, colorUpgradable, colorDepleted, colorBoosted, colorBoostedUpgradable, null, statCurrent, statBase, statRace, statApplied, alignment, model.getStats()));
     }
 
     /**
@@ -1678,8 +1673,7 @@ public class JXCSkinLoader {
         final String name = args.get();
         final Font font = definedFonts.lookup(args.get());
         final Type type = NumberParser.parseEnum(Type.class, args.get(), "label type");
-        final AbstractGUIElement element = new GUISpellLabel(tooltipManager, elementListener, name, null, facesManager, font, type, currentSpellManager);
-        insertGuiElement(element);
+        insertGuiElement(new GUISpellLabel(tooltipManager, elementListener, name, null, facesManager, font, type, currentSpellManager));
     }
 
     /**
@@ -1736,8 +1730,7 @@ public class JXCSkinLoader {
         final Font fontArcane = definedFonts.lookup(args.get());
         final Color defaultColor = ParseUtils.parseColor(args.get());
         final Fonts fonts = new Fonts(fontPrint, fontFixed, fontFixedBold, fontArcane);
-        final AbstractGUIElement element = new GUILabelLog(tooltipManager, elementListener, name, backgroundImage, fonts, defaultColor);
-        insertGuiElement(element);
+        insertGuiElement(new GUILabelLog(tooltipManager, elementListener, name, backgroundImage, fonts, defaultColor));
     }
 
     /**
@@ -1758,8 +1751,7 @@ public class JXCSkinLoader {
         final Font fontArcane = definedFonts.lookup(args.get());
         final Color defaultColor = ParseUtils.parseColor(args.get());
         final Fonts fonts = new Fonts(fontPrint, fontFixed, fontFixedBold, fontArcane);
-        final AbstractGUIElement element = new GUIMessageLog(tooltipManager, elementListener, name, server, backgroundImage, fonts, defaultColor);
-        insertGuiElement(element);
+        insertGuiElement(new GUIMessageLog(tooltipManager, elementListener, name, server, backgroundImage, fonts, defaultColor));
     }
 
     /**
@@ -1838,8 +1830,7 @@ public class JXCSkinLoader {
         if (facesProvider == null) {
             throw new IOException("cannot create faces with size 4");
         }
-        final AbstractGUIElement element = new GUIMiniMap(avoidCopyArea, tooltipManager, elementListener, name, mapUpdaterState, facesProvider, darknessColors, w, h);
-        insertGuiElement(element);
+        insertGuiElement(new GUIMiniMap(avoidCopyArea, tooltipManager, elementListener, name, mapUpdaterState, facesProvider, darknessColors, w, h));
     }
 
     /**
