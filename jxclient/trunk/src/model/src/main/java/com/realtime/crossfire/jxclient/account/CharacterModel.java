@@ -93,7 +93,7 @@ public class CharacterModel {
     public int getCharacterIndex(@NotNull final String characterName) {
         synchronized (sync) {
             int index = 0;
-            for (final CharacterInformation characterInformation : characters) {
+            for (CharacterInformation characterInformation : characters) {
                 if (characterInformation.getName().equals(characterName)) {
                     return index;
                 }
@@ -147,12 +147,12 @@ public class CharacterModel {
         }
         charactersPending.clear();
 
-        for (final CharacterListener characterListener : characterListeners) {
+        for (CharacterListener characterListener : characterListeners) {
             characterListener.numberOfItemsChanged();
         }
 
         for (int i = 0, iMax = Math.max(oldMetaListSize, newMetaListSize); i < iMax; i++) {
-            for (final CharacterInformationListener characterInformationListener : getCharacterInformationListeners(i)) {
+            for (CharacterInformationListener characterInformationListener : getCharacterInformationListeners(i)) {
                 characterInformationListener.informationChanged();
             }
         }
@@ -217,7 +217,7 @@ public class CharacterModel {
      * @return whether the face was found
      */
     public boolean displaysFace(final int faceNum) {
-        for (final CharacterInformation character : characters) {
+        for (CharacterInformation character : characters) {
             if (character.getFaceNumber() == faceNum) {
                 return true;
             }

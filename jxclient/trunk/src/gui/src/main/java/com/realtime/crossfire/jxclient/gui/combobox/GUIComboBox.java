@@ -127,7 +127,7 @@ public abstract class GUIComboBox<T> extends AbstractGUIElement {
      */
     protected void updateModel(@NotNull final Iterable<T> elements) {
         model.removeAllElements();
-        for (final T element : elements) {
+        for (T element : elements) {
             model.addElement(element);
         }
     }

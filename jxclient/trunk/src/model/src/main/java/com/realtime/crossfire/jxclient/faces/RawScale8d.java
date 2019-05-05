@@ -112,7 +112,7 @@ public class RawScale8d {
         }
         int maxCount = 0;
         int maxPixel = 0;
-        for (final Entry<Integer, Integer> e : pixels.entrySet()) {
+        for (Entry<Integer, Integer> e : pixels.entrySet()) {
             final int thisCount = e.getValue();
             if (thisCount > maxCount) {
                 maxCount = thisCount;

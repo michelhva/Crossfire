@@ -96,7 +96,7 @@ public class ImageParser {
 
         final String filename = "pictures/"+name+".png";
         final BufferedImage image;
-        try (final InputStream inputStream = skinSource.getInputStream(filename)) {
+        try (InputStream inputStream = skinSource.getInputStream(filename)) {
             image = ImageIO.read(inputStream);
         }
         if (image == null) {

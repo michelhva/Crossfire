@@ -56,7 +56,7 @@ public class CommandExecutorImpl implements CommandExecutor {
     @Override
     public void executeCommand(@NotNull final CharSequence commandLine) {
         final Iterable<CommandExec> commandList = CommandExpander.expand(commandLine, commands);
-        for (final CommandExec commandExec : commandList) {
+        for (CommandExec commandExec : commandList) {
             final Command command = commandExec.getCommand();
             if (command == null) {
                 commandQueue.sendNcom(false, commandExec.getArgs());

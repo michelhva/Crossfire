@@ -109,8 +109,8 @@ public class Metaserver {
                 conn.connect();
                 if (conn.getResponseCode() == HttpURLConnection.HTTP_OK) {
                     final InputStream in = conn.getInputStream();
-                    try (final InputStreamReader isr = new InputStreamReader(in, StandardCharsets.ISO_8859_1)) {
-                        try (final BufferedReader br = new BufferedReader(isr)) {
+                    try (InputStreamReader isr = new InputStreamReader(in, StandardCharsets.ISO_8859_1)) {
+                        try (BufferedReader br = new BufferedReader(isr)) {
                             final MetaserverEntryParser metaserverEntryParser = new MetaserverEntryParser();
                             while (true) {
                                 final String line = br.readLine();

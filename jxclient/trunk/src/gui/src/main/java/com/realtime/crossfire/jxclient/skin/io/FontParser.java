@@ -60,7 +60,7 @@ public class FontParser {
 
         final Font font;
         try {
-            try (final InputStream ttf = skinSource.getInputStream(filename)) {
+            try (InputStream ttf = skinSource.getInputStream(filename)) {
                 try {
                     font = Font.createFont(Font.TRUETYPE_FONT, ttf);
                 } catch (final FontFormatException ex) {

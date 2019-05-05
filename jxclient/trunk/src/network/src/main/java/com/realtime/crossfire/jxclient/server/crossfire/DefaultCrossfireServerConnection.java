@@ -1879,9 +1879,9 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     private static void processImageInfoReplyinfo(@NotNull final ByteBuffer packet) throws IOException {
         final byte[] data = new byte[packet.remaining()];
         packet.get(data);
-        try (final ByteArrayInputStream is = new ByteArrayInputStream(data)) {
-            try (final InputStreamReader isr = new InputStreamReader(is)) {
-                try (final BufferedReader d = new BufferedReader(isr)) {
+        try (ByteArrayInputStream is = new ByteArrayInputStream(data)) {
+            try (InputStreamReader isr = new InputStreamReader(is)) {
+                try (BufferedReader d = new BufferedReader(isr)) {
                     final String info = d.readLine();
                     if (info == null) {
                         throw new IOException("Truncated parameter in image_info");
@@ -1903,9 +1903,9 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         model.getSkillSet().clearSkills();
         final byte[] data = new byte[packet.remaining()];
         packet.get(data);
-        try (final ByteArrayInputStream is = new ByteArrayInputStream(data)) {
-            try (final InputStreamReader isr = new InputStreamReader(is)) {
-                try (final BufferedReader d = new BufferedReader(isr)) {
+        try (ByteArrayInputStream is = new ByteArrayInputStream(data)) {
+            try (InputStreamReader isr = new InputStreamReader(is)) {
+                try (BufferedReader d = new BufferedReader(isr)) {
                     while (true) {
                         final CharSequence r = d.readLine();
                         if (r == null) {
@@ -1981,9 +1981,9 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         model.getKnowledgeManager().clearTypes();
         final byte[] data = new byte[packet.remaining()];
         packet.get(data);
-        try (final ByteArrayInputStream is = new ByteArrayInputStream(data)) {
-            try (final InputStreamReader isr = new InputStreamReader(is)) {
-                try (final BufferedReader d = new BufferedReader(isr)) {
+        try (ByteArrayInputStream is = new ByteArrayInputStream(data)) {
+            try (InputStreamReader isr = new InputStreamReader(is)) {
+                try (BufferedReader d = new BufferedReader(isr)) {
                     while (true) {
                         final CharSequence r = d.readLine();
                         if (r == null) {
@@ -2055,7 +2055,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         final String[] races = PATTERN_BAR.split(raceList);
         model.getNewCharacterInformation().setRaceList(races);
 
-        for (final String race : races) {
+        for (String race : races) {
             sendQueuedRequestinfo("race_info "+race);
         }
     }
@@ -2072,7 +2072,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         final String[] classes = PATTERN_BAR.split(classList);
         model.getNewCharacterInformation().setClassList(classes);
 
-        for (final String class_ : classes) {
+        for (String class_ : classes) {
             sendQueuedRequestinfo("class_info "+class_);
         }
     }
@@ -3896,7 +3896,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             if (options.length <= 0) {
                 byteBuffer.put((byte)' ');
             } else {
-                for (final String option : options) {
+                for (String option : options) {
                     byteBuffer.put((byte)' ');
                     byteBuffer.put(option.getBytes(UTF8));
                 }
@@ -3918,7 +3918,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             byteBuffer.clear();
             //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(TOGGLEEXTENDEDTEXT_PREFIX);
-            for (final int type : types) {
+            for (int type : types) {
                 byteBuffer.put((byte)' ');
                 putDecimal(type);
             }

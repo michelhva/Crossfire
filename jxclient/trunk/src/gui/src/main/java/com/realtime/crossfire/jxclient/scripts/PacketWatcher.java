@@ -137,7 +137,7 @@ public class PacketWatcher {
                 sb.append(command);
                 sb.append(' ');
                 sb.append(StatUtils.getStatNames(stat));
-                for (final Object arg : args) {
+                for (Object arg : args) {
                     sb.append(' ');
                     sb.append(arg);
                 }
@@ -197,7 +197,7 @@ public class PacketWatcher {
      */
     private void rebuildPattern() {
         final StringBuilder sb = new StringBuilder();
-        for (final String command : commands) {
+        for (String command : commands) {
             sb.append(Pattern.quote(command));
             sb.append(".*|");
         }

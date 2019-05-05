@@ -53,7 +53,7 @@ public class CurrentSpellManager {
         }
 
         currentSpell = spell;
-        for (final CurrentSpellManagerListener listener : listeners) {
+        for (CurrentSpellManagerListener listener : listeners) {
             listener.spellChanged(spell);
         }
     }

@@ -273,9 +273,9 @@ public class KeybindingsManager {
             matches.addAll(characterKeyBindings.getBindingsForPartialCommand(command, startOnly));
         }
         final Iterable<KeyBinding> global = keyBindings.getBindingsForPartialCommand(command, startOnly);
-        for (final KeyBinding candidate : global) {
+        for (KeyBinding candidate : global) {
             boolean used = false;
-            for (final KeyBinding check : matches) {
+            for (KeyBinding check : matches) {
                 if (check.equals(candidate)) {
                     used = true;
                     break;

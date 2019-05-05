@@ -127,8 +127,8 @@ public class Logger {
         final Date now = new Date();
         try {
             final File file = Filenames.getMessageLogFile(hostname);
-            try (final FileOutputStream fos = new FileOutputStream(file, true)) {
-                try (final OutputStreamWriter osw = new OutputStreamWriter(fos)) {
+            try (FileOutputStream fos = new FileOutputStream(file, true)) {
+                try (OutputStreamWriter osw = new OutputStreamWriter(fos)) {
                     osw.write(format.format(now)+message+"\n");
                 }
             }

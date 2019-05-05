@@ -865,7 +865,7 @@ public class GuiManager {
 
         // check invisible dialogs
         assert skin != null;
-        for (final Gui dialog : skin) {
+        for (Gui dialog : skin) {
             final GUIText textArea3 = JXCWindowRenderer.activateCommandInput(dialog);
             if (textArea3 != null) {
                 openDialog(dialog, true);
@@ -1055,7 +1055,7 @@ public class GuiManager {
             skin.setScreenSize(width, height);
             assert skin != null;
             SwingUtilities2.invokeAndWait(() -> {
-                for (final Gui dialog : skin) {
+                for (Gui dialog : skin) {
                     dialog.autoSize(width, height);
                 }
                 tooltipManager.setScreenSize(width, height);

@@ -96,7 +96,7 @@ public class DefaultCrossfireServerConnectionTest {
             @Override
             public void run() {
                 try {
-                    try (final Socket client = acceptClient(server)) {
+                    try (Socket client = acceptClient(server)) {
                         final InputStream in = getInputStream(client);
                         final OutputStream out = getOutputStream(client);
                         while (true) {

@@ -93,7 +93,7 @@ public class DebugWriter {
                 for (Throwable t = throwable; t != null; t = t.getCause()) {
                     writer.append(t.getClass().getName());
                     writer.append("\n");
-                    for (final Object stack : t.getStackTrace()) {
+                    for (Object stack : t.getStackTrace()) {
                         writer.append(stack.toString());
                         writer.append("\n");
                     }

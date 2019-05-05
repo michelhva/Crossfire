@@ -129,7 +129,7 @@ public class AnimationState implements Iterable<Location> {
             return;
         }
         lastFace = face;
-        for (final Location location : locations) {
+        for (Location location : locations) {
             mapUpdaterState.mapFace(location, face, false);
         }
     }
@@ -174,7 +174,7 @@ public class AnimationState implements Iterable<Location> {
     public void scroll(final int dx, final int dy, final int width, final int height) {
         final Collection<Location> tmp = new HashSet<>();
         //noinspection Convert2streamapi
-        for (final Location location : locations) {
+        for (Location location : locations) {
             if (0 <= location.getX() && location.getX() < width && 0 <= location.getY() && location.getY() < height) { // out-of-map bounds animations are dropped, not scrolled
                 final int newX = location.getX()-dx;
                 final int newY = location.getY()-dy;

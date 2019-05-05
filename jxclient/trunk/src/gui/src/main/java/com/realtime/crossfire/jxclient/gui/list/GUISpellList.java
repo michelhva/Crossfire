@@ -160,7 +160,7 @@ public class GUISpellList extends GUIItemList<GUIItemSpell> {
         boolean first = true;
         final StringBuilder sb = new StringBuilder();
 
-        for (final KeyBinding binding : bindings) {
+        for (KeyBinding binding : bindings) {
             if (match.startsWith(binding.getCommandString())) {
                 if (first) {
                     sb.append(legend);

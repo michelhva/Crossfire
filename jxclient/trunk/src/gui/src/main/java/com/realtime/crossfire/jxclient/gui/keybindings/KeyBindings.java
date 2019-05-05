@@ -168,9 +168,9 @@ public class KeyBindings {
         }
 
         try {
-            try (final FileInputStream fis = new FileInputStream(file)) {
-                try (final InputStreamReader isr = new InputStreamReader(fis, StandardCharsets.UTF_8)) {
-                    try (final LineNumberReader lnr = new LineNumberReader(isr)) {
+            try (FileInputStream fis = new FileInputStream(file)) {
+                try (InputStreamReader isr = new InputStreamReader(fis, StandardCharsets.UTF_8)) {
+                    try (LineNumberReader lnr = new LineNumberReader(isr)) {
                         while (true) {
                             final String line = lnr.readLine();
                             if (line == null) {
@@ -214,10 +214,10 @@ public class KeyBindings {
             return;
         }
 
-        try (final FileOutputStream fos = new FileOutputStream(file)) {
-            try (final OutputStreamWriter osw = new OutputStreamWriter(fos, StandardCharsets.UTF_8)) {
-                try (final BufferedWriter bw = new BufferedWriter(osw)) {
-                    for (final KeyBinding keyBinding : keybindings) {
+        try (FileOutputStream fos = new FileOutputStream(file)) {
+            try (OutputStreamWriter osw = new OutputStreamWriter(fos, StandardCharsets.UTF_8)) {
+                try (BufferedWriter bw = new BufferedWriter(osw)) {
+                    for (KeyBinding keyBinding : keybindings) {
                         if (keyBinding.isDefault()) {
                             // ignore
                         } else if (keyBinding instanceof KeyCodeKeyBinding) {
@@ -250,7 +250,7 @@ public class KeyBindings {
      */
     @Nullable
     private KeyBinding getKeyBindingAsKeyCode(final KeyEvent2 keyEvent) {
-        for (final KeyBinding keyBinding : keybindings) {
+        for (KeyBinding keyBinding : keybindings) {
             if (keyBinding.matchesKeyCode(keyEvent)) {
                 return keyBinding;
             }
@@ -266,7 +266,7 @@ public class KeyBindings {
      */
     @Nullable
     private KeyBinding getKeyBindingAsKeyChar(final char keyChar) {
-        for (final KeyBinding keyBinding : keybindings) {
+        for (KeyBinding keyBinding : keybindings) {
             if (keyBinding.matchesKeyChar(keyChar)) {
                 return keyBinding;
             }

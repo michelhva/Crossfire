@@ -137,7 +137,7 @@ public abstract class GUIItemList<T extends GUIItemItem> extends GUIList<T> {
                 setChanged(i);
             }
         } else {
-            for (final int i : changedSlots) {
+            for (int i : changedSlots) {
                 if (i < limit) {
                     setChanged(i);
                 }

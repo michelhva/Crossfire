@@ -56,7 +56,7 @@ public class StringSplitter {
     @NotNull
     public static String splitAsHtml(@NotNull final String message) {
         final StringBuilder sb = new StringBuilder();
-        for (final String line : split(message)) {
+        for (String line : split(message)) {
             if (sb.length() > 0) {
                 sb.append("<br>");
             }

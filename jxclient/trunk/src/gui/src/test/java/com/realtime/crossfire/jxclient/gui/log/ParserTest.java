@@ -223,7 +223,7 @@ public class ParserTest {
             parser = new Parser();
             final Font font;
             try {
-                try (final InputStream fis = getClass().getClassLoader().getResourceAsStream("com/realtime/crossfire/jxclient/skins/ragnorok/fonts/regular.ttf")) {
+                try (InputStream fis = getClass().getClassLoader().getResourceAsStream("com/realtime/crossfire/jxclient/skins/ragnorok/fonts/regular.ttf")) {
                     try {
                         font = Font.createFont(Font.TRUETYPE_FONT, fis);
                     } catch (final FontFormatException ex) {
@@ -281,7 +281,7 @@ public class ParserTest {
          */
         private static void dumpLine(@NotNull final StringBuilder sb, @NotNull final Iterable<Segment> line) {
             sb.append("line:\n");
-            for (final Segment segment : line) {
+            for (Segment segment : line) {
                 sb.append(segment);
             }
         }

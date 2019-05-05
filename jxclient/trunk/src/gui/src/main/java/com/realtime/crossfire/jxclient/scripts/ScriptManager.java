@@ -175,7 +175,7 @@ public class ScriptManager {
     @NotNull
     private Set<ScriptProcess> getScriptByScriptId(final int scriptId) {
         final Set<ScriptProcess> result = new HashSet<>();
-        for (final ScriptProcess scriptProcess : scriptProcesses) {
+        for (ScriptProcess scriptProcess : scriptProcesses) {
             if (scriptProcess.getScriptId() == scriptId) {
                 result.add(scriptProcess);
                 break;

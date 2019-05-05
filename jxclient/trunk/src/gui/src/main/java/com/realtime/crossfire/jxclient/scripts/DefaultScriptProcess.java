@@ -242,8 +242,8 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
         @Nullable String result = "unexpected";
         try {
             try {
-                try (final InputStreamReader isr = new InputStreamReader(in)) {
-                    try (final BufferedReader br = new BufferedReader(isr)) {
+                try (InputStreamReader isr = new InputStreamReader(in)) {
+                    try (BufferedReader br = new BufferedReader(isr)) {
                         while (true) {
                             final String line = br.readLine();
                             if (line == null) {
@@ -269,7 +269,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
                 crossfireServerConnection.removeClientSocketListener(clientSocketListener);
             }
             packetWatcher.destroy();
-            for (final ScriptProcessListener scriptProcessListener : scriptProcessListeners) {
+            for (ScriptProcessListener scriptProcessListener : scriptProcessListeners) {
                 scriptProcessListener.scriptTerminated(result);
             }
         }
@@ -423,26 +423,26 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
         } else if (params.equals("flags")) {
             commandSent("request flags "+stats.getStat(Stats.CS_STAT_FLAGS)+" "+(commandQueue.checkFire() ? "1" : "0")+" "+(commandQueue.checkRun() ? "1" : "0")+" 0");
         } else if (params.equals("items inv")) {
-            for (final CfItem item : itemSet.getPlayerInventory()) {
+            for (CfItem item : itemSet.getPlayerInventory()) {
                 commandSentItem("request items inv", item);
             }
             commandSent("request items inv end");
         } else if (params.equals("items actv")) {
-            for (final CfItem item : itemSet.getPlayerInventory()) {
+            for (CfItem item : itemSet.getPlayerInventory()) {
                 if (item.isApplied()) {
                     commandSentItem("request items actv", item);
                 }
             }
             commandSent("request items actv end");
         } else if (params.equals("items on")) {
-            for (final CfItem item : itemSet.getItemsByLocation(0)) {
+            for (CfItem item : itemSet.getItemsByLocation(0)) {
                 commandSentItem("request items on", item);
             }
             commandSent("request items on end");
         } else if (params.equals("items cont")) {
             final int containerTag = floorView.getCurrentFloor();
             if (containerTag != 0) {
-                for (final CfItem item : itemSet.getItemsByLocation(containerTag)) {
+                for (CfItem item : itemSet.getItemsByLocation(containerTag)) {
                     commandSentItem("request items cont", item);
                 }
             }
@@ -500,7 +500,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
             }
             commandSent("request skills end");
         } else if (params.equals("spells")) {
-            for (final Spell spell : spellsManager) {
+            for (Spell spell : spellsManager) {
                 commandSent("request spells "+spell.getTag()+" "+spell.getLevel()+" "+spell.getMana()+" "+spell.getGrace()+" "+spell.getSkill()+" "+spell.getPath()+" "+spell.getCastingTime()+" "+spell.getDamage()+" "+spell.getName());
             }
             commandSent("request spells end");

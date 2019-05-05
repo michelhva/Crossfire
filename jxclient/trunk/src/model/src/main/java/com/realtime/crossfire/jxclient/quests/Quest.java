@@ -166,7 +166,7 @@ public class Quest {
      * Notifies all listeners.
      */
     private void fireChanged() {
-        for (final QuestListener listener : listeners) {
+        for (QuestListener listener : listeners) {
             listener.questChanged();
         }
     }

@@ -124,7 +124,7 @@ public class NewCharacterInformation {
     public void setRaceList(@NotNull final String[] raceList) {
         this.raceList.clear();
         this.raceList.addAll(Arrays.asList(raceList));
-        for (final NewCharacterInformationListener newCharacterInformationListener : newCharacterInformationListeners) {
+        for (NewCharacterInformationListener newCharacterInformationListener : newCharacterInformationListeners) {
             newCharacterInformationListener.raceListChanged();
         }
     }
@@ -145,7 +145,7 @@ public class NewCharacterInformation {
     public void setClassList(@NotNull final String[] classList) {
         this.classList.clear();
         this.classList.addAll(Arrays.asList(classList));
-        for (final NewCharacterInformationListener newCharacterInformationListener : newCharacterInformationListeners) {
+        for (NewCharacterInformationListener newCharacterInformationListener : newCharacterInformationListeners) {
             newCharacterInformationListener.classListChanged();
         }
     }
@@ -165,7 +165,7 @@ public class NewCharacterInformation {
      */
     public void addRaceInfo(@NotNull final ClassRaceInfo classRaceInfo) {
         raceInfo.put(classRaceInfo.getArchName(), classRaceInfo);
-        for (final NewCharacterInformationListener newCharacterInformationListener : newCharacterInformationListeners) {
+        for (NewCharacterInformationListener newCharacterInformationListener : newCharacterInformationListeners) {
             newCharacterInformationListener.raceInfoChanged(classRaceInfo.getArchName());
         }
     }
@@ -186,7 +186,7 @@ public class NewCharacterInformation {
      */
     public void addClassInfo(@NotNull final ClassRaceInfo classInfo) {
         this.classInfo.put(classInfo.getArchName(), classInfo);
-        for (final NewCharacterInformationListener newCharacterInformationListener : newCharacterInformationListeners) {
+        for (NewCharacterInformationListener newCharacterInformationListener : newCharacterInformationListeners) {
             newCharacterInformationListener.classInfoChanged(classInfo.getArchName());
         }
     }

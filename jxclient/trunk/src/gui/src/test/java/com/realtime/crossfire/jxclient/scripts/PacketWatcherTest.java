@@ -68,7 +68,7 @@ public class PacketWatcherTest {
         final PacketWatcher packetWatcher = new PacketWatcher(connection, scriptProcess);
 
         sb.setLength(0);
-        for (final ReceivedPacketListener listener : listeners) {
+        for (ReceivedPacketListener listener : listeners) {
             listener.processEmpty("command");
         }
         Assert.assertEquals("", sb.toString());
@@ -76,7 +76,7 @@ public class PacketWatcherTest {
         packetWatcher.addCommand("command");
 
         sb.setLength(0);
-        for (final ReceivedPacketListener listener : listeners) {
+        for (ReceivedPacketListener listener : listeners) {
             //noinspection SpellCheckingInspection
             listener.processEmpty("comman");
             listener.processEmpty("command");

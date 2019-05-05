@@ -147,7 +147,7 @@ public class RenderState {
                 canScrollDown = false;
                 mustRepaint = true;
             } else {
-                for (final Line line : lines) {
+                for (Line line : lines) {
                     scrollPos -= line.getHeight();
                 }
                 topIndex -= lines.size();

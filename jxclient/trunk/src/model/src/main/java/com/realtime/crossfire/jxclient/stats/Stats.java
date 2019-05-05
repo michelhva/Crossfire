@@ -586,7 +586,7 @@ public class Stats {
         }
 
         this.simpleWeaponSpeed = simpleWeaponSpeed;
-        for (final StatsListener statsListener : statsListeners) {
+        for (StatsListener statsListener : statsListeners) {
             statsListener.simpleWeaponSpeedChanged(this.simpleWeaponSpeed);
         }
     }
@@ -595,7 +595,7 @@ public class Stats {
      * Forgets about all stats.
      */
     private void reset() {
-        for (final StatsListener statsListener : statsListeners) {
+        for (StatsListener statsListener : statsListeners) {
             statsListener.reset();
         }
         for (int statNo = 0; statNo < stats.length; statNo++) {
@@ -636,7 +636,7 @@ public class Stats {
         }
 
         stats[statNo] = value;
-        for (final StatsListener statsListener : statsListeners) {
+        for (StatsListener statsListener : statsListeners) {
             statsListener.statChanged(statNo, stats[statNo]);
         }
     }
@@ -679,7 +679,7 @@ public class Stats {
         }
 
         this.title = title;
-        for (final StatsListener statsListener : statsListeners) {
+        for (StatsListener statsListener : statsListeners) {
             statsListener.titleChanged(this.title);
         }
     }
@@ -695,7 +695,7 @@ public class Stats {
         }
 
         this.range = range;
-        for (final StatsListener statsListener : statsListeners) {
+        for (StatsListener statsListener : statsListeners) {
             statsListener.rangeChanged(this.range);
         }
     }
@@ -710,7 +710,7 @@ public class Stats {
         }
 
         this.activeSkill = activeSkill;
-        for (final StatsListener statsListener : statsListeners) {
+        for (StatsListener statsListener : statsListeners) {
             statsListener.activeSkillChanged(this.activeSkill);
         }
     }
@@ -733,7 +733,7 @@ public class Stats {
         }
 
         this.exp = exp;
-        for (final StatsListener statsListener : statsListeners) {
+        for (StatsListener statsListener : statsListeners) {
             statsListener.experienceChanged(this.exp);
         }
 
@@ -758,7 +758,7 @@ public class Stats {
         }
 
         expNextLevel = newExpNextLevel;
-        for (final StatsListener statsListener : statsListeners) {
+        for (StatsListener statsListener : statsListeners) {
             statsListener.experienceNextLevelChanged(expNextLevel);
         }
     }
