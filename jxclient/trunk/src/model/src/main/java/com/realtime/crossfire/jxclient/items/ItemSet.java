@@ -311,7 +311,7 @@ public class ItemSet {
     @NotNull
     public Iterable<CfItem> getPlayerInventory() {
         synchronized (sync) {
-            return player == null ? Collections.<CfItem>emptyList() : getInventoryByTag(player.getTag());
+            return player == null ? Collections.emptyList() : getInventoryByTag(player.getTag());
         }
     }
 
