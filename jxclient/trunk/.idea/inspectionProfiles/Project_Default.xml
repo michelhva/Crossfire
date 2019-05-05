@@ -189,12 +189,12 @@
         <option name="m_maxLength" value="64" />
       </extension>
       <extension name="InstanceVariableNamingConvention" enabled="true">
-        <option name="m_regex" value="[a-z][A-Za-z\d]*" />
+        <option name="m_regex" value="[a-z][A-Za-z\d]*_?" />
         <option name="m_minLength" value="1" />
         <option name="m_maxLength" value="64" />
       </extension>
       <extension name="StaticVariableNamingConvention" enabled="true">
-        <option name="m_regex" value="[A-Z][A-Z_\d]*" />
+        <option name="m_regex" value="[A-Z][A-Z_\d]*_?" />
         <option name="m_minLength" value="1" />
         <option name="m_maxLength" value="64" />
       </extension>
@@ -598,7 +598,7 @@
     </inspection_tool>
     <inspection_tool class="NewMethodNamingConvention" enabled="true" level="WARNING" enabled_by_default="true">
       <extension name="InstanceMethodNamingConvention" enabled="true">
-        <option name="m_regex" value="[a-z][A-Za-z\d]*" />
+        <option name="m_regex" value="[a-z][A-Za-z\d]*_?" />
         <option name="m_minLength" value="2" />
         <option name="m_maxLength" value="128" />
       </extension>
@@ -613,12 +613,12 @@
         <option name="m_maxLength" value="128" />
       </extension>
       <extension name="NativeMethodNamingConvention" enabled="true">
-        <option name="m_regex" value="[a-z][A-Za-z\d]*" />
+        <option name="m_regex" value="[a-z][A-Za-z\d]*_?" />
         <option name="m_minLength" value="2" />
         <option name="m_maxLength" value="128" />
       </extension>
       <extension name="StaticMethodNamingConvention" enabled="true">
-        <option name="m_regex" value="[a-z][A-Za-z\d]*" />
+        <option name="m_regex" value="[a-z][A-Za-z\d]*_?" />
         <option name="m_minLength" value="2" />
         <option name="m_maxLength" value="128" />
       </extension>
@@ -703,7 +703,7 @@
       <option name="m_ignoreOverridesOfLibraryMethods" value="false" />
     </inspection_tool>
     <inspection_tool class="ParameterNamingConvention" enabled="true" level="WARNING" enabled_by_default="true">
-      <option name="m_regex" value="[a-z][A-Za-z\d]*" />
+      <option name="m_regex" value="[a-z][A-Za-z\d]*_?" />
       <option name="m_minLength" value="1" />
       <option name="m_maxLength" value="64" />
     </inspection_tool>
