@@ -24,7 +24,6 @@ package com.realtime.crossfire.jxclient.window;
 import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.RendererGuiState;
-import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeybindingsManager;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.label.GUILabelFailure;
@@ -129,7 +128,8 @@ public class GuiManager {
     private boolean currentQueryDialogIsNamePrompt;
 
     /**
-     * The {@link TooltipManager} for this window.
+     * The {@link com.realtime.crossfire.jxclient.gui.gui.TooltipManager
+     * TooltipManager} for this window.
      */
     @NotNull
     private final TooltipManagerImpl tooltipManager;
