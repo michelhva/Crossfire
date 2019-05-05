@@ -32,6 +32,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.LineNumberReader;
 import java.io.OutputStreamWriter;
+import java.nio.charset.StandardCharsets;
 import java.util.Map;
 import java.util.TreeMap;
 import org.jetbrains.annotations.NotNull;
@@ -195,7 +196,7 @@ public class Settings {
 
         try {
             try (final FileInputStream fis = new FileInputStream(file)) {
-                try (final InputStreamReader isr = new InputStreamReader(fis, "UTF-8")) {
+                try (final InputStreamReader isr = new InputStreamReader(fis, StandardCharsets.UTF_8)) {
                     try (final LineNumberReader lnr = new LineNumberReader(isr)) {
                         loadValues(lnr);
                     }
@@ -243,7 +244,7 @@ public class Settings {
     private void saveValues() throws IOException {
         final File tmpFile = new File(file.getPath()+".tmp");
         try (final FileOutputStream fos = new FileOutputStream(tmpFile)) {
-            try (final OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8")) {
+            try (final OutputStreamWriter osw = new OutputStreamWriter(fos, StandardCharsets.UTF_8)) {
                 try (final BufferedWriter bw = new BufferedWriter(osw)) {
                     saveNode(bw, values);
                 }

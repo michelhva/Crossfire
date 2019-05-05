@@ -100,6 +100,7 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.io.Writer;
 import java.lang.reflect.InvocationTargetException;
+import java.nio.charset.StandardCharsets;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 import javax.swing.SwingUtilities;
@@ -306,7 +307,7 @@ public class JXClient {
             final FileOutputStream outputStream = new FileOutputStream(filename);
             try {
                 //noinspection IOResourceOpenedButNotSafelyClosed
-                writer = new OutputStreamWriter(outputStream, "UTF-8");
+                writer = new OutputStreamWriter(outputStream, StandardCharsets.UTF_8);
             } finally {
                 if (writer == null) {
                     outputStream.close();

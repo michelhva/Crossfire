@@ -45,6 +45,7 @@ import java.io.UnsupportedEncodingException;
 import java.nio.BufferUnderflowException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedHashMap;
@@ -3952,12 +3953,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         if (value == 0) {
             byteBuffer.put((byte)'0');
         } else {
-            final String str = Integer.toString(value);
-            try {
-                byteBuffer.put(str.getBytes("ISO-8859-1"));
-            } catch (final UnsupportedEncodingException ex) {
-                throw new AssertionError(ex); // every Java implementation must support UTF-8
-            }
+            byteBuffer.put(Integer.toString(value).getBytes(StandardCharsets.ISO_8859_1));
         }
     }
 

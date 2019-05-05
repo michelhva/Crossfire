@@ -28,6 +28,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.util.Map;
 import org.jetbrains.annotations.NotNull;
 
@@ -108,7 +109,7 @@ public class Metaserver {
                 conn.connect();
                 if (conn.getResponseCode() == HttpURLConnection.HTTP_OK) {
                     final InputStream in = conn.getInputStream();
-                    try (final InputStreamReader isr = new InputStreamReader(in, "ISO-8859-1")) {
+                    try (final InputStreamReader isr = new InputStreamReader(in, StandardCharsets.ISO_8859_1)) {
                         try (final BufferedReader br = new BufferedReader(isr)) {
                             final MetaserverEntryParser metaserverEntryParser = new MetaserverEntryParser();
                             while (true) {

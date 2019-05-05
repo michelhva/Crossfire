@@ -36,6 +36,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.Writer;
+import java.nio.charset.StandardCharsets;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.regex.Pattern;
@@ -76,7 +77,7 @@ public class DialogStateParser {
 
         try {
             try (final FileInputStream fis = new FileInputStream(dialogsFile)) {
-                try (final InputStreamReader isr = new InputStreamReader(fis, "UTF-8")) {
+                try (final InputStreamReader isr = new InputStreamReader(fis, StandardCharsets.UTF_8)) {
                     try (final BufferedReader br = new BufferedReader(isr)) {
                         while (true) {
                             final String line = br.readLine();
@@ -175,7 +176,7 @@ public class DialogStateParser {
 
         try {
             try (final FileOutputStream fos = new FileOutputStream(dialogsFile)) {
-                try (final OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8")) {
+                try (final OutputStreamWriter osw = new OutputStreamWriter(fos, StandardCharsets.UTF_8)) {
                     try (final BufferedWriter bw = new BufferedWriter(osw)) {
                         for (final Gui dialog : openDialogs) {
                             saveDialog(dialog, "open", bw);

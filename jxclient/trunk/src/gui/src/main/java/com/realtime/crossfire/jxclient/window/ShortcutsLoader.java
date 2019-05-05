@@ -35,6 +35,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.nio.charset.StandardCharsets;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -68,7 +69,7 @@ public class ShortcutsLoader {
             shortcuts.clearShortcuts();
             try {
                 try (final FileInputStream fis = new FileInputStream(file)) {
-                    try (final InputStreamReader isr = new InputStreamReader(fis, "UTF-8")) {
+                    try (final InputStreamReader isr = new InputStreamReader(fis, StandardCharsets.UTF_8)) {
                         try (final BufferedReader br = new BufferedReader(isr)) {
                             loadShortcuts(shortcuts, br);
                         }

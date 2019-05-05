@@ -153,6 +153,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.LineNumberReader;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Comparator;
@@ -622,7 +623,7 @@ public class JXCSkinLoader {
      */
     private void load(@NotNull final JXCSkinSource skinSource, @NotNull final String dialogName, @NotNull final String resourceName, @NotNull final InputStream inputStream, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CharacterModel characterModel, @NotNull final CommandQueue commandQueue, @Nullable final Gui gui, @NotNull final Shortcuts shortcuts, @NotNull final CommandExecutor commandExecutor, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros, @NotNull final Image nextGroupFace, @NotNull final Image prevGroupFace, @NotNull final SmoothFaces smoothFaces) throws JXCSkinException {
         try {
-            try (final InputStreamReader isr = new InputStreamReader(inputStream, "UTF-8")) {
+            try (final InputStreamReader isr = new InputStreamReader(inputStream, StandardCharsets.UTF_8)) {
                 final LineNumberReader lnr = new LineNumberReader(isr);
                 try {
                     boolean isDialog = false;

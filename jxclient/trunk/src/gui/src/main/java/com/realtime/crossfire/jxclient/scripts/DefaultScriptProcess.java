@@ -43,8 +43,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import java.io.UnsupportedEncodingException;
 import java.nio.ByteBuffer;
+import java.nio.charset.StandardCharsets;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -178,13 +178,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
 
         @Override
         public void packetSent(@NotNull final byte[] buf, final int len) {
-            final String cmd;
-            try {
-                cmd = new String(buf, 0, len, "ISO-8859-1");
-            } catch (final UnsupportedEncodingException ex) {
-                throw new AssertionError(ex); // will never happen: every JVM must implement ISO-8859-1
-            }
-            commandSent(cmd);
+            commandSent(new String(buf, 0, len, StandardCharsets.ISO_8859_1));
         }
 
         @Override
