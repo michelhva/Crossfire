@@ -196,6 +196,10 @@ public class GUIItemSpell extends GUIItemItem {
     }
 
     @Override
+    public void notifyOpen() {
+    }
+
+    @Override
     public boolean canScroll(final int distance) {
         if (distance < 0) {
             return index >= -distance;

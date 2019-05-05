@@ -94,4 +94,8 @@ public class GUIPicture extends AbstractGUIElement {
         return new Dimension(preferredSize);
     }
 
+    @Override
+    public void notifyOpen() {
+    }
+
 }

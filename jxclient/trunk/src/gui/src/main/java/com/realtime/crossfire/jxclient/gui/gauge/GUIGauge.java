@@ -226,6 +226,10 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
         }
     }
 
+    @Override
+    public void notifyOpen() {
+    }
+
     /**
      * Returns a formatted string using the given format.
      * <p>

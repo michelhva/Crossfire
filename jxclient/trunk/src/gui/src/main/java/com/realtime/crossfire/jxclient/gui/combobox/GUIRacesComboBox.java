@@ -105,6 +105,10 @@ public class GUIRacesComboBox extends GUIComboBox<String> {
         model.getNewCharacterInformation().removeNewCharacterInformationListener(newCharacterInformationListener);
     }
 
+    @Override
+    public void notifyOpen() {
+    }
+
     /**
      * Updates the combo box model to reflect the current race list of {@link
      * #model}.

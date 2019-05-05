@@ -78,4 +78,8 @@ public class GUILabelLog extends GUILog {
         scrollTo(0);
     }
 
+    @Override
+    public void notifyOpen() {
+    }
+
 }

@@ -200,6 +200,10 @@ public class GUICheckBox extends ActivatableGUIElement {
     }
 
     @Override
+    public void notifyOpen() {
+    }
+
+    @Override
     public void execute() {
         // ignore
     }

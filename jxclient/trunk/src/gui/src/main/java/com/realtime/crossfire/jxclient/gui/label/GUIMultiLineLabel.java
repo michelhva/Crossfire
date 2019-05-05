@@ -136,4 +136,8 @@ public class GUIMultiLineLabel extends GUILabel {
         return new Dimension(width, height);
     }
 
+    @Override
+    public void notifyOpen() {
+    }
+
 }

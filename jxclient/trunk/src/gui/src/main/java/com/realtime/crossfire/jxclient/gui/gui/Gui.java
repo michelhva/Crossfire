@@ -576,4 +576,18 @@ public class Gui extends JComponent {
         setPosition(newX, newY);
     }
 
+    /**
+     * Call {@link GUIElement#notifyOpen()} for all GUI elements.
+     */
+    public void notifyOpen() {
+        final int count = getComponentCount();
+        for (int i = 0; i < count; i++) {
+            final Component component = getComponent(i);
+            if (component.isVisible() && component instanceof GUIElement) {
+                final GUIElement element = (GUIElement)component;
+                element.notifyOpen();
+            }
+        }
+    }
+
 }

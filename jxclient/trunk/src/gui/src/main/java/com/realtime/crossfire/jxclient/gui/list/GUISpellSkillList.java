@@ -151,4 +151,8 @@ public class GUISpellSkillList extends GUIItemList<GUIItemSpellSkill> {
         super.selectionChanged(selectedIndex);
     }
 
+    @Override
+    public void notifyOpen() {
+    }
+
 }

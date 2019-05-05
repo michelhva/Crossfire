@@ -124,4 +124,8 @@ public class GUIKnowledgeList extends GUIItemList<GUIItemKnowledge> {
         return new GUIItemKnowledge(tooltipManager, elementListener, name+index, itemPainter, index, facesManager, knowledgeManager, itemView, commandQueue, 0);
     }
 
+    @Override
+    public void notifyOpen() {
+    }
+
 }

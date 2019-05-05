@@ -162,6 +162,10 @@ public class GUIMetaElementList extends GUIList<GUIMetaElement> {
         metaserverModel.removeMetaserverListener(metaserverListener);
     }
 
+    @Override
+    public void notifyOpen() {
+    }
+
     /**
      * Rebuild the list cells.
      */

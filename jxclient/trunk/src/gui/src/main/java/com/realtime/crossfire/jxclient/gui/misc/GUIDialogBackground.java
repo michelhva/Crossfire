@@ -222,4 +222,8 @@ public class GUIDialogBackground extends AbstractGUIElement {
         return new Dimension(widthW+1+widthE, heightN+1+heightS);
     }
 
+    @Override
+    public void notifyOpen() {
+    }
+
 }

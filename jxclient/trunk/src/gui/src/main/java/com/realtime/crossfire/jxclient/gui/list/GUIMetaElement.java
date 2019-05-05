@@ -199,6 +199,10 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     }
 
     @Override
+    public void notifyOpen() {
+    }
+
+    @Override
     public void execute() {
         // ignore
     }

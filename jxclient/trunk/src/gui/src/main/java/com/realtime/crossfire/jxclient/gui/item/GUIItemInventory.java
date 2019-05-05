@@ -316,4 +316,8 @@ public class GUIItemInventory extends GUIItemItem {
         setItem(inventoryView.getItem(index));
     }
 
+    @Override
+    public void notifyOpen() {
+    }
+
 }

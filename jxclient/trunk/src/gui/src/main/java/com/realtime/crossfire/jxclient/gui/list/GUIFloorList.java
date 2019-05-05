@@ -171,4 +171,8 @@ public class GUIFloorList extends GUIItemList<GUIItemFloor> {
         return new GUIItemFloor(tooltipManager, elementListener, commandQueue, name+index, itemPainter, index, crossfireServerConnection, itemView, itemSet, facesManager, nextGroupFace, prevGroupFace, 0);
     }
 
+    @Override
+    public void notifyOpen() {
+    }
+
 }

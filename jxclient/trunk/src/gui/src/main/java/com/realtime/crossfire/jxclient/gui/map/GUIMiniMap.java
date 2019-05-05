@@ -146,4 +146,8 @@ public class GUIMiniMap extends AbstractGUIMap {
         return new Dimension(width*tileSize, height*tileSize);
     }
 
+    @Override
+    public void notifyOpen() {
+    }
+
 }

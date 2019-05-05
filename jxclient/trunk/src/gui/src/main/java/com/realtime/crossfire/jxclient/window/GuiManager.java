@@ -684,6 +684,8 @@ public class GuiManager {
                         break;
                     }
                 }
+
+                dialog.notifyOpen();
             }
         });
         return result[0];

@@ -105,6 +105,10 @@ public class GUIClassesComboBox extends GUIComboBox<String> {
         model.getNewCharacterInformation().removeNewCharacterInformationListener(newCharacterInformationListener);
     }
 
+    @Override
+    public void notifyOpen() {
+    }
+
     /**
      * Updates the combo box model to reflect the current class list of {@link
      * #model}.

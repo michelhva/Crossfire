@@ -249,4 +249,8 @@ public class GUIDupGauge extends AbstractGUIElement implements GUIGaugeListener 
         }
     }
 
+    @Override
+    public void notifyOpen() {
+    }
+
 }

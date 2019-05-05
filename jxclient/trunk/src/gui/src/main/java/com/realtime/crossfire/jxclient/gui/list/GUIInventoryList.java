@@ -134,4 +134,8 @@ public class GUIInventoryList extends GUIItemList<GUIItemInventory> {
         return new GUIItemInventory(tooltipManager, elementListener, commandQueue, name+index, itemPainter, index, crossfireServerConnection, facesManager, floorView, itemView, 0);
     }
 
+    @Override
+    public void notifyOpen() {
+    }
+
 }

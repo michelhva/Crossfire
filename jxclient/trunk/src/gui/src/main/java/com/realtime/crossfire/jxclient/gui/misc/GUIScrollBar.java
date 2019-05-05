@@ -194,6 +194,10 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
     }
 
     @Override
+    public void notifyOpen() {
+    }
+
+    @Override
     public void execute() {
         // ignore
     }
