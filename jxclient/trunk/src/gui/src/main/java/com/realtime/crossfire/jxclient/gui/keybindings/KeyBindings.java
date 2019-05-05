@@ -33,6 +33,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.LineNumberReader;
 import java.io.OutputStreamWriter;
+import java.nio.charset.StandardCharsets;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.stream.Collectors;
@@ -168,7 +169,7 @@ public class KeyBindings {
 
         try {
             try (final FileInputStream fis = new FileInputStream(file)) {
-                try (final InputStreamReader isr = new InputStreamReader(fis, "UTF-8")) {
+                try (final InputStreamReader isr = new InputStreamReader(fis, StandardCharsets.UTF_8)) {
                     try (final LineNumberReader lnr = new LineNumberReader(isr)) {
                         while (true) {
                             final String line = lnr.readLine();
@@ -214,7 +215,7 @@ public class KeyBindings {
         }
 
         try (final FileOutputStream fos = new FileOutputStream(file)) {
-            try (final OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8")) {
+            try (final OutputStreamWriter osw = new OutputStreamWriter(fos, StandardCharsets.UTF_8)) {
                 try (final BufferedWriter bw = new BufferedWriter(osw)) {
                     for (final KeyBinding keyBinding : keybindings) {
                         if (keyBinding.isDefault()) {

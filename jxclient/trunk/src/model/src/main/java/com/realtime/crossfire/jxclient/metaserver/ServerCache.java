@@ -30,6 +30,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.LineNumberReader;
 import java.io.OutputStreamWriter;
+import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
@@ -131,7 +132,7 @@ public class ServerCache {
 
         try {
             try (final FileInputStream fis = new FileInputStream(file)) {
-                try (final InputStreamReader isr = new InputStreamReader(fis, "UTF-8")) {
+                try (final InputStreamReader isr = new InputStreamReader(fis, StandardCharsets.UTF_8)) {
                     try (final LineNumberReader lnr = new LineNumberReader(isr)) {
                         while (true) {
                             final String line = lnr.readLine();
@@ -210,7 +211,7 @@ public class ServerCache {
      */
     private void saveInternal(@NotNull final File file) throws IOException {
         try (final FileOutputStream fos = new FileOutputStream(file)) {
-            try (final OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8")) {
+            try (final OutputStreamWriter osw = new OutputStreamWriter(fos, StandardCharsets.UTF_8)) {
                 try (final BufferedWriter bw = new BufferedWriter(osw)) {
                     for (final Info info : entries.values()) {
                         bw.write(Long.toString(info.getTimestamp()));
