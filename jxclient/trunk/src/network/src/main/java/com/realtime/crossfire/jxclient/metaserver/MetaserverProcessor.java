@@ -29,9 +29,9 @@ import org.jetbrains.annotations.NotNull;
 /**
  * Asynchronously queries the metaserver and updates a {@link MetaserverModel}
  * instance. Queries are performed regularly every {@link #UPDATE_INTERVAL} but
- * not faster than {@link #MIN_UPDATE_INTERVAL}. Queries can be stopped stopped
- * when the server selection GUI is left ({@link #disable()}; a call to {@link
- * #query()} automatically re-starts queries.
+ * not faster than {@link #MIN_UPDATE_INTERVAL}. Queries can be stopped when the
+ * server selection GUI is left ({@link #disable()}; a call to {@link #query()}
+ * automatically re-starts queries.
  * @author Andreas Kirschbaum
  */
 public class MetaserverProcessor {
