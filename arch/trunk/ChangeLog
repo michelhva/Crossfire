@@ -1,3 +1,22 @@
+Patch #357 Balancing changes to the summoning branch, care of Markus Kettunen.
+* Improve the golem weapon class (Wc) from the summon golem spell from 12 down
+to 10
+* Improve the summoned golem damage from 40 to 60, change duration from 75 to
+125
+* Improve the damage from summon lesser golem from 20 to 25
+* Decrease level requirements for pet types by 1 level from the beginning pet
+of bird and up to and including skull. Replace pixie with panther. Replace
+skeleton with wolf
+* Comment update in regards to the recent changes on what pets are summoned at
+which level
+* Reduce casting time from 10 to 5 in spell, summon pet monster
+arch/trunk/spell/Golem/golem.arc
+arch/trunk/spell/Golem/spell_lesser_golem.arc
+arch/trunk/spell/SummonMonster/mage_pet_monster.trs
+arch/trunk/spell/SummonMonster/spell_summon_pet.arc
+arch/trunk/spell/SummonMonster/spell_summon_pet.arc
+Rick Tanner 2019-04-21
+
 Make level for dragon ability gain stored a the data-level by using "magic" in th treasurelist.
 Requires subsequent server update to actually use those values.
 player/dragon_ability/dragon_abilities.trs
