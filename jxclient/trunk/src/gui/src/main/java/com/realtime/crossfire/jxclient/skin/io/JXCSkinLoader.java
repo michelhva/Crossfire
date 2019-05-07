@@ -1183,7 +1183,7 @@ public class JXCSkinLoader {
 
         case "skill":
             final String subtype = args.get();
-            final Skill skill = model.getSkillSet().getNamedSkill(args.get().replaceAll("_", " "), -1);
+            final Skill skill = model.getSkillSet().getNamedSkill(args.get().replace('_', ' '), -1);
             final CommandList commandList = skin.getCommandList(args.get());
             switch (subtype) {
             case "add":
