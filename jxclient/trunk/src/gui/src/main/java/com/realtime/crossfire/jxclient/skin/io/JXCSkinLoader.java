@@ -1387,10 +1387,12 @@ public class JXCSkinLoader {
                 group2.addGroup(group3);
             } else {
                 final Group group3 = layout.createParallelGroup();
-                group3.addGap(0, 0, Short.MAX_VALUE);
-                group3.addComponent(close);
+                final Group group4 = layout.createSequentialGroup();
+                group4.addGap(0, 1, Short.MAX_VALUE);
+                group4.addComponent(close);
+                group3.addGroup(group4);
+                group3.addGroup(content);
                 group2.addGroup(group3);
-                group2.addGroup(content);
             }
         } else {
             final Group group3 = layout.createParallelGroup();
@@ -2162,13 +2164,8 @@ public class JXCSkinLoader {
             if (close == null) {
                 group2.addGroup(content);
             } else {
-                final Group group4 = layout.createParallelGroup();
-                group4.addComponent(close);
-                group4.addGap(0, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE);
-                final Group group3 = layout.createParallelGroup();
-                group3.addGroup(content);
-                group3.addGroup(group4);
-                group2.addGroup(group3);
+                group2.addComponent(close);
+                group2.addGroup(content);
             }
         } else {
             if (close == null) {
