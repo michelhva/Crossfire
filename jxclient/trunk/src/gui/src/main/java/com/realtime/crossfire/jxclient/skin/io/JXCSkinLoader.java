@@ -157,7 +157,6 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Comparator;
-import java.util.Iterator;
 import java.util.List;
 import java.util.TreeSet;
 import javax.swing.GroupLayout;
@@ -789,10 +788,7 @@ public class JXCSkinLoader {
             throw new JXCSkinException(skinSource.getURI(resourceName)+": "+ex.getMessage(), ex);
         }
 
-        final Iterator<AbstractGUIElement> it = definedGUIElements.iterator();
-        if (gui == null) {
-            assert !it.hasNext();
-        }
+        assert gui != null || !definedGUIElements.iterator().hasNext();
 
         //if (gui != null) {
         //    gui.validate();
