@@ -1377,31 +1377,26 @@ public class JXCSkinLoader {
         final Group group2 = layout.createSequentialGroup();
         group2.addGap(DIALOG_BORDER_WIDTH);
         if (title == null) {
-            if (close == null) {
-                final Group group3 = layout.createParallelGroup();
-                group3.addGroup(content);
-                group2.addGroup(group3);
-            } else {
-                final Group group3 = layout.createParallelGroup();
+            final Group group3 = layout.createParallelGroup();
+            if (close != null) {
                 final Group group4 = layout.createSequentialGroup();
                 group4.addGap(0, 1, Short.MAX_VALUE);
                 group4.addComponent(close);
                 group3.addGroup(group4);
-                group3.addGroup(content);
-                group2.addGroup(group3);
             }
+            group3.addGroup(content);
+            group2.addGroup(group3);
         } else {
             final Group group3 = layout.createParallelGroup();
             if (close == null) {
                 group3.addComponent(title);
-                group3.addGroup(content);
             } else {
                 final Group group4 = layout.createSequentialGroup();
                 group4.addComponent(title);
                 group4.addComponent(close);
                 group3.addGroup(group4);
-                group3.addGroup(content);
             }
+            group3.addGroup(content);
             group2.addGroup(group3);
         }
         group2.addGap(DIALOG_BORDER_WIDTH);
@@ -2157,24 +2152,18 @@ public class JXCSkinLoader {
         final Group group2 = layout.createSequentialGroup();
         group2.addGap(DIALOG_BORDER_WIDTH);
         if (title == null) {
-            if (close == null) {
-                group2.addGroup(content);
-            } else {
+            if (close != null) {
                 group2.addComponent(close);
-                group2.addGroup(content);
             }
+        } else if (close == null) {
+            group2.addComponent(title);
         } else {
-            if (close == null) {
-                group2.addComponent(title);
-                group2.addGroup(content);
-            } else {
-                final Group group3 = layout.createParallelGroup();
-                group3.addComponent(title);
-                group3.addComponent(close);
-                group2.addGroup(group3);
-                group2.addGroup(content);
-            }
+            final Group group3 = layout.createParallelGroup();
+            group3.addComponent(title);
+            group3.addComponent(close);
+            group2.addGroup(group3);
         }
+        group2.addGroup(content);
         group2.addGap(DIALOG_BORDER_WIDTH);
         if (!unreferencedElements.isEmpty()) {
             throw new IOException("layout doesn't define elements "+unreferencedElements);

@@ -274,7 +274,6 @@ public class RenderState {
                 topIndex = 0;
                 topOffset = 0;
                 canScrollUp = false;
-                canScrollDown = false;
             } else {
                 scrollPos = Math.max(bufferHeight-height, 0);
                 topIndex = buffer.size();
@@ -286,8 +285,8 @@ public class RenderState {
                 }
                 topOffset = -y;
                 canScrollUp = topIndex > 0 || topOffset > 0;
-                canScrollDown = false;
             }
+            canScrollDown = false;
         }
     }
 
