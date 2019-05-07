@@ -761,7 +761,7 @@ public class JXCSkinLoader {
                                 parseTextGauge(args, tooltipManager, elementListener, lnr);
                             } else if (cmd.equals("tooltip")) {
                                 parseTooltip(args, tooltipManager, elementListener);
-                            } else if (cmd.equals("vertical")) {
+                            } else if (gui != null && cmd.equals("vertical")) {
                                 parseVertical(args, gui, lnr, isDialog);
                             } else if (cmd.equals("character_list")) {
                                 parseCharacterList(args, tooltipManager, elementListener, characterModel);
