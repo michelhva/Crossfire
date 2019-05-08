@@ -4270,43 +4270,43 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         numLookObjects.waitForCurrentNumLookObjectsValid();
     }
 
-    protected void fireMapClear(final int x, final int y) {
+    private void fireMapClear(final int x, final int y) {
         assert crossfireUpdateMapListener != null;
         crossfireUpdateMapListener.mapClear(x, y);
     }
 
-    protected void fireMapDarkness(final int x, final int y, final int darkness) {
+    private void fireMapDarkness(final int x, final int y, final int darkness) {
         assert crossfireUpdateMapListener != null;
         crossfireUpdateMapListener.mapDarkness(x, y, darkness);
     }
 
-    protected void fireMapFace(@NotNull final Location location, final int face) {
+    private void fireMapFace(@NotNull final Location location, final int face) {
         assert crossfireUpdateMapListener != null;
         crossfireUpdateMapListener.mapFace(location, face);
     }
 
-    protected void fireMapAnimation(@NotNull final Location location, final int animationNum, final int animationType) {
+    private void fireMapAnimation(@NotNull final Location location, final int animationNum, final int animationType) {
         assert crossfireUpdateMapListener != null;
         crossfireUpdateMapListener.mapAnimation(location, animationNum, animationType);
     }
 
-    protected void fireMapSmooth(@NotNull final Location location, final int smooth) {
+    private void fireMapSmooth(@NotNull final Location location, final int smooth) {
         assert crossfireUpdateMapListener != null;
         crossfireUpdateMapListener.mapSmooth(location, smooth);
     }
 
-    protected void fireMapAnimationSpeed(@NotNull final Location location, final int animSpeed) {
+    private void fireMapAnimationSpeed(@NotNull final Location location, final int animSpeed) {
         assert crossfireUpdateMapListener != null;
         crossfireUpdateMapListener.mapAnimationSpeed(location, animSpeed);
     }
 
-    protected void fireAddAnimation(final int animation, final int flags, @NotNull final int[] faces) {
+    private void fireAddAnimation(final int animation, final int flags, @NotNull final int[] faces) {
         if (crossfireUpdateMapListener != null) {
             crossfireUpdateMapListener.addAnimation(animation, flags, faces);
         }
     }
 
-    protected void fireMagicMap(final int x, final int y, @NotNull final byte[][] data) {
+    private void fireMagicMap(final int x, final int y, @NotNull final byte[][] data) {
         if (crossfireUpdateMapListener != null) {
             synchronized (crossfireUpdateMapListener.mapBegin()) {
                 assert crossfireUpdateMapListener != null;
