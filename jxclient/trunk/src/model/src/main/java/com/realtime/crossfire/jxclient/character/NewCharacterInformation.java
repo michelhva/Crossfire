@@ -146,7 +146,7 @@ public class NewCharacterInformation {
      * @return the races
      */
     @NotNull
-    public Iterable<String> getRaceList() {
+    public List<String> getRaceList() {
         return Collections.unmodifiableList(raceList);
     }
 
@@ -167,7 +167,7 @@ public class NewCharacterInformation {
      * @return the classes
      */
     @NotNull
-    public Iterable<String> getClassesList() {
+    public List<String> getClassesList() {
         return Collections.unmodifiableList(classList);
     }
 
