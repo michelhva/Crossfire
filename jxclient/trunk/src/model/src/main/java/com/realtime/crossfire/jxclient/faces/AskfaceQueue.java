@@ -21,6 +21,8 @@
 
 package com.realtime.crossfire.jxclient.faces;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Interface for classes that allow sending "askface" commands.
  * @author Andreas Kirschbaum
@@ -32,5 +34,11 @@ public interface AskfaceQueue {
      * @param faceNum the face number to request
      */
     void sendAskface(int faceNum);
+
+    /**
+     * Registeres a listener to be called whenever a face has been received.
+     * @param listener the listener
+     */
+    void addFaceReceivedListener(@NotNull AskfaceFaceQueueListener listener);
 
 }

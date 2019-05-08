@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
+import com.realtime.crossfire.jxclient.faces.AskfaceFaceQueueListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketListener;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -68,6 +69,11 @@ public class TestCrossfireServerConnection extends AbstractCrossfireServerConnec
 
     @Override
     public void sendAskface(final int faceNum) {
+        Assert.fail();
+    }
+
+    @Override
+    public void addFaceReceivedListener(@NotNull final AskfaceFaceQueueListener listener) {
         Assert.fail();
     }
 

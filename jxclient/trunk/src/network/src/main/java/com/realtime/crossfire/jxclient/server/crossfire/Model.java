@@ -22,7 +22,6 @@
 package com.realtime.crossfire.jxclient.server.crossfire;
 
 import com.realtime.crossfire.jxclient.character.NewCharacterInformation;
-import com.realtime.crossfire.jxclient.faces.AskfaceFaceQueue;
 import com.realtime.crossfire.jxclient.faces.FaceCache;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.SmoothFaces;
@@ -76,9 +75,6 @@ public class Model {
     @NotNull
     private final ItemSet itemSet = new ItemSet();
 
-    @NotNull
-    private AskfaceFaceQueue askfaceFaceQueue;
-
     /**
      * The {@link NewCharacterInformation} for creating new characters.
      */
@@ -88,11 +84,6 @@ public class Model {
     @Deprecated
     public void setItemsManager(@NotNull final FacesManager facesManager) {
         itemsManager = new ItemsManager(facesManager, stats, skillSet, guiStateManager, itemSet);
-    }
-
-    @Deprecated
-    public void setAskfaceFaceQueue(@NotNull final AskfaceFaceQueue askfaceFaceQueue) {
-        this.askfaceFaceQueue = askfaceFaceQueue;
     }
 
     @NotNull
@@ -148,11 +139,6 @@ public class Model {
     @NotNull
     public ItemSet getItemSet() {
         return itemSet;
-    }
-
-    @NotNull
-    public AskfaceFaceQueue getAskfaceFaceQueue() {
-        return askfaceFaceQueue;
     }
 
     /**
