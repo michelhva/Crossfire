@@ -82,6 +82,7 @@ public class AskfaceFaceQueue extends AbstractFaceQueue {
      */
     public AskfaceFaceQueue(@NotNull final AskfaceQueue askfaceQueue) {
         this.askfaceQueue = askfaceQueue;
+        this.askfaceQueue.addFaceReceivedListener(this::faceReceived);
     }
 
     @Override
@@ -138,7 +139,7 @@ public class AskfaceFaceQueue extends AbstractFaceQueue {
      * @param faceSetNum the face set
      * @param packet the face data
      */
-    public void faceReceived(final int faceNum, final int faceSetNum, @NotNull final ByteBuffer packet) {
+    private void faceReceived(final int faceNum, final int faceSetNum, @NotNull final ByteBuffer packet) {
         final Integer faceObject = faceNum;
         synchronized (sync) {
             final Face face = pendingAskfaces.remove(faceObject);

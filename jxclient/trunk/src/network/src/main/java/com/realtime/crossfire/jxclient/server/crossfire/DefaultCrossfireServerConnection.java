@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.account.CharacterInformation;
 import com.realtime.crossfire.jxclient.character.Choice;
 import com.realtime.crossfire.jxclient.character.ClassRaceInfo;
 import com.realtime.crossfire.jxclient.character.NewCharInfo;
+import com.realtime.crossfire.jxclient.faces.AskfaceFaceQueueListener;
 import com.realtime.crossfire.jxclient.guistate.ClientSocketState;
 import com.realtime.crossfire.jxclient.map.Location;
 import com.realtime.crossfire.jxclient.protocol.Map2;
@@ -36,6 +37,7 @@ import com.realtime.crossfire.jxclient.server.socket.UnknownCommandException;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.util.DebugWriter;
+import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import com.realtime.crossfire.jxclient.util.HexCodec;
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
@@ -568,6 +570,12 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      */
     @Nullable
     private CrossfireUpdateMapListener crossfireUpdateMapListener;
+
+    /**
+     * The {@link AskfaceFaceQueueListener AskfaceQueueListeners} to notify.
+     */
+    @NotNull
+    private final EventListenerList2<AskfaceFaceQueueListener> askfaceFaceQueueListeners = new EventListenerList2<>();
 
     /**
      * If non-{@code null}: the last sent "requestinfo" command for which no
@@ -2866,7 +2874,9 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("recv image2 face="+faceNum+" set="+faceSetNum+" len="+len);
         }
         packet.position(faceDataPosition);
-        model.getAskfaceFaceQueue().faceReceived(faceNum, faceSetNum, packet);
+        for (AskfaceFaceQueueListener listener : askfaceFaceQueueListeners) {
+            listener.faceReceived(faceNum, faceSetNum, packet);
+        }
         notifyPacketWatcherListenersMixed(packet, args);
     }
 
@@ -3751,6 +3761,11 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             putDecimal(faceNum);
             defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
         }
+    }
+
+    @Override
+    public void addFaceReceivedListener(@NotNull final AskfaceFaceQueueListener listener) {
+        askfaceFaceQueueListeners.add(listener);
     }
 
     @Override

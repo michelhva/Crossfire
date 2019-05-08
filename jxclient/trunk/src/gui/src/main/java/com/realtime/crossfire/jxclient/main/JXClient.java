@@ -174,7 +174,6 @@ public class JXClient {
                                 server.start();
                                 try {
                                     final AskfaceFaceQueue askfaceFaceQueue = new AskfaceFaceQueue(server);
-                                    model.setAskfaceFaceQueue(askfaceFaceQueue);
                                     final FacesQueue facesQueue = new FacesQueue(askfaceFaceQueue, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()));
                                     final FacesManager facesManager = new DefaultFacesManager(model.getFaceCache(), facesQueue);
                                     model.setItemsManager(facesManager);
