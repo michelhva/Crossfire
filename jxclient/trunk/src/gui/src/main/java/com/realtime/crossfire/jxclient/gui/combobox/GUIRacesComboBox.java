@@ -82,6 +82,16 @@ public class GUIRacesComboBox extends GUIComboBox<String> {
             updateSelectedItem();
         }
 
+        @Override
+        public void startingMapListChanged() {
+            // ignore
+        }
+
+        @Override
+        public void startingMapInfoChanged(@NotNull final String startingMapName) {
+            // ignore
+        }
+
     };
 
     /**

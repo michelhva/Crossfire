@@ -82,6 +82,16 @@ public class GUIClassesComboBox extends GUIComboBox<String> {
             // ignore
         }
 
+        @Override
+        public void startingMapListChanged() {
+            // ignore
+        }
+
+        @Override
+        public void startingMapInfoChanged(@NotNull final String startingMapName) {
+            // ignore
+        }
+
     };
 
     /**
