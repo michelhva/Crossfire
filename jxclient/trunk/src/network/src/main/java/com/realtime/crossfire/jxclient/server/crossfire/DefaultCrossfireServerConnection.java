@@ -2597,9 +2597,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         if (faces.length <= 0) {
             throw new UnknownCommandException("no faces in anim command");
         }
-        for (int i = 0; i < faces.length; i++) {
-            faces[i] = getInt2(packet);
-        }
+        Arrays.setAll(faces, i -> getInt2(packet));
         if (packet.hasRemaining()) {
             throw new UnknownCommandException("excess data at end of anim command");
         }
@@ -2661,9 +2659,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     private void processDelItem(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         final int args = packet.position();
         final int[] tags = new int[packet.remaining()/4];
-        for (int i = 0; i < tags.length; i++) {
-            tags[i] = getInt4(packet);
-        }
+        Arrays.setAll(tags, i -> getInt4(packet));
         if (packet.hasRemaining()) {
             throw new UnknownCommandException("excess data at end of delitem command");
         }
