@@ -2039,7 +2039,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                 break;
             }
         }
-        model.getNewCharacterInformation().setStartingMaps(sb.finish());
+        model.getNewCharacterInformation().setStartingMapList(sb.finish());
     }
 
     /**

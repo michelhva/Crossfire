@@ -24,7 +24,6 @@ package com.realtime.crossfire.jxclient.character;
 import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -39,10 +38,10 @@ import org.jetbrains.annotations.Nullable;
 public class NewCharacterInformation {
 
     /**
-     * The {@link StartingMap} entries available for character creation.
+     * The starting maps available for character creation.
      */
     @NotNull
-    private final List<StartingMap> startingMaps = new ArrayList<>();
+    private final List<String> startingMapList = new ArrayList<>();
 
     /**
      * The races available for character creation.
@@ -55,6 +54,12 @@ public class NewCharacterInformation {
      */
     @NotNull
     private final List<String> classList = new ArrayList<>();
+
+    /**
+     * The defined starting maps for character creation.
+     */
+    @NotNull
+    private final Map<String, StartingMap> startingMapInfo = new HashMap<>();
 
     /**
      * The defined races for character creation.
@@ -81,15 +86,6 @@ public class NewCharacterInformation {
     private final EventListenerList2<NewCharacterInformationListener> newCharacterInformationListeners = new EventListenerList2<>();
 
     /**
-     * Sets the {@link StartingMap} entries available for character creation.
-     * @param startingMaps the starting map entries
-     */
-    public void setStartingMaps(@NotNull final Collection<StartingMap> startingMaps) {
-        this.startingMaps.clear();
-        this.startingMaps.addAll(startingMaps);
-    }
-
-    /**
      * Registers a {@link NewCharacterInformationListener} to be notified of
      * changes.
      * @param newCharacterInformationListener the listener to register
@@ -108,13 +104,29 @@ public class NewCharacterInformation {
     }
 
     /**
-     * Returns all defined {@link StartingMap} entries available for character
-     * creation.
+     * Sets the {@link StartingMap} entries available for character creation.
+     * @param startingMaps the starting map entries
+     */
+    public void setStartingMapList(@NotNull final Iterable<StartingMap> startingMaps) {
+        startingMapList.clear();
+        for (StartingMap startingMap : startingMaps) {
+            startingMapList.add(startingMap.getName()); // ignores StartingMap instance
+        }
+        for (NewCharacterInformationListener newCharacterInformationListener : newCharacterInformationListeners) {
+            newCharacterInformationListener.startingMapListChanged();
+        }
+        for (StartingMap startingMap : startingMaps) {
+            addStartingMapInfo(startingMap);
+        }
+    }
+
+    /**
+     * Returns all defined starting maps for character creation.
      * @return the starting map entries
      */
     @NotNull
-    public List<StartingMap> getStartingMaps() {
-        return Collections.unmodifiableList(startingMaps);
+    public List<String> getStartingMapList() {
+        return Collections.unmodifiableList(startingMapList);
     }
 
     /**
@@ -157,6 +169,28 @@ public class NewCharacterInformation {
     @NotNull
     public Iterable<String> getClassesList() {
         return Collections.unmodifiableList(classList);
+    }
+
+    /**
+     * Sets or updates a {@link StartingMap}.
+     * @param startingMapInfo the starting map to set
+     */
+    private void addStartingMapInfo(@NotNull final StartingMap startingMapInfo) {
+        this.startingMapInfo.put(startingMapInfo.getName(), startingMapInfo);
+        for (NewCharacterInformationListener newCharacterInformationListener : newCharacterInformationListeners) {
+            newCharacterInformationListener.startingMapInfoChanged(startingMapInfo.getName());
+        }
+    }
+
+    /**
+     * Returns a {@link StartingMap} by map name.
+     * @param name the map name
+     * @return the starting map info or {@code null} if no starting map info is
+     * defined
+     */
+    @Nullable
+    public StartingMap getStartingMapInfo(@NotNull final String name) {
+        return startingMapInfo.get(name);
     }
 
     /**

@@ -53,4 +53,16 @@ public interface NewCharacterInformationListener extends EventListener {
      */
     void raceInfoChanged(@NotNull String raceName);
 
+    /**
+     * Called whenever the starting map list may have changed.
+     */
+    void startingMapListChanged();
+
+    /**
+     * Called whenever information of a starting map may have changed.
+     * @param startingMapName the name of the starting map that may have
+     * changed
+     */
+    void startingMapInfoChanged(@NotNull String startingMapName);
+
 }
