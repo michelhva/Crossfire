@@ -138,8 +138,8 @@ public class GUIClassesComboBox extends GUIComboBox<String> {
 
     @NotNull
     @Override
-    protected String getDescription(@NotNull final String item) {
-        final ClassRaceInfo classInfo = model.getNewCharacterInformation().getClassInfo(item);
+    protected String getDescription(@Nullable final String item) {
+        final ClassRaceInfo classInfo = item == null ? null : model.getNewCharacterInformation().getClassInfo(item);
         return classInfo == null ? "" : classInfo.getMsg();
     }
 
