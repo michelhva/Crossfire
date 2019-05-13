@@ -163,6 +163,6 @@ public abstract class GUIComboBox<T> extends AbstractGUIElement {
      * @return the description
      */
     @NotNull
-    protected abstract String getDescription(@NotNull T item);
+    protected abstract String getDescription(@Nullable T item);
 
 }
