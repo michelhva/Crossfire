@@ -384,7 +384,7 @@ public abstract class GUIList<T extends GUIElement> extends ActivatableGUIElemen
 
     @Override
     public void mousePressed(@NotNull final MouseEvent e) {
-        super.mouseClicked(e);
+        super.mousePressed(e);
         doSelect(e);
     }
 
@@ -396,7 +396,7 @@ public abstract class GUIList<T extends GUIElement> extends ActivatableGUIElemen
 
     @Override
     public void mouseDragged(@NotNull final MouseEvent e) {
-        super.mouseClicked(e);
+        super.mouseDragged(e);
         doSelect(e);
     }
 
