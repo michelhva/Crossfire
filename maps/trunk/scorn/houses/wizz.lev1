@@ -9,7 +9,7 @@ enter_x 2
 enter_y 2
 msg
 Created:  1996-01-05 Bjoern Helfesrieder (helfesri@igd.fhg.de)
-Modified: 2012-03-26 Rick Tanner
+Modified: 2019-05-15 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -8043,7 +8043,7 @@ arch dungeon_floor
 x 26
 y 1
 end
-arch bwall_3_3
+arch bwall_2_1_2
 x 26
 y 1
 end
@@ -8060,7 +8060,7 @@ arch dungeon_floor
 x 26
 y 3
 end
-arch bwall_2_2_4
+arch bwall_1_3
 x 26
 y 3
 end
