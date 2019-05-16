@@ -81,9 +81,11 @@ def cmd_help():
     """Print a help message for the player."""
     whoami.Say("The Bank of Skud can help you keep your money safe. In addition, you will be able to access your money from any bank in the world! What would you like to do?")
 
+    Crossfire.AddReply("coins", "I'd like to know more about existing coins.")
     Crossfire.AddReply("balance", "I want to check my balance.")
     Crossfire.AddReply("deposit", "I'd like to deposit some money.")
     Crossfire.AddReply("withdraw", "I'd like to withdraw some money.")
+    Crossfire.AddReply("convert", "I'd like to compute money conversions.")
 
 def cmd_balance(argv):
     """Find out how much money the player has in his/her account."""
@@ -161,6 +163,36 @@ def cmd_withdraw(argv):
 
     whoami.Say(message)
 
+def cmd_convert(argc):
+
+  def attempt(argc):
+    if len(argc) < 4 or argc[3] != "to":
+      return False
+
+    fromCoin = getCoinNameFromArgs(argc[2:3])
+    toCoin = getCoinNameFromArgs(argc[4:5])
+    if not toCoin or not fromCoin:
+      return False
+
+    fromValue = getExchangeRate(fromCoin)
+    toValue = getExchangeRate(toCoin)
+
+    fromAmount = int(argc[1])
+    amount = int(fromAmount * fromValue / toValue)
+    whoami.Say("{} {} coin{} would be {} {} coin{}".format(fromAmount, fromCoin, "s" if fromAmount > 1 else "", amount, toCoin, "s" if amount > 1 else ""))
+    return True
+
+  if not attempt(argc):
+    whoami.Say("Sorry, I don't understand what you want to convert.\nTry something like \"4 platinum to silver\" please.")
+
+def cmd_coins(_):
+  whoami.Say("""The smallest coin available is the silver coin.
+The gold coin is worth 10 silver coins, while the platinum coin is worth 50.
+A jade coin is worth 5000 silver, and an amberium 500000.
+
+There also exist imperial notes, worth 10000 silver coins.
+""")
+
 def main_employee():
     text = Crossfire.WhatIsMessage().split()
     if text[0] == "learn":
@@ -171,6 +203,10 @@ def main_employee():
         cmd_deposit(text)
     elif text[0] == "withdraw":
         cmd_withdraw(text)
+    elif text[0] == "convert":
+        cmd_convert(text)
+    elif text[0] == "coins":
+        cmd_coins(text)
     else:
         whoami.Say("Hello, what can I help you with today?")
         Crossfire.AddReply("learn", "I want to learn how to use the bank.")
