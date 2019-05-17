@@ -13,6 +13,10 @@ r  = random.random()
 # limits, we will not fall back to next (to make it harder to get a "perfect"
 # ring), but instead just do nothing.
 if (me.Applied == 0):
+	rest = None
+	if me.Quantity > 1:
+		rest = me.Split(me.Quantity - 1)
+
 	if   (r <= 0.01):
 		if me.Dex < 2:
 			me.Cursed= 1
@@ -43,3 +47,6 @@ if (me.Applied == 0):
 			me.Cursed= 1
 			me.Con = me.Con - 1
 			me.Identified=0
+
+ 	if rest:
+		rest.InsertInto(me.Env)
