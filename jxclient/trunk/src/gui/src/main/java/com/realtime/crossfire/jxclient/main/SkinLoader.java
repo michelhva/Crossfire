@@ -23,7 +23,6 @@ package com.realtime.crossfire.jxclient.main;
 
 import com.realtime.crossfire.jxclient.account.CharacterModel;
 import com.realtime.crossfire.jxclient.faces.SmoothFaces;
-import com.realtime.crossfire.jxclient.gui.commandlist.GUICommandFactory;
 import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
@@ -83,10 +82,10 @@ public class SkinLoader {
     private final SmoothFaces smoothFaces;
 
     /**
-     * The {@link GUICommandFactory} for creating commands.
+     * The {@link GuiFactory} for creating {@link Gui} instances.
      */
     @NotNull
-    private final GUICommandFactory guiCommandFactory;
+    private final GuiFactory guiFactory;
 
     /**
      * The {@link CurrentSpellManager} instance for this window.
@@ -170,9 +169,9 @@ public class SkinLoader {
      * @param shortcuts the shortcuts to use
      * @param characterModel the character model to use
      * @param smoothFaces the smooth faces
-     * @param guiCommandFactory the gui command factory for creating commands
+     * @param guiFactory the gui factory for creating GUI instances
      */
-    public SkinLoader(@NotNull final CommandCallback commandCallback, @NotNull final MetaserverModel metaserverModel, @Nullable final Resolution resolution, @NotNull final Macros macros, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final CommandQueue commandQueue, @NotNull final JXCSkinLoader skinLoader, @NotNull final CommandExecutor commandExecutor, @NotNull final Shortcuts shortcuts, @NotNull final CharacterModel characterModel, @NotNull final SmoothFaces smoothFaces, @NotNull final GUICommandFactory guiCommandFactory) {
+    public SkinLoader(@NotNull final CommandCallback commandCallback, @NotNull final MetaserverModel metaserverModel, @Nullable final Resolution resolution, @NotNull final Macros macros, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final CommandQueue commandQueue, @NotNull final JXCSkinLoader skinLoader, @NotNull final CommandExecutor commandExecutor, @NotNull final Shortcuts shortcuts, @NotNull final CharacterModel characterModel, @NotNull final SmoothFaces smoothFaces, @NotNull final GuiFactory guiFactory) {
         this.commandCallback = commandCallback;
         this.metaserverModel = metaserverModel;
         this.resolution = resolution;
@@ -187,7 +186,7 @@ public class SkinLoader {
         this.shortcuts = shortcuts;
         this.characterModel = characterModel;
         this.smoothFaces = smoothFaces;
-        this.guiCommandFactory = guiCommandFactory;
+        this.guiFactory = guiFactory;
     }
 
     /**
@@ -201,7 +200,6 @@ public class SkinLoader {
         // check for skin in directory
         final File dir = new File(skinName);
         final JXCSkinSource skinSource = dir.exists() && dir.isDirectory() ? new JXCSkinDirSource(dir) : new JXCSkinClassSource("com/realtime/crossfire/jxclient/skins/"+skinName);
-        final GuiFactory guiFactory = new GuiFactory(guiCommandFactory);
         final GUIElementListener elementListener = new GUIElementListener() {
 
             @Override
