@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.window;
 
 import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
+import com.realtime.crossfire.jxclient.gui.commandlist.GUICommandFactory;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.RendererGuiState;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeybindingsManager;
@@ -410,16 +411,17 @@ public class GuiManager {
      * @param settings the settings to use
      * @param server the crossfire server connection to monitor
      * @param windowRenderer the window renderer to use
-     * @param guiFactory the gui factory for creating gui instances
+     * @param guiCommandFactory the gui command factory for creating gui command
+     * instances
      * @param keybindingsManager the keybindings manager to use
      * @param connection the connection to use
      */
-    public GuiManager(@NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManagerImpl tooltipManager, @NotNull final Settings settings, @NotNull final CrossfireServerConnection server, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GuiFactory guiFactory, @NotNull final KeybindingsManager keybindingsManager, @NotNull final JXCConnection connection) {
+    public GuiManager(@NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManagerImpl tooltipManager, @NotNull final Settings settings, @NotNull final CrossfireServerConnection server, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUICommandFactory guiCommandFactory, @NotNull final KeybindingsManager keybindingsManager, @NotNull final JXCConnection connection) {
         this.tooltipManager = tooltipManager;
         this.settings = settings;
         this.server = server;
         this.windowRenderer = windowRenderer;
-        this.guiFactory = guiFactory;
+        guiFactory = new GuiFactory(guiCommandFactory);
         this.keybindingsManager = keybindingsManager;
         this.connection = connection;
         guiStateManager.addGuiStateListener(guiStateListener);
