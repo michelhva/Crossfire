@@ -81,7 +81,6 @@ import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.settings.options.Pickup;
 import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;
 import com.realtime.crossfire.jxclient.skin.io.JXCSkinLoader;
-import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import com.realtime.crossfire.jxclient.sound.MusicWatcher;
 import com.realtime.crossfire.jxclient.sound.SoundCheckBoxOption;
 import com.realtime.crossfire.jxclient.sound.SoundManager;
@@ -248,8 +247,7 @@ public class JXClient {
                                         final KeybindingsManager keybindingsManager = new KeybindingsManager(keybindingsFile, guiCommandFactory);
                                         commands.addCommand(new BindingsCommand(server, keybindingsManager));
                                         final JXCConnection connection = new JXCConnection(keybindingsManager, shortcuts, settings, characterPickup, server, model.getGuiStateManager(), logger);
-                                        final GuiFactory guiFactory = new GuiFactory(guiCommandFactory);
-                                        final GuiManager guiManager = new GuiManager(model.getGuiStateManager(), tooltipManager, settings, server, windowRenderer, guiFactory, keybindingsManager, connection);
+                                        final GuiManager guiManager = new GuiManager(model.getGuiStateManager(), tooltipManager, settings, server, windowRenderer, guiCommandFactory, keybindingsManager, connection);
                                         commandCallback.init(guiManager);
                                         final KeyBindings defaultKeyBindings = new KeyBindings(null, guiCommandFactory);
                                         final JXCSkinLoader jxcSkinLoader = new JXCSkinLoader(model, inventoryView, floorView, spellsView, spellSkillsView, facesManager, mapUpdaterState, defaultKeyBindings, optionManager, options.getTileSize(), keybindingsManager, questsView, commandHistoryFactory, knowledgeView, knowledgeTypesView, options.isAvoidCopyArea(), guiManager);
