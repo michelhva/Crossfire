@@ -114,11 +114,10 @@ public class Filenames {
      * bindings file
      * @param character the character name; {@code null}=global key bindings
      * file
-     * @return the keybindings file; return {@code null} if the file cannot be
-     * accessed
+     * @return the keybindings file
      * @throws IOException if the keybindings file cannot be accessed
      */
-    @Nullable
+    @NotNull
     public static File getKeybindingsFile(@Nullable final CharSequence hostname, @Nullable final CharSequence character) throws IOException {
         return getSettingsFile(hostname == null || character == null ? "keybindings.txt" : "keybindings-"+encode(hostname)+"-"+encode(character)+".txt");
     }
