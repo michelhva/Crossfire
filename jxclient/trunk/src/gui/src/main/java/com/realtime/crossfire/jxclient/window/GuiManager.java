@@ -932,9 +932,8 @@ public class GuiManager {
      * Displays the "start" GUI.
      */
     private void showGUIStart() {
-        windowRenderer.clearGUI(guiFactory.newGui());
         assert skin != null;
-        windowRenderer.setCurrentGui(skin.getStartInterface());
+        windowRenderer.clearGUI(skin.getStartInterface());
         tooltipManager.reset();
     }
 
@@ -942,11 +941,10 @@ public class GuiManager {
      * Displays the "server selection" GUI.
      */
     private void showGUIMeta() {
-        windowRenderer.clearGUI(guiFactory.newGui());
         assert skin != null;
-        final Gui newGui = skin.getMetaInterface();
-        windowRenderer.setCurrentGui(newGui);
-        newGui.activateDefaultElement();
+        final Gui gui = skin.getMetaInterface();
+        windowRenderer.clearGUI(gui);
+        gui.activateDefaultElement();
         tooltipManager.reset();
     }
 
@@ -954,10 +952,8 @@ public class GuiManager {
      * Displays the "main" GUI.
      */
     private void showGUIMain() {
-        windowRenderer.clearGUI(guiFactory.newGui());
         assert skin != null;
-        final Gui newGui = skin.getMainInterface();
-        windowRenderer.setCurrentGui(newGui);
+        windowRenderer.clearGUI(skin.getMainInterface());
         tooltipManager.reset();
     }
 
