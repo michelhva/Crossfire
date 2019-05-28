@@ -95,10 +95,10 @@ public class Options {
     private Resolution resolution;
 
     /**
-     * The skin name to load or {@code null} for the default skin.
+     * The skin name to load.
      */
-    @Nullable
-    private String skin;
+    @NotNull
+    private String skin = DEFAULT_SKIN;
 
     /**
      * The size of tiles in the map view in pixels.
@@ -123,12 +123,7 @@ public class Options {
      */
     public void parse(@NotNull final String[] args) {
         resolution = null;
-        skin = "default";
-
-        // fix changed default skin name
-        if (skin.equals("com.realtime.crossfire.jxclient.JXCSkinPrelude")) {
-            skin = "default";
-        }
+        skin = DEFAULT_SKIN;
 
         int i = 0;
         while (i < args.length) {
@@ -190,7 +185,7 @@ public class Options {
                 System.out.println("                : Resolution to use. [default is maximum not exceeding screen]");
                 System.out.println(" --skin <skin>");
                 //System.out.println(" -S <skin>"); // not advertised as it is considered deprecated
-                System.out.println(" -s <skin>      : Skin name to use.");
+                System.out.println(" -s <skin>      : Built-in skin name or skin directory to use.");
                 System.out.println(" --tile-size <n>: The size of map view tiles in pixels.");
                 System.out.println(" --avoid-copy-area: Do not copy pixel areas when scrolling the map view.");
                 System.out.println("                  Instead always repaint all map squares.");
@@ -209,16 +204,10 @@ public class Options {
                 System.out.println(" --debug-sound <log-file>");
                 System.out.println("                : Log messages related to sound.");
                 System.out.println("");
-                System.out.println("Available skins: default, ragnorok.");
+                System.out.println("Built-in skin names: ragnorok.");
                 System.exit(1);
             }
             i++;
-        }
-
-        // Map "default to actual skin name; must be after skin name has
-        // been written to preferences.
-        if (skin.equals("default")) {
-            skin = DEFAULT_SKIN;
         }
     }
 
@@ -287,9 +276,9 @@ public class Options {
 
     /**
      * Returns the skin name.
-     * @return the skin name or {@code null} for the default skin
+     * @return the skin name
      */
-    @Nullable
+    @NotNull
     public String getSkin() {
         return skin;
     }
