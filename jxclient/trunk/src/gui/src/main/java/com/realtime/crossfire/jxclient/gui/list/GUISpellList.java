@@ -31,6 +31,7 @@ import com.realtime.crossfire.jxclient.gui.keybindings.KeybindingsManager;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.spells.Spell;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
@@ -109,6 +110,12 @@ public class GUISpellList extends GUIItemList<GUIItemSpell> {
     private final CurrentSpellManager currentSpellManager;
 
     /**
+     * The global {@link GuiFactory} instance.
+     */
+    @NotNull
+    private final GuiFactory guiFactory;
+
+    /**
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
@@ -125,9 +132,10 @@ public class GUISpellList extends GUIItemList<GUIItemSpell> {
      * @param facesManager the faces manager to use
      * @param currentSpellManager the current spell manager to update when a
      * spell is selected
+     * @param guiFactory the global GUI factory instance
      */
-    public GUISpellList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final SpellsManager spellsManager, @NotNull final KeybindingsManager keybindingsManager, @NotNull final CommandQueue commandQueue, @NotNull final ItemPainter itemPainter, @NotNull final FacesManager facesManager, @NotNull final CurrentSpellManager currentSpellManager) {
-        super(tooltipManager, elementListener, name, cellWidth, cellHeight, itemView, currentItem, new GUIItemSpell(tooltipManager, elementListener, commandQueue, name+"_template", itemPainter, -1, facesManager, spellsManager, currentSpellManager, itemView, cellHeight));
+    public GUISpellList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final SpellsManager spellsManager, @NotNull final KeybindingsManager keybindingsManager, @NotNull final CommandQueue commandQueue, @NotNull final ItemPainter itemPainter, @NotNull final FacesManager facesManager, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, cellWidth, cellHeight, itemView, currentItem, new GUIItemSpell(tooltipManager, elementListener, commandQueue, name+"_template", itemPainter, -1, facesManager, spellsManager, currentSpellManager, itemView, cellHeight, guiFactory), guiFactory);
         this.tooltipManager = tooltipManager;
         this.elementListener = elementListener;
         this.name = name;
@@ -138,6 +146,7 @@ public class GUISpellList extends GUIItemList<GUIItemSpell> {
         this.itemPainter = itemPainter;
         this.facesManager = facesManager;
         this.currentSpellManager = currentSpellManager;
+        this.guiFactory = guiFactory;
     }
 
     /**
@@ -197,7 +206,7 @@ public class GUISpellList extends GUIItemList<GUIItemSpell> {
     @NotNull
     @Override
     protected GUIItemSpell newItem(final int index) {
-        return new GUIItemSpell(tooltipManager, elementListener, commandQueue, name+index, itemPainter, index, facesManager, spellsManager, currentSpellManager, itemView, 0);
+        return new GUIItemSpell(tooltipManager, elementListener, commandQueue, name+index, itemPainter, index, facesManager, spellsManager, currentSpellManager, itemView, 0, guiFactory);
     }
 
     @Override

@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.gui.label;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.stats.StatsListener;
 import com.realtime.crossfire.jxclient.util.Formatter;
@@ -160,9 +161,10 @@ public class GUILabelStats extends GUIOneLineLabel {
      * @param stat the stat to display
      * @param alignment the text alignment
      * @param stats the stats instance to use
+     * @param guiFactory the global GUI factory instance
      */
-    public GUILabelStats(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Font font, @NotNull final Color color, @Nullable final Color backgroundColor, final int stat, @NotNull final Alignment alignment, @NotNull final Stats stats) {
-        super(tooltipManager, elementListener, name, null, font, color, backgroundColor, alignment, "");
+    public GUILabelStats(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Font font, @NotNull final Color color, @Nullable final Color backgroundColor, final int stat, @NotNull final Alignment alignment, @NotNull final Stats stats, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, null, font, color, backgroundColor, alignment, "", guiFactory);
         this.stats = stats;
         this.stat = stat;
         this.stats.addCrossfireStatsListener(statsListener);

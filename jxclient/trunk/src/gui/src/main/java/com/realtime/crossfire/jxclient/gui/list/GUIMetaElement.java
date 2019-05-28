@@ -30,6 +30,7 @@ import com.realtime.crossfire.jxclient.metaserver.Metaserver;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverEntry;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverEntryListener;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -119,9 +120,10 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
      * @param defaultIndex the initial metaserver index
      * @param format the format used to display metaserver instances
      * @param tooltip the format used for displaying tooltips
+     * @param guiFactory the global GUI factory instance
      */
-    public GUIMetaElement(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final String name, @Nullable final Image image, @NotNull final Font font, final int defaultIndex, @NotNull final String format, @NotNull final String tooltip) {
-        super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT);
+    public GUIMetaElement(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final String name, @Nullable final Image image, @NotNull final Font font, final int defaultIndex, @NotNull final String format, @NotNull final String tooltip, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT, guiFactory);
         this.metaserverModel = metaserverModel;
         this.image = image;
         this.font = font;

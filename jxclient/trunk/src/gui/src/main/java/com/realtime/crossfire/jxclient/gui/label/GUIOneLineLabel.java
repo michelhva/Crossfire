@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.gui.label;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -55,9 +56,10 @@ public class GUIOneLineLabel extends GUILabel {
      * @param backgroundColor the background color
      * @param alignment the text alignment
      * @param text the label text
+     * @param guiFactory the global GUI factory instance
      */
-    public GUIOneLineLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final BufferedImage picture, @NotNull final Font font, @NotNull final Color color, @Nullable final Color backgroundColor, @NotNull final Alignment alignment, @NotNull final String text) {
-        super(tooltipManager, elementListener, name, picture, text, font, color, backgroundColor, alignment);
+    public GUIOneLineLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final BufferedImage picture, @NotNull final Font font, @NotNull final Color color, @Nullable final Color backgroundColor, @NotNull final Alignment alignment, @NotNull final String text, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, picture, text, font, color, backgroundColor, alignment, guiFactory);
     }
 
     @Override

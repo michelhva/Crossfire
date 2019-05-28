@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Color;
 import java.awt.Font;
 import org.jetbrains.annotations.NotNull;
@@ -62,9 +63,10 @@ public class GUILabelQuery extends GUIMultiLineLabel {
      * @param font the font to use
      * @param color the color to use
      * @param backgroundColor the background color
+     * @param guiFactory the global GUI factory instance
      */
-    public GUILabelQuery(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Font font, @NotNull final Color color, @Nullable final Color backgroundColor) {
-        super(tooltipManager, elementListener, name, null, font, color, backgroundColor, Alignment.LEFT, "");
+    public GUILabelQuery(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Font font, @NotNull final Color color, @Nullable final Color backgroundColor, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, null, font, color, backgroundColor, Alignment.LEFT, "", guiFactory);
         this.crossfireServerConnection = crossfireServerConnection;
         this.crossfireServerConnection.addCrossfireQueryListener(crossfireQueryListener);
     }

@@ -270,6 +270,12 @@ public class JXCSkinLoader {
     private final boolean avoidCopyArea;
 
     /**
+     * The global {@link GuiFactory} instance.
+     */
+    @NotNull
+    private final GuiFactory guiFactory;
+
+    /**
      * The {@link FacesManager} instance to use.
      */
     @NotNull
@@ -434,8 +440,9 @@ public class JXCSkinLoader {
      * @param avoidCopyArea whether map scrolling is done by copying pixel
      * areas; if unset, always repaint all map squares
      * @param guiManager the GUI Manager to use
+     * @param guiFactory the global GUI factory instance
      */
-    public JXCSkinLoader(@NotNull final Model model, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final SpellsView spellView, @NotNull final SpellSkillView spellSkillsView, @NotNull final FacesManager facesManager, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, final int defaultTileSize, @NotNull final KeybindingsManager keybindingsManager, @NotNull final QuestsView questView, @NotNull final CommandHistoryFactory commandHistoryFactory, @NotNull final KnowledgeView knowledgeView, @NotNull final KnowledgeTypeView knowledgeTypeView, final boolean avoidCopyArea, @NotNull final GuiManager guiManager) {
+    public JXCSkinLoader(@NotNull final Model model, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final SpellsView spellView, @NotNull final SpellSkillView spellSkillsView, @NotNull final FacesManager facesManager, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, final int defaultTileSize, @NotNull final KeybindingsManager keybindingsManager, @NotNull final QuestsView questView, @NotNull final CommandHistoryFactory commandHistoryFactory, @NotNull final KnowledgeView knowledgeView, @NotNull final KnowledgeTypeView knowledgeTypeView, final boolean avoidCopyArea, @NotNull final GuiManager guiManager, @NotNull final GuiFactory guiFactory) {
         this.model = model;
         this.inventoryView = inventoryView;
         this.floorView = floorView;
@@ -454,6 +461,7 @@ public class JXCSkinLoader {
         this.knowledgeView = knowledgeView;
         this.knowledgeTypeView = knowledgeTypeView;
         this.avoidCopyArea = avoidCopyArea;
+        this.guiFactory = guiFactory;
     }
 
     /**
@@ -472,13 +480,12 @@ public class JXCSkinLoader {
      * @param currentSpellManager the current spell manager to use
      * @param commandCallback the command callback to use
      * @param macros the macros instance to use
-     * @param guiFactory the gui factory for creating gui elements
      * @param smoothFaces the smooth faces
      * @return the loaded skin
      * @throws JXCSkinException if the skin cannot be loaded
      */
     @NotNull
-    public JXCSkin load(@NotNull final JXCSkinSource skinSource, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CharacterModel characterModel, @NotNull final CommandQueue commandQueue, @NotNull final Shortcuts shortcuts, @NotNull final CommandExecutor commandExecutor, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros, @NotNull final GuiFactory guiFactory, @NotNull final SmoothFaces smoothFaces) throws JXCSkinException {
+    public JXCSkin load(@NotNull final JXCSkinSource skinSource, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CharacterModel characterModel, @NotNull final CommandQueue commandQueue, @NotNull final Shortcuts shortcuts, @NotNull final CommandExecutor commandExecutor, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros, @NotNull final SmoothFaces smoothFaces) throws JXCSkinException {
         imageParser = new ImageParser(skinSource);
         fontParser = new FontParser(skinSource);
 
@@ -497,7 +504,7 @@ public class JXCSkinLoader {
 
         final Dialogs dialogs = new Dialogs(guiFactory, guiManager);
         gaugeUpdaterParser = new GaugeUpdaterParser(model.getStats(), model.getItemSet(), model.getSkillSet());
-        commandParser = new CommandParser(dialogs, floorView, definedGUIElements);
+        commandParser = new CommandParser(dialogs, floorView, definedGUIElements, guiFactory);
         skin = new DefaultJXCSkin(defaultKeyBindings, optionManager, dialogs);
         @Nullable JXCSkin skinToDetach = skin;
         try {
@@ -695,7 +702,7 @@ public class JXCSkinLoader {
                             } else if (gui != null && cmd.equals("knowledge_list")) {
                                 parseList(args, ListType.KNOWLEDGE_LIST, tooltipManager, elementListener, commandQueue, server, currentSpellManager, nextGroupFace, prevGroupFace);
                             } else if (gui != null && cmd.equals("horizontal")) {
-                                parseHorizontal(args, gui, lnr, isDialog);
+                                parseHorizontal(args, gui.getComponent(), lnr, isDialog);
                             } else if (gui != null && cmd.equals("item")) {
                                 parseItem(args, tooltipManager, elementListener, commandQueue, server, shortcuts, currentSpellManager, nextGroupFace, prevGroupFace);
                             } else if (cmd.equals("key")) {
@@ -719,7 +726,7 @@ public class JXCSkinLoader {
                             } else if (gui != null && cmd.equals("label_spell")) {
                                 parseLabelSpell(args, tooltipManager, elementListener, currentSpellManager);
                             } else if (gui != null && cmd.equals("link_size")) {
-                                parseLinkSize(args, gui);
+                                parseLinkSize(args, gui.getComponent());
                             } else if (gui != null && cmd.equals("log_label")) {
                                 parseLogLabel(args, tooltipManager, elementListener);
                             } else if (gui != null && cmd.equals("log_message")) {
@@ -761,7 +768,7 @@ public class JXCSkinLoader {
                             } else if (cmd.equals("tooltip")) {
                                 parseTooltip(args, tooltipManager, elementListener);
                             } else if (gui != null && cmd.equals("vertical")) {
-                                parseVertical(args, gui, lnr, isDialog);
+                                parseVertical(args, gui.getComponent(), lnr, isDialog);
                             } else if (cmd.equals("character_list")) {
                                 parseCharacterList(args, tooltipManager, elementListener, characterModel);
                             } else if (cmd.equals("hide_input")) {
@@ -835,7 +842,7 @@ public class JXCSkinLoader {
             textX = 0;
             textY = 0;
         }
-        insertGuiElement(new GUIButton(tooltipManager, elementListener, name, upImage, downImage, label, font, color, textX, textY, autoRepeat, commandList));
+        insertGuiElement(new GUIButton(tooltipManager, elementListener, name, upImage, downImage, label, font, color, textX, textY, autoRepeat, commandList, guiFactory));
     }
 
     /**
@@ -874,11 +881,11 @@ public class JXCSkinLoader {
         final AbstractGUIElement element;
         switch (type) {
         case "classes":
-            element = new GUIClassesComboBox(tooltipManager, elementListener, name, model, label);
+            element = new GUIClassesComboBox(tooltipManager, elementListener, name, model, label, guiFactory);
             break;
 
         case "races":
-            element = new GUIRacesComboBox(tooltipManager, elementListener, name, model, label);
+            element = new GUIRacesComboBox(tooltipManager, elementListener, name, model, label, guiFactory);
             break;
 
         default:
@@ -949,7 +956,7 @@ public class JXCSkinLoader {
         final int margin = ExpressionParser.parseInt(args.get());
         final boolean enableHistory = NumberParser.parseBoolean(args.get());
         final CommandHistory commandHistory = enableHistory ? commandHistoryFactory.getCommandHistory(name) : null;
-        insertGuiElement(new GUICommandText(commandCallback, commandHistory, tooltipManager, elementListener, name, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commandExecutor));
+        insertGuiElement(new GUICommandText(commandCallback, commandHistory, tooltipManager, elementListener, name, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commandExecutor, guiFactory));
     }
 
     /**
@@ -967,7 +974,7 @@ public class JXCSkinLoader {
             final BufferedImage uncheckedImage = imageParser.getImage(args.get());
             final Font font = definedFonts.lookup(args.get());
             final Color color = ParseUtils.parseColor(args.get());
-            checkBoxFactory = new CheckBoxFactory(checkedImage, uncheckedImage, font, color);
+            checkBoxFactory = new CheckBoxFactory(checkedImage, uncheckedImage, font, color, guiFactory);
             break;
         }
 
@@ -997,7 +1004,7 @@ public class JXCSkinLoader {
             if (alpha < 0 || alpha > 1.0F) {
                 throw new IOException("invalid alpha value: "+alpha);
             }
-            dialogFactory = new DialogFactory(frameNW, frameN, frameNE, frameW, frameC, frameE, frameSW, frameS, frameSE, titleFont, titleColor, titleBackgroundColor, alpha);
+            dialogFactory = new DialogFactory(frameNW, frameN, frameNE, frameW, frameC, frameE, frameSW, frameS, frameSE, titleFont, titleColor, titleBackgroundColor, alpha, guiFactory);
             break;
 
         case "item": {
@@ -1033,7 +1040,7 @@ public class JXCSkinLoader {
             final Color colorSelected = ParseUtils.parseColor(args.get());
             final ButtonImages upImages = new ButtonImages(imageParser.getImage(up+"_w"), imageParser.getImage(up+"_c"), imageParser.getImage(up+"_e"));
             final ButtonImages downImages = new ButtonImages(imageParser.getImage(down+"_w"), imageParser.getImage(down+"_c"), imageParser.getImage(down+"_e"));
-            textButtonFactory = new TextButtonFactory(upImages, downImages, font, color, colorSelected);
+            textButtonFactory = new TextButtonFactory(upImages, downImages, font, color, colorSelected, guiFactory);
             break;
 
         default:
@@ -1067,7 +1074,7 @@ public class JXCSkinLoader {
         for (AbstractGUIElement element : elements) {
             insertGuiElement(element);
         }
-        gui.setName(dialogName);
+        gui.getComponent().setName(dialogName);
         gui.setDefaultPosition(defaultX, defaultY);
         if (saveDialog) {
             gui.setSaveDialog();
@@ -1105,7 +1112,7 @@ public class JXCSkinLoader {
         final Orientation orientationMod = ParseUtils.parseOrientation(args.get());
         final CommandList commandList = args.get().equals("null") ? null : skin.getCommandList(args.getPrev());
         final String tooltipPrefix = ParseUtils.parseText(args, lnr);
-        final GUIDupGauge element = new GUIDupGauge(tooltipManager, elementListener, name, positiveDivImage, positiveModImage, emptyImage, orientationDiv, orientationMod, tooltipPrefix.isEmpty() ? null : tooltipPrefix, commandList);
+        final GUIDupGauge element = new GUIDupGauge(tooltipManager, elementListener, name, positiveDivImage, positiveModImage, emptyImage, orientationDiv, orientationMod, tooltipPrefix.isEmpty() ? null : tooltipPrefix, commandList, guiFactory);
         insertGuiElement(element);
         gaugeUpdater.setGauge(element);
     }
@@ -1131,7 +1138,7 @@ public class JXCSkinLoader {
         final Font font = definedFonts.lookup(args.get());
         final CommandList commandList = args.get().equals("null") ? null : skin.getCommandList(args.getPrev());
         final String tooltipPrefix = ParseUtils.parseText(args, lnr);
-        final GUIDupTextGauge element = new GUIDupTextGauge(tooltipManager, elementListener, name, positiveDivImage, positiveModImage, emptyImage, orientationDiv, orientationMod, tooltipPrefix.isEmpty() ? null : tooltipPrefix, color, font, commandList);
+        final GUIDupTextGauge element = new GUIDupTextGauge(tooltipManager, elementListener, name, positiveDivImage, positiveModImage, emptyImage, orientationDiv, orientationMod, tooltipPrefix.isEmpty() ? null : tooltipPrefix, color, font, commandList, guiFactory);
         insertGuiElement(element);
         gaugeUpdater.setGauge(element);
     }
@@ -1219,7 +1226,7 @@ public class JXCSkinLoader {
         if (alpha < 0 || alpha > 1.0F) {
             throw new IOException("invalid alpha value: "+alpha);
         }
-        insertGuiElement(new GUIFill(tooltipManager, elementListener, name, color, alpha));
+        insertGuiElement(new GUIFill(tooltipManager, elementListener, name, color, alpha, guiFactory));
     }
 
     /**
@@ -1259,7 +1266,7 @@ public class JXCSkinLoader {
         final String tooltipPrefix = ParseUtils.parseText(args, lnr);
         assert dialogFactory != null;
         final float alpha = dialogFactory.getFrameAlpha();
-        final GUIGauge element = new GUIGauge(tooltipManager, elementListener, name, positiveImage, negativeImage, emptyImage, orientation, tooltipPrefix.isEmpty() ? null : tooltipPrefix, alpha, commandList);
+        final GUIGauge element = new GUIGauge(tooltipManager, elementListener, name, positiveImage, negativeImage, emptyImage, orientation, tooltipPrefix.isEmpty() ? null : tooltipPrefix, alpha, commandList, guiFactory);
         insertGuiElement(element);
         gaugeUpdater.setGauge(element);
     }
@@ -1305,32 +1312,32 @@ public class JXCSkinLoader {
         final AbstractGUIElement element;
         switch (type) {
         case INVENTORY:
-            element = new GUIInventoryList(tooltipManager, elementListener, name, cellWidth, cellHeight, inventoryView, selectedItem, commandQueue, itemPainter, server, facesManager, floorView);
+            element = new GUIInventoryList(tooltipManager, elementListener, name, cellWidth, cellHeight, inventoryView, selectedItem, commandQueue, itemPainter, server, facesManager, floorView, guiFactory);
             break;
 
         case GROUND:
-            element = new GUIFloorList(tooltipManager, elementListener, name, cellWidth, cellHeight, floorView, selectedItem, commandQueue, itemPainter, server, facesManager, model.getItemSet(), nextGroupFace, prevGroupFace);
+            element = new GUIFloorList(tooltipManager, elementListener, name, cellWidth, cellHeight, floorView, selectedItem, commandQueue, itemPainter, server, facesManager, model.getItemSet(), nextGroupFace, prevGroupFace, guiFactory);
             break;
 
         case SPELL:
-            element = new GUISpellList(tooltipManager, elementListener, name, cellWidth, cellHeight, spellView, selectedItem, model.getSpellsManager(), keybindingsManager, commandQueue, itemPainter, facesManager, currentSpellManager);
+            element = new GUISpellList(tooltipManager, elementListener, name, cellWidth, cellHeight, spellView, selectedItem, model.getSpellsManager(), keybindingsManager, commandQueue, itemPainter, facesManager, currentSpellManager, guiFactory);
             break;
 
         case QUEST:
-            element = new GUIQuestList(tooltipManager, elementListener, name, cellWidth, cellHeight, questView, selectedItem, model.getQuestsManager(), itemPainter, facesManager);
+            element = new GUIQuestList(tooltipManager, elementListener, name, cellWidth, cellHeight, questView, selectedItem, model.getQuestsManager(), itemPainter, facesManager, guiFactory);
             break;
 
         case SPELL_SKILLS:
             final FaceImages defaultSkillIcon = FaceImagesUtils.newFaceImages(ResourceUtils.loadImage(ResourceUtils.ALL_SPELL_SKILLS_ICON));
-            element = new GUISpellSkillList(tooltipManager, elementListener, name, cellWidth, cellHeight, spellSkillsView, selectedItem, model.getSpellsManager(), itemPainter, facesManager, defaultSkillIcon);
+            element = new GUISpellSkillList(tooltipManager, elementListener, name, cellWidth, cellHeight, spellSkillsView, selectedItem, model.getSpellsManager(), itemPainter, facesManager, defaultSkillIcon, guiFactory);
             break;
 
         case KNOWLEDGE_TYPES:
-            element = new GUIKnowledgeTypeList(tooltipManager, elementListener, name, cellWidth, cellHeight, knowledgeTypeView, selectedItem, model.getKnowledgeManager(), itemPainter, facesManager);
+            element = new GUIKnowledgeTypeList(tooltipManager, elementListener, name, cellWidth, cellHeight, knowledgeTypeView, selectedItem, model.getKnowledgeManager(), itemPainter, facesManager, guiFactory);
             break;
 
         case KNOWLEDGE_LIST:
-            element = new GUIKnowledgeList(tooltipManager, elementListener, name, cellWidth, cellHeight, knowledgeView, selectedItem, itemPainter, facesManager, model.getKnowledgeManager(), commandQueue);
+            element = new GUIKnowledgeList(tooltipManager, elementListener, name, cellWidth, cellHeight, knowledgeView, selectedItem, itemPainter, facesManager, model.getKnowledgeManager(), commandQueue, guiFactory);
             break;
 
         default:
@@ -1453,7 +1460,7 @@ public class JXCSkinLoader {
             }
 
             final ItemPainter itemPainter = defaultItemPainter.newItemPainter();
-            element = new GUIItemFloor(tooltipManager, elementListener, commandQueue, name, itemPainter, index, server, floorView, model.getItemSet(), facesManager, nextGroupFace, prevGroupFace, 0);
+            element = new GUIItemFloor(tooltipManager, elementListener, commandQueue, name, itemPainter, index, server, floorView, model.getItemSet(), facesManager, nextGroupFace, prevGroupFace, 0, guiFactory);
             break;
         }
 
@@ -1463,7 +1470,7 @@ public class JXCSkinLoader {
             }
 
             final ItemPainter itemPainter = defaultItemPainter.newItemPainter();
-            element = new GUIItemInventory(tooltipManager, elementListener, commandQueue, name, itemPainter, index, server, facesManager, floorView, inventoryView, 0);
+            element = new GUIItemInventory(tooltipManager, elementListener, commandQueue, name, itemPainter, index, server, facesManager, floorView, inventoryView, 0, guiFactory);
             break;
         }
 
@@ -1473,7 +1480,7 @@ public class JXCSkinLoader {
             final Color invokeColor = ParseUtils.parseColorNull(args.get());
             final Image invokeImage = imageParser.getImage(invokeColor, args.getPrev());
             final Font font = definedFonts.lookup(args.get());
-            element = new GUIItemShortcut(tooltipManager, elementListener, name, castColor, castImage, invokeColor, invokeImage, index, facesManager, shortcuts, font, currentSpellManager);
+            element = new GUIItemShortcut(tooltipManager, elementListener, name, castColor, castImage, invokeColor, invokeImage, index, facesManager, shortcuts, font, currentSpellManager, guiFactory);
             break;
 
         case "spelllist":
@@ -1482,7 +1489,7 @@ public class JXCSkinLoader {
             }
 
             final ItemPainter itemPainter = defaultItemPainter.newItemPainter();
-            element = new GUIItemSpell(tooltipManager, elementListener, commandQueue, name, itemPainter, index, facesManager, model.getSpellsManager(), currentSpellManager, spellView, 0);
+            element = new GUIItemSpell(tooltipManager, elementListener, commandQueue, name, itemPainter, index, facesManager, model.getSpellsManager(), currentSpellManager, spellView, 0, guiFactory);
             break;
 
         default:
@@ -1526,7 +1533,7 @@ public class JXCSkinLoader {
         final Font font = definedFonts.lookup(args.get());
         final Color color = ParseUtils.parseColor(args.get());
         final String text = ParseUtils.parseText(args, lnr);
-        insertGuiElement(new GUIHTMLLabel(tooltipManager, elementListener, name, null, font, color, null, text));
+        insertGuiElement(new GUIHTMLLabel(tooltipManager, elementListener, name, null, font, color, null, text, guiFactory));
     }
 
     /**
@@ -1543,7 +1550,7 @@ public class JXCSkinLoader {
         final Font font = definedFonts.lookup(args.get());
         final Color color = ParseUtils.parseColor(args.get());
         final String text = ParseUtils.parseText(args, lnr);
-        insertGuiElement(new GUIMultiLineLabel(tooltipManager, elementListener, name, null, font, color, null, Alignment.LEFT, text));
+        insertGuiElement(new GUIMultiLineLabel(tooltipManager, elementListener, name, null, font, color, null, Alignment.LEFT, text, guiFactory));
     }
 
     /**
@@ -1559,7 +1566,7 @@ public class JXCSkinLoader {
         final String name = args.get();
         final Font font = definedFonts.lookup(args.get());
         final Color color = ParseUtils.parseColor(args.get());
-        insertGuiElement(new GUILabelQuery(tooltipManager, elementListener, name, server, font, color, null));
+        insertGuiElement(new GUILabelQuery(tooltipManager, elementListener, name, server, font, color, null, guiFactory));
     }
 
     /**
@@ -1576,7 +1583,7 @@ public class JXCSkinLoader {
         final String name = args.get();
         final Font font = definedFonts.lookup(args.get());
         final Color color = ParseUtils.parseColor(args.get());
-        insertGuiElement(new GUILabelMessage(tooltipManager, elementListener, name, server, windowRenderer, font, color, null));
+        insertGuiElement(new GUILabelMessage(tooltipManager, elementListener, name, server, windowRenderer, font, color, null, guiFactory));
     }
 
     /**
@@ -1592,7 +1599,7 @@ public class JXCSkinLoader {
         final String name = args.get();
         final Font font = definedFonts.lookup(args.get());
         final Color color = ParseUtils.parseColor(args.get());
-        insertGuiElement(new GUILabelFailure(tooltipManager, elementListener, name, server, font, color, null));
+        insertGuiElement(new GUILabelFailure(tooltipManager, elementListener, name, server, font, color, null, guiFactory));
     }
 
     /**
@@ -1609,7 +1616,7 @@ public class JXCSkinLoader {
         final Font font = definedFonts.lookup(args.get());
         final Color color = ParseUtils.parseColor(args.get());
         final String text = ParseUtils.parseText(args, lnr);
-        insertGuiElement(new GUIOneLineLabel(tooltipManager, elementListener, name, null, font, color, null, Alignment.LEFT, text));
+        insertGuiElement(new GUIOneLineLabel(tooltipManager, elementListener, name, null, font, color, null, Alignment.LEFT, text, guiFactory));
     }
 
     /**
@@ -1626,7 +1633,7 @@ public class JXCSkinLoader {
         final Color color = ParseUtils.parseColor(args.get());
         final int stat = ParseUtils.parseStat(args.get());
         final Alignment alignment = NumberParser.parseEnum(Alignment.class, args.get(), "text alignment");
-        insertGuiElement(new GUILabelStats(tooltipManager, elementListener, name, font, color, null, stat, alignment, model.getStats()));
+        insertGuiElement(new GUILabelStats(tooltipManager, elementListener, name, font, color, null, stat, alignment, model.getStats(), guiFactory));
     }
 
     /**
@@ -1650,7 +1657,7 @@ public class JXCSkinLoader {
         final int statRace = ParseUtils.parseStat(args.get());
         final int statApplied = ParseUtils.parseStat(args.get());
         final Alignment alignment = NumberParser.parseEnum(Alignment.class, args.get(), "text alignment");
-        insertGuiElement(new GUILabelStats2(tooltipManager, elementListener, name, font, colorNormal, colorUpgradable, colorDepleted, colorBoosted, colorBoostedUpgradable, null, statCurrent, statBase, statRace, statApplied, alignment, model.getStats()));
+        insertGuiElement(new GUILabelStats2(tooltipManager, elementListener, name, font, colorNormal, colorUpgradable, colorDepleted, colorBoosted, colorBoostedUpgradable, null, statCurrent, statBase, statRace, statApplied, alignment, model.getStats(), guiFactory));
     }
 
     /**
@@ -1666,7 +1673,7 @@ public class JXCSkinLoader {
         final String name = args.get();
         final Font font = definedFonts.lookup(args.get());
         final Type type = NumberParser.parseEnum(Type.class, args.get(), "label type");
-        insertGuiElement(new GUISpellLabel(tooltipManager, elementListener, name, null, facesManager, font, type, currentSpellManager));
+        insertGuiElement(new GUISpellLabel(tooltipManager, elementListener, name, null, facesManager, font, type, currentSpellManager, guiFactory));
     }
 
     /**
@@ -1723,7 +1730,7 @@ public class JXCSkinLoader {
         final Font fontArcane = definedFonts.lookup(args.get());
         final Color defaultColor = ParseUtils.parseColor(args.get());
         final Fonts fonts = new Fonts(fontPrint, fontFixed, fontFixedBold, fontArcane);
-        insertGuiElement(new GUILabelLog(tooltipManager, elementListener, name, backgroundImage, fonts, defaultColor));
+        insertGuiElement(new GUILabelLog(tooltipManager, elementListener, name, backgroundImage, fonts, defaultColor, guiFactory));
     }
 
     /**
@@ -1744,7 +1751,7 @@ public class JXCSkinLoader {
         final Font fontArcane = definedFonts.lookup(args.get());
         final Color defaultColor = ParseUtils.parseColor(args.get());
         final Fonts fonts = new Fonts(fontPrint, fontFixed, fontFixedBold, fontArcane);
-        insertGuiElement(new GUIMessageLog(tooltipManager, elementListener, name, server, backgroundImage, fonts, defaultColor));
+        insertGuiElement(new GUIMessageLog(tooltipManager, elementListener, name, server, backgroundImage, fonts, defaultColor, guiFactory));
     }
 
     /**
@@ -1823,7 +1830,7 @@ public class JXCSkinLoader {
         if (facesProvider == null) {
             throw new IOException("cannot create faces with size 4");
         }
-        insertGuiElement(new GUIMiniMap(avoidCopyArea, tooltipManager, elementListener, name, mapUpdaterState, facesProvider, darknessColors, w, h));
+        insertGuiElement(new GUIMiniMap(avoidCopyArea, tooltipManager, elementListener, name, mapUpdaterState, facesProvider, darknessColors, w, h, guiFactory));
     }
 
     /**
@@ -1842,7 +1849,7 @@ public class JXCSkinLoader {
         if (facesProvider == null) {
             throw new IOException("cannot create faces with size "+defaultTileSize);
         }
-        insertGuiElement(new GUIMap(avoidCopyArea, tooltipManager, elementListener, name, mapUpdaterState, facesProvider, server, smoothFaces, darknessColors));
+        insertGuiElement(new GUIMap(avoidCopyArea, tooltipManager, elementListener, name, mapUpdaterState, facesProvider, server, smoothFaces, darknessColors, guiFactory));
     }
 
     /**
@@ -1866,7 +1873,7 @@ public class JXCSkinLoader {
         final String format = args.get();
         final String tooltip = args.get();
 
-        final AbstractGUIElement list = new GUIMetaElementList(tooltipManager, elementListener, name, cellWidth, cellHeight, metaserverModel, image, font, format, tooltip, text, label, connectCommandList);
+        final AbstractGUIElement list = new GUIMetaElementList(tooltipManager, elementListener, name, cellWidth, cellHeight, metaserverModel, image, font, format, tooltip, text, label, connectCommandList, guiFactory);
         insertGuiElement(list);
     }
 
@@ -1885,7 +1892,7 @@ public class JXCSkinLoader {
         if (alpha < 0 || alpha > 1.0F) {
             throw new IOException("invalid alpha value: "+alpha);
         }
-        insertGuiElement(new GUIPicture(tooltipManager, elementListener, name, image, alpha, image.getWidth(), image.getHeight()));
+        insertGuiElement(new GUIPicture(tooltipManager, elementListener, name, image, alpha, image.getWidth(), image.getHeight(), guiFactory));
     }
 
     /**
@@ -1908,7 +1915,7 @@ public class JXCSkinLoader {
         final int margin = ExpressionParser.parseInt(args.get());
         final boolean enableHistory = NumberParser.parseBoolean(args.get());
         final CommandHistory commandHistory = enableHistory ? commandHistoryFactory.getCommandHistory(name) : null;
-        insertGuiElement(new GUIQueryText(server, commandHistory, commandCallback, tooltipManager, elementListener, name, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, ""));
+        insertGuiElement(new GUIQueryText(server, commandHistory, commandCallback, tooltipManager, elementListener, name, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", guiFactory));
     }
 
     /**
@@ -2001,7 +2008,7 @@ public class JXCSkinLoader {
         if (!(element instanceof GUIScrollable2)) {
             throw new IOException("'"+element+"' is not a scrollable element");
         }
-        insertGuiElement(new GUIScrollBar(tooltipManager, elementListener, name, proportionalSlider, (GUIScrollable2)element, colorBackground, colorForeground));
+        insertGuiElement(new GUIScrollBar(tooltipManager, elementListener, name, proportionalSlider, (GUIScrollable2)element, colorBackground, colorForeground, guiFactory));
     }
 
     /**
@@ -2043,7 +2050,7 @@ public class JXCSkinLoader {
         final CommandList commandList = skin.getCommandList(args.get());
         final boolean enableHistory = NumberParser.parseBoolean(args.get());
         final CommandHistory commandHistory = enableHistory ? commandHistoryFactory.getCommandHistory(name) : null;
-        insertGuiElement(new GUITextField(commandCallback, commandHistory, tooltipManager, elementListener, name, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commandList));
+        insertGuiElement(new GUITextField(commandCallback, commandHistory, tooltipManager, elementListener, name, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commandList, guiFactory));
     }
 
     /**
@@ -2094,7 +2101,7 @@ public class JXCSkinLoader {
         final String tooltipPrefix = ParseUtils.parseText(args, lnr);
         assert dialogFactory != null;
         final float alpha = dialogFactory.getFrameAlpha();
-        final GUITextGauge element = new GUITextGauge(tooltipManager, elementListener, name, positiveImage, negativeImage, emptyImage, orientation, tooltipPrefix.isEmpty() ? null : tooltipPrefix, color, font, alpha, commandList);
+        final GUITextGauge element = new GUITextGauge(tooltipManager, elementListener, name, positiveImage, negativeImage, emptyImage, orientation, tooltipPrefix.isEmpty() ? null : tooltipPrefix, color, font, alpha, commandList, guiFactory);
         insertGuiElement(element);
         gaugeUpdater.setGauge(element);
     }
@@ -2109,7 +2116,7 @@ public class JXCSkinLoader {
      */
     private void parseTooltip(@NotNull final Args args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener) throws IOException, JXCSkinException {
         final Font font = definedFonts.lookup(args.get());
-        final GUIHTMLLabel tooltipLabel = new GUIHTMLLabel(tooltipManager, elementListener, "tooltip", null, font, Color.BLACK, Color.WHITE, "");
+        final GUIHTMLLabel tooltipLabel = new GUIHTMLLabel(tooltipManager, elementListener, "tooltip", null, font, Color.BLACK, Color.WHITE, "", guiFactory);
         tooltipLabel.setAutoResize(true);
         skin.setTooltipLabel(tooltipLabel);
     }
@@ -2205,7 +2212,7 @@ public class JXCSkinLoader {
         final int cellWidth = ExpressionParser.parseInt(args.get());
         final int cellHeight = ExpressionParser.parseInt(args.get());
         final Font font = definedFonts.lookup(args.get());
-        final AbstractGUIElement list = new GUICharacterList(tooltipManager, facesManager, elementListener, name, cellWidth, cellHeight, font, characterModel);
+        final AbstractGUIElement list = new GUICharacterList(tooltipManager, facesManager, elementListener, name, cellWidth, cellHeight, font, characterModel, guiFactory);
         insertGuiElement(list);
     }
 

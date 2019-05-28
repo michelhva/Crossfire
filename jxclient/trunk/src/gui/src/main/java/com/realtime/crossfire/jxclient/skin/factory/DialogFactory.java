@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.misc.GUIDialogBackground;
 import com.realtime.crossfire.jxclient.gui.misc.GUIDialogTitle;
 import com.realtime.crossfire.jxclient.gui.misc.JXCWindowRenderer;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
@@ -118,6 +119,12 @@ public class DialogFactory {
     private final float frameAlpha;
 
     /**
+     * The global {@link GuiFactory} instance.
+     */
+    @NotNull
+    private final GuiFactory guiFactory;
+
+    /**
      * Creates a new instance. The border images must have matching sizes.
      * @param frameNW the north-west frame picture
      * @param frameN the north frame picture
@@ -133,8 +140,9 @@ public class DialogFactory {
      * @param titleBackgroundColor the background color for the dialog title
      * @param frameAlpha the alpha value for the dialog background except for
      * the title
+     * @param guiFactory the global GUI factory instance
      */
-    public DialogFactory(@NotNull final Image frameNW, @NotNull final Image frameN, @NotNull final Image frameNE, @NotNull final Image frameW, @NotNull final Image frameC, @NotNull final Image frameE, @NotNull final Image frameSW, @NotNull final Image frameS, @NotNull final Image frameSE, @NotNull final Font titleFont, @NotNull final Color titleColor, @NotNull final Color titleBackgroundColor, final float frameAlpha) {
+    public DialogFactory(@NotNull final Image frameNW, @NotNull final Image frameN, @NotNull final Image frameNE, @NotNull final Image frameW, @NotNull final Image frameC, @NotNull final Image frameE, @NotNull final Image frameSW, @NotNull final Image frameS, @NotNull final Image frameSE, @NotNull final Font titleFont, @NotNull final Color titleColor, @NotNull final Color titleBackgroundColor, final float frameAlpha, @NotNull final GuiFactory guiFactory) {
         this.frameNW = frameNW;
         this.frameN = frameN;
         this.frameNE = frameNE;
@@ -145,6 +153,7 @@ public class DialogFactory {
         this.frameS = frameS;
         this.frameSE = frameSE;
         this.frameAlpha = frameAlpha;
+        this.guiFactory = guiFactory;
         if (frameAlpha < 0.0F || frameAlpha > 1.0F) {
             throw new IllegalArgumentException("alpha transparency should be between 0 and 1 inclusive");
         }
@@ -207,10 +216,10 @@ public class DialogFactory {
     @NotNull
     public Iterable<AbstractGUIElement> newDialog(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final String title) {
         final Collection<AbstractGUIElement> result = new ArrayList<>();
-        result.add(new GUIDialogBackground(tooltipManager, elementListener, "dialog_background", frameAlpha, frameNW, frameN, frameNE, frameW, frameC, frameE, frameSW, frameS, frameSE));
+        result.add(new GUIDialogBackground(tooltipManager, elementListener, "dialog_background", frameAlpha, frameNW, frameN, frameNE, frameW, frameC, frameE, frameSW, frameS, frameSE, guiFactory));
 
         if (!title.isEmpty()) {
-            result.add(new GUIDialogTitle(tooltipManager, windowRenderer, elementListener, "dialog_title", titleFont, titleColor, titleBackgroundColor, title));
+            result.add(new GUIDialogTitle(tooltipManager, windowRenderer, elementListener, "dialog_title", titleFont, titleColor, titleBackgroundColor, title, guiFactory));
         }
 
         return result;

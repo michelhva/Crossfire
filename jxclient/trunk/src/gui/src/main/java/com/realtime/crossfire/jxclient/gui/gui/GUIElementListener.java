@@ -34,7 +34,7 @@ public interface GUIElementListener {
      * The {@link Gui} of a {@link Component} should be raised.
      * @param component the component
      */
-    void raiseDialog(@NotNull Component component);
+    void raiseDialog(@NotNull AbstractGUIElement component);
 
     /**
      * The active state of an {@link AbstractGUIElement} has changed.

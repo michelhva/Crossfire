@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.OptionListener;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -103,9 +104,10 @@ public class GUICheckBox extends ActivatableGUIElement {
      * @param color the text color
      * @param option the option to display
      * @param text the text to display
+     * @param guiFactory the global GUI factory instance
      */
-    public GUICheckBox(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final BufferedImage checkedImage, @NotNull final BufferedImage uncheckedImage, @NotNull final Font font, @NotNull final Color color, @NotNull final CheckBoxOption option, @NotNull final String text) {
-        super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT);
+    public GUICheckBox(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final BufferedImage checkedImage, @NotNull final BufferedImage uncheckedImage, @NotNull final Font font, @NotNull final Color color, @NotNull final CheckBoxOption option, @NotNull final String text, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT, guiFactory);
         if (checkedImage.getWidth() != uncheckedImage.getWidth()) {
             throw new IllegalArgumentException("'checked' width is "+checkedImage.getWidth()+" but 'unchecked' width is "+uncheckedImage.getWidth());
         }

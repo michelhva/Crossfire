@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.gui.label;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManagerListener;
 import com.realtime.crossfire.jxclient.spells.Spell;
@@ -121,9 +122,10 @@ public class GUISpellLabel extends GUIHTMLLabel {
      * @param font the font to use
      * @param type the display type
      * @param currentSpellManager the current spell manager to track
+     * @param guiFactory the global GUI factory instance
      */
-    public GUISpellLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final BufferedImage picture, @NotNull final FacesManager facesManager, @NotNull final Font font, @NotNull final Type type, @NotNull final CurrentSpellManager currentSpellManager) {
-        super(tooltipManager, elementListener, name, picture, font, Color.WHITE, null, "");
+    public GUISpellLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final BufferedImage picture, @NotNull final FacesManager facesManager, @NotNull final Font font, @NotNull final Type type, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, picture, font, Color.WHITE, null, "", guiFactory);
         this.facesManager = facesManager;
         this.type = type;
         this.currentSpellManager = currentSpellManager;

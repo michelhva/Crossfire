@@ -23,11 +23,11 @@ package com.realtime.crossfire.jxclient.gui.label;
 
 import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
-import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
+import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipText;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import com.realtime.crossfire.jxclient.util.SwingUtilities2;
-import java.awt.Component;
 import java.util.Map;
 import java.util.WeakHashMap;
 import org.jetbrains.annotations.NotNull;
@@ -44,6 +44,12 @@ public class TooltipManagerImpl implements TooltipManager {
      * Distance of tooltip from its associated GUI element.
      */
     private static final int TOOLTIP_DISTANCE = 8;
+
+    /**
+     * The global {@link GuiFactory} instance.
+     */
+    @NotNull
+    private final GuiFactory guiFactory;
 
     /**
      * The current window width.
@@ -99,6 +105,14 @@ public class TooltipManagerImpl implements TooltipManager {
         }
 
     };
+
+    /**
+     * Creates a new instance.
+     * @param guiFactory the global GUI factory instance
+     */
+    public TooltipManagerImpl(@NotNull final GuiFactory guiFactory) {
+        this.guiFactory = guiFactory;
+    }
 
     /**
      * Updates the current window size.
@@ -159,9 +173,9 @@ public class TooltipManagerImpl implements TooltipManager {
 
     @Override
     public void setTooltipText(@NotNull final AbstractGUIElement element, @Nullable final String tooltipText) {
-        final Component gui = GuiUtils.getGui(element);
+        final Gui gui = guiFactory.getGui(element);
         if (gui != null) {
-            setTooltipText(element, tooltipText, gui.getX()+element.getX(), gui.getY()+element.getY(), element.getWidth(), element.getHeight());
+            setTooltipText(element, tooltipText, gui.getComponent().getX()+element.getX(), gui.getComponent().getY()+element.getY(), element.getWidth(), element.getHeight());
         }
     }
 

@@ -617,7 +617,7 @@ public class GuiManager {
                     labelFailure.setText("");
                 }
 
-                final String name = dialog.getName();
+                final String name = dialog.getComponent().getName();
                 if (name != null) {
                     switch (name) {
                     case "account_login":

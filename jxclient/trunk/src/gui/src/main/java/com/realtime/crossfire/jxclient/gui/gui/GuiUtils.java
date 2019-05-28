@@ -21,12 +21,10 @@
 
 package com.realtime.crossfire.jxclient.gui.gui;
 
-import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.FontMetrics;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 /**
  * Utility class for {@link Gui} related functions.
@@ -52,49 +50,6 @@ public class GuiUtils {
         final int width = fontMetrics.stringWidth(text);
         final int height = fontMetrics.getMaxAscent()+fontMetrics.getMaxDescent();
         return new Dimension(width, height);
-    }
-
-    /**
-     * Returns an  element's absolute screen coordinate.
-     * @param element the element
-     * @return the element's absolute x coordinate
-     */
-    public static int getElementX(@NotNull final Component element) {
-        final Component gui = getGui(element);
-        int x = gui == null ? 0 : gui.getX();
-        for (Component component = element; component != null && !(component instanceof Gui); component = component.getParent()) {
-            x += component.getX();
-        }
-        return x;
-    }
-
-    /**
-     * Returns an element's absolute screen coordinate.
-     * @param element the element
-     * @return the element's absolute y coordinate
-     */
-    public static int getElementY(@NotNull final Component element) {
-        final Component gui = getGui(element);
-        int y = gui == null ? 0 : gui.getY();
-        for (Component component = element; component != null && !(component instanceof Gui); component = component.getParent()) {
-            y += component.getY();
-        }
-        return y;
-    }
-
-    /**
-     * Returns the {@link Gui} an element is part of.
-     * @param element the element
-     * @return the gui or {@code null}
-     */
-    @Nullable
-    public static Gui getGui(@NotNull final Component element) {
-        for (Component component = element; component != null; component = component.getParent()) {
-            if (component instanceof Gui) {
-                return (Gui)component;
-            }
-        }
-        return null;
     }
 
 }

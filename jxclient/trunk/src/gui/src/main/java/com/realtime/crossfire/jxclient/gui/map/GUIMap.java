@@ -28,6 +28,7 @@ import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.map.MapUpdaterState;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import com.realtime.crossfire.jxclient.util.MathUtils;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -73,9 +74,10 @@ public class GUIMap extends AbstractGUIMap {
      * @param smoothFaces the smooth faces to use
      * @param darknessColors the darkness colors instance for converting
      * darkness values into colors
+     * @param guiFactory the global GUI factory instance
      */
-    public GUIMap(final boolean avoidCopyArea, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final FacesProvider facesProvider, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final SmoothFaces smoothFaces, @NotNull final DarknessColors darknessColors) {
-        super(avoidCopyArea, tooltipManager, elementListener, name, mapUpdaterState, facesProvider, new SmoothingRenderer(smoothFaces, facesProvider), darknessColors);
+    public GUIMap(final boolean avoidCopyArea, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final FacesProvider facesProvider, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final SmoothFaces smoothFaces, @NotNull final DarknessColors darknessColors, @NotNull final GuiFactory guiFactory) {
+        super(avoidCopyArea, tooltipManager, elementListener, name, mapUpdaterState, facesProvider, new SmoothingRenderer(smoothFaces, facesProvider), darknessColors, guiFactory);
         this.crossfireServerConnection = crossfireServerConnection;
         tileSize = facesProvider.getSize();
     }

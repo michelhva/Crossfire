@@ -26,6 +26,7 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.misc.GUICheckBox;
 import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.image.BufferedImage;
@@ -62,17 +63,25 @@ public class CheckBoxFactory {
     private final Color color;
 
     /**
+     * The global {@link GuiFactory} instance.
+     */
+    @NotNull
+    private final GuiFactory guiFactory;
+
+    /**
      * Creates a new instance.
      * @param checked the image for the "checked" state
      * @param unchecked the image for the "unchecked" state
      * @param font the font to use
      * @param color the text color
+     * @param guiFactory the global GUI factory instance
      */
-    public CheckBoxFactory(@NotNull final BufferedImage checked, @NotNull final BufferedImage unchecked, @NotNull final Font font, @NotNull final Color color) {
+    public CheckBoxFactory(@NotNull final BufferedImage checked, @NotNull final BufferedImage unchecked, @NotNull final Font font, @NotNull final Color color, @NotNull final GuiFactory guiFactory) {
         this.checked = checked;
         this.unchecked = unchecked;
         this.font = font;
         this.color = color;
+        this.guiFactory = guiFactory;
     }
 
     /**
@@ -86,7 +95,7 @@ public class CheckBoxFactory {
      */
     @NotNull
     public AbstractGUIElement newCheckBox(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final CheckBoxOption option, @NotNull final String text) {
-        return new GUICheckBox(tooltipManager, elementListener, name, checked, unchecked, font, color, option, text);
+        return new GUICheckBox(tooltipManager, elementListener, name, checked, unchecked, font, color, option, text, guiFactory);
     }
 
 }

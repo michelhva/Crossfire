@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.gui;
 
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.event.MouseEvent;
 import org.jetbrains.annotations.NotNull;
 
@@ -54,9 +55,10 @@ public abstract class ActivatableGUIElement extends AbstractGUIElement {
      * @param elementListener the element listener to notify
      * @param name the name of this element
      * @param transparency the transparency value for the backing buffer
+     * @param guiFactory the global GUI factory instance
      */
-    protected ActivatableGUIElement(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int transparency) {
-        super(tooltipManager, elementListener, name, transparency);
+    protected ActivatableGUIElement(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int transparency, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, transparency, guiFactory);
         this.elementListener = elementListener;
     }
 

@@ -23,7 +23,6 @@ package com.realtime.crossfire.jxclient.gui.misc;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
-import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.label.Alignment;
 import com.realtime.crossfire.jxclient.gui.label.GUIHTMLLabel;
@@ -31,6 +30,7 @@ import com.realtime.crossfire.jxclient.gui.label.GUIMultiLineLabel;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireDrawextinfoListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireDrawinfoListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Color;
 import java.awt.Font;
 import org.jetbrains.annotations.NotNull;
@@ -65,6 +65,12 @@ public class GUILabelMessage extends GUIMultiLineLabel {
     private final JXCWindowRenderer windowRenderer;
 
     /**
+     * The global {@link GuiFactory} instance.
+     */
+    @NotNull
+    private final GuiFactory guiFactory;
+
+    /**
      * The {@link CrossfireDrawinfoListener} registered to receive drawinfo
      * messages.
      */
@@ -73,7 +79,7 @@ public class GUILabelMessage extends GUIMultiLineLabel {
 
         @Override
         public void commandDrawinfoReceived(@NotNull final String text, final int type) {
-            final Gui gui = GuiUtils.getGui(GUILabelMessage.this);
+            final Gui gui = guiFactory.getGui(GUILabelMessage.this);
             if (gui == null || !windowRenderer.isDialogOpen(gui)) {
                 setText(text);
             }
@@ -90,7 +96,7 @@ public class GUILabelMessage extends GUIMultiLineLabel {
 
         @Override
         public void commandDrawextinfoReceived(final int color, final int type, final int subtype, @NotNull final String message) {
-            final Gui gui = GuiUtils.getGui(GUILabelMessage.this);
+            final Gui gui = guiFactory.getGui(GUILabelMessage.this);
             if (gui == null || !windowRenderer.isDialogOpen(gui)) {
                 setText(message);
             }
@@ -113,11 +119,13 @@ public class GUILabelMessage extends GUIMultiLineLabel {
      * @param font the font to use
      * @param color the color to use
      * @param backgroundColor the background color
+     * @param guiFactory the global GUI factory instance
      */
-    public GUILabelMessage(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final Font font, @NotNull final Color color, @Nullable final Color backgroundColor) {
-        super(tooltipManager, elementListener, name, null, font, color, backgroundColor, Alignment.LEFT, "");
+    public GUILabelMessage(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final Font font, @NotNull final Color color, @Nullable final Color backgroundColor, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, null, font, color, backgroundColor, Alignment.LEFT, "", guiFactory);
         this.crossfireServerConnection = crossfireServerConnection;
         this.windowRenderer = windowRenderer;
+        this.guiFactory = guiFactory;
         this.crossfireServerConnection.addCrossfireDrawinfoListener(crossfireDrawinfoListener);
         this.crossfireServerConnection.addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
     }

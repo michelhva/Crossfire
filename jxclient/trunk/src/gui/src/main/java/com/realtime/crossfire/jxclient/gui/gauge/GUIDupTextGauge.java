@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.gui.gauge;
 import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
@@ -77,9 +78,10 @@ public class GUIDupTextGauge extends GUIDupGauge {
      * @param color the text color
      * @param font the text font
      * @param commandList the command list that is executed on button 2
+     * @param guiFactory the global GUI factory instance
      */
-    public GUIDupTextGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Image pictureFullDiv, final Image pictureFullMod, @NotNull final Image pictureEmpty, @NotNull final Orientation orientationDiv, @NotNull final Orientation orientationMod, @Nullable final String tooltipPrefix, @NotNull final Color color, @NotNull final Font font, @Nullable final CommandList commandList) {
-        super(tooltipManager, elementListener, name, pictureFullDiv, pictureFullMod, pictureEmpty, orientationDiv, orientationMod, tooltipPrefix, commandList);
+    public GUIDupTextGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Image pictureFullDiv, final Image pictureFullMod, @NotNull final Image pictureEmpty, @NotNull final Orientation orientationDiv, @NotNull final Orientation orientationMod, @Nullable final String tooltipPrefix, @NotNull final Color color, @NotNull final Font font, @Nullable final CommandList commandList, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, pictureFullDiv, pictureFullMod, pictureEmpty, orientationDiv, orientationMod, tooltipPrefix, commandList, guiFactory);
         this.color = color;
         this.font = font;
     }

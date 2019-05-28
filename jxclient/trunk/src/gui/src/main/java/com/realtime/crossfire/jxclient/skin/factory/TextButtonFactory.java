@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Color;
 import java.awt.Font;
 import org.jetbrains.annotations.NotNull;
@@ -68,19 +69,27 @@ public class TextButtonFactory {
     private final Color colorSelected;
 
     /**
+     * The global {@link GuiFactory} instance.
+     */
+    @NotNull
+    private final GuiFactory guiFactory;
+
+    /**
      * Creates a new instance.
      * @param up the images comprising the "up" button state
      * @param down the images comprising the "down" button state
      * @param font the font to use
      * @param color the text color
      * @param colorSelected the text color when selected
+     * @param guiFactory the global GUI factory instance
      */
-    public TextButtonFactory(@NotNull final ButtonImages up, @NotNull final ButtonImages down, @NotNull final Font font, @NotNull final Color color, @NotNull final Color colorSelected) {
+    public TextButtonFactory(@NotNull final ButtonImages up, @NotNull final ButtonImages down, @NotNull final Font font, @NotNull final Color color, @NotNull final Color colorSelected, @NotNull final GuiFactory guiFactory) {
         this.up = up;
         this.down = down;
         this.font = font;
         this.color = color;
         this.colorSelected = colorSelected;
+        this.guiFactory = guiFactory;
     }
 
     /**
@@ -96,7 +105,7 @@ public class TextButtonFactory {
      */
     @NotNull
     public AbstractGUIElement newTextButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final String text, final boolean autoRepeat, @NotNull final CommandList commandList) {
-        return new GUITextButton(tooltipManager, elementListener, name, up, down, text, font, color, colorSelected, autoRepeat, commandList);
+        return new GUITextButton(tooltipManager, elementListener, name, up, down, text, font, color, colorSelected, autoRepeat, commandList, guiFactory);
     }
 
 }

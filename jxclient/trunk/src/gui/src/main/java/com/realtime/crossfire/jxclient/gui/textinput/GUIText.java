@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyEvent2;
 import com.realtime.crossfire.jxclient.settings.CommandHistory;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -179,9 +180,10 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      * element is active
      * @param margin the left margin in pixels
      * @param text the initially entered text
+     * @param guiFactory the global GUI factory instance
      */
-    protected GUIText(@NotNull final CommandCallback commandCallback, @Nullable final CommandHistory commandHistory, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Image activeImage, @NotNull final Image inactiveImage, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text) {
-        super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT);
+    protected GUIText(@NotNull final CommandCallback commandCallback, @Nullable final CommandHistory commandHistory, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Image activeImage, @NotNull final Image inactiveImage, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT, guiFactory);
         this.commandCallback = commandCallback;
         this.commandHistory = commandHistory;
         this.activeImage = activeImage;

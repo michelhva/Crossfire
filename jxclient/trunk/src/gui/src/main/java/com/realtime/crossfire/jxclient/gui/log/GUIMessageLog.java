@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.gui.log;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Color;
 import java.awt.Image;
 import org.jetbrains.annotations.NotNull;
@@ -57,9 +58,10 @@ public class GUIMessageLog extends GUILog {
      * @param fonts the {@code Fonts} instance for looking up fonts
      * @param defaultColor the default color to use for text message not
      * specifying a color
+     * @param guiFactory the global GUI factory instance
      */
-    public GUIMessageLog(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final CrossfireServerConnection crossfireServerConnection, @Nullable final Image backgroundImage, @NotNull final Fonts fonts, @NotNull final Color defaultColor) {
-        super(tooltipManager, elementListener, name, backgroundImage, fonts);
+    public GUIMessageLog(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final CrossfireServerConnection crossfireServerConnection, @Nullable final Image backgroundImage, @NotNull final Fonts fonts, @NotNull final Color defaultColor, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, backgroundImage, fonts, guiFactory);
         messageBufferUpdater = new MessageBufferUpdater(crossfireServerConnection, getBuffer(), defaultColor);
     }
 

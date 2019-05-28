@@ -30,6 +30,7 @@ import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.knowledge.KnowledgeListener;
 import com.realtime.crossfire.jxclient.knowledge.KnowledgeManager;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Dimension;
 import java.awt.Image;
 import org.jetbrains.annotations.NotNull;
@@ -108,9 +109,10 @@ public class GUIItemKnowledgeType extends GUIItemItem {
      * @param knowledgeManager the knowledge manager instance to watch
      * @param itemView the item view to use
      * @param size the size of the component or {@code 0} for undefined
+     * @param guiFactory the global GUI factory instance
      */
-    public GUIItemKnowledgeType(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final KnowledgeManager knowledgeManager, @NotNull final ItemView itemView, final int size) {
-        super(tooltipManager, elementListener, name, itemPainter, facesManager);
+    public GUIItemKnowledgeType(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final KnowledgeManager knowledgeManager, @NotNull final ItemView itemView, final int size, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, itemPainter, facesManager, guiFactory);
         this.defaultIndex = defaultIndex;
         this.facesManager = facesManager;
         this.knowledgeManager = knowledgeManager;

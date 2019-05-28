@@ -29,6 +29,7 @@ import com.realtime.crossfire.jxclient.gui.item.ItemPainter;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.knowledge.KnowledgeManager;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -82,6 +83,12 @@ public class GUIKnowledgeTypeList extends GUIItemList<GUIItemKnowledgeType> {
     private final FacesManager facesManager;
 
     /**
+     * The global {@link GuiFactory} instance.
+     */
+    @NotNull
+    private final GuiFactory guiFactory;
+
+    /**
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
@@ -94,9 +101,10 @@ public class GUIKnowledgeTypeList extends GUIItemList<GUIItemKnowledgeType> {
      * @param knowledgeManager the knowledge manager to use
      * @param itemPainter the item painter for painting the icon
      * @param facesManager the faces manager to use
+     * @param guiFactory the global GUI factory instance
      */
-    public GUIKnowledgeTypeList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final KnowledgeManager knowledgeManager, @NotNull final ItemPainter itemPainter, @NotNull final FacesManager facesManager) {
-        super(tooltipManager, elementListener, name, cellWidth, cellHeight, itemView, currentItem, new GUIItemKnowledgeType(tooltipManager, elementListener, name+"_template", itemPainter, -1, facesManager, knowledgeManager, itemView, cellHeight));
+    public GUIKnowledgeTypeList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final KnowledgeManager knowledgeManager, @NotNull final ItemPainter itemPainter, @NotNull final FacesManager facesManager, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, cellWidth, cellHeight, itemView, currentItem, new GUIItemKnowledgeType(tooltipManager, elementListener, name+"_template", itemPainter, -1, facesManager, knowledgeManager, itemView, cellHeight, guiFactory), guiFactory);
         this.tooltipManager = tooltipManager;
         this.elementListener = elementListener;
         this.name = name;
@@ -104,6 +112,7 @@ public class GUIKnowledgeTypeList extends GUIItemList<GUIItemKnowledgeType> {
         this.knowledgeManager = knowledgeManager;
         this.itemPainter = itemPainter;
         this.facesManager = facesManager;
+        this.guiFactory = guiFactory;
     }
 
     @Override
@@ -118,7 +127,7 @@ public class GUIKnowledgeTypeList extends GUIItemList<GUIItemKnowledgeType> {
     @NotNull
     @Override
     protected GUIItemKnowledgeType newItem(final int index) {
-        return new GUIItemKnowledgeType(tooltipManager, elementListener, name+index, itemPainter, index, facesManager, knowledgeManager, itemView, 0);
+        return new GUIItemKnowledgeType(tooltipManager, elementListener, name+index, itemPainter, index, facesManager, knowledgeManager, itemView, 0, guiFactory);
     }
 
     @Override

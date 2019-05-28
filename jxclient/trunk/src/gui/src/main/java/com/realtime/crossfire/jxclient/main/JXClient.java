@@ -188,7 +188,6 @@ public class JXClient {
                                         throw new AssertionError(ex);
                                     }
 
-                                    final MouseTracker mouseTracker = new MouseTracker(options.isDebugGui(), debugMouseOutputStreamWriter);
                                     new MusicWatcher(server, soundManager);
                                     new SoundWatcher(server, soundManager);
                                     new PoisonWatcher(model.getStats(), server);
@@ -208,22 +207,23 @@ public class JXClient {
 
                                     final Exiter exiter = new Exiter();
                                     final JXCWindow[] window = new JXCWindow[1];
+                                    final GuiManagerCommandCallback commandCallback = new GuiManagerCommandCallback(exiter, server);
+                                    final Commands commands = new Commands();
+                                    final CommandExecutor commandExecutor = new CommandExecutorImpl(commandQueue, commands);
+                                    final GUICommandFactory guiCommandFactory = new GUICommandFactoryImpl(commandCallback, commandExecutor, macros);
+                                    final GuiFactory guiFactory = new GuiFactory(guiCommandFactory);
+                                    final MouseTracker mouseTracker = new MouseTracker(options.isDebugGui(), debugMouseOutputStreamWriter, guiFactory);
                                     SwingUtilities.invokeAndWait(() -> {
                                         final JXCWindowRenderer windowRenderer = new JXCWindowRenderer(mouseTracker, server, debugScreenOutputStreamWriter);
                                         new StatsWatcher(model.getStats(), windowRenderer, server, soundManager);
-                                        final TooltipManagerImpl tooltipManager = new TooltipManagerImpl();
                                         final Pickup characterPickup;
                                         try {
                                             characterPickup = new Pickup(commandQueue, optionManager);
                                         } catch (final OptionException ex) {
                                             throw new AssertionError(ex);
                                         }
-                                        final GuiManagerCommandCallback commandCallback = new GuiManagerCommandCallback(exiter, server);
                                         final ScreenshotFiles screenshotFiles = new ScreenshotFiles();
-                                        final Commands commands = new Commands();
-                                        final CommandExecutor commandExecutor = new CommandExecutorImpl(commandQueue, commands);
                                         final CommandHistoryFactory commandHistoryFactory = new CommandHistoryFactory();
-                                        final GUICommandFactory guiCommandFactory = new GUICommandFactoryImpl(commandCallback, commandExecutor, macros);
                                         commands.addCommand(new BindCommand(server, commandCallback, guiCommandFactory));
                                         commands.addCommand(new UnbindCommand(commandCallback, server));
                                         commands.addCommand(new ScreenshotCommand(windowRenderer, server, screenshotFiles));
@@ -248,11 +248,11 @@ public class JXClient {
                                         final KeybindingsManager keybindingsManager = new KeybindingsManager(keybindingsFile, guiCommandFactory);
                                         commands.addCommand(new BindingsCommand(server, keybindingsManager));
                                         final JXCConnection connection = new JXCConnection(keybindingsManager, shortcuts, settings, characterPickup, server, model.getGuiStateManager(), logger);
-                                        final GuiFactory guiFactory = new GuiFactory(guiCommandFactory);
+                                        final TooltipManagerImpl tooltipManager = new TooltipManagerImpl(guiFactory);
                                         final GuiManager guiManager = new GuiManager(model.getGuiStateManager(), tooltipManager, settings, server, windowRenderer, guiFactory, keybindingsManager, connection);
                                         commandCallback.init(guiManager);
                                         final KeyBindings defaultKeyBindings = new KeyBindings(null, guiCommandFactory);
-                                        final JXCSkinLoader jxcSkinLoader = new JXCSkinLoader(model, inventoryView, floorView, spellsView, spellSkillsView, facesManager, mapUpdaterState, defaultKeyBindings, optionManager, options.getTileSize(), keybindingsManager, questsView, commandHistoryFactory, knowledgeView, knowledgeTypesView, options.isAvoidCopyArea(), guiManager);
+                                        final JXCSkinLoader jxcSkinLoader = new JXCSkinLoader(model, inventoryView, floorView, spellsView, spellSkillsView, facesManager, mapUpdaterState, defaultKeyBindings, optionManager, options.getTileSize(), keybindingsManager, questsView, commandHistoryFactory, knowledgeView, knowledgeTypesView, options.isAvoidCopyArea(), guiManager, guiFactory);
                                         final SkinLoader skinLoader = new SkinLoader(commandCallback, metaserverModel, options.getResolution(), macros, windowRenderer, server, model.getGuiStateManager(), tooltipManager, commandQueue, jxcSkinLoader, commandExecutor, shortcuts, characterModel, model.getSmoothFaces(), guiFactory);
                                         new FacesTracker(model.getGuiStateManager(), facesManager);
                                         new PlayerNameTracker(model.getGuiStateManager(), connection, model.getItemSet());

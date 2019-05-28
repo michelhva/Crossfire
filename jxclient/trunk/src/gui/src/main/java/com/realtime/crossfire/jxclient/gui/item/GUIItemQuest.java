@@ -32,6 +32,7 @@ import com.realtime.crossfire.jxclient.quests.Quest;
 import com.realtime.crossfire.jxclient.quests.QuestListener;
 import com.realtime.crossfire.jxclient.quests.QuestsManager;
 import com.realtime.crossfire.jxclient.quests.QuestsManagerListener;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Dimension;
 import java.awt.Image;
 import org.jetbrains.annotations.NotNull;
@@ -136,9 +137,10 @@ public class GUIItemQuest extends GUIItemItem {
      * @param questsManager the quests manager instance to watch
      * @param questsView the quests view to use
      * @param size the size of the component or {@code 0} for undefined
+     * @param guiFactory the global GUI factory instance
      */
-    public GUIItemQuest(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final QuestsManager questsManager, @NotNull final ItemView questsView, final int size) {
-        super(tooltipManager, elementListener, name, itemPainter, facesManager);
+    public GUIItemQuest(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final QuestsManager questsManager, @NotNull final ItemView questsView, final int size, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, itemPainter, facesManager, guiFactory);
         this.facesManager = facesManager;
         this.defaultIndex = defaultIndex;
         this.questsManager = questsManager;

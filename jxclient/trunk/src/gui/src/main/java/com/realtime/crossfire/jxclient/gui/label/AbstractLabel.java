@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.gui.label;
 import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
@@ -88,9 +89,10 @@ public abstract class AbstractLabel extends AbstractGUIElement {
      * @param backgroundPicture the optional background picture
      * @param backgroundColor the background color; ignored if background
      * picture is set
+     * @param guiFactory the global GUI factory instance
      */
-    protected AbstractLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final String text, @NotNull final Font textFont, @NotNull final Color textColor, @Nullable final BufferedImage backgroundPicture, @Nullable final Color backgroundColor) {
-        super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT);
+    protected AbstractLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final String text, @NotNull final Font textFont, @NotNull final Color textColor, @Nullable final BufferedImage backgroundPicture, @Nullable final Color backgroundColor, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT, guiFactory);
         this.text = text;
         this.textFont = textFont;
         this.textColor = textColor;

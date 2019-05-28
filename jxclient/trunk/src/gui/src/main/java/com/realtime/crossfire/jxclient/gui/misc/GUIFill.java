@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -55,9 +56,10 @@ public class GUIFill extends AbstractGUIElement {
      * @param name the name of this element
      * @param color the color to paint
      * @param alpha the transparency value
+     * @param guiFactory the global GUI factory instance
      */
-    public GUIFill(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Color color, final float alpha) {
-        super(tooltipManager, elementListener, name, alpha < 1.0F ? Transparency.TRANSLUCENT : Transparency.OPAQUE);
+    public GUIFill(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Color color, final float alpha, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, alpha < 1.0F ? Transparency.TRANSLUCENT : Transparency.OPAQUE, guiFactory);
         this.color = color;
     }
 

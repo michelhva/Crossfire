@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.KeyPressedHandler;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyEvent2;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Dimension;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
@@ -88,9 +89,10 @@ public abstract class AbstractButton extends ActivatableGUIElement implements Ke
      * @param autoRepeat whether the button should autorepeat while being
      * pressed
      * @param commandList the commands to execute when the button is elected
+     * @param guiFactory the global GUI factory instance
      */
-    protected AbstractButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int transparency, final boolean autoRepeat, @NotNull final CommandList commandList) {
-        super(tooltipManager, elementListener, name, transparency);
+    protected AbstractButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int transparency, final boolean autoRepeat, @NotNull final CommandList commandList, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, transparency, guiFactory);
         this.autoRepeat = autoRepeat;
         this.commandList = commandList;
         timer.setDelay(TIMEOUT_SECOND);

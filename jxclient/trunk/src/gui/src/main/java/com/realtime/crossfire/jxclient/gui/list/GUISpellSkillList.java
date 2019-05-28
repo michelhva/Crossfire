@@ -30,6 +30,7 @@ import com.realtime.crossfire.jxclient.gui.item.ItemPainter;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.skills.Skill;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -94,6 +95,12 @@ public class GUISpellSkillList extends GUIItemList<GUIItemSpellSkill> {
     private final FaceImages defaultSkillIcon;
 
     /**
+     * The global {@link GuiFactory} instance.
+     */
+    @NotNull
+    private final GuiFactory guiFactory;
+
+    /**
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
@@ -108,9 +115,10 @@ public class GUISpellSkillList extends GUIItemList<GUIItemSpellSkill> {
      * @param facesManager the faces manager to use
      * @param defaultSkillIcon the default icon to use the skills if not
      * defined
+     * @param guiFactory the global GUI factory instance
      */
-    public GUISpellSkillList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final SpellsManager spellsManager, @NotNull final ItemPainter itemPainter, @NotNull final FacesManager facesManager, @NotNull final FaceImages defaultSkillIcon) {
-        super(tooltipManager, elementListener, name, cellWidth, cellHeight, itemView, currentItem, new GUIItemSpellSkill(tooltipManager, elementListener, name+"_template", itemPainter, -1, facesManager, spellsManager, itemView, defaultSkillIcon, cellHeight));
+    public GUISpellSkillList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final SpellsManager spellsManager, @NotNull final ItemPainter itemPainter, @NotNull final FacesManager facesManager, @NotNull final FaceImages defaultSkillIcon, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, cellWidth, cellHeight, itemView, currentItem, new GUIItemSpellSkill(tooltipManager, elementListener, name+"_template", itemPainter, -1, facesManager, spellsManager, itemView, defaultSkillIcon, cellHeight, guiFactory), guiFactory);
         this.tooltipManager = tooltipManager;
         this.elementListener = elementListener;
         this.name = name;
@@ -119,6 +127,7 @@ public class GUISpellSkillList extends GUIItemList<GUIItemSpellSkill> {
         this.itemPainter = itemPainter;
         this.facesManager = facesManager;
         this.defaultSkillIcon = defaultSkillIcon;
+        this.guiFactory = guiFactory;
     }
 
     @Override
@@ -139,7 +148,7 @@ public class GUISpellSkillList extends GUIItemList<GUIItemSpellSkill> {
     @NotNull
     @Override
     protected GUIItemSpellSkill newItem(final int index) {
-        return new GUIItemSpellSkill(tooltipManager, elementListener, name+index, itemPainter, index, facesManager, spellsManager, itemView, defaultSkillIcon, 0);
+        return new GUIItemSpellSkill(tooltipManager, elementListener, name+index, itemPainter, index, facesManager, spellsManager, itemView, defaultSkillIcon, 0, guiFactory);
     }
 
     @Override

@@ -32,6 +32,7 @@ import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.items.LocationListener;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Image;
 import javax.swing.SwingUtilities;
 import org.jetbrains.annotations.NotNull;
@@ -134,9 +135,10 @@ public class GUIItemInventory extends GUIItemItem {
      * @param floorView the floor view to use
      * @param inventoryView the inventory view to watch
      * @param size the size of the component or {@code 0} for undefined
+     * @param guiFactory the global GUI factory instance
      */
-    public GUIItemInventory(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, final String name, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final FloorView floorView, @NotNull final ItemView inventoryView, final int size) {
-        super(tooltipManager, elementListener, name, itemPainter, facesManager);
+    public GUIItemInventory(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, final String name, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final FloorView floorView, @NotNull final ItemView inventoryView, final int size, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, itemPainter, facesManager, guiFactory);
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
         this.facesManager = facesManager;

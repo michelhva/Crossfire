@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.gui.label;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
@@ -59,9 +60,10 @@ public abstract class GUILabel extends AbstractLabel {
      * @param textColor the font color
      * @param backgroundColor the background color
      * @param textAlignment the text alignment
+     * @param guiFactory the global GUI factory instance
      */
-    protected GUILabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final BufferedImage picture, @NotNull final String text, @NotNull final Font textFont, @NotNull final Color textColor, @Nullable final Color backgroundColor, @NotNull final Alignment textAlignment) {
-        super(tooltipManager, elementListener, name, text, textFont, textColor, picture, backgroundColor);
+    protected GUILabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final BufferedImage picture, @NotNull final String text, @NotNull final Font textFont, @NotNull final Color textColor, @Nullable final Color backgroundColor, @NotNull final Alignment textAlignment, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, text, textFont, textColor, picture, backgroundColor, guiFactory);
         this.textAlignment = textAlignment;
     }
 

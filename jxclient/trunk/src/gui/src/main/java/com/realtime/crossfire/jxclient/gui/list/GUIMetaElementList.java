@@ -31,6 +31,7 @@ import com.realtime.crossfire.jxclient.metaserver.MetaserverEntry;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverEntryListener;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverListener;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Font;
 import java.awt.Image;
 import org.jetbrains.annotations.NotNull;
@@ -108,6 +109,12 @@ public class GUIMetaElementList extends GUIList<GUIMetaElement> {
     private final AbstractLabel comment;
 
     /**
+     * The global {@link GuiFactory} instance.
+     */
+    @NotNull
+    private final GuiFactory guiFactory;
+
+    /**
      * The {@link MetaserverListener} attached to {@link #metaserverModel}. It
      * detects added or removed entries and updates the list accordingly.
      */
@@ -136,9 +143,10 @@ public class GUIMetaElementList extends GUIList<GUIMetaElement> {
      * @param hostname the hostname input field to update; may be {@code null}
      * @param comment the comment field to update; may be {@code null}
      * @param connectCommandList the command list to connect to the server
+     * @param guiFactory the global GUI factory instance
      */
-    public GUIMetaElementList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final MetaserverModel metaserverModel, @Nullable final Image image, @NotNull final Font font, @NotNull final String format, @NotNull final String tooltip, @Nullable final GUIText hostname, @Nullable final AbstractLabel comment, @NotNull final CommandList connectCommandList) {
-        super(tooltipManager, elementListener, name, cellWidth, cellHeight, new MetaElementCellRenderer(new GUIMetaElement(tooltipManager, elementListener, metaserverModel, name+"_template", image, font, 0, format, tooltip)), connectCommandList);
+    public GUIMetaElementList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final MetaserverModel metaserverModel, @Nullable final Image image, @NotNull final Font font, @NotNull final String format, @NotNull final String tooltip, @Nullable final GUIText hostname, @Nullable final AbstractLabel comment, @NotNull final CommandList connectCommandList, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, cellWidth, cellHeight, new MetaElementCellRenderer(new GUIMetaElement(tooltipManager, elementListener, metaserverModel, name+"_template", image, font, 0, format, tooltip, guiFactory)), connectCommandList, guiFactory);
         this.metaserverModel = metaserverModel;
         this.tooltipManager = tooltipManager;
         this.elementListener = elementListener;
@@ -149,6 +157,7 @@ public class GUIMetaElementList extends GUIList<GUIMetaElement> {
         this.tooltip = tooltip;
         this.hostname = hostname;
         this.comment = comment;
+        this.guiFactory = guiFactory;
         this.metaserverModel.addMetaserverListener(metaserverListener);
         rebuildList();
     }
@@ -175,7 +184,7 @@ public class GUIMetaElementList extends GUIList<GUIMetaElement> {
             final int oldSize = resizeElements(newSize);
             if (oldSize < newSize) {
                 for (int i = oldSize; i < newSize; i++) {
-                    final GUIMetaElement metaElement = new GUIMetaElement(tooltipManager, elementListener, metaserverModel, name+i, image, font, i, format, tooltip);
+                    final GUIMetaElement metaElement = new GUIMetaElement(tooltipManager, elementListener, metaserverModel, name+i, image, font, i, format, tooltip, guiFactory);
                     addElement(metaElement);
                     metaserverModel.addMetaserverEntryListener(i, metaserverEntryListener);
                 }

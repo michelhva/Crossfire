@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.gui;
 
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import com.realtime.crossfire.jxclient.util.SwingUtilities2;
 import java.awt.Transparency;
 import java.awt.event.MouseEvent;
@@ -39,6 +40,12 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
      * The serial version UID.
      */
     private static final long serialVersionUID = 1;
+
+    /**
+     * The global {@link GuiFactory} instance.
+     */
+    @NotNull
+    private final GuiFactory guiFactory;
 
     /**
      * The {@link GUIElementChangedListener} to be notified whenever this
@@ -93,9 +100,9 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
             synchronized (setChangedRunnable) {
                 pendingChange = false;
             }
-            final Gui parent = GuiUtils.getGui(AbstractGUIElement.this);
+            final Gui parent = guiFactory.getGui(AbstractGUIElement.this);
             if (parent != null) {
-                parent.repaint();
+                parent.getComponent().repaint();
             }
             if (isVisible()) {
                 if (changedListener != null) {
@@ -112,8 +119,10 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
      * @param elementListener the element listener to notify
      * @param name the name of this element
      * @param transparency the transparency value for the backing buffer
+     * @param guiFactory the global GUI factory instance
      */
-    protected AbstractGUIElement(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int transparency) {
+    protected AbstractGUIElement(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int transparency, @NotNull final GuiFactory guiFactory) {
+        this.guiFactory = guiFactory;
         setDoubleBuffered(false);
         this.tooltipManager = tooltipManager;
         this.elementListener = elementListener;

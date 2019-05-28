@@ -40,12 +40,20 @@ import org.jetbrains.annotations.Nullable;
  * lower dialogs.
  * @author Andreas Kirschbaum
  */
-public class Gui extends JComponent {
+public class Gui {
 
     /**
-     * The serial version UID.
+     * The {@link JComponent} for this instance.
      */
-    private static final long serialVersionUID = 1L;
+    @NotNull
+    private final JComponent component = new JComponent() {
+
+        /**
+         * The serial version UID.
+         */
+        private static final long serialVersionUID = 1L;
+
+    };
 
     /**
      * The {@link KeyBindings} for this gui.
@@ -130,16 +138,25 @@ public class Gui extends JComponent {
      * @param y the y-coordinate
      */
     public void setPosition(final int x, final int y) {
-        if (initialPositionSet && getX() == x && getY() == y) {
+        if (initialPositionSet && component.getX() == x && component.getY() == y) {
             return;
         }
 
-        if ((getWidth() == 0 || getHeight() == 0) && (initialPositionSet || x != 0 || y != 0)) {
-            throw new IllegalStateException("width="+getWidth()+", height="+getHeight()+", initialPositionSet="+initialPositionSet+", x="+x+", y="+y);
+        if ((component.getWidth() == 0 || component.getHeight() == 0) && (initialPositionSet || x != 0 || y != 0)) {
+            throw new IllegalStateException("width="+component.getWidth()+", height="+component.getHeight()+", initialPositionSet="+initialPositionSet+", x="+x+", y="+y);
         }
 
         initialPositionSet = true;
-        setLocation(x, y);
+        component.setLocation(x, y);
+    }
+
+    /**
+     * Returns the {@link JComponent} for this instance.
+     * @return the component
+     */
+    @NotNull
+    public JComponent getComponent() {
+        return component;
     }
 
     /**
@@ -182,9 +199,9 @@ public class Gui extends JComponent {
      */
     @Nullable
     private ActivatableGUIElement getDefaultElement() {
-        final int count = getComponentCount();
+        final int count = component.getComponentCount();
         for (int i = 0; i < count; i++) {
-            final Component component = getComponent(i);
+            final Component component = this.component.getComponent(i);
             if (component.isVisible() && component instanceof ActivatableGUIElement) {
                 final ActivatableGUIElement element = (ActivatableGUIElement)component;
                 if (element.isDefault()) {
@@ -216,9 +233,9 @@ public class Gui extends JComponent {
      */
     @Nullable
     public <T extends GUIElement> T getFirstElementEndingWith(@NotNull final Class<T> class_, @NotNull final String ending) {
-        final int count = getComponentCount();
+        final int count = component.getComponentCount();
         for (int i = 0; i < count; i++) {
-            final Component component = getComponent(i);
+            final Component component = this.component.getComponent(i);
             if (component.isVisible() && component instanceof GUIElement) {
                 final GUIElement element = (GUIElement)component;
                 if (class_.isAssignableFrom(element.getClass()) && element.getName().endsWith(ending)) {
@@ -240,9 +257,9 @@ public class Gui extends JComponent {
      */
     @Nullable
     public <T extends GUIElement> T getFirstElementNotEndingWith(@NotNull final Class<T> class_, @NotNull final String ending) {
-        final int count = getComponentCount();
+        final int count = component.getComponentCount();
         for (int i = 0; i < count; i++) {
-            final Component component = getComponent(i);
+            final Component component = this.component.getComponent(i);
             if (component.isVisible() && component instanceof GUIElement) {
                 final GUIElement element = (GUIElement)component;
                 if (class_.isAssignableFrom(element.getClass()) && !element.getName().endsWith(ending)) {
@@ -262,9 +279,9 @@ public class Gui extends JComponent {
      */
     @Nullable
     public <T extends GUIElement> T getFirstElement(@NotNull final Class<T> class_) {
-        final int count = getComponentCount();
+        final int count = component.getComponentCount();
         for (int i = 0; i < count; i++) {
-            final Component component = getComponent(i);
+            final Component component = this.component.getComponent(i);
             if (component.isVisible() && component instanceof GUIElement) {
                 final GUIElement element = (GUIElement)component;
                 if (class_.isAssignableFrom(element.getClass())) {
@@ -285,7 +302,7 @@ public class Gui extends JComponent {
      */
     @Nullable
     public AbstractGUIElement getElementFromPoint(final int x, final int y) {
-        Component component = findComponentAt(x, y);
+        Component component = this.component.findComponentAt(x, y);
         while (component != null) {
             if (component instanceof AbstractGUIElement) {
                 return (AbstractGUIElement)component;
@@ -419,9 +436,9 @@ public class Gui extends JComponent {
      */
     @Nullable
     public <T extends GUIElement> T getFirstElement(@NotNull final Class<T> class_, @NotNull final String name) {
-        final int count = getComponentCount();
+        final int count = component.getComponentCount();
         for (int i = 0; i < count; i++) {
-            final Component component = getComponent(i);
+            final Component component = this.component.getComponent(i);
             if (component.isVisible() && component instanceof GUIElement) {
                 final GUIElement element = (GUIElement)component;
                 if (class_.isAssignableFrom(element.getClass()) && element.getName().equals(name)) {
@@ -474,7 +491,7 @@ public class Gui extends JComponent {
      * @return whether the coordinate is within the drawing area
      */
     public boolean isWithinDrawingArea(final int x, final int y) {
-        return getX() <= x && x < getX()+getWidth() && getY() <= y && y < getY()+getHeight();
+        return component.getX() <= x && x < component.getX()+component.getWidth() && component.getY() <= y && y < component.getY()+component.getHeight();
     }
 
     /**
@@ -489,8 +506,8 @@ public class Gui extends JComponent {
     @NotNull
     @Override
     public String toString() {
-        final String name = getName();
-        return (name == null ? "" : name)+"["+getWidth()+"x"+getHeight()+"]";
+        final String name = component.getName();
+        return (name == null ? "" : name)+"["+component.getWidth()+"x"+component.getHeight()+"]";
     }
 
     /**
@@ -502,10 +519,10 @@ public class Gui extends JComponent {
         SwingUtilities2.invokeAndWait(() -> {
             final Extent extent = autoSize;
             if (extent != null) {
-                final Dimension preferredSize = getPreferredSize();
-                setBounds(extent.getX(screenWidth, screenHeight, preferredSize.width, preferredSize.height), extent.getY(screenWidth, screenHeight, preferredSize.width, preferredSize.height), extent.getW(screenWidth, screenHeight, preferredSize.width, preferredSize.height), extent.getH(screenWidth, screenHeight, preferredSize.width, preferredSize.height));
+                final Dimension preferredSize = component.getPreferredSize();
+                component.setBounds(extent.getX(screenWidth, screenHeight, preferredSize.width, preferredSize.height), extent.getY(screenWidth, screenHeight, preferredSize.width, preferredSize.height), extent.getW(screenWidth, screenHeight, preferredSize.width, preferredSize.height), extent.getH(screenWidth, screenHeight, preferredSize.width, preferredSize.height));
             } else if (!initialPositionSet) {
-                final Dimension preferredSize = getPreferredSize();
+                final Dimension preferredSize = component.getPreferredSize();
                 final int x;
                 //noinspection IfMayBeConditional
                 if (defaultX == null) {
@@ -520,14 +537,14 @@ public class Gui extends JComponent {
                 } else {
                     y = defaultY.evaluate(screenWidth, screenHeight, preferredSize.width, preferredSize.height);
                 }
-                setSize(preferredSize.width, preferredSize.height);
+                component.setSize(preferredSize.width, preferredSize.height);
                 if (defaultX != null && defaultY != null) {
                     setPosition(x-preferredSize.width/2, y-preferredSize.height/2);
                 }
             }
         });
 
-        showDialog(getX(), getY(), screenWidth, screenHeight);
+        showDialog(component.getX(), component.getY(), screenWidth, screenHeight);
     }
 
     /**
@@ -570,8 +587,8 @@ public class Gui extends JComponent {
             newX = x;
             newY = y;
         } else {
-            newX = Math.max(Math.min(x, windowWidth-getWidth()), 0);
-            newY = Math.max(Math.min(y, windowHeight-getHeight()), 0);
+            newX = Math.max(Math.min(x, windowWidth-component.getWidth()), 0);
+            newY = Math.max(Math.min(y, windowHeight-component.getHeight()), 0);
         }
         setPosition(newX, newY);
     }
@@ -580,9 +597,9 @@ public class Gui extends JComponent {
      * Call {@link GUIElement#notifyOpen()} for all GUI elements.
      */
     public void notifyOpen() {
-        final int count = getComponentCount();
+        final int count = component.getComponentCount();
         for (int i = 0; i < count; i++) {
-            final Component component = getComponent(i);
+            final Component component = this.component.getComponent(i);
             if (component.isVisible() && component instanceof GUIElement) {
                 final GUIElement element = (GUIElement)component;
                 element.notifyOpen();

@@ -26,8 +26,8 @@ import com.realtime.crossfire.jxclient.account.CharacterModel;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
-import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Font;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -60,6 +60,12 @@ public class GUICharacterList extends GUIList<GUICharacter> {
      */
     @NotNull
     private final FacesManager facesManager;
+
+    /**
+     * The global {@link GuiFactory} instance.
+     */
+    @NotNull
+    private final GuiFactory guiFactory;
 
     /**
      * The {@link GUIElementListener} to use.
@@ -102,16 +108,18 @@ public class GUICharacterList extends GUIList<GUICharacter> {
      * @param cellHeight the height of cells
      * @param font font to display with
      * @param characterModel what to list characters of
+     * @param guiFactory the global GUI factory instance
      */
-    public GUICharacterList(@NotNull final TooltipManager tooltipManager, @NotNull final FacesManager facesManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final Font font, @NotNull final CharacterModel characterModel) {
-        super(tooltipManager, elementListener, name, cellWidth, cellHeight, new CharacterCellRenderer(new GUICharacter(tooltipManager, facesManager, elementListener, name+"_template", 50, 20, font, 0, characterModel)), null);
+    public GUICharacterList(@NotNull final TooltipManager tooltipManager, @NotNull final FacesManager facesManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final Font font, @NotNull final CharacterModel characterModel, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, cellWidth, cellHeight, new CharacterCellRenderer(new GUICharacter(tooltipManager, facesManager, elementListener, name+"_template", 50, 20, font, 0, characterModel, guiFactory)), null, guiFactory);
         this.characterModel = characterModel;
         this.facesManager = facesManager;
+        this.guiFactory = guiFactory;
         this.facesManager.addFacesManagerListener(face -> {
             if (characterModel.displaysFace(face.getFaceNum())) {
-                final Gui parent = GuiUtils.getGui(this);
+                final Gui parent = guiFactory.getGui(this);
                 if (parent != null) {
-                    parent.repaint();
+                    parent.getComponent().repaint();
                 }
             }
         });
@@ -144,7 +152,7 @@ public class GUICharacterList extends GUIList<GUICharacter> {
             final int oldSize = resizeElements(newSize);
             if (oldSize < newSize) {
                 for (int i = oldSize; i < newSize; i++) {
-                    final GUICharacter metaElement = new GUICharacter(tooltipManager, facesManager, elementListener, name+i, 1, 1, font, i, characterModel);
+                    final GUICharacter metaElement = new GUICharacter(tooltipManager, facesManager, elementListener, name+i, 1, 1, font, i, characterModel, guiFactory);
                     addElement(metaElement);
                     characterModel.addCharacterInformationListener(i, characterInformationListener);
                 }

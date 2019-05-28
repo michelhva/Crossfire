@@ -32,6 +32,7 @@ import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.items.LocationListener;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Image;
 import javax.swing.SwingUtilities;
 import org.jetbrains.annotations.NotNull;
@@ -135,9 +136,10 @@ public class GUIItemFloor extends GUIItemItem {
      * @param nextGroupFace the image for "prev group of items"
      * @param prevGroupFace the image for "next group of items"
      * @param size the size of the component or {@code 0} for undefined
+     * @param guiFactory the global GUI factory instance
      */
-    public GUIItemFloor(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemView floorView, @NotNull final ItemSet itemSet, @NotNull final FacesManager facesManager, @NotNull final Image nextGroupFace, @NotNull final Image prevGroupFace, final int size) {
-        super(tooltipManager, elementListener, name, itemPainter, facesManager);
+    public GUIItemFloor(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemView floorView, @NotNull final ItemSet itemSet, @NotNull final FacesManager facesManager, @NotNull final Image nextGroupFace, @NotNull final Image prevGroupFace, final int size, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, itemPainter, facesManager, guiFactory);
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
         this.floorView = floorView;

@@ -21,13 +21,13 @@
 package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.gui.commandlist.GUICommand;
+import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
-import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.label.GUILabelFailure;
 import com.realtime.crossfire.jxclient.gui.textinput.CommandCallback;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
-import java.awt.Component;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -43,19 +43,27 @@ public class AccountCreateCommand implements GUICommand {
     private final CommandCallback commandCallback;
 
     /**
-     * The {@link Component} to find information for account creation.
+     * The {@link AbstractGUIElement} to find information for account creation.
      */
     @NotNull
-    private final Component element;
+    private final AbstractGUIElement element;
+
+    /**
+     * The global {@link GuiFactory} instance.
+     */
+    @NotNull
+    private final GuiFactory guiFactory;
 
     /**
      * Creates a new instance.
      * @param commandCallback what to inform of the request
      * @param button the element to find the Gui for the other fields
+     * @param guiFactory the global GUI factory instance
      */
-    public AccountCreateCommand(@NotNull final CommandCallback commandCallback, @NotNull final Component button) {
+    public AccountCreateCommand(@NotNull final CommandCallback commandCallback, @NotNull final AbstractGUIElement button, @NotNull final GuiFactory guiFactory) {
         this.commandCallback = commandCallback;
         element = button;
+        this.guiFactory = guiFactory;
     }
 
     @Override
@@ -65,7 +73,7 @@ public class AccountCreateCommand implements GUICommand {
 
     @Override
     public void execute() {
-        final Gui gui = GuiUtils.getGui(element);
+        final Gui gui = guiFactory.getGui(element);
         if (gui == null) {
             return;
         }

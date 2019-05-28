@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.gui.label;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.stats.StatsListener;
 import java.awt.Color;
@@ -167,9 +168,10 @@ public class GUILabelStats2 extends GUIOneLineLabel {
      * @param statApplied the stat change due to gear or skills
      * @param alignment the text alignment
      * @param stats the stats instance to use
+     * @param guiFactory the global GUI factory instance
      */
-    public GUILabelStats2(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Font font, @NotNull final Color colorNormal, @NotNull final Color colorUpgradable, @NotNull final Color colorDepleted, @NotNull final Color colorBoosted, @NotNull final Color colorBoostedUpgradable, @Nullable final Color backgroundColor, final int statCurrent, final int statBase, final int statRace, final int statApplied, @NotNull final Alignment alignment, @NotNull final Stats stats) {
-        super(tooltipManager, elementListener, name, null, font, colorNormal, backgroundColor, alignment, "");
+    public GUILabelStats2(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Font font, @NotNull final Color colorNormal, @NotNull final Color colorUpgradable, @NotNull final Color colorDepleted, @NotNull final Color colorBoosted, @NotNull final Color colorBoostedUpgradable, @Nullable final Color backgroundColor, final int statCurrent, final int statBase, final int statRace, final int statApplied, @NotNull final Alignment alignment, @NotNull final Stats stats, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, null, font, colorNormal, backgroundColor, alignment, "", guiFactory);
         this.colorUpgradable = colorUpgradable;
         this.colorDepleted = colorDepleted;
         this.colorBoosted = colorBoosted;
