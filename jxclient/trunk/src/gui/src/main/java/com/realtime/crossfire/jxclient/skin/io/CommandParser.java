@@ -68,6 +68,7 @@ import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.settings.Macros;
 import com.realtime.crossfire.jxclient.skin.skin.Dialogs;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinCache;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
 import com.realtime.crossfire.jxclient.util.NumberParser;
@@ -103,15 +104,23 @@ public class CommandParser {
     private final JXCSkinCache<AbstractGUIElement> definedGUIElements;
 
     /**
+     * The global {@link GuiFactory} instance.
+     */
+    @NotNull
+    private final GuiFactory guiFactory;
+
+    /**
      * Creates a new instance.
      * @param dialogs the dialogs instance to use
      * @param floorView the floor view to use
      * @param definedGUIElements the defined GUI elements
+     * @param guiFactory the global GUI factory instance
      */
-    public CommandParser(@NotNull final Dialogs dialogs, @NotNull final FloorView floorView, @NotNull final JXCSkinCache<AbstractGUIElement> definedGUIElements) {
+    public CommandParser(@NotNull final Dialogs dialogs, @NotNull final FloorView floorView, @NotNull final JXCSkinCache<AbstractGUIElement> definedGUIElements, @NotNull final GuiFactory guiFactory) {
         this.dialogs = dialogs;
         this.floorView = floorView;
         this.definedGUIElements = definedGUIElements;
+        this.guiFactory = guiFactory;
     }
 
     /**
@@ -625,12 +634,12 @@ public class CommandParser {
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseAccountLogin(@Nullable final AbstractGUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
+    private GUICommand parseAccountLogin(@Nullable final AbstractGUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
         if (element == null) {
             throw new IOException("<element> is required");
         }
 
-        return new AccountLoginCommand(commandCallback, element);
+        return new AccountLoginCommand(commandCallback, element, guiFactory);
     }
 
     /**
@@ -641,12 +650,12 @@ public class CommandParser {
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseAccountCreate(@Nullable final AbstractGUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
+    private GUICommand parseAccountCreate(@Nullable final AbstractGUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
         if (element == null) {
             throw new IOException("<element> is required");
         }
 
-        return new AccountCreateCommand(commandCallback, element);
+        return new AccountCreateCommand(commandCallback, element, guiFactory);
     }
 
     /**
@@ -657,12 +666,12 @@ public class CommandParser {
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseAccountPlay(@Nullable final AbstractGUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
+    private GUICommand parseAccountPlay(@Nullable final AbstractGUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
         if (element == null) {
             throw new IOException("<element> is required");
         }
 
-        return new AccountPlayCharacterCommand(commandCallback, element);
+        return new AccountPlayCharacterCommand(commandCallback, element, guiFactory);
     }
 
     /**
@@ -673,12 +682,12 @@ public class CommandParser {
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseAccountLink(@Nullable final AbstractGUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
+    private GUICommand parseAccountLink(@Nullable final AbstractGUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
         if (element == null) {
             throw new IOException("<element> is required");
         }
 
-        return new AccountLinkCharacterCommand(commandCallback, element);
+        return new AccountLinkCharacterCommand(commandCallback, element, guiFactory);
     }
 
     /**
@@ -689,12 +698,12 @@ public class CommandParser {
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseAccountCreateCharacter(@Nullable final AbstractGUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
+    private GUICommand parseAccountCreateCharacter(@Nullable final AbstractGUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
         if (element == null) {
             throw new IOException("<element> is required");
         }
 
-        return new AccountCreateCharacterCommand(commandCallback, element);
+        return new AccountCreateCharacterCommand(commandCallback, element, guiFactory);
     }
 
     /**
@@ -705,12 +714,12 @@ public class CommandParser {
      * @throws IOException if a syntax error occurs
      */
     @NotNull
-    private static GUICommand parseAccountPassword(@Nullable final AbstractGUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
+    private GUICommand parseAccountPassword(@Nullable final AbstractGUIElement element, @NotNull final CommandCallback commandCallback) throws IOException {
         if (element == null) {
             throw new IOException("<element> is required");
         }
 
-        return new AccountPasswordCommand(commandCallback, element);
+        return new AccountPasswordCommand(commandCallback, element, guiFactory);
     }
 
     /**

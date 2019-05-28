@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.server.crossfire.Model;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Component;
 import javax.swing.JLabel;
 import javax.swing.JList;
@@ -101,9 +102,10 @@ public class GUIRacesComboBox extends GUIComboBox<String> {
      * @param name the name of this element
      * @param model the model to display
      * @param label the label to update or {@code null}
+     * @param guiFactory the global GUI factory instance
      */
-    public GUIRacesComboBox(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Model model, @Nullable final GUILabelLog label) {
-        super(tooltipManager, elementListener, name, label);
+    public GUIRacesComboBox(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Model model, @Nullable final GUILabelLog label, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, label, guiFactory);
         this.model = model;
         model.getNewCharacterInformation().addNewCharacterInformationListener(newCharacterInformationListener);
         updateModel();

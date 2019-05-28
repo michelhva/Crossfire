@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.gui.textinput;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.settings.CommandHistory;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
@@ -66,9 +67,10 @@ public class GUICommandText extends GUIText {
      * @param text the initially entered text
      * @param commandExecutor the command executor for executing entered
      * commands
+     * @param guiFactory the global GUI factory instance
      */
-    public GUICommandText(@NotNull final CommandCallback commandCallback, @Nullable final CommandHistory commandHistory, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Image activeImage, @NotNull final Image inactiveImage, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, @NotNull final CommandExecutor commandExecutor) {
-        super(commandCallback, commandHistory, tooltipManager, elementListener, name, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, text);
+    public GUICommandText(@NotNull final CommandCallback commandCallback, @Nullable final CommandHistory commandHistory, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Image activeImage, @NotNull final Image inactiveImage, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, @NotNull final CommandExecutor commandExecutor, @NotNull final GuiFactory guiFactory) {
+        super(commandCallback, commandHistory, tooltipManager, elementListener, name, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, text, guiFactory);
         this.commandExecutor = commandExecutor;
     }
 

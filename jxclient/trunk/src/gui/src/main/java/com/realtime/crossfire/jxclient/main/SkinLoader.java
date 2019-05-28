@@ -23,10 +23,10 @@ package com.realtime.crossfire.jxclient.main;
 
 import com.realtime.crossfire.jxclient.account.CharacterModel;
 import com.realtime.crossfire.jxclient.faces.SmoothFaces;
+import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
-import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.misc.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.textinput.CommandCallback;
@@ -46,7 +46,6 @@ import com.realtime.crossfire.jxclient.skin.source.JXCSkinDirSource;
 import com.realtime.crossfire.jxclient.skin.source.JXCSkinSource;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.util.Resolution;
-import java.awt.Component;
 import java.io.File;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -203,8 +202,8 @@ public class SkinLoader {
         final GUIElementListener elementListener = new GUIElementListener() {
 
             @Override
-            public void raiseDialog(@NotNull final Component component) {
-                final Gui gui = GuiUtils.getGui(component);
+            public void raiseDialog(@NotNull final AbstractGUIElement component) {
+                final Gui gui = guiFactory.getGui(component);
                 if (gui != null) {
                     windowRenderer.raiseDialog(gui);
                 }
@@ -212,7 +211,7 @@ public class SkinLoader {
 
             @Override
             public void activeChanged(@NotNull final ActivatableGUIElement element, final boolean active) {
-                final Gui gui = GuiUtils.getGui(element);
+                final Gui gui = guiFactory.getGui(element);
                 if (gui != null) {
                     gui.setActiveElement(element, active);
                 }
@@ -220,13 +219,13 @@ public class SkinLoader {
 
             @Override
             public boolean isActive(@NotNull final ActivatableGUIElement element) {
-                final Gui gui = GuiUtils.getGui(element);
+                final Gui gui = guiFactory.getGui(element);
                 return gui != null && gui.isActiveElement(element);
             }
 
         };
 
-        final JXCSkin skin = skinLoader.load(skinSource, server, guiStateManager, tooltipManager, windowRenderer, elementListener, metaserverModel, characterModel, commandQueue, shortcuts, commandExecutor, currentSpellManager, commandCallback, macros, guiFactory, smoothFaces);
+        final JXCSkin skin = skinLoader.load(skinSource, server, guiStateManager, tooltipManager, windowRenderer, elementListener, metaserverModel, characterModel, commandQueue, shortcuts, commandExecutor, currentSpellManager, commandCallback, macros, smoothFaces);
         if (resolution != null) {
             if (skin.getMinResolution().getWidth() > resolution.getWidth() || skin.getMinResolution().getHeight() > resolution.getHeight()) {
                 throw new JXCSkinException("resolution "+resolution+" is not supported by this skin");

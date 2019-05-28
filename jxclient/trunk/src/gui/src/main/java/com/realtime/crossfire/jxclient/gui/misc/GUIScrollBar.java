@@ -26,6 +26,7 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable2;
 import com.realtime.crossfire.jxclient.gui.scrollable.ScrollableListener;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -110,9 +111,10 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
      * @param scrollable the target element to scroll
      * @param colorBackground the background color of the slider
      * @param colorForeground the foreground color of the slider
+     * @param guiFactory the global GUI factory instance
      */
-    public GUIScrollBar(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final boolean proportionalSlider, @NotNull final GUIScrollable2 scrollable, @NotNull final Color colorBackground, @NotNull final Color colorForeground) {
-        super(tooltipManager, elementListener, name, Transparency.OPAQUE);
+    public GUIScrollBar(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final boolean proportionalSlider, @NotNull final GUIScrollable2 scrollable, @NotNull final Color colorBackground, @NotNull final Color colorForeground, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, Transparency.OPAQUE, guiFactory);
         this.proportionalSlider = proportionalSlider;
         this.scrollable = scrollable;
         this.colorBackground = colorBackground;

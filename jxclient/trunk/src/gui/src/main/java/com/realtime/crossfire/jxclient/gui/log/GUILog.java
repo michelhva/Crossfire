@@ -26,6 +26,7 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable2;
 import com.realtime.crossfire.jxclient.gui.scrollable.ScrollableListener;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import com.realtime.crossfire.jxclient.util.EventListenerList2;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -118,9 +119,10 @@ public abstract class GUILog extends AbstractGUIElement implements GUIScrollable
      * @param backgroundImage the background image; may be {@code null} if
      * unused
      * @param fonts the {@code Fonts} instance for looking up fonts
+     * @param guiFactory the global GUI factory instance
      */
-    protected GUILog(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final Image backgroundImage, @NotNull final Fonts fonts) {
-        super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT);
+    protected GUILog(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final Image backgroundImage, @NotNull final Fonts fonts, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT, guiFactory);
         this.backgroundImage = backgroundImage;
         this.fonts = fonts;
         final FontRenderContext context;

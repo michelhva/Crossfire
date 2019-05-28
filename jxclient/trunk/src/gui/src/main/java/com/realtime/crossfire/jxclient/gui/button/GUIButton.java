@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.gui.button;
 import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -117,9 +118,10 @@ public class GUIButton extends AbstractButton {
      * @param autoRepeat whether the button should autorepeat while being
      * pressed
      * @param commandList the commands to execute when the button is elected
+     * @param guiFactory the global GUI factory instance
      */
-    public GUIButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final BufferedImage imageUp, @NotNull final BufferedImage imageDown, @Nullable final String text, @Nullable final Font font, @Nullable final Color color, final int textX, final int textY, final boolean autoRepeat, @NotNull final CommandList commandList) {
-        super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT, autoRepeat, commandList);
+    public GUIButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final BufferedImage imageUp, @NotNull final BufferedImage imageDown, @Nullable final String text, @Nullable final Font font, @Nullable final Color color, final int textX, final int textY, final boolean autoRepeat, @NotNull final CommandList commandList, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT, autoRepeat, commandList, guiFactory);
         final int preferredWidth = imageUp.getWidth();
         if (preferredWidth != imageDown.getWidth()) {
             throw new IllegalArgumentException("preferredWidth="+preferredWidth+", imageWidth="+imageDown.getWidth());

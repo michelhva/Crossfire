@@ -29,6 +29,7 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.CfItemListener;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -97,9 +98,10 @@ public abstract class GUIItemItem extends GUIItem {
      * @param name the name of this element
      * @param itemPainter the item painter for painting the icon
      * @param facesManager the faces manager instance to use
+     * @param guiFactory the global GUI factory instance
      */
-    protected GUIItemItem(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final ItemPainter itemPainter, @NotNull final FacesManager facesManager) {
-        super(tooltipManager, elementListener, name);
+    protected GUIItemItem(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final ItemPainter itemPainter, @NotNull final FacesManager facesManager, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, guiFactory);
         this.itemPainter = itemPainter;
         this.facesManager = facesManager;
         this.facesManager.addFacesManagerListener(facesManagerListener);

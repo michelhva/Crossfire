@@ -23,12 +23,11 @@ package com.realtime.crossfire.jxclient.gui.misc;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
-import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.label.Alignment;
 import com.realtime.crossfire.jxclient.gui.label.GUIOneLineLabel;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Color;
-import java.awt.Component;
 import java.awt.Font;
 import java.awt.Point;
 import java.awt.event.MouseEvent;
@@ -53,6 +52,12 @@ public class GUIDialogTitle extends GUIOneLineLabel {
     private final JXCWindowRenderer windowRenderer;
 
     /**
+     * The global {@link GuiFactory} instance.
+     */
+    @NotNull
+    private final GuiFactory guiFactory;
+
+    /**
      * Set to the distance of the dialog coordinates relative to the mouse
      * position while dragging start. Else set to {@code null}.
      */
@@ -69,23 +74,25 @@ public class GUIDialogTitle extends GUIOneLineLabel {
      * @param textColor the font color
      * @param backgroundColor the background color
      * @param title the title text
+     * @param guiFactory the global GUI factory instance
      */
-    public GUIDialogTitle(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Font textFont, @NotNull final Color textColor, @Nullable final Color backgroundColor, @NotNull final String title) {
-        super(tooltipManager, elementListener, name, null, textFont, textColor, backgroundColor, Alignment.LEFT, title);
+    public GUIDialogTitle(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Font textFont, @NotNull final Color textColor, @Nullable final Color backgroundColor, @NotNull final String title, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, null, textFont, textColor, backgroundColor, Alignment.LEFT, title, guiFactory);
         this.windowRenderer = windowRenderer;
+        this.guiFactory = guiFactory;
     }
 
     @Override
     public void mousePressed(@NotNull final MouseEvent e) {
         super.mousePressed(e);
-        final Component gui = GuiUtils.getGui(this);
+        final Gui gui = guiFactory.getGui(this);
         if (gui == null) {
             offset = null;
             return;
         }
 
         final Point point = e.getLocationOnScreen();
-        offset = new Point(gui.getX()-point.x, gui.getY()-point.y);
+        offset = new Point(gui.getComponent().getX()-point.x, gui.getComponent().getY()-point.y);
     }
 
     @Override
@@ -111,7 +118,7 @@ public class GUIDialogTitle extends GUIOneLineLabel {
             return;
         }
 
-        final Gui gui = GuiUtils.getGui(this);
+        final Gui gui = guiFactory.getGui(this);
         if (gui == null || gui.isAutoSize()) {
             offset = null;
             return;

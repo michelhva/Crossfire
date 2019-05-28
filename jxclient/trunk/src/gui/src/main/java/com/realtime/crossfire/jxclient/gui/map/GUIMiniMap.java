@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.map.MapUpdaterState;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -102,9 +103,10 @@ public class GUIMiniMap extends AbstractGUIMap {
      * darkness values into colors
      * @param width the map width in squares
      * @param height the map height in squares
+     * @param guiFactory the global GUI factory instance
      */
-    public GUIMiniMap(final boolean avoidCopyArea, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final FacesProvider facesProvider, @NotNull final DarknessColors darknessColors, final int width, final int height) {
-        super(avoidCopyArea, tooltipManager, elementListener, name, mapUpdaterState, facesProvider, null, darknessColors);
+    public GUIMiniMap(final boolean avoidCopyArea, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final FacesProvider facesProvider, @NotNull final DarknessColors darknessColors, final int width, final int height, @NotNull final GuiFactory guiFactory) {
+        super(avoidCopyArea, tooltipManager, elementListener, name, mapUpdaterState, facesProvider, null, darknessColors, guiFactory);
         this.mapUpdaterState = mapUpdaterState;
         this.width = width;
         this.height = height;

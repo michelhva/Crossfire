@@ -25,12 +25,12 @@ import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
-import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
+import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemItem;
 import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Adjustable;
-import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Rectangle;
 import java.awt.Transparency;
@@ -75,6 +75,12 @@ public abstract class GUIList<T extends GUIElement> extends ActivatableGUIElemen
      */
     @Nullable
     private final CommandList doubleClickCommandList;
+
+    /**
+     * The global {@link GuiFactory} instance.
+     */
+    @NotNull
+    private final GuiFactory guiFactory;
 
     /**
      * The list model of {@link #list}.
@@ -128,12 +134,14 @@ public abstract class GUIList<T extends GUIElement> extends ActivatableGUIElemen
      * @param listCellRenderer the renderer for the list
      * @param doubleClickCommandList the command list to execute on double-click
      * or {@code null} to ignore double-clicks
+     * @param guiFactory the global GUI factory instance
      */
-    protected GUIList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final GUIListCellRenderer<T> listCellRenderer, @Nullable final CommandList doubleClickCommandList) {
-        super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT);
+    protected GUIList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final GUIListCellRenderer<T> listCellRenderer, @Nullable final CommandList doubleClickCommandList, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT, guiFactory);
         this.cellHeight = cellHeight;
         this.listCellRenderer = listCellRenderer;
         this.doubleClickCommandList = doubleClickCommandList;
+        this.guiFactory = guiFactory;
 
         list.setCellRenderer(listCellRenderer);
         list.setFixedCellWidth(cellWidth);
@@ -484,13 +492,13 @@ public abstract class GUIList<T extends GUIElement> extends ActivatableGUIElemen
             if (rectangle == null) {
                 setTooltipText(null);
             } else {
-                final Component gui = GuiUtils.getGui(this);
+                final Gui gui = guiFactory.getGui(this);
                 if (gui == null) {
                     tooltipIndex = -1;
                     tooltipRectangle = null;
                     setTooltipText(null);
                 } else {
-                    updateTooltip(tooltipIndex, gui.getX()+getX()+rectangle.x, gui.getY()+getY()+rectangle.y, rectangle.width, rectangle.height);
+                    updateTooltip(tooltipIndex, gui.getComponent().getX()+getX()+rectangle.x, gui.getComponent().getY()+getY()+rectangle.y, rectangle.width, rectangle.height);
                 }
             }
         }

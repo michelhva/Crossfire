@@ -31,6 +31,7 @@ import com.realtime.crossfire.jxclient.items.ItemSet;
 import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Image;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -123,6 +124,12 @@ public class GUIFloorList extends GUIItemList<GUIItemFloor> {
     private final Image prevGroupFace;
 
     /**
+     * The global {@link GuiFactory} instance.
+     */
+    @NotNull
+    private final GuiFactory guiFactory;
+
+    /**
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
@@ -139,9 +146,10 @@ public class GUIFloorList extends GUIItemList<GUIItemFloor> {
      * @param itemSet the item set to use
      * @param nextGroupFace the image for "next group of items"
      * @param prevGroupFace the image for "prev group of items"
+     * @param guiFactory the global GUI factory instance
      */
-    public GUIFloorList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final CommandQueue commandQueue, @NotNull final ItemPainter itemPainter, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final ItemSet itemSet, @NotNull final Image nextGroupFace, @NotNull final Image prevGroupFace) {
-        super(tooltipManager, elementListener, name, cellWidth, cellHeight, itemView, currentItem, new GUIItemFloor(tooltipManager, elementListener, commandQueue, name+"_template", itemPainter, -1, crossfireServerConnection, itemView, itemSet, facesManager, nextGroupFace, prevGroupFace, cellHeight));
+    public GUIFloorList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final CommandQueue commandQueue, @NotNull final ItemPainter itemPainter, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final ItemSet itemSet, @NotNull final Image nextGroupFace, @NotNull final Image prevGroupFace, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, cellWidth, cellHeight, itemView, currentItem, new GUIItemFloor(tooltipManager, elementListener, commandQueue, name+"_template", itemPainter, -1, crossfireServerConnection, itemView, itemSet, facesManager, nextGroupFace, prevGroupFace, cellHeight, guiFactory), guiFactory);
         this.tooltipManager = tooltipManager;
         this.elementListener = elementListener;
         this.name = name;
@@ -155,6 +163,7 @@ public class GUIFloorList extends GUIItemList<GUIItemFloor> {
         this.itemSet = itemSet;
         this.nextGroupFace = nextGroupFace;
         this.prevGroupFace = prevGroupFace;
+        this.guiFactory = guiFactory;
     }
 
     /**
@@ -168,7 +177,7 @@ public class GUIFloorList extends GUIItemList<GUIItemFloor> {
     @Override
     @NotNull
     protected GUIItemFloor newItem(final int index) {
-        return new GUIItemFloor(tooltipManager, elementListener, commandQueue, name+index, itemPainter, index, crossfireServerConnection, itemView, itemSet, facesManager, nextGroupFace, prevGroupFace, 0);
+        return new GUIItemFloor(tooltipManager, elementListener, commandQueue, name+index, itemPainter, index, crossfireServerConnection, itemView, itemSet, facesManager, nextGroupFace, prevGroupFace, 0, guiFactory);
     }
 
     @Override

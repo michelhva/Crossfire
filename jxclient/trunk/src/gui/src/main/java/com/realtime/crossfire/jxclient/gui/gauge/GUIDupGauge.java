@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -116,9 +117,10 @@ public class GUIDupGauge extends AbstractGUIElement implements GUIGaugeListener 
      * @param tooltipPrefix the prefix for displaying tooltips; if set to {@code
      * null} no tooltips are shown
      * @param commandList the command list that is executed on button 2
+     * @param guiFactory the global GUI factory instance
      */
-    public GUIDupGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Image fullImageDiv, @NotNull final Image fullImageMod, @Nullable final Image emptyImage, @NotNull final Orientation orientationDiv, @NotNull final Orientation orientationMod, @Nullable final String tooltipPrefix, @Nullable final CommandList commandList) {
-        super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT);
+    public GUIDupGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Image fullImageDiv, @NotNull final Image fullImageMod, @Nullable final Image emptyImage, @NotNull final Orientation orientationDiv, @NotNull final Orientation orientationMod, @Nullable final String tooltipPrefix, @Nullable final CommandList commandList, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT, guiFactory);
         this.emptyImage = emptyImage;
         this.orientationDiv = orientationDiv;
         this.orientationMod = orientationMod;

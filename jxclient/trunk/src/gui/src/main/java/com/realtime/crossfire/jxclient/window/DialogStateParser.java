@@ -126,7 +126,7 @@ public class DialogStateParser {
                                 }
 
                                 try {
-                                    dialog.setSize(w, h);
+                                    dialog.getComponent().setSize(w, h);
                                 } catch (final IllegalArgumentException ex) {
                                     throw new IOException("invalid dialog size for "+tmp[1]+": "+w+"x"+h, ex);
                                 }
@@ -211,27 +211,27 @@ public class DialogStateParser {
             return;
         }
 
-        final int w = dialog.getWidth();
+        final int w = dialog.getComponent().getWidth();
         if (w <= 0) {
             return;
         }
 
-        final int h = dialog.getHeight();
+        final int h = dialog.getComponent().getHeight();
         if (h <= 0) {
             return;
         }
 
         bw.write(type);
         bw.write(" ");
-        bw.write(dialog.getName());
+        bw.write(dialog.getComponent().getName());
         bw.write(" ");
-        bw.write(Integer.toString(dialog.getX()));
+        bw.write(Integer.toString(dialog.getComponent().getX()));
         bw.write(" ");
-        bw.write(Integer.toString(dialog.getY()));
+        bw.write(Integer.toString(dialog.getComponent().getY()));
         bw.write(" ");
-        bw.write(Integer.toString(dialog.getWidth()));
+        bw.write(Integer.toString(dialog.getComponent().getWidth()));
         bw.write(" ");
-        bw.write(Integer.toString(dialog.getHeight()));
+        bw.write(Integer.toString(dialog.getComponent().getHeight()));
         bw.write("\n");
     }
 

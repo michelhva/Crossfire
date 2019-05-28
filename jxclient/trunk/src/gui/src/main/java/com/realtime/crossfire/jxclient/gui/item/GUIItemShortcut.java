@@ -34,6 +34,7 @@ import com.realtime.crossfire.jxclient.shortcuts.ShortcutSpell;
 import com.realtime.crossfire.jxclient.shortcuts.ShortcutVisitor;
 import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;
 import com.realtime.crossfire.jxclient.shortcuts.ShortcutsListener;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.spells.Spell;
 import java.awt.Color;
@@ -188,9 +189,10 @@ public class GUIItemShortcut extends GUIItem {
      * @param font the font for displaying the key that activates the shortcut
      * @param currentSpellManager the current spell manager for tracking the
      * active spell
+     * @param guiFactory the global GUI factory instance
      */
-    public GUIItemShortcut(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final Color castColor, @Nullable final Image castImage, @Nullable final Color invokeColor, @Nullable final Image invokeImage, final int index, @NotNull final FacesManager facesManager, @NotNull final Shortcuts shortcuts, @NotNull final Font font, @NotNull final CurrentSpellManager currentSpellManager) {
-        super(tooltipManager, elementListener, name);
+    public GUIItemShortcut(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final Color castColor, @Nullable final Image castImage, @Nullable final Color invokeColor, @Nullable final Image invokeImage, final int index, @NotNull final FacesManager facesManager, @NotNull final Shortcuts shortcuts, @NotNull final Font font, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, guiFactory);
         this.shortcuts = shortcuts;
         this.facesManager = facesManager;
         this.castColor = castColor;

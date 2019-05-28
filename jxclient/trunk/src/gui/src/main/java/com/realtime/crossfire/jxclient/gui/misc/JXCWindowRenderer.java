@@ -538,10 +538,10 @@ public class JXCWindowRenderer {
         if (currentGui == null) {
             frame.validate();
         } else {
-            addToLayeredPane(currentGui, 0, -1);
+            addToLayeredPane(currentGui.getComponent(), 0, -1);
             if (windowWidth > 0 && windowHeight > 0) {
                 assert currentGui != null;
-                currentGui.setSize(windowWidth, windowHeight);
+                currentGui.getComponent().setSize(windowWidth, windowHeight);
             }
 
             frame.validate();
@@ -564,7 +564,7 @@ public class JXCWindowRenderer {
         this.windowHeight = windowHeight;
         debugScreenWrite("updateWindowSize: gui size="+this.windowWidth+"x"+this.windowHeight);
         if (currentGui != null) {
-            currentGui.setSize(windowWidth, windowHeight);
+            currentGui.getComponent().setSize(windowWidth, windowHeight);
         }
         if (frame != null) {
             frame.validate();
@@ -594,7 +594,7 @@ public class JXCWindowRenderer {
     public void endRendering() {
         if (isFullScreen && frame != null) {
             if (currentGui != null) {
-                removeFromLayeredPane(currentGui);
+                removeFromLayeredPane(currentGui.getComponent());
             }
             final Resolution minResolution = new Resolution(1, 1);
             assert frame != null;
@@ -724,17 +724,17 @@ public class JXCWindowRenderer {
     public void setCurrentGui(@NotNull final Gui gui) {
         SwingUtilities2.invokeAndWait(() -> {
             if (frame != null && currentGui != null) {
-                removeFromLayeredPane(currentGui);
+                removeFromLayeredPane(currentGui.getComponent());
             }
             currentGui = gui;
             //noinspection VariableNotUsedInsideIf
             if (frame != null) {
-                addToLayeredPane(currentGui, 0, -1);
+                addToLayeredPane(currentGui.getComponent(), 0, -1);
             }
 
             if (windowWidth > 0 && windowHeight > 0) {
                 assert currentGui != null;
-                currentGui.setSize(windowWidth, windowHeight);
+                currentGui.getComponent().setSize(windowWidth, windowHeight);
             }
             if (frame != null) {
                 frame.validate();
@@ -808,9 +808,9 @@ public class JXCWindowRenderer {
         this.rendererGuiState = rendererGuiState;
         SwingUtilities2.invokeAndWait(() -> {
             for (Gui dialog : openDialogs) {
-                removeFromLayeredPane(dialog);
+                removeFromLayeredPane(dialog.getComponent());
                 if (!dialog.isHidden(rendererGuiState)) {
-                    addToLayeredPane(dialog, 1, 0);
+                    addToLayeredPane(dialog.getComponent(), 1, 0);
                 }
             }
             if (frame != null) {
@@ -881,8 +881,8 @@ public class JXCWindowRenderer {
      * @param dialog the dialog to open
      */
     private void openDialogInt(@NotNull final Gui dialog) {
-        addToLayeredPane(dialog, 1, 0);
-        final Dimension preferredSize = dialog.getPreferredSize();
+        addToLayeredPane(dialog.getComponent(), 1, 0);
+        final Dimension preferredSize = dialog.getComponent().getPreferredSize();
         final Dimension size;
         //noinspection IfMayBeConditional
         if (preferredSize == null) {
@@ -890,7 +890,7 @@ public class JXCWindowRenderer {
         } else {
             size = new Dimension(Math.min(preferredSize.width, windowWidth), Math.min(preferredSize.height, windowHeight));
         }
-        dialog.setSize(size);
+        dialog.getComponent().setSize(size);
         if (frame != null) {
             frame.validate();
         }
@@ -910,7 +910,7 @@ public class JXCWindowRenderer {
         final Point mouse = frame == null ? null : frame.getMousePosition(true);
         if (mouse == null) {
             openDialogs.remove(dialog);
-            removeFromLayeredPane(dialog);
+            removeFromLayeredPane(dialog.getComponent());
             if (frame != null) {
                 frame.validate();
                 // @todo too aggressive?
@@ -922,7 +922,7 @@ public class JXCWindowRenderer {
                 final MouseEvent mouseEvent = new MouseEvent(frame, 0, System.currentTimeMillis(), 0, mouse.x, mouse.y, 0, false);
                 mouseTracker.mouseExited(mouseEvent);
                 openDialogs.remove(dialog);
-                removeFromLayeredPane(dialog);
+                removeFromLayeredPane(dialog.getComponent());
                 if (frame != null) {
                     frame.validate();
                     // @todo too aggressive?
@@ -932,7 +932,7 @@ public class JXCWindowRenderer {
                 mouseTracker.mouseEntered(findElement(mouseEvent), mouseEvent);
             } else {
                 openDialogs.remove(dialog);
-                removeFromLayeredPane(dialog);
+                removeFromLayeredPane(dialog.getComponent());
                 if (frame != null) {
                     frame.validate();
                     // @todo too aggressive?
@@ -1137,7 +1137,7 @@ public class JXCWindowRenderer {
         final int eY = ce.getY();
         for (Gui dialog : openDialogs) {
             if (!dialog.isHidden(rendererGuiState)) {
-                elected = getElementFromPoint(dialog, eX-dialog.getX(), eY-dialog.getY());
+                elected = getElementFromPoint(dialog, eX-dialog.getComponent().getX(), eY-dialog.getComponent().getY());
                 //noinspection VariableNotUsedInsideIf
                 if (elected != null) {
                     break;

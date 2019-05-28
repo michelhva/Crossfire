@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.gui.log.GUILog;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Transparency;
@@ -87,9 +88,10 @@ public abstract class GUIComboBox<T> extends AbstractGUIElement {
      * @param elementListener the element listener to notify
      * @param name the name of this element
      * @param label the label to update or {@code null}
+     * @param guiFactory the global GUI factory instance
      */
-    protected GUIComboBox(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final GUILabelLog label) {
-        super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT);
+    protected GUIComboBox(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final GUILabelLog label, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT, guiFactory);
         this.label = label;
         comboBox.setFocusable(false);
         comboBox.setRenderer(renderer);

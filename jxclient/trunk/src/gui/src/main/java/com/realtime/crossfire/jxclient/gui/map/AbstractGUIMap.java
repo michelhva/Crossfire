@@ -35,6 +35,7 @@ import com.realtime.crossfire.jxclient.map.MapSizeListener;
 import com.realtime.crossfire.jxclient.map.MapUpdaterState;
 import com.realtime.crossfire.jxclient.map.NewmapListener;
 import com.realtime.crossfire.jxclient.protocol.Map2;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import com.realtime.crossfire.jxclient.util.MathUtils;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -305,9 +306,10 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
      * not draw smoothed faces
      * @param darknessColors the darkness colors instance for converting
      * darkness values into colors
+     * @param guiFactory the global GUI factory instance
      */
-    protected AbstractGUIMap(final boolean avoidCopyArea, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final FacesProvider facesProvider, @Nullable final SmoothingRenderer smoothingRenderer, @NotNull final DarknessColors darknessColors) {
-        super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT);
+    protected AbstractGUIMap(final boolean avoidCopyArea, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final MapUpdaterState mapUpdaterState, @NotNull final FacesProvider facesProvider, @Nullable final SmoothingRenderer smoothingRenderer, @NotNull final DarknessColors darknessColors, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT, guiFactory);
         this.avoidCopyArea = avoidCopyArea;
         this.smoothingRenderer = smoothingRenderer;
         this.darknessColors = darknessColors;

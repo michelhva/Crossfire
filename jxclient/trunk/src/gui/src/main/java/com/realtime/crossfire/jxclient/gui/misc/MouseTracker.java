@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.gui.misc;
 import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -64,6 +65,12 @@ public class MouseTracker {
     private final Writer debugMouse;
 
     /**
+     * The global {@link GuiFactory} instance.
+     */
+    @NotNull
+    private final GuiFactory guiFactory;
+
+    /**
      * A formatter for timestamps.
      */
     @NotNull
@@ -101,10 +108,12 @@ public class MouseTracker {
      * Creates a new instance.
      * @param debugGui whether GUI elements should be highlighted
      * @param debugMouse the writer to write mouse debug to or {@code null}
+     * @param guiFactory the global GUI factory instance
      */
-    public MouseTracker(final boolean debugGui, @Nullable final Writer debugMouse) {
+    public MouseTracker(final boolean debugGui, @Nullable final Writer debugMouse, @NotNull final GuiFactory guiFactory) {
         this.debugGui = debugGui;
         this.debugMouse = debugMouse;
+        this.guiFactory = guiFactory;
     }
 
     /**
@@ -259,7 +268,7 @@ public class MouseTracker {
             g.fillRect(0, 2, dimension.width+4, dimension.height+8);
             g.setColor(Color.RED);
             g.drawString(text, 2, 16);
-            g.drawRect(GuiUtils.getElementX(component), GuiUtils.getElementY(component), component.getWidth()-1, component.getHeight()-1);
+            g.drawRect(guiFactory.getElementX(component), guiFactory.getElementY(component), component.getWidth()-1, component.getHeight()-1);
         }
     }
 

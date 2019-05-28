@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.gui.misc;
 import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Image;
@@ -63,9 +64,10 @@ public class GUIPicture extends AbstractGUIElement {
      * @param alpha the transparency value
      * @param preferredWidth the preferred width of this picture
      * @param preferredHeight the preferred height of this picture
+     * @param guiFactory the global GUI factory instance
      */
-    public GUIPicture(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final BufferedImage image, final float alpha, final int preferredWidth, final int preferredHeight) {
-        super(tooltipManager, elementListener, name, alpha < 1.0F ? Transparency.TRANSLUCENT : image.getTransparency());
+    public GUIPicture(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final BufferedImage image, final float alpha, final int preferredWidth, final int preferredHeight, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, alpha < 1.0F ? Transparency.TRANSLUCENT : image.getTransparency(), guiFactory);
         this.image = image;
         preferredSize = new Dimension(preferredWidth, preferredHeight);
     }

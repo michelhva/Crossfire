@@ -29,6 +29,7 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -95,9 +96,10 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
      * @param font the font to use
      * @param defaultIndex the initial metaserver index
      * @param characterModel the character model to monitor
+     * @param guiFactory the global GUI factory instance
      */
-    public GUICharacter(@NotNull final TooltipManager tooltipManager, @NotNull final FacesManager facesManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int w, final int h, @NotNull final Font font, final int defaultIndex, final CharacterModel characterModel) {
-        super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT);
+    public GUICharacter(@NotNull final TooltipManager tooltipManager, @NotNull final FacesManager facesManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int w, final int h, @NotNull final Font font, final int defaultIndex, final CharacterModel characterModel, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT, guiFactory);
         setSize(w, h);
         this.facesManager = facesManager;
         this.characterModel = characterModel;

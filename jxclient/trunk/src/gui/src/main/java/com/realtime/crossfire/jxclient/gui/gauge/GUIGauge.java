@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.AlphaComposite;
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -110,9 +111,10 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
      * null} no tooltips are shown
      * @param alpha alpha value of the gauge to use
      * @param commandList the command list that is executed on button 2
+     * @param guiFactory the global GUI factory instance
      */
-    public GUIGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final Image fullImage, @Nullable final Image negativeImage, @Nullable final Image emptyImage, @NotNull final Orientation orientation, @Nullable final String tooltipFormat, final float alpha, @Nullable final CommandList commandList) {
-        super(tooltipManager, elementListener, name, alpha < 1.0F ? Transparency.TRANSLUCENT : Transparency.OPAQUE);
+    public GUIGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @Nullable final Image fullImage, @Nullable final Image negativeImage, @Nullable final Image emptyImage, @NotNull final Orientation orientation, @Nullable final String tooltipFormat, final float alpha, @Nullable final CommandList commandList, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, alpha < 1.0F ? Transparency.TRANSLUCENT : Transparency.OPAQUE, guiFactory);
         this.emptyImage = emptyImage;
         this.orientation = orientation;
         this.tooltipFormat = tooltipFormat;

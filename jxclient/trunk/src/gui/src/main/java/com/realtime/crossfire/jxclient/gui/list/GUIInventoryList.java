@@ -31,6 +31,7 @@ import com.realtime.crossfire.jxclient.items.FloorView;
 import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -100,6 +101,12 @@ public class GUIInventoryList extends GUIItemList<GUIItemInventory> {
     private final FloorView floorView;
 
     /**
+     * The global {@link GuiFactory} instance.
+     */
+    @NotNull
+    private final GuiFactory guiFactory;
+
+    /**
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
@@ -114,9 +121,10 @@ public class GUIInventoryList extends GUIItemList<GUIItemInventory> {
      * @param crossfireServerConnection the connection instance
      * @param facesManager the faces manager instance to use
      * @param floorView the floor view to use
+     * @param guiFactory the global GUI factory instance
      */
-    public GUIInventoryList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final CommandQueue commandQueue, @NotNull final ItemPainter itemPainter, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final FloorView floorView) {
-        super(tooltipManager, elementListener, name, cellWidth, cellHeight, itemView, currentItem, new GUIItemInventory(tooltipManager, elementListener, commandQueue, name+"_template", itemPainter, -1, crossfireServerConnection, facesManager, floorView, itemView, cellHeight));
+    public GUIInventoryList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final CommandQueue commandQueue, @NotNull final ItemPainter itemPainter, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final FloorView floorView, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, cellWidth, cellHeight, itemView, currentItem, new GUIItemInventory(tooltipManager, elementListener, commandQueue, name+"_template", itemPainter, -1, crossfireServerConnection, facesManager, floorView, itemView, cellHeight, guiFactory), guiFactory);
         this.tooltipManager = tooltipManager;
         this.elementListener = elementListener;
         this.name = name;
@@ -126,12 +134,13 @@ public class GUIInventoryList extends GUIItemList<GUIItemInventory> {
         this.crossfireServerConnection = crossfireServerConnection;
         this.facesManager = facesManager;
         this.floorView = floorView;
+        this.guiFactory = guiFactory;
     }
 
     @Override
     @NotNull
     protected GUIItemInventory newItem(final int index) {
-        return new GUIItemInventory(tooltipManager, elementListener, commandQueue, name+index, itemPainter, index, crossfireServerConnection, facesManager, floorView, itemView, 0);
+        return new GUIItemInventory(tooltipManager, elementListener, commandQueue, name+index, itemPainter, index, crossfireServerConnection, facesManager, floorView, itemView, 0, guiFactory);
     }
 
     @Override

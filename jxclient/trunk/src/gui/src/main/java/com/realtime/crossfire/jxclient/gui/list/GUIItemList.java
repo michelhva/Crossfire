@@ -30,6 +30,7 @@ import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.items.LocationsListener;
+import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.event.MouseEvent;
 import javax.swing.JList;
 import javax.swing.SwingUtilities;
@@ -87,9 +88,10 @@ public abstract class GUIItemList<T extends GUIItemItem> extends GUIList<T> {
      * @param currentItem the label to update with information about the
      * selected item.
      * @param templateItem the template item for painting the list
+     * @param guiFactory the global GUI factory instance
      */
-    protected GUIItemList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final GUIItemItem templateItem) {
-        super(tooltipManager, elementListener, name, cellWidth, cellHeight, new ItemItemCellRenderer<>(templateItem), null);
+    protected GUIItemList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int cellWidth, final int cellHeight, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final GUIItemItem templateItem, @NotNull final GuiFactory guiFactory) {
+        super(tooltipManager, elementListener, name, cellWidth, cellHeight, new ItemItemCellRenderer<>(templateItem), null, guiFactory);
         this.itemView = itemView;
         this.currentItem = currentItem;
         setLayoutOrientation(JList.HORIZONTAL_WRAP, -1);
