@@ -7,7 +7,7 @@ width 25
 height 25
 msg
 Created:  2010-09-03 neodeno
-Modified: 2013-08-10 Kevin Zheng
+Modified: 2019-05-30 Rick Tanner
 endmsg
 end
 arch grass
@@ -326,131 +326,131 @@ arch grass
 x 2
 y 6
 end
-arch grass
+arch blackslate
 x 2
 y 7
 end
-arch timberwall_2_2_2
+arch wall_2_2_2
 x 2
 y 7
 end
-arch grass
+arch blackslate
 x 2
 y 8
 end
-arch timberwall_3_2
+arch wall_2_1_1
 x 2
 y 8
 end
-arch grass
+arch blackslate
 x 2
 y 9
 end
-arch timberwall_3_2
+arch wall_2_1_1
 x 2
 y 9
 end
-arch grass
+arch blackslate
 x 2
 y 10
 end
-arch timberwall_3_2
+arch wall_2_1_1
 x 2
 y 10
 end
-arch grass
+arch blackslate
 x 2
 y 11
 end
-arch timberwall_3_2
+arch wall_2_1_1
 x 2
 y 11
 end
-arch grass
+arch blackslate
 x 2
 y 12
 end
-arch timberwall_3_2
+arch wall_3_2
 x 2
 y 12
 end
-arch grass
+arch blackslate
 x 2
 y 13
 end
-arch timberwall_3_2
+arch wall_2_1_1
 x 2
 y 13
 end
-arch grass
+arch blackslate
 x 2
 y 14
 end
-arch timberwall_3_2
+arch wall_2_1_1
 x 2
 y 14
 end
-arch grass
+arch blackslate
 x 2
 y 15
 end
-arch timberwall_3_2
+arch wall_2_1_1
 x 2
 y 15
 end
-arch grass
+arch blackslate
 x 2
 y 16
 end
-arch timberwall_3_2
+arch wall_2_1_1
 x 2
 y 16
 end
-arch grass
+arch blackslate
 x 2
 y 17
 end
-arch timberwall_3_2
+arch wall_2_1_1
 x 2
 y 17
 end
-arch grass
+arch blackslate
 x 2
 y 18
 end
-arch timberwall_3_2
+arch wall_2_1_1
 x 2
 y 18
 end
-arch grass
+arch blackslate
 x 2
 y 19
 end
-arch timberwall_3_2
+arch wall_2_1_1
 x 2
 y 19
 end
-arch grass
+arch blackslate
 x 2
 y 20
 end
-arch timberwall_3_2
+arch wall_2_1_1
 x 2
 y 20
 end
-arch grass
+arch blackslate
 x 2
 y 21
 end
-arch timberwall_3_2
+arch wall_2_1_1
 x 2
 y 21
 end
-arch grass
+arch blackslate
 x 2
 y 22
 end
-arch timberwall_2_2_1
+arch wall_2_2_1
 x 2
 y 22
 end
@@ -499,11 +499,11 @@ arch grass
 x 3
 y 6
 end
-arch grass
+arch blackslate
 x 3
 y 7
 end
-arch timberwall_2_1_2
+arch wall_1_3
 x 3
 y 7
 end
@@ -607,11 +607,11 @@ arch blackslate
 x 3
 y 21
 end
-arch grass
+arch blackslate
 x 3
 y 22
 end
-arch timberwall_2_1_2
+arch wall_2_1_2
 x 3
 y 22
 end
@@ -795,11 +795,11 @@ arch skill_use_magic_item
 can_use_skill 1
 end
 end
-arch grass
+arch blackslate
 x 4
 y 22
 end
-arch timberwall_2_1_2
+arch wall_2_1_2
 x 4
 y 22
 end
@@ -874,11 +874,11 @@ weight 5000
 identified 0
 end
 end
-arch grass
+arch blackslate
 x 5
 y 7
 end
-arch timberwall_2_1_2
+arch wall_1_4
 x 5
 y 7
 end
@@ -963,11 +963,11 @@ arch brazier
 x 5
 y 21
 end
-arch grass
+arch blackslate
 x 5
 y 22
 end
-arch timberwall_2_1_2
+arch wall_2_1_2
 x 5
 y 22
 end
@@ -1022,7 +1022,7 @@ arch cabbage
 x 6
 y 6
 end
-arch grass
+arch blackslate
 x 6
 y 7
 end
@@ -1115,11 +1115,11 @@ end
 arch random_treasure
 end
 end
-arch grass
+arch blackslate
 x 6
 y 22
 end
-arch timberwall_2_1_2
+arch wall_2_1_2
 x 6
 y 22
 end
@@ -1184,11 +1184,11 @@ arch tomato
 x 7
 y 6
 end
-arch grass
+arch blackslate
 x 7
 y 7
 end
-arch timberwall_2_1_2
+arch wall_2_1_2
 x 7
 y 7
 end
@@ -1239,7 +1239,7 @@ arch blackslate
 x 7
 y 14
 end
-arch wall_2_1_1
+arch wall_1_2
 x 7
 y 14
 end
@@ -1261,7 +1261,7 @@ arch blackslate
 x 7
 y 16
 end
-arch wall_2_1_1
+arch wall_1_1
 x 7
 y 16
 end
@@ -1305,11 +1305,11 @@ arch wall_2_1_1
 x 7
 y 21
 end
-arch grass
+arch blackslate
 x 7
 y 22
 end
-arch timberwall_2_1_2
+arch wall_3_1
 x 7
 y 22
 end
@@ -1367,11 +1367,11 @@ arch carrot
 x 8
 y 6
 end
-arch grass
+arch blackslate
 x 8
 y 7
 end
-arch timberwall_2_1_2
+arch wall_2_1_2
 x 8
 y 7
 end
@@ -1494,11 +1494,11 @@ arch blackslate
 x 8
 y 21
 end
-arch grass
+arch blackslate
 x 8
 y 22
 end
-arch timberwall_2_1_2
+arch wall_2_1_2
 x 8
 y 22
 end
@@ -1560,7 +1560,7 @@ arch tomato
 x 9
 y 6
 end
-arch grass
+arch blackslate
 x 9
 y 7
 end
@@ -1719,7 +1719,7 @@ arch blackslate
 x 9
 y 21
 end
-arch grass
+arch blackslate
 x 9
 y 22
 end
@@ -1762,11 +1762,11 @@ arch grassdark
 x 10
 y 6
 end
-arch grass
+arch blackslate
 x 10
 y 7
 end
-arch timberwall_2_1_2
+arch wall_2_1_2
 x 10
 y 7
 end
@@ -1794,7 +1794,7 @@ arch blackslate
 x 10
 y 12
 end
-arch wall_2_1_2
+arch wall_1_3
 x 10
 y 12
 end
@@ -1852,11 +1852,11 @@ arch blackslate
 x 10
 y 21
 end
-arch grass
+arch blackslate
 x 10
 y 22
 end
-arch timberwall_2_1_2
+arch wall_2_1_2
 x 10
 y 22
 end
@@ -1914,11 +1914,9 @@ arch brush
 x 11
 y 4
 end
-arch swall_3_2
+arch swall_2_2_1
 x 11
 y 4
-no_magic 1
-damned 1
 end
 arch footpath_2_1_2
 x 11
@@ -1928,15 +1926,19 @@ arch grassdark
 x 11
 y 6
 end
-arch swall_2_1_1
+arch swall_1_1
 x 11
 y 6
 end
-arch grass
+arch blackslate
 x 11
 y 7
 end
-arch timberwall_2_1_2
+arch swall_1_2_half
+x 11
+y 7
+end
+arch wall_2_1_2
 x 11
 y 7
 end
@@ -2028,11 +2030,11 @@ arch blackslate
 x 11
 y 21
 end
-arch grass
+arch blackslate
 x 11
 y 22
 end
-arch timberwall_2_1_2
+arch wall_2_1_2
 x 11
 y 22
 end
@@ -2098,11 +2100,11 @@ arch brush
 x 12
 y 6
 end
-arch grass
+arch blackslate
 x 12
 y 7
 end
-arch timberwall_2_1_2
+arch wall_2_1_2
 x 12
 y 7
 end
@@ -2126,7 +2128,7 @@ arch blackslate
 x 12
 y 12
 end
-arch wall_2_1_2
+arch wall_1_4
 x 12
 y 12
 end
@@ -2199,11 +2201,11 @@ arch blackslate
 x 12
 y 21
 end
-arch grass
+arch blackslate
 x 12
 y 22
 end
-arch timberwall_2_1_2
+arch wall_2_1_2
 x 12
 y 22
 end
@@ -2285,11 +2287,11 @@ arch brush
 x 13
 y 6
 end
-arch grass
+arch blackslate
 x 13
 y 7
 end
-arch timberwall_2_1_2
+arch wall_2_1_2
 x 13
 y 7
 end
@@ -2353,7 +2355,7 @@ arch blackslate
 x 13
 y 21
 end
-arch grass
+arch blackslate
 x 13
 y 22
 end
@@ -2422,11 +2424,11 @@ arch brush
 x 14
 y 6
 end
-arch grass
+arch blackslate
 x 14
 y 7
 end
-arch timberwall_2_1_2
+arch wall_2_1_2
 x 14
 y 7
 end
@@ -2502,11 +2504,11 @@ arch blackslate
 x 14
 y 21
 end
-arch grass
+arch blackslate
 x 14
 y 22
 end
-arch timberwall_2_1_2
+arch wall_2_1_2
 x 14
 y 22
 end
@@ -2549,11 +2551,9 @@ move_block swim boat
 no_magic 1
 damned 1
 end
-arch swall_2_1_1
+arch swall_1_2
 x 15
 y 2
-no_magic 1
-damned 1
 end
 arch footpath_2_1_2
 x 15
@@ -2576,11 +2576,9 @@ move_block swim boat
 no_magic 1
 damned 1
 end
-arch swall_3_4
+arch swall_2_2_3
 x 15
 y 4
-no_magic 1
-damned 1
 end
 arch grass
 x 15
@@ -2608,15 +2606,13 @@ y 6
 no_magic 1
 damned 1
 end
-arch grass
+arch blackslate
 x 15
 y 7
 end
-arch timberwall_2_1_2
+arch wall_3_3
 x 15
 y 7
-no_magic 1
-damned 1
 end
 arch blackslate
 x 15
@@ -2630,7 +2626,7 @@ arch blackslate
 x 15
 y 9
 end
-arch wall_2_1_1
+arch wall_1_2
 x 15
 y 9
 end
@@ -2646,7 +2642,7 @@ arch blackslate
 x 15
 y 11
 end
-arch wall_2_1_1
+arch wall_1_1
 x 15
 y 11
 end
@@ -2662,7 +2658,7 @@ arch blackslate
 x 15
 y 13
 end
-arch wall_2_1_1
+arch wall_1_2
 x 15
 y 13
 end
@@ -2678,7 +2674,7 @@ arch blackslate
 x 15
 y 15
 end
-arch wall_2_1_1
+arch wall_1_1
 x 15
 y 15
 end
@@ -2730,11 +2726,11 @@ arch wall_2_1_1
 x 15
 y 21
 end
-arch grass
+arch blackslate
 x 15
 y 22
 end
-arch timberwall_2_1_2
+arch wall_3_1
 x 15
 y 22
 end
@@ -2777,15 +2773,13 @@ arch thorns
 x 16
 y 6
 end
-arch grass
+arch blackslate
 x 16
 y 7
 end
-arch timberwall_2_1_2
+arch wall_2_1_2
 x 16
 y 7
-no_magic 1
-damned 1
 end
 arch blackslate
 x 16
@@ -2827,7 +2821,7 @@ arch blackslate
 x 16
 y 16
 end
-arch wall_2_1_2
+arch wall_1_3
 x 16
 y 16
 end
@@ -2861,11 +2855,11 @@ arch blackslate
 x 16
 y 21
 end
-arch grass
+arch blackslate
 x 16
 y 22
 end
-arch timberwall_2_1_2
+arch wall_2_1_2
 x 16
 y 22
 end
@@ -2926,15 +2920,13 @@ arch bones1
 x 17
 y 6
 end
-arch grass
+arch blackslate
 x 17
 y 7
 end
-arch timberwall_2_1_2
+arch wall_2_1_2
 x 17
 y 7
-no_magic 1
-damned 1
 end
 arch blackslate
 x 17
@@ -3017,7 +3009,7 @@ arch blackslate
 x 17
 y 21
 end
-arch grass
+arch blackslate
 x 17
 y 22
 end
@@ -3071,15 +3063,13 @@ arch bones2
 x 18
 y 6
 end
-arch grass
+arch blackslate
 x 18
 y 7
 end
-arch timberwall_2_1_2
+arch wall_2_1_2
 x 18
 y 7
-no_magic 1
-damned 1
 end
 arch blackslate
 x 18
@@ -3178,7 +3168,7 @@ arch blackslate
 x 18
 y 16
 end
-arch wall_2_1_2
+arch wall_1_4
 x 18
 y 16
 end
@@ -3235,11 +3225,11 @@ arch blackslate
 x 18
 y 21
 end
-arch grass
+arch blackslate
 x 18
 y 22
 end
-arch timberwall_2_1_2
+arch wall_1_3
 x 18
 y 22
 end
@@ -3308,7 +3298,7 @@ arch brush
 x 19
 y 6
 end
-arch grass
+arch blackslate
 x 19
 y 7
 end
@@ -3512,15 +3502,13 @@ arch brush
 x 20
 y 6
 end
-arch grass
+arch blackslate
 x 20
 y 7
 end
-arch timberwall_2_1_2
+arch wall_2_1_2
 x 20
 y 7
-no_magic 1
-damned 1
 end
 arch blackslate
 x 20
@@ -3626,11 +3614,11 @@ arch blackslate
 x 20
 y 21
 end
-arch grass
+arch blackslate
 x 20
 y 22
 end
-arch timberwall_2_1_2
+arch wall_1_4
 x 20
 y 22
 end
@@ -3699,15 +3687,13 @@ arch blood
 x 21
 y 6
 end
-arch grass
+arch blackslate
 x 21
 y 7
 end
-arch timberwall_2_1_2
+arch wall_2_1_2
 x 21
 y 7
-no_magic 1
-damned 1
 end
 arch blackslate
 x 21
@@ -3789,11 +3775,11 @@ arch blackslate
 x 21
 y 21
 end
-arch grass
+arch blackslate
 x 21
 y 22
 end
-arch timberwall_2_1_2
+arch wall_2_1_2
 x 21
 y 22
 end
@@ -3926,21 +3912,19 @@ arch brush
 x 22
 y 6
 end
-arch grass
+arch blackslate
 x 22
 y 7
 end
-arch timberwall_3_3
+arch wall_2_2_3
 x 22
 y 7
-no_magic 1
-damned 1
 end
 arch blackslate
 x 22
 y 8
 end
-arch timberwall_2_1_1
+arch wall_2_1_1
 x 22
 y 8
 end
@@ -3948,7 +3932,7 @@ arch blackslate
 x 22
 y 9
 end
-arch timberwall_2_1_1
+arch wall_2_1_1
 x 22
 y 9
 end
@@ -3956,7 +3940,7 @@ arch blackslate
 x 22
 y 10
 end
-arch timberwall_2_1_1
+arch wall_2_1_1
 x 22
 y 10
 end
@@ -3964,7 +3948,7 @@ arch blackslate
 x 22
 y 11
 end
-arch timberwall_2_1_1
+arch wall_2_1_1
 x 22
 y 11
 end
@@ -3972,7 +3956,7 @@ arch blackslate
 x 22
 y 12
 end
-arch timberwall_2_1_1
+arch wall_2_1_1
 x 22
 y 12
 end
@@ -3980,7 +3964,7 @@ arch blackslate
 x 22
 y 13
 end
-arch timberwall_2_1_1
+arch wall_2_1_1
 x 22
 y 13
 end
@@ -3988,7 +3972,7 @@ arch blackslate
 x 22
 y 14
 end
-arch timberwall_2_1_1
+arch wall_2_1_1
 x 22
 y 14
 end
@@ -3996,7 +3980,7 @@ arch blackslate
 x 22
 y 15
 end
-arch timberwall_2_1_1
+arch wall_2_1_1
 x 22
 y 15
 end
@@ -4004,7 +3988,7 @@ arch blackslate
 x 22
 y 16
 end
-arch timberwall_2_1_1
+arch wall_3_4
 x 22
 y 16
 end
@@ -4012,7 +3996,7 @@ arch blackslate
 x 22
 y 17
 end
-arch timberwall_2_1_1
+arch wall_2_1_1
 x 22
 y 17
 end
@@ -4020,7 +4004,7 @@ arch blackslate
 x 22
 y 18
 end
-arch timberwall_2_1_1
+arch wall_2_1_1
 x 22
 y 18
 end
@@ -4028,7 +4012,7 @@ arch blackslate
 x 22
 y 19
 end
-arch timberwall_2_1_1
+arch wall_2_1_1
 x 22
 y 19
 end
@@ -4036,7 +4020,7 @@ arch blackslate
 x 22
 y 20
 end
-arch timberwall_2_1_1
+arch wall_2_1_1
 x 22
 y 20
 end
@@ -4044,15 +4028,15 @@ arch blackslate
 x 22
 y 21
 end
-arch timberwall_2_1_1
+arch wall_2_1_1
 x 22
 y 21
 end
-arch grass
+arch blackslate
 x 22
 y 22
 end
-arch timberwall_2_2_4
+arch wall_2_2_4
 x 22
 y 22
 end
