@@ -1625,25 +1625,16 @@ msg
 @match hi|hello
 Well, how about it?  Will you do the job?
 @match yes|job
-Fine!  Well then, a pet of mine, a dragon I raised
-from an egg, has grown large and rebellious.  He has
-killed and eaten several of my house guests.  I would
-dispatch him myself if it were not for my precious
-equipment...
+Fine!  Well then, a pet of mine, a dragon I raised from an egg, has grown large and rebellious. He has killed and eaten several of my house guests. I would dispatch him myself if it were not for my precious equipment...
 @match equipment|acid|armor
-Ah, the dragon is a rare sort from far to the South.
-He breathes acid, I cannot confront him for fear of
-damage to my precious equipment.
+Ah, the dragon is a rare sort from far to the South. He breathes acid, I cannot confront him for fear of damage to my precious equipment.
 @match help|hint
-My cook has an apron which I suppose might be of help
-to you.  Why don't you ask her for it?
+My cook has an apron which I suppose might be of help to you. Why don't you ask her for it?
 @match reward|treasure
-The dragon also has stolen the key to my treasure
-chest.  If you can rid me of this problem, you may
-of course have your pick of whatever treasure you
+The dragon also has stolen the key to my treasure chest. If you can rid me of this problem, you may of course have your pick of whatever treasure you
 like.
 @match *
-Feel free to have some dinner.  Chef makes a fine meal.
+Feel free to have some dinner. Chef makes a fine meal.
 endmsg
 face c_knight.111
 Con 18
@@ -1816,9 +1807,7 @@ y 16
 end
 arch magic_mouth
 msg
-Hello and well met!  Hmmm, you look like a sturdy
-sort... would you mind undertaking a small job, a
-thing I need to have done?
+Hello and well met!  Hmmm, you look like a sturdy sort... would you mind undertaking a small job, a thing I need to have done?
 endmsg
 food 1
 x 10
@@ -2451,9 +2440,7 @@ end
 arch stair_down_4
 slaying black_knight_cellar
 msg
-These stairs are very dusty and don't look like they've
-been used in a very long while.  Are those bone fragments?
-You can barely see, it's so dark.
+These stairs are very dusty and don't look like they've been used in a very long while. Are those bone fragments? You can barely see, it's so dark.
 endmsg
 hp 7
 sp 5
