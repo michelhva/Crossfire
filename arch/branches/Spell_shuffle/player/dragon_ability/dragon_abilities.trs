@@ -1,32 +1,73 @@
 ##############################################################
 # ability-treasure for dragon players
+#
+# Note that magic defines after how many levels of that
+# elemental focus that the ability is granted
 ##############################################################
 treasure dragon_ability_fire
   arch direct_attune_fire
+  magic 5
   more
   arch fire_clawing
+  magic 10
   more
   arch spell_dragonbreath
+  magic 15
 end
 treasure dragon_ability_cold
   arch direct_attune_cold
+  magic 5
   more
   arch ice_clawing
+  magic 10
   more
   arch spell_large_icestorm
+  magic 15
 end
 treasure dragon_ability_elec
   arch direct_attune_elec
+  magic 5
   more
   arch electric_clawing
+  magic 10
   more
   arch spell_ball_lightning
+  magic 15
   more
   arch dragon_ability_xrays
+  magic 20
 end
 treasure dragon_ability_poison
   arch spell_poison_cloud
+  magic 5
   more
   arch poison_clawing
+  magic 10
 end
+##############################################################
+
+##############################################################
+# Starting spells based on the elemental focus of the dragon player.
+# Note: WIP
+##############################################################
+#treasure dragon_start_fire
+#  arch abil_burning_hands
+#  more
+#  arch skill_pyromancy
+#end
+#treasure dragon_start_cold
+#  arch abil_icestorm
+#  more
+#  arch skill_evocation
+#end
+#treasure dragon_start_elec
+#  arch abil_sm_lightning
+#  more
+#  arch skill_pyromancy
+#end
+#treasure dragon_start_poison
+#  arch abil_venom_spit
+#  more
+#  arch skill_sorcery
+#end
 ##############################################################

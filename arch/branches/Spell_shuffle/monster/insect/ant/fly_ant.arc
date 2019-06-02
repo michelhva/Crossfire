@@ -1,6 +1,6 @@
 Object fly_ant
 face fly_ant.131
-race insect
+race insect,ant
 name flying ant
 animation fly_ant
 monster 1

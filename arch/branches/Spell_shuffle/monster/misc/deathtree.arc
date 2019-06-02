@@ -1,6 +1,6 @@
 Object deathtree
 name tree
-race faerie
+race faerie,deathtree
 stand_still 1
 face deathtree.111
 animation deathtree

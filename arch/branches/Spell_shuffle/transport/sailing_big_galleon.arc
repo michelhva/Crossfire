@@ -1,10 +1,10 @@
 Object sailing_big_galleon
-name sailing big galleon
-speed 0.5
+name sailing galleon
+speed 1.5
 type 2
 container 10000000
 move_type boat
-passenger_limit 4
+passenger_limit 6
 face biggalleon.x11
 animation sailing_big_galleon
 no_pick 1

@@ -1,6 +1,6 @@
 Object guard_ant
 face war_ant.131
-race insect
+race insect,ant
 name Guardian Ant
 animation war_ant
 Wis 5

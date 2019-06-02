@@ -1,6 +1,6 @@
 Object ant_larvae
 face ant_larvae.111
-race insect
+race insect,ant
 other_arch war_ant
 animation ant_larvae
 # larva is the singular form. larvae is plural

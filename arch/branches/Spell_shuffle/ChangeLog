@@ -1,3 +1,83 @@
+
+Modify fishing pole graphic to clean up pixelation.
+skills/Skill_Tools/fishing_pole.base.111.png
+Rick Tanner 2019-05-30
+
+Patch #357 Balancing changes to the summoning branch, care of Markus Kettunen.
+* Improve the golem weapon class (Wc) from the summon golem spell from 12 down
+to 10
+* Improve the summoned golem damage from 40 to 60, change duration from 75 to
+125
+* Improve the damage from summon lesser golem from 20 to 25
+* Decrease level requirements for pet types by 1 level from the beginning pet
+of bird and up to and including skull. Replace pixie with panther. Replace
+skeleton with wolf
+* Comment update in regards to the recent changes on what pets are summoned at
+which level
+* Reduce casting time from 10 to 5 in spell, summon pet monster
+arch/trunk/spell/Golem/golem.arc
+arch/trunk/spell/Golem/spell_lesser_golem.arc
+arch/trunk/spell/SummonMonster/mage_pet_monster.trs
+arch/trunk/spell/SummonMonster/spell_summon_pet.arc
+arch/trunk/spell/SummonMonster/spell_summon_pet.arc
+Rick Tanner 2019-04-21
+
+Make level for dragon ability gain stored a the data-level by using "magic" in th treasurelist.
+Requires subsequent server update to actually use those values.
+player/dragon_ability/dragon_abilities.trs
+Daniel Hawkins 2018-10-24
+
+Added a new monster -- mimic
+monster/mimic/chest_1_mimic.base.111.png
+monster/mimic/chest_1_mimic.base.112.png
+monster/mimic/mimic.arc
+monster/mimic/mimic.face
+monster/mimic/mimic.trs
+Daniel Hawkins 2018-09-24
+
+Updated races for several monsters so they can be hit by quirky effects like "slay ant"
+Also gave death attacktype to stake so it can actually kill vampires.
+monster/undead/vampire.arc
+monster/undead/skeleton.arc
+monster/undead/skeleton_chief_arc.arc
+monster/undead/skeleton_leader_arc.arc
+monster/undead/Skeletal_mage/skeletalmage.arc
+monster/misc/deathtree.arc
+monster/insect/ant/ant.arc
+monster/insect/ant/ant_gen.arc
+monster/insect/ant/ant_larvae.arc
+monster/insect/ant/breeder_ant.arc
+monster/insect/ant/fly_ant.arc
+monster/insect/ant/guard_ant.arc
+monster/insect/ant/spit_ant.arc
+monster/insect/ant/war_ant.arc
+monster/insect/ant/work_ant.arc
+weapons/misc/stake.arc
+Daniel Hawkins 2018-05-23
+
+New graphical face for the archon (monster/chaos/archon) monster, as the original graphic is of questionable
+origin.
+monster/chaos/archon.base.111.png
+monster/chaos/archon.base.222.png
+monster/chaos/archon.base.333.png
+monster/chaos/archon.base.444.png
+Rick Tanner 2018-04-30
+
+Fix r13937, which changed coffee to poison_food type when it meant to change to drink.
+food/coffee.arc
+Daniel Hawkins 2018-01-27
+
+Make beholder leaders look slightly dfferent from regular beholders and give them a second forward face.
+monster/beholder/beholder_leader_arc.face
+monster/beholder/beholder_leader.face
+monster/beholder/beholder_leader.base.111.png
+monster/beholder/beholder_leader.base.112.png
+monster/beholder/beholder_leader.clsc.112.png
+Daniel Hawkins 2018-01-15
+
+Merge in updated spell message information (only) from branches/Spell_shuffle
+Rick Tanner 2017-09-30
+
 Added name to ant_egg and ant_larvae arches so they show up in-game as "ant egg" and "ant larva", respectively.
 monster/insect/ant/ant_larvae.arc
 monster/insect/ant/ant_egg.arc

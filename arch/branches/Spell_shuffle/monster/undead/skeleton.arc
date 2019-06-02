@@ -1,6 +1,6 @@
 Object skeleton
 randomitems skeleton
-race undead
+race undead,skeleton
 face skeleton.111
 animation skeleton
 monster 1

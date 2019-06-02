@@ -11,7 +11,7 @@ sp 3
 casting_time 10
 path_attuned 64
 other_arch golem
-dam 20
+dam 25
 duration 75
 duration_modifier 2
 range_modifier 10

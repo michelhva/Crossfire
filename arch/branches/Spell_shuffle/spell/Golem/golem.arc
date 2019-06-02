@@ -5,7 +5,7 @@ animation golem
 monster 1
 alive 1
 ac 5
-wc 12
+wc 10
 dam 8
 attacktype 1
 hp 50

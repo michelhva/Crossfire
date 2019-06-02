@@ -1,7 +1,7 @@
 Object skeleton_chief_arc
 name skeleton captain
 randomitems skeleton
-race undead
+race undead,skeleton
 face skeleton_chief.111
 animation skeleton_chief_arc
 monster 1

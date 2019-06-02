@@ -1,7 +1,7 @@
 Object skeleton_leader_arc
 name skeleton bezerk
 randomitems skeleton
-race undead
+race undead,skeleton
 face skeleton_leader.111
 animation skeleton_leader_arc
 monster 1

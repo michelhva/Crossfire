@@ -1,5 +1,5 @@
 Object s_ship
-name Ship
+name galleon
 type 66
 face s_ship.x11
 no_pick 1
@@ -9,7 +9,7 @@ client_type 25012
 end
 More
 Object s_ship2
-name big galleon
+name galleon
 type 66
 face s_ship.x11
 x 1
@@ -19,7 +19,7 @@ move_block boat
 end
 More
 Object s_ship3
-name big galleon
+name galleon
 type 66
 face s_ship.x11
 y 1
@@ -29,7 +29,7 @@ move_block boat
 end
 More
 Object s_ship4
-name big galleon
+name galleon
 type 66
 face s_ship.x11
 x 1

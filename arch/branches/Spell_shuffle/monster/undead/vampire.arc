@@ -1,6 +1,7 @@
 Object vampire
 randomitems vampire
-race undead
+# race of vampire allows us to make stake work correctly w/ death attacktype
+race undead,vampire
 face vampire.111
 animation vampire
 sp 40
