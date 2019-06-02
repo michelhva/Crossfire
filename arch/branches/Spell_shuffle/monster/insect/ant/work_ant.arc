@@ -1,7 +1,7 @@
 Object work_ant
 face work_ant.131
 name Worker Ant
-race insect
+race insect,ant
 animation work_ant
 monster 1
 move_type walk

@@ -2,7 +2,7 @@ Object breeder_ant
 face breeder_ant.x11
 animation breeder_ant
 name Queen Ant
-race insect
+race insect,ant
 other_arch ant_egg
 monster 1
 move_type walk

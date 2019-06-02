@@ -1,7 +1,7 @@
 Object skeletalmage
 randomitems skeletalmage
 name Skeletal Mage
-race undead
+race undead,skeleton
 face skeletalmage.111
 animation skeletalmage
 monster 1

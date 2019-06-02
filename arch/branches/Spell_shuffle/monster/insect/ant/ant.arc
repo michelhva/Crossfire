@@ -1,6 +1,6 @@
 Object ant
 face ant.111
-race insect
+race insect,ant
 animation ant
 monster 1
 move_type walk
