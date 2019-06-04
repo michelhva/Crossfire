@@ -18,6 +18,6 @@ maxsp 20
 no_drop 1
 invisible 1
 msg
-This spell fires many small magic bullets in the direction the caster is facing. The caster should beware: the bullets will do damage to the caster.  The number and damage of the bullets depends on the level of the caster.
+Accomplished evokers often grow tired of toying with single bullets and instead start splitting the bullets up into swarms of razor sharp shards that strike down anything in their path. Keeping track of each of the tiny, rapidly moving shards is the reason this is left to accomplished practioners. This spell fires many small magic bullets in the direction the caster is facing.   The number and damage of the bullets depends on the level of the caster.
 endmsg
 end

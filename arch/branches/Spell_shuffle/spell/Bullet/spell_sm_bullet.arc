@@ -1,5 +1,3 @@
-# Just an evoker version of magic bullet, as a low
-# mana costing sp to kill things with.
 Object spell_small_bullet
 anim_suffix spellcasting
 name small bullet
@@ -13,7 +11,7 @@ other_arch bullet
 dam 10
 dam_modifier 1
 maxsp 6
-skill sorcery
+skill evocation
 type 101
 subtype 5
 value 10
@@ -21,6 +19,6 @@ attacktype 2
 no_drop 1
 invisible 1
 msg
-Fires a small magical bullet that travels in one direction until striking something.
+If the first challenge of evocation is accurately imagining an object and materialising it, the second is rapidly directing it towards an enemy whilst under fire. For most evokers, this spell represents the first real steps in becoming an apprentice.
 endmsg
 end

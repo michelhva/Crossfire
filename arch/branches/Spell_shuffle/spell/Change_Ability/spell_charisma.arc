@@ -17,6 +17,6 @@ duration_modifier 4
 duration 500
 Cha 1
 msg
-May increase the caster's Charisma stat temporarily. The magnitude of the effect depends on the caster's current Charisma stat and evocation skill level.
+There are more than a few evoker's who are drawn to the path for its potential to enhance, and the reasons why usually become clear whenever this spell wears off. With practice evoker's may temporarily improve their Charisma, the strength of which comes a result of the the caster's actual Charisma and their prowess in evocation.
 endmsg
 end
