@@ -18,6 +18,6 @@ duration 5
 duration_modifier 2
 maxsp 15 
 msg
-Creates arrows for use with a bow or crossbow. To create crossbow bolts, wield a crossbow when casting the spell. At high levels in evocation, it is possible to create arrows (or bolts) with a specific magical bonus by using a command like: cast create missile N where N is +0, +1, +2, +3 or +4.
+Evocation has proven to be one of the best synergies with the warrior classes. Never is this so obvious than the combination of archer and evoker. Evokers can use create missile to create arrows and bolts (for bolts, wield a crossbow when casting the spell) which can be immediately used on the field of battle. Master practitioners can even create missiles with specific magical bonuses (cast create missile N where N is +0, +1, +2, +3 or +4).
 endmsg
 end

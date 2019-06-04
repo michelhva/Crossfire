@@ -7,7 +7,7 @@ level 1
 sp 8
 casting_time 10
 path_attuned 33
-skill sorcery
+skill evocation
 type 101
 subtype 24
 value 10
@@ -20,6 +20,6 @@ resist_physical 20
 ac 2
 maxsp 24
 msg
-Armour creates fields of force around the player, reducing the amount of damage the character takes from physical attacks.  It does not provide any additional protection to non-physical attacks.
+A simple trick for any evoker is the ability to magically enhance armour by carefully weaving magic throughout to enhance the hardness and durabiliity for a short period. As the practioner improves their skill they can improve the strength of this enhancement however it is only for a limited time and only ever effective against physical threats.
 endmsg
 end
