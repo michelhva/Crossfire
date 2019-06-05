@@ -19,6 +19,6 @@ attacktype 2
 no_drop 1
 invisible 1
 msg
-With refinement a magic bullet can be evoked in ever more harmful shapes such that evokers can cut down ever larger and meaner foes.
+With refinement a magic bullet can be evoked in ever more harmful shapes such that evokers can cut down ever larger and meaner foes. This spell is attuned to the path of missiles.
 endmsg
 end

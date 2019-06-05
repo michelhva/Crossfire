@@ -22,6 +22,6 @@ invisible 1
 skill evocation
 food 5
 msg
-Fires a bullet that explodes on contact into a poisonous cloud.  Affected creatures may be slowed, weakened, or killed.
+Rather than relying on simply launching bullets to inflict damage, sneaky evokers dream up nastier projectiles. Poison cloud is one such example; a thin shell loaded with whatever poisons come to the mind of the practioner which is subsequently sent hurtling towards an opponent. When the shell impacts it explodes in a poisonous cloud is released that can slow, weaken, or even kill those caught inside. This spell is attuned to the path of missiles.
 endmsg
 end

@@ -20,6 +20,6 @@ resist_physical 20
 ac 2
 maxsp 24
 msg
-A simple trick for any evoker is the ability to magically enhance armour by carefully weaving magic throughout to enhance the hardness and durabiliity for a short period. As the practioner improves their skill they can improve the strength of this enhancement however it is only for a limited time and only ever effective against physical threats.
+A simple trick for evokers is to magically enhance armour by carefully weaving magic throughout to enhance the hardness and durability for a short period. As the practitioner improves their skill they can improve the strength of this enhancement however it is only for a limited time and only ever effective against physical threats. This spell is attuned to the path of self and of protection.
 endmsg
 end

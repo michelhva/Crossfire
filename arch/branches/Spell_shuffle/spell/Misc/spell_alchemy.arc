@@ -17,6 +17,6 @@ duration 100
 duration_modifier 5
 dam_modifier 1
 msg
-Meddling with the nature of things doesn't always go to plan, but for sorcerors the removal of anything valueable into gold is a reliable spell. Sorcerors can quickly convert others possessions into nothing but gold in seconds, a notriously unplesant trick when used by those with poor ethical judgement. The alchemy spell converts valuable items into gold nuggets.  If the item is not valuable enough to be converted to a nugget, it is destroyed and vanishes.
+Meddling with the nature of things doesn't always go to plan, but for sorcerors the removal of anything valueable into gold is a reliable spell. Sorcerers can quickly convert others possessions into nothing but gold in seconds using this transmutation spell, a notoriously unplesant trick when used by those with poor ethical judgement. The alchemy spell converts valuable items into gold nuggets.  If the item is not valuable enough to be converted to a nugget, it is destroyed and vanishes.
 endmsg
 end

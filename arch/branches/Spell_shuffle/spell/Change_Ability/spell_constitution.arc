@@ -17,6 +17,6 @@ duration_modifier 4
 duration 500
 Con 1
 msg
-May increase the caster's Constitution stat temporarily. The magnitude of the increase depends on the caster's current Constitution stat and evocation skill level.
+Likened to a few drinks of stout, an evokers magic not only makes the recipient feel like they have a stronger consitution, but actually does so as well. Evokers may temporarily improve their own, or their allies, constitution based upon the spell's recipient's consitution and the caster's prowess in evocation. This spell is attuned to the path of self.
 endmsg
 end
