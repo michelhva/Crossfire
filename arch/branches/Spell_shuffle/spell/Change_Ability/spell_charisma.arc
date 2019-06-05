@@ -17,6 +17,6 @@ duration_modifier 4
 duration 500
 Cha 1
 msg
-There are more than a few evoker's who are drawn to the path for its potential to enhance, and the reasons why usually become clear whenever this spell wears off. With practice evoker's may temporarily improve their Charisma, the strength of which comes a result of the the caster's actual Charisma and their prowess in evocation.
+There are more than a few evokers who are drawn to the path for its potential to enhance themselves, and the reasons why usually become clear whenever this spell wears off. Evokers may temporarily improve their own, or their allies, charisma based upon the spell's recipient's charisma and the caster's prowess in evocation. This spell is attuned to the path of self.
 endmsg
 end

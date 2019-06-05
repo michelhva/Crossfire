@@ -10,11 +10,11 @@ value 10
 sp 2
 casting_time 10
 skill evocation
-path_attuned 64
+path_attuned 8192
 no_drop 1
 invisible 1
 other_arch rune_mark
 msg
-Creates a harmless sign on the floor that contains a message of the caster's choosing.  It is readable by applying as one would any other readable item.
+Some messages are best left unspoken, for such situations evokers learnt the art of embedding verse in carefully crafted runes. Only when standing in the rune or by activating it, will the target hear the message of the caster's choosing. This spell is attuned to the path of information.
 endmsg
 end

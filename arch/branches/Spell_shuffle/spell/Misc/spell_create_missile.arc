@@ -18,6 +18,6 @@ duration 5
 duration_modifier 2
 maxsp 15 
 msg
-Evocation has proven to be one of the best synergies with the warrior classes. Never is this so obvious than the combination of archer and evoker. Evokers can use create missile to create arrows and bolts (for bolts, wield a crossbow when casting the spell) which can be immediately used on the field of battle. Master practitioners can even create missiles with specific magical bonuses (cast create missile N where N is +0, +1, +2, +3 or +4).
+Evocation has proven to be one of the best synergies with the warrior classes. Never is this so obvious than the combination of archer and evoker. Evoker's can use the create missile spell to evoke arrows and bolts (for bolts, wield a crossbow when casting the spell) which can be immediately used on the field of battle. Master practitioners can even create missiles with specific magical bonuses (cast create missile N where N is +0, +1, +2, +3 or +4). This spell is attuned to the creation path.
 endmsg
 end

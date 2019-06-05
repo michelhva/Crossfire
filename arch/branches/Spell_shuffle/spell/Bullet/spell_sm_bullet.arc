@@ -19,6 +19,6 @@ attacktype 2
 no_drop 1
 invisible 1
 msg
-If the first challenge of evocation is accurately imagining an object and materialising it, the second is rapidly directing it towards an enemy whilst under fire. For most evokers, this spell represents the first real steps in becoming an apprentice.
+If the first challenge of evocation is accurately imagining an object and materialising it, the second is rapidly directing it towards an enemy whilst under fire. For most evokers, this spell represents the first real steps in becoming an apprentice. This spell is attuned to the path of missiles.
 endmsg
 end
