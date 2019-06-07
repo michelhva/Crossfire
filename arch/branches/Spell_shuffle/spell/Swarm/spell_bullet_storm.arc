@@ -18,6 +18,6 @@ maxsp 20
 no_drop 1
 invisible 1
 msg
-This spell fires many large bullets in the direction the caster is facing. The bullets can damage the character that casts the storm.  The number and damage of the bullets depends on the level of the caster.
+The scale of this spell takes seeing to be believed, accomplished evokers can summon a storm of huge bullets of which each is instantly propelled towards the target. The focus required to maintain the necessary braces to perform this spell without being instantly turned into a smear against the nearest wall does mean that more than few evokers have cast this as their final spell. The number and damage of the bullets depends on the level of the caster. This spell is attuned to the path of missiles.
 endmsg
 end

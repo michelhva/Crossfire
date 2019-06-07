@@ -21,7 +21,7 @@ attacktype 1
 no_drop 1
 invisible 1
 msg
-Creates a bomb in the direction the spell is fired.  The bomb detonates after a few seconds, firing shrapnel and encompassing the area in an explosion. Creatures are wounded if they are in the explosion or if they are hit by the flying shrapnel.
+By conjuring the right combinations of materials, evokers have discovered a way of creating sudden powerful explosion on demand. Once evoked the explosion is certain however it usually doesn't take long for practioners to recognise that a magical trigger is a good idea. As there is no direct use of magic in this spell once the bomb has been evoked the subsequent physical damage from both the explosion and any shrapnel is not magical in nature. This spell is attuned to the path of detonation.
 endmsg
 weight 750
 end
