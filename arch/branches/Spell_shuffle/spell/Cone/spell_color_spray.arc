@@ -22,8 +22,6 @@ no_drop 1
 invisible 1
 skill evocation
 msg
-Color spray fires a cone of energy.  The energy hits with many different attacktypes, so creatures that are highly resistant to some will still take damage from some of the other attacktypes of the spray.
-
-This spell does not do as much damage compared to a spell that hits with only one attacktype, but is useful if it is not known what attacktype a creature can be damaged with, or if the room is full of varying creatures, with different protections.
+It is written that legendary wizard Sarumatix was the first to take evocations skill of continentiam to a new, dangerous, level. A strange effect was found to occur when various minerals were evoked into ever tighter containment. If correctly performed the subsequent sudden discharge results in a chaotic spray of pure colours. While more damage can be potentially inflicted by more traditional spells, colour spray may be useful against enemies with unknown protections or to clear a variety of very powerful creatures. The spell is attuned to the path of transmutation.
 endmsg
 end
