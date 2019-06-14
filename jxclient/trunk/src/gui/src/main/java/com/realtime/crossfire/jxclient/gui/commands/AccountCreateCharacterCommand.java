@@ -20,14 +20,18 @@
 
 package com.realtime.crossfire.jxclient.gui.commands;
 
+import com.realtime.crossfire.jxclient.character.Choice;
 import com.realtime.crossfire.jxclient.gui.commandlist.GUICommand;
 import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
+import com.realtime.crossfire.jxclient.gui.label.NewCharModel;
+import com.realtime.crossfire.jxclient.gui.label.NewcharStat;
 import com.realtime.crossfire.jxclient.gui.textinput.CommandCallback;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Iterator;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -55,16 +59,24 @@ public class AccountCreateCharacterCommand implements GUICommand {
     private final GuiFactory guiFactory;
 
     /**
+     * The global {@link NewCharModel} instance.
+     */
+    @NotNull
+    private final NewCharModel newCharModel;
+
+    /**
      * Creates a new instance.
      * @param commandCallback what to inform of various changes
      * @param button the item to link to to find the Gui from which to get
      * information
      * @param guiFactory the global GUI factory instance
+     * @param newCharModel the global new char model instance
      */
-    public AccountCreateCharacterCommand(@NotNull final CommandCallback commandCallback, @NotNull final AbstractGUIElement button, @NotNull final GuiFactory guiFactory) {
+    public AccountCreateCharacterCommand(@NotNull final CommandCallback commandCallback, @NotNull final AbstractGUIElement button, @NotNull final GuiFactory guiFactory, @NotNull final NewCharModel newCharModel) {
         this.commandCallback = commandCallback;
         element = button;
         this.guiFactory = guiFactory;
+        this.newCharModel = newCharModel;
     }
 
     @Override
@@ -91,6 +103,21 @@ public class AccountCreateCharacterCommand implements GUICommand {
         }
 
         final Collection<String> attributes = new ArrayList<>();
+        attributes.add("race "+newCharModel.getRace());
+        attributes.add("class "+newCharModel.getClass_());
+        for (final NewcharStat stat : NewcharStat.values()) {
+            attributes.add(stat.getStatName()+" "+newCharModel.getValue(stat));
+        }
+        attributes.add("starting_map "+newCharModel.getStartingMap());
+        final Choice option = newCharModel.getOption();
+        if (option != null) {
+            final int optionIndex = newCharModel.getOptionIndex();
+            final Iterator<String> it = option.getChoices().keySet().iterator();
+            for (int i = 0; i < optionIndex; i++) {
+                it.next();
+            }
+            attributes.add("choice "+option.getChoiceName()+" "+it.next());
+        }
         commandCallback.accountCreateCharacter(login, attributes);
     }
 

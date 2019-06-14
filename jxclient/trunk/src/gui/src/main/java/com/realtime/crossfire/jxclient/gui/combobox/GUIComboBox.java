@@ -210,6 +210,7 @@ public abstract class GUIComboBox<T> extends AbstractGUIElement {
             setChanged();
             label.updateText(text);
         }
+        updateSelectedItem(item);
 
         if (text.isEmpty()) {
             setTooltipText(null);
@@ -241,6 +242,20 @@ public abstract class GUIComboBox<T> extends AbstractGUIElement {
             }
             setTooltipText(PATTERN_BOLD_END.matcher(PATTERN_BOLD_BEGIN.matcher(sb.toString()).replaceAll("<b>")).replaceAll("</b>"));
         }
+    }
+
+    /**
+     * Will be called whenever the selected item has changed.
+     * @param item the selected item
+     */
+    protected abstract void updateSelectedItem(@Nullable final T item);
+
+    /**
+     * Updates the selected item.
+     * @param item the new selected item
+     */
+    protected void setSelectedItem(@NotNull final T item) {
+        comboBox.setSelectedItem(item);
     }
 
     /**

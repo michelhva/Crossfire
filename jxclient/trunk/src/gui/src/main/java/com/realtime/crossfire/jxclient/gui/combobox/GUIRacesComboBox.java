@@ -25,6 +25,8 @@ import com.realtime.crossfire.jxclient.character.ClassRaceInfo;
 import com.realtime.crossfire.jxclient.character.NewCharacterInformationListener;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.label.NewCharModel;
+import com.realtime.crossfire.jxclient.gui.label.NewCharModelListener;
 import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.server.crossfire.Model;
 import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
@@ -52,6 +54,12 @@ public class GUIRacesComboBox extends GUIComboBox<String> {
      */
     @NotNull
     private final Model model;
+
+    /**
+     * The {@link NewCharModel} that is shown.
+     */
+    @NotNull
+    private final NewCharModel newCharModel;
 
     /**
      * The {@link JLabel} that displays the list values.
@@ -98,25 +106,43 @@ public class GUIRacesComboBox extends GUIComboBox<String> {
     };
 
     /**
+     * The listener attached to {@link #newCharModel}.
+     */
+    @NotNull
+    private final NewCharModelListener newCharModelListener = new NewCharModelListener() {
+
+        @Override
+        public void changed() {
+            setSelectedItem(newCharModel.getRace());
+        }
+
+    };
+
+    /**
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
      * @param model the model to display
+     * @param newCharModel the new char model to show
      * @param label the label to update or {@code null}
      * @param guiFactory the global GUI factory instance
      */
-    public GUIRacesComboBox(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Model model, @Nullable final GUILabelLog label, @NotNull final GuiFactory guiFactory) {
+    public GUIRacesComboBox(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Model model, @NotNull final NewCharModel newCharModel, @Nullable final GUILabelLog label, @NotNull final GuiFactory guiFactory) {
         super(tooltipManager, elementListener, name, label, guiFactory);
         this.model = model;
+        this.newCharModel = newCharModel;
         model.getNewCharacterInformation().addNewCharacterInformationListener(newCharacterInformationListener);
+        newCharModel.addListener(newCharModelListener);
         updateModel();
+        setSelectedItem(newCharModel.getRace());
     }
 
     @Override
     public void dispose() {
         super.dispose();
         model.getNewCharacterInformation().removeNewCharacterInformationListener(newCharacterInformationListener);
+        newCharModel.removeListener(newCharModelListener);
     }
 
     @Override
@@ -144,6 +170,13 @@ public class GUIRacesComboBox extends GUIComboBox<String> {
         final ClassRaceInfo raceInfo = value == null ? null : model.getNewCharacterInformation().getRaceInfo(value);
         renderer.setText(raceInfo == null ? value : raceInfo.getName());
         return renderer;
+    }
+
+    @Override
+    protected void updateSelectedItem(@Nullable final String item) {
+        if (item != null) {
+            newCharModel.setRace(item);
+        }
     }
 
     @NotNull
