@@ -3517,7 +3517,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("recv version cs="+csval+" sc="+scval+" info="+vinfo);
         }
         setClientSocketState(ClientSocketState.VERSION, ClientSocketState.SETUP);
-        sendSetup("want_pickup 1", "faceset 0", "sound2 3", "exp64 1", "map2cmd 1", "darkness 1", "newmapcmd 1", "facecache 1", "extendedTextInfos 1", "itemcmd 2", "spellmon 1", "tick 1", "extended_stats 1", "loginmethod 1", "notifications 2");
+        sendSetup("want_pickup 1", "faceset 0", "sound2 3", "exp64 1", "map2cmd 1", "darkness 1", "newmapcmd 1", "facecache 1", "extendedTextInfos 1", "itemcmd 2", "spellmon 1", "tick 1", "extended_stats 1", "loginmethod 2", "notifications 2");
         model.getStats().setSimpleWeaponSpeed(scval >= 1029);
 
         notifyPacketWatcherListenersAscii(packet, args);
@@ -3967,7 +3967,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             final byte[] passwordBytes = password.getBytes(UTF8);
             byteBuffer.put((byte)passwordBytes.length);
             byteBuffer.put(passwordBytes);
-            if (false && loginMethod >= 2) {
+            if (loginMethod >= 2) {
                 for (final String attribute : attributes) {
                     final byte[] attributeBytes = attribute.getBytes(UTF8);
                     byteBuffer.put((byte)(attributeBytes.length+1));

@@ -5,10 +5,8 @@ label_text information font_title BLACK Please enter your new character informat
 
 commandlist command_null_new_char AND
 
-label_text label_account_character_create font_label BLACK Login:
+label_text label_account_character_create font_label BLACK Character Name:
 text account_character_create input_active input_inactive font_label GRAY BLACK 1 command_null_new_char true
-
-label_failure account_create_error font_label BLACK
 
 commandlist command_account_do_create_char AND account_character_create ACCOUNT_CREATE_CHARACTER
 commandlist command_account_cancel_create_char AND null DIALOG_CLOSE account_character_new
@@ -21,15 +19,150 @@ set_default account_character_create
 
 commandlist_add command_null_new_char account_character_create MOVE_FOCUS account_do_login 1
 
+label_text label_attr font_title BLACK Character Attributes
+label_text label_base1 font_label BLACK Base
+label_text label_base2 font_label BLACK Attribute
+
+combobox option_race races null
+combobox option_class classes null
+
+label_text label_total font_label BLACK Total
+label_text stat_str_label font_label BLACK Strength
+label_text stat_dex_label font_label BLACK Dexterity
+label_text stat_con_label font_label BLACK Consitution
+label_text stat_int_label font_label BLACK Intelligence
+label_text stat_wis_label font_label BLACK Wisdom
+label_text stat_pow_label font_label BLACK Power
+label_text stat_cha_label font_label BLACK Charisma
+spinner stat_str_value STR
+spinner stat_dex_value DEX
+spinner stat_con_value CON
+spinner stat_int_value INT
+spinner stat_wis_value WIS
+spinner stat_pow_value POW
+spinner stat_cha_value CHA
+label_newchar stat_str_race STR RACE font_label font_title BLACK RED
+label_newchar stat_dex_race DEX RACE font_label font_title BLACK RED
+label_newchar stat_con_race CON RACE font_label font_title BLACK RED
+label_newchar stat_int_race INT RACE font_label font_title BLACK RED
+label_newchar stat_wis_race WIS RACE font_label font_title BLACK RED
+label_newchar stat_pow_race POW RACE font_label font_title BLACK RED
+label_newchar stat_cha_race CHA RACE font_label font_title BLACK RED
+label_newchar stat_str_class STR CLASS font_label font_title BLACK RED
+label_newchar stat_dex_class DEX CLASS font_label font_title BLACK RED
+label_newchar stat_con_class CON CLASS font_label font_title BLACK RED
+label_newchar stat_int_class INT CLASS font_label font_title BLACK RED
+label_newchar stat_wis_class WIS CLASS font_label font_title BLACK RED
+label_newchar stat_pow_class POW CLASS font_label font_title BLACK RED
+label_newchar stat_cha_class CHA CLASS font_label font_title BLACK RED
+label_newchar stat_str_total STR TOTAL font_label font_title BLACK RED
+label_newchar stat_dex_total DEX TOTAL font_label font_title BLACK RED
+label_newchar stat_con_total CON TOTAL font_label font_title BLACK RED
+label_newchar stat_int_total INT TOTAL font_label font_title BLACK RED
+label_newchar stat_wis_total WIS TOTAL font_label font_title BLACK RED
+label_newchar stat_pow_total POW TOTAL font_label font_title BLACK RED
+label_newchar stat_cha_total CHA TOTAL font_label font_title BLACK RED
+label_text label_unused_text font_label BLACK Unused Points:
+label_newchar label_unused_value STR UNUSED font_label font_title BLACK RED
+
+label_text label_options font_title BLACK Character Options
+
+label_text option_starting_map_label font_label BLACK Choose the starting map
+combobox option_starting_map starting_maps null
+
+label_newchar char_option_label STR CHAR_OPTION font_label font_title BLACK RED
+combobox char_option char_options null
+
+label_newchar label_error STR ERROR font_title font_title RED RED
+
 horizontal begin seq
   gap 8
   begin par
     information
     begin seq
-      label_account_character_create
+      label_account_character_create 100
+      gap 8
       account_character_create
+      gap
     end
-    account_create_error
+    label_attr
+    begin seq
+      begin par
+        begin seq
+          begin par
+            stat_str_label
+            stat_dex_label
+            stat_con_label
+            stat_int_label
+            stat_wis_label
+            stat_pow_label
+            stat_cha_label
+          end
+          gap 8
+          begin par
+            label_base1
+            label_base2
+            stat_str_value
+            stat_dex_value
+            stat_con_value
+            stat_int_value
+            stat_wis_value
+            stat_pow_value
+            stat_cha_value
+          end
+          gap 8
+          begin par
+            option_race 120
+            stat_str_race 120
+            stat_dex_race 120
+            stat_con_race 120
+            stat_int_race 120
+            stat_wis_race 120
+            stat_pow_race 120
+            stat_cha_race 120
+          end
+          gap 8
+          begin par
+            option_class 120
+            stat_str_class 120
+            stat_dex_class 120
+            stat_con_class 120
+            stat_int_class 120
+            stat_wis_class 120
+            stat_pow_class 120
+            stat_cha_class 120
+            label_unused_text 120
+          end
+          gap 8
+          begin par
+            label_total 50
+            stat_str_total 50
+            stat_dex_total 50
+            stat_con_total 50
+            stat_int_total 50
+            stat_wis_total 50
+            stat_pow_total 50
+            stat_cha_total 50
+            label_unused_value 50
+          end
+        end
+        label_options 400
+        begin seq
+          begin par
+            option_starting_map_label 200
+            char_option_label 200
+          end
+          gap 8
+          begin par
+            option_starting_map 200
+            char_option 200
+          end
+          gap
+        end
+      end
+      gap
+    end
+    label_error
     begin seq
       gap
       account_do_login
@@ -50,7 +183,85 @@ vertical begin seq
     account_character_create
   end
   gap 8
-  account_create_error
+  label_attr
+  begin par
+    begin seq
+      begin par
+        begin seq
+          label_base1
+          label_base2
+        end
+        option_race
+        option_class
+        label_total
+      end
+      begin par
+        stat_str_label
+        stat_str_value
+        stat_str_race
+        stat_str_class
+        stat_str_total
+      end
+      begin par
+        stat_dex_label
+        stat_dex_value
+        stat_dex_race
+        stat_dex_class
+        stat_dex_total
+      end
+      begin par
+        stat_con_label
+        stat_con_value
+        stat_con_race
+        stat_con_class
+        stat_con_total
+      end
+      begin par
+        stat_int_label
+        stat_int_value
+        stat_int_race
+        stat_int_class
+        stat_int_total
+      end
+      begin par
+        stat_wis_label
+        stat_wis_value
+        stat_wis_race
+        stat_wis_class
+        stat_wis_total
+      end
+      begin par
+        stat_pow_label
+        stat_pow_value
+        stat_pow_race
+        stat_pow_class
+        stat_pow_total
+      end
+      begin par
+        stat_cha_label
+        stat_cha_value
+        stat_cha_race
+        stat_cha_class
+        stat_cha_total
+      end
+      begin par
+        label_unused_text
+        label_unused_value
+      end
+      gap 8
+      label_options
+      begin par
+        option_starting_map_label
+        option_starting_map
+      end
+      begin par
+        char_option_label
+        char_option
+      end
+    end
+  end
+  gap 8
+  label_error
   gap 8
   begin par
     account_do_login
