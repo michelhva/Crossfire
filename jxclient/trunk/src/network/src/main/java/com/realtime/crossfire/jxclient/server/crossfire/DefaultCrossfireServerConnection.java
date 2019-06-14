@@ -2483,7 +2483,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     }
 
     /**
-     * Processes an 'account_failed' server command.
+     * Processes an 'addme_failed' server command.
      * @param packet the packet's payload
      */
     private void processAddmeFailed(@NotNull final ByteBuffer packet) {
@@ -2493,7 +2493,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     }
 
     /**
-     * Processes an 'account_success' server command.
+     * Processes an 'addme_success' server command.
      * @param packet the packet's payload
      */
     private void processAddmeSuccess(@NotNull final ByteBuffer packet) {
