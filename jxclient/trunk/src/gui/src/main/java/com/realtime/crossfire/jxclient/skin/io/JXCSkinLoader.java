@@ -1038,9 +1038,10 @@ public class JXCSkinLoader {
             final Font font = definedFonts.lookup(args.get());
             final Color color = ParseUtils.parseColor(args.get());
             final Color colorSelected = ParseUtils.parseColor(args.get());
+            final Color colorDisabled = ParseUtils.parseColor(args.get());
             final ButtonImages upImages = new ButtonImages(imageParser.getImage(up+"_w"), imageParser.getImage(up+"_c"), imageParser.getImage(up+"_e"));
             final ButtonImages downImages = new ButtonImages(imageParser.getImage(down+"_w"), imageParser.getImage(down+"_c"), imageParser.getImage(down+"_e"));
-            textButtonFactory = new TextButtonFactory(upImages, downImages, font, color, colorSelected, guiFactory);
+            textButtonFactory = new TextButtonFactory(upImages, downImages, font, color, colorSelected, colorDisabled, guiFactory);
             break;
 
         default:

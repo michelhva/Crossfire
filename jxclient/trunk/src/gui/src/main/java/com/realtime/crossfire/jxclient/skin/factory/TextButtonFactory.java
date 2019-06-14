@@ -69,6 +69,12 @@ public class TextButtonFactory {
     private final Color colorSelected;
 
     /**
+     * The text color when disabled.
+     */
+    @NotNull
+    private final Color colorDisabled;
+
+    /**
      * The global {@link GuiFactory} instance.
      */
     @NotNull
@@ -81,14 +87,16 @@ public class TextButtonFactory {
      * @param font the font to use
      * @param color the text color
      * @param colorSelected the text color when selected
+     * @param colorDisabled the text color when disabled
      * @param guiFactory the global GUI factory instance
      */
-    public TextButtonFactory(@NotNull final ButtonImages up, @NotNull final ButtonImages down, @NotNull final Font font, @NotNull final Color color, @NotNull final Color colorSelected, @NotNull final GuiFactory guiFactory) {
+    public TextButtonFactory(@NotNull final ButtonImages up, @NotNull final ButtonImages down, @NotNull final Font font, @NotNull final Color color, @NotNull final Color colorSelected, @NotNull final Color colorDisabled, @NotNull final GuiFactory guiFactory) {
         this.up = up;
         this.down = down;
         this.font = font;
         this.color = color;
         this.colorSelected = colorSelected;
+        this.colorDisabled = colorDisabled;
         this.guiFactory = guiFactory;
     }
 
@@ -105,7 +113,7 @@ public class TextButtonFactory {
      */
     @NotNull
     public AbstractGUIElement newTextButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final String text, final boolean autoRepeat, @NotNull final CommandList commandList) {
-        return new GUITextButton(tooltipManager, elementListener, name, up, down, text, font, color, colorSelected, autoRepeat, commandList, guiFactory);
+        return new GUITextButton(tooltipManager, elementListener, name, up, down, text, font, color, colorSelected, colorDisabled, autoRepeat, commandList, guiFactory);
     }
 
 }

@@ -547,7 +547,7 @@
 
 <p>syntax:</p>
 <pre>
-    def textbutton &lt;up-pic&gt; &lt;down-pic&gt; &lt;font&gt; &lt;color&gt; &lt;color-selected&gt;
+    def textbutton &lt;up-pic&gt; &lt;down-pic&gt; &lt;font&gt; &lt;color&gt; &lt;color-selected&gt; &lt;color-disabled&gt;
 </pre>
 
 <p>Defines layout for rendering <a href="#textbutton">text buttons</a>.</p>
@@ -561,6 +561,9 @@
     </li>
     <li>&lt;color-selected&gt; the alternative color for the text label if the
         button is <a href="#command_select">selected</a>.
+    </li>
+    <li>&lt;color-disabled&gt; the alternative color for the text label if the
+        button is disabled. Takes precedence over &lt;color-selected&gt;.
     </li>
 </ul>
 
