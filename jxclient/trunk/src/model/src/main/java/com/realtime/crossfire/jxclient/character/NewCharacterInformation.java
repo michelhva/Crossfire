@@ -134,9 +134,9 @@ public class NewCharacterInformation {
      * @param startingMapInfo the starting map to set
      */
     private void addStartingMapInfo(@NotNull final StartingMap startingMapInfo) {
-        this.startingMapInfo.put(startingMapInfo.getName(), startingMapInfo);
+        this.startingMapInfo.put(startingMapInfo.getArchName(), startingMapInfo);
         for (NewCharacterInformationListener newCharacterInformationListener : newCharacterInformationListeners) {
-            newCharacterInformationListener.startingMapInfoChanged(startingMapInfo.getName());
+            newCharacterInformationListener.startingMapInfoChanged(startingMapInfo.getArchName());
         }
     }
 
