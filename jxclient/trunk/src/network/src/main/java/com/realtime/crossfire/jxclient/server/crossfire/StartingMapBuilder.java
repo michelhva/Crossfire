@@ -40,7 +40,7 @@ public class StartingMapBuilder {
      * first entry was started.
      */
     @Nullable
-    private byte[] archName;
+    private String archName;
 
     /**
      * The proper name of this entry. Set to {@code null} if no proper name has
@@ -67,9 +67,9 @@ public class StartingMapBuilder {
      * @param archName the archetype name of the entry
      * @noinspection NullableProblems
      */
-    public void setArchName(@NotNull final byte[] archName) {
+    public void setArchName(@NotNull final String archName) {
         addStartingMap();
-        this.archName = archName.clone();
+        this.archName = archName;
         name = null;
         description = null;
     }

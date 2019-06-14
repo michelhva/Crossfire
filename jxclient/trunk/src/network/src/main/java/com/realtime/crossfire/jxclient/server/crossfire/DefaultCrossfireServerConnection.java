@@ -2029,9 +2029,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             final int length = getInt2(packet);
             switch (type) {
             case INFO_MAP_ARCH_NAME:
-                final byte[] archName = new byte[length];
-                packet.get(archName);
-                sb.setArchName(archName);
+                sb.setArchName(getString(packet, length));
                 break;
 
             case INFO_MAP_NAME:

@@ -33,7 +33,7 @@ public class StartingMap {
      * The archetype name.
      */
     @NotNull
-    private final byte[] archName;
+    private final String archName;
 
     /**
      * The proper name.
@@ -53,8 +53,8 @@ public class StartingMap {
      * @param name the proper name
      * @param description the description
      */
-    public StartingMap(@NotNull final byte[] archName, @NotNull final String name, @NotNull final String description) {
-        this.archName = archName.clone();
+    public StartingMap(@NotNull final String archName, @NotNull final String name, @NotNull final String description) {
+        this.archName = archName;
         this.name = name;
         this.description = description;
     }
@@ -64,8 +64,8 @@ public class StartingMap {
      * @return the archetype name
      */
     @NotNull
-    public byte[] getArchName() {
-        return archName.clone();
+    public String getArchName() {
+        return archName;
     }
 
     /**
