@@ -147,6 +147,12 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     private static final int INFO_MAP_DESCRIPTION = 3;
 
     /**
+     * An empty array of {@link String Strings}.
+     */
+    @NotNull
+    private static final String[] EMPTY_STRING_ARRAY = new String[0];
+
+    /**
      * The {@link Model} instance that is updated.
      */
     @NotNull
@@ -1872,8 +1878,8 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         while (packet.remaining() > 0 && packet.get(packet.position()) == '|') {
             packet.get();
         }
-        final CharSequence raceList = getString(packet, packet.remaining());
-        final String[] races = PATTERN_BAR.split(raceList);
+        final String raceList = getString(packet, packet.remaining());
+        final String[] races = raceList.isEmpty() ? EMPTY_STRING_ARRAY : PATTERN_BAR.split(raceList);
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("recv replyinfo race_list races="+Arrays.toString(races));
         }
@@ -1892,8 +1898,8 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         while (packet.remaining() > 0 && packet.get(packet.position()) == '|') {
             packet.get();
         }
-        final CharSequence classList = getString(packet, packet.remaining());
-        final String[] classes = PATTERN_BAR.split(classList);
+        final String classList = getString(packet, packet.remaining());
+        final String[] classes = classList.isEmpty() ? EMPTY_STRING_ARRAY : PATTERN_BAR.split(classList);
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("recv replyinfo class_list classes="+Arrays.toString(classes));
         }
