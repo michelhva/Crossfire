@@ -30,6 +30,7 @@ import com.realtime.crossfire.jxclient.faces.FacesProviderFactory;
 import com.realtime.crossfire.jxclient.faces.SmoothFaces;
 import com.realtime.crossfire.jxclient.gui.button.ButtonImages;
 import com.realtime.crossfire.jxclient.gui.button.GUIButton;
+import com.realtime.crossfire.jxclient.gui.combobox.GUICharOptionsComboBox;
 import com.realtime.crossfire.jxclient.gui.combobox.GUIClassesComboBox;
 import com.realtime.crossfire.jxclient.gui.combobox.GUIRacesComboBox;
 import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
@@ -894,6 +895,10 @@ public class JXCSkinLoader {
 
         case "races":
             element = new GUIRacesComboBox(tooltipManager, elementListener, name, model, newCharModel, label, guiFactory);
+            break;
+
+        case "char_options":
+            element = new GUICharOptionsComboBox(tooltipManager, elementListener, name, newCharModel, label, guiFactory);
             break;
 
         default:

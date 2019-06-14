@@ -342,15 +342,21 @@
 <p>precondition: dialog
 </p>
 
-<p>Defines a combobox element which displays a list of classes or races
-    available for character creation. Optionally displays the class or race
-    description corresponding to the current selection in a label.</p>
+<p>Defines a combobox element which displays options available for character
+    creation. Optionally displays a description corresponding to  the current
+    selection in a separate label.</p>
 
 <ul>
     <li>&lt;name&gt; is the name of the combobox.</li>
-    <li>&lt;type&gt; is the type: <code>classes</code> for classes available for
-        character creation, or <code>races</code> for races available for
-        character creation.
+    <li>&lt;type&gt; is the type:
+        <ul>
+            <li><code>char_options</code>: The available class or race specific
+                options for character creation.</li>
+            <li><code>classes</code>: The available classes for character
+                creation.</li>
+            <li><code>races</code>: The available races for character
+                creation.</li>
+        </ul>
     </li>
     <li>&lt;label&gt; the name of a <a href="#log_label"><code>log_label</code></a>
         to display information about the selected item. Can be set to
