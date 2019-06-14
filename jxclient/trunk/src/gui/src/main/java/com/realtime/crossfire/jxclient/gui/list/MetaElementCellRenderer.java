@@ -53,6 +53,7 @@ public class MetaElementCellRenderer extends JPanel implements GUIListCellRender
         super(new BorderLayout());
         setOpaque(false);
         this.template = template;
+        this.template.inhibitListeners();
         add(template, BorderLayout.CENTER);
     }
 

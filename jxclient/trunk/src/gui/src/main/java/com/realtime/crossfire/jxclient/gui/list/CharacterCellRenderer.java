@@ -51,6 +51,7 @@ public class CharacterCellRenderer extends JPanel implements GUIListCellRenderer
         super(new BorderLayout());
         setOpaque(false);
         this.template = template;
+        this.template.inhibitListeners();
         add(template, BorderLayout.CENTER);
     }
 

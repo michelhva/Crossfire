@@ -61,6 +61,11 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
     private boolean isDefault;
 
     /**
+     * If set, change listeners will not be notified.
+     */
+    private boolean inhibitListeners;
+
+    /**
      * Whether this gui element should be ignored for user interaction.
      */
     private boolean ignore;
@@ -99,6 +104,9 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
         public void run() {
             synchronized (setChangedRunnable) {
                 pendingChange = false;
+                if (inhibitListeners) {
+                    return;
+                }
             }
             final Gui parent = guiFactory.getGui(AbstractGUIElement.this);
             if (parent != null) {
@@ -208,7 +216,7 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
     @Override
     public void setChanged() {
         synchronized (setChangedRunnable) {
-            if (!pendingChange) {
+            if (!inhibitListeners && !pendingChange) {
                 pendingChange = true;
                 SwingUtilities2.invokeLater(setChangedRunnable);
             }
@@ -233,6 +241,15 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
     @Override
     public void setChangedListener(@Nullable final GUIElementChangedListener changedListener) {
         this.changedListener = changedListener;
+    }
+
+    /**
+     * Prevents change listeners to be notified.
+     */
+    public void inhibitListeners() {
+        synchronized (setChangedRunnable) {
+            inhibitListeners = true;
+        }
     }
 
 }
