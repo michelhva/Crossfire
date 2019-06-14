@@ -1,5 +1,8 @@
 2019-06-10  Andreas Kirschbaum
 
+	* In create character dialog: Disable 'Create' button if no
+	character name has been entered.
+
 	* Extend the "Connecting to server..." phase until all requested
 	information has been received from the server.
 

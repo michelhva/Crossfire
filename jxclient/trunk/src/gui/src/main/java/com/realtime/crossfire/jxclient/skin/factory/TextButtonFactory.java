@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.label.NewCharModel;
 import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Color;
 import java.awt.Font;
@@ -81,6 +82,12 @@ public class TextButtonFactory {
     private final GuiFactory guiFactory;
 
     /**
+     * The global {@link NewCharModel} instance.
+     */
+    @NotNull
+    private final NewCharModel newCharModel;
+
+    /**
      * Creates a new instance.
      * @param up the images comprising the "up" button state
      * @param down the images comprising the "down" button state
@@ -89,8 +96,9 @@ public class TextButtonFactory {
      * @param colorSelected the text color when selected
      * @param colorDisabled the text color when disabled
      * @param guiFactory the global GUI factory instance
+     * @param newCharModel the global new char model instance
      */
-    public TextButtonFactory(@NotNull final ButtonImages up, @NotNull final ButtonImages down, @NotNull final Font font, @NotNull final Color color, @NotNull final Color colorSelected, @NotNull final Color colorDisabled, @NotNull final GuiFactory guiFactory) {
+    public TextButtonFactory(@NotNull final ButtonImages up, @NotNull final ButtonImages down, @NotNull final Font font, @NotNull final Color color, @NotNull final Color colorSelected, @NotNull final Color colorDisabled, @NotNull final GuiFactory guiFactory, @NotNull final NewCharModel newCharModel) {
         this.up = up;
         this.down = down;
         this.font = font;
@@ -98,6 +106,7 @@ public class TextButtonFactory {
         this.colorSelected = colorSelected;
         this.colorDisabled = colorDisabled;
         this.guiFactory = guiFactory;
+        this.newCharModel = newCharModel;
     }
 
     /**
@@ -106,14 +115,14 @@ public class TextButtonFactory {
      * @param elementListener the element listener to notify
      * @param name the name of this element
      * @param text the button text
-     * @param autoRepeat whether the button should autorepeat while being
+     * @param autoRepeat whether the button should auto-repeat while being
      * pressed
      * @param commandList the commands to execute when the button is elected
      * @return the new text button
      */
     @NotNull
     public AbstractGUIElement newTextButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final String text, final boolean autoRepeat, @NotNull final CommandList commandList) {
-        return new GUITextButton(tooltipManager, elementListener, name, up, down, text, font, color, colorSelected, colorDisabled, autoRepeat, commandList, guiFactory);
+        return new GUITextButton(tooltipManager, elementListener, name, up, down, text, font, color, colorSelected, colorDisabled, autoRepeat, commandList, guiFactory, newCharModel);
     }
 
 }
