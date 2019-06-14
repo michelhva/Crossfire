@@ -33,6 +33,7 @@ import java.awt.Dimension;
 import java.awt.Transparency;
 import java.awt.event.ActionListener;
 import java.util.List;
+import java.util.regex.Pattern;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JComboBox;
 import javax.swing.JList;
@@ -51,6 +52,18 @@ public abstract class GUIComboBox<T> extends AbstractGUIElement {
      * The serial version UID.
      */
     private static final long serialVersionUID = 1;
+
+    /**
+     * A {@link Pattern} that matches "[b]".
+     */
+    @NotNull
+    private static final Pattern PATTERN_BOLD_BEGIN = Pattern.compile("\\[b]");
+
+    /**
+     * A {@link Pattern} that matches "[/b]".
+     */
+    @NotNull
+    private static final Pattern PATTERN_BOLD_END = Pattern.compile("\\[/b]");
 
     /**
      * The model for {@link #comboBox}.
@@ -186,13 +199,44 @@ public abstract class GUIComboBox<T> extends AbstractGUIElement {
             return;
         }
 
-        if (label == null) {
-            return;
+        @SuppressWarnings("unchecked") final T item = (T)comboBox.getSelectedItem();
+        final String text = item == null ? "" : getDescription(item);
+
+        if (label != null) {
+            setChanged();
+            label.updateText(text);
         }
 
-        setChanged();
-        @SuppressWarnings("unchecked") final T item = (T)comboBox.getSelectedItem();
-        label.updateText(item == null ? "" : getDescription(item));
+        if (text.isEmpty()) {
+            setTooltipText(null);
+        } else {
+            final StringBuilder sb = new StringBuilder();
+            for (final String line0 : text.split("\n")) {
+                final String line = line0.trim();
+
+                int index = 0;
+                while (line.length() > index+80) {
+                    int nextIndex = line.lastIndexOf(' ', index+80);
+                    if (nextIndex == -1) {
+                        nextIndex = line.indexOf(' ', index+80);
+                        if (nextIndex == -1) {
+                            nextIndex = line.length();
+                        }
+                        if (nextIndex > index+140) {
+                            nextIndex = index+140;
+                        }
+                    }
+                    sb.append(sb.length() == 0 ? "<html>" : "<br>").append(line, index, nextIndex);
+
+                    index = nextIndex;
+                    while (index < line.length() && line.charAt(index) == ' ') {
+                        index++;
+                    }
+                }
+                sb.append(sb.length() == 0 ? "<html>" : "<br>").append(line, index, line.length());
+            }
+            setTooltipText(PATTERN_BOLD_END.matcher(PATTERN_BOLD_BEGIN.matcher(sb.toString()).replaceAll("<b>")).replaceAll("</b>"));
+        }
     }
 
     /**
