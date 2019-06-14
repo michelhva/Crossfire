@@ -55,6 +55,7 @@ public class ItemItemCellRenderer<T extends GUIItemItem> extends JPanel implemen
         super(new BorderLayout());
         setOpaque(false);
         this.template = template;
+        this.template.inhibitListeners();
         add(template, BorderLayout.CENTER);
     }
 
