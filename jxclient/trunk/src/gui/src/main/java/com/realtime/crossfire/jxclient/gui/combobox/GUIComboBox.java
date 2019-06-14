@@ -101,6 +101,7 @@ public abstract class GUIComboBox<T> extends AbstractGUIElement {
         this.label = label;
         comboBox.setFocusable(false);
         comboBox.setRenderer(renderer);
+        comboBox.setMaximumRowCount(18);
         comboBox.addActionListener(actionListener);
         add(comboBox);
     }
