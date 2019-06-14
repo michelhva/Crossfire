@@ -29,6 +29,7 @@ import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.SocketAddress;
 import java.net.SocketException;
+import java.nio.Buffer;
 import java.nio.BufferOverflowException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
@@ -441,8 +442,8 @@ public class ClientSocket {
 
         final SocketAddress socketAddress = new InetSocketAddress(host, port);
         synchronized (syncOutput) {
-            outputBuffer.clear();
-            inputBuffer.clear();
+            ((Buffer)outputBuffer).clear();
+            ((Buffer)inputBuffer).clear();
             selectionKey = null;
             try {
                 socketChannel = SocketChannel.open();
@@ -503,7 +504,7 @@ public class ClientSocket {
                 if (selectionKey != null) {
                     selectionKey.cancel();
                     selectionKey = null;
-                    outputBuffer.clear();
+                    ((Buffer)outputBuffer).clear();
 
                     try {
                         if (socketChannel != null) {
@@ -521,7 +522,7 @@ public class ClientSocket {
                     }
                     socketChannel = null;
                     selectableChannel = null;
-                    inputBuffer.clear();
+                    ((Buffer)inputBuffer).clear();
                 }
             }
         } finally {
@@ -548,7 +549,7 @@ public class ClientSocket {
                 throw new EOFException("EOF");
             }
         }
-        inputBuffer.flip();
+        ((Buffer)inputBuffer).flip();
         processReadCommand();
         inputBuffer.compact();
     }
@@ -572,7 +573,7 @@ public class ClientSocket {
 
             final int start = inputBuffer.position();
             final int end = start+inputLen;
-            inputBuffer.position(start+inputLen);
+            ((Buffer)inputBuffer).position(start+inputLen);
             inputLen = -1;
             final ByteBuffer packet = ByteBuffer.wrap(inputBuf, start, end-start);
             packet.order(ByteOrder.BIG_ENDIAN);
@@ -637,10 +638,10 @@ public class ClientSocket {
                 return;
             }
 
-            outputBuffer.flip();
+            ((Buffer)outputBuffer).flip();
             try {
                 if (socketChannel == null) {
-                    outputBuffer.position(outputBuffer.limit());
+                    ((Buffer)outputBuffer).position(outputBuffer.limit());
                 } else {
                     socketChannel.write(outputBuffer);
                 }
