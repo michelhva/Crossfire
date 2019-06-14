@@ -33,6 +33,7 @@ import com.realtime.crossfire.jxclient.gui.button.GUIButton;
 import com.realtime.crossfire.jxclient.gui.combobox.GUICharOptionsComboBox;
 import com.realtime.crossfire.jxclient.gui.combobox.GUIClassesComboBox;
 import com.realtime.crossfire.jxclient.gui.combobox.GUIRacesComboBox;
+import com.realtime.crossfire.jxclient.gui.combobox.GUIStartingMapsComboBox;
 import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
 import com.realtime.crossfire.jxclient.gui.commandlist.CommandListType;
 import com.realtime.crossfire.jxclient.gui.commands.CommandCheckBoxOption;
@@ -895,6 +896,10 @@ public class JXCSkinLoader {
 
         case "races":
             element = new GUIRacesComboBox(tooltipManager, elementListener, name, model, newCharModel, label, guiFactory);
+            break;
+
+        case "starting_maps":
+            element = new GUIStartingMapsComboBox(tooltipManager, elementListener, name, model, newCharModel, label, guiFactory);
             break;
 
         case "char_options":
