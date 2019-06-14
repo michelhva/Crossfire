@@ -80,7 +80,7 @@ public class GUIRacesComboBox extends GUIComboBox<String> {
 
         @Override
         public void raceInfoChanged(@NotNull final String raceName) {
-            updateSelectedItem();
+            updateModel();
         }
 
         @Override

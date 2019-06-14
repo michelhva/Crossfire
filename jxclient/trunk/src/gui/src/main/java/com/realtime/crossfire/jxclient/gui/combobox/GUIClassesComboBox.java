@@ -70,7 +70,7 @@ public class GUIClassesComboBox extends GUIComboBox<String> {
 
         @Override
         public void classInfoChanged(@NotNull final String className) {
-            updateSelectedItem();
+            updateModel();
         }
 
         @Override
