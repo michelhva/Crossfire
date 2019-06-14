@@ -1,5 +1,8 @@
 2019-06-10  Andreas Kirschbaum
 
+	* Fix spurious "java.nio.channels.ClosedSelectorException" when
+	exiting the client.
+
 	* Order items in comboboxes.
 
 	* Add tooltips to comboboxes.
