@@ -26,6 +26,8 @@ import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.textinput.CommandCallback;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
+import java.util.ArrayList;
+import java.util.Collection;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -88,7 +90,8 @@ public class AccountCreateCharacterCommand implements GUICommand {
             return;
         }
 
-        commandCallback.accountCreateCharacter(login);
+        final Collection<String> attributes = new ArrayList<>();
+        commandCallback.accountCreateCharacter(login, attributes);
     }
 
 }

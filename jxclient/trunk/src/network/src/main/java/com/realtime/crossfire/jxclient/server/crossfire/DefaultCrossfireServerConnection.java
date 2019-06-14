@@ -49,6 +49,7 @@ import java.nio.ByteOrder;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -4141,10 +4142,10 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     }
 
     @Override
-    public void sendAccountCharacterCreate(@NotNull final String login, @NotNull final String password) {
+    public void sendAccountCharacterCreate(@NotNull final String login, @NotNull final String password, @NotNull final Collection<String> attributes) {
         clearFailure();
         if (debugProtocol != null) {
-            debugProtocol.debugProtocolWrite("send createplayer "+login);
+            debugProtocol.debugProtocolWrite("send createplayer "+login+" "+attributes);
         }
         synchronized (writeBuffer) {
             byteBuffer.clear();
@@ -4156,6 +4157,14 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             final byte[] passwordBytes = password.getBytes(UTF8);
             byteBuffer.put((byte)passwordBytes.length);
             byteBuffer.put(passwordBytes);
+            if (false && loginMethod >= 2) {
+                for (final String attribute : attributes) {
+                    final byte[] attributeBytes = attribute.getBytes(UTF8);
+                    byteBuffer.put((byte)(attributeBytes.length+1));
+                    byteBuffer.put(attributeBytes);
+                    byteBuffer.put((byte)0);
+                }
+            }
             defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
         }
     }

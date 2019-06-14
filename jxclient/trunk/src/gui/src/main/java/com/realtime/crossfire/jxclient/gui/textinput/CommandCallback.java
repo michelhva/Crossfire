@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.gui.textinput;
 
 import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
+import java.util.Collection;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -127,8 +128,9 @@ public interface CommandCallback {
      * Creates a character. The password should be the last from {@link
      * #accountLogin} or {@link #accountCreate}.
      * @param login the character's name
+     * @param attributes the character attributes
      */
-    void accountCreateCharacter(@NotNull String login);
+    void accountCreateCharacter(@NotNull String login, @NotNull Collection<String> attributes);
 
     /**
      * Change the account password.

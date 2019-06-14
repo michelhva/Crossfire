@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.server.crossfire;
 import com.realtime.crossfire.jxclient.faces.AskfaceQueue;
 import com.realtime.crossfire.jxclient.server.server.ReceivedPacketListener;
 import com.realtime.crossfire.jxclient.server.server.ServerConnection;
+import java.util.Collection;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -255,8 +256,9 @@ public interface CrossfireServerConnection extends AskfaceQueue, ServerConnectio
      * Sends a request to create a new character associated to the account.
      * @param login the character's name
      * @param password the character's password
+     * @param attributes the character attributes
      */
-    void sendAccountCharacterCreate(@NotNull String login, @NotNull String password);
+    void sendAccountCharacterCreate(@NotNull String login, @NotNull String password, @NotNull Collection<String> attributes);
 
     /**
      * Sends a request to change the account's password.

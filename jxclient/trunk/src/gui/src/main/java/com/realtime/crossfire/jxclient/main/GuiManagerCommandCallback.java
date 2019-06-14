@@ -26,6 +26,7 @@ import com.realtime.crossfire.jxclient.gui.textinput.CommandCallback;
 import com.realtime.crossfire.jxclient.gui.textinput.NoSuchCommandException;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.window.GuiManager;
+import java.util.Collection;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -147,8 +148,8 @@ public class GuiManagerCommandCallback implements CommandCallback {
     }
 
     @Override
-    public void accountCreateCharacter(@NotNull final String login) {
-        server.sendAccountCharacterCreate(login, lastAccountPassword);
+    public void accountCreateCharacter(@NotNull final String login, @NotNull final Collection<String> attributes) {
+        server.sendAccountCharacterCreate(login, lastAccountPassword, attributes);
     }
 
     @Override
