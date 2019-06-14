@@ -90,6 +90,13 @@ public class GUITextButton extends AbstractButton implements GUISelectable {
     private final Color colorSelected;
 
     /**
+     * The text color when disabled. Takes precedence over {@link
+     * #colorSelected}.
+     */
+    @NotNull
+    private final Color colorDisabled;
+
+    /**
      * The preferred size of this component.
      */
     @NotNull
@@ -111,14 +118,17 @@ public class GUITextButton extends AbstractButton implements GUISelectable {
      * @param font the font to use
      * @param color the text color
      * @param colorSelected the text color when selected
+     * @param colorDisabled the text color when disabled; takes precedence over
+     * colorSelected
      * @param autoRepeat whether the button should autorepeat while being
      * pressed
      * @param commandList the commands to execute when the button is selected
      * @param guiFactory the global GUI factory instance
      */
-    public GUITextButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final ButtonImages up, @NotNull final ButtonImages down, @NotNull final String text, @NotNull final Font font, @NotNull final Color color, @NotNull final Color colorSelected, final boolean autoRepeat, @NotNull final CommandList commandList, @NotNull final GuiFactory guiFactory) {
+    public GUITextButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final ButtonImages up, @NotNull final ButtonImages down, @NotNull final String text, @NotNull final Font font, @NotNull final Color color, @NotNull final Color colorSelected, @NotNull final Color colorDisabled, final boolean autoRepeat, @NotNull final CommandList commandList, @NotNull final GuiFactory guiFactory) {
         super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT, autoRepeat, commandList, guiFactory);
         this.colorSelected = colorSelected;
+        this.colorDisabled = colorDisabled;
         final int preferredHeight = up.getHeight();
         if (preferredHeight != down.getHeight()) {
             throw new IllegalArgumentException("'up' state height is "+preferredHeight+" but 'down' state height is "+down.getHeight());
@@ -145,7 +155,7 @@ public class GUITextButton extends AbstractButton implements GUISelectable {
         super.paintComponent(g);
         final Graphics2D g2 = (Graphics2D)g;
         g2.setFont(font);
-        g2.setColor(selected ? colorSelected : color);
+        g2.setColor(isEnabled() ? selected ? colorSelected : color : colorDisabled);
         final int width = getWidth();
         (isActive() ? down : up).render(g2, width);
         final FontRenderContext fontRenderContext = g2.getFontRenderContext();
