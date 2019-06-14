@@ -371,9 +371,11 @@ public abstract class GUIList<T extends GUIElement> extends ActivatableGUIElemen
 
     @Override
     public void mouseClicked(@NotNull final MouseEvent e) {
-        doSelect(e);
-        if (doubleClickCommandList != null && e.getClickCount() > 1) {
-            doubleClickCommandList.execute();
+        if (isEnabled()) {
+            doSelect(e);
+            if (doubleClickCommandList != null && e.getClickCount() > 1) {
+                doubleClickCommandList.execute();
+            }
         }
         super.mouseClicked(e);
     }
@@ -381,31 +383,41 @@ public abstract class GUIList<T extends GUIElement> extends ActivatableGUIElemen
     @Override
     public void mouseEntered(@NotNull final MouseEvent e, final boolean debugGui) {
         super.mouseEntered(e, debugGui);
-        doTooltip(e);
+        if (isEnabled()) {
+            doTooltip(e);
+        }
     }
 
     @Override
     public void mouseExited(@NotNull final MouseEvent e) {
         super.mouseExited(e);
-        doTooltip(e);
+        if (isEnabled()) {
+            doTooltip(e);
+        }
     }
 
     @Override
     public void mousePressed(@NotNull final MouseEvent e) {
         super.mousePressed(e);
-        doSelect(e);
+        if (isEnabled()) {
+            doSelect(e);
+        }
     }
 
     @Override
     public void mouseMoved(@NotNull final MouseEvent e) {
         super.mouseMoved(e);
-        doTooltip(e);
+        if (isEnabled()) {
+            doTooltip(e);
+        }
     }
 
     @Override
     public void mouseDragged(@NotNull final MouseEvent e) {
         super.mouseDragged(e);
-        doSelect(e);
+        if (isEnabled()) {
+            doSelect(e);
+        }
     }
 
     /**

@@ -236,6 +236,11 @@ public class GUIDupGauge extends AbstractGUIElement implements GUIGaugeListener 
     @Override
     public void mouseClicked(@NotNull final MouseEvent e) {
         super.mouseClicked(e);
+
+        if (!isEnabled()) {
+            return;
+        }
+
         switch (e.getButton()) {
         case MouseEvent.BUTTON1:
             break;

@@ -57,6 +57,11 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
     @Override
     public void mouseClicked(@NotNull final MouseEvent e) {
         super.mouseClicked(e);
+
+        if (!isEnabled()) {
+            return;
+        }
+
         switch (e.getButton()) {
         case MouseEvent.BUTTON1:
             setActive(true);
