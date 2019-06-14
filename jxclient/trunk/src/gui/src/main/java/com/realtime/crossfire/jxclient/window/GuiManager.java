@@ -994,6 +994,10 @@ public class GuiManager {
                 message = "Joining the game...";
                 break;
 
+            case WAIT_REPLYINFO:
+                message = "Waiting for server response...";
+                break;
+
             case CONNECTED:
                 message = "Done.";
                 break;

@@ -211,8 +211,22 @@ public class DefaultCrossfireServerConnectionTest {
             private void processRequestinfo(@NotNull final OutputStream out, @NotNull final String params) throws IOException {
                 if (params.equals("exp_table")) {
                     writeBytes(out, "replyinfo exp_table \0\1".getBytes(StandardCharsets.US_ASCII));
+                } else if (params.equals("skill_info 1")) {
+                    writeBytes(out, "replyinfo skill_info ".getBytes(StandardCharsets.US_ASCII));
+                } else if (params.equals("knowledge_info")) {
+                    writeBytes(out, "replyinfo knowledge_info ".getBytes(StandardCharsets.US_ASCII));
+                } else if (params.equals("image_info")) {
+                    writeBytes(out, "replyinfo image_info 0\n0\n".getBytes(StandardCharsets.US_ASCII));
+                } else if (params.equals("startingmap")) {
+                    writeBytes(out, "replyinfo startingmap ".getBytes(StandardCharsets.US_ASCII));
+                } else if (params.equals("race_list")) {
+                    writeBytes(out, "replyinfo race_list ".getBytes(StandardCharsets.US_ASCII));
+                } else if (params.equals("class_list")) {
+                    writeBytes(out, "replyinfo class_list ".getBytes(StandardCharsets.US_ASCII));
+                } else if (params.equals("newcharinfo")) {
+                    writeBytes(out, "replyinfo newcharinfo ".getBytes(StandardCharsets.US_ASCII));
                 } else {
-                    // ignore
+                    Assert.fail("requestinfo "+params+" not implemented");
                 }
             }
 
