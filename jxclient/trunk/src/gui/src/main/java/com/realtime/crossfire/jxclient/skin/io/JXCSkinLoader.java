@@ -96,6 +96,7 @@ import com.realtime.crossfire.jxclient.gui.misc.GUIFill;
 import com.realtime.crossfire.jxclient.gui.misc.GUILabelMessage;
 import com.realtime.crossfire.jxclient.gui.misc.GUIPicture;
 import com.realtime.crossfire.jxclient.gui.misc.GUIScrollBar;
+import com.realtime.crossfire.jxclient.gui.misc.GUISpinner;
 import com.realtime.crossfire.jxclient.gui.misc.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable2;
 import com.realtime.crossfire.jxclient.gui.textinput.CommandCallback;
@@ -670,6 +671,8 @@ public class JXCSkinLoader {
                                 parseCheckbox(args, tooltipManager, elementListener, lnr);
                             } else if (gui != null && cmd.equals("combobox")) {
                                 parseComboBox(args, tooltipManager, elementListener);
+                            } else if (gui != null && cmd.equals("spinner")) {
+                                parseSpinner(args, tooltipManager, elementListener);
                             } else if (cmd.equals("commandlist")) {
                                 parseCommandList(args, guiStateManager, lnr, commandExecutor, commandQueue, server, commandCallback, macros);
                             } else if (cmd.equals("commandlist_add")) {
@@ -915,6 +918,20 @@ public class JXCSkinLoader {
             throw new IOException("undefined 'combobox' type '"+type+"'");
         }
         insertGuiElement(element);
+    }
+
+    /**
+     * Parses a "spinner" command.
+     * @param args the command arguments
+     * @param tooltipManager the tooltip manager to update
+     * @param elementListener the element listener to notify
+     * @throws IOException if the command cannot be parsed
+     * @throws JXCSkinException if the command cannot be parsed
+     */
+    private void parseSpinner(@NotNull final Args args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener) throws IOException, JXCSkinException {
+        final String name = args.get();
+        final NewcharStat stat = NumberParser.parseEnum(NewcharStat.class, args.get(), "stat");
+        insertGuiElement(new GUISpinner(tooltipManager, elementListener, name, stat, newCharModel, guiFactory));
     }
 
     /**
