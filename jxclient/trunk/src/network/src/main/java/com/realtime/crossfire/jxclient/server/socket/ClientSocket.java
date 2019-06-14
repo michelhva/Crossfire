@@ -412,6 +412,9 @@ public class ClientSocket {
      */
     private void doTransceive() throws IOException {
         selector.select();
+        if (Thread.currentThread().isInterrupted()) {
+            return;
+        }
         final Collection<SelectionKey> selectedKeys = selector.selectedKeys();
         if (selectedKeys.remove(selectionKey) && isConnected) {
             processRead();
