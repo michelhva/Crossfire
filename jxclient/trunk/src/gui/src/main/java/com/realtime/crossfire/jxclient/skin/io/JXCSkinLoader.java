@@ -68,9 +68,12 @@ import com.realtime.crossfire.jxclient.gui.label.GUILabelQuery;
 import com.realtime.crossfire.jxclient.gui.label.GUILabelStats;
 import com.realtime.crossfire.jxclient.gui.label.GUILabelStats2;
 import com.realtime.crossfire.jxclient.gui.label.GUIMultiLineLabel;
+import com.realtime.crossfire.jxclient.gui.label.GUINewcharLabel;
 import com.realtime.crossfire.jxclient.gui.label.GUIOneLineLabel;
 import com.realtime.crossfire.jxclient.gui.label.GUISpellLabel;
 import com.realtime.crossfire.jxclient.gui.label.NewCharModel;
+import com.realtime.crossfire.jxclient.gui.label.NewcharStat;
+import com.realtime.crossfire.jxclient.gui.label.NewcharType;
 import com.realtime.crossfire.jxclient.gui.label.Type;
 import com.realtime.crossfire.jxclient.gui.list.GUICharacterList;
 import com.realtime.crossfire.jxclient.gui.list.GUIFloorList;
@@ -735,6 +738,8 @@ public class JXCSkinLoader {
                                 parseLabelStat2(args, tooltipManager, elementListener);
                             } else if (gui != null && cmd.equals("label_spell")) {
                                 parseLabelSpell(args, tooltipManager, elementListener, currentSpellManager);
+                            } else if (gui != null && cmd.equals("label_newchar")) {
+                                parseLabelNewchar(args, tooltipManager, elementListener, server);
                             } else if (gui != null && cmd.equals("link_size")) {
                                 parseLinkSize(args, gui.getComponent());
                             } else if (gui != null && cmd.equals("log_label")) {
@@ -1693,6 +1698,27 @@ public class JXCSkinLoader {
         final Font font = definedFonts.lookup(args.get());
         final Type type = NumberParser.parseEnum(Type.class, args.get(), "label type");
         insertGuiElement(new GUISpellLabel(tooltipManager, elementListener, name, null, facesManager, font, type, currentSpellManager, guiFactory));
+    }
+
+    /**
+     * Parses a "label_newchar" command.
+     * @param args the command arguments
+     * @param tooltipManager the tooltip manager to update
+     * @param elementListener the element listener to notify
+     * @param server the server to use
+     * @throws IOException if the command cannot be parsed
+     * @throws JXCSkinException if the command cannot be parsed
+     */
+    private void parseLabelNewchar(@NotNull final Args args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CrossfireServerConnection server) throws IOException, JXCSkinException {
+        final String name = args.get();
+        final NewcharStat stat = NumberParser.parseEnum(NewcharStat.class, args.get(), "label stat");
+        final NewcharType type = NumberParser.parseEnum(NewcharType.class, args.get(), "label type");
+        final Font font = definedFonts.lookup(args.get());
+        final Font fontError = definedFonts.lookup(args.get());
+        final Color color = ParseUtils.parseColor(args.get());
+        final Color colorError = ParseUtils.parseColor(args.get());
+        final AbstractGUIElement element = new GUINewcharLabel(tooltipManager, elementListener, name, server, font, fontError, stat, type, newCharModel, color, colorError, guiFactory);
+        insertGuiElement(element);
     }
 
     /**

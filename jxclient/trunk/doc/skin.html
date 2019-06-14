@@ -1123,6 +1123,7 @@ Otherwise a GUI element is expected, optionally followed by it's size.
     label_stat &lt;name&gt; &lt;font&gt; &lt;color&gt; &lt;stat&gt; &lt;alignment&gt;
     label_stat2 &lt;name&gt; &lt;font&gt; &lt;normal&gt; &lt;upgradable&gt; &lt;depleted&gt; &lt;boosted&gt; &lt;boosted+upgradable&gt; &lt;stat-curr&gt; &lt;stat-base&gt; &lt;stat-race&gt; &lt;stat-applied&gt; &lt;alignment&gt;
     label_spell &lt;name&gt; &lt;font&gt; &lt;type&gt;
+    label_newchar &lt;name&gt; &lt;font&gt; &lt;stat2&gt; &lt;type2&gt; &lt;font&gt; &lt;fontError&gt; &lt;color&gt; &lt;colorError&gt;
 </pre>
 
 <p>precondition: dialog</p>
@@ -1150,15 +1151,20 @@ Otherwise a GUI element is expected, optionally followed by it's size.
     </li>
     <li><code>label_spell</code> displays information about the readied spell.
     </li>
+    <li><code>label_newchar</code> displays information related to new character
+        creation.</li>
 </ul>
 
 <ul>
     <li>&lt;name&gt; is the name of the label.</li>
     <li>&lt;font&gt; and &lt;color&gt; is the font and color of the text.</li>
+    <li>&lt;fontError&gt; and &lt;colorError%gt; is the font and color of the
+        text if the corresponding stat value is invalid.</li>
     <li>&lt;text...&gt; is the text to display.</li>
     <li>&lt;stat&gt; &lt;stat-curr&gt; &lt;stat-base&gt; &lt;stat-race&gt; &lt;stat-applied&gt;
         define the stat value to display.
     </li>
+    <li>&lt;stat2&gt;: A stat value (STR, DEX, CON, INT, WIS, POW, CHA).</li>
     <li>&lt;normal&gt; &lt;upgradable&gt; &lt;depleted&gt; &lt;boosted&gt; &lt;boosted+upgradable&gt;
         are the colors for different stat states.
     </li>
@@ -1174,6 +1180,21 @@ Otherwise a GUI element is expected, optionally followed by it's size.
             </li>
             <li><code>SPELL_LEVEL</code>: the spell's level.</li>
             <li><code>SPELL_DESCRIPTION</code>: the spell's description.</li>
+        </ul>
+    </li>
+    <li>&lt;type2&gt;: selects the type of information to show:
+        <ul>
+            <li>RACE: The per-race attribute modifier for the currently selected
+                race.</li>
+            <li>CLASS: The per-class attribute modifier for the currently
+                selected class.</li>
+            <li>TOTAL: The total attribute value. Sum of per-race, per-class,
+                and user selected value.</li>
+            <li>ERROR: The current error message. Shows nothing if no error
+                message is active.</li>
+            <li>UNUSED: The number of unused attribute points.</li>
+            <li>CHAR_OPTION: The optional class or race dependent character
+                options. Hidden if no character options are active.</li>
         </ul>
     </li>
 </ul>
