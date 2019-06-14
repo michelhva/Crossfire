@@ -29,6 +29,8 @@ import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.server.crossfire.Model;
 import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Component;
+import java.util.ArrayList;
+import java.util.List;
 import javax.swing.JLabel;
 import javax.swing.JList;
 import org.jetbrains.annotations.NotNull;
@@ -126,7 +128,13 @@ public class GUIClassesComboBox extends GUIComboBox<String> {
      * #model}.
      */
     private void updateModel() {
-        updateModel(model.getNewCharacterInformation().getClassesList());
+        final List<String> tmp = new ArrayList<>(model.getNewCharacterInformation().getClassesList());
+        tmp.sort((o1, o2) -> {
+            final ClassRaceInfo info1 = model.getNewCharacterInformation().getClassInfo(o1);
+            final ClassRaceInfo info2 = model.getNewCharacterInformation().getClassInfo(o2);
+            return info1 == null || info2 == null ? 0 : info1.getName().compareTo(info2.getName());
+        });
+        updateModel(tmp);
         updateSelectedItem();
     }
 
