@@ -77,7 +77,7 @@ public class AccountCreateCharacterCommand implements GUICommand {
             return;
         }
 
-        final GUIText loginField = gui.getFirstElement(GUIText.class, "character_login");
+        final GUIText loginField = gui.getFirstElement(GUIText.class, "account_character_create");
         if (loginField == null) {
             return;
         }

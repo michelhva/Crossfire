@@ -309,7 +309,7 @@ public class GuiManager {
             } else if (command.equals("createplayer") && skin != null) {
                 try {
                     final Gui dialog = skin.getDialog("account_character_new");
-                    final GUIText loginField = dialog.getFirstElement(GUIText.class, "character_login");
+                    final GUIText loginField = dialog.getFirstElement(GUIText.class, "account_character_create");
                     if (loginField != null) {
                         loginField.setActive(true);
                     }
@@ -669,7 +669,7 @@ public class GuiManager {
                         break;
 
                     case "account_character_new":
-                        final GUIText characterField = dialog.getFirstElement(GUIText.class, "character_login");
+                        final GUIText characterField = dialog.getFirstElement(GUIText.class, "account_character_create");
                         if (characterField != null) {
                             characterField.setText("");
                             characterField.setActive(true);
