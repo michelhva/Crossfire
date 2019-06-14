@@ -130,48 +130,6 @@ public class NewCharacterInformation {
     }
 
     /**
-     * Sets the races available for character creation.
-     * @param raceList the races
-     */
-    public void setRaceList(@NotNull final String[] raceList) {
-        this.raceList.clear();
-        this.raceList.addAll(Arrays.asList(raceList));
-        for (NewCharacterInformationListener newCharacterInformationListener : newCharacterInformationListeners) {
-            newCharacterInformationListener.raceListChanged();
-        }
-    }
-
-    /**
-     * Returns all defined races available for character creation.
-     * @return the races
-     */
-    @NotNull
-    public List<String> getRaceList() {
-        return Collections.unmodifiableList(raceList);
-    }
-
-    /**
-     * Sets the classes available for character creation.
-     * @param classList the classes
-     */
-    public void setClassList(@NotNull final String[] classList) {
-        this.classList.clear();
-        this.classList.addAll(Arrays.asList(classList));
-        for (NewCharacterInformationListener newCharacterInformationListener : newCharacterInformationListeners) {
-            newCharacterInformationListener.classListChanged();
-        }
-    }
-
-    /**
-     * Returns all defined classes available for character creation.
-     * @return the classes
-     */
-    @NotNull
-    public List<String> getClassesList() {
-        return Collections.unmodifiableList(classList);
-    }
-
-    /**
      * Sets or updates a {@link StartingMap}.
      * @param startingMapInfo the starting map to set
      */
@@ -194,6 +152,27 @@ public class NewCharacterInformation {
     }
 
     /**
+     * Sets the races available for character creation.
+     * @param raceList the races
+     */
+    public void setRaceList(@NotNull final String[] raceList) {
+        this.raceList.clear();
+        this.raceList.addAll(Arrays.asList(raceList));
+        for (NewCharacterInformationListener newCharacterInformationListener : newCharacterInformationListeners) {
+            newCharacterInformationListener.raceListChanged();
+        }
+    }
+
+    /**
+     * Returns all defined races available for character creation.
+     * @return the races
+     */
+    @NotNull
+    public List<String> getRaceList() {
+        return Collections.unmodifiableList(raceList);
+    }
+
+    /**
      * Sets or updates a {@link ClassRaceInfo}.
      * @param classRaceInfo the race info to set
      */
@@ -212,6 +191,27 @@ public class NewCharacterInformation {
     @Nullable
     public ClassRaceInfo getRaceInfo(@NotNull final String race) {
         return raceInfo.get(race);
+    }
+
+    /**
+     * Sets the classes available for character creation.
+     * @param classList the classes
+     */
+    public void setClassList(@NotNull final String[] classList) {
+        this.classList.clear();
+        this.classList.addAll(Arrays.asList(classList));
+        for (NewCharacterInformationListener newCharacterInformationListener : newCharacterInformationListeners) {
+            newCharacterInformationListener.classListChanged();
+        }
+    }
+
+    /**
+     * Returns all defined classes available for character creation.
+     * @return the classes
+     */
+    @NotNull
+    public List<String> getClassesList() {
+        return Collections.unmodifiableList(classList);
     }
 
     /**
@@ -237,20 +237,20 @@ public class NewCharacterInformation {
     }
 
     /**
+     * Sets the {@link NewCharInfo} instance for character creation.
+     * @param newCharInfo the new char info instance
+     */
+    public void setNewCharInfo(@NotNull final NewCharInfo newCharInfo) {
+        this.newCharInfo = newCharInfo;
+    }
+
+    /**
      * Returns the {@link NewCharInfo} instance for character creation.
      * @return the new char info instance
      */
     @NotNull
     public NewCharInfo getNewCharInfo() {
         return newCharInfo;
-    }
-
-    /**
-     * Sets the {@link NewCharInfo} instance for character creation.
-     * @param newCharInfo the new char info instance
-     */
-    public void setNewCharInfo(@NotNull final NewCharInfo newCharInfo) {
-        this.newCharInfo = newCharInfo;
     }
 
 }
