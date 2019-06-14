@@ -110,7 +110,7 @@ public class NewCharacterInformation {
     public void setStartingMapList(@NotNull final Iterable<StartingMap> startingMaps) {
         startingMapList.clear();
         for (StartingMap startingMap : startingMaps) {
-            startingMapList.add(startingMap.getArchName()); // ignores StartingMap instance
+            startingMapList.add(startingMap.getArchName());
         }
         for (NewCharacterInformationListener newCharacterInformationListener : newCharacterInformationListeners) {
             newCharacterInformationListener.startingMapListChanged();
