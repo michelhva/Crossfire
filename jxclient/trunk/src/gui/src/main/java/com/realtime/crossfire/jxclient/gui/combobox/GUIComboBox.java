@@ -32,6 +32,7 @@ import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Transparency;
 import java.awt.event.ActionListener;
+import java.util.List;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JComboBox;
 import javax.swing.JList;
@@ -83,6 +84,11 @@ public abstract class GUIComboBox<T> extends AbstractGUIElement {
     private final ActionListener actionListener = e -> updateSelectedItem();
 
     /**
+     * If set, ignores calls to {@link #actionListener}.
+     */
+    private boolean inhibitActionListener;
+
+    /**
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
@@ -127,10 +133,35 @@ public abstract class GUIComboBox<T> extends AbstractGUIElement {
      * Updates entries shown in the combo box.
      * @param elements the new entries to show
      */
-    protected void updateModel(@NotNull final Iterable<T> elements) {
-        model.removeAllElements();
-        for (T element : elements) {
-            model.addElement(element);
+    protected void updateModel(@NotNull final List<T> elements) {
+        final boolean updateModel;
+        if (elements == null) {
+            updateModel = model.getSize() != 0;
+        } else {
+            final int size = model.getSize();
+            if (size == elements.size()) {
+                int i;
+                for (i = 0; i < size; i++) {
+                    if (!model.getElementAt(i).equals(elements.get(i))) {
+                        break;
+                    }
+                }
+                updateModel = i < size;
+            } else {
+                updateModel = true;
+            }
+        }
+
+        if (updateModel) {
+            try {
+                inhibitActionListener = true;
+                model.removeAllElements();
+                for (T element : elements) {
+                    model.addElement(element);
+                }
+            } finally {
+                inhibitActionListener = false;
+            }
         }
     }
 
@@ -150,6 +181,10 @@ public abstract class GUIComboBox<T> extends AbstractGUIElement {
      * Called whenever the selected item has changed.
      */
     protected void updateSelectedItem() {
+        if (inhibitActionListener) {
+            return;
+        }
+
         if (label == null) {
             return;
         }
