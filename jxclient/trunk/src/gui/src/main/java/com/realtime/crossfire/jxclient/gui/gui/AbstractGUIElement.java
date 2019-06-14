@@ -169,22 +169,30 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
 
     @Override
     public void mouseClicked(@NotNull final MouseEvent e) {
-        elementListener.raiseDialog(this);
+        if (isEnabled()) {
+            elementListener.raiseDialog(this);
+        }
     }
 
     @Override
     public void mouseEntered(@NotNull final MouseEvent e, final boolean debugGui) {
-        tooltipManager.setElement(this);
+        if (isEnabled()) {
+            tooltipManager.setElement(this);
+        }
     }
 
     @Override
     public void mouseExited(@NotNull final MouseEvent e) {
-        tooltipManager.unsetElement(this);
+        if (isEnabled()) {
+            tooltipManager.unsetElement(this);
+        }
     }
 
     @Override
     public void mousePressed(@NotNull final MouseEvent e) {
-        elementListener.raiseDialog(this);
+        if (isEnabled()) {
+            elementListener.raiseDialog(this);
+        }
     }
 
     @Override

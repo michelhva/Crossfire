@@ -185,6 +185,11 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     @Override
     public void mouseClicked(@NotNull final MouseEvent e) {
         super.mouseClicked(e);
+
+        if (!isEnabled()) {
+            return;
+        }
+
         final int b = e.getButton();
         switch (b) {
         case MouseEvent.BUTTON1:

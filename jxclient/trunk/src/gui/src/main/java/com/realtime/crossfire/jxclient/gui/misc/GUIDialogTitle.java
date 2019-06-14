@@ -85,6 +85,11 @@ public class GUIDialogTitle extends GUIOneLineLabel {
     @Override
     public void mousePressed(@NotNull final MouseEvent e) {
         super.mousePressed(e);
+
+        if (!isEnabled()) {
+            return;
+        }
+
         final Gui gui = guiFactory.getGui(this);
         if (gui == null) {
             offset = null;
@@ -98,14 +103,18 @@ public class GUIDialogTitle extends GUIOneLineLabel {
     @Override
     public void mouseReleased(@NotNull final MouseEvent e) {
         super.mouseReleased(e);
-        moveTo(e);
-        offset = null;
+        if (isEnabled()) {
+            moveTo(e);
+            offset = null;
+        }
     }
 
     @Override
     public void mouseDragged(@NotNull final MouseEvent e) {
         super.mouseDragged(e);
-        moveTo(e);
+        if (isEnabled()) {
+            moveTo(e);
+        }
     }
 
     /**

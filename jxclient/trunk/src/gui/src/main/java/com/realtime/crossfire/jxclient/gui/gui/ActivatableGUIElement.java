@@ -74,7 +74,9 @@ public abstract class ActivatableGUIElement extends AbstractGUIElement {
     @Override
     public void mousePressed(@NotNull final MouseEvent e) {
         super.mousePressed(e);
-        setActive(true);
+        if (isEnabled()) {
+            setActive(true);
+        }
     }
 
     /**

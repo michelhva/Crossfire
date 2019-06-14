@@ -150,6 +150,11 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
     @Override
     public void mousePressed(@NotNull final MouseEvent e) {
         super.mousePressed(e);
+
+        if (!isEnabled()) {
+            return;
+        }
+
         switch (e.getButton()) {
         case MouseEvent.BUTTON1:
             final int sh = getSliderHeightPixels();
@@ -174,6 +179,11 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
     @Override
     public void mouseReleased(@NotNull final MouseEvent e) {
         super.mouseReleased(e);
+
+        if (!isEnabled()) {
+            return;
+        }
+
         switch (e.getButton()) {
         case MouseEvent.BUTTON1:
             scrolling = false;
@@ -190,7 +200,7 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
     @Override
     public void mouseDragged(@NotNull final MouseEvent e) {
         super.mouseDragged(e);
-        if (scrolling) {
+        if (isEnabled() && scrolling) {
             scrollable.scrollTo(getSliderPos(e.getY()-offset));
         }
     }

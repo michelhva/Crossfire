@@ -189,6 +189,11 @@ public abstract class GUIItemList<T extends GUIItemItem> extends GUIList<T> {
     @Override
     public void mouseClicked(@NotNull final MouseEvent e) {
         super.mouseClicked(e);
+
+        if (!isEnabled()) {
+            return;
+        }
+
         switch (e.getButton()) {
         case MouseEvent.BUTTON1:
             setActive(true);

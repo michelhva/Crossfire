@@ -94,6 +94,11 @@ public class GUIMap extends AbstractGUIMap {
     @Override
     public void mouseClicked(@NotNull final MouseEvent e) {
         super.mouseClicked(e);
+
+        if (!isEnabled()) {
+            return;
+        }
+
         switch (e.getButton()) {
         case MouseEvent.BUTTON1:
             final int dx1 = e.getX()-getOffsetX();

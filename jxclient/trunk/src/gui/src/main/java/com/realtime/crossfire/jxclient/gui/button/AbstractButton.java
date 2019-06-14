@@ -101,6 +101,11 @@ public abstract class AbstractButton extends ActivatableGUIElement implements Ke
     @Override
     public void mouseClicked(@NotNull final MouseEvent e) {
         super.mouseClicked(e);
+
+        if (!isEnabled()) {
+            return;
+        }
+
         final int b = e.getButton();
         switch (b) {
         case MouseEvent.BUTTON1:
@@ -121,6 +126,11 @@ public abstract class AbstractButton extends ActivatableGUIElement implements Ke
     @Override
     public void mouseReleased(@NotNull final MouseEvent e) {
         super.mouseReleased(e);
+
+        if (!isEnabled()) {
+            return;
+        }
+
         final int b = e.getButton();
         switch (b) {
         case MouseEvent.BUTTON1:
@@ -141,6 +151,11 @@ public abstract class AbstractButton extends ActivatableGUIElement implements Ke
     @Override
     public void mousePressed(@NotNull final MouseEvent e) {
         super.mousePressed(e);
+
+        if (!isEnabled()) {
+            return;
+        }
+
         final int b = e.getButton();
         switch (b) {
         case MouseEvent.BUTTON1:
@@ -161,6 +176,11 @@ public abstract class AbstractButton extends ActivatableGUIElement implements Ke
     @Override
     public void mouseExited(@NotNull final MouseEvent e) {
         super.mouseExited(e);
+
+        if (!isEnabled()) {
+            return;
+        }
+
         if (autoRepeat) {
             timer.stop();
         }
@@ -169,7 +189,9 @@ public abstract class AbstractButton extends ActivatableGUIElement implements Ke
 
     @Override
     public void execute() {
-        commandList.execute();
+        if (isEnabled()) {
+            commandList.execute();
+        }
     }
 
     @Nullable
@@ -193,6 +215,10 @@ public abstract class AbstractButton extends ActivatableGUIElement implements Ke
 
     @Override
     public boolean keyPressed(@NotNull final KeyEvent2 e) {
+        if (!isEnabled()) {
+            return false;
+        }
+
         switch (e.getKeyCode()) {
         case KeyEvent.VK_SPACE:
         case KeyEvent.VK_ENTER:

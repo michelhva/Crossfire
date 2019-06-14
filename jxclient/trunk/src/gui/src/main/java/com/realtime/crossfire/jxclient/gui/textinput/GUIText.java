@@ -288,6 +288,11 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     @Override
     public void mouseClicked(@NotNull final MouseEvent e) {
         super.mouseClicked(e);
+
+        if (!isEnabled()) {
+            return;
+        }
+
         final int b = e.getButton();
         switch (b) {
         case MouseEvent.BUTTON1:
@@ -315,6 +320,10 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
 
     @Override
     public boolean keyPressed(@NotNull final KeyEvent2 e) {
+        if (!isEnabled()) {
+            return false;
+        }
+
         switch (e.getKeyCode()) {
         case KeyEvent.VK_ENTER:
             markInactivePending();
