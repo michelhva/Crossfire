@@ -28,6 +28,7 @@ import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.concurrent.Semaphore;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -209,30 +210,7 @@ public class DefaultCrossfireServerConnectionTest {
              */
             private void processRequestinfo(@NotNull final OutputStream out, @NotNull final String params) throws IOException {
                 if (params.equals("exp_table")) {
-                    writeBytes(out, new byte[] {
-                        'r',
-                        'e',
-                        'p',
-                        'l',
-                        'y',
-                        'i',
-                        'n',
-                        'f',
-                        'o',
-                        ' ',
-                        'e',
-                        'x',
-                        'p',
-                        '_',
-                        't',
-                        'a',
-                        'b',
-                        'l',
-                        'e',
-                        ' ',
-                        0,
-                        1,
-                    });
+                    writeBytes(out, "replyinfo exp_table \0\1".getBytes(StandardCharsets.US_ASCII));
                 } else {
                     // ignore
                 }

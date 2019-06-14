@@ -219,321 +219,121 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * The command prefix for the "accountlogin" command.
      */
     @NotNull
-    private static final byte[] ACCOUNT_LOGIN_PREFIX = {
-        'a',
-        'c',
-        'c',
-        'o',
-        'u',
-        'n',
-        't',
-        'l',
-        'o',
-        'g',
-        'i',
-        'n',
-        ' ',
-    };
+    private static final byte[] ACCOUNT_LOGIN_PREFIX = "accountlogin ".getBytes(StandardCharsets.US_ASCII);
 
     /**
      * The command prefix for the "accountplay" command.
      */
     @NotNull
-    private static final byte[] ACCOUNT_PLAY_PREFIX = {
-        'a',
-        'c',
-        'c',
-        'o',
-        'u',
-        'n',
-        't',
-        'p',
-        'l',
-        'a',
-        'y',
-        ' ',
-    };
+    private static final byte[] ACCOUNT_PLAY_PREFIX = "accountplay ".getBytes(StandardCharsets.US_ASCII);
 
     /**
      * The command prefix for the "accountaddplayer" command.
      */
     @NotNull
-    private static final byte[] ACCOUNT_ADD_PLAYER_PREFIX = {
-        'a',
-        'c',
-        'c',
-        'o',
-        'u',
-        'n',
-        't',
-        'a',
-        'd',
-        'd',
-        'p',
-        'l',
-        'a',
-        'y',
-        'e',
-        'r',
-        ' ',
-    };
+    private static final byte[] ACCOUNT_ADD_PLAYER_PREFIX = "accountaddplayer ".getBytes(StandardCharsets.US_ASCII);
 
     /**
      * The command prefix for the "accountnew" command.
      */
     @NotNull
-    private static final byte[] ACCOUNT_NEW_PREFIX = {
-        'a',
-        'c',
-        'c',
-        'o',
-        'u',
-        'n',
-        't',
-        'n',
-        'e',
-        'w',
-        ' ',
-    };
+    private static final byte[] ACCOUNT_NEW_PREFIX = "accountnew ".getBytes(StandardCharsets.US_ASCII);
 
     /**
      * The command prefix for the "accountpw" command.
      */
     @NotNull
-    private static final byte[] ACCOUNT_PASSWORD_PREFIX = {
-        'a',
-        'c',
-        'c',
-        'o',
-        'u',
-        'n',
-        't',
-        'p',
-        'w',
-        ' ',
-    };
+    private static final byte[] ACCOUNT_PASSWORD_PREFIX = "accountpw ".getBytes(StandardCharsets.US_ASCII);
 
     /**
      * The command prefix for the "createplayer" command.
      */
     @NotNull
-    private static final byte[] CREATE_PLAYER_PREFIX = {
-        'c',
-        'r',
-        'e',
-        'a',
-        't',
-        'e',
-        'p',
-        'l',
-        'a',
-        'y',
-        'e',
-        'r',
-        ' ',
-    };
+    private static final byte[] CREATE_PLAYER_PREFIX = "createplayer ".getBytes(StandardCharsets.US_ASCII);
 
     /**
      * The command prefix for the "addme" command.
      */
     @NotNull
-    private static final byte[] ADDME_PREFIX = {
-        'a',
-        'd',
-        'd',
-        'm',
-        'e',
-        ' ',
-    };
+    private static final byte[] ADDME_PREFIX = "addme ".getBytes(StandardCharsets.US_ASCII);
 
     /**
      * The command prefix for the "apply" command.
      */
     @NotNull
-    private static final byte[] APPLY_PREFIX = {
-        'a',
-        'p',
-        'p',
-        'l',
-        'y',
-        ' ',
-    };
+    private static final byte[] APPLY_PREFIX = "apply ".getBytes(StandardCharsets.US_ASCII);
 
     /**
      * The command prefix for the "askface" command.
      */
     @NotNull
-    private static final byte[] ASKFACE_PREFIX = {
-        'a',
-        's',
-        'k',
-        'f',
-        'a',
-        'c',
-        'e',
-        ' ',
-    };
+    private static final byte[] ASKFACE_PREFIX = "askface ".getBytes(StandardCharsets.US_ASCII);
 
     /**
      * The command prefix for the "examine" command.
      */
     @NotNull
-    private static final byte[] EXAMINE_PREFIX = {
-        'e',
-        'x',
-        'a',
-        'm',
-        'i',
-        'n',
-        'e',
-        ' ',
-    };
+    private static final byte[] EXAMINE_PREFIX = "examine ".getBytes(StandardCharsets.US_ASCII);
 
     /**
      * The command prefix for the "lock" command.
      */
     @NotNull
-    private static final byte[] LOCK_PREFIX = {
-        'l',
-        'o',
-        'c',
-        'k',
-        ' ',
-    };
+    private static final byte[] LOCK_PREFIX = "lock ".getBytes(StandardCharsets.US_ASCII);
 
     /**
      * The command prefix for the "lookat" command.
      */
     @NotNull
-    private static final byte[] LOOKAT_PREFIX = {
-        'l',
-        'o',
-        'o',
-        'k',
-        'a',
-        't',
-        ' ',
-    };
+    private static final byte[] LOOKAT_PREFIX = "lookat ".getBytes(StandardCharsets.US_ASCII);
 
     /**
      * The command prefix for the "mark" command.
      */
     @NotNull
-    private static final byte[] MARK_PREFIX = {
-        'm',
-        'a',
-        'r',
-        'k',
-        ' ',
-    };
+    private static final byte[] MARK_PREFIX = "mark ".getBytes(StandardCharsets.US_ASCII);
 
     /**
      * The command prefix for the "move" command.
      */
     @NotNull
-    private static final byte[] MOVE_PREFIX = {
-        'm',
-        'o',
-        'v',
-        'e',
-        ' ',
-    };
+    private static final byte[] MOVE_PREFIX = "move ".getBytes(StandardCharsets.US_ASCII);
 
     /**
      * The command prefix for the "ncom" command.
      */
     @NotNull
-    private static final byte[] NCOM_PREFIX = {
-        'n',
-        'c',
-        'o',
-        'm',
-        ' ',
-    };
+    private static final byte[] NCOM_PREFIX = "ncom ".getBytes(StandardCharsets.US_ASCII);
 
     /**
      * The command prefix for the "reply" command.
      */
     @NotNull
-    private static final byte[] REPLY_PREFIX = {
-        'r',
-        'e',
-        'p',
-        'l',
-        'y',
-        ' ',
-    };
+    private static final byte[] REPLY_PREFIX = "reply ".getBytes(StandardCharsets.US_ASCII);
 
     /**
      * The command prefix for the "requestinfo" command.
      */
     @NotNull
-    private static final byte[] REQUESTINFO_PREFIX = {
-        'r',
-        'e',
-        'q',
-        'u',
-        'e',
-        's',
-        't',
-        'i',
-        'n',
-        'f',
-        'o',
-        ' ',
-    };
+    private static final byte[] REQUESTINFO_PREFIX = "requestinfo ".getBytes(StandardCharsets.US_ASCII);
 
     /**
      * The command prefix for the "setup" command.
      */
     @NotNull
-    private static final byte[] SETUP_PREFIX = {
-        's',
-        'e',
-        't',
-        'u',
-        'p',
-    }; // note that this command does not have a trailing space
+    private static final byte[] SETUP_PREFIX = "setup".getBytes(StandardCharsets.US_ASCII); // note that this command does not have a trailing space
 
     /**
      * The command prefix for the "toggleextendedtext" command.
      */
     @NotNull
-    private static final byte[] TOGGLEEXTENDEDTEXT_PREFIX = {
-        't',
-        'o',
-        'g',
-        'g',
-        'l',
-        'e',
-        'e',
-        'x',
-        't',
-        'e',
-        'n',
-        'd',
-        'e',
-        'd',
-        't',
-        'e',
-        'x',
-        't',
-    }; // note that this command does not have a trailing space
+    private static final byte[] TOGGLEEXTENDEDTEXT_PREFIX = "toggleextendedtext".getBytes(StandardCharsets.US_ASCII); // note that this command does not have a trailing space
 
     /**
      * The command prefix for the "version" command.
      */
     @NotNull
-    private static final byte[] VERSION_PREFIX = {
-        'v',
-        'e',
-        'r',
-        's',
-        'i',
-        'o',
-        'n',
-        ' ',
-    };
+    private static final byte[] VERSION_PREFIX = "version ".getBytes(StandardCharsets.US_ASCII);
 
     /**
      * The version information to send when connecting to the server.
