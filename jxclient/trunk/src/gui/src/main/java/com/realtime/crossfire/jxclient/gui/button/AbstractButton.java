@@ -22,11 +22,14 @@
 package com.realtime.crossfire.jxclient.gui.button;
 
 import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
+import com.realtime.crossfire.jxclient.gui.commands.AccountCreateCharacterCommand;
 import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.KeyPressedHandler;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyEvent2;
+import com.realtime.crossfire.jxclient.gui.label.NewCharModel;
+import com.realtime.crossfire.jxclient.gui.label.NewCharModelListener;
 import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Dimension;
 import java.awt.event.ActionListener;
@@ -69,6 +72,12 @@ public abstract class AbstractButton extends ActivatableGUIElement implements Ke
     private final CommandList commandList;
 
     /**
+     * The global {@link NewCharModel} instance.
+     */
+    @NotNull
+    private final NewCharModel newCharModel;
+
+    /**
      * The {@link ActionListener} for generating autorepeat events.
      */
     @NotNull
@@ -81,6 +90,12 @@ public abstract class AbstractButton extends ActivatableGUIElement implements Ke
     private final Timer timer = new Timer(TIMEOUT_FIRST, timeoutEvent);
 
     /**
+     * The listener attached to {@link #newCharModel}.
+     */
+    @NotNull
+    private final NewCharModelListener listener = this::updateEnabled;
+
+    /**
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
@@ -90,12 +105,28 @@ public abstract class AbstractButton extends ActivatableGUIElement implements Ke
      * pressed
      * @param commandList the commands to execute when the button is elected
      * @param guiFactory the global GUI factory instance
+     * @param newCharModel the global new char model instance
      */
-    protected AbstractButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int transparency, final boolean autoRepeat, @NotNull final CommandList commandList, @NotNull final GuiFactory guiFactory) {
+    protected AbstractButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int transparency, final boolean autoRepeat, @NotNull final CommandList commandList, @NotNull final GuiFactory guiFactory, @NotNull final NewCharModel newCharModel) {
         super(tooltipManager, elementListener, name, transparency, guiFactory);
         this.autoRepeat = autoRepeat;
         this.commandList = commandList;
+        this.newCharModel = newCharModel;
         timer.setDelay(TIMEOUT_SECOND);
+
+        if (commandList.containsCommand(AccountCreateCharacterCommand.class)) {
+            newCharModel.addListener(listener);
+            updateEnabled();
+        }
+    }
+
+    @Override
+    public void dispose() {
+        super.dispose();
+
+        if (commandList.containsCommand(AccountCreateCharacterCommand.class)) {
+            newCharModel.removeListener(listener);
+        }
     }
 
     @Override
@@ -227,6 +258,13 @@ public abstract class AbstractButton extends ActivatableGUIElement implements Ke
         }
 
         return false;
+    }
+
+    /**
+     * Updates the enabled state.
+     */
+    private void updateEnabled() {
+        setEnabled(!newCharModel.hasNonServerFailureErrorText());
     }
 
 }

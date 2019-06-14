@@ -850,7 +850,7 @@ public class JXCSkinLoader {
             textX = 0;
             textY = 0;
         }
-        insertGuiElement(new GUIButton(tooltipManager, elementListener, name, upImage, downImage, label, font, color, textX, textY, autoRepeat, commandList, guiFactory));
+        insertGuiElement(new GUIButton(tooltipManager, elementListener, name, upImage, downImage, label, font, color, textX, textY, autoRepeat, commandList, guiFactory, newCharModel));
     }
 
     /**
@@ -1049,7 +1049,7 @@ public class JXCSkinLoader {
             final Color colorDisabled = ParseUtils.parseColor(args.get());
             final ButtonImages upImages = new ButtonImages(imageParser.getImage(up+"_w"), imageParser.getImage(up+"_c"), imageParser.getImage(up+"_e"));
             final ButtonImages downImages = new ButtonImages(imageParser.getImage(down+"_w"), imageParser.getImage(down+"_c"), imageParser.getImage(down+"_e"));
-            textButtonFactory = new TextButtonFactory(upImages, downImages, font, color, colorSelected, colorDisabled, guiFactory);
+            textButtonFactory = new TextButtonFactory(upImages, downImages, font, color, colorSelected, colorDisabled, guiFactory, newCharModel);
             break;
 
         default:

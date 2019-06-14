@@ -125,4 +125,18 @@ public class CommandList {
         return sb.toString();
     }
 
+    /**
+     * Returns whether this command list contains a command of the given type.
+     * @param command the command type
+     * @return whether the command type was found
+     */
+    public boolean containsCommand(@NotNull final Class<? extends GUICommand> command) {
+        for (final GUICommand tmp : commandList) {
+            if (command.isAssignableFrom(tmp.getClass())) {
+                return true;
+            }
+        }
+        return false;
+    }
+
 }
