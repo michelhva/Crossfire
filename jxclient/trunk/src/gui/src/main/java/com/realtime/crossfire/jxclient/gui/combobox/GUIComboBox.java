@@ -147,7 +147,7 @@ public abstract class GUIComboBox<T> extends AbstractGUIElement {
      * Updates entries shown in the combo box.
      * @param elements the new entries to show
      */
-    protected void updateModel(@NotNull final List<T> elements) {
+    protected void updateModel(@Nullable final List<T> elements) {
         final boolean updateModel;
         if (elements == null) {
             updateModel = model.getSize() != 0;
@@ -166,16 +166,20 @@ public abstract class GUIComboBox<T> extends AbstractGUIElement {
             }
         }
 
+        setVisible(elements != null);
         if (updateModel) {
             try {
                 inhibitActionListener = true;
                 model.removeAllElements();
-                for (T element : elements) {
-                    model.addElement(element);
+                if (elements != null) {
+                    for (T element : elements) {
+                        model.addElement(element);
+                    }
                 }
             } finally {
                 inhibitActionListener = false;
             }
+            updateSelectedItem();
         }
     }
 
