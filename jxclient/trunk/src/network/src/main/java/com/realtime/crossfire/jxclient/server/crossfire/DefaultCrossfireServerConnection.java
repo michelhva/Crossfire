@@ -777,7 +777,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                         if (packet.get() != ' ') {
                             break;
                         }
-
                         processAddKnowledge(packet);
                         return;
 
@@ -860,7 +859,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                         if (packet.get() != ' ') {
                             break;
                         }
-
                         processAddQuest(packet);
                         return;
 
@@ -2531,7 +2529,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             final int end = getInt1(packet);
             final int stepLength = getInt2(packet);
             final String step = stepLength > 0 ? getString(packet, stepLength) : "";
-
             if (debugProtocol != null) {
                 debugProtocol.debugProtocolWrite("recv addquest code="+code+" title="+title+" face="+face+"replay="+replay+" end="+end+" desc="+step);
             }
@@ -2553,7 +2550,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             final int titleLength = getInt2(packet);
             final String title = getString(packet, titleLength);
             final int face = getInt4(packet);
-
             if (debugProtocol != null) {
                 debugProtocol.debugProtocolWrite("recv addknowledge code="+code+"type="+type+"title="+title+" face="+face);
             }
@@ -2720,11 +2716,9 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         packet.get();
 
         final String message = getString(packet, packet.remaining());
-
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("recv drawextinfo color="+color+" type="+type+"/"+subtype+" msg="+message);
         }
-
         drawextinfo(color, type, subtype, message);
         notifyPacketWatcherListenersAscii(packet, args);
     }
@@ -2743,11 +2737,9 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         packet.get();
 
         final String message = getString(packet, packet.remaining());
-
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("recv drawinfo color="+color+" msg="+message);
         }
-
         drawInfo(message, color);
         notifyPacketWatcherListenersAscii(packet, args);
     }
@@ -2833,7 +2825,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("recv failure command="+command+" message="+message);
         }
-
         fireFailure(command, message);
     }
 
@@ -2973,7 +2964,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("recv magicmap size="+width+"x"+height+" player="+px+"/"+py+" len="+packet.remaining());
         }
-
         if (packet.remaining() != width*height) {
             throw new UnknownCommandException("invalid magicmap command");
         }
@@ -3043,9 +3033,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("recv mapextended");
         }
-
         // XXX: "MapExtended" command not yet implemented
-
         notifyPacketWatcherListenersMixed(packet, args);
     }
 
@@ -3059,7 +3047,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("recv music "+music);
         }
-
         fireMusicReceived(music);
         notifyPacketWatcherListenersAscii(packet, args);
     }
@@ -3135,11 +3122,9 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         packet.get();
 
         final String text = getString(packet, packet.remaining());
-
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("recv query flags="+flags+" text="+text);
         }
-
         // XXX: hack to process "What is your name?" prompt even before addme_success is received
         if (clientSocketState != ClientSocketState.CONNECTED) {
             setClientSocketState(ClientSocketState.ADDME, ClientSocketState.CONNECTED);
@@ -3418,7 +3403,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("recv sound pos="+x+"/"+y+" num="+num+" type="+type);
         }
-
         fireCommandSoundReceived(x, y, num, type);
         notifyPacketWatcherListenersMixed(packet, args);
     }
@@ -3445,7 +3429,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("recv sound2 pos="+x+"/"+y+" dir="+dir+" volume="+volume+" type="+type+" action="+action+" name="+name);
         }
-
         fireCommandSound2Received(x, y, dir, volume, type, action, name);
         notifyPacketWatcherListenersMixed(packet, args);
     }
@@ -3691,11 +3674,9 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         packet.get();
 
         final String vinfo = getString(packet, packet.remaining());
-
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("recv version cs="+csval+" sc="+scval+" info="+vinfo);
         }
-
         setClientSocketState(ClientSocketState.VERSION, ClientSocketState.SETUP);
         sendSetup("want_pickup 1", "faceset 0", "sound2 3", "exp64 1", "map2cmd 1", "darkness 1", "newmapcmd 1", "facecache 1", "extendedTextInfos 1", "itemcmd 2", "spellmon 1", "tick 1", "extended_stats 1", "loginmethod 1", "notifications 2");
         model.getStats().setSimpleWeaponSpeed(scval >= 1029);
