@@ -1672,6 +1672,10 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             System.err.println("Ignoring unexpected replyinfo type '"+infoType+"'.");
             break;
         }
+
+        if (clientSocketState != ClientSocketState.CONNECTED && !hasPendingReplyinfo()) {
+            setClientSocketState(ClientSocketState.WAIT_REPLYINFO , ClientSocketState.CONNECTED);
+        }
     }
 
     /**
@@ -2337,10 +2341,10 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         if (clientSocketState != ClientSocketState.CONNECTED) {
             if (clientSocketState == ClientSocketState.ADDME) {
                 // servers without account support
-                setClientSocketState(ClientSocketState.ADDME, ClientSocketState.CONNECTED);
+                setClientSocketState(ClientSocketState.ADDME, hasPendingReplyinfo() ? ClientSocketState.WAIT_REPLYINFO : ClientSocketState.CONNECTED);
             } else if (clientSocketState == ClientSocketState.ACCOUNT_INFO) {
                 fireStartPlaying();
-                setClientSocketState(ClientSocketState.ACCOUNT_INFO, ClientSocketState.CONNECTED);
+                setClientSocketState(ClientSocketState.ACCOUNT_INFO, hasPendingReplyinfo() ? ClientSocketState.WAIT_REPLYINFO : ClientSocketState.CONNECTED);
             }
             negotiateMapSize(preferredMapWidth, preferredMapHeight);
         }
@@ -2962,7 +2966,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
         // XXX: hack to process "What is your name?" prompt even before addme_success is received
         if (clientSocketState != ClientSocketState.CONNECTED) {
-            setClientSocketState(ClientSocketState.ADDME, ClientSocketState.CONNECTED);
+            setClientSocketState(ClientSocketState.ADDME, hasPendingReplyinfo() ? ClientSocketState.WAIT_REPLYINFO : ClientSocketState.CONNECTED);
             negotiateMapSize(preferredMapWidth, preferredMapHeight);
         }
         fireCommandQueryReceived(text, flags);
@@ -4182,6 +4186,16 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             infoType = pendingRequestInfos.remove(0);
         }
         sendRequestinfo(infoType);
+    }
+
+    /**
+     * Returns whether at least one replyinfo message is pending.
+     * @return whether at least one replyinfo message is pending
+     */
+    private boolean hasPendingReplyinfo() {
+        synchronized (writeBuffer) {
+            return sendingRequestInfo != null || !pendingRequestInfos.isEmpty();
+        }
     }
 
 }

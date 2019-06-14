@@ -59,6 +59,11 @@ public enum ClientSocketState {
     ACCOUNT_INFO,
 
     /**
+     * The client is connected but waits for replyinfo messages.
+     */
+    WAIT_REPLYINFO,
+
+    /**
      * Connection is fully established.
      */
     CONNECTED,

@@ -1,5 +1,8 @@
 2019-06-10  Andreas Kirschbaum
 
+	* Extend the "Connecting to server..." phase until all requested
+	information has been received from the server.
+
 	* Fix spurious "java.nio.channels.ClosedSelectorException" when
 	exiting the client.
 
