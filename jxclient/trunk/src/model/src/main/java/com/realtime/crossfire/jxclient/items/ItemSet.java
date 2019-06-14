@@ -56,7 +56,8 @@ public class ItemSet {
     private final Map<Integer, List<CfItem>> items = new HashMap<>();
 
     /**
-     * The synchronization object for {@link #player}.
+     * The synchronization object for {@link #allItems}, {@link #items}, {@link
+     * #player}, or {@link #openContainerFloor}.
      */
     @NotNull
     private final Object sync = new Object();
@@ -128,11 +129,13 @@ public class ItemSet {
      */
     @NotNull
     public List<CfItem> getItemsByLocation(final int location) {
-        final List<CfItem> result = items.get(location);
-        if (result == null) {
-            return Collections.emptyList();
+        synchronized (sync) {
+            final List<CfItem> result = items.get(location);
+            if (result == null) {
+                return Collections.emptyList();
+            }
+            return Collections.unmodifiableList(result);
         }
-        return Collections.unmodifiableList(result);
     }
 
     /**
@@ -142,8 +145,10 @@ public class ItemSet {
      * @return the number of items
      */
     public int getNumberOfItemsByLocation(final int location) {
-        final Collection<CfItem> result = items.get(location);
-        return result == null ? 0 : result.size();
+        synchronized (sync) {
+            final Collection<CfItem> result = items.get(location);
+            return result == null ? 0 : result.size();
+        }
     }
 
     /**
@@ -224,31 +229,33 @@ public class ItemSet {
      * addition
      */
     private void addItem(@NotNull final CfItem item, final boolean notifyListeners) {
-        removeItemByTag(item.getTag(), true);
+        synchronized (sync) {
+            removeItemByTag(item.getTag(), true);
 
-        if (allItems.put(item.getTag(), item) != null) {
-            throw new AssertionError("duplicate item "+item.getTag());
-        }
-
-        final int where = item.getLocation();
-        List<CfItem> list = items.get(where);
-        if (list == null) {
-            list = new CopyOnWriteArrayList<>();
-            if (items.put(where, list) != null) {
-                throw new AssertionError();
+            if (allItems.put(item.getTag(), item) != null) {
+                throw new AssertionError("duplicate item "+item.getTag());
             }
-        }
 
-        list.add(item);
-
-        if (notifyListeners) {
-            for (ItemSetListener listener : itemSetListeners) {
-                listener.itemAdded(item);
+            final int where = item.getLocation();
+            List<CfItem> list = items.get(where);
+            if (list == null) {
+                list = new CopyOnWriteArrayList<>();
+                if (items.put(where, list) != null) {
+                    throw new AssertionError();
+                }
             }
-        }
 
-        for (ItemListener itemListener : itemListeners.getListeners(where)) {
-            itemListener.inventoryAdded(where, list.size()-1, item);
+            list.add(item);
+
+            if (notifyListeners) {
+                for (ItemSetListener listener : itemSetListeners) {
+                    listener.itemAdded(item);
+                }
+            }
+
+            for (ItemListener itemListener : itemListeners.getListeners(where)) {
+                itemListener.inventoryAdded(where, list.size()-1, item);
+            }
         }
     }
 
@@ -259,11 +266,13 @@ public class ItemSet {
      */
     @NotNull
     private List<CfItem> getInventoryByTag(final int tag) {
-        final List<CfItem> inventory = items.get(tag);
-        if (inventory == null) {
-            return Collections.emptyList();
+        synchronized (sync) {
+            final List<CfItem> inventory = items.get(tag);
+            if (inventory == null) {
+                return Collections.emptyList();
+            }
+            return Collections.unmodifiableList(inventory);
         }
-        return Collections.unmodifiableList(inventory);
     }
 
     /**
@@ -273,7 +282,9 @@ public class ItemSet {
      */
     @Nullable
     public CfItem getItemByTag(final int tag) {
-        return allItems.get(tag);
+        synchronized (sync) {
+            return allItems.get(tag);
+        }
     }
 
     /**
@@ -363,7 +374,7 @@ public class ItemSet {
             final CfItem item = getItemOrPlayer(tag);
             if (item == null) {
                 if (flags != UpdItem.UPD_FACE) { // XXX: suppress frequent error message due to server bug
-                    System.err.println("updateItem: undefined item "+tag);
+                    System.err.println("updateItem: undefined item "+tag+" -> "+allItems.keySet());
                 }
                 return;
             }
@@ -419,11 +430,13 @@ public class ItemSet {
      * @param openContainerFloor the opened container's tag or {@code 0}
      */
     private void setOpenContainer(final int openContainerFloor) {
-        if (this.openContainerFloor == openContainerFloor) {
-            return;
-        }
+        synchronized (sync) {
+            if (this.openContainerFloor == openContainerFloor) {
+                return;
+            }
 
-        this.openContainerFloor = openContainerFloor;
+            this.openContainerFloor = openContainerFloor;
+        }
         for (ItemSetListener listener : itemSetListeners) {
             listener.openContainerChanged(openContainerFloor);
         }
@@ -434,7 +447,9 @@ public class ItemSet {
      * @return the opened container's tag
      */
     public int getOpenContainer() {
-        return openContainerFloor;
+        synchronized (sync) {
+            return openContainerFloor;
+        }
     }
 
     /**
