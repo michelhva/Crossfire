@@ -1,3 +1,8 @@
+2019-06-03  Andreas Kirschbaum
+
+	* Fix --debug-protocol command line option to reliably log all
+	messages.
+
 2019-05-13  Andreas Kirschbaum
 
 	* Reliably raise dialogs after mouse clicks.

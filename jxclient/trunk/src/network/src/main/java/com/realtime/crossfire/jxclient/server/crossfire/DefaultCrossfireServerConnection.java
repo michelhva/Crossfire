@@ -738,9 +738,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                     if (packet.get() != ' ') {
                         break;
                     }
-                    if (debugProtocol != null) {
-                        debugProtocol.debugProtocolWrite("recv accountplayers");
-                    }
                     processAccountPlayers(packet);
                     return;
 
@@ -807,9 +804,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                             if (packet.hasRemaining()) {
                                 break;
                             }
-                            if (debugProtocol != null) {
-                                debugProtocol.debugProtocolWrite("recv addme_failed");
-                            }
                             processAddmeFailed(packet);
                             return;
 
@@ -834,9 +828,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                             }
                             if (packet.hasRemaining()) {
                                 break;
-                            }
-                            if (debugProtocol != null) {
-                                debugProtocol.debugProtocolWrite("recv addme_success");
                             }
                             processAddmeSuccess(packet);
                             return;
@@ -1881,7 +1872,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @param packet the packet to process
      * @throws IOException if the packet cannot be parsed
      */
-    private static void processImageInfoReplyinfo(@NotNull final ByteBuffer packet) throws IOException {
+    private void processImageInfoReplyinfo(@NotNull final ByteBuffer packet) throws IOException {
         final byte[] data = new byte[packet.remaining()];
         packet.get(data);
         try (ByteArrayInputStream is = new ByteArrayInputStream(data)) {
@@ -1891,8 +1882,10 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                     if (info == null) {
                         throw new IOException("Truncated parameter in image_info");
                     }
-                    //noinspection UnusedAssignment
                     final int nrPics = Integer.parseInt(info);
+                    if (debugProtocol != null) {
+                        debugProtocol.debugProtocolWrite("recv replyinfo image_info nrPics="+nrPics);
+                    }
                     // XXX: replyinfo image_info not implemented
                 }
             }
@@ -1945,6 +1938,9 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                                 continue;
                             }
                         }
+                        if (debugProtocol != null) {
+                            debugProtocol.debugProtocolWrite("recv reply skill_info id="+skillId+" name="+sk[1]+" face="+face);
+                        }
                         model.getSkillSet().addSkill(skillId, sk[1], face);
                     }
                 }
@@ -1966,6 +1962,9 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             System.err.println("Ignoring excess data at end of exp_table");
         }
 
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv replyinfo exp_table "+Arrays.toString(expTable));
+        }
         model.getExperienceTable().setExpTable(expTable);
 
         if (loginMethod == 0) {
@@ -2009,6 +2008,9 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                             continue;
                         }
 
+                        if (debugProtocol != null) {
+                            debugProtocol.debugProtocolWrite("recv replyinfo knowledge_info type="+sk[0]+" name="+sk[1]+" face="+face+" can_attempt="+sk[3]);
+                        }
                         model.getKnowledgeManager().addKnowledgeType(sk[0], sk[1], face, sk[3].equals("1"));
                     }
                 }
@@ -2027,18 +2029,33 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             final int length = getInt2(packet);
             switch (type) {
             case INFO_MAP_ARCH_NAME:
-                sb.setArchName(getString(packet, length));
+                final String archName = getString(packet, length);
+                if (debugProtocol != null) {
+                    debugProtocol.debugProtocolWrite("recv replyinfo startingmap type=INFO_MAP_ARCH_NAME arch_name="+archName);
+                }
+                sb.setArchName(archName);
                 break;
 
             case INFO_MAP_NAME:
-                sb.setName(getString(packet, length));
+                final String name = getString(packet, length);
+                if (debugProtocol != null) {
+                    debugProtocol.debugProtocolWrite("recv replyinfo startingmap type=INFO_MAP_NAME name="+name);
+                }
+                sb.setName(name);
                 break;
 
             case INFO_MAP_DESCRIPTION:
-                sb.setDescription(getString(packet, length));
+                final String description = getString(packet, length);
+                if (debugProtocol != null) {
+                    debugProtocol.debugProtocolWrite("recv replyinfo startingmap type=INFO_MAP_DESCRIPTION description="+description);
+                }
+                sb.setDescription(description);
                 break;
 
             default:
+                if (debugProtocol != null) {
+                    debugProtocol.debugProtocolWrite("recv replyinfo startingmap type="+type);
+                }
                 System.err.println("Ignoring startingmap type "+type);
                 break;
             }
@@ -2056,6 +2073,9 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
         final CharSequence raceList = getString(packet, packet.remaining());
         final String[] races = PATTERN_BAR.split(raceList);
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv replyinfo race_list races="+Arrays.toString(races));
+        }
         model.getNewCharacterInformation().setRaceList(races);
 
         for (String race : races) {
@@ -2073,6 +2093,9 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
         final CharSequence classList = getString(packet, packet.remaining());
         final String[] classes = PATTERN_BAR.split(classList);
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv replyinfo class_list classes="+Arrays.toString(classes));
+        }
         model.getNewCharacterInformation().setClassList(classes);
 
         for (String class_ : classes) {
@@ -2488,6 +2511,9 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      */
     private void processAddmeFailed(@NotNull final ByteBuffer packet) {
         final int args = packet.position();
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv addme_failed args="+args);
+        }
         // XXX: addme_failed command not implemented
         notifyPacketWatcherListenersNoData(packet, args);
     }
@@ -2498,7 +2524,9 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      */
     private void processAddmeSuccess(@NotNull final ByteBuffer packet) {
         final int args = packet.position();
-
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv addme_success args="+args);
+        }
         if (clientSocketState != ClientSocketState.CONNECTED) {
             if (clientSocketState == ClientSocketState.ADDME) {
                 // servers without account support
