@@ -144,7 +144,6 @@ public abstract class AbstractButton extends ActivatableGUIElement implements Ke
         final int b = e.getButton();
         switch (b) {
         case MouseEvent.BUTTON1:
-            setActive(true);
             if (autoRepeat) {
                 execute();
                 timer.start();

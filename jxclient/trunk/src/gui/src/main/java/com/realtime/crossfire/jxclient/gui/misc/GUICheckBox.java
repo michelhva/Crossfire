@@ -185,23 +185,6 @@ public class GUICheckBox extends ActivatableGUIElement {
     }
 
     @Override
-    public void mousePressed(@NotNull final MouseEvent e) {
-        super.mousePressed(e);
-        final int b = e.getButton();
-        switch (b) {
-        case MouseEvent.BUTTON1:
-            setActive(true);
-            break;
-
-        case MouseEvent.BUTTON2:
-            break;
-
-        case MouseEvent.BUTTON3:
-            break;
-        }
-    }
-
-    @Override
     public void notifyOpen() {
     }
 
