@@ -55,6 +55,7 @@ import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.item.GUIItem;
+import com.realtime.crossfire.jxclient.gui.label.NewCharModel;
 import com.realtime.crossfire.jxclient.gui.list.GUIItemList;
 import com.realtime.crossfire.jxclient.gui.list.GUIList;
 import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable;
@@ -110,17 +111,25 @@ public class CommandParser {
     private final GuiFactory guiFactory;
 
     /**
+     * The global {@link NewCharModel} instance.
+     */
+    @NotNull
+    private final NewCharModel newCharModel;
+
+    /**
      * Creates a new instance.
      * @param dialogs the dialogs instance to use
      * @param floorView the floor view to use
      * @param definedGUIElements the defined GUI elements
      * @param guiFactory the global GUI factory instance
+     * @param newCharModel the global new char model instance
      */
-    public CommandParser(@NotNull final Dialogs dialogs, @NotNull final FloorView floorView, @NotNull final JXCSkinCache<AbstractGUIElement> definedGUIElements, @NotNull final GuiFactory guiFactory) {
+    public CommandParser(@NotNull final Dialogs dialogs, @NotNull final FloorView floorView, @NotNull final JXCSkinCache<AbstractGUIElement> definedGUIElements, @NotNull final GuiFactory guiFactory, @NotNull final NewCharModel newCharModel) {
         this.dialogs = dialogs;
         this.floorView = floorView;
         this.definedGUIElements = definedGUIElements;
         this.guiFactory = guiFactory;
+        this.newCharModel = newCharModel;
     }
 
     /**
@@ -703,7 +712,7 @@ public class CommandParser {
             throw new IOException("<element> is required");
         }
 
-        return new AccountCreateCharacterCommand(commandCallback, element, guiFactory);
+        return new AccountCreateCharacterCommand(commandCallback, element, guiFactory, newCharModel);
     }
 
     /**

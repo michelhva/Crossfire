@@ -22,10 +22,12 @@
 package com.realtime.crossfire.jxclient.gui.textinput;
 
 import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElementChangedListener;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyEvent2;
+import com.realtime.crossfire.jxclient.gui.label.NewCharModel;
 import com.realtime.crossfire.jxclient.settings.CommandHistory;
 import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Color;
@@ -80,6 +82,12 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      */
     @Nullable
     private final CommandHistory commandHistory;
+
+    /**
+     * The {@link NewCharModel} that is shown.
+     */
+    @NotNull
+    private final NewCharModel newCharModel;
 
     /**
      * The element's background image when it is active.
@@ -171,6 +179,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
+     * @param newCharModel the new char model to show
      * @param activeImage the element's background image when it is active
      * @param inactiveImage the element's background image when it is inactive
      * @param font the font for rendering displayed text
@@ -182,10 +191,11 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      * @param text the initially entered text
      * @param guiFactory the global GUI factory instance
      */
-    protected GUIText(@NotNull final CommandCallback commandCallback, @Nullable final CommandHistory commandHistory, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Image activeImage, @NotNull final Image inactiveImage, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, @NotNull final GuiFactory guiFactory) {
+    protected GUIText(@NotNull final CommandCallback commandCallback, @Nullable final CommandHistory commandHistory, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final NewCharModel newCharModel, @NotNull final Image activeImage, @NotNull final Image inactiveImage, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, @NotNull final GuiFactory guiFactory) {
         super(tooltipManager, elementListener, name, Transparency.TRANSLUCENT, guiFactory);
         this.commandCallback = commandCallback;
         this.commandHistory = commandHistory;
+        this.newCharModel = newCharModel;
         this.activeImage = activeImage;
         this.inactiveImage = inactiveImage;
         this.font = font;
@@ -198,6 +208,10 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             throw new IllegalArgumentException("active image size differs from inactive image size");
         }
         setCursor(this.text.length());
+        if (name.equals("account_character_create")) {
+            setChangedListener(this::updateErrorText);
+            updateErrorText();
+        }
     }
 
     /**
@@ -573,6 +587,23 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             return;
         }
         insertString(str);
+    }
+
+    /**
+     * Updates the {@link #newCharModel}'s error text depending on whether
+     * {@link #text} contains a valid name.
+     */
+    private void updateErrorText() {
+        final String name = text.toString();
+        @Nullable final String text;
+        if (name.isEmpty()) {
+            text = "The character name must not be empty.";
+        } else if (name.length() > 255) {
+            text = "The character name is too long.";
+        } else {
+            text = null;
+        }
+        newCharModel.setErrorText(NewCharModel.PRIORITY_CHARACTER_NAME, text);
     }
 
 }

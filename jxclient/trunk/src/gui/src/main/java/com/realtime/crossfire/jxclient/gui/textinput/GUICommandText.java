@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.gui.textinput;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.label.NewCharModel;
 import com.realtime.crossfire.jxclient.settings.CommandHistory;
 import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Color;
@@ -56,6 +57,7 @@ public class GUICommandText extends GUIText {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
+     * @param newCharModel the new char model to show
      * @param activeImage the element's background image when it is active
      * @param inactiveImage the element's background image when it is inactive
      * @param font the font for rendering displayed text
@@ -69,8 +71,8 @@ public class GUICommandText extends GUIText {
      * commands
      * @param guiFactory the global GUI factory instance
      */
-    public GUICommandText(@NotNull final CommandCallback commandCallback, @Nullable final CommandHistory commandHistory, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Image activeImage, @NotNull final Image inactiveImage, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, @NotNull final CommandExecutor commandExecutor, @NotNull final GuiFactory guiFactory) {
-        super(commandCallback, commandHistory, tooltipManager, elementListener, name, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, text, guiFactory);
+    public GUICommandText(@NotNull final CommandCallback commandCallback, @Nullable final CommandHistory commandHistory, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final NewCharModel newCharModel, @NotNull final Image activeImage, @NotNull final Image inactiveImage, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, @NotNull final CommandExecutor commandExecutor, @NotNull final GuiFactory guiFactory) {
+        super(commandCallback, commandHistory, tooltipManager, elementListener, name, newCharModel, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, text, guiFactory);
         this.commandExecutor = commandExecutor;
     }
 

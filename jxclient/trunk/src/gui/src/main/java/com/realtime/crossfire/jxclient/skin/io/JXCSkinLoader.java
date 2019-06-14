@@ -68,6 +68,7 @@ import com.realtime.crossfire.jxclient.gui.label.GUILabelStats2;
 import com.realtime.crossfire.jxclient.gui.label.GUIMultiLineLabel;
 import com.realtime.crossfire.jxclient.gui.label.GUIOneLineLabel;
 import com.realtime.crossfire.jxclient.gui.label.GUISpellLabel;
+import com.realtime.crossfire.jxclient.gui.label.NewCharModel;
 import com.realtime.crossfire.jxclient.gui.label.Type;
 import com.realtime.crossfire.jxclient.gui.list.GUICharacterList;
 import com.realtime.crossfire.jxclient.gui.list.GUIFloorList;
@@ -226,6 +227,12 @@ public class JXCSkinLoader {
      */
     @NotNull
     private final Model model;
+
+    /**
+     * The {@link NewCharModel} instance to use.
+     */
+    @NotNull
+    private final NewCharModel newCharModel;
 
     /**
      * The inventory {@link ItemView} to use.
@@ -462,6 +469,7 @@ public class JXCSkinLoader {
         this.knowledgeTypeView = knowledgeTypeView;
         this.avoidCopyArea = avoidCopyArea;
         this.guiFactory = guiFactory;
+        newCharModel = new NewCharModel(this.model.getNewCharacterInformation());
     }
 
     /**
@@ -504,7 +512,7 @@ public class JXCSkinLoader {
 
         final Dialogs dialogs = new Dialogs(guiFactory, guiManager);
         gaugeUpdaterParser = new GaugeUpdaterParser(model.getStats(), model.getItemSet(), model.getSkillSet());
-        commandParser = new CommandParser(dialogs, floorView, definedGUIElements, guiFactory);
+        commandParser = new CommandParser(dialogs, floorView, definedGUIElements, guiFactory, newCharModel);
         skin = new DefaultJXCSkin(defaultKeyBindings, optionManager, dialogs);
         @Nullable JXCSkin skinToDetach = skin;
         try {
@@ -881,11 +889,11 @@ public class JXCSkinLoader {
         final AbstractGUIElement element;
         switch (type) {
         case "classes":
-            element = new GUIClassesComboBox(tooltipManager, elementListener, name, model, label, guiFactory);
+            element = new GUIClassesComboBox(tooltipManager, elementListener, name, model, newCharModel, label, guiFactory);
             break;
 
         case "races":
-            element = new GUIRacesComboBox(tooltipManager, elementListener, name, model, label, guiFactory);
+            element = new GUIRacesComboBox(tooltipManager, elementListener, name, model, newCharModel, label, guiFactory);
             break;
 
         default:
@@ -956,7 +964,7 @@ public class JXCSkinLoader {
         final int margin = ExpressionParser.parseInt(args.get());
         final boolean enableHistory = NumberParser.parseBoolean(args.get());
         final CommandHistory commandHistory = enableHistory ? commandHistoryFactory.getCommandHistory(name) : null;
-        insertGuiElement(new GUICommandText(commandCallback, commandHistory, tooltipManager, elementListener, name, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commandExecutor, guiFactory));
+        insertGuiElement(new GUICommandText(commandCallback, commandHistory, tooltipManager, elementListener, name, newCharModel, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commandExecutor, guiFactory));
     }
 
     /**
@@ -1916,7 +1924,7 @@ public class JXCSkinLoader {
         final int margin = ExpressionParser.parseInt(args.get());
         final boolean enableHistory = NumberParser.parseBoolean(args.get());
         final CommandHistory commandHistory = enableHistory ? commandHistoryFactory.getCommandHistory(name) : null;
-        insertGuiElement(new GUIQueryText(server, commandHistory, commandCallback, tooltipManager, elementListener, name, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", guiFactory));
+        insertGuiElement(new GUIQueryText(server, commandHistory, commandCallback, tooltipManager, elementListener, name, newCharModel, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", guiFactory));
     }
 
     /**
@@ -2051,7 +2059,7 @@ public class JXCSkinLoader {
         final CommandList commandList = skin.getCommandList(args.get());
         final boolean enableHistory = NumberParser.parseBoolean(args.get());
         final CommandHistory commandHistory = enableHistory ? commandHistoryFactory.getCommandHistory(name) : null;
-        insertGuiElement(new GUITextField(commandCallback, commandHistory, tooltipManager, elementListener, name, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commandList, guiFactory));
+        insertGuiElement(new GUITextField(commandCallback, commandHistory, tooltipManager, elementListener, name, newCharModel, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commandList, guiFactory));
     }
 
     /**
