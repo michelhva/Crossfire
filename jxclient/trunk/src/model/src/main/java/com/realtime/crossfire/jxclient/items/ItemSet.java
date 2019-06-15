@@ -157,19 +157,21 @@ public class ItemSet {
      * @return the index where the item has been removed from or {@code -1}
      */
     private int removeItemByTag(final int tag) {
+        final int where;
+        final int index;
         synchronized (sync) {
             final CfItem item = allItems.remove(tag);
             if (item == null) {
                 return -1;
             }
 
-            final int where = item.getLocation();
+            where = item.getLocation();
             final List<CfItem> list = items.get(where);
             if (list == null) {
                 throw new AssertionError("cannot find item "+item.getTag());
             }
 
-            final int index = list.indexOf(item);
+            index = list.indexOf(item);
             if (list.remove(index) == null) {
                 throw new AssertionError("cannot find item "+item.getTag());
             }
@@ -177,17 +179,17 @@ public class ItemSet {
             if (list.isEmpty() && items.remove(item.getLocation()) != list) {
                 throw new AssertionError();
             }
-
-            for (ItemListener itemListener : itemListeners.getListeners(where)) {
-                itemListener.inventoryRemoved(where, index);
-            }
-
-            for (ItemListener itemListener : itemListeners.getListeners(tag)) {
-                itemListener.itemRemoved(tag);
-            }
-
-            return index;
         }
+
+        for (ItemListener itemListener : itemListeners.getListeners(where)) {
+            itemListener.inventoryRemoved(where, index);
+        }
+
+        for (ItemListener itemListener : itemListeners.getListeners(tag)) {
+            itemListener.itemRemoved(tag);
+        }
+
+        return index;
     }
 
     /**
@@ -207,14 +209,15 @@ public class ItemSet {
      * @param item the item to add
      */
     public void addItem(@NotNull final CfItem item) {
+        removeItemByTag(item.getTag());
+        final int index;
+        final int where;
         synchronized (sync) {
-            removeItemByTag(item.getTag());
-
             if (allItems.put(item.getTag(), item) != null) {
                 throw new AssertionError("duplicate item "+item.getTag());
             }
 
-            final int where = item.getLocation();
+            where = item.getLocation();
             List<CfItem> list = items.get(where);
             if (list == null) {
                 list = new CopyOnWriteArrayList<>();
@@ -224,10 +227,11 @@ public class ItemSet {
             }
 
             list.add(item);
+            index = list.size()-1;
+        }
 
-            for (ItemListener itemListener : itemListeners.getListeners(where)) {
-                itemListener.inventoryAdded(where, list.size()-1, item);
-            }
+        for (ItemListener itemListener : itemListeners.getListeners(where)) {
+            itemListener.inventoryAdded(where, index, item);
         }
     }
 
@@ -281,9 +285,10 @@ public class ItemSet {
             }
 
             this.player = player;
-            for (ItemSetListener listener : itemSetListeners) {
-                listener.playerChanged(player);
-            }
+        }
+
+        for (ItemSetListener listener : itemSetListeners) {
+            listener.playerChanged(player);
         }
     }
 
@@ -342,31 +347,33 @@ public class ItemSet {
      * @param valNrof the number of items
      */
     public void updateItem(final int flags, final int tag, final int valLocation, final int valFlags, final int valWeight, final Face valFace, @NotNull final String valName, @NotNull final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof) {
-        synchronized (sync) {
-            final CfItem item = getItemOrPlayer(tag);
-            if (item == null) {
-                //System.err.println("updateItem: undefined item "+tag); // XXX: this is a server bug
-                return;
-            }
+        final CfItem item = getItemOrPlayer(tag);
+        if (item == null) {
+            //System.err.println("updateItem: undefined item "+tag); // XXX: this is a server bug
+            return;
+        }
 
-            final boolean wasOpen = (flags&UpdItem.UPD_FLAGS) != 0 && openContainerFloor == item.getTag() && item.isOpen();
-            item.update(flags, valFlags, valWeight, valFace, valName, valNamePl, valAnim, valAnimSpeed, valNrof);
-            if ((flags&UpdItem.UPD_LOCATION) != 0 && item.getLocation() != valLocation) {
-                removeItemByTag(item.getTag());
-                item.setLocation(valLocation);
-                addItem(item);
+        final boolean wasOpen;
+        synchronized (sync) {
+            wasOpen = (flags&UpdItem.UPD_FLAGS) != 0 && openContainerFloor == item.getTag() && item.isOpen();
+        }
+        item.update(flags, valFlags, valWeight, valFace, valName, valNamePl, valAnim, valAnimSpeed, valNrof);
+        if ((flags&UpdItem.UPD_LOCATION) != 0 && item.getLocation() != valLocation) {
+            removeItemByTag(item.getTag());
+            item.setLocation(valLocation);
+            addItem(item);
+        }
+
+        if ((flags&~UpdItem.UPD_LOCATION) != 0) {
+            for (ItemListener itemListener : itemListeners.getListeners(tag)) {
+                itemListener.itemChanged(tag);
             }
-            if ((flags&~UpdItem.UPD_LOCATION) != 0) {
-                for (ItemListener itemListener : itemListeners.getListeners(tag)) {
-                    itemListener.itemChanged(tag);
-                }
-            }
-            if ((flags&UpdItem.UPD_FLAGS) != 0) {
-                if (item.isOpen()) {
-                    setOpenContainer(item.getTag());
-                } else if (wasOpen) {
-                    setOpenContainer(0);
-                }
+        }
+        if ((flags&UpdItem.UPD_FLAGS) != 0) {
+            if (item.isOpen()) {
+                setOpenContainer(item.getTag());
+            } else if (wasOpen) {
+                setOpenContainer(0);
             }
         }
     }
@@ -375,17 +382,22 @@ public class ItemSet {
      * Resets the manager's state.
      */
     public void reset() {
+        final int playerTag;
         synchronized (sync) {
-            if (player != null) {
-                cleanInventory(player.getTag());
-            }
-            final Iterable<CfItem> tmp = new HashSet<>(allItems.values());
-            for (CfItem item : tmp) {
-                removeItemByTag(item.getTag());
-            }
-            setOpenContainer(0);
-            setPlayer(null);
+            playerTag = player == null ? -1 : player.getTag();
         }
+        if (playerTag != -1) {
+            cleanInventory(playerTag);
+        }
+        final Iterable<CfItem> tmp;
+        synchronized (sync) {
+            tmp = new HashSet<>(allItems.values());
+        }
+        for (CfItem item : tmp) {
+            removeItemByTag(item.getTag());
+        }
+        setOpenContainer(0);
+        setPlayer(null);
     }
 
     /**
@@ -400,6 +412,7 @@ public class ItemSet {
 
             this.openContainerFloor = openContainerFloor;
         }
+
         for (ItemSetListener listener : itemSetListeners) {
             listener.openContainerChanged(openContainerFloor);
         }
