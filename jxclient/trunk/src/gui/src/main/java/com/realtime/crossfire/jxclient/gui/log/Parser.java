@@ -248,11 +248,11 @@ public class Parser {
                 color = COLORS.get(colorName);
                 assert color != null;
             } else if (colorName.startsWith("#") && colorName.length() == 7) {
-              try {
-                color = Color.decode(colorName);
-              } catch (final NumberFormatException ignored) {
-                // never mind invalid colors
-              }
+                try {
+                    color = Color.decode(colorName);
+                } catch (final NumberFormatException ignored) {
+                    // never mind invalid colors
+                }
             }
             // ignore unknown color
         } else if (tag.equals("/color")) {
