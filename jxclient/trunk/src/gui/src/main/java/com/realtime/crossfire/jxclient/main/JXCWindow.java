@@ -170,15 +170,7 @@ public class JXCWindow {
 
         @Override
         public void playerReceived(final int tag, final int weight, final int faceNum, @NotNull final String name) {
-            //noinspection AnonymousInnerClassMayBeStatic
-            SwingUtilities.invokeLater(new Runnable() {
-
-                @Override
-                public void run() {
-                    guiManager.playerReceived();
-                }
-
-            });
+            SwingUtilities.invokeLater(guiManager::playerReceived);
         }
 
         @Override
@@ -244,14 +236,7 @@ public class JXCWindow {
 
         @Override
         public void commandQueryReceived(@NotNull final String prompt, final int queryType) {
-            SwingUtilities.invokeLater(new Runnable() {
-
-                @Override
-                public void run() {
-                    guiManager.openQueryDialog(prompt, queryType);
-                }
-
-            });
+            SwingUtilities.invokeLater(() -> guiManager.openQueryDialog(prompt, queryType));
         }
 
     };
@@ -331,79 +316,38 @@ public class JXCWindow {
 
         @Override
         public void manageAccount() {
-            //noinspection AnonymousInnerClassMayBeStatic
-            SwingUtilities.invokeLater(new Runnable() {
-
-                @Override
-                public void run() {
-                    guiManager.manageAccount();
-                }
-
-            });
+            SwingUtilities.invokeLater(guiManager::manageAccount);
         }
 
         @Override
         public void addAccount(@NotNull final CharacterInformation characterInformation) {
-            SwingUtilities.invokeLater(new Runnable() {
-
-                @Override
-                public void run() {
-                    final CharacterInformation information = characterInformation;
-                    characterModel.add(information);
-                }
-
-            });
+            SwingUtilities.invokeLater(() -> characterModel.add(characterInformation));
         }
 
         @Override
         public void startAccountList(@NotNull final String accountName) {
-            SwingUtilities.invokeLater(new Runnable() {
-
-                @Override
-                public void run() {
-                    characterModel.begin();
-                    guiManager.setAccountName(accountName);
-                }
-
+            SwingUtilities.invokeLater(() -> {
+                characterModel.begin();
+                guiManager.setAccountName(accountName);
             });
         }
 
         @Override
         public void endAccountList(final int count) {
-            SwingUtilities.invokeLater(new Runnable() {
-
-                @Override
-                public void run() {
-                    characterModel.commit();
-                    guiManager.showCharacters(count);
-                }
-
+            SwingUtilities.invokeLater(() -> {
+                characterModel.commit();
+                guiManager.showCharacters(count);
             });
         }
 
         @Override
         public void startPlaying() {
-            //noinspection AnonymousInnerClassMayBeStatic
-            SwingUtilities.invokeLater(new Runnable() {
-
-                @Override
-                public void run() {
-                    guiManager.hideAccountWindows();
-                }
-
-            });
+            SwingUtilities.invokeLater(guiManager::hideAccountWindows);
         }
 
         @Override
         public void selectCharacter(@NotNull final String accountName, @NotNull final String characterName) {
-            SwingUtilities.invokeLater(new Runnable() {
-
-                @Override
-                public void run() {
-                    guiManager.selectCharacter(accountName, characterName);
-                }
-
-            });
+            SwingUtilities.invokeLater(() -> guiManager.selectCharacter(accountName, characterName));
         }
 
     };
