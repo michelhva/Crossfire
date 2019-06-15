@@ -1,5 +1,8 @@
 2019-06-15  Andreas Kirschbaum
 
+	* Fix spurious lockups when receiving item updates from the
+	server.
+
 	* Fix login issue with metalforge.
 
 	* Query metaserver immediately after program start. Previously
