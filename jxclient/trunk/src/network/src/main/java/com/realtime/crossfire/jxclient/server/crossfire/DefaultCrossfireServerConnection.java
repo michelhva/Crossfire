@@ -1889,8 +1889,10 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
         model.getNewCharacterInformation().setRaceList(races);
 
-        for (String race : races) {
-            sendQueuedRequestinfo("race_info "+race);
+        if (loginMethod > 0) {
+            for (String race : races) {
+                sendQueuedRequestinfo("race_info "+race);
+            }
         }
     }
 
@@ -1909,8 +1911,10 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
         model.getNewCharacterInformation().setClassList(classes);
 
-        for (String class_ : classes) {
-            sendQueuedRequestinfo("class_info "+class_);
+        if (loginMethod > 0) {
+            for (String class_ : classes) {
+                sendQueuedRequestinfo("class_info "+class_);
+            }
         }
     }
 

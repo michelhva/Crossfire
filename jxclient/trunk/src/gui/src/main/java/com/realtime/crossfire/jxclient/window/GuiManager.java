@@ -336,7 +336,7 @@ public class GuiManager {
 
         @Override
         public void start() {
-            closeTransientDialogs();
+            closeTransientDialogs(false);
             server.removeCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
             server.removeCrossfireFailureListener(crossfireFailureListener);
             windowRenderer.setGuiState(RendererGuiState.START);
@@ -345,7 +345,7 @@ public class GuiManager {
 
         @Override
         public void metaserver() {
-            closeTransientDialogs();
+            closeTransientDialogs(false);
             server.removeCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
             server.removeCrossfireFailureListener(crossfireFailureListener);
             windowRenderer.setGuiState(RendererGuiState.META);
@@ -364,7 +364,7 @@ public class GuiManager {
                 throw new IllegalStateException("no skin set");
             }
 
-            closeTransientDialogs();
+            closeTransientDialogs(false);
             windowRenderer.updateServerSettings();
             server.addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
             server.addCrossfireFailureListener(crossfireFailureListener);
@@ -383,12 +383,12 @@ public class GuiManager {
 
         @Override
         public void connected() {
-            closeTransientDialogs();
+            closeTransientDialogs(true);
         }
 
         @Override
         public void connectFailed(@NotNull final String reason) {
-            closeTransientDialogs();
+            closeTransientDialogs(false);
             if (dialogConnect != null) {
                 openDialog(dialogConnect, false);
                 updateConnectLabel(ClientSocketState.CONNECT_FAILED, reason);
@@ -750,8 +750,9 @@ public class GuiManager {
     /**
      * Closes all transient dialogs: disconnect, quit, connect, query, and book
      * dialogs.
+     * @param ignoreQueryDialog whether to not close the query dialog
      */
-    private void closeTransientDialogs() {
+    private void closeTransientDialogs(final boolean ignoreQueryDialog) {
         if (queryDialog == null) {
             throw new IllegalStateException("query dialog not set");
         }
@@ -768,8 +769,10 @@ public class GuiManager {
         if (dialogConnect != null) {
             closeDialog(dialogConnect);
         }
-        assert queryDialog != null;
-        closeDialog(queryDialog);
+        if (!ignoreQueryDialog) {
+            assert queryDialog != null;
+            closeDialog(queryDialog);
+        }
         assert skin != null;
         closeDialog(skin.getDialogBook(1));
     }

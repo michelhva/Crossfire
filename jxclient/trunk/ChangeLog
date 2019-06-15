@@ -1,5 +1,7 @@
 2019-06-15  Andreas Kirschbaum
 
+	* Fix login issue with metalforge.
+
 	* Query metaserver immediately after program start. Previously
 	cached information was shown (or nothing if it was the first
 	start) and the first query was 15 minutes later.
