@@ -437,7 +437,7 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
      * an empty packet.
      * @param command the command string
      */
-    protected void notifyPacketWatcherListenersEmpty(@NotNull final String command) {
+    private void notifyPacketWatcherListenersEmpty(@NotNull final String command) {
         for (ReceivedPacketListener receivedPacketListener : receivedPacketListeners) {
             receivedPacketListener.processEmpty(command);
         }
