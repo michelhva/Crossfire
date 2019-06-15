@@ -1674,7 +1674,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
 
         if (clientSocketState != ClientSocketState.CONNECTED && !hasPendingReplyinfo()) {
-            setClientSocketState(ClientSocketState.WAIT_REPLYINFO , ClientSocketState.CONNECTED);
+            setClientSocketState(ClientSocketState.WAIT_REPLYINFO, ClientSocketState.CONNECTED);
         }
     }
 
