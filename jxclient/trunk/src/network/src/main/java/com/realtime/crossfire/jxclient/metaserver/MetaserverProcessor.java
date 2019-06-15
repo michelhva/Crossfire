@@ -70,7 +70,7 @@ public class MetaserverProcessor {
      * <p>
      * When set to zero, updating is disabled.
      */
-    private int counter = UPDATE_INTERVAL;
+    private int counter = 1;
 
     /**
      * The timestamp at which a query is allowed. Used to enforce minimum query

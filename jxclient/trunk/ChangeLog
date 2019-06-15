@@ -1,3 +1,9 @@
+2019-06-15  Andreas Kirschbaum
+
+	* Query metaserver immediately after program start. Previously
+	cached information was shown (or nothing if it was the first
+	start) and the first query was 15 minutes later.
+
 2019-06-14  Andreas Kirschbaum
 
 	* Do not anymore consume 100% CPU when showing lists.
