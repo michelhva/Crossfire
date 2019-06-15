@@ -59,26 +59,6 @@ public class PlayerLoginSkinEvent implements SkinEvent {
     private final ItemSetListener itemSetListener = new ItemSetListener() {
 
         @Override
-        public void itemAdded(@NotNull final CfItem item) {
-            // ignore
-        }
-
-        @Override
-        public void itemMoved(@NotNull final CfItem item) {
-            // ignore
-        }
-
-        @Override
-        public void itemChanged(@NotNull final CfItem item) {
-            // ignore
-        }
-
-        @Override
-        public void itemRemoved(@NotNull final CfItem item) {
-            // ignore
-        }
-
-        @Override
         public void playerChanged(@Nullable final CfItem player) {
             //noinspection VariableNotUsedInsideIf
             if (player == null) {
