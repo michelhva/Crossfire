@@ -154,19 +154,13 @@ public class ItemSet {
     /**
      * Removes a {@link CfItem}.
      * @param tag the item's tag to remove
-     * @param notifyListeners whether listeners should be notified about the
-     * removal
      * @return the index where the item has been removed from or {@code -1}
      */
-    private int removeItemByTag(final int tag, final boolean notifyListeners) {
+    private int removeItemByTag(final int tag) {
         synchronized (sync) {
             final CfItem item = allItems.remove(tag);
             if (item == null) {
                 return -1;
-            }
-
-            for (ItemSetListener listener : itemSetListeners) {
-                listener.itemRemoved(item);
             }
 
             final int where = item.getLocation();
@@ -188,12 +182,6 @@ public class ItemSet {
                 itemListener.inventoryRemoved(where, index);
             }
 
-            if (notifyListeners) {
-                for (ItemSetListener listener : itemSetListeners) {
-                    listener.itemRemoved(item);
-                }
-            }
-
             for (ItemListener itemListener : itemListeners.getListeners(tag)) {
                 itemListener.itemRemoved(tag);
             }
@@ -208,7 +196,7 @@ public class ItemSet {
      */
     public void removeItems(@NotNull final int[] tags) {
         for (int tag : tags) {
-            if (removeItemByTag(tag, true) == -1) {
+            if (removeItemByTag(tag) == -1) {
                 System.err.println("removeItem3: item "+tag+" does not exist");
             }
         }
@@ -219,18 +207,8 @@ public class ItemSet {
      * @param item the item to add
      */
     public void addItem(@NotNull final CfItem item) {
-        addItem(item, true);
-    }
-
-    /**
-     * Adds a {@link CfItem}.
-     * @param item the item to add
-     * @param notifyListeners whether listeners should be notified about the
-     * addition
-     */
-    private void addItem(@NotNull final CfItem item, final boolean notifyListeners) {
         synchronized (sync) {
-            removeItemByTag(item.getTag(), true);
+            removeItemByTag(item.getTag());
 
             if (allItems.put(item.getTag(), item) != null) {
                 throw new AssertionError("duplicate item "+item.getTag());
@@ -246,12 +224,6 @@ public class ItemSet {
             }
 
             list.add(item);
-
-            if (notifyListeners) {
-                for (ItemSetListener listener : itemSetListeners) {
-                    listener.itemAdded(item);
-                }
-            }
 
             for (ItemListener itemListener : itemListeners.getListeners(where)) {
                 itemListener.inventoryAdded(where, list.size()-1, item);
@@ -351,7 +323,7 @@ public class ItemSet {
         final ListIterator<CfItem> it = inventoryItems.listIterator(inventoryItems.size());
         while (it.hasPrevious()) {
             final CfItem item = it.previous();
-            removeItemByTag(item.getTag(), true);
+            removeItemByTag(item.getTag());
         }
     }
 
@@ -380,18 +352,11 @@ public class ItemSet {
             final boolean wasOpen = (flags&UpdItem.UPD_FLAGS) != 0 && openContainerFloor == item.getTag() && item.isOpen();
             item.update(flags, valFlags, valWeight, valFace, valName, valNamePl, valAnim, valAnimSpeed, valNrof);
             if ((flags&UpdItem.UPD_LOCATION) != 0 && item.getLocation() != valLocation) {
-                removeItemByTag(item.getTag(), false);
+                removeItemByTag(item.getTag());
                 item.setLocation(valLocation);
-                addItem(item, false);
-
-                for (ItemSetListener listener : itemSetListeners) {
-                    listener.itemMoved(item);
-                }
+                addItem(item);
             }
             if ((flags&~UpdItem.UPD_LOCATION) != 0) {
-                for (ItemSetListener listener : itemSetListeners) {
-                    listener.itemChanged(item);
-                }
                 for (ItemListener itemListener : itemListeners.getListeners(tag)) {
                     itemListener.itemChanged(tag);
                 }
@@ -416,7 +381,7 @@ public class ItemSet {
             }
             final Iterable<CfItem> tmp = new HashSet<>(allItems.values());
             for (CfItem item : tmp) {
-                removeItemByTag(item.getTag(), true);
+                removeItemByTag(item.getTag());
             }
             setOpenContainer(0);
             setPlayer(null);

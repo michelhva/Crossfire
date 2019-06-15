@@ -32,30 +32,6 @@ import org.jetbrains.annotations.Nullable;
 public interface ItemSetListener extends EventListener {
 
     /**
-     * A {@link CfItem} has been added.
-     * @param item the added item
-     */
-    void itemAdded(@NotNull CfItem item);
-
-    /**
-     * A {@link CfItem}'s location has been changed.
-     * @param item the moved item
-     */
-    void itemMoved(@NotNull CfItem item);
-
-    /**
-     * A {@link CfItem}'s attributes have been changed.
-     * @param item the changed item
-     */
-    void itemChanged(@NotNull CfItem item);
-
-    /**
-     * A {@link CfItem} has been removed.
-     * @param item the removed item
-     */
-    void itemRemoved(@NotNull CfItem item);
-
-    /**
      * The player {@link CfItem} has changed.
      * @param player the new player item or {@code null}
      */

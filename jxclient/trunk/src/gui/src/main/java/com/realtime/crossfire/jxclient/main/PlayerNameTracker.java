@@ -57,26 +57,6 @@ public class PlayerNameTracker {
     private final ItemSetListener itemSetListener = new ItemSetListener() {
 
         @Override
-        public void itemAdded(@NotNull final CfItem item) {
-            // ignore
-        }
-
-        @Override
-        public void itemMoved(@NotNull final CfItem item) {
-            // ignore
-        }
-
-        @Override
-        public void itemChanged(@NotNull final CfItem item) {
-            // ignore
-        }
-
-        @Override
-        public void itemRemoved(@NotNull final CfItem item) {
-            // ignore
-        }
-
-        @Override
         public void playerChanged(@Nullable final CfItem player) {
             connection.setCharacter(player == null ? null : player.getName());
         }

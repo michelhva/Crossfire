@@ -54,26 +54,6 @@ public class FloorView extends AbstractItemView {
     private final ItemSetListener itemSetListener = new ItemSetListener() {
 
         @Override
-        public void itemAdded(@NotNull final CfItem item) {
-            // ignore
-        }
-
-        @Override
-        public void itemMoved(@NotNull final CfItem item) {
-            // ignore
-        }
-
-        @Override
-        public void itemChanged(@NotNull final CfItem item) {
-            // ignore
-        }
-
-        @Override
-        public void itemRemoved(@NotNull final CfItem item) {
-            // ignore
-        }
-
-        @Override
         public void playerChanged(@Nullable final CfItem player) {
             // ignore
         }
