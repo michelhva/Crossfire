@@ -148,7 +148,7 @@ public class ParserTest {
 
         final Rec rec = new Rec();
         rec.parser.parse("[b]a[color=red]b[color=blue]c[color=green]d[/color]e[color=#01AB4F]f[/color]", null, rec.buffer);
-        rec.checkResult(""+"buffer:\n"+"line:\n"+"segment:(bold)a\n"+"segment:(bold)(red)b\n"+"segment:(bold)(blue)c\n"+"segment:(bold)(green)d\n"+"segment:(bold)e\n" + "segment:(bold)(java.awt.Color[r=1,g=171,b=79])f\n");
+        rec.checkResult(""+"buffer:\n"+"line:\n"+"segment:(bold)a\n"+"segment:(bold)(red)b\n"+"segment:(bold)(blue)c\n"+"segment:(bold)(green)d\n"+"segment:(bold)e\n"+"segment:(bold)(java.awt.Color[r=1,g=171,b=79])f\n");
     }
 
     /**

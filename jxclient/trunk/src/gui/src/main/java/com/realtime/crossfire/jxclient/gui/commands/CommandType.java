@@ -106,7 +106,7 @@ public enum CommandType {
         protected void doExecute(@NotNull final CfItem item, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue) {
             crossfireServerConnection.sendLock(false, item.getTag());
         }
-    },;
+    };
 
     /**
      * Returns whether the action can be executed.
