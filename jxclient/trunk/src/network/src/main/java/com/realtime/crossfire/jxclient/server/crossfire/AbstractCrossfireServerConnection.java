@@ -617,7 +617,7 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
      * @param len the length of the string
      * @return the string
      */
-    protected static String newString(final ByteBuffer byteBuffer, final int start, final int len) {
+    protected static String newString(@NotNull final ByteBuffer byteBuffer, final int start, final int len) {
         final byte[] tmp = new byte[len];
         for (int i = 0; i < len; i++) {
             tmp[i] = byteBuffer.get(start+i);
