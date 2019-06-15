@@ -373,9 +373,7 @@ public class ItemSet {
         synchronized (sync) {
             final CfItem item = getItemOrPlayer(tag);
             if (item == null) {
-                if (flags != UpdItem.UPD_FACE) { // XXX: suppress frequent error message due to server bug
-                    System.err.println("updateItem: undefined item "+tag+" -> "+allItems.keySet());
-                }
+                //System.err.println("updateItem: undefined item "+tag); // XXX: this is a server bug
                 return;
             }
 
