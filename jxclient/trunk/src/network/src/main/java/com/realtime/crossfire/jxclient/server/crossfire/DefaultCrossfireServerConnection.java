@@ -43,6 +43,7 @@ import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.nio.Buffer;
 import java.nio.BufferUnderflowException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
@@ -500,7 +501,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      */
     private void processPacket(@NotNull final ByteBuffer packet) throws UnknownCommandException {
         try {
-            packet.mark();
+            ((Buffer)packet).mark();
             switch (packet.get()) {
             case 'a':
                 switch (packet.get()) {
@@ -1401,7 +1402,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             throw ex;
         }
 
-        packet.position(0);
+        ((Buffer)packet).position(0);
         final String command = extractCommand(packet);
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("recv invalid command: "+command+"\n"+hexDump(packet));
@@ -2250,7 +2251,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
 
         fireEndAccountList(total);
 
-        packet.reset();
+        ((Buffer)packet).reset();
         notifyPacketWatcherListenersMixed(packet, args);
     }
 
@@ -2312,7 +2313,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                 if (debugProtocol != null) {
                     debugProtocol.debugProtocolWrite("recv accountplayers unknown="+type);
                 }
-                packet.position(packet.position()+len-1);
+                ((Buffer)packet).position(packet.position()+len-1);
                 break;
             }
         }
@@ -2705,7 +2706,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("recv image2 face="+faceNum+" set="+faceSetNum+" len="+len);
         }
-        packet.position(faceDataPosition);
+        ((Buffer)packet).position(faceDataPosition);
         for (AskfaceFaceQueueListener listener : askfaceFaceQueueListeners) {
             listener.faceReceived(faceNum, faceSetNum, packet);
         }
@@ -3442,7 +3443,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             }
             valName = newString(packet, packet.position(), namePlIndex);
             valNamePl = namePlIndex+1 < nameLength ? newString(packet, packet.position()+namePlIndex+1, nameLength-(namePlIndex+1)) : valName;
-            packet.position(packet.position()+nameLength);
+            ((Buffer)packet).position(packet.position()+nameLength);
         }
         final int valAnim = (flags&UpdItem.UPD_ANIM) == 0 ? 0 : getInt2(packet);
         final int valAnimSpeed = (flags&UpdItem.UPD_ANIMSPEED) == 0 ? 0 : getInt1(packet);
@@ -3535,7 +3536,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
         accountName = login;
         synchronized (writeBuffer) {
-            byteBuffer.clear();
+            ((Buffer)byteBuffer).clear();
             //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(ACCOUNT_LOGIN_PREFIX);
             final byte[] loginBytes = login.getBytes(UTF8);
@@ -3563,7 +3564,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("send apply tag="+tag);
         }
         synchronized (writeBuffer) {
-            byteBuffer.clear();
+            ((Buffer)byteBuffer).clear();
             //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(APPLY_PREFIX);
             putDecimal(tag);
@@ -3577,7 +3578,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("send askface face="+faceNum);
         }
         synchronized (writeBuffer) {
-            byteBuffer.clear();
+            ((Buffer)byteBuffer).clear();
             //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(ASKFACE_PREFIX);
             putDecimal(faceNum);
@@ -3596,7 +3597,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("send examine tag="+tag);
         }
         synchronized (writeBuffer) {
-            byteBuffer.clear();
+            ((Buffer)byteBuffer).clear();
             //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(EXAMINE_PREFIX);
             putDecimal(tag);
@@ -3610,7 +3611,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("send lock tag="+tag+" val="+val);
         }
         synchronized (writeBuffer) {
-            byteBuffer.clear();
+            ((Buffer)byteBuffer).clear();
             //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(LOCK_PREFIX);
             byteBuffer.put((byte)(val ? 1 : 0));
@@ -3625,7 +3626,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("send lookat pos="+dx+"/"+dy);
         }
         synchronized (writeBuffer) {
-            byteBuffer.clear();
+            ((Buffer)byteBuffer).clear();
             //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(LOOKAT_PREFIX);
             putDecimal(dx);
@@ -3641,7 +3642,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("send mark tag="+tag);
         }
         synchronized (writeBuffer) {
-            byteBuffer.clear();
+            ((Buffer)byteBuffer).clear();
             //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(MARK_PREFIX);
             byteBuffer.putInt(tag);
@@ -3655,7 +3656,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("send move tag="+tag+" to="+to+" nrof="+nrof);
         }
         synchronized (writeBuffer) {
-            byteBuffer.clear();
+            ((Buffer)byteBuffer).clear();
             //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(MOVE_PREFIX);
             putDecimal(to);
@@ -3675,7 +3676,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         final int thisPacket;
         synchronized (writeBuffer) {
             thisPacket = packet++&0x00FF;
-            byteBuffer.clear();
+            ((Buffer)byteBuffer).clear();
             //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(NCOM_PREFIX);
             byteBuffer.putShort((short)thisPacket);
@@ -3692,7 +3693,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("send reply text="+text);
         }
         synchronized (writeBuffer) {
-            byteBuffer.clear();
+            ((Buffer)byteBuffer).clear();
             //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(REPLY_PREFIX);
             byteBuffer.put(text.getBytes(UTF8));
@@ -3707,7 +3708,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("send requestinfo type="+infoType);
         }
         synchronized (writeBuffer) {
-            byteBuffer.clear();
+            ((Buffer)byteBuffer).clear();
             //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(REQUESTINFO_PREFIX);
             byteBuffer.put(infoType.getBytes(UTF8));
@@ -3722,7 +3723,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("send setup options="+Arrays.toString(options));
         }
         synchronized (writeBuffer) {
-            byteBuffer.clear();
+            ((Buffer)byteBuffer).clear();
             //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(SETUP_PREFIX);
             if (options.length <= 0) {
@@ -3747,7 +3748,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("send toggleextendedtext types="+Arrays.toString(types));
         }
         synchronized (writeBuffer) {
-            byteBuffer.clear();
+            ((Buffer)byteBuffer).clear();
             //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(TOGGLEEXTENDEDTEXT_PREFIX);
             for (int type : types) {
@@ -3764,7 +3765,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("send version cs="+csval+" sc="+scval+" info="+vinfo);
         }
         synchronized (writeBuffer) {
-            byteBuffer.clear();
+            ((Buffer)byteBuffer).clear();
             //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(VERSION_PREFIX);
             putDecimal(csval);
@@ -3900,7 +3901,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("send accountplay "+name);
         }
         synchronized (writeBuffer) {
-            byteBuffer.clear();
+            ((Buffer)byteBuffer).clear();
             //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(ACCOUNT_PLAY_PREFIX);
             byteBuffer.put(name.getBytes(UTF8));
@@ -3920,7 +3921,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("send accountaddplayer "+login);
         }
         synchronized (writeBuffer) {
-            byteBuffer.clear();
+            ((Buffer)byteBuffer).clear();
             //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(ACCOUNT_ADD_PLAYER_PREFIX);
             byteBuffer.put((byte)force);
@@ -3942,7 +3943,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
         accountName = login;
         synchronized (writeBuffer) {
-            byteBuffer.clear();
+            ((Buffer)byteBuffer).clear();
             //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(ACCOUNT_NEW_PREFIX);
             final byte[] loginBytes = login.getBytes(UTF8);
@@ -3962,7 +3963,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("send createplayer "+login+" "+attributes);
         }
         synchronized (writeBuffer) {
-            byteBuffer.clear();
+            ((Buffer)byteBuffer).clear();
             //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(CREATE_PLAYER_PREFIX);
             final byte[] loginBytes = login.getBytes(UTF8);
@@ -3990,7 +3991,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("send accountpw");
         }
         synchronized (writeBuffer) {
-            byteBuffer.clear();
+            ((Buffer)byteBuffer).clear();
             //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(ACCOUNT_PASSWORD_PREFIX);
             final byte[] currentPasswordBytes = currentPassword.getBytes(UTF8);

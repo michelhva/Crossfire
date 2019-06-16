@@ -1,3 +1,10 @@
+2019-06-16  Andreas Kirschbaum
+
+	* Fix crash due to "Exception in thread "JXClient:ClientSocket"
+	java.lang.NoSuchMethodError:
+	java.nio.ByteBuffer.clear()Ljava/nio/ByteBuffer;" when compiling
+	on Java>=9 but running on Java<=8.
+
 2019-06-15  Andreas Kirschbaum
 
 	* Fix spurious lockups when receiving item updates from the
@@ -12,13 +19,6 @@
 2019-06-14  Andreas Kirschbaum
 
 	* Do not anymore consume 100% CPU when showing lists.
-
-2019-06-12  Andreas Kirschbaum
-
-	* Fix crash due to "Exception in thread "JXClient:ClientSocket"
-	java.lang.NoSuchMethodError:
-	java.nio.ByteBuffer.clear()Ljava/nio/ByteBuffer;" when compiling
-	on Java>=9 but running on Java<=8.
 
 2019-06-10  Andreas Kirschbaum
 

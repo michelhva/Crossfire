@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.server.crossfire;
 import com.realtime.crossfire.jxclient.account.CharacterInformation;
 import com.realtime.crossfire.jxclient.server.server.ReceivedPacketListener;
 import com.realtime.crossfire.jxclient.util.EventListenerList2;
+import java.nio.Buffer;
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
 import java.util.Iterator;
@@ -457,7 +458,7 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
             if (packet.hasRemaining()) { // XXX: should check payload, not whole command?
                 while (listeners.hasNext()) {
                     final ReceivedPacketListener receivedPacketListener = listeners.next();
-                    packet.position(args);
+                    ((Buffer)packet).position(args);
                     receivedPacketListener.processAscii(command, packet);
                 }
             } else {
@@ -480,7 +481,7 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
             if (packet.hasRemaining()) { // XXX: should check payload, not whole command?
                 while (listeners.hasNext()) {
                     final ReceivedPacketListener receivedPacketListener = listeners.next();
-                    packet.position(args);
+                    ((Buffer)packet).position(args);
                     receivedPacketListener.processShortArray(command, packet);
                 }
             } else {
@@ -503,7 +504,7 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
             if (packet.hasRemaining()) { // XXX: should check payload, not whole command?
                 while (listeners.hasNext()) {
                     final ReceivedPacketListener receivedPacketListener = listeners.next();
-                    packet.position(args);
+                    ((Buffer)packet).position(args);
                     receivedPacketListener.processIntArray(command, packet);
                 }
             } else {
@@ -526,7 +527,7 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
             if (packet.hasRemaining()) { // XXX: should check payload, not whole command?
                 while (listeners.hasNext()) {
                     final ReceivedPacketListener receivedPacketListener = listeners.next();
-                    packet.position(args);
+                    ((Buffer)packet).position(args);
                     receivedPacketListener.processShortInt(command, packet);
                 }
             } else {
@@ -549,7 +550,7 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
             if (packet.hasRemaining()) { // XXX: should check payload, not whole command?
                 while (listeners.hasNext()) {
                     final ReceivedPacketListener receivedPacketListener = listeners.next();
-                    packet.position(args);
+                    ((Buffer)packet).position(args);
                     receivedPacketListener.processMixed(command, packet);
                 }
             } else {
@@ -585,7 +586,7 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
             if (packet.hasRemaining()) { // XXX: should check payload, not whole command?
                 while (listeners.hasNext()) {
                     final ReceivedPacketListener receivedPacketListener = listeners.next();
-                    packet.position(args);
+                    ((Buffer)packet).position(args);
                     receivedPacketListener.processNoData(command, packet);
                 }
             } else {
