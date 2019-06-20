@@ -1,5 +1,8 @@
 dialog WIDTH/2 HEIGHT/2 true Status
 dialog_hide START META LOGIN ACCOUNT
+
+commandlist command_status_close AND null DIALOG_CLOSE status
+
 button dialog_close    close_up close_down false command_status_close
 
 label_stat label_title font_label BLACK TITLE LEFT

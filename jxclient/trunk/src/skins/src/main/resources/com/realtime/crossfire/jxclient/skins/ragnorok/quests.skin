@@ -1,5 +1,9 @@
 dialog WIDTH/2 HEIGHT/2 true Quests
+
+commandlist command_quests_close AND null DIALOG_CLOSE quests
+
 dialog_hide START META LOGIN NEW_CHAR ACCOUNT
+
 button dialog_close close_up close_down false command_quests_close
 
 commandlist command_quests_scroll_up AND

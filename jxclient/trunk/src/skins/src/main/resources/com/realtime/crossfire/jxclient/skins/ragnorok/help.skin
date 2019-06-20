@@ -1,5 +1,9 @@
 dialog WIDTH/2 HEIGHT/2 true Help
+
+commandlist command_help_close AND null DIALOG_CLOSE help
+
 dialog_hide START META LOGIN ACCOUNT
+
 button dialog_close close_up close_down false command_help_close
 
 label_multi help_text font_label DARK_GRAY <<EOF

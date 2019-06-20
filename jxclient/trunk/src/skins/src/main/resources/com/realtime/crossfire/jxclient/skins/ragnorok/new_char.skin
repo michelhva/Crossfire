@@ -1,4 +1,8 @@
 dialog WIDTH/2 HEIGHT/2-PREF_HEIGHT-100 false Create New Character
+
+commandlist command_new_char_up AND
+commandlist command_new_char_down AND
+
 dialog_hide START META LOGIN PLAYING ACCOUNT
 
 label_stat stat_title     font_label BLACK TITLE LEFT

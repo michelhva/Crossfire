@@ -1,5 +1,9 @@
 dialog WIDTH/2 HEIGHT/2 true Auto Pickup
+
+commandlist command_pickup_close AND null DIALOG_CLOSE pickup
+
 dialog_hide START META LOGIN NEW_CHAR ACCOUNT
+
 button dialog_close close_up close_down false command_pickup_close
 
 label_text label_general      font_title BLACK General:

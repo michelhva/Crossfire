@@ -1,5 +1,10 @@
 dialog 12+PREF_WIDTH/2 52+PREF_HEIGHT/2 false
+
+commandlist command_map_open AND null DIALOG_OPEN map
+
+event init command_map_open
 dialog_hide START META LOGIN NEW_CHAR ACCOUNT
+event magicmap command_map_open
 
 minimap magicmap 31 31
 

@@ -18,75 +18,21 @@ def dialog dialog font_title #d0d0d0 #401010 0.75
 def textbutton button_up button_down font_button BLACK BLUE GRAY
 def item #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied marker_unidentified marker_selector marker_locked marker_unpaid font_item BLACK
 
-commandlist command_new_char_close AND null DIALOG_CLOSE new_char
-
 commandlist command_disconnect AND null GUI_META
-commandlist command_resume_disconnect AND null DIALOG_CLOSE disconnect
-
-commandlist command_meta AND null GUI_META
 commandlist command_quit AND null QUIT
-commandlist command_resume_quit AND null DIALOG_CLOSE quit
-
-commandlist command_meta_connect AND
-commandlist command_meta_cancel AND null GUI_START
-
 commandlist command_status AND null DIALOG_TOGGLE status
-commandlist command_status_open AND null DIALOG_OPEN status
-commandlist command_status_close AND null DIALOG_CLOSE status
 commandlist command_ground AND null DIALOG_TOGGLE ground
-commandlist command_ground_open AND null DIALOG_OPEN ground
 commandlist command_inventory AND null DIALOG_TOGGLE inventory
-commandlist command_inventory_close AND null DIALOG_CLOSE inventory
 commandlist command_messages AND null DIALOG_TOGGLE messages
-commandlist command_messages_open AND null DIALOG_OPEN messages
-commandlist command_messages_close AND null DIALOG_CLOSE messages
 commandlist command_protections AND null DIALOG_TOGGLE protections
-commandlist command_protections_close AND null DIALOG_CLOSE protections
 commandlist command_skills AND null DIALOG_TOGGLE skills
-commandlist command_skills_close AND null DIALOG_CLOSE skills
 commandlist command_map AND null DIALOG_TOGGLE map
-commandlist command_map_open AND null DIALOG_OPEN map
 commandlist command_setup AND null DIALOG_TOGGLE setup
-commandlist command_setup_close AND null DIALOG_CLOSE setup
 commandlist command_help AND null DIALOG_TOGGLE help
 commandlist command_pickup AND null DIALOG_TOGGLE pickup
-commandlist command_pickup_close AND null DIALOG_CLOSE pickup
 commandlist command_spells AND null DIALOG_TOGGLE spells
-commandlist command_spells_open AND null DIALOG_OPEN spells
-commandlist command_spells_close AND null DIALOG_CLOSE spells
 commandlist command_quests AND null DIALOG_TOGGLE quests
-commandlist command_quests_open AND null DIALOG_OPEN quests
-commandlist command_quests_close AND null DIALOG_CLOSE quests
 commandlist command_knowledge AND null DIALOG_TOGGLE knowledge
-commandlist command_knowledge_open AND null DIALOG_OPEN knowledge
-commandlist command_knowledge_close AND null DIALOG_CLOSE knowledge
-
-commandlist command_help_close AND null DIALOG_CLOSE help
-
-commandlist command_book_close AND null DIALOG_CLOSE book
-
-commandlist command_ground_left AND
-commandlist command_ground_right AND
-
-commandlist command_new_char_up AND
-commandlist command_new_char_down AND
-
-commandlist command_messages_up_all AND
-commandlist command_messages_up_msg AND
-commandlist command_messages_up_chat AND
-commandlist command_messages_down_all AND
-commandlist command_messages_down_msg AND
-commandlist command_messages_down_chat AND
-
-commandlist command_message_show_all AND
-commandlist command_message_show_msg AND
-commandlist command_message_show_chat AND
-
-event magicmap command_map_open
-
-event init command_ground_open
-event init command_map_open
-event init command_messages_open
 
 key code F1 0 exec command_help
 key code F2 0 exec command_status

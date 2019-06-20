@@ -1,5 +1,9 @@
 dialog WIDTH/2 HEIGHT/2 true Knowledge
+
+commandlist command_knowledge_close AND null DIALOG_CLOSE knowledge
+
 dialog_hide START META LOGIN NEW_CHAR ACCOUNT
+
 button dialog_close close_up close_down false command_knowledge_close
 
 commandlist command_knowledge_scroll_up AND
