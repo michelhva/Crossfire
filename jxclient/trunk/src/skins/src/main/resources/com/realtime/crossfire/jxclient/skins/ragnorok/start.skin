@@ -1,5 +1,7 @@
 fill background_black  BLACK 1
 
+commandlist command_meta AND null GUI_META
+
 picture background background_start 1
 
 textbutton meta    false command_meta Connect to a game server

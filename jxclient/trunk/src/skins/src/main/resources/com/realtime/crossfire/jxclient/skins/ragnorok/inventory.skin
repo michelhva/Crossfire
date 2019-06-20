@@ -1,5 +1,8 @@
 dialog WIDTH/2 HEIGHT/2 true Inventory
 dialog_hide START META LOGIN NEW_CHAR ACCOUNT
+
+commandlist command_inventory_close AND null DIALOG_CLOSE inventory
+
 button dialog_close close_up close_down false command_inventory_close
 
 commandlist command_inventory_scroll_up AND

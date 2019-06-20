@@ -1,6 +1,8 @@
 dialog WIDTH/2 HEIGHT/2 false Exit Crossfire?
 set_modal
 
+commandlist command_resume_quit AND null DIALOG_CLOSE quit
+
 label_multi message font_title BLACK <<EOF
 Do you really want to exit
 from Crossfire?

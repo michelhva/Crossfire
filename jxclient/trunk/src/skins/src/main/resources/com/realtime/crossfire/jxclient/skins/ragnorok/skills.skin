@@ -1,5 +1,9 @@
 dialog WIDTH/2 HEIGHT/2 true Skills
+
+commandlist command_skills_close AND null DIALOG_CLOSE skills
+
 dialog_hide START META LOGIN NEW_CHAR ACCOUNT
+
 button dialog_close close_up close_down false command_skills_close
 
 commandlist commandlist_use_skill_lockpicking AND null GUI_EXECUTE_COMMAND use_skill lockpicking
