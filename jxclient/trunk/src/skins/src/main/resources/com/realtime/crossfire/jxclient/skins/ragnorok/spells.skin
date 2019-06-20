@@ -45,9 +45,7 @@ horizontal begin par
       slider_down
     end
   end
-  begin seq
-    spell_item 1 -2 32767
-  end
+  spell_item 1 -2 32767
 end
 
 vertical begin seq
@@ -63,7 +61,5 @@ vertical begin seq
       slider_down
     end
   end
-  begin par
-    spell_item
-  end
+  spell_item
 end

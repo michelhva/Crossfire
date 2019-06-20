@@ -1408,7 +1408,7 @@ public class JXCSkinLoader {
             unreferencedElements.add(element);
         }
         if (!isDialog) {
-            final Group content = parseBegin(args, layout, lnr, unreferencedElements);
+            final Group content = parseBegin(args, layout, lnr, unreferencedElements, true);
             if (!unreferencedElements.isEmpty()) {
                 throw new IOException("layout doesn't define elements "+unreferencedElements);
             }
@@ -1419,7 +1419,7 @@ public class JXCSkinLoader {
         if (background == null) {
             throw new AssertionError("element 'dialog_background' is missing");
         }
-        final Group content = parseBegin(args, layout, lnr, unreferencedElements);
+        final Group content = parseBegin(args, layout, lnr, unreferencedElements, true);
         final Component title = getUnreferencedElement("dialog_title", unreferencedElements);
         final Component close = getUnreferencedElement("dialog_close", unreferencedElements);
         final Group group2 = layout.createSequentialGroup();
@@ -2204,7 +2204,7 @@ public class JXCSkinLoader {
             unreferencedElements.add(element);
         }
         if (!isDialog) {
-            final Group content = parseBegin(args, layout, lnr, unreferencedElements);
+            final Group content = parseBegin(args, layout, lnr, unreferencedElements, true);
             if (!unreferencedElements.isEmpty()) {
                 throw new IOException("layout doesn't define elements "+unreferencedElements);
             }
@@ -2215,7 +2215,7 @@ public class JXCSkinLoader {
         if (background == null) {
             throw new AssertionError("element 'dialog_background' is missing");
         }
-        final Group content = parseBegin(args, layout, lnr, unreferencedElements);
+        final Group content = parseBegin(args, layout, lnr, unreferencedElements, true);
         final Component title = getUnreferencedElement("dialog_title", unreferencedElements);
         final Component close = getUnreferencedElement("dialog_close", unreferencedElements);
         final Group group2 = layout.createSequentialGroup();
@@ -2328,12 +2328,13 @@ public class JXCSkinLoader {
      * @param lnr the line number read to read from
      * @param unreferencedElements the unreferenced gui elements; will be
      * updated
+     * @param topLevel whether this block is the top-level begin...end block
      * @return the parsing result
      * @throws IOException if the block cannot be parsed
      * @throws JXCSkinException if the block cannot be parsed
      */
     @NotNull
-    private Group parseBegin(@NotNull final Args beginArgs, @NotNull final GroupLayout layout, @NotNull final LineNumberReader lnr, @NotNull final Collection<GUIElement> unreferencedElements) throws IOException, JXCSkinException {
+    private Group parseBegin(@NotNull final Args beginArgs, @NotNull final GroupLayout layout, @NotNull final LineNumberReader lnr, @NotNull final Collection<GUIElement> unreferencedElements, final boolean topLevel) throws IOException, JXCSkinException {
         final String type = beginArgs.get();
         final Group group;
         switch (type) {
@@ -2349,6 +2350,7 @@ public class JXCSkinLoader {
             throw new IOException("undefined type '"+type+"'");
         }
 
+        int elements = 0;
         while (true) {
             final String line = lnr.readLine();
             if (line == null) {
@@ -2370,9 +2372,10 @@ public class JXCSkinLoader {
             if (cmd.equals("end")) {
                 break;
             }
+            elements++;
             switch (cmd) {
             case "begin":
-                group.addGroup(parseBegin(args, layout, lnr, unreferencedElements));
+                group.addGroup(parseBegin(args, layout, lnr, unreferencedElements, false));
                 break;
 
             case "border_gap":
@@ -2424,6 +2427,15 @@ public class JXCSkinLoader {
             }
             if (args.hasMore()) {
                 throw new IOException("excess arguments");
+            }
+        }
+        if (topLevel) {
+            if (elements < 1) {
+                throw new IOException("begin...end block must have at least one element");
+            }
+        } else {
+            if (elements < 2) {
+                throw new IOException("begin...end block must have at least two elements");
             }
         }
         return group;

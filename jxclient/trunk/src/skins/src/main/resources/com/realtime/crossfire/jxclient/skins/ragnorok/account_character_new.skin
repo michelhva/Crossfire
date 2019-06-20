@@ -186,79 +186,75 @@ vertical begin seq
   label_attr
   begin par
     begin seq
-      begin par
-        begin seq
-          label_base1
-          label_base2
-        end
-        option_race
-        option_class
-        label_total
-      end
-      begin par
-        stat_str_label
-        stat_str_value
-        stat_str_race
-        stat_str_class
-        stat_str_total
-      end
-      begin par
-        stat_dex_label
-        stat_dex_value
-        stat_dex_race
-        stat_dex_class
-        stat_dex_total
-      end
-      begin par
-        stat_con_label
-        stat_con_value
-        stat_con_race
-        stat_con_class
-        stat_con_total
-      end
-      begin par
-        stat_int_label
-        stat_int_value
-        stat_int_race
-        stat_int_class
-        stat_int_total
-      end
-      begin par
-        stat_wis_label
-        stat_wis_value
-        stat_wis_race
-        stat_wis_class
-        stat_wis_total
-      end
-      begin par
-        stat_pow_label
-        stat_pow_value
-        stat_pow_race
-        stat_pow_class
-        stat_pow_total
-      end
-      begin par
-        stat_cha_label
-        stat_cha_value
-        stat_cha_race
-        stat_cha_class
-        stat_cha_total
-      end
-      begin par
-        label_unused_text
-        label_unused_value
-      end
-      gap 8
-      label_options
-      begin par
-        option_starting_map_label
-        option_starting_map
-      end
-      begin par
-        char_option_label
-        char_option
-      end
+      label_base1
+      label_base2
     end
+    option_race
+    option_class
+    label_total
+  end
+  begin par
+    stat_str_label
+    stat_str_value
+    stat_str_race
+    stat_str_class
+    stat_str_total
+  end
+  begin par
+    stat_dex_label
+    stat_dex_value
+    stat_dex_race
+    stat_dex_class
+    stat_dex_total
+  end
+  begin par
+    stat_con_label
+    stat_con_value
+    stat_con_race
+    stat_con_class
+    stat_con_total
+  end
+  begin par
+    stat_int_label
+    stat_int_value
+    stat_int_race
+    stat_int_class
+    stat_int_total
+  end
+  begin par
+    stat_wis_label
+    stat_wis_value
+    stat_wis_race
+    stat_wis_class
+    stat_wis_total
+  end
+  begin par
+    stat_pow_label
+    stat_pow_value
+    stat_pow_race
+    stat_pow_class
+    stat_pow_total
+  end
+  begin par
+    stat_cha_label
+    stat_cha_value
+    stat_cha_race
+    stat_cha_class
+    stat_cha_total
+  end
+  begin par
+    label_unused_text
+    label_unused_value
+  end
+  gap 8
+  label_options
+  begin par
+    option_starting_map_label
+    option_starting_map
+  end
+  begin par
+    char_option_label
+    char_option
   end
   gap 8
   label_error
