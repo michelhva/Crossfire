@@ -137,3 +137,13 @@ key code BEGIN 1 stay f
 key code NUMPAD5 1 stay f
 key code BEGIN 0 stay
 key code NUMPAD5 0 stay
+key code UP        8 exec command_inventory_open
+key code KP_UP     8 exec command_inventory_open
+key code DOWN      8 exec command_inventory_open
+key code KP_DOWN   8 exec command_inventory_open
+key code LEFT      8 exec command_inventory_open
+key code KP_LEFT   8 exec command_inventory_open
+key code RIGHT     8 exec command_inventory_open
+key code KP_RIGHT  8 exec command_inventory_open
+key code PAGE_UP   8 exec command_inventory_open
+key code PAGE_DOWN 8 exec command_inventory_open

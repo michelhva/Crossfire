@@ -1,6 +1,7 @@
 dialog WIDTH/2 HEIGHT/2 true Inventory
 dialog_hide START META LOGIN NEW_CHAR ACCOUNT
 
+commandlist command_inventory_open AND null DIALOG_OPEN inventory
 commandlist command_inventory_close AND null DIALOG_CLOSE inventory
 
 button dialog_close close_up close_down false command_inventory_close
@@ -42,26 +43,23 @@ commandlist command_inventory_lock AND inv EXEC_SELECTION LOCK
 commandlist command_inventory_mark AND inv EXEC_SELECTION MARK
 commandlist command_inventory_unlock AND inv EXEC_SELECTION UNLOCK
 
-# Cursor keys disabled for now because players want to move around while
-# inventory is open.
-#key code UP        0 exec command_inventory_up
-#key code KP_UP     0 exec command_inventory_up
-#key code DOWN      0 exec command_inventory_down
-#key code KP_DOWN   0 exec command_inventory_down
-#key code LEFT      0 exec command_inventory_prev
-#key code KP_LEFT   0 exec command_inventory_prev
-#key code RIGHT     0 exec command_inventory_next
-#key code KP_RIGHT  0 exec command_inventory_next
-#key code PAGE_UP   0 exec command_inventory_page_up
-#key code PAGE_DOWN 0 exec command_inventory_page_down
-#key code ENTER     0 exec command_inventory_apply
-#key code A         0 exec command_inventory_apply
-#key code D         0 exec command_inventory_drop
-#key code E         0 exec command_inventory_examine
-#key code L         0 exec command_inventory_lock
-#key code L         1 exec command_inventory_unlock
-#key code M         0 exec command_inventory_mark
-#key code U         0 exec command_inventory_unlock
+key code UP        8 exec command_inventory_up
+key code KP_UP     8 exec command_inventory_up
+key code DOWN      8 exec command_inventory_down
+key code KP_DOWN   8 exec command_inventory_down
+key code LEFT      8 exec command_inventory_prev
+key code KP_LEFT   8 exec command_inventory_prev
+key code RIGHT     8 exec command_inventory_next
+key code KP_RIGHT  8 exec command_inventory_next
+key code PAGE_UP   8 exec command_inventory_page_up
+key code PAGE_DOWN 8 exec command_inventory_page_down
+key code ENTER     8 exec command_inventory_apply
+key code A         8 exec command_inventory_apply
+key code D         8 exec command_inventory_drop
+key code E         8 exec command_inventory_examine
+key code L         8 exec command_inventory_lock
+key code M         8 exec command_inventory_mark
+key code U         8 exec command_inventory_unlock
 
 commandlist command_inventory_reset OR inv SCROLL_RESET
 event connect command_inventory_reset

@@ -1,5 +1,14 @@
 2019-06-20  Andreas Kirschbaum
 
+	* Define default key bindings for inventory dialog:
+	- ALT-UP/DOWN/LEFT/RIGHT moves the selected item; opens the
+	  inventory dialog if closed
+	- ALT-ENTER or ALT-A applies the selected item
+	- ALT-E examines the selected item
+	- ALT-L locks the selected item
+	- ALT-U unlocks the selected item
+	- ALT-M marks the selected item
+
 	* Make skin file parser more strict.
 
 2019-06-16  Andreas Kirschbaum
