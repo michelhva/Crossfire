@@ -286,11 +286,11 @@ public class MetaserverEntry implements Comparable<MetaserverEntry> {
                     break;
 
                 case 'A':
-                    sb.append(archBase);
+                    sb.append(breakLines(archBase));
                     break;
 
                 case 'C':
-                    sb.append(comment);
+                    sb.append(breakLines(comment));
                     break;
 
                 case 'D':
@@ -298,7 +298,7 @@ public class MetaserverEntry implements Comparable<MetaserverEntry> {
                     break;
 
                 case 'E':
-                    sb.append(codeBase);
+                    sb.append(breakLines(codeBase));
                     break;
 
                 case 'H':
@@ -339,6 +339,47 @@ public class MetaserverEntry implements Comparable<MetaserverEntry> {
                     break;
                 }
             }
+        }
+        return sb.toString();
+    }
+
+    /**
+     * Splits long lines.
+     * @param text the text to split
+     * @return thr split text
+     */
+    @NotNull
+    private static String breakLines(@NotNull final String text) {
+        final StringBuilder sb = new StringBuilder();
+        for (final String line0 : text.split("\n")) {
+            final String line = line0.trim();
+
+            int index = 0;
+            while (line.length() > index+80) {
+                int nextIndex = line.lastIndexOf(' ', index+80);
+                if (nextIndex == -1 || nextIndex < index) {
+                    nextIndex = line.indexOf(' ', index+80);
+                    if (nextIndex == -1 || nextIndex < index) {
+                        nextIndex = line.length();
+                    }
+                    if (nextIndex > index+140) {
+                        nextIndex = index+140;
+                    }
+                }
+                if (sb.length() > 0) {
+                    sb.append("<br>");
+                }
+                sb.append(line, index, nextIndex);
+
+                index = nextIndex;
+                while (index < line.length() && line.charAt(index) == ' ') {
+                    index++;
+                }
+            }
+            if (sb.length() > 0) {
+                sb.append("<br>");
+            }
+            sb.append(line, index, line.length());
         }
         return sb.toString();
     }
