@@ -342,7 +342,7 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
             synchronized (bufferedImageSync) {
                 final Graphics g = createBufferGraphics(map);
                 try {
-                    redrawTiles(g, map, displayMinX-offsetX/tileSize, displayMinY-offsetY/tileSize, displayMaxX-offsetX/tileSize, displayMaxY-offsetY/tileSize);
+                    redrawTiles(g, map, displayMinX, displayMinY, displayMaxX, displayMaxY);
                     markPlayer(g, 0, 0);
                 } finally {
                     g.dispose();
