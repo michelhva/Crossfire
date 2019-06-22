@@ -28,7 +28,6 @@ import com.realtime.crossfire.jxclient.faces.FaceImagesUtils;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.TestFacesManager;
 import com.realtime.crossfire.jxclient.protocol.Map2;
-import java.io.IOException;
 import javax.swing.ImageIcon;
 import org.jetbrains.annotations.NotNull;
 import org.junit.Assert;
@@ -489,10 +488,9 @@ public class MapUpdaterStateTest {
     /**
      * Checks that a cleared multi-tile face causes all affected tiles to become
      * fog-of-war.
-     * @throws IOException if an error occurs
      */
     @Test
-    public void testFogOfWar1() throws IOException {
+    public void testFogOfWar1() {
         final FaceCache faceCache = new FaceCache();
         final FacesManager facesManager = new TestFacesManager(faceCache);
         defineFace(faceCache, 1, "M", PNG64X64);
@@ -526,10 +524,9 @@ public class MapUpdaterStateTest {
 
     /**
      * Checks that a regression causing display artifacts is fixed.
-     * @throws IOException if an error occurs
      */
     @Test
-    public void testDisplayArtifacts1() throws IOException {
+    public void testDisplayArtifacts1() {
         final FaceCache faceCache = new FaceCache();
         final FacesManager facesManager = new TestFacesManager(faceCache);
         defineFace(faceCache, 307, "behemoth.x31", PNG64X64);
@@ -618,10 +615,9 @@ public class MapUpdaterStateTest {
 
     /**
      * Checks that a regression causing display artifacts is fixed.
-     * @throws IOException if an error occurs
      */
     @Test
-    public void testDisplayArtifacts2() throws IOException {
+    public void testDisplayArtifacts2() {
         final FaceCache faceCache = new FaceCache();
         final FacesManager facesManager = new TestFacesManager(faceCache);
         defineFace(faceCache, 7, "a.x11", PNG64X64);
@@ -646,10 +642,9 @@ public class MapUpdaterStateTest {
 
     /**
      * Checks that a regression causing display artifacts is fixed.
-     * @throws IOException if an error occurs
      */
     @Test
-    public void testDisplayArtifacts3() throws IOException {
+    public void testDisplayArtifacts3() {
         final FaceCache faceCache = new FaceCache();
         final FacesManager facesManager = new TestFacesManager(faceCache);
         final MapUpdaterState mapUpdaterState = new MapUpdaterState(facesManager, null);
