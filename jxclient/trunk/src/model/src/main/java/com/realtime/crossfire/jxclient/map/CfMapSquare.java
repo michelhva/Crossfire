@@ -238,17 +238,13 @@ public class CfMapSquare {
     /**
      * Sets the magic map color of this square.
      * @param color the new color
-     * @return whether fog-of-war has been cleared
      */
-    public boolean setColor(final int color) {
-        final boolean result = fogOfWar;
-        final boolean markDirty = fogOfWar || this.color != color;
-        fogOfWar = false;
+    public void setColor(final int color) {
+        final boolean markDirty = this.color != color;
         this.color = color;
         if (markDirty) {
             dirty();
         }
-        return result;
     }
 
     /**
