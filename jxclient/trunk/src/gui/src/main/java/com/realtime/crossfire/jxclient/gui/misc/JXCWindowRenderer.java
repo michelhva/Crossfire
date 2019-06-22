@@ -1220,6 +1220,10 @@ public class JXCWindowRenderer {
      * @param component the component to add to
      */
     private void addMouseTracker(@NotNull final Component component) {
+        if (component instanceof AbstractGUIElement && ((AbstractGUIElement)component).isIgnore()) {
+            return;
+        }
+
         component.addMouseListener(mouseInputListener);
         component.addMouseMotionListener(mouseInputListener);
     }
@@ -1229,6 +1233,10 @@ public class JXCWindowRenderer {
      * @param component the component to remove from
      */
     private void removeMouseTracker(@NotNull final Component component) {
+        if (component instanceof AbstractGUIElement && ((AbstractGUIElement)component).isIgnore()) {
+            return;
+        }
+
         component.removeMouseListener(mouseInputListener);
         component.removeMouseMotionListener(mouseInputListener);
     }
