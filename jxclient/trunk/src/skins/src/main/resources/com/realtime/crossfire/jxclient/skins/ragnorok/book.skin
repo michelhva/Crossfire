@@ -1,3 +1,4 @@
+set_auto_size WIDTH/2-PREF_WIDTH/2 HEIGHT/2-PREF_HEIGHT/2 PREF_WIDTH PREF_HEIGHT
 picture book_background bouquin 0.9
 
 commandlist command_book_close AND null DIALOG_CLOSE book
