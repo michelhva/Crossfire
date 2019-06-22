@@ -225,11 +225,7 @@ public class CfMap {
         for (int y = 0; y < data.length; y++) {
             for (int x = 0; x < data[y].length; x++) {
                 final int color = data[y][x]&MagicMap.FACE_COLOR_MASK;
-                if (expandTo(x0+x, y0+y).setColor(ox, oy, color)) {
-                    for (int l = 0; l < Map2.NUM_LAYERS; l++) {
-                        setFaceInternal(x, y, l, CfMapSquare.DEFAULT_FACE);
-                    }
-                }
+                expandTo(x0+x, y0+y).setColor(ox, oy, color);
             }
         }
     }

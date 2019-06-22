@@ -134,10 +134,9 @@ public class CfMapPatch {
      * @param x the x-coordinate of the square
      * @param y the y-coordinate of the square
      * @param color the color to set
-     * @return whether fog-of-war has been cleared
      */
-    public boolean setColor(final int x, final int y, final int color) {
-        return square[x][y].setColor(color);
+    public void setColor(final int x, final int y, final int color) {
+        square[x][y].setColor(color);
     }
 
     /**
