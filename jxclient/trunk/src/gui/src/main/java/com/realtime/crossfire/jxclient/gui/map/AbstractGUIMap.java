@@ -344,7 +344,7 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
             synchronized (bufferedImageSync) {
                 final Graphics g = createBufferGraphics(map);
                 try {
-                    redrawTiles(g, map, displayMinX, displayMinY, displayMaxX, displayMaxY);
+                    redrawTiles(g, map, displayMinX-offsetX/tileSize, displayMinY-offsetY/tileSize, displayMaxX-offsetX/tileSize, displayMaxY-offsetY/tileSize);
                     markPlayer(g, 0, 0);
                 } finally {
                     g.dispose();
@@ -374,10 +374,8 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
     private void redrawTiles(@NotNull final Graphics g, @NotNull final CfMap map, final int x0, final int y0, final int x1, final int y1) {
         for (int x = x0; x < x1; x++) {
             for (int y = y0; y < y1; y++) {
-                final int mapSquareX = x-offsetX/tileSize;
-                final int mapSquareY = y-offsetY/tileSize;
-                final CfMapSquare mapSquare = map.getMapSquare(mapSquareX, mapSquareY);
-                redrawSquare(g, mapSquare, map, mapSquareX, mapSquareY);
+                final CfMapSquare mapSquare = map.getMapSquare(x, y);
+                redrawSquare(g, mapSquare, map, x, y);
             }
         }
     }
