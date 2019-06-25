@@ -91,7 +91,6 @@ public class Metaserver {
         serverCache.put(localhostMetaserverEntry);
 
         try {
-            final URL url = new URL(METASERVER_URL);
             final String httpProxy = System.getenv("http_proxy");
             if (httpProxy != null && !httpProxy.isEmpty()) {
                 if (httpProxy.regionMatches(true, 0, "http://", 0, 7)) {
@@ -102,6 +101,7 @@ public class Metaserver {
                     System.err.println("Warning: unsupported http_proxy protocol: "+httpProxy);
                 }
             }
+            final URL url = new URL(METASERVER_URL);
             final HttpURLConnection conn = (HttpURLConnection)url.openConnection();
             try {
                 conn.setRequestMethod("GET");

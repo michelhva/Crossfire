@@ -194,9 +194,7 @@ public class GUILabelStats2 extends GUIOneLineLabel {
     private void updateStat() {
         final int baseValue = stats.getStat(statBase);
         final int raceValue = stats.getStat(statRace);
-        final int appliedValue = stats.getStat(statApplied);
         final int currValue = stats.getStat(statCurrent);
-        final int currValueWithoutGear = currValue-appliedValue;
         if (baseValue == 0 && raceValue == 0) {
             // no server support
             color = super.getTextColor();
@@ -204,6 +202,8 @@ public class GUILabelStats2 extends GUIOneLineLabel {
             return;
         }
 
+        final int appliedValue = stats.getStat(statApplied);
+        final int currValueWithoutGear = currValue-appliedValue;
         final Color newColor;
         if (currValueWithoutGear < baseValue) {
             newColor = colorDepleted;
