@@ -199,7 +199,7 @@ public class GUILabelStats2 extends GUIOneLineLabel {
         final int currValueWithoutGear = currValue-appliedValue;
         if (baseValue == 0 && raceValue == 0) {
             // no server support
-            color = GUILabelStats2.super.getTextColor();
+            color = super.getTextColor();
             setText(String.valueOf(currValue));
             return;
         }
@@ -208,7 +208,7 @@ public class GUILabelStats2 extends GUIOneLineLabel {
         if (currValueWithoutGear < baseValue) {
             newColor = colorDepleted;
         } else if (currValueWithoutGear == baseValue) {
-            newColor = baseValue < raceValue ? colorUpgradable : GUILabelStats2.super.getTextColor();
+            newColor = baseValue < raceValue ? colorUpgradable : super.getTextColor();
         } else {
             newColor = baseValue < raceValue ? colorBoostedUpgradable : colorBoosted;
         }
