@@ -1425,27 +1425,38 @@ public class JXCSkinLoader {
         final Group group2 = layout.createSequentialGroup();
         group2.addGap(DIALOG_BORDER_WIDTH);
         if (title == null) {
-            final Group group3 = layout.createParallelGroup();
-            if (close != null) {
-                final Group group4 = layout.createSequentialGroup();
-                group4.addGap(0, 1, Short.MAX_VALUE);
-                group4.addComponent(close);
-                group3.addGroup(group4);
-            }
-            group3.addGroup(content);
-            group2.addGroup(group3);
-        } else {
-            final Group group3 = layout.createParallelGroup();
             if (close == null) {
-                group3.addComponent(title);
+                // no title, no close
+                final Group group3 = layout.createParallelGroup();
+                group3.addGroup(content);
+                group2.addGroup(group3);
             } else {
-                final Group group4 = layout.createSequentialGroup();
-                group4.addComponent(title);
-                group4.addComponent(close);
-                group3.addGroup(group4);
+                // no title, close
+                final Group group3 = layout.createSequentialGroup();
+                group3.addGap(0, 1, Short.MAX_VALUE);
+                group3.addComponent(close);
+                final Group group4 = layout.createParallelGroup();
+                group4.addGroup(group3);
+                group4.addGroup(content);
+                group2.addGroup(group4);
             }
-            group3.addGroup(content);
-            group2.addGroup(group3);
+        } else {
+            if (close == null) {
+                // title, no close
+                final Group group3 = layout.createParallelGroup();
+                group3.addComponent(title);
+                group3.addGroup(content);
+                group2.addGroup(group3);
+            } else {
+                // title, close
+                final Group group3 = layout.createSequentialGroup();
+                group3.addComponent(title);
+                group3.addComponent(close);
+                final Group group4 = layout.createParallelGroup();
+                group4.addGroup(group3);
+                group4.addGroup(content);
+                group2.addGroup(group4);
+            }
         }
         group2.addGap(DIALOG_BORDER_WIDTH);
         if (!unreferencedElements.isEmpty()) {
@@ -2221,16 +2232,23 @@ public class JXCSkinLoader {
         final Group group2 = layout.createSequentialGroup();
         group2.addGap(DIALOG_BORDER_WIDTH);
         if (title == null) {
-            if (close != null) {
+            if (close == null) {
+                // no title, no close
+            } else {
+                // no title, close
                 group2.addComponent(close);
             }
-        } else if (close == null) {
-            group2.addComponent(title);
         } else {
-            final Group group3 = layout.createParallelGroup();
-            group3.addComponent(title);
-            group3.addComponent(close);
-            group2.addGroup(group3);
+            if (close == null) {
+                // title, no close
+                group2.addComponent(title);
+            } else {
+                // title. close
+                final Group group3 = layout.createParallelGroup();
+                group3.addComponent(title);
+                group3.addComponent(close);
+                group2.addGroup(group3);
+            }
         }
         group2.addGroup(content);
         group2.addGap(DIALOG_BORDER_WIDTH);
