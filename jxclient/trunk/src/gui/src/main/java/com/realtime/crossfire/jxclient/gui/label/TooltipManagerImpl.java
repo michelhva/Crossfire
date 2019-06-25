@@ -140,10 +140,10 @@ public class TooltipManagerImpl implements TooltipManager {
     }
 
     @Override
-    public void setElement(@NotNull final GUIElement guiElement) {
+    public void setElement(@NotNull final AbstractGUIElement guiElement) {
         final TooltipText tooltipText = tooltipTexts.get(guiElement);
         if (tooltipText != null) {
-            guiElement.setTooltipText(tooltipText.getText());
+            setTooltipText(guiElement, tooltipText.getText());
         }
         SwingUtilities2.invokeAndWait(() -> {
             synchronized (activeGuiElementSync) {
@@ -160,7 +160,7 @@ public class TooltipManagerImpl implements TooltipManager {
     }
 
     @Override
-    public void unsetElement(@NotNull final GUIElement guiElement) {
+    public void unsetElement(@NotNull final AbstractGUIElement guiElement) {
         SwingUtilities2.invokeAndWait(() -> {
             synchronized (activeGuiElementSync) {
                 if (activeGuiElement == guiElement) {
