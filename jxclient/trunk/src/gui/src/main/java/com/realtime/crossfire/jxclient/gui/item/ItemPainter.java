@@ -314,7 +314,9 @@ public class ItemPainter {
             g.setFont(font);
             g.setColor(nrofColor);
             g.setBackground(new Color(0, 0, 0, 0.0f));
-            renderText(g, TEXT_OFFSET+h, 0, h, item.getTooltipText1()+" ("+item.getTooltipText2()+")");
+            final String tooltipText1 = item.getTooltipText1();
+            final String tooltipText2 = item.getTooltipText2();
+            renderText(g, TEXT_OFFSET+h, 0, h, tooltipText2.isEmpty() ? tooltipText1 : tooltipText1+" ("+tooltipText2+")");
         }
     }
 
