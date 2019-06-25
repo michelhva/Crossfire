@@ -234,11 +234,6 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
     }
 
     @Override
-    public boolean hasTooltipText() {
-        return tooltipManager.hasTooltipText(this);
-    }
-
-    @Override
     public void setChangedListener(@Nullable final GUIElementChangedListener changedListener) {
         this.changedListener = changedListener;
     }
