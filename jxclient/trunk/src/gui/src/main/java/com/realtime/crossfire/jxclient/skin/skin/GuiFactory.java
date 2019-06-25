@@ -127,6 +127,12 @@ public class GuiFactory {
             if (gui.getComponent() == component) {
                 return gui;
             }
+
+            final AbstractGUIElement help = gui.getHelp();
+            //noinspection ObjectEquality
+            if (help == component) {
+                return gui;
+            }
         }
         return null;
     }

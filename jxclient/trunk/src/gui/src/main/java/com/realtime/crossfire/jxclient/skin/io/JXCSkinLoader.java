@@ -760,7 +760,7 @@ public class JXCSkinLoader {
                             } else if (gui != null && cmd.equals("meta_list")) {
                                 parseMetaList(args, tooltipManager, elementListener, metaserverModel);
                             } else if (gui != null && cmd.equals("picture")) {
-                                parsePicture(args, tooltipManager, elementListener);
+                                parsePicture(args, tooltipManager, elementListener, lnr, gui);
                             } else if (gui != null && cmd.equals("query_text")) {
                                 parseQueryText(args, server, commandCallback, tooltipManager, elementListener);
                             } else if (gui != null && cmd.equals("set_forced_active")) {
@@ -1422,40 +1422,85 @@ public class JXCSkinLoader {
         final Group content = parseBegin(args, layout, lnr, unreferencedElements, true);
         final Component title = getUnreferencedElement("dialog_title", unreferencedElements);
         final Component close = getUnreferencedElement("dialog_close", unreferencedElements);
+        final Component help = getUnreferencedElement("dialog_help", unreferencedElements);
         final Group group2 = layout.createSequentialGroup();
         group2.addGap(DIALOG_BORDER_WIDTH);
         if (title == null) {
-            if (close == null) {
-                // no title, no close
-                final Group group3 = layout.createParallelGroup();
-                group3.addGroup(content);
-                group2.addGroup(group3);
+            if (help == null) {
+                if (close == null) {
+                    // no title, no help, no close
+                    group2.addGroup(content);
+                } else {
+                    // no title, no help, close
+                    final Group group3 = layout.createSequentialGroup();
+                    group3.addGap(0, 10, Short.MAX_VALUE);
+                    group3.addComponent(close);
+                    final Group group4 = layout.createParallelGroup();
+                    group4.addGroup(group3);
+                    group4.addGroup(content);
+                    group2.addGroup(group4);
+                }
             } else {
-                // no title, close
-                final Group group3 = layout.createSequentialGroup();
-                group3.addGap(0, 1, Short.MAX_VALUE);
-                group3.addComponent(close);
-                final Group group4 = layout.createParallelGroup();
-                group4.addGroup(group3);
-                group4.addGroup(content);
-                group2.addGroup(group4);
+                if (close == null) {
+                    // no title, help, no close
+                    final Group group3 = layout.createSequentialGroup();
+                    group3.addGap(0, 10, Short.MAX_VALUE);
+                    group3.addComponent(help);
+                    final Group group4 = layout.createParallelGroup();
+                    group4.addGroup(group3);
+                    group4.addGroup(content);
+                    group2.addGroup(group4);
+                } else {
+                    // no title, help, close
+                    final Group group3 = layout.createSequentialGroup();
+                    group3.addGap(0, 10, Short.MAX_VALUE);
+                    group3.addComponent(help);
+                    group3.addComponent(close);
+                    final Group group4 = layout.createParallelGroup();
+                    group4.addGroup(group3);
+                    group4.addGroup(content);
+                    group2.addGroup(group4);
+                }
             }
         } else {
-            if (close == null) {
-                // title, no close
-                final Group group3 = layout.createParallelGroup();
-                group3.addComponent(title);
-                group3.addGroup(content);
-                group2.addGroup(group3);
+            if (help == null) {
+                if (close == null) {
+                    // title, no help, no close
+                    final Group group3 = layout.createParallelGroup();
+                    group3.addComponent(title);
+                    group3.addGroup(content);
+                    group2.addGroup(group3);
+                } else {
+                    // title, no help, close
+                    final Group group3 = layout.createSequentialGroup();
+                    group3.addComponent(title);
+                    group3.addComponent(close);
+                    final Group group4 = layout.createParallelGroup();
+                    group4.addGroup(group3);
+                    group4.addGroup(content);
+                    group2.addGroup(group4);
+                }
             } else {
-                // title, close
-                final Group group3 = layout.createSequentialGroup();
-                group3.addComponent(title);
-                group3.addComponent(close);
-                final Group group4 = layout.createParallelGroup();
-                group4.addGroup(group3);
-                group4.addGroup(content);
-                group2.addGroup(group4);
+                if (close == null) {
+                    // title, help, no close
+                    final Group group3 = layout.createSequentialGroup();
+                    group3.addComponent(title);
+                    group3.addComponent(help);
+                    final Group group4 = layout.createParallelGroup();
+                    group4.addGroup(group3);
+                    group4.addGroup(content);
+                    group2.addGroup(group4);
+                } else {
+                    // title, help, close
+                    final Group group3 = layout.createSequentialGroup();
+                    group3.addComponent(title);
+                    group3.addComponent(help);
+                    group3.addComponent(close);
+                    final Group group4 = layout.createParallelGroup();
+                    group4.addGroup(group3);
+                    group4.addGroup(content);
+                    group2.addGroup(group4);
+                }
             }
         }
         group2.addGap(DIALOG_BORDER_WIDTH);
@@ -1955,17 +2000,24 @@ public class JXCSkinLoader {
      * @param args the command arguments
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
+     * @param lnr the line number reader for reading more lines
+     * @param gui the GUI this element is part of
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parsePicture(@NotNull final Args args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener) throws IOException, JXCSkinException {
+    private void parsePicture(@NotNull final Args args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final LineNumberReader lnr, @NotNull final Gui gui) throws IOException, JXCSkinException {
         final String name = args.get();
         final BufferedImage image = imageParser.getImage(args.get());
         final float alpha = NumberParser.parseFloat(args.get());
         if (alpha < 0 || alpha > 1.0F) {
             throw new IOException("invalid alpha value: "+alpha);
         }
-        insertGuiElement(new GUIPicture(tooltipManager, elementListener, name, image, alpha, image.getWidth(), image.getHeight(), guiFactory));
+        final String text = ParseUtils.parseText(args, lnr).replaceAll("\n", "<br>");
+        final GUIPicture picture = new GUIPicture(tooltipManager, elementListener, name, image, alpha, image.getWidth(), image.getHeight(), guiFactory, text);
+        insertGuiElement(picture);
+        if (name.equals("dialog_help")) {
+            gui.setHelp(picture);
+        }
     }
 
     /**
@@ -2229,28 +2281,71 @@ public class JXCSkinLoader {
         final Group content = parseBegin(args, layout, lnr, unreferencedElements, true);
         final Component title = getUnreferencedElement("dialog_title", unreferencedElements);
         final Component close = getUnreferencedElement("dialog_close", unreferencedElements);
+        final Component help = getUnreferencedElement("dialog_help", unreferencedElements);
         final Group group2 = layout.createSequentialGroup();
         group2.addGap(DIALOG_BORDER_WIDTH);
         if (title == null) {
-            if (close == null) {
-                // no title, no close
+            if (help == null) {
+                if (close == null) {
+                    // no title, no help, no close
+                    group2.addGroup(content);
+                } else {
+                    // no title, no help, close
+                    final Group group3 = layout.createParallelGroup();
+                    group3.addComponent(close);
+                    group3.addGroup(content);
+                    group2.addGroup(group3);
+                }
             } else {
-                // no title, close
-                group2.addComponent(close);
+                if (close == null) {
+                    // no title, help, no close
+                    final Group group3 = layout.createParallelGroup();
+                    group3.addComponent(help);
+                    group3.addGroup(content);
+                    group2.addGroup(group3);
+                } else {
+                    // no title, help, close
+                    final Group group3 = layout.createParallelGroup();
+                    group3.addComponent(help);
+                    group3.addComponent(close);
+                    group3.addGroup(content);
+                    group2.addGroup(group3);
+                }
             }
         } else {
-            if (close == null) {
-                // title, no close
-                group2.addComponent(title);
+            if (help == null) {
+                //noinspection IfStatementWithIdenticalBranches
+                if (close == null) {
+                    // title, no help, no close
+                    group2.addComponent(title);
+                    group2.addGroup(content);
+                } else {
+                    // title, no help, close
+                    final Group group3 = layout.createParallelGroup();
+                    group3.addComponent(title);
+                    group3.addComponent(close);
+                    group2.addGroup(group3);
+                    group2.addGroup(content);
+                }
             } else {
-                // title. close
-                final Group group3 = layout.createParallelGroup();
-                group3.addComponent(title);
-                group3.addComponent(close);
-                group2.addGroup(group3);
+                if (close == null) {
+                    // title, help, no close
+                    final Group group3 = layout.createParallelGroup();
+                    group3.addComponent(title);
+                    group3.addComponent(help);
+                    group2.addGroup(group3);
+                    group2.addGroup(content);
+                } else {
+                    // title, help, close
+                    final Group group3 = layout.createParallelGroup();
+                    group3.addComponent(title);
+                    group3.addComponent(help);
+                    group3.addComponent(close);
+                    group2.addGroup(group3);
+                    group2.addGroup(content);
+                }
             }
         }
-        group2.addGroup(content);
         group2.addGap(DIALOG_BORDER_WIDTH);
         if (!unreferencedElements.isEmpty()) {
             throw new IOException("layout doesn't define elements "+unreferencedElements);

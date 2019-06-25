@@ -4,6 +4,10 @@ dialog_hide START META LOGIN NEW_CHAR ACCOUNT
 commandlist command_protections_close AND null DIALOG_CLOSE protections
 
 button dialog_close close_up close_down false command_protections_close
+picture dialog_help help 0.0 <<EOF
+Mouse bindings:
+- MIDDLE: invoke respective protection spell
+EOF
 
 commandlist commandlist_use_protection_attack AND null GUI_EXECUTE_COMMAND invoke protection from attack
 commandlist commandlist_use_protection_cold AND null GUI_EXECUTE_COMMAND invoke protection from cold

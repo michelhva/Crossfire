@@ -50,6 +50,12 @@ public class GUIPicture extends AbstractGUIElement {
     private final Image image;
 
     /**
+     * The tooltip text to show.
+     */
+    @NotNull
+    private final String tooltipText;
+
+    /**
      * The preferred size of this component.
      */
     @NotNull
@@ -65,10 +71,12 @@ public class GUIPicture extends AbstractGUIElement {
      * @param preferredWidth the preferred width of this picture
      * @param preferredHeight the preferred height of this picture
      * @param guiFactory the global GUI factory instance
+     * @param tooltipText the text to show as the tooltip
      */
-    public GUIPicture(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final BufferedImage image, final float alpha, final int preferredWidth, final int preferredHeight, @NotNull final GuiFactory guiFactory) {
+    public GUIPicture(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final BufferedImage image, final float alpha, final int preferredWidth, final int preferredHeight, @NotNull final GuiFactory guiFactory, @NotNull final String tooltipText) {
         super(tooltipManager, elementListener, name, alpha < 1.0F ? Transparency.TRANSLUCENT : image.getTransparency(), guiFactory);
         this.image = image;
+        this.tooltipText = tooltipText;
         preferredSize = new Dimension(preferredWidth, preferredHeight);
     }
 
@@ -98,6 +106,7 @@ public class GUIPicture extends AbstractGUIElement {
 
     @Override
     public void notifyOpen() {
+        setTooltipText(tooltipText);
     }
 
 }

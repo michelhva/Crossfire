@@ -2,6 +2,16 @@ set_auto_size 0 HEIGHT-64+12 WIDTH 64
 
 commandlist command_ground_open AND null DIALOG_OPEN ground
 
+# This dialog has no help button...
+#picture dialog_help help 0.0 <<EOF
+#Mouse bindings:
+#- LEFT: examine item
+#- CTRL+LEFT: apply item
+#- MIDDLE: apply item
+#- RIGHT: pick up item
+#- SHIFT+RIGHT: apply item
+#EOF
+
 event init command_ground_open
 dialog_hide START META LOGIN ACCOUNT
 
