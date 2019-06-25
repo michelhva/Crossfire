@@ -86,7 +86,7 @@ import com.realtime.crossfire.jxclient.sound.MusicWatcher;
 import com.realtime.crossfire.jxclient.sound.SoundCheckBoxOption;
 import com.realtime.crossfire.jxclient.sound.SoundManager;
 import com.realtime.crossfire.jxclient.sound.SoundWatcher;
-import com.realtime.crossfire.jxclient.sound.StatsWatcher;
+import com.realtime.crossfire.jxclient.sound.SoundStatsWatcher;
 import com.realtime.crossfire.jxclient.stats.ActiveSkillWatcher;
 import com.realtime.crossfire.jxclient.stats.PoisonWatcher;
 import com.realtime.crossfire.jxclient.util.DebugWriter;
@@ -215,7 +215,7 @@ public class JXClient {
                                     final MouseTracker mouseTracker = new MouseTracker(options.isDebugGui(), debugMouseOutputStreamWriter, guiFactory);
                                     SwingUtilities.invokeAndWait(() -> {
                                         final JXCWindowRenderer windowRenderer = new JXCWindowRenderer(mouseTracker, server, debugScreenOutputStreamWriter);
-                                        new StatsWatcher(model.getStats(), windowRenderer, server, soundManager);
+                                        new SoundStatsWatcher(model.getStats(), windowRenderer, server, soundManager);
                                         final Pickup characterPickup;
                                         try {
                                             characterPickup = new Pickup(commandQueue, optionManager);

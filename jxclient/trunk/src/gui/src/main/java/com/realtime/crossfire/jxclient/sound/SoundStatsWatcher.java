@@ -34,7 +34,7 @@ import org.jetbrains.annotations.NotNull;
  * Monitors stat changes and generates appropriate sound effects.
  * @author Andreas Kirschbaum
  */
-public class StatsWatcher {
+public class SoundStatsWatcher {
 
     /**
      * Duration for which to ignore level changes after login.
@@ -174,7 +174,7 @@ public class StatsWatcher {
      * @param server the crossfire server connection to watch
      * @param soundManager the sound manager instance to watch
      */
-    public StatsWatcher(@NotNull final Stats stats, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CrossfireServerConnection server, @NotNull final SoundManager soundManager) {
+    public SoundStatsWatcher(@NotNull final Stats stats, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CrossfireServerConnection server, @NotNull final SoundManager soundManager) {
         this.soundManager = soundManager;
         poisoned = stats.getStat(Stats.C_STAT_POISONED) != 0;
         level = stats.getStat(Stats.CS_STAT_LEVEL);
