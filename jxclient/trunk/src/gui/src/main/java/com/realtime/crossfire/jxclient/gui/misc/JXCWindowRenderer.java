@@ -897,10 +897,10 @@ public class JXCWindowRenderer {
     }
 
     /**
-     * Removes a dialog to {@link #openDialogs}. Generates mouse events if
+     * Removes a dialog from {@link #openDialogs}. Generates mouse events if
      * necessary.
      * @param dialog the dialog
-     * @return whether the dialog was opened
+     * @return whether the dialog was closed
      */
     private boolean openDialogsRemove(@NotNull final Gui dialog) {
         if (!openDialogs.contains(dialog)) {
