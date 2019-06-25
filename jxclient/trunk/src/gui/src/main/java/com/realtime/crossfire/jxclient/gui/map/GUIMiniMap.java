@@ -131,12 +131,10 @@ public class GUIMiniMap extends AbstractGUIMap {
         if (dx != 0 || dy != 0) {
             final int playerOffsetX = (getMapWidth()-1)/2;
             final int playerOffsetY = (getMapHeight()-1)/2;
-            final int mapSquareX = playerOffsetX-dx;
-            final int mapSquareY = playerOffsetY-dy;
             final CfMap map = mapUpdaterState.getMap();
             //noinspection SynchronizationOnLocalVariableOrMethodParameter
             synchronized (map) {
-                redrawSquare(g, map.getMapSquare(mapSquareX, mapSquareY), map, mapSquareX, mapSquareY);
+                redrawSquare(g, map.getMapSquare(playerOffsetX-dx, playerOffsetY-dy), map, playerOffsetX-dx, playerOffsetY-dy);
             }
         }
         g.setColor(Color.RED);
