@@ -6,6 +6,8 @@ dialog_hide START META LOGIN NEW_CHAR ACCOUNT
 picture dialog_help help 0.0 <<EOF
 Mouse bindings:
 - MIDDLE: use respective skill
+
+Yellow background: active skill.
 EOF
 
 button dialog_close close_up close_down false command_skills_close
