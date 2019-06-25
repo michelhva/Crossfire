@@ -185,12 +185,12 @@ public class GUISpellList extends GUIItemList<GUIItemSpell> {
         return sb.toString();
     }
 
+    @Nullable
     @Override
-    protected void updateTooltip(final int index, final int x, final int y, final int w, final int h) {
+    protected String getTooltip(final int index) {
         final Spell spell = spellsManager.getSpell(index);
         if (spell == null) {
-            setTooltipText(null, x, y, w, h);
-            return;
+            return null;
         }
 
         //noinspection StringBufferReplaceableByString
@@ -200,7 +200,7 @@ public class GUISpellList extends GUIItemList<GUIItemSpell> {
         sb.append(getBindings(spell, "cast ", "<br>Cast shortcut: "));
         sb.append(getBindings(spell, "invoke ", "<br>Invoke shortcut:"));
 
-        setTooltipText(sb.toString(), x, y, w, h);
+        return sb.toString();
     }
 
     @NotNull

@@ -119,15 +119,15 @@ public class GUIQuestList extends GUIItemList<GUIItemQuest> {
         this.guiFactory = guiFactory;
     }
 
+    @Nullable
     @Override
-    protected void updateTooltip(final int index, final int x, final int y, final int w, final int h) {
+    protected String getTooltip(final int index) {
         final Quest quest = questsManager.getQuest(index);
         if (quest == null) {
-            setTooltipText(null, x, y, w, h);
-            return;
+            return null;
         }
 
-        setTooltipText(quest.getTooltipText());
+        return quest.getTooltipText();
     }
 
     @NotNull

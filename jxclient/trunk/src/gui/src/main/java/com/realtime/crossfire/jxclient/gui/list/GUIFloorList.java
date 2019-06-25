@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemFloor;
 import com.realtime.crossfire.jxclient.gui.item.ItemPainter;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
+import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.ItemSet;
 import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
@@ -182,6 +183,13 @@ public class GUIFloorList extends GUIItemList<GUIItemFloor> {
 
     @Override
     public void notifyOpen() {
+    }
+
+    @Nullable
+    @Override
+    protected String getTooltip(final int index) {
+        final CfItem item = itemView.getItem(index);
+        return item == null ? null : item.getTooltipText();
     }
 
 }

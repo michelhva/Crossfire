@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipText;
 import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.OptionListener;
 import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
@@ -39,6 +40,7 @@ import java.awt.event.MouseEvent;
 import java.awt.geom.RectangularShape;
 import java.awt.image.BufferedImage;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A check box gui element.
@@ -198,12 +200,10 @@ public class GUICheckBox extends ActivatableGUIElement {
         // ignore
     }
 
+    @Nullable
     @Override
-    public void mouseEntered(@NotNull final MouseEvent e, final boolean debugGui) {
-        if (isEnabled()) { // XXX: properly initialize tooltip text
-            setTooltipText(option.getTooltipText());
-        }
-        super.mouseEntered(e, debugGui);
+    public TooltipText getTooltip() {
+        return newTooltipText(option.getTooltipText());
     }
 
 }

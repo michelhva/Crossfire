@@ -248,7 +248,7 @@ public class JXClient {
                                         final KeybindingsManager keybindingsManager = new KeybindingsManager(keybindingsFile, guiCommandFactory);
                                         commands.addCommand(new BindingsCommand(server, keybindingsManager));
                                         final JXCConnection connection = new JXCConnection(keybindingsManager, shortcuts, settings, characterPickup, server, model.getGuiStateManager(), logger);
-                                        final TooltipManagerImpl tooltipManager = new TooltipManagerImpl(guiFactory);
+                                        final TooltipManagerImpl tooltipManager = new TooltipManagerImpl();
                                         final GuiManager guiManager = new GuiManager(model.getGuiStateManager(), tooltipManager, settings, server, windowRenderer, guiFactory, keybindingsManager, connection);
                                         commandCallback.init(guiManager);
                                         final KeyBindings defaultKeyBindings = new KeyBindings(null, guiCommandFactory);

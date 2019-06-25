@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.gui.label;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipText;
 import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.stats.StatsListener;
@@ -115,6 +116,7 @@ public class GUILabelStats2 extends GUIOneLineLabel {
         public void statChanged(final int statNo, final int value) {
             if (statNo == statCurrent || statNo == statBase || statNo == statRace || statNo == statApplied) {
                 updateStat();
+                tooltipChanged();
             }
         }
 
@@ -199,7 +201,6 @@ public class GUILabelStats2 extends GUIOneLineLabel {
             // no server support
             color = GUILabelStats2.super.getTextColor();
             setText(String.valueOf(currValue));
-            setTooltipText("Current: "+currValue);
             return;
         }
 
@@ -216,9 +217,34 @@ public class GUILabelStats2 extends GUIOneLineLabel {
             setChanged();
         }
         setText(String.valueOf(currValue));
+    }
+
+    @Override
+    public void dispose() {
+        super.dispose();
+        stats.removeCrossfireStatsListener(statsListener);
+    }
+
+    @NotNull
+    @Override
+    protected Color getTextColor() {
+        return color;
+    }
+
+    @Override
+    @SuppressWarnings("MethodDoesntCallSuperMethod")
+    public @Nullable TooltipText getTooltip() {
+        final int baseValue = stats.getStat(statBase);
+        final int raceValue = stats.getStat(statRace);
+        final int currValue = stats.getStat(statCurrent);
+        if (baseValue == 0 && raceValue == 0) {
+            return newTooltipText("Current: "+currValue);
+        }
 
         final StringBuilder sb = new StringBuilder();
         sb.append("<html>Current: ").append(currValue);
+        final int appliedValue = stats.getStat(statApplied);
+        final int currValueWithoutGear = currValue-appliedValue;
         if (currValueWithoutGear < baseValue) {
             sb.append("<br>Depleted by ").append(baseValue-currValueWithoutGear).append(" from ").append(baseValue).append(".");
         } else if (currValueWithoutGear > baseValue) {
@@ -232,19 +258,7 @@ public class GUILabelStats2 extends GUIOneLineLabel {
         if (baseValue < raceValue) {
             sb.append("<br>Upgradable to ").append(raceValue).append(" by drinking stat potions.");
         }
-        setTooltipText(sb.toString());
-    }
-
-    @Override
-    public void dispose() {
-        super.dispose();
-        stats.removeCrossfireStatsListener(statsListener);
-    }
-
-    @NotNull
-    @Override
-    protected Color getTextColor() {
-        return color;
+        return newTooltipText(sb.toString());
     }
 
 }

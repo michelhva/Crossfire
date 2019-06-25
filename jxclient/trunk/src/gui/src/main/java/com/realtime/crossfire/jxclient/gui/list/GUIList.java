@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipText;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemItem;
 import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable;
 import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
@@ -440,7 +441,7 @@ public abstract class GUIList<T extends GUIElement> extends ActivatableGUIElemen
             if (index == -1) {
                 tooltipIndex = -1;
                 tooltipRectangle = null;
-                updateTooltip();
+                tooltipChanged();
                 return;
             }
 
@@ -448,13 +449,13 @@ public abstract class GUIList<T extends GUIElement> extends ActivatableGUIElemen
             if (rectangle == null || !rectangle.contains(e.getPoint())) {
                 tooltipIndex = -1;
                 tooltipRectangle = null;
-                updateTooltip();
+                tooltipChanged();
                 return;
             }
 
             tooltipIndex = list.getFirstVisibleIndex()+index;
             tooltipRectangle = rectangle;
-            updateTooltip();
+            tooltipChanged();
         }
     }
 
@@ -493,33 +494,33 @@ public abstract class GUIList<T extends GUIElement> extends ActivatableGUIElemen
      */
     protected abstract void selectionChanged(final int selectedIndex);
 
-    /**
-     * Updates the current tooltip text.
-     */
-    private void updateTooltip() {
-        if (tooltipIndex == -1) {
-            setTooltipText(null);
-        } else {
-            final Rectangle rectangle = tooltipRectangle;
-            if (rectangle == null) {
-                setTooltipText(null);
-            } else {
-                final Gui gui = guiFactory.getGui(this);
-                if (gui == null) {
-                    tooltipIndex = -1;
-                    tooltipRectangle = null;
-                    setTooltipText(null);
-                } else {
-                    updateTooltip(tooltipIndex, gui.getComponent().getX()+getX()+rectangle.x, gui.getComponent().getY()+getY()+rectangle.y, rectangle.width, rectangle.height);
-                }
-            }
-        }
-    }
-
     @Override
     public void setChanged() {
         super.setChanged();
-        updateTooltip();
+        tooltipChanged();
+    }
+
+    @Nullable
+    @Override
+    public TooltipText getTooltip() {
+        if (tooltipIndex == -1) {
+            return null;
+        }
+
+        final Rectangle rectangle = tooltipRectangle;
+        if (rectangle == null) {
+            return null;
+        }
+
+        final Gui gui = guiFactory.getGui(this);
+        if (gui == null) {
+            tooltipIndex = -1;
+            tooltipRectangle = null;
+            return null;
+        }
+
+        final String text = getTooltip(tooltipIndex);
+        return text == null ? null : new TooltipText(text, gui.getComponent().getX()+getX()+rectangle.x, gui.getComponent().getY()+getY()+rectangle.y, rectangle.width, rectangle.height);
     }
 
     @Override
@@ -528,14 +529,12 @@ public abstract class GUIList<T extends GUIElement> extends ActivatableGUIElemen
     }
 
     /**
-     * Updates the tooltip text.
+     * Returns the tooltip text.
      * @param index the index to use
-     * @param x the x coordinate of the cell
-     * @param y the y coordinate of the cell
-     * @param w the width of the cell
-     * @param h the height of the cell
+     * @return the tooltip text
      */
-    protected abstract void updateTooltip(final int index, final int x, final int y, final int w, final int h);
+    @Nullable
+    protected abstract String getTooltip(final int index);
 
     /**
      * Sets the layout orientation. See {@link JList#setLayoutOrientation(int)}

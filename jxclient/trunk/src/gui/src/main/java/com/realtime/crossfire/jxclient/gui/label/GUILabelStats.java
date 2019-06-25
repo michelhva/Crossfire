@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.gui.label;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipText;
 import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.stats.StatsListener;
@@ -87,7 +88,7 @@ public class GUILabelStats extends GUIOneLineLabel {
                 if (stat == statNo) {
                     //noinspection IntegerDivisionInFloatingPointContext
                     setText(Formatter.formatFloat(((value+50)/100)/10.0, 1));
-                    setTooltipText(Formatter.formatFloat(value/1000.0, 3)+"kg");
+                    tooltipChanged();
                 }
                 break;
 
@@ -174,6 +175,21 @@ public class GUILabelStats extends GUIOneLineLabel {
     public void dispose() {
         super.dispose();
         stats.removeCrossfireStatsListener(statsListener);
+    }
+
+    @Nullable
+    @Override
+    public TooltipText getTooltip() {
+        switch (stat) {
+        case Stats.CS_STAT_WEIGHT_LIM:
+        case Stats.C_STAT_WEIGHT:
+            return newTooltipText(Formatter.formatFloat(stats.getStat(this.stat)/1000.0, 3)+"kg");
+
+        default:
+            break;
+        }
+
+        return super.getTooltip();
     }
 
 }

@@ -25,12 +25,14 @@ import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipText;
 import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Transparency;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link GUIElement} that fills an area with a given color.
@@ -73,6 +75,12 @@ public class GUIFill extends AbstractGUIElement {
 
     @Override
     public void notifyOpen() {
+    }
+
+    @Nullable
+    @Override
+    public TooltipText getTooltip() {
+        return null;
     }
 
 }

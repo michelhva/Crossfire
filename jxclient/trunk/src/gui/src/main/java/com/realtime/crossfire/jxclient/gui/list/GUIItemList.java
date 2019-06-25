@@ -161,7 +161,6 @@ public abstract class GUIItemList<T extends GUIItemItem> extends GUIList<T> {
             final CfItem item = itemView.getItem(selectedIndex);
             if (item == null) {
                 currentItem.setText("");
-                currentItem.setTooltipText("");
             } else {
                 final String tooltipText1 = item.getTooltipText1();
                 final String tooltipText2 = item.getTooltipText2();
@@ -171,15 +170,8 @@ public abstract class GUIItemList<T extends GUIItemItem> extends GUIList<T> {
                 } else {
                     currentItem.setText(tooltipText1+" ["+tooltipText2+"] "+tooltipText3);
                 }
-                currentItem.setTooltipText(item.getTooltipText());
             }
         }
-    }
-
-    @Override
-    protected void updateTooltip(final int index, final int x, final int y, final int w, final int h) {
-        final CfItem item = itemView.getItem(index);
-        setTooltipText(item == null ? null : item.getTooltipText(), x, y, w, h);
     }
 
     @Override

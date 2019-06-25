@@ -119,7 +119,7 @@ public class GUIItemInventory extends GUIItemItem {
     @NotNull
     private final Runnable locationListenerEdt = () -> {
         setChanged();
-        updateTooltipText();
+        tooltipChanged();
     };
 
     /**
@@ -178,7 +178,7 @@ public class GUIItemInventory extends GUIItemItem {
             setIndex(index+distance);
         }
         setChanged();
-        updateTooltipText();
+        tooltipChanged();
     }
 
     @Override

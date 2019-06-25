@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipText;
 import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.gui.log.GUILog;
 import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
@@ -211,37 +212,7 @@ public abstract class GUIComboBox<T> extends AbstractGUIElement {
             label.updateText(text);
         }
         updateSelectedItem(item);
-
-        if (text.isEmpty()) {
-            setTooltipText(null);
-        } else {
-            final StringBuilder sb = new StringBuilder();
-            for (final String line0 : text.split("\n")) {
-                final String line = line0.trim();
-
-                int index = 0;
-                while (line.length() > index+80) {
-                    int nextIndex = line.lastIndexOf(' ', index+80);
-                    if (nextIndex == -1) {
-                        nextIndex = line.indexOf(' ', index+80);
-                        if (nextIndex == -1) {
-                            nextIndex = line.length();
-                        }
-                        if (nextIndex > index+140) {
-                            nextIndex = index+140;
-                        }
-                    }
-                    sb.append(sb.length() == 0 ? "<html>" : "<br>").append(line, index, nextIndex);
-
-                    index = nextIndex;
-                    while (index < line.length() && line.charAt(index) == ' ') {
-                        index++;
-                    }
-                }
-                sb.append(sb.length() == 0 ? "<html>" : "<br>").append(line, index, line.length());
-            }
-            setTooltipText(PATTERN_BOLD_END.matcher(PATTERN_BOLD_BEGIN.matcher(sb.toString()).replaceAll("<b>")).replaceAll("</b>"));
-        }
+        tooltipChanged();
     }
 
     /**
@@ -265,5 +236,42 @@ public abstract class GUIComboBox<T> extends AbstractGUIElement {
      */
     @NotNull
     protected abstract String getDescription(@Nullable T item);
+
+    @Nullable
+    @Override
+    public TooltipText getTooltip() {
+        @SuppressWarnings("unchecked") final T item = (T)comboBox.getSelectedItem();
+        final String text = item == null ? "" : getDescription(item);
+        if (text.isEmpty()) {
+            return null;
+        }
+
+        final StringBuilder sb = new StringBuilder();
+        for (final String line0 : text.split("\n")) {
+            final String line = line0.trim();
+
+            int index = 0;
+            while (line.length() > index+80) {
+                int nextIndex = line.lastIndexOf(' ', index+80);
+                if (nextIndex == -1) {
+                    nextIndex = line.indexOf(' ', index+80);
+                    if (nextIndex == -1) {
+                        nextIndex = line.length();
+                    }
+                    if (nextIndex > index+140) {
+                        nextIndex = index+140;
+                    }
+                }
+                sb.append(sb.length() == 0 ? "<html>" : "<br>").append(line, index, nextIndex);
+
+                index = nextIndex;
+                while (index < line.length() && line.charAt(index) == ' ') {
+                    index++;
+                }
+            }
+            sb.append(sb.length() == 0 ? "<html>" : "<br>").append(line, index, line.length());
+        }
+        return newTooltipText(PATTERN_BOLD_END.matcher(PATTERN_BOLD_BEGIN.matcher(sb.toString()).replaceAll("<b>")).replaceAll("</b>"));
+    }
 
 }

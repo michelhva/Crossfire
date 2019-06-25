@@ -26,6 +26,7 @@ import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipText;
 import com.realtime.crossfire.jxclient.gui.label.NewCharModel;
 import com.realtime.crossfire.jxclient.gui.label.NewcharStat;
 import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
@@ -37,6 +38,7 @@ import javax.swing.JSpinner;
 import javax.swing.SpinnerNumberModel;
 import javax.swing.event.ChangeListener;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link GUIElement} that displays a spinner.
@@ -108,6 +110,12 @@ public class GUISpinner extends AbstractGUIElement {
     public void dispose() {
         super.dispose();
         spinner.removeChangeListener(changeListener);
+    }
+
+    @Nullable
+    @Override
+    public TooltipText getTooltip() {
+        return null;
     }
 
     @Override

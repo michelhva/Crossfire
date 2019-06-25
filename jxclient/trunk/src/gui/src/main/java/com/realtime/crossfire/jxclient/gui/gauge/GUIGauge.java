@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipText;
 import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.AlphaComposite;
 import java.awt.Dimension;
@@ -126,7 +127,6 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
         orientation.setHasNegativeImage(negativeImage != null);
         orientation.setValues(0, 0, 0);
         gaugeState.setValues(orientation);
-        updateTooltipText();
     }
 
     @Override
@@ -176,15 +176,7 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
             setChanged();
         }
 
-        updateTooltipText();
-    }
-
-    /**
-     * Updates the tooltip's text from {@link #tooltipFormat} ad {@link
-     * #tooltipText}.
-     */
-    private void updateTooltipText() {
-        setTooltipText(formatTooltip());
+        tooltipChanged();
     }
 
     @Nullable
@@ -231,6 +223,12 @@ public class GUIGauge extends AbstractGUIElement implements GUIGaugeListener {
         case MouseEvent.BUTTON3:
             break;
         }
+    }
+
+    @Nullable
+    @Override
+    public TooltipText getTooltip() {
+        return newTooltipText(formatTooltip());
     }
 
     @Override

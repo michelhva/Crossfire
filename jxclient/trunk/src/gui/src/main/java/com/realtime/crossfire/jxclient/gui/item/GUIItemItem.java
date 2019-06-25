@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipText;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.CfItemListener;
 import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
@@ -73,7 +74,7 @@ public abstract class GUIItemItem extends GUIItem {
     @NotNull
     private final CfItemListener itemListener = () -> {
         setChanged();
-        updateTooltipText();
+        tooltipChanged();
     };
 
     /**
@@ -86,6 +87,7 @@ public abstract class GUIItemItem extends GUIItem {
         public void faceUpdated(@NotNull final Face face) {
             if (item != null && face.equals(item.getFace())) {
                 setChanged();
+                tooltipChanged();
             }
         }
 
@@ -174,7 +176,7 @@ public abstract class GUIItemItem extends GUIItem {
         }
 
         setChanged();
-        updateTooltipText();
+        tooltipChanged();
     }
 
     /**
@@ -184,13 +186,6 @@ public abstract class GUIItemItem extends GUIItem {
      */
     protected void setItemNoListeners(@Nullable final CfItem item) {
         this.item = item;
-    }
-
-    /**
-     * Updates the tooltip text for the current {@link #item}.
-     */
-    protected void updateTooltipText() {
-        setTooltipText(item == null ? null : item.getTooltipText());
     }
 
     /**
@@ -217,5 +212,11 @@ public abstract class GUIItemItem extends GUIItem {
      * @param index the slot index
      */
     public abstract void setIndexNoListeners(final int index);
+
+    @Nullable
+    @Override
+    public TooltipText getTooltip() {
+        return item == null ? null : newTooltipText(item.getTooltipText());
+    }
 
 }

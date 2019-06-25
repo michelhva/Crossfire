@@ -232,8 +232,7 @@ public class GUIItemQuest extends GUIItemItem {
         }
 
         setChanged();
-
-        setTooltipText(newQuest == null ? null : newQuest.getTooltipText());
+        tooltipChanged();
     }
 
     /**

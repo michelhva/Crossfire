@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemKnowledgeType;
 import com.realtime.crossfire.jxclient.gui.item.ItemPainter;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
+import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.knowledge.KnowledgeManager;
 import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
@@ -122,6 +123,13 @@ public class GUIKnowledgeTypeList extends GUIItemList<GUIItemKnowledgeType> {
         }
         knowledgeManager.filterType(selectedIndex);
         super.selectionChanged(selectedIndex);
+    }
+
+    @Nullable
+    @Override
+    protected String getTooltip(final int index) {
+        final CfItem item = itemView.getItem(index);
+        return item == null ? null : item.getTooltipText();
     }
 
     @NotNull

@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.gui.log;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipText;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Color;
@@ -69,6 +70,12 @@ public class GUIMessageLog extends GUILog {
     public void dispose() {
         super.dispose();
         messageBufferUpdater.dispose();
+    }
+
+    @Nullable
+    @Override
+    public TooltipText getTooltip() {
+        return null;
     }
 
     @Override

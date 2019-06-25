@@ -46,23 +46,9 @@ public interface TooltipManager {
     void unsetElement(@NotNull AbstractGUIElement guiElement);
 
     /**
-     * Updates the tooltip text of a GUI element. Does nothing if the given GUI
-     * element is not active.
-     * @param element the GUI element
-     * @param tooltipText the next tooltip text
+     * Reports a possibly changed tooltip text.
+     * @param element the GUI element that may have changed
      */
-    void setTooltipText(@NotNull AbstractGUIElement element, @Nullable String tooltipText);
-
-    /**
-     * Updates the tooltip text of a GUI element. Does nothing if the given GUI
-     * element is not active.
-     * @param element the GUI element to process
-     * @param tooltipText the text to display in the tooltip
-     * @param x the x coordinate of the tooltip
-     * @param y the y coordinate of the tooltip
-     * @param w the width of the tooltip
-     * @param h the height of the tooltip
-     */
-    void setTooltipText(@NotNull GUIElement element, @Nullable String tooltipText, int x, int y, int w, int h);
+    void tooltipTextChanged(@NotNull GUIElement element);
 
 }

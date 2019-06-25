@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.gui.misc;
 import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipText;
 import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.AlphaComposite;
 import java.awt.Dimension;
@@ -226,6 +227,12 @@ public class GUIDialogBackground extends AbstractGUIElement {
 
     @Override
     public void notifyOpen() {
+    }
+
+    @Nullable
+    @Override
+    public TooltipText getTooltip() {
+        return null;
     }
 
 }

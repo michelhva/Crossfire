@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipText;
 import com.realtime.crossfire.jxclient.gui.label.NewCharModel;
 import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Color;
@@ -187,6 +188,12 @@ public class GUITextButton extends AbstractButton implements GUISelectable {
 
     @Override
     public void notifyOpen() {
+    }
+
+    @Nullable
+    @Override
+    public TooltipText getTooltip() {
+        return null;
     }
 
 }
