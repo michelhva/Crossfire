@@ -36,14 +36,14 @@ public interface TooltipManager {
      * Displays the tooltip for a GUI element.
      * @param guiElement the GUI element to show the tooltip of
      */
-    void setElement(@NotNull GUIElement guiElement);
+    void setElement(@NotNull AbstractGUIElement guiElement);
 
     /**
      * Removes the tooltip of a GUI element. Does nothing if the given GUI
      * element is not active.
      * @param guiElement the gui element to remove the tooltip of
      */
-    void unsetElement(@NotNull GUIElement guiElement);
+    void unsetElement(@NotNull AbstractGUIElement guiElement);
 
     /**
      * Updates the tooltip text of a GUI element. Does nothing if the given GUI
