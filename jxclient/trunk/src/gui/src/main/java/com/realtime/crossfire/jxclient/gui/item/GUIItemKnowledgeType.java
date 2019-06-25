@@ -120,6 +120,7 @@ public class GUIItemKnowledgeType extends GUIItemItem {
         setIndex(defaultIndex);
 
         knowledgeManager.addKnowledgeListener(new KnowledgeListener() {
+
             @Override
             public void typeAdded(final int index) {
                 if (GUIItemKnowledgeType.this.index >= index) {
@@ -130,6 +131,7 @@ public class GUIItemKnowledgeType extends GUIItemItem {
             @Override
             public void knowledgeAdded(final int index) {
             }
+
         });
         facesManager.addFacesManagerListener(facesManagerListener);
         if (size != 0) {
