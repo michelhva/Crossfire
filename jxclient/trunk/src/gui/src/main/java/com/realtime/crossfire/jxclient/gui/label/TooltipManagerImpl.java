@@ -203,11 +203,6 @@ public class TooltipManagerImpl implements TooltipManager {
         });
     }
 
-    @Override
-    public boolean hasTooltipText(final AbstractGUIElement element) {
-        return tooltipTexts.get(element) != null;
-    }
-
     /**
      * Adds or updates the tooltip (text and location) for the {@link
      * #activeGuiElement}.

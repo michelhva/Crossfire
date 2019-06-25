@@ -65,11 +65,4 @@ public interface TooltipManager {
      */
     void setTooltipText(@NotNull GUIElement element, @Nullable String tooltipText, int x, int y, int w, int h);
 
-    /**
-     * Returns whether the tooltip is enabled.
-     * @param element the element to check
-     * @return whether the tooltip is enabled
-     */
-    boolean hasTooltipText(AbstractGUIElement element);
-
 }

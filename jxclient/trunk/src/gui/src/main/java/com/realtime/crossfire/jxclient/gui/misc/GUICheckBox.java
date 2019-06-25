@@ -200,7 +200,7 @@ public class GUICheckBox extends ActivatableGUIElement {
 
     @Override
     public void mouseEntered(@NotNull final MouseEvent e, final boolean debugGui) {
-        if (isEnabled() && !hasTooltipText()) { // XXX: properly initialize tooltip text
+        if (isEnabled()) { // XXX: properly initialize tooltip text
             setTooltipText(option.getTooltipText());
         }
         super.mouseEntered(e, debugGui);

@@ -148,12 +148,6 @@ public interface GUIElement {
     void setTooltipText(@Nullable String tooltipText, int x, int y, int w, int h);
 
     /**
-     * Returns whether the tooltip is enabled.
-     * @return whether the tooltip is enabled
-     */
-    boolean hasTooltipText();
-
-    /**
      * Sets the {@link GUIElementChangedListener} to be notified. Note that at
      * most one such listener may be set per gui element.
      * @param changedListener the listener or {@code null} to unset
