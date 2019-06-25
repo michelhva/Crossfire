@@ -26,6 +26,7 @@ import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipText;
 import com.realtime.crossfire.jxclient.gui.misc.Modifiers;
 import com.realtime.crossfire.jxclient.shortcuts.Shortcut;
 import com.realtime.crossfire.jxclient.shortcuts.ShortcutCommand;
@@ -156,7 +157,7 @@ public class GUIItemShortcut extends GUIItem {
     @NotNull
     private final ShortcutListener shortcutListener = () -> {
         setChanged();
-        updateTooltipText();
+        tooltipChanged();
     };
 
     /**
@@ -204,7 +205,6 @@ public class GUIItemShortcut extends GUIItem {
         this.currentSpellManager = currentSpellManager;
         this.shortcuts.addShortcutsListener(shortcutsListener);
         this.facesManager.addFacesManagerListener(facesManagerListener);
-        updateTooltipText();
     }
 
     @Override
@@ -213,6 +213,12 @@ public class GUIItemShortcut extends GUIItem {
         facesManager.removeFacesManagerListener(facesManagerListener);
         shortcuts.removeShortcutsListener(shortcutsListener);
         setShortcut(null);
+    }
+
+    @Nullable
+    @Override
+    public TooltipText getTooltip() {
+        return newTooltipText(shortcut == null ? DEFAULT_TOOLTIP_TEXT : shortcut.getTooltipText());
     }
 
     @Override
@@ -237,8 +243,7 @@ public class GUIItemShortcut extends GUIItem {
             this.shortcut.addShortcutListener(shortcutListener);
         }
         setChanged();
-
-        updateTooltipText();
+        tooltipChanged();
     }
 
     @Override
@@ -357,13 +362,6 @@ public class GUIItemShortcut extends GUIItem {
 
     @Override
     public void resetScroll() {
-    }
-
-    /**
-     * Updates the tooltip text to reflect current settings.
-     */
-    private void updateTooltipText() {
-        setTooltipText(shortcut == null ? DEFAULT_TOOLTIP_TEXT : shortcut.getTooltipText());
     }
 
 }

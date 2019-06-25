@@ -135,8 +135,10 @@ public class GUICharacterList extends GUIList<GUICharacter> {
         this.selectedIndex = selectedIndex;
     }
 
+    @Nullable
     @Override
-    protected void updateTooltip(final int index, final int x, final int y, final int w, final int h) {
+    protected String getTooltip(final int index) {
+        return null;
     }
 
     @Override

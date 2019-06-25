@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.gui.textinput;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipText;
 import com.realtime.crossfire.jxclient.gui.label.NewCharModel;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.settings.CommandHistory;
@@ -84,6 +85,12 @@ public class GUIQueryText extends GUIText {
 
     @Override
     public void notifyOpen() {
+    }
+
+    @Nullable
+    @Override
+    public TooltipText getTooltip() {
+        return null;
     }
 
 }

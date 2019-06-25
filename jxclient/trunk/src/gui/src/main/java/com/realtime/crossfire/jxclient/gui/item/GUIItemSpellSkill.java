@@ -233,8 +233,7 @@ public class GUIItemSpellSkill extends GUIItemItem {
         skill = newSkill;
 
         setChanged();
-
-        setTooltipText(newSkill == null ? null : newSkill.toString());
+        tooltipChanged();
     }
 
     /**

@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.gui.map;
 import com.realtime.crossfire.jxclient.faces.FacesProvider;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipText;
 import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.map.MapUpdaterState;
@@ -150,6 +151,12 @@ public class GUIMiniMap extends AbstractGUIMap {
 
     @Override
     public void notifyOpen() {
+    }
+
+    @Nullable
+    @Override
+    public TooltipText getTooltip() {
+        return null;
     }
 
 }

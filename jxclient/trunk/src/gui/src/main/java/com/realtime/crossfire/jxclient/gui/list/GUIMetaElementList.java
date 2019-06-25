@@ -219,14 +219,11 @@ public class GUIMetaElementList extends GUIList<GUIMetaElement> {
         }
     }
 
-    /**
-     * Updates the tooltip text.
-     * @param index the index to check
-     */
+    @Nullable
     @Override
-    protected void updateTooltip(final int index, final int x, final int y, final int w, final int h) {
+    protected String getTooltip(final int index) {
         final MetaserverEntry metaEntry = metaserverModel.getEntry(index);
-        setTooltipText(metaEntry == null ? null : metaEntry.format(tooltip), x, y, w, h);
+        return metaEntry == null ? null : metaEntry.format(tooltip);
     }
 
     /**

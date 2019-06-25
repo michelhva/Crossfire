@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.gui.commandlist.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipText;
 import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -136,7 +137,6 @@ public class GUIDupGauge extends AbstractGUIElement implements GUIGaugeListener 
         orientationMod.setValues(0, 0, 9);
         gaugeStateDiv.setValues(orientationDiv);
         gaugeStateMod.setValues(orientationMod);
-        updateTooltipText();
     }
 
     @Override
@@ -203,21 +203,7 @@ public class GUIDupGauge extends AbstractGUIElement implements GUIGaugeListener 
             setChanged();
         }
 
-        updateTooltipText();
-    }
-
-    /**
-     * Updates the tooltip's text from {@link #tooltipPrefix} ad {@link
-     * #tooltipText}.
-     */
-    private void updateTooltipText() {
-        if (tooltipPrefix == null || tooltipPrefix.isEmpty()) {
-            setTooltipText(tooltipText);
-        } else if (tooltipText.isEmpty()) {
-            setTooltipText(tooltipPrefix);
-        } else {
-            setTooltipText(tooltipPrefix+tooltipText);
-        }
+        tooltipChanged();
     }
 
     @Override
@@ -254,6 +240,19 @@ public class GUIDupGauge extends AbstractGUIElement implements GUIGaugeListener 
         case MouseEvent.BUTTON3:
             break;
         }
+    }
+
+    @Override
+    public @Nullable TooltipText getTooltip() {
+        final String text;
+        if (tooltipPrefix == null || tooltipPrefix.isEmpty()) {
+            text = tooltipText;
+        } else if (tooltipText.isEmpty()) {
+            text = tooltipPrefix;
+        } else {
+            text = tooltipPrefix+tooltipText;
+        }
+        return newTooltipText(text);
     }
 
     @Override

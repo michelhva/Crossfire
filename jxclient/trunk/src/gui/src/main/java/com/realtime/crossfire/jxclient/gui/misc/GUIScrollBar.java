@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.gui.misc;
 import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipText;
 import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable2;
 import com.realtime.crossfire.jxclient.gui.scrollable.ScrollableListener;
 import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
@@ -203,6 +204,12 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
         if (isEnabled() && scrolling) {
             scrollable.scrollTo(getSliderPos(e.getY()-offset));
         }
+    }
+
+    @Nullable
+    @Override
+    public TooltipText getTooltip() {
+        return null;
     }
 
     @Override

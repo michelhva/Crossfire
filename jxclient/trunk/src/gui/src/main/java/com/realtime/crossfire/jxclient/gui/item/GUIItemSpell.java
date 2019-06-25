@@ -313,8 +313,7 @@ public class GUIItemSpell extends GUIItemItem {
         }
 
         setChanged();
-
-        setTooltipText(newSpell == null ? null : newSpell.getTooltipText());
+        tooltipChanged();
     }
 
     /**

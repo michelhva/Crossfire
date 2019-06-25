@@ -28,6 +28,7 @@ import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipText;
 import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable;
 import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Color;
@@ -82,7 +83,7 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
     @NotNull
     private final CharacterInformationListener characterInformationListener = () -> {
         setChanged();
-        updateTooltip();
+        tooltipChanged();
     };
 
     /**
@@ -199,15 +200,7 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
         this.index = index;
         characterModel.addCharacterInformationListener(index, characterInformationListener);
         setChanged();
-        updateTooltip();
-    }
-
-    /**
-     * Updates the tooltip text.
-     */
-    private void updateTooltip() {
-        final CharacterInformation characterInformation = characterModel.getEntry(index);
-        setTooltipText(characterInformation == null ? null : characterInformation.getName());
+        tooltipChanged();
     }
 
     /**
@@ -230,6 +223,13 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
 
     @Override
     public void notifyOpen() {
+    }
+
+    @Nullable
+    @Override
+    public TooltipText getTooltip() {
+        final CharacterInformation characterInformation = characterModel.getEntry(index);
+        return characterInformation == null ? null : newTooltipText(characterInformation.getName());
     }
 
 }

@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.GuiUtils;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipText;
 import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable;
 import com.realtime.crossfire.jxclient.metaserver.Metaserver;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverEntry;
@@ -105,7 +106,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     @NotNull
     private final MetaserverEntryListener metaserverEntryListener = () -> {
         setChanged();
-        updateTooltip();
+        tooltipChanged();
     };
 
     /**
@@ -133,7 +134,6 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         this.tooltip = tooltip;
         this.metaserverModel.addMetaserverEntryListener(index, metaserverEntryListener);
         setChanged();
-        updateTooltip();
     }
 
     @Override
@@ -205,6 +205,13 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         }
     }
 
+    @Nullable
+    @Override
+    public TooltipText getTooltip() {
+        final MetaserverEntry metaEntry = metaserverModel.getEntry(index);
+        return metaEntry == null ? null : newTooltipText(metaEntry.format(tooltip));
+    }
+
     @Override
     public void notifyOpen() {
     }
@@ -264,15 +271,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         this.index = index;
         metaserverModel.addMetaserverEntryListener(index, metaserverEntryListener);
         setChanged();
-        updateTooltip();
-    }
-
-    /**
-     * Updates the tooltip text.
-     */
-    private void updateTooltip() {
-        final MetaserverEntry metaEntry = metaserverModel.getEntry(index);
-        setTooltipText(metaEntry == null ? null : metaEntry.format(tooltip));
+        tooltipChanged();
     }
 
     /**

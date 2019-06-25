@@ -223,14 +223,43 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
         }
     }
 
-    @Override
-    public void setTooltipText(@Nullable final String tooltipText) {
-        tooltipManager.setTooltipText(this, tooltipText);
+    /**
+     * Returns the current tooltip text.
+     * @return the tooltip text or {@code null} to not show a tooltip
+     */
+    @Nullable
+    public abstract TooltipText getTooltip();
+
+    /**
+     * Creates a {@link TooltipText} instance relative to this instance.
+     * @param tooltipText the text of the instance or {@code null} to return
+     * {@code null}
+     * @return the new instance or {@code null} if this component is not in a
+     * GUI
+     */
+    @Nullable
+    protected TooltipText newTooltipText(@Nullable final String tooltipText) {
+        if (tooltipText == null) {
+            return null;
+        }
+
+        final Gui gui = guiFactory.getGui(this);
+        if (gui == null) {
+            return null;
+        }
+
+        return new TooltipText(tooltipText, gui.getComponent().getX()+getX(), gui.getComponent().getY()+getY(), getWidth(), getHeight());
+
     }
 
-    @Override
-    public void setTooltipText(@Nullable final String tooltipText, final int x, final int y, final int w, final int h) {
-        tooltipManager.setTooltipText(this, tooltipText, x, y, w, h);
+    /**
+     * Must be called whenever the {@link #getTooltip() tooltip} may have
+     * changed.
+     */
+    protected void tooltipChanged() {
+        if (isEnabled()) {
+            tooltipManager.tooltipTextChanged(this);
+        }
     }
 
     @Override

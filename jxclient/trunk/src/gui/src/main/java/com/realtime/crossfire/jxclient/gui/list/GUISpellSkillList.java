@@ -130,19 +130,19 @@ public class GUISpellSkillList extends GUIItemList<GUIItemSpellSkill> {
         this.guiFactory = guiFactory;
     }
 
+    @Nullable
     @Override
-    @SuppressWarnings("IfMayBeConditional")
-    protected void updateTooltip(final int index, final int x, final int y, final int w, final int h) {
+    protected String getTooltip(final int index) {
         final Skill skill = spellsManager.getSpellSkill(index);
-        final String text;
         if (skill == null) {
-            text = "";
-        } else if (skill.getLevel() > 0) {
-            text = skill+" (level "+skill.getLevel()+")";
-        } else {
-            text = skill.toString();
+            return null;
         }
-        setTooltipText(text, x, y, w, h);
+
+        if (skill.getLevel() <= 0) {
+            return skill.toString();
+        }
+
+        return skill+" (level "+skill.getLevel()+")";
     }
 
     @NotNull

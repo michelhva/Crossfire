@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.gui.misc;
 import com.realtime.crossfire.jxclient.gui.gui.AbstractGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipText;
 import com.realtime.crossfire.jxclient.skin.skin.GuiFactory;
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -31,6 +32,7 @@ import java.awt.Image;
 import java.awt.Transparency;
 import java.awt.image.BufferedImage;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link AbstractGUIElement} that displays a picture.
@@ -106,7 +108,12 @@ public class GUIPicture extends AbstractGUIElement {
 
     @Override
     public void notifyOpen() {
-        setTooltipText(tooltipText);
+    }
+
+    @Nullable
+    @Override
+    public TooltipText getTooltip() {
+        return newTooltipText(tooltipText);
     }
 
 }

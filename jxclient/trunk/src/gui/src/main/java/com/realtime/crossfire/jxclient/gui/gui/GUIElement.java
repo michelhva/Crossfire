@@ -130,24 +130,6 @@ public interface GUIElement {
     void setChanged();
 
     /**
-     * Sets the tooltip text to show when the mouse is inside this element.
-     * @param tooltipText the text to show or {@code null} to disable the
-     * tooltip for this element
-     */
-    void setTooltipText(@Nullable String tooltipText);
-
-    /**
-     * Sets the tooltip text to show when the mouse is inside this element.
-     * @param tooltipText the text to show, or {@code null} to disable the
-     * tooltip for this element
-     * @param x the x coordinate
-     * @param y the y coordinate
-     * @param w the width
-     * @param h the height
-     */
-    void setTooltipText(@Nullable String tooltipText, int x, int y, int w, int h);
-
-    /**
      * Sets the {@link GUIElementChangedListener} to be notified. Note that at
      * most one such listener may be set per gui element.
      * @param changedListener the listener or {@code null} to unset
