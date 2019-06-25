@@ -805,12 +805,16 @@ public class JXCWindowRenderer {
             return;
         }
 
+        final RendererGuiState prevRendererGuiState = this.rendererGuiState;
         this.rendererGuiState = rendererGuiState;
         SwingUtilities2.invokeAndWait(() -> {
             for (Gui dialog : openDialogs) {
                 removeFromLayeredPane(dialog.getComponent());
                 if (!dialog.isHidden(rendererGuiState)) {
                     addToLayeredPane(dialog.getComponent(), 1, 0);
+                    if (dialog.isHidden(prevRendererGuiState)) {
+                        dialog.notifyOpen();
+                    }
                 }
             }
             if (frame != null) {
@@ -874,6 +878,8 @@ public class JXCWindowRenderer {
                 openDialogInt(dialog);
             }
         }
+
+        dialog.notifyOpen();
     }
 
     /**
