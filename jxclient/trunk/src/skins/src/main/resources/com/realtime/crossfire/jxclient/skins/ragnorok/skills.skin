@@ -3,6 +3,10 @@ dialog WIDTH/2 HEIGHT/2 true Skills
 commandlist command_skills_close AND null DIALOG_CLOSE skills
 
 dialog_hide START META LOGIN NEW_CHAR ACCOUNT
+picture dialog_help help 0.0 <<EOF
+Mouse bindings:
+- MIDDLE: use respective skill
+EOF
 
 button dialog_close close_up close_down false command_skills_close
 

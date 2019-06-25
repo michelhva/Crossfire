@@ -5,6 +5,13 @@ commandlist command_spells_close AND null DIALOG_CLOSE spells
 dialog_hide START META LOGIN NEW_CHAR ACCOUNT
 
 button dialog_close close_up close_down false command_spells_close
+picture dialog_help help 0.0 <<EOF
+Mouse bindings:
+- LEFT: cast spell
+- CTRL+LEFT: invoke spell
+- MIDDLE: invoke spell
+- SHIFT+RIGHT: invoke spell
+EOF
 
 commandlist command_spells_scroll_up AND
 commandlist command_spells_scroll_down AND

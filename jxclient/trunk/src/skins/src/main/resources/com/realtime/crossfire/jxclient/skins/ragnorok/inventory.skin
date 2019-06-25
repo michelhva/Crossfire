@@ -5,6 +5,25 @@ commandlist command_inventory_open AND null DIALOG_OPEN inventory
 commandlist command_inventory_close AND null DIALOG_CLOSE inventory
 
 button dialog_close close_up close_down false command_inventory_close
+picture dialog_help help 0.0 <<EOF
+Key bindings:
+- ALT+UP/DOWN/LEFT/RIGHT: move selected item
+. ALT+ENTER, ALT+A: apply selected item
+- ALT+D: drop selected item
+- ALT+E: examine selected item
+- ALT+L, ALT+U: lock/unlock selected item
+- ALT+M: mark selected item
+
+Mouse bindings:
+- LEFT: examine item
+- SHIFT+LEFT: lock item
+- CTRL+LEFT: apply item
+- CTRL+SHIFT+LEFT: mark item
+- MIDDLE: apply item
+- SHIFT+MIDDLE: mark item
+- RIGHT: drop item
+- SHIFT+RIGHT: apply item
+EOF
 
 commandlist command_inventory_scroll_up AND
 commandlist command_inventory_scroll_down AND

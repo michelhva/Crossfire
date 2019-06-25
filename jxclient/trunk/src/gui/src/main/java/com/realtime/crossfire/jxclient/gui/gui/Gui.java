@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.gui.gui;
 
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyEvent2;
+import com.realtime.crossfire.jxclient.gui.misc.GUIPicture;
 import com.realtime.crossfire.jxclient.util.SwingUtilities2;
 import java.awt.Component;
 import java.awt.Dimension;
@@ -123,6 +124,13 @@ public class Gui {
      */
     @Nullable
     private Expression defaultY;
+
+    /**
+     * The help icon of the dialog. Set to {@code null} if this GUI is not a
+     * dialog or has no such help icon.
+     */
+    @Nullable
+    private GUIPicture help;
 
     /**
      * Creates a new instance.
@@ -597,6 +605,10 @@ public class Gui {
      * Call {@link GUIElement#notifyOpen()} for all GUI elements.
      */
     public void notifyOpen() {
+        if (help != null) {
+            help.notifyOpen();
+        }
+
         final int count = component.getComponentCount();
         for (int i = 0; i < count; i++) {
             final Component component = this.component.getComponent(i);
@@ -605,6 +617,24 @@ public class Gui {
                 element.notifyOpen();
             }
         }
+    }
+
+    /**
+     * Returns the help icon of this dialog.
+     * @return the help icon or {@code null} if this is not a dialog or if this
+     * dialog has no help icon
+     */
+    @Nullable
+    public GUIPicture getHelp() {
+        return help;
+    }
+
+    /**
+     * Sets the help icon of this dialog.
+     * @param help the help icon
+     */
+    public void setHelp(@NotNull final GUIPicture help) {
+        this.help = help;
     }
 
 }
