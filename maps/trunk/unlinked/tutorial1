@@ -11,7 +11,7 @@ This map is intended for use as a tutorial for
 complete newbies, to teach them some of the
 basic concepts of Crossfire.  Players should
 enter at x-11, y-1.
-Modified: 2010-11-05 Andreas Kirschbaum
+Modified: 2019-05-30 Rick Tanner
 endmsg
 unique 1
 end
@@ -350,11 +350,14 @@ end
 arch bwall_2_1_2
 x 3
 end
+arch swall_1_1_half
+x 3
+end
 arch woodfloor
 x 3
 y 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 3
 y 1
 end
@@ -985,11 +988,11 @@ y 13
 end
 arch sign
 msg
-Ready your bow or crossbow by clicking on it.  Arrows or bolts in your inventory will be used automatically.
+Ready your bow or crossbow by clicking on it. Arrows or bolts in your inventory will be used automatically.
 
 To fire a missile weapon, hold down your Fire (Shift) key, and press the movement key in the direction you want to fire.
 
-On the other side of these doors are some monsters.  Pull the lever to open the doors, and shoot them all!  Don't worry, there's a force preventing them from reaching you.  Continue down the passageway until you get back to this hallway, then go north.
+On the other side of these doors are some monsters.  Pull the lever to open the doors, and shoot them all! Don't worry, there's a force preventing them from reaching you. Continue down the passageway until you get back to this hallway, then go north.
 endmsg
 x 7
 y 13
@@ -1216,7 +1219,7 @@ y 9
 end
 arch rune_mark
 msg
-Not all runes are harmful.  The rune to your north will restore your health!
+Not all runes are harmful. The rune to your north will restore your health!
 endmsg
 x 9
 y 9
@@ -1403,18 +1406,11 @@ name Press 'a' to read me
 msg
 Welcome to Crossfire!
 
-You are now in the beginner's area, which will
-teach you the fundamentals of playing Crossfire,
-and prepare you to survive in this vast and
-sometimes dangerous world.
+You are now in the beginner's area, which will teach you the fundamentals of playing Crossfire, and prepare you to survive in this vast and sometimes dangerous world.
 
-As you pass through these halls, read all the
-signs and any other information provided, and
-you'll soon learn the basics of the game.
+As you pass through these halls, read all the signs and any other information provided, and you'll soon learn the basics of the game.
 
-From here, move south (press your down-arrow key,
-or type 'south<enter> ) and press the 'a' key to
-read the next sign.  Good luck!
+From here, move south (press your down-arrow key, or type 'south<enter> ) and press the 'a' key to read the next sign.  Good luck!
 endmsg
 x 11
 y 1
@@ -1431,31 +1427,11 @@ arch sign
 msg
 === Commands ===
 
-There are many commands you can use to
-do everything from movement to attacking
-to casting spells to identifying treasure.  Any
-command in Crossfire can be executed by
-typing ' (a single quote) followed by the
-command.
+There are many commands you can use to do everything from movement to attacking to casting spells to identifying treasure. Any command in Crossfire can be executed by typing ' (a single quote) followed by the command.
 
-So to move southeast, for example, you could type
-'southeast.  To read this sign, you could type
-'apply sign.  These "long-form" commands are
-always available for everything you can do in
-the game.
+So to move southeast, for example, you could type 'southeast. To read this sign, you could type 'apply sign. These "long-form" commands are always available for everything you can do in the game.
 
-However, it would be cumbersome to type
-commands like that for common actions, so
-many commands are bound to keys by default.
-This varies from client to client, but you will
-probably find that the movement commands
-are bound to the arrow keys on your keypad,
-for example.  There are many other default
-keybindings, and you can create your own for
-any action or series of actions that you use
-regularly.  See the documentation for your
-Crossfire client for more information on
-keybindings.
+However, it would be cumbersome to type commands like that for common actions, so many commands are bound to keys by default. This varies from client to client, but you will probably find that the movement commands are bound to the arrow keys on your keypad, for example. There are many other default keybindings, and you can create your own for any action or series of actions that you use regularly. See the documentation for your Crossfire client for more information on keybindings.
 endmsg
 x 11
 y 3
@@ -1472,20 +1448,11 @@ arch sign
 msg
 === Movement ===
 
-You can move in any of eight directions: north,
-south, east, west, and the four in between.
-Pressing a movement key once (or executing a
-movement command) will move you one tile
-in that direction.  If something is in the way, you
-may attack it.
+You can move in any of eight directions: north, south, east, west, and the four in between. Pressing a movement key once (or executing a movement command) will move you one tile in that direction. If something is in the way, you may attack it.
 
-To run in a direction, which is very useful when
-fighting, battering down doors, or traveling long
-distances, hold down the Ctrl key and press
-and hold the key for direction you wish to run.
+To run in a direction, which is very useful when fighting, battering down doors, or traveling long distances, hold down the Ctrl key and press and hold the key for direction you wish to run.
 
-Now run to the end of this hallway, and read
-the sign there.
+Now run to the end of this hallway, and read the sign there.
 endmsg
 x 11
 y 5
@@ -1521,11 +1488,11 @@ y 9
 end
 arch rune_mark
 msg
-Chests and other containers are often protected by traps.  To find and disarm these traps, stand on the chest or next to it while using the find traps and disarm traps commands.
+Chests and other containers are often protected by traps. To find and disarm these traps, stand on the chest or next to it while using the find traps and disarm traps commands.
 
 Once you think a chest is safe, open it by applying it with the 'a' key, and see what's inside.
 
-Sometimes you won't be able to find a trap, or it will be triggered when you try to disarm it.  That's just the risk you take in the pursuit of treasure!  If you get hurt by a trap, let yourself heal before you move on, in case you walk into another one.
+Sometimes you won't be able to find a trap, or it will be triggered when you try to disarm it. That's just the risk you take in the pursuit of treasure! If you get hurt by a trap, let yourself heal before you move on, in case you walk into another one.
 endmsg
 x 11
 y 9
@@ -1776,7 +1743,7 @@ y 9
 end
 arch rune_mark
 msg
-There is a rune at the end of this hallway too, but you might not be able to see it.  You can try to find and disarm it, though.
+There is a rune at the end of this hallway too, but you might not be able to see it. You can try to find and disarm it, though.
 endmsg
 x 13
 y 9
@@ -1843,10 +1810,7 @@ arch magic_mouth
 msg
 A message scrawled on the wall says:
 
-This is a standard food.  You can apply it while
-it's on the ground, the same way you apply
-signs and other objects, or you can pick it up
-and take it with you.
+This is a standard food.  You can apply it while it's on the ground, the same way you apply signs and other objects, or you can pick it up and take it with you.
 endmsg
 x 14
 y 1
@@ -1979,11 +1943,7 @@ arch magic_mouth
 msg
 A message scrawled on the wall says:
 
-There are many types of food you can eat.
-Be careful, though: food that you find may be
-poisonous, so to be safe, don't eat food until
-you've identified it.  (More on identifying items
-later.)
+There are many types of food you can eat. Be careful, though: food that you find may be poisonous, so to be safe, don't eat food until you've identified it. (More on identifying items later.)
 endmsg
 x 15
 y 1
@@ -2050,8 +2010,7 @@ y 9
 end
 arch rune_mark
 msg
-See that rune to the north?  You may have to
-wait a few seconds to see it.  Don't step on it; it might hurt you!  If you have the find traps and disarm traps skills mentioned earlier, you can step NEXT to it and attempt to find and disarm it.  Since it's at the end of the hallway, you might decide it's not worth the risk, since there's nothing beyond it, but it's good to increase your experience in those skills whenever possible.
+See that rune to the north?  You may have to wait a few seconds to see it. Don't step on it; it might hurt you!  f you have the find traps and disarm traps skills mentioned earlier, you can step NEXT to it and attempt to find and disarm it. Since it's at the end of the hallway, you might decide it's not worth the risk, since there's nothing beyond it, but it's good to increase your experience in those skills whenever possible.
 
 Remember: to search for traps, press 'f' (or type 'use_skill find traps), and to attempt to disarm any traps you find, press 'd' (or type 'use_skill disarm traps).
 endmsg
@@ -2080,14 +2039,7 @@ y 12
 end
 arch sign
 msg
-How did you do?  Watch your hit points (HP)
-closely during battle.  If they get too low, you
-can always retreat and come back.  Hit points
-gradually regenerate over time, so if you took
-damage, wait until your HP is back to the
-maximum before moving on.  Eating food
-speeds up HP regeneration, so you may want
-to eat this food now.
+How did you do?  Watch your hit points (HP) closely during battle. If they get too low, you can always retreat and come back. Hit points gradually regenerate over time, so if you took damage, wait until your HP is back to the maximum before moving on. Eating food speeds up HP regeneration, so you may want to eat this food now.
 endmsg
 x 15
 y 12
@@ -2107,10 +2059,7 @@ y 14
 end
 arch sign
 msg
-Did you get the key under the anthill?  If not,
-go back and get it.  You will need it to get
-through this door.  Keep in mind that keys
-are often hidden under other objects like that.
+Did you get the key under the anthill?  If not, go back and get it. You will need it to get through this door. Keep in mind that keys are often hidden under other objects like that.
 endmsg
 x 15
 y 14
@@ -2141,9 +2090,7 @@ arch magic_mouth
 msg
 A message scrawled on the wall says:
 
-When you kill monsters, sometimes they leave
-body parts behind, and these can be taken and
-eaten also.
+When you kill monsters, sometimes they leave body parts behind, and these can be taken and eaten also.
 endmsg
 x 16
 y 1
@@ -2333,11 +2280,7 @@ y 9
 end
 arch rune_mark
 msg
-Marking runes like this one are created with
-magic spells, but they contain messages
-just like signs do.  Marking runes are harmless,
-but other runes can be very dangerous, so
-step carefully!
+Marking runes like this one are created with magic spells, but they contain messages just like signs do. Marking runes are harmless, but other runes can be very dangerous, so step carefully!
 endmsg
 x 17
 y 9
@@ -2352,11 +2295,7 @@ y 11
 end
 arch sign
 msg
-Would you like to take on something stronger?
-If so, there are a few kobolds on the other side
-of this door to your east that shouldn't give
-you too much trouble.  If the ants were enough
-of a challenge, skip the kobolds and go north.
+Would you like to take on something stronger? If so, there are a few kobolds on the other side of this door to your east that shouldn't give you too much trouble. If the ants were enough of a challenge, skip the kobolds and go north.
 endmsg
 x 17
 y 11
@@ -2425,29 +2364,11 @@ arch sign
 msg
 === Talking to People ===
 
-You can also get information from non-player
-characters (NPCs) in the game by talking to them.
-To talk to the man at the end of this hallway
-when you're finished reading this,
-walk up next to him and type: 'say hello
+You can also get information from non-player characters (NPCs) in the game by talking to them. To talk to the man at the end of this hallway when you're finished reading this, walk up next to him and type: 'say hello
 
-The 'say command will let you talk to nearby
-NPCs and other Crossfire players who are
-on the same map as you, so it is your main
-way to communicate inside the game.  (The "
-(double-quote) key is often a shortcut for 'say.)
+The 'say command will let you talk to nearby NPCs and other Crossfire players who are on the same map as you, so it is your main way to communicate inside the game. (The " (double-quote) key is often a shortcut for 'say.)
 
-Many NPC have useful information, but they
-will only tell you about it if you ask about the
-right things.  Saying "hello" is a good start.
-If the NPC replies, look for words in his reply
-that might be important, and ask about them.
-For example, if he says, "Hello, do you have
-any food?" ask him about food ('say food),
-and he may say something else in response to
-that.  Saying words like quest, key, treasure,
-and other things you're interested in may
-start up very interesting conversations!
+Many NPC have useful information, but they will only tell you about it if you ask about the right things. Saying "hello" is a good start. If the NPC replies, look for words in his reply that might be important, and ask about them. For example, if he says, "Hello, do you have any food?" ask him about food ('say food), and he may say something else in response to that. Saying words like quest, key, treasure, and other things you're interested in may start up very interesting conversations!
 
 Be careful not to run into friendly NPCs; dead men tell no tales.
 
@@ -2563,16 +2484,9 @@ arch sign
 msg
 === Doors ===
 
-There are many kinds of doors in Crossfire.
-Some doors will open for you, so you can walk
-right through.  Ordinary locked doors can be
-bashed open by attacking them or using
-lockpicks.  Stronger locked doors may require
-a certain key, or open when you speak a magic
-word or activate a certain trigger somewhere.
+There are many kinds of doors in Crossfire. Some doors will open for you, so you can walk right through. Ordinary locked doors can be bashed open by attacking them or using lockpicks. Stronger locked doors may require a certain key, or open when you speak a magic word or activate a certain trigger somewhere.
 
-To get through this first door, run into it until
-you break through.
+To get through this first door, run into it until you break through.
 endmsg
 x 19
 y 1
@@ -2615,10 +2529,7 @@ y 7
 end
 arch sign
 msg
-Sometimes large buttons in the floor can
-be activated by a large weight.  Run into this
-boulder to push it onto the button to your
-west, and see what happens.
+Sometimes large buttons in the floor can be activated by a large weight. Run into this boulder to push it onto the button to your west, and see what happens.
 
 Boulders and other "rollable" items like barrels can only be pushed, never pulled, so be careful not to push them into corners from where you won't be able to move them to their destination.
 endmsg
@@ -2640,12 +2551,7 @@ y 9
 end
 arch sign
 msg
-Cool, huh!  Buttons and other switches can be
-used to do all sorts of things, sometimes on
-completely different areas of a map, so if you
-ever think you're stuck, look around for any
-of these kinds of triggers that might open
-a way out for you.
+Cool, huh!  Buttons and other switches can be used to do all sorts of things, sometimes on completely different areas of a map, so if you ever think you're stuck, look around for any of these kinds of triggers that might open a way out for you.
 
 endmsg
 x 19
@@ -2725,16 +2631,7 @@ arch magic_mouth
 msg
 A sign on the wall says:
 
-Here is a note you can pick up and take with
-you.  (You may have already picked it up
-automatically if your client is set to do that.  If
-so, find it in your inventory and read it by
-middle-clicking or whatever action your client
-uses to apply inventory items.)  You may wish
-to read it first (press 'a'), and then pick it up
-(press the comma key or type 'take).  Now it
-will be in your inventory, so you can read it
-anytime you need to.
+Here is a note you can pick up and take with you. (You may have already picked it up automatically if your client is set to do that. If so, find it in your inventory and read it by middle-clicking or whatever action your client uses to apply inventory items.) You may wish to read it first (press 'a'), and then pick it up (press the comma key or type 'take).  Now it will be in your inventory, so you can read it anytime you need to.
 
 endmsg
 x 20
@@ -2759,22 +2656,9 @@ arch sign
 msg
 === Information ===
 
-There are many sources of information other
-than signs like this one.  Did you see the sign
-on the wall as you were running here?
-Sometimes information comes from non-visible
-sources like that, so always keep your eyes
-open and don't miss anything that shows up
-in your Messages area.
+There are many sources of information other than signs like this one.  Did you see the sign on the wall as you were running here? Sometimes information comes from non-visible sources like that, so always keep your eyes open and don't miss anything that shows up in your Messages area.
 
-Information also comes from books, notes, and
-many other sources.  The smallest note can be
-the first clue to a large treasure or heroic quest,
-so always gather as much information as possible.
-Some notes and books you will be able to pick
-up and take with you, while others will be
-fixed where they are, but they all may be
-important to read.
+Information also comes from books, notes, and many other sources.  The smallest note can be the first clue to a large treasure or heroic quest, so always gather as much information as possible. Some notes and books you will be able to pick up and take with you, while others will be fixed where they are, but they all may be important to read.
 endmsg
 x 20
 y 5
@@ -3019,18 +2903,9 @@ y 1
 end
 arch sign
 msg
-By the way, it's a good idea to always check
-for traps before trying to open a door.  Do
-this with the command ('use_skill find traps),
-which is often bound to the 'f' key.  If you
-find a trap, you can try to disarm it with
-('use_skill disarm traps).  You can only find
-and disable traps if you have those skills.
+By the way, it's a good idea to always check for traps before trying to open a door. Do this with the command ('use_skill find traps), which is often bound to the 'f' key.  If you find a trap, you can try to disarm it with ('use_skill disarm traps). You can only find and disable traps if you have those skills.
 
-Some doors will open when you walk up to them,
-then close after a moment.  Be careful not to
-get crushed by standing in the doorway
-too long!
+Some doors will open when you walk up to them, then close after a moment. Be careful not to get crushed by standing in the doorway too long!
 endmsg
 x 22
 y 1
@@ -3102,13 +2977,9 @@ y 9
 end
 arch sign
 msg
-Other kinds of walls can also have weak spots.
-Look for cracks in the wall, especially if you
-hear voices or have reason to think there might
-be secret areas nearby.
+Other kinds of walls can also have weak spots. Look for cracks in the wall, especially if you hear voices or have reason to think there might be secret areas nearby.
 
-Sometimes walls are illusions that can be walked
-through.  Go south from here.
+Sometimes walls are illusions that can be walked through. Go south from here.
 endmsg
 x 22
 y 9
@@ -3129,14 +3000,7 @@ arch sign
 msg
 === Inventory ===
 
-Stop and take a look at your inventory for a
-moment.  If you started the game with any
-armor or a hand-to-hand weapon like a
-sword, you probably should ready them now.
-(In most clients you do this by double-clicking.)
-Don't make the mistake of many new players,
-and run into your first monsters naked and
-empty-handed. :-)
+Stop and take a look at your inventory for a moment.  If you started the game with any armor or a hand-to-hand weapon like a sword, you probably should ready them now. (In most clients you do this by double-clicking.) Don't make the mistake of many new players, and run into your first monsters naked and empty-handed. :-)
 endmsg
 x 22
 y 11
@@ -3153,16 +3017,9 @@ arch sign
 msg
 === Fighting ===
 
-Ready for your first fight?  On the other side
-of this door are some ants.  They're mostly
-harmless, so run into them as fast as you can,
-until you kill them.  Be sure to kill the anthill
-too, so it can't produce more ants.  Many
-monsters have "generators" like this which
-produce more monsters every so often.
+Ready for your first fight?  On the other side of this door are some ants.  They're mostly harmless, so run into them as fast as you can, until you kill them.  Be sure to kill the anthill too, so it can't produce more ants. Many monsters have "generators" like this which produce more monsters every so often.
 
-After you kill the ants, go through the next
-door.
+After you kill the ants, go through the next door.
 endmsg
 x 22
 y 13
