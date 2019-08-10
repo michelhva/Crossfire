@@ -3,7 +3,7 @@ import random
 # Script handling various things for Darcap Manor.
 #
 # It is used:
-# - in the blue zone, to count how many kobolds are on the map
+# - in the blue zone, to count how many kobolds are on the map
 # - for the potion, to explode walls in the treasure room
 # - in the brown zone, to prevent Kaptel's death or trigger the opening of the exit
 # - in the white zone, to check if the player knows how many of a certain jewel there are
@@ -155,7 +155,7 @@ def white_challenge():
             ear.Say('How many piles of %s did you see %s?'%(names[choice],where))
             ear.Say('Reply with a number in digits please.')
 
-            # keep reply in  the ear, easier
+            # keep reply in the ear, easier
             ear.WriteKey('reply', str(count), 1)
         return
 
