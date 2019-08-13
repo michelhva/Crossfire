@@ -9,7 +9,7 @@ enter_y 16
 msg
 Created:  1993-10-10 skud the great (tvangod@ecst.csuchico.edu)
 Idea credited to Eric Mehlhaff.
-Modified: 2017-07-26 Kevin Zheng
+Modified: 2019-08-12 Kevin Zheng
 endmsg
 end
 arch grass_only
@@ -2061,6 +2061,14 @@ arch tile_shop
 x 12
 y 11
 end
+arch depositbox
+x 12
+y 11
+arch event_close
+title Python
+slaying /python/items/deposit_box.py
+end
+end
 arch dungeon_magic
 x 12
 y 12
@@ -2232,6 +2240,11 @@ x 13
 y 11
 end
 arch tile_shop
+x 13
+y 11
+end
+arch sign_w
+name deposit box
 x 13
 y 11
 end
@@ -3226,14 +3239,6 @@ arch tile_shop
 x 18
 y 9
 end
-arch depositbox
-x 18
-y 9
-arch event_close
-title Python
-slaying /python/items/deposit_box.py
-end
-end
 arch dungeon_magic
 x 18
 y 10
@@ -3418,11 +3423,6 @@ x 19
 y 9
 end
 arch tile_shop
-x 19
-y 9
-end
-arch sign_w
-name deposit box
 x 19
 y 9
 end

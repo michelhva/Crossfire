@@ -9,7 +9,7 @@ enter_x 5
 enter_y 25
 msg
 Created:  2004-08-04 Mikeeusa
-Modified: 2012-02-13 Rick Tanner
+Modified: 2019-08-12 Kevin Zheng
 endmsg
 end
 arch dungeon_magic
@@ -3699,6 +3699,14 @@ end
 arch flagstone
 x 10
 y 19
+end
+arch depositbox
+x 10
+y 19
+arch event_close
+title Python
+slaying /python/items/deposit_box.py
+end
 end
 arch dungeon_magic
 x 10

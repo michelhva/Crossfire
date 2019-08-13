@@ -1,5 +1,5 @@
 arch map
-name Bank of Lone
+name Bank of Skud, Lone Town Branch
 difficulty 1
 region lonetown
 width 19
@@ -8,7 +8,7 @@ enter_x 9
 enter_y 18
 msg
 Created:  1996-01-29
-Modified: 2017-07-26 Kevin Zheng
+Modified: 2019-08-12 Kevin Zheng
 endmsg
 end
 arch afloor_right
@@ -222,16 +222,7 @@ arch afloor_right
 x 1
 y 11
 end
-arch chair_1.1
-x 1
-y 11
-end
 arch dungeon_magic
-x 1
-y 11
-end
-arch woman
-name Bank Teller
 x 1
 y 11
 end
@@ -404,16 +395,7 @@ arch afloor_right
 x 2
 y 11
 end
-arch chair_1.1
-x 2
-y 11
-end
 arch dungeon_magic
-x 2
-y 11
-end
-arch woman
-name Bank Teller
 x 2
 y 11
 end
@@ -1083,16 +1065,7 @@ arch afloor_right
 x 6
 y 11
 end
-arch chair_1.1
-x 6
-y 11
-end
 arch dungeon_magic
-x 6
-y 11
-end
-arch woman
-name Bank Teller
 x 6
 y 11
 end
@@ -1248,16 +1221,7 @@ arch afloor_right
 x 7
 y 11
 end
-arch chair_1.1
-x 7
-y 11
-end
 arch dungeon_magic
-x 7
-y 11
-end
-arch woman
-name Bank Teller
 x 7
 y 11
 end
@@ -1618,16 +1582,7 @@ arch afloor_right
 x 9
 y 11
 end
-arch chair_1.1
-x 9
-y 11
-end
 arch dungeon_magic
-x 9
-y 11
-end
-arch woman
-name Bank Teller
 x 9
 y 11
 end
@@ -1822,16 +1777,7 @@ arch afloor_right
 x 10
 y 11
 end
-arch chair_1.1
-x 10
-y 11
-end
 arch dungeon_magic
-x 10
-y 11
-end
-arch woman
-name Bank Teller
 x 10
 y 11
 end
@@ -2505,16 +2451,7 @@ arch afloor_right
 x 14
 y 11
 end
-arch chair_1.1
-x 14
-y 11
-end
 arch dungeon_magic
-x 14
-y 11
-end
-arch woman
-name Bank Teller
 x 14
 y 11
 end
@@ -2662,16 +2599,7 @@ arch afloor_right
 x 15
 y 11
 end
-arch chair_1.1
-x 15
-y 11
-end
 arch dungeon_magic
-x 15
-y 11
-end
-arch woman
-name Bank Teller
 x 15
 y 11
 end

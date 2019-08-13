@@ -8,7 +8,7 @@ enter_x 10
 enter_y 16
 msg
 Created:  1993-11-17
-Modified: 2012-06-17 Rick Tanner
+Modified: 2019-08-12 Kevin Zheng
 endmsg
 end
 arch cobblestones2
@@ -1253,6 +1253,14 @@ end
 arch cobblestones
 x 9
 y 9
+end
+arch depositbox
+x 9
+y 9
+arch event_close
+title Python
+slaying /python/items/deposit_box.py
+end
 end
 arch dungeon_magic
 x 9
