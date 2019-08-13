@@ -9,7 +9,7 @@ enter_y 16
 msg
 Created:  1993-10-10 skud the great (tvangod@ecst.csuchico.edu)
 Idea credited to Eric Mehlhaff.
-Modified: 2017-07-26 Kevin Zheng
+Modified: 2019-08-12 Kevin Zheng
 endmsg
 end
 arch cobblestones2
@@ -2197,6 +2197,14 @@ arch woodlarge
 x 12
 y 12
 end
+arch depositbox
+x 12
+y 12
+arch event_close
+title Python
+slaying /python/items/deposit_box.py
+end
+end
 arch dungeon_magic
 x 12
 y 13
@@ -2385,6 +2393,11 @@ x 13
 y 12
 end
 arch woodlarge
+x 13
+y 12
+end
+arch sign_w
+name deposit box
 x 13
 y 12
 end
@@ -2907,7 +2920,7 @@ arch woodlarge
 x 16
 y 4
 end
-arch dwall_4
+arch dwall_3_4
 x 16
 y 4
 end
@@ -3090,23 +3103,11 @@ arch woodlarge
 x 17
 y 3
 end
-arch depositbox
-x 17
-y 3
-arch event_close
-title Python
-slaying /python/items/deposit_box.py
-end
-end
 arch dungeon_magic
 x 17
 y 4
 end
 arch woodlarge
-x 17
-y 4
-end
-arch dwall_2_1_2
 x 17
 y 4
 end
@@ -3290,10 +3291,6 @@ arch woodlarge
 x 18
 y 4
 end
-arch cwall_1_3
-x 18
-y 4
-end
 arch dungeon_magic
 x 18
 y 5
@@ -3438,11 +3435,6 @@ x 19
 y 3
 end
 arch woodlarge
-x 19
-y 3
-end
-arch sign_w
-name deposit box
 x 19
 y 3
 end

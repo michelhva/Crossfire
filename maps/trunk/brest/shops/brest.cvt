@@ -8,7 +8,7 @@ height 24
 enter_x 13
 enter_y 19
 msg
-Modified: 2019-06-30 Rick Tanner
+Modified: 2019-08-12 Kevin Zheng
 endmsg
 end
 arch flagstone
@@ -1274,6 +1274,14 @@ end
 arch woodfloor
 x 9
 y 7
+end
+arch depositbox
+x 9
+y 7
+arch event_close
+title Python
+slaying /python/items/deposit_box.py
+end
 end
 arch woodfloor
 x 9
