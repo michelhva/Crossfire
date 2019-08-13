@@ -1,0 +1,56 @@
+arch map
+name Python
+width 20
+height 20
+msg
+Created:  2019-08-12 Kevin Zheng
+Modified: 2019-08-12 Kevin Zheng
+endmsg
+end
+arch mailbox
+material 0
+weight 0
+arch event_close
+title Python
+slaying /python/IPO/send.py
+end
+arch event_apply
+title Python
+slaying /python/IPO/receive.py
+end
+end
+arch woman
+name Nancy
+title the teller
+msg
+@match *
+Sorry I am on break, please come back later.
+endmsg
+y 2
+randomitems jail
+stand_still 1
+arch event_say
+title Python
+slaying /python/IPO/banksay.py
+end
+end
+arch sign
+name Scorn Message Board
+msg
+I am a talking board, please say something to me.  If you don't know what to say, try help.
+endmsg
+x 1
+arch event_say
+name Scorn board
+title Python
+slaying /python/IPO/board.py
+end
+end
+arch depositbox
+x 1
+y 2
+arch event_close
+title Python
+slaying /python/items/deposit_box.py
+end
+end
