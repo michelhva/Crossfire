@@ -11,7 +11,7 @@ enter_x 16
 enter_y 16
 msg
 Created:  1993-10-16
-Modified: 2011-11-03 Rick Tanner
+Modified: 2019-08-14 Kevin Zheng
 endmsg
 outdoor 1
 end
@@ -1561,9 +1561,15 @@ x 14
 y 7
 blocksview 0
 end
-arch shop_general
+arch shop_empty
 x 14
 y 8
+end
+arch stylus
+x 14
+y 8
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 14
@@ -1710,9 +1716,15 @@ arch light4
 x 15
 y 8
 end
-arch shop_general
+arch shop_empty
 x 15
 y 8
+end
+arch book_clasp
+x 15
+y 8
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 15
