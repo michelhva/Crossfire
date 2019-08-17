@@ -46,6 +46,11 @@ def abs_dir(d):
 		d = d - 8
 	return d
 
+def stop():
+	me.WriteKey(key_direction, '', 1)
+	me.WriteKey(key_follow, '', 1)
+	me.Map.Print('The %s stops moving.'%me.Name)
+
 def handle_move():
 	want_dir = me.ReadKey(key_direction)
 	floor = me.ReadKey(key_follow)
@@ -72,17 +77,14 @@ def handle_move():
 			break
 
 	if not done:
-		me.WriteKey(key_direction, '', 1)
-		me.WriteKey(key_follow, '', 1)
+		stop()
 	return
 
 def handle_say():
 	msg = Crossfire.WhatIsMessage()
 	if msg == 'stop':
 		if me.ReadKey(key_direction) != '':
-			me.WriteKey(key_direction, '', 1)
-			me.WriteKey(key_follow, '', 1)
-			me.Map.Print('The %s stops moving.'%me.Name)
+			stop()
 		return
 
 	want_dir = -1
