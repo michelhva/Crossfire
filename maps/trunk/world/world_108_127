@@ -3,7 +3,7 @@ name world_108_127
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2019-08-17 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_108_126
@@ -4760,7 +4760,7 @@ x 17
 y 43
 elevation 12
 end
-arch dirtroad_2_2_1
+arch dirtroad_2_1_1
 x 17
 y 43
 end
@@ -4769,17 +4769,25 @@ x 17
 y 44
 elevation 196
 end
+arch dirtroad_2_1_1
+x 17
+y 44
+end
 arch desert
 x 17
 y 45
 elevation 312
+end
+arch dirtroad_2_1_1
+x 17
+y 45
 end
 arch desert
 x 17
 y 46
 elevation 212
 end
-arch dirtroad_2_2_2
+arch dirtroad_2_1_1
 x 17
 y 46
 end
@@ -5033,36 +5041,20 @@ x 18
 y 43
 elevation 10
 end
-arch dirtroad_2_2_3
-x 18
-y 43
-end
 arch desert
 x 18
 y 44
 elevation 104
-end
-arch dirtroad_3_2
-x 18
-y 44
 end
 arch brush
 x 18
 y 45
 elevation 178
 end
-arch dirtroad_3_2
-x 18
-y 45
-end
 arch desert
 x 18
 y 46
 elevation 58
-end
-arch dirtroad_2_2_4
-x 18
-y 46
 end
 arch shallow_sea
 x 18
@@ -5323,18 +5315,10 @@ x 19
 y 44
 elevation 16
 end
-arch dirtroad_2_2_3
-x 19
-y 44
-end
 arch brush
 x 19
 y 45
 elevation 18
-end
-arch dirtroad_2_2_4
-x 19
-y 45
 end
 arch shallow_sea
 x 19

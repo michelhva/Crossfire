@@ -8,7 +8,7 @@ enter_x 10
 enter_y 17
 msg
 Created:  2005-05-30 Gene Alexander
-Modified: 2012-02-02 Rick Tanner
+Modified: 2019-08-17 Kevin Zheng
 endmsg
 outdoor 1
 end
@@ -208,260 +208,73 @@ x 2
 y 1
 elevation 1200
 end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
+arch woods_3
 x 2
 y 2
 end
 arch woods_3
-x 2
-y 2
-elevation 1200
-end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
 x 2
 y 3
 end
 arch woods_3
 x 2
-y 3
-elevation 1125
-end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 2
 y 4
 end
 arch woods_3
-x 2
-y 4
-elevation 1125
-end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
 x 2
 y 5
 end
 arch woods_3
 x 2
-y 5
-elevation 1125
-end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 2
 y 6
 end
 arch woods_3
-x 2
-y 6
-elevation 1125
-end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
 x 2
 y 7
 end
 arch woods_3
 x 2
-y 7
-elevation 1125
-end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 2
 y 8
 end
 arch woods_3
-x 2
-y 8
-elevation 1125
-end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
 x 2
 y 9
 end
 arch woods_3
 x 2
-y 9
-elevation 1125
-end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 2
 y 10
 end
 arch woods_3
-x 2
-y 10
-elevation 1125
-end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
 x 2
 y 11
 end
 arch woods_3
 x 2
-y 11
-elevation 1125
-end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 2
 y 12
 end
 arch woods_3
-x 2
-y 12
-elevation 1125
-end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
 x 2
 y 13
 end
 arch woods_3
 x 2
-y 13
-elevation 1125
-end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 2
 y 14
 end
 arch woods_3
-x 2
-y 14
-elevation 1125
-end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
 x 2
 y 15
 end
 arch woods_3
 x 2
-y 15
-elevation 1125
-end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 2
 y 16
 end
 arch woods_3
 x 2
-y 16
-elevation 1125
-end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 2
 y 17
-end
-arch woods_3
-x 2
-y 17
-elevation 1125
-end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 2
-y 18
 end
 arch woods_2
 x 2
 y 18
-elevation 1540
 end
 arch woods_2
 x 2
@@ -482,20 +295,9 @@ x 3
 y 1
 elevation 1200
 end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 3
-y 2
-end
 arch woods_3
 x 3
 y 2
-elevation 1200
 end
 arch dungeon_magic
 x 3
@@ -636,20 +438,9 @@ x 3
 y 17
 elevation 1785
 end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 3
-y 18
-end
 arch woods_2
 x 3
 y 18
-elevation 1540
 end
 arch woods_2
 x 3
@@ -670,20 +461,9 @@ x 4
 y 1
 elevation 1373
 end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 4
-y 2
-end
 arch evergreens
 x 4
 y 2
-elevation 1373
 end
 arch dungeon_magic
 x 4
@@ -817,20 +597,9 @@ x 4
 y 17
 elevation 1785
 end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 4
-y 18
-end
 arch woods_2
 x 4
 y 18
-elevation 1540
 end
 arch woods_2
 x 4
@@ -851,20 +620,9 @@ x 5
 y 1
 elevation 1373
 end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 5
-y 2
-end
 arch evergreens
 x 5
 y 2
-elevation 1373
 end
 arch dungeon_magic
 x 5
@@ -1011,20 +769,9 @@ x 5
 y 17
 elevation 1785
 end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 5
-y 18
-end
 arch woods_2
 x 5
 y 18
-elevation 1540
 end
 arch woods_2
 x 5
@@ -1045,20 +792,9 @@ x 6
 y 1
 elevation 1373
 end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 6
-y 2
-end
 arch evergreens
 x 6
 y 2
-elevation 1373
 end
 arch dungeon_magic
 x 6
@@ -1200,20 +936,9 @@ x 6
 y 17
 elevation 1785
 end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 6
-y 18
-end
 arch woods_2
 x 6
 y 18
-elevation 1540
 end
 arch woods_2
 x 6
@@ -1234,20 +959,9 @@ x 7
 y 1
 elevation 1373
 end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 7
-y 2
-end
 arch evergreens
 x 7
 y 2
-elevation 1373
 end
 arch dungeon_magic
 x 7
@@ -1398,20 +1112,9 @@ x 7
 y 17
 elevation 1785
 end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 7
-y 18
-end
 arch woods_2
 x 7
 y 18
-elevation 1540
 end
 arch woods_2
 x 7
@@ -1432,20 +1135,9 @@ x 8
 y 1
 elevation 1373
 end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 8
-y 2
-end
 arch evergreens
 x 8
 y 2
-elevation 1373
 end
 arch dungeon_magic
 x 8
@@ -1601,20 +1293,9 @@ x 8
 y 17
 elevation 1785
 end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.   You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 8
-y 18
-end
 arch woods_2
 x 8
 y 18
-elevation 1540
 end
 arch woods_2
 x 8
@@ -1635,20 +1316,9 @@ x 9
 y 1
 elevation 1373
 end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 9
-y 2
-end
 arch evergreens
 x 9
 y 2
-elevation 1373
 end
 arch dungeon_magic
 x 9
@@ -1819,20 +1489,9 @@ x 9
 y 17
 elevation 1785
 end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 9
-y 18
-end
 arch woods_2
 x 9
 y 18
-elevation 1540
 end
 arch woods_2
 x 9
@@ -1853,20 +1512,9 @@ x 10
 y 1
 elevation 1373
 end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.   You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 10
-y 2
-end
 arch evergreens
 x 10
 y 2
-elevation 1373
 end
 arch dungeon_magic
 x 10
@@ -2067,12 +1715,9 @@ x 10
 y 17
 end
 arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
+slaying /world/world_107_128
+hp 27
+sp 14
 x 10
 y 18
 end
@@ -2098,20 +1743,9 @@ x 11
 y 1
 elevation 1373
 end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 11
-y 2
-end
 arch evergreens
 x 11
 y 2
-elevation 1373
 end
 arch dungeon_magic
 x 11
@@ -2282,20 +1916,9 @@ x 11
 y 17
 elevation 1785
 end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 11
-y 18
-end
 arch woods_2
 x 11
 y 18
-elevation 1540
 end
 arch footpath_2_2_3
 x 11
@@ -2314,20 +1937,9 @@ x 12
 y 1
 elevation 1373
 end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 12
-y 2
-end
 arch evergreens
 x 12
 y 2
-elevation 1373
 end
 arch dungeon_magic
 x 12
@@ -2483,20 +2095,9 @@ x 12
 y 17
 elevation 1785
 end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 12
-y 18
-end
 arch woods_2
 x 12
 y 18
-elevation 1540
 end
 arch woods_2
 x 12
@@ -2517,20 +2118,9 @@ x 13
 y 1
 elevation 1373
 end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 13
-y 2
-end
 arch evergreens
 x 13
 y 2
-elevation 1373
 end
 arch dungeon_magic
 x 13
@@ -2683,20 +2273,9 @@ x 13
 y 17
 elevation 1785
 end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 13
-y 18
-end
 arch woods_2
 x 13
 y 18
-elevation 1540
 end
 arch woods_2
 x 13
@@ -2717,20 +2296,9 @@ x 14
 y 1
 elevation 1373
 end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 14
-y 2
-end
 arch evergreens
 x 14
 y 2
-elevation 1373
 end
 arch dungeon_magic
 x 14
@@ -2871,20 +2439,9 @@ x 14
 y 17
 elevation 1785
 end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 14
-y 18
-end
 arch woods_2
 x 14
 y 18
-elevation 1540
 end
 arch woods_2
 x 14
@@ -2905,20 +2462,9 @@ x 15
 y 1
 elevation 1373
 end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 15
-y 2
-end
 arch evergreens
 x 15
 y 2
-elevation 1373
 end
 arch dungeon_magic
 x 15
@@ -3065,20 +2611,9 @@ x 15
 y 17
 elevation 1785
 end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 15
-y 18
-end
 arch woods_2
 x 15
 y 18
-elevation 1540
 end
 arch woods_2
 x 15
@@ -3099,20 +2634,9 @@ x 16
 y 1
 elevation 1373
 end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 16
-y 2
-end
 arch evergreens
 x 16
 y 2
-elevation 1373
 end
 arch dungeon_magic
 x 16
@@ -3246,20 +2770,9 @@ x 16
 y 17
 elevation 1785
 end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 16
-y 18
-end
 arch woods_2
 x 16
 y 18
-elevation 1540
 end
 arch woods_2
 x 16
@@ -3280,20 +2793,9 @@ x 17
 y 1
 elevation 1373
 end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 17
-y 2
-end
 arch evergreens
 x 17
 y 2
-elevation 1373
 end
 arch dungeon_magic
 x 17
@@ -3434,20 +2936,9 @@ x 17
 y 17
 elevation 1785
 end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 17
-y 18
-end
 arch evergreens
 x 17
 y 18
-elevation 1373
 end
 arch evergreens
 x 17
@@ -3468,260 +2959,73 @@ x 18
 y 1
 elevation 1373
 end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 18
-y 2
-end
 arch evergreens
 x 18
 y 2
-elevation 1373
 end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
+arch woods_3
 x 18
 y 3
 end
 arch woods_3
 x 18
-y 3
-elevation 1125
-end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 18
 y 4
 end
 arch woods_3
-x 18
-y 4
-elevation 1125
-end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
 x 18
 y 5
 end
 arch woods_3
 x 18
-y 5
-elevation 1125
-end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 18
 y 6
 end
 arch woods_3
-x 18
-y 6
-elevation 1125
-end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
 x 18
 y 7
 end
 arch woods_3
 x 18
-y 7
-elevation 1125
-end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 18
 y 8
 end
 arch woods_3
-x 18
-y 8
-elevation 1125
-end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
 x 18
 y 9
 end
 arch woods_3
 x 18
-y 9
-elevation 1125
-end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 18
 y 10
 end
 arch woods_3
-x 18
-y 10
-elevation 1125
-end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
 x 18
 y 11
 end
 arch woods_3
 x 18
-y 11
-elevation 1125
-end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 18
 y 12
 end
 arch woods_3
-x 18
-y 12
-elevation 1125
-end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
 x 18
 y 13
 end
 arch woods_3
 x 18
-y 13
-elevation 1125
-end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 18
 y 14
 end
 arch woods_3
-x 18
-y 14
-elevation 1125
-end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
 x 18
 y 15
 end
 arch woods_3
 x 18
-y 15
-elevation 1125
-end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 18
 y 16
 end
-arch woods_3
-x 18
-y 16
-elevation 1125
-end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
+arch evergreens
 x 18
 y 17
 end
 arch evergreens
 x 18
-y 17
-elevation 1373
-end
-arch invis_exit
-slaying /world/world_109_125
-msg
-An unseen force moves you across the world.  You feel as though you have moved quite a distance.
-endmsg
-hp 24
-sp 45
-x 18
 y 18
-end
-arch evergreens
-x 18
-y 18
-elevation 1373
 end
 arch evergreens
 x 18
