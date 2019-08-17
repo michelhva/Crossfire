@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-02-31
-Modified: 2010-05-05 Cavesomething
+Modified: 2019-08-16 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_106_114
@@ -3420,9 +3420,10 @@ x 13
 y 21
 elevation 3569
 end
-arch cobblestones
+arch hills
 x 13
 y 22
+elevation 3569
 end
 arch cobblestones
 x 13
@@ -6408,10 +6409,9 @@ x 25
 y 20
 elevation 5284
 end
-arch mountain
+arch cobblestones
 x 25
 y 21
-elevation 5164
 end
 arch cobblestones
 x 25
@@ -6666,9 +6666,10 @@ arch cobblestones
 x 26
 y 22
 end
-arch cobblestones
+arch mountain
 x 26
 y 23
+elevation 6165
 end
 arch hills
 x 26
@@ -6894,9 +6895,10 @@ x 27
 y 18
 elevation 4047
 end
-arch cobblestones
+arch mountain
 x 27
 y 19
+elevation 5048
 end
 arch cobblestones
 x 27
@@ -7147,10 +7149,9 @@ arch cobblestones
 x 28
 y 20
 end
-arch mountain
+arch cobblestones
 x 28
 y 21
-elevation 5908
 end
 arch mountain
 x 28

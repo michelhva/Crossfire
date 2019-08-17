@@ -9912,7 +9912,7 @@ x 22
 y 35
 elevation 6036
 end
-arch cobblestones
+arch cobblestones2
 x 22
 y 36
 end
@@ -9925,7 +9925,7 @@ x 22
 y 37
 elevation 5383
 end
-arch cobblestones
+arch cobblestones2
 x 22
 y 37
 end
@@ -9937,7 +9937,7 @@ sp 7
 x 22
 y 37
 end
-arch cobblestones
+arch cobblestones2
 x 22
 y 38
 end
@@ -10198,15 +10198,15 @@ x 23
 y 35
 elevation 5956
 end
-arch cobblestones
+arch cobblestones2
 x 23
 y 36
 end
-arch cobblestones
+arch cobblestones2
 x 23
 y 37
 end
-arch cobblestones
+arch cobblestones2
 x 23
 y 38
 end
@@ -10461,15 +10461,15 @@ x 24
 y 35
 elevation 5558
 end
-arch cobblestones
+arch cobblestones2
 x 24
 y 36
 end
-arch cobblestones
+arch cobblestones2
 x 24
 y 37
 end
-arch cobblestones
+arch cobblestones2
 x 24
 y 38
 end
@@ -10713,15 +10713,15 @@ x 25
 y 35
 elevation 1412
 end
-arch cobblestones
+arch cobblestones2
 x 25
 y 36
 end
-arch cobblestones
+arch cobblestones2
 x 25
 y 37
 end
-arch cobblestones
+arch cobblestones2
 x 25
 y 38
 end
@@ -10971,15 +10971,15 @@ x 26
 y 35
 elevation 3043
 end
-arch cobblestones
+arch cobblestones2
 x 26
 y 36
 end
-arch cobblestones
+arch cobblestones2
 x 26
 y 37
 end
-arch cobblestones
+arch cobblestones2
 x 26
 y 38
 end
@@ -11230,15 +11230,15 @@ x 27
 y 35
 elevation 1513
 end
-arch cobblestones
+arch cobblestones2
 x 27
 y 36
 end
-arch cobblestones
+arch cobblestones2
 x 27
 y 37
 end
-arch cobblestones
+arch cobblestones2
 x 27
 y 38
 end
@@ -11490,15 +11490,15 @@ x 28
 y 35
 elevation 102
 end
-arch cobblestones
+arch cobblestones2
 x 28
 y 36
 end
-arch cobblestones
+arch cobblestones2
 x 28
 y 37
 end
-arch cobblestones
+arch cobblestones2
 x 28
 y 38
 end
@@ -11765,15 +11765,15 @@ x 29
 y 35
 elevation 2995
 end
-arch cobblestones
+arch cobblestones2
 x 29
 y 36
 end
-arch cobblestones
+arch cobblestones2
 x 29
 y 37
 end
-arch cobblestones
+arch cobblestones2
 x 29
 y 38
 end
@@ -12043,11 +12043,11 @@ x 30
 y 35
 elevation 978
 end
-arch cobblestones
+arch cobblestones2
 x 30
 y 36
 end
-arch cobblestones
+arch cobblestones2
 x 30
 y 37
 end
@@ -12070,7 +12070,7 @@ title Python
 slaying /python/items/roll-o-matic.py
 end
 end
-arch cobblestones
+arch cobblestones2
 x 30
 y 38
 end
@@ -12337,15 +12337,15 @@ x 31
 y 35
 elevation 652
 end
-arch cobblestones
+arch cobblestones2
 x 31
 y 36
 end
-arch cobblestones
+arch cobblestones2
 x 31
 y 37
 end
-arch cobblestones
+arch cobblestones2
 x 31
 y 38
 end
@@ -12628,11 +12628,11 @@ x 32
 y 35
 elevation 2649
 end
-arch cobblestones
+arch cobblestones2
 x 32
 y 36
 end
-arch cobblestones
+arch cobblestones2
 x 32
 y 37
 end
@@ -12919,11 +12919,11 @@ endmsg
 x 33
 y 35
 end
-arch cobblestones
+arch cobblestones2
 x 33
 y 36
 end
-arch cobblestones
+arch cobblestones2
 x 33
 y 37
 end
@@ -12931,7 +12931,7 @@ arch cobblestones
 x 33
 y 38
 end
-arch flagstone
+arch cobblestones
 x 33
 y 39
 end
@@ -13169,11 +13169,11 @@ arch cobblestones
 x 34
 y 35
 end
-arch cobblestones
+arch cobblestones2
 x 34
 y 36
 end
-arch cobblestones
+arch cobblestones2
 x 34
 y 37
 end
@@ -13434,11 +13434,11 @@ arch cobblestones
 x 35
 y 35
 end
-arch cobblestones
+arch cobblestones2
 x 35
 y 36
 end
-arch cobblestones
+arch cobblestones2
 x 35
 y 37
 end
@@ -14278,9 +14278,10 @@ arch cobblestones
 x 38
 y 41
 end
-arch cobblestones
+arch hills_rocky
 x 38
 y 42
+elevation 4124
 end
 arch hills_rocky
 x 38
@@ -14888,10 +14889,9 @@ x 40
 y 39
 elevation 4077
 end
-arch brush
+arch cobblestones
 x 40
 y 40
-elevation 2530
 end
 arch cobblestones
 x 40
