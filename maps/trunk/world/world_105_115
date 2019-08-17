@@ -11782,6 +11782,17 @@ x 29
 y 39
 elevation 602
 end
+arch altar
+name 100 platinum for a driven wagon
+slaying money
+msg
+A wagon rolls out! Climb in and say a direction to travel, like 'east'. Say 'stop' to stop.
+endmsg
+food 5000
+x 29
+y 39
+connected 1
+end
 arch brush
 x 29
 y 40
@@ -12051,10 +12062,13 @@ arch cobblestones2
 x 30
 y 37
 end
-arch wagon
-name wagon
+arch creator
 x 30
 y 37
+connected 1
+lifesave 1
+arch wagon
+name wagon
 speed 3.0
 type 2
 container 5000000
@@ -12068,6 +12082,7 @@ end
 arch event_time
 title Python
 slaying /python/items/roll-o-matic.py
+end
 end
 end
 arch cobblestones2
