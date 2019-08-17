@@ -9,7 +9,7 @@ enter_x 5
 enter_y 37
 msg
 Created:  2001-02-16
-Modified: 2019-02-22 Rick Tanner
+Modified: 2019-08-16 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_105_114
@@ -12061,6 +12061,14 @@ container 5000000
 move_type walk
 move_allow walk
 passenger_limit 2
+arch event_say
+title Python
+slaying /python/items/roll-o-matic.py
+end
+arch event_time
+title Python
+slaying /python/items/roll-o-matic.py
+end
 end
 arch cobblestones
 x 30
