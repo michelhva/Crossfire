@@ -4,13 +4,14 @@ region stoneville
 width 50
 height 50
 msg
-Modified: 2014-10-04 Kevin Zheng
+Modified: 2019-01-01 Jason Zheng
 endmsg
 outdoor 1
 tile_path_1 world_102_126
 tile_path_2 world_103_127
 tile_path_3 world_102_128
 tile_path_4 world_101_127
+background_music stoneville
 end
 arch sea
 elevation -4178

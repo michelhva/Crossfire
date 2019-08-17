@@ -5,13 +5,14 @@ region darcap
 width 50
 height 50
 msg
-Modified: 2015-06-06 tecslicer
+Modified: 2019-01-01 Jason Zheng
 endmsg
 outdoor 1
 tile_path_1 world_116_101
 tile_path_2 world_117_102
 tile_path_3 world_116_103
 tile_path_4 world_115_102
+background_music darcap
 end
 arch shallow_sea
 elevation -10
