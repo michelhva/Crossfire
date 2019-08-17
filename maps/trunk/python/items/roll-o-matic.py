@@ -60,6 +60,9 @@ def handle_move():
 	for check in [0, 1, -1]:
 		d = abs_dir(want_dir + check)
 		if has_floor(x + dir_x[d], y + dir_y[d], floor):
+			# Next time, move in the direction we last moved in.
+			# This heuristic helps follow the roads better.
+			me.WriteKey(key_direction, str(d))
 			if me.Move(d) == 0:
 				continue
 
