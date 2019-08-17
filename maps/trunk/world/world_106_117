@@ -7,7 +7,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Modified: 2007-12-24 tchize
+Modified: 2019-08-16 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_106_116
@@ -4522,14 +4522,10 @@ arch flagstone
 x 18
 y 22
 end
-arch grass_only
+arch flagstone
 x 18
 y 23
 elevation 2248
-end
-arch tree3
-x 18
-y 23
 end
 arch hills_rocky
 x 18
@@ -4765,7 +4761,7 @@ x 19
 y 20
 elevation 3063
 end
-arch flagstone
+arch hills_rocky
 x 19
 y 21
 end
@@ -5003,11 +4999,11 @@ x 20
 y 20
 elevation 2806
 end
-arch flagstone
+arch mountain
 x 20
 y 21
 end
-arch flagstone
+arch steppe
 x 20
 y 22
 end
@@ -5331,6 +5327,10 @@ x 21
 y 37
 elevation 4927
 end
+arch flagstone
+x 21
+y 37
+end
 arch mountain
 x 21
 y 38
@@ -5569,7 +5569,7 @@ x 22
 y 34
 elevation 9181
 end
-arch flagstone
+arch hills_rocky
 x 22
 y 35
 end
