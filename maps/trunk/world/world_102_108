@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-02-19
-Modified: 2019-03-20 Rick Tanner
+Modified: 2019-08-17 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_102_107
@@ -7195,15 +7195,15 @@ arch lamppost
 x 29
 y 9
 end
-arch cobblestones
+arch cobblestones2
 x 29
 y 10
 end
-arch cobblestones
+arch cobblestones2
 x 29
 y 11
 end
-arch cobblestones
+arch cobblestones2
 x 29
 y 12
 end
@@ -7255,11 +7255,11 @@ arch cobblestones
 x 29
 y 24
 end
-arch cobblestones
+arch hills
 x 29
 y 25
 end
-arch cobblestones
+arch hills
 x 29
 y 26
 end
@@ -7426,15 +7426,23 @@ arch grass
 x 30
 y 9
 end
-arch cobblestones
+arch cobblestones2
 x 30
 y 10
 end
-arch cobblestones
+arch cobblestones2
 x 30
 y 11
 end
-arch cobblestones
+arch cross_sign
+msg
+Darcap - West
+Scorn - South
+endmsg
+x 30
+y 11
+end
+arch cobblestones2
 x 30
 y 12
 end
@@ -7490,7 +7498,7 @@ arch cobblestones
 x 30
 y 25
 end
-arch cobblestones
+arch hills
 x 30
 y 26
 end
@@ -7733,7 +7741,7 @@ arch brush
 x 31
 y 23
 end
-arch brush
+arch cobblestones
 x 31
 y 24
 end

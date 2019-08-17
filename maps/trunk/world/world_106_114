@@ -8,7 +8,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-02-18
-Modified: 2007-12-24 tchize
+Modified: 2019-08-17 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_106_113
@@ -45,7 +45,7 @@ end
 arch woods
 y 9
 end
-arch desert
+arch cobblestones
 y 10
 end
 arch cobblestones
@@ -90,7 +90,7 @@ end
 arch cobblestones
 y 24
 end
-arch steppe
+arch cobblestones
 y 25
 end
 arch steppe
@@ -111,16 +111,16 @@ end
 arch steppe
 y 31
 end
-arch mountain
+arch cobblestones
 y 32
 end
-arch mountain
+arch cobblestones
 y 33
 end
 arch cobblestones
 y 34
 end
-arch cobblestones
+arch hills_rocky
 y 35
 end
 arch woods
@@ -207,7 +207,7 @@ arch woods
 x 1
 y 9
 end
-arch desert
+arch cobblestones
 x 1
 y 10
 end
@@ -251,7 +251,7 @@ arch cobblestones
 x 1
 y 20
 end
-arch shallow_sea
+arch cobblestones
 x 1
 y 21
 end
@@ -303,11 +303,11 @@ arch cobblestones
 x 1
 y 33
 end
-arch cobblestones
+arch hills_rocky
 x 1
 y 34
 end
-arch cobblestones
+arch hills_rocky
 x 1
 y 35
 end
@@ -438,7 +438,7 @@ arch mountain
 x 2
 y 17
 end
-arch steppe
+arch cobblestones
 x 2
 y 18
 end
@@ -498,15 +498,15 @@ arch cobblestones
 x 2
 y 32
 end
-arch cobblestones
+arch hills_rocky
 x 2
 y 33
 end
-arch cobblestones
+arch hills_rocky
 x 2
 y 34
 end
-arch cobblestones
+arch hills_rocky
 x 2
 y 35
 end
@@ -653,7 +653,7 @@ arch cobblestones
 x 3
 y 19
 end
-arch cobblestones
+arch steppe
 x 3
 y 20
 end
@@ -1079,11 +1079,11 @@ arch cobblestones
 x 5
 y 15
 end
-arch mountain
+arch cobblestones
 x 5
 y 16
 end
-arch steppe
+arch cobblestones
 x 5
 y 17
 end
