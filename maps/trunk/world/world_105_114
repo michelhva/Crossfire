@@ -8,7 +8,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Modified: 2018-12-30 Kevin Zheng
+Modified: 2019-08-17 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_105_113
@@ -12378,12 +12378,7 @@ x 45
 y 48
 elevation 0
 end
-arch grass_only
-x 45
-y 49
-elevation 0
-end
-arch evergreens2
+arch cobblestones
 x 45
 y 49
 end
@@ -12938,15 +12933,13 @@ x 48
 y 8
 elevation 0
 end
-arch shallow_sea
+arch cobblestones
 x 48
 y 9
-elevation 0
 end
-arch shallow_sea
+arch cobblestones
 x 48
 y 10
-elevation 0
 end
 arch beach
 x 48
@@ -13266,10 +13259,9 @@ x 49
 y 23
 elevation 0
 end
-arch woods
+arch cobblestones
 x 49
 y 24
-elevation 0
 end
 arch woods
 x 49
@@ -13306,15 +13298,13 @@ x 49
 y 31
 elevation 0
 end
-arch mountain
+arch hills_rocky
 x 49
 y 32
-elevation 0
 end
-arch mountain
+arch cobblestones
 x 49
 y 33
-elevation 0
 end
 arch cobblestones
 x 49

@@ -4,7 +4,7 @@ difficulty 1
 width 50
 height 50
 msg
-Modified: 2011-11-05 Andreas Kirschbaum
+Modified: 2019-08-17 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_103_109
@@ -493,7 +493,7 @@ x 2
 y 6
 elevation 1572
 end
-arch hills
+arch cobblestones
 x 2
 y 7
 elevation 2882
@@ -732,7 +732,7 @@ x 3
 y 4
 elevation 17
 end
-arch cobblestones
+arch grass
 x 3
 y 5
 elevation 121
@@ -981,12 +981,12 @@ x 4
 y 4
 elevation 49
 end
-arch cobblestones
+arch grass
 x 4
 y 5
 elevation 300
 end
-arch cobblestones
+arch grass
 x 4
 y 6
 elevation 1254
@@ -9537,12 +9537,12 @@ x 37
 y 36
 elevation 2127
 end
-arch cobblestones
+arch grass
 x 37
 y 37
 elevation 3224
 end
-arch cobblestones
+arch grass
 x 37
 y 38
 elevation 2630
@@ -9795,7 +9795,7 @@ x 38
 y 37
 elevation 3966
 end
-arch cobblestones
+arch grass
 x 38
 y 38
 elevation 3684
@@ -10037,12 +10037,12 @@ x 39
 y 34
 elevation 4812
 end
-arch hills_rocky
+arch cobblestones
 x 39
 y 35
 elevation 4935
 end
-arch hills
+arch cobblestones
 x 39
 y 36
 elevation 4991
@@ -10291,7 +10291,7 @@ x 40
 y 35
 elevation 5214
 end
-arch mountain
+arch cobblestones
 x 40
 y 36
 elevation 5224

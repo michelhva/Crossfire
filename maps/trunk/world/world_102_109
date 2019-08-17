@@ -4,7 +4,7 @@ difficulty 1
 width 50
 height 50
 msg
-Modified: 2010-06-08 Kevin Bulgrien
+Modified: 2019-08-17 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_102_108
@@ -9431,7 +9431,7 @@ x 37
 y 26
 elevation 7516
 end
-arch mountain
+arch cobblestones
 x 37
 y 27
 elevation 5605
@@ -10257,12 +10257,12 @@ x 40
 y 38
 elevation 4104
 end
-arch mountain
+arch cobblestones
 x 40
 y 39
 elevation 5584
 end
-arch mountain
+arch cobblestones
 x 40
 y 40
 elevation 5990
@@ -10659,12 +10659,12 @@ x 42
 y 16
 elevation 4346
 end
-arch mountain
+arch cobblestones
 x 42
 y 17
 elevation 5352
 end
-arch mountain
+arch cobblestones
 x 42
 y 18
 elevation 5409
@@ -10704,7 +10704,7 @@ x 42
 y 25
 elevation 3606
 end
-arch cobblestones
+arch hills_rocky
 x 42
 y 26
 elevation 3100
@@ -10764,17 +10764,17 @@ x 42
 y 37
 elevation 2875
 end
-arch cobblestones
+arch woods
 x 42
 y 38
 elevation 1302
 end
-arch cobblestones
+arch woods
 x 42
 y 39
 elevation 3216
 end
-arch cobblestones
+arch woods
 x 42
 y 40
 elevation 4435
@@ -11164,12 +11164,12 @@ x 44
 y 15
 elevation 1723
 end
-arch cobblestones
+arch woods
 x 44
 y 16
 elevation 3284
 end
-arch cobblestones
+arch woods
 x 44
 y 17
 elevation 4483

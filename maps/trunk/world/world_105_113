@@ -5,7 +5,7 @@ region euthville
 width 50
 height 50
 msg
-Modified: 2013-08-02 Kevin Zheng
+Modified: 2019-08-17 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_105_112
@@ -9916,7 +9916,7 @@ x 37
 y 25
 elevation 133
 end
-arch grass
+arch cobblestones
 x 37
 y 26
 elevation 58
@@ -10715,7 +10715,7 @@ x 40
 y 25
 elevation 395
 end
-arch grass
+arch cobblestones
 x 40
 y 26
 elevation 101
@@ -10730,14 +10730,10 @@ x 40
 y 28
 elevation 1313
 end
-arch grass_only
+arch hills_rocky
 x 40
 y 29
 elevation 1593
-end
-arch evergreens2
-x 40
-y 29
 end
 arch grass_only
 x 40
@@ -10999,14 +10995,10 @@ x 41
 y 28
 elevation 1553
 end
-arch grass_only
+arch cobblestones
 x 41
 y 29
 elevation 1258
-end
-arch evergreens2
-x 41
-y 29
 end
 arch grass_only
 x 41
@@ -11250,7 +11242,7 @@ x 42
 y 26
 elevation 1884
 end
-arch cobblestones
+arch hills_rocky
 x 42
 y 27
 elevation 1838
@@ -11516,7 +11508,7 @@ x 43
 y 27
 elevation 2056
 end
-arch cobblestones
+arch hills_rocky
 x 43
 y 28
 elevation 1503

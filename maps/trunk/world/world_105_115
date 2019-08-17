@@ -9,7 +9,7 @@ enter_x 5
 enter_y 37
 msg
 Created:  2001-02-16
-Modified: 2019-08-16 Kevin Zheng
+Modified: 2019-08-17 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_105_114
@@ -13406,17 +13406,17 @@ x 35
 y 25
 elevation 585
 end
-arch brush
+arch cobblestones
 x 35
 y 26
 elevation 2993
 end
-arch brush
+arch cobblestones
 x 35
 y 27
 elevation 1318
 end
-arch jungle_1
+arch cobblestones
 x 35
 y 28
 elevation 1389
@@ -13677,22 +13677,22 @@ x 36
 y 24
 elevation 179
 end
-arch desert
+arch cobblestones
 x 36
 y 25
 elevation 1106
 end
-arch brush
+arch cobblestones
 x 36
 y 26
 elevation 2378
 end
-arch brush
+arch cobblestones
 x 36
 y 27
 elevation 1573
 end
-arch desert
+arch cobblestones
 x 36
 y 28
 elevation 2064
@@ -13951,15 +13951,15 @@ arch cobblestones
 x 37
 y 27
 end
-arch cobblestones
+arch brush
 x 37
 y 28
 end
-arch cobblestones
+arch brush
 x 37
 y 29
 end
-arch cobblestones
+arch brush
 x 37
 y 30
 end
@@ -14217,23 +14217,23 @@ arch cobblestones
 x 38
 y 25
 end
-arch cobblestones
+arch desert
 x 38
 y 26
 end
-arch cobblestones
+arch brush
 x 38
 y 27
 end
-arch cobblestones
+arch brush
 x 38
 y 28
 end
-arch cobblestones
+arch brush
 x 38
 y 29
 end
-arch cobblestones
+arch brush
 x 38
 y 30
 end
