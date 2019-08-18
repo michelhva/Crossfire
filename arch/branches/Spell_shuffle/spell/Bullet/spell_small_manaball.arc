@@ -22,6 +22,6 @@ invisible 1
 skill sorcery
 food 15
 msg
-Fires a ball of magical energy that explodes in a small burst of magical energy when it hits something.  Few creatures can resist magical attacks.
+Manaballs are tightly package bundles of seething magic power that can be thrown directly at enemies. Upon striking a hard surface, these balls explode out in a field of pure magic damage. This spell belongs to the path of transferrence.
 endmsg
 end

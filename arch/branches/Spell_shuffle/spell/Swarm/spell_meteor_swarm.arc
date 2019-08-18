@@ -18,7 +18,7 @@ maxsp 20
 no_drop 1
 invisible 1
 msg
-Inspired by the heavens and seeking to create even more havoc, master Pyromancers can link numerous comets together into a rain of fire know as a meteor swarm. The resulting damage transcends fire and trauma and in addition cause a type of harm equivocal to the most potent magical weapons.
+Inspired by the heavens and seeking to create ever more havoc, master pyromancers learnt to sequence numerous comets together into a rain of fire know as a meteor swarm. As with other comet spells each of these projectiles strikes with damage akin to the most potent magical weapons along with fire damage.
 endmsg
 weight 1250
 end

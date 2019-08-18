@@ -22,6 +22,6 @@ invisible 1
 skill pyromancy
 food 4
 msg
-By weaving a magical framework, intense heat can be contained resulting in a glowing 'fireball' which can literally be thrown. Novice Pyromancers delight in the modest fire storm that explodes where these fireballs land. Items caught in the blaze may be destroyed.
+By weaving a magical framework and injecting heat, pyromancers can create a glowing fireball that can literally be thrown. Novice pyromancers delight in the modest firestorm that explodes where these fireballs land. This is perfect for throwing down long corridors at unsuspecting enemies before quickly taking cover to allow the subsequent blaze to do its work. Items caught in the blaze may be destroyed.
 endmsg
 end

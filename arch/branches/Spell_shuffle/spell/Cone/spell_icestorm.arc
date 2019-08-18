@@ -22,6 +22,6 @@ no_drop 1
 invisible 1
 skill sorcery
 msg
-Fires a cone of ice that damages creatures caught inside it. The spell increases in power with the caster's sorcery level.  A side-effect of the storm is that items tend to become encased in blocks of ice.
+The power to rapidly channel heat out of an area is the mainstay of a sorcerer wishing to cause sudden damage to their foes. As the heat is channelled away, the rapidly cooling cone of ice quickly chills any creatures unlucky enough to be caught in its path. With practice, the power of these storms can be greatly enhanced. A side-effect of these frost spells is is that any objects lying in its path may become encased in ice.
 endmsg
 end

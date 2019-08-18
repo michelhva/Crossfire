@@ -15,5 +15,5 @@ level 5
 speed 0.5
 exp 250
 weight 20
-move_type fly_low
+move_type walk
 end

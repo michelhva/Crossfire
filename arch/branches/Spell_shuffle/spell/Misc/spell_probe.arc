@@ -7,7 +7,7 @@ level 1
 sp 3
 casting_time 2
 path_attuned 8192
-skill evocation
+skill sorcery
 type 101
 subtype 20
 value 10
@@ -16,6 +16,6 @@ invisible 1
 range 25
 range_modifier 5
 msg
-Gives the caster general information about a nearby enemy.  Reports the overall condition of a target and the chance of defeating it.
+Using their extensive knowledge in the manipulation of their opponents presents sorcerers with valuable insights into their strengths and weaknesses. With a little magic, sorcerers can readily gather information about nearby enemies such as their power and present condition and even particularly hazardous attack types.
 endmsg
 end
