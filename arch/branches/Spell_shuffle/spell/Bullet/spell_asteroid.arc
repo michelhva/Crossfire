@@ -23,6 +23,6 @@ invisible 1
 skill evocation
 food 10
 msg
-Fires an asteroid bullet that delivers a weaponmagic attack.
+Calling forth celestial powers is widely frowned upon but evoking asteroids is nothing less than black magic. The potential to create something powerful enough to threaten the existence of the world should never really be used, should it? how did you come into the posession of this knowledge anyway? The destructive power of the asteroid is simply terrifying and the impact upon striking yields heat that is comparable only to the most powerful magical devices.
 endmsg
 end

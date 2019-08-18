@@ -22,6 +22,6 @@ no_drop 1
 invisible 1
 skill sorcery
 msg
-Fires a cone of ice that damages creatures caught inside it. The spell increases in power with the caster's sorcery level.  A side-effect of the storm is that items tend to become encased in blocks of ice.
+By studying the most powerful forces of undeath, sorcerors learnt of ways to improve upon the icestorm. These large icestorms create vast freezing cones of ice that quickly chill and do horrific damage to creatures unlucky enough to be caught in its path. A side-effect of these frost spells is that any objects lying in its path may become encased in ice.
 endmsg
 end

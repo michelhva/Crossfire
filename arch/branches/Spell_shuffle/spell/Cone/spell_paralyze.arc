@@ -22,6 +22,6 @@ no_drop 1
 invisible 1
 skill sorcery
 msg
-Fires a cone-shaped spell that may paralyze creatures it hits.  Attacking a paralyzed target does not break the spell. 
+There is a thread that exists between the soul and body which provides the life (and unlife) force that compels the body to move. Sorcerors can not only perceive this link but briefly use their magic to temporarily sever it. While the body becomes completely immobile, the soul can still perceive the threat and those who have experienced this magic describe the sensation with utter horror. The link will naturally reconnect over time but there is little the victim can do until this happens, perhaps this is why charms that protect from its effects are so treasured?
 endmsg
 end

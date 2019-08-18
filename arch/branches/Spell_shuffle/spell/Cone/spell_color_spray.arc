@@ -22,6 +22,6 @@ no_drop 1
 invisible 1
 skill evocation
 msg
-It is written that legendary wizard Sarumatix was the first to take evocations skill of continentiam to a new, dangerous, level. A strange effect was found to occur when various minerals were evoked into ever tighter containment. If correctly performed the subsequent sudden discharge results in a chaotic spray of pure colours. While more damage can be potentially inflicted by more traditional spells, colour spray may be useful against enemies with unknown protections or to clear a variety of very powerful creatures. The spell is attuned to the path of transmutation.
+It is written that legendary wizard Sarumatix was the first to develop continentiam to a new, dangerous, level. Color spray demonstrates the strange effect where minerals can be worked into infinitesimal spaces and the subsequent powerful energy release directed by the evoker. While greater damage can be inflicted by more traditional spells, the chaotic spray of pure colours can be useful against enemies with unknown protections or to clear a variety of very powerful creatures. The spell is attuned to the path of transmutation.
 endmsg
 end

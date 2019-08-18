@@ -18,6 +18,6 @@ dam 2
 dam_modifier 10
 monster 1
 msg
-Create fog that moves randomly about in the vicinity of the caster.  It has no harmful effects, but can block visibility.
+A handy trick when making hasty retreat or simply to sneak, sorcerers can reduce the air temperature to summon a temporary harmless fog that lingers in the area and obscures vision.
 endmsg
 end

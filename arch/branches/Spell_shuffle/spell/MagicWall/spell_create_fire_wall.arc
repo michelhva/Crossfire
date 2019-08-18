@@ -24,6 +24,6 @@ range 2
 range_modifier 10
 move_block all
 msg
-Create a line of fire in front of the caster. Creatures crossing the line take fire damage. Casting the spell multiple times on the same area increases the damage the wall delivers.
+Like most magical walls, fire wall presents a unmoving defence for Pyromancers. Pyromancers must learn to project a magical framework where heat can be added. Although it can take some time to master, anything brave enough to attempt cross the line of fire will find the heat unbearable. Pyromancers can recast the spell to add additional energy making increasingly powerful walls of flame.
 endmsg
 end

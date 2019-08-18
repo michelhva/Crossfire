@@ -19,6 +19,6 @@ attacktype 1048576
 no_drop 1
 invisible 1
 msg
-Fires a bullet which does medium damage to a creature in its path.
+For some gods, great devotion can be used to summon vindictive force directly from their deity that can be carefully directed towards a foe. The nature of this damage is not from the realm of man and represents the force of gods. This prayer is attuned to the path of wounding.
 endmsg
 end

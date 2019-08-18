@@ -7,7 +7,7 @@ level 6
 sp 5
 casting_time 25
 path_attuned 16384
-skill sorcery
+skill summoning
 type 101
 subtype 30
 value 30

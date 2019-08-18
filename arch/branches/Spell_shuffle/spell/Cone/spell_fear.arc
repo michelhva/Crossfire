@@ -22,6 +22,6 @@ no_drop 1
 invisible 1
 skill sorcery
 msg
-Fires a cone of fear, possibly causing enemies within the cone to flee.
+By projecting terrifying visages, only the undead can resist their natural reaction to run from fear. The more powerful the sorcerer, and the weaker the mind of those caught, the further they are likely to run. This spell is attuned to the path of the mind.
 endmsg
 end

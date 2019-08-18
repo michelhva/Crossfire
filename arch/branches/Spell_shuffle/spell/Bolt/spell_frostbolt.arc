@@ -21,6 +21,6 @@ range 12
 no_drop 1
 invisible 1
 msg
-Fires a directed bolt of frost that does cold damage.
+By projecting tight vortex of magic that rapidly channels heat away, sorcerers can instantly freeze anything in its path delivering powerful cold and magical damage.
 endmsg
 end
