@@ -23,6 +23,6 @@ invisible 1
 skill summoning
 wc_increase_rate 2
 msg
-Golem summons a magical creature that does the caster's wishes.  The caster can have it attack other creatures, bash down doors, detonate runes, etc.  The golem has a finite lifetime, and this life is shortened any time it takes damage.  This golem is a bit more powerful than the lesser golem.
+Summoned from nothing but dust and debris, practice allows the summoner to shape golem into ever deadlier personal minions that deliver more powerful blows. Golems are somewhat ponderous at times and have a finite lifetime that is shortened any time they take damage.
 endmsg
 end
