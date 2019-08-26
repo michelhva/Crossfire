@@ -18,6 +18,6 @@ maxsp 20
 no_drop 1
 invisible 1
 msg
-Those who would resist Our will shall be spared no quarter for We shall grant you many wounds that you might rend the flesh from their bodies. With devotion, Sorig and Devourers love of wounding enables their followers to cast this prayer. This prayer is attuned to the path of wounding. 
+Those who would resist Our will shall be spared no quarter for We shall grant you many wounds that you might rend the flesh from their bodies. It is said that Sorig's love of wounding inspired the Devourers to share this prayer. This prayer is attuned to the path of wounding.
 endmsg
 end

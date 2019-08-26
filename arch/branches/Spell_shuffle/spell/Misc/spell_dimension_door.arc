@@ -17,10 +17,10 @@ subtype 13
 no_drop 1
 invisible 1
 msg
-A short-range teleportation spell that transports the character in the direction the spell is cast.
+Until Master Gwynfor the outcome of summoning oneself created a loop that resulted in the summoner being ripped apart. Being distracted, the master accidentally projected himself as the target during a summoning, however, he quickly repointed the summoning location to the otherside of the room. The other masters were amazed but quickly set about understanding how to replicate the effect, thus dimension door was conceived. Summoners soon became notoriously hard to catch even being able to teleport across areas that are impassable to other types of movement.
 
-Zones where magic is blocked defeat this spell, but it is possible to pass through areas that seem impassable to other movement types.  The spell also fails if it would cause the caster to land in the same space as a monster.
+The nature of the spell results in summoners only being able to dimension door in straight lines and cannot cross any magically protected areas. Wards are also built into the spell to prevent the practioner teleporting into a space that is already taken up by something else.
 
-Normally the spell will transport the character the maximum possible distance, but if the player specifies a count, the spell tries to transport the character the specified number of spaces.
+Normally the spell will transport the character the maximum possible distance, but summoners can specify the distance (dimension door 5) with the spell transporting the character the specified distance.
 endmsg
 end

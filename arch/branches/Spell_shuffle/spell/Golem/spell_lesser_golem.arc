@@ -25,6 +25,6 @@ invisible 1
 skill summoning
 wc_increase_rate 2
 msg
-Lesser golem summons a magical creature that does the caster's wishes.  The caster can have it attack other creatures, bash down doors, detonate runes, etc.  The golem has a finite lifetime, and this life is shortened any time it takes damage.
+The power to summon sentience into otherwise lifeless materials is the realm of the summoner. Whilst small in stature, lesser golem's relentless and mindless devotion to their creators allow summoners to participate in the frontline of combat, bash down doors, detonate runes, all from a distance. The golem has a finite lifetime, and this life is shortened any time it takes damage.
 endmsg
 end

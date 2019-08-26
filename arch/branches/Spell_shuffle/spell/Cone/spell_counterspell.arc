@@ -20,7 +20,7 @@ value 30
 attacktype 524288
 no_drop 1
 invisible 1
-skill summoning
+skill sorcery
 msg
 Sorcerer's love to undo other's hardwork and the abjuration known as counterspell beautifully demonstrates this by draining the energy directly out of any lesser spells that come into contact with this spell.
 endmsg

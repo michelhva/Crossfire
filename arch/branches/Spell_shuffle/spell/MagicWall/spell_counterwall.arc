@@ -9,7 +9,7 @@ attacktype 524288
 casting_time 14
 path_attuned 256
 other_arch counterspell
-skill summoning
+skill sorcery
 type 101
 subtype 15
 value 80
