@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2005-02-26
-Modified: 2013-07-22 Kevin Zheng
+Modified: 2019-08-17 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_123_122
@@ -700,15 +700,27 @@ x 2
 y 38
 elevation 190
 end
+arch dirtroad_2_2_2
+x 2
+y 38
+end
 arch grass
 x 2
 y 39
 elevation 141
 end
+arch dirtroad_2_1_1
+x 2
+y 39
+end
 arch grass
 x 2
 y 40
 elevation 322
+end
+arch dirtroad_1_2
+x 2
+y 40
 end
 arch steppe
 x 2
@@ -951,15 +963,23 @@ x 3
 y 36
 elevation 1766
 end
-arch woods
+arch grass
 x 3
 y 37
 elevation 1286
+end
+arch dirtroad_2_2_2
+x 3
+y 37
 end
 arch grass
 x 3
 y 38
 elevation 453
+end
+arch dirtroad_2_2_4
+x 3
+y 38
 end
 arch grass
 x 3
@@ -1232,10 +1252,14 @@ sp 7
 x 4
 y 36
 end
-arch woods_3
+arch grass
 x 4
 y 37
 elevation 2037
+end
+arch dirtroad_2_1_2
+x 4
+y 37
 end
 arch grass
 x 4
@@ -1493,20 +1517,36 @@ x 5
 y 36
 elevation 451
 end
-arch woods_3
+arch dirtroad_2_2_2
+x 5
+y 36
+end
+arch grass
 x 5
 y 37
 elevation 2049
 end
-arch woods_3
+arch dirtroad_3_4
+x 5
+y 37
+end
+arch grass
 x 5
 y 38
 elevation 2333
 end
-arch woods_3
+arch dirtroad_2_1_1
+x 5
+y 38
+end
+arch grass
 x 5
 y 39
 elevation 2469
+end
+arch dirtroad_1_2
+x 5
+y 39
 end
 arch hills
 x 5
@@ -1753,6 +1793,10 @@ arch grass
 x 6
 y 36
 elevation 401
+end
+arch dirtroad_1_3
+x 6
+y 36
 end
 arch hills
 x 6
