@@ -7,7 +7,7 @@ enter_x 9
 enter_y 19
 msg
 Created:  2005-07-19 Knut Ahlers
-Modified: 2013-11-24 SilverNexus
+Modified: 2019-08-31 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -2883,7 +2883,7 @@ arch marble
 x 16
 y 18
 end
-arch swall_1_2
+arch swall_2_1_1
 x 16
 y 18
 end
@@ -2899,6 +2899,10 @@ arch marble
 x 16
 y 19
 end
+arch swall_1_2_half
+x 16
+y 19
+end
 arch stwall_2_1_2
 x 16
 y 19
@@ -2913,6 +2917,9 @@ arch marble
 x 17
 end
 arch stwall_2_1_2
+x 17
+end
+arch swall_1_1_half
 x 17
 end
 arch marble
@@ -3126,7 +3133,7 @@ arch marble
 x 18
 y 16
 end
-arch swall_1_3
+arch swall_2_1_2
 x 18
 y 16
 end
@@ -3426,6 +3433,10 @@ x 19
 y 16
 end
 arch stwall_2_1_1
+x 19
+y 16
+end
+arch swall_1_3_half
 x 19
 y 16
 end
