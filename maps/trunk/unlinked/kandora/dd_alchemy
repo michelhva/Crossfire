@@ -6,7 +6,7 @@ enter_x 16
 enter_y 8
 msg
 Created:  1999-02-28 King Zoobus
-Modified: 2013-11-23 SilverNexus
+Modified: 2019-08-31 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -155,7 +155,7 @@ arch woodfloor
 x 1
 y 5
 end
-arch wall_2_1_2
+arch wall_1_3
 x 1
 y 5
 end
@@ -377,7 +377,7 @@ arch woodfloor
 x 3
 y 5
 end
-arch wall_2_1_2
+arch wall_1_4
 x 3
 y 5
 end
@@ -620,7 +620,7 @@ arch woodfloor
 x 5
 y 12
 end
-arch wall_2_1_1
+arch wall_1_2
 x 5
 y 12
 end
@@ -640,7 +640,7 @@ arch woodfloor
 x 5
 y 14
 end
-arch wall_2_1_1
+arch wall_1_1
 x 5
 y 14
 end
@@ -843,7 +843,7 @@ arch woodfloor
 x 7
 y 11
 end
-arch wall_2_1_2
+arch wall_1_3
 x 7
 y 11
 end
@@ -871,7 +871,7 @@ arch woodfloor
 x 7
 y 16
 end
-arch wall_2_1_2
+arch wall_1_3
 x 7
 y 16
 end
@@ -1073,7 +1073,7 @@ arch woodfloor
 x 9
 y 11
 end
-arch wall_2_1_2
+arch wall_1_4
 x 9
 y 11
 end
@@ -1101,7 +1101,7 @@ arch woodfloor
 x 9
 y 16
 end
-arch wall_2_1_2
+arch wall_1_4
 x 9
 y 16
 end
@@ -1119,7 +1119,7 @@ arch woodfloor
 x 10
 y 2
 end
-arch wall_2_1_2
+arch wall_1_4
 x 10
 y 2
 end
@@ -1220,7 +1220,7 @@ end
 arch woodfloor
 x 11
 end
-arch wall_3_3
+arch wall_2_1_2
 x 11
 end
 arch woodfloor
@@ -1235,7 +1235,7 @@ arch woodfloor
 x 11
 y 2
 end
-arch wall_3_4
+arch wall_2_2_3
 x 11
 y 2
 end
@@ -1267,7 +1267,7 @@ arch woodfloor
 x 11
 y 6
 end
-arch wall_2_1_1
+arch wall_1_2
 x 11
 y 6
 end
@@ -1283,7 +1283,7 @@ arch woodfloor
 x 11
 y 8
 end
-arch wall_2_1_1
+arch wall_0
 x 11
 y 8
 end
@@ -1299,7 +1299,7 @@ arch woodfloor
 x 11
 y 10
 end
-arch wall_2_1_1
+arch wall_1_1
 x 11
 y 10
 end
@@ -1323,7 +1323,7 @@ arch woodfloor
 x 11
 y 13
 end
-arch wall_2_1_1
+arch wall_1_2
 x 11
 y 13
 end
@@ -1339,7 +1339,7 @@ arch woodfloor
 x 11
 y 15
 end
-arch wall_2_1_1
+arch wall_1_1
 x 11
 y 15
 end
@@ -1515,7 +1515,7 @@ arch woodfloor
 x 13
 y 3
 end
-arch wall_2_2_3
+arch wall_1_3
 x 13
 y 3
 end
@@ -1533,7 +1533,7 @@ arch woodfloor
 x 13
 y 5
 end
-arch wall_3_1
+arch wall_2_1_2
 x 13
 y 5
 end
@@ -1899,7 +1899,7 @@ arch woodfloor
 x 16
 y 7
 end
-arch wall_2_1_1
+arch wall_1_2
 x 16
 y 7
 end
@@ -1918,7 +1918,7 @@ arch woodfloor
 x 16
 y 9
 end
-arch wall_2_1_1
+arch wall_1_1
 x 16
 y 9
 end
