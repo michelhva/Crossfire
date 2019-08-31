@@ -7,7 +7,7 @@ height 14
 enter_x 1
 msg
 Created:  1999-02-28 King Zoobus
-Modified: 2013-11-23 SilverNexus
+Modified: 2019-08-31 Rick Tanner
 endmsg
 end
 arch marble
@@ -334,7 +334,10 @@ end
 arch marble
 x 3
 end
-arch cwall_3_1
+arch wall_1_4
+x 3
+end
+arch cwall_2_2_4
 x 3
 end
 arch marble
@@ -947,7 +950,10 @@ end
 arch marble
 x 7
 end
-arch cwall_3_1
+arch wall_1_3
+x 7
+end
+arch cwall_2_2_1
 x 7
 end
 arch marble
