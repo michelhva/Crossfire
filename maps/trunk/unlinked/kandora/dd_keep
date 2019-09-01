@@ -6,7 +6,7 @@ enter_x 14
 enter_y 14
 msg
 Created:  1999-02-28 King Zoobus
-Modified: 2013-11-23 SilverNexus
+Modified: 2019-08-31 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -95,7 +95,7 @@ end
 arch flagstone
 y 13
 end
-arch flagstone_3_2
+arch flagstone_1_2
 y 13
 end
 arch flagstone
@@ -109,7 +109,7 @@ end
 arch flagstone
 y 15
 end
-arch flagstone_3_2
+arch flagstone_1_1
 y 15
 end
 arch flagstone
@@ -133,7 +133,7 @@ end
 arch flagstone
 y 19
 end
-arch flagstone_3_2
+arch flagstone_2_1_1
 y 19
 end
 arch flagstone
@@ -198,7 +198,7 @@ arch afloor_left
 x 1
 y 4
 end
-arch wall_2_1_1
+arch wall_1_2
 x 1
 y 4
 end
@@ -227,7 +227,7 @@ arch afloor_left
 x 1
 y 6
 end
-arch wall_3_1
+arch wall_2_1_2
 x 1
 y 6
 end
@@ -1495,6 +1495,10 @@ arch wall_2_1_2
 x 8
 y 1
 end
+arch flagstone_1_1
+x 8
+y 1
+end
 arch flagstone
 x 8
 y 2
@@ -1539,7 +1543,7 @@ arch flagstone
 x 8
 y 7
 end
-arch flagstone_3_3
+arch flagstone_3_1
 x 8
 y 7
 end
@@ -1560,7 +1564,7 @@ arch flagstone
 x 8
 y 9
 end
-arch flagstone_3_4
+arch flagstone_2_2_3
 x 8
 y 9
 end
@@ -1592,7 +1596,7 @@ arch flagstone
 x 8
 y 13
 end
-arch flagstone_3_1
+arch flagstone_2_2_4
 x 8
 y 13
 end
@@ -1675,7 +1679,7 @@ arch afloor_left
 x 9
 y 1
 end
-arch wall_2_2_4
+arch wall_1_3
 x 9
 y 1
 end
@@ -1827,7 +1831,7 @@ arch flagstone
 x 9
 y 19
 end
-arch flagstone_3_4
+arch flagstone_2_2_4
 x 9
 y 19
 end
@@ -1850,7 +1854,7 @@ end
 arch flagstone
 x 10
 end
-arch flagstone_3_3
+arch flagstone_2_2_2
 x 10
 end
 arch flagstone
@@ -1900,7 +1904,7 @@ arch flagstone
 x 10
 y 6
 end
-arch flagstone_3_1
+arch flagstone_3_2
 x 10
 y 6
 end
@@ -1908,7 +1912,7 @@ arch flagstone
 x 10
 y 7
 end
-arch flagstone_3_3
+arch flagstone_4
 x 10
 y 7
 end
@@ -1957,7 +1961,7 @@ arch flagstone
 x 10
 y 13
 end
-arch flagstone_3_1
+arch flagstone_2_2_1
 x 10
 y 13
 end
@@ -3215,7 +3219,7 @@ arch flagstone
 x 16
 y 7
 end
-arch flagstone_2_2_3
+arch flagstone_3_4
 x 16
 y 7
 end
