@@ -8,7 +8,7 @@ enter_x 6
 enter_y 17
 msg
 Created:  1996-05-29
-Modified: 2008-10-08 Rick Tanner
+Modified: 2019-09-09 Rick Tanner
 endmsg
 end
 arch blocked
@@ -109,7 +109,7 @@ end
 arch medium_stones
 y 20
 end
-arch rough_wall_1_1
+arch rough_wall_2_2_2
 y 20
 end
 arch medium_stones
@@ -313,7 +313,7 @@ arch medium_stones
 x 1
 y 20
 end
-arch rough_wall_2_2_1
+arch rough_wall_3_1
 x 1
 y 20
 end
@@ -2114,7 +2114,7 @@ arch medium_stones
 x 11
 y 15
 end
-arch rough_wall_3_4
+arch rough_wall_4
 x 11
 y 15
 end
@@ -2154,7 +2154,7 @@ arch medium_stones
 x 11
 y 20
 end
-arch rough_wall_2_2_4
+arch rough_wall_3_4
 x 11
 y 20
 end
@@ -2311,7 +2311,7 @@ arch dungeon_floor
 x 12
 y 15
 end
-arch rough_wall_1_4
+arch roughwall_1_3
 x 12
 y 15
 end
@@ -4138,14 +4138,9 @@ arch large_stones
 x 21
 y 25
 end
-arch igate_closed_1
-name wall
-face rough_5.111
+arch roughwall_1_2
 x 21
 y 25
-speed 0.500000
-speed_left -4.100000
-connected 1
 end
 arch large_stones
 x 21
@@ -5987,7 +5982,7 @@ arch large_stones
 x 30
 y 24
 end
-arch rough_wall_2_1_2
+arch rough_wall_3_3
 x 30
 y 24
 end
