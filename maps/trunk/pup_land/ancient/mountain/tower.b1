@@ -8,7 +8,7 @@ enter_x 4
 enter_y 4
 msg
 Created:  1996-06-01
-Modified: 2012-04-04 Rick Tanner
+Modified: 2019-09-09 Rick Tanner
 endmsg
 end
 arch blocked
@@ -898,7 +898,10 @@ end
 arch large_stones
 x 13
 end
-arch rough_wall_3_3
+arch rough_wall_2_1_2
+x 13
+end
+arch swall_1_1_half
 x 13
 end
 arch large_stones
@@ -998,7 +1001,11 @@ arch pstone_2
 x 13
 y 8
 end
-arch rough_wall_3_1
+arch swall_1_2_half
+x 13
+y 8
+end
+arch rough_wall_2_1_2
 x 13
 y 8
 end
