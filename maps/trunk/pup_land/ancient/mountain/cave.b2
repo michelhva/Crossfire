@@ -8,7 +8,7 @@ enter_x 1
 enter_y 7
 msg
 Created:  1996-05-30
-Modified: 2008-10-08 Rick Tanner
+Modified: 2019-09-09 Rick Tanner
 endmsg
 end
 arch blocked
@@ -145,7 +145,7 @@ end
 arch large_stones
 y 22
 end
-arch rough_wall_2_1_2
+arch rough_wall_3_1
 y 22
 end
 arch invis_exit
@@ -163,7 +163,7 @@ end
 arch large_stones
 y 24
 end
-arch rough_wall_2_1_2
+arch rough_wall_3_3
 y 24
 end
 arch dungeon_floor
@@ -1872,7 +1872,7 @@ arch large_stones
 x 10
 y 22
 end
-arch rough_wall_2_1_2
+arch rough_wall_3_1
 x 10
 y 22
 end
@@ -1891,7 +1891,7 @@ arch large_stones
 x 10
 y 24
 end
-arch rough_wall_2_1_2
+arch rough_wall_3_3
 x 10
 y 24
 end
@@ -2226,6 +2226,26 @@ y 15
 end
 arch blocked
 x 12
+y 16
+end
+arch blocked
+x 12
+y 17
+end
+arch blocked
+x 12
+y 18
+end
+arch blocked
+x 12
+y 19
+end
+arch blocked
+x 12
+y 20
+end
+arch blocked
+x 12
 y 21
 end
 arch large_stones
@@ -2398,6 +2418,26 @@ y 15
 end
 arch blocked
 x 13
+y 16
+end
+arch blocked
+x 13
+y 17
+end
+arch blocked
+x 13
+y 18
+end
+arch blocked
+x 13
+y 19
+end
+arch blocked
+x 13
+y 20
+end
+arch blocked
+x 13
 y 21
 end
 arch large_stones
@@ -2561,6 +2601,26 @@ end
 arch blocked
 x 14
 y 15
+end
+arch blocked
+x 14
+y 16
+end
+arch blocked
+x 14
+y 17
+end
+arch blocked
+x 14
+y 18
+end
+arch blocked
+x 14
+y 19
+end
+arch blocked
+x 14
+y 20
 end
 arch blocked
 x 14
@@ -2732,6 +2792,26 @@ end
 arch blocked
 x 15
 y 15
+end
+arch blocked
+x 15
+y 16
+end
+arch blocked
+x 15
+y 17
+end
+arch blocked
+x 15
+y 18
+end
+arch blocked
+x 15
+y 19
+end
+arch blocked
+x 15
+y 20
 end
 arch blocked
 x 15
@@ -2907,6 +2987,26 @@ y 15
 end
 arch blocked
 x 16
+y 16
+end
+arch blocked
+x 16
+y 17
+end
+arch blocked
+x 16
+y 18
+end
+arch blocked
+x 16
+y 19
+end
+arch blocked
+x 16
+y 20
+end
+arch blocked
+x 16
 y 21
 end
 arch large_stones
@@ -3074,6 +3174,30 @@ y 14
 end
 arch blocked
 x 17
+y 15
+end
+arch blocked
+x 17
+y 16
+end
+arch blocked
+x 17
+y 17
+end
+arch blocked
+x 17
+y 18
+end
+arch blocked
+x 17
+y 19
+end
+arch blocked
+x 17
+y 20
+end
+arch blocked
+x 17
 y 21
 end
 arch large_stones
@@ -3236,6 +3360,30 @@ y 14
 end
 arch blocked
 x 18
+y 15
+end
+arch blocked
+x 18
+y 16
+end
+arch blocked
+x 18
+y 17
+end
+arch blocked
+x 18
+y 18
+end
+arch blocked
+x 18
+y 19
+end
+arch blocked
+x 18
+y 20
+end
+arch blocked
+x 18
 y 21
 end
 arch large_stones
@@ -3390,6 +3538,34 @@ y 13
 end
 arch blocked
 x 19
+y 14
+end
+arch blocked
+x 19
+y 15
+end
+arch blocked
+x 19
+y 16
+end
+arch blocked
+x 19
+y 17
+end
+arch blocked
+x 19
+y 18
+end
+arch blocked
+x 19
+y 19
+end
+arch blocked
+x 19
+y 20
+end
+arch blocked
+x 19
 y 21
 end
 arch large_stones
@@ -3533,6 +3709,38 @@ end
 arch blocked
 x 20
 y 12
+end
+arch blocked
+x 20
+y 13
+end
+arch blocked
+x 20
+y 14
+end
+arch blocked
+x 20
+y 15
+end
+arch blocked
+x 20
+y 16
+end
+arch blocked
+x 20
+y 17
+end
+arch blocked
+x 20
+y 18
+end
+arch blocked
+x 20
+y 19
+end
+arch blocked
+x 20
+y 20
 end
 arch blocked
 x 20
@@ -3680,6 +3888,42 @@ end
 arch blocked
 x 21
 y 11
+end
+arch blocked
+x 21
+y 12
+end
+arch blocked
+x 21
+y 13
+end
+arch blocked
+x 21
+y 14
+end
+arch blocked
+x 21
+y 15
+end
+arch blocked
+x 21
+y 16
+end
+arch blocked
+x 21
+y 17
+end
+arch blocked
+x 21
+y 18
+end
+arch blocked
+x 21
+y 19
+end
+arch blocked
+x 21
+y 20
 end
 arch blocked
 x 21
@@ -3831,6 +4075,42 @@ end
 arch blocked
 x 22
 y 11
+end
+arch blocked
+x 22
+y 12
+end
+arch blocked
+x 22
+y 13
+end
+arch blocked
+x 22
+y 14
+end
+arch blocked
+x 22
+y 15
+end
+arch blocked
+x 22
+y 16
+end
+arch blocked
+x 22
+y 17
+end
+arch blocked
+x 22
+y 18
+end
+arch blocked
+x 22
+y 19
+end
+arch blocked
+x 22
+y 20
 end
 arch blocked
 x 22
@@ -3984,6 +4264,42 @@ y 11
 end
 arch blocked
 x 23
+y 12
+end
+arch blocked
+x 23
+y 13
+end
+arch blocked
+x 23
+y 14
+end
+arch blocked
+x 23
+y 15
+end
+arch blocked
+x 23
+y 16
+end
+arch blocked
+x 23
+y 17
+end
+arch blocked
+x 23
+y 18
+end
+arch blocked
+x 23
+y 19
+end
+arch blocked
+x 23
+y 20
+end
+arch blocked
+x 23
 y 21
 end
 arch large_stones
@@ -4156,6 +4472,42 @@ end
 arch blocked
 x 24
 y 11
+end
+arch blocked
+x 24
+y 12
+end
+arch blocked
+x 24
+y 13
+end
+arch blocked
+x 24
+y 14
+end
+arch blocked
+x 24
+y 15
+end
+arch blocked
+x 24
+y 16
+end
+arch blocked
+x 24
+y 17
+end
+arch blocked
+x 24
+y 18
+end
+arch blocked
+x 24
+y 19
+end
+arch blocked
+x 24
+y 20
 end
 arch blocked
 x 24
@@ -4311,6 +4663,42 @@ y 11
 end
 arch blocked
 x 25
+y 12
+end
+arch blocked
+x 25
+y 13
+end
+arch blocked
+x 25
+y 14
+end
+arch blocked
+x 25
+y 15
+end
+arch blocked
+x 25
+y 16
+end
+arch blocked
+x 25
+y 17
+end
+arch blocked
+x 25
+y 18
+end
+arch blocked
+x 25
+y 19
+end
+arch blocked
+x 25
+y 20
+end
+arch blocked
+x 25
 y 21
 end
 arch large_stones
@@ -4454,6 +4842,42 @@ y 11
 end
 arch blocked
 x 26
+y 12
+end
+arch blocked
+x 26
+y 13
+end
+arch blocked
+x 26
+y 14
+end
+arch blocked
+x 26
+y 15
+end
+arch blocked
+x 26
+y 16
+end
+arch blocked
+x 26
+y 17
+end
+arch blocked
+x 26
+y 18
+end
+arch blocked
+x 26
+y 19
+end
+arch blocked
+x 26
+y 20
+end
+arch blocked
+x 26
 y 21
 end
 arch large_stones
@@ -4593,6 +5017,46 @@ y 10
 end
 arch blocked
 x 27
+y 11
+end
+arch blocked
+x 27
+y 12
+end
+arch blocked
+x 27
+y 13
+end
+arch blocked
+x 27
+y 14
+end
+arch blocked
+x 27
+y 15
+end
+arch blocked
+x 27
+y 16
+end
+arch blocked
+x 27
+y 17
+end
+arch blocked
+x 27
+y 18
+end
+arch blocked
+x 27
+y 19
+end
+arch blocked
+x 27
+y 20
+end
+arch blocked
+x 27
 y 21
 end
 arch large_stones
@@ -4729,6 +5193,46 @@ end
 arch blocked
 x 28
 y 10
+end
+arch blocked
+x 28
+y 11
+end
+arch blocked
+x 28
+y 12
+end
+arch blocked
+x 28
+y 13
+end
+arch blocked
+x 28
+y 14
+end
+arch blocked
+x 28
+y 15
+end
+arch blocked
+x 28
+y 16
+end
+arch blocked
+x 28
+y 17
+end
+arch blocked
+x 28
+y 18
+end
+arch blocked
+x 28
+y 19
+end
+arch blocked
+x 28
+y 20
 end
 arch blocked
 x 28
@@ -4875,6 +5379,46 @@ y 10
 end
 arch blocked
 x 29
+y 11
+end
+arch blocked
+x 29
+y 12
+end
+arch blocked
+x 29
+y 13
+end
+arch blocked
+x 29
+y 14
+end
+arch blocked
+x 29
+y 15
+end
+arch blocked
+x 29
+y 16
+end
+arch blocked
+x 29
+y 17
+end
+arch blocked
+x 29
+y 18
+end
+arch blocked
+x 29
+y 19
+end
+arch blocked
+x 29
+y 20
+end
+arch blocked
+x 29
 y 21
 end
 arch large_stones
@@ -5015,6 +5559,46 @@ end
 arch blocked
 x 30
 y 10
+end
+arch blocked
+x 30
+y 11
+end
+arch blocked
+x 30
+y 12
+end
+arch blocked
+x 30
+y 13
+end
+arch blocked
+x 30
+y 14
+end
+arch blocked
+x 30
+y 15
+end
+arch blocked
+x 30
+y 16
+end
+arch blocked
+x 30
+y 17
+end
+arch blocked
+x 30
+y 18
+end
+arch blocked
+x 30
+y 19
+end
+arch blocked
+x 30
+y 20
 end
 arch blocked
 x 30
@@ -5185,6 +5769,42 @@ y 10
 end
 arch blocked
 x 31
+y 11
+end
+arch blocked
+x 31
+y 12
+end
+arch blocked
+x 31
+y 13
+end
+arch blocked
+x 31
+y 14
+end
+arch blocked
+x 31
+y 15
+end
+arch blocked
+x 31
+y 16
+end
+arch blocked
+x 31
+y 17
+end
+arch blocked
+x 31
+y 18
+end
+arch blocked
+x 31
+y 19
+end
+arch blocked
+x 31
 y 20
 end
 arch blocked
@@ -5214,7 +5834,7 @@ arch large_stones
 x 31
 y 24
 end
-arch rough_wall_2_1_2
+arch rough_wall_3_3
 x 31
 y 24
 end
