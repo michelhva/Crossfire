@@ -9,7 +9,7 @@ enter_x 7
 enter_y 14
 msg
 Created:  1996-05-21
-Modified: 2012-04-04 Rick Tanner
+Modified: 2019-09-13 Rick Tanner
 endmsg
 end
 arch grass
@@ -224,7 +224,11 @@ arch dungeon_magic
 x 3
 y 4
 end
-arch wwall_3_2
+arch swall_1_4_half
+x 3
+y 4
+end
+arch wwall_2_1_1
 x 3
 y 4
 end
@@ -248,7 +252,11 @@ arch afloor_right
 x 3
 y 7
 end
-arch wwall_3_2
+arch swall_1_4_half
+x 3
+y 7
+end
+arch wwall_2_1_1
 x 3
 y 7
 end
@@ -994,7 +1002,11 @@ arch dungeon_magic
 x 11
 y 4
 end
-arch wwall_3_4
+arch wwall_2_1_1
+x 11
+y 4
+end
+arch swall_1_3_half
 x 11
 y 4
 end
@@ -1018,7 +1030,11 @@ arch afloor_right
 x 11
 y 7
 end
-arch wwall_3_4
+arch wwall_2_1_1
+x 11
+y 7
+end
+arch swall_1_3_half
 x 11
 y 7
 end
