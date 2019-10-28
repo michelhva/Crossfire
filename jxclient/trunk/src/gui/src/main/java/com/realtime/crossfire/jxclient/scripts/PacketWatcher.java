@@ -23,7 +23,7 @@ package com.realtime.crossfire.jxclient.scripts;
 
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.server.ReceivedPacketListener;
-import java.nio.ByteBuffer;
+import com.realtime.crossfire.jxclient.server.socket.ClientSocketMonitorCommand;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.regex.Pattern;
@@ -70,102 +70,15 @@ public class PacketWatcher {
     private final ReceivedPacketListener receivedPacketListener = new ReceivedPacketListener() {
 
         @Override
-        public void processEmpty(@NotNull final String command) {
+        public void process(@NotNull final String command, @NotNull final ClientSocketMonitorCommand args) {
             if (matchesCommand(command)) {
-                scriptProcess.commandSent("watch "+command);
-            }
-        }
-
-        @Override
-        public void processAscii(@NotNull final String command, @NotNull final ByteBuffer packet) {
-            if (matchesCommand(command)) {
-                final byte[] data = new byte[packet.remaining()];
-                packet.get(data);
-                scriptProcess.commandSent("watch "+command+" "+new String(data)); // XXX: uses default encoding
-            }
-        }
-
-        @Override
-        public void processShortArray(@NotNull final String command, @NotNull final ByteBuffer packet) {
-            if (matchesCommand(command)) {
-                final StringBuilder sb = new StringBuilder("watch ");
-                sb.append(command);
-                for (int i = 0; i < 100 && packet.remaining() >= 2; i++) {
-                    sb.append(' ');
-                    sb.append(getShort(packet));
+                final String args2 = args.getMonitorCommand();
+                if (args2.isEmpty()) {
+                    scriptProcess.commandSent("watch "+command);
+                } else {
+                    scriptProcess.commandSent("watch "+command+" "+args2);
                 }
-                scriptProcess.commandSent(sb.toString());
             }
-        }
-
-        @Override
-        public void processIntArray(@NotNull final String command, @NotNull final ByteBuffer packet) {
-            if (matchesCommand(command)) {
-                final StringBuilder sb = new StringBuilder("watch ");
-                sb.append(command);
-                while (packet.remaining() >= 4) {
-                    sb.append(' ');
-                    sb.append(getInt(packet));
-                }
-                scriptProcess.commandSent(sb.toString());
-            }
-        }
-
-        @Override
-        public void processShortInt(@NotNull final String command, @NotNull final ByteBuffer packet) {
-            if (packet.remaining() == 6 && matchesCommand(command)) {
-                scriptProcess.commandSent("watch "+command+" "+getShort(packet)+" "+getInt(packet));
-            }
-        }
-
-        @Override
-        public void processMixed(@NotNull final String command, @NotNull final ByteBuffer packet) {
-            if (matchesCommand(command)) {
-                //noinspection StringBufferReplaceableByString
-                final StringBuilder sb = new StringBuilder("watch ");
-                sb.append(command);
-                sb.append(' ');
-                sb.append(packet.remaining());
-                scriptProcess.commandSent(sb.toString());
-            }
-        }
-
-        @Override
-        public void processStats(@NotNull final String command, final int stat, @NotNull final Object[] args) {
-            if (matchesCommand(command)) {
-                final StringBuilder sb = new StringBuilder("watch ");
-                sb.append(command);
-                sb.append(' ');
-                sb.append(StatUtils.getStatNames(stat));
-                for (Object arg : args) {
-                    sb.append(' ');
-                    sb.append(arg);
-                }
-                scriptProcess.commandSent(sb.toString());
-            }
-        }
-
-        @Override
-        public void processNoData(@NotNull final String command, @NotNull final ByteBuffer packet) {
-            processMixed(command, packet);
-        }
-
-        /**
-         * Extracts a two-byte integer value from a {@code byte} array.
-         * @param packet the {@code byte} array
-         * @return the integer value
-         */
-        private int getShort(@NotNull final ByteBuffer packet) {
-            return packet.getShort()&0xFFFF;
-        }
-
-        /**
-         * Extracts a four-byte integer value from a {@code byte} array.
-         * @param packet the {@code byte} array
-         * @return the integer value
-         */
-        private int getInt(@NotNull final ByteBuffer packet) {
-            return packet.getInt();
         }
 
     };

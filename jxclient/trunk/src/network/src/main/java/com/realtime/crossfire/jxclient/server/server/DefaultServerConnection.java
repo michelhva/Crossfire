@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.server.server;
 import com.realtime.crossfire.jxclient.server.crossfire.Model;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocket;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketListener;
+import com.realtime.crossfire.jxclient.server.socket.ClientSocketMonitorCommand;
 import com.realtime.crossfire.jxclient.util.DebugWriter;
 import java.io.IOException;
 import org.jetbrains.annotations.NotNull;
@@ -85,9 +86,10 @@ public class DefaultServerConnection implements ServerConnection {
      * but only actual payload data
      * @param length the length of {@code packet}; if the array is larger,
      * excess data is ignored
+     * @param monitor the monitor command to send to script processes
      */
-    public void writePacket(@NotNull final byte[] packet, final int length) {
-        clientSocket.writePacket(packet, length);
+    public void writePacket(@NotNull final byte[] packet, final int length, @NotNull final ClientSocketMonitorCommand monitor) {
+        clientSocket.writePacket(packet, length, monitor);
     }
 
     @Override

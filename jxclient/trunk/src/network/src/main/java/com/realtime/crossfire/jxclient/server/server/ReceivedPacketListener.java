@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.server.server;
 
-import java.nio.ByteBuffer;
+import com.realtime.crossfire.jxclient.server.socket.ClientSocketMonitorCommand;
 import java.util.EventListener;
 import org.jetbrains.annotations.NotNull;
 
@@ -32,60 +32,10 @@ import org.jetbrains.annotations.NotNull;
 public interface ReceivedPacketListener extends EventListener {
 
     /**
-     * A packet having no parameters has been received.
+     * A packet has been received.
      * @param command the command string
+     * @param args the command arguments
      */
-    void processEmpty(@NotNull final String command);
-
-    /**
-     * A packet having ascii parameters has been received.
-     * @param command the command string
-     * @param packet the buffer holding the packet
-     */
-    void processAscii(@NotNull String command, @NotNull ByteBuffer packet);
-
-    /**
-     * A packet having an array of short integer parameters has been received.
-     * @param command the command string
-     * @param packet the buffer holding the packet
-     */
-    void processShortArray(@NotNull String command, @NotNull ByteBuffer packet);
-
-    /**
-     * A packet having an array of int parameters has been received.
-     * @param command the command string
-     * @param packet the buffer holding the packet
-     */
-    void processIntArray(@NotNull String command, @NotNull ByteBuffer packet);
-
-    /**
-     * A packet having a short and an int parameter has been received.
-     * @param command the command string
-     * @param packet the buffer holding the packet
-     */
-    void processShortInt(@NotNull String command, @NotNull ByteBuffer packet);
-
-    /**
-     * A packet having mixed parameters has been received.
-     * @param command the command string
-     * @param packet the buffer holding the packet
-     */
-    void processMixed(@NotNull String command, @NotNull ByteBuffer packet);
-
-    /**
-     * A stats packet has been received.
-     * @param command the command string
-     * @param stat the stat value
-     * @param args the stat arguments depending on {@code type} and {@code
-     * stat}
-     */
-    void processStats(@NotNull String command, int stat, @NotNull Object[] args);
-
-    /**
-     * A packet having unknown parameters has been received.
-     * @param command the command string
-     * @param packet the buffer holding the packet
-     */
-    void processNoData(@NotNull String command, @NotNull ByteBuffer packet);
+    void process(@NotNull final String command, @NotNull final ClientSocketMonitorCommand args);
 
 }
