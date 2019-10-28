@@ -594,8 +594,9 @@ public class ClientSocket {
      * closed. In this case he packet is discarded.
      * @param buf the packet to send
      * @param len the number of bytes to send
+     * @param monitor the monitor command to send to script processes
      */
-    public void writePacket(@NotNull final byte[] buf, final int len) {
+    public void writePacket(@NotNull final byte[] buf, final int len, @NotNull final ClientSocketMonitorCommand monitor) {
         synchronized (syncOutput) {
             if (socketChannel == null) {
                 return;
@@ -623,7 +624,7 @@ public class ClientSocket {
 
         selector.wakeup();
         for (ClientSocketListener clientSocketListener : clientSocketListeners) {
-            clientSocketListener.packetSent(buf, len);
+            clientSocketListener.packetSent(monitor);
         }
     }
 

@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.guistate.GuiState;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.server.server.ServerConnection;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketListener;
+import com.realtime.crossfire.jxclient.server.socket.ClientSocketMonitorCommand;
 import com.realtime.crossfire.jxclient.window.GuiManager;
 import com.realtime.crossfire.jxclient.window.KeyHandlerListener;
 import java.nio.ByteBuffer;
@@ -90,7 +91,7 @@ public class DefaultKeyHandler implements KeyHandlerListener {
         }
 
         @Override
-        public void packetSent(@NotNull final byte[] buf, final int len) {
+        public void packetSent(@NotNull final ClientSocketMonitorCommand monitor) {
             // ignore
         }
 

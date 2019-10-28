@@ -33,6 +33,7 @@ import com.realtime.crossfire.jxclient.protocol.MessageTypes;
 import com.realtime.crossfire.jxclient.protocol.UpdItem;
 import com.realtime.crossfire.jxclient.server.server.DefaultServerConnection;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketListener;
+import com.realtime.crossfire.jxclient.server.socket.ClientSocketMonitorCommand;
 import com.realtime.crossfire.jxclient.server.socket.UnknownCommandException;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.stats.Stats;
@@ -422,7 +423,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
 
         @Override
-        public void packetSent(@NotNull final byte[] buf, final int len) {
+        public void packetSent(@NotNull final ClientSocketMonitorCommand monitor) {
             // ignore
         }
 
@@ -612,7 +613,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                             if (packet.hasRemaining()) {
                                 break;
                             }
-                            processAddmeFailed(packet);
+                            processAddmeFailed();
                             return;
 
                         case 's':
@@ -637,7 +638,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                             if (packet.hasRemaining()) {
                                 break;
                             }
-                            processAddmeSuccess(packet);
+                            processAddmeSuccess();
                             return;
                         }
                         break;
@@ -1403,7 +1404,14 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         }
 
         ((Buffer)packet).position(0);
-        final String command = extractCommand(packet);
+        int cmdLen;
+        for (cmdLen = 0; cmdLen < packet.limit(); cmdLen++) {
+            final byte ch = packet.get(cmdLen);
+            if ((ch&0xFF) <= 0x20 || (ch&0xFF) >= 0x80) {
+                break;
+            }
+        }
+        final String command = newString(packet, 0, cmdLen);
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("recv invalid command: "+command+"\n"+hexDump(packet));
         }
@@ -1424,7 +1432,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                 break;
             }
 
-            final int len = (lenType>>5)&7;
+            final int len = (lenType >> 5)&7;
             final int type = lenType&31;
             switch (type) {
             case Map2.COORD_CLEAR_SPACE:
@@ -1510,9 +1518,9 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             fireMapFace(location, face);
         } else {
             if (debugProtocol != null) {
-                debugProtocol.debugProtocolWrite("recv map2 "+location+" anim="+(face&Map2.ANIM_MASK)+" type="+((face>>Map2.ANIM_TYPE_SHIFT)&Map2.ANIM_TYPE_MASK));
+                debugProtocol.debugProtocolWrite("recv map2 "+location+" anim="+(face&Map2.ANIM_MASK)+" type="+((face >> Map2.ANIM_TYPE_SHIFT)&Map2.ANIM_TYPE_MASK));
             }
-            fireMapAnimation(location, face&Map2.ANIM_MASK, (face>>Map2.ANIM_TYPE_SHIFT)&Map2.ANIM_TYPE_MASK);
+            fireMapAnimation(location, face&Map2.ANIM_MASK, (face >> Map2.ANIM_TYPE_SHIFT)&Map2.ANIM_TYPE_MASK);
         }
         if (len == 3) {
             cmdMap2CoordinateLayer3(packet, location, face);
@@ -2228,8 +2236,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @throws UnknownCommandException if the packet is invalid
      */
     private void processAccountPlayers(@NotNull final ByteBuffer packet) throws UnknownCommandException {
-        final int args = packet.position();
-
         if (accountName == null) {
             throw new UnknownCommandException("accountplayers without account");
         }
@@ -2251,8 +2257,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
 
         fireEndAccountList(total);
 
-        ((Buffer)packet).reset();
-        notifyPacketWatcherListenersMixed(packet, args);
+        notifyPacketWatcherListeners("accountplayers", () -> "");
     }
 
     /**
@@ -2323,25 +2328,21 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
 
     /**
      * Processes an 'addme_failed' server command.
-     * @param packet the packet's payload
      */
-    private void processAddmeFailed(@NotNull final ByteBuffer packet) {
-        final int args = packet.position();
+    private void processAddmeFailed() {
         if (debugProtocol != null) {
-            debugProtocol.debugProtocolWrite("recv addme_failed args="+args);
+            debugProtocol.debugProtocolWrite("recv addme_failed");
         }
         // XXX: addme_failed command not implemented
-        notifyPacketWatcherListenersNoData(packet, args);
+        notifyPacketWatcherListeners("addme_failed", () -> "");
     }
 
     /**
      * Processes an 'addme_success' server command.
-     * @param packet the packet's payload
      */
-    private void processAddmeSuccess(@NotNull final ByteBuffer packet) {
-        final int args = packet.position();
+    private void processAddmeSuccess() {
         if (debugProtocol != null) {
-            debugProtocol.debugProtocolWrite("recv addme_success args="+args);
+            debugProtocol.debugProtocolWrite("recv addme_success");
         }
         if (clientSocketState != ClientSocketState.CONNECTED) {
             if (clientSocketState == ClientSocketState.ADDME) {
@@ -2354,7 +2355,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             negotiateMapSize(preferredMapWidth, preferredMapHeight);
         }
 
-        notifyPacketWatcherListenersNoData(packet, args);
+        notifyPacketWatcherListeners("addme_success", () -> "");
     }
 
     /**
@@ -2362,7 +2363,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @param packet the packet's payload
      */
     private void processAddQuest(@NotNull final ByteBuffer packet) {
-        final int args = packet.position();
         while (packet.hasRemaining()) {
             final int code = getInt4(packet);
             final int titleLength = getInt2(packet);
@@ -2378,7 +2378,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             }
             model.getQuestsManager().addQuest(code, title, face, replay == 1, parent, end == 1, step);
         }
-        notifyPacketWatcherListenersMixed(packet, args);
+        notifyPacketWatcherListeners("addquest", () -> "");
     }
 
     /**
@@ -2386,7 +2386,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @param packet the packet to process
      */
     private void processAddKnowledge(@NotNull final ByteBuffer packet) {
-        final int args = packet.position();
         while (packet.hasRemaining()) {
             final int code = getInt4(packet);
             final int typeLength = getInt2(packet);
@@ -2399,7 +2398,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             }
             model.getKnowledgeManager().addKnowledge(code, type, title, face);
         }
-        notifyPacketWatcherListenersMixed(packet, args);
+        notifyPacketWatcherListeners("addknowledge", () -> "");
     }
 
     /**
@@ -2407,7 +2406,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @param packet the packet's payload
      */
     private void processAddSpell(@NotNull final ByteBuffer packet) {
-        final int args = packet.position();
         while (packet.hasRemaining()) {
             final int tag = getInt4(packet);
             final int level = getInt2(packet);
@@ -2427,7 +2425,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             }
             model.getSpellsManager().addSpell(tag, level, castingTime, mana, grace, damage, skill, path, face, name, message);
         }
-        notifyPacketWatcherListenersMixed(packet, args);
+        notifyPacketWatcherListeners("addspell", () -> "");
     }
 
     /**
@@ -2436,7 +2434,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @throws UnknownCommandException if the packet is invalid
      */
     private void processAnim(@NotNull final ByteBuffer packet) throws UnknownCommandException {
-        final int args = packet.position();
         final int num = getInt2(packet);
         final int flags = getInt2(packet);
         final int[] faces = new int[packet.remaining()/2];
@@ -2454,7 +2451,17 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             throw new UnknownCommandException("invalid animation id "+num);
         }
         fireAddAnimation(num&0x1FFF, flags, faces);
-        notifyPacketWatcherListenersShortArray(packet, args);
+        notifyPacketWatcherListeners("anim", () -> {
+            final StringBuilder sb = new StringBuilder();
+            sb.append(num);
+            sb.append(' ');
+            sb.append(flags);
+            for (final int face : faces) {
+                sb.append(' ');
+                sb.append(face);
+            }
+            return sb.toString();
+        });
     }
 
     /**
@@ -2463,7 +2470,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @throws UnknownCommandException if the packet is invalid
      */
     private void processComc(@NotNull final ByteBuffer packet) throws UnknownCommandException {
-        final int args = packet.position();
         final int packetNo = getInt2(packet);
         final int time = getInt4(packet);
         if (packet.hasRemaining()) {
@@ -2473,7 +2479,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("recv comc no="+packetNo+" time="+time);
         }
         fireCommandComcReceived(packetNo, time);
-        notifyPacketWatcherListenersShortInt(packet, args);
+        notifyPacketWatcherListeners("comc", () -> packetNo+" "+time);
     }
 
     /**
@@ -2482,7 +2488,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @throws UnknownCommandException if the packet is invalid
      */
     private void processDelInv(@NotNull final ByteBuffer packet) throws UnknownCommandException {
-        final int args = packet.position();
         int tag = 0;
         do {
             tag = tag*10+parseDigit(packet.get());
@@ -2494,7 +2499,8 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("recv delinv tag="+tag);
         }
         fireDelinvReceived(tag);
-        notifyPacketWatcherListenersAscii(packet, args);
+        final int tag0 = tag;
+        notifyPacketWatcherListeners("delinv", () -> Integer.toString(tag0));
     }
 
     /**
@@ -2503,7 +2509,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @throws UnknownCommandException if the packet is invalid
      */
     private void processDelItem(@NotNull final ByteBuffer packet) throws UnknownCommandException {
-        final int args = packet.position();
         final int[] tags = new int[packet.remaining()/4];
         Arrays.setAll(tags, i -> getInt4(packet));
         if (packet.hasRemaining()) {
@@ -2513,7 +2518,14 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("recv delitem tags="+Arrays.toString(tags));
         }
         fireDelitemReceived(tags);
-        notifyPacketWatcherListenersIntArray(packet, args);
+        notifyPacketWatcherListeners("delitem", () -> {
+            final StringBuilder sb = new StringBuilder();
+            for (final int tag : tags) {
+                sb.append(' ');
+                sb.append(tag);
+            }
+            return sb.length() == 0 ? "" : sb.substring(1);
+        });
     }
 
     /**
@@ -2522,7 +2534,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @throws UnknownCommandException if the packet is invalid
      */
     private void processDelSpell(@NotNull final ByteBuffer packet) throws UnknownCommandException {
-        final int args = packet.position();
         final int tag = getInt4(packet);
         if (packet.hasRemaining()) {
             throw new UnknownCommandException("excess data at end of delspell command");
@@ -2531,7 +2542,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("recv delspell tag="+tag);
         }
         model.getSpellsManager().deleteSpell(tag);
-        notifyPacketWatcherListenersIntArray(packet, args);
+        notifyPacketWatcherListeners("delspell", () -> Integer.toString(tag));
     }
 
     /**
@@ -2540,7 +2551,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @throws UnknownCommandException if the packet is invalid
      */
     private void processDrawExtInfo(@NotNull final ByteBuffer packet) throws UnknownCommandException {
-        final int args = packet.position();
         int color = 0;
         do {
             color = color*10+parseDigit(packet.get());
@@ -2564,7 +2574,9 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("recv drawextinfo color="+color+" type="+type+"/"+subtype+" msg="+message);
         }
         drawextinfo(color, type, subtype, message);
-        notifyPacketWatcherListenersAscii(packet, args);
+        final int color0 = color;
+        final int type0 = type;
+        notifyPacketWatcherListeners("drawextinfo", () -> color0+" "+type0+" "+message);
     }
 
     /**
@@ -2573,7 +2585,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @throws UnknownCommandException if the packet is invalid
      */
     private void processDrawInfo(@NotNull final ByteBuffer packet) throws UnknownCommandException {
-        final int args = packet.position();
         int color = 0;
         do {
             color = color*10+parseDigit(packet.get());
@@ -2585,7 +2596,8 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("recv drawinfo color="+color+" msg="+message);
         }
         drawInfo(message, color);
-        notifyPacketWatcherListenersAscii(packet, args);
+        final int color0 = color;
+        notifyPacketWatcherListeners("drawinfo", () -> color0+" "+message);
     }
 
     /**
@@ -2593,7 +2605,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @param packet the packet's payload
      */
     private void processExtendedInfoSet(@NotNull final ByteBuffer packet) {
-        final int args = packet.position();
         do {
             final int startPos = packet.position();
             while (packet.hasRemaining() && packet.get(packet.position()) != ' ') {
@@ -2606,7 +2617,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             }
             // XXX: ExtendedInfoSet command not implemented
         } while (packet.hasRemaining());
-        notifyPacketWatcherListenersNoData(packet, args);
+        notifyPacketWatcherListeners("ExtendedInfoSet", () -> "");
     }
 
     /**
@@ -2614,7 +2625,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @param packet the packet's payload
      */
     private void processExtendedTextSet(@NotNull final ByteBuffer packet) {
-        final int args = packet.position();
         while (true) {
             final int startPos = packet.position();
             while (packet.hasRemaining() && packet.get(packet.position()) != ' ') {
@@ -2630,7 +2640,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             }
             packet.get();
         }
-        notifyPacketWatcherListenersNoData(packet, args);
+        notifyPacketWatcherListeners("ExtendedTextSet", () -> "");
     }
 
     /**
@@ -2638,7 +2648,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @param packet the packet's payload
      */
     private void processFace2(@NotNull final ByteBuffer packet) {
-        final int args = packet.position();
         final int faceNum = getInt2(packet);
         final int faceSetNum = getInt1(packet);
         final int faceChecksum = getInt4(packet);
@@ -2647,7 +2656,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("recv face2 num="+faceNum+" set="+faceSetNum+" checksum="+faceChecksum+" name="+faceName);
         }
         fireFaceReceived(faceNum, faceSetNum, faceChecksum, faceName);
-        notifyPacketWatcherListenersMixed(packet, args);
+        notifyPacketWatcherListeners("face2", () -> faceNum+" "+faceSetNum+" "+faceChecksum+" "+faceName);
     }
 
     /**
@@ -2678,7 +2687,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @throws UnknownCommandException if the packet is invalid
      */
     private void processGoodbye(@NotNull final ByteBuffer packet) throws UnknownCommandException {
-        final int args = packet.position();
         if (packet.hasRemaining()) {
             throw new UnknownCommandException("excess data at end of goodbye command");
         }
@@ -2686,7 +2694,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("recv goodbye");
         }
         // XXX: goodbye command not implemented
-        notifyPacketWatcherListenersNoData(packet, args);
+        notifyPacketWatcherListeners("goodbye", () -> "");
     }
 
     /**
@@ -2695,7 +2703,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @throws UnknownCommandException if the packet is invalid
      */
     private void processImage2(@NotNull final ByteBuffer packet) throws UnknownCommandException {
-        final int args = packet.position();
         final int faceNum = getInt4(packet);
         final int faceSetNum = getInt1(packet);
         final int len = getInt4(packet);
@@ -2710,7 +2717,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         for (AskfaceFaceQueueListener listener : askfaceFaceQueueListeners) {
             listener.faceReceived(faceNum, faceSetNum, packet);
         }
-        notifyPacketWatcherListenersMixed(packet, args);
+        notifyPacketWatcherListeners("image2", () -> faceNum+" "+faceSetNum);
     }
 
     /**
@@ -2719,7 +2726,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @throws UnknownCommandException if the packet is invalid
      */
     private void processItem2(@NotNull final ByteBuffer packet) throws UnknownCommandException {
-        final int args = packet.position();
         final int location = getInt4(packet);
         while (packet.hasRemaining()) {
             final int tag = getInt4(packet);
@@ -2742,7 +2748,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         if (packet.hasRemaining()) {
             throw new UnknownCommandException("excess data at end of item2 command");
         }
-        notifyPacketWatcherListenersMixed(packet, args);
+        notifyPacketWatcherListeners("item2", () -> "");
     }
 
     /**
@@ -2751,8 +2757,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @throws UnknownCommandException if the packet is invalid
      */
     private void processMagicMap(@NotNull final ByteBuffer packet) throws UnknownCommandException {
-        final int args = packet.position();
-
         final boolean widthSign = packet.get(packet.position()) == '-';
         if (widthSign) {
             packet.get();
@@ -2817,7 +2821,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             packet.get(data[y]);
         }
         fireMagicMap(-px+(currentMapWidth-1)/2, -py+(currentMapHeight-1)/2, data);
-        notifyPacketWatcherListenersMixed(packet, args);
+        notifyPacketWatcherListeners("magicmap", () -> "");
     }
 
     /**
@@ -2826,7 +2830,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @throws UnknownCommandException if the packet is invalid
      */
     private void processMap2(@NotNull final ByteBuffer packet) throws UnknownCommandException {
-        final int args = packet.position();
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("recv map2 begin");
         }
@@ -2834,8 +2837,8 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             synchronized (crossfireUpdateMapListener.mapBegin()) {
                 while (packet.hasRemaining()) {
                     final int coord = getInt2(packet);
-                    final int x = ((coord>>10)&0x3F)-Map2.COORD_OFFSET;
-                    final int y = ((coord>>4)&0x3F)-Map2.COORD_OFFSET;
+                    final int x = ((coord >> 10)&0x3F)-Map2.COORD_OFFSET;
+                    final int y = ((coord >> 4)&0x3F)-Map2.COORD_OFFSET;
                     final int coordType = coord&0xF;
 
                     switch (coordType) {
@@ -2865,7 +2868,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("recv map2 end");
         }
-        notifyPacketWatcherListenersShortArray(packet, args);
+        notifyPacketWatcherListeners("map2", () -> "");
     }
 
     /**
@@ -2873,12 +2876,11 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @param packet the packet's payload
      */
     private void processMapExtended(@NotNull final ByteBuffer packet) {
-        final int args = packet.position();
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("recv mapextended");
         }
         // XXX: "MapExtended" command not yet implemented
-        notifyPacketWatcherListenersMixed(packet, args);
+        notifyPacketWatcherListeners("mapextended", () -> "");
     }
 
     /**
@@ -2886,13 +2888,12 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @param packet the packet's payload
      */
     private void processMusic(@NotNull final ByteBuffer packet) {
-        final int args = packet.position();
         final String music = getString(packet, packet.remaining());
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("recv music "+music);
         }
         fireMusicReceived(music);
-        notifyPacketWatcherListenersAscii(packet, args);
+        notifyPacketWatcherListeners("music", () -> music);
     }
 
     /**
@@ -2901,7 +2902,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @throws UnknownCommandException if the packet is invalid
      */
     private void processNewMap(@NotNull final ByteBuffer packet) throws UnknownCommandException {
-        final int args = packet.position();
         if (packet.hasRemaining()) {
             throw new UnknownCommandException("excess data at end of newmap command");
         }
@@ -2909,7 +2909,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("recv newmap");
         }
         fireNewMap();
-        notifyPacketWatcherListenersNoData(packet, args);
+        notifyPacketWatcherListeners("newmap", () -> "");
     }
 
     /**
@@ -2918,7 +2918,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @throws UnknownCommandException if the packet is invalid
      */
     private void processPickup(@NotNull final ByteBuffer packet) throws UnknownCommandException {
-        final int args = packet.position();
         final int pickupOptions = getInt4(packet);
         if (packet.hasRemaining()) {
             throw new UnknownCommandException("excess data at end of pickup command");
@@ -2927,7 +2926,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("recv pickup options="+pickupOptions);
         }
         firePickupChanged(pickupOptions);
-        notifyPacketWatcherListenersMixed(packet, args);
+        notifyPacketWatcherListeners("pickup", () -> Integer.toString(pickupOptions));
     }
 
     /**
@@ -2936,7 +2935,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @throws UnknownCommandException if the packet is invalid
      */
     private void processPlayer(@NotNull final ByteBuffer packet) throws UnknownCommandException {
-        final int args = packet.position();
         final int tag = getInt4(packet);
         final int weight = getInt4(packet);
         final int faceNum = getInt4(packet);
@@ -2949,7 +2947,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("recv player tag="+tag+" weight="+weight+" face="+faceNum+" name="+name);
         }
         firePlayerReceived(tag, weight, faceNum, name);
-        notifyPacketWatcherListenersMixed(packet, args);
+        notifyPacketWatcherListeners("player", () -> tag+" "+weight+" "+faceNum+" "+name);
     }
 
     /**
@@ -2974,7 +2972,8 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             negotiateMapSize(preferredMapWidth, preferredMapHeight);
         }
         fireCommandQueryReceived(text, flags);
-        notifyPacketWatcherListenersAscii(packet, args);
+        final int flags0 = flags;
+        notifyPacketWatcherListeners("query", () -> flags0+" "+text);
     }
 
     /**
@@ -2983,7 +2982,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @throws UnknownCommandException if the packet is invalid
      */
     private void processReplyInfo(@NotNull final ByteBuffer packet) throws UnknownCommandException {
-        final int args = packet.position();
         final int startPos = packet.position();
         while (packet.hasRemaining() && packet.get(packet.position()) != '\n' && packet.get(packet.position()) != ' ') {
             packet.get();
@@ -3000,7 +2998,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         } catch (final IOException ex) {
             throw new UnknownCommandException("invalid replyinfo command: "+ex.getMessage(), ex);
         }
-        notifyPacketWatcherListenersAscii(packet, args);
+        notifyPacketWatcherListeners("replyinfo", () -> infoType); // XXX: misses arguments
     }
 
     /**
@@ -3010,7 +3008,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      */
     @SuppressWarnings("IfStatementWithIdenticalBranches")
     private void processSetup(@NotNull final ByteBuffer packet) throws UnknownCommandException {
-        final int args = packet.position();
         final List<String> options = new ArrayList<>();
         while (packet.hasRemaining()) {
             while (packet.get(packet.position()) == ' ') {
@@ -3207,7 +3204,14 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             sendQueuedRequestinfo("newcharinfo");
             sendToggleextendedtext(MessageTypes.getAllTypes());
         }
-        notifyPacketWatcherListenersAscii(packet, args);
+        notifyPacketWatcherListeners("setup", () -> {
+            final StringBuilder sb = new StringBuilder();
+            for (final String option : options) {
+                sb.append(' ');
+                sb.append(option);
+            }
+            return sb.length() == 0 ? "" : sb.substring(1);
+        });
     }
 
     /**
@@ -3216,7 +3220,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @throws UnknownCommandException if the packet is invalid
      */
     private void processSmooth(@NotNull final ByteBuffer packet) throws UnknownCommandException {
-        final int args = packet.position();
         final int faceNo = getInt2(packet);
         final int smoothPic = getInt2(packet);
         if (packet.hasRemaining()) {
@@ -3226,7 +3229,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("recv smooth face="+faceNo+" smooth_pic="+smoothPic);
         }
         model.getSmoothFaces().updateSmoothFace(faceNo, smoothPic);
-        notifyPacketWatcherListenersShortArray(packet, args);
+        notifyPacketWatcherListeners("smooth", () -> faceNo+" "+smoothPic);
     }
 
     /**
@@ -3235,7 +3238,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @throws UnknownCommandException if the packet is invalid
      */
     private void processSound(@NotNull final ByteBuffer packet) throws UnknownCommandException {
-        final int args = packet.position();
         final int x = packet.get();
         final int y = packet.get();
         final int num = getInt2(packet);
@@ -3247,7 +3249,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("recv sound pos="+x+"/"+y+" num="+num+" type="+type);
         }
         fireCommandSoundReceived(x, y, num, type);
-        notifyPacketWatcherListenersMixed(packet, args);
+        notifyPacketWatcherListeners("sound", () -> x+" "+y+" "+num+" "+type);
     }
 
     /**
@@ -3256,7 +3258,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @throws UnknownCommandException if the packet is invalid
      */
     private void processSound2(@NotNull final ByteBuffer packet) throws UnknownCommandException {
-        final int args = packet.position();
         final int x = packet.get();
         final int y = packet.get();
         final int dir = packet.get();
@@ -3273,7 +3274,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("recv sound2 pos="+x+"/"+y+" dir="+dir+" volume="+volume+" type="+type+" action="+action+" name="+name);
         }
         fireCommandSound2Received(x, y, dir, volume, type, action, name);
-        notifyPacketWatcherListenersMixed(packet, args);
+        notifyPacketWatcherListeners("sound2", () -> x+" "+y+" "+dir+" "+volume+" "+type+" "+action+" "+name);
     }
 
     /**
@@ -3333,7 +3334,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                     debugProtocol.debugProtocolWrite("recv stats stat="+stat+" int2="+int2Param+"="+(int2Param&0xFFFF));
                 }
                 model.getStats().setStatInt2(stat, int2Param);
-                notifyPacketWatcherListenersStats(stat, int2Param);
+                notifyPacketWatcherListeners("stats", () -> stat+" "+int2Param);
                 break;
 
             case Stats.CS_STAT_EXP:
@@ -3348,7 +3349,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                     debugProtocol.debugProtocolWrite("recv stats stat="+stat+" int4="+int4Param);
                 }
                 model.getStats().setStatInt4(stat, int4Param);
-                notifyPacketWatcherListenersStats(stat, int4Param);
+                notifyPacketWatcherListeners("stats", () -> stat+" "+int4Param);
                 break;
 
             case Stats.CS_STAT_EXP64:
@@ -3357,7 +3358,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                     debugProtocol.debugProtocolWrite("recv stats stat="+stat+" int8="+int8Param);
                 }
                 model.getStats().setStatInt8(stat, int8Param);
-                notifyPacketWatcherListenersStats(stat, int8Param);
+                notifyPacketWatcherListeners("stats", () -> stat+" "+int8Param);
                 break;
 
             case Stats.CS_STAT_RANGE:
@@ -3368,7 +3369,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                     debugProtocol.debugProtocolWrite("recv stats stat="+stat+" str="+strParam);
                 }
                 model.getStats().setStatString(stat, strParam);
-                notifyPacketWatcherListenersStats(stat, strParam);
+                notifyPacketWatcherListeners("stats", () -> stat+" "+strParam);
                 break;
 
             default:
@@ -3378,7 +3379,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                         debugProtocol.debugProtocolWrite("recv stats stat="+stat+" int2="+int2Param2);
                     }
                     model.getStats().setStatInt2(stat, int2Param2);
-                    notifyPacketWatcherListenersStats(stat, int2Param2);
+                    notifyPacketWatcherListeners("stats", () -> stat+" "+int2Param2);
                 } else if (Stats.CS_STAT_SKILLINFO <= stat && stat < Stats.CS_STAT_SKILLINFO+Stats.CS_NUM_SKILLS) {
                     final int level = getInt1(packet);
                     final long experience = getInt8(packet);
@@ -3386,7 +3387,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                         debugProtocol.debugProtocolWrite("recv stats stat="+stat+" level="+level+" experience="+experience);
                     }
                     model.getStats().setStatSkill(stat, level, experience);
-                    notifyPacketWatcherListenersStats(stat, level, experience);
+                    notifyPacketWatcherListeners("stats", () -> stat+" "+level+" "+experience);
                 } else {
                     if (debugProtocol != null) {
                         debugProtocol.debugProtocolWrite("recv stats stat="+stat+" <unknown parameter>");
@@ -3404,7 +3405,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @throws UnknownCommandException if the packet is invalid
      */
     private void processTick(@NotNull final ByteBuffer packet) throws UnknownCommandException {
-        final int args = packet.position();
         final int tickNo = getInt4(packet);
         if (packet.hasRemaining()) {
             throw new UnknownCommandException("excess data at end of tick command");
@@ -3413,7 +3413,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("recv tick "+tickNo);
         }
         fireTick(tickNo);
-        notifyPacketWatcherListenersIntArray(packet, args);
+        notifyPacketWatcherListeners("tick", () -> Integer.toString(tickNo));
     }
 
     /**
@@ -3422,7 +3422,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @throws UnknownCommandException if the packet is invalid
      */
     private void processUpdItem(@NotNull final ByteBuffer packet) throws UnknownCommandException {
-        final int args = packet.position();
         final int flags = getInt1(packet);
         final int tag = getInt4(packet);
         final int valLocation = (flags&UpdItem.UPD_LOCATION) == 0 ? 0 : getInt4(packet);
@@ -3454,7 +3453,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("recv upditem flags="+flags+" tag="+tag+" loc="+valLocation+" flags="+valFlags+" weight="+valWeight+" face="+valFaceNum+" name="+valName+" name_pl="+valNamePl+" anim="+valAnim+" anim_speed="+valAnimSpeed+" nrof="+valNrof);
         }
         fireUpditemReceived(flags, tag, valLocation, valFlags, valWeight, valFaceNum, valName, valNamePl, valAnim, valAnimSpeed, valNrof);
-        notifyPacketWatcherListenersMixed(packet, args);
+        notifyPacketWatcherListeners("upditem", () -> flags+" "+tag+" "+valLocation+" "+valFlags+" "+valWeight+" "+valFaceNum+" "+valName+" "+valNamePl+" "+valAnim+" "+valAnimSpeed+" "+valNrof);
     }
 
     /**
@@ -3462,7 +3461,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @param packet the packet's payload
      */
     private void processUpdQuest(@NotNull final ByteBuffer packet) {
-        final int args = packet.position();
         final int code = getInt4(packet);
         final int end = getInt1(packet);
         final int stepLength = getInt2(packet);
@@ -3472,7 +3470,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("recv updquest code="+code+" end="+end+" description="+step);
         }
         model.getQuestsManager().updateQuest(code, end == 1, step);
-        notifyPacketWatcherListenersMixed(packet, args);
+        notifyPacketWatcherListeners("updquest", () -> code+" "+end+" "+step);
     }
 
     /**
@@ -3481,7 +3479,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @throws UnknownCommandException if the packet is invalid
      */
     private void processUpdSpell(@NotNull final ByteBuffer packet) throws UnknownCommandException {
-        final int args = packet.position();
         final int flags = getInt1(packet);
         final int tag = getInt4(packet);
         final int mana = (flags&SpellsManager.UPD_SP_MANA) == 0 ? 0 : getInt2(packet);
@@ -3494,7 +3491,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             debugProtocol.debugProtocolWrite("recv updspell flags="+flags+" tag="+tag+" sp="+mana+" gr="+grace+" dam="+damage);
         }
         model.getSpellsManager().updateSpell(flags, tag, mana, grace, damage);
-        notifyPacketWatcherListenersMixed(packet, args);
+        notifyPacketWatcherListeners("updspell", () -> flags+" "+tag+" "+mana+" "+grace+" "+damage);
     }
 
     /**
@@ -3503,7 +3500,6 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
      * @throws UnknownCommandException if the packet is invalid
      */
     private void processVersion(@NotNull final ByteBuffer packet) throws UnknownCommandException {
-        final int args = packet.position();
         int csval = 0;
         do {
             csval = csval*10+parseDigit(packet.get());
@@ -3524,7 +3520,9 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         sendSetup("want_pickup 1", "faceset 0", "sound2 3", "exp64 1", "map2cmd 1", "darkness 1", "newmapcmd 1", "facecache 1", "extendedTextInfos 1", "itemcmd 2", "spellmon 1", "tick 1", "extended_stats 1", "loginmethod 2", "notifications 2");
         model.getStats().setSimpleWeaponSpeed(scval >= 1029);
 
-        notifyPacketWatcherListenersAscii(packet, args);
+        final int csval0 = csval;
+        final int scval0 = scval;
+        notifyPacketWatcherListeners("version", () -> csval0+" "+scval0);
     }
 
     @Override
@@ -3544,7 +3542,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             final byte[] passwordBytes = password.getBytes(UTF8);
             byteBuffer.put((byte)passwordBytes.length);
             byteBuffer.put(passwordBytes);
-            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position(), () -> "accountlogin "+login);
         }
 
     }
@@ -3554,7 +3552,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("send addme");
         }
-        defaultServerConnection.writePacket(ADDME_PREFIX, ADDME_PREFIX.length);
+        defaultServerConnection.writePacket(ADDME_PREFIX, ADDME_PREFIX.length, () -> "addme");
     }
 
     @Override
@@ -3567,7 +3565,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(APPLY_PREFIX);
             putDecimal(tag);
-            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position(), () -> "apply "+tag);
         }
     }
 
@@ -3581,7 +3579,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(ASKFACE_PREFIX);
             putDecimal(faceNum);
-            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position(), () -> "askface "+faceNum);
         }
     }
 
@@ -3600,7 +3598,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(EXAMINE_PREFIX);
             putDecimal(tag);
-            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position(), () -> "examine "+tag);
         }
     }
 
@@ -3615,7 +3613,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             byteBuffer.put(LOCK_PREFIX);
             byteBuffer.put((byte)(val ? 1 : 0));
             byteBuffer.putInt(tag);
-            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position(), () -> "lock "+(val ? 1 : 0)+" "+tag);
         }
     }
 
@@ -3631,7 +3629,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             putDecimal(dx);
             byteBuffer.put((byte)' ');
             putDecimal(dy);
-            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position(), () -> "lookat "+dx+" "+dy);
         }
     }
 
@@ -3645,7 +3643,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(MARK_PREFIX);
             byteBuffer.putInt(tag);
-            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position(), () -> "mark "+tag);
         }
     }
 
@@ -3663,7 +3661,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             putDecimal(tag);
             byteBuffer.put((byte)' ');
             putDecimal(nrof);
-            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position(), () -> "move "+to+" "+tag+" "+nrof);
         }
     }
 
@@ -3681,7 +3679,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             byteBuffer.putShort((short)thisPacket);
             byteBuffer.putInt(repeat);
             byteBuffer.put(command.getBytes(UTF8));
-            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position(), () -> "monitor "+repeat+" 0 "+command);
         }
         return thisPacket;
     }
@@ -3696,7 +3694,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(REPLY_PREFIX);
             byteBuffer.put(text.getBytes(UTF8));
-            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position(), () -> "reply "+text);
         }
         fireReplySent();
     }
@@ -3711,7 +3709,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(REQUESTINFO_PREFIX);
             byteBuffer.put(infoType.getBytes(UTF8));
-            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position(), () -> "requestinfo "+infoType);
             sendingRequestInfo = PATTERN_SPACE.split(infoType, 2)[0];
         }
     }
@@ -3733,7 +3731,13 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                     byteBuffer.put(option.getBytes(UTF8));
                 }
             }
-            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position(), () -> {
+                final StringBuilder sb = new StringBuilder("setup");
+                for (String option : options) {
+                    sb.append(" ").append(option);
+                }
+                return sb.toString();
+            });
         }
     }
 
@@ -3754,7 +3758,13 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                 byteBuffer.put((byte)' ');
                 putDecimal(type);
             }
-            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position(), () -> {
+                final StringBuilder sb = new StringBuilder("toggleextendedtext");
+                for (int type : types) {
+                    sb.append(" ").append(type);
+                }
+                return sb.toString();
+            });
         }
     }
 
@@ -3772,7 +3782,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             putDecimal(scval);
             byteBuffer.put((byte)' ');
             byteBuffer.put(vinfo.getBytes(UTF8));
-            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position(), () -> "version "+csval+" "+scval+" "+vinfo);
         }
     }
 
@@ -3904,7 +3914,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             //noinspection AccessToStaticFieldLockedOnInstance
             byteBuffer.put(ACCOUNT_PLAY_PREFIX);
             byteBuffer.put(name.getBytes(UTF8));
-            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position(), () -> "accountplay "+name);
         }
 
         final String tmpAccountName = accountName;
@@ -3930,7 +3940,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             final byte[] passwordBytes = password.getBytes(UTF8);
             byteBuffer.put((byte)passwordBytes.length);
             byteBuffer.put(passwordBytes);
-            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position(), () -> "accountaddplayer "+login);
         }
     }
 
@@ -3951,7 +3961,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             final byte[] passwordBytes = password.getBytes(UTF8);
             byteBuffer.put((byte)passwordBytes.length);
             byteBuffer.put(passwordBytes);
-            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position(), () -> "accountnew "+login);
         }
     }
 
@@ -3979,7 +3989,16 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                     byteBuffer.put((byte)0);
                 }
             }
-            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position(), () -> {
+                final StringBuilder sb = new StringBuilder("createplayer ");
+                sb.append(login);
+                if (loginMethod >= 2) {
+                    for (final String attribute : attributes) {
+                        sb.append(" ").append(attribute);
+                    }
+                }
+                return sb.toString();
+            });
         }
     }
 
@@ -3999,7 +4018,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             final byte[] newPasswordBytes = newPassword.getBytes(UTF8);
             byteBuffer.put((byte)newPasswordBytes.length);
             byteBuffer.put(newPasswordBytes);
-            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position());
+            defaultServerConnection.writePacket(writeBuffer, byteBuffer.position(), () -> "accountpw");
         }
     }
 

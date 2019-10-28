@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.server.socket;
 
 import java.nio.ByteBuffer;
 import java.util.EventListener;
+import java.util.function.Predicate;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -50,10 +51,9 @@ public interface ClientSocketListener extends EventListener {
 
     /**
      * Called whenever a packet has been sent to the Crossfire server.
-     * @param buf the packet contents; must not be modified by client code
-     * @param len the length of the packet
+     * @param monitor the monitor command to send to script processes
      */
-    void packetSent(@NotNull byte[] buf, int len);
+    void packetSent(@NotNull ClientSocketMonitorCommand monitor);
 
     /**
      * Called when the connection is being teared down.

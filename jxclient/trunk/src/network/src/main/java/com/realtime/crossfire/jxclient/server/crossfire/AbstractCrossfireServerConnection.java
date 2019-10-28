@@ -23,8 +23,8 @@ package com.realtime.crossfire.jxclient.server.crossfire;
 
 import com.realtime.crossfire.jxclient.account.CharacterInformation;
 import com.realtime.crossfire.jxclient.server.server.ReceivedPacketListener;
+import com.realtime.crossfire.jxclient.server.socket.ClientSocketMonitorCommand;
 import com.realtime.crossfire.jxclient.util.EventListenerList2;
-import java.nio.Buffer;
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
 import java.util.Iterator;
@@ -435,181 +435,17 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
 
     /**
      * Notifies all {@link ReceivedPacketListener ReceivedPacketListeners} about
-     * an empty packet.
+     * a packet.
      * @param command the command string
+     * @param args the command arguments
      */
-    private void notifyPacketWatcherListenersEmpty(@NotNull final String command) {
-        for (ReceivedPacketListener receivedPacketListener : receivedPacketListeners) {
-            receivedPacketListener.processEmpty(command);
-        }
-    }
-
-    /**
-     * Notifies all {@link ReceivedPacketListener ReceivedPacketListeners} about
-     * a packet having ascii parameters.
-     * @param packet the packet contents
-     * @param args the start index into {@code packet} of the packet's
-     * arguments
-     */
-    protected void notifyPacketWatcherListenersAscii(@NotNull final ByteBuffer packet, final int args) {
+    protected void notifyPacketWatcherListeners(@NotNull final String command, @NotNull final ClientSocketMonitorCommand args) {
         final Iterator<ReceivedPacketListener> listeners = receivedPacketListeners.iterator();
         if (listeners.hasNext()) {
-            final String command = extractCommand(packet);
-            if (packet.hasRemaining()) { // XXX: should check payload, not whole command?
-                while (listeners.hasNext()) {
-                    final ReceivedPacketListener receivedPacketListener = listeners.next();
-                    ((Buffer)packet).position(args);
-                    receivedPacketListener.processAscii(command, packet);
-                }
-            } else {
-                notifyPacketWatcherListenersEmpty(command);
+            while (listeners.hasNext()) {
+                listeners.next().process(command, args);
             }
         }
-    }
-
-    /**
-     * Notifies all {@link ReceivedPacketListener ReceivedPacketListeners} about
-     * a packet having an array of short values as parameters.
-     * @param packet the packet contents
-     * @param args the start index into {@code packet} of the packet's
-     * arguments
-     */
-    protected void notifyPacketWatcherListenersShortArray(@NotNull final ByteBuffer packet, final int args) {
-        final Iterator<ReceivedPacketListener> listeners = receivedPacketListeners.iterator();
-        if (listeners.hasNext()) {
-            final String command = extractCommand(packet);
-            if (packet.hasRemaining()) { // XXX: should check payload, not whole command?
-                while (listeners.hasNext()) {
-                    final ReceivedPacketListener receivedPacketListener = listeners.next();
-                    ((Buffer)packet).position(args);
-                    receivedPacketListener.processShortArray(command, packet);
-                }
-            } else {
-                notifyPacketWatcherListenersEmpty(command);
-            }
-        }
-    }
-
-    /**
-     * Notifies all {@link ReceivedPacketListener ReceivedPacketListeners} about
-     * a packet having an array of int values as parameters.
-     * @param packet the packet contents
-     * @param args the start index into {@code packet} of the packet's
-     * arguments
-     */
-    protected void notifyPacketWatcherListenersIntArray(@NotNull final ByteBuffer packet, final int args) {
-        final Iterator<ReceivedPacketListener> listeners = receivedPacketListeners.iterator();
-        if (listeners.hasNext()) {
-            final String command = extractCommand(packet);
-            if (packet.hasRemaining()) { // XXX: should check payload, not whole command?
-                while (listeners.hasNext()) {
-                    final ReceivedPacketListener receivedPacketListener = listeners.next();
-                    ((Buffer)packet).position(args);
-                    receivedPacketListener.processIntArray(command, packet);
-                }
-            } else {
-                notifyPacketWatcherListenersEmpty(command);
-            }
-        }
-    }
-
-    /**
-     * Notifies all {@link ReceivedPacketListener ReceivedPacketListeners} about
-     * a packet having a short and an in value as parameters.
-     * @param packet the packet contents
-     * @param args the start index into {@code packet} of the packet's
-     * arguments
-     */
-    protected void notifyPacketWatcherListenersShortInt(@NotNull final ByteBuffer packet, final int args) {
-        final Iterator<ReceivedPacketListener> listeners = receivedPacketListeners.iterator();
-        if (listeners.hasNext()) {
-            final String command = extractCommand(packet);
-            if (packet.hasRemaining()) { // XXX: should check payload, not whole command?
-                while (listeners.hasNext()) {
-                    final ReceivedPacketListener receivedPacketListener = listeners.next();
-                    ((Buffer)packet).position(args);
-                    receivedPacketListener.processShortInt(command, packet);
-                }
-            } else {
-                notifyPacketWatcherListenersEmpty(command);
-            }
-        }
-    }
-
-    /**
-     * Notifies all {@link ReceivedPacketListener ReceivedPacketListeners} about
-     * a packet having mixed parameters.
-     * @param packet the packet contents
-     * @param args the start index into {@code packet} of the packet's
-     * arguments
-     */
-    protected void notifyPacketWatcherListenersMixed(@NotNull final ByteBuffer packet, final int args) {
-        final Iterator<ReceivedPacketListener> listeners = receivedPacketListeners.iterator();
-        if (listeners.hasNext()) {
-            final String command = extractCommand(packet);
-            if (packet.hasRemaining()) { // XXX: should check payload, not whole command?
-                while (listeners.hasNext()) {
-                    final ReceivedPacketListener receivedPacketListener = listeners.next();
-                    ((Buffer)packet).position(args);
-                    receivedPacketListener.processMixed(command, packet);
-                }
-            } else {
-                notifyPacketWatcherListenersEmpty(command);
-            }
-        }
-    }
-
-    /**
-     * Notifies all {@link ReceivedPacketListener ReceivedPacketListeners} about
-     * a packet having stat parameters.
-     * @param stat the stat value
-     * @param args the stat arguments depending on {@code type} and {@code
-     * stat}
-     */
-    protected void notifyPacketWatcherListenersStats(final int stat, @NotNull final Object... args) {
-        for (ReceivedPacketListener receivedPacketListener : receivedPacketListeners) {
-            receivedPacketListener.processStats("stats", stat, args);
-        }
-    }
-
-    /**
-     * Notifies all {@link ReceivedPacketListener ReceivedPacketListeners} about
-     * a packet having unknown parameters.
-     * @param packet the packet contents
-     * @param args the start index into {@code packet} of the packet's
-     * arguments
-     */
-    protected void notifyPacketWatcherListenersNoData(@NotNull final ByteBuffer packet, final int args) {
-        final Iterator<ReceivedPacketListener> listeners = receivedPacketListeners.iterator();
-        if (listeners.hasNext()) {
-            final String command = extractCommand(packet);
-            if (packet.hasRemaining()) { // XXX: should check payload, not whole command?
-                while (listeners.hasNext()) {
-                    final ReceivedPacketListener receivedPacketListener = listeners.next();
-                    ((Buffer)packet).position(args);
-                    receivedPacketListener.processNoData(command, packet);
-                }
-            } else {
-                notifyPacketWatcherListenersEmpty(command);
-            }
-        }
-    }
-
-    /**
-     * Returns the command string for a received packet.
-     * @param packet the packet contents
-     * @return the command string
-     */
-    @NotNull
-    protected static String extractCommand(@NotNull final ByteBuffer packet) {
-        int cmdLen;
-        for (cmdLen = 0; cmdLen < packet.limit(); cmdLen++) {
-            final byte ch = packet.get(cmdLen);
-            if ((ch&0xFF) <= 0x20 || (ch&0xFF) >= 0x80) {
-                break;
-            }
-        }
-        return newString(packet, 0, cmdLen);
     }
 
     /**

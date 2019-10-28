@@ -32,6 +32,7 @@ import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireDrawinfoListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketListener;
+import com.realtime.crossfire.jxclient.server.socket.ClientSocketMonitorCommand;
 import com.realtime.crossfire.jxclient.skills.Skill;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.spells.Spell;
@@ -44,7 +45,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.nio.ByteBuffer;
-import java.nio.charset.StandardCharsets;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -177,8 +177,8 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
         }
 
         @Override
-        public void packetSent(@NotNull final byte[] buf, final int len) {
-            commandSent(new String(buf, 0, len, StandardCharsets.ISO_8859_1));
+        public void packetSent(@NotNull final ClientSocketMonitorCommand monitor) {
+            commandSent(monitor.getMonitorCommand());
         }
 
         @Override

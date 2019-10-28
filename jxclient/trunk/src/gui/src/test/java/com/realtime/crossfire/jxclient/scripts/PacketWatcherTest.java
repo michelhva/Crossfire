@@ -69,7 +69,7 @@ public class PacketWatcherTest {
 
         sb.setLength(0);
         for (ReceivedPacketListener listener : listeners) {
-            listener.processEmpty("command");
+            listener.process("command", () -> "");
         }
         Assert.assertEquals("", sb.toString());
 
@@ -78,10 +78,10 @@ public class PacketWatcherTest {
         sb.setLength(0);
         for (ReceivedPacketListener listener : listeners) {
             //noinspection SpellCheckingInspection
-            listener.processEmpty("comman");
-            listener.processEmpty("command");
+            listener.process("comman", () -> "");
+            listener.process("command", () -> "");
             //noinspection SpellCheckingInspection
-            listener.processEmpty("commandx");
+            listener.process("commandx", () -> "");
         }
         //noinspection SpellCheckingInspection
         Assert.assertEquals("watch command\n"+"watch commandx\n", sb.toString());
