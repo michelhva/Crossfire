@@ -414,7 +414,7 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
     }
 
     @Override
-    public void drawextinfo(final int color, final int type, final int subtype, final String message) {
+    public void drawextinfo(final int color, final int type, final int subtype, @NotNull final String message) {
         for (CrossfireDrawextinfoListener listener : drawextinfoListeners) {
             listener.commandDrawextinfoReceived(color, type, subtype, message);
         }
@@ -600,6 +600,7 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
      * @param packet the packet contents
      * @return the command string
      */
+    @NotNull
     protected static String extractCommand(@NotNull final ByteBuffer packet) {
         int cmdLen;
         for (cmdLen = 0; cmdLen < packet.limit(); cmdLen++) {
@@ -618,6 +619,7 @@ public abstract class AbstractCrossfireServerConnection implements CrossfireServ
      * @param len the length of the string
      * @return the string
      */
+    @NotNull
     protected static String newString(@NotNull final ByteBuffer byteBuffer, final int start, final int len) {
         final byte[] tmp = new byte[len];
         for (int i = 0; i < len; i++) {
