@@ -2382,7 +2382,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     }
 
     /**
-     * Processes an "addacknowledge" block.
+     * Processes an "addknowledge" block.
      * @param packet the packet to process
      */
     private void processAddKnowledge(@NotNull final ByteBuffer packet) {
@@ -2931,7 +2931,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     }
 
     /**
-     * Processes a 'pickup' server command.
+     * Processes a 'player' server command.
      * @param packet the packet's payload
      * @throws UnknownCommandException if the packet is invalid
      */
@@ -2953,12 +2953,11 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     }
 
     /**
-     * Processes a 'pickup' server command.
+     * Processes a 'query' server command.
      * @param packet the packet's payload
      * @throws UnknownCommandException if the packet is invalid
      */
     private void processQuery(@NotNull final ByteBuffer packet) throws UnknownCommandException {
-        final int args = packet.position();
         int flags = 0;
         do {
             flags = flags*10+parseDigit(packet.get());
@@ -3005,7 +3004,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
     }
 
     /**
-     * Processes a 'replyinfo' server command.
+     * Processes a 'setup' server command.
      * @param packet the packet's payload
      * @throws UnknownCommandException if the packet is invalid
      */
