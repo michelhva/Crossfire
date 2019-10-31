@@ -21,6 +21,6 @@ dam_modifier 1
 maxsp 20
 attacktype 2
 msg
-So dangerous that few would even dream of casting it, destruction represents final stage of contimentiam. So much material in such a small space creates tears into the void. These voids quickly begin to draw in anything nearby ripping apart all and sunder with magical ferocity. Being so indiscriminant, destruction can even be used to harm enemies who are not even visible to the practioner. This spell is attuned to the path of detonation.  The damage delivered is entirely magical in nature, and increases as evocation skill level, Intelligence, Wisdom, and Power stats increase.
+So dangerous that few would even dream of casting it, destruction represents final stage of contimentiam. So much material in such a small space creates tears into the void. These voids quickly begin to draw in anything nearby ripping apart all and sunder with magical ferocity. Being so indiscriminant, destruction can even be used to harm enemies who are not even visible to the practioner. This spell is attuned to the path of detonation. The damage delivered is entirely magical in nature, and increases as evocation skill level, Intelligence, Wisdom, and Power stats increase.
 endmsg
 end
