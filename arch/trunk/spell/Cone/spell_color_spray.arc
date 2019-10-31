@@ -22,8 +22,6 @@ no_drop 1
 invisible 1
 skill sorcery
 msg
-Color spray fires a cone of energy.  The energy hits with many different attacktypes, so creatures that are highly resistant to some will still take damage from some of the other attacktypes of the spray.
-
-This spell does not do as much damage compared to a spell that hits with only one attacktype, but is useful if it is not known what attacktype a creature can be damaged with, or if the room is full of varying creatures, with different protections.
+It is written that legendary wizard Sarumatix was the first to develop continentiam to a new, dangerous, level. Color spray demonstrates the strange effect where minerals can be worked into infinitesimal spaces and the subsequent powerful energy release directed by the sorcerer. While greater damage can be inflicted by more traditional spells, the chaotic spray of pure colours can be useful against enemies with unknown protections or to clear a variety of very powerful creatures. The spell is attuned to the path of transmutation.
 endmsg
 end

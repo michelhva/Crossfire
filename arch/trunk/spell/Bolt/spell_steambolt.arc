@@ -22,6 +22,6 @@ range 12
 no_drop 1
 invisible 1
 msg
-Fires a bolt of hot steam that does both magical and physical damage.  A fog of steam that blocks line-of-sight remains a short time after the spell is cast.
+Perhaps inspired by pyromancy, sorcerers have learnt to harness the powerful force of steam. Unlike pyromancers, sorcerers wont directly add heat but instead focus on creating as much water vapour into as small a space as they can. The resulting pressure, once released, scalds any in their path. The more devious practioners delight in evoking tiny sharp projectiles into the beam. A side effect of this spell is the substantial fog that can be left in its wake. This spell is attuned to the path of fire.
 endmsg
 end

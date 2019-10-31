@@ -22,6 +22,6 @@ no_drop 1
 invisible 1
 skill evocation
 msg
-Fires a cone of force that attacks creatures in its path with both magical and physical damage.
+Evokers can create powerful shockwave pulses that are attuned to the path of detonation through the air by magically containing explosions. Due to the magical projection required to channel this cone of energy this spell delivers both magical and physical damage.
 endmsg
 end

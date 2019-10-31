@@ -22,6 +22,6 @@ no_drop 1
 invisible 1
 skill sorcery
 msg
-A confusion spell that propagates from the caster in a cone shape.  Confused opponents have a hard time coordinating movements and attacks.
+By filling the targets head with chaotic magic, confusing and disorienting the recipient. Confused opponents have a hard time coordinating movements, often moving and attacking in the wrong direction or fumbling spells and equipment. Though only temporary, confusion is dreaded by those that find themselves facing anyone or anything adept at sorcery and as a result wards against this dark art are treasured.
 endmsg
 end

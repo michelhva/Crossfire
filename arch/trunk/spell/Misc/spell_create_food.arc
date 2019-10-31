@@ -17,6 +17,6 @@ food 100
 duration_modifier 1
 maxsp 20
 msg
-Creates a food item for the caster.  It is possible to specify what to make with a command like:  cast create food F, where F is the name of the food.
+A seemingly simple enough spell to grasp, create food is the domain of more experienced summoners due to the importance of getting it right. It is surprisingly easy to summon something that looks and smells thoroughly delicious but is quite toxic. For this reason, beginning summoners tend to stick with very simple foods until their experience permits a little more decadence. This spell belongs to the path of creation. It is possible to specify what food to make with a command like:  cast create food waybread.
 endmsg
 end

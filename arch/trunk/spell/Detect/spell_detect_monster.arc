@@ -18,6 +18,6 @@ range_modifier 5
 other_arch detect_monster
 monster 1
 msg
-Reveal unseen or hidden monsters in the vicinity without having to open doors or get them in direct line-of-sight.
+Due to the unwelcome response usually given to practitioners of evocation, many learn to sense potential threats well before those threats can see the evoker. This information spell is particularly useful before opening doors and entering dark passageways.
 endmsg
 end

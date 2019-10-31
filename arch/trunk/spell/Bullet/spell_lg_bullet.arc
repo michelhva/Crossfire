@@ -19,6 +19,6 @@ attacktype 2
 no_drop 1
 invisible 1
 msg
-Fires a magical bullet that travels in one direction until striking something.
+Larger bullets make bigger holes. While sounding simple enough, even accomplished evokers may not properly fathom that for every action there is an opposite and equal reaction. Evokers must practice bracing themselves magically before casting larger projectiles to avoid unpleasant outcomes. As a result only accomplished evokers can throw these hefty bullets. This spell is attuned to the path of missiles.
 endmsg
 end

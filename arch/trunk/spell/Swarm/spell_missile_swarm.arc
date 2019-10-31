@@ -18,7 +18,6 @@ maxsp 20
 no_drop 1
 invisible 1
 msg
-Fires a swarm of target-tracking magical bolts that can turn to seek out enemies.
-The bolts do not always track well and may run into walls or even return and strike the caster.
+It is only natural that with practice, sorcerers start toying with keeping ever greater numbers of magical missiles in flight at one time. Missile swarms represent the mastery of this form of attack with the practitioner simultaneously launching missiles from three separate planes and concurrently directing them as needed. With so much to do, it is hardly surprising a few errant missiles go the wrong way but this is generally the last thing the victim is going to notice. This spell is attuned to the path of missiles.
 endmsg
 end

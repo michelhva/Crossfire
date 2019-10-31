@@ -22,6 +22,6 @@ invisible 1
 skill evocation
 food 8
 msg
-Fires a snowball that explodes into a large flurry of ice and cold when it hits something.  It delivers cold damage, and items caught in the explosion are encased in blocks of ice.
+The size of radius of the large snowstorm represents the upper threshold for safety. Evokers should be cautious about lauching too many of these without first checking their range or suffer the consequences of their own power. The cold can damage and freeze equipment and other objects caught in its radius.
 endmsg
 end

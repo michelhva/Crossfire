@@ -23,6 +23,6 @@ invisible 1
 skill summoning
 wc_increase_rate 4
 msg
-Creates an elemental from surrounding rock that is controlled with the Fire and direction keys.  An earth elemental is very durable and strong, doing physical damage, but moves quite slowly.
+Summoned from rock and clay, these elementals embody the strengths of the earthen gods. Sturdy and powerful, the slow swing of each arm is backed up with an immense physical force. Like the earthen gods, these elementals display no urgency and require a certain degree of patience from the operator.
 endmsg
 end

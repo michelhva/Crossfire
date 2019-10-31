@@ -22,6 +22,6 @@ no_drop 1
 invisible 1
 skill sorcery
 msg
-Fires a cone-shaped force that slows down the creatures it hits.
+The force that binds all souls to their bodies is said to provide the energy to move. By interfering with the souls connection to the body, sorcerers can slow the very movements of their opponents. Recipients describe the experience as being completely sapped of energy such that they lack even the desire to protect themselves from physical harm. As a Sorcerer's power grows, so to does the extent to which they can cast this debilitating spell.
 endmsg
 end
