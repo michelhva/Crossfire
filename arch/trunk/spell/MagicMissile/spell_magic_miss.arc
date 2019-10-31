@@ -20,6 +20,6 @@ no_drop 1
 invisible 1
 range 25
 msg
-Fires a target-tracking magical bolt that can turn to seek out enemies.  The bolt does not always track well and may run into walls or even return and strike the caster.
+While sorcerers can spend a great deal of time mastering the perfect projectile, a different approach is to instead stay focussed on telekinetically guiding the projectile (somewhat accurately) towards an enemy. Magic missile does a comparable amount of magical damage by guiding the projectile to each target. This spell is attuned to the path of missiles.
 endmsg
 end

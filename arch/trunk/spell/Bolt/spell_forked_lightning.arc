@@ -23,6 +23,6 @@ range 24
 no_drop 1
 invisible 1
 msg
-Tales tell of the devoted worshippers of Sorig who were gifted with the ability to command forked lightning through divine prayer. The resultant electrical spell sends devastating bolts of lightning that fork into multiple smaller bolts showering a cone-shaped area in-front of the worshipper. The propensity to reflect off of walls further increases the havoc caused when unleashed in confined spaces.
+Followers of Sorig harken and take heed; The King of Thunder and Lightning shall grant unto you the treasure of forked lightning. For each good deed, I shall split its bolt such that those who are worthy shall fill the halls of my enemies and reduce their insolence to dust. This prayer is attuned to the path of electricity.
 endmsg
 end

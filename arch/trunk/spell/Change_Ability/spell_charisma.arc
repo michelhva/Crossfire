@@ -17,6 +17,6 @@ duration_modifier 4
 duration 500
 Cha 1
 msg
-May increase the caster's Charisma stat temporarily. The magnitude of the effect depends on the caster's current Charisma stat and sorcery skill level.
+There are more than a few sorcerers who are drawn to the path for its potential to enhance themselves, and the reasons why usually become clear whenever this spell wears off. Sorcerers may temporarily improve their own, or their allies, charisma based upon the spell's recipient's charisma and the caster's prowess in sorcery. This spell is attuned to the path of self.
 endmsg
 end

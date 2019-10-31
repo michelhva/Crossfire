@@ -23,6 +23,6 @@ invisible 1
 skill sorcery
 randomitems wonder_spells
 msg
-Casts a randomly selected spell, or, about 1/3 of the time, creates harmless flowers.  Low-level spells appear more frequently than high-level ones.
+Most erroneous magic spells tragedy for the caster, but the spell wonder embraces failure. By developing specialised safety phrases that transmutes deadly magic into harmless flowers, sorcerers can gamble with the gods to experiment with all manner of spells. While this often yields low grade magic it can sometimes provide surprisingly powerful results. This spell belongs to the path of transmutation.
 endmsg
 end

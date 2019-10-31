@@ -22,6 +22,6 @@ attacktype 1048584
 no_drop 1
 invisible 1
 msg
-A ball lightning spell granted by Sorig.
+Followers of Sorig harken and take heed; those who would do harm shall face the wrath of the Sky Lord incarnate. Speak to me of the need for intervention and I shall send the divine punishment of living lightning that would follow and shock the living and undead alike.
 endmsg
 end

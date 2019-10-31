@@ -18,6 +18,6 @@ range_modifier 5
 other_arch detect_magic
 known_magical 1
 msg
-Reveals items in the caster's inventory, or in the vicinity, that are imbued with magical power.
+Sorcerer's knowledge of the manner in which magic can be woven into items provides the foundation for a useful spell practised by young and old sorcerers alike. Detect magic reveals objects on and around the caster's that are display magical power. This can be used to quickly sort the wheat from the chaff, so to speak. This spell is attuned to the path of information.
 endmsg
 end

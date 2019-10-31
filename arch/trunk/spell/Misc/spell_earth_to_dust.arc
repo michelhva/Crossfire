@@ -18,6 +18,6 @@ maxsp 20
 range 2
 range_modifier 3
 msg
-Earth to dust causes damage to or destroys earth and other weak walls in the vicinity of the caster.  It does not damage other objects or monsters.
+Unlike handmade walls, magical earth walls all contain a simple flaw that knowledge sorcerers have little trouble locating. The magic that weaves these defiant barricades together can be undone with this simple transmutation sorcery such that they instantly crumble to dust or otherwise take immense damage.
 endmsg
 end

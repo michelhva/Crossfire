@@ -22,6 +22,6 @@ no_drop 1
 invisible 1
 skill evocation
 msg
-Mana blast fires a cone of magical energy.  The energy is pure magic, to which few creatures have resistance.
+Most spells work by controlling various forces of nature, but evokers have learn that magic itself can be a powerful weapon. Manablast enables evokers to use their control of magic to directly harm enemies launching a cone of pure magic damage. 
 endmsg
 end

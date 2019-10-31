@@ -22,6 +22,6 @@ no_drop 1
 invisible 1
 skill praying
 msg
-Generates a cone-shaped windstorm that does minor physical damage and can push creatures and objects in its path. Sorig followers are granted this spell.
+Followers of Sorig harken and take heed; none shall stand in my presence who are undeserving. Should the undeserved seek to be in my presence, call forth my windstorm that they might be swept away back to the dark places from whence they came. This prayer is attuned to the path of explosion.
 endmsg
 end

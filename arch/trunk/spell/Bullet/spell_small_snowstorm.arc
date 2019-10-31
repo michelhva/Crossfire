@@ -23,6 +23,6 @@ skill evocation
 weight 500
 food 4
 msg
-Fires a snowball that explodes into a small flurry of ice and cold when it hits something.  It delivers cold damage, and items caught in the explosion are encased in blocks of ice.
+It is possible to set-up a magical chain reaction that results in a sudden freeze. By packaging this effect up in within a fast moving projectile, evokers can hurl these magical concoctions considerable distances. This is perfect for throwing down long corridors at unsuspecting enemies before quickly taking cover, and allowing the relentless snowstorm to do its work. The cold can damage and freeze equipment and other objects caught in its radius.
 endmsg
 end

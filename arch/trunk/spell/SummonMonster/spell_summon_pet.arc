@@ -16,7 +16,7 @@ invisible 1
 attack_movement 16
 randomitems mage_pet_monster
 msg
-Creates a number of pets that attack enemies of the caster.  They move and attack on their own, so may bash doors, run away, or get lost.
+The beckoning of a summoner proves irresistible to those under their thrall. Summoner's pets quickly learn to attend to their masters needs without prompting and will eagerly throw themselves upon those who would wish ill of their master with no regard for safety. The skill of the master is easily seen by the size armies and their strength of their servants.
 
 The type of monster varies by the caster's summoning skill level:
 - 1 bat;

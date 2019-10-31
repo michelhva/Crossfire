@@ -24,6 +24,6 @@ is_used_up 1
 move_block all
 tear_down 1
 msg
-Build bullet wall creates a wall that fires magic bullets, as per the magic bullet spell. The bullet wall itself can be torn down, and will eventually expire on its own.
+With a deep understanding of the evocation path and its study and practice into the telekinesis of material comes the ability to form self sustain spell walls that continuously discharge projectiles. Such practioners can be found sitting nearby reading quitely while their magical cantrips leave a bloodbath. This spell is attuned to the path of creation.
 endmsg
 end

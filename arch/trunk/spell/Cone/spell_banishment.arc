@@ -22,6 +22,6 @@ no_drop 1
 invisible 1
 skill praying
 msg
-Banishment is a cone spell that may cause weaker enemies of your god to immediately disappear or die.  It is a more powerful version of Holy Word.
+Against them make ready your strength to the utmost of your power, then loose upon them Banishment, to strike terror and death into the hearts of My enemies, and your enemies, and others besides, whom ye may not know, but whom I doth know. Attacking with holy word and death, this substantially improved holy word prayer may only strike at enemies of your god and the undead. The prayer is attuned to the path of turning.
 endmsg
 end

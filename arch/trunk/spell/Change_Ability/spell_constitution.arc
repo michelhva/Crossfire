@@ -17,6 +17,6 @@ duration_modifier 4
 duration 500
 Con 1
 msg
-May increase the caster's Constitution stat temporarily. The magnitude of the increase depends on the caster's current Constitution stat and sorcery skill level.
+Likened to a few drinks of stout, a sorcerers magic not only makes the recipient feel like they have a stronger consitution, but actually does so as well. Sorcerers may temporarily improve their own, or their allies, constitution based upon the spell's recipient's consitution and the caster's prowess in sorcery. This spell is attuned to the path of self.
 endmsg
 end
