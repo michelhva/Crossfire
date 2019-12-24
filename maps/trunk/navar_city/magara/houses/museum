@@ -12312,19 +12312,15 @@ arch wall_2_1_1
 x 40
 y 26
 end
+arch swall_1_4_half
+x 40
+y 26
+end
 arch woodfloor
 x 40
 y 27
 end
-arch swall_1_4_half
-x 40
-y 27
-end
 arch wall_2_1_1
-x 40
-y 27
-end
-arch dungeon_magic
 x 40
 y 27
 end
@@ -12372,19 +12368,23 @@ arch woodfloor
 x 40
 y 33
 end
-arch wall_2_2_4
-x 40
-y 33
-end
-arch swall_1_4_half
-x 40
-y 33
-end
-arch dungeon_magic
+arch wall_3_4
 x 40
 y 33
 end
 arch woodlarge
+x 40
+y 34
+end
+arch wall_1_2
+x 40
+y 34
+end
+arch swall_1_4_half
+x 40
+y 34
+end
+arch dungeon_magic
 x 40
 y 34
 end
@@ -12594,31 +12594,31 @@ arch woodfloor
 x 41
 y 26
 end
+arch swall_2_1_2
+x 41
+y 26
+end
 arch woodlarge
 x 41
 y 27
-end
-arch swall_2_1_2
-x 41
-y 27
-end
-arch dungeon_magic
-x 41
-y 27
-end
-arch woodfloor
-x 41
-y 28
 end
 arch cloak
 x 41
+y 27
+end
+arch woodfloor
+x 41
+y 28
+end
+arch cloak_black
+x 41
 y 28
 end
 arch woodlarge
 x 41
 y 29
 end
-arch magic_resist
+arch cloak_white
 x 41
 y 29
 end
@@ -12626,7 +12626,7 @@ arch woodfloor
 x 41
 y 30
 end
-arch cloak_plenty
+arch magic_resist
 x 41
 y 30
 end
@@ -12634,7 +12634,7 @@ arch woodlarge
 x 41
 y 31
 end
-arch oilskin
+arch cloak_plenty
 x 41
 y 31
 end
@@ -12642,7 +12642,7 @@ arch woodfloor
 x 41
 y 32
 end
-arch serp_cloak
+arch oilskin
 x 41
 y 32
 end
@@ -12650,15 +12650,19 @@ arch woodlarge
 x 41
 y 33
 end
-arch swall_2_1_2
-x 41
-y 33
-end
-arch dungeon_magic
+arch serp_cloak
 x 41
 y 33
 end
 arch woodfloor
+x 41
+y 34
+end
+arch swall_2_1_2
+x 41
+y 34
+end
+arch dungeon_magic
 x 41
 y 34
 end
@@ -12913,15 +12917,23 @@ arch woodlarge
 x 42
 y 26
 end
+arch swall_2_2_3
+x 42
+y 26
+end
 arch woodfloor
 x 42
 y 27
 end
-arch swall_2_2_3
+arch dungeon_magic
 x 42
 y 27
 end
-arch dungeon_magic
+arch swall_2_1_1
+x 42
+y 27
+end
+arch swall_2_1_1
 x 42
 y 27
 end
@@ -12988,16 +13000,24 @@ end
 arch woodfloor
 x 42
 y 33
+end
+arch dungeon_magic
+x 42
+y 33
+end
+arch swall_2_1_1
+x 42
+y 33
+end
+arch woodlarge
+x 42
+y 34
 end
 arch swall_2_2_4
 x 42
-y 33
+y 34
 end
 arch dungeon_magic
-x 42
-y 33
-end
-arch woodlarge
 x 42
 y 34
 end
@@ -13232,13 +13252,20 @@ arch woodlarge
 x 43
 y 27
 end
+arch magic_mouth
+msg
+Cloak
+endmsg
+x 43
+y 27
+end
 arch woodfloor
 x 43
 y 28
 end
 arch magic_mouth
 msg
-Cloak
+Black Cloak
 endmsg
 x 43
 y 28
@@ -13246,34 +13273,34 @@ end
 arch woodlarge
 x 43
 y 29
+end
+arch magic_mouth
+msg
+White Cloak
+endmsg
+x 43
+y 29
+end
+arch woodfloor
+x 43
+y 30
 end
 arch magic_mouth
 msg
 Cloak of Magic Resistance
 endmsg
 x 43
-y 29
-end
-arch woodfloor
-x 43
 y 30
+end
+arch woodlarge
+x 43
+y 31
 end
 arch magic_mouth
 msg
 Cloak of Plenty
 endmsg
 x 43
-y 30
-end
-arch woodlarge
-x 43
-y 31
-end
-arch magic_mouth
-msg
-Oilskin Cloak
-endmsg
-x 43
 y 31
 end
 arch woodfloor
@@ -13282,12 +13309,19 @@ y 32
 end
 arch magic_mouth
 msg
-Serpent Cloak
+Oilskin Cloak
 endmsg
 x 43
 y 32
 end
 arch woodlarge
+x 43
+y 33
+end
+arch magic_mouth
+msg
+Serpent Cloak
+endmsg
 x 43
 y 33
 end
