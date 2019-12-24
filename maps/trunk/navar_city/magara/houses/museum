@@ -8,7 +8,7 @@ enter_x 5
 enter_y 37
 msg
 Created:  1994-10-11
-Modified: 2017-03-29 Rick Tanner
+Modified: 2019-12-23 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -3769,11 +3769,35 @@ arch wall_2_1_2
 x 14
 y 2
 end
+arch swall_1_1_half
+x 14
+y 2
+end
+arch dungeon_magic
+x 14
+y 2
+end
 arch woodfloor
 x 14
 y 3
 end
+arch swall_2_1_1
+x 14
+y 3
+end
+arch dungeon_magic
+x 14
+y 3
+end
 arch woodlarge
+x 14
+y 4
+end
+arch swall_2_2_1
+x 14
+y 4
+end
+arch dungeon_magic
 x 14
 y 4
 end
@@ -4074,23 +4098,11 @@ arch wall_2_1_2
 x 15
 y 2
 end
-arch swall_1_1_half
-x 15
-y 2
-end
-arch dungeon_magic
-x 15
-y 2
-end
 arch woodlarge
 x 15
 y 3
 end
-arch swall_2_1_1
-x 15
-y 3
-end
-arch dungeon_magic
+arch uw_shield
 x 15
 y 3
 end
@@ -4098,7 +4110,7 @@ arch woodfloor
 x 15
 y 4
 end
-arch swall_2_2_1
+arch swall_2_1_2
 x 15
 y 4
 end
@@ -4107,6 +4119,13 @@ x 15
 y 4
 end
 arch woodlarge
+x 15
+y 5
+end
+arch magic_mouth
+msg
+Belzebub's shield
+endmsg
 x 15
 y 5
 end
@@ -4365,7 +4384,7 @@ arch woodfloor
 x 16
 y 3
 end
-arch uw_shield
+arch DShield
 x 16
 y 3
 end
@@ -4387,7 +4406,7 @@ y 5
 end
 arch magic_mouth
 msg
-Belzebub's shield
+Demonspawn Shield
 endmsg
 x 16
 y 5
@@ -4689,7 +4708,7 @@ arch woodlarge
 x 17
 y 3
 end
-arch DShield
+arch DShieldm
 x 17
 y 3
 end
@@ -5043,7 +5062,7 @@ arch woodfloor
 x 18
 y 3
 end
-arch DShieldm
+arch DShieldms
 x 18
 y 3
 end
@@ -5369,7 +5388,7 @@ arch woodlarge
 x 19
 y 3
 end
-arch DShieldms
+arch DShields
 x 19
 y 3
 end
@@ -5695,7 +5714,7 @@ arch woodfloor
 x 20
 y 3
 end
-arch DShields
+arch dragon_shield
 x 20
 y 3
 end
@@ -5717,7 +5736,7 @@ y 5
 end
 arch magic_mouth
 msg
-Demonspawn Shield
+Dragon Shield
 endmsg
 x 20
 y 5
@@ -6021,7 +6040,7 @@ arch woodlarge
 x 21
 y 3
 end
-arch dragon_shield
+arch eyeshield
 x 21
 y 3
 end
@@ -6043,7 +6062,7 @@ y 5
 end
 arch magic_mouth
 msg
-Dragon Shield
+Eyeshield
 endmsg
 x 21
 y 5
@@ -6375,7 +6394,7 @@ arch woodfloor
 x 22
 y 3
 end
-arch eyeshield
+arch frostshield
 x 22
 y 3
 end
@@ -6397,7 +6416,7 @@ y 5
 end
 arch magic_mouth
 msg
-Eyeshield
+Frost Shield
 endmsg
 x 22
 y 5
@@ -6696,7 +6715,7 @@ arch woodlarge
 x 23
 y 3
 end
-arch frostshield
+arch kite_shield
 x 23
 y 3
 end
@@ -6718,7 +6737,7 @@ y 5
 end
 arch magic_mouth
 msg
-Frost Shield
+Kite Shield
 endmsg
 x 23
 y 5
