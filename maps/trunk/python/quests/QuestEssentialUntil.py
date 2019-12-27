@@ -30,17 +30,21 @@ import Crossfire
 item = Crossfire.WhoAmI()
 player = Crossfire.WhoIsActivator()
 args = Crossfire.ScriptParameters().split(' ')
-questname = args[0]
-stagenumber = int(args[1])
-currentstep = player.QuestGetState(questname)
-if currentstep == 0:
-    Crossfire.SetReturnValue(0)
-elif currentstep >= stagenumber:
-    item.GodGiven = True
-    Crossfire.SetReturnValue(0)
-else:
-    if item.Quantity == 1:
-        player.Message("You consider dropping the "+ item.Name + " but then decide it would be better to hold on to it for now.")
+if type(player) == Crossfire.Player:
+    questname = args[0]
+    currentstep = player.QuestGetState(questname)
+
+    questname = args[0]
+    stagenumber = int(args[1])
+    currentstep = player.QuestGetState(questname)
+    if currentstep == 0:
+        Crossfire.SetReturnValue(0)
+    elif currentstep >= stagenumber:
+        item.GodGiven = True
+        Crossfire.SetReturnValue(0)
     else:
-        player.Message("You consider dropping the "+ item.NamePl + " but then decide it would be better to hold on to them for now.")
-    Crossfire.SetReturnValue(1)
+        if item.Quantity == 1:
+            player.Message("You consider dropping the "+ item.Name + " but then decide it would be better to hold on to it for now.")
+        else:
+            player.Message("You consider dropping the "+ item.NamePl + " but then decide it would be better to hold on to them for now.")
+        Crossfire.SetReturnValue(1)

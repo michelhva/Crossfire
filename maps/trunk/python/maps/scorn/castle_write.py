@@ -22,19 +22,17 @@ import CFDataFile
 
 player = Crossfire.WhoIsActivator()
 
-nobledata = CFDataFile.CFData('scorn_nobility', ['rank', 'title'])
-currentstep = player.QuestGetState("scorn/Aristocracy")
-currentrecord = { '#' : player.Name, 'rank' : currentstep, 'title' : player.Title }
-lastrecord = nobledata.get_record(player.Name)
-Crossfire.Log(Crossfire.LogDebug, "castle_write: previous record %s, new record %s." % (lastrecord, currentrecord))
-if lastrecord == 0:
-    lastrecord =  { '#' : player.Name, 'rank' : -10, 'title' : 'The Default' }
-if (currentrecord['rank'] == 0) or (currentrecord['rank'] == int(lastrecord['rank']) and currentrecord['title'] == lastrecord['title']):
-    Crossfire.Log(Crossfire.LogDebug, "castle_write, no update needed for player %s." % player.Name)
-else:
-    Crossfire.Log(Crossfire.LogDebug, "castle_write, updating player %s, old state %s, new state %d" %(player.Name, lastrecord['rank'], currentstep))
-    nobledata.put_record(currentrecord)
-    player.Message("The castle sage scribbles as you walk past")
-
-
-
+if type(player) == Crossfire.Player:
+    nobledata = CFDataFile.CFData('scorn_nobility', ['rank', 'title'])
+    currentstep = player.QuestGetState("scorn/Aristocracy")
+    currentrecord = { '#' : player.Name, 'rank' : currentstep, 'title' : player.Title }
+    lastrecord = nobledata.get_record(player.Name)
+    Crossfire.Log(Crossfire.LogDebug, "castle_write: previous record %s, new record %s." % (lastrecord, currentrecord))
+    if lastrecord == 0:
+        lastrecord =  { '#' : player.Name, 'rank' : -10, 'title' : 'The Default' }
+    if (currentrecord['rank'] == 0) or (currentrecord['rank'] == int(lastrecord['rank']) and currentrecord['title'] == lastrecord['title']):
+        Crossfire.Log(Crossfire.LogDebug, "castle_write, no update needed for player %s." % player.Name)
+    else:
+        Crossfire.Log(Crossfire.LogDebug, "castle_write, updating player %s, old state %s, new state %d" %(player.Name, lastrecord['rank'], currentstep))
+        nobledata.put_record(currentrecord)
+        player.Message("The castle sage scribbles as you walk past")
