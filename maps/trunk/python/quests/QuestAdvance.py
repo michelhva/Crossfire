@@ -51,6 +51,9 @@ def handle():
   if player.Type != Crossfire.Type.PLAYER:
     player = player.Owner
 
+  if player.Type != Crossfire.Type.PLAYER:
+    return
+
   params = Crossfire.ScriptParameters()
   args = params.split()
   questname = args[0]

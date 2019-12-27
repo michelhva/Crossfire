@@ -19,6 +19,9 @@ def matches(rule):
         return True
     args = rule.split()
 
+    if type(killer) != Crossfire.Player:
+        return False
+
     currentstep = killer.QuestGetState(args[0])
     for rule in args[1:]:
         if rule.find("-") == -1:
