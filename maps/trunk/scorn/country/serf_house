@@ -1,0 +1,1007 @@
+arch map
+name Serf's House
+region scorncounty
+width 14
+height 14
+enter_x 4
+enter_y 10
+msg
+Created:  2019-12-29 Kevin Zheng
+Modified: 2019-12-29 Kevin Zheng
+endmsg
+outdoor 1
+end
+arch grass
+end
+arch grass
+y 1
+end
+arch grass
+y 2
+end
+arch farmland
+y 3
+end
+arch farmland
+y 4
+end
+arch farmland
+y 5
+end
+arch farmland
+y 6
+end
+arch farmland
+y 7
+end
+arch farmland
+y 8
+end
+arch farmland
+y 9
+end
+arch farmland
+y 10
+end
+arch grass
+y 11
+end
+arch grass
+y 12
+end
+arch grass
+y 13
+end
+arch grass
+x 1
+end
+arch grass
+x 1
+y 1
+end
+arch grass
+x 1
+y 2
+end
+arch farmland
+x 1
+y 3
+end
+arch farmland
+x 1
+y 4
+end
+arch farmland
+x 1
+y 5
+end
+arch farmland
+x 1
+y 6
+end
+arch farmland
+x 1
+y 7
+end
+arch farmland
+x 1
+y 8
+end
+arch farmland
+x 1
+y 9
+end
+arch farmland
+x 1
+y 10
+end
+arch grass
+x 1
+y 11
+end
+arch grass
+x 1
+y 12
+end
+arch grass
+x 1
+y 13
+end
+arch grass
+x 2
+end
+arch grass
+x 2
+y 1
+end
+arch dirtfloor
+x 2
+y 2
+end
+arch woodwall_2_2_2
+x 2
+y 2
+end
+arch dirtfloor
+x 2
+y 3
+end
+arch woodwall_2_1_1
+x 2
+y 3
+end
+arch dirtfloor
+x 2
+y 4
+end
+arch woodwall_2_1_1
+x 2
+y 4
+end
+arch dirtfloor
+x 2
+y 5
+end
+arch woodwall_2_1_1
+x 2
+y 5
+end
+arch dirtfloor
+x 2
+y 6
+end
+arch woodwall_win1
+x 2
+y 6
+end
+arch dirtfloor
+x 2
+y 7
+end
+arch woodwall_2_1_1
+x 2
+y 7
+end
+arch dirtfloor
+x 2
+y 8
+end
+arch woodwall_2_1_1
+x 2
+y 8
+end
+arch dirtfloor
+x 2
+y 9
+end
+arch woodwall_2_1_1
+x 2
+y 9
+end
+arch dirtfloor
+x 2
+y 10
+end
+arch woodwall_2_1_1
+x 2
+y 10
+end
+arch dirtfloor
+x 2
+y 11
+end
+arch woodwall_2_2_1
+x 2
+y 11
+end
+arch grass
+x 2
+y 12
+end
+arch grass
+x 2
+y 13
+end
+arch grass
+x 3
+end
+arch grass
+x 3
+y 1
+end
+arch dirtfloor
+x 3
+y 2
+end
+arch woodwall_2_1_2
+x 3
+y 2
+end
+arch dirtfloor
+x 3
+y 3
+end
+arch fireplace
+x 3
+y 3
+end
+arch dirtfloor
+x 3
+y 4
+end
+arch dirtfloor
+x 3
+y 5
+end
+arch dirtfloor
+x 3
+y 6
+end
+arch dirtfloor
+x 3
+y 7
+end
+arch dirtfloor
+x 3
+y 8
+end
+arch farmer
+msg
+@match stay
+We haveth not much, but here stay you'd be welcome.
+@match monsters
+F'nny 'ou ask. 'ere field down south, we see some monsters a fortnight ago.
+@match *
+'ello, stranger.
+@reply monsters Have you seen any monsters here?
+@reply stay Can I stay here?
+endmsg
+x 3
+y 8
+end
+arch dirtfloor
+x 3
+y 9
+end
+arch dirtfloor
+x 3
+y 10
+end
+arch dirtfloor
+x 3
+y 11
+end
+arch woodwall_1_3
+x 3
+y 11
+end
+arch grass
+x 3
+y 12
+end
+arch grass
+x 3
+y 13
+end
+arch grass
+x 4
+end
+arch grass
+x 4
+y 1
+end
+arch dirtfloor
+x 4
+y 2
+end
+arch woodwall_2_1_2
+x 4
+y 2
+end
+arch dirtfloor
+x 4
+y 3
+end
+arch dirtfloor
+x 4
+y 4
+end
+arch dirtfloor
+x 4
+y 5
+end
+arch chair_1.1
+x 4
+y 5
+end
+arch dirtfloor
+x 4
+y 6
+end
+arch table_2x1
+x 4
+y 6
+end
+arch dirtfloor
+x 4
+y 7
+end
+arch chair_1.3
+x 4
+y 7
+end
+arch dirtfloor
+x 4
+y 8
+end
+arch dirtfloor
+x 4
+y 9
+end
+arch dirtfloor
+x 4
+y 10
+end
+arch dirtfloor
+x 4
+y 11
+end
+arch look_door_exit_1
+slaying /world/world_105_116
+hp 24
+sp 29
+x 4
+y 11
+move_on all
+end
+arch grass
+x 4
+y 12
+end
+arch grass
+x 4
+y 13
+end
+arch grass
+x 5
+end
+arch grass
+x 5
+y 1
+end
+arch dirtfloor
+x 5
+y 2
+end
+arch woodwall_2_1_2
+x 5
+y 2
+end
+arch dirtfloor
+x 5
+y 3
+end
+arch dirtfloor
+x 5
+y 4
+end
+arch dirtfloor
+x 5
+y 5
+end
+arch chair_1.1
+x 5
+y 5
+end
+arch dirtfloor
+x 5
+y 6
+end
+arch dirtfloor
+x 5
+y 7
+end
+arch chair_1.3
+x 5
+y 7
+end
+arch dirtfloor
+x 5
+y 8
+end
+arch dirtfloor
+x 5
+y 9
+end
+arch dirtfloor
+x 5
+y 10
+end
+arch dirtfloor
+x 5
+y 11
+end
+arch woodwall_1_4
+x 5
+y 11
+end
+arch grass
+x 5
+y 12
+end
+arch grass
+x 5
+y 13
+end
+arch grass
+x 6
+end
+arch grass
+x 6
+y 1
+end
+arch dirtfloor
+x 6
+y 2
+end
+arch woodwall_2_1_2
+x 6
+y 2
+end
+arch dirtfloor
+x 6
+y 3
+end
+arch stove
+x 6
+y 3
+end
+arch dirtfloor
+x 6
+y 4
+end
+arch fatwoman
+x 6
+y 4
+end
+arch dirtfloor
+x 6
+y 5
+end
+arch dirtfloor
+x 6
+y 6
+end
+arch dirtfloor
+x 6
+y 7
+end
+arch dirtfloor
+x 6
+y 8
+end
+arch dirtfloor
+x 6
+y 9
+end
+arch dirtfloor
+x 6
+y 10
+end
+arch dirtfloor
+x 6
+y 11
+end
+arch woodwall_2_1_2
+x 6
+y 11
+end
+arch grass
+x 6
+y 12
+end
+arch grass
+x 6
+y 13
+end
+arch grass
+x 7
+end
+arch grass
+x 7
+y 1
+end
+arch dirtfloor
+x 7
+y 2
+end
+arch woodwall_3_3
+x 7
+y 2
+end
+arch dirtfloor
+x 7
+y 3
+end
+arch woodwall_2_1_1
+x 7
+y 3
+end
+arch dirtfloor
+x 7
+y 4
+end
+arch woodwall_2_1_1
+x 7
+y 4
+end
+arch dirtfloor
+x 7
+y 5
+end
+arch woodwall_2_1_1
+x 7
+y 5
+end
+arch dirtfloor
+x 7
+y 6
+end
+arch woodwall_2_1_1
+x 7
+y 6
+end
+arch dirtfloor
+x 7
+y 7
+end
+arch woodwall_2_2_1
+x 7
+y 7
+end
+arch dirtfloor
+x 7
+y 8
+end
+arch dirtfloor
+x 7
+y 9
+end
+arch dirtfloor
+x 7
+y 10
+end
+arch dirtfloor
+x 7
+y 11
+end
+arch woodwall_2_1_2
+x 7
+y 11
+end
+arch grass
+x 7
+y 12
+end
+arch grass
+x 7
+y 13
+end
+arch grass
+x 8
+end
+arch grass
+x 8
+y 1
+end
+arch dirtfloor
+x 8
+y 2
+end
+arch woodwall_2_1_2
+x 8
+y 2
+end
+arch dirtfloor
+x 8
+y 3
+end
+arch bed_save
+x 8
+y 3
+end
+arch dirtfloor
+x 8
+y 4
+end
+arch dirtfloor
+x 8
+y 5
+end
+arch dirtfloor
+x 8
+y 6
+end
+arch dirtfloor
+x 8
+y 7
+end
+arch woodwall_1_3
+x 8
+y 7
+end
+arch dirtfloor
+x 8
+y 8
+end
+arch dirtfloor
+x 8
+y 9
+end
+arch dirtfloor
+x 8
+y 10
+end
+arch dirtfloor
+x 8
+y 11
+end
+arch woodwall_2_1_2
+x 8
+y 11
+end
+arch grass
+x 8
+y 12
+end
+arch grass
+x 8
+y 13
+end
+arch grass
+x 9
+end
+arch grass
+x 9
+y 1
+end
+arch dirtfloor
+x 9
+y 2
+end
+arch woodwall_2_1_2
+x 9
+y 2
+end
+arch dirtfloor
+x 9
+y 3
+end
+arch chest_2
+x 9
+y 3
+end
+arch dirtfloor
+x 9
+y 4
+end
+arch dirtfloor
+x 9
+y 5
+end
+arch dirtfloor
+x 9
+y 6
+end
+arch dirtfloor
+x 9
+y 7
+end
+arch dirtfloor
+x 9
+y 8
+end
+arch dirtfloor
+x 9
+y 9
+end
+arch dirtfloor
+x 9
+y 10
+end
+arch dirtfloor
+x 9
+y 11
+end
+arch woodwall_win2
+x 9
+y 11
+end
+arch grass
+x 9
+y 12
+end
+arch grass
+x 9
+y 13
+end
+arch grass
+x 10
+end
+arch grass
+x 10
+y 1
+end
+arch dirtfloor
+x 10
+y 2
+end
+arch woodwall_2_1_2
+x 10
+y 2
+end
+arch dirtfloor
+x 10
+y 3
+end
+arch bed_save
+x 10
+y 3
+end
+arch dirtfloor
+x 10
+y 4
+end
+arch dirtfloor
+x 10
+y 5
+end
+arch dirtfloor
+x 10
+y 6
+end
+arch dirtfloor
+x 10
+y 7
+end
+arch woodwall_1_4
+x 10
+y 7
+end
+arch dirtfloor
+x 10
+y 8
+end
+arch dirtfloor
+x 10
+y 9
+end
+arch dirtfloor
+x 10
+y 10
+end
+arch barrel
+x 10
+y 10
+end
+arch dirtfloor
+x 10
+y 11
+end
+arch woodwall_2_1_2
+x 10
+y 11
+end
+arch grass
+x 10
+y 12
+end
+arch grass
+x 10
+y 13
+end
+arch grass
+x 11
+end
+arch grass
+x 11
+y 1
+end
+arch dirtfloor
+x 11
+y 2
+end
+arch woodwall_2_2_3
+x 11
+y 2
+end
+arch dirtfloor
+x 11
+y 3
+end
+arch woodwall_2_1_1
+x 11
+y 3
+end
+arch dirtfloor
+x 11
+y 4
+end
+arch woodwall_2_1_1
+x 11
+y 4
+end
+arch dirtfloor
+x 11
+y 5
+end
+arch woodwall_2_1_1
+x 11
+y 5
+end
+arch dirtfloor
+x 11
+y 6
+end
+arch woodwall_2_1_1
+x 11
+y 6
+end
+arch dirtfloor
+x 11
+y 7
+end
+arch woodwall_3_4
+x 11
+y 7
+end
+arch dirtfloor
+x 11
+y 8
+end
+arch woodwall_2_1_1
+x 11
+y 8
+end
+arch dirtfloor
+x 11
+y 9
+end
+arch woodwall_2_1_1
+x 11
+y 9
+end
+arch dirtfloor
+x 11
+y 10
+end
+arch woodwall_2_1_1
+x 11
+y 10
+end
+arch dirtfloor
+x 11
+y 11
+end
+arch woodwall_2_2_4
+x 11
+y 11
+end
+arch grass
+x 11
+y 12
+end
+arch grass
+x 11
+y 13
+end
+arch grass
+x 12
+end
+arch grass
+x 12
+y 1
+end
+arch grass
+x 12
+y 2
+end
+arch grass
+x 12
+y 3
+end
+arch grass
+x 12
+y 4
+end
+arch grass
+x 12
+y 5
+end
+arch grass
+x 12
+y 6
+end
+arch grass
+x 12
+y 7
+end
+arch grass
+x 12
+y 8
+end
+arch grass
+x 12
+y 9
+end
+arch grass
+x 12
+y 10
+end
+arch grass
+x 12
+y 11
+end
+arch grass
+x 12
+y 12
+end
+arch grass
+x 12
+y 13
+end
+arch grass
+x 13
+end
+arch grass
+x 13
+y 1
+end
+arch grass
+x 13
+y 2
+end
+arch grass
+x 13
+y 3
+end
+arch grass
+x 13
+y 4
+end
+arch grass
+x 13
+y 5
+end
+arch grass
+x 13
+y 6
+end
+arch grass
+x 13
+y 7
+end
+arch grass
+x 13
+y 8
+end
+arch grass
+x 13
+y 9
+end
+arch grass
+x 13
+y 10
+end
+arch grass
+x 13
+y 11
+end
+arch grass
+x 13
+y 12
+end
+arch grass
+x 13
+y 13
+end
