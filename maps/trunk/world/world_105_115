@@ -9,7 +9,7 @@ enter_x 5
 enter_y 37
 msg
 Created:  2001-02-16
-Modified: 2019-08-17 Kevin Zheng
+Modified: 2019-12-28 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_105_114
@@ -9990,12 +9990,12 @@ arch farmland
 x 22
 y 47
 end
-arch grass
+arch farmland
 x 22
 y 48
 elevation 1804
 end
-arch jungle_1
+arch farmland
 x 22
 y 49
 elevation 2974
@@ -10264,12 +10264,12 @@ arch farmland
 x 23
 y 47
 end
-arch grass
+arch farmland
 x 23
 y 48
 elevation 2860
 end
-arch hills
+arch farmland
 x 23
 y 49
 elevation 4684
@@ -10518,12 +10518,12 @@ arch farmland
 x 24
 y 47
 end
-arch brush
+arch farmland
 x 24
 y 48
 elevation 1092
 end
-arch grassdark
+arch farmland
 x 24
 y 49
 end
@@ -10771,11 +10771,11 @@ x 25
 y 47
 elevation 7473
 end
-arch grassdark
+arch farmland
 x 25
 y 48
 end
-arch brush
+arch farmland
 x 25
 y 49
 elevation 1907
@@ -13492,7 +13492,7 @@ arch tree5
 x 35
 y 43
 end
-arch grass_only
+arch farmland
 x 35
 y 44
 elevation 1273
@@ -13501,17 +13501,17 @@ arch tree5
 x 35
 y 44
 end
-arch woods_3
+arch farmland
 x 35
 y 45
 elevation 1011
 end
-arch hills
+arch farmland
 x 35
 y 46
 elevation 4974
 end
-arch grass_only
+arch farmland
 x 35
 y 47
 elevation 1502
@@ -13520,7 +13520,7 @@ arch tree3
 x 35
 y 47
 end
-arch grass_only
+arch farmland
 x 35
 y 48
 elevation 1150
@@ -13772,32 +13772,32 @@ x 36
 y 43
 elevation 3679
 end
-arch hills_rocky
+arch farmland
 x 36
 y 44
 elevation 4953
 end
-arch jungle_2
+arch farmland
 x 36
 y 45
 elevation 2586
 end
-arch hills
+arch farmland
 x 36
 y 46
 elevation 3287
 end
-arch jungle_2
+arch farmland
 x 36
 y 47
 elevation 462
 end
-arch desert
+arch farmland
 x 36
 y 48
 elevation 977
 end
-arch desert
+arch farmland
 x 36
 y 49
 elevation 1095
@@ -14035,32 +14035,32 @@ x 37
 y 43
 elevation 4781
 end
-arch hills_rocky
+arch farmland
 x 37
 y 44
 elevation 3276
 end
-arch hills_rocky
+arch farmland
 x 37
 y 45
 elevation 4282
 end
-arch hills_rocky
+arch farmland
 x 37
 y 46
 elevation 4606
 end
-arch jungle_1
+arch farmland
 x 37
 y 47
 elevation 2948
 end
-arch desert
+arch farmland
 x 37
 y 48
 elevation 527
 end
-arch desert
+arch farmland
 x 37
 y 49
 elevation 2071
@@ -14304,32 +14304,32 @@ x 38
 y 43
 elevation 4124
 end
-arch hills_rocky
+arch farmland
 x 38
 y 44
 elevation 4754
 end
-arch jungle_1
+arch farmland
 x 38
 y 45
 elevation 1530
 end
-arch desert
+arch farmland
 x 38
 y 46
 elevation 365
 end
-arch desert
+arch farmland
 x 38
 y 47
 elevation 2852
 end
-arch desert
+arch farmland
 x 38
 y 48
 elevation 2369
 end
-arch desert
+arch farmland
 x 38
 y 49
 elevation 2339
@@ -14604,32 +14604,32 @@ x 39
 y 43
 elevation 3537
 end
-arch hills_rocky
+arch farmland
 x 39
 y 44
 elevation 3486
 end
-arch jungle_1
+arch farmland
 x 39
 y 45
 elevation 2041
 end
-arch desert
+arch farmland
 x 39
 y 46
 elevation 1958
 end
-arch desert
+arch farmland
 x 39
 y 47
 elevation 2870
 end
-arch jungle_1
+arch farmland
 x 39
 y 48
 elevation 499
 end
-arch jungle_1
+arch farmland
 x 39
 y 49
 elevation 36
@@ -14922,32 +14922,32 @@ x 40
 y 43
 elevation 4986
 end
-arch jungle_1
+arch farmland
 x 40
 y 44
 elevation 1662
 end
-arch jungle_1
+arch farmland
 x 40
 y 45
 elevation 980
 end
-arch desert
+arch farmland
 x 40
 y 46
 elevation 1534
 end
-arch desert
+arch farmland
 x 40
 y 47
 elevation 2523
 end
-arch jungle_1
+arch farmland
 x 40
 y 48
 elevation 509
 end
-arch jungle_1
+arch farmland
 x 40
 y 49
 elevation 1642
@@ -15229,32 +15229,32 @@ x 41
 y 43
 elevation 4624
 end
-arch jungle_1
+arch farmland
 x 41
 y 44
 elevation 1167
 end
-arch desert
+arch farmland
 x 41
 y 45
 elevation 1448
 end
-arch desert
+arch farmland
 x 41
 y 46
 elevation 2068
 end
-arch desert
+arch farmland
 x 41
 y 47
 elevation 71
 end
-arch desert
+arch farmland
 x 41
 y 48
 elevation 1904
 end
-arch jungle_1
+arch farmland
 x 41
 y 49
 elevation 436
@@ -15532,32 +15532,32 @@ x 42
 y 43
 elevation 3005
 end
-arch jungle_1
+arch farmland
 x 42
 y 44
 elevation 2010
 end
-arch jungle_1
+arch farmland
 x 42
 y 45
 elevation 790
 end
-arch desert
+arch farmland
 x 42
 y 46
 elevation 690
 end
-arch desert
+arch farmland
 x 42
 y 47
 elevation 21
 end
-arch desert
+arch farmland
 x 42
 y 48
 elevation 2119
 end
-arch jungle_1
+arch farmland
 x 42
 y 49
 elevation 816
@@ -15829,32 +15829,32 @@ x 43
 y 43
 elevation 4099
 end
-arch hills_rocky
+arch farmland
 x 43
 y 44
 elevation 3351
 end
-arch hills_rocky
+arch farmland
 x 43
 y 45
 elevation 3587
 end
-arch jungle_1
+arch farmland
 x 43
 y 46
 elevation 1312
 end
-arch desert
+arch farmland
 x 43
 y 47
 elevation 654
 end
-arch desert
+arch farmland
 x 43
 y 48
 elevation 992
 end
-arch desert
+arch farmland
 x 43
 y 49
 elevation 768
@@ -16101,32 +16101,32 @@ x 44
 y 43
 elevation 4518
 end
-arch hills_rocky
+arch farmland
 x 44
 y 44
 elevation 4399
 end
-arch hills_rocky
+arch farmland
 x 44
 y 45
 elevation 4678
 end
-arch jungle_1
+arch farmland
 x 44
 y 46
 elevation 832
 end
-arch jungle_1
+arch farmland
 x 44
 y 47
 elevation 541
 end
-arch jungle_1
+arch farmland
 x 44
 y 48
 elevation 566
 end
-arch jungle_1
+arch farmland
 x 44
 y 49
 elevation 2974
@@ -16358,22 +16358,22 @@ x 45
 y 43
 elevation 1774
 end
-arch hills_rocky
+arch farmland
 x 45
 y 44
 elevation 4842
 end
-arch jungle_1
+arch farmland
 x 45
 y 45
 elevation 2016
 end
-arch jungle_1
+arch farmland
 x 45
 y 46
 elevation 1115
 end
-arch jungle_1
+arch farmland
 x 45
 y 47
 elevation 1756
@@ -16383,7 +16383,7 @@ x 45
 y 48
 elevation 3495
 end
-arch jungle_1
+arch farmland
 x 45
 y 49
 elevation 476
@@ -16639,7 +16639,7 @@ x 46
 y 48
 elevation 4564
 end
-arch hills_rocky
+arch farmland
 x 46
 y 49
 elevation 3944
