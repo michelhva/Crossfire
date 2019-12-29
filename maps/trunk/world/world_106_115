@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-02-31
-Modified: 2019-08-16 Kevin Zheng
+Modified: 2019-12-28 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_106_114
@@ -424,42 +424,42 @@ arch cobblestones
 x 1
 y 41
 end
-arch hills_rocky
+arch farmland
 x 1
 y 42
 elevation 3990
 end
-arch hills
+arch farmland
 x 1
 y 43
 elevation 4153
 end
-arch hills
+arch farmland
 x 1
 y 44
 elevation 3235
 end
-arch woods_3
+arch farmland
 x 1
 y 45
 elevation 2253
 end
-arch desert
+arch farmland
 x 1
 y 46
 elevation 123
 end
-arch hills_rocky
+arch farmland
 x 1
 y 47
 elevation 3571
 end
-arch hills_rocky
+arch farmland
 x 1
 y 48
 elevation 4804
 end
-arch hills
+arch farmland
 x 1
 y 49
 elevation 4535
@@ -679,42 +679,42 @@ arch cobblestones
 x 2
 y 41
 end
-arch hills_rocky
+arch farmland
 x 2
 y 42
 elevation 3778
 end
-arch hills_rocky
+arch farmland
 x 2
 y 43
 elevation 3918
 end
-arch jungle_1
+arch farmland
 x 2
 y 44
 elevation 1923
 end
-arch hills
+arch farmland
 x 2
 y 45
 elevation 3040
 end
-arch hills_rocky
+arch farmland
 x 2
 y 46
 elevation 3393
 end
-arch hills_rocky
+arch farmland
 x 2
 y 47
 elevation 3690
 end
-arch hills_rocky
+arch farmland
 x 2
 y 48
 elevation 3689
 end
-arch jungle_1
+arch farmland
 x 2
 y 49
 elevation 2915
@@ -925,46 +925,42 @@ arch cobblestones
 x 3
 y 41
 end
-arch hills_rocky
+arch farmland
 x 3
 y 42
 elevation 3338
 end
-arch hills_rocky
+arch farmland
 x 3
 y 43
 elevation 3039
 end
-arch grass_only
+arch farmland
 x 3
 y 44
 elevation 2770
 end
-arch tree3
-x 3
-y 44
-end
-arch hills_rocky
+arch farmland
 x 3
 y 45
 elevation 3125
 end
-arch hills_rocky
+arch farmland
 x 3
 y 46
 elevation 3769
 end
-arch hills_rocky
+arch farmland
 x 3
 y 47
 elevation 3536
 end
-arch jungle_1
+arch farmland
 x 3
 y 48
 elevation 2522
 end
-arch grass
+arch farmland
 x 3
 y 49
 elevation 470
@@ -1179,12 +1175,12 @@ x 4
 y 41
 elevation 3525
 end
-arch hills
+arch farmland
 x 4
 y 42
 elevation 3407
 end
-arch grass_only
+arch farmland
 x 4
 y 43
 elevation 1344
@@ -1193,36 +1189,32 @@ arch tree3
 x 4
 y 43
 end
-arch brush
+arch farmland
 x 4
 y 44
 elevation 721
 end
-arch woods_3
+arch farmland
 x 4
 y 45
 elevation 2152
 end
-arch jungle_1
+arch farmland
 x 4
 y 46
 elevation 2692
 end
-arch grass_only
+arch farmland
 x 4
 y 47
 elevation 2292
 end
-arch tree3
-x 4
-y 47
-end
-arch desert
+arch farmland
 x 4
 y 48
 elevation 531
 end
-arch desert
+arch farmland
 x 4
 y 49
 elevation 271

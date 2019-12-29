@@ -2,12 +2,13 @@ arch map
 name world_105_117
 reset_timeout 7200
 difficulty 1
+region scorncounty
 width 50
 height 50
 enter_x 1
 enter_y 1
 msg
-Modified: 2019-08-16 Kevin Zheng
+Modified: 2019-12-29 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_1 world_105_116
@@ -4734,21 +4735,21 @@ x 18
 y 49
 elevation 8644
 end
-arch steppe
+arch farmland
 x 19
 elevation 4804
 end
-arch steppe
+arch farmland
 x 19
 y 1
 elevation 4673
 end
-arch steppe
+arch farmland
 x 19
 y 2
 elevation 4916
 end
-arch steppe
+arch farmland
 x 19
 y 3
 elevation 4886
@@ -4983,31 +4984,31 @@ x 19
 y 49
 elevation 9382
 end
-arch woods_2
+arch farmland
 x 20
 elevation 2854
 end
-arch steppe
+arch farmland
 x 20
 y 1
 elevation 4618
 end
-arch steppe
+arch farmland
 x 20
 y 2
 elevation 4659
 end
-arch steppe
+arch farmland
 x 20
 y 3
 elevation 4749
 end
-arch steppe
+arch farmland
 x 20
 y 4
 elevation 3750
 end
-arch woods_2
+arch farmland
 x 20
 y 5
 elevation 1781
@@ -5232,36 +5233,36 @@ x 20
 y 49
 elevation 9815
 end
-arch steppe
+arch farmland
 x 21
 elevation 4322
 end
-arch steppe
+arch farmland
 x 21
 y 1
 elevation 4576
 end
-arch steppe
+arch farmland
 x 21
 y 2
 elevation 4850
 end
-arch steppe
+arch farmland
 x 21
 y 3
 elevation 4678
 end
-arch steppe
+arch farmland
 x 21
 y 4
 elevation 4092
 end
-arch steppe
+arch farmland
 x 21
 y 5
 elevation 3562
 end
-arch steppe
+arch farmland
 x 21
 y 6
 elevation 3733
@@ -5500,17 +5501,17 @@ x 22
 y 3
 elevation 4917
 end
-arch steppe
+arch farmland
 x 22
 y 4
 elevation 4345
 end
-arch steppe
+arch farmland
 x 22
 y 5
 elevation 4124
 end
-arch steppe
+arch farmland
 x 22
 y 6
 elevation 4589
@@ -5749,22 +5750,26 @@ x 23
 y 3
 elevation 4874
 end
-arch steppe
+arch farmland
 x 23
 y 4
 elevation 4543
 end
-arch steppe
+arch farmland
 x 23
 y 5
 elevation 4530
 end
-arch steppe
+arch farmland
 x 23
 y 6
 elevation 4648
 end
-arch steppe
+arch hut
+x 23
+y 6
+end
+arch farmland
 x 23
 y 7
 elevation 4322
@@ -6017,27 +6022,27 @@ x 24
 y 3
 elevation 3463
 end
-arch steppe
+arch farmland
 x 24
 y 4
 elevation 4454
 end
-arch steppe
+arch farmland
 x 24
 y 5
 elevation 4425
 end
-arch steppe
+arch farmland
 x 24
 y 6
 elevation 4167
 end
-arch steppe
+arch farmland
 x 24
 y 7
 elevation 3570
 end
-arch woods_2
+arch farmland
 x 24
 y 8
 elevation 1262
@@ -6247,46 +6252,50 @@ x 24
 y 49
 elevation 8698
 end
-arch steppe
+arch farmland
 x 25
 elevation 4934
 end
-arch steppe
+arch farmland
 x 25
 y 1
 elevation 4680
 end
-arch steppe
+arch farmland
 x 25
 y 2
 elevation 3910
 end
-arch steppe
+arch farmland
 x 25
 y 3
 elevation 4192
 end
-arch steppe
+arch farmland
 x 25
 y 4
 elevation 4004
 end
-arch steppe
+arch farmland
 x 25
 y 5
 elevation 3711
 end
-arch steppe
+arch farmland
 x 25
 y 6
 elevation 3165
 end
-arch woods_2
+arch wagon
+x 25
+y 6
+end
+arch farmland
 x 25
 y 7
 elevation 2802
 end
-arch woods_2
+arch farmland
 x 25
 y 8
 elevation 2873
@@ -6496,46 +6505,46 @@ x 25
 y 49
 elevation 7624
 end
-arch steppe
+arch farmland
 x 26
 elevation 3736
 end
-arch woods_2
+arch farmland
 x 26
 y 1
 elevation 2225
 end
-arch steppe
+arch farmland
 x 26
 y 2
 elevation 3347
 end
-arch steppe
+arch farmland
 x 26
 y 3
 elevation 3624
 end
-arch steppe
+arch farmland
 x 26
 y 4
 elevation 3316
 end
-arch woods_2
+arch farmland
 x 26
 y 5
 elevation 2577
 end
-arch woods_2
+arch farmland
 x 26
 y 6
 elevation 1658
 end
-arch woods_2
+arch farmland
 x 26
 y 7
 elevation 2347
 end
-arch woods_2
+arch farmland
 x 26
 y 8
 elevation 2565
@@ -6745,31 +6754,31 @@ x 26
 y 49
 elevation 8016
 end
-arch woods_2
+arch farmland
 x 27
 elevation 1837
 end
-arch brush
+arch farmland
 x 27
 y 1
 elevation 942
 end
-arch woods_2
+arch farmland
 x 27
 y 2
 elevation 2619
 end
-arch woods_2
+arch farmland
 x 27
 y 3
 elevation 2891
 end
-arch woods_2
+arch farmland
 x 27
 y 4
 elevation 2367
 end
-arch brush
+arch farmland
 x 27
 y 5
 elevation 998
