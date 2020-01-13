@@ -7,7 +7,7 @@ height 6
 enter_x 10
 msg
 Created:  1999-02-04 King Zoobus
-Modified: 2010-11-05 Andreas Kirschbaum
+Modified: 2019-08-31 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -35,7 +35,7 @@ end
 arch shop_empty
 y 4
 end
-arch wall_2_1_1
+arch wall_1_2
 y 4
 end
 arch shop_gems
@@ -132,7 +132,7 @@ arch shop_empty
 x 3
 y 3
 end
-arch wall_2_1_1
+arch wall_1_2
 x 3
 y 3
 end
@@ -148,7 +148,7 @@ arch shop_empty
 x 3
 y 5
 end
-arch wall_2_1_1
+arch wall_1_1
 x 3
 y 5
 end
@@ -293,7 +293,7 @@ arch woodfloor
 x 8
 y 2
 end
-arch wall_3_3
+arch wall_2_1_2
 x 8
 y 2
 end
@@ -313,7 +313,7 @@ arch shop_empty
 x 8
 y 4
 end
-arch wall_2_1_1
+arch wall_1_1
 x 8
 y 4
 end
@@ -518,7 +518,7 @@ arch shop_empty
 x 14
 y 4
 end
-arch wall_2_1_1
+arch wall_1_2
 x 14
 y 4
 end
@@ -709,7 +709,7 @@ arch shop_empty
 x 19
 y 4
 end
-arch wall_2_1_1
+arch wall_1_2
 x 19
 y 4
 end
