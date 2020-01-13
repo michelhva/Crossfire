@@ -9,7 +9,7 @@ enter_x 5
 enter_y 37
 msg
 Created:  2001-02-16
-Modified: 2019-12-28 Kevin Zheng
+Modified: 2020-01-13 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_105_114
@@ -320,8 +320,8 @@ end
 arch barrack_long
 name Barracks
 slaying /scorn/houses/barracks
-hp 24
-sp 4
+hp 25
+sp 5
 y 43
 end
 arch dungeon_magic
