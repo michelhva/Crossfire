@@ -43,6 +43,9 @@ public class SwingUtilities2 {
      * @param runnable the runnable to call
      */
     public static void invokeAndWait(@NotNull final Runnable runnable) {
+        if (Thread.currentThread().isInterrupted()) {
+            return;
+        }
         if (SwingUtilities.isEventDispatchThread()) {
             runnable.run();
         } else {
