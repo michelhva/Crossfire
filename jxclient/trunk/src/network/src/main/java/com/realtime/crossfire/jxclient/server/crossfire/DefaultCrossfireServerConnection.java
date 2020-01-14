@@ -58,7 +58,6 @@ import java.util.Map;
 import java.util.regex.Pattern;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-
 /**
  * Default implementation of {@link CrossfireServerConnection}.
  * @author Andreas Kirschbaum
@@ -3334,7 +3333,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                     debugProtocol.debugProtocolWrite("recv stats stat="+stat+" int2="+int2Param+"="+(int2Param&0xFFFF));
                 }
                 model.getStats().setStatInt2(stat, int2Param);
-                notifyPacketWatcherListeners("stats", () -> stat+" "+int2Param);
+                notifyPacketWatcherListeners("stats", () -> StatUtils.getStatNames(stat)+" "+int2Param);
                 break;
 
             case Stats.CS_STAT_EXP:
@@ -3349,7 +3348,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                     debugProtocol.debugProtocolWrite("recv stats stat="+stat+" int4="+int4Param);
                 }
                 model.getStats().setStatInt4(stat, int4Param);
-                notifyPacketWatcherListeners("stats", () -> stat+" "+int4Param);
+                notifyPacketWatcherListeners("stats", () -> StatUtils.getStatNames(stat)+" "+int4Param);
                 break;
 
             case Stats.CS_STAT_EXP64:
@@ -3358,7 +3357,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                     debugProtocol.debugProtocolWrite("recv stats stat="+stat+" int8="+int8Param);
                 }
                 model.getStats().setStatInt8(stat, int8Param);
-                notifyPacketWatcherListeners("stats", () -> stat+" "+int8Param);
+                notifyPacketWatcherListeners("stats", () -> StatUtils.getStatNames(stat)+" "+int8Param);
                 break;
 
             case Stats.CS_STAT_RANGE:
@@ -3369,7 +3368,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                     debugProtocol.debugProtocolWrite("recv stats stat="+stat+" str="+strParam);
                 }
                 model.getStats().setStatString(stat, strParam);
-                notifyPacketWatcherListeners("stats", () -> stat+" "+strParam);
+                notifyPacketWatcherListeners("stats", () -> StatUtils.getStatNames(stat)+" "+strParam);
                 break;
 
             default:
@@ -3379,7 +3378,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                         debugProtocol.debugProtocolWrite("recv stats stat="+stat+" int2="+int2Param2);
                     }
                     model.getStats().setStatInt2(stat, int2Param2);
-                    notifyPacketWatcherListeners("stats", () -> stat+" "+int2Param2);
+                    notifyPacketWatcherListeners("stats", () -> StatUtils.getStatNames(stat)+" "+int2Param2);
                 } else if (Stats.CS_STAT_SKILLINFO <= stat && stat < Stats.CS_STAT_SKILLINFO+Stats.CS_NUM_SKILLS) {
                     final int level = getInt1(packet);
                     final long experience = getInt8(packet);
@@ -3387,7 +3386,7 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
                         debugProtocol.debugProtocolWrite("recv stats stat="+stat+" level="+level+" experience="+experience);
                     }
                     model.getStats().setStatSkill(stat, level, experience);
-                    notifyPacketWatcherListeners("stats", () -> stat+" "+level+" "+experience);
+                    notifyPacketWatcherListeners("stats", () -> StatUtils.getStatNames(stat)+" "+level+" "+experience);
                 } else {
                     if (debugProtocol != null) {
                         debugProtocol.debugProtocolWrite("recv stats stat="+stat+" <unknown parameter>");
