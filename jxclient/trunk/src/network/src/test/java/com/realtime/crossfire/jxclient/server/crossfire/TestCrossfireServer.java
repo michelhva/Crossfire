@@ -319,7 +319,7 @@ public class TestCrossfireServer {
      * @param b the message's payload
      * @throws IOException if an I/O error occurs
      */
-    private void writeBytes(@NotNull final byte[] b) throws IOException {
+    public void writeBytes(@NotNull final byte[] b) throws IOException {
         final OutputStream out = getOutputStream();
         final int len = b.length;
         out.write(len/0x100);

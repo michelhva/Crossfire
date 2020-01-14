@@ -21,7 +21,20 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
+import com.realtime.crossfire.jxclient.server.server.ReceivedPacketListener;
+import com.realtime.crossfire.jxclient.server.socket.ClientSocketMonitorCommand;
+import com.realtime.crossfire.jxclient.stats.Stats;
+import java.io.EOFException;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
+import java.util.concurrent.Semaphore;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -29,7 +42,7 @@ import org.junit.Test;
  * Regression tests for {@link DefaultCrossfireServerConnection}.
  * @author Andreas Kirschbaum
  */
-@SuppressWarnings("OverlyBroadThrowsClause")
+@SuppressWarnings({"OverlyBroadThrowsClause", "JavaDoc"})
 public class DefaultCrossfireServerConnectionTest {
 
     /**
@@ -58,6 +71,34 @@ public class DefaultCrossfireServerConnectionTest {
                 connection.setPreferredNumLookObjects(14);
                 connection.waitForCurrentNumLookObjectsValid();
                 Assert.assertEquals(14, connection.getCurrentNumLookObjects());
+            } finally {
+                //noinspection ThrowFromFinallyBlock
+                server.stop();
+            }
+        } finally {
+            //noinspection ThrowFromFinallyBlock
+            connection.stop();
+        }
+    }
+
+    @Test(timeout = 30000)
+    public void test_statsMessage_callsPacketWatcherCallback() throws Exception {
+        final Model model = new Model();
+        final DefaultCrossfireServerConnection connection = new DefaultCrossfireServerConnection(model, null, "version");
+        final TestCrossfireServer server = new TestCrossfireServer();
+        connection.start();
+        try {
+            server.start();
+            try {
+                connection.connect("localhost", server.getLocalPort());
+                connection.setPreferredNumLookObjects(10);
+                server.waitForCharacterLogin();
+                Thread.sleep(1000);
+                final StringBuilder sb = new StringBuilder();
+                connection.addPacketWatcherListener((command, args) -> sb.append(command).append("/").append(args.getMonitorCommand()).append("\n"));
+                server.writeBytes(new byte[] { 's', 't', 'a', 't', 's', ' ', Stats.CS_STAT_HP, 1, 2, });
+                Thread.sleep(100);
+                Assert.assertEquals("stats/hp 258\n", sb.toString());
             } finally {
                 //noinspection ThrowFromFinallyBlock
                 server.stop();
