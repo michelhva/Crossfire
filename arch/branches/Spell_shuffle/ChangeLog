@@ -1,3 +1,21 @@
+Minor pixel clean up and color tweaks to east west river bridge
+river/bridge_37.base.111.png
+Rick Tanner 2020-01-13
+
+Add new shield type -- kite shield.
+These were generally intended for use on horseback, but saw significant use among foot
+soldiers as well. Historically, it replaced round shields, but was superceded by heater shields.
+Current armor value puts it between shields and round shields (at 6 armour).
+armour/shield/kite_shield.base.111.png
+armour/shield/kite_shield.arc
+armour/shield/kite_shield.face
+treasures.trs
+Daniel Hawkins 2019-11-30
+
+Add updated cloak graphics for white and black cloaks to be styled more like the regular cloak.
+armour/cloak/cloak_white.base.111.png
+armour/cloak/cloak_black.base.111.png
+Daniel Hawkins 2019-08-11
 
 Modify fishing pole graphic to clean up pixelation.
 skills/Skill_Tools/fishing_pole.base.111.png

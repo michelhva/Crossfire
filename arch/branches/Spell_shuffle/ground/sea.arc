@@ -28,6 +28,22 @@ smoothlevel 20
 client_anim_sync 1
 anim_speed 5
 end
+Object sea_route
+name sea
+face sea.111
+animation sea
+smoothface sea.111 sea_S.111
+smoothface sea.112 sea_S.112
+smoothface sea.113 sea_S.113
+smoothface sea.114 sea_S.114
+move_block all -boat
+no_pick 1
+is_water 1
+is_floor 1
+smoothlevel 20
+client_anim_sync 1
+anim_speed 5
+end
 Object sea_nw
 name sea
 face sea_nw.111
