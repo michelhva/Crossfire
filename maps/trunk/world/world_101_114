@@ -4,7 +4,7 @@ region portjoseph
 width 50
 height 50
 msg
-Modified: 2018-12-28 Kevin Zheng
+Modified: 2020-02-09 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_101_113
@@ -2917,6 +2917,15 @@ end
 arch grass
 x 12
 y 33
+end
+arch house_small
+name Port Joseph Bank
+slaying ../port_joseph/town/bank
+hp 15
+sp 15
+x 12
+y 33
+artifact Port Joseph Bank
 end
 arch cobblestones2
 x 12
