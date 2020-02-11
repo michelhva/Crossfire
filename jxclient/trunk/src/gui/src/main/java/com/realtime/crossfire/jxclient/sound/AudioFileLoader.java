@@ -90,7 +90,7 @@ public class AudioFileLoader {
      */
     @NotNull
     private InputStream getResource(@NotNull final String name) throws IOException {
-        final String resource = "resource/sounds/"+name+".wav";
+        final String resource = "resource/sounds/"+name+".mp3";
 
         @Nullable File localFile;
         try {
