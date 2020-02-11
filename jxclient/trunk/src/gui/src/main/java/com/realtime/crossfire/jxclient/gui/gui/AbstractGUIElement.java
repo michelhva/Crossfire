@@ -181,7 +181,7 @@ public abstract class AbstractGUIElement extends JComponent implements GUIElemen
     }
 
     @Override
-    public void mouseEntered(@NotNull final MouseEvent e, final boolean debugGui) {
+    public void mouseEntered(@NotNull final MouseEvent e) {
         if (isEnabled()) {
             tooltipManager.setElement(this);
         }
