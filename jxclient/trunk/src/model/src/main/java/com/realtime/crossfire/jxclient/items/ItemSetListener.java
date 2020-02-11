@@ -22,7 +22,6 @@
 package com.realtime.crossfire.jxclient.items;
 
 import java.util.EventListener;
-import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**

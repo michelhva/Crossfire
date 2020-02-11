@@ -23,7 +23,6 @@ package com.realtime.crossfire.jxclient.server.socket;
 
 import java.nio.ByteBuffer;
 import java.util.EventListener;
-import java.util.function.Predicate;
 import org.jetbrains.annotations.NotNull;
 
 /**
