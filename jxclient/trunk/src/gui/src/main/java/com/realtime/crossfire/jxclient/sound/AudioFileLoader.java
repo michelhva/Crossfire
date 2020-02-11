@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.sound;
 
 import com.realtime.crossfire.jxclient.settings.Filenames;
 import com.realtime.crossfire.jxclient.util.DebugWriter;
+import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -106,7 +107,7 @@ public class AudioFileLoader {
                 if (debugSound != null) {
                     debugSound.debugProtocolWrite("resource: ["+resource+"] found as file:"+localFile);
                 }
-                return inputStream;
+                return new BufferedInputStream(inputStream);
             } catch (final FileNotFoundException ignored) {
                 if (debugSound != null) {
                     debugSound.debugProtocolWrite("resource: ["+resource+"] not found as file:"+localFile);
@@ -120,7 +121,7 @@ public class AudioFileLoader {
             if (debugSound != null) {
                 debugSound.debugProtocolWrite("resource: ["+resource+"] found as file:"+file);
             }
-            return inputStream;
+            return new BufferedInputStream(inputStream);
         } catch (final FileNotFoundException ignored) {
             if (debugSound != null) {
                 debugSound.debugProtocolWrite("resource: ["+resource+"] not found as file:"+file);
@@ -132,7 +133,7 @@ public class AudioFileLoader {
             if (debugSound != null) {
                 debugSound.debugProtocolWrite("resource: ["+resource+"] found as rsrc:"+resource);
             }
-            return inputStream;
+            return new BufferedInputStream(inputStream);
         }
         if (debugSound != null) {
             debugSound.debugProtocolWrite("resource: ["+resource+"] not found as rsrc:"+resource);
