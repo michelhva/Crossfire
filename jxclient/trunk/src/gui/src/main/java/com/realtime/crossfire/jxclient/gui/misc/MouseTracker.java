@@ -305,10 +305,16 @@ public class MouseTracker {
 
         if (this.activeComponent != null) {
             this.activeComponent.setChanged();
+            if (debugGui) {
+                this.activeComponent.getRootPane().repaint();
+            }
         }
         this.activeComponent = activeComponent;
         if (this.activeComponent != null) {
             this.activeComponent.setChanged();
+            if (debugGui) {
+                this.activeComponent.getRootPane().repaint();
+            }
         }
         debugMouseWrite("activeComponent="+activeComponent);
     }
