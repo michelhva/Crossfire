@@ -382,8 +382,8 @@ public abstract class GUIList<T extends GUIElement> extends ActivatableGUIElemen
     }
 
     @Override
-    public void mouseEntered(@NotNull final MouseEvent e, final boolean debugGui) {
-        super.mouseEntered(e, debugGui);
+    public void mouseEntered(@NotNull final MouseEvent e) {
+        super.mouseEntered(e);
         if (isEnabled()) {
             doTooltip(e);
         }

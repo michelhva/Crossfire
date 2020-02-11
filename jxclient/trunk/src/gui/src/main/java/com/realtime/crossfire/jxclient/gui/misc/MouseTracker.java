@@ -248,7 +248,7 @@ public class MouseTracker {
         debugMouseWrite("mouseElement="+mouseElement);
 
         if (element != null) {
-            element.mouseEntered(e, debugGui);
+            element.mouseEntered(e);
             if (debugGui) {
                 setActiveComponent(element);
             }
