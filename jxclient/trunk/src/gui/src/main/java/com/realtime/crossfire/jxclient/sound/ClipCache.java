@@ -23,6 +23,8 @@ package com.realtime.crossfire.jxclient.sound;
 
 import com.realtime.crossfire.jxclient.util.DebugWriter;
 import java.io.IOException;
+import javax.sound.sampled.AudioFormat;
+import javax.sound.sampled.AudioFormat.Encoding;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
@@ -94,11 +96,15 @@ public class ClipCache {
     @Nullable
     private DataLine newClip(@Nullable final String name, @NotNull final String action) {
         try {
-            try (AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(audioFileLoader.getInputStream(name, action))) {
+            try (AudioInputStream rawInputStream = AudioSystem.getAudioInputStream(audioFileLoader.getInputStream(name, action))) {
                 final Clip clip;
                 try {
-                    clip = AudioSystem.getClip();
-                    clip.open(audioInputStream);
+                    final AudioFormat baseFormat = rawInputStream.getFormat();
+                    final AudioFormat decodedFormat = new AudioFormat(Encoding.PCM_SIGNED, baseFormat.getSampleRate(), 16, baseFormat.getChannels(), baseFormat.getChannels()*2, baseFormat.getSampleRate(), false);
+                    try (AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(decodedFormat, rawInputStream)) {
+                        clip = AudioSystem.getClip();
+                        clip.open(audioInputStream);
+                    }
                 } catch (final IllegalArgumentException ex) {
                     final UnsupportedAudioFileException ex2 = new UnsupportedAudioFileException(ex.getMessage());
                     ex2.initCause(ex);

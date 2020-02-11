@@ -220,7 +220,10 @@ public class Processor implements Runnable {
      */
     @NotNull
     private AudioInputStream openAudioInputStream() throws IOException, UnsupportedAudioFileException {
-        return AudioSystem.getAudioInputStream(audioFileLoader.getInputStream(null, name));
+        final AudioInputStream rawInputStream = AudioSystem.getAudioInputStream(audioFileLoader.getInputStream(null, name));
+        final AudioFormat baseFormat = rawInputStream.getFormat();
+        final AudioFormat decodedFormat = new AudioFormat(Encoding.PCM_SIGNED, baseFormat.getSampleRate(), 16, baseFormat.getChannels(), baseFormat.getChannels()*2, baseFormat.getSampleRate(), false);
+        return AudioSystem.getAudioInputStream(decodedFormat, rawInputStream);
     }
 
 }
