@@ -491,6 +491,8 @@ public class MapUpdaterStateTest {
      */
     @Test
     public void testFogOfWar1() {
+        System.getProperties().setProperty("javax.accessibility.assistive_technologies", "");
+
         final FaceCache faceCache = new FaceCache();
         final FacesManager facesManager = new TestFacesManager(faceCache);
         defineFace(faceCache, 1, "M", PNG64X64);

@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.util;
 
+import java.awt.GraphicsEnvironment;
 import java.lang.reflect.InvocationTargetException;
 import javax.swing.SwingUtilities;
 import org.jetbrains.annotations.NotNull;
@@ -44,6 +45,10 @@ public class SwingUtilities2 {
      */
     public static void invokeAndWait(@NotNull final Runnable runnable) {
         if (Thread.currentThread().isInterrupted()) {
+            return;
+        }
+        if (GraphicsEnvironment.isHeadless()) {
+            // skip in unit tests
             return;
         }
         if (SwingUtilities.isEventDispatchThread()) {
