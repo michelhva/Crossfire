@@ -13,6 +13,7 @@ jar.baseName = 'jxclient'
 jar.classifier = 'plain'
 
 dependencies {
+    compile 'com.googlecode.soundlibs:mp3spi:1.9.5.4'
     compile 'org.jetbrains:annotations:17.0.0'
     compile project(':src:model')
     compile project(':src:network')
