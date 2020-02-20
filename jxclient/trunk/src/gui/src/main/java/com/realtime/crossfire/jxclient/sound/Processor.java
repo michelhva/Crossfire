@@ -43,6 +43,11 @@ public class Processor implements Runnable {
     private static final float MIN_VALUE = 1.0E-3F;
 
     /**
+     * The maximum volume.
+     */
+    private static final float MAX_VOLUME = 0.2F;
+
+    /**
      * The step for the fading in/out factor. It is multiplied to the current
      * value for each sample.
      */
@@ -140,45 +145,38 @@ public class Processor implements Runnable {
                                 }
                             }
 
-                            switch (state) {
-                            case 0: // fade in
-                                for (int i = 0; i+3 < len; i += 4) {
+                            for (int i = 0; i+3 < len && state < 3; i += 4) {
+                                switch (state) {
+                                case 0: // fade in
                                     volume *= VOLUME_STEP_PER_SAMPLE;
                                     if (volume >= 1.0F) {
                                         state = 1;
                                         volume = 1.0F;
-                                        break;
                                     }
+                                    break;
 
-                                    convertSample(buf, i);
-                                    convertSample(buf, i+2);
-                                }
-                                break;
+                                case 1: // play
+                                    break;
 
-                            case 1: // play
-                                break;
-
-                            case 2: // fade out
-                                for (int i = 0; i+3 < len; i += 4) {
+                                case 2: // fade out
                                     volume /= VOLUME_STEP_PER_SAMPLE;
                                     if (volume <= MIN_VALUE) {
                                         state = 3;
                                         len = i;
-                                        break;
                                     }
+                                    break;
 
-                                    convertSample(buf, i);
-                                    convertSample(buf, i+2);
+                                default:
+                                    throw new AssertionError();
                                 }
-                                break;
 
-                            default:
-                                throw new AssertionError();
+                                convertSample(buf, i);
+                                convertSample(buf, i+2);
                             }
 
                             sourceDataLine.write(buf, 0, len);
                         }
-                        if (state != 4) {
+                        if (state == 3) {
                             sourceDataLine.drain();
                         }
                     } finally {
@@ -201,7 +199,7 @@ public class Processor implements Runnable {
      * @param i the sample offset
      */
     private void convertSample(@NotNull final byte[] buf, final int i) {
-        final float value = (short)((buf[i]&0xFF)+(buf[i+1]&0xFF)*0x100)*volume;
+        final float value = (short)((buf[i]&0xFF)+(buf[i+1]&0xFF)*0x100)*volume*MAX_VOLUME;
         final short s = (short)value;
         if (s >= 0) {
             buf[i] = (byte)s;
