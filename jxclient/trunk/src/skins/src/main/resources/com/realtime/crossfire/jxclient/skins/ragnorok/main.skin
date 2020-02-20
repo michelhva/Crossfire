@@ -21,6 +21,7 @@ duptextgauge gauge_xp         gauge_xp1 gauge_xp2 gauge_xp_empty EXP_NEXT_LEVEL 
 
 # Button Group
 textbutton button_help        false command_help Help
+textbutton button_credits     false command_credits Credits
 textbutton button_status      false command_status Status
 textbutton button_inventory   false command_inventory Inventory
 textbutton button_messages    false command_messages Messages
@@ -134,6 +135,7 @@ horizontal begin par
     gap 0 10000 2147483647
     begin par
       button_help
+      button_credits
       button_status
       button_inventory
       button_messages
@@ -209,6 +211,8 @@ vertical begin par
       end
       begin seq
         button_help
+        gap 4
+        button_credits
         gap 4
         button_status
         gap 4
