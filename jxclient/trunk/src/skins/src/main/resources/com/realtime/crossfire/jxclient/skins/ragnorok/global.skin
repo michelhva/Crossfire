@@ -29,6 +29,7 @@ commandlist command_skills AND null DIALOG_TOGGLE skills
 commandlist command_map AND null DIALOG_TOGGLE map
 commandlist command_setup AND null DIALOG_TOGGLE setup
 commandlist command_help AND null DIALOG_TOGGLE help
+commandlist command_credits AND null DIALOG_TOGGLE credits
 commandlist command_pickup AND null DIALOG_TOGGLE pickup
 commandlist command_spells AND null DIALOG_TOGGLE spells
 commandlist command_quests AND null DIALOG_TOGGLE quests
