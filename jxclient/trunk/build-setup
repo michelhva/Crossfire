@@ -1,0 +1,66 @@
+#! /bin/sh
+
+set -e
+
+if [ ! -e settings.gradle ]; then
+    echo "$0: settings.gradle does not exist; this script must be called from the root directory of the project" 1>&2
+    exit 1
+fi
+NAME="`grep rootProject.name settings.gradle | sed -e"s/^.*= *'\(.*\)'$/\1/g"`"
+
+BUILDDIR="/tmp/build-setup$$"
+trap "rm -rf '$BUILDDIR'" 0
+rm -rf "$BUILDDIR"
+mkdir "$BUILDDIR"
+if [ -e build-setup.proxy ]; then
+    install build-setup.proxy "$BUILDDIR/build-setup-proxy"
+else
+    install /dev/null "$BUILDDIR/build-setup-proxy"
+fi
+cat >"$BUILDDIR/Dockerfile" <<EOF
+FROM debian:stretch
+COPY build-setup-proxy /etc/apt/apt.conf.d/build-setup-proxy
+RUN DEBIAN_FRONTEND=noninteractive TERM=xterm apt-get -y -q --no-install-recommends update && \
+    DEBIAN_FRONTEND=noninteractive TERM=xterm apt-get -y -q --no-install-recommends --no-remove dist-upgrade && \
+    DEBIAN_FRONTEND=noninteractive TERM=xterm apt-get -y -q --no-install-recommends install less git file psutils openjdk-8-jdk-headless sudo
+RUN echo export PS1=\'[$NAME] \\\w\\\\\$ \' >>/etc/bash.bashrc
+RUN adduser --quiet --disabled-login --gecos '' --uid '`id -u`' user
+COPY entrypoint.sh /entrypoint.sh
+COPY entrypoint2.sh /entrypoint2.sh
+COPY gradlew /usr/bin/gradlew
+RUN chmod 755 /entrypoint.sh /entrypoint2.sh /usr/bin/gradlew
+WORKDIR /home/user
+ENTRYPOINT ["/entrypoint.sh"]
+CMD ["/bin/bash"]
+EOF
+cat >"$BUILDDIR/entrypoint.sh" <<EOF
+#! /bin/sh
+exec sudo -i -u user /entrypoint2.sh "\$@"
+EOF
+cat >"$BUILDDIR/entrypoint2.sh" <<EOF
+#! /bin/sh
+export SSH_AUTH_SOCK=/ssh-agent
+export LESS="-fMnQSR"
+export PAGER="/usr/bin/less -fMnQSR"
+cd
+cd project
+exec "\$@"
+EOF
+cat >"$BUILDDIR/gradlew" <<'EOF'
+#! /bin/sh
+set -e
+
+dir="`pwd`"
+while [ "$dir" != "/" ]; do
+    GRADLE="$dir/gradlew"
+    if [ -x "$GRADLE" ]; then
+        exec "$GRADLE" "$@"
+    fi
+    dir="`dirname "$dir"`"
+done
+
+echo "`pwd` is not a Gradle project with a Gradle Wrapper script." 1>&2
+exit 1
+EOF
+docker image rm --no-prune "build-$NAME-$USER" >/dev/null 2>&1 || true
+docker build -t "build-$NAME-$USER" "$BUILDDIR"
