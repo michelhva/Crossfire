@@ -8,7 +8,7 @@ enter_x 9
 enter_y 10
 msg
 Created:  2003-04-27
-Modified: 2019-02-02 DraugTheWhopper
+Modified: 2019-04-01 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -552,6 +552,8 @@ arch NPCGift
 arch coffee
 name Oled's coffee
 name_pl cups of Oled's coffee
+type 54
+value 100
 end
 end
 arch npc_dialog
