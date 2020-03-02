@@ -1,6 +1,7 @@
 Object mountain3
 name mountains
 face mountain3.111
+randomitems mountain
 type 67
 race /terrain/mountain
 move_on walk
