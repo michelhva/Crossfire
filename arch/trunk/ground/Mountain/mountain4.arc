@@ -1,6 +1,7 @@
 Object mountain4
 name high mountains
 face mountain4.111
+randomitems mountain
 type 67
 race /terrain/mountain
 no_pick 1
