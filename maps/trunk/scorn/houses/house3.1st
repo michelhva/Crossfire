@@ -8,7 +8,7 @@ enter_x 8
 enter_y 10
 msg
 Created:  2005-03-23 Huhanhi
-Modified: 2012-06-25 Rick Tanner
+Modified: 2020-03-14 Kevin Zheng
 endmsg
 end
 arch cobblestones2
@@ -566,13 +566,6 @@ arch rune_poison_cloud
 dam 15
 level 15
 end
-arch potion_generic
-title of Cure Poison
-value 600
-identified 1
-arch spell_cure_poison
-end
-end
 arch random_gem
 end
 arch ring
@@ -581,6 +574,9 @@ name_pl silver rings
 face ring.117
 value 600
 identified 1
+end
+arch potion_generic
+artifact cure poison
 end
 end
 arch woodfloor
