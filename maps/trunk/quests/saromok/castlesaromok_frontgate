@@ -8,7 +8,7 @@ enter_x 5
 enter_y 6
 msg
 Created:  2008-08-11 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2012-01-01 Rick Tanner
+Modified: 2020-03-08 Kevin Zheng
 endmsg
 end
 arch cobblestones2
@@ -351,7 +351,7 @@ x 4
 y 6
 end
 arch invis_exit
-slaying ../../world/world_111_100
+slaying /world/world_111_100
 hp 41
 sp 36
 x 4
@@ -427,7 +427,7 @@ x 5
 y 6
 end
 arch invis_exit
-slaying ../../world/world_111_100
+slaying /world/world_111_100
 hp 41
 sp 36
 x 5
