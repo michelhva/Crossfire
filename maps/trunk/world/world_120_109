@@ -4,7 +4,7 @@ region marksel
 width 50
 height 50
 msg
-Modified: 2013-07-28 Kevin Zheng
+Modified: 2020-03-14 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_120_108
@@ -11051,10 +11051,18 @@ x 42
 y 40
 elevation 3487
 end
-arch woods
+arch grass
 x 42
 y 41
 elevation 2914
+end
+arch house_small
+name Bank of Marksel
+slaying ../marksel/shops/bank_marksel
+hp 15
+sp 15
+x 42
+y 41
 end
 arch hills
 x 42
