@@ -1,6 +1,7 @@
 arch map
 name Scrolls Galore
 reset_timeout 3600
+fixed_resettime 1
 difficulty 18
 region brest
 shopitems scroll:95;armour improver:95;weapon improver:95;skillscroll:95;spellbook:50;*:-100
@@ -13,7 +14,7 @@ height 40
 enter_y 37
 msg
 Created:  2005-05-23 Gene Alexander
-Modified: 2012-01-25 Rick Tanner
+Modified: 2020-03-21 Kevin Zheng
 endmsg
 outdoor 1
 tile_path_4 brest.scrolls

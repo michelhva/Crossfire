@@ -1,5 +1,6 @@
 arch map
 name Brest Magic
+fixed_resettime 1
 difficulty 9
 region brest
 shopitems cloak:5;spellbook:35;ring:15;book:28;scroll:25;wand:28;armour improver:2;weapon improver:2;rod:32;potion:10;amulet:17;power_crystal:25;gem:0;lamp:-10;*:-90
@@ -13,7 +14,7 @@ enter_x 38
 enter_y 22
 msg
 Created:  1994-07-25
-Modified: 2011-03-31 Rick Tanner
+Modified: 2020-03-21 Kevin Zheng
 endmsg
 end
 arch grass
