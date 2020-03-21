@@ -1,5 +1,6 @@
 arch map
 name Brest Armour
+fixed_resettime 1
 difficulty 9
 region brest
 shopitems armour:23;shield:21;helmet:20;cloak:15;boots:18;gloves:13;bracers:30;girdle:40;armour improver:35;ring:0;*:-80
@@ -12,7 +13,7 @@ height 24
 enter_x 5
 enter_y 20
 msg
-Modified: 2010-11-05 Andreas Kirschbaum
+Modified: 2020-03-21 Kevin Zheng
 endmsg
 end
 arch grass

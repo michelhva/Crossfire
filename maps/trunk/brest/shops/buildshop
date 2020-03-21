@@ -1,5 +1,6 @@
 arch map
 name Acme Inc. of Brest, First Floor
+fixed_resettime 1
 difficulty 1
 region brest
 shopitems building material:95;item builder:95;*:-100
@@ -13,7 +14,7 @@ enter_x 6
 enter_y 24
 msg
 Created:  2005-11-05 Gene Alexander
-Modified: 2014-06-19 tecslicer
+Modified: 2020-03-21 Kevin Zheng
 endmsg
 end
 arch flagstone

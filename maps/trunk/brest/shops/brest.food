@@ -1,5 +1,6 @@
 arch map
 name Brest Food Store
+fixed_resettime 1
 difficulty 9
 region brest
 shopitems food:45;*:-100
@@ -13,7 +14,7 @@ enter_x 19
 enter_y 20
 msg
 Created:  1994-05-31
-Modified: 2008-12-11 Rick Tanner
+Modified: 2020-03-21 Kevin Zheng
 endmsg
 end
 arch flagstone
