@@ -1514,6 +1514,10 @@ public class DefaultCrossfireServerConnection extends AbstractCrossfireServerCon
             if (debugProtocol != null) {
                 debugProtocol.debugProtocolWrite("recv map2 "+location+" face="+face);
             }
+            /* Ensure the smoothing is reset. If it was 0 then this is a no-op, else this
+            forces a redraw of adjacent tiles, which could be needed if the new face
+            is the next of an animation (with the same smoothlevel). */
+            fireMapSmooth(location, 0);
             fireMapFace(location, face);
         } else {
             if (debugProtocol != null) {

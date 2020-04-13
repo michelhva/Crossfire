@@ -224,10 +224,6 @@ public class SmoothingRenderer {
      * @param tileSize the size of one tile in pixel
      */
     public void paintSmooth(@NotNull final Graphics graphics, final int x, final int y, final int px, final int py, final int layer, @NotNull final CfMap map, final int tileSize) {
-        final int level = map.getSmooth(x, y, layer);
-        if (level <= 0) {
-            return;
-        }
         for (int deltaX = 0; deltaX <= 2; deltaX++) {
             for (int deltaY = 0; deltaY <= 2; deltaY++) {
                 if (deltaX != 0 || deltaY != 0) {
@@ -238,6 +234,8 @@ public class SmoothingRenderer {
                 }
             }
         }
+
+        final int level = map.getSmooth(x, y, layer);
 
         for (int i = 0; i < 8; i++) {
             final CfMapSquare node = layerNode[DX[i]][DY[i]];

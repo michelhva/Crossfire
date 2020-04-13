@@ -466,9 +466,10 @@ public abstract class AbstractGUIMap extends AbstractGUIElement {
                     paintSquareBackground(g, px, py, true, mapSquare);
                 }
                 paintImage(g, face, px, py, 0, 0);
-                if (smoothingRenderer != null) {
-                    smoothingRenderer.paintSmooth(g, x, y, px, py, layer, map, tileSize);
-                }
+            }
+            /* If there is at least one square on a layer, we want to draw smoothing for all layers above it. */
+            if (foundSquare && smoothingRenderer != null) {
+                smoothingRenderer.paintSmooth(g, x, y, px, py, layer, map, tileSize);
             }
         }
         if (!foundSquare) {
