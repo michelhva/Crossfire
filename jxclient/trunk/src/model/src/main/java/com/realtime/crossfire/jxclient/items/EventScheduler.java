@@ -130,6 +130,7 @@ public class EventScheduler {
         this.afterEventDelay = afterEventDelay;
         this.eventSchedulerCallback = eventSchedulerCallback;
         thread = new Thread(runnable, "JXClient:EventScheduler");
+        thread.setDaemon(true);
     }
 
     /**
