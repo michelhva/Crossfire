@@ -100,14 +100,14 @@ public class EventScheduler {
                                 fireEvent = false;
                             } else {
                                 fireEvent = true;
+                                nextAction = 0;
+                                nextActionNotBefore = System.currentTimeMillis()+afterEventDelay;
                             }
                         }
                     }
 
                     if (fireEvent) {
                         eventSchedulerCallback.run();
-                        nextAction = 0;
-                        nextActionNotBefore = System.currentTimeMillis()+afterEventDelay;
                     }
                 } catch (final InterruptedException ignored) {
                     thread.interrupt();
