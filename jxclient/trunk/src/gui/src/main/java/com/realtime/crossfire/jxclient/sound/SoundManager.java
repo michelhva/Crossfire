@@ -27,6 +27,8 @@ import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.util.DebugWriter;
 import java.util.Collection;
 import java.util.EnumSet;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -67,6 +69,18 @@ public class SoundManager {
      */
     @NotNull
     private final Collection<Sounds> mutedSounds = EnumSet.allOf(Sounds.class);
+
+    /**
+     * The pending tasks.
+     */
+    @NotNull
+    private final BlockingQueue<Runnable> tasks = new LinkedBlockingQueue<>();
+
+    /**
+     * The thread executing the {@link #tasks}.
+     */
+    @NotNull
+    private final Thread thread;
 
     /**
      * The {@link GuiStateListener} for detecting established or dropped
@@ -129,6 +143,29 @@ public class SoundManager {
         musicManager = new MusicManager(audioFileLoader, debugSound);
         this.debugSound = debugSound;
         guiStateManager.addGuiStateListener(guiStateListener);
+        thread = new Thread(this::executeTasks, "JXClient:SoundManager");
+        thread.setDaemon(true);
+    }
+
+    /**
+     * Activates this instance.
+     */
+    public void start() {
+        thread.start();
+    }
+
+    /**
+     * Executes the tasks from {@link #tasks}.
+     */
+    private void executeTasks() {
+        while (true) {
+            try {
+                tasks.take().run();
+            } catch (final InterruptedException ignored) {
+                thread.interrupt();
+                break;
+            }
+        }
     }
 
     /**
@@ -141,7 +178,7 @@ public class SoundManager {
         }
 
         this.enabled = enabled;
-        musicManager.setEnabled(enabled);
+        tasks.offer(() -> musicManager.setEnabled(enabled));
     }
 
     /**
@@ -168,7 +205,7 @@ public class SoundManager {
         if (debugSound != null) {
             debugSound.debugProtocolWrite("playClip(type="+type+", name="+name+", action="+action+")");
         }
-        clipManager.play(name, action);
+        tasks.offer(() -> clipManager.play(name, action));
     }
 
     /**
@@ -191,7 +228,7 @@ public class SoundManager {
      * @param name the music name
      */
     public void playMusic(@Nullable final String name) {
-        musicManager.play(name);
+        tasks.offer(() -> musicManager.play(name));
     }
 
     /**
@@ -199,7 +236,7 @@ public class SoundManager {
      * @param muted whether to mute ({@code true}) or unmute ({@code false})
      */
     private void muteMusic(final boolean muted) {
-        musicManager.setMuted(muted);
+        tasks.offer(() -> musicManager.setMuted(muted));
     }
 
     /**
@@ -209,8 +246,8 @@ public class SoundManager {
         if (debugSound != null) {
             debugSound.debugProtocolWrite("shutdown");
         }
-        musicManager.shutdown();
-        clipManager.shutdown();
+        tasks.offer(musicManager::shutdown);
+        tasks.offer(clipManager::shutdown);
     }
 
 }
