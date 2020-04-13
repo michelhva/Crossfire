@@ -60,12 +60,12 @@ public abstract class AbstractItemView implements ItemView {
     private final Object sync = new Object();
 
     /**
-     * The event scheduler callback for delaying event generation. This is
-     * needed because the Crossfire server sends multiple item2 commands for one
-     * "get all" command.
+     * The event scheduler for delaying event generation. This is needed because
+     * the Crossfire server sends multiple item2 commands for one "get all"
+     * command.
      */
     @NotNull
-    private final Runnable fireEventCallback = this::deliverEvents;
+    private final EventScheduler fireEventScheduler = new EventScheduler(100, 1, this::deliverEvents);
 
     /**
      * Creates a new instance.
@@ -73,12 +73,6 @@ public abstract class AbstractItemView implements ItemView {
     protected AbstractItemView() {
         fireEventScheduler.start();
     }
-
-    /**
-     * The {@link EventScheduler} for delaying event generation.
-     */
-    @NotNull
-    private final EventScheduler fireEventScheduler = new EventScheduler(100, 1, fireEventCallback);
 
     @Override
     public void addLocationsListener(@NotNull final LocationsListener locationsListener) {
