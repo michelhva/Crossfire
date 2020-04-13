@@ -91,6 +91,7 @@ public class EventScheduler {
                     final boolean fireEvent;
                     synchronized (sync) {
                         if (nextAction == 0) {
+                            //noinspection WaitOrAwaitWithoutTimeout
                             sync.wait();
                             fireEvent = false;
                         } else {
