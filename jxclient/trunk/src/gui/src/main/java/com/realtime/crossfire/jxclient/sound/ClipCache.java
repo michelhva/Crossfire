@@ -66,17 +66,6 @@ public class ClipCache {
     }
 
     /**
-     * Allocates a new clip.
-     * @param name an optional prefix for the action name
-     * @param action the action name of the clip to allocate
-     * @return the new clip, or {@code null} if an error occurs
-     */
-    @Nullable
-    public DataLine allocateClip(@Nullable final String name, @NotNull final String action) {
-        return newClip(name, action);
-    }
-
-    /**
      * Deallocates a clip.
      * @param clip the clip to deallocate
      */
@@ -94,7 +83,7 @@ public class ClipCache {
      * @return the new clip, or {@code null} if an error occurs
      */
     @Nullable
-    private DataLine newClip(@Nullable final String name, @NotNull final String action) {
+    public DataLine allocateClip(@Nullable final String name, @NotNull final String action) {
         try {
             try (AudioInputStream rawInputStream = AudioSystem.getAudioInputStream(audioFileLoader.getInputStream(name, action))) {
                 final Clip clip;
