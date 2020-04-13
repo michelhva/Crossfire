@@ -182,6 +182,7 @@ public class JXClient {
                                     final Metaserver metaserver = new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel);
                                     new MetaserverProcessor(metaserver, model.getGuiStateManager());
                                     final SoundManager soundManager = new SoundManager(model.getGuiStateManager(), debugSoundOutputStreamWriter == null ? null : new DebugWriter(debugSoundOutputStreamWriter));
+                                    soundManager.start();
                                     try {
                                         optionManager.addOption("sound_enabled", "Whether sound is enabled.", new SoundCheckBoxOption(soundManager));
                                     } catch (final OptionException ex) {
