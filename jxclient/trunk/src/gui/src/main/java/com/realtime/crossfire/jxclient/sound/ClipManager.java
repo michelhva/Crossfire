@@ -22,6 +22,8 @@
 package com.realtime.crossfire.jxclient.sound;
 
 import com.realtime.crossfire.jxclient.util.DebugWriter;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import javax.sound.sampled.DataLine;
@@ -34,6 +36,19 @@ import org.jetbrains.annotations.Nullable;
  * @author Andreas Kirschbaum
  */
 public class ClipManager {
+
+    /**
+     * The writer for logging sound related information or {@code null} to not
+     * log.
+     */
+    @Nullable
+    private final DebugWriter debugSound;
+
+    /**
+     * The global {@link SoundTaskExecutor} instance.
+     */
+    @NotNull
+    private final SoundTaskExecutor soundTaskExecutor;
 
     /**
      * The executor service used to play sound clips.
@@ -52,8 +67,11 @@ public class ClipManager {
      * @param audioFileLoader the audio file loader for loading audio files
      * @param debugSound the writer for logging sound related information or
      * {@code null} to not log
+     * @param soundTaskExecutor the global sound task executor
      */
-    public ClipManager(@NotNull final AudioFileLoader audioFileLoader, @Nullable final DebugWriter debugSound) {
+    public ClipManager(@NotNull final AudioFileLoader audioFileLoader, @Nullable final DebugWriter debugSound, @NotNull final SoundTaskExecutor soundTaskExecutor) {
+        this.debugSound = debugSound;
+        this.soundTaskExecutor = soundTaskExecutor;
         clipCache = new ClipCache(audioFileLoader, debugSound);
     }
 
@@ -63,7 +81,23 @@ public class ClipManager {
      * @param action the action name of the sound effect
      */
     public void play(@Nullable final String name, @NotNull final String action) {
-        final DataLine clip = clipCache.allocateClip(name, action);
+        final CompletableFuture<DataLine> future = new CompletableFuture<>();
+        soundTaskExecutor.execute(() -> future.complete(clipCache.allocateClip(name, action)));
+        final DataLine clip;
+        try {
+            clip = future.get();
+        } catch (final InterruptedException ex) {
+            Thread.currentThread().interrupt();
+            if (debugSound != null) {
+                debugSound.debugProtocolWrite("interrupted while allocating clip ["+name+", "+action+"]", ex);
+            }
+            return;
+        } catch (final ExecutionException ex) {
+            if (debugSound != null) {
+                debugSound.debugProtocolWrite("failed to allocate clip ["+name+", "+action+"]", ex);
+            }
+            return;
+        }
         if (clip == null) {
             return;
         }
@@ -77,16 +111,22 @@ public class ClipManager {
                     clip.stop();
                 }
             } finally {
-                clipCache.freeClip(clip);
+                try {
+                    soundTaskExecutor.executeAndWait(() -> clipCache.freeClip(clip));
+                } catch (final InterruptedException ignored) {
+                    Thread.currentThread().interrupt();
+                }
             }
         });
     }
 
     /**
      * Terminates all running clips and free resources.
+     * @throws InterruptedException if the current thread was interrupted while
+     * waiting for the shutdown
      */
-    public void shutdown() {
-        executorService.shutdownNow();
+    public void shutdown() throws InterruptedException {
+        soundTaskExecutor.executeAndWait(executorService::shutdownNow);
     }
 
 }

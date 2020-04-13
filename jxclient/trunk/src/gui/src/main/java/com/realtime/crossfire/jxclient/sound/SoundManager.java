@@ -27,8 +27,6 @@ import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.util.DebugWriter;
 import java.util.Collection;
 import java.util.EnumSet;
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.LinkedBlockingQueue;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -71,16 +69,10 @@ public class SoundManager {
     private final Collection<Sounds> mutedSounds = EnumSet.allOf(Sounds.class);
 
     /**
-     * The pending tasks.
+     * The global {@link SoundTaskExecutor} instance.
      */
     @NotNull
-    private final BlockingQueue<Runnable> tasks = new LinkedBlockingQueue<>();
-
-    /**
-     * The thread executing the {@link #tasks}.
-     */
-    @NotNull
-    private final Thread thread;
+    private final SoundTaskExecutor soundTaskExecutor = new SoundTaskExecutor();
 
     /**
      * The {@link GuiStateListener} for detecting established or dropped
@@ -139,33 +131,17 @@ public class SoundManager {
      */
     public SoundManager(@NotNull final GuiStateManager guiStateManager, @Nullable final DebugWriter debugSound) {
         final AudioFileLoader audioFileLoader = new AudioFileLoader(debugSound);
-        clipManager = new ClipManager(audioFileLoader, debugSound);
+        clipManager = new ClipManager(audioFileLoader, debugSound, soundTaskExecutor);
         musicManager = new MusicManager(audioFileLoader, debugSound);
         this.debugSound = debugSound;
         guiStateManager.addGuiStateListener(guiStateListener);
-        thread = new Thread(this::executeTasks, "JXClient:SoundManager");
-        thread.setDaemon(true);
     }
 
     /**
      * Activates this instance.
      */
     public void start() {
-        thread.start();
-    }
-
-    /**
-     * Executes the tasks from {@link #tasks}.
-     */
-    private void executeTasks() {
-        while (true) {
-            try {
-                tasks.take().run();
-            } catch (final InterruptedException ignored) {
-                thread.interrupt();
-                break;
-            }
-        }
+        soundTaskExecutor.start();
     }
 
     /**
@@ -178,7 +154,7 @@ public class SoundManager {
         }
 
         this.enabled = enabled;
-        tasks.offer(() -> musicManager.setEnabled(enabled));
+        soundTaskExecutor.execute(() -> musicManager.setEnabled(enabled));
     }
 
     /**
@@ -205,7 +181,7 @@ public class SoundManager {
         if (debugSound != null) {
             debugSound.debugProtocolWrite("playClip(type="+type+", name="+name+", action="+action+")");
         }
-        tasks.offer(() -> clipManager.play(name, action));
+        clipManager.play(name, action);
     }
 
     /**
@@ -228,7 +204,7 @@ public class SoundManager {
      * @param name the music name
      */
     public void playMusic(@Nullable final String name) {
-        tasks.offer(() -> musicManager.play(name));
+        soundTaskExecutor.execute(() -> musicManager.play(name));
     }
 
     /**
@@ -236,18 +212,20 @@ public class SoundManager {
      * @param muted whether to mute ({@code true}) or unmute ({@code false})
      */
     private void muteMusic(final boolean muted) {
-        tasks.offer(() -> musicManager.setMuted(muted));
+        soundTaskExecutor.execute(() -> musicManager.setMuted(muted));
     }
 
     /**
      * Terminates all sounds and free resources.
+     * @throws InterruptedException if the current thread was interrupted while
+     * waiting for the shutdown
      */
-    public void shutdown() {
+    public void shutdown() throws InterruptedException {
         if (debugSound != null) {
             debugSound.debugProtocolWrite("shutdown");
         }
-        tasks.offer(musicManager::shutdown);
-        tasks.offer(clipManager::shutdown);
+        soundTaskExecutor.executeAndWait(musicManager::shutdown);
+        clipManager.shutdown();
     }
 
 }
