@@ -24,7 +24,7 @@ package com.realtime.crossfire.jxclient.items;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * A scheduler for synchronous event notifications. Notifications are triggered
+ * A scheduler for asynchronous event notifications. Notifications are triggered
  * by calling {@link #trigger()}. Notifications are delivered by calling the
  * event scheduler callback of {@link #eventSchedulerCallback}. This callback is
  * called {@link #delay} after the last call to {@link #trigger()} but not
