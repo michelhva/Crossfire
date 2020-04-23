@@ -8,7 +8,7 @@ enter_x 1
 enter_y 7
 msg
 Created:  2006-07-23 Brad Reilly
-Modified: 2012-03-25 Nicolas Weeger
+Modified: 2020-04-22 Kevin Zheng
 endmsg
 outdoor 1
 end
@@ -629,6 +629,15 @@ x 3
 y 6
 move_block all
 end
+arch igate_closed_2
+name invisible barrier
+face hedge_0.111
+x 3
+y 7
+invisible 1
+connected 100
+blocksview 0
+end
 arch grass
 x 3
 y 7
@@ -637,21 +646,14 @@ arch igate_closed_2
 name invisible barrier
 face hedge_0.111
 x 3
-y 7
+y 8
 invisible 1
 connected 100
+blocksview 0
 end
 arch grass
 x 3
 y 8
-end
-arch igate_closed_2
-name invisible barrier
-face hedge_0.111
-x 3
-y 8
-invisible 1
-connected 100
 end
 arch grass
 x 3
@@ -4084,7 +4086,6 @@ arch shallow_sea
 name water
 x 19
 y 5
-move_block 0
 end
 arch creator
 name grassdark
@@ -4326,7 +4327,6 @@ arch shallow_sea
 name water
 x 20
 y 5
-move_block 0
 end
 arch creator
 name grassdark
@@ -5351,10 +5351,6 @@ arch grass
 x 24
 y 28
 end
-arch grassmedium
-x 24
-y 29
-end
 arch magic_mouth
 msg
 Hidden path with locks and keys
@@ -5362,6 +5358,10 @@ Only the clever will find the way
 The labyrinth teams with bees
 Seek the elven lady Fey
 endmsg
+x 24
+y 29
+end
+arch grassmedium
 x 24
 y 29
 end
