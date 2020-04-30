@@ -8,7 +8,7 @@ enter_x 23
 enter_y 20
 msg
 Created:  2020-02-01 Rick Tanner
-Modified: 2020-02-07 Rick Tanner
+Modified: 2020-04-30 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -505,6 +505,14 @@ end
 arch flagstone
 x 3
 y 10
+end
+arch depositbox
+x 3
+y 10
+arch event_close
+title Python
+slaying /python/items/deposit_box.py
+end
 end
 arch dungeon_magic
 x 3
