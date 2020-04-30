@@ -2977,6 +2977,26 @@ arch woodfloor
 x 15
 y 8
 end
+arch chair_2.1
+x 15
+y 8
+end
+arch woman
+name Reba
+title the teller
+msg
+@match *
+How may I assist you with your banking needs?
+endmsg
+x 15
+y 8
+randomitems jail
+stand_still 1
+arch event_say
+title Python
+slaying /python/IPO/banksay.py
+end
+end
 arch dungeon_magic
 x 15
 y 9
