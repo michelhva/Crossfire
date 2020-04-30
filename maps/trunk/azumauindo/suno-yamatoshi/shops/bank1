@@ -9,7 +9,7 @@ enter_x 8
 enter_y 13
 msg
 Created:  2005-04-07 MikeeUSA
-Modified: 2011-10-26 Rick Tanner
+Modified: 2020-04-30 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -490,21 +490,13 @@ arch woodfloor
 x 2
 y 13
 end
-arch ninja
-Str 20
-Dex 20
-Wis 10
-Cha 10
-Int 10
-hp 1000
-maxhp 1000
-dam 50
+arch depositbox
 x 2
 y 13
-type 0
-move_type walk
-monster 1
-unaggressive 1
+arch event_close
+title Python
+slaying /python/items/deposit_box.py
+end
 end
 arch dungeon_magic
 x 2
