@@ -1261,9 +1261,19 @@ y 8
 end
 arch woman
 name Nancy
+title the teller
+msg
+@match *
+How may I help you with your banking needs?
+endmsg
 x 7
 y 8
 randomitems jail
+stand_still 1
+arch event_say
+title Python
+slaying /python/IPO/banksay.py
+end
 end
 arch dungeon_magic
 x 7
