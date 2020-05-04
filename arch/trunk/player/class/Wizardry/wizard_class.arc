@@ -5,7 +5,7 @@ name wizard
 randomitems wizard_class_items
 face wizard.171
 animation wizard_class
-is_animated 0
+is_animated 1
 type 37
 Str -3
 Dex 0
