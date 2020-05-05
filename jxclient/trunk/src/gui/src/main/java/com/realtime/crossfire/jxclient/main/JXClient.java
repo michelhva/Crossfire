@@ -16,7 +16,7 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  *
  * Copyright (C) 2005-2008 Yann Chachkoff.
- * Copyright (C) 2006-2018 Andreas Kirschbaum.
+ * Copyright (C) 2006-2020 Andreas Kirschbaum.
  */
 
 package com.realtime.crossfire.jxclient.main;
@@ -127,7 +127,7 @@ public class JXClient {
         final String buildNumber = getBuildNumber();
         System.out.println("JXClient "+buildNumber+" - Crossfire Java Client");
         System.out.println("(C)2005-2008 by Yann \"Lauwenmark\" Chachkoff.");
-        System.out.println("(C)2006-2018 Andreas Kirschbaum.");
+        System.out.println("(C)2006-2020 Andreas Kirschbaum.");
         System.out.println("This software is placed under the GPL License");
         final Options options = new Options();
         options.parse(args);
