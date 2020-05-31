@@ -843,6 +843,13 @@ arch cobblestones
 x 6
 y 15
 end
+arch stair_down_4
+slaying city1bank_vault
+hp 6
+sp 15
+x 6
+y 15
+end
 arch cobblestones
 x 6
 y 16
@@ -2104,6 +2111,13 @@ x 14
 y 14
 end
 arch cobblestones
+x 14
+y 15
+end
+arch stair_down_2
+slaying city1bank_vault
+hp 14
+sp 15
 x 14
 y 15
 end

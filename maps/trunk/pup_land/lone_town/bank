@@ -8,7 +8,7 @@ enter_x 9
 enter_y 18
 msg
 Created:  1996-01-29
-Modified: 2019-08-12 Kevin Zheng
+Modified: 2020-05-31 Rick Tanner
 endmsg
 end
 arch afloor_right
@@ -780,6 +780,13 @@ x 4
 y 17
 end
 arch afloor_right
+x 4
+y 18
+end
+arch stair_3_down
+slaying bank_vault
+hp 5
+sp 17
 x 4
 y 18
 end
@@ -2494,6 +2501,13 @@ x 14
 y 17
 end
 arch afloor_right
+x 14
+y 18
+end
+arch stair_3_down
+slaying bank_vault
+hp 13
+sp 17
 x 14
 y 18
 end
