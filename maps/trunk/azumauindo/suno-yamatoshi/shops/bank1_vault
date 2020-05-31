@@ -1,5 +1,5 @@
 arch map
-name Chokinbako
+name Chokinbako Kinko-shitsu
 reset_timeout 7200
 difficulty 1
 region azumauindo
@@ -116,817 +116,642 @@ arch dungeon_magic
 x 1
 y 1
 end
-arch woodfloor
+arch stonefloor2
 x 1
 y 1
-end
-arch ewall_2_2_2
-x 1
-y 1
-end
-arch wall_0
-x 1
-y 1
-end
-arch dungeon_magic
-x 1
-y 2
-end
-arch woodfloor
-x 1
-y 2
-end
-arch ewall_2_1_1
-x 1
-y 2
-end
-arch dwall_2_1_1
-face dwall_55.111
-x 1
-y 2
-end
-arch dungeon_magic
-x 1
-y 3
-end
-arch woodfloor
-x 1
-y 3
-end
-arch ewall_2_1_1
-x 1
-y 3
-end
-arch dwall_2_1_1
-face dwall_55.111
-x 1
-y 3
-end
-arch dungeon_magic
-x 1
-y 4
-end
-arch woodfloor
-x 1
-y 4
-end
-arch ewall_2_1_1
-x 1
-y 4
-end
-arch dwall_2_1_1
-face dwall_55.111
-x 1
-y 4
-end
-arch dungeon_magic
-x 1
-y 5
-end
-arch woodfloor
-x 1
-y 5
-end
-arch ewall_2_1_1
-x 1
-y 5
-end
-arch wall_0
-x 1
-y 5
-end
-arch dungeon_magic
-x 1
-y 6
-end
-arch woodfloor
-x 1
-y 6
-end
-arch ewall_2_1_1
-x 1
-y 6
-end
-arch dwall_2_1_1
-face dwall_55.111
-x 1
-y 6
-end
-arch dungeon_magic
-x 1
-y 7
-end
-arch woodfloor
-x 1
-y 7
-end
-arch ewall_2_1_1
-x 1
-y 7
-end
-arch dwall_2_1_1
-face dwall_55.111
-x 1
-y 7
-end
-arch dungeon_magic
-x 1
-y 8
-end
-arch woodfloor
-x 1
-y 8
-end
-arch ewall_2_1_1
-x 1
-y 8
-end
-arch dwall_2_1_1
-face dwall_55.111
-x 1
-y 8
-end
-arch dungeon_magic
-x 1
-y 9
-end
-arch woodfloor
-x 1
-y 9
-end
-arch ewall_2_1_1
-x 1
-y 9
-end
-arch swall_1_4_half
-x 1
-y 9
-end
-arch dwall_2_1_1
-face dwall_55.111
-x 1
-y 9
-end
-arch dungeon_magic
-x 1
-y 10
-end
-arch woodfloor
-x 1
-y 10
-end
-arch ewall_2_1_1
-x 1
-y 10
-end
-arch wall_0
-x 1
-y 10
-end
-arch dungeon_magic
-x 1
-y 11
-end
-arch woodfloor
-x 1
-y 11
-end
-arch ewall_2_1_1
-x 1
-y 11
-end
-arch dwall_2_1_1
-face dwall_55.111
-x 1
-y 11
-end
-arch dungeon_magic
-x 1
-y 12
-end
-arch woodfloor
-x 1
-y 12
-end
-arch ewall_2_1_1
-x 1
-y 12
-end
-arch dwall_2_1_1
-face dwall_55.111
-x 1
-y 12
-end
-arch dungeon_magic
-x 1
-y 13
-end
-arch woodfloor
-x 1
-y 13
-end
-arch ewall_2_1_1
-x 1
-y 13
-end
-arch dwall_2_1_1
-face dwall_55.111
-x 1
-y 13
-end
-arch dungeon_magic
-x 1
-y 14
-end
-arch woodfloor
-x 1
-y 14
-end
-arch ewall_2_2_1
-x 1
-y 14
-end
-arch wall_0
-x 1
-y 14
-end
-arch dungeon_magic
-x 1
-y 15
-end
-arch blocked
-x 1
-y 15
-end
-arch dungeon_magic
-x 2
-end
-arch blocked
-x 2
-end
-arch dungeon_magic
-x 2
-y 1
-end
-arch woodfloor
-x 2
-y 1
-end
-arch ewall_2_1_2
-x 2
-y 1
-end
-arch dwall_2_1_2
-face dwall_AA.111
-x 2
-y 1
-end
-arch dungeon_magic
-x 2
-y 2
-end
-arch woodfloor
-x 2
-y 2
-end
-arch dungeon_magic
-x 2
-y 3
-end
-arch woodfloor
-x 2
-y 3
-end
-arch dungeon_magic
-x 2
-y 4
-end
-arch woodfloor
-x 2
-y 4
-end
-arch dungeon_magic
-x 2
-y 5
-end
-arch woodfloor
-x 2
-y 5
-end
-arch dungeon_magic
-x 2
-y 6
-end
-arch woodfloor
-x 2
-y 6
-end
-arch dungeon_magic
-x 2
-y 7
-end
-arch woodfloor
-x 2
-y 7
-end
-arch dungeon_magic
-x 2
-y 8
-end
-arch woodfloor
-x 2
-y 8
-end
-arch merchant
-name Bank Accountant
-x 2
-y 8
-arch event_say
-title Python
-slaying /python/IPO/banksay.py
-end
-end
-arch dungeon_magic
-x 2
-y 9
-end
-arch woodfloor
-x 2
-y 9
-end
-arch longtable_1_4
-x 2
-y 9
-end
-arch swall_2_1_2
-x 2
-y 9
-end
-arch dungeon_magic
-x 2
-y 10
-end
-arch woodfloor
-x 2
-y 10
-end
-arch dungeon_magic
-x 2
-y 11
-end
-arch woodfloor
-x 2
-y 11
-end
-arch dungeon_magic
-x 2
-y 12
-end
-arch woodfloor
-x 2
-y 12
-end
-arch dungeon_magic
-x 2
-y 13
-end
-arch woodfloor
-x 2
-y 13
-end
-arch depositbox
-x 2
-y 13
-arch event_close
-title Python
-slaying /python/items/deposit_box.py
-end
-end
-arch dungeon_magic
-x 2
-y 14
-end
-arch woodfloor
-x 2
-y 14
-end
-arch ewall_2_1_2
-x 2
-y 14
-end
-arch dwall_2_1_2
-face dwall_AA.111
-x 2
-y 14
-end
-arch dungeon_magic
-x 2
-y 15
-end
-arch blocked
-x 2
-y 15
-end
-arch dungeon_magic
-x 3
-end
-arch blocked
-x 3
-end
-arch dungeon_magic
-x 3
-y 1
-end
-arch woodfloor
-x 3
-y 1
-end
-arch ewall_2_1_2
-x 3
-y 1
-end
-arch dwall_2_1_2
-face dwall_AA.111
-x 3
-y 1
-end
-arch dungeon_magic
-x 3
-y 2
-end
-arch woodfloor
-x 3
-y 2
-end
-arch dungeon_magic
-x 3
-y 3
-end
-arch woodfloor
-x 3
-y 3
-end
-arch dungeon_magic
-x 3
-y 4
-end
-arch woodfloor
-x 3
-y 4
-end
-arch dungeon_magic
-x 3
-y 5
-end
-arch woodfloor
-x 3
-y 5
-end
-arch dungeon_magic
-x 3
-y 6
-end
-arch woodfloor
-x 3
-y 6
-end
-arch dungeon_magic
-x 3
-y 7
-end
-arch woodfloor
-x 3
-y 7
-end
-arch dungeon_magic
-x 3
-y 8
-end
-arch woodfloor
-x 3
-y 8
-end
-arch dungeon_magic
-x 3
-y 9
-end
-arch woodfloor
-x 3
-y 9
-end
-arch longtable_2_1_2
-x 3
-y 9
-end
-arch swall_2_1_2
-x 3
-y 9
-end
-arch dungeon_magic
-x 3
-y 10
-end
-arch woodfloor
-x 3
-y 10
-end
-arch sign_w
-name accounts
-x 3
-y 10
-end
-arch dungeon_magic
-x 3
-y 11
-end
-arch woodfloor
-x 3
-y 11
-end
-arch dungeon_magic
-x 3
-y 12
-end
-arch woodfloor
-x 3
-y 12
-end
-arch dungeon_magic
-x 3
-y 13
-end
-arch woodfloor
-x 3
-y 13
-end
-arch dungeon_magic
-x 3
-y 14
-end
-arch woodfloor
-x 3
-y 14
-end
-arch ewall_2_1_2
-x 3
-y 14
-end
-arch dwall_2_1_2
-face dwall_AA.111
-x 3
-y 14
-end
-arch dungeon_magic
-x 3
-y 15
-end
-arch blocked
-x 3
-y 15
-end
-arch dungeon_magic
-x 4
-end
-arch blocked
-x 4
-end
-arch dungeon_magic
-x 4
-y 1
-end
-arch woodfloor
-x 4
-y 1
-end
-arch ewall_2_1_2
-x 4
-y 1
-end
-arch dwall_2_1_2
-face dwall_AA.111
-x 4
-y 1
-end
-arch dungeon_magic
-x 4
-y 2
-end
-arch woodfloor
-x 4
-y 2
-end
-arch dungeon_magic
-x 4
-y 3
-end
-arch woodfloor
-x 4
-y 3
-end
-arch ninja
-Str 20
-Dex 20
-Wis 10
-Cha 10
-Int 10
-hp 1000
-maxhp 1000
-dam 50
-x 4
-y 3
-type 0
-move_type walk
-monster 1
-unaggressive 1
-end
-arch dungeon_magic
-x 4
-y 4
-end
-arch woodfloor
-x 4
-y 4
-end
-arch dungeon_magic
-x 4
-y 5
-end
-arch woodfloor
-x 4
-y 5
-end
-arch dungeon_magic
-x 4
-y 6
-end
-arch woodfloor
-x 4
-y 6
-end
-arch dungeon_magic
-x 4
-y 7
-end
-arch woodfloor
-x 4
-y 7
-end
-arch ninja
-Str 20
-Dex 20
-Wis 10
-Cha 10
-Int 10
-hp 1000
-maxhp 1000
-dam 50
-x 4
-y 7
-type 0
-move_type walk
-monster 1
-unaggressive 1
-end
-arch dungeon_magic
-x 4
-y 8
-end
-arch woodfloor
-x 4
-y 8
-end
-arch dungeon_magic
-x 4
-y 9
-end
-arch woodfloor
-x 4
-y 9
-end
-arch longtable_2_1_2
-x 4
-y 9
-end
-arch swall_2_1_2
-x 4
-y 9
-end
-arch dungeon_magic
-x 4
-y 10
-end
-arch woodfloor
-x 4
-y 10
-end
-arch ruby_converter
-x 4
-y 10
-end
-arch dungeon_magic
-x 4
-y 11
-end
-arch woodfloor
-x 4
-y 11
-end
-arch dungeon_magic
-x 4
-y 12
-end
-arch woodfloor
-x 4
-y 12
-end
-arch dungeon_magic
-x 4
-y 13
-end
-arch woodfloor
-x 4
-y 13
-end
-arch ninja
-Str 20
-Dex 20
-Wis 10
-Cha 10
-Int 10
-hp 1000
-maxhp 1000
-dam 50
-x 4
-y 13
-type 0
-move_type walk
-monster 1
-unaggressive 1
-end
-arch dungeon_magic
-x 4
-y 14
-end
-arch woodfloor
-x 4
-y 14
-end
-arch ewall_2_1_2
-x 4
-y 14
-end
-arch dwall_2_1_2
-face dwall_AA.111
-x 4
-y 14
-end
-arch dungeon_magic
-x 4
-y 15
-end
-arch blocked
-x 4
-y 15
-end
-arch dungeon_magic
-x 5
-end
-arch blocked
-x 5
-end
-arch dungeon_magic
-x 5
-y 1
-end
-arch woodfloor
-x 5
-y 1
-end
-arch ewall_2_1_2
-x 5
-y 1
-end
-arch wall_0
-x 5
-y 1
-end
-arch dungeon_magic
-x 5
-y 2
-end
-arch woodfloor
-x 5
-y 2
-end
-arch dungeon_magic
-x 5
-y 3
-end
-arch dungeon_floor
-x 5
-y 3
 end
 arch dwall_2_2_2
+x 1
+y 1
+end
+arch dungeon_magic
+x 1
+y 2
+end
+arch stonefloor2
+x 1
+y 2
+end
+arch dwall_2_1_1
+x 1
+y 2
+end
+arch dungeon_magic
+x 1
+y 3
+end
+arch stonefloor2
+x 1
+y 3
+end
+arch dwall_2_1_1
+x 1
+y 3
+end
+arch dungeon_magic
+x 1
+y 4
+end
+arch stonefloor2
+x 1
+y 4
+end
+arch dwall_2_1_1
+x 1
+y 4
+end
+arch dungeon_magic
+x 1
+y 5
+end
+arch stonefloor2
+x 1
+y 5
+end
+arch dwall_2_1_1
+x 1
+y 5
+end
+arch dungeon_magic
+x 1
+y 6
+end
+arch stonefloor2
+x 1
+y 6
+end
+arch dwall_2_1_1
+x 1
+y 6
+end
+arch dungeon_magic
+x 1
+y 7
+end
+arch stonefloor2
+x 1
+y 7
+end
+arch dwall_2_1_1
+x 1
+y 7
+end
+arch dungeon_magic
+x 1
+y 8
+end
+arch stonefloor2
+x 1
+y 8
+end
+arch dwall_2_1_1
+x 1
+y 8
+end
+arch dungeon_magic
+x 1
+y 9
+end
+arch stonefloor2
+x 1
+y 9
+end
+arch dwall_2_1_1
+x 1
+y 9
+end
+arch dungeon_magic
+x 1
+y 10
+end
+arch stonefloor2
+x 1
+y 10
+end
+arch dwall_2_1_1
+x 1
+y 10
+end
+arch dungeon_magic
+x 1
+y 11
+end
+arch stonefloor2
+x 1
+y 11
+end
+arch dwall_2_1_1
+x 1
+y 11
+end
+arch dungeon_magic
+x 1
+y 12
+end
+arch stonefloor2
+x 1
+y 12
+end
+arch dwall_2_1_1
+x 1
+y 12
+end
+arch dungeon_magic
+x 1
+y 13
+end
+arch stonefloor2
+x 1
+y 13
+end
+arch dwall_2_1_1
+x 1
+y 13
+end
+arch dungeon_magic
+x 1
+y 14
+end
+arch stonefloor2
+x 1
+y 14
+end
+arch dwall_2_2_1
+x 1
+y 14
+end
+arch dungeon_magic
+x 1
+y 15
+end
+arch blocked
+x 1
+y 15
+end
+arch dungeon_magic
+x 2
+end
+arch blocked
+x 2
+end
+arch dungeon_magic
+x 2
+y 1
+end
+arch stonefloor2
+x 2
+y 1
+end
+arch dwall_2_1_2
+x 2
+y 1
+end
+arch dungeon_magic
+x 2
+y 2
+end
+arch dungeon_floor
+x 2
+y 2
+end
+arch dungeon_magic
+x 2
+y 3
+end
+arch dungeon_floor
+x 2
+y 3
+end
+arch dungeon_magic
+x 2
+y 4
+end
+arch dungeon_floor
+x 2
+y 4
+end
+arch dungeon_magic
+x 2
+y 5
+end
+arch dungeon_floor
+x 2
+y 5
+end
+arch dungeon_magic
+x 2
+y 6
+end
+arch dungeon_floor
+x 2
+y 6
+end
+arch dungeon_magic
+x 2
+y 7
+end
+arch dungeon_floor
+x 2
+y 7
+end
+arch dungeon_magic
+x 2
+y 8
+end
+arch dungeon_floor
+x 2
+y 8
+end
+arch dungeon_magic
+x 2
+y 9
+end
+arch dungeon_floor
+x 2
+y 9
+end
+arch dungeon_magic
+x 2
+y 10
+end
+arch dungeon_floor
+x 2
+y 10
+end
+arch dungeon_magic
+x 2
+y 11
+end
+arch dungeon_floor
+x 2
+y 11
+end
+arch dungeon_magic
+x 2
+y 12
+end
+arch dungeon_floor
+x 2
+y 12
+end
+arch dungeon_magic
+x 2
+y 13
+end
+arch dungeon_floor
+x 2
+y 13
+end
+arch dungeon_magic
+x 2
+y 14
+end
+arch stonefloor2
+x 2
+y 14
+end
+arch dwall_2_1_2
+x 2
+y 14
+end
+arch dungeon_magic
+x 2
+y 15
+end
+arch blocked
+x 2
+y 15
+end
+arch dungeon_magic
+x 3
+end
+arch blocked
+x 3
+end
+arch dungeon_magic
+x 3
+y 1
+end
+arch stonefloor2
+x 3
+y 1
+end
+arch dwall_2_1_2
+x 3
+y 1
+end
+arch dungeon_magic
+x 3
+y 2
+end
+arch dungeon_floor
+x 3
+y 2
+end
+arch dwall_0
+x 3
+y 2
+end
+arch dungeon_magic
+x 3
+y 3
+end
+arch dungeon_floor
+x 3
+y 3
+end
+arch dwall_0
+x 3
+y 3
+end
+arch dungeon_magic
+x 3
+y 4
+end
+arch dungeon_floor
+x 3
+y 4
+end
+arch dungeon_magic
+x 3
+y 5
+end
+arch dungeon_floor
+x 3
+y 5
+end
+arch dungeon_magic
+x 3
+y 6
+end
+arch dungeon_floor
+x 3
+y 6
+end
+arch dwall_0
+x 3
+y 6
+end
+arch dungeon_magic
+x 3
+y 7
+end
+arch dungeon_floor
+x 3
+y 7
+end
+arch dungeon_magic
+x 3
+y 8
+end
+arch dungeon_floor
+x 3
+y 8
+end
+arch dungeon_magic
+x 3
+y 9
+end
+arch dungeon_floor
+x 3
+y 9
+end
+arch dwall_0
+x 3
+y 9
+end
+arch dungeon_magic
+x 3
+y 10
+end
+arch dungeon_floor
+x 3
+y 10
+end
+arch dungeon_magic
+x 3
+y 11
+end
+arch dungeon_floor
+x 3
+y 11
+end
+arch dwall_0
+x 3
+y 11
+end
+arch dungeon_magic
+x 3
+y 12
+end
+arch dungeon_floor
+x 3
+y 12
+end
+arch dungeon_magic
+x 3
+y 13
+end
+arch dungeon_floor
+x 3
+y 13
+end
+arch dungeon_magic
+x 3
+y 14
+end
+arch stonefloor2
+x 3
+y 14
+end
+arch dwall_2_1_2
+x 3
+y 14
+end
+arch dungeon_magic
+x 3
+y 15
+end
+arch blocked
+x 3
+y 15
+end
+arch dungeon_magic
+x 4
+end
+arch blocked
+x 4
+end
+arch dungeon_magic
+x 4
+y 1
+end
+arch stonefloor2
+x 4
+y 1
+end
+arch dwall_2_1_2
+x 4
+y 1
+end
+arch dungeon_magic
+x 4
+y 2
+end
+arch dungeon_floor
+x 4
+y 2
+end
+arch dwall_0
+x 4
+y 2
+end
+arch dungeon_magic
+x 4
+y 3
+end
+arch dungeon_floor
+x 4
+y 3
+end
+arch dungeon_magic
+x 4
+y 4
+end
+arch dungeon_floor
+x 4
+y 4
+end
+arch dungeon_magic
+x 4
+y 5
+end
+arch dungeon_floor
+x 4
+y 5
+end
+arch dungeon_magic
+x 4
+y 6
+end
+arch dungeon_floor
+x 4
+y 6
+end
+arch dungeon_magic
+x 4
+y 7
+end
+arch dungeon_floor
+x 4
+y 7
+end
+arch dungeon_magic
+x 4
+y 8
+end
+arch dungeon_floor
+x 4
+y 8
+end
+arch dungeon_magic
+x 4
+y 9
+end
+arch dungeon_floor
+x 4
+y 9
+end
+arch dungeon_magic
+x 4
+y 10
+end
+arch dungeon_floor
+x 4
+y 10
+end
+arch dungeon_magic
+x 4
+y 11
+end
+arch dungeon_floor
+x 4
+y 11
+end
+arch dungeon_magic
+x 4
+y 12
+end
+arch dungeon_floor
+x 4
+y 12
+end
+arch dungeon_magic
+x 4
+y 13
+end
+arch dungeon_floor
+x 4
+y 13
+end
+arch dungeon_magic
+x 4
+y 14
+end
+arch stonefloor2
+x 4
+y 14
+end
+arch dwall_2_1_2
+x 4
+y 14
+end
+arch dungeon_magic
+x 4
+y 15
+end
+arch blocked
+x 4
+y 15
+end
+arch dungeon_magic
+x 5
+end
+arch blocked
+x 5
+end
+arch dungeon_magic
+x 5
+y 1
+end
+arch stonefloor2
+x 5
+y 1
+end
+arch dwall_2_1_2
+x 5
+y 1
+end
+arch dungeon_magic
+x 5
+y 2
+end
+arch dungeon_floor
+x 5
+y 2
+end
+arch exit
+slaying ../../../planes/astral-vault
+hp 29
+sp 34
+x 5
+y 2
+end
+arch dungeon_magic
+x 5
+y 3
+end
+arch dungeon_floor
 x 5
 y 3
 end
@@ -938,11 +763,6 @@ arch dungeon_floor
 x 5
 y 4
 end
-arch grate_closed_2
-x 5
-y 4
-speed 0.500000
-end
 arch dungeon_magic
 x 5
 y 5
@@ -951,11 +771,6 @@ arch dungeon_floor
 x 5
 y 5
 end
-arch grate_closed_2
-x 5
-y 5
-speed 0.500000
-end
 arch dungeon_magic
 x 5
 y 6
@@ -963,21 +778,12 @@ end
 arch dungeon_floor
 x 5
 y 6
-end
-arch grate_closed_2
-x 5
-y 6
-speed 0.500000
 end
 arch dungeon_magic
 x 5
 y 7
 end
 arch dungeon_floor
-x 5
-y 7
-end
-arch dwall_2_2_1
 x 5
 y 7
 end
@@ -985,7 +791,7 @@ arch dungeon_magic
 x 5
 y 8
 end
-arch woodfloor
+arch dungeon_floor
 x 5
 y 8
 end
@@ -993,15 +799,7 @@ arch dungeon_magic
 x 5
 y 9
 end
-arch woodfloor
-x 5
-y 9
-end
-arch longtable_2_1_2
-x 5
-y 9
-end
-arch swall_2_1_2
+arch dungeon_floor
 x 5
 y 9
 end
@@ -1009,11 +807,7 @@ arch dungeon_magic
 x 5
 y 10
 end
-arch woodfloor
-x 5
-y 10
-end
-arch diamond_converter
+arch dungeon_floor
 x 5
 y 10
 end
@@ -1021,7 +815,7 @@ arch dungeon_magic
 x 5
 y 11
 end
-arch woodfloor
+arch dungeon_floor
 x 5
 y 11
 end
@@ -1029,7 +823,7 @@ arch dungeon_magic
 x 5
 y 12
 end
-arch woodfloor
+arch dungeon_floor
 x 5
 y 12
 end
@@ -1037,12 +831,12 @@ arch dungeon_magic
 x 5
 y 13
 end
-arch woodfloor
+arch dungeon_floor
 x 5
 y 13
 end
-arch stair_3_down
-slaying bank1_vault
+arch stair2_up
+slaying bank1
 hp 5
 sp 13
 x 5
@@ -1052,16 +846,11 @@ arch dungeon_magic
 x 5
 y 14
 end
-arch woodfloor
-x 5
-y 14
-end
-arch ewall_2_1_2
+arch stonefloor2
 x 5
 y 14
 end
 arch dwall_2_1_2
-face dwall_AA.111
 x 5
 y 14
 end
@@ -1083,16 +872,11 @@ arch dungeon_magic
 x 6
 y 1
 end
-arch woodfloor
-x 6
-y 1
-end
-arch ewall_2_1_2
+arch stonefloor2
 x 6
 y 1
 end
 arch dwall_2_1_2
-face dwall_AA.111
 x 6
 y 1
 end
@@ -1100,7 +884,11 @@ arch dungeon_magic
 x 6
 y 2
 end
-arch woodfloor
+arch dungeon_floor
+x 6
+y 2
+end
+arch dwall_0
 x 6
 y 2
 end
@@ -1112,27 +900,11 @@ arch dungeon_floor
 x 6
 y 3
 end
-arch dwall_2_1_2
-x 6
-y 3
-end
 arch dungeon_magic
 x 6
 y 4
 end
-arch flagstone
-x 6
-y 4
-end
-arch random_wealth
-x 6
-y 4
-end
-arch random_gem
-x 6
-y 4
-end
-arch random_wealth
+arch dungeon_floor
 x 6
 y 4
 end
@@ -1140,19 +912,7 @@ arch dungeon_magic
 x 6
 y 5
 end
-arch flagstone
-x 6
-y 5
-end
-arch random_wealth
-x 6
-y 5
-end
-arch random_gem
-x 6
-y 5
-end
-arch random_wealth
+arch dungeon_floor
 x 6
 y 5
 end
@@ -1160,19 +920,7 @@ arch dungeon_magic
 x 6
 y 6
 end
-arch flagstone
-x 6
-y 6
-end
-arch random_wealth
-x 6
-y 6
-end
-arch random_gem
-x 6
-y 6
-end
-arch random_wealth
+arch dungeon_floor
 x 6
 y 6
 end
@@ -1184,104 +932,63 @@ arch dungeon_floor
 x 6
 y 7
 end
+arch dungeon_magic
+x 6
+y 8
+end
+arch dungeon_floor
+x 6
+y 8
+end
+arch dungeon_magic
+x 6
+y 9
+end
+arch dungeon_floor
+x 6
+y 9
+end
+arch dungeon_magic
+x 6
+y 10
+end
+arch dungeon_floor
+x 6
+y 10
+end
+arch dungeon_magic
+x 6
+y 11
+end
+arch dungeon_floor
+x 6
+y 11
+end
+arch dungeon_magic
+x 6
+y 12
+end
+arch dungeon_floor
+x 6
+y 12
+end
+arch dungeon_magic
+x 6
+y 13
+end
+arch dungeon_floor
+x 6
+y 13
+end
+arch dungeon_magic
+x 6
+y 14
+end
+arch stonefloor2
+x 6
+y 14
+end
 arch dwall_2_1_2
-x 6
-y 7
-end
-arch dungeon_magic
-x 6
-y 8
-end
-arch woodfloor
-x 6
-y 8
-end
-arch merchant
-name Banker
-x 6
-y 8
-end
-arch dungeon_magic
-x 6
-y 9
-end
-arch woodfloor
-x 6
-y 9
-end
-arch longtable_2_1_2
-x 6
-y 9
-end
-arch swall_2_1_2
-x 6
-y 9
-end
-arch dungeon_magic
-x 6
-y 10
-end
-arch woodfloor
-x 6
-y 10
-end
-arch pearl_converter
-x 6
-y 10
-end
-arch dungeon_magic
-x 6
-y 11
-end
-arch woodfloor
-x 6
-y 11
-end
-arch dungeon_magic
-x 6
-y 12
-end
-arch woodfloor
-x 6
-y 12
-end
-arch dungeon_magic
-x 6
-y 13
-end
-arch woodfloor
-x 6
-y 13
-end
-arch ninja
-Str 20
-Dex 20
-Wis 10
-Cha 10
-Int 10
-hp 1000
-maxhp 1000
-dam 50
-x 6
-y 13
-type 0
-move_type walk
-monster 1
-unaggressive 1
-end
-arch dungeon_magic
-x 6
-y 14
-end
-arch woodfloor
-x 6
-y 14
-end
-arch ewall_1_3
-x 6
-y 14
-end
-arch wall_0
 x 6
 y 14
 end
@@ -1303,16 +1010,11 @@ arch dungeon_magic
 x 7
 y 1
 end
-arch woodfloor
-x 7
-y 1
-end
-arch ewall_2_1_2
+arch stonefloor2
 x 7
 y 1
 end
 arch dwall_2_1_2
-face dwall_AA.111
 x 7
 y 1
 end
@@ -1320,7 +1022,11 @@ arch dungeon_magic
 x 7
 y 2
 end
-arch woodfloor
+arch dungeon_floor
+x 7
+y 2
+end
+arch dwall_0
 x 7
 y 2
 end
@@ -1332,7 +1038,7 @@ arch dungeon_floor
 x 7
 y 3
 end
-arch dwall_2_1_2
+arch dwall_0
 x 7
 y 3
 end
@@ -1340,19 +1046,7 @@ arch dungeon_magic
 x 7
 y 4
 end
-arch flagstone
-x 7
-y 4
-end
-arch random_wealth
-x 7
-y 4
-end
-arch random_gem
-x 7
-y 4
-end
-arch random_wealth
+arch dungeon_floor
 x 7
 y 4
 end
@@ -1360,19 +1054,7 @@ arch dungeon_magic
 x 7
 y 5
 end
-arch flagstone
-x 7
-y 5
-end
-arch random_wealth
-x 7
-y 5
-end
-arch random_gem
-x 7
-y 5
-end
-arch random_wealth
+arch dungeon_floor
 x 7
 y 5
 end
@@ -1380,19 +1062,11 @@ arch dungeon_magic
 x 7
 y 6
 end
-arch flagstone
+arch dungeon_floor
 x 7
 y 6
 end
-arch random_wealth
-x 7
-y 6
-end
-arch random_gem
-x 7
-y 6
-end
-arch random_wealth
+arch dwall_0
 x 7
 y 6
 end
@@ -1404,82 +1078,71 @@ arch dungeon_floor
 x 7
 y 7
 end
+arch dungeon_magic
+x 7
+y 8
+end
+arch dungeon_floor
+x 7
+y 8
+end
+arch dungeon_magic
+x 7
+y 9
+end
+arch dungeon_floor
+x 7
+y 9
+end
+arch dwall_0
+x 7
+y 9
+end
+arch dungeon_magic
+x 7
+y 10
+end
+arch dungeon_floor
+x 7
+y 10
+end
+arch dungeon_magic
+x 7
+y 11
+end
+arch dungeon_floor
+x 7
+y 11
+end
+arch dwall_0
+x 7
+y 11
+end
+arch dungeon_magic
+x 7
+y 12
+end
+arch dungeon_floor
+x 7
+y 12
+end
+arch dungeon_magic
+x 7
+y 13
+end
+arch dungeon_floor
+x 7
+y 13
+end
+arch dungeon_magic
+x 7
+y 14
+end
+arch stonefloor2
+x 7
+y 14
+end
 arch dwall_2_1_2
-x 7
-y 7
-end
-arch dungeon_magic
-x 7
-y 8
-end
-arch woodfloor
-x 7
-y 8
-end
-arch dungeon_magic
-x 7
-y 9
-end
-arch woodfloor
-x 7
-y 9
-end
-arch longtable_2_1_2
-x 7
-y 9
-end
-arch swall_2_1_2
-x 7
-y 9
-end
-arch dungeon_magic
-x 7
-y 10
-end
-arch woodfloor
-x 7
-y 10
-end
-arch platinum_converter
-x 7
-y 10
-end
-arch dungeon_magic
-x 7
-y 11
-end
-arch woodfloor
-x 7
-y 11
-end
-arch dungeon_magic
-x 7
-y 12
-end
-arch woodfloor
-x 7
-y 12
-end
-arch dungeon_magic
-x 7
-y 13
-end
-arch woodfloor
-x 7
-y 13
-end
-arch dungeon_magic
-x 7
-y 14
-end
-arch invis_exit
-slaying /world/world_128_101
-hp 2
-sp 18
-x 7
-y 14
-end
-arch woodfloor
 x 7
 y 14
 end
@@ -1501,16 +1164,11 @@ arch dungeon_magic
 x 8
 y 1
 end
-arch woodfloor
-x 8
-y 1
-end
-arch ewall_2_1_2
+arch stonefloor2
 x 8
 y 1
 end
 arch dwall_2_1_2
-face dwall_AA.111
 x 8
 y 1
 end
@@ -1518,7 +1176,7 @@ arch dungeon_magic
 x 8
 y 2
 end
-arch woodfloor
+arch dungeon_floor
 x 8
 y 2
 end
@@ -1530,27 +1188,11 @@ arch dungeon_floor
 x 8
 y 3
 end
-arch dwall_2_1_2
-x 8
-y 3
-end
 arch dungeon_magic
 x 8
 y 4
 end
-arch flagstone
-x 8
-y 4
-end
-arch random_wealth
-x 8
-y 4
-end
-arch random_gem
-x 8
-y 4
-end
-arch random_wealth
+arch dungeon_floor
 x 8
 y 4
 end
@@ -1558,19 +1200,7 @@ arch dungeon_magic
 x 8
 y 5
 end
-arch flagstone
-x 8
-y 5
-end
-arch random_wealth
-x 8
-y 5
-end
-arch random_gem
-x 8
-y 5
-end
-arch random_wealth
+arch dungeon_floor
 x 8
 y 5
 end
@@ -1578,19 +1208,7 @@ arch dungeon_magic
 x 8
 y 6
 end
-arch flagstone
-x 8
-y 6
-end
-arch random_wealth
-x 8
-y 6
-end
-arch random_gem
-x 8
-y 6
-end
-arch random_wealth
+arch dungeon_floor
 x 8
 y 6
 end
@@ -1602,82 +1220,63 @@ arch dungeon_floor
 x 8
 y 7
 end
+arch dungeon_magic
+x 8
+y 8
+end
+arch dungeon_floor
+x 8
+y 8
+end
+arch dungeon_magic
+x 8
+y 9
+end
+arch dungeon_floor
+x 8
+y 9
+end
+arch dungeon_magic
+x 8
+y 10
+end
+arch dungeon_floor
+x 8
+y 10
+end
+arch dungeon_magic
+x 8
+y 11
+end
+arch dungeon_floor
+x 8
+y 11
+end
+arch dungeon_magic
+x 8
+y 12
+end
+arch dungeon_floor
+x 8
+y 12
+end
+arch dungeon_magic
+x 8
+y 13
+end
+arch dungeon_floor
+x 8
+y 13
+end
+arch dungeon_magic
+x 8
+y 14
+end
+arch stonefloor2
+x 8
+y 14
+end
 arch dwall_2_1_2
-x 8
-y 7
-end
-arch dungeon_magic
-x 8
-y 8
-end
-arch woodfloor
-x 8
-y 8
-end
-arch dungeon_magic
-x 8
-y 9
-end
-arch woodfloor
-x 8
-y 9
-end
-arch longtable_2_1_2
-x 8
-y 9
-end
-arch swall_2_1_2
-x 8
-y 9
-end
-arch dungeon_magic
-x 8
-y 10
-end
-arch woodfloor
-x 8
-y 10
-end
-arch gold_converter
-x 8
-y 10
-end
-arch dungeon_magic
-x 8
-y 11
-end
-arch woodfloor
-x 8
-y 11
-end
-arch dungeon_magic
-x 8
-y 12
-end
-arch woodfloor
-x 8
-y 12
-end
-arch dungeon_magic
-x 8
-y 13
-end
-arch woodfloor
-x 8
-y 13
-end
-arch dungeon_magic
-x 8
-y 14
-end
-arch invis_exit
-slaying /world/world_128_101
-hp 2
-sp 18
-x 8
-y 14
-end
-arch woodfloor
 x 8
 y 14
 end
@@ -1699,16 +1298,11 @@ arch dungeon_magic
 x 9
 y 1
 end
-arch woodfloor
-x 9
-y 1
-end
-arch ewall_2_1_2
+arch stonefloor2
 x 9
 y 1
 end
 arch dwall_2_1_2
-face dwall_AA.111
 x 9
 y 1
 end
@@ -1716,7 +1310,7 @@ arch dungeon_magic
 x 9
 y 2
 end
-arch woodfloor
+arch dungeon_floor
 x 9
 y 2
 end
@@ -1728,27 +1322,11 @@ arch dungeon_floor
 x 9
 y 3
 end
-arch dwall_2_1_2
-x 9
-y 3
-end
 arch dungeon_magic
 x 9
 y 4
 end
-arch flagstone
-x 9
-y 4
-end
-arch random_wealth
-x 9
-y 4
-end
-arch random_gem
-x 9
-y 4
-end
-arch random_wealth
+arch dungeon_floor
 x 9
 y 4
 end
@@ -1756,19 +1334,7 @@ arch dungeon_magic
 x 9
 y 5
 end
-arch flagstone
-x 9
-y 5
-end
-arch random_wealth
-x 9
-y 5
-end
-arch random_gem
-x 9
-y 5
-end
-arch random_wealth
+arch dungeon_floor
 x 9
 y 5
 end
@@ -1776,19 +1342,7 @@ arch dungeon_magic
 x 9
 y 6
 end
-arch flagstone
-x 9
-y 6
-end
-arch random_wealth
-x 9
-y 6
-end
-arch random_gem
-x 9
-y 6
-end
-arch random_wealth
+arch dungeon_floor
 x 9
 y 6
 end
@@ -1800,99 +1354,63 @@ arch dungeon_floor
 x 9
 y 7
 end
+arch dungeon_magic
+x 9
+y 8
+end
+arch dungeon_floor
+x 9
+y 8
+end
+arch dungeon_magic
+x 9
+y 9
+end
+arch dungeon_floor
+x 9
+y 9
+end
+arch dungeon_magic
+x 9
+y 10
+end
+arch dungeon_floor
+x 9
+y 10
+end
+arch dungeon_magic
+x 9
+y 11
+end
+arch dungeon_floor
+x 9
+y 11
+end
+arch dungeon_magic
+x 9
+y 12
+end
+arch dungeon_floor
+x 9
+y 12
+end
+arch dungeon_magic
+x 9
+y 13
+end
+arch dungeon_floor
+x 9
+y 13
+end
+arch dungeon_magic
+x 9
+y 14
+end
+arch stonefloor2
+x 9
+y 14
+end
 arch dwall_2_1_2
-x 9
-y 7
-end
-arch dungeon_magic
-x 9
-y 8
-end
-arch woodfloor
-x 9
-y 8
-end
-arch dungeon_magic
-x 9
-y 9
-end
-arch woodfloor
-x 9
-y 9
-end
-arch longtable_2_1_2
-x 9
-y 9
-end
-arch swall_2_1_2
-x 9
-y 9
-end
-arch dungeon_magic
-x 9
-y 10
-end
-arch woodfloor
-x 9
-y 10
-end
-arch gold_converter
-x 9
-y 10
-end
-arch dungeon_magic
-x 9
-y 11
-end
-arch woodfloor
-x 9
-y 11
-end
-arch dungeon_magic
-x 9
-y 12
-end
-arch woodfloor
-x 9
-y 12
-end
-arch dungeon_magic
-x 9
-y 13
-end
-arch woodfloor
-x 9
-y 13
-end
-arch ninja
-Str 20
-Dex 20
-Wis 10
-Cha 10
-Int 10
-hp 1000
-maxhp 1000
-dam 50
-x 9
-y 13
-type 0
-move_type walk
-monster 1
-unaggressive 1
-end
-arch dungeon_magic
-x 9
-y 14
-end
-arch woodfloor
-x 9
-y 14
-end
-arch ewall_1_4
-x 9
-y 14
-end
-arch wall_0
 x 9
 y 14
 end
@@ -1914,15 +1432,11 @@ arch dungeon_magic
 x 10
 y 1
 end
-arch woodfloor
+arch stonefloor2
 x 10
 y 1
 end
-arch ewall_2_1_2
-x 10
-y 1
-end
-arch wall_0
+arch dwall_2_1_2
 x 10
 y 1
 end
@@ -1930,7 +1444,7 @@ arch dungeon_magic
 x 10
 y 2
 end
-arch woodfloor
+arch dungeon_floor
 x 10
 y 2
 end
@@ -1942,7 +1456,7 @@ arch dungeon_floor
 x 10
 y 3
 end
-arch dwall_2_1_2
+arch dwall_0
 x 10
 y 3
 end
@@ -1950,19 +1464,7 @@ arch dungeon_magic
 x 10
 y 4
 end
-arch flagstone
-x 10
-y 4
-end
-arch random_wealth
-x 10
-y 4
-end
-arch random_gem
-x 10
-y 4
-end
-arch random_wealth
+arch dungeon_floor
 x 10
 y 4
 end
@@ -1970,19 +1472,7 @@ arch dungeon_magic
 x 10
 y 5
 end
-arch flagstone
-x 10
-y 5
-end
-arch random_wealth
-x 10
-y 5
-end
-arch random_gem
-x 10
-y 5
-end
-arch random_wealth
+arch dungeon_floor
 x 10
 y 5
 end
@@ -1990,19 +1480,11 @@ arch dungeon_magic
 x 10
 y 6
 end
-arch flagstone
+arch dungeon_floor
 x 10
 y 6
 end
-arch random_wealth
-x 10
-y 6
-end
-arch random_gem
-x 10
-y 6
-end
-arch random_wealth
+arch dwall_0
 x 10
 y 6
 end
@@ -2014,20 +1496,11 @@ arch dungeon_floor
 x 10
 y 7
 end
-arch dwall_2_1_2
-x 10
-y 7
-end
 arch dungeon_magic
 x 10
 y 8
 end
-arch woodfloor
-x 10
-y 8
-end
-arch merchant
-name Banker
+arch dungeon_floor
 x 10
 y 8
 end
@@ -2035,15 +1508,11 @@ arch dungeon_magic
 x 10
 y 9
 end
-arch woodfloor
+arch dungeon_floor
 x 10
 y 9
 end
-arch longtable_2_1_2
-x 10
-y 9
-end
-arch swall_2_1_2
+arch dwall_0
 x 10
 y 9
 end
@@ -2051,11 +1520,7 @@ arch dungeon_magic
 x 10
 y 10
 end
-arch woodfloor
-x 10
-y 10
-end
-arch platinum_converter
+arch dungeon_floor
 x 10
 y 10
 end
@@ -2063,7 +1528,11 @@ arch dungeon_magic
 x 10
 y 11
 end
-arch woodfloor
+arch dungeon_floor
+x 10
+y 11
+end
+arch dwall_0
 x 10
 y 11
 end
@@ -2071,7 +1540,7 @@ arch dungeon_magic
 x 10
 y 12
 end
-arch woodfloor
+arch dungeon_floor
 x 10
 y 12
 end
@@ -2079,7 +1548,7 @@ arch dungeon_magic
 x 10
 y 13
 end
-arch woodfloor
+arch dungeon_floor
 x 10
 y 13
 end
@@ -2087,16 +1556,11 @@ arch dungeon_magic
 x 10
 y 14
 end
-arch woodfloor
-x 10
-y 14
-end
-arch ewall_2_1_2
+arch stonefloor2
 x 10
 y 14
 end
 arch dwall_2_1_2
-face dwall_AA.111
 x 10
 y 14
 end
@@ -2118,16 +1582,11 @@ arch dungeon_magic
 x 11
 y 1
 end
-arch woodfloor
-x 11
-y 1
-end
-arch ewall_2_1_2
+arch stonefloor2
 x 11
 y 1
 end
 arch dwall_2_1_2
-face dwall_AA.111
 x 11
 y 1
 end
@@ -2135,7 +1594,7 @@ arch dungeon_magic
 x 11
 y 2
 end
-arch woodfloor
+arch dungeon_floor
 x 11
 y 2
 end
@@ -2147,27 +1606,11 @@ arch dungeon_floor
 x 11
 y 3
 end
-arch dwall_2_1_2
-x 11
-y 3
-end
 arch dungeon_magic
 x 11
 y 4
 end
-arch flagstone
-x 11
-y 4
-end
-arch random_wealth
-x 11
-y 4
-end
-arch random_gem
-x 11
-y 4
-end
-arch random_wealth
+arch dungeon_floor
 x 11
 y 4
 end
@@ -2175,19 +1618,7 @@ arch dungeon_magic
 x 11
 y 5
 end
-arch flagstone
-x 11
-y 5
-end
-arch random_wealth
-x 11
-y 5
-end
-arch random_gem
-x 11
-y 5
-end
-arch random_wealth
+arch dungeon_floor
 x 11
 y 5
 end
@@ -2195,19 +1626,7 @@ arch dungeon_magic
 x 11
 y 6
 end
-arch flagstone
-x 11
-y 6
-end
-arch random_wealth
-x 11
-y 6
-end
-arch random_gem
-x 11
-y 6
-end
-arch random_wealth
+arch dungeon_floor
 x 11
 y 6
 end
@@ -2219,15 +1638,11 @@ arch dungeon_floor
 x 11
 y 7
 end
-arch dwall_2_1_2
-x 11
-y 7
-end
 arch dungeon_magic
 x 11
 y 8
 end
-arch woodfloor
+arch dungeon_floor
 x 11
 y 8
 end
@@ -2235,15 +1650,7 @@ arch dungeon_magic
 x 11
 y 9
 end
-arch woodfloor
-x 11
-y 9
-end
-arch longtable_2_1_2
-x 11
-y 9
-end
-arch swall_2_1_2
+arch dungeon_floor
 x 11
 y 9
 end
@@ -2251,11 +1658,7 @@ arch dungeon_magic
 x 11
 y 10
 end
-arch woodfloor
-x 11
-y 10
-end
-arch silver_converter
+arch dungeon_floor
 x 11
 y 10
 end
@@ -2263,7 +1666,7 @@ arch dungeon_magic
 x 11
 y 11
 end
-arch woodfloor
+arch dungeon_floor
 x 11
 y 11
 end
@@ -2271,7 +1674,7 @@ arch dungeon_magic
 x 11
 y 12
 end
-arch woodfloor
+arch dungeon_floor
 x 11
 y 12
 end
@@ -2279,40 +1682,19 @@ arch dungeon_magic
 x 11
 y 13
 end
-arch woodfloor
+arch dungeon_floor
 x 11
 y 13
-end
-arch ninja
-Str 20
-Dex 20
-Wis 10
-Cha 10
-Int 10
-hp 1000
-maxhp 1000
-dam 50
-x 11
-y 13
-type 0
-move_type walk
-monster 1
-unaggressive 1
 end
 arch dungeon_magic
 x 11
 y 14
 end
-arch woodfloor
-x 11
-y 14
-end
-arch ewall_2_1_2
+arch stonefloor2
 x 11
 y 14
 end
 arch dwall_2_1_2
-face dwall_AA.111
 x 11
 y 14
 end
@@ -2334,16 +1716,11 @@ arch dungeon_magic
 x 12
 y 1
 end
-arch woodfloor
-x 12
-y 1
-end
-arch ewall_2_1_2
+arch stonefloor2
 x 12
 y 1
 end
 arch dwall_2_1_2
-face dwall_AA.111
 x 12
 y 1
 end
@@ -2351,7 +1728,7 @@ arch dungeon_magic
 x 12
 y 2
 end
-arch woodfloor
+arch dungeon_floor
 x 12
 y 2
 end
@@ -2362,584 +1739,428 @@ end
 arch dungeon_floor
 x 12
 y 3
+end
+arch dwall_0
+x 12
+y 3
+end
+arch dungeon_magic
+x 12
+y 4
+end
+arch dungeon_floor
+x 12
+y 4
+end
+arch dungeon_magic
+x 12
+y 5
+end
+arch dungeon_floor
+x 12
+y 5
+end
+arch dungeon_magic
+x 12
+y 6
+end
+arch dungeon_floor
+x 12
+y 6
+end
+arch dwall_0
+x 12
+y 6
+end
+arch dungeon_magic
+x 12
+y 7
+end
+arch dungeon_floor
+x 12
+y 7
+end
+arch dungeon_magic
+x 12
+y 8
+end
+arch dungeon_floor
+x 12
+y 8
+end
+arch dungeon_magic
+x 12
+y 9
+end
+arch dungeon_floor
+x 12
+y 9
+end
+arch dwall_0
+x 12
+y 9
+end
+arch dungeon_magic
+x 12
+y 10
+end
+arch dungeon_floor
+x 12
+y 10
+end
+arch dungeon_magic
+x 12
+y 11
+end
+arch dungeon_floor
+x 12
+y 11
+end
+arch dwall_0
+x 12
+y 11
+end
+arch dungeon_magic
+x 12
+y 12
+end
+arch dungeon_floor
+x 12
+y 12
+end
+arch dungeon_magic
+x 12
+y 13
+end
+arch dungeon_floor
+x 12
+y 13
+end
+arch dungeon_magic
+x 12
+y 14
+end
+arch stonefloor2
+x 12
+y 14
+end
+arch dwall_2_1_2
+x 12
+y 14
+end
+arch dungeon_magic
+x 12
+y 15
+end
+arch blocked
+x 12
+y 15
+end
+arch dungeon_magic
+x 13
+end
+arch blocked
+x 13
+end
+arch dungeon_magic
+x 13
+y 1
+end
+arch stonefloor2
+x 13
+y 1
+end
+arch dwall_2_1_2
+x 13
+y 1
+end
+arch dungeon_magic
+x 13
+y 2
+end
+arch dungeon_floor
+x 13
+y 2
+end
+arch dungeon_magic
+x 13
+y 3
+end
+arch dungeon_floor
+x 13
+y 3
+end
+arch dungeon_magic
+x 13
+y 4
+end
+arch dungeon_floor
+x 13
+y 4
+end
+arch dungeon_magic
+x 13
+y 5
+end
+arch dungeon_floor
+x 13
+y 5
+end
+arch dungeon_magic
+x 13
+y 6
+end
+arch dungeon_floor
+x 13
+y 6
+end
+arch dungeon_magic
+x 13
+y 7
+end
+arch dungeon_floor
+x 13
+y 7
+end
+arch dungeon_magic
+x 13
+y 8
+end
+arch dungeon_floor
+x 13
+y 8
+end
+arch dungeon_magic
+x 13
+y 9
+end
+arch dungeon_floor
+x 13
+y 9
+end
+arch dungeon_magic
+x 13
+y 10
+end
+arch dungeon_floor
+x 13
+y 10
+end
+arch dungeon_magic
+x 13
+y 11
+end
+arch dungeon_floor
+x 13
+y 11
+end
+arch dungeon_magic
+x 13
+y 12
+end
+arch dungeon_floor
+x 13
+y 12
+end
+arch dungeon_magic
+x 13
+y 13
+end
+arch dungeon_floor
+x 13
+y 13
+end
+arch dungeon_magic
+x 13
+y 14
+end
+arch stonefloor2
+x 13
+y 14
+end
+arch dwall_2_1_2
+x 13
+y 14
+end
+arch dungeon_magic
+x 13
+y 15
+end
+arch blocked
+x 13
+y 15
+end
+arch dungeon_magic
+x 14
+end
+arch blocked
+x 14
+end
+arch dungeon_magic
+x 14
+y 1
+end
+arch stonefloor2
+x 14
+y 1
 end
 arch dwall_2_2_3
-x 12
+x 14
+y 1
+end
+arch dungeon_magic
+x 14
+y 2
+end
+arch stonefloor2
+x 14
+y 2
+end
+arch dwall_2_1_1
+x 14
+y 2
+end
+arch dungeon_magic
+x 14
+y 3
+end
+arch stonefloor2
+x 14
+y 3
+end
+arch dwall_2_1_1
+x 14
 y 3
 end
 arch dungeon_magic
-x 12
+x 14
 y 4
 end
-arch dungeon_floor
-x 12
+arch stonefloor2
+x 14
 y 4
 end
 arch dwall_2_1_1
-x 12
+x 14
 y 4
 end
 arch dungeon_magic
-x 12
+x 14
 y 5
 end
-arch dungeon_floor
-x 12
+arch stonefloor2
+x 14
 y 5
 end
 arch dwall_2_1_1
-x 12
+x 14
 y 5
 end
 arch dungeon_magic
-x 12
+x 14
 y 6
 end
-arch dungeon_floor
-x 12
+arch stonefloor2
+x 14
 y 6
 end
 arch dwall_2_1_1
-x 12
+x 14
 y 6
 end
 arch dungeon_magic
-x 12
+x 14
 y 7
 end
-arch dungeon_floor
-x 12
+arch stonefloor2
+x 14
 y 7
+end
+arch dwall_2_1_1
+x 14
+y 7
+end
+arch dungeon_magic
+x 14
+y 8
+end
+arch stonefloor2
+x 14
+y 8
+end
+arch dwall_2_1_1
+x 14
+y 8
+end
+arch dungeon_magic
+x 14
+y 9
+end
+arch stonefloor2
+x 14
+y 9
+end
+arch dwall_2_1_1
+x 14
+y 9
+end
+arch dungeon_magic
+x 14
+y 10
+end
+arch stonefloor2
+x 14
+y 10
+end
+arch dwall_2_1_1
+x 14
+y 10
+end
+arch dungeon_magic
+x 14
+y 11
+end
+arch stonefloor2
+x 14
+y 11
+end
+arch dwall_2_1_1
+x 14
+y 11
+end
+arch dungeon_magic
+x 14
+y 12
+end
+arch stonefloor2
+x 14
+y 12
+end
+arch dwall_2_1_1
+x 14
+y 12
+end
+arch dungeon_magic
+x 14
+y 13
+end
+arch stonefloor2
+x 14
+y 13
+end
+arch dwall_2_1_1
+x 14
+y 13
+end
+arch dungeon_magic
+x 14
+y 14
+end
+arch stonefloor2
+x 14
+y 14
 end
 arch dwall_2_2_4
-x 12
-y 7
-end
-arch dungeon_magic
-x 12
-y 8
-end
-arch woodfloor
-x 12
-y 8
-end
-arch dungeon_magic
-x 12
-y 9
-end
-arch woodfloor
-x 12
-y 9
-end
-arch longtable_2_1_2
-x 12
-y 9
-end
-arch swall_2_1_2
-x 12
-y 9
-end
-arch dungeon_magic
-x 12
-y 10
-end
-arch woodfloor
-x 12
-y 10
-end
-arch silver_converter
-name convert gold into silver
-slaying goldcoin
-other_arch silvercoin
-sp 10
-food 1
-x 12
-y 10
-end
-arch dungeon_magic
-x 12
-y 11
-end
-arch woodfloor
-x 12
-y 11
-end
-arch dungeon_magic
-x 12
-y 12
-end
-arch woodfloor
-x 12
-y 12
-end
-arch dungeon_magic
-x 12
-y 13
-end
-arch woodfloor
-x 12
-y 13
-end
-arch stair_3_up
-slaying bank2
-hp 12
-sp 13
-x 12
-y 13
-end
-arch dungeon_magic
-x 12
-y 14
-end
-arch woodfloor
-x 12
-y 14
-end
-arch ewall_2_1_2
-x 12
-y 14
-end
-arch dwall_2_1_2
-face dwall_AA.111
-x 12
-y 14
-end
-arch dungeon_magic
-x 12
-y 15
-end
-arch blocked
-x 12
-y 15
-end
-arch dungeon_magic
-x 13
-end
-arch blocked
-x 13
-end
-arch dungeon_magic
-x 13
-y 1
-end
-arch woodfloor
-x 13
-y 1
-end
-arch ewall_2_1_2
-x 13
-y 1
-end
-arch dwall_2_1_2
-face dwall_AA.111
-x 13
-y 1
-end
-arch dungeon_magic
-x 13
-y 2
-end
-arch woodfloor
-x 13
-y 2
-end
-arch dungeon_magic
-x 13
-y 3
-end
-arch woodfloor
-x 13
-y 3
-end
-arch dungeon_magic
-x 13
-y 4
-end
-arch woodfloor
-x 13
-y 4
-end
-arch dungeon_magic
-x 13
-y 5
-end
-arch woodfloor
-x 13
-y 5
-end
-arch dungeon_magic
-x 13
-y 6
-end
-arch woodfloor
-x 13
-y 6
-end
-arch dungeon_magic
-x 13
-y 7
-end
-arch woodfloor
-x 13
-y 7
-end
-arch dungeon_magic
-x 13
-y 8
-end
-arch woodfloor
-x 13
-y 8
-end
-arch dungeon_magic
-x 13
-y 9
-end
-arch woodfloor
-x 13
-y 9
-end
-arch longtable_1_3
-x 13
-y 9
-end
-arch swall_2_1_2
-x 13
-y 9
-end
-arch dungeon_magic
-x 13
-y 10
-end
-arch woodfloor
-x 13
-y 10
-end
-arch silver_converter
-name sell gold block bullion
-slaying goldblock
-other_arch platinacoin
-sp 20000
-food 1
-x 13
-y 10
-end
-arch dungeon_magic
-x 13
-y 11
-end
-arch woodfloor
-x 13
-y 11
-end
-arch silver_converter
-name sell platinum bar bullion for imperials
-slaying platbar
-other_arch imperial
-sp 5
-food 1
-x 13
-y 11
-end
-arch dungeon_magic
-x 13
-y 12
-end
-arch woodfloor
-x 13
-y 12
-end
-arch silver_converter
-name sell gold bar bullion for imperials
-slaying goldbar
-other_arch imperial
-sp 1
-food 1
-x 13
-y 12
-end
-arch dungeon_magic
-x 13
-y 13
-end
-arch woodfloor
-x 13
-y 13
-end
-arch silver_converter
-name sell silver bar bullion (min: 10) for imperials
-slaying silverbar
-other_arch imperial
-sp 1
-x 13
-y 13
-end
-arch dungeon_magic
-x 13
-y 14
-end
-arch woodfloor
-x 13
-y 14
-end
-arch ewall_2_1_2
-x 13
-y 14
-end
-arch dwall_2_1_2
-face dwall_AA.111
-x 13
-y 14
-end
-arch dungeon_magic
-x 13
-y 15
-end
-arch blocked
-x 13
-y 15
-end
-arch dungeon_magic
-x 14
-end
-arch blocked
-x 14
-end
-arch dungeon_magic
-x 14
-y 1
-end
-arch woodfloor
-x 14
-y 1
-end
-arch ewall_2_2_3
-x 14
-y 1
-end
-arch wall_0
-x 14
-y 1
-end
-arch dungeon_magic
-x 14
-y 2
-end
-arch woodfloor
-x 14
-y 2
-end
-arch ewall_2_1_1
-x 14
-y 2
-end
-arch dwall_2_1_1
-face dwall_55.111
-x 14
-y 2
-end
-arch dungeon_magic
-x 14
-y 3
-end
-arch woodfloor
-x 14
-y 3
-end
-arch ewall_2_1_1
-x 14
-y 3
-end
-arch dwall_2_1_1
-face dwall_55.111
-x 14
-y 3
-end
-arch dungeon_magic
-x 14
-y 4
-end
-arch woodfloor
-x 14
-y 4
-end
-arch ewall_2_1_1
-x 14
-y 4
-end
-arch dwall_2_1_1
-face dwall_55.111
-x 14
-y 4
-end
-arch dungeon_magic
-x 14
-y 5
-end
-arch woodfloor
-x 14
-y 5
-end
-arch ewall_2_1_1
-x 14
-y 5
-end
-arch wall_0
-x 14
-y 5
-end
-arch dungeon_magic
-x 14
-y 6
-end
-arch woodfloor
-x 14
-y 6
-end
-arch ewall_2_1_1
-x 14
-y 6
-end
-arch dwall_2_1_1
-face dwall_55.111
-x 14
-y 6
-end
-arch dungeon_magic
-x 14
-y 7
-end
-arch woodfloor
-x 14
-y 7
-end
-arch ewall_2_1_1
-x 14
-y 7
-end
-arch dwall_2_1_1
-face dwall_55.111
-x 14
-y 7
-end
-arch dungeon_magic
-x 14
-y 8
-end
-arch woodfloor
-x 14
-y 8
-end
-arch ewall_2_1_1
-x 14
-y 8
-end
-arch dwall_2_1_1
-face dwall_55.111
-x 14
-y 8
-end
-arch dungeon_magic
-x 14
-y 9
-end
-arch woodfloor
-x 14
-y 9
-end
-arch ewall_2_1_1
-x 14
-y 9
-end
-arch dwall_2_1_1
-face dwall_55.111
-x 14
-y 9
-end
-arch swall_1_3_half
-x 14
-y 9
-end
-arch dungeon_magic
-x 14
-y 10
-end
-arch woodfloor
-x 14
-y 10
-end
-arch ewall_2_1_1
-x 14
-y 10
-end
-arch wall_0
-x 14
-y 10
-end
-arch dungeon_magic
-x 14
-y 11
-end
-arch woodfloor
-x 14
-y 11
-end
-arch ewall_2_1_1
-x 14
-y 11
-end
-arch dwall_2_1_1
-face dwall_55.111
-x 14
-y 11
-end
-arch dungeon_magic
-x 14
-y 12
-end
-arch woodfloor
-x 14
-y 12
-end
-arch ewall_2_1_1
-x 14
-y 12
-end
-arch dwall_2_1_1
-face dwall_55.111
-x 14
-y 12
-end
-arch dungeon_magic
-x 14
-y 13
-end
-arch woodfloor
-x 14
-y 13
-end
-arch ewall_2_1_1
-x 14
-y 13
-end
-arch dwall_2_1_1
-face dwall_55.111
-x 14
-y 13
-end
-arch dungeon_magic
-x 14
-y 14
-end
-arch woodfloor
-x 14
-y 14
-end
-arch ewall_2_2_4
-x 14
-y 14
-end
-arch wall_0
 x 14
 y 14
 end

@@ -1,145 +1,145 @@
 arch map
-name Lake Country Bank
-difficulty 1
-region lakecountry
-width 20
+name Bank of Skud, Navar Branch Vault
+difficulty 5
+region navar
+width 21
 height 20
-enter_x 15
-enter_y 15
+enter_x 10
+enter_y 16
 msg
-Created:  2020-01-21 Rick Tanner
+Created:  1993-11-17
 Modified: 2020-05-31 Rick Tanner
 endmsg
 end
 arch dungeon_magic
 end
-arch flagstone
+arch blocked
 end
 arch dungeon_magic
 y 1
 end
-arch grass_only
+arch blocked
 y 1
 end
 arch dungeon_magic
 y 2
 end
-arch grass_only
+arch blocked
 y 2
 end
 arch dungeon_magic
 y 3
 end
-arch grass_only
+arch blocked
 y 3
 end
 arch dungeon_magic
 y 4
 end
-arch grass_only
+arch blocked
 y 4
 end
 arch dungeon_magic
 y 5
 end
-arch grass_only
+arch blocked
 y 5
 end
 arch dungeon_magic
 y 6
 end
-arch grass_only
+arch blocked
 y 6
 end
 arch dungeon_magic
 y 7
 end
-arch grass_only
+arch blocked
 y 7
 end
 arch dungeon_magic
 y 8
 end
-arch grass_only
+arch blocked
 y 8
 end
 arch dungeon_magic
 y 9
 end
-arch grass_only
+arch blocked
 y 9
 end
 arch dungeon_magic
 y 10
 end
-arch grass_only
+arch blocked
 y 10
 end
 arch dungeon_magic
 y 11
 end
-arch grass_only
+arch blocked
 y 11
 end
 arch dungeon_magic
 y 12
 end
-arch grass_only
+arch blocked
 y 12
 end
 arch dungeon_magic
 y 13
 end
-arch grass_only
+arch blocked
 y 13
 end
 arch dungeon_magic
 y 14
 end
-arch grass_only
+arch blocked
 y 14
 end
 arch dungeon_magic
 y 15
 end
-arch grass_only
+arch blocked
 y 15
 end
 arch dungeon_magic
 y 16
 end
-arch grass_only
+arch blocked
 y 16
 end
 arch dungeon_magic
 y 17
 end
-arch grass_only
+arch blocked
 y 17
 end
 arch dungeon_magic
 y 18
 end
-arch grass_only
+arch blocked
 y 18
 end
 arch dungeon_magic
 y 19
 end
-arch grass_only
+arch blocked
 y 19
 end
 arch dungeon_magic
 x 1
 end
-arch flagstone
+arch blocked
 x 1
 end
 arch dungeon_magic
 x 1
 y 1
 end
-arch grass_only
+arch blocked
 x 1
 y 1
 end
@@ -147,7 +147,7 @@ arch dungeon_magic
 x 1
 y 2
 end
-arch grass_only
+arch blocked
 x 1
 y 2
 end
@@ -155,7 +155,7 @@ arch dungeon_magic
 x 1
 y 3
 end
-arch grass_only
+arch blocked
 x 1
 y 3
 end
@@ -163,7 +163,7 @@ arch dungeon_magic
 x 1
 y 4
 end
-arch grass_only
+arch blocked
 x 1
 y 4
 end
@@ -171,7 +171,7 @@ arch dungeon_magic
 x 1
 y 5
 end
-arch grass_only
+arch blocked
 x 1
 y 5
 end
@@ -179,7 +179,7 @@ arch dungeon_magic
 x 1
 y 6
 end
-arch grass_only
+arch blocked
 x 1
 y 6
 end
@@ -187,7 +187,7 @@ arch dungeon_magic
 x 1
 y 7
 end
-arch grass_only
+arch blocked
 x 1
 y 7
 end
@@ -195,7 +195,7 @@ arch dungeon_magic
 x 1
 y 8
 end
-arch grass_only
+arch blocked
 x 1
 y 8
 end
@@ -203,7 +203,7 @@ arch dungeon_magic
 x 1
 y 9
 end
-arch grass_only
+arch blocked
 x 1
 y 9
 end
@@ -211,7 +211,7 @@ arch dungeon_magic
 x 1
 y 10
 end
-arch grass_only
+arch blocked
 x 1
 y 10
 end
@@ -219,7 +219,7 @@ arch dungeon_magic
 x 1
 y 11
 end
-arch grass_only
+arch blocked
 x 1
 y 11
 end
@@ -227,7 +227,7 @@ arch dungeon_magic
 x 1
 y 12
 end
-arch grass_only
+arch blocked
 x 1
 y 12
 end
@@ -235,7 +235,7 @@ arch dungeon_magic
 x 1
 y 13
 end
-arch grass_only
+arch blocked
 x 1
 y 13
 end
@@ -243,7 +243,7 @@ arch dungeon_magic
 x 1
 y 14
 end
-arch grass_only
+arch blocked
 x 1
 y 14
 end
@@ -251,7 +251,7 @@ arch dungeon_magic
 x 1
 y 15
 end
-arch grass_only
+arch blocked
 x 1
 y 15
 end
@@ -259,7 +259,7 @@ arch dungeon_magic
 x 1
 y 16
 end
-arch grass_only
+arch blocked
 x 1
 y 16
 end
@@ -267,7 +267,7 @@ arch dungeon_magic
 x 1
 y 17
 end
-arch grass_only
+arch blocked
 x 1
 y 17
 end
@@ -275,7 +275,7 @@ arch dungeon_magic
 x 1
 y 18
 end
-arch grass_only
+arch blocked
 x 1
 y 18
 end
@@ -283,21 +283,21 @@ arch dungeon_magic
 x 1
 y 19
 end
-arch grass_only
+arch blocked
 x 1
 y 19
 end
 arch dungeon_magic
 x 2
 end
-arch flagstone
+arch blocked
 x 2
 end
 arch dungeon_magic
 x 2
 y 1
 end
-arch grass_only
+arch blocked
 x 2
 y 1
 end
@@ -305,11 +305,11 @@ arch dungeon_magic
 x 2
 y 2
 end
-arch cobblestones2
+arch cobblestones
 x 2
 y 2
 end
-arch wwall_2_2_2
+arch westcwall_2_2_2
 x 2
 y 2
 end
@@ -317,11 +317,11 @@ arch dungeon_magic
 x 2
 y 3
 end
-arch cobblestones2
+arch cobblestones
 x 2
 y 3
 end
-arch wwall_2_1_1
+arch westcwall_3_2
 x 2
 y 3
 end
@@ -329,11 +329,11 @@ arch dungeon_magic
 x 2
 y 4
 end
-arch cobblestones2
+arch cobblestones
 x 2
 y 4
 end
-arch wwall_2_1_1
+arch westcwall_3_2
 x 2
 y 4
 end
@@ -341,11 +341,11 @@ arch dungeon_magic
 x 2
 y 5
 end
-arch cobblestones2
+arch cobblestones
 x 2
 y 5
 end
-arch wwall_2_1_1
+arch westcwall_3_2
 x 2
 y 5
 end
@@ -353,15 +353,11 @@ arch dungeon_magic
 x 2
 y 6
 end
-arch cobblestones2
+arch cobblestones
 x 2
 y 6
 end
-arch swall_1_4_half
-x 2
-y 6
-end
-arch wwall_2_1_1
+arch westcwall_3_2
 x 2
 y 6
 end
@@ -369,11 +365,11 @@ arch dungeon_magic
 x 2
 y 7
 end
-arch cobblestones2
+arch cobblestones
 x 2
 y 7
 end
-arch wwall_2_1_1
+arch westcwall_3_2
 x 2
 y 7
 end
@@ -381,11 +377,11 @@ arch dungeon_magic
 x 2
 y 8
 end
-arch cobblestones2
+arch cobblestones
 x 2
 y 8
 end
-arch wwall_win1
+arch westcwall_3_2
 x 2
 y 8
 end
@@ -393,11 +389,11 @@ arch dungeon_magic
 x 2
 y 9
 end
-arch cobblestones2
+arch cobblestones
 x 2
 y 9
 end
-arch wwall_2_1_1
+arch westcwall_3_2
 x 2
 y 9
 end
@@ -405,11 +401,11 @@ arch dungeon_magic
 x 2
 y 10
 end
-arch cobblestones2
+arch cobblestones
 x 2
 y 10
 end
-arch wwall_2_1_1
+arch westcwall_3_2
 x 2
 y 10
 end
@@ -417,11 +413,11 @@ arch dungeon_magic
 x 2
 y 11
 end
-arch cobblestones2
+arch cobblestones
 x 2
 y 11
 end
-arch wwall_2_1_1
+arch westcwall_3_2
 x 2
 y 11
 end
@@ -429,11 +425,11 @@ arch dungeon_magic
 x 2
 y 12
 end
-arch cobblestones2
+arch cobblestones
 x 2
 y 12
 end
-arch wwall_3_2
+arch westcwall_3_2
 x 2
 y 12
 end
@@ -441,11 +437,11 @@ arch dungeon_magic
 x 2
 y 13
 end
-arch cobblestones2
+arch cobblestones
 x 2
 y 13
 end
-arch wwall_2_1_1
+arch westcwall_3_2
 x 2
 y 13
 end
@@ -453,11 +449,11 @@ arch dungeon_magic
 x 2
 y 14
 end
-arch cobblestones2
+arch cobblestones
 x 2
 y 14
 end
-arch wwall_2_1_1
+arch westcwall_3_2
 x 2
 y 14
 end
@@ -465,11 +461,11 @@ arch dungeon_magic
 x 2
 y 15
 end
-arch cobblestones2
+arch cobblestones
 x 2
 y 15
 end
-arch wwall_2_1_1
+arch westcwall_3_2
 x 2
 y 15
 end
@@ -477,11 +473,11 @@ arch dungeon_magic
 x 2
 y 16
 end
-arch cobblestones2
+arch cobblestones
 x 2
 y 16
 end
-arch wwall_2_1_1
+arch westcwall_3_2
 x 2
 y 16
 end
@@ -489,11 +485,11 @@ arch dungeon_magic
 x 2
 y 17
 end
-arch cobblestones2
+arch cobblestones
 x 2
 y 17
 end
-arch wwall_2_2_1
+arch westcwall_2_2_1
 x 2
 y 17
 end
@@ -501,7 +497,7 @@ arch dungeon_magic
 x 2
 y 18
 end
-arch grass_only
+arch blocked
 x 2
 y 18
 end
@@ -509,21 +505,21 @@ arch dungeon_magic
 x 2
 y 19
 end
-arch grass_only
+arch blocked
 x 2
 y 19
 end
 arch dungeon_magic
 x 3
 end
-arch flagstone
+arch blocked
 x 3
 end
 arch dungeon_magic
 x 3
 y 1
 end
-arch grass_only
+arch blocked
 x 3
 y 1
 end
@@ -531,11 +527,11 @@ arch dungeon_magic
 x 3
 y 2
 end
-arch cobblestones2
+arch cobblestones
 x 3
 y 2
 end
-arch wwall_2_1_2
+arch westcwall_3_3
 x 3
 y 2
 end
@@ -543,16 +539,11 @@ arch dungeon_magic
 x 3
 y 3
 end
-arch woodfloor2
+arch cobblestones
 x 3
 y 3
 end
-arch chair_2.1
-x 3
-y 3
-end
-arch woman
-name busy bank clerk
+arch westcwall_4
 x 3
 y 3
 end
@@ -560,12 +551,11 @@ arch dungeon_magic
 x 3
 y 4
 end
-arch woodfloor2
+arch cobblestones
 x 3
 y 4
 end
-arch dresser
-name desk
+arch westcwall_3_4
 x 3
 y 4
 end
@@ -573,7 +563,11 @@ arch dungeon_magic
 x 3
 y 5
 end
-arch woodfloor2
+arch cobblestones
+x 3
+y 5
+end
+arch westcwall_3_4
 x 3
 y 5
 end
@@ -581,11 +575,11 @@ arch dungeon_magic
 x 3
 y 6
 end
-arch woodfloor2
+arch cobblestones
 x 3
 y 6
 end
-arch ggate_open
+arch westcwall_4
 x 3
 y 6
 end
@@ -593,7 +587,11 @@ arch dungeon_magic
 x 3
 y 7
 end
-arch woodfloor2
+arch cobblestones
+x 3
+y 7
+end
+arch westcwall_3_4
 x 3
 y 7
 end
@@ -601,7 +599,11 @@ arch dungeon_magic
 x 3
 y 8
 end
-arch woodfloor2
+arch cobblestones
+x 3
+y 8
+end
+arch westcwall_3_4
 x 3
 y 8
 end
@@ -609,136 +611,173 @@ arch dungeon_magic
 x 3
 y 9
 end
-arch woodfloor2
+arch cobblestones
 x 3
 y 9
 end
-arch longtable_1_4
+arch westcwall_3_4
 x 3
 y 9
 end
-arch woodfloor2
+arch dungeon_magic
 x 3
 y 10
 end
-arch depositbox
+arch cobblestones
 x 3
 y 10
-arch event_close
-title Python
-slaying /python/items/deposit_box.py
 end
-end
-arch woodfloor2
+arch westcwall_3_4
 x 3
-y 11
-end
-arch woodfloor2
-x 3
-y 12
-end
-arch wwall_win2
-x 3
-y 12
-end
-arch woodfloor2
-x 3
-y 13
-end
-arch gold_converter
-x 3
-y 13
-end
-arch woodfloor2
-x 3
-y 14
-end
-arch platinum_converter
-x 3
-y 14
-end
-arch woodfloor2
-x 3
-y 15
-end
-arch woodfloor2
-x 3
-y 16
-end
-arch stair_3_down
-slaying lc-bank-vault
-hp 3
-sp 16
-x 3
-y 16
+y 10
 end
 arch dungeon_magic
 x 3
-y 17
+y 11
 end
-arch cobblestones2
+arch cobblestones
 x 3
-y 17
+y 11
 end
-arch wwall_2_1_2
+arch westcwall_3_4
 x 3
-y 17
-end
-arch dungeon_magic
-x 3
-y 18
-end
-arch grass_only
-x 3
-y 18
+y 11
 end
 arch dungeon_magic
 x 3
+y 12
+end
+arch cobblestones
+x 3
+y 12
+end
+arch westcwall_3_4
+x 3
+y 12
+end
+arch dungeon_magic
+x 3
+y 13
+end
+arch cobblestones
+x 3
+y 13
+end
+arch westcwall_3_4
+x 3
+y 13
+end
+arch dungeon_magic
+x 3
+y 14
+end
+arch cobblestones
+x 3
+y 14
+end
+arch westcwall_3_4
+x 3
+y 14
+end
+arch dungeon_magic
+x 3
+y 15
+end
+arch cobblestones
+x 3
+y 15
+end
+arch westcwall_3_4
+x 3
+y 15
+end
+arch dungeon_magic
+x 3
+y 16
+end
+arch cobblestones
+x 3
+y 16
+end
+arch westcwall_4
+x 3
+y 16
+end
+arch dungeon_magic
+x 3
+y 17
+end
+arch cobblestones
+x 3
+y 17
+end
+arch westcwall_3_1
+x 3
+y 17
+end
+arch dungeon_magic
+x 3
+y 18
+end
+arch blocked
+x 3
+y 18
+end
+arch dungeon_magic
+x 3
 y 19
 end
-arch grass_only
+arch blocked
 x 3
 y 19
 end
 arch dungeon_magic
 x 4
 end
-arch flagstone
+arch blocked
 x 4
 end
 arch dungeon_magic
 x 4
 y 1
 end
-arch grass_only
+arch blocked
 x 4
 y 1
 end
 arch dungeon_magic
 x 4
 y 2
+end
+arch cobblestones
+x 4
+y 2
+end
+arch westcwall_3_3
+x 4
+y 2
+end
+arch dungeon_magic
+x 4
+y 3
+end
+arch cobblestones
+x 4
+y 3
+end
+arch westcwall_3_1
+x 4
+y 3
+end
+arch dungeon_magic
+x 4
+y 4
 end
 arch cobblestones2
 x 4
-y 2
-end
-arch wwall_win2
-x 4
-y 2
-end
-arch dungeon_magic
-x 4
-y 3
-end
-arch woodfloor2
-x 4
-y 3
-end
-arch dungeon_magic
-x 4
 y 4
 end
-arch woodfloor2
+arch random_wealth
 x 4
 y 4
 end
@@ -746,7 +785,11 @@ arch dungeon_magic
 x 4
 y 5
 end
-arch woodfloor2
+arch cobblestones2
+x 4
+y 5
+end
+arch random_wealth
 x 4
 y 5
 end
@@ -754,11 +797,11 @@ arch dungeon_magic
 x 4
 y 6
 end
-arch woodfloor2
+arch cobblestones2
 x 4
 y 6
 end
-arch swall_2_1_2
+arch westcwall_1_3
 x 4
 y 6
 end
@@ -766,7 +809,11 @@ arch dungeon_magic
 x 4
 y 7
 end
-arch woodfloor2
+arch cobblestones2
+x 4
+y 7
+end
+arch knight
 x 4
 y 7
 end
@@ -774,7 +821,7 @@ arch dungeon_magic
 x 4
 y 8
 end
-arch woodfloor2
+arch cobblestones2
 x 4
 y 8
 end
@@ -782,55 +829,79 @@ arch dungeon_magic
 x 4
 y 9
 end
-arch woodfloor2
+arch cobblestones2
 x 4
 y 9
 end
-arch longtable_2_1_2
-x 4
-y 9
-end
-arch woodfloor2
+arch dungeon_magic
 x 4
 y 10
 end
-arch woodfloor2
+arch cobblestones2
+x 4
+y 10
+end
+arch dungeon_magic
 x 4
 y 11
 end
-arch woodfloor2
+arch cobblestones2
+x 4
+y 11
+end
+arch dungeon_magic
 x 4
 y 12
 end
-arch wwall_win2
+arch cobblestones2
 x 4
 y 12
-end
-arch woodfloor2
-x 4
-y 13
-end
-arch woodfloor2
-x 4
-y 14
-end
-arch woodfloor2
-x 4
-y 15
-end
-arch woodfloor2
-x 4
-y 16
 end
 arch dungeon_magic
 x 4
-y 17
+y 13
 end
 arch cobblestones2
 x 4
+y 13
+end
+arch dungeon_magic
+x 4
+y 14
+end
+arch cobblestones2
+x 4
+y 14
+end
+arch dungeon_magic
+x 4
+y 15
+end
+arch cobblestones2
+x 4
+y 15
+end
+arch dungeon_magic
+x 4
+y 16
+end
+arch cobblestones
+x 4
+y 16
+end
+arch westcwall_3_3
+x 4
+y 16
+end
+arch dungeon_magic
+x 4
 y 17
 end
-arch wwall_2_1_2
+arch cobblestones
+x 4
+y 17
+end
+arch westcwall_3_1
 x 4
 y 17
 end
@@ -838,7 +909,7 @@ arch dungeon_magic
 x 4
 y 18
 end
-arch grass_only
+arch blocked
 x 4
 y 18
 end
@@ -846,63 +917,57 @@ arch dungeon_magic
 x 4
 y 19
 end
-arch grass_only
+arch blocked
 x 4
 y 19
 end
 arch dungeon_magic
 x 5
 end
-arch flagstone
+arch blocked
 x 5
 end
 arch dungeon_magic
 x 5
 y 1
 end
-arch grass_only
+arch blocked
 x 5
 y 1
 end
 arch dungeon_magic
 x 5
 y 2
+end
+arch cobblestones
+x 5
+y 2
+end
+arch westcwall_3_3
+x 5
+y 2
+end
+arch dungeon_magic
+x 5
+y 3
+end
+arch cobblestones
+x 5
+y 3
+end
+arch westcwall_3_1
+x 5
+y 3
+end
+arch dungeon_magic
+x 5
+y 4
 end
 arch cobblestones2
 x 5
-y 2
-end
-arch wwall_2_1_2
-x 5
-y 2
-end
-arch dungeon_magic
-x 5
-y 3
-end
-arch woodfloor2
-x 5
-y 3
-end
-arch chair_2.1
-x 5
-y 3
-end
-arch woman
-name busy bank clerk
-x 5
-y 3
-end
-arch dungeon_magic
-x 5
 y 4
 end
-arch woodfloor2
-x 5
-y 4
-end
-arch dresser
-name desk
+arch random_wealth
 x 5
 y 4
 end
@@ -910,7 +975,11 @@ arch dungeon_magic
 x 5
 y 5
 end
-arch woodfloor2
+arch cobblestones2
+x 5
+y 5
+end
+arch random_wealth
 x 5
 y 5
 end
@@ -918,11 +987,11 @@ arch dungeon_magic
 x 5
 y 6
 end
-arch woodfloor2
+arch cobblestones2
 x 5
 y 6
 end
-arch swall_2_1_2
+arch igate_closed_1
 x 5
 y 6
 end
@@ -930,7 +999,7 @@ arch dungeon_magic
 x 5
 y 7
 end
-arch woodfloor2
+arch cobblestones2
 x 5
 y 7
 end
@@ -938,7 +1007,7 @@ arch dungeon_magic
 x 5
 y 8
 end
-arch woodfloor2
+arch cobblestones2
 x 5
 y 8
 end
@@ -946,55 +1015,79 @@ arch dungeon_magic
 x 5
 y 9
 end
-arch woodfloor2
+arch cobblestones2
 x 5
 y 9
 end
-arch longtable_2_1_2
-x 5
-y 9
-end
-arch woodfloor2
+arch dungeon_magic
 x 5
 y 10
 end
-arch woodfloor2
+arch cobblestones2
+x 5
+y 10
+end
+arch dungeon_magic
 x 5
 y 11
 end
-arch woodfloor2
+arch cobblestones2
+x 5
+y 11
+end
+arch dungeon_magic
 x 5
 y 12
 end
-arch wwall_1_3
+arch cobblestones2
 x 5
 y 12
-end
-arch woodfloor2
-x 5
-y 13
-end
-arch woodfloor2
-x 5
-y 14
-end
-arch woodfloor2
-x 5
-y 15
-end
-arch woodfloor2
-x 5
-y 16
 end
 arch dungeon_magic
 x 5
-y 17
+y 13
 end
 arch cobblestones2
 x 5
+y 13
+end
+arch dungeon_magic
+x 5
+y 14
+end
+arch cobblestones2
+x 5
+y 14
+end
+arch dungeon_magic
+x 5
+y 15
+end
+arch cobblestones2
+x 5
+y 15
+end
+arch dungeon_magic
+x 5
+y 16
+end
+arch cobblestones
+x 5
+y 16
+end
+arch westcwall_3_3
+x 5
+y 16
+end
+arch dungeon_magic
+x 5
 y 17
 end
-arch wwall_win2
+arch cobblestones
+x 5
+y 17
+end
+arch westcwall_3_1
 x 5
 y 17
 end
@@ -1002,7 +1095,7 @@ arch dungeon_magic
 x 5
 y 18
 end
-arch grass_only
+arch blocked
 x 5
 y 18
 end
@@ -1010,49 +1103,57 @@ arch dungeon_magic
 x 5
 y 19
 end
-arch grass_only
+arch blocked
 x 5
 y 19
 end
 arch dungeon_magic
 x 6
 end
-arch flagstone
+arch blocked
 x 6
 end
 arch dungeon_magic
 x 6
 y 1
 end
-arch grass_only
+arch blocked
 x 6
 y 1
 end
 arch dungeon_magic
 x 6
 y 2
+end
+arch cobblestones
+x 6
+y 2
+end
+arch westcwall_3_3
+x 6
+y 2
+end
+arch dungeon_magic
+x 6
+y 3
+end
+arch cobblestones
+x 6
+y 3
+end
+arch westcwall_4
+x 6
+y 3
+end
+arch dungeon_magic
+x 6
+y 4
 end
 arch cobblestones2
 x 6
-y 2
-end
-arch wwall_2_1_2
-x 6
-y 2
-end
-arch dungeon_magic
-x 6
-y 3
-end
-arch woodfloor2
-x 6
-y 3
-end
-arch dungeon_magic
-x 6
 y 4
 end
-arch woodfloor2
+arch westcwall_2_1_1
 x 6
 y 4
 end
@@ -1060,7 +1161,11 @@ arch dungeon_magic
 x 6
 y 5
 end
-arch woodfloor2
+arch cobblestones2
+x 6
+y 5
+end
+arch westcwall_2_1_1
 x 6
 y 5
 end
@@ -1068,11 +1173,11 @@ arch dungeon_magic
 x 6
 y 6
 end
-arch woodfloor2
+arch cobblestones2
 x 6
 y 6
 end
-arch ggate_open
+arch westcwall_1_2
 x 6
 y 6
 end
@@ -1080,7 +1185,7 @@ arch dungeon_magic
 x 6
 y 7
 end
-arch woodfloor2
+arch cobblestones2
 x 6
 y 7
 end
@@ -1088,7 +1193,7 @@ arch dungeon_magic
 x 6
 y 8
 end
-arch woodfloor2
+arch cobblestones2
 x 6
 y 8
 end
@@ -1096,43 +1201,74 @@ arch dungeon_magic
 x 6
 y 9
 end
-arch woodfloor2
+arch cobblestones2
 x 6
 y 9
 end
-arch longtable_2_1_2
-x 6
-y 9
-end
-arch woodfloor2
+arch dungeon_magic
 x 6
 y 10
 end
-arch woodfloor2
+arch cobblestones2
+x 6
+y 10
+end
+arch dungeon_magic
 x 6
 y 11
 end
-arch woodfloor2
+arch cobblestones2
+x 6
+y 11
+end
+arch dungeon_magic
 x 6
 y 12
 end
-arch woodfloor2
+arch cobblestones2
+x 6
+y 12
+end
+arch dungeon_magic
 x 6
 y 13
 end
-arch woodfloor2
+arch cobblestones2
+x 6
+y 13
+end
+arch dungeon_magic
 x 6
 y 14
 end
-arch woodfloor2
+arch cobblestones2
+x 6
+y 14
+end
+arch dungeon_magic
 x 6
 y 15
 end
-arch woodfloor2
+arch cobblestones2
+x 6
+y 15
+end
+arch stair_up_2
+slaying city1bank
+hp 6
+sp 15
+x 6
+y 15
+end
+arch dungeon_magic
 x 6
 y 16
 end
-arch platinum_converter2
+arch cobblestones
+x 6
+y 16
+end
+arch westcwall_3_3
 x 6
 y 16
 end
@@ -1140,11 +1276,11 @@ arch dungeon_magic
 x 6
 y 17
 end
-arch cobblestones2
+arch cobblestones
 x 6
 y 17
 end
-arch wwall_2_1_2
+arch westcwall_3_1
 x 6
 y 17
 end
@@ -1152,7 +1288,7 @@ arch dungeon_magic
 x 6
 y 18
 end
-arch grass_only
+arch blocked
 x 6
 y 18
 end
@@ -1160,21 +1296,21 @@ arch dungeon_magic
 x 6
 y 19
 end
-arch grass_only
+arch blocked
 x 6
 y 19
 end
 arch dungeon_magic
 x 7
 end
-arch flagstone
+arch blocked
 x 7
 end
 arch dungeon_magic
 x 7
 y 1
 end
-arch grass_only
+arch blocked
 x 7
 y 1
 end
@@ -1182,11 +1318,11 @@ arch dungeon_magic
 x 7
 y 2
 end
-arch cobblestones2
+arch cobblestones
 x 7
 y 2
 end
-arch wwall_3_3
+arch westcwall_3_3
 x 7
 y 2
 end
@@ -1194,11 +1330,11 @@ arch dungeon_magic
 x 7
 y 3
 end
-arch cobblestones2
+arch cobblestones
 x 7
 y 3
 end
-arch wwall_2_1_1
+arch westcwall_3_1
 x 7
 y 3
 end
@@ -1210,7 +1346,7 @@ arch cobblestones2
 x 7
 y 4
 end
-arch wwall_2_1_1
+arch random_artifact
 x 7
 y 4
 end
@@ -1222,11 +1358,7 @@ arch cobblestones2
 x 7
 y 5
 end
-arch wwall_2_2_1
-x 7
-y 5
-end
-arch swall_1_1_half
+arch random_treasure
 x 7
 y 5
 end
@@ -1234,15 +1366,11 @@ arch dungeon_magic
 x 7
 y 6
 end
-arch woodfloor2
+arch cobblestones2
 x 7
 y 6
 end
-arch swall_2_2_4
-x 7
-y 6
-end
-arch wwall_0
+arch igate_closed_1
 x 7
 y 6
 end
@@ -1250,7 +1378,7 @@ arch dungeon_magic
 x 7
 y 7
 end
-arch woodfloor2
+arch cobblestones2
 x 7
 y 7
 end
@@ -1258,76 +1386,95 @@ arch dungeon_magic
 x 7
 y 8
 end
-arch woodfloor2
+arch cobblestones2
 x 7
 y 8
-end
-arch chair_2.1
-x 7
-y 8
-end
-arch woman
-name Nancy
-title the teller
-msg
-@match *
-How may I help you with your banking needs?
-endmsg
-x 7
-y 8
-randomitems jail
-stand_still 1
-arch event_say
-title Python
-slaying /python/IPO/banksay.py
-end
 end
 arch dungeon_magic
 x 7
 y 9
 end
-arch woodfloor2
+arch cobblestones2
 x 7
 y 9
 end
-arch longtable_2_1_2
-x 7
-y 9
-end
-arch woodfloor2
+arch dungeon_magic
 x 7
 y 10
 end
-arch woodfloor2
+arch cobblestones2
+x 7
+y 10
+end
+arch dungeon_magic
 x 7
 y 11
 end
-arch woodfloor2
+arch cobblestones2
+x 7
+y 11
+end
+arch knight
+x 7
+y 11
+end
+arch dungeon_magic
 x 7
 y 12
 end
-arch woodfloor2
+arch cobblestones2
+x 7
+y 12
+end
+arch westcwall_2_2_2
+x 7
+y 12
+end
+arch dungeon_magic
 x 7
 y 13
 end
-arch woodfloor2
+arch cobblestones2
+x 7
+y 13
+end
+arch westcwall_2_1_1
+x 7
+y 13
+end
+arch dungeon_magic
 x 7
 y 14
 end
-arch woodfloor2
+arch cobblestones2
+x 7
+y 14
+end
+arch westcwall_3_2
+x 7
+y 14
+end
+arch dungeon_magic
 x 7
 y 15
 end
-arch woodfloor2
+arch cobblestones2
+x 7
+y 15
+end
+arch westcwall_2_1_1
+x 7
+y 15
+end
+arch dungeon_magic
 x 7
 y 16
 end
-arch platinum_converter2
-name convert jade into platinum
-slaying jadecoin
-other_arch platinacoin
-sp 100
-food 1
+arch cobblestones
+x 7
+y 16
+end
+arch westcwall_4
 x 7
 y 16
 end
@@ -1335,11 +1482,11 @@ arch dungeon_magic
 x 7
 y 17
 end
-arch cobblestones2
+arch cobblestones
 x 7
 y 17
 end
-arch wwall_2_1_2
+arch westcwall_3_1
 x 7
 y 17
 end
@@ -1347,7 +1494,7 @@ arch dungeon_magic
 x 7
 y 18
 end
-arch grass_only
+arch blocked
 x 7
 y 18
 end
@@ -1355,21 +1502,21 @@ arch dungeon_magic
 x 7
 y 19
 end
-arch grass_only
+arch blocked
 x 7
 y 19
 end
 arch dungeon_magic
 x 8
 end
-arch flagstone
+arch blocked
 x 8
 end
 arch dungeon_magic
 x 8
 y 1
 end
-arch grass_only
+arch blocked
 x 8
 y 1
 end
@@ -1377,11 +1524,11 @@ arch dungeon_magic
 x 8
 y 2
 end
-arch cobblestones2
+arch cobblestones
 x 8
 y 2
 end
-arch wwall_2_1_2
+arch westcwall_3_3
 x 8
 y 2
 end
@@ -1389,11 +1536,11 @@ arch dungeon_magic
 x 8
 y 3
 end
-arch cobblestones2
+arch cobblestones
 x 8
 y 3
 end
-arch goldcoin
+arch westcwall_4
 x 8
 y 3
 end
@@ -1405,7 +1552,7 @@ arch cobblestones2
 x 8
 y 4
 end
-arch platinacoin
+arch westcwall_2_1_1
 x 8
 y 4
 end
@@ -1417,7 +1564,7 @@ arch cobblestones2
 x 8
 y 5
 end
-arch wwall_1_3
+arch westcwall_2_1_1
 x 8
 y 5
 end
@@ -1425,11 +1572,11 @@ arch dungeon_magic
 x 8
 y 6
 end
-arch woodfloor2
+arch cobblestones2
 x 8
 y 6
 end
-arch igate_open_1
+arch westcwall_1_2
 x 8
 y 6
 end
@@ -1437,7 +1584,7 @@ arch dungeon_magic
 x 8
 y 7
 end
-arch woodfloor2
+arch cobblestones2
 x 8
 y 7
 end
@@ -1445,7 +1592,7 @@ arch dungeon_magic
 x 8
 y 8
 end
-arch woodfloor2
+arch cobblestones2
 x 8
 y 8
 end
@@ -1453,43 +1600,91 @@ arch dungeon_magic
 x 8
 y 9
 end
-arch woodfloor2
+arch cobblestones2
 x 8
 y 9
 end
-arch longtable_2_1_2
-x 8
-y 9
-end
-arch woodfloor2
+arch dungeon_magic
 x 8
 y 10
 end
-arch woodfloor2
+arch cobblestones2
+x 8
+y 10
+end
+arch westcwall_2_2_2
+x 8
+y 10
+end
+arch dungeon_magic
 x 8
 y 11
 end
-arch woodfloor2
+arch cobblestones2
+x 8
+y 11
+end
+arch westcwall_2_1_1
+x 8
+y 11
+end
+arch dungeon_magic
 x 8
 y 12
 end
-arch woodfloor2
+arch cobblestones2
+x 8
+y 12
+end
+arch westcwall_4
+x 8
+y 12
+end
+arch dungeon_magic
 x 8
 y 13
 end
-arch woodfloor2
+arch cobblestones2
+x 8
+y 13
+end
+arch westcwall_2_1_1
+x 8
+y 13
+end
+arch dungeon_magic
 x 8
 y 14
 end
-arch woodfloor2
+arch cobblestones2
+x 8
+y 14
+end
+arch westcwall_4
+x 8
+y 14
+end
+arch dungeon_magic
 x 8
 y 15
 end
-arch woodfloor2
+arch cobblestones2
+x 8
+y 15
+end
+arch westcwall_2_1_1
+x 8
+y 15
+end
+arch dungeon_magic
 x 8
 y 16
 end
-arch jade_converter
+arch cobblestones
+x 8
+y 16
+end
+arch westcwall_4
 x 8
 y 16
 end
@@ -1497,11 +1692,11 @@ arch dungeon_magic
 x 8
 y 17
 end
-arch cobblestones2
+arch cobblestones
 x 8
 y 17
 end
-arch wwall_2_1_2
+arch westcwall_3_1
 x 8
 y 17
 end
@@ -1509,7 +1704,7 @@ arch dungeon_magic
 x 8
 y 18
 end
-arch grass_only
+arch blocked
 x 8
 y 18
 end
@@ -1517,21 +1712,21 @@ arch dungeon_magic
 x 8
 y 19
 end
-arch grass_only
+arch blocked
 x 8
 y 19
 end
 arch dungeon_magic
 x 9
 end
-arch flagstone
+arch blocked
 x 9
 end
 arch dungeon_magic
 x 9
 y 1
 end
-arch grass_only
+arch blocked
 x 9
 y 1
 end
@@ -1539,11 +1734,11 @@ arch dungeon_magic
 x 9
 y 2
 end
-arch cobblestones2
+arch cobblestones
 x 9
 y 2
 end
-arch wwall_2_1_2
+arch westcwall_3_3
 x 9
 y 2
 end
@@ -1551,11 +1746,11 @@ arch dungeon_magic
 x 9
 y 3
 end
-arch cobblestones2
+arch cobblestones
 x 9
 y 3
 end
-arch silvercoin
+arch westcwall_3_1
 x 9
 y 3
 end
@@ -1567,7 +1762,7 @@ arch cobblestones2
 x 9
 y 4
 end
-arch amethyst
+arch random_gem
 x 9
 y 4
 end
@@ -1579,7 +1774,7 @@ arch cobblestones2
 x 9
 y 5
 end
-arch spikes_closed
+arch random_gem
 x 9
 y 5
 end
@@ -1587,11 +1782,11 @@ arch dungeon_magic
 x 9
 y 6
 end
-arch woodfloor2
+arch cobblestones2
 x 9
 y 6
 end
-arch igate_open_1
+arch igate_closed_1
 x 9
 y 6
 end
@@ -1599,7 +1794,7 @@ arch dungeon_magic
 x 9
 y 7
 end
-arch woodfloor2
+arch cobblestones2
 x 9
 y 7
 end
@@ -1607,7 +1802,7 @@ arch dungeon_magic
 x 9
 y 8
 end
-arch woodfloor2
+arch cobblestones2
 x 9
 y 8
 end
@@ -1615,1434 +1810,1657 @@ arch dungeon_magic
 x 9
 y 9
 end
-arch woodfloor2
+arch cobblestones2
 x 9
 y 9
 end
-arch longtable_2_1_2
-x 9
-y 9
-end
-arch woodfloor2
+arch dungeon_magic
 x 9
 y 10
 end
-arch woodfloor2
-x 9
-y 11
-end
-arch woodfloor2
-x 9
-y 12
-end
-arch wwall_1_4
-x 9
-y 12
-end
-arch woodfloor2
-x 9
-y 13
-end
-arch woodfloor2
-x 9
-y 14
-end
-arch woodfloor2
-x 9
-y 15
-end
-arch woodfloor2
-x 9
-y 16
-end
-arch jade_converter
-name convert amberium into jade
-slaying ambercoin
-other_arch jadecoin
-sp 100
-food 1
-x 9
-y 16
-end
-arch dungeon_magic
-x 9
-y 17
-end
 arch cobblestones2
 x 9
-y 17
-end
-arch wwall_2_1_2
-x 9
-y 17
-end
-arch dungeon_magic
-x 9
-y 18
-end
-arch grass_only
-x 9
-y 18
-end
-arch dungeon_magic
-x 9
-y 19
-end
-arch grass_only
-x 9
-y 19
-end
-arch dungeon_magic
-x 10
-end
-arch flagstone
-x 10
-end
-arch dungeon_magic
-x 10
-y 1
-end
-arch grass_only
-x 10
-y 1
-end
-arch dungeon_magic
-x 10
-y 2
-end
-arch cobblestones2
-x 10
-y 2
-end
-arch wwall_2_1_2
-x 10
-y 2
-end
-arch dungeon_magic
-x 10
-y 3
-end
-arch cobblestones2
-x 10
-y 3
-end
-arch jadecoin
-x 10
-y 3
-end
-arch dungeon_magic
-x 10
-y 4
-end
-arch cobblestones2
-x 10
-y 4
-end
-arch gem
-x 10
-y 4
-end
-arch dungeon_magic
-x 10
-y 5
-end
-arch cobblestones2
-x 10
-y 5
-end
-arch spikes_closed
-x 10
-y 5
-end
-arch dungeon_magic
-x 10
-y 6
-end
-arch woodfloor2
-x 10
-y 6
-end
-arch igate_open_1
-x 10
-y 6
-end
-arch dungeon_magic
-x 10
-y 7
-end
-arch woodfloor2
-x 10
-y 7
-end
-arch dungeon_magic
-x 10
-y 8
-end
-arch woodfloor2
-x 10
-y 8
-end
-arch dungeon_magic
-x 10
-y 9
-end
-arch woodfloor2
-x 10
-y 9
-end
-arch longtable_2_1_2
-x 10
-y 9
-end
-arch woodfloor2
-x 10
 y 10
 end
-arch woodfloor2
-x 10
-y 11
-end
-arch woodfloor2
-x 10
-y 12
-end
-arch wwall_win2
-x 10
-y 12
-end
-arch woodfloor2
-x 10
-y 13
-end
-arch woodfloor2
-x 10
-y 14
-end
-arch woodfloor2
-x 10
-y 15
-end
-arch woodfloor2
-x 10
-y 16
-end
-arch dungeon_magic
-x 10
-y 17
-end
-arch cobblestones2
-x 10
-y 17
-end
-arch wwall_win2
-x 10
-y 17
-end
-arch dungeon_magic
-x 10
-y 18
-end
-arch grass_only
-x 10
-y 18
-end
-arch dungeon_magic
-x 10
-y 19
-end
-arch grass_only
-x 10
-y 19
-end
-arch dungeon_magic
-x 11
-end
-arch flagstone
-x 11
-end
-arch dungeon_magic
-x 11
-y 1
-end
-arch grass_only
-x 11
-y 1
-end
-arch dungeon_magic
-x 11
-y 2
-end
-arch cobblestones2
-x 11
-y 2
-end
-arch wwall_2_1_2
-x 11
-y 2
-end
-arch dungeon_magic
-x 11
-y 3
-end
-arch cobblestones2
-x 11
-y 3
-end
-arch ambercoin
-x 11
-y 3
-end
-arch dungeon_magic
-x 11
-y 4
-end
-arch cobblestones2
-x 11
-y 4
-end
-arch ruby
-x 11
-y 4
-end
-arch dungeon_magic
-x 11
-y 5
-end
-arch cobblestones2
-x 11
-y 5
-end
-arch wwall_1_4
-x 11
-y 5
-end
-arch dungeon_magic
-x 11
-y 6
-end
-arch woodfloor2
-x 11
-y 6
-end
-arch igate_open_1
-x 11
-y 6
-end
-arch dungeon_magic
-x 11
-y 7
-end
-arch woodfloor2
-x 11
-y 7
-end
-arch dungeon_magic
-x 11
-y 8
-end
-arch woodfloor2
-x 11
-y 8
-end
-arch dungeon_magic
-x 11
-y 9
-end
-arch woodfloor2
-x 11
-y 9
-end
-arch longtable_2_1_2
-x 11
-y 9
-end
-arch woodfloor2
-x 11
-y 10
-end
-arch woodfloor2
-x 11
-y 11
-end
-arch woodfloor2
-x 11
-y 12
-end
-arch wwall_win2
-x 11
-y 12
-end
-arch woodfloor2
-x 11
-y 13
-end
-arch silver_converter
-name convert gold into silver
-slaying goldcoin
-other_arch silvercoin
-sp 10
-food 1
-x 11
-y 13
-end
-arch woodfloor2
-x 11
-y 14
-end
-arch silver_converter
-x 11
-y 14
-end
-arch woodfloor2
-x 11
-y 15
-end
-arch platinum_converter
-x 11
-y 15
-end
-arch woodfloor2
-x 11
-y 16
-end
-arch gold_converter
-x 11
-y 16
-end
-arch dungeon_magic
-x 11
-y 17
-end
-arch cobblestones2
-x 11
-y 17
-end
-arch wwall_2_1_2
-x 11
-y 17
-end
-arch dungeon_magic
-x 11
-y 18
-end
-arch grass_only
-x 11
-y 18
-end
-arch dungeon_magic
-x 11
-y 19
-end
-arch grass_only
-x 11
-y 19
-end
-arch dungeon_magic
-x 12
-end
-arch flagstone
-x 12
-end
-arch dungeon_magic
-x 12
-y 1
-end
-arch grass_only
-x 12
-y 1
-end
-arch dungeon_magic
-x 12
-y 2
-end
-arch cobblestones2
-x 12
-y 2
-end
-arch wwall_3_3
-x 12
-y 2
-end
-arch dungeon_magic
-x 12
-y 3
-end
-arch cobblestones2
-x 12
-y 3
-end
-arch wwall_2_1_1
-x 12
-y 3
-end
-arch dungeon_magic
-x 12
-y 4
-end
-arch cobblestones2
-x 12
-y 4
-end
-arch wwall_2_1_1
-x 12
-y 4
-end
-arch dungeon_magic
-x 12
-y 5
-end
-arch cobblestones2
-x 12
-y 5
-end
-arch wwall_2_2_4
-x 12
-y 5
-end
-arch swall_1_1_half
-x 12
-y 5
-end
-arch dungeon_magic
-x 12
-y 6
-end
-arch woodfloor2
-x 12
-y 6
-end
-arch swall_2_2_1
-x 12
-y 6
-end
-arch wwall_0
-x 12
-y 6
-end
-arch dungeon_magic
-x 12
-y 7
-end
-arch woodfloor2
-x 12
-y 7
-end
-arch dungeon_magic
-x 12
-y 8
-end
-arch woodfloor2
-x 12
-y 8
-end
-arch chair_2.1
-x 12
-y 8
-end
-arch woman
-name Kelly
-x 12
-y 8
-randomitems jail
-end
-arch dungeon_magic
-x 12
-y 9
-end
-arch woodfloor2
-x 12
-y 9
-end
-arch longtable_2_1_2
-x 12
-y 9
-end
-arch woodfloor2
-x 12
-y 10
-end
-arch woodfloor2
-x 12
-y 11
-end
-arch woodfloor2
-x 12
-y 12
-end
-arch wwall_2_2_3
-x 12
-y 12
-end
-arch woodfloor2
-x 12
-y 13
-end
-arch wwall_win1
-x 12
-y 13
-end
-arch woodfloor2
-x 12
-y 14
-end
-arch wwall_win1
-x 12
-y 14
-end
-arch woodfloor2
-x 12
-y 15
-end
-arch wwall_win1
-x 12
-y 15
-end
-arch woodfloor2
-x 12
-y 16
-end
-arch wwall_2_1_1
-x 12
-y 16
-end
-arch dungeon_magic
-x 12
-y 17
-end
-arch cobblestones2
-x 12
-y 17
-end
-arch wwall_3_1
-x 12
-y 17
-end
-arch dungeon_magic
-x 12
-y 18
-end
-arch grass_only
-x 12
-y 18
-end
-arch dungeon_magic
-x 12
-y 19
-end
-arch grass_only
-x 12
-y 19
-end
-arch dungeon_magic
-x 13
-end
-arch flagstone
-x 13
-end
-arch dungeon_magic
-x 13
-y 1
-end
-arch grass_only
-x 13
-y 1
-end
-arch dungeon_magic
-x 13
-y 2
-end
-arch cobblestones2
-x 13
-y 2
-end
-arch wwall_2_1_2
-x 13
-y 2
-end
-arch dungeon_magic
-x 13
-y 3
-end
-arch woodfloor2
-x 13
-y 3
-end
-arch chair_2.1
-x 13
-y 3
-end
-arch woman
-name busy bank clerk
-x 13
-y 3
-end
-arch dungeon_magic
-x 13
-y 4
-end
-arch woodfloor2
-x 13
-y 4
-end
-arch dresser
-name desk
-x 13
-y 4
-end
-arch dungeon_magic
-x 13
-y 5
-end
-arch woodfloor2
-x 13
-y 5
-end
-arch dungeon_magic
-x 13
-y 6
-end
-arch woodfloor2
-x 13
-y 6
-end
-arch ggate_open
-x 13
-y 6
-end
-arch dungeon_magic
-x 13
-y 7
-end
-arch woodfloor2
-x 13
-y 7
-end
-arch dungeon_magic
-x 13
-y 8
-end
-arch woodfloor2
-x 13
-y 8
-end
-arch dungeon_magic
-x 13
-y 9
-end
-arch woodfloor2
-x 13
-y 9
-end
-arch longtable_2_1_2
-x 13
-y 9
-end
-arch woodfloor2
-x 13
-y 10
-end
-arch woodfloor2
-x 13
-y 11
-end
-arch woodfloor2
-x 13
-y 12
-end
-arch woodfloor2
-x 13
-y 13
-end
-arch table_2
-x 13
-y 13
-end
-arch woodfloor2
-x 13
-y 14
-end
-arch woodfloor2
-x 13
-y 15
-end
-arch table_2
-x 13
-y 15
-end
-arch woodfloor2
-x 13
-y 16
-end
-arch dungeon_magic
-x 13
-y 17
-end
-arch cobblestones2
-x 13
-y 17
-end
-arch wwall_2_1_2
-x 13
-y 17
-end
-arch dungeon_magic
-x 13
-y 18
-end
-arch grass_only
-x 13
-y 18
-move_block all
-end
-arch dungeon_magic
-x 13
-y 19
-end
-arch grass_only
-x 13
-y 19
-move_block all
-end
-arch dungeon_magic
-x 14
-end
-arch flagstone
-x 14
-end
-arch dungeon_magic
-x 14
-y 1
-end
-arch grass_only
-x 14
-y 1
-end
-arch dungeon_magic
-x 14
-y 2
-end
-arch cobblestones2
-x 14
-y 2
-end
-arch wwall_2_1_2
-x 14
-y 2
-end
-arch dungeon_magic
-x 14
-y 3
-end
-arch woodfloor2
-x 14
-y 3
-end
-arch dungeon_magic
-x 14
-y 4
-end
-arch woodfloor2
-x 14
-y 4
-end
-arch dungeon_magic
-x 14
-y 5
-end
-arch woodfloor2
-x 14
-y 5
-end
-arch dungeon_magic
-x 14
-y 6
-end
-arch woodfloor2
-x 14
-y 6
-end
-arch swall_2_1_2
-x 14
-y 6
-end
-arch dungeon_magic
-x 14
-y 7
-end
-arch woodfloor2
-x 14
-y 7
-end
-arch dungeon_magic
-x 14
-y 8
-end
-arch woodfloor2
-x 14
-y 8
-end
-arch dungeon_magic
-x 14
-y 9
-end
-arch woodfloor2
-x 14
-y 9
-end
-arch longtable_2_1_2
-x 14
-y 9
-end
-arch woodfloor2
-x 14
-y 10
-end
-arch woodfloor2
-x 14
-y 11
-end
-arch woodfloor2
-x 14
-y 12
-end
-arch woodfloor2
-x 14
-y 13
-end
-arch woodfloor2
-x 14
-y 14
-end
-arch woodfloor2
-x 14
-y 15
-end
-arch button_small
-x 14
-y 16
-connected 11
-end
-arch woodfloor2
-x 14
-y 16
-end
-arch dungeon_magic
-x 14
-y 17
-end
-arch cobblestones2
-x 14
-y 17
-end
-arch wwall_1_3
-x 14
-y 17
-end
-arch dungeon_magic
-x 14
-y 18
-end
-arch invis_exit
-slaying ../../world/world_109_126
-hp 16
-sp 25
-x 14
-y 18
-end
-arch grass_only
-x 14
-y 18
-end
-arch dungeon_magic
-x 14
-y 19
-end
-arch grass_only
-x 14
-y 19
-move_block all
-end
-arch dungeon_magic
-x 15
-end
-arch flagstone
-x 15
-end
-arch dungeon_magic
-x 15
-y 1
-end
-arch grass_only
-x 15
-y 1
-end
-arch dungeon_magic
-x 15
-y 2
-end
-arch cobblestones2
-x 15
-y 2
-end
-arch wwall_win2
-x 15
-y 2
-end
-arch dungeon_magic
-x 15
-y 3
-end
-arch woodfloor2
-x 15
-y 3
-end
-arch chair_2.1
-x 15
-y 3
-end
-arch man
-name bank manager
-x 15
-y 3
-end
-arch dungeon_magic
-x 15
-y 4
-end
-arch woodfloor2
-x 15
-y 4
-end
-arch dresser
-name desk
-x 15
-y 4
-end
-arch dungeon_magic
-x 15
-y 5
-end
-arch woodfloor2
-x 15
-y 5
-end
-arch dungeon_magic
-x 15
-y 6
-end
-arch woodfloor2
-x 15
-y 6
-end
-arch swall_2_1_2
-x 15
-y 6
-end
-arch dungeon_magic
-x 15
-y 7
-end
-arch woodfloor2
-x 15
-y 7
-end
-arch dungeon_magic
-x 15
-y 8
-end
-arch woodfloor2
-x 15
-y 8
-end
-arch dungeon_magic
-x 15
-y 9
-end
-arch woodfloor2
-x 15
-y 9
-end
-arch longtable_2_1_2
-x 15
-y 9
-end
-arch woodfloor2
-x 15
-y 10
-end
-arch woodfloor2
-x 15
-y 11
-end
-arch woodfloor2
-x 15
-y 12
-end
-arch woodfloor2
-x 15
-y 13
-end
-arch woodfloor2
-x 15
-y 14
-end
-arch woodfloor2
-x 15
-y 15
-end
-arch button_small
-x 15
-y 16
-connected 11
-end
-arch woodfloor2
-x 15
-y 16
-end
-arch dungeon_magic
-x 15
-y 17
-end
-arch button_small
-x 15
-y 17
-connected 11
-end
-arch cobblestones2
-x 15
-y 17
-end
-arch odoorn2_closed_1
-x 15
-y 17
-connected 11
-end
-arch dungeon_magic
-x 15
-y 18
-end
-arch invis_exit
-slaying ../../world/world_109_126
-hp 16
-sp 25
-x 15
-y 18
-end
-arch grass_only
-x 15
-y 18
-end
-arch dungeon_magic
-x 15
-y 19
-end
-arch grass_only
-x 15
-y 19
-move_block all
-end
-arch dungeon_magic
-x 16
-end
-arch flagstone
-x 16
-end
-arch dungeon_magic
-x 16
-y 1
-end
-arch grass_only
-x 16
-y 1
-end
-arch dungeon_magic
-x 16
-y 2
-end
-arch cobblestones2
-x 16
-y 2
-end
-arch wwall_2_1_2
-x 16
-y 2
-end
-arch dungeon_magic
-x 16
-y 3
-end
-arch woodfloor2
-x 16
-y 3
-end
-arch dungeon_magic
-x 16
-y 4
-end
-arch woodfloor2
-x 16
-y 4
-end
-arch dungeon_magic
-x 16
-y 5
-end
-arch woodfloor2
-x 16
-y 5
-end
-arch dungeon_magic
-x 16
-y 6
-end
-arch woodfloor2
-x 16
-y 6
-end
-arch ggate_open
-x 16
-y 6
-end
-arch dungeon_magic
-x 16
-y 7
-end
-arch woodfloor2
-x 16
-y 7
-end
-arch dungeon_magic
-x 16
-y 8
-end
-arch woodfloor2
-x 16
-y 8
-end
-arch dungeon_magic
-x 16
-y 9
-end
-arch woodfloor2
-x 16
-y 9
-end
-arch longtable_1_3
-x 16
-y 9
-end
-arch woodfloor2
-x 16
-y 10
-end
-arch woodfloor2
-x 16
-y 11
-end
-arch table_2
-x 16
-y 11
-end
-arch woodfloor2
-x 16
-y 12
-end
-arch woodfloor2
-x 16
-y 13
-end
-arch table_2
-x 16
-y 13
-end
-arch woodfloor2
-x 16
-y 14
-end
-arch woodfloor2
-x 16
-y 15
-end
-arch button_small
-x 16
-y 16
-connected 11
-end
-arch woodfloor2
-x 16
-y 16
-end
-arch dungeon_magic
-x 16
-y 17
-end
-arch cobblestones2
-x 16
-y 17
-end
-arch wwall_1_4
-x 16
-y 17
-end
-arch dungeon_magic
-x 16
-y 18
-end
-arch invis_exit
-slaying ../../world/world_109_126
-hp 16
-sp 25
-x 16
-y 18
-end
-arch grass_only
-x 16
-y 18
-end
-arch dungeon_magic
-x 16
-y 19
-end
-arch grass_only
-x 16
-y 19
-move_block all
-end
-arch dungeon_magic
-x 17
-end
-arch flagstone
-x 17
-end
-arch dungeon_magic
-x 17
-y 1
-end
-arch grass_only
-x 17
-y 1
-end
-arch dungeon_magic
-x 17
-y 2
-end
-arch cobblestones2
-x 17
-y 2
-end
-arch wwall_2_2_3
-x 17
-y 2
-end
-arch dungeon_magic
-x 17
-y 3
-end
-arch cobblestones2
-x 17
-y 3
-end
-arch wwall_2_1_1
-x 17
-y 3
-end
-arch dungeon_magic
-x 17
-y 4
-end
-arch cobblestones2
-x 17
-y 4
-end
-arch wwall_2_1_1
-x 17
-y 4
-end
-arch dungeon_magic
-x 17
-y 5
-end
-arch cobblestones2
-x 17
-y 5
-end
-arch wwall_2_1_1
-x 17
-y 5
-end
-arch dungeon_magic
-x 17
-y 6
-end
-arch cobblestones2
-x 17
-y 6
-end
-arch wwall_2_1_1
-x 17
-y 6
-end
-arch swall_1_3_half
-x 17
-y 6
-end
-arch dungeon_magic
-x 17
-y 7
-end
-arch cobblestones2
-x 17
-y 7
-end
-arch wwall_2_1_1
-x 17
-y 7
-end
-arch dungeon_magic
-x 17
-y 8
-end
-arch cobblestones2
-x 17
-y 8
-end
-arch wwall_win1
-x 17
-y 8
-end
-arch dungeon_magic
-x 17
-y 9
-end
-arch cobblestones2
-x 17
-y 9
-end
-arch wwall_2_1_1
-x 17
-y 9
-end
-arch dungeon_magic
-x 17
-y 10
-end
-arch cobblestones2
-x 17
-y 10
-end
-arch wwall_2_1_1
-x 17
+arch westcwall_2_2_3
+x 9
 y 10
 end
 arch dungeon_magic
-x 17
+x 9
 y 11
 end
 arch cobblestones2
+x 9
+y 11
+end
+arch westcwall_2_1_1
+x 9
+y 11
+end
+arch dungeon_magic
+x 9
+y 12
+end
+arch cobblestones2
+x 9
+y 12
+end
+arch westcwall_4
+x 9
+y 12
+end
+arch dungeon_magic
+x 9
+y 13
+end
+arch cobblestones2
+x 9
+y 13
+end
+arch westcwall_2_1_1
+x 9
+y 13
+end
+arch dungeon_magic
+x 9
+y 14
+end
+arch cobblestones2
+x 9
+y 14
+end
+arch westcwall_4
+x 9
+y 14
+end
+arch dungeon_magic
+x 9
+y 15
+end
+arch cobblestones2
+x 9
+y 15
+end
+arch westcwall_2_1_1
+x 9
+y 15
+end
+arch dungeon_magic
+x 9
+y 16
+end
+arch cobblestones
+x 9
+y 16
+end
+arch westcwall_4
+x 9
+y 16
+end
+arch dungeon_magic
+x 9
+y 17
+end
+arch cobblestones
+x 9
+y 17
+end
+arch westcwall_3_1
+x 9
+y 17
+end
+arch dungeon_magic
+x 9
+y 18
+end
+arch blocked
+x 9
+y 18
+end
+arch dungeon_magic
+x 9
+y 19
+end
+arch blocked
+x 9
+y 19
+end
+arch dungeon_magic
+x 10
+end
+arch blocked
+x 10
+end
+arch dungeon_magic
+x 10
+y 1
+end
+arch blocked
+x 10
+y 1
+end
+arch dungeon_magic
+x 10
+y 2
+end
+arch cobblestones
+x 10
+y 2
+end
+arch westcwall_3_3
+x 10
+y 2
+end
+arch dungeon_magic
+x 10
+y 3
+end
+arch cobblestones
+x 10
+y 3
+end
+arch westcwall_4
+x 10
+y 3
+end
+arch dungeon_magic
+x 10
+y 4
+end
+arch cobblestones2
+x 10
+y 4
+end
+arch westcwall_2_1_1
+x 10
+y 4
+end
+arch dungeon_magic
+x 10
+y 5
+end
+arch cobblestones2
+x 10
+y 5
+end
+arch westcwall_2_1_1
+x 10
+y 5
+end
+arch dungeon_magic
+x 10
+y 6
+end
+arch cobblestones2
+x 10
+y 6
+end
+arch westcwall_1_2
+x 10
+y 6
+end
+arch dungeon_magic
+x 10
+y 7
+end
+arch cobblestones2
+x 10
+y 7
+end
+arch dungeon_magic
+x 10
+y 8
+end
+arch cobblestones2
+x 10
+y 8
+end
+arch dungeon_magic
+x 10
+y 9
+end
+arch cobblestones2
+x 10
+y 9
+end
+arch dungeon_magic
+x 10
+y 10
+end
+arch cobblestones2
+x 10
+y 10
+end
+arch dungeon_magic
+x 10
+y 11
+end
+arch cobblestones2
+x 10
+y 11
+end
+arch exit
+slaying ../../planes/astral-vault
+hp 36
+sp 1
+x 10
+y 11
+end
+arch dungeon_magic
+x 10
+y 12
+end
+arch cobblestones2
+x 10
+y 12
+end
+arch westcwall_3_3
+x 10
+y 12
+end
+arch dungeon_magic
+x 10
+y 13
+end
+arch cobblestones2
+x 10
+y 13
+end
+arch westcwall_2_1_1
+x 10
+y 13
+end
+arch dungeon_magic
+x 10
+y 14
+end
+arch cobblestones2
+x 10
+y 14
+end
+arch westcwall_4
+x 10
+y 14
+end
+arch dungeon_magic
+x 10
+y 15
+end
+arch cobblestones2
+x 10
+y 15
+end
+arch westcwall_2_1_1
+x 10
+y 15
+end
+arch dungeon_magic
+x 10
+y 16
+end
+arch cobblestones
+x 10
+y 16
+end
+arch westcwall_4
+x 10
+y 16
+end
+arch dungeon_magic
+x 10
+y 17
+end
+arch cobblestones
+x 10
+y 17
+end
+arch westcwall_3_1
+x 10
+y 17
+end
+arch dungeon_magic
+x 10
+y 18
+end
+arch blocked
+x 10
+y 18
+end
+arch dungeon_magic
+x 10
+y 19
+end
+arch blocked
+x 10
+y 19
+end
+arch dungeon_magic
+x 11
+end
+arch blocked
+x 11
+end
+arch dungeon_magic
+x 11
+y 1
+end
+arch blocked
+x 11
+y 1
+end
+arch dungeon_magic
+x 11
+y 2
+end
+arch cobblestones
+x 11
+y 2
+end
+arch westcwall_3_3
+x 11
+y 2
+end
+arch dungeon_magic
+x 11
+y 3
+end
+arch cobblestones
+x 11
+y 3
+end
+arch westcwall_3_1
+x 11
+y 3
+end
+arch dungeon_magic
+x 11
+y 4
+end
+arch cobblestones2
+x 11
+y 4
+end
+arch random_talisman
+x 11
+y 4
+end
+arch dungeon_magic
+x 11
+y 5
+end
+arch cobblestones2
+x 11
+y 5
+end
+arch random_talisman
+x 11
+y 5
+end
+arch dungeon_magic
+x 11
+y 6
+end
+arch cobblestones2
+x 11
+y 6
+end
+arch igate_closed_1
+x 11
+y 6
+end
+arch dungeon_magic
+x 11
+y 7
+end
+arch cobblestones2
+x 11
+y 7
+end
+arch dungeon_magic
+x 11
+y 8
+end
+arch cobblestones2
+x 11
+y 8
+end
+arch dungeon_magic
+x 11
+y 9
+end
+arch cobblestones2
+x 11
+y 9
+end
+arch dungeon_magic
+x 11
+y 10
+end
+arch cobblestones2
+x 11
+y 10
+end
+arch westcwall_2_2_2
+x 11
+y 10
+end
+arch dungeon_magic
+x 11
+y 11
+end
+arch cobblestones2
+x 11
+y 11
+end
+arch westcwall_2_1_1
+x 11
+y 11
+end
+arch dungeon_magic
+x 11
+y 12
+end
+arch cobblestones2
+x 11
+y 12
+end
+arch westcwall_4
+x 11
+y 12
+end
+arch dungeon_magic
+x 11
+y 13
+end
+arch cobblestones2
+x 11
+y 13
+end
+arch westcwall_2_1_1
+x 11
+y 13
+end
+arch dungeon_magic
+x 11
+y 14
+end
+arch cobblestones2
+x 11
+y 14
+end
+arch westcwall_4
+x 11
+y 14
+end
+arch dungeon_magic
+x 11
+y 15
+end
+arch cobblestones2
+x 11
+y 15
+end
+arch westcwall_2_1_1
+x 11
+y 15
+end
+arch dungeon_magic
+x 11
+y 16
+end
+arch cobblestones
+x 11
+y 16
+end
+arch westcwall_4
+x 11
+y 16
+end
+arch dungeon_magic
+x 11
+y 17
+end
+arch cobblestones
+x 11
+y 17
+end
+arch westcwall_3_1
+x 11
+y 17
+end
+arch dungeon_magic
+x 11
+y 18
+end
+arch blocked
+x 11
+y 18
+end
+arch dungeon_magic
+x 11
+y 19
+end
+arch blocked
+x 11
+y 19
+end
+arch dungeon_magic
+x 12
+end
+arch blocked
+x 12
+end
+arch dungeon_magic
+x 12
+y 1
+end
+arch blocked
+x 12
+y 1
+end
+arch dungeon_magic
+x 12
+y 2
+end
+arch cobblestones
+x 12
+y 2
+end
+arch westcwall_3_3
+x 12
+y 2
+end
+arch dungeon_magic
+x 12
+y 3
+end
+arch cobblestones
+x 12
+y 3
+end
+arch westcwall_4
+x 12
+y 3
+end
+arch dungeon_magic
+x 12
+y 4
+end
+arch cobblestones2
+x 12
+y 4
+end
+arch westcwall_2_1_1
+x 12
+y 4
+end
+arch dungeon_magic
+x 12
+y 5
+end
+arch cobblestones2
+x 12
+y 5
+end
+arch westcwall_2_1_1
+x 12
+y 5
+end
+arch dungeon_magic
+x 12
+y 6
+end
+arch cobblestones2
+x 12
+y 6
+end
+arch westcwall_1_2
+x 12
+y 6
+end
+arch dungeon_magic
+x 12
+y 7
+end
+arch cobblestones2
+x 12
+y 7
+end
+arch dungeon_magic
+x 12
+y 8
+end
+arch cobblestones2
+x 12
+y 8
+end
+arch dungeon_magic
+x 12
+y 9
+end
+arch cobblestones2
+x 12
+y 9
+end
+arch dungeon_magic
+x 12
+y 10
+end
+arch cobblestones2
+x 12
+y 10
+end
+arch westcwall_2_2_3
+x 12
+y 10
+end
+arch dungeon_magic
+x 12
+y 11
+end
+arch cobblestones2
+x 12
+y 11
+end
+arch westcwall_2_1_1
+x 12
+y 11
+end
+arch dungeon_magic
+x 12
+y 12
+end
+arch cobblestones2
+x 12
+y 12
+end
+arch westcwall_4
+x 12
+y 12
+end
+arch dungeon_magic
+x 12
+y 13
+end
+arch cobblestones2
+x 12
+y 13
+end
+arch westcwall_2_1_1
+x 12
+y 13
+end
+arch dungeon_magic
+x 12
+y 14
+end
+arch cobblestones2
+x 12
+y 14
+end
+arch westcwall_4
+x 12
+y 14
+end
+arch dungeon_magic
+x 12
+y 15
+end
+arch cobblestones2
+x 12
+y 15
+end
+arch westcwall_2_1_1
+x 12
+y 15
+end
+arch dungeon_magic
+x 12
+y 16
+end
+arch cobblestones
+x 12
+y 16
+end
+arch westcwall_4
+x 12
+y 16
+end
+arch dungeon_magic
+x 12
+y 17
+end
+arch cobblestones
+x 12
+y 17
+end
+arch westcwall_3_1
+x 12
+y 17
+end
+arch dungeon_magic
+x 12
+y 18
+end
+arch blocked
+x 12
+y 18
+end
+arch dungeon_magic
+x 12
+y 19
+end
+arch blocked
+x 12
+y 19
+end
+arch dungeon_magic
+x 13
+end
+arch blocked
+x 13
+end
+arch dungeon_magic
+x 13
+y 1
+end
+arch blocked
+x 13
+y 1
+end
+arch dungeon_magic
+x 13
+y 2
+end
+arch cobblestones
+x 13
+y 2
+end
+arch westcwall_3_3
+x 13
+y 2
+end
+arch dungeon_magic
+x 13
+y 3
+end
+arch cobblestones
+x 13
+y 3
+end
+arch westcwall_3_1
+x 13
+y 3
+end
+arch dungeon_magic
+x 13
+y 4
+end
+arch cobblestones2
+x 13
+y 4
+end
+arch random_wealth
+x 13
+y 4
+end
+arch dungeon_magic
+x 13
+y 5
+end
+arch cobblestones2
+x 13
+y 5
+end
+arch random_gem
+x 13
+y 5
+end
+arch dungeon_magic
+x 13
+y 6
+end
+arch cobblestones2
+x 13
+y 6
+end
+arch igate_closed_1
+x 13
+y 6
+end
+arch dungeon_magic
+x 13
+y 7
+end
+arch cobblestones2
+x 13
+y 7
+end
+arch dungeon_magic
+x 13
+y 8
+end
+arch cobblestones2
+x 13
+y 8
+end
+arch dungeon_magic
+x 13
+y 9
+end
+arch cobblestones2
+x 13
+y 9
+end
+arch dungeon_magic
+x 13
+y 10
+end
+arch cobblestones2
+x 13
+y 10
+end
+arch dungeon_magic
+x 13
+y 11
+end
+arch cobblestones2
+x 13
+y 11
+end
+arch knight
+x 13
+y 11
+end
+arch dungeon_magic
+x 13
+y 12
+end
+arch cobblestones2
+x 13
+y 12
+end
+arch westcwall_2_2_3
+x 13
+y 12
+end
+arch dungeon_magic
+x 13
+y 13
+end
+arch cobblestones2
+x 13
+y 13
+end
+arch westcwall_2_1_1
+x 13
+y 13
+end
+arch dungeon_magic
+x 13
+y 14
+end
+arch cobblestones2
+x 13
+y 14
+end
+arch westcwall_3_4
+x 13
+y 14
+end
+arch dungeon_magic
+x 13
+y 15
+end
+arch cobblestones2
+x 13
+y 15
+end
+arch westcwall_2_1_1
+x 13
+y 15
+end
+arch dungeon_magic
+x 13
+y 16
+end
+arch cobblestones
+x 13
+y 16
+end
+arch westcwall_4
+x 13
+y 16
+end
+arch dungeon_magic
+x 13
+y 17
+end
+arch cobblestones
+x 13
+y 17
+end
+arch westcwall_3_1
+x 13
+y 17
+end
+arch dungeon_magic
+x 13
+y 18
+end
+arch blocked
+x 13
+y 18
+end
+arch dungeon_magic
+x 13
+y 19
+end
+arch blocked
+x 13
+y 19
+end
+arch dungeon_magic
+x 14
+end
+arch blocked
+x 14
+end
+arch dungeon_magic
+x 14
+y 1
+end
+arch blocked
+x 14
+y 1
+end
+arch dungeon_magic
+x 14
+y 2
+end
+arch cobblestones
+x 14
+y 2
+end
+arch westcwall_3_3
+x 14
+y 2
+end
+arch dungeon_magic
+x 14
+y 3
+end
+arch cobblestones
+x 14
+y 3
+end
+arch westcwall_4
+x 14
+y 3
+end
+arch dungeon_magic
+x 14
+y 4
+end
+arch cobblestones2
+x 14
+y 4
+end
+arch westcwall_2_1_1
+x 14
+y 4
+end
+arch dungeon_magic
+x 14
+y 5
+end
+arch cobblestones2
+x 14
+y 5
+end
+arch westcwall_2_1_1
+x 14
+y 5
+end
+arch dungeon_magic
+x 14
+y 6
+end
+arch cobblestones2
+x 14
+y 6
+end
+arch westcwall_1_2
+x 14
+y 6
+end
+arch dungeon_magic
+x 14
+y 7
+end
+arch cobblestones2
+x 14
+y 7
+end
+arch dungeon_magic
+x 14
+y 8
+end
+arch cobblestones2
+x 14
+y 8
+end
+arch dungeon_magic
+x 14
+y 9
+end
+arch cobblestones2
+x 14
+y 9
+end
+arch dungeon_magic
+x 14
+y 10
+end
+arch cobblestones2
+x 14
+y 10
+end
+arch dungeon_magic
+x 14
+y 11
+end
+arch cobblestones2
+x 14
+y 11
+end
+arch dungeon_magic
+x 14
+y 12
+end
+arch cobblestones2
+x 14
+y 12
+end
+arch dungeon_magic
+x 14
+y 13
+end
+arch cobblestones2
+x 14
+y 13
+end
+arch dungeon_magic
+x 14
+y 14
+end
+arch cobblestones2
+x 14
+y 14
+end
+arch dungeon_magic
+x 14
+y 15
+end
+arch cobblestones2
+x 14
+y 15
+end
+arch stair_up_4
+slaying city1bank
+hp 14
+sp 15
+x 14
+y 15
+end
+arch dungeon_magic
+x 14
+y 16
+end
+arch cobblestones
+x 14
+y 16
+end
+arch westcwall_3_3
+x 14
+y 16
+end
+arch dungeon_magic
+x 14
+y 17
+end
+arch cobblestones
+x 14
+y 17
+end
+arch westcwall_3_1
+x 14
+y 17
+end
+arch dungeon_magic
+x 14
+y 18
+end
+arch blocked
+x 14
+y 18
+end
+arch dungeon_magic
+x 14
+y 19
+end
+arch blocked
+x 14
+y 19
+end
+arch dungeon_magic
+x 15
+end
+arch blocked
+x 15
+end
+arch dungeon_magic
+x 15
+y 1
+end
+arch blocked
+x 15
+y 1
+end
+arch dungeon_magic
+x 15
+y 2
+end
+arch cobblestones
+x 15
+y 2
+end
+arch westcwall_3_3
+x 15
+y 2
+end
+arch dungeon_magic
+x 15
+y 3
+end
+arch cobblestones
+x 15
+y 3
+end
+arch westcwall_3_1
+x 15
+y 3
+end
+arch dungeon_magic
+x 15
+y 4
+end
+arch cobblestones2
+x 15
+y 4
+end
+arch random_artifact
+x 15
+y 4
+end
+arch dungeon_magic
+x 15
+y 5
+end
+arch cobblestones2
+x 15
+y 5
+end
+arch random_weapon
+x 15
+y 5
+end
+arch dungeon_magic
+x 15
+y 6
+end
+arch cobblestones2
+x 15
+y 6
+end
+arch igate_closed_1
+x 15
+y 6
+end
+arch dungeon_magic
+x 15
+y 7
+end
+arch cobblestones2
+x 15
+y 7
+end
+arch dungeon_magic
+x 15
+y 8
+end
+arch cobblestones2
+x 15
+y 8
+end
+arch dungeon_magic
+x 15
+y 9
+end
+arch cobblestones2
+x 15
+y 9
+end
+arch dungeon_magic
+x 15
+y 10
+end
+arch cobblestones2
+x 15
+y 10
+end
+arch dungeon_magic
+x 15
+y 11
+end
+arch cobblestones2
+x 15
+y 11
+end
+arch dungeon_magic
+x 15
+y 12
+end
+arch cobblestones2
+x 15
+y 12
+end
+arch dungeon_magic
+x 15
+y 13
+end
+arch cobblestones2
+x 15
+y 13
+end
+arch dungeon_magic
+x 15
+y 14
+end
+arch cobblestones2
+x 15
+y 14
+end
+arch dungeon_magic
+x 15
+y 15
+end
+arch cobblestones2
+x 15
+y 15
+end
+arch dungeon_magic
+x 15
+y 16
+end
+arch cobblestones
+x 15
+y 16
+end
+arch westcwall_3_3
+x 15
+y 16
+end
+arch dungeon_magic
+x 15
+y 17
+end
+arch cobblestones
+x 15
+y 17
+end
+arch westcwall_3_1
+x 15
+y 17
+end
+arch dungeon_magic
+x 15
+y 18
+end
+arch blocked
+x 15
+y 18
+end
+arch dungeon_magic
+x 15
+y 19
+end
+arch blocked
+x 15
+y 19
+end
+arch dungeon_magic
+x 16
+end
+arch blocked
+x 16
+end
+arch dungeon_magic
+x 16
+y 1
+end
+arch blocked
+x 16
+y 1
+end
+arch dungeon_magic
+x 16
+y 2
+end
+arch cobblestones
+x 16
+y 2
+end
+arch westcwall_3_3
+x 16
+y 2
+end
+arch dungeon_magic
+x 16
+y 3
+end
+arch cobblestones
+x 16
+y 3
+end
+arch westcwall_3_1
+x 16
+y 3
+end
+arch dungeon_magic
+x 16
+y 4
+end
+arch cobblestones2
+x 16
+y 4
+end
+arch random_gem
+x 16
+y 4
+end
+arch dungeon_magic
+x 16
+y 5
+end
+arch cobblestones2
+x 16
+y 5
+end
+arch random_shield
+x 16
+y 5
+end
+arch dungeon_magic
+x 16
+y 6
+end
+arch cobblestones2
+x 16
+y 6
+end
+arch westcwall_1_4
+x 16
+y 6
+end
+arch dungeon_magic
+x 16
+y 7
+end
+arch cobblestones2
+x 16
+y 7
+end
+arch knight
+x 16
+y 7
+end
+arch dungeon_magic
+x 16
+y 8
+end
+arch cobblestones2
+x 16
+y 8
+end
+arch dungeon_magic
+x 16
+y 9
+end
+arch cobblestones2
+x 16
+y 9
+end
+arch dungeon_magic
+x 16
+y 10
+end
+arch cobblestones2
+x 16
+y 10
+end
+arch dungeon_magic
+x 16
+y 11
+end
+arch cobblestones2
+x 16
+y 11
+end
+arch dungeon_magic
+x 16
+y 12
+end
+arch cobblestones2
+x 16
+y 12
+end
+arch dungeon_magic
+x 16
+y 13
+end
+arch cobblestones2
+x 16
+y 13
+end
+arch dungeon_magic
+x 16
+y 14
+end
+arch cobblestones2
+x 16
+y 14
+end
+arch dungeon_magic
+x 16
+y 15
+end
+arch cobblestones2
+x 16
+y 15
+end
+arch dungeon_magic
+x 16
+y 16
+end
+arch cobblestones
+x 16
+y 16
+end
+arch westcwall_3_3
+x 16
+y 16
+end
+arch dungeon_magic
+x 16
+y 17
+end
+arch cobblestones
+x 16
+y 17
+end
+arch westcwall_3_1
+x 16
+y 17
+end
+arch dungeon_magic
+x 16
+y 18
+end
+arch blocked
+x 16
+y 18
+end
+arch dungeon_magic
+x 16
+y 19
+end
+arch blocked
+x 16
+y 19
+end
+arch dungeon_magic
+x 17
+end
+arch blocked
+x 17
+end
+arch dungeon_magic
+x 17
+y 1
+end
+arch blocked
+x 17
+y 1
+end
+arch dungeon_magic
+x 17
+y 2
+end
+arch cobblestones
+x 17
+y 2
+end
+arch westcwall_3_3
+x 17
+y 2
+end
+arch dungeon_magic
+x 17
+y 3
+end
+arch cobblestones
+x 17
+y 3
+end
+arch westcwall_4
+x 17
+y 3
+end
+arch dungeon_magic
+x 17
+y 4
+end
+arch cobblestones
+x 17
+y 4
+end
+arch westcwall_3_2
+x 17
+y 4
+end
+arch dungeon_magic
+x 17
+y 5
+end
+arch cobblestones
+x 17
+y 5
+end
+arch westcwall_3_2
+x 17
+y 5
+end
+arch dungeon_magic
+x 17
+y 6
+end
+arch cobblestones
+x 17
+y 6
+end
+arch westcwall_4
+x 17
+y 6
+end
+arch dungeon_magic
+x 17
+y 7
+end
+arch cobblestones
+x 17
+y 7
+end
+arch westcwall_3_2
+x 17
+y 7
+end
+arch dungeon_magic
+x 17
+y 8
+end
+arch cobblestones
+x 17
+y 8
+end
+arch westcwall_3_2
+x 17
+y 8
+end
+arch dungeon_magic
+x 17
+y 9
+end
+arch cobblestones
+x 17
+y 9
+end
+arch westcwall_3_2
+x 17
+y 9
+end
+arch dungeon_magic
+x 17
+y 10
+end
+arch cobblestones
+x 17
+y 10
+end
+arch westcwall_3_2
+x 17
+y 10
+end
+arch dungeon_magic
 x 17
 y 11
 end
-arch wwall_2_1_1
+arch cobblestones
+x 17
+y 11
+end
+arch westcwall_3_2
 x 17
 y 11
 end
@@ -3050,11 +3468,11 @@ arch dungeon_magic
 x 17
 y 12
 end
-arch cobblestones2
+arch cobblestones
 x 17
 y 12
 end
-arch wwall_2_1_1
+arch westcwall_3_2
 x 17
 y 12
 end
@@ -3062,11 +3480,11 @@ arch dungeon_magic
 x 17
 y 13
 end
-arch cobblestones2
+arch cobblestones
 x 17
 y 13
 end
-arch wwall_2_1_1
+arch westcwall_3_2
 x 17
 y 13
 end
@@ -3074,11 +3492,11 @@ arch dungeon_magic
 x 17
 y 14
 end
-arch cobblestones2
+arch cobblestones
 x 17
 y 14
 end
-arch wwall_2_1_1
+arch westcwall_3_2
 x 17
 y 14
 end
@@ -3086,11 +3504,11 @@ arch dungeon_magic
 x 17
 y 15
 end
-arch cobblestones2
+arch cobblestones
 x 17
 y 15
 end
-arch wwall_2_1_1
+arch westcwall_3_2
 x 17
 y 15
 end
@@ -3098,11 +3516,11 @@ arch dungeon_magic
 x 17
 y 16
 end
-arch cobblestones2
+arch cobblestones
 x 17
 y 16
 end
-arch wwall_2_1_1
+arch westcwall_4
 x 17
 y 16
 end
@@ -3110,11 +3528,11 @@ arch dungeon_magic
 x 17
 y 17
 end
-arch cobblestones2
+arch cobblestones
 x 17
 y 17
 end
-arch wwall_2_2_4
+arch westcwall_3_1
 x 17
 y 17
 end
@@ -3122,31 +3540,29 @@ arch dungeon_magic
 x 17
 y 18
 end
-arch grass_only
+arch blocked
 x 17
 y 18
-move_block all
 end
 arch dungeon_magic
 x 17
 y 19
 end
-arch grass_only
+arch blocked
 x 17
 y 19
-move_block all
 end
 arch dungeon_magic
 x 18
 end
-arch flagstone
+arch blocked
 x 18
 end
 arch dungeon_magic
 x 18
 y 1
 end
-arch grass_only
+arch blocked
 x 18
 y 1
 end
@@ -3154,7 +3570,11 @@ arch dungeon_magic
 x 18
 y 2
 end
-arch grass_only
+arch cobblestones
+x 18
+y 2
+end
+arch westcwall_2_2_3
 x 18
 y 2
 end
@@ -3162,7 +3582,11 @@ arch dungeon_magic
 x 18
 y 3
 end
-arch grass_only
+arch cobblestones
+x 18
+y 3
+end
+arch westcwall_3_4
 x 18
 y 3
 end
@@ -3170,7 +3594,11 @@ arch dungeon_magic
 x 18
 y 4
 end
-arch grass_only
+arch cobblestones
+x 18
+y 4
+end
+arch westcwall_3_4
 x 18
 y 4
 end
@@ -3178,7 +3606,11 @@ arch dungeon_magic
 x 18
 y 5
 end
-arch grass_only
+arch cobblestones
+x 18
+y 5
+end
+arch westcwall_3_4
 x 18
 y 5
 end
@@ -3186,7 +3618,11 @@ arch dungeon_magic
 x 18
 y 6
 end
-arch grass_only
+arch cobblestones
+x 18
+y 6
+end
+arch westcwall_3_4
 x 18
 y 6
 end
@@ -3194,7 +3630,11 @@ arch dungeon_magic
 x 18
 y 7
 end
-arch grass_only
+arch cobblestones
+x 18
+y 7
+end
+arch westcwall_3_4
 x 18
 y 7
 end
@@ -3202,7 +3642,11 @@ arch dungeon_magic
 x 18
 y 8
 end
-arch grass_only
+arch cobblestones
+x 18
+y 8
+end
+arch westcwall_3_4
 x 18
 y 8
 end
@@ -3210,7 +3654,11 @@ arch dungeon_magic
 x 18
 y 9
 end
-arch grass_only
+arch cobblestones
+x 18
+y 9
+end
+arch westcwall_3_4
 x 18
 y 9
 end
@@ -3218,7 +3666,11 @@ arch dungeon_magic
 x 18
 y 10
 end
-arch grass_only
+arch cobblestones
+x 18
+y 10
+end
+arch westcwall_3_4
 x 18
 y 10
 end
@@ -3226,7 +3678,11 @@ arch dungeon_magic
 x 18
 y 11
 end
-arch grass_only
+arch cobblestones
+x 18
+y 11
+end
+arch westcwall_3_4
 x 18
 y 11
 end
@@ -3234,7 +3690,11 @@ arch dungeon_magic
 x 18
 y 12
 end
-arch grass_only
+arch cobblestones
+x 18
+y 12
+end
+arch westcwall_3_4
 x 18
 y 12
 end
@@ -3242,7 +3702,11 @@ arch dungeon_magic
 x 18
 y 13
 end
-arch grass_only
+arch cobblestones
+x 18
+y 13
+end
+arch westcwall_3_4
 x 18
 y 13
 end
@@ -3250,7 +3714,11 @@ arch dungeon_magic
 x 18
 y 14
 end
-arch grass_only
+arch cobblestones
+x 18
+y 14
+end
+arch westcwall_3_4
 x 18
 y 14
 end
@@ -3258,7 +3726,11 @@ arch dungeon_magic
 x 18
 y 15
 end
-arch grass_only
+arch cobblestones
+x 18
+y 15
+end
+arch westcwall_3_4
 x 18
 y 15
 end
@@ -3266,7 +3738,11 @@ arch dungeon_magic
 x 18
 y 16
 end
-arch grass_only
+arch cobblestones
+x 18
+y 16
+end
+arch westcwall_3_4
 x 18
 y 16
 end
@@ -3274,7 +3750,11 @@ arch dungeon_magic
 x 18
 y 17
 end
-arch grass_only
+arch cobblestones
+x 18
+y 17
+end
+arch westcwall_2_2_4
 x 18
 y 17
 end
@@ -3282,7 +3762,7 @@ arch dungeon_magic
 x 18
 y 18
 end
-arch grass_only
+arch blocked
 x 18
 y 18
 end
@@ -3290,21 +3770,21 @@ arch dungeon_magic
 x 18
 y 19
 end
-arch grass_only
+arch blocked
 x 18
 y 19
 end
 arch dungeon_magic
 x 19
 end
-arch flagstone
+arch blocked
 x 19
 end
 arch dungeon_magic
 x 19
 y 1
 end
-arch grass_only
+arch blocked
 x 19
 y 1
 end
@@ -3312,7 +3792,7 @@ arch dungeon_magic
 x 19
 y 2
 end
-arch grass_only
+arch blocked
 x 19
 y 2
 end
@@ -3320,7 +3800,7 @@ arch dungeon_magic
 x 19
 y 3
 end
-arch grass_only
+arch blocked
 x 19
 y 3
 end
@@ -3328,7 +3808,7 @@ arch dungeon_magic
 x 19
 y 4
 end
-arch grass_only
+arch blocked
 x 19
 y 4
 end
@@ -3336,7 +3816,7 @@ arch dungeon_magic
 x 19
 y 5
 end
-arch grass_only
+arch blocked
 x 19
 y 5
 end
@@ -3344,7 +3824,7 @@ arch dungeon_magic
 x 19
 y 6
 end
-arch grass_only
+arch blocked
 x 19
 y 6
 end
@@ -3352,7 +3832,7 @@ arch dungeon_magic
 x 19
 y 7
 end
-arch grass_only
+arch blocked
 x 19
 y 7
 end
@@ -3360,7 +3840,7 @@ arch dungeon_magic
 x 19
 y 8
 end
-arch grass_only
+arch blocked
 x 19
 y 8
 end
@@ -3368,7 +3848,7 @@ arch dungeon_magic
 x 19
 y 9
 end
-arch grass_only
+arch blocked
 x 19
 y 9
 end
@@ -3376,7 +3856,7 @@ arch dungeon_magic
 x 19
 y 10
 end
-arch grass_only
+arch blocked
 x 19
 y 10
 end
@@ -3384,7 +3864,7 @@ arch dungeon_magic
 x 19
 y 11
 end
-arch grass_only
+arch blocked
 x 19
 y 11
 end
@@ -3392,7 +3872,7 @@ arch dungeon_magic
 x 19
 y 12
 end
-arch grass_only
+arch blocked
 x 19
 y 12
 end
@@ -3400,7 +3880,7 @@ arch dungeon_magic
 x 19
 y 13
 end
-arch grass_only
+arch blocked
 x 19
 y 13
 end
@@ -3408,7 +3888,7 @@ arch dungeon_magic
 x 19
 y 14
 end
-arch grass_only
+arch blocked
 x 19
 y 14
 end
@@ -3416,7 +3896,7 @@ arch dungeon_magic
 x 19
 y 15
 end
-arch grass_only
+arch blocked
 x 19
 y 15
 end
@@ -3424,7 +3904,7 @@ arch dungeon_magic
 x 19
 y 16
 end
-arch grass_only
+arch blocked
 x 19
 y 16
 end
@@ -3432,7 +3912,7 @@ arch dungeon_magic
 x 19
 y 17
 end
-arch grass_only
+arch blocked
 x 19
 y 17
 end
@@ -3440,7 +3920,7 @@ arch dungeon_magic
 x 19
 y 18
 end
-arch grass_only
+arch blocked
 x 19
 y 18
 end
@@ -3448,7 +3928,165 @@ arch dungeon_magic
 x 19
 y 19
 end
-arch grass_only
+arch blocked
 x 19
+y 19
+end
+arch dungeon_magic
+x 20
+end
+arch blocked
+x 20
+end
+arch dungeon_magic
+x 20
+y 1
+end
+arch blocked
+x 20
+y 1
+end
+arch dungeon_magic
+x 20
+y 2
+end
+arch blocked
+x 20
+y 2
+end
+arch dungeon_magic
+x 20
+y 3
+end
+arch blocked
+x 20
+y 3
+end
+arch dungeon_magic
+x 20
+y 4
+end
+arch blocked
+x 20
+y 4
+end
+arch dungeon_magic
+x 20
+y 5
+end
+arch blocked
+x 20
+y 5
+end
+arch dungeon_magic
+x 20
+y 6
+end
+arch blocked
+x 20
+y 6
+end
+arch dungeon_magic
+x 20
+y 7
+end
+arch blocked
+x 20
+y 7
+end
+arch dungeon_magic
+x 20
+y 8
+end
+arch blocked
+x 20
+y 8
+end
+arch dungeon_magic
+x 20
+y 9
+end
+arch blocked
+x 20
+y 9
+end
+arch dungeon_magic
+x 20
+y 10
+end
+arch blocked
+x 20
+y 10
+end
+arch dungeon_magic
+x 20
+y 11
+end
+arch blocked
+x 20
+y 11
+end
+arch dungeon_magic
+x 20
+y 12
+end
+arch blocked
+x 20
+y 12
+end
+arch dungeon_magic
+x 20
+y 13
+end
+arch blocked
+x 20
+y 13
+end
+arch dungeon_magic
+x 20
+y 14
+end
+arch blocked
+x 20
+y 14
+end
+arch dungeon_magic
+x 20
+y 15
+end
+arch blocked
+x 20
+y 15
+end
+arch dungeon_magic
+x 20
+y 16
+end
+arch blocked
+x 20
+y 16
+end
+arch dungeon_magic
+x 20
+y 17
+end
+arch blocked
+x 20
+y 17
+end
+arch dungeon_magic
+x 20
+y 18
+end
+arch blocked
+x 20
+y 18
+end
+arch dungeon_magic
+x 20
+y 19
+end
+arch blocked
+x 20
 y 19
 end

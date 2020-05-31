@@ -9,7 +9,7 @@ enter_y 16
 msg
 Created:  1993-10-10 skud the great (tvangod@ecst.csuchico.edu)
 Idea credited to Eric Mehlhaff.
-Modified: 2019-08-12 Kevin Zheng
+Modified: 2020-05-30 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -3435,6 +3435,13 @@ x 19
 y 3
 end
 arch woodlarge
+x 19
+y 3
+end
+arch stair3_gstone_do
+slaying bank_darcap_vault
+hp 19
+sp 3
 x 19
 y 3
 end

@@ -8,7 +8,7 @@ enter_x 23
 enter_y 7
 msg
 Created:  1996-02-09
-Modified: 2019-08-12 Kevin Zheng
+Modified: 2020-05-31 Rick Tanner
 endmsg
 end
 arch grass
@@ -377,6 +377,13 @@ arch wwall_2_1_2
 x 4
 end
 arch woodfloor
+x 4
+y 1
+end
+arch stair_3_down
+slaying bank_vault
+hp 4
+sp 4
 x 4
 y 1
 end

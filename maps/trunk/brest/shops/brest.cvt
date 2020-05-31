@@ -8,7 +8,7 @@ height 24
 enter_x 13
 enter_y 19
 msg
-Modified: 2019-08-12 Kevin Zheng
+Modified: 2020-05-30 Rick Tanner
 endmsg
 end
 arch flagstone
@@ -431,16 +431,12 @@ arch woodfloor
 x 3
 y 8
 end
-arch guard
-name bank guard
-msg
-@match sorry
-Tell it to our boss.
-endmsg
+arch stair3_ystone_do
+slaying brest_bank_vault
+hp 3
+sp 8
 x 3
 y 8
-sleep 0
-stand_still 0
 end
 arch woodfloor
 x 3
