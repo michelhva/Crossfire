@@ -8,7 +8,7 @@ enter_x 10
 enter_y 16
 msg
 Created:  1993-11-17
-Modified: 2019-08-12 Kevin Zheng
+Modified: 2020-05-31 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -399,7 +399,7 @@ arch cobblestones
 x 3
 y 13
 end
-arch westcwall_4
+arch westcwall_3_4
 x 3
 y 13
 end
@@ -407,7 +407,7 @@ arch cobblestones
 x 3
 y 14
 end
-arch westcwall_4
+arch westcwall_3_4
 x 3
 y 14
 end
@@ -546,19 +546,37 @@ arch ruby_converter
 x 4
 y 12
 end
+arch dungeon_magic
+x 4
+y 13
+end
 arch cobblestones
 x 4
 y 13
 end
-arch westcwall_3_3
+arch silver_converter
+name convert gold into silver
+slaying goldcoin
+other_arch silvercoin
+sp 10
+food 1
 x 4
 y 13
+end
+arch dungeon_magic
+x 4
+y 14
 end
 arch cobblestones
 x 4
 y 14
 end
-arch westcwall_3_1
+arch silver_converter
+name convert gold into silver
+slaying goldcoin
+other_arch silvercoin
+sp 10
+food 1
 x 4
 y 14
 end
@@ -686,20 +704,7 @@ arch cobblestones
 x 5
 y 11
 end
-arch dungeon_magic
-x 5
-y 12
-end
 arch cobblestones
-x 5
-y 12
-end
-arch silver_converter
-name convert gold into silver
-slaying goldcoin
-other_arch silvercoin
-sp 10
-food 1
 x 5
 y 12
 end
@@ -707,15 +712,7 @@ arch cobblestones
 x 5
 y 13
 end
-arch westcwall_3_3
-x 5
-y 13
-end
 arch cobblestones
-x 5
-y 14
-end
-arch westcwall_3_1
 x 5
 y 14
 end
@@ -830,20 +827,7 @@ arch cobblestones
 x 6
 y 11
 end
-arch dungeon_magic
-x 6
-y 12
-end
 arch cobblestones
-x 6
-y 12
-end
-arch silver_converter
-name convert gold into silver
-slaying goldcoin
-other_arch silvercoin
-sp 10
-food 1
 x 6
 y 12
 end
@@ -851,15 +835,7 @@ arch cobblestones
 x 6
 y 13
 end
-arch westcwall_3_3
-x 6
-y 13
-end
 arch cobblestones
-x 6
-y 14
-end
-arch westcwall_3_1
 x 6
 y 14
 end
@@ -991,7 +967,7 @@ arch cobblestones
 x 7
 y 13
 end
-arch westcwall_3_3
+arch westcwall_2_2_2
 x 7
 y 13
 end
@@ -999,7 +975,7 @@ arch cobblestones
 x 7
 y 14
 end
-arch westcwall_4
+arch westcwall_3_2
 x 7
 y 14
 end
@@ -1964,15 +1940,7 @@ arch cobblestones
 x 13
 y 11
 end
-arch dungeon_magic
-x 13
-y 12
-end
 arch cobblestones
-x 13
-y 12
-end
-arch platinum_converter2
 x 13
 y 12
 end
@@ -1980,7 +1948,7 @@ arch cobblestones
 x 13
 y 13
 end
-arch westcwall_3_3
+arch westcwall_2_2_3
 x 13
 y 13
 end
@@ -1988,7 +1956,7 @@ arch cobblestones
 x 13
 y 14
 end
-arch westcwall_4
+arch westcwall_3_4
 x 13
 y 14
 end
@@ -2123,20 +2091,7 @@ arch cobblestones
 x 14
 y 11
 end
-arch dungeon_magic
-x 14
-y 12
-end
 arch cobblestones
-x 14
-y 12
-end
-arch platinum_converter2
-name convert jade into platinum
-slaying jadecoin
-other_arch platinacoin
-sp 100
-food 1
 x 14
 y 12
 end
@@ -2144,15 +2099,7 @@ arch cobblestones
 x 14
 y 13
 end
-arch westcwall_3_3
-x 14
-y 13
-end
 arch cobblestones
-x 14
-y 14
-end
-arch westcwall_3_1
 x 14
 y 14
 end
@@ -2284,15 +2231,7 @@ arch cobblestones
 x 15
 y 11
 end
-arch dungeon_magic
-x 15
-y 12
-end
 arch cobblestones
-x 15
-y 12
-end
-arch jade_converter
 x 15
 y 12
 end
@@ -2300,15 +2239,7 @@ arch cobblestones
 x 15
 y 13
 end
-arch westcwall_3_3
-x 15
-y 13
-end
 arch cobblestones
-x 15
-y 14
-end
-arch westcwall_3_1
 x 15
 y 14
 end
@@ -2460,23 +2391,44 @@ food 1
 x 16
 y 12
 end
-arch cobblestones
-x 16
-y 13
-end
-arch westcwall_3_3
+arch dungeon_magic
 x 16
 y 13
 end
 arch cobblestones
 x 16
-y 14
+y 13
 end
-arch westcwall_3_1
+arch jade_converter
+x 16
+y 13
+end
+arch dungeon_magic
 x 16
 y 14
 end
 arch cobblestones
+x 16
+y 14
+end
+arch platinum_converter2
+name convert jade into platinum
+slaying jadecoin
+other_arch platinacoin
+sp 100
+food 1
+x 16
+y 14
+end
+arch dungeon_magic
+x 16
+y 15
+end
+arch cobblestones
+x 16
+y 15
+end
+arch platinum_converter2
 x 16
 y 15
 end
@@ -2611,7 +2563,7 @@ arch cobblestones
 x 17
 y 13
 end
-arch westcwall_4
+arch westcwall_3_2
 x 17
 y 13
 end
@@ -2619,7 +2571,7 @@ arch cobblestones
 x 17
 y 14
 end
-arch westcwall_4
+arch westcwall_3_2
 x 17
 y 14
 end
