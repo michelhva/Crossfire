@@ -443,7 +443,7 @@ x 1
 y 12
 end
 arch exit
-slaying ../pup_land/lone_town/bank_vault
+slaying /pup_land/lone_town/bank_vault
 hp 9
 sp 9
 x 1
@@ -538,7 +538,7 @@ x 1
 y 21
 end
 arch exit
-slaying ../pup_land/nurnberg/bank_vault
+slaying /pup_land/nurnberg/bank_vault
 hp 20
 sp 4
 x 1
@@ -2394,6 +2394,11 @@ arch tile_shop
 x 6
 y 12
 end
+arch button_lever
+x 6
+y 12
+connected 9
+end
 arch dungeon_magic
 x 6
 y 13
@@ -2485,6 +2490,11 @@ end
 arch tile_shop
 x 6
 y 21
+end
+arch button_lever
+x 6
+y 21
+connected 8
 end
 arch dungeon_magic
 x 6
@@ -4833,7 +4843,7 @@ x 12
 y 32
 end
 arch exit
-slaying ../marksel/shops/bank_marksel_vault
+slaying /marksel/shops/bank_marksel_vault
 hp 15
 sp 3
 x 12
@@ -5644,7 +5654,7 @@ x 15
 y 1
 end
 arch exit
-slaying ../brest/shops/brest_bank_vault
+slaying /brest/shops/brest_bank_vault
 hp 5
 sp 3
 x 15
@@ -6338,10 +6348,6 @@ arch dungeon_magic
 x 17
 y 8
 end
-arch graymarble
-x 17
-y 8
-end
 arch tile_shop
 x 17
 y 8
@@ -6371,6 +6377,11 @@ end
 arch tile_shop
 x 17
 y 10
+end
+arch button_lever
+x 17
+y 10
+connected 10
 end
 arch graymarble
 x 17
@@ -6435,6 +6446,11 @@ arch tile_shop
 x 17
 y 22
 end
+arch button_lever
+x 17
+y 22
+connected 7
+end
 arch dungeon_magic
 x 17
 y 23
@@ -6449,10 +6465,6 @@ y 23
 connected 7
 end
 arch dungeon_magic
-x 17
-y 24
-end
-arch graymarble
 x 17
 y 24
 end
@@ -8271,10 +8283,6 @@ arch dungeon_magic
 x 23
 y 8
 end
-arch graymarble
-x 23
-y 8
-end
 arch tile_shop
 x 23
 y 8
@@ -8304,6 +8312,11 @@ end
 arch tile_shop
 x 23
 y 10
+end
+arch button_lever
+x 23
+y 10
+connected 11
 end
 arch graymarble
 x 23
@@ -8367,6 +8380,11 @@ end
 arch tile_shop
 x 23
 y 22
+end
+arch button_lever
+x 23
+y 22
+connected 6
 end
 arch dungeon_magic
 x 23
@@ -8382,10 +8400,6 @@ y 23
 connected 6
 end
 arch dungeon_magic
-x 23
-y 24
-end
-arch graymarble
 x 23
 y 24
 end
@@ -8516,7 +8530,7 @@ x 24
 y 1
 end
 arch exit
-slaying ../dragonisland/shops/bank_stoneville_vault
+slaying /dragonisland/shops/bank_stoneville_vault
 hp 3
 sp 7
 x 24
@@ -8774,7 +8788,7 @@ x 24
 y 30
 end
 arch exit
-slaying ../darcap/darcap/shops/bank_darcap_vault
+slaying /darcap/darcap/shops/bank_darcap_vault
 hp 19
 sp 16
 x 24
@@ -9877,10 +9891,6 @@ arch dungeon_magic
 x 28
 y 8
 end
-arch graymarble
-x 28
-y 8
-end
 arch tile_shop
 x 28
 y 8
@@ -9910,6 +9920,11 @@ end
 arch tile_shop
 x 28
 y 10
+end
+arch button_lever
+x 28
+y 10
+connected 12
 end
 arch graymarble
 x 28
@@ -9988,6 +10003,11 @@ arch tile_shop
 x 28
 y 22
 end
+arch button_lever
+x 28
+y 22
+connected 5
+end
 arch dungeon_magic
 x 28
 y 23
@@ -10002,10 +10022,6 @@ y 23
 connected 5
 end
 arch dungeon_magic
-x 28
-y 24
-end
-arch graymarble
 x 28
 y 24
 end
@@ -10419,11 +10435,12 @@ x 29
 y 34
 end
 arch exit
-slaying ../azumauindo/suno-yamatoshi/shops/bank1_vault
+slaying /azumauindo/suno-yamatoshi/shops/bank1_vault
 hp 5
 sp 2
 x 29
 y 34
+unique 1
 end
 arch dungeon_magic
 x 29
@@ -10452,7 +10469,7 @@ x 30
 y 1
 end
 arch exit
-slaying ../mlab/citydeclouds/bank/bank_vault
+slaying /mlab/citydeclouds/bank/bank_vault
 hp 14
 sp 8
 x 30
@@ -11804,10 +11821,6 @@ arch dungeon_magic
 x 34
 y 8
 end
-arch graymarble
-x 34
-y 8
-end
 arch tile_shop
 x 34
 y 8
@@ -11837,6 +11850,11 @@ end
 arch tile_shop
 x 34
 y 10
+end
+arch button_lever
+x 34
+y 10
+connected 1
 end
 arch graymarble
 x 34
@@ -11901,6 +11919,11 @@ arch tile_shop
 x 34
 y 22
 end
+arch button_lever
+x 34
+y 22
+connected 4
+end
 arch dungeon_magic
 x 34
 y 23
@@ -11915,10 +11938,6 @@ y 23
 connected 4
 end
 arch dungeon_magic
-x 34
-y 24
-end
-arch graymarble
 x 34
 y 24
 end
@@ -12371,7 +12390,7 @@ x 36
 y 1
 end
 arch exit
-slaying ../navar_city/misc/city1bank_vault
+slaying /navar_city/misc/city1bank_vault
 hp 10
 sp 11
 x 36
@@ -12639,7 +12658,7 @@ x 36
 y 31
 end
 arch exit
-slaying ../scorn/shops/bank-vault
+slaying /scorn/shops/bank-vault
 hp 6
 sp 10
 x 36
@@ -14336,10 +14355,6 @@ arch dungeon_magic
 x 41
 y 6
 end
-arch graymarble
-x 41
-y 6
-end
 arch tile_shop
 x 41
 y 6
@@ -14369,6 +14384,11 @@ end
 arch tile_shop
 x 41
 y 8
+end
+arch button_lever
+x 41
+y 8
+connected 13
 end
 arch dungeon_magic
 x 41
@@ -14625,7 +14645,7 @@ x 42
 y 1
 end
 arch exit
-slaying ../santo_dominion/shops/bank_santodominion_vault
+slaying /santo_dominion/shops/bank_santodominion_vault
 hp 20
 sp 5
 x 42
@@ -15081,6 +15101,11 @@ arch tile_shop
 x 43
 y 12
 end
+arch button_lever
+x 43
+y 12
+connected 2
+end
 arch dungeon_magic
 x 43
 y 13
@@ -15146,6 +15171,11 @@ end
 arch tile_shop
 x 43
 y 19
+end
+arch button_lever
+x 43
+y 19
+connected 3
 end
 arch dungeon_magic
 x 43
@@ -15218,6 +15248,11 @@ end
 arch tile_shop
 x 43
 y 27
+end
+arch button_lever
+x 43
+y 27
+connected 14
 end
 arch dungeon_magic
 x 43
@@ -15233,10 +15268,6 @@ y 28
 connected 14
 end
 arch dungeon_magic
-x 43
-y 29
-end
-arch graymarble
 x 43
 y 29
 end
@@ -15295,7 +15326,7 @@ x 43
 y 34
 end
 arch exit
-slaying ../port_joseph/town/bank-vault
+slaying /port_joseph/town/bank-vault
 hp 12
 sp 3
 x 43
@@ -17033,7 +17064,7 @@ x 48
 y 12
 end
 arch exit
-slaying ../lake_country/shops/lc-bank-vault
+slaying /lake_country/shops/lc-bank-vault
 hp 9
 sp 3
 x 48
@@ -17108,7 +17139,7 @@ x 48
 y 19
 end
 arch exit
-slaying ../wolfsburg/shops/bank-wolfsburg-vault
+slaying /wolfsburg/shops/bank-wolfsburg-vault
 hp 23
 sp 5
 x 48
