@@ -1,0 +1,13 @@
+component_depth: 3
+languages:
+- java
+
+exclude:
+- .*/tags
+- .*/branches
+- /maps
+- /sounds
+- /arch
+- /client
+- /metaserver
+- /server
